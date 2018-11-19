@@ -23,7 +23,6 @@ export default {
   components: { AvailabilityInfo },
   computed: {
     extendsFrom: function() {
-      console.log(this.$page);
       return this.$page.metadata.extends;
     },
     summary: function () {
