@@ -1,6 +1,6 @@
 <template>
   <div class="property-signature">
-    <span class="static" v-if="!instance">(static)</span> <span>{{name}}</span> <span class="return-type">:{{returnTypes | formatTypes}}</span>
+    <span class="static" v-if="!instance">(static)</span> <span>{{name}}</span> <span class="return-type">:{{type | formatTypes}}</span>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
       type: Boolean,
       default: true
     },
-    returnTypes: Array
+    type: [Array, String]
   }
 }
 </script>
