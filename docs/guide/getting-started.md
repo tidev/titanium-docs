@@ -34,7 +34,7 @@ To download Studio you must have an AMPLIFY Appcelerator Services account. Visit
 
 The first time you launch Studio you need to select a workspace, or folder where Titanium stores your project files and IDE preferences
 
-![Workspace selection](/images/workspace.png)
+<img :src="$withBase('/images/workspace.png')" alt="Workspace selection">
 
 ::: tip
 By default, upon each launch, Studio asks you to select a workspace. To hide this dialog on subsequent launches, select the **Use this as the default and do not ask again option.**
