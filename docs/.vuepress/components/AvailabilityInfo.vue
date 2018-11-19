@@ -3,7 +3,7 @@
     <div class="proxy-meta-name">Availability</div>
     <ul>
       <li v-for="platform in platforms">
-        <img :src="imageForPlatform(platform.name)" class="platform-logo"/> <span>{{platform.since}}</span>
+        <img :src="$withBase(imageForPlatform(platform.name))" class="platform-logo"/> <span>{{platform.since}}</span>
       </li>
     </ul>
   </div>

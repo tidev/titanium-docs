@@ -24,7 +24,7 @@ module.exports = (options = {}, context) => ({
       return;
     }
 
-    const metadataProcessor = new MetadataProcessor(context.markdown);
+    const metadataProcessor = new MetadataProcessor(context);
     metadataProcessor.transoformMetadataAndCollectHeaders(metadata);
     page.headers = (page.headers || []).concat(metadataProcessor.additionalHeaders);
 
@@ -41,8 +41,9 @@ module.exports = (options = {}, context) => ({
  * Also collects additionals headers required for the sidebar navigation on API pages.
  */
 class MetadataProcessor {
-  constructor(markdown) {
-    this.markdown = markdown;
+  constructor(context) {
+    this.markdown = context.markdown;
+    this.base = context.base;
     this.additionalHeaders = [];
     this.constantNamingPattern = /^[A-Z0-9_]+$/;
   }
@@ -125,17 +126,16 @@ class MetadataProcessor {
     const customLinkPattern = /<([^>\/]+)>/g;
     const mdLinkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
 
-
     markdownString = markdownString.replace(customLinkPattern, (match, linkValue) => {
       if (tiApiMetadata[linkValue]) {
-        return `[\`${linkValue}\`](/api/${linkValue.toLowerCase().replace(/\./g, '/')}.html)`;
+        return `[\`${linkValue}\`](${this.base}api/${linkValue.toLowerCase().replace(/\./g, '/')}.html)`;
       }
       return match;
     });
 
     markdownString = markdownString.replace(mdLinkPattern, (match, linkText, linkValue) => {
       if (tiApiMetadata[linkValue]) {
-        return `[${linkText}](/api/${linkValue.toLowerCase().replace(/\./g, '/')}.html)`;
+        return `[${linkText}](${this.base}api/${linkValue.toLowerCase().replace(/\./g, '/')}.html)`;
       }
       return match;
     });

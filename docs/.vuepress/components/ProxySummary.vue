@@ -8,7 +8,7 @@
           Extends
         </div>
         <div class="proxy-meta-value">
-          <a href="">{{extendsFrom}}</a>
+          <router-link :to="extendsFromType.url">{{extendsFromType.name}}</router-link>
         </div>
       </div>
     </div>
@@ -17,13 +17,17 @@
 
 <script>
 import AvailabilityInfo from './AvailabilityInfo';
-import tiApi from '../../api/api.json'
+import tiApi from '../../api/api.json';
+import { getLinkForType } from '../utils';
 
 export default {
   components: { AvailabilityInfo },
   computed: {
-    extendsFrom: function() {
-      return this.$page.metadata.extends;
+    extendsFromType: function() {
+      return {
+        name: this.$page.metadata.extends,
+        url: getLinkForType(this.$page.metadata.extends)
+      }
     },
     summary: function () {
       return this.$page.metadata.summary;

@@ -1,7 +1,7 @@
 <template>
   <div ref="breadcrumb" class="breadcrumb">
     <ul>
-      <li v-for="page in path"><a :href="page.path">{{page.title}}</a></li>
+      <li v-for="page in path"><a :href="$withBase(page.path)">{{page.title}}</a></li>
     </ul>
   </div>
 </template>

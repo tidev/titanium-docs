@@ -5,3 +5,7 @@ export function formatReturnTypes() {
 
   return `{${this.returnTypes.map(value => value.name).join(', ')}}`;
 }
+
+export function getLinkForType(typeName) {
+  return `/api/${typeName.toLowerCase().replace(/\./g, '/')}.html`;
+}
