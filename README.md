@@ -10,8 +10,9 @@ These docs aim to be a hybrid solution of Markdown bases guides and dynamically 
 
 ### Installation
 
-```sh
-git clone
+```bash
+git clone https://github.com/appcelerator/titanium-vuepress-docs.git
+cd titanium-vuepress-docs
 npm i
 ```
 
@@ -52,7 +53,7 @@ This will output the statically rendered docs into `docs/.vuepress/dist`. See <h
 
 VuePress supports a dev mode with hot reloading for a convenient developing experience.
 
-```sh
+```bash
 npm run docs:dev
 ```
 
@@ -66,7 +67,7 @@ Now start editing the docs and you can immediatly see the results in your browse
 
 Guides reside under `docs/guide` and a few documents already have been ported as examples. However none of those the guides is complete yet.
 
-The add a new guide first create a new markdown file under `docs/guide`. To add it to the sidebar navigation open `docs/.vuepress/config.js` and edit the `/guide/` section under `themeConfig.sidebar`. The key you want to add is the name of the new markdown file without the `.md` extension.
+The add a new guide first create a new markdown file under `docs/guide`. To add it to the sidebar navigation open `docs/.vuepress/config.js` and edit the `/guide/` section under `themeConfig.sidebar`. The key you want to add is the name of the new markdown file without the `.md` extension.
 
 ```js
 module.exports = {
@@ -92,7 +93,7 @@ module.exports = {
 
 ### Adding API docs
 
-In theory the `api.json` contains all required information to automatically generate markdown files. However, some APIs contain very detailed description and various examples which are just better to maintain directly in the markdwon files here than in their `.yaml` counterpart in Titanium's [apidoc](https://github.com/appcelerator/titanium_mobile/tree/master/apidoc). All other information regarding the API for a type in Titanium is then taken from the `api.json`. This creates a clear seperation of extensive documentation and api docs.
+In theory the `api.json` contains all required information to automatically generate markdown files. However, some APIs contain very detailed description and various examples which are just better to maintain directly in the markdwon files here than in their `.yaml` counterpart in Titanium's [apidoc](https://github.com/appcelerator/titanium_mobile/tree/master/apidoc). All other information regarding the API for a type in Titanium is then taken from the `api.json`. This creates a clear seperation of extensive documentation and simple api reference.
 
 To migrate a type over to these docs you need to perform the following steps:
 
