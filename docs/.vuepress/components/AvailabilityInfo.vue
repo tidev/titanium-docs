@@ -20,6 +20,7 @@ export default {
         case 'android': return '/android-logo.png';
         case 'iphone':
         case 'ipad': return '/apple-logo.png';
+        case 'windowsphone': return '/windows-logo.png';
       }
     }
   }
