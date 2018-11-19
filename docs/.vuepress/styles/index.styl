@@ -1,0 +1,42 @@
+.breadcrumb
+  color: gray
+
+  ul
+    padding-left: 0
+    &>li
+      list-style-type: none
+      display: inline
+
+      &>a
+        font-weight: normal
+
+      &:after
+        content: " > "
+        color: #aaaaaa
+        position: relative
+        top: -1px
+
+      &:last-child:after
+        content: ""
+
+.member-list
+  & h2, h3, h4
+    margin-top: -3.1rem;
+    padding-top: 4.6rem;
+    margin-bottom: 0;
+
+.proxy-meta
+  margin-top 10px
+
+  &>.proxy-meta-name
+    font-size: 14px
+    color: #666666
+    text-align right
+
+  &>.proxy-meta-value
+    margin-top: 5px;
+    text-align right
+
+.custom-block
+  &.tip
+    border-color #19AEEF !important

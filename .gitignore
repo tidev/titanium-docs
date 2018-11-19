@@ -1,0 +1,9 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
+
+# VuePress dist
+docs/.vuepress/dist
