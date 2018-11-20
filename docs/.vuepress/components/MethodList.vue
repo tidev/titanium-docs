@@ -5,17 +5,14 @@
     </h2>
 
     <template v-for="(method, index) in methods">
-      <div class="method-header">
+      <div class="member-header">
         <h3 :id="method.name.toLowerCase()">
           <a :href="`#${method.name.toLowerCase()}`" class="header-anchor">#</a> {{method.name}} <Badge v-if="method.deprecated" text="DEPRECATED" type="warn"/>
         </h3>
         <AvailabilityInfo :platforms="method.platforms"/>
       </div>
       <FunctionSignature v-bind="method"/>
-      <div v-if="method.deprecated" class="warning custom-block">
-        <p class="custom-block-title">DEPRECATED SINCE {{method.deprecated.since}}</p>
-        <p>{{method.deprecated.note || 'Sorry, no additonal deprecation info available.'}}</p>
-      </div>
+      <DeprecationAlert :deprecated="method.deprecated"/>
       <p v-html="method.summary"></p>
       <p v-html="method.description"></p>
       <h4 v-if="method.parameters.length">Parameters</h4>
@@ -58,12 +55,6 @@ export default {
 </script>
 
 <style lang="stylus">
-.method-header
-  display flex
-
-  &>h3
-    flex-grow 1
-
 .parameter-table
   width 100%
 
