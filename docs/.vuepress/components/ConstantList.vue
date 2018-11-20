@@ -1,7 +1,7 @@
 <template>
   <div class="member-list" v-if="constants.length">
     <h2 id="events">
-      <a href="#events" class="header-anchor">#</a> constants
+      <a href="#constants" class="header-anchor">#</a> Constants
     </h2>
 
     <template v-for="(constant, index) in constants">
