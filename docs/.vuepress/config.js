@@ -2,6 +2,9 @@ module.exports = {
   base: '/titanium-vuepress-docs/',
   title: 'Titanium Mobile',
   description: 'Native iOS-, Android- and Windows Apps with JavaScript',
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }]
+  ],
   themeConfig: {
     logo: '/titanium-logo.png',
     // Top navigation bar
