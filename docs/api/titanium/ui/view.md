@@ -214,5 +214,4 @@ When set to [`Titanium.UI.iOS.CLIP_MODE_DEFAULT`] or when this property is not s
 
 In earlier versions of Titanium Mobile, views had clipping enabled by default.
 
-<PropertyList/>
-<MethodList/>
+<ApiDocs/>

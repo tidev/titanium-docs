@@ -36,5 +36,4 @@ Ti.Database.open('mydb');
 ### Other Global JavaScript APIs
 Titanium includes a number of built-in JavaScript objects that are not part of the Titanium namespace, including JSON parsing, String formatting, timers, and the CommonJS require function. See [Global APIs](/api/global.md) for details.
 
-<PropertyList/>
-<MethodList/>
+<ApiDocs/>

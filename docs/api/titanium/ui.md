@@ -51,5 +51,4 @@ Event listeners must be defined before their respective events are likely to be 
 
 Evaluating events as late as possible while bearing the above consideration in mind, however, can significantly improve application responsiveness. For example, an event listener for a click event may be defined after the parent window has been opened.
 
-<PropertyList/>
-<MethodList/>
+<ApiDocs/>

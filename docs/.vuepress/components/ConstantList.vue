@@ -1,0 +1,35 @@
+<template>
+  <div class="member-list" v-if="constants.length">
+    <h2 id="events">
+      <a href="#events" class="header-anchor">#</a> constants
+    </h2>
+
+    <template v-for="(constant, index) in constants">
+      <div class="member-header">
+        <h4 :id="constant.name.toLowerCase()">
+          <a :href="`#${constant.name.toLowerCase()}`" class="header-anchor">#</a> {{constant.name}} <Badge v-if="constant.deprecated" text="DEPRECATED" type="warn"/>
+        </h4>
+        <AvailabilityInfo :platforms="constant.platforms"/>
+      </div>
+      <DeprecationAlert :deprecated="constant.deprecated"/>
+      <p v-html="constant.summary"></p>
+      <p v-html="constant.description"></p>
+      <hr v-if="index < constants.length - 1">
+    </template>
+  </div>
+</template>
+
+<script>
+import AvailabilityInfo from './AvailabilityInfo';
+
+export default {
+  components: {
+    AvailabilityInfo
+  },
+  computed: {
+    constants: function() {
+      return this.$page.metadata.constants
+    }
+  }
+}
+</script>

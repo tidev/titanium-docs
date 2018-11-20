@@ -40,5 +40,4 @@ Titanium includes several extra utility functions for formatting text, attached 
 
 The `L` macro can also be used as an alias for the [`Titanium.Locale.getString`](titanium/locale.md#getstring) method.
 
-<PropertyList/>
-<MethodList/>
+<ApiDocs/>

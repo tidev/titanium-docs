@@ -18,5 +18,4 @@ Some Titanium objects are createable: new instances of these objects can be crea
 
 In general, developers should avoid modifying the prototype of a Titanium object, or adding methods to a Titanium object. (Adding a simple property such as an ID value is generally OK.)
 
-<PropertyList/>
-<MethodList/>
+<ApiDocs/>

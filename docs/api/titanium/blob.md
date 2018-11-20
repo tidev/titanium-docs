@@ -36,5 +36,4 @@ var newBlob = myBuffer.toBlob();
 
 In both cases, the conversion involves copying the data from one object to another, so you should be conscious of the amount of the data being copied.
 
-<PropertyList/>
-<MethodList/>
+<ApiDocs/>

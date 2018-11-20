@@ -20,17 +20,19 @@ module.exports = (options = {}, context) => ({
     }
 
     if (processed[typeName]) {
+      const metadataProcessor = processed[typeName];
+      metadataProcessor.appendAdditionalHeaders(page);
       page.metadata = metadata;
       return;
     }
 
     const metadataProcessor = new MetadataProcessor(context);
     metadataProcessor.transoformMetadataAndCollectHeaders(metadata);
-    page.headers = (page.headers || []).concat(metadataProcessor.additionalHeaders);
+    metadataProcessor.appendAdditionalHeaders(page);
 
     page.metadata = metadata;
 
-    processed[typeName] = true;
+    processed[typeName] = metadataProcessor;
   }
 });
 
@@ -46,6 +48,7 @@ class MetadataProcessor {
     this.base = context.base;
     this.additionalHeaders = [];
     this.constantNamingPattern = /^[A-Z0-9_]+$/;
+    this.hasConstants = false;
   }
 
   transoformMetadataAndCollectHeaders(metadata) {
@@ -61,15 +64,28 @@ class MetadataProcessor {
     metadata.summary = this.renderMarkdown(metadata.summary);
     this.transformMembersAndCollectHeaders('properties', metadata);
     this.transformMembersAndCollectHeaders('methods', metadata);
+    this.transformMembersAndCollectHeaders('events', metadata);
     this.markdown.renderer.rules.link_open = vueRouterLinkRule;
 
     this.splitPropertiesAndConstants(metadata);
+  }
+
+  appendAdditionalHeaders(page) {
+    page.headers = (page.headers || []).concat(this.additionalHeaders);
+    if (this.hasConstants) {
+      page.headers.push({
+        level: 2,
+        title: 'Constants',
+        slug: 'constants'
+      });
+    }
   }
 
   filterInheritedMembers(metadata) {
     const filterInherited = member => member.inherits === null || member.inherits === metadata.name;
     metadata.properties = metadata.properties.filter(filterInherited);
     metadata.methods = metadata.methods.filter(filterInherited);
+    metadata.events = metadata.events.filter(filterInherited);
   }
 
   transformMembersAndCollectHeaders(memberType, metadata) {
@@ -95,8 +111,7 @@ class MetadataProcessor {
       }
 
       if (memberType === 'properties' && this.constantNamingPattern.test(memberMetadata.name)) {
-        // @FIXME: Currently we don't care about constants and skip header recording.
-        // How do we properly show them in our docs? There are TONS of them all over the place ...
+        this.hasConstants = true;
         return;
       }
 
