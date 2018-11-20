@@ -1,6 +1,6 @@
 <template>
   <div class="member-list" v-if="constants.length">
-    <h2 id="events">
+    <h2 id="constants">
       <a href="#constants" class="header-anchor">#</a> Constants
     </h2>
 
