@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { logger } = require('@vuepress/shared-utils');
 
 const metadataFilePath = path.resolve(__dirname, '..', '..', 'api', 'api.json');
 const tiApiMetadata = JSON.parse(fs.readFileSync(metadataFilePath).toString());
@@ -15,7 +16,7 @@ module.exports = (options = {}, context) => ({
     const metadata = tiApiMetadata[typeName];
 
     if (!metadata) {
-      console.log(`No type metadata found for ${typeName}`);
+      logger.warn(`\nNo type metadata found for ${typeName}`);
       return;
     }
 
@@ -57,6 +58,8 @@ class MetadataProcessor {
     this.sortByName(metadata.properties);
     this.sortByName(metadata.methods);
 
+    // We need to temporarily disbale the vue router link rule since the rendered markdown
+    // will be directly inserted via v-html so Vue components won't work
     const vueRouterLinkRule = this.markdown.renderer.rules.link_open;
     this.markdown.renderer.rules.link_open = function(tokens, idx, options, env, self) {
       return self.renderToken(tokens, idx, options);
@@ -109,6 +112,9 @@ class MetadataProcessor {
         });
         memberMetadata.examples = this.renderMarkdown(combinedExamplesMarkdown);
       }
+      if (memberMetadata.deprecated && memberMetadata.deprecated.notes) {
+        memberMetadata.deprecated.notes = this.renderMarkdown(memberMetadata.deprecated.notes);
+      }
 
       if (memberType === 'properties' && this.constantNamingPattern.test(memberMetadata.name)) {
         this.hasConstants = true;
@@ -142,20 +148,59 @@ class MetadataProcessor {
     const mdLinkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
 
     markdownString = markdownString.replace(customLinkPattern, (match, linkValue) => {
-      if (tiApiMetadata[linkValue]) {
-        return `[\`${linkValue}\`](${this.base}api/${linkValue.toLowerCase().replace(/\./g, '/')}.html)`;
+      const link = this.getTypeLinkForKeyPath(linkValue);
+      if (link) {
+        return `[${link.name}](${this.base}${link.relativeUrl})`;
       }
       return match;
     });
 
     markdownString = markdownString.replace(mdLinkPattern, (match, linkText, linkValue) => {
-      if (tiApiMetadata[linkValue]) {
-        return `[${linkText}](${this.base}api/${linkValue.toLowerCase().replace(/\./g, '/')}.html)`;
+      const link = this.getTypeLinkForKeyPath(linkValue);
+      if (link) {
+        return `[${link.name}](${this.base}${link.relativeUrl})`;
       }
       return match;
     });
 
     return markdownString;
+  }
+
+  getTypeLinkForKeyPath(keyPath) {
+    const prefix = 'api';
+
+    if (tiApiMetadata[keyPath]) {
+      const metadata = tiApiMetadata[keyPath];
+      return {
+        name: metadata.name,
+        relativeUrl: `${prefix}/${metadata.name.toLowerCase().replace(/\./g, '/')}.html`
+      }
+    }
+
+    const parentKeyPath = keyPath.substring(0, keyPath.lastIndexOf('.'));
+    const memberName = keyPath.substring(parentKeyPath.length + 1);
+    const parentMetadata = tiApiMetadata[parentKeyPath];
+    if (!parentMetadata) {
+      return null;
+    }
+
+    const memberTypeCandidates = ['properties', 'methods', 'events'];
+    for (let i = 0; i < memberTypeCandidates.length; i++) {
+      const members = parentMetadata[memberTypeCandidates[i]];
+      if (!members) {
+        continue;
+      }
+
+      const match = members.find(memberMetadata => memberMetadata.name === memberName);
+      if (match) {
+        return {
+          name: match.name,
+          relativeUrl: `${prefix}/${parentMetadata.name.toLowerCase().replace(/\./g, '/')}.html#${match.name.toLowerCase()}`
+        }
+      }
+    }
+
+    return null;
   }
 
   sortByName(unsortedArray) {
