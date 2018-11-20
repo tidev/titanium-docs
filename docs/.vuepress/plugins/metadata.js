@@ -7,6 +7,8 @@ const tiApiMetadata = JSON.parse(fs.readFileSync(metadataFilePath).toString());
 let processed = {};
 
 module.exports = (options = {}, context) => ({
+  name: 'titanium/metadata-processor',
+
   extendPageData(page) {
     if (!/^\/api\//.test(page.regularPath)) {
       return;
@@ -138,6 +140,7 @@ class MetadataProcessor {
   }
 
   renderMarkdown(markdownString) {
+    // @FIXME: This can be removed once we have a means to generate client dynamic modules
     markdownString = this.rewriteTypeLinks(markdownString);
     const { html, data: { hoistedTags, links }, dataBlockString } = this.markdown.render(markdownString);
     return html;

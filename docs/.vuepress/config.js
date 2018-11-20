@@ -65,6 +65,9 @@ module.exports = {
     editLinkText: 'Edit this page on GitHub'
   },
   plugins: [
-    require('./plugins/metadata')
+    require('./plugins/dynamic-content'),
+    require('./plugins/markdown'),
+    require('./plugins/metadata'),
+    '@vuepress/back-to-top'
   ]
 }

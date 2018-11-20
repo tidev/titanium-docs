@@ -12,6 +12,8 @@
   "author": "Axway Appcelerator",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
+    "fs-extra": "^7.0.1",
     "vuepress": "^1.0.0-alpha.22"
   }
 }
