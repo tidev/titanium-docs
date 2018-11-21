@@ -29,23 +29,11 @@ module.exports = {
       ],
       '/api/': [
         {
-          title: 'Core API',
-          collapsable: false,
+          title: 'Base',
           children: [
             'titanium',
-            'titanium/blob',
-            'titanium/buffer',
             'titanium/module',
-            'titanium/proxy',
-            'titanium/ui',
-            'titanium/ui/view'
-          ]
-        },
-        {
-          title: 'Modules',
-          collapsable: false,
-          children: [
-            '/'
+            'titanium/proxy'
           ]
         },
         {
@@ -65,6 +53,7 @@ module.exports = {
     editLinkText: 'Edit this page on GitHub'
   },
   plugins: [
+    require('./plugins/webpack-entry'),
     require('./plugins/dynamic-content'),
     require('./plugins/markdown'),
     require('./plugins/metadata'),

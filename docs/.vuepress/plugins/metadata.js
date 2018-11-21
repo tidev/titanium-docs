@@ -1,31 +1,38 @@
-const fs = require('fs');
+const fs = require('fs-extra');
 const path = require('path');
 const { logger } = require('@vuepress/shared-utils');
 
 const metadataFilePath = path.resolve(__dirname, '..', '..', 'api', 'api.json');
-const tiApiMetadata = JSON.parse(fs.readFileSync(metadataFilePath).toString());
+const apiMetadata = JSON.parse(fs.readFileSync(metadataFilePath).toString());
 let processed = {};
 
+/**
+ * Metadata plugin
+ */
 module.exports = (options = {}, context) => ({
-  name: 'titanium/metadata-processor',
+  name: 'titanium/metadata',
 
+  /**
+   * Extend page data of pages under /api/ with metadata key, process the metadata
+   * required by that page and then adds additonal headers to the page
+   *
+   * @param {Page} page
+   */
   extendPageData(page) {
     if (!/^\/api\//.test(page.regularPath)) {
       return;
     }
 
     const typeName = page.frontmatter.metadataKey || page.title;
-    const metadata = tiApiMetadata[typeName];
+    const metadata = apiMetadata[typeName];
 
     if (!metadata) {
-      logger.warn(`\nNo type metadata found for ${typeName}`);
       return;
     }
 
     if (processed[typeName]) {
       const metadataProcessor = processed[typeName];
       metadataProcessor.appendAdditionalHeaders(page);
-      page.metadata = metadata;
       return;
     }
 
@@ -33,11 +40,66 @@ module.exports = (options = {}, context) => ({
     metadataProcessor.transoformMetadataAndCollectHeaders(metadata);
     metadataProcessor.appendAdditionalHeaders(page);
 
-    page.metadata = metadata;
+    if (!page.metadataKey) {
+      page.metadataKey = typeName;
+    }
 
     processed[typeName] = metadataProcessor;
+  },
+
+  /**
+   * Create dynamic module with processed metadata which is used in webpack server entry
+   * to pre-populate the store
+   */
+  clientDynamicModules() {
+    return {
+      name: 'metadata.js',
+      content: `export default ${JSON.stringify(apiMetadata)}`
+    }
+  },
+
+  enhanceDevServer (app) {
+    app.use((ctx, next) => {
+      ctx.assert(ctx.request.accepts('json'), 406);
+      const metadataRoutePattern = /\/([\w.]+).json$/;
+      const match = ctx.path.match(metadataRoutePattern);
+      if (!match) {
+        return next();
+      }
+
+      const typeName = match[1];
+      const metadata = findMetadataWithLowerCasedKey(typeName);
+      if (metadata) {
+        ctx.body = JSON.stringify(metadata);
+        return;
+      }
+
+      return;
+    });
+  },
+
+  async generated () {
+    const tempMetadataPath = path.resolve(context.tempPath, 'metadata');
+    fs.ensureDirSync(tempMetadataPath);
+    for(let typeName in processed) {
+      const metadata = apiMetadata[typeName];
+      const destPath = path.resolve(tempMetadataPath, `${typeName.toLowerCase()}.json`);
+      fs.writeFileSync(destPath, JSON.stringify(metadata));
+    }
+
+    await fs.copy(tempMetadataPath, path.resolve(context.outDir, 'metadata'));
   }
 });
+
+function findMetadataWithLowerCasedKey(lowerCasedTypeName) {
+  for(let typeName in apiMetadata) {
+    if (typeName.toLowerCase() === lowerCasedTypeName) {
+      return apiMetadata[typeName];
+    }
+  }
+
+  return null;
+}
 
 /**
  * Processor for metadata that powers API reference pages.
@@ -55,6 +117,8 @@ class MetadataProcessor {
   }
 
   transoformMetadataAndCollectHeaders(metadata) {
+    delete metadata.description;
+
     this.filterInheritedMembers(metadata);
 
     this.sortByName(metadata.properties);
@@ -172,8 +236,8 @@ class MetadataProcessor {
   getTypeLinkForKeyPath(keyPath) {
     const prefix = 'api';
 
-    if (tiApiMetadata[keyPath]) {
-      const metadata = tiApiMetadata[keyPath];
+    if (apiMetadata[keyPath]) {
+      const metadata = apiMetadata[keyPath];
       return {
         name: metadata.name,
         relativeUrl: `${prefix}/${metadata.name.toLowerCase().replace(/\./g, '/')}.html`
@@ -182,7 +246,7 @@ class MetadataProcessor {
 
     const parentKeyPath = keyPath.substring(0, keyPath.lastIndexOf('.'));
     const memberName = keyPath.substring(parentKeyPath.length + 1);
-    const parentMetadata = tiApiMetadata[parentKeyPath];
+    const parentMetadata = apiMetadata[parentKeyPath];
     if (!parentMetadata) {
       return null;
     }

@@ -1,8 +1,8 @@
 <template>
   <div class="proxy-summary">
-    <div class="summary"><p v-html="summary"></p></div>
+    <div class="summary"><p v-html="metadata.summary"></p></div>
     <div>
-      <AvailabilityInfo :platforms="platforms"/>
+      <AvailabilityInfo :platforms="metadata.platforms"/>
       <div class="proxy-meta">
         <div class="proxy-meta-name">
           Extends
@@ -23,17 +23,14 @@ import { getLinkForType } from '../utils';
 export default {
   components: { AvailabilityInfo },
   computed: {
+    metadata: function () {
+      return this.$store.state.metadata[this.$page.metadataKey];
+    },
     extendsFromType: function() {
       return {
-        name: this.$page.metadata.extends,
-        url: getLinkForType(this.$page.metadata.extends)
+        name: this.metadata.extends,
+        url: getLinkForType(this.metadata.extends)
       }
-    },
-    summary: function () {
-      return this.$page.metadata.summary;
-    },
-    platforms: function () {
-      return this.$page.metadata.platforms;
     }
   }
 }

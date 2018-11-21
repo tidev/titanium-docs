@@ -46,7 +46,7 @@ export default {
   },
   computed: {
     events: function() {
-      return this.$page.metadata.events
+      return this.$store.state.metadata[this.$page.metadataKey].events;
     }
   }
 }

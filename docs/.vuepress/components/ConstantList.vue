@@ -1,5 +1,5 @@
 <template>
-  <div class="member-list" v-if="constants.length">
+  <div class="member-list" v-if="constants && constants.length">
     <h2 id="constants">
       <a href="#constants" class="header-anchor">#</a> Constants
     </h2>
@@ -28,7 +28,7 @@ export default {
   },
   computed: {
     constants: function() {
-      return this.$page.metadata.constants
+      return this.$store.state.metadata[this.$page.metadataKey].constants;
     }
   }
 }

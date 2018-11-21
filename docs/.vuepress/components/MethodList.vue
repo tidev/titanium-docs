@@ -1,5 +1,5 @@
 <template>
-  <div class="member-list method-list" v-if="methods.length">
+  <div class="member-list method-list" v-if="methods && methods.length">
     <h2 id="methods">
       <a href="#methods" class="header-anchor">#</a> Methods
     </h2>
@@ -48,7 +48,7 @@ export default {
   },
   computed: {
     methods: function () {
-      return this.$page.metadata.methods;
+      return this.$store.state.metadata[this.$page.metadataKey].methods;
     }
   }
 }
