@@ -2,7 +2,7 @@
   <div class="proxy-meta availability">
     <div class="proxy-meta-name">Availability</div>
     <ul>
-      <li v-for="platform in normalizedPlaforms(platforms)">
+      <li v-for="platform in normalizedPlaforms">
         <img :src="$withBase(imageForPlatform(platform.name))" class="platform-logo"/> <span>{{platform.since}}</span>
       </li>
     </ul>
@@ -14,28 +14,30 @@ export default {
   props: {
     platforms: Array
   },
-  methods: {
-    normalizedPlaforms(platforms) {
+  computed: {
+    normalizedPlaforms: function () {
+      const normalizedPlaforms = Array.from(this.platforms);
+
       // Find the index of both platforms
-      const iphoneIndex = platforms.findIndex(platform => platform.name === 'iphone');
-      const ipadIndex = platforms.findIndex(platform => platform.name === 'ipad');
+      const iphoneIndex = this.platforms.findIndex(platform => platform.name === 'iphone');
+      const ipadIndex = this.platforms.findIndex(platform => platform.name === 'ipad');
 
       // If iPhone or iPad platform is not supported anyway, return early
       if (iphoneIndex === -1 || ipadIndex === -1) {
-        return platforms;
+        return this.platforms;
       }
 
-      // If both platforms exist and their versions match, compute the array
-      if (platforms[iphoneIndex].version === platforms[ipadIndex].version) {
-        const version = platforms[iphoneIndex].since;
-  
-        platforms.splice(iphoneIndex, 1);
-        platforms.splice(platforms.findIndex(platform => platform.name === 'ipad'), 1); // use again since index changed
-        platforms.push({ name: 'ios', pretty_name: 'iOS', since: version });
+      // If both platforms exist and their versions match, update iPhone to iOS and remove iPad
+      if (this.platforms[iphoneIndex].version === this.platforms[ipadIndex].version) {
+        const version = this.platforms[iphoneIndex].since;
+        normalizedPlaforms[iphoneIndex] = { name: 'ios', pretty_name: 'iOS', since: version };
+        normalizedPlaforms.splice(ipadIndex, 1);
       }
 
-      return platforms;
-    },
+      return normalizedPlaforms;
+    }
+  },
+  methods: {
     imageForPlatform(platformName) {
       switch (platformName) {
         case 'android': return '/android-logo.png';
