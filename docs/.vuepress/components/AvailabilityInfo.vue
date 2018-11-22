@@ -2,7 +2,7 @@
   <div class="proxy-meta availability">
     <div class="proxy-meta-name">Availability</div>
     <ul>
-      <li v-for="platform in platforms">
+      <li v-for="platform in normalizedPlaforms">
         <img :src="$withBase(imageForPlatform(platform.name))" class="platform-logo"/> <span>{{platform.since}}</span>
       </li>
     </ul>
@@ -14,12 +14,36 @@ export default {
   props: {
     platforms: Array
   },
+  computed: {
+    normalizedPlaforms: function () {
+      const normalizedPlaforms = Array.from(this.platforms);
+
+      // Find the index of both platforms
+      const iphoneIndex = this.platforms.findIndex(platform => platform.name === 'iphone');
+      const ipadIndex = this.platforms.findIndex(platform => platform.name === 'ipad');
+
+      // If iPhone or iPad platform is not supported anyway, return early
+      if (iphoneIndex === -1 || ipadIndex === -1) {
+        return this.platforms;
+      }
+
+      // If both platforms exist and their versions match, update iPhone to iOS and remove iPad
+      if (this.platforms[iphoneIndex].version === this.platforms[ipadIndex].version) {
+        const version = this.platforms[iphoneIndex].since;
+        normalizedPlaforms[iphoneIndex] = { name: 'ios', pretty_name: 'iOS', since: version };
+        normalizedPlaforms.splice(ipadIndex, 1);
+      }
+
+      return normalizedPlaforms;
+    }
+  },
   methods: {
     imageForPlatform(platformName) {
       switch (platformName) {
         case 'android': return '/android-logo.png';
-        case 'iphone':
-        case 'ipad': return '/apple-logo.png';
+        case 'ios': return '/apple-logo.png'
+        case 'iphone': return '/iphone-logo.png'
+        case 'ipad': return '/ipad-logo.png';
         case 'windowsphone': return '/windows-logo.png';
       }
     }
