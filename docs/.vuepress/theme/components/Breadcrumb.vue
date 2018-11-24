@@ -1,5 +1,5 @@
 <template>
-  <div ref="breadcrumb" class="breadcrumb">
+  <div ref="breadcrumb" class="breadcrumb" :class="{ stuck: stuck }">
     <ul>
       <li v-for="page in path"><a :href="$withBase(page.path)">{{page.title}}</a></li>
     </ul>
@@ -27,13 +27,15 @@ export default {
   },
   mounted() {
     const breadcrumb = this.$refs.breadcrumb;
-    this.stickPoint = breadcrumb.offsetTop;
-    /* @TODO stick to top when scrolling
+    this.stickPoint = 25
     window.addEventListener('scroll', () => {
-      const distance = breadcrumb.offsetTop - window.pageYOffset;
-      console.log(distance);
+      const pageOffset = window.pageYOffset;
+      if (!this.stuck && pageOffset >= this.stickPoint) {
+        this.stuck = true;
+      } else if (this.stuck && pageOffset < this.stickPoint) {
+        this.stuck = false;
+      }
     });
-    */
   },
   methods: {
     addPageForPath(path) {
@@ -57,3 +59,50 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+@require '~@vuepress/theme-default/styles/wrapper.styl'
+
+.breadcrumb
+  @extend $wrapper
+  color #aaa
+  background-color white
+  padding-top 6rem
+
+  &.stuck
+    position fixed
+    top $navbarHeight
+    right 0
+    left $sidebarWidth
+    @media (max-width: $MQNarrow)
+      left 0
+    padding: 0.6rem
+
+  &>ul
+    padding-left 0
+    max-width 740px
+    margin: 0 auto
+    &>li
+      list-style-type none
+      display inline
+
+      &>a
+        font-weight normal
+        padding 0 4px
+
+      &:after
+        content " › "
+        color #aaaaaa
+        position relative
+        top -1px
+
+      &:last-child:after
+        content ""
+
+.api-page
+  &>.page
+    &>.breadcrumb.stuck
+      &~.content
+          &>h1:first-child
+            padding-top 5.6rem + $navbarHeight
+</style>
