@@ -1,14 +1,10 @@
 ---
-title: JSON
-sidebar: auto
 metadataKey: Global.JSON
+sidebar: auto
 ---
-
-<Breadcrumb/>
 
 # JSON
 
 <ProxySummary/>
 
-<PropertyList/>
-<MethodList/>
+<ApiDocs/>
