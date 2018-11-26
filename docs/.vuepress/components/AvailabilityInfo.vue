@@ -1,11 +1,11 @@
 <template>
   <div class="proxy-meta availability">
     <div class="proxy-meta-name">Availability</div>
-    <ul>
-      <li v-for="platform in normalizedPlaforms">
+    <div class="proxy-meta-value available-platforms">
+      <div class="platform-item" v-for="platform in normalizedPlaforms">
         <img :src="$withBase(imageForPlatform(platform.name))" class="platform-logo"/> <span>{{platform.since}}</span>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -52,19 +52,32 @@ export default {
 </script>
 
 <style lang="stylus">
+.availability
+  &>.available-platforms
+    display flex
+    flex-shrink 0
+    justify-content flex-end
+
+    &>.platform-item
+      color #aaaaaa
+      margin-left: 0.8rem
+      display flex
+      flex-shrink 0
+
+      &>.platform-logo
+        height 1rem
+        width 1rem
+        vertical-align top
+
+      &>span
+        margin-left: 0.4rem
+
+
+@media (max-width: $MQMobile)
   .availability
     &>ul
-      list-style-type: none
-      margin: 0
-      display: flex
+      flex-direction column
+      align-items flex-end
       &>li
-        padding: 4px 6px
-        color: #aaaaaa
-        vertical-align middle
-        display: flex;
-        align-items:center;
-    & .platform-logo
-      height 16px
-      width 16px
-      padding-right 4px
+        margin 0
 </style>

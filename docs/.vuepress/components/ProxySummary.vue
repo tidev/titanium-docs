@@ -1,7 +1,7 @@
 <template>
   <div class="proxy-summary">
-    <div class="summary"><p v-html="metadata.summary"></p></div>
-    <div>
+    <div class="summary-content"><p v-html="metadata.summary"></p></div>
+    <div class="proxy-metas">
       <AvailabilityInfo :platforms="metadata.platforms"/>
       <div class="proxy-meta">
         <div class="proxy-meta-name">
@@ -38,27 +38,21 @@ export default {
 
 <style lang="stylus">
 .proxy-summary
-  margin: 1em 0
-  display: flex
+  margin 1rem 0
+  display flex
+  justify-content space-between
 
-  &>.summary
-    flex-grow: 1
+  &>.summary-content
+    padding-right 1rem
 
-  &>.availablity
-    font-size: 14px
+  &>.proxy-metas
+    flex-shrink 0
 
-    &>span
-      color: #aaaaaa
-    &>ul
-      list-style-type: none
-      margin: 0
-      &>li
-        padding: 4px 6px
-        float left
-    & .platform-logo
-      height 20px
-      width 20px
-      vertical-align middle
-      filter: grayscale(80%)
+@media (max-width: $MQMobile)
+  .proxy-summary
+    flex-direction column
+
+    &>.summary-content
+      padding 0
 
 </style>
