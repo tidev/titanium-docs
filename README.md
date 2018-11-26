@@ -1,6 +1,6 @@
 # titanium-vuepress-docs
 
-> Experimental approach to use VuePress for Guides and API docs.
+> Experimental approach to use [VuePress](https://vuepress.vuejs.org/) for Guides and API docs.
 
 ## Getting started
 
@@ -127,4 +127,4 @@ Open source contributions are greatly appreciated! If you have a bugfix, improve
 
 ## License
 
-Apache License, Version 2.0v
+Apache License, Version 2.0
