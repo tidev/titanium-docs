@@ -30,6 +30,9 @@ module.exports = (options = {}, context) => ({
       return;
     }
 
+    page.metadataKey = typeName;
+    page.frontmatter.pageClass = 'api-page';
+
     if (processed[typeName]) {
       const metadataProcessor = processed[typeName];
       metadataProcessor.appendAdditionalHeaders(page);
@@ -39,10 +42,6 @@ module.exports = (options = {}, context) => ({
     const metadataProcessor = new MetadataProcessor(context);
     metadataProcessor.transoformMetadataAndCollectHeaders(metadata);
     metadataProcessor.appendAdditionalHeaders(page);
-
-    if (!page.metadataKey) {
-      page.metadataKey = typeName;
-    }
 
     processed[typeName] = metadataProcessor;
   },
