@@ -14,25 +14,26 @@ for (let typeName in titaniumMetadata) {
   let description = metadata.description || '';
   description = description.replace(/^(#{4,})/gm, (match, heading) => heading.substring(0, heading.length - 1));
   description = rewriteTypeLinks(description);
+  const typeNameParts = metadata.name.split('.');
+  const breadcrumbLabel = typeNameParts[typeNameParts.length -1];
   const overview = description.length > 0 ? `\n\n## Overview\n\n${description.trim().replace(/^\s+|\s+$/g, '')}\n\n` : '\n\n'
   const destPath = path.join(__dirname, '..', 'docs', 'api', metadata.name.toLowerCase().split('.').join('/') + '.md');
   const mdContent =
 `---
-title: ${metadata.name}
-breadcrumbLabel: ${metadata.name.substring(metadata.name.lastIndexOf('.') + 1)}
+breadcrumbLabel: ${breadcrumbLabel}
 sidebar: auto
 ---
-
-<Breadcrumb/>
 
 # ${metadata.name}
 
 <ProxySummary/>${overview}<ApiDocs/>
-  `;
+`;
 
-  fs.ensureDirSync(path.dirname(destPath));
-  fs.writeFileSync(destPath, mdContent);
-  createdTypes.push(metadata.name);
+  if (!fs.existsSync(destPath)) {
+    fs.ensureDirSync(path.dirname(destPath));
+    fs.writeFileSync(destPath, mdContent);
+    createdTypes.push(metadata.name);
+  }
 }
 
 console.log(`Created the initial markdown files for ${createdTypes.length} types.`);

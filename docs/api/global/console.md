@@ -1,6 +1,5 @@
 ---
 metadataKey: Global.console
-breadcrumbLabel: console
 sidebar: auto
 ---
 

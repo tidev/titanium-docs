@@ -1,8 +1,10 @@
 ---
+metadataKey: Global
+breadcrumbLabel: Global
 sidebar: auto
 ---
 
-# Global
+# Global JavaScript APIs
 
 <ProxySummary/>
 
