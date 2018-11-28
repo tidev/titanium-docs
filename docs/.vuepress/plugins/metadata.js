@@ -1,9 +1,13 @@
+const { logger } = require('@vuepress/shared-utils');
 const fs = require('fs-extra');
 const path = require('path');
+const semver = require('semver');
 
 const { typesMetadata, getLinkForKeyPath } = require('../utils/metadata');
 
 let processed = {};
+// @todo make this configurable per build for versioned docs
+let targetVersion = '8.0.0'
 
 /**
  * Metadata plugin
@@ -26,7 +30,12 @@ module.exports = (options = {}, context) => ({
     const metadata = typesMetadata[typeName];
 
     if (!metadata) {
+      logger.warn(`no metadata found for API page ${page.path}`);
       return;
+    }
+
+    if (metadata.deprecated && metadata.deprecated.removed && semver.lte(metadata.deprecated.removed, targetVersion)) {
+      logger.warn(`according to metadata ${typeName} (${page.path}) was removed in ${metadata.deprecated.removed}`);
     }
 
     page.metadataKey = typeName;
@@ -131,7 +140,7 @@ class MetadataProcessor {
   transoformMetadataAndCollectHeaders(metadata) {
     delete metadata.description;
 
-    this.filterInheritedMembers(metadata);
+    this.filterInheritedAndRemovedMembers(metadata);
 
     this.sortByName(metadata.properties);
     this.sortByName(metadata.methods);
@@ -162,11 +171,21 @@ class MetadataProcessor {
     }
   }
 
-  filterInheritedMembers(metadata) {
-    const filterInherited = member => member.inherits === null || member.inherits === metadata.name;
-    metadata.properties = metadata.properties.filter(filterInherited);
-    metadata.methods = metadata.methods.filter(filterInherited);
-    metadata.events = metadata.events.filter(filterInherited);
+  filterInheritedAndRemovedMembers(metadata) {
+    const filterInheritedAndRemoved = member => {
+      if (member.inherits && member.inherits !== metadata.name) {
+        return false;
+      }
+
+      if (member.deprecated && member.deprecated.removed && semver.lte(member.deprecated.removed, targetVersion)) {
+        return false;
+      }
+
+      return true;
+    }
+    metadata.properties = metadata.properties.filter(filterInheritedAndRemoved);
+    metadata.methods = metadata.methods.filter(filterInheritedAndRemoved);
+    metadata.events = metadata.events.filter(filterInheritedAndRemoved);
   }
 
   transformMembersAndCollectHeaders(memberType, metadata) {
