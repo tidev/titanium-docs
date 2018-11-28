@@ -12,10 +12,10 @@
   "author": "Axway Appcelerator",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.24",
     "axios": "^0.18.0",
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.0",
     "fs-extra": "^7.0.1",
-    "vuepress": "^1.0.0-alpha.22",
+    "vuepress": "^1.0.0-alpha.24",
     "vuex": "^3.0.1",
     "vuex-router-sync": "^5.0.0"
   }
