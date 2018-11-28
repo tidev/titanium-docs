@@ -1,16 +1,22 @@
 <template>
-  <div class="proxy-summary">
-    <div class="summary-content"><p v-html="metadata.summary"></p></div>
-    <div class="proxy-metas">
-      <AvailabilityInfo :platforms="metadata.platforms"/>
-      <div class="proxy-meta">
-        <div class="proxy-meta-name">
-          Extends
-        </div>
-        <div class="proxy-meta-value">
-          <router-link :to="extendsFromType.url">{{extendsFromType.name}}</router-link>
+  <div class="type-header">
+    <div class="proxy-summary">
+      <div class="summary-content"><p v-html="metadata.summary"></p></div>
+      <div class="proxy-metas">
+        <AvailabilityInfo :platforms="metadata.platforms"/>
+        <div class="proxy-meta">
+          <div class="proxy-meta-name">
+            Extends
+          </div>
+          <div class="proxy-meta-value">
+            <router-link :to="extendsFromType.url">{{extendsFromType.name}}</router-link>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="tip custom-block" v-if="metadata.type === 'pseudo'">
+      <p class="custom-block-title">NOTE</p>
+      <p>This is an abstract type. Any object of this structure can be used where this type is used.</p>
     </div>
   </div>
 </template>
