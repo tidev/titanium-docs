@@ -15,11 +15,11 @@ clears them and on the lock screen for devices running Android 5.0 or greater.
 Note that the user can filter or turn notifications on and off from **Settings**.
 
 For Android toast notifications (pop-up notifications sent while the application is in the
-foreground), see [Titanium.UI.Notification](Titanium.UI.Notification).
+foreground), see <Titanium.UI.Notification>.
 
-To create a notification, use the [createNotification](Titanium.Android.createNotification) method.
+To create a notification, use the <Titanium.Android.createNotification> method.
 
-Pass the Notification object to the methods of the [Titanium.Android.NotificationManager](Titanium.Android.NotificationManager) class
+Pass the Notification object to the methods of the <Titanium.Android.NotificationManager> class
 to send or cancel notifications.
 
 For examples of using Notifications, see [Android Notifications](#!/guide/Android_Notifications).

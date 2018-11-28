@@ -14,7 +14,7 @@ properties are required before the SplitWindow is opened.
 
 You use this class to implement a master-detail interface, in which the left-side view presents
 a list of items and the right-side presents details of the selected item. The `SplitWindow` is supported
-for both iPhone and iPad idioms. Use the [createSplitWindow](Titanium.UI.iOS.createSplitWindow) method to create a `SplitWindow` object
+for both iPhone and iPad idioms. Use the <Titanium.UI.iOS.createSplitWindow> method to create a `SplitWindow` object
 
 By default, `SplitWindow` shows both master and detail views in landscape orientation. When the
 device switches into portrait orientation, the master is only shown if [showMasterInPortrait](Titanium.UI.iOS.SplitWindow.showMasterInPortrait)
@@ -30,7 +30,7 @@ The width of the `masterView` can be controlled by the [portraitSplit](Titanium.
 Any values outside this range are ignored.
 
 To add a navigation bar to either the master or detail view of the split window,
-use a [Titanium.UI.NavigationWindow](Titanium.UI.NavigationWindow).
+use a <Titanium.UI.NavigationWindow>.
 
 The SplitWindow is a top-level window and cannot be contained within another window or view.
 

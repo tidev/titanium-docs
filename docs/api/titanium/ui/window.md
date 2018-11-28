@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-To create a window, use the [createWindow](Titanium.UI.createWindow) method or a **`<Window>`** Alloy element.
+To create a window, use the <Titanium.UI.createWindow> method or a **`<Window>`** Alloy element.
 
 A window is a top-level container which can contain other views. Windows can
 be *opened* and *closed*.  Opening a window causes the window and its child
@@ -113,7 +113,7 @@ either the `Titanium.UI.createWindow()` method or the Window object's `open()` m
 ### Android Behavior
 
 The Android platform does not have a concept of a modal window but instead uses modal
-dialogs. You may want to use a [Titanium.UI.AlertDialog](Titanium.UI.AlertDialog) or [Titanium.UI.OptionDialog](Titanium.UI.OptionDialog) and
+dialogs. You may want to use a <Titanium.UI.AlertDialog> or <Titanium.UI.OptionDialog> and
 use the `androidView` property rather than a modal window.
 
 For Android, Titanium creates a heavyweight window with a translucent background
@@ -262,11 +262,11 @@ For example, to flip right-to-left between two windows:
 In the above example, the red window will be animated from the right-to-left over the blue window.
 
 You can create transition animations when opening and closing windows in
-either a [Titanium.UI.iOS.NavigationWindow](Titanium.UI.iOS.NavigationWindow) or [Titanium.UI.Tab](Titanium.UI.Tab).
+either a <Titanium.UI.iOS.NavigationWindow> or <Titanium.UI.Tab>.
 
-Use the [createTransitionAnimation](Titanium.UI.iOS.createTransitionAnimation) method to specify an animation objects to hide and
+Use the <Titanium.UI.iOS.createTransitionAnimation> method to specify an animation objects to hide and
 show the window, then set the newly created TransitionAnimation object to the window's
-[transitionAnimation](Titanium.UI.Window.transitionAnimation) property.
+<Titanium.UI.Window.transitionAnimation> property.
 
 In the example below, the windows are closed by rotating them upside down while simulatenously
 making them transparent:
@@ -372,18 +372,18 @@ A heavyweight window is always created when you open a new window from inside a
 
 As explained above, heavyweight windows are their own Android Activity. The only way
 to animate the opening or closing of an Activity in Android is to apply an animation _resource_
-to it.  Passing a [Titanium.UI.Animation](Titanium.UI.Animation) object as a parameter to [open](Titanium.UI.Window.open)
-or [close](Titanium.UI.Window.close) will have no effect if the window being opened/closed is heavyweight
+to it.  Passing a <Titanium.UI.Animation> object as a parameter to <Titanium.UI.Window.open>
+or <Titanium.UI.Window.close> will have no effect if the window being opened/closed is heavyweight
 and thus opens/closes its own Activity.
 
-Instead, in the parameter dictionary you pass to [open](Titanium.UI.Window.open) or [close](Titanium.UI.Window.close),
+Instead, in the parameter dictionary you pass to <Titanium.UI.Window.open> or <Titanium.UI.Window.close>,
 you should set the `activityEnterAnimation` and `activityExitAnimation` keys to
 animation resources. `activityEnterAnimation` should be set to the animation you want to run
 on the incoming activity, while `activityExitAnimation` should be set to the animation you
 want to run on the outgoing activity that you are leaving.
 
-Animation resources are available through the `R` object. Use either [Titanium.Android.R](Titanium.Android.R) for
-built-in resources or [Titanium.App.Android.R](Titanium.App.Android.R) for resources that you package in your application.
+Animation resources are available through the `R` object. Use either <Titanium.Android.R> for
+built-in resources or <Titanium.App.Android.R> for resources that you package in your application.
 
 As an example, you may wish for the window that you are opening to fade in while the window
 you are leaving should fade out:
@@ -404,7 +404,7 @@ For information on creating your own animation resource XML files, see
 "[View Animation](https://developer.android.com/guide/topics/resources/animation-resource.html#View)"
 in Android's Resources documentation. After creating an animation resource file, you can place it under
 `platform/android/res/anim` in your Titanium project folder and it will be packaged in your app's APK
-and then available via [Titanium.App.Android.R](Titanium.App.Android.R).
+and then available via <Titanium.App.Android.R>.
 
 ### Material design transitions in Android
 

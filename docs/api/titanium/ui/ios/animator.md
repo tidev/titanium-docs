@@ -17,20 +17,20 @@ multiple behaviors as long as those behaviors belong to the same animator.
 
 To use these dynamic animations, first create the items to animate, then:
 
-**1.** Create an animator using the [createAnimator](Titanium.UI.iOS.createAnimator) method. 
+**1.** Create an animator using the <Titanium.UI.iOS.createAnimator> method. 
 
 **2.** Set the [referenceView](Titanium.UI.iOS.Animator.referenceView) property to establish the
    coordinate system for the animations.
 
 **3.** Create and add items to one or more of the following behaviors:
 
-  * [Titanium.UI.iOS.AnchorAttachmentBehavior](Titanium.UI.iOS.AnchorAttachmentBehavior)
-  * [Titanium.UI.iOS.CollisionBehavior](Titanium.UI.iOS.CollisionBehavior)
-  * [Titanium.UI.iOS.DynamicItemBehavior](Titanium.UI.iOS.DynamicItemBehavior)
-  * [Titanium.UI.iOS.GravityBehavior](Titanium.UI.iOS.GravityBehavior)
-  * [Titanium.UI.iOS.PushBehavior](Titanium.UI.iOS.PushBehavior)
-  * [Titanium.UI.iOS.SnapBehavior](Titanium.UI.iOS.SnapBehavior)
-  * [Titanium.UI.iOS.ViewAttachmentBehavior](Titanium.UI.iOS.ViewAttachmentBehavior)
+  * <Titanium.UI.iOS.AnchorAttachmentBehavior>
+  * <Titanium.UI.iOS.CollisionBehavior>
+  * <Titanium.UI.iOS.DynamicItemBehavior>
+  * <Titanium.UI.iOS.GravityBehavior>
+  * <Titanium.UI.iOS.PushBehavior>
+  * <Titanium.UI.iOS.SnapBehavior>
+  * <Titanium.UI.iOS.ViewAttachmentBehavior>
 
 **4.** Add these behaviors to the animator with the [addBehavior](Titanium.UI.iOS.Animator.addBehavior) method.
 

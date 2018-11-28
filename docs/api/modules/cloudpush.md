@@ -14,7 +14,7 @@ to the push notification server to the device to receive push notifications and 
 present a tray notification to the user when a new push notification is received.
 
 This module is only used to receive push notifications.  For information on configuring your
-project to send push notifications, see [Modules.Cloud.PushNotifications](Modules.Cloud.PushNotifications).
+project to send push notifications, see <Modules.Cloud.PushNotifications>.
 
 ### Push Protocols
 
@@ -68,7 +68,7 @@ type. The supported properties in `tiapp.xml` are:
 If a deployment-specific setting is provided (production or development) then that value will be used for the current deployment environment.
 
 *WARNING*: The default properties of this module are used until you set a property for the first time. Because the
-properties are persisted to the device settings (via [Titanium.App.Properties](Titanium.App.Properties)), the most recent value you set will
+properties are persisted to the device settings (via <Titanium.App.Properties>), the most recent value you set will
 always be used.
 
 ### Virtual Private Cloud Configuration

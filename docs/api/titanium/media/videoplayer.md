@@ -13,7 +13,7 @@ The video player is a native view that can be used to play videos, either stored
 locally or streamed from a web server. The player can occupy the full screen, or can
 be used as a view that can be added to other views.
 
-Use the [createVideoPlayer](Titanium.Media.createVideoPlayer) method to create a video player.
+Use the <Titanium.Media.createVideoPlayer> method to create a video player.
 
 All platforms support specifying the video content as a URL, either to a local file or
 a remote stream. This is done by setting the [url](Titanium.Media.VideoPlayer.url) property.

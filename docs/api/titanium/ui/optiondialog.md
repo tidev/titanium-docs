@@ -18,7 +18,7 @@ sidebar: auto
   <tr><th>Android</th><th>iPhone</th><td>iPad</td></tr>
 </table>
 
-An option dialog is created using [createOptionDialog](Titanium.UI.createOptionDialog) or Alloy `<OptionDialog>`
+An option dialog is created using <Titanium.UI.createOptionDialog> or Alloy `<OptionDialog>`
 element. See Examples below for usage.
 
 This dialog is presented differently on each platform, as described below.
@@ -29,9 +29,9 @@ On Android, the dialog is shown in the middle of the display (not touching the e
 with the option items represented in a picker. The previously-selected, or default, item can be
 set on creation.
 
-You can assign a [View](Titanium.UI.View) to the [androidView](Titanium.UI.OptionDialog.androidView) property
+You can assign a [View](Titanium.UI.View) to the <Titanium.UI.OptionDialog.androidView> property
 to define a custom dialog UI and layout, or you can assign a set of options to the
-[options](Titanium.UI.OptionDialog.options) property, but not both. If both of these properties are set, the custom view
+<Titanium.UI.OptionDialog.options> property, but not both. If both of these properties are set, the custom view
 will appear but the options will be hidden.
 
 Buttons below the picker may be optionally defined using the `buttonNames` property.

@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-A popover is created using the [createPopover](Titanium.UI.iPad.createPopover) method or **`<Popover>`** Alloy element.
+A popover is created using the <Titanium.UI.iPad.createPopover> method or **`<Popover>`** Alloy element.
 
 Popovers are used to present information temporarily, but in a way that does not take over
 the entire screen in the way that a modal view does. The popover content is layered on top of

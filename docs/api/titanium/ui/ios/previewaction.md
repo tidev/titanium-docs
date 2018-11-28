@@ -9,13 +9,13 @@ sidebar: auto
 
 ## Overview
 
-The PreviewAction is created by the [createPreviewAction](Titanium.UI.iOS.createPreviewAction) method. Set the
+The PreviewAction is created by the <Titanium.UI.iOS.createPreviewAction> method. Set the
 `title` property when creating a PreviewAction object.
 
-Use this class to configure preview actions used in the [Titanium.UI.iOS.PreviewContext](Titanium.UI.iOS.PreviewContext). The actions
-can also be part of the [actions](Titanium.UI.iOS.PreviewActionGroup.actions) property.
+Use this class to configure preview actions used in the <Titanium.UI.iOS.PreviewContext>. The actions
+can also be part of the <Titanium.UI.iOS.PreviewActionGroup.actions> property.
 
-For an example, see [Titanium.UI.iOS.PreviewContext](Titanium.UI.iOS.PreviewContext).
+For an example, see <Titanium.UI.iOS.PreviewContext>.
 
 See also:
 

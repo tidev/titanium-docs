@@ -41,8 +41,8 @@ additional behavior beyond the basic Window.
 
 Titanium uses the [Factory Pattern](http://en.wikipedia.org/wiki/Factory_method_pattern) for
 constructing objects and a general naming pattern for APIs.  For example, to construct a
-[Alert Dialog](Titanium.UI.AlertDialog), you call the method [createAlertDialog](Titanium.UI.createAlertDialog).
-To create a [TextArea](Titanium.UI.TextArea), you call the method [createTextArea](Titanium.UI.createTextArea).
+[Alert Dialog](Titanium.UI.AlertDialog), you call the method <Titanium.UI.createAlertDialog>.
+To create a [TextArea](Titanium.UI.TextArea), you call the method <Titanium.UI.createTextArea>.
 Once an object is created, it will be available until it goes out of scope.
 
 ### Optimizations
@@ -83,7 +83,7 @@ Titanium components are designed to be portable across as many platforms as it s
 However, there are cases where a device either does not support a specific feature or capability
 or where it support additional functionality.  For cases where the device OS supports
 capabilities that other platforms do not, we attempt to place those capabilities in a separate
-namespace, such as [Titanium.UI.iPhone](Titanium.UI.iPhone). However, in cases where the control is in a common
+namespace, such as <Titanium.UI.iPhone>. However, in cases where the control is in a common
 namespace and support additional features, we continue to place that functionality directly on
 the object.
 
@@ -132,7 +132,7 @@ All color properties also accept a value of `'transparent'`.
 On Android, if you want to create a semi-transparent window, set the `opacity`
 property **before** opening the window.
 
-On iOS, you can set a global tinting using [tintColor](Titanium.UI.tintColor). All child views will inherit
+On iOS, you can set a global tinting using <Titanium.UI.tintColor>. All child views will inherit
 the tint color by default and are able to override the color using `tintColor` on their own views.
 The default `tintColor` on iOS is the blue (system-color).
 

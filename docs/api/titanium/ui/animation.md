@@ -20,7 +20,7 @@ Animations can be set to reverse themselves automatically on completion, and to 
 number of times. For more complicated effects, multiple animations can be combined in sequence,
 starting one animation when the previous animation completes.
 
-Use the [createAnimation](Titanium.UI.createAnimation) method to create an animation object.
+Use the <Titanium.UI.createAnimation> method to create an animation object.
 
 Note that when you animate a view's size or position, the actual layout properties (such as
 `top`, `left`, `width`, `height`) are not changed by the animation. See the description of the
@@ -32,14 +32,14 @@ iOS supports both 2D and 3D matrix transformations in animations.
 
 In iOS, you can also specify an animation curve or *easing function* to control the pace of the
 animation. To use an easing function, set the animation's `curve` property to one of the
-`ANIMATION_CURVE` constants defined in [Titanium.UI](Titanium.UI). For example,
+`ANIMATION_CURVE` constants defined in <Titanium.UI>. For example,
 [ANIMATION_CURVE_EASE_IN](Titanium.UI.ANIMATION_CURVE_EASE_IN) specifies an animation that
 starts slowly and then speeds up.
 
 Finally, iOS also supports *transitions* between windows or views. You can create a transition
 by creating an animation object and setting the `view` property to the view you want to
 transition to. The `transition` property specifies the transition effect to apply. Use one of
-the transition style constants defined in [Titanium.UI.iOS.AnimationStyle](Titanium.UI.iOS.AnimationStyle).
+the transition style constants defined in <Titanium.UI.iOS.AnimationStyle>.
 
 ### Android Platform Notes
 

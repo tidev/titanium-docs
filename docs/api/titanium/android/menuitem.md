@@ -29,7 +29,7 @@ overflow menu.  To determine how an action item is displayed, set
 You can optionally customize the look of action items using the
 [actionView](Titanium.Android.MenuItem.actionView) property.
 
-See the [Titanium.Android.Menu](Titanium.Android.Menu) reference page for additional code examples.
+See the <Titanium.Android.Menu> reference page for additional code examples.
 
 Further Reading:
 

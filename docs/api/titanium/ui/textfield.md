@@ -18,6 +18,6 @@ sidebar: auto
   <tr><th>Android</th><th>iOS</th><th>Windows Phone</th></tr>
 </table>
 
-Use the [createTextField](Titanium.UI.createTextField) method or **`<TextField>`** Alloy element to create a text field.
+Use the <Titanium.UI.createTextField> method or **`<TextField>`** Alloy element to create a text field.
 
 <ApiDocs/>

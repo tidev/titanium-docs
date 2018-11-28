@@ -26,7 +26,7 @@ You can specify background images for each state, as well as button text and a b
 icon. On iOS, there are button styles which define appearance for each state, even if
 no button images are set.
 
-Use the [createButton](Titanium.UI.createButton) method or a **`<Button>`** Alloy element to create a button
+Use the <Titanium.UI.createButton> method or a **`<Button>`** Alloy element to create a button
 (see [Examples](#!/api/Titanium.UI.Button-examples)) .
 
 ### Android Platform Notes
@@ -43,7 +43,7 @@ supported on iOS.
 iOS buttons have two special properties, `style` and `systemButton`.
 
 The `style` property specifies the type of button decoration, and can be set to one
-of the values described in [Titanium.UI.iOS.SystemButtonStyle](Titanium.UI.iOS.SystemButtonStyle).
+of the values described in <Titanium.UI.iOS.SystemButtonStyle>.
 
 To use a custom button style, such as a background gradient, you may need to explicitly set
 the button's `style` property to `PLAIN`, to prevent the button style from overriding any background color or gradient.
@@ -62,16 +62,17 @@ The `systemButton` property lets you create a predefined system-defined button,
 such as the **Camera** or **Add** buttons, for use in toolbars and nav bars.
 Specifically, system buttons may be used in the following locations:
 
-* [Titanium.UI.iOS.Toolbar](Titanium.UI.iOS.Toolbar). The `items` array can contain system buttons.
-* [Titanium.UI.iPad.Popover](Titanium.UI.iPad.Popover). The `leftNavButton` and `rightNavButton` properties can
+* Some stuff <Titanium.UI.iOS.Toolbar>. The `items` array can contain system buttons.
+* <Titanium.UI.iPad.Popover>. The `leftNavButton` and `rightNavButton` properties can
   refer to system buttons
-* [Titanium.UI.iPad.SplitWindow](Titanium.UI.iPad.SplitWindow). The `toolbar` array can contain system buttons.
-* [Titanium.UI.TextField](Titanium.UI.TextField). The `keyboardToolbar` array can contain system buttons.
-* [Titanium.UI.TextArea](Titanium.UI.TextArea). The `keyboardToolbar` array can contain system buttons.
-* [Titanium.UI.Window](Titanium.UI.Window). The `leftNavButton` and `rightNavButton` properties can refer to
+* <Titanium.UI.iOS.SplitWindow>. The `toolbar` array can contain system buttons.
+* <Titanium.UI.TextField>. The `keyboardToolbar` array can contain system buttons.
+* <Titanium.UI.TextArea>. The `keyboardToolbar` array can contain system buttons.
+* <Titanium.UI.Window>. The `leftNavButton` and `rightNavButton` properties can refer to
   system buttons and the `toolbar` array can contain system buttons.
+* <http://google.com>
 
-Use the constants in [Titanium.UI.iOS.SystemButton](Titanium.UI.iOS.SystemButton)
+Use the constants in <Titanium.UI.iOS.SystemButton>
 to specify a button type. The size, style and decoration of system buttons is set
 automatically, so you can create a button by setting only the `systemButton` property.
 
@@ -85,7 +86,7 @@ In Alloy, you can omit the namespace when setting the `systemButton` property:
 
 Note that the `systemButton` property specifies *appearance*, not behavior. For
 example, to bring up the camera when the user presses the **Camera** button, you must
-add an event listener to the button and call [showCamera](Titanium.Media.showCamera) when the
+add an event listener to the button and call <Titanium.Media.showCamera> when the
 button is clicked.
 
 #### iOS Pressed Button Effects

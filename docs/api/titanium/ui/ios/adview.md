@@ -9,6 +9,6 @@ sidebar: auto
 
 ## Overview
 
-The Ad view is created by the [createAdView](Titanium.UI.iOS.createAdView) method or **`<AdView>`** Alloy element.
+The Ad view is created by the <Titanium.UI.iOS.createAdView> method or **`<AdView>`** Alloy element.
 
 <ApiDocs/>

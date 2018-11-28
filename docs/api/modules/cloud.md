@@ -17,7 +17,7 @@ client technology that supports HTTP.
 
 The Cloud module's specialized objects, such as `Users`, make accessing 
 ArrowDB as simple as using any of Titanium's other APIs, due to their familiar and intuitive API schemas.
-You can also use the [sendRequest](Modules.Cloud.sendRequest) method to invoke 
+You can also use the <Modules.Cloud.sendRequest> method to invoke 
 ArrowDB REST APIs directly. This approach requires some additional configuration for each method call,
 but it lets you use new ArrowDB APIs as soon as they are available.
 

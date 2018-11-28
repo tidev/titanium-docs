@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Use the [createLivePhotoView](Titanium.UI.iOS.createLivePhotoView) to assign the `livePhoto` property. 
+Use the <Titanium.UI.iOS.createLivePhotoView> to assign the `livePhoto` property. 
 You can receive a LivePhoto by using the [openPhotoGallery](Titanium.Media.openPhotoGallery) method.
 iOS 9.1 only allows to select existing photos from the gallery, capturing new live photos is not 
 supported by the iOS public API, yet.

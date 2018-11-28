@@ -90,8 +90,8 @@ For iOS 11 and later, also add the [`NSLocationAlwaysAndWhenInUseUsageDescriptio
 when planning to request the "Always" permission. Using the above key, you are also able to upgrade your permissions from
 "When in Use" to "Always", which is the recommended way for managing location permissions in iOS 11 and later.
 Please also remember to request your desired location-permissions before using any geolocation-related API in 
-order to receive the best usability and permission-control during the app-lifecycle using [hasLocationPermissions](Titanium.Geolocation.hasLocationPermissions)
-and [requestLocationPermissions](Titanium.Geolocation.requestLocationPermissions). Also note that you also need to include the `NSLocationWhenInUseUsageDescription` key 
+order to receive the best usability and permission-control during the app-lifecycle using <Titanium.Geolocation.hasLocationPermissions>
+and <Titanium.Geolocation.requestLocationPermissions>. Also note that you also need to include the `NSLocationWhenInUseUsageDescription` key 
 in *any* case when targeting iOS 11 and later. Descriptive error-logs will be thrown if required permissions are missing.
 
 ### Configurating Location Updates on Android
@@ -102,7 +102,7 @@ On Android, three different location service modes are supported: *simple*, *man
     undemanding location applications without requiring developers to
     write a lot of Android-specific code. To use simple mode:
 
-    1.   Leave the [manualMode](Titanium.Geolocation.Android.manualMode) flag set to `false` (the
+    1.   Leave the <Titanium.Geolocation.Android.manualMode> flag set to `false` (the
          default value).
 
     2.   Set the [accuracy](Titanium.Geolocation.accuracy) property to
@@ -113,9 +113,9 @@ On Android, three different location service modes are supported: *simple*, *man
     enabling individual location providers and filtering updates, for the best
     combination of accuracy and battery life.
 
-    Manual mode is used when the [manualMode](Titanium.Geolocation.Android.manualMode) flag is set
+    Manual mode is used when the <Titanium.Geolocation.Android.manualMode> flag is set
     to `true`. In manual mode, the `accuracy` property is not used, and all
-    configuration is done through the [Titanium.Geolocation.Android](Titanium.Geolocation.Android) module.
+    configuration is done through the <Titanium.Geolocation.Android> module.
 
 *   *Legacy mode* is the mode that existed prior to 2.0. Legacy mode is
     used when the `manualMode` flag is `false` and the `accuracy` property is

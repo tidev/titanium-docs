@@ -22,6 +22,6 @@ use a [ListView](Titanium.UI.ListView) or [TableView](Titanium.UI.TableView) ins
 For design guidelines, see
 [Google Design Guidelines: Cards](http://www.google.com/design/spec/components/cards.html)
 
-CardView does not support [backgroundImage](Titanium.UI.View.backgroundImage), [borderColor](Titanium.UI.View.borderColor), or [backgroundGradient](Titanium.UI.View.backgroundGradient).
+CardView does not support <Titanium.UI.View.backgroundImage>, <Titanium.UI.View.borderColor>, or <Titanium.UI.View.backgroundGradient>.
 
 <ApiDocs/>

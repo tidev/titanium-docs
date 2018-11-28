@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Unlike the [Titanium.UI.Windows.AppBarButton](Titanium.UI.Windows.AppBarButton), the toggle button has a swtich state, like a
+Unlike the <Titanium.UI.Windows.AppBarButton>, the toggle button has a swtich state, like a
 checkbox.
 
 To create an application bar button, use the

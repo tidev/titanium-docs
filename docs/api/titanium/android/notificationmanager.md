@@ -10,7 +10,7 @@ sidebar: auto
 ## Overview
 
 This module provides methods for sending and canceling notifications,
-which are represented by the [Titanium.Android.Notification](Titanium.Android.Notification) object.
+which are represented by the <Titanium.Android.Notification> object.
 
 Further Reading:
 

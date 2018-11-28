@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-The toplevel `console` support is intended to supplement [Titanium.API](Titanium.API)
+The toplevel `console` support is intended to supplement <Titanium.API>
 and make it easier for developers to port existing javascript code
 (especially CommonJS modules) to Titanium.
 

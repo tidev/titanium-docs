@@ -9,6 +9,6 @@ sidebar: auto
 
 ## Overview
 
-See examples in [Titanium.Contacts](Titanium.Contacts) for more information.
+See examples in <Titanium.Contacts> for more information.
 
 <ApiDocs/>

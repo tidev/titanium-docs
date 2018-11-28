@@ -20,16 +20,16 @@ sidebar: auto
 
 The `SearchBar` object is closely modeled on an iOS native search bar.
 As such, not all features are supported on other platforms. For Android applications, 
-consider using a [Titanium.UI.Android.SearchView](Titanium.UI.Android.SearchView) object instead.
+consider using a <Titanium.UI.Android.SearchView> object instead.
 
 Search bars are most commonly used for filtering the rows in a [TableView](Titanium.UI.TableView).
 You can add a search bar to a table view by setting the table view's [search](Titanium.UI.TableView.search) property.
 A search bar can also be used without a table view.
 
-You can also use a `SearchView` object as the [searchView](Titanium.UI.ListView.searchView)
+You can also use a `SearchView` object as the <Titanium.UI.ListView.searchView>
 property of a [ListView](Titanium.UI.ListView) object.
 
-Use the [createSearchBar](Titanium.UI.createSearchBar) method or Alloy **`<SearchBar>`** element to create a search bar.
+Use the <Titanium.UI.createSearchBar> method or Alloy **`<SearchBar>`** element to create a search bar.
 
 ### Android Platform Implementation Notes
 

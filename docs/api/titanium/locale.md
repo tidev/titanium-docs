@@ -14,6 +14,6 @@ into the operating system specific localization formats. The `Locale` module pro
 locale-specific strings which can be referenced at runtime.  Additionally, the module 
 contains a few methods and properties for querying device locale information.
 
-The macro `L` can be used as an alias for the [getString](Titanium.Locale.getString) method.
+The macro `L` can be used as an alias for the <Titanium.Locale.getString> method.
 
 <ApiDocs/>

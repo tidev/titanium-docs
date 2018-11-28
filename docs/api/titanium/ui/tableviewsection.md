@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Use the [createTableViewSection](Titanium.UI.createTableViewSection) method or **`<TableViewSection>`** Alloy element to 
+Use the <Titanium.UI.createTableViewSection> method or **`<TableViewSection>`** Alloy element to 
 create a `TableViewSection`.
 
 Before the table is rendered, the `TableViewSection` [add](Titanium.UI.TableViewSection.add) 

@@ -20,8 +20,8 @@ number of pending notifications, and generate a sound.
 To send a local notification, the application needs to:
 
   1. Enroll the application to send local notifications with the
-     [registerUserNotificationSettings](Titanium.App.iOS.registerUserNotificationSettings) method.
-  2. Schedule a local notification with the [scheduleLocalNotification](Titanium.App.iOS.scheduleLocalNotification) method.
+     <Titanium.App.iOS.registerUserNotificationSettings> method.
+  2. Schedule a local notification with the <Titanium.App.iOS.scheduleLocalNotification> method.
   3. Monitor the [notification](Titanium.App.iOS.notification) event to respond to the
      notification.
 
@@ -37,11 +37,11 @@ actions in the notification, then press a notification action to respond to the 
 To create an interactive notification, the application needs to:
 
   1. Create and configure notification actions with the
-     [createUserNotificationAction](Titanium.App.iOS.createUserNotificationAction) method.
+     <Titanium.App.iOS.createUserNotificationAction> method.
   2. Create notification categories and assign notification actions to them
-     with the [createUserNotificationCategory](Titanium.App.iOS.createUserNotificationCategory) method.
+     with the <Titanium.App.iOS.createUserNotificationCategory> method.
   3. Register the notification categories with the
-     [registerUserNotificationSettings](Titanium.App.iOS.registerUserNotificationSettings) method.
+     <Titanium.App.iOS.registerUserNotificationSettings> method.
   4. Monitor the [localnotificationaction](Titanium.App.iOS.localnotificationaction) event.
 
 For instructions on sending local interactive notifications, see the
@@ -60,7 +60,7 @@ For more information on getting started, refer to the
 Handoff allows you to create and transfer user activies from one device to another. For example, you can start editing
 a document on your phone, then transfer the activity to your iPad to continue editing the document.
 
-To make an activity shareable, use the [Titanium.App.iOS.UserActivity](Titanium.App.iOS.UserActivity) API to create the activity.
+To make an activity shareable, use the <Titanium.App.iOS.UserActivity> API to create the activity.
 To continue the activity on another device, listen for the
 [continueactivity](Titanium.App.iOS.continueactivity) event.
 
@@ -70,8 +70,8 @@ In iOS 9 and later, Apple lets you index application content, such as music, vid
 to be searched in iOS Spotlight. To effectively add and remove information from the iOS search index
 you will need to use the following APIs:
 
-* [Titanium.App.iOS.SearchableItemAttributeSet](Titanium.App.iOS.SearchableItemAttributeSet) - Used to create metadata related to the `Ti.App.iOS.SearchableItem`
-* [Titanium.App.iOS.SearchableItem](Titanium.App.iOS.SearchableItem) - Used to assemble metadata into a unique object package to be used by `Ti.App.iOS.SearchableIndex`
-* [Titanium.App.iOS.SearchableIndex](Titanium.App.iOS.SearchableIndex) - Used to add and remove `Ti.App.iOS.SearchableItem` objects to the device search index
+* <Titanium.App.iOS.SearchableItemAttributeSet> - Used to create metadata related to the `Ti.App.iOS.SearchableItem`
+* <Titanium.App.iOS.SearchableItem> - Used to assemble metadata into a unique object package to be used by `Ti.App.iOS.SearchableIndex`
+* <Titanium.App.iOS.SearchableIndex> - Used to add and remove `Ti.App.iOS.SearchableItem` objects to the device search index
 
 <ApiDocs/>

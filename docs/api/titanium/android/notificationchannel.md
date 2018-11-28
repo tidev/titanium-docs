@@ -11,7 +11,7 @@ sidebar: auto
 
 You can create a notification channel for each distinct type of notification you need to send.
 
-To create a notification channel, use the [createNotificationChannel](Titanium.Android.createNotificationChannel) method.
+To create a notification channel, use the <Titanium.Android.createNotificationChannel> method.
 
 Further Reading:
 

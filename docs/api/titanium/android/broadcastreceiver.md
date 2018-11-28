@@ -15,13 +15,13 @@ name of the broadcast actions in order to monitor them. Note that Titanium only 
 programmatically creating and registering broadcast receivers. Titanium does not support
 declaring a receiver in the Android manifest.
 
-To create a Broadcast Receiver, use the [createBroadcastReceiver](Titanium.Android.createBroadcastReceiver) method.
+To create a Broadcast Receiver, use the <Titanium.Android.createBroadcastReceiver> method.
 Specify either a callback to handle the broadcast with the `onReceived` property or a
 JavaScript file with the `url` property.  Do not specify both.  If both properties are
 used, the `url` property takes precedence.
 
 To start listening to a broadcast, pass the `BroadcastReceiver` object and an array of
-broadcast actions to listen for to the [registerBroadcastReceiver](Titanium.Android.registerBroadcastReceiver) method.
+broadcast actions to listen for to the <Titanium.Android.registerBroadcastReceiver> method.
 
 Titanium exposes some of the system-level broadcasts as the `Titanium.Android.ACTION_*`
 constants. Note that some of these constants are not broadcast messages.
@@ -30,7 +30,7 @@ You can also define a custom broadcast action.  Use a reverse domain name scheme
 avoid potential conflicts with other applications.
 
 To stop listening to a broadcast, pass the `BroadcastReceiver` object to the
-[unregisterBroadcastReceiver](Titanium.Android.unregisterBroadcastReceiver) method.
+<Titanium.Android.unregisterBroadcastReceiver> method.
 
 To monitor a broadcast that requires a special permission, declare the **`<uses-permission>`**
 element in the Android manifest section of the `tiapp.xml` file for each broadcast that uses

@@ -21,7 +21,7 @@ sidebar: auto
 A `TableView` object is a container for [TableViewSection](Titanium.UI.TableViewSection)
 objects that are, in turn, containers for [TableViewRow](Titanium.UI.TableViewRow) objects.
 
-Use the [createTableView](Titanium.UI.createTableView) method or **`<TableView>`** Alloy element to create a `TableView`.
+Use the <Titanium.UI.createTableView> method or **`<TableView>`** Alloy element to create a `TableView`.
 
 Also see the [TableViews guide](https://docs.appcelerator.com/platform/latest/#!/guide/TableViews).
 
@@ -37,7 +37,7 @@ created, added to a single [TableViewSection](Titanium.UI.TableViewSection), and
 the `TableView`. Refer to the "Simple Table View with Basic Rows" example.
 
 For more control over the layout of each row, however, [TableViewRow](Titanium.UI.TableViewRow)
-objects can be created explicitly using the [createTableViewRow](Titanium.UI.createTableViewRow) method. Child views,
+objects can be created explicitly using the <Titanium.UI.createTableViewRow> method. Child views,
 such as [labels](Titanium.UI.Label), [images](Titanium.UI.ImageView), and
 [buttons](Titanium.UI.Button), may be added to each row. When one or more
 [rows](Titanium.UI.TableViewRow) are added to the table view,

@@ -21,7 +21,7 @@ platform-specific mechanisms:
     are passed to the `callback` callback. See
     [Network.registerForPushNotifications](Titanium.Network.registerForPushNotifications)
     for details.
-*   On Android, push notifications are received through the [Modules.CloudPush](Modules.CloudPush) module.
+*   On Android, push notifications are received through the <Modules.CloudPush> module.
     Add a listener for the [callback](Modules.CloudPush.callback) event to receive push notifications.
 
 To register for push notifications, you need to obtain an application-specific _device

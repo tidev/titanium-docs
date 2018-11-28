@@ -18,18 +18,18 @@ There are three different kind of feedback generators that can be used for diffe
  
   1. **Selection Feedback**: Indicates that a task or action, such as depositing a check or unlocking a vehicle, has completed,
      failed, or produced a warning of some kind.. This feedback type can be used when specifying the
-     [FEEDBACK_GENERATOR_TYPE_SELECTION](Titanium.UI.iOS.FEEDBACK_GENERATOR_TYPE_SELECTION) constant in the `type` property of the feedback generator.
+     <Titanium.UI.iOS.FEEDBACK_GENERATOR_TYPE_SELECTION> constant in the `type` property of the feedback generator.
 
   2. **Impact Feedback**: Provides a physical metaphor that complements the visual experience. For example, the user might feel
      a thud when a view slides into place or two objects collide. This feedback type can be used when specifying the
-     [FEEDBACK_GENERATOR_TYPE_IMPACT](Titanium.UI.iOS.FEEDBACK_GENERATOR_TYPE_IMPACT) constant in the `type` property of the feedback generator. Note that if you use
+     <Titanium.UI.iOS.FEEDBACK_GENERATOR_TYPE_IMPACT> constant in the `type` property of the feedback generator. Note that if you use
      this generator type, you also have to specify the `style` property that can be one of the
-     [FEEDBACK_GENERATOR_IMPACT_STYLE_LIGHT](Titanium.UI.iOS.FEEDBACK_GENERATOR_IMPACT_STYLE_LIGHT), [FEEDBACK_GENERATOR_IMPACT_STYLE_MEDIUM](Titanium.UI.iOS.FEEDBACK_GENERATOR_IMPACT_STYLE_MEDIUM) or
-     [FEEDBACK_GENERATOR_IMPACT_STYLE_HEAVY](Titanium.UI.iOS.FEEDBACK_GENERATOR_IMPACT_STYLE_HEAVY) constant.
+     <Titanium.UI.iOS.FEEDBACK_GENERATOR_IMPACT_STYLE_LIGHT>, <Titanium.UI.iOS.FEEDBACK_GENERATOR_IMPACT_STYLE_MEDIUM> or
+     <Titanium.UI.iOS.FEEDBACK_GENERATOR_IMPACT_STYLE_HEAVY> constant.
 
   3. **Notification Feedback**: Indicates that the selection is actively changing. For example, the user feels light taps while
      scrolling a picker wheel. This feedback is intended for communicating movement through a series of discrete values, not
-     making or confirming a selection. This feedback type can be used when using the [FEEDBACK_GENERATOR_TYPE_NOTIFICATION](Titanium.UI.iOS.FEEDBACK_GENERATOR_TYPE_NOTIFICATION)
+     making or confirming a selection. This feedback type can be used when using the <Titanium.UI.iOS.FEEDBACK_GENERATOR_TYPE_NOTIFICATION>
      constant in the `type` property of the feedback generator.
      
 **Example**

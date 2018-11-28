@@ -23,18 +23,18 @@ To create a service:
      The service can execute any Titanium APIs but you should only use non-UI APIs.
   2. Register the service in your `tiapp.xml` file. Refer to the example below.
   3. Create a service intent by passing the JavaScript file to
-     the [createServiceIntent](Titanium.Android.createServiceIntent) method and set the interval to run the
+     the <Titanium.Android.createServiceIntent> method and set the interval to run the
      code using the intent's `putExtra()` method.
-  4. Pass the Intent object to either the [createService](Titanium.Android.createService) method
+  4. Pass the Intent object to either the <Titanium.Android.createService> method
      to create a `Service` object (*bound service*), where the application can
      manage the service by invoking methods and binding callbacks on the object,
-     or to the [startService](Titanium.Android.startService) method to start the service (*started service*)
+     or to the <Titanium.Android.startService> method to start the service (*started service*)
      and the service manages itself.
 
 Use the `Titanium.Android.Service` API to manage the service.
 
 To get a reference to the `Service` inside the JavaScript service code, use the
-[currentService](Titanium.Android.currentService) property to retrieve a reference to the service,
+<Titanium.Android.currentService> property to retrieve a reference to the service,
 then invoke the `Titanium.Android.Service` APIs on the `Service` object.
 
 Further Reading:

@@ -9,6 +9,6 @@ sidebar: auto
 
 ## Overview
 
-A DashboardItem is created using the [createDashboardItem](Titanium.UI.createDashboardItem) method or **`<DashboardItem>`** Alloy element.
+A DashboardItem is created using the <Titanium.UI.createDashboardItem> method or **`<DashboardItem>`** Alloy element.
 
 <ApiDocs/>

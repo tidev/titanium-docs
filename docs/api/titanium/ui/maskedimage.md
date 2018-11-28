@@ -17,7 +17,7 @@ another image and/or color. The layers are drawn in the following order:
 * The `tint`, or constant tint color.
 
 The way the layers are combined depends on the value of the `mode` property.
-The `mode` value can be set to one of the [Titanium.UI](Titanium.UI) `BLEND_MODE` constants.
+The `mode` value can be set to one of the <Titanium.UI> `BLEND_MODE` constants.
 These constants correspond directly to the blend modes described by Apple and Google here:
 
 ["Bitmap Images and Image Masks" in Quartz2D Reference](https://developer.apple.com/library/content/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/dq_images/dq_images.html#//apple_ref/doc/uid/TP30001066-CH212-TPXREF101)
@@ -38,6 +38,6 @@ you could use the following code:
 Note that this control lacks many of the features associated with a standard
 [ImageView](Titanium.UI.ImageView) control.
 
-Use the [createMaskedImage](Titanium.UI.createMaskedImage) method to create a masked image view.
+Use the <Titanium.UI.createMaskedImage> method to create a masked image view.
 
 <ApiDocs/>

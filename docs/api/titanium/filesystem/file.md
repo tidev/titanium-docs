@@ -9,13 +9,13 @@ sidebar: auto
 
 ## Overview
 
-Use the [getFile](Titanium.Filesystem.getFile) method to get a handle to a `File` object,
+Use the <Titanium.Filesystem.getFile> method to get a handle to a `File` object,
 which represents a given path.  There does not need to be an existing file or directory
 does not need to exist before `getFile` is called. If the file doesn't exist, and
 the file path identifies a file in a writable directory, writing to the file
 creates the file implicitly.
 
-See [Titanium.Filesystem](Titanium.Filesystem) for constants identifying commonly-used device directories.
+See <Titanium.Filesystem> for constants identifying commonly-used device directories.
 
 Use the [exists](Titanium.Filesystem.File.exists) method to test whether the file exists.
 
@@ -32,10 +32,10 @@ existing file.
 For random access to a file, such as accessing a small portion of a larger file,
 you can open a file as a [FileStream](Titanium.Filesystem.FileStream) object. Use the
 [open](Titanium.Filesystem.File.open) method to get a `FileStream` for an
-existing `File` object, or use the [openStream](Titanium.Filesystem.openStream) method
+existing `File` object, or use the <Titanium.Filesystem.openStream> method
 to get a `FileStream` directly without calling `getFile` first.
 
-The [Titanium.Filesystem](Titanium.Filesystem) module defines a number of properties and methods related to
+The <Titanium.Filesystem> module defines a number of properties and methods related to
 filesystem access, including properties that specify paths for application-specific
 directories, and methods for creating temporary files and directories.
 

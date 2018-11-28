@@ -14,7 +14,7 @@ This module is used for manually configuring geolocation settings on Android.
 Manual configuration is recommended for applications that have more demanding 
 geolocation needs (for example, driving directions). However, for basic geolocation
 information, *simple mode* geolocation may be sufficient. For information on simple 
-mode, see [Titanium.Geolocation](Titanium.Geolocation).
+mode, see <Titanium.Geolocation>.
 
 Manual configuration involves managing *providers* and *rules*:
 
@@ -31,7 +31,7 @@ Configuring geolocation manually involves three steps:
 3.  Adding location rules (optional).
 
 As with the other modes, you register for location updates using the main
-[Titanium.Geolocation](Titanium.Geolocation) module. Location updates are generated as long as 
+<Titanium.Geolocation> module. Location updates are generated as long as 
 an event listener is registered for the `location` event.  When you are not 
 using location updates, you should remove any registered event listeners.
 
@@ -56,15 +56,15 @@ property to `true`. In manual configuration mode, the location providers and loc
 rules set through this module control the generation of location updates.
 
 When `manualMode` is `true`, the following configuration settings in the
-[Titanium.Geolocation](Titanium.Geolocation) module are ignored:
+<Titanium.Geolocation> module are ignored:
 
 *   [Geolocation.accuracy](Titanium.Geolocation.accuracy)
 *   [Geolocation.frequency](Titanium.Geolocation.frequency)
 *   [Geolocation.preferredProvider](Titanium.Geolocation.preferredProvider)
 
 When `manualMode` is `false`, the `accuracy`, `frequency` and `preferredProvider` 
-settings from [Titanium.Geolocation](Titanium.Geolocation) are used to configure location updates.
-Any location providers and location rules set in [Titanium.Geolocation.Android](Titanium.Geolocation.Android) 
+settings from <Titanium.Geolocation> are used to configure location updates.
+Any location providers and location rules set in <Titanium.Geolocation.Android> 
 are retained, but they have no effect.
 
 ### Location Providers

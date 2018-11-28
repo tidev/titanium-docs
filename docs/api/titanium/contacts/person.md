@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-A person object is created using [createPerson](Titanium.Contacts.createPerson).
+A person object is created using <Titanium.Contacts.createPerson>.
 
 The following two kinds of properties exist for this object:
 
@@ -35,6 +35,6 @@ On iOS, creating custom keys is not recommended, and will lead to undefined resu
 If a label has been created by the user of the device and used with a multi-value property, it 
 will exist as a key with the same name.
 
-See examples in [Titanium.Contacts](Titanium.Contacts) for more information.
+See examples in <Titanium.Contacts> for more information.
 
 <ApiDocs/>

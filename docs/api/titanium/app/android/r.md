@@ -20,7 +20,7 @@ integer id, as follows.
 
     var resid = Titanium.App.Android.R.drawable.icon;
 
-To access system-wide resources, rather than application resources, use [Titanium.Android.R](Titanium.Android.R) 
+To access system-wide resources, rather than application resources, use <Titanium.Android.R> 
 instead.
 
 Starting in Titanium SDK 7.3.0, this API exposes all Android related R classes

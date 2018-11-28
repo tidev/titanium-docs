@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-The cover flow view is created by the [createCoverFlowView](Titanium.UI.iOS.createCoverFlowView) method or 
+The cover flow view is created by the <Titanium.UI.iOS.createCoverFlowView> method or 
 **`<CoverFlowView>`** element in an Alloy application.
 
 <ApiDocs/>

@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Use the [createPendingIntent](Titanium.Android.createPendingIntent) method to create a pending intent.
+Use the <Titanium.Android.createPendingIntent> method to create a pending intent.
 
 The type of `Intent` you pass to `createPendingIntent`  determines what kind of 
 `PendingIntent` is created.  Each type corresponds directly with a get method on 

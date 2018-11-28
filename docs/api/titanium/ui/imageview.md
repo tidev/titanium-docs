@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Use the [createImageView](Titanium.UI.createImageView) method or **`<ImageView>`** Alloy element to create an `ImageView`.
+Use the <Titanium.UI.createImageView> method or **`<ImageView>`** Alloy element to create an `ImageView`.
 
 Specifying either a `width` or `height` property for this view will scale its image(s) with
 the aspect ratio maintained, up to a maximum size that does not exceed its parent view.
@@ -21,7 +21,7 @@ set the defaultImage property to a local image, which will be displayed while th
 downloaded. Remote images are cached automatically on the iOS-, Android- and Windows platform.
 
 Android Note: Android 6 and later uses runtime permissions to secure the user's privacy. 
-Therefore, you should call [requestStoragePermissions](Titanium.Filesystem.requestStoragePermissions) before attempting to load remote images.
+Therefore, you should call <Titanium.Filesystem.requestStoragePermissions> before attempting to load remote images.
 
 Read more about remote images and general best practices in the [Image Best Practices Guide](https://wiki.appcelerator.org/display/guides2/Image+Best+Practices#ImageBestPractices-Cachingremoteimages).
 

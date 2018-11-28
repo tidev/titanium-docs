@@ -9,13 +9,13 @@ sidebar: auto
 
 ## Overview
 
-The PreviewActionGroup is created by the [createPreviewActionGroup](Titanium.UI.iOS.createPreviewActionGroup) method. You
+The PreviewActionGroup is created by the <Titanium.UI.iOS.createPreviewActionGroup> method. You
 need to set the `title` property when creating a PreviewActionGroup object.
 
-Use this class to configure a group of preview actions used in the [Titanium.UI.iOS.PreviewContext](Titanium.UI.iOS.PreviewContext).
-The actions are of the type [Titanium.UI.iOS.PreviewAction](Titanium.UI.iOS.PreviewAction).
+Use this class to configure a group of preview actions used in the <Titanium.UI.iOS.PreviewContext>.
+The actions are of the type <Titanium.UI.iOS.PreviewAction>.
 
-For an example, see [Titanium.UI.iOS.PreviewContext](Titanium.UI.iOS.PreviewContext).
+For an example, see <Titanium.UI.iOS.PreviewContext>.
 
 See also:
 

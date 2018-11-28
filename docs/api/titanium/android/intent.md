@@ -21,9 +21,9 @@ For details on using Intent Filters, see the
 
 Intents can be used to start an activity, start a service or start a broadcast.
 
-  * To create an intent to start an **Activity**, use the [createIntent](Titanium.Android.createIntent) method.
-  * To create an intent to start a **Broadcast**, use the [createBroadcastIntent](Titanium.Android.createBroadcastIntent) method.
-  * To create an intent to start a **Service**, use the [createServiceIntent](Titanium.Android.createServiceIntent) method.
+  * To create an intent to start an **Activity**, use the <Titanium.Android.createIntent> method.
+  * To create an intent to start a **Broadcast**, use the <Titanium.Android.createBroadcastIntent> method.
+  * To create an intent to start a **Service**, use the <Titanium.Android.createServiceIntent> method.
 
 You can create either an implicit intent or an explicit intent.
 
@@ -39,7 +39,7 @@ a particular data type or content URI. To create an implicit intent, do not spec
 
 Note that the parameters to create a Service Intent are different than the ones used to
 create an Activity or Broadcast.  The properties and methods listed below
-are used for Activity and Broadcast Intents.  See the [createServiceIntent](Titanium.Android.createServiceIntent) method
+are used for Activity and Broadcast Intents.  See the <Titanium.Android.createServiceIntent> method
 for the parameters to create a Service Intent.
 
 ### Action

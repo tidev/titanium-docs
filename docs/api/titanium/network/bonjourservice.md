@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-You can obtain a `BonjourService` instance by calling [createBonjourService](Titanium.Network.createBonjourService) 
+You can obtain a `BonjourService` instance by calling <Titanium.Network.createBonjourService> 
 or from the `service` list from a [BonjourBrowser](Titanium.Network.BonjourBrowser)  
 `updatedservices` event.   
 

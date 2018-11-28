@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Use [createHTTPClient](Titanium.Network.createHTTPClient) to create a new `HTTPClient` object.
+Use <Titanium.Network.createHTTPClient> to create a new `HTTPClient` object.
 
 An `HTTPClient` object is intended to be used for a single request. It may be
 possible to re-use an `HTTPClient` object, but this use case is not tested.
@@ -31,9 +31,11 @@ original `HTTPClient` object itself, or a response object that holds all
 of the response-related properties defined for the `HTTPClient` object. So the
 callbacks can use code like this to access the response values:
 
-    httpResponse = this.responseText;
-    status = this.status;
-
+```js
+httpResponse = this.responseText;
+status = this.status;
+```
+
 ### Content-Type Header
 
 When sending a POST request with the HTTP client, the Content-Type header is set automatically
@@ -95,7 +97,7 @@ the client and server.
 In Titanium, if a connection with TLS 1.2 fails, Titanium will re-attempt the connection with
 TLS 1.1 and TLS 1.0. By default, TLS 1.2 is attempted first.
 
-Use the [tlsVersion](Titanium.Network.HTTPClient.tlsVersion) property to set the version of the TLS protocol
+Use the <Titanium.Network.HTTPClient.tlsVersion> property to set the version of the TLS protocol
 if you know the version the server is running.  If you do not know, do not set this property.
 Titanium will not fallback with a lower TLS version if the `tlsVersion` property is set.
 Setting the TLS version saves time from re-attempting connections with lower TLS versions and
@@ -107,10 +109,10 @@ Prior to Release 3.6.0, you can only set the TLS version for iOS.
 ### Android Platform Implementation Notes
 
 On Android, the `HTTPClient` uses its own cookie store which does not share cookies with the
-system cookie store used by [Titanium.UI.WebView](Titanium.UI.WebView). Developers can manage their cookies for both
-cookie stores using the methods [addHTTPCookie](Titanium.Network.addHTTPCookie), [addSystemCookie](Titanium.Network.addSystemCookie),
-[getHTTPCookies](Titanium.Network.getHTTPCookies), [getHTTPCookiesForDomain](Titanium.Network.getHTTPCookiesForDomain), [getSystemCookies](Titanium.Network.getSystemCookies),
-[removeHTTPCookie](Titanium.Network.removeHTTPCookie), [removeHTTPCookiesForDomain](Titanium.Network.removeHTTPCookiesForDomain), [removeAllHTTPCookies](Titanium.Network.removeAllHTTPCookies),
-[removeSystemCookie](Titanium.Network.removeSystemCookie), [removeAllSystemCookies](Titanium.Network.removeAllSystemCookies).
+system cookie store used by <Titanium.UI.WebView>. Developers can manage their cookies for both
+cookie stores using the methods <Titanium.Network.addHTTPCookie>, <Titanium.Network.addSystemCookie>,
+<Titanium.Network.getHTTPCookies>, <Titanium.Network.getHTTPCookiesForDomain>, <Titanium.Network.getSystemCookies>,
+<Titanium.Network.removeHTTPCookie>, <Titanium.Network.removeHTTPCookiesForDomain>, <Titanium.Network.removeAllHTTPCookies>,
+<Titanium.Network.removeSystemCookie>, <Titanium.Network.removeAllSystemCookies>.
 
 <ApiDocs/>

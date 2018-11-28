@@ -11,7 +11,7 @@ sidebar: auto
 
 3D Touch gives iOS 9 users an additional interaction dimension. On supported devices, people can quickly choose 
 app-specific actions from the Home screen by pressing on the app icon. The pressing of an application shortcut
-will then fire the `shortcutitemclick` [Titanium.App.iOS](Titanium.App.iOS) event.
+will then fire the `shortcutitemclick` <Titanium.App.iOS> event.
 
 There are static and dynamic shortcuts to differentiate:
   * Static: Can be set in the `<ios>` section of the `tiapp.xml` before launching the app.
@@ -49,7 +49,7 @@ Static shortcuts can be translated in the `i18n/<language>/app.xml` file. Dynami
 methods described [in the Wiki](https://wiki.appcelerator.org/display/guides2/Internationalization).
 
 To use this feature make sure you have a 3D Touch compatible device running iOS 9 or later. To
-check for the feature, use the [forceTouchSupported](Titanium.UI.iOS.forceTouchSupported) property.
+check for the feature, use the <Titanium.UI.iOS.forceTouchSupported> property.
 You cannot test 3D touch on the iOS simulator.
 
 <ApiDocs/>

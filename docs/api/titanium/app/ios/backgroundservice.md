@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-A background service is created by [registerBackgroundService](Titanium.App.iOS.registerBackgroundService).  
+A background service is created by <Titanium.App.iOS.registerBackgroundService>.  
 
 At creation, a local URL to a JavaScript file must be defined. The code it contains is executed 
 each time the application is no longer in the foreground, along with all other services that have 
@@ -21,7 +21,7 @@ one of the following occurs:
 * The OS terminates the service for one of the reasons discussed in 
 "Background Service Limitations", below.
 
-A background service can invoke a [Titanium.App.iOS.LocalNotification](Titanium.App.iOS.LocalNotification), which prompts users via 
+A background service can invoke a <Titanium.App.iOS.LocalNotification>, which prompts users via 
 a dialog to return to the application and provides a button that brings it back into the 
 foreground.
 

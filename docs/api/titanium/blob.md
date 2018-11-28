@@ -18,7 +18,7 @@ The `Blob` object includes a number of properties and methods specific to image 
 Android supports an [append](Titanium.Blob.append) method, but
 otherwise blobs are immutable.
 
-The [Titanium.Utils](Titanium.Utils) module provides several utility methods for working with
+The <Titanium.Utils> module provides several utility methods for working with
 blobs, including methods for converting between blobs and Base64-encoded strings,
 and methods for generating SHA-1 and SHA-256 hashes and MD5 digests from blob data.
 

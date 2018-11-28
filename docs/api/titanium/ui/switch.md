@@ -21,11 +21,11 @@ sidebar: auto
 The appearance of a `Switch` control varies by platform:
 
 * On Android, a Switch object can be styled either as a switch, checkbox or
-toggle button based on the [style](Titanium.UI.Switch.style) property. The checkbox style can
+toggle button based on the <Titanium.UI.Switch.style> property. The checkbox style can
 optionally display a label next to the control.
 
 * On iOS, a Switch appears as an iOS on/off switch and doesn't have any text associated with it.
 
-Use the [createSwitch](Titanium.UI.createSwitch) method or **`<Switch>`** Alloy element to create a switch.
+Use the <Titanium.UI.createSwitch> method or **`<Switch>`** Alloy element to create a switch.
 
 <ApiDocs/>

@@ -9,6 +9,6 @@ sidebar: auto
 
 ## Overview
 
-Use the [createCoverFlowView](Titanium.UI.createCoverFlowView) method to create a cover flow view.
+Use the <Titanium.UI.createCoverFlowView> method to create a cover flow view.
 
 <ApiDocs/>

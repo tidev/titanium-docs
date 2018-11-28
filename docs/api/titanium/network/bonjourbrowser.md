@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Use the [createBonjourBrowser](Titanium.Network.createBonjourBrowser) method to create a `BonjourBrowser` instance.
+Use the <Titanium.Network.createBonjourBrowser> method to create a `BonjourBrowser` instance.
 
 If your application publishes Bonjour services itself, that service will be discovered 
 by the browser if necessary; be prepared to perform a check if you do not want to list 

@@ -11,13 +11,13 @@ sidebar: auto
 
 The `Network` module is used to access networking related functionality.
 
-For TCP sockets, see [Titanium.Network.Socket.TCP](Titanium.Network.Socket.TCP).
+For TCP sockets, see <Titanium.Network.Socket.TCP>.
 
-The legacy [Titanium.Network.TCPSocket](Titanium.Network.TCPSocket) object is still required
+The legacy <Titanium.Network.TCPSocket> object is still required
 by the [BonjourBrowser](Titanium.Network.BonjourBrowser) and
 [BonjourService](Titanium.Network.BonjourService) objects.
 
-For all other socket needs, use [Titanium.Network.Socket.TCP](Titanium.Network.Socket.TCP).
+For all other socket needs, use <Titanium.Network.Socket.TCP>.
 
 ### App Transport Security
 

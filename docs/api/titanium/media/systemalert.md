@@ -16,7 +16,7 @@ looping, or timing control, and does not support simultaneous playback: You can 
 
 This module differs from the Sound module because it honors the ringtone volume, not the Music volume.
 
-Use the [createSystemAlert](Titanium.Media.createSystemAlert) method to create a `SystemAlert` object.
+Use the <Titanium.Media.createSystemAlert> method to create a `SystemAlert` object.
 
 Know more about [System Sound Services](https://developer.apple.com/reference/audiotoolbox/1657326-system_sound_services).
 

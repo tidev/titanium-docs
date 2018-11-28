@@ -13,9 +13,9 @@ The `Sound` object loads the entire media resource in memory before playing.  If
 support streaming, use the [AudioPlayer](Titanium.Media.AudioPlayer) API.
 
 You can control how the sound interacts with other system sounds
-by setting [audioSessionMode](Titanium.Media.audioSessionMode).
+by setting <Titanium.Media.audioSessionMode>.
 
-Use the [createSound](Titanium.Media.createSound) method to create a `Sound` object. You can play audio 
+Use the <Titanium.Media.createSound> method to create a `Sound` object. You can play audio 
 in any format supported by the target platform(s), as described in the following documents:
 
 * [Android](https://developer.android.com/guide/topics/media/media-formats#core)

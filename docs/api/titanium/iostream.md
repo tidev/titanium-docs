@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-See the [Titanium.Stream](Titanium.Stream) module for related utility methods that support asynchronous
+See the <Titanium.Stream> module for related utility methods that support asynchronous
 I/O.
 
 <ApiDocs/>

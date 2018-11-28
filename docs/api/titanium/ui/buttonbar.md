@@ -12,7 +12,7 @@ sidebar: auto
 The button bar is a set of buttons joined into a single control. Each button in a
 button bar can have a text label or an icon, but not both. 
 
-Use the [createButtonBar](Titanium.UI.createButtonBar) method or **`<ButtonBar>`** Alloy element to create a button bar.
+Use the <Titanium.UI.createButtonBar> method or **`<ButtonBar>`** Alloy element to create a button bar.
 
 The [TabbedBar](Titanium.UI.iOS.TabbedBar) control is a button bar where the 
 last selected button mantains a pressed or selected state. The following discussion

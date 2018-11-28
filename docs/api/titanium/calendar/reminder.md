@@ -9,10 +9,10 @@ sidebar: auto
 
 ## Overview
 
-Reminders should be created using the [createReminder](Titanium.Calendar.Event.createReminder) method 
+Reminders should be created using the <Titanium.Calendar.Event.createReminder> method 
 rather than directly.
 
-See [Titanium.Calendar](Titanium.Calendar) for examples of retrieving reminder information and creating 
+See <Titanium.Calendar> for examples of retrieving reminder information and creating 
 reminders for events.
 
 <ApiDocs/>

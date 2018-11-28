@@ -10,7 +10,7 @@ sidebar: auto
 ## Overview
 
 A toast notification is an unobtrusive, pop-up notification that does not
-block the UI. Use the [createNotification](Titanium.UI.createNotification) method or **`<Notification>`** Alloy element 
+block the UI. Use the <Titanium.UI.createNotification> method or **`<Notification>`** Alloy element 
 to create a Toast notification.
 
 On Android, by default, a toast notification appears centered on the bottom half of the screen.

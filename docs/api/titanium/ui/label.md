@@ -9,6 +9,6 @@ sidebar: auto
 
 ## Overview
 
-Use the [createLabel](Titanium.UI.createLabel) method or **`<Label>`** Alloy element to create a label.
+Use the <Titanium.UI.createLabel> method or **`<Label>`** Alloy element to create a label.
 
 <ApiDocs/>

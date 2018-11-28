@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Use the [createLivePhotoView](Titanium.UI.iOS.createLivePhotoView) method to create an new `LivePhotoView`.
+Use the <Titanium.UI.iOS.createLivePhotoView> method to create an new `LivePhotoView`.
 
 Specifying either a `width` or `height` property for this view will scale its `livePhoto` with 
 the aspect ratio maintained, up to a maximum size that does not exceed its parent view.

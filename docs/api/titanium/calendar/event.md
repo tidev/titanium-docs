@@ -13,6 +13,6 @@ The API supports retrieving information about existing events and creating new e
 On iOS, existing events can be modified or deleted. On Android, only recurrence rules
 can be modified.
 
-See [Titanium.Calendar](Titanium.Calendar) for examples of retrieving event information and creating events.
+See <Titanium.Calendar> for examples of retrieving event information and creating events.
 
 <ApiDocs/>

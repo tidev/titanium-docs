@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Use [createCookie](Titanium.Network.createCookie) to create a new `Cookie` object.
+Use <Titanium.Network.createCookie> to create a new `Cookie` object.
 The following is an example of how to setup and read a cookie on a web view:
 
      if (!Date.prototype.toISOString) {

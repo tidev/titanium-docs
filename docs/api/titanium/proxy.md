@@ -17,7 +17,7 @@ object.
 
 Some Titanium objects are _createable_: new instances of these objects can be created using
 factory methods. For example, a [Window](Titanium.UI.Window) object can be created using the
-[createWindow](Titanium.UI.createWindow) method.
+<Titanium.UI.createWindow> method.
 
 In general, developers should avoid modifying the prototype of a Titanium object, or
 adding methods to a Titanium object. (Adding a simple property such as an ID value is

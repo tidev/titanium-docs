@@ -15,6 +15,6 @@ It is closely related to the `ButtonBar` control. See the description of
 [ButtonBar](Titanium.UI.ButtonBar) for information on styling tabbed bars and buttons
 bars.
 
-Use the [createTabbedBar](Titanium.UI.createTabbedBar) method to create a Tabbed Bar.
+Use the <Titanium.UI.createTabbedBar> method to create a Tabbed Bar.
 
 <ApiDocs/>

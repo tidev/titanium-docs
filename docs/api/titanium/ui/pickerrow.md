@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Use the [createPickerRow](Titanium.UI.createPickerRow) method to create a picker row control. In an Alloy application,
+Use the <Titanium.UI.createPickerRow> method to create a picker row control. In an Alloy application,
 you can use a **`<PickerRow>`** element inside a `<PickerColumn>` element. You can also use `<Row>`
 as a shorthand for `<PickerRow>` (see Examples).
 

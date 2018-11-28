@@ -18,7 +18,7 @@ sidebar: auto
   <tr><th>Android</th><th>iOS</th><th>Windows Phone</th></tr>
 </table>
 
-The Email Dialog is created with the [createEmailDialog](Titanium.UI.createEmailDialog) method. The user needs to
+The Email Dialog is created with the <Titanium.UI.createEmailDialog> method. The user needs to
 register an e-mail account on the device in order to open the dialog.  The dialog will not
 open when there is not a registered e-mail account.
 

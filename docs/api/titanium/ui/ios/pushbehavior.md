@@ -12,7 +12,7 @@ sidebar: auto
 A push behavior configures the continuous or instaneous force to apply to one or more items. To
 define a push behavior:
 
-  1. Use the [createPushBehavior](Titanium.UI.iOS.createPushBehavior) method to create and define the behavior.
+  1. Use the <Titanium.UI.iOS.createPushBehavior> method to create and define the behavior.
   2. To define a force vector, either set the
      [angle](Titanium.UI.iOS.PushBehavior.angle) and
      [magnitude](Titanium.UI.iOS.PushBehavior.magnitude) properties, or set the

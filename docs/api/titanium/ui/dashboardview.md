@@ -9,10 +9,10 @@ sidebar: auto
 
 ## Overview
 
-The DashboardView is created using the [createDashboardView](Titanium.UI.createDashboardView) method or **`<DashboardView>`** 
+The DashboardView is created using the <Titanium.UI.createDashboardView> method or **`<DashboardView>`** 
 Alloy element.
 
-Dashboard view's edit mode may be activated by a longpress of a [Titanium.UI.DashboardItem](Titanium.UI.DashboardItem) item, 
+Dashboard view's edit mode may be activated by a longpress of a <Titanium.UI.DashboardItem> item, 
 unless this behavior has been disabled by the [editable](Titanium.UI.DashboardView.editable) 
 property. As a dashboard view does not inherently provide a way to exit edit mode, this must be 
 explicitly defined.

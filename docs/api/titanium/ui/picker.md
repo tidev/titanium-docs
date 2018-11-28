@@ -18,7 +18,7 @@ sidebar: auto
   <tr><th>Android</th><th>iOS</th><th>Windows Phone</th></tr>
 </table>
 
-Use the [createPicker](Titanium.UI.createPicker) method or Alloy **`<Picker>`** element to create a picker control.
+Use the <Titanium.UI.createPicker> method or Alloy **`<Picker>`** element to create a picker control.
 
 On Android, the `useSpinner` property must be enabled to support multiple columns.
 By default, the spinner is automatically sized to fit its content and can overflow

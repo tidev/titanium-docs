@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Use the [createWebView](Titanium.UI.createWebView) method or **`<WebView>`** Alloy element to create a web view.
+Use the <Titanium.UI.createWebView> method or **`<WebView>`** Alloy element to create a web view.
 
 Web views are more expensive to create than other native views because of the requirement to
 load the HTML browser into memory.
@@ -28,10 +28,10 @@ When running local web content
 (that is, content that is included in the application's resources), scripts have
 access to the Titanium namespace. In particular, when running local web content:
 
-- You can use [addEventListener](Titanium.App.addEventListener) and
-  [fireEvent](Titanium.App.fireEvent) to receive and send application-level events.
+- You can use <Titanium.App.addEventListener> and
+  <Titanium.App.fireEvent> to receive and send application-level events.
 
-- Events can be logged using the [Titanium.API](Titanium.API) logging methods.
+- Events can be logged using the <Titanium.API> logging methods.
 
 **Remote Scripts**
 
@@ -127,11 +127,11 @@ and [Activity.resume](Titanium.Android.Activity.resume) events.
 **Accessing Cookies**
 
 On Android, the web view uses the system cookie store which does not share cookies with the
-[Titanium.Network.HTTPClient](Titanium.Network.HTTPClient) cookie store. Developers can manage their cookies for both
-cookie stores using the methods [addHTTPCookie](Titanium.Network.addHTTPCookie), [addSystemCookie](Titanium.Network.addSystemCookie),
-[getHTTPCookies](Titanium.Network.getHTTPCookies), [getHTTPCookiesForDomain](Titanium.Network.getHTTPCookiesForDomain), [getSystemCookies](Titanium.Network.getSystemCookies),
-[removeHTTPCookie](Titanium.Network.removeHTTPCookie), [removeHTTPCookiesForDomain](Titanium.Network.removeHTTPCookiesForDomain), [removeAllHTTPCookies](Titanium.Network.removeAllHTTPCookies),
-[removeSystemCookie](Titanium.Network.removeSystemCookie), [removeAllSystemCookies](Titanium.Network.removeAllSystemCookies).
+<Titanium.Network.HTTPClient> cookie store. Developers can manage their cookies for both
+cookie stores using the methods <Titanium.Network.addHTTPCookie>, <Titanium.Network.addSystemCookie>,
+<Titanium.Network.getHTTPCookies>, <Titanium.Network.getHTTPCookiesForDomain>, <Titanium.Network.getSystemCookies>,
+<Titanium.Network.removeHTTPCookie>, <Titanium.Network.removeHTTPCookiesForDomain>, <Titanium.Network.removeAllHTTPCookies>,
+<Titanium.Network.removeSystemCookie>, <Titanium.Network.removeAllSystemCookies>.
 
 ### For More Information
 

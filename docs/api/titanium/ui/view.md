@@ -11,7 +11,7 @@ sidebar: auto
 
 The `View` is the base type for all UI widgets in Titanium.
 
-You use the [createView](Titanium.UI.createView) method or **`<View>`** Alloy element to create a View.
+You use the <Titanium.UI.createView> method or **`<View>`** Alloy element to create a View.
 
 ### Units and Coordinates
 
@@ -113,9 +113,9 @@ system to indicate actual calculated positions and sizes.
 The [height](Titanium.UI.View.height) and [width](Titanium.UI.View.width) properties
 accept several special values:
 
-*   [FILL](Titanium.UI.FILL) specifies that the view should fill the parent in this
+*   <Titanium.UI.FILL> specifies that the view should fill the parent in this
     dimension.
-*   [SIZE](Titanium.UI.SIZE) specifies that the view should adjust this size to fit its
+*   <Titanium.UI.SIZE> specifies that the view should adjust this size to fit its
     contents, such as a label's text or a view's children.
 *   'auto' specifies that the view should choose either `FILL` or `SIZE` behavior.
     The use of `auto` is deprecated, and should be replaced with the SIZE or FILL constants if it is necessary to set the view's behavior explicitly.
@@ -146,10 +146,10 @@ a layout cycle.
 Four accessibility-related view properties became available in Titanium Mobile 3.0.0 for iOS
 and Android:
 
-* [accessibilityLabel](Titanium.UI.View.accessibilityLabel)
-* [accessibilityValue](Titanium.UI.View.accessibilityValue)
-* [accessibilityHint](Titanium.UI.View.accessibilityHint)
-* [accessibilityHidden](Titanium.UI.View.accessibilityHidden)
+* <Titanium.UI.View.accessibilityLabel>
+* <Titanium.UI.View.accessibilityValue>
+* <Titanium.UI.View.accessibilityHint>
+* <Titanium.UI.View.accessibilityHidden>
 
 The first three, `accessibilityLabel`, `accessibilityValue` and `accessibilityHint`, are for setting text
 that will be relayed to the user by the assistive service (such as TalkBack on Android or VoiceOver
@@ -191,18 +191,18 @@ For best results on ImageView set up the `backgroundLeftCap` and `backgroundTopC
 
 Four new view related properties became available in Titanium Mobile 3.3.0 for iOS.
 
-* [viewShadowRadius](Titanium.UI.View.viewShadowRadius)
-* [viewShadowColor](Titanium.UI.View.viewShadowColor)
-* [viewShadowOffset](Titanium.UI.View.viewShadowOffset)
-* [clipMode](Titanium.UI.View.clipMode)
+* <Titanium.UI.View.viewShadowRadius>
+* <Titanium.UI.View.viewShadowColor>
+* <Titanium.UI.View.viewShadowOffset>
+* <Titanium.UI.View.clipMode>
 
 The first three, `viewShadowColor`, `viewShadowRadius` and `viewShadowOffset` control the shadow associated with the view.
 The shadow of the view is drawn using a rounded rectangle with the arc radius set to the `borderRadius` property.
 
 The `clipMode` property lets the user control the clipping behavior of the View.
-Setting this to [CLIP_MODE_ENABLED](Titanium.UI.iOS.CLIP_MODE_ENABLED) enforces all child views to be clipped to this views bounds.
-Setting this to [CLIP_MODE_DISABLED](Titanium.UI.iOS.CLIP_MODE_DISABLED) allows child views to be drawn outside the bounds of this view.
-When set to [CLIP_MODE_DEFAULT](Titanium.UI.iOS.CLIP_MODE_DEFAULT) or when this property is not set, clipping behavior is defined by the following rules applied in order.
+Setting this to <Titanium.UI.iOS.CLIP_MODE_ENABLED> enforces all child views to be clipped to this views bounds.
+Setting this to <Titanium.UI.iOS.CLIP_MODE_DISABLED> allows child views to be drawn outside the bounds of this view.
+When set to <Titanium.UI.iOS.CLIP_MODE_DEFAULT> or when this property is not set, clipping behavior is defined by the following rules applied in order.
 
 * If the `viewShadowColor` is defined to be a color with alpha > 0, clipping is disabled.
 * If the `borderWidth` or `borderRadius` of the view is set to a value > 0, clipping is enabled.

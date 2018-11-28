@@ -17,10 +17,10 @@ to a stream might block.
 
 See also:
 
-* [Titanium.IOStream](Titanium.IOStream)
-* [Titanium.BlobStream](Titanium.BlobStream)
-* [Titanium.BufferStream](Titanium.BufferStream)
-* [Titanium.Filesystem.FileStream](Titanium.Filesystem.FileStream)
-* [Titanium.Network.Socket.TCP](Titanium.Network.Socket.TCP)
+* <Titanium.IOStream>
+* <Titanium.BlobStream>
+* <Titanium.BufferStream>
+* <Titanium.Filesystem.FileStream>
+* <Titanium.Network.Socket.TCP>
 
 <ApiDocs/>

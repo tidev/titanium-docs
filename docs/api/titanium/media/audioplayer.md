@@ -16,10 +16,10 @@ and will release all audio-player related resources. After this method has been 
 the object should not be accessed anymore.
 
 On iOS, you can control how the audio stream interacts with other system sounds
-by setting [audioSessionCategory](Titanium.Media.audioSessionCategory). Since Titanium 7.5.0, this API
+by setting <Titanium.Media.audioSessionCategory>. Since Titanium 7.5.0, this API
 uses the [AVPlayer API](https://developer.apple.com/documentation/avfoundation/avplayer) for a more modern
 and performant audio playback.
 
-Use the [createAudioPlayer](Titanium.Media.createAudioPlayer) method to create an audio player.
+Use the <Titanium.Media.createAudioPlayer> method to create an audio player.
 
 <ApiDocs/>

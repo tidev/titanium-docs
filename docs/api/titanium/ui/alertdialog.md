@@ -18,7 +18,7 @@ sidebar: auto
   <tr><th>Android</th><th>iOS</th><th>Windows Phone</th></tr>
 </table>
 
-An alert dialog is created using [createAlertDialog](Titanium.UI.createAlertDialog) or **`<AlertDialog>`** Alloy element.
+An alert dialog is created using <Titanium.UI.createAlertDialog> or **`<AlertDialog>`** Alloy element.
 
 Although this dialog always appears in the middle of the display (not touching the edges),
 other aspects of its aesthetics and the way the user interacts with it are different for each
@@ -51,9 +51,9 @@ obscured text or login identifier and password. Entered values can be captured w
 `cancel` event.
 
 Starting at Titanium SDK 5.1.0, you can also specify the `placeholder`, `keyboardType` and `returnKeyType`
-properties when using the alert dialog style [PLAIN_TEXT_INPUT](Titanium.UI.iOS.AlertDialogStyle.PLAIN_TEXT_INPUT) or
-[SECURE_TEXT_INPUT](Titanium.UI.iOS.AlertDialogStyle.SECURE_TEXT_INPUT).
-When using the alert dialog style [LOGIN_AND_PASSWORD_INPUT](Titanium.UI.iOS.AlertDialogStyle.LOGIN_AND_PASSWORD_INPUT), you can
+properties when using the alert dialog style <Titanium.UI.iOS.AlertDialogStyle.PLAIN_TEXT_INPUT> or
+<Titanium.UI.iOS.AlertDialogStyle.SECURE_TEXT_INPUT>.
+When using the alert dialog style <Titanium.UI.iOS.AlertDialogStyle.LOGIN_AND_PASSWORD_INPUT>, you can
 specify the `loginPlaceholder`, `loginKeyboardType` and `loginReturnKeyType` properties for the login field,
 as well as the `passwordPlaceholder`, `passwordKeyboardType` and `passwordReturnKeyType` properties for the password field.
 

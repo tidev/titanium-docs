@@ -28,11 +28,11 @@ The `*Text()` methods are equivalent to calling `*Data()` with a `'text'` or `'t
 type. These work with plain Unicode strings.
 
 An image is stored using the `'image'` type, or an explicit image MIME type, and is returned as
-a [Titanium.Blob](Titanium.Blob) (binary) type.
+a <Titanium.Blob> (binary) type.
 
 A URL is stored with the `'url'` or `'text/uri-list'` type, and is returned as a string.
 
 Any data type that is specified but not correctly mapped to a clipboard type by the system is
-retrieved as a [Titanium.Blob](Titanium.Blob) type.
+retrieved as a <Titanium.Blob> type.
 
 <ApiDocs/>

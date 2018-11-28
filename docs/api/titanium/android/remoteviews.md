@@ -23,7 +23,7 @@ To use a remote view hierarchy in a notification, see
 Because the remote view hierarchy belongs to another process, you cannot call methods on it
 directly, but you can call methods on the `RemoteViews` object to update views in the
 heirarchy by ID. To reference a view inside the layout, use the
-[Titanium.App.Android.R](Titanium.App.Android.R) object to reference the view's ID. For example, if you have a 
+<Titanium.App.Android.R> object to reference the view's ID. For example, if you have a 
 view with the ID `notify_imageview`, you can refer to it using:
     
     Ti.App.Android.R.id.notify_imageview

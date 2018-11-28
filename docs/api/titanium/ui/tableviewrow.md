@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Use the [createTableViewRow](Titanium.UI.createTableViewRow) method or **`<TableViewRow>`** Alloy element to create
+Use the <Titanium.UI.createTableViewRow> method or **`<TableViewRow>`** Alloy element to create
 a table view row.
 
 These may be explicitly added to [TableViewSection](Titanium.UI.TableViewSection) objects, which are applied
@@ -72,10 +72,10 @@ On Android, the text color does not change when the row is selected.
 
 A common requirement is to enable the user to interact with table rows using swipe gestures.
 As this event is not available for the `TableViewRow` object, it will not "bubble up" to the
-`TableView`, where a [swipe](Titanium.UI.TableView.swipe) is recognized.
+`TableView`, where a <Titanium.UI.TableView.swipe> is recognized.
 
 A typical solution is to use a standard view as a container, or wrapper, for all each row's child
-views, because it recognizes [swipe](Titanium.UI.View.swipe) events and allows them to pass to the table.
+views, because it recognizes <Titanium.UI.View.swipe> events and allows them to pass to the table.
 Each child view should have touch events disabled, so that the container view provides a reliable
 source for these events. Refer to the "Row Swipe Gestures" example for a demonstration.
 

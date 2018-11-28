@@ -10,7 +10,7 @@ sidebar: auto
 ## Overview
 
 Assign one of the constants to the `icon` property of either a
-[Titanium.UI.Windows.AppBarButton](Titanium.UI.Windows.AppBarButton) or [Titanium.UI.Windows.AppBarToggleButton](Titanium.UI.Windows.AppBarToggleButton)
+<Titanium.UI.Windows.AppBarButton> or <Titanium.UI.Windows.AppBarToggleButton>
 object to create a Windows Phone system button for an application bar.
 
     var addButton = Ti.UI.Windows.createAppBarButton({

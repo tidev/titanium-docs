@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-A `Toolbar` is created by the [createToolbar](Titanium.UI.createToolbar) factory method or **`<Toolbar>`** Alloy element.
+A `Toolbar` is created by the <Titanium.UI.createToolbar> factory method or **`<Toolbar>`** Alloy element.
 
 A `Toolbar` can contain buttons, as well as certain other widgets, including text fields and
 labels.

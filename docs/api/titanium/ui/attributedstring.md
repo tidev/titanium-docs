@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-The AttributedString proxy is created with the [createAttributedString](Titanium.UI.createAttributedString) method.
+The AttributedString proxy is created with the <Titanium.UI.createAttributedString> method.
 
 The `text` property must be set initially in the constructor when creating an attributed string.
 The [attributes](Titanium.UI.AttributedString.attributes) can either be set in the constructor or after it has been created.

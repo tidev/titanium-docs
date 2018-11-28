@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-Use the [createStream](Titanium.Stream.createStream) method to create a `BlobStream` instance from a
+Use the <Titanium.Stream.createStream> method to create a `BlobStream` instance from a
 `Blob`.
 
 <ApiDocs/>

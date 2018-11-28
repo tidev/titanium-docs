@@ -24,7 +24,7 @@ global [String](Global.String) object.
 ### console
 
 Titanium provides [console](Global.console) support familiar to many javascript developers
-for logging at the toplevel, in addition to the [Titanium.API](Titanium.API) logging facilities.
+for logging at the toplevel, in addition to the <Titanium.API> logging facilities.
 
 ### Timers
 
@@ -41,6 +41,6 @@ for the [AlertDialog](Titanium.UI.AlertDialog) module.
 
 ### Locale
 
-The `L` macro can also be used as an alias for the [getString](Titanium.Locale.getString) method.
+The `L` macro can also be used as an alias for the <Titanium.Locale.getString> method.
 
 <ApiDocs/>

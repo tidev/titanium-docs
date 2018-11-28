@@ -17,7 +17,7 @@ The drawer-layout components acts as a top-level container for window content th
 for interactive "drawer" views to be pulled out from one or both vertical edges of the window.
 It is represented by a `centerView` and optional `leftView` and `rightView` components that 
 can be swiped in and out with additional configuration and transitions. Learn more about 
-drawer-layouts in it's dedicated [Titanium.UI.Android.DrawerLayout](Titanium.UI.Android.DrawerLayout) docs.
+drawer-layouts in it's dedicated <Titanium.UI.Android.DrawerLayout> docs.
 
 ### Action Bar
 
@@ -25,7 +25,7 @@ An action bar is a UI feature that identifies the application and user location,
 provides user actions and navigation modes.
 
 The Titanium SDK lets you customize the look of the action bar and add action items.
-Action items are added using the [Titanium.Android.Menu](Titanium.Android.Menu) API.
+Action items are added using the <Titanium.Android.Menu> API.
 
 For more information about the action bar, see the
 [Titanium.Android.ActionBar API reference](Titanium.Android.ActionBar).
@@ -86,7 +86,7 @@ For more information about notifications, see the
 [Titanium.Android.Notification API reference](Titanium.Android.Notification).
 
 For Android toast notifications (pop-up notifications sent while the application is in the
-foreground), see [Titanium.UI.Notification](Titanium.UI.Notification).
+foreground), see <Titanium.UI.Notification>.
 
 ### Options Menu
 
@@ -118,7 +118,7 @@ For more information about services, see the
 Starting from Android 6.0 (API level 23), users need to grant certain permissions to apps while the
 app is running. You can read it more [here](https://developer.android.com/training/permissions/requesting.html).
 
-In Titanium SDK, to support this, we have the [requestPermissions](Titanium.Android.requestPermissions) method. It is used to 
+In Titanium SDK, to support this, we have the <Titanium.Android.requestPermissions> method. It is used to 
 request any permission you may need. An example of using it is shown below:
 
     var permissions = [ 'android.permission.CAMERA', 'android.permission.READ_EXTERNAL_STORAGE' ];

@@ -23,8 +23,8 @@ The third column is constant (0,0,1).
 On iOS, the matrix terms, `a`, `b`, `c`, `d`, `tx`, and `ty`,
 are available as properties. On Android, the matrix terms are not available as properties.
 
-Use the [create2DMatrix](Titanium.UI.create2DMatrix) method to create a new 2D matrix. You can
-pass an optional [MatrixCreationDict](MatrixCreationDict) dictionary to the method to initialize the
+Use the <Titanium.UI.create2DMatrix> method to create a new 2D matrix. You can
+pass an optional <MatrixCreationDict> dictionary to the method to initialize the
 matrix. For example, the following creates a new matrix with a 45 degree rotation.
 
     var m = Ti.UI.create2DMatrix({

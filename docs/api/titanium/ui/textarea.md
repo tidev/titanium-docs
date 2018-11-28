@@ -18,6 +18,6 @@ sidebar: auto
   <tr><th>Android</th><th>iOS</th><th>Windows Phone</th></tr>
 </table>
 
-Use the [createTextArea](Titanium.UI.createTextArea) method or **&lt;TextArea&gt;** Alloy element to create a text area.
+Use the <Titanium.UI.createTextArea> method or **&lt;TextArea&gt;** Alloy element to create a text area.
 
 <ApiDocs/>

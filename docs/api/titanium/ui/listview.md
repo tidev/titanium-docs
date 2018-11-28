@@ -18,7 +18,7 @@ sidebar: auto
   <tr><th>Android</th><th>iOS</th><th>Windows Phone</th></tr>
 </table>
 
-Use the [createListView](Titanium.UI.createListView) method or **`<ListView>`** Alloy element to create a `ListView`.
+Use the <Titanium.UI.createListView> method or **`<ListView>`** Alloy element to create a `ListView`.
 
 A `ListView` object is a container for [ListSection](Titanium.UI.ListSection) 
 objects that are, in turn, containers for [ListItem](Titanium.UI.ListItem) objects. This is 
@@ -39,7 +39,7 @@ For more instructions and examples of using `ListView`, refer to the
 
 ### Creating a List
 
-To create a `ListView` object using JavaScript, pass an array of [ListDataItem](ListDataItem) objects to the list section's
+To create a `ListView` object using JavaScript, pass an array of <ListDataItem> objects to the list section's
 [items](Titanium.UI.ListSection.items) property, which creates and adds each array
 element as a row to a single [ListSection](Titanium.UI.ListSection). Use the `ListView`'s
 [sections](Titanium.UI.ListView.sections) property to add the section(s) to the list view.
@@ -51,21 +51,21 @@ See the "List View Sections" example.
 
 ### Customizing the List Items
 
-To create a custom list view, you need to define an [ItemTemplate](ItemTemplate) and define each view
+To create a custom list view, you need to define an <ItemTemplate> and define each view
 component you want to add. Use the `bindId` property of the child template to bind a dictionary
 property in the item data to a child view component.
 
-Map the template to a style name using the [templates](Titanium.UI.ListView.templates) property, then use
-the style name to  set the [defaultItemTemplate](Titanium.UI.ListView.defaultItemTemplate) property to globally change
-all item styles or set the [template](ListDataItem.template) property when passing in your list data
+Map the template to a style name using the <Titanium.UI.ListView.templates> property, then use
+the style name to  set the <Titanium.UI.ListView.defaultItemTemplate> property to globally change
+all item styles or set the <ListDataItem.template> property when passing in your list data
 to apply the template to that one list item or to override the globally defined template.
 
-On iOS, you can specify one of the template constants for the [template](ListDataItem.template) property
-or [defaultItemTemplate](Titanium.UI.ListView.defaultItemTemplate):
-[LIST_ITEM_TEMPLATE_CONTACTS](Titanium.UI.LIST_ITEM_TEMPLATE_CONTACTS), [LIST_ITEM_TEMPLATE_SETTINGS](Titanium.UI.LIST_ITEM_TEMPLATE_SETTINGS)
-or [LIST_ITEM_TEMPLATE_SUBTITLE](Titanium.UI.LIST_ITEM_TEMPLATE_SUBTITLE).
+On iOS, you can specify one of the template constants for the <ListDataItem.template> property
+or <Titanium.UI.ListView.defaultItemTemplate>:
+<Titanium.UI.LIST_ITEM_TEMPLATE_CONTACTS>, <Titanium.UI.LIST_ITEM_TEMPLATE_SETTINGS>
+or <Titanium.UI.LIST_ITEM_TEMPLATE_SUBTITLE>.
 
-See [Titanium.UI.ListItem](Titanium.UI.ListItem) for a detailed description of creating list items with a custom
+See <Titanium.UI.ListItem> for a detailed description of creating list items with a custom
 item template and see the "List View with Custom Item Template" example for a sample.
 
 ### List and Table Views
@@ -99,12 +99,12 @@ A `ListItem` object is not created in the same method as a `TableViewRow`.
 A `ListItem` is create by passing an array of `ListDataItem` objects to the `ListSection`.
 
 You cannot add views to a `ListItem` using the `add` method, which could be done with a
-`TableViewRow`. To add views to a `ListItem`, you need to define an [ItemTemplate](ItemTemplate),
+`TableViewRow`. To add views to a `ListItem`, you need to define an <ItemTemplate>,
 which is bound to a list data item using the `template` property.
 
 You cannot explicitly set properties or bind events for a `ListItem`.  You have to set them using the
-`properties` dictionary of a [ListDataItem](ListDataItem) or [ItemTemplate](ItemTemplate) and the `events` dictionary of the
-[ItemTemplate](ItemTemplate) or [ViewTemplate](ViewTemplate), respectively.
+`properties` dictionary of a <ListDataItem> or <ItemTemplate> and the `events` dictionary of the
+<ItemTemplate> or <ViewTemplate>, respectively.
 
 #### API Differences
 

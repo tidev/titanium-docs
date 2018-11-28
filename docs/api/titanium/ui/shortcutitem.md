@@ -10,8 +10,8 @@ sidebar: auto
 ## Overview
 
 Allows the creation of application shortcuts, which can be detected using
-the `shortcutitemclick` event from [Titanium.App](Titanium.App).
+the `shortcutitemclick` event from <Titanium.App>.
 
-Use the [createShortcutItem](Titanium.UI.createShortcutItem) method to create a shortcut.
+Use the <Titanium.UI.createShortcutItem> method to create a shortcut.
 
 <ApiDocs/>

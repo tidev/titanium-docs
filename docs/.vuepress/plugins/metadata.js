@@ -1,9 +1,8 @@
 const fs = require('fs-extra');
 const path = require('path');
-const { logger } = require('@vuepress/shared-utils');
 
-const metadataFilePath = path.resolve(__dirname, '..', '..', 'api', 'api.json');
-const apiMetadata = JSON.parse(fs.readFileSync(metadataFilePath).toString());
+const { typesMetadata, getLinkForKeyPath } = require('../utils/metadata');
+
 let processed = {};
 
 /**
@@ -24,7 +23,7 @@ module.exports = (options = {}, context) => ({
     }
 
     const typeName = page.frontmatter.metadataKey || page.title;
-    const metadata = apiMetadata[typeName];
+    const metadata = typesMetadata[typeName];
 
     if (!metadata) {
       return;
@@ -53,10 +52,13 @@ module.exports = (options = {}, context) => ({
   clientDynamicModules() {
     return {
       name: 'metadata.js',
-      content: `export default ${JSON.stringify(apiMetadata)}`
+      content: `export default ${JSON.stringify(typesMetadata)}`
     }
   },
 
+  /**
+   * Enhance the Koa dev server and serve api metadata directly from memory
+   */
   enhanceDevServer (app) {
     app.use((ctx, next) => {
       ctx.assert(ctx.request.accepts('json'), 406);
@@ -77,11 +79,15 @@ module.exports = (options = {}, context) => ({
     });
   },
 
+  /**
+   * Split metadata per type and generate a JSON file for each one that gets
+   * loaded by Vuex on subsequent page loads once Vue takes over on the client.
+   */
   async generated () {
     const tempMetadataPath = path.resolve(context.tempPath, 'metadata');
     fs.ensureDirSync(tempMetadataPath);
     for(let typeName in processed) {
-      const metadata = apiMetadata[typeName];
+      const metadata = typesMetadata[typeName];
       const destPath = path.resolve(tempMetadataPath, `${typeName.toLowerCase()}.json`);
       fs.writeFileSync(destPath, JSON.stringify(metadata));
     }
@@ -91,9 +97,9 @@ module.exports = (options = {}, context) => ({
 });
 
 function findMetadataWithLowerCasedKey(lowerCasedTypeName) {
-  for(let typeName in apiMetadata) {
+  for(let typeName in typesMetadata) {
     if (typeName.toLowerCase() === lowerCasedTypeName) {
-      return apiMetadata[typeName];
+      return typesMetadata[typeName];
     }
   }
 
@@ -105,6 +111,8 @@ function findMetadataWithLowerCasedKey(lowerCasedTypeName) {
  *
  * Applies transforms to the Metadata so we can properly use it in our VuePress environment.
  * Also collects additionals headers required for the sidebar navigation on API pages.
+ *
+ * Each instance of this processor can only be used to transform one single type.
  */
 class MetadataProcessor {
   constructor(context) {
@@ -115,6 +123,11 @@ class MetadataProcessor {
     this.hasConstants = false;
   }
 
+  /**
+   * Prepares metadata for usage in VuePress and collects additional headers
+   * which will be inserted manually into the page. Changes to the metadata
+   * will be written back into the given object.
+   */
   transoformMetadataAndCollectHeaders(metadata) {
     delete metadata.description;
 
@@ -214,59 +227,22 @@ class MetadataProcessor {
     const mdLinkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
 
     markdownString = markdownString.replace(customLinkPattern, (match, linkValue) => {
-      const link = this.getTypeLinkForKeyPath(linkValue);
+      const link = getLinkForKeyPath(linkValue, this.base);
       if (link) {
-        return `[${link.name}](${this.base}${link.relativeUrl})`;
+        return `[${link.name}](${link.path})`;
       }
       return match;
     });
 
     markdownString = markdownString.replace(mdLinkPattern, (match, linkText, linkValue) => {
-      const link = this.getTypeLinkForKeyPath(linkValue);
+      const link = getLinkForKeyPath(linkValue, this.base);
       if (link) {
-        return `[${link.name}](${this.base}${link.relativeUrl})`;
+        return `[${link.name}](${link.path})`;
       }
       return match;
     });
 
     return markdownString;
-  }
-
-  getTypeLinkForKeyPath(keyPath) {
-    const prefix = 'api';
-
-    if (apiMetadata[keyPath]) {
-      const metadata = apiMetadata[keyPath];
-      return {
-        name: metadata.name,
-        relativeUrl: `${prefix}/${metadata.name.toLowerCase().replace(/\./g, '/')}.html`
-      }
-    }
-
-    const parentKeyPath = keyPath.substring(0, keyPath.lastIndexOf('.'));
-    const memberName = keyPath.substring(parentKeyPath.length + 1);
-    const parentMetadata = apiMetadata[parentKeyPath];
-    if (!parentMetadata) {
-      return null;
-    }
-
-    const memberTypeCandidates = ['properties', 'methods', 'events'];
-    for (let i = 0; i < memberTypeCandidates.length; i++) {
-      const members = parentMetadata[memberTypeCandidates[i]];
-      if (!members) {
-        continue;
-      }
-
-      const match = members.find(memberMetadata => memberMetadata.name === memberName);
-      if (match) {
-        return {
-          name: match.name,
-          relativeUrl: `${prefix}/${parentMetadata.name.toLowerCase().replace(/\./g, '/')}.html#${match.name.toLowerCase()}`
-        }
-      }
-    }
-
-    return null;
   }
 
   sortByName(unsortedArray) {

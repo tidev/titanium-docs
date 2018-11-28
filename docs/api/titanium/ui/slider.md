@@ -20,7 +20,7 @@ sidebar: auto
 
 A slider lets the user select from a range of values by dragging the slider thumb.
 
-Use the [createSlider](Titanium.UI.createSlider) method or **`<Slider>`** Alloy element to create a slider.
+Use the <Titanium.UI.createSlider> method or **`<Slider>`** Alloy element to create a slider.
 
 ### Android Platform Implementation Notes
 

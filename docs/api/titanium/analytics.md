@@ -33,11 +33,11 @@ should not be used.
 **GDPR Compliance**
 
 The Ti.Analytics namespace in Titanium is GDPR compliant since SDK 7.2.0. End users
-should be able to opt out of Analytics using the [optedOut](Titanium.Analytics.optedOut) property.
+should be able to opt out of Analytics using the <Titanium.Analytics.optedOut> property.
 If a user opted out from Analytics and you still call Analytics events, they will be ignored.
 
 Note: This does not affect your app until you make use of the `optedOut` property. Once
-enabled for your users (e.g. by having a [Titanium.UI.Switch](Titanium.UI.Switch) in your settings), you
+enabled for your users (e.g. by having a <Titanium.UI.Switch> in your settings), you
 should handle it within your app logic.
 
 <ApiDocs/>

@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-The DocumentViewer is created by the [createDocumentViewer](Titanium.UI.iOS.createDocumentViewer) method.
+The DocumentViewer is created by the <Titanium.UI.iOS.createDocumentViewer> method.
 
 Use this class to present an user interface for previewing files,
 such as an e-mail program that previews attachments.
@@ -25,7 +25,7 @@ The DocumentViewer displays previews for the following document types:
   * Comma-separated value files (CSV)
 
 Note: Using HTML content in the DocumentViewer is not recommended, since it does not support
-all HTML-capabilities. Please use [Titanium.UI.WebView](Titanium.UI.WebView) to display complex HTML files.
+all HTML-capabilities. Please use <Titanium.UI.WebView> to display complex HTML files.
 
 You can launch the document either in the document viewer or with another application with the
 options menu. To use the options menu, you need to specify a view with the `show` method to
@@ -39,8 +39,8 @@ such as printing the document or opening the document in another application.
 When using the DocumentViewer in iOS 11 and later, documents need to be placed in the app-bundle
 in order to be shared to third-party apps. This is a privacy restriction and can be solved by
 using either a document from the `Resources` directory (classic Titanium) or `app/assets` (Alloy).
-Alternatively, documents can also be stored in the [applicationCacheDirectory](Titanium.Filesystem.applicationCacheDirectory)
-or [applicationDataDirectory](Titanium.Filesystem.applicationDataDirectory).
+Alternatively, documents can also be stored in the <Titanium.Filesystem.applicationCacheDirectory>
+or <Titanium.Filesystem.applicationDataDirectory>.
 
 **Note for iOS 11.2 and later**
 Apple introduced a regression in iOS 11.2 that forces **all** files to be in the application data

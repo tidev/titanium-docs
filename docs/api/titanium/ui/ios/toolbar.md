@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-A `Toolbar` is created by the [createToolbar](Titanium.UI.iOS.createToolbar) factory method or **`<Toolbar>`** Alloy element.
+A `Toolbar` is created by the <Titanium.UI.iOS.createToolbar> factory method or **`<Toolbar>`** Alloy element.
 
 A `Toolbar` can contain buttons, as well as certain other widgets, including text fields and
 labels.
@@ -31,7 +31,7 @@ such as `touchstart` and `touchend`.
 
 **Note**:
 This API has been deprecated in Titanium SDK 6.2.0 in favor of the cross-platform
-UI component [Titanium.UI.Toolbar](Titanium.UI.Toolbar) that can also be used on Android. The API itself
+UI component <Titanium.UI.Toolbar> that can also be used on Android. The API itself
 did not change, so it is a drop-in replacement for existing usages. This deprecated
 API will be removed in Titanium SDK 8.0.0 and later.
 

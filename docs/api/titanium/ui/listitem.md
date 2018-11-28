@@ -9,11 +9,11 @@ sidebar: auto
 
 ## Overview
 
-A list item is a combination of a [ListDataItem](ListDataItem) and [ItemTemplate](ItemTemplate).  The list data item
+A list item is a combination of a <ListDataItem> and <ItemTemplate>.  The list data item
 represents the actual data, while the item template represents the style elements of the item.
 
 You should not create `ListItem` objects with a JavaScript factory method, as you do other Titanium proxies.
-Instead, you should pass a [ListDataItem](ListDataItem) array to the `setItems` method of a `ListSection`. The list data items 
+Instead, you should pass a <ListDataItem> array to the `setItems` method of a `ListSection`. The list data items 
 contain the data you want to display in the list.
 
 Alloy applications can use **`<ListItem>`** elements to create `ListItem` objects. `<ListItem>` elements
@@ -59,37 +59,37 @@ template. The child templates are item templates with two extra properties:
 
 A list template supports the following view classes:
 
-  * [Titanium.UI.ActivityIndicator](Titanium.UI.ActivityIndicator)
-  * [Titanium.UI.Button](Titanium.UI.Button)
-  * [Titanium.UI.ButtonBar](Titanium.UI.ButtonBar)
-  * [Titanium.UI.ImageView](Titanium.UI.ImageView)
-  * [Titanium.UI.Label](Titanium.UI.Label)
-  * [Titanium.UI.MaskedImage](Titanium.UI.MaskedImage)
-  * [Titanium.UI.ProgressBar](Titanium.UI.ProgressBar)
-  * [Titanium.UI.Picker](Titanium.UI.Picker)
-  * [Titanium.UI.ScrollableView](Titanium.UI.ScrollableView)
-  * [Titanium.UI.Slider](Titanium.UI.Slider)
-  * [Titanium.UI.Switch](Titanium.UI.Switch)
-  * [Titanium.UI.TextArea](Titanium.UI.TextArea)
-  * [Titanium.UI.TextField](Titanium.UI.TextField)
-  * [Titanium.UI.iOS.BlurView](Titanium.UI.iOS.BlurView)
-  * [Titanium.UI.iOS.LivePhotoView](Titanium.UI.iOS.LivePhotoView)
-  * [Titanium.UI.iOS.Stepper](Titanium.UI.iOS.Stepper)
-  * [Titanium.UI.iOS.TabbedBar](Titanium.UI.iOS.TabbedBar)
+  * <Titanium.UI.ActivityIndicator>
+  * <Titanium.UI.Button>
+  * <Titanium.UI.ButtonBar>
+  * <Titanium.UI.ImageView>
+  * <Titanium.UI.Label>
+  * <Titanium.UI.MaskedImage>
+  * <Titanium.UI.ProgressBar>
+  * <Titanium.UI.Picker>
+  * <Titanium.UI.ScrollableView>
+  * <Titanium.UI.Slider>
+  * <Titanium.UI.Switch>
+  * <Titanium.UI.TextArea>
+  * <Titanium.UI.TextField>
+  * <Titanium.UI.iOS.BlurView>
+  * <Titanium.UI.iOS.LivePhotoView>
+  * <Titanium.UI.iOS.Stepper>
+  * <Titanium.UI.iOS.TabbedBar>
 
 For example, suppose you have a list data item defined as `{foo:{text: 'foobar'}}` and an item
 template defined as `{childTemplates: [{type: 'Ti.UI.Label', bindId: 'foo'}]}`.  The `foo`
 property in the list data item binds to the label in the template, which sets the `text`
 property of the label in the template to the `text` property in the list data item.
 
-To bind the list data item to an item template, use the [templates](Titanium.UI.ListView.templates)
+To bind the list data item to an item template, use the <Titanium.UI.ListView.templates>
 property to map the template to a style name, then use the style name to either set the
-[defaultItemTemplate](Titanium.UI.ListView.defaultItemTemplate) property to globally set the style for all items or set the
+<Titanium.UI.ListView.defaultItemTemplate> property to globally set the style for all items or set the
 `template` property of the list data item to override or individually set the style.
 
-On iOS, you can specify one of the template constants for the [template](ListDataItem.template) property
-or [defaultItemTemplate](Titanium.UI.ListView.defaultItemTemplate) property: [LIST_ITEM_TEMPLATE_CONTACTS](Titanium.UI.LIST_ITEM_TEMPLATE_CONTACTS),
-[LIST_ITEM_TEMPLATE_SETTINGS](Titanium.UI.LIST_ITEM_TEMPLATE_SETTINGS) or [LIST_ITEM_TEMPLATE_SUBTITLE](Titanium.UI.LIST_ITEM_TEMPLATE_SUBTITLE).
+On iOS, you can specify one of the template constants for the <ListDataItem.template> property
+or <Titanium.UI.ListView.defaultItemTemplate> property: <Titanium.UI.LIST_ITEM_TEMPLATE_CONTACTS>,
+<Titanium.UI.LIST_ITEM_TEMPLATE_SETTINGS> or <Titanium.UI.LIST_ITEM_TEMPLATE_SUBTITLE>.
 
 ### Eventing
 

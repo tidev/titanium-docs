@@ -19,16 +19,16 @@ sidebar: auto
 </table>
 
 A progress bar is used for displaying an ongoing activity with a defined progression.
-For an activity without a defined progression, you can use [Titanium.UI.ActivityIndicator](Titanium.UI.ActivityIndicator).
+For an activity without a defined progression, you can use <Titanium.UI.ActivityIndicator>.
 
 Unlike most views, progress bars are hidden by default, so you must explicitly
 show the progress bar.
 
-Use the [createProgressBar](Titanium.UI.createProgressBar) method or **`<ProgressBar>`** Alloy element to create a progress bar.
+Use the <Titanium.UI.createProgressBar> method or **`<ProgressBar>`** Alloy element to create a progress bar.
 
 ### Android Platform Notes
 
-In SDK 3.0, use [Titanium.UI.Android.ProgressIndicator](Titanium.UI.Android.ProgressIndicator) to display a progress indicator
+In SDK 3.0, use <Titanium.UI.Android.ProgressIndicator> to display a progress indicator
 in a modal dialog or window title bar. Use `ProgressBar` to display the progress bar inside
 another view.
 

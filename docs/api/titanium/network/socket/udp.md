@@ -20,6 +20,6 @@ For example, for a client-side socket, you define
 A familiarity with the basics of BSD socket programming is recommended before using
 sockets with Titanium.
 
-Use the [createUDP](Titanium.Network.Socket.createUDP) method to create a UDP socket.
+Use the <Titanium.Network.Socket.createUDP> method to create a UDP socket.
 
 <ApiDocs/>

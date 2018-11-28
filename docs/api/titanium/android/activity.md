@@ -108,7 +108,7 @@ resumed, started and stopped, respectively.
 You can only set Activity properties from a TabGroup object after the tab group opens.
 
 Prior to Release 3.2.0, you can create either a "lightweight" or "heavyweight" window, as
-described on the [Titanium.UI.Window](Titanium.UI.Window) reference page. A *heavyweight* window creates a 
+described on the <Titanium.UI.Window> reference page. A *heavyweight* window creates a 
 new `Activity`. A *lightweight* window runs inside the same activity as the code that
 created it.  If you try to reference the activity of lightweight window, it returns undefined.
 

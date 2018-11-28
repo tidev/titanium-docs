@@ -9,7 +9,7 @@ sidebar: auto
 
 ## Overview
 
-You can use this API to search multiple [Titanium.App.iOS.SearchableItem](Titanium.App.iOS.SearchableItem) objects at the same time. You can do that 
+You can use this API to search multiple <Titanium.App.iOS.SearchableItem> objects at the same time. You can do that 
 by using the `queryString` parameter that has a special syntax to filter and index several items. Please refer 
 to the official [Apple documentation](https://developer.apple.com/reference/corespotlight/cssearchquery) for detailed information on how to structure your search-query to get the 
 best possible results.
