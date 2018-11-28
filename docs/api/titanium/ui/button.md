@@ -70,7 +70,6 @@ Specifically, system buttons may be used in the following locations:
 * <Titanium.UI.TextArea>. The `keyboardToolbar` array can contain system buttons.
 * <Titanium.UI.Window>. The `leftNavButton` and `rightNavButton` properties can refer to
   system buttons and the `toolbar` array can contain system buttons.
-* <http://google.com>
 
 Use the constants in <Titanium.UI.iOS.SystemButton>
 to specify a button type. The size, style and decoration of system buttons is set
