@@ -18,5 +18,8 @@
     "vuepress": "^1.0.0-alpha.24",
     "vuex": "^3.0.1",
     "vuex-router-sync": "^5.0.0"
+  },
+  "dependencies": {
+    "semver": "^5.6.0"
   }
 }
