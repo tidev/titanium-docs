@@ -12,15 +12,17 @@
 
 .proxy-meta
   margin-top 10px
-
-  &>.proxy-meta-name
+  >.proxy-meta-name
     font-size: 14px
     color: #666666
     text-align right
-
-  &>.proxy-meta-value
-    margin-top: 5px;
+  >.proxy-meta-value
+    margin: 0.5rem 0 0.9rem;
     text-align right
+.proxy-metas
+  &>:last-child
+    >.proxy-meta-value
+      margin-bottom 0
 
 .custom-block
   &.tip
@@ -28,9 +30,3 @@
 
 .go-to-top
   color $accentColor !important
-
-.api-page
-  &>.page
-    &>.content
-      &>h1:first-child
-        padding-top 0

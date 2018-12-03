@@ -35,7 +35,10 @@
       v-else
       :sidebar-items="sidebarItems"
     >
-      <Breadcrumb slot="top" v-if="$page.metadataKey"/>
+      <slot
+        name="page-top"
+        slot="top"
+      />
       <slot
         name="page-bottom"
         slot="bottom"
@@ -52,10 +55,9 @@ import Navbar from '@parent-theme/components/Navbar.vue'
 import Page from '@parent-theme/components/Page.vue'
 import Sidebar from '../components/Sidebar.vue'
 import { resolveSidebarItems } from '@parent-theme/util'
-import Breadcrumb from '../components/Breadcrumb.vue';
 
 export default {
-  components: { Breadcrumb, Home, Page, Sidebar, Navbar },
+  components: { Home, Page, Sidebar, Navbar },
 
   data () {
     return {
@@ -114,8 +116,6 @@ export default {
   },
 
   mounted () {
-    window.addEventListener('scroll', this.onScroll)
-
     // configure progress bar
     nprogress.configure({ showSpinner: false })
 
@@ -161,4 +161,4 @@ export default {
 </script>
 
 <style src="prismjs/themes/prism-tomorrow.css"></style>
-<style src="@parent-theme/styles/theme.styl" lang="stylus"></style>
+<style src="../styles/theme.styl" lang="stylus"></style>
