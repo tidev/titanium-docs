@@ -66,7 +66,7 @@ function getAnchors (sidebarLinks) {
       return {
         el,
         hash: decodeURIComponent(el.hash),
-        top: el.getBoundingClientRect().top - AHL_TOP_OFFSET
+        top: el.getBoundingClientRect().top - 90
         /* AHL_TOP_OFFSET is to Subtract height of navbar & anchor's padding top */
       }
     })
