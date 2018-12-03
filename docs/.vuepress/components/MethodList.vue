@@ -26,25 +26,32 @@
         </thead>
         <tbody>
           <tr v-for="parameter in method.parameters">
-            <td>{{parameter.name}}</td>
-            <td><code>{{parameter.type | formatTypes}}</code></td>
+            <td><code>{{parameter.name}}</code></td>
+            <td><TypeLink :types="parameter.type"/></td>
             <td>{{parameter.summary}}</td>
           </tr>
         </tbody>
       </table>
       <h4>Returns</h4>
-      <p>Type: <code>{{ method.returns.type | formatTypes }}</code></p>
-      <hr v-if="index < methods.length">
+      <p>
+        <dl class="type-info">
+          <dt>Type</dt>
+          <dd><TypeLink :types="method.returns"/></dd>
+        </dl>
+      </p>
+      <hr v-if="index < methods.length - 1">
     </template>
   </div>
 </template>
 
 <script>
 import AvailabilityInfo from './AvailabilityInfo';
+import TypeLink from './TypeLink';
 
 export default {
   components: {
-    AvailabilityInfo
+    AvailabilityInfo,
+    TypeLink
   },
   computed: {
     methods: function () {
@@ -64,4 +71,10 @@ export default {
   & th, td
     font-size: 14px
     line-height 1.5
+
+.type-info
+  dt
+    display inline-block
+  dd
+    display inline-block
 </style>

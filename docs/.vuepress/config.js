@@ -376,6 +376,7 @@ module.exports = {
     require('./plugins/dynamic-content'),
     require('./plugins/markdown'),
     require('./plugins/metadata'),
+    require('./plugins/type-links'),
     '@vuepress/back-to-top'
   ]
 }
