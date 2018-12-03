@@ -237,7 +237,7 @@ class MetadataProcessor {
   renderMarkdown(markdownString) {
     // @FIXME: This can be removed once we have a means to generate client dynamic modules
     markdownString = this.rewriteTypeLinks(markdownString);
-    const { html, data: { hoistedTags, links }, dataBlockString } = this.markdown.render(markdownString);
+    const html = this.markdown.renderInline(markdownString);
     return html;
   }
 
