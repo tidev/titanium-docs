@@ -1,8 +1,3 @@
----
-breadcrumbLabel: SecurityManagerProtocol
-sidebar: auto
----
-
 # SecurityManagerProtocol
 
 <ProxySummary/>

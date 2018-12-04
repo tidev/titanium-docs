@@ -1,8 +1,3 @@
----
-breadcrumbLabel: TableViewSection
-sidebar: auto
----
-
 # Titanium.UI.TableViewSection
 
 <ProxySummary/>

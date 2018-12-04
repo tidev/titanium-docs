@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ListItemEventType
-sidebar: auto
----
-
 # ListItemEventType
 
 <ProxySummary/>

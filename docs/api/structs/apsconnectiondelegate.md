@@ -1,8 +1,3 @@
----
-breadcrumbLabel: APSConnectionDelegate
-sidebar: auto
----
-
 # APSConnectionDelegate
 
 <ProxySummary/>

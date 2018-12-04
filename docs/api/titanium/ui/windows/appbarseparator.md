@@ -1,8 +1,3 @@
----
-breadcrumbLabel: AppBarSeparator
-sidebar: auto
----
-
 # Titanium.UI.Windows.AppBarSeparator
 
 <ProxySummary/>

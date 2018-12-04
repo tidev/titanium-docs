@@ -1,8 +1,3 @@
----
-breadcrumbLabel: TableViewRow
-sidebar: auto
----
-
 # Titanium.UI.TableViewRow
 
 <ProxySummary/>
@@ -81,5 +76,89 @@ source for these events. Refer to the "Row Swipe Gestures" example for a demonst
 
 For iOS, read the [Row Editing and Moving Modes notes on TableView](Titanium.UI.TableView) regarding
 the interactions between edit modes and swipes.
+
+## Examples
+
+### Simple Table View Row example
+
+Create a table view row containing a red square view.
+
+    var row = Titanium.UI.createTableViewRow();
+    var view = Titanium.UI.createView({
+      backgroundColor:'red',
+      width: 20, height: 20
+    });
+    row.add(view);
+
+### Row Swipe Gestures
+
+Create a table of rows. When a row is swiped, output its ID to the log.
+
+    var tableData = [];
+
+    var win = Ti.UI.createWindow({ backgroundColor: 'white' });
+
+    var table = Ti.UI.createTableView({ objName: 'table' });
+
+    for (var i = 0; i <= 20; i++){
+      var row = Ti.UI.createTableViewRow({
+        className: 'row',
+        objName: 'row',
+        touchEnabled: true,
+        height: 100
+      });
+
+      var enabledWrapperView = Ti.UI.createView({
+        backgroundColor:'#008FD5',
+        objName: 'enabledWrapperView',
+        rowID: i,
+        width: Ti.UI.FILL, height: '100%'
+      });
+
+      var disabledWrapperView = Ti.UI.createView({
+        backgroundColor:'#A2E0FF',
+        objName: 'disabledWrapperView',
+        touchEnabled: false,
+        width: 300, height: '80%'
+      });
+      enabledWrapperView.add(disabledWrapperView);
+
+      var label = Ti.UI.createLabel({
+        backgroundColor:'#313F48',
+        color: 'white',
+        objName: 'label',
+        text: i,
+        touchEnabled: false,
+        left: 0,
+        width: 200
+      });
+      disabledWrapperView.add(label);
+
+      row.add(enabledWrapperView);
+      tableData.push(row);
+    }
+
+    table.setData(tableData);
+
+    table.addEventListener('swipe', function(e){
+      if (e.source && e.source.objName !== 'table'){
+        Ti.API.info('Row swiped: ' + e.source);
+        Ti.API.info('Row swiped: ' + e.source.objName);
+        Ti.API.info('Row ID : ' + e.source.rowID);
+      }
+    });
+
+    win.add(table);
+    win.open();
+
+### Alloy XML Markup
+
+Previous simple table view row example as an Alloy view.
+
+    <Alloy>
+        <TableViewRow id="row">
+            <View id="view" backgroundColor="red" width="20" height="20"/>
+        </TableViewRow>
+    </Alloy>
 
 <ApiDocs/>

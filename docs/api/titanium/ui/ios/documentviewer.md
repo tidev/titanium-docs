@@ -1,8 +1,3 @@
----
-breadcrumbLabel: DocumentViewer
-sidebar: auto
----
-
 # Titanium.UI.iOS.DocumentViewer
 
 <ProxySummary/>
@@ -93,5 +88,54 @@ can also work around it without an SDK update. Here is an example:
     }
 
 Read more about the issue in [TIMOB-25680](https://jira.appcelerator.org/browse/TIMOB-25680).
+
+## Examples
+
+### Document Viewer Example
+
+In the example below, the navigation bar's right button opens the options menu,
+while the window button immediately launches the document in the document viewer.
+
+    var navButton = Ti.UI.createButton({
+        title: 'Launch'
+    });
+
+    var win = Ti.UI.createWindow({
+        rightNavButton: navButton
+    });
+
+    var navWin = Ti.UI.createNavigationWindow({
+        window: win
+    });
+
+    var winButton = Ti.UI.createButton({
+        title: 'Launch',
+        height: 40,
+        width: 200,
+        top: 270
+    });
+
+    win.add(winButton);
+
+    // Create a document viewer to preview a PDF file ("Example.pdf")
+    docViewer = Ti.UI.iOS.createDocumentViewer({
+        url: 'Example.pdf'
+    });
+
+    // Opens the options menu and when the user clicks on 'Quick Look'
+    // the document viewer launches with an animated transition
+    navButton.addEventListener('click', function() {
+        docViewer.show({
+            view: navButton,
+            animated: true
+        });
+    });
+
+    // The document viewer immediately launches without an animation
+    winButton.addEventListener('click', function(){
+        docViewer.show()
+    });
+
+    navWin.open();
 
 <ApiDocs/>

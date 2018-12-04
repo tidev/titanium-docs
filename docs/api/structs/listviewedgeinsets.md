@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ListViewEdgeInsets
-sidebar: auto
----
-
 # ListViewEdgeInsets
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: zoomScaleOption
-sidebar: auto
----
-
 # zoomScaleOption
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: CloudEventsResponse
-sidebar: auto
----
-
 # CloudEventsResponse
 
 <ProxySummary/>

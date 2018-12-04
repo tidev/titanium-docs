@@ -1,8 +1,3 @@
----
-breadcrumbLabel: SystemAlert
-sidebar: auto
----
-
 # Titanium.Media.SystemAlert
 
 <ProxySummary/>
@@ -19,5 +14,14 @@ This module differs from the Sound module because it honors the ringtone volume,
 Use the <Titanium.Media.createSystemAlert> method to create a `SystemAlert` object.
 
 Know more about [System Sound Services](https://developer.apple.com/reference/audiotoolbox/1657326-system_sound_services).
+
+## Examples
+
+### Simple Example
+
+Simple example of playing a WAVE file from the Resources directory.
+
+    var player = Ti.Media.createSystemAlert({url:"alert.wav"});
+    player.play();
 
 <ApiDocs/>

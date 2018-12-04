@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Cookie
-sidebar: auto
----
-
 # Titanium.Network.Cookie
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: RowActionType
-sidebar: auto
----
-
 # RowActionType
 
 <ProxySummary/>

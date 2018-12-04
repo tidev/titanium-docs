@@ -1,8 +1,3 @@
----
-breadcrumbLabel: CloudPush
-sidebar: auto
----
-
 # Modules.CloudPush
 
 <ProxySummary/>
@@ -107,5 +102,34 @@ or the `i18n` folder for internationalized versions:
     </resources>
 
 The `$number$` variable indicates the number of unread messages.
+
+## Examples
+
+### Listening for Push Notifications
+
+This example lets the application retrieve the device token and listens for several events
+to monitor incoming push notifications.
+
+    var CloudPush = require('ti.cloudpush');
+    CloudPush.retrieveDeviceToken({
+        success: function deviceTokenSuccess(e) {
+            // Use this device token with Ti.Cloud.PushNotifications calls
+            // to subscribe and unsubscribe to push notification channels
+            Ti.API.info('Device Token: ' + e.deviceToken);
+        },
+        error: function deviceTokenError(e) {
+            alert('Failed to register for push! ' + e.error);
+        }
+    });
+    // These events monitor incoming push notifications
+    CloudPush.addEventListener('callback', function (evt) {
+        alert(evt.payload);
+    });
+    CloudPush.addEventListener('trayClickLaunchedApp', function (evt) {
+        Ti.API.info('Tray Click Launched App (app was not running)');
+    });
+    CloudPush.addEventListener('trayClickFocusedApp', function (evt) {
+        Ti.API.info('Tray Click Focused App (app was already running)');
+    });
 
 <ApiDocs/>

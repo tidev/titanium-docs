@@ -1,7 +1,5 @@
 ---
 metadataKey: Global
-breadcrumbLabel: Global
-sidebar: auto
 ---
 
 # Global JavaScript APIs

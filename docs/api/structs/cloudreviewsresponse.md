@@ -1,8 +1,3 @@
----
-breadcrumbLabel: CloudReviewsResponse
-sidebar: auto
----
-
 # CloudReviewsResponse
 
 <ProxySummary/>

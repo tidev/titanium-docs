@@ -1,8 +1,3 @@
----
-breadcrumbLabel: CommandBar
-sidebar: auto
----
-
 # Titanium.UI.Windows.CommandBar
 
 <ProxySummary/>

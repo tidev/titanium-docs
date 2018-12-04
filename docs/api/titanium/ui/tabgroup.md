@@ -1,8 +1,3 @@
----
-breadcrumbLabel: TabGroup
-sidebar: auto
----
-
 # Titanium.UI.TabGroup
 
 <ProxySummary/>
@@ -46,5 +41,56 @@ to a tab group. In this case, the result of which tab is initially selected is u
 
 If using tab groups on iOS, see
 [iOS UI Element Usage Guidelines](https://developer.apple.com/ios/human-interface-guidelines/bars/tab-bars/).
+
+## Examples
+
+### Alloy XML Markup
+
+Default Titanium project as an Alloy view.
+
+        <Alloy>
+            <TabGroup backgroundColor="white" >
+                <Tab id="tab1" title="Tab 1" icon="KS_nav_views.png">
+                    <Window id="win1" title="Tab 1">
+                       <Label id="label1" color="#999">I am Window 1</Label>
+                    </Window>
+                </Tab>
+                <Tab id="tab2" title="Tab 2" icon="KS_nav_views.png">
+                    <Window id="win2" title="Tab 2">
+                        <Label id="label2" color="#999">I am Window 2</Label>
+                    </Window>
+                </Tab>
+                <!-- Use the Require tag to include external Ti.UI.Tab views -->
+            </TabGroup>
+        </Alloy>
+
+### Classic Titanium Example
+
+Simple two-tabbed app.
+
+    var win1 = Ti.UI.createWindow({
+        backgroundColor: 'blue',
+        title: 'Blue'
+    });
+    win1.add(Ti.UI.createLabel({text: 'I am a blue window.'}));
+
+    var win2 = Ti.UI.createWindow({
+        backgroundColor: 'red',
+        title: 'Red'
+    });
+    win2.add(Ti.UI.createLabel({text: 'I am a red window.'}));
+
+    var tab1 = Ti.UI.createTab({
+        window: win1,
+        title: 'Blue'
+    }),
+    tab2 = Ti.UI.createTab({
+        window: win2,
+        title: 'Red'
+    }),
+    tabGroup = Ti.UI.createTabGroup({
+        tabs: [tab1, tab2]
+    });
+    tabGroup.open();
 
 <ApiDocs/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Cloud
-sidebar: auto
----
-
 # Modules.Cloud
 
 <ProxySummary/>

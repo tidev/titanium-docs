@@ -1,8 +1,3 @@
----
-breadcrumbLabel: AppBarToggleButton
-sidebar: auto
----
-
 # Titanium.UI.Windows.AppBarToggleButton
 
 <ProxySummary/>

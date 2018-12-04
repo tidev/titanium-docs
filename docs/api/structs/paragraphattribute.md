@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ParagraphAttribute
-sidebar: auto
----
-
 # ParagraphAttribute
 
 <ProxySummary/>

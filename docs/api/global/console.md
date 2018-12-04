@@ -1,9 +1,8 @@
 ---
 metadataKey: Global.console
-sidebar: auto
 ---
 
-# Console
+# console
 
 <ProxySummary/>
 

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Geolocation
-sidebar: auto
----
-
 # Titanium.Geolocation
 
 <ProxySummary/>

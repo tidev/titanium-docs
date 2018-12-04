@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ListViewMarkerProps
-sidebar: auto
----
-
 # ListViewMarkerProps
 
 <ProxySummary/>

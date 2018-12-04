@@ -1,8 +1,3 @@
----
-breadcrumbLabel: SystemButton
-sidebar: auto
----
-
 # Titanium.UI.iOS.SystemButton
 
 <ProxySummary/>

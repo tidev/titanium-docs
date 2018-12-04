@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Locale
-sidebar: auto
----
-
 # Titanium.Locale
 
 <ProxySummary/>

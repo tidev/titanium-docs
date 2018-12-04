@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ListViewAnimationProperties
-sidebar: auto
----
-
 # ListViewAnimationProperties
 
 <ProxySummary/>

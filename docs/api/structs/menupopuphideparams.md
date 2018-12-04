@@ -1,8 +1,3 @@
----
-breadcrumbLabel: MenuPopupHideParams
-sidebar: auto
----
-
 # MenuPopupHideParams
 
 <ProxySummary/>

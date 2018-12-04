@@ -1,8 +1,3 @@
----
-breadcrumbLabel: BufferStream
-sidebar: auto
----
-
 # Titanium.BufferStream
 
 <ProxySummary/>

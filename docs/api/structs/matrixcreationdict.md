@@ -1,8 +1,3 @@
----
-breadcrumbLabel: MatrixCreationDict
-sidebar: auto
----
-
 # MatrixCreationDict
 
 <ProxySummary/>

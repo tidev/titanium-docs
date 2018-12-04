@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Attribute
-sidebar: auto
----
-
 # Attribute
 
 <ProxySummary/>

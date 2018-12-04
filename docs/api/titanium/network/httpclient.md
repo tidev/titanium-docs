@@ -1,8 +1,3 @@
----
-breadcrumbLabel: HTTPClient
-sidebar: auto
----
-
 # Titanium.Network.HTTPClient
 
 <ProxySummary/>
@@ -31,11 +26,9 @@ original `HTTPClient` object itself, or a response object that holds all
 of the response-related properties defined for the `HTTPClient` object. So the
 callbacks can use code like this to access the response values:
 
-```js
-httpResponse = this.responseText;
-status = this.status;
-```
-
+    httpResponse = this.responseText;
+    status = this.status;
+
 ### Content-Type Header
 
 When sending a POST request with the HTTP client, the Content-Type header is set automatically
@@ -71,28 +64,11 @@ To communicate to servers with the TLS protocol, you need to use the same TLS ve
 the client and server.
 
 <table class="doc-table" summary="This table provides information about TLS versions.">
-  <caption><b>TLS versions by platform</b></caption>
-  <tr>
-    <th>Protocol</th>
-    <th>Android</th>
-    <th>iOS</th>
-  </tr>
-  <tr>
-    <th align="left">TLS 1.0</th>
-    <td>1.0+</td>
-    <td>1.0+</td>
-  </tr>
-  <tr>
-    <th align="left">TLS 1.1</th>
-    <td>4.1+</td>
-    <td>5.0+</td>
-  </tr>
-  <tr>
-    <th align="left">TLS 1.2</th>
-    <td>4.1+</td>
-    <td>5.0+</td>
-  </tr>
-</table>
+<caption><b>TLS versions by platform</b></caption>
+<tr><th>Protocol</th><th>Android<th>iOS</th></tr>
+<tr><th align="left">TLS 1.0</th><td>1.0+</td><td>1.0+</td></tr>
+<tr><th align="left">TLS 1.1</th><td>4.1+</td><td>5.0+</td></tr>
+<tr><th align="left">TLS 1.2</th><td>4.1+</td><td>5.0+</td></tr>
 
 In Titanium, if a connection with TLS 1.2 fails, Titanium will re-attempt the connection with
 TLS 1.1 and TLS 1.0. By default, TLS 1.2 is attempted first.
@@ -114,5 +90,30 @@ cookie stores using the methods <Titanium.Network.addHTTPCookie>, <Titanium.Netw
 <Titanium.Network.getHTTPCookies>, <Titanium.Network.getHTTPCookiesForDomain>, <Titanium.Network.getSystemCookies>,
 <Titanium.Network.removeHTTPCookie>, <Titanium.Network.removeHTTPCookiesForDomain>, <Titanium.Network.removeAllHTTPCookies>,
 <Titanium.Network.removeSystemCookie>, <Titanium.Network.removeAllSystemCookies>.
+
+## Examples
+
+### Simple GET Request
+
+The following code excerpt does a simple GET request and logs the response text.
+
+     var url = "http://www.appcelerator.com";
+     var client = Ti.Network.createHTTPClient({
+         // function called when the response data is available
+         onload : function(e) {
+             Ti.API.info("Received text: " + this.responseText);
+             alert('success');
+         },
+         // function called when an error occurs, including a timeout
+         onerror : function(e) {
+             Ti.API.debug(e.error);
+             alert('error');
+         },
+         timeout : 5000  // in milliseconds
+     });
+     // Prepare the connection.
+     client.open("GET", url);
+     // Send the request.
+     client.send();
 
 <ApiDocs/>

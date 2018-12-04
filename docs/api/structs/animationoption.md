@@ -1,8 +1,3 @@
----
-breadcrumbLabel: animationOption
-sidebar: auto
----
-
 # animationOption
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: MusicPlayer
-sidebar: auto
----
-
 # Titanium.Media.MusicPlayer
 
 <ProxySummary/>

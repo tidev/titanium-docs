@@ -1,8 +1,3 @@
----
-breadcrumbLabel: BonjourBrowser
-sidebar: auto
----
-
 # Titanium.Network.BonjourBrowser
 
 <ProxySummary/>

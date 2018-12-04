@@ -1,8 +1,3 @@
----
-breadcrumbLabel: AppBarButton
-sidebar: auto
----
-
 # Titanium.UI.Windows.AppBarButton
 
 <ProxySummary/>

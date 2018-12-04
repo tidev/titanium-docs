@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ProgressIndicator
-sidebar: auto
----
-
 # Titanium.UI.Android.ProgressIndicator
 
 <ProxySummary/>
@@ -28,5 +23,88 @@ To display a horizontal progress bar in the title of a heavyweight window,
 wait for the window to open before creating the progress bar.
 For example, in the sample code below, for it to work in the status bar,
 create the progress bar inside the event listener, which waits for the open event.
+
+## Examples
+
+### Simple Progress Indicator
+
+Click the button to show a progress indicator while
+some code executes and hide it on completion.
+
+    Ti.UI.backgroundColor = 'white';
+
+    var win = Ti.UI.createWindow({
+      backgroundColor: 'blue'
+    });
+
+    var button = Ti.UI.createButton({
+      title: 'Show Progress Dialog'
+    });
+
+    var progressIndicator = Ti.UI.Android.createProgressIndicator({
+      message: 'Loading...',
+      location: Ti.UI.Android.PROGRESS_INDICATOR_DIALOG,
+      type: Ti.UI.Android.PROGRESS_INDICATOR_DETERMINANT,
+      cancelable: true,
+      min: 0,
+      max: 10
+    });
+
+    button.addEventListener('click', function (e) {
+      progressIndicator.show();
+      var value = 0;
+      setInterval(function(){
+        if (value > 10) {
+            return;
+        }
+        progressIndicator.value = value;
+        value ++;
+      }, 200);
+      // do some work that takes 3 seconds
+      // ie. replace the following setTimeout block with your code
+      setTimeout(function(){
+        progressIndicator.hide();
+      }, 3000);
+    });
+
+    win.add(button);
+    win.open();
+
+### Alloy XML Markup
+
+Previous example as an Alloy view-controller.
+
+index.xml:
+
+    <Alloy>
+        <Window backgroundColor="blue">
+            <Button id="button" onClick="showIndicator">Show Progress Dialog</Button>
+
+            <ProgressIndicator ns="Ti.UI.Android" platform="android" id="progressIndicator"
+             message="Loading..." min="0" max="10" cancelable="true"
+             location="Ti.UI.Android.PROGRESS_INDICATOR_DIALOG"
+             type="Ti.UI.Android.PROGRESS_INDICATOR_DETERMINANT" />
+        </Window>
+    </Alloy>
+
+index.js:
+
+    function showIndicator(e) {
+        $.progressIndicator.show();
+        var value = 0;
+        setInterval(function(){
+            if (value > 10) {
+                return;
+            }
+            $.progressIndicator.value = value;
+            value ++;
+        }, 200);
+        // do some work that takes 3 seconds
+        // ie. replace the following setTimeout block with your code
+        setTimeout(function(){
+            $.progressIndicator.hide();
+        }, 3000);
+    }
+    $.index.open();
 
 <ApiDocs/>

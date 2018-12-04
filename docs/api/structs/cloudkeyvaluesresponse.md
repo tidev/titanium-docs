@@ -1,8 +1,3 @@
----
-breadcrumbLabel: CloudKeyValuesResponse
-sidebar: auto
----
-
 # CloudKeyValuesResponse
 
 <ProxySummary/>

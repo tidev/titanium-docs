@@ -1,8 +1,3 @@
----
-breadcrumbLabel: AlertDialog
-sidebar: auto
----
-
 # Titanium.UI.AlertDialog
 
 <ProxySummary/>
@@ -72,5 +67,136 @@ Multiple alerts should not be shown at once.
 
 The `title` and `ok` properties cannot be changed while the alert dialog is being displayed. On
 Android only, you can change the `message` property while the alert dialog is being displayed.
+
+## Examples
+
+### Single-button Alert Dialog (using alias)
+
+Create a single-button alert dialog using the global `alert()` alias.
+
+    Ti.UI.setBackgroundColor('white');
+    var win = Ti.UI.createWindow({
+      title: 'Click window to test',
+      backgroundColor: 'white',
+      exitOnClose: true,
+      fullscreen: false
+    });
+
+    win.addEventListener('click', function(e) {
+      alert('The file has been deleted');
+    });
+    win.open();
+
+### Single-button Alert Dialog (standard)
+
+Create a single-button alert dialog, without explicitly defining it using the `buttonNames`
+property, which is invoked when the app window is clicked.
+
+    Ti.UI.setBackgroundColor('white');
+    var win = Ti.UI.createWindow({
+      title: 'Click window to test',
+      backgroundColor: 'white',
+    exitOnClose: true,
+    fullscreen: false
+    });
+
+    win.addEventListener('click', function(e) {
+      var dialog = Ti.UI.createAlertDialog({
+        message: 'The file has been deleted',
+        ok: 'Okay',
+        title: 'File Deleted'
+      });
+      dialog.show();
+    });
+    win.open();
+
+### Three-button Alert Dialog
+
+Create a three-button alert dialog, which is invoked when the app window is clicked.
+Output a message to the log when the cancel button is clicked.
+
+    Ti.UI.setBackgroundColor('white');
+    var win = Ti.UI.createWindow({
+      title: 'Click window to test',
+      backgroundColor: 'white',
+      exitOnClose: true,
+      fullscreen: false
+    });
+    win.addEventListener('click', function(e) {
+      var dialog = Ti.UI.createAlertDialog({
+        cancel: 1,
+        buttonNames: ['Confirm', 'Cancel', 'Help'],
+        message: 'Would you like to delete the file?',
+        title: 'Delete'
+      });
+      dialog.addEventListener('click', function(e) {
+        if (e.index === e.source.cancel) {
+          Ti.API.info('The cancel button was clicked');
+        }
+        Ti.API.info('e.cancel: ' + e.cancel);
+        Ti.API.info('e.source.cancel: ' + e.source.cancel);
+        Ti.API.info('e.index: ' + e.index);
+      });
+      dialog.show();
+    });
+    win.open();
+
+### Alert Dialog with Plain Text Input
+
+Create an alert dialog and allow the user enter plain text, which is invoked when the
+app window is clicked.
+Output entered text value to the log when the OK button is clicked.
+
+    Ti.UI.setBackgroundColor('white');
+    var win = Ti.UI.createWindow({
+      title: 'Click window to test'
+    });
+    win.addEventListener('click', function(e) {
+      var dialog = Ti.UI.createAlertDialog({
+        title: 'Enter text',
+        style: Ti.UI.iOS.AlertDialogStyle.PLAIN_TEXT_INPUT,
+        buttonNames: ['OK']
+      });
+      dialog.addEventListener('click', function(e) {
+        Ti.API.info('e.text: ' + e.text);
+      });
+      dialog.show();
+    });
+    win.open();
+
+### Alloy XML Markup
+
+Previous three-button alert dialog example as an Alloy view.
+
+alertdialog.xml:
+
+    <Alloy>
+        <Window id="win" onClick="showDialog" title="Click window to test" backgroundColor="white"
+            exitOnClose="true" fullscreen="false" >
+
+            <AlertDialog id="dialog" onClick="doClick" title="Delete"
+                message="Would you like to delete the file?" cancel="1">
+
+                <!-- The ButtonNames tag sets the buttonNames property. -->
+                <ButtonNames>
+                    <ButtonName>Confirm</ButtonName>
+                    <ButtonName>Cancel</ButtonName>
+                    <ButtonName>Help</ButtonName>
+                </ButtonNames>
+            </AlertDialog>
+        </Window>
+    </Alloy>
+
+alertdialog.js:
+
+    function showDialog() {
+        $.dialog.show();
+    }
+
+    function doClick(e) {
+        Ti.API.info('e.text: ' + e.text);
+    }
+    
+    $.win.open();
 
 <ApiDocs/>

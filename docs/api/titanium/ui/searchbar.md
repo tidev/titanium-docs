@@ -1,8 +1,3 @@
----
-breadcrumbLabel: SearchBar
-sidebar: auto
----
-
 # Titanium.UI.SearchBar
 
 <ProxySummary/>
@@ -63,5 +58,43 @@ could add code like this to the `click` event handler on your table view:
         
 **Note**: Due to native limitations, the SearchBar's positional properties may not work properly 
 when nested within a TableView or ListView (properties such as left, right, width and so on).
+
+## Examples
+
+### Simple Search Bar
+
+var search = Titanium.UI.createSearchBar({
+	barColor:'#000', 
+	showCancel:true,
+	height:43,
+	top:0,
+});
+
+### Alloy XML Markup
+
+Previous example as an Alloy view.
+
+    <Alloy>
+        <SearchBar id="search" barColor="#000" showCancel="true" height="43" top="0" />
+    </Alloy>
+
+### Search Bar with TableView
+
+var search = Ti.UI.createSearchBar({
+    showCancel: true
+});
+var tableview = Ti.UI.createTableView({
+    search: search
+});
+
+### Alloy XML Markup
+
+Previous example as an Alloy view.
+
+    <Alloy>
+        <TableView id="tableview">
+            <SearchBar id="search" showCancel="true" />
+        </TableView>
+    </Alloy>
 
 <ApiDocs/>

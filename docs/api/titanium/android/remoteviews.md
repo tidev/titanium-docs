@@ -1,8 +1,3 @@
----
-breadcrumbLabel: RemoteViews
-sidebar: auto
----
-
 # Titanium.Android.RemoteViews
 
 <ProxySummary/>
@@ -35,5 +30,37 @@ See also:
 
 *   [XML Layouts](https://developer.android.com/guide/topics/ui/declaring-layout.html)
     in the Android Developer Guide.
+
+## Examples
+
+### Create a Remote View
+
+The following code excerpt creates a `RemoteViews` object based on a custom layout 
+called `custom_layout.xml`, and set a label's text.
+
+
+    var AppR = Ti.App.Android.R;
+    var customLayout = Ti.Android.createRemoteViews({ layoutId: AppR.layout.custom_layout });
+    customLayout.setTextViewText(AppR.id.custom_text, "Click Me!");
+
+This example uses a simple custom layout:
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:orientation="vertical" >
+        <TextView android:id="@+id/custom_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffff"
+                android:textColor="#aaff0000"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:text="Hello, I am a TextView" />
+    </LinearLayout>
+
+The layout file for this example must be placed in
+`platform/android/res/layout/custom_layout.xml`.
 
 <ApiDocs/>

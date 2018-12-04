@@ -1,8 +1,3 @@
----
-breadcrumbLabel: QuickSettingsService
-sidebar: auto
----
-
 # Titanium.Android.QuickSettingsService
 
 <ProxySummary/>
@@ -33,5 +28,40 @@ To get a reference to the `Service` inside the JavaScript service code, use the
 Further Reading:
 
   * [Android Quick Settings Tile API](https://developer.android.com/about/versions/nougat/android-7.0.html#tile_api)
+
+## Examples
+
+### Update Tile Example
+
+This example shows how to create a service in JavaScript.
+It will update the Tile in quick settings according to the
+user's interaction.
+
+File: updatequicksettings.js:
+
+    var service = Ti.Android.currentService;
+    service.addEventListener('click', function () {
+
+      if (service.getState() == Ti.Android.TILE_STATE_ACTIVE) {
+        service.setState(Ti.Android.TILE_STATE_INACTIVE);
+        service.setLabel('Inactive');
+        service.setIcon('inactive.png');
+      } else {
+        service.setState(Ti.Android.TILE_STATE_ACTIVE);
+        service.setLabel('Active');
+        service.setIcon('active.png');
+      }
+      service.updateTile();
+    }
+
+Register the service in tiapp.xml:
+
+    <ti:app>
+        <android xmlns:android="http://schemas.android.com/apk/res/android">
+            <services>
+                <service url="updatequicksettings.js" type="quicksettings" label="Active" icon="active.png"/>
+            </services>
+        </android>
+    </ti:app>
 
 <ApiDocs/>

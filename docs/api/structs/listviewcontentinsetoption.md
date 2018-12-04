@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ListViewContentInsetOption
-sidebar: auto
----
-
 # ListViewContentInsetOption
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: CloudPhotosResponse
-sidebar: auto
----
-
 # CloudPhotosResponse
 
 <ProxySummary/>

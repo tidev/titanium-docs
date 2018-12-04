@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Blob
-sidebar: auto
----
-
 # Titanium.Blob
 
 <ProxySummary/>

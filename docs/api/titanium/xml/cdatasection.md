@@ -1,8 +1,3 @@
----
-breadcrumbLabel: CDATASection
-sidebar: auto
----
-
 # Titanium.XML.CDATASection
 
 <ProxySummary/>

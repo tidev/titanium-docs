@@ -1,8 +1,3 @@
----
-breadcrumbLabel: contentOffsetOption
-sidebar: auto
----
-
 # contentOffsetOption
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: DisplayCaps
-sidebar: auto
----
-
 # Titanium.Platform.DisplayCaps
 
 <ProxySummary/>
@@ -21,5 +16,23 @@ retina display. Apps must be built with Xcode 4.3.1 or later to detect iPad 3 re
 Note that the `displayCaps` property begins with a lowercase letter, which differentiates it 
 from the `DisplayCaps` object that it returns. Refer to the example to understand how it should 
 be called.
+
+## Examples
+
+### System Display Information
+
+Output the display properties to the system log.
+    
+    Ti.API.info('Ti.Platform.displayCaps.density: ' + Ti.Platform.displayCaps.density);
+    Ti.API.info('Ti.Platform.displayCaps.dpi: ' + Ti.Platform.displayCaps.dpi);
+    Ti.API.info('Ti.Platform.displayCaps.platformHeight: ' + Ti.Platform.displayCaps.platformHeight);
+    Ti.API.info('Ti.Platform.displayCaps.platformWidth: ' + Ti.Platform.displayCaps.platformWidth);
+    if((Ti.Platform.osname === 'iphone')||(Ti.Platform.osname === 'ipad')||(Ti.Platform.osname === 'android')){
+      Ti.API.info('Ti.Platform.displayCaps.logicalDensityFactor: ' + Ti.Platform.displayCaps.logicalDensityFactor);
+    }
+    if(Ti.Platform.osname === 'android'){
+      Ti.API.info('Ti.Platform.displayCaps.xdpi: ' + Ti.Platform.displayCaps.xdpi);
+      Ti.API.info('Ti.Platform.displayCaps.ydpi: ' + Ti.Platform.displayCaps.ydpi);
+    }
 
 <ApiDocs/>

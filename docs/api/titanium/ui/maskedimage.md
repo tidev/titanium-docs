@@ -1,8 +1,3 @@
----
-breadcrumbLabel: MaskedImage
-sidebar: auto
----
-
 # Titanium.UI.MaskedImage
 
 <ProxySummary/>
@@ -39,5 +34,17 @@ Note that this control lacks many of the features associated with a standard
 [ImageView](Titanium.UI.ImageView) control.
 
 Use the <Titanium.UI.createMaskedImage> method to create a masked image view.
+
+## Examples
+
+### Lighten Blend Mode
+
+The following code excerpt blends the background image with the given `tint` color:
+
+    var imageMask = Titanium.UI.createMaskedImage({
+        mask : 'demo_image.png', // background image
+        tint: 'red',
+        mode : Titanium.UI.BLEND_MODE_LIGHTEN,
+    });
 
 <ApiDocs/>

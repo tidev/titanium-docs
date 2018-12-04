@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Person
-sidebar: auto
----
-
 # Titanium.Contacts.Person
 
 <ProxySummary/>

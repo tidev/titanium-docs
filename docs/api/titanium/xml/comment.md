@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Comment
-sidebar: auto
----
-
 # Titanium.XML.Comment
 
 <ProxySummary/>

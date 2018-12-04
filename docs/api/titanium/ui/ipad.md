@@ -1,8 +1,3 @@
----
-breadcrumbLabel: iPad
-sidebar: auto
----
-
 # Titanium.UI.iPad
 
 <ProxySummary/>

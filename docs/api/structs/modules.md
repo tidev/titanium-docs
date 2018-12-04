@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Modules
-sidebar: auto
----
-
 # Modules
 
 <ProxySummary/>

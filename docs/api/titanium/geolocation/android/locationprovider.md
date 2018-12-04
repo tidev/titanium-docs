@@ -1,8 +1,3 @@
----
-breadcrumbLabel: LocationProvider
-sidebar: auto
----
-
 # Titanium.Geolocation.Android.LocationProvider
 
 <ProxySummary/>

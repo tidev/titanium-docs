@@ -1,8 +1,3 @@
----
-breadcrumbLabel: PreviewAction
-sidebar: auto
----
-
 # Titanium.UI.iOS.PreviewAction
 
 <ProxySummary/>

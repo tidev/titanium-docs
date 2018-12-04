@@ -1,8 +1,3 @@
----
-breadcrumbLabel: TableViewEdgeInsets
-sidebar: auto
----
-
 # TableViewEdgeInsets
 
 <ProxySummary/>

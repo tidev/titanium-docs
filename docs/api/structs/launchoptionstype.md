@@ -1,8 +1,3 @@
----
-breadcrumbLabel: LaunchOptionsType
-sidebar: auto
----
-
 # LaunchOptionsType
 
 <ProxySummary/>

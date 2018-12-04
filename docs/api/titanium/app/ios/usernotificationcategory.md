@@ -1,8 +1,3 @@
----
-breadcrumbLabel: UserNotificationCategory
-sidebar: auto
----
-
 # Titanium.App.iOS.UserNotificationCategory
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Stream
-sidebar: auto
----
-
 # Titanium.Stream
 
 <ProxySummary/>
@@ -22,5 +17,37 @@ See also:
 * <Titanium.BufferStream>
 * <Titanium.Filesystem.FileStream>
 * <Titanium.Network.Socket.TCP>
+
+## Examples
+
+### Stream.pump Example
+
+The following example shows how to use the [pump](Titanium.Stream.pump) method.
+
+    var pumpCallback = function(arg) {
+        if(arg.bytesProcessed == -1) {
+            Ti.API.info("At end of stream.");
+        } else {
+            Ti.API.info(String.format("Received %.0f bytes. Total: %.0f bytes.", 
+                        arg.bytesProcessed, arg.totalBytesProcessed));
+            // do something useful with the data in arg.buffer
+        }
+    }
+    Ti.Stream.pump(inputStream, pumpCallback, 1024);
+
+### Write Stream to File
+
+The following example uses the [writeStream](Titanium.Stream.writeStream) method
+to copy the contents of an input stream to a file. This can be used for any kind
+of input stream -- `BufferStream`, `FileStream`, or `Socket.TCP`.
+
+    var outFileStream = Ti.Filesystem.getFile('outfile.txt').open(Ti.Filesystem.MODE_WRITE);
+    
+    // writes all data from inputStream to outFileStream in chunks of 1024 bytes
+    var bytesWritten = Ti.Stream.writeStream(inputStream, outFileStream, 1024);
+    Ti.API.info('Wrote ' + bytesWritten + ' bytes, closing both streams.');
+    
+    inputStream.close();
+    outFileStream.close();
 
 <ApiDocs/>

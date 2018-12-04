@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ItemTemplate
-sidebar: auto
----
-
 # ItemTemplate
 
 <ProxySummary/>

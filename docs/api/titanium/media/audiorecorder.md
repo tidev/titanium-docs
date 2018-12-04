@@ -1,8 +1,3 @@
----
-breadcrumbLabel: AudioRecorder
-sidebar: auto
----
-
 # Titanium.Media.AudioRecorder
 
 <ProxySummary/>
@@ -24,5 +19,83 @@ into the `<android>` section of the tiapp.xml:
             <uses-permission android:name="android.permission.RECORD_AUDIO" />
         </manifest>
     </android>
+
+## Examples
+
+### Audio Recorder Example
+
+The following code-example creates a window that controls the audio-recorder flow.
+
+    var window = Ti.UI.createWindow({
+      backgroundColor: '#fff'
+    });
+    
+    var recordStart = Ti.UI.createButton({
+      title: 'Start',
+      top: 10
+    });
+    
+    var recordPause = Ti.UI.createButton({
+      title: 'Pause',
+      top: 60
+    });
+    
+    var recordStop = Ti.UI.createButton({
+      title: 'Stop',
+      top: 110
+    });
+    
+    var recordPlay = Ti.UI.createButton({
+      title: 'Play',
+      top: 160
+    });
+    
+    var audioRecorder = Ti.Media.createAudioRecorder();
+    var record;
+    var audioPlayer;
+
+    window.addEventListener('open', function(e) {
+      if (!Ti.Media.hasAudioRecorderPermissions()) {
+        Ti.Media.requestAudioRecorderPermissions(function(e) {
+          if (e.success) {
+            window.add(recordStart);
+          }
+        });
+      } else {
+        window.add(recordStart);
+      }
+    });
+
+    recordStart.addEventListener('click', function(e) {
+      audioRecorder.start();
+    });
+
+    recordPause.addEventListener('click', function(e) {
+      if (audioRecorder.getPaused()) {
+        recordPause.setTitle('Pause');
+        audioRecorder.resume()
+      } else {
+        recordPause.setTitle('Resume');
+        audioRecorder.pause();
+      }
+    });
+
+    recordStop.addEventListener('click', function(e) {
+      record = audioRecorder.stop();
+      Ti.API.info(record.getNativePath());
+    });
+
+    recordPlay.addEventListener('click', function(e) {
+      audioPlayer = Ti.Media.createAudioPlayer({
+        url: record.getNativePath()
+      });
+      audioPlayer.start();
+    });
+
+    window.add(recordPause);
+    window.add(recordStop);
+    window.add(recordPlay);
+
+    window.open();
 
 <ApiDocs/>

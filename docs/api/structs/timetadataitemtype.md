@@ -1,8 +1,3 @@
----
-breadcrumbLabel: TiMetadataItemType
-sidebar: auto
----
-
 # TiMetadataItemType
 
 <ProxySummary/>

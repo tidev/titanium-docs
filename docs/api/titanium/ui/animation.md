@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Animation
-sidebar: auto
----
-
 # Titanium.UI.Animation
 
 <ProxySummary/>
@@ -51,5 +46,125 @@ angle and the second argument as a "to" angle.
 
 Android doesn't support any animation curves or easing functions. Animations always interpolate
 linearly between the start state and the end state.
+
+## Examples
+
+### Simple Animation Applied to a View
+
+Create a simple animation and apply it to the view.  In this example, the view will animate
+from red to black to orange over 2 seconds.
+
+    var view = Titanium.UI.createView({
+      backgroundColor:'red'
+    });
+    var animation = Titanium.UI.createAnimation();
+    animation.backgroundColor = 'black';
+    animation.duration = 1000;
+    var animationHandler = function() {
+      animation.removeEventListener('complete',animationHandler);
+      animation.backgroundColor = 'orange';
+      view.animate(animation);
+    };
+    animation.addEventListener('complete',animationHandler);
+    view.animate(animation);
+
+### Animation Using Matrix Transforms
+
+The following example uses a transformation matrix to animate
+a view when the view is clicked. The animation rotates and scales
+the view, then returns it to its original size and position. The
+entire animation is repeated three times.
+
+    var box = Ti.UI.createView({
+      backgroundColor : 'red',
+      height : '100',
+      width : '100'
+    });
+    win.add(box);
+
+    box.addEventListener('click', function() {
+      var matrix = Ti.UI.create2DMatrix();
+      matrix = matrix.rotate(180);
+      matrix = matrix.scale(2, 2);
+      var a = Ti.UI.createAnimation({
+        transform : matrix,
+        duration : 2000,
+        autoreverse : true,
+        repeat : 3
+      });
+      box.animate(a);
+    });
+    
+    win.add(box);
+
+### Using an anchorPoint (Android and iOS)
+
+Create a button and a blue square view. For each click of the button, apply a 90 degree
+rotation animation pivoted at one of a series of anchor points. In particular, note that
+an anchor point is configured using the <Titanium.UI.Animation.anchorPoint> property for
+Android and the <Titanium.UI.View.anchorPoint> property for iOS.
+
+    var animationType = [
+      { name: 'Top Left', anchorPoint: {x:0, y:0} },
+      { name: 'Top Right', anchorPoint: {x:1, y:0} },
+      { name: 'Bottom Left', anchorPoint: {x:0, y:1} },
+      { name: 'Bottom Right', anchorPoint: {x:1, y:1} },
+      { name: 'Center', anchorPoint: {x:0.5, y:0.5} }
+    ];
+    var animationTypeLength = animationType.length;
+    var animationCount = 0;
+    var animationTypePointer = 0;
+
+    var t = Ti.UI.create2DMatrix();
+    t = t.rotate(90);
+
+    // animation properties
+    var a = {
+      transform: t,
+      duration: 2000,
+      autoreverse: true
+    };
+
+    Ti.UI.backgroundColor = 'white';
+    var win = Ti.UI.createWindow();
+
+    var view = Ti.UI.createView({
+      backgroundColor:'#336699',
+      width:100, height:100
+    });
+    win.add(view);
+
+    var button = Ti.UI.createButton({
+      title:'Animate ' + animationType[animationTypePointer].name,
+      height: (Ti.UI.Android) ? 80 : 40,
+      width: (Ti.UI.Android) ? 300 : 200,
+      top:30
+    });
+    win.add(button);
+
+    function updateButton(name){
+      button.title = 'Animate ' + name;
+    }
+
+    button.addEventListener('click', function(){
+      // set new anchorPoint on animation for Android
+      a.anchorPoint = animationType[animationTypePointer].anchorPoint;
+
+      // set new anchorPoint on view for iOS
+      view.anchorPoint = animationType[animationTypePointer].anchorPoint;
+
+      animationCount++;
+
+      // determine position of next object in animationType array or return to first item
+      // using modulus operator
+      animationTypePointer = animationCount % animationTypeLength;
+
+      // animate view, followed by callback to set next button title
+      view.animate(a, function(){
+        updateButton(animationType[animationTypePointer].name);
+      });
+    });
+
+    win.open();
 
 <ApiDocs/>

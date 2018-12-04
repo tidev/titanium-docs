@@ -1,8 +1,3 @@
----
-breadcrumbLabel: CloudPushNotificationSuccessArg
-sidebar: auto
----
-
 # CloudPushNotificationSuccessArg
 
 <ProxySummary/>

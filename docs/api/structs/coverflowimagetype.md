@@ -1,8 +1,3 @@
----
-breadcrumbLabel: CoverFlowImageType
-sidebar: auto
----
-
 # CoverFlowImageType
 
 <ProxySummary/>

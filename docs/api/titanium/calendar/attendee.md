@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Attendee
-sidebar: auto
----
-
 # Titanium.Calendar.Attendee
 
 <ProxySummary/>

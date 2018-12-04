@@ -1,8 +1,3 @@
----
-breadcrumbLabel: EntityReference
-sidebar: auto
----
-
 # Titanium.XML.EntityReference
 
 <ProxySummary/>

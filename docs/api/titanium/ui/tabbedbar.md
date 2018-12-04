@@ -1,8 +1,3 @@
----
-breadcrumbLabel: TabbedBar
-sidebar: auto
----
-
 # Titanium.UI.TabbedBar
 
 <ProxySummary/>
@@ -16,5 +11,19 @@ It is closely related to the `ButtonBar` control. See the description of
 bars.
 
 Use the <Titanium.UI.createTabbedBar> method to create a Tabbed Bar.
+
+## Examples
+
+### Simple Tabbed Bar with 3 items
+
+var bb1 = Ti.UI.createTabbedBar({
+	labels: ['One', 'Two', 'Three'],
+	backgroundColor: '#336699',
+	style: Ti.UI.iOS.SystemButtonStyle.BAR,
+	width: 200,
+	height: 25,
+	top: 50
+});
+win.add(bb1);
 
 <ApiDocs/>

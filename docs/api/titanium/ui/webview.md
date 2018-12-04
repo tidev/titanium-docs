@@ -1,8 +1,3 @@
----
-breadcrumbLabel: WebView
-sidebar: auto
----
-
 # Titanium.UI.WebView
 
 <ProxySummary/>
@@ -139,5 +134,26 @@ See [Integrating Web
 Content](https://docs.appcelerator.com/platform/latest/#!/guide/Integrating_Web_Content)
 in the Titanium Mobile Guides for more information on using web views, including use
 cases, more code examples, and best practices for web view content.
+
+## Examples
+
+### Basic Web View to External URL
+
+Create a web view to a remote URL and open the window as modal.
+
+      var webview = Titanium.UI.createWebView({url:'http://www.appcelerator.com'});
+    	var window = Titanium.UI.createWindow();
+    	window.add(webview);
+    	window.open({modal:true});
+
+### Alloy XML Markup
+
+Previous example as an Alloy view.
+
+    <Alloy>
+        <Window id="win" modal="true">
+            <WebView id="webview" url="http://www.appcelerator.com" />
+        </Window>
+    </Alloy>
 
 <ApiDocs/>

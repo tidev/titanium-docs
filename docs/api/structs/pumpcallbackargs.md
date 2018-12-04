@@ -1,8 +1,3 @@
----
-breadcrumbLabel: PumpCallbackArgs
-sidebar: auto
----
-
 # PumpCallbackArgs
 
 <ProxySummary/>

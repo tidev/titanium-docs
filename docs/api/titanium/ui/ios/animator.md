@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Animator
-sidebar: auto
----
-
 # Titanium.UI.iOS.Animator
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Window
-sidebar: auto
----
-
 # Titanium.UI.Window
 
 <ProxySummary/>
@@ -469,5 +464,24 @@ button is pressed, pass `exitOnClose: true` as one of the creation arguments, as
 
 Starting with Release 3.2.0, the root window's `exitOnClose` property is set to `true` by
 default.  Prior to Release 3.2.0, the default value of the property was `false` for all windows.
+
+## Examples
+
+### Full Screen Window example
+
+Create a fullscreen window with a red background.
+
+    var window = Titanium.UI.createWindow({
+       backgroundColor:'red'
+    });
+    window.open({fullscreen:true});
+
+### Alloy XML Markup
+
+Previous example as an Alloy view.
+
+    <Alloy>
+        <Window id="win" backgroundColor="red" fullscreen="true" />
+    </Alloy>
 
 <ApiDocs/>

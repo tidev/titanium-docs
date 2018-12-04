@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Event
-sidebar: auto
----
-
 # Titanium.Calendar.Event
 
 <ProxySummary/>

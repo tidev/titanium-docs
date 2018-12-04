@@ -1,8 +1,3 @@
----
-breadcrumbLabel: DrawerLayout
-sidebar: auto
----
-
 # Titanium.UI.Android.DrawerLayout
 
 <ProxySummary/>
@@ -18,5 +13,46 @@ should always contain actions to take on the current content.
 
 For design guidelines, see
 [Google Design Guidelines: DrawerLayout](https://developer.android.com/training/implementing-navigation/nav-drawer.html)
+
+## Examples
+
+### Simple DrawerLayout
+
+The following code shows a simple drawer-layout usage.
+
+
+    var win = Ti.UI.createWindow();
+
+    var leftView = Ti.UI.createView({ backgroundColor:'red' });
+    var centerView = Ti.UI.createView({ backgroundColor:'yellow' });
+    var rightView = Ti.UI.createView({ backgroundColor:'orange' });
+
+    var drawer = Ti.UI.Android.createDrawerLayout({
+        leftView: leftView,
+        centerView: centerView,
+        rightView: rightView
+    });
+    var btn = Ti.UI.createButton({ title: 'RIGHT' });
+
+    btn.addEventListener('click', function() {
+        drawer.toggleRight();
+    });
+
+    centerView.add(btn);
+
+    win.addEventListener('open', function(){
+        var activity = win.getActivity(),
+            actionBar = activity.getActionBar();
+
+        if (actionBar) {
+            actionBar.displayHomeAsUp = true;
+            actionBar.onHomeIconItemSelected = function() {
+                drawer.toggleLeft();
+            };
+        }
+    });
+
+    win.add(drawer);
+    win.open();
 
 <ApiDocs/>

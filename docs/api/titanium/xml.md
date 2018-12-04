@@ -1,8 +1,3 @@
----
-breadcrumbLabel: XML
-sidebar: auto
----
-
 # Titanium.XML
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: AdView
-sidebar: auto
----
-
 # Titanium.UI.iOS.AdView
 
 <ProxySummary/>

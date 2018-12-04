@@ -1,8 +1,3 @@
----
-breadcrumbLabel: DocumentFragment
-sidebar: auto
----
-
 # Titanium.XML.DocumentFragment
 
 <ProxySummary/>

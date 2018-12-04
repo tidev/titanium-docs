@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Module
-sidebar: auto
----
-
 # Titanium.Module
 
 <ProxySummary/>

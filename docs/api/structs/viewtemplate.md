@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ViewTemplate
-sidebar: auto
----
-
 # ViewTemplate
 
 <ProxySummary/>

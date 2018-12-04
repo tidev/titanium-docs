@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Button
-sidebar: auto
----
-
 # Titanium.UI.Button
 
 <ProxySummary/>
@@ -62,10 +57,10 @@ The `systemButton` property lets you create a predefined system-defined button,
 such as the **Camera** or **Add** buttons, for use in toolbars and nav bars.
 Specifically, system buttons may be used in the following locations:
 
-* Some stuff <Titanium.UI.iOS.Toolbar>. The `items` array can contain system buttons.
+* <Titanium.UI.iOS.Toolbar>. The `items` array can contain system buttons.
 * <Titanium.UI.iPad.Popover>. The `leftNavButton` and `rightNavButton` properties can
   refer to system buttons
-* <Titanium.UI.iOS.SplitWindow>. The `toolbar` array can contain system buttons.
+* <Titanium.UI.iPad.SplitWindow>. The `toolbar` array can contain system buttons.
 * <Titanium.UI.TextField>. The `keyboardToolbar` array can contain system buttons.
 * <Titanium.UI.TextArea>. The `keyboardToolbar` array can contain system buttons.
 * <Titanium.UI.Window>. The `leftNavButton` and `rightNavButton` properties can refer to
@@ -98,5 +93,40 @@ For toolbar buttons that use the [PLAIN](Titanium.UI.iOS.SystemButtonStyle.PLAIN
 or use system icons such as [CAMERA](Titanium.UI.iOS.SystemButton.CAMERA), a glow effect is
 used. The glow effect shows as a white circular glow or highlight at the center of the button
 when the button is pressed.
+
+## Examples
+
+### Simple Button Example
+
+var button = Titanium.UI.createButton({
+   title: 'Hello',
+   top: 10,
+   width: 100,
+   height: 50
+});
+button.addEventListener('click',function(e)
+{
+   Titanium.API.info("You clicked the button");
+});
+
+### Alloy XML Markup
+
+Previous example as an Alloy view.
+
+button.xml:
+
+    <Alloy>
+        <Window id="win" backgroundColor="white">
+            <!-- The title property can also be defined as node text. -->
+            <Button id="button" onClick="doClick" title="Hello"
+                top="10" width="100" height="50" />
+        </Window>
+    </Alloy>
+
+button.js:
+
+    function doClick(e){
+        Titanium.API.info("You clicked the button");
+    };
 
 <ApiDocs/>

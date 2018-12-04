@@ -1,8 +1,3 @@
----
-breadcrumbLabel: PopoverParams
-sidebar: auto
----
-
 # PopoverParams
 
 <ProxySummary/>

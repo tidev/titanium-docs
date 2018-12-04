@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Style
-sidebar: auto
----
-
 # Titanium.UI.Windows.Style
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: NotificationManager
-sidebar: auto
----
-
 # Titanium.Android.NotificationManager
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: DocumentViewerOptions
-sidebar: auto
----
-
 # DocumentViewerOptions
 
 <ProxySummary/>

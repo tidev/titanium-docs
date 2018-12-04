@@ -1,8 +1,3 @@
----
-breadcrumbLabel: OptionDialog
-sidebar: auto
----
-
 # Titanium.UI.OptionDialog
 
 <ProxySummary/>
@@ -60,5 +55,119 @@ by clicking outside of the dialog.
 Care should be taken not to define any properties that are not documented, as this may produce
 unexpected results. For example, setting a `message` property will prevent the picker of option
 items from being displayed on Android.
+
+## Examples
+
+### Dialog with 3 Options
+
+Ti.UI.setBackgroundColor('white');
+var win = Ti.UI.createWindow({
+  title: 'Click window to test',
+  backgroundColor: 'white'
+});
+
+var opts = {
+  cancel: 2,
+  options: ['Confirm', 'Help', 'Cancel'],
+  selectedIndex: 2,
+  destructive: 0,
+  title: 'Delete File?'
+};
+
+win.addEventListener('click', function(e){
+  var dialog = Ti.UI.createOptionDialog(opts).show();
+});
+win.open();
+
+### Dialog with 2 Options and 1 Button on Android and 3 Options on iOS
+
+var win = Ti.UI.createWindow({
+  title: 'Click window to test OptionDialog',
+  backgroundColor: 'white'
+});
+
+var opts = {
+  title: 'Delete File?'
+};
+
+var isAndroid = Ti.Platform.osname === 'android';
+
+if (isAndroid) {
+  opts.options = ['Confirm', 'Cancel'];
+  opts.buttonNames = ['Help'];
+} else {
+  opts.options = ['Confirm', 'Help', 'Cancel'];
+}
+
+var dialog;
+win.addEventListener('click', function() {
+  dialog = Ti.UI.createOptionDialog(opts);
+
+  dialog.addEventListener('click', onSelectDialog);
+  dialog.addEventListener('cancel', function(e) {
+    alert('Dialog canceled! e.cancel = ' + e.cancel + ', e.index = ' + e.index);
+  })
+
+   dialog.show();
+});
+
+function onSelectDialog(e) {
+  if (isAndroid) {
+    if (e.button === false && e.index === 0) {
+      alert('Confirm option selected! e.index = ' + e.index);
+    }
+    if (e.button === false && eventeindex === 1) {
+      alert('Cancel option selected! e.index = ' + e.index);
+    }
+    if (e.button === true && e.index === 0) {
+      alert('Help Button clicked! e.index = ' + e.index);
+    }
+  }
+}
+
+win.open();
+
+### Alloy XML Markup
+
+Previous example as an Alloy view.
+
+optiondialog.xml:
+
+    <Alloy>
+        <Window id="win" onClick="showOptions" title="Click window to test"
+            fullscreen="false" onExit="true" backgroundColor="white">
+
+            <!--
+                The OptionDialog tag declares an option dialog,
+                which will need to be opened by the controller.
+            -->
+            <OptionDialog id="dialog" title="Delete File?">
+
+                <!-- The Options tag sets the options property. -->
+                <Options>
+                    <Option>Confirm</Option>
+                    <Option platform="ios">Help</Option>
+                    <Option>Cancel</Option>
+                </Options>
+
+                <!-- The ButtonNames tag sets the Android-only buttonNames property. -->
+                <ButtonNames>
+                    <ButtonName>Help</ButtonName>
+                </ButtonNames>
+
+                <!-- Add a View for the androidView property here. -->
+
+            </OptionDialog>
+
+            <!-- Add views here -->
+
+        </Window>
+    </Alloy>
+
+optiondialog.js:
+
+    function showOptions(){
+        $.dialog.show();
+    }
 
 <ApiDocs/>

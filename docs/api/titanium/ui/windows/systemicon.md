@@ -1,8 +1,3 @@
----
-breadcrumbLabel: SystemIcon
-sidebar: auto
----
-
 # Titanium.UI.Windows.SystemIcon
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Codec
-sidebar: auto
----
-
 # Titanium.Codec
 
 <ProxySummary/>

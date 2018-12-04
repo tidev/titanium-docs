@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Activity
-sidebar: auto
----
-
 # Titanium.Android.Activity
 
 <ProxySummary/>
@@ -111,5 +106,24 @@ Prior to Release 3.2.0, you can create either a "lightweight" or "heavyweight" w
 described on the <Titanium.UI.Window> reference page. A *heavyweight* window creates a 
 new `Activity`. A *lightweight* window runs inside the same activity as the code that
 created it.  If you try to reference the activity of lightweight window, it returns undefined.
+
+## Examples
+
+### Callback Example
+
+The following example shows how to start an activity and retrieve a result code
+and optional data intent when the activity ends.
+
+    activity.startActivityForResult(intent, function(e) {
+        // The request code used to start this Activity
+        var requestCode = e.requestCode;
+        // The result code returned from the activity 
+        // (https://developer.android.com/reference/android/app/Activity.html#StartingActivities)
+        var resultCode = e.resultCode;
+        // A Titanium.Android.Intent filled with data returned from the Activity
+        var intent = e.intent;
+        // The Activity the received the result
+        var source = e.source;
+    });
 
 <ApiDocs/>

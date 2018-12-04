@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ShortcutParams
-sidebar: auto
----
-
 # ShortcutParams
 
 <ProxySummary/>

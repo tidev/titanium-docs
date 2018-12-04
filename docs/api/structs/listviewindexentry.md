@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ListViewIndexEntry
-sidebar: auto
----
-
 # ListViewIndexEntry
 
 <ProxySummary/>

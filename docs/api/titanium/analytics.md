@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Analytics
-sidebar: auto
----
-
 # Titanium.Analytics
 
 <ProxySummary/>
@@ -39,5 +34,17 @@ If a user opted out from Analytics and you still call Analytics events, they wil
 Note: This does not affect your app until you make use of the `optedOut` property. Once
 enabled for your users (e.g. by having a <Titanium.UI.Switch> in your settings), you
 should handle it within your app logic.
+
+## Examples
+
+### Custom Feature Event
+
+This example shows how to send a feature event during an application session to indicate 
+some feature that you would like to track was used.
+
+    Ti.Analytics.featureEvent('app.feature');
+
+In this case, the Analytics product would show statistics about how many times the
+'app.feature' event was generated.
 
 <ApiDocs/>

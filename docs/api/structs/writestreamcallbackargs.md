@@ -1,8 +1,3 @@
----
-breadcrumbLabel: WriteStreamCallbackArgs
-sidebar: auto
----
-
 # WriteStreamCallbackArgs
 
 <ProxySummary/>

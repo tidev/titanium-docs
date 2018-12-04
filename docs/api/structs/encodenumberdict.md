@@ -1,8 +1,3 @@
----
-breadcrumbLabel: EncodeNumberDict
-sidebar: auto
----
-
 # EncodeNumberDict
 
 <ProxySummary/>

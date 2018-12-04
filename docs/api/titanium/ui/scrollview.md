@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ScrollView
-sidebar: auto
----
-
 # Titanium.UI.ScrollView
 
 <ProxySummary/>
@@ -34,5 +29,101 @@ both set and are equal, or if they are both set and <Titanium.UI.ScrollView.show
 Pinching a `ScrollableView` to zoom in and out of content is not supported on Android. On iOS, this action
 is natively supported by the UIScrollView class, but on Android, the native ScrollView class does
 not support this action.
+
+## Examples
+
+### Simple Scroll View
+
+Create a scroll view with content.
+
+    var win = Ti.UI.createWindow({
+      backgroundColor: 'white',
+      exitOnClose: true,
+      fullscreen: false,
+      title: 'ScrollView Demo'
+    });
+
+    var scrollView = Ti.UI.createScrollView({
+      showVerticalScrollIndicator: true,
+      showHorizontalScrollIndicator: true,
+      height: '80%',
+      width: '80%'
+    });
+    var view = Ti.UI.createView({
+      backgroundColor:'#336699',
+      borderRadius: 10,
+      top: 10,
+      height: 2000,
+      width: 1000
+    });
+    scrollView.add(view);
+    win.add(scrollView);
+    win.open();
+
+### Scroll View as a Table View
+
+Create a scroll view that contains a set of views in a layout to resemble a table view with
+rows. This approach can mitigate the native Android issue described in the "TextFields in
+Tables with SOFT_INPUT_ADJUST_PAN" section of <Titanium.UI.TableView>.
+
+    var win = Ti.UI.createWindow({
+      backgroundColor:'white'
+    });
+
+    if (Ti.UI.Android){
+      win.windowSoftInputMode = Ti.UI.Android.SOFT_INPUT_ADJUST_PAN;
+    }
+
+    function createRow(i) {
+      var row = Ti.UI.createView({
+        backgroundColor: 'white',
+        borderColor: '#bbb',
+        borderWidth: 1,
+        width:'100%', height: 70,
+        top: 0, left: 0
+      });
+      var inputTextField = Ti.UI.createTextField({
+        hintText: 'Enter value ' + i,
+        keyboardType: Ti.UI.KEYBOARD_NUMBERS_PUNCTUATION,
+        top: 10, left: '10%',
+        width: '80%', height: 60
+      });
+      row.add(inputTextField);
+      return row;
+    }
+
+    var scrollView = Ti.UI.createScrollView({
+      bottom:120,
+      layout: 'vertical'
+    });
+
+    for(var i = 0; i <= 20; i++){
+    var row = createRow(i);
+      scrollView.add(row);
+    }
+    win.add(scrollView);
+
+    var label = Ti.UI.createLabel({
+      backgroundColor:'darkgray',
+      text: 'Your advert here',
+      textAlign: 'center',
+      bottom:0,
+      width: Titanium.UI.FILL,
+      height:100
+    });
+    win.add(label);
+    win.open();
+
+### Alloy XML Markup
+
+Previous simple scroll view example as an Alloy view.
+
+    <Alloy>
+        <Window id="win" backgroundColor="white" exitOnClose="true" fullscreen="false" title="ScrollView Demo">
+            <ScrollView id="scrollView" showVerticalScrollIndicator="true" showHorizontalScrollIndicator="true" height="80%" width="80%">
+                <View id="view" backgroundColor="#336699" borderRadius="10" top="10" height="2000" width="1000" />
+            </ScrollView>
+        </Window>
+    </Alloy>
 
 <ApiDocs/>

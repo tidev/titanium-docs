@@ -1,8 +1,3 @@
----
-breadcrumbLabel: View
-sidebar: auto
----
-
 # Titanium.Map.View
 
 <ProxySummary/>

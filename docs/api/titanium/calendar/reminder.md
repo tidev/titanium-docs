@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Reminder
-sidebar: auto
----
-
 # Titanium.Calendar.Reminder
 
 <ProxySummary/>

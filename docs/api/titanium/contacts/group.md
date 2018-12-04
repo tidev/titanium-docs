@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Group
-sidebar: auto
----
-
 # Titanium.Contacts.Group
 
 <ProxySummary/>

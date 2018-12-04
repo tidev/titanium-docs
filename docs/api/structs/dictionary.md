@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Dictionary
-sidebar: auto
----
-
 # Dictionary
 
 <ProxySummary/>

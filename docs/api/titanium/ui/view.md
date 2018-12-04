@@ -1,8 +1,3 @@
----
-breadcrumbLabel: View
-sidebar: auto
----
-
 # Titanium.UI.View
 
 <ProxySummary/>
@@ -210,5 +205,27 @@ When set to <Titanium.UI.iOS.CLIP_MODE_DEFAULT> or when this property is not set
 * If none of the conditions are met, clipping is disabled.
 
 In earlier versions of Titanium Mobile, views had clipping enabled by default.
+
+## Examples
+
+### Round View Example
+
+Create a rounded view.
+
+    var view = Titanium.UI.createView({
+       borderRadius:10,
+       backgroundColor:'red',
+       width:50,
+       height:50
+    });
+    window.add(view);
+
+### Alloy XML Markup
+
+Previous example as an Alloy view.
+
+    <Alloy>
+        <View id="view" borderRadius="10" backgroundColor="red" width="50" height="50" />
+    </Alloy>
 
 <ApiDocs/>

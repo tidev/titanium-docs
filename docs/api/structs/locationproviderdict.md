@@ -1,8 +1,3 @@
----
-breadcrumbLabel: LocationProviderDict
-sidebar: auto
----
-
 # LocationProviderDict
 
 <ProxySummary/>

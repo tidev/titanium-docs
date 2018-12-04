@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Proxy
-sidebar: auto
----
-
 # Titanium.Proxy
 
 <ProxySummary/>

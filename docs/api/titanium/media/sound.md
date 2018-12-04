@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Sound
-sidebar: auto
----
-
 # Titanium.Media.Sound
 
 <ProxySummary/>
@@ -20,5 +15,14 @@ in any format supported by the target platform(s), as described in the following
 
 * [Android](https://developer.android.com/guide/topics/media/media-formats#core)
 * [iOS](https://developer.apple.com/audio/)
+
+## Examples
+
+### Simple Example
+
+Simple example of playing a WAVE file from the Resources directory.
+
+    var player = Ti.Media.createSound({url:"sound.wav"});
+    player.play();
 
 <ApiDocs/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: CloudFriendsResponse
-sidebar: auto
----
-
 # CloudFriendsResponse
 
 <ProxySummary/>

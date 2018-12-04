@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Dimension
-sidebar: auto
----
-
 # Dimension
 
 <ProxySummary/>

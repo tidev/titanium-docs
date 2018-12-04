@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Node
-sidebar: auto
----
-
 # Titanium.XML.Node
 
 <ProxySummary/>

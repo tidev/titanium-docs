@@ -1,6 +1,5 @@
 ---
 metadataKey: Global.JSON
-sidebar: auto
 ---
 
 # JSON

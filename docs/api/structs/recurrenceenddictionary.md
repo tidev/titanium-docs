@@ -1,8 +1,3 @@
----
-breadcrumbLabel: recurrenceEndDictionary
-sidebar: auto
----
-
 # recurrenceEndDictionary
 
 <ProxySummary/>

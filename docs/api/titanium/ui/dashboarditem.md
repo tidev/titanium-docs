@@ -1,8 +1,3 @@
----
-breadcrumbLabel: DashboardItem
-sidebar: auto
----
-
 # Titanium.UI.DashboardItem
 
 <ProxySummary/>

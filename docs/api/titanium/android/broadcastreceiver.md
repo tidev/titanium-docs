@@ -1,8 +1,3 @@
----
-breadcrumbLabel: BroadcastReceiver
-sidebar: auto
----
-
 # Titanium.Android.BroadcastReceiver
 
 <ProxySummary/>
@@ -49,5 +44,19 @@ Further Reading:
 
   * [Android Broadcast Intents and Receivers guide](https://docs.appcelerator.com/platform/latest/#!/guide/Android_Broadcast_Intents_and_Receivers)
   * [Android Developers: Broadcast Receivers](https://developer.android.com/reference/android/content/BroadcastReceiver.html).
+
+## Examples
+
+### Create and register a broadcast receiver
+
+This example creates a broadcast receiver and registers it to handle the airplane mode broadcast.
+
+    var bc = Ti.Android.createBroadcastReceiver({
+        onReceived: function() {
+            Ti.API.info('Handling broadcast.');
+        }
+    });
+
+    Ti.Android.registerBroadcastReceiver(bc, [Ti.Android.ACTION_AIRPLANE_MODE_CHANGED]);
 
 <ApiDocs/>

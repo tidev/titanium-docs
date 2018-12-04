@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ThumbnailResponse
-sidebar: auto
----
-
 # ThumbnailResponse
 
 <ProxySummary/>

@@ -28,7 +28,6 @@ module.exports = (options = {}, context) => ({
 
     page.frontmatter.layout = 'ApiLayout';
     page.frontmatter.sidebarDepth = 0;
-    delete page.frontmatter.sidebar;
 
     const typeName = page.frontmatter.metadataKey || page.title;
     const metadata = typesMetadata[typeName];

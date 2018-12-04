@@ -1,8 +1,3 @@
----
-breadcrumbLabel: UserNotificationAction
-sidebar: auto
----
-
 # Titanium.App.iOS.UserNotificationAction
 
 <ProxySummary/>

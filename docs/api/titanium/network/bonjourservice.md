@@ -1,8 +1,3 @@
----
-breadcrumbLabel: BonjourService
-sidebar: auto
----
-
 # Titanium.Network.BonjourService
 
 <ProxySummary/>

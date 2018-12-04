@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Document
-sidebar: auto
----
-
 # Titanium.XML.Document
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: iOS
-sidebar: auto
----
-
 # Titanium.App.iOS
 
 <ProxySummary/>

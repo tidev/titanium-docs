@@ -1,8 +1,3 @@
----
-breadcrumbLabel: BlobStream
-sidebar: auto
----
-
 # Titanium.BlobStream
 
 <ProxySummary/>

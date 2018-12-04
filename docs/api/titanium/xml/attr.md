@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Attr
-sidebar: auto
----
-
 # Titanium.XML.Attr
 
 <ProxySummary/>

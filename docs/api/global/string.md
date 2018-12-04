@@ -1,6 +1,5 @@
 ---
 metadataKey: Global.String
-sidebar: auto
 ---
 
 # String

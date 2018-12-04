@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Slider
-sidebar: auto
----
-
 # Titanium.UI.Slider
 
 <ProxySummary/>
@@ -33,5 +28,56 @@ On Android, both `min` and `max` must be specified for the slider to work proper
 Earlier versions of the Titanium SDK implicitly enforced that both the [leftTrackImage](Titanium.UI.Slider.leftTrackImage) and
 [rightTrackImage](Titanium.UI.Slider.rightTrackImage) properties be specified before the properties would be honored. Beginning with
 Titanium SDK 4.0.0 this limitation has been removed. However it is recommended that either both or neither be specified.
+
+## Examples
+
+### Simple Slider
+
+The following sample demonstrates creating a slider and adding a listener to
+handle the change events.
+
+    var slider = Titanium.UI.createSlider({
+        top: 50,
+        min: 0,
+        max: 100,
+        width: Ti.UI.FILL,
+        value: 50
+        });
+
+    var label = Ti.UI.createLabel({
+        text: slider.value,
+        width: Ti.UI.FILL,
+        top: 30,
+        left: 0,
+        textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+    });
+
+    slider.addEventListener('change', function(e) {
+        label.text = String.format('%3.1f', e.value);
+    });
+
+### Alloy XML Markup
+
+Previous example as an Alloy view.
+
+Implement the `updateLabel` callback in the controller to update the label value
+and set the initial `text` value for the label in the TSS file or controller.
+
+index.xml:
+
+    <Alloy>
+        <Window id="window" backgroundColor="white">
+            <Slider id="slider" top="50" min="0" max="100" width="Ti.UI.FILL" value="50" onChange="updateLabel"/>
+            <Label id="label" width="Ti.UI.FILL" top="30" left="0" />
+        </Window>
+    </Alloy>
+
+index.js:
+
+    $.slider.text = $.slider.value;
+    function updateLabel(e) {
+        $.label.text = String.format('%3.1f', e.value);
+    }
+    $.window.open();
 
 <ApiDocs/>

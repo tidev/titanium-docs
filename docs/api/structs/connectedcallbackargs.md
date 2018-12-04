@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ConnectedCallbackArgs
-sidebar: auto
----
-
 # ConnectedCallbackArgs
 
 <ProxySummary/>

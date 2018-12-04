@@ -1,8 +1,3 @@
----
-breadcrumbLabel: LocationRule
-sidebar: auto
----
-
 # Titanium.Geolocation.Android.LocationRule
 
 <ProxySummary/>

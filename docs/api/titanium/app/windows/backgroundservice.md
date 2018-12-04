@@ -1,8 +1,3 @@
----
-breadcrumbLabel: BackgroundService
-sidebar: auto
----
-
 # Titanium.App.Windows.BackgroundService
 
 <ProxySummary/>

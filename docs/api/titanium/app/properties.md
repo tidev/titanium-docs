@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Properties
-sidebar: auto
----
-
 # Titanium.App.Properties
 
 <ProxySummary/>
@@ -37,5 +32,25 @@ rather than defining them in the `tiapp.xml` file.
 
 Prior to Release 3.2.0, application properties defined in the `tiapp.xml` file could be
 overwritten by these APIs and accessed externally by other applications and modules.
+
+## Examples
+
+### Store a property
+
+Store a string property.
+
+    Ti.App.Properties.setString('givenName', 'Paul');
+    Ti.API.info('The value of the givenName property is: ' + Ti.App.Properties.getString('givenName'));
+
+### Enumerate over saved properties
+
+Output all saved properties to the console.
+
+    var props = Ti.App.Properties.listProperties();
+    
+    for (var i=0, ilen=props.length; i<ilen; i++){
+        var value = Ti.App.Properties.getString(props[i]);
+        Ti.API.info(props[i] + ' = ' + value);
+    }
 
 <ApiDocs/>

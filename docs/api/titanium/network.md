@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Network
-sidebar: auto
----
-
 # Titanium.Network
 
 <ProxySummary/>

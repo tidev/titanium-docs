@@ -1,8 +1,3 @@
----
-breadcrumbLabel: File
-sidebar: auto
----
-
 # Titanium.Filesystem.File
 
 <ProxySummary/>
@@ -52,5 +47,48 @@ original `File` object. You must use `getFile` to get a handle to the new path.
 The `Resources` directory and all the files in it are read-only. On Android, resource
 files are stored in the resource bundle and do not have all of the properties of
 normal files. In particular, they do not have creation or modification timestamps.
+
+## Examples
+
+### Reading a File
+
+Data files shipped with the application are stored in the resources directory.
+
+This example reads string data from a text file.
+
+    // resourcesDirectory is actually the default location, so the first
+    // argument could be omitted here.
+    file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "textfile.txt");
+    var blob = file.read();
+    var readText = blob.text;
+    // dispose of file handle & blob.
+    file = null;
+    blob = null;
+
+### Creating a Subdirectory
+
+Files that the application writes to need to be stored outside of the
+resources directory, since that directory is read-only.
+
+This example creates a subdirectory to store downloaded images.
+The example assumes that two variables are defined elsewhere in the code:
+myImageID, a string containing some kind of ID for the downloaded image,
+and myImageData, a `Blob` containing JPEG image data.
+
+    var imageDir = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,
+        'downloaded_images');
+    if (! imageDir.exists()) {
+        imageDir.createDirectory();
+    }
+
+    // .resolve() provides the resolved native path for the directory.
+    var imageFile  = Ti.Filesystem.getFile(imageDir.resolve(), myImageID + '.jpg');
+    Ti.API.info("ImageFile path is: " + imageFile.resolve());
+    if (imageFile.write(myImageData)===false) {
+        // handle write error
+    }
+    // dispose of file handles
+    imageFile = null;
+    imageDir = null;
 
 <ApiDocs/>

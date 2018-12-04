@@ -1,8 +1,3 @@
----
-breadcrumbLabel: MediaScannerResponse
-sidebar: auto
----
-
 # MediaScannerResponse
 
 <ProxySummary/>

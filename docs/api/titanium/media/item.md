@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Item
-sidebar: auto
----
-
 # Titanium.Media.Item
 
 <ProxySummary/>

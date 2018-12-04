@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Font
-sidebar: auto
----
-
 # Font
 
 <ProxySummary/>

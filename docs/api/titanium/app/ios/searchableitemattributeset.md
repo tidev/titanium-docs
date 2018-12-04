@@ -1,8 +1,3 @@
----
-breadcrumbLabel: SearchableItemAttributeSet
-sidebar: auto
----
-
 # Titanium.App.iOS.SearchableItemAttributeSet
 
 <ProxySummary/>
@@ -25,5 +20,41 @@ At minimum, you must set the [itemContentType](Titanium.App.iOS.SearchableItemAt
 
 Pass the SearchableItemAttributeSet object to either the Titanium.App.iOS.createSearchableItem method to the `attributeSet` key
 or to a UserActivity object's [addContentAttributeSet()](Titanium.App.iOS.UserActivity.addContentAttributeSet) method.
+
+## Examples
+
+### Add Searchable Content to the On-Device Index
+
+The following example demonstrates how to create a new Ti.App.iOS.SearchableItem and
+add a Ti.App.iOS.SearchableItemAttributeSet. The Ti.App.iOS.SearchableItem is then passed to the
+Ti.App.iOS.SearchableIndex object to add it to the on-device search index.
+
+#### app.js
+
+    var searchItems = [];
+    var itemAttr = Ti.App.iOS.createSearchableItemAttributeSet({
+        itemContentType: Ti.App.iOS.UTTYPE_IMAGE,
+        title:"Titanium Core Spotlight Tutorial"
+    });
+
+    itemAttr.contentDescription ="Tech Example \nOn: " + String.formatDate(new Date(),"short");
+    itemAttr.keywords =["Mobile","Appcelerator","Titanium"];
+
+    var item = Ti.App.iOS.createSearchableItem({
+        uniqueIdentifier:"my-id",
+        domainIdentifier:"com.mydomain",
+        attributeSet:itemAttr
+    });
+    searchItems.push(item);
+
+    var indexer = Ti.App.iOS.createSearchableIndex();
+
+    indexer.addToDefaultSearchableIndex(searchItems,function(e){
+        if(e.success){
+            alert("Press the home button and now search for your keywords");
+        }else{
+            alert("Errored: " + JSON.stringify(e.error));
+        }
+    });
 
 <ApiDocs/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: TableViewContentInsetOption
-sidebar: auto
----
-
 # TableViewContentInsetOption
 
 <ProxySummary/>

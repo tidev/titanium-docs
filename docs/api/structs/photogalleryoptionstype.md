@@ -1,8 +1,3 @@
----
-breadcrumbLabel: PhotoGalleryOptionsType
-sidebar: auto
----
-
 # PhotoGalleryOptionsType
 
 <ProxySummary/>

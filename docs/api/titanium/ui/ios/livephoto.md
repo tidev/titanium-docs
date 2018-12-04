@@ -1,8 +1,3 @@
----
-breadcrumbLabel: LivePhoto
-sidebar: auto
----
-
 # Titanium.UI.iOS.LivePhoto
 
 <ProxySummary/>

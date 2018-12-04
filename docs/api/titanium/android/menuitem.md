@@ -1,8 +1,3 @@
----
-breadcrumbLabel: MenuItem
-sidebar: auto
----
-
 # Titanium.Android.MenuItem
 
 <ProxySummary/>

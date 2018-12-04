@@ -1,8 +1,3 @@
----
-breadcrumbLabel: PendingIntent
-sidebar: auto
----
-
 # Titanium.Android.PendingIntent
 
 <ProxySummary/>

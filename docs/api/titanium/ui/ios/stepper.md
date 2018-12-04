@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Stepper
-sidebar: auto
----
-
 # Titanium.UI.iOS.Stepper
 
 <ProxySummary/>
@@ -27,5 +22,47 @@ partially or wholly transparent for the background color or background gradient 
 set to 'transparent'.
 
 * Note that the stepper cannot be re-sized.
+
+## Examples
+
+### Simple Stepper Example
+
+var win = Ti.UI.createWindow({
+    backgroundColor: '#fff'
+});
+
+var stepper = Ti.UI.iOS.createStepper({
+    tintColor: "green",
+    steps: 3,
+    maximum: 30,
+    minimum: 0
+});
+
+stepper.addEventListener("change", function(e) {
+    Ti.API.info(e.value);
+});
+
+win.add(stepper);
+win.open();
+
+### Alloy XML Markup
+
+Previous example as an Alloy view.
+
+stepper.xml:
+
+    <Alloy>
+        <Window id="window">
+            <Stepper id="stepper" onClick="doClick" tintColor="green" steps="3" />
+        </Window>
+    </Alloy>
+
+stepper.js:
+
+    function doClick(e) {
+        alert(e.value);
+    }
+
+    $.window.open();
 
 <ApiDocs/>

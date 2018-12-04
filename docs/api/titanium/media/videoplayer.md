@@ -1,8 +1,3 @@
----
-breadcrumbLabel: VideoPlayer
-sidebar: auto
----
-
 # Titanium.Media.VideoPlayer
 
 <ProxySummary/>
@@ -58,5 +53,101 @@ Android renders the SurfaceView behind the main window and punches a hole in the
 to reveal the video.  Because the content of the SurfaceView does not reside in the application
 window, the video content cannot be transformed (moved, scaled or rotated) with the window.
 This makes it difficult for the content to render properly inside a ScrollView.
+
+## Examples
+
+### Simple Video Player Example
+
+The following code creates a simple video player to play a local video file.
+
+    var vidWin = Titanium.UI.createWindow({
+        title : 'Video View Demo',
+        backgroundColor : '#fff'
+    });
+
+    var videoPlayer = Titanium.Media.createVideoPlayer({
+        top : 2,
+        autoplay : true,
+        backgroundColor : 'blue',
+        height : 300,
+        width : 300,
+        mediaControlStyle : Titanium.Media.VIDEO_CONTROL_DEFAULT,
+        scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FIT
+    });
+
+    videoPlayer.url = 'movie.mp4';
+    vidWin.add(videoPlayer);
+    vidWin.open();
+
+### Android Fullscreen Video Player
+
+The Android fullscreen video player operates differently from other video players.
+The following example shows how to create, show, and close a fullscreen video
+player.
+
+Note that in this example, a button is included to close the player, to
+demonstrate a method for dismissing the player programmatically. In practice, the user
+can always dismiss the player by using the **Back** button, so an on-screen
+control would not be required.
+
+    Titanium.UI.setBackgroundColor('#000');
+    var win = Titanium.UI.createWindow({
+        title : 'Test',
+        backgroundColor : '#fff',
+        exitOnClose : true
+    });
+
+    // Change to a valid URL
+    var contentURL = "http://www.example.com/stream.mp4";
+
+    var openButton = Ti.UI.createButton({
+        title : "Start Video",
+        top : "0dp",
+        height : "40dp",
+        left : "10dp",
+        right : "10dp"
+    });
+
+    openButton.addEventListener('click', function() {
+        var activeMovie = Titanium.Media.createVideoPlayer({
+            url : contentURL,
+            backgroundColor : 'blue',
+            mediaControlStyle : Titanium.Media.VIDEO_CONTROL_DEFAULT,
+            scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FILL,
+            fullscreen : true,
+            autoplay : true
+        });
+
+        var closeButton = Ti.UI.createButton({
+            title : "Exit Video",
+            top : "0dp",
+            height : "40dp",
+            left : "10dp",
+            right : "10dp"
+        });
+
+        closeButton.addEventListener('click', function() {
+            activeMovie.hide();
+            activeMovie.release();
+            activeMovie = null;
+        });
+
+        activeMovie.add(closeButton);
+    });
+    win.add(openButton);
+    win.open();
+
+### Alloy XML Markup
+
+Previous simple example as an Alloy view.
+
+simplevideoplayer.xml:
+
+    <Alloy>
+        <Window id="vidWin" title="Video View Demo" backgroundColor="#fff">
+            <VideoPlayer id="videoPlayer" ns="Ti.Media" top="2" url="/movie.mp4"
+                         height="300" width="300" backgroundColor="blue" autoplay="true" />
+        </Window>
+    </Alloy>
 
 <ApiDocs/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Titanium
-sidebar: auto
----
-
 # Titanium
 
 <ProxySummary/>

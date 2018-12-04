@@ -20,21 +20,24 @@ for (let typeName in typesMetadata) {
   const typeNameParts = metadata.name.split('.');
   const breadcrumbLabel = typeNameParts[typeNameParts.length -1];
   const overview = description.length > 0 ? `\n\n## Overview\n\n${description.trim().replace(/^\s+|\s+$/g, '')}\n\n` : '\n\n'
+  let examples = '';
+  if (metadata.examples && metadata.examples.length > 0) {
+    examples += `## Examples\n\n`;
+    examples += metadata.examples.map(example => {
+      return `### ${example.description}\n\n${example.code.trim().replace(/^\s+|\s+$/g, '')}`;
+    }).join('\n\n');
+    examples += '\n\n';
+  }
   const apiDocsPath = path.join(__dirname, '..', 'docs', 'api');
   const basePath = metadata.type === 'pseudo' ? path.join(apiDocsPath, 'structs') : apiDocsPath;
   const destPath = path.join(basePath, metadata.name.toLowerCase().split('.').join('/') + '.md');
   const mdContent =
-`---
-breadcrumbLabel: ${breadcrumbLabel}
-sidebar: auto
----
+`# ${metadata.name}
 
-# ${metadata.name}
-
-<ProxySummary/>${overview}<ApiDocs/>
+<ProxySummary/>${overview}${examples}<ApiDocs/>
 `;
 
-  if (!fs.existsSync(destPath)) {
+  //if (!fs.existsSync(destPath)) {
     fs.ensureDirSync(path.dirname(destPath));
     fs.writeFileSync(destPath, mdContent);
     if (metadata.type !== 'pseudo') {
@@ -42,7 +45,7 @@ sidebar: auto
     } else {
       createdPseudoTypes.push(metadata.name);
     }
-  }
+  //}
 }
 
 console.log(`Created the initial markdown files for ${createdTypes.length} actual types and ${createdPseudoTypes.length} pseudo types.`);

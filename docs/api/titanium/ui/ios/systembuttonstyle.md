@@ -1,8 +1,3 @@
----
-breadcrumbLabel: SystemButtonStyle
-sidebar: auto
----
-
 # Titanium.UI.iOS.SystemButtonStyle
 
 <ProxySummary/>

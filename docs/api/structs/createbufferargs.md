@@ -1,8 +1,3 @@
----
-breadcrumbLabel: CreateBufferArgs
-sidebar: auto
----
-
 # CreateBufferArgs
 
 <ProxySummary/>

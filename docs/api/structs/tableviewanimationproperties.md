@@ -1,8 +1,3 @@
----
-breadcrumbLabel: TableViewAnimationProperties
-sidebar: auto
----
-
 # TableViewAnimationProperties
 
 <ProxySummary/>

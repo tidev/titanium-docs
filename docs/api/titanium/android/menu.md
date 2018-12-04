@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Menu
-sidebar: auto
----
-
 # Titanium.Android.Menu
 
 <ProxySummary/>
@@ -90,5 +85,110 @@ See also:
 
 *   [Menu](https://developer.android.com/reference/android/view/Menu.html)
     in the Android Developer Reference.
+
+## Examples
+
+### Creating a Simple Menu
+
+This sample creates an Android menu that displays a menu item named "Item 1",
+which logs a debug message when clicked.
+
+If the action bar is in use, the menu item will be displayed as an action item if there is room in the action bar.
+
+    var win = Ti.UI.createWindow({
+      fullscreen: true
+    });
+
+    var activity = win.activity;
+
+    activity.onCreateOptionsMenu = function(e){
+      var menu = e.menu;
+      var menuItem = menu.add({
+        title: "Item 1",
+        icon:  "item1.png",
+        showAsAction: Ti.Android.SHOW_AS_ACTION_IF_ROOM
+      });
+      menuItem.addEventListener("click", function(e) {
+        Ti.API.debug("I was clicked");
+      });
+    };
+
+    win.open();
+
+### Creating a Dynamic Menu
+
+This sample creates an Android menu that displays a menu item named
+"Login" or "Logout", depending on the value of a `loggedIn` Boolean variable.
+Click on the item to toggle the variable's value.
+
+    var win = Ti.UI.createWindow({
+      fullscreen: true
+    });
+    var LOGIN = 1, LOGOUT = 2;
+    var loggedIn = false;
+
+    var activity = win.activity;
+
+    activity.onCreateOptionsMenu = function(e){
+      var menu = e.menu;
+      var login = menu.add({ title: "Login", itemId: LOGIN });
+      login.setIcon("login.png");
+      login.addEventListener("click", function(e) {
+        loggedIn = true;
+        // In Android 3.0 and above we need to call invalidateOptionsMenu() for menu changes at runtime
+        win.activity.invalidateOptionsMenu();
+      });
+      var logout = menu.add({ title: "Logout", itemId: LOGOUT });
+      logout.setIcon("logout.png");
+      logout.addEventListener("click", function(e) {
+        loggedIn = false;
+        // In Android 3.0 and above we need to call invalidateOptionsMenu() for menu changes at runtime
+        win.activity.invalidateOptionsMenu();
+      });
+    };
+
+    activity.onPrepareOptionsMenu = function(e) {
+      var menu = e.menu;
+      menu.findItem(LOGIN).setVisible(!loggedIn);
+      menu.findItem(LOGOUT).setVisible(loggedIn);
+    };
+    win.open();
+
+### Alloy XML Markup
+
+Previous simple menu example as an Alloy view.
+
+Due to the way menus are created in Alloy, menus created using Alloy markup are not
+displayed until the options menu is invalidated. To force menus (or action items)
+to be displayed, call `invalidateOptionsMenu` from the `open` event listener of the window or tab group
+where the menu is defined.
+
+index.xml:
+
+    <Alloy>
+        <!-- Create a heavyweight window to use the Android menu. -->
+        <Window id="win" fullscreen="true" onOpen="doOpen">
+
+            <!-- The Menu tag adds the Android menu. -->
+            <Menu id="menu" platform="android">
+
+                <!-- Cannot specify node text.  Use attributes only. -->
+                <MenuItem id="menuItem" title="Item 1" icon="item1.png" onClick="doClick" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
+            </Menu>
+
+            <!-- Place additional views here -->
+        </Window>
+    </Alloy>
+
+index.js:
+
+    function doClick(e) {
+        Ti.API.info("Menu item clicked: " + e.source.title);
+    }
+
+    // Ensure menu is displayed
+    function doOpen(e) {
+        $.win.invalidateOptionsMenu();
+    }
 
 <ApiDocs/>

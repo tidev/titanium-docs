@@ -1,8 +1,3 @@
----
-breadcrumbLabel: LocalNotification
-sidebar: auto
----
-
 # Titanium.App.iOS.LocalNotification
 
 <ProxySummary/>

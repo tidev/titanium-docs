@@ -1,8 +1,3 @@
----
-breadcrumbLabel: TCPSocket
-sidebar: auto
----
-
 # Titanium.Network.TCPSocket
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: WatchSession
-sidebar: auto
----
-
 # Titanium.WatchSession
 
 <ProxySummary/>

@@ -1,8 +1,3 @@
----
-breadcrumbLabel: R
-sidebar: auto
----
-
 # Titanium.App.Android.R
 
 <ProxySummary/>

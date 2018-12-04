@@ -1,8 +1,3 @@
----
-breadcrumbLabel: Intent
-sidebar: auto
----
-
 # Titanium.Android.Intent
 
 <ProxySummary/>
@@ -110,5 +105,93 @@ components.
 
   * [Android Intents guide](https://docs.appcelerator.com/platform/latest/#!/guide/Android_Intents)
   * [Android Developer: Intent](https://developer.android.com/reference/android/content/Intent.html)
+
+## Examples
+
+### Create an Intent for Launching an Activity
+
+This example creates an intent and uses it to launch a new activity.
+
+    var intent = Ti.Android.createIntent({
+        action: Ti.Android.ACTION_MAIN,
+        url: 'activity1.js'
+    });
+    intent.addCategory(Ti.Android.CATEGORY_LAUNCHER);
+    Ti.Android.currentActivity.startActivity(intent);
+
+### Create an Intent to get a Contact URI
+
+This example creates an intent to retrieve contact information from the user's
+contacts.
+
+    var intent = Ti.Android.createIntent({
+        action: Ti.Android.ACTION_GET_CONTENT,
+        type: "vnd.android.cursor.item/phone"
+    });
+
+### Pick a Photo from the Photo Gallery
+
+This example creates an intent to pick an image from the photo gallery.
+
+    var intent = Ti.Android.createIntent({
+        action: Ti.Android.ACTION_PICK,
+        type: "image/*"
+    });
+    intent.addCategory(Ti.Android.CATEGORY_DEFAULT);
+
+### Create an ImageView from an Image Send Intent
+
+This example requires that an intent filter be set up in the project's `tiapp.xml` file.
+After copying the default root activity of your application from the `AndroidManifest.xml`
+file to the Android manifest section of the `tiapp.xml` file, add an intent filter.
+For detailed instructions, refer to the
+[Android Intent Filters guide](https://docs.appcelerator.com/platform/latest/#!/guide/Android_Intent_Filters).
+
+You can trigger this intent filter by long pressing on an image in the Android gallery
+and selecting "share".
+
+`tiapp.xml`:
+
+    <ti:app>
+        <android>
+            <manifest>
+                <application>
+                    <activity android:name=".YourapplicationnameActivity">
+                        <intent-filter>
+                            <data android:mimeType="image/*"/>
+                            <action android:name="android.intent.action.SEND"/>
+                            <category android:name="android.intent.category.DEFAULT"/>
+                        </intent-filter>
+                    </activity>
+                </application>
+            </manifest>
+        </android>
+    </ti:app>
+
+`app.js`:
+
+     var win = Ti.UI.createWindow({
+         backgroundColor: '#fff',
+         fullscreen: false,
+         exitOnClose: true
+     });
+     win.addEventListener('open', function(e) {
+         var intent = Ti.Android.currentActivity.getIntent();
+         var iname = Ti.Android.EXTRA_STREAM;
+         if (intent && intent.hasExtra(iname)) {
+             // Create ImageView from TiBlob
+             var blob = intent.getBlobExtra(iname);
+             win.add(Ti.UI.createImageView({
+                 image: blob,
+                 height: 300,
+                 width: 300,
+                 left: 0,
+                 top: 0
+             }));
+         } else {
+             Ti.API.info('No extra named "' + iname + '" found in Intent');
+         }
+     });
+     win.open();
 
 <ApiDocs/>

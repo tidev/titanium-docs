@@ -1,8 +1,3 @@
----
-breadcrumbLabel: DocumentType
-sidebar: auto
----
-
 # Titanium.XML.DocumentType
 
 <ProxySummary/>

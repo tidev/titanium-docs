@@ -1,8 +1,3 @@
----
-breadcrumbLabel: DecodeStringDict
-sidebar: auto
----
-
 # DecodeStringDict
 
 <ProxySummary/>

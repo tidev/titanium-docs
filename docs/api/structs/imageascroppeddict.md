@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ImageAsCroppedDict
-sidebar: auto
----
-
 # ImageAsCroppedDict
 
 <ProxySummary/>

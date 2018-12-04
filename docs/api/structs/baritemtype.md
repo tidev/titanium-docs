@@ -1,8 +1,3 @@
----
-breadcrumbLabel: BarItemType
-sidebar: auto
----
-
 # BarItemType
 
 <ProxySummary/>

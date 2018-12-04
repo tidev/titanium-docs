@@ -1,8 +1,3 @@
----
-breadcrumbLabel: RecurrenceRule
-sidebar: auto
----
-
 # Titanium.Calendar.RecurrenceRule
 
 <ProxySummary/>

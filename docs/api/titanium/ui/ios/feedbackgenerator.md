@@ -1,8 +1,3 @@
----
-breadcrumbLabel: FeedbackGenerator
-sidebar: auto
----
-
 # Titanium.UI.iOS.FeedbackGenerator
 
 <ProxySummary/>

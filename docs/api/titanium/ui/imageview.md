@@ -1,8 +1,3 @@
----
-breadcrumbLabel: ImageView
-sidebar: auto
----
-
 # Titanium.UI.ImageView
 
 <ProxySummary/>
@@ -45,5 +40,58 @@ of the Android Developer website.
 
 The nine-patch technique may be used with any of Titanium's static image properties. See the
 "Button with Nine-patch Background Image" example for a demonstration.
+
+## Examples
+
+### Basic Image View
+
+In this example, we create a simple image view:
+
+    Ti.UI.backgroundColor = 'white';
+    var win = Ti.UI.createWindow();
+    var image = Ti.UI.createImageView({
+      image:'/images/myimage.png'
+    });
+    win.add(image);
+    win.open();
+
+### Button with Nine-patch Background Image
+
+Create a button with a nine-patch image background, that swaps with another image when
+selected, and generates a message in the console when clicked.
+
+Note that images are referenced in the code without the `.9` part of the filename, and that
+the project should be cleaned to ensure that the files are correctly copied to the project.
+
+    var win = Ti.UI.createWindow({
+        backgroundColor: 'white',
+        exitOnClose: true,
+        fullscreen: false,
+        title: 'Click button to test'
+    });
+
+    var button = Ti.UI.createButton({
+        backgroundImage: '/images/custom-slider-right.png',
+        backgroundSelectedImage:'/images/custom-slider-left.png',
+        title: 'Click me!',
+        top: 10,
+        width: 300,
+        height: 200
+    });
+    button.addEventListener('click',function(e){
+        Ti.API.info("You clicked the button");
+    });
+    win.add(button);
+    win.open();
+
+### Alloy XML Markup
+
+Previous basic image view example as an Alloy view.
+
+    <Alloy>
+        <Window id="win" backgroundColor="white">
+            <ImageView id="image" image="/images/myimage.png" />
+        </Window>
+    </Alloy>
 
 <ApiDocs/>

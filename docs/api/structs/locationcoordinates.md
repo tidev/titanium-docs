@@ -1,8 +1,3 @@
----
-breadcrumbLabel: LocationCoordinates
-sidebar: auto
----
-
 # LocationCoordinates
 
 <ProxySummary/>
