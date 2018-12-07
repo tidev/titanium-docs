@@ -1,0 +1,5 @@
+# PhotoGalleryOptionsType
+
+<ProxySummary/>
+
+<ApiDocs/>

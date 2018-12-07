@@ -1,0 +1,5 @@
+# LocationResults
+
+<ProxySummary/>
+
+<ApiDocs/>

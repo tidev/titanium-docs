@@ -1,0 +1,5 @@
+# GradientColorRef
+
+<ProxySummary/>
+
+<ApiDocs/>

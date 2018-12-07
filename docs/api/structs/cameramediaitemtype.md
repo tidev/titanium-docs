@@ -1,0 +1,5 @@
+# CameraMediaItemType
+
+<ProxySummary/>
+
+<ApiDocs/>

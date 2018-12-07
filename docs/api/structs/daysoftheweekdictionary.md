@@ -1,0 +1,5 @@
+# daysOfTheWeekDictionary
+
+<ProxySummary/>
+
+<ApiDocs/>

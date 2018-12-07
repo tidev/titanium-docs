@@ -1,6 +1,6 @@
 <template>
   <p class="function-signature">
-    <span class="static" v-if="!instance">(static)</span> <span>{{name}}({{parameterNames.join(', ')}})</span> <span class="return-type">→ {{returns.type | formatTypes}}</span>
+    <span class="static" v-if="!instance">(static)</span> <span>{{name}}({{parameterNames.join(', ')}})</span> <span class="return-type">→ {{returnTypes | formatTypes}}</span>
   </p>
 </template>
 
@@ -16,11 +16,14 @@ export default {
       type: Array,
       default: () => []
     },
-    returns: Object
+    returns: [Array, Object]
   },
   computed: {
     parameterNames: function () {
       return this.parameters.map(value => value.name);
+    },
+    returnTypes: function () {
+      return Array.isArray(this.returns) ? this.returns.map(returnType => returnType.type) : this.returns.type;
     }
   }
 }

@@ -1,0 +1,5 @@
+# ScreenshotResult
+
+<ProxySummary/>
+
+<ApiDocs/>

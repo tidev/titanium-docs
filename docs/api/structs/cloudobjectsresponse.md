@@ -1,0 +1,5 @@
+# CloudObjectsResponse
+
+<ProxySummary/>
+
+<ApiDocs/>

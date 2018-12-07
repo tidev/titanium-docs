@@ -1,0 +1,5 @@
+# HeadingResponse
+
+<ProxySummary/>
+
+<ApiDocs/>

@@ -1,0 +1,5 @@
+# LocationAuthorizationResponse
+
+<ProxySummary/>
+
+<ApiDocs/>

@@ -1,11 +1,3 @@
----
-title: Titanium.UI.View
-breadcrumbLabel: View
-sidebar: auto
----
-
-<Breadcrumb/>
-
 # Titanium.UI.View
 
 <ProxySummary/>
@@ -14,7 +6,7 @@ sidebar: auto
 
 The `View` is the base type for all UI widgets in Titanium.
 
-You use the [createView](/api/titanium/ui/view.md#createview) method or `<View>` Alloy element to create a View.
+You use the <Titanium.UI.createView> method or **`<View>`** Alloy element to create a View.
 
 ### Units and Coordinates
 
@@ -24,13 +16,14 @@ current system and/or the current project.
 
 When a value is specified as string, the value can consist of:
 
-* A number.
-* A percentage, such as "10%", interpreted as a percentage of the parent's total size in that dimension.
-* A number plus a unit specifier, such as "10px" or "1in".
+*  A number.
+*  A percentage, such as "10%", interpreted as a percentage of the parent's total size
+   in that dimension.
+*  A number plus a unit specifier, such as "10px" or "1in".
 
 The following units are supported:
 
-<table width="100%">
+<table class="doc-table" width="60%">
     <tr>
         <th>Unit</th>
         <th>Specifier</th>
@@ -68,6 +61,7 @@ The following units are supported:
     </tr>
 </table>
 
+
 The interpretation of the density-independent pixel (DIP) varies by platform:
 
 *   On Android, one DIP corresponds to one pixel on a 160DPI
@@ -89,9 +83,7 @@ On Android and iOS, the default unit can be overriden on a per-application level
 `ti.ui.defaultunit` property in `tiapp.xml`. For example, to use DIPs as the
 default on all platforms, set `defaultunit` to `dip`:
 
-```xml
-<property name="ti.ui.defaultunit" type="string">dip</property>
-```
+    <property name="ti.ui.defaultunit" type="string">dip</property>
 
 The value for `ti.ui.defaultunit` can be any of the unit specifiers defined above, or
 `system` to specify that the platform's default unit should be used.
@@ -116,9 +108,9 @@ system to indicate actual calculated positions and sizes.
 The [height](Titanium.UI.View.height) and [width](Titanium.UI.View.width) properties
 accept several special values:
 
-*   [`Titanium.UI.FILL`](/api/titanium/ui/fill) specifies that the view should fill the parent in this
+*   <Titanium.UI.FILL> specifies that the view should fill the parent in this
     dimension.
-*   [`Titanium.UI.SIZE`> specifies that the view should adjust this size to fit its
+*   <Titanium.UI.SIZE> specifies that the view should adjust this size to fit its
     contents, such as a label's text or a view's children.
 *   'auto' specifies that the view should choose either `FILL` or `SIZE` behavior.
     The use of `auto` is deprecated, and should be replaced with the SIZE or FILL constants if it is necessary to set the view's behavior explicitly.
@@ -137,7 +129,7 @@ fully drawn.
 
 The [size](Titanium.UI.View.size) property is a read-only dictionary
 with the properties `x`, `y`, `width` and `height`. It provides the *rendered* size
-  of the  view, and is only available once both it and its ancestors have been
+ of the  view, and is only available once both it and its ancestors have been
 fully drawn.
 
 To determine whether the `size` and `rect` values are available, add an event listener
@@ -149,10 +141,10 @@ a layout cycle.
 Four accessibility-related view properties became available in Titanium Mobile 3.0.0 for iOS
 and Android:
 
-* [`Titanium.UI.View.accessibilityLabel`]
-* [`Titanium.UI.View.accessibilityValue`]
-* [`Titanium.UI.View.accessibilityHint`]
-* [`Titanium.UI.View.accessibilityHidden`]
+* <Titanium.UI.View.accessibilityLabel>
+* <Titanium.UI.View.accessibilityValue>
+* <Titanium.UI.View.accessibilityHint>
+* <Titanium.UI.View.accessibilityHidden>
 
 The first three, `accessibilityLabel`, `accessibilityValue` and `accessibilityHint`, are for setting text
 that will be relayed to the user by the assistive service (such as TalkBack on Android or VoiceOver
@@ -194,18 +186,18 @@ For best results on ImageView set up the `backgroundLeftCap` and `backgroundTopC
 
 Four new view related properties became available in Titanium Mobile 3.3.0 for iOS.
 
-* [`Titanium.UI.View.viewShadowRadius`]
-* [`Titanium.UI.View.viewShadowColor`]
-* [`Titanium.UI.View.viewShadowOffset`]
-* [`Titanium.UI.View.clipMode`]
+* <Titanium.UI.View.viewShadowRadius>
+* <Titanium.UI.View.viewShadowColor>
+* <Titanium.UI.View.viewShadowOffset>
+* <Titanium.UI.View.clipMode>
 
 The first three, `viewShadowColor`, `viewShadowRadius` and `viewShadowOffset` control the shadow associated with the view.
 The shadow of the view is drawn using a rounded rectangle with the arc radius set to the `borderRadius` property.
 
 The `clipMode` property lets the user control the clipping behavior of the View.
-Setting this to [`Titanium.UI.iOS.CLIP_MODE_ENABLED`] enforces all child views to be clipped to this views bounds.
-Setting this to [`Titanium.UI.iOS.CLIP_MODE_DISABLED`] allows child views to be drawn outside the bounds of this view.
-When set to [`Titanium.UI.iOS.CLIP_MODE_DEFAULT`] or when this property is not set, clipping behavior is defined by the following rules applied in order.
+Setting this to <Titanium.UI.iOS.CLIP_MODE_ENABLED> enforces all child views to be clipped to this views bounds.
+Setting this to <Titanium.UI.iOS.CLIP_MODE_DISABLED> allows child views to be drawn outside the bounds of this view.
+When set to <Titanium.UI.iOS.CLIP_MODE_DEFAULT> or when this property is not set, clipping behavior is defined by the following rules applied in order.
 
 * If the `viewShadowColor` is defined to be a color with alpha > 0, clipping is disabled.
 * If the `borderWidth` or `borderRadius` of the view is set to a value > 0, clipping is enabled.
@@ -213,5 +205,27 @@ When set to [`Titanium.UI.iOS.CLIP_MODE_DEFAULT`] or when this property is not s
 * If none of the conditions are met, clipping is disabled.
 
 In earlier versions of Titanium Mobile, views had clipping enabled by default.
+
+## Examples
+
+### Round View Example
+
+Create a rounded view.
+
+    var view = Titanium.UI.createView({
+       borderRadius:10,
+       backgroundColor:'red',
+       width:50,
+       height:50
+    });
+    window.add(view);
+
+### Alloy XML Markup
+
+Previous example as an Alloy view.
+
+    <Alloy>
+        <View id="view" borderRadius="10" backgroundColor="red" width="50" height="50" />
+    </Alloy>
 
 <ApiDocs/>

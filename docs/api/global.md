@@ -1,43 +1,44 @@
 ---
-title: Global APIs
-sidebar: auto
 metadataKey: Global
 ---
 
-<Breadcrumb/>
-
 # Global JavaScript APIs
 
-The APIs that reside in the global scope, which may be called without a namespace prefix.
+<ProxySummary/>
 
 ## Overview
 
 Titanium provides a number of global built-in objects, detailed below.
 
+### JSON
+
+Titanium provides a built-in [JSON](Global.JSON) object two functions, `parse` and `stringify`.
+
+### String Utilities
+
+Titanium includes several extra utility functions for formatting text, attached to the
+global [String](Global.String) object.
+
 ### console
 
-Titanium provides [console](global/console.md) support familiar to many javascript developers for logging at the toplevel, in addition to the <Titanium.API> logging facilities.
-
-### alert
-
-Titanium has a built-in convenience function [alert](global/alert.md) which can be used as an alias for the [AlertDialog](titanium/ui/alertdialog) module.
+Titanium provides [console](Global.console) support familiar to many javascript developers
+for logging at the toplevel, in addition to the <Titanium.API> logging facilities.
 
 ### Timers
 
 Titanium has built-in support for one-off and repeating timers:
-* Use [setTimeout](global.md#settimeout) to start a one-off timer.
-* Use  [setInterval](global.md#setinterval) to start a repeating timer.
 
-### JSON
+*    Use [setTimeout](Global.setTimeout) to start a one-off timer.
 
-Titanium provides a built-in [JSON](global/json.md) object two functions, parse and stringify.
+*    Use [setInterval](Global.setInterval) to start a repeating timer.
 
-### String Utilities
+### Alert
 
-Titanium includes several extra utility functions for formatting text, attached to the global [String](global/string.md) object.
+Titanium has a built-in convenience function [alert](Global.alert) which can be used as an alias
+for the [AlertDialog](Titanium.UI.AlertDialog) module.
 
-### Locale alias
+### Locale
 
-The `L` macro can also be used as an alias for the [`Titanium.Locale.getString`](titanium/locale.md#getstring) method.
+The `L` macro can also be used as an alias for the <Titanium.Locale.getString> method.
 
 <ApiDocs/>

@@ -1,6 +1,6 @@
 <template>
   <div class="property-signature">
-    <span class="static" v-if="!instance">(static)</span> <span>{{name}}</span> <span class="return-type">: {{type | formatTypes}}</span>
+    <span class="static" v-if="!instance">(static)</span> <span>{{name}}</span> <span class="return-type">: <TypeLink :types="type"/></span>
   </div>
 </template>
 

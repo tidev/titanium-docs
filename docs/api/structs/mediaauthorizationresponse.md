@@ -1,0 +1,5 @@
+# MediaAuthorizationResponse
+
+<ProxySummary/>
+
+<ApiDocs/>

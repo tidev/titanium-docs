@@ -1,0 +1,5 @@
+# CloudStatusesResponse
+
+<ProxySummary/>
+
+<ApiDocs/>

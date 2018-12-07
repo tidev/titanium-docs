@@ -1,0 +1,5 @@
+# CloudCheckinsResponse
+
+<ProxySummary/>
+
+<ApiDocs/>

@@ -1,0 +1,5 @@
+# CloudLikesResponse
+
+<ProxySummary/>
+
+<ApiDocs/>

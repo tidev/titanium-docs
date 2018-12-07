@@ -1,6 +1,6 @@
 # titanium-vuepress-docs
 
-> Experimental approach to use VuePress for Guides and API docs.
+> Experimental approach to use [VuePress](https://vuepress.vuejs.org/) for Guides and API docs.
 
 ## Getting started
 
@@ -18,11 +18,16 @@ npm i
 
 ### Building the docs
 
-There are currently a few manual steps required to build the docs which we aim to consolidate into a single build step while this project moves foreward. The following steps assume you have checked out this repo parallel to Titanium so that your folder structure looks like this:
+There are currently a few manual steps required to build the docs which we aim to consolidate into a single build step while this project moves foreward.
+
+> ✅ For convenience the repo currently contains a pre-generate `api.json` so you can skip this if you just want to play with the new docs.
+
+The following steps assume you have checked out this repo parallel to Titanium (including the Windows runtime) so that your folder structure looks like this:
 
 ```
 ./
 ├── titanium_mobile/
+├── titanium_mobile_window
 └── titanium-vuepress-docs/
 ```
 
@@ -47,7 +52,7 @@ cd ../titanium-vuepress-docs
 npm run docs:build
 ```
 
-This will output the statically rendered docs into `docs/.vuepress/dist`. See <https://vuepress.vuejs.org/guide/deploy.html#github-pagesv> how to deploy the generated docs to the GitHub pages of this repo.
+This will output the statically rendered docs into `docs/.vuepress/dist`.
 
 ### Development
 
@@ -57,7 +62,7 @@ VuePress supports a dev mode with hot reloading for a convenient developing expe
 npm run docs:dev
 ```
 
-Now start editing the docs and you can immediatly see the results in your browser. This assumes you have done the previous
+Now start editing the docs and you can immediatly see the results in your browser.
 
 ## Migrating docs to VuePress
 
@@ -65,9 +70,9 @@ Now start editing the docs and you can immediatly see the results in your browse
 
 ### Writing guides in VuePress
 
-Guides reside under `docs/guide` and a few documents already have been ported as examples. However none of those the guides is complete yet.
+Guides reside under `docs/guide` and a few documents already have been ported as examples. However none of those guides are complete yet.
 
-The add a new guide first create a new markdown file under `docs/guide`. To add it to the sidebar navigation open `docs/.vuepress/config.js` and edit the `/guide/` section under `themeConfig.sidebar`. The key you want to add is the name of the new markdown file without the `.md` extension.
+To add a new guide first create a new markdown file under `docs/guide`. To add it to the sidebar navigation open `docs/.vuepress/config.js` and edit the `/guide/` section under `themeConfig.sidebar`. The key you want to add is the name of the new markdown file without the `.md` extension.
 
 ```js
 module.exports = {
@@ -93,59 +98,33 @@ module.exports = {
 
 ### Adding API docs
 
-In theory the `api.json` contains all required information to automatically generate markdown files. However, some APIs contain very detailed description and various examples which are just better to maintain directly in the markdwon files here than in their `.yaml` counterpart in Titanium's [apidoc](https://github.com/appcelerator/titanium_mobile/tree/master/apidoc). All other information regarding the API for a type in Titanium is then taken from the `api.json`. This creates a clear seperation of extensive documentation and simple api reference.
+In theory the `api.json` contains all required information to automatically generate markdown files. However, some APIs contain very detailed description and various examples which are just better to maintain directly in markdown files here than in their `.yaml` counterpart in Titanium's [apidoc](https://github.com/appcelerator/titanium_mobile/tree/master/apidoc). All other information regarding the API for a type in Titanium is then taken from the `api.json`. This creates a clear seperation of extensive documentation and simple api reference.
 
-To migrate a type over to these docs you need to perform the following steps:
+To automatically migrate a type over to these docs you can run the migration script.
 
-1. Create a new markdown file under `docs/api` which follows these naming rules:
-  * Make everything lowercase
-  * Replace `.` in the fully qualified type name with `/`
-  * Append the `.md` extension
-  * Example: The markdown file for `Titanium.Buffer` is `docs/api/titanium/buffer.md`
-2. Add frontmatter and heading by pasting the follwing to the new markdown file and adjust it for the type you are documenting.
-    ```md
-    ---
-    title: Titanium.Buffer
-    breadcrumbLabel: Buffer
-    sidebar: auto
-    ---
-
-    <Breadcrumb/>
-
-    # Titanium.Buffer
-
-    <ProxySummary/>
-    ```
-3. Now extract the `description` part of the matching apidoc yaml file and add it to the markdown file under the `## Overview` heading. For example, `Titanium.Buffer` is documented in `titanium_mobile/apidoc/Titanium/Buffer.yaml`. You want to make sure the formatting matches the document an makes use of all markdown features in VuePress, including
-  * Adjust header levels
-  * Fix links to point to the correct document
-  * Use proper code highlighting by moving from indented code examples to triple backticks and specificy the language
-4. Now add the `<PropertyList/>` and `<MethodList/>` Vue components at the end of your file to pull in the rest of the api documentation.
-5. Add the new type to the sidebar in `docs/.vuepress/config.js` under the `/api/` key.
-
-If you followed these steps your file sould look like this at then end:
-```md
----
-title: Titanium.Buffer
-breadcrumbLabel: Buffer
-sidebar: auto
----
-
-<Breadcrumb/>
-
-# Titanium.Buffer
-
-<ProxySummary/>
-
-## Overview
-
-A `Buffer` works like a resizable array of byte values. Use the [createBuffer](/api/titanium.md#createBuffer) method to create a buffer.
-
-<PropertyList/>
-<MethodList/>
+```bash
+node scripts/migrate.js
 ```
 
+This will parse `docs/api/api.json` and generate the missing markdown files.
+
+You may need to adjust the automatically generated content and fix any markdown issues or adjust the front matter section to properly display links throughout the docs.
+
+Apart of the [predefined variables](https://vuepress.vuejs.org/guide/frontmatter.html#predefined-variables) from VuePress, API pages support the following additional variables:
+
+| Name | Descriptions |
+| --- | --- |
+| `metadataKey` | Fully qualified type name which is used to find metadata for a type in `api.json`. The page title will be used if this is not set. |
+| `breadcrumbLabel` | Title of this page in the breadcrumb, usually set to the last part of a fully qualified type name, e.g. `View` for `Titanium.UI.View` |
 
 
+Once you have made sure the automatically generated markdown is correct you can add the new type to the sidebar in `docs/.vuepress/config.js` under the `/api/` key.
 
+## Contributions
 
+Open source contributions are greatly appreciated! If you have a bugfix, improvement or new feature, please create
+[an issue](https://github.com/appcelerator/titanium-vuepress-docs/issues/new) first and submit a [pull request](https://github.com/appcelerator/titanium-vuepress-docs/pulls/new) against master.
+
+## License
+
+Apache License, Version 2.0

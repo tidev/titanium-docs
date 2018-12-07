@@ -1,0 +1,5 @@
+# MediaQueryInfoType
+
+<ProxySummary/>
+
+<ApiDocs/>

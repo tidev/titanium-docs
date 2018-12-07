@@ -1,0 +1,5 @@
+# ScrollViewAnimationProperties
+
+<ProxySummary/>
+
+<ApiDocs/>

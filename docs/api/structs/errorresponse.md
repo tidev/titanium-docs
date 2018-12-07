@@ -1,0 +1,5 @@
+# ErrorResponse
+
+<ProxySummary/>
+
+<ApiDocs/>
