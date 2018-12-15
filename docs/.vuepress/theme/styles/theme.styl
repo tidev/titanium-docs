@@ -1,9 +1,12 @@
+@require './config'
 @require './nprogress'
 @require './code'
 @require './custom-blocks'
 @require './arrow'
 @require './wrapper'
 @require './toc'
+
+$apiSidebarWidth = 12rem
 
 html, body
   padding 0
@@ -197,7 +200,5 @@ th, td
   .theme-container.no-sidebar
     .sidebar
       display none
-    .page
-      padding-left 0
 
 @require 'mobile.styl'
