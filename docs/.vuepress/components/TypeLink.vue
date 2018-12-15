@@ -1,5 +1,5 @@
 <template>
-  <div class="type-links">
+  <span class="type-links">
     <template v-for="(typeName, index) in normalizedTypes">
       <template v-if="hasType(typeName)">
         <router-link :to="getTypeLink(typeName)">{{typeName}}</router-link>
@@ -9,7 +9,7 @@
       </template>
       <template v-if="index < normalizedTypes.length - 1"> | </template>
     </template>
-  </div>
+  </span>
 </template>
 
 <script>
@@ -44,7 +44,6 @@ export default {
 
 <style lang="stylus">
 .type-links
-  display inline
   font-family monospace
   color #aaaaaa
 </style>

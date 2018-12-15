@@ -6,7 +6,7 @@ module.exports = (options, context) => {
 
     clientDynamicModules() {
       const typeLinks = {};
-      Object.keys(typesMetadata).forEach(name => typeLinks[name] = getLinkForKeyPath(name, context.base).path);
+      Object.keys(typesMetadata).forEach(name => typeLinks[name] = getLinkForKeyPath(name, '/').path);
       return {
         name: 'type-links.js',
         content: `export default ${JSON.stringify(typeLinks)}`
