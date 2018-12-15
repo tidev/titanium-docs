@@ -215,6 +215,9 @@ class MetadataProcessor {
       if (memberMetadata.deprecated && memberMetadata.deprecated.notes) {
         memberMetadata.deprecated.notes = this.renderMarkdown(memberMetadata.deprecated.notes);
       }
+      if (memberMetadata.returns && memberMetadata.returns.summary) {
+        memberMetadata.returns.summary = this.renderMarkdown(memberMetadata.returns.summary);
+      }
 
       if (memberType === 'properties' && this.constantNamingPattern.test(memberMetadata.name)) {
         this.hasConstants = true;
@@ -240,7 +243,7 @@ class MetadataProcessor {
   renderMarkdown(markdownString) {
     // @FIXME: This can be removed once we have a means to generate client dynamic modules
     markdownString = this.rewriteTypeLinks(markdownString);
-    const html = this.markdown.renderInline(markdownString);
+    const { html } = this.markdown.render(markdownString);
     return html;
   }
 

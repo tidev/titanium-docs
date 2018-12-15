@@ -13,8 +13,8 @@
       </div>
       <FunctionSignature v-bind="method"/>
       <DeprecationAlert :deprecated="method.deprecated"/>
-      <p v-html="method.summary"></p>
-      <p v-html="method.description"></p>
+      <div class="member-summary" v-html="method.summary"></div>
+      <div class="member-description" v-html="method.description"></div>
       <h4 v-if="method.parameters.length">Parameters</h4>
       <table v-if="method.parameters.length" class="parameter-table">
         <thead>
@@ -33,6 +33,7 @@
         </tbody>
       </table>
       <h4>Returns</h4>
+      <p v-if="method.returns && method.returns.summary" v-html="method.returns.summary"></p>
       <p>
         <dl class="type-info">
           <dt>Type</dt>
@@ -65,12 +66,15 @@ export default {
 .parameter-table
   width 100%
 
-  & th
+  th
     text-align left
 
-  & th, td
+  th, td
     font-size: 14px
     line-height 1.5
+
+  td:last-child
+    width 100%
 
 .type-info
   dt

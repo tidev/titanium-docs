@@ -1,7 +1,7 @@
 <template>
-  <div class="type-header">
+  <div class="type-header" v-if="metadata">
     <div class="proxy-summary">
-      <div class="summary-content"><p v-html="metadata.summary"></p></div>
+      <div class="summary-content" v-html="metadata.summary"></div>
       <div class="proxy-metas">
         <AvailabilityInfo :platforms="metadata.platforms"/>
         <div class="proxy-meta">
