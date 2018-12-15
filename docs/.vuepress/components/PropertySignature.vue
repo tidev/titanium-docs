@@ -1,5 +1,5 @@
 <template>
-  <div class="property-signature">
+  <div class="type-signature property-signature">
     <span class="static" v-if="!instance">(static)</span> <span>{{name}}</span> <span class="return-type">:<TypeLink :types="type"/></span>
   </div>
 </template>
@@ -19,10 +19,6 @@ export default {
 
 <style lang="stylus">
 .property-signature
-  font-family: monospace
-  font-size: 16px
-  padding: 20px 0 10px 0
-
   &>.static, .return-type
     color: #aaaaaa
 </style>

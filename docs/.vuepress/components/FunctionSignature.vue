@@ -1,5 +1,5 @@
 <template>
-  <p class="function-signature">
+  <p class="type-signature function-signature">
     <span class="static" v-if="!instance">(static)</span> <span>{{name}}({{parameterNames.join(', ')}})</span> <span class="return-type">→ {{returnTypes | formatTypes}}</span>
   </p>
 </template>
