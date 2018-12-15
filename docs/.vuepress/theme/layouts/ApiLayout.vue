@@ -16,7 +16,7 @@
 
       <ApiPage :sidebar-items="sidebarItems"/>
 
-      <ApiSidebar/>
+      <ApiSidebar :currentAnchor="currentAnchor" v-if="$page.metadataKey"/>
     </div>
     <Footer/>
   </div>
@@ -77,6 +77,7 @@ export default {
 
   data () {
     return {
+      currentAnchor: null,
       isSidebarOpen: false,
       isApiSidebarOpen: false
     }
@@ -186,9 +187,7 @@ export default {
       if (anchors.length === 0) {
         return
       }
-      this.$lastAnchor = this.$currentAnchor
-      this.$currentAnchor = calculateCurrentAnchor(anchors)
-
+      this.currentAnchor = calculateCurrentAnchor(anchors)
     }, 300)
   }
 }

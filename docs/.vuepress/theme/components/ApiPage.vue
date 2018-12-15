@@ -121,7 +121,7 @@ export default {
 </script>
 
 <style lang="stylus">
-@require '~@parent-theme/styles/wrapper.styl'
+@require '../styles/wrapper.styl'
 
 .page
   padding-bottom 2rem

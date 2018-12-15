@@ -1,5 +1,5 @@
 <script>
-import { isActive, hashRE, groupHeaders } from '@parent-theme/util'
+import { hashRE, groupHeaders } from '@parent-theme/util'
 
 export default {
   functional: true,
@@ -7,14 +7,7 @@ export default {
   props: ['item'],
 
   render (h, { parent: { $page, $site, $route }, props: { item }}) {
-    // use custom active class matching logic
-    // due to edge case of paths ending with / + hash
-    const selfActive = isActive($route, item.path)
-    // for sidebar: auto pages, a hash link should be active if one of its child
-    // matches
-    const active = item.type === 'auto'
-      ? selfActive || item.children.some(c => isActive($route, item.basePath + '#' + c.slug))
-      : selfActive
+    const active = item.active
     const link = renderLink(h, item.path, item.title || item.path, active)
     const maxDepth = 2;
     if (item.type === 'auto') {
@@ -45,9 +38,8 @@ function renderLink (h, to, text, active) {
 function renderChildren (h, children, path, route, maxDepth, depth = 1) {
   if (!children || depth > maxDepth) return null
   return h('ul', { class: 'api-sidebar-sub-headers' }, children.map(c => {
-    const active = isActive(route, path + '#' + c.slug)
     return h('li', { class: 'api-sidebar-sub-header' }, [
-      renderLink(h, path + '#' + c.slug, c.title, active),
+      renderLink(h, path + '#' + c.slug, c.title, c.active),
       renderChildren(h, c.children, path, route, maxDepth, depth + 1)
     ])
   }))
