@@ -35,7 +35,7 @@ function fetchMetadata(route) {
   return new Promise((resolve, reject) => {
     const page = findPageForPath(app.$site.pages, route.path);
     if (!page) {
-      resolve();
+      return resolve();
     }
 
     const metadataKey = page.metadataKey;
