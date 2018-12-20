@@ -105,6 +105,12 @@ export default {
     }
   },
 
+  watch: {
+    '$page': function() {
+      this.$sidebarLinks = null;
+    }
+  },
+
   mounted () {
     // configure progress bar
     nprogress.configure({ showSpinner: false })
@@ -122,11 +128,8 @@ export default {
       this.isApiSidebarOpen = false
     })
 
-    this.$vuepress.$on('AsyncMarkdownContentMounted', (slotKey) => {
-      if (slotKey === 'default') {
-        window.addEventListener('scroll', this.onScroll)
-      }
-    })
+
+    window.addEventListener('scroll', this.onScroll)
 
     if (this.$route.hash) {
       const hash = decodeURIComponent(this.$route.hash)
