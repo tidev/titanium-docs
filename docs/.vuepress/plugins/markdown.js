@@ -1,6 +1,7 @@
-const { getLinkForKeyPath, isValidType } = require('../utils/metadata');
+const { isValidType } = require('../utils/metadata');
 
 const typeLinkPattern = /^<([a-zA-Z][a-zA-Z0-9._]+)>/;
+let hasOpenTypeLink;
 
 module.exports = {
   name: 'titanium/markdown-rules',
@@ -21,13 +22,8 @@ module.exports = {
 }
 
 /**
- * Creates a new renderer rule for link tokens to transform the href attribute
- * from a type to the matching link.
- *
- * Allows usage of type key-paths as links, e.g. `[add](Titanium.UI.View.add)`,
- * whichlinks to the `add` method of `Titanium.UI.View` by creating the complete
- * path `/api/titanium/ui/view.html#add`. Works for types and all members of a
- * type.
+ * Renderer rule for link tokens to create <type-link> tags which will render
+ * the matching router-link for the type.
  *
  * @param {Object} md markdown-it instance
  */
@@ -37,22 +33,46 @@ function linkConverterPlugin(md) {
   };
 
   md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
-    const token = tokens[idx]
+    const token = tokens[idx];
     const hrefIndex = token.attrIndex('href');
     if (hrefIndex === -1) {
       return defaultRender(tokens, idx, options, env, self);
     }
 
-    const href = token.attrs[hrefIndex][1];
+    const link = token.attrs[hrefIndex]
+    const href = link[1];
     if (isValidType(href)) {
-      const link = getLinkForKeyPath(href, '/');
-      if (link) {
-        token.attrs[hrefIndex][1] = link.path;
-      }
+      hasOpenTypeLink = true
+      tokens[idx] = toTypeLink(token, link)
+    } else {
+      return defaultRender(tokens, idx, options, env, self);
     }
-
-    return defaultRender(tokens, idx, options, env, self);
   };
+
+  md.renderer.rules.link_close = (tokens, idx, options, env, self) => {
+    const token = tokens[idx]
+    if (hasOpenTypeLink) {
+      token.tag = 'type-link'
+      hasOpenTypeLink = false
+    }
+    return self.renderToken(tokens, idx, options)
+  }
+
+  function toTypeLink(token, link) {
+    link[0] = 'type'
+    let type = link[1]
+
+    // markdown-it encodes the uri
+    link[1] = decodeURI(type)
+
+    // export the router links for testing
+    const typeLinks = md.$data.typeLinks || (md.$data.typeLinks = [])
+    typeLinks.push(type)
+
+    return Object.assign({}, token, {
+      tag: 'type-link'
+    })
+  }
 }
 
 /**
@@ -60,7 +80,7 @@ function linkConverterPlugin(md) {
  * for types, e.g. `<Titanium.UI.View>`.
  *
  * This rule needs to be added before the html_inline rule to catch pseudo
- * types like `<ItemTemplate>` or they would be intepreted as HTML.
+ * types like `<ItemTemplate>` or they would be intepreted as HTML tags.
  *
  * @param {Object} md markdown-it instance
  */
@@ -82,16 +102,15 @@ function typeAutolink(md) {
       if (!isValidType(url)) {
         return false;
       }
-      const link = getLinkForKeyPath(url, '/');
       if (!silent) {
         let token;
         token = state.push('link_open', 'a', 1);
-        token.attrs = [ [ 'href', link.path ] ];
+        token.attrs = [ [ 'href', url ] ];
         token.markup = 'autolink';
         token.info = 'auto';
 
         token= state.push('text', '', 0);
-        token.content = link.name;
+        token.content = url;
 
         token = state.push('link_close', 'a', -1);
         token.markup = 'autolink';

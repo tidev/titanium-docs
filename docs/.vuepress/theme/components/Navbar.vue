@@ -20,6 +20,10 @@
       >{{ $siteTitle }}</span>
     </router-link>
 
+    <div v-if="hasVersions" class="versions-dropdown">
+      <DropdownLink :item="versionsDropdown"/>
+    </div>
+
     <div
       class="links"
       :style="linksWrapMaxWidth ? {
@@ -42,11 +46,12 @@
 import SidebarButton from '@parent-theme/components/SidebarButton.vue'
 import AlgoliaSearchBox from '@AlgoliaSearchBox'
 import SearchBox from '@SearchBox'
-import NavLinks from '@parent-theme/components/NavLinks.vue'
+import NavLinks from './NavLinks.vue'
 import ApiSidebarButton from './ApiSidebarButton'
+import DropdownLink from './DropdownLink.vue'
 
 export default {
-  components: { ApiSidebarButton, SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },
+  components: { ApiSidebarButton, DropdownLink, SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },
 
   data () {
     return {
@@ -76,6 +81,43 @@ export default {
 
     isAlgoliaSearch () {
       return this.algolia && this.algolia.apiKey && this.algolia.indexName
+    },
+
+    hasVersions () {
+      return this.$versions && this.$versions.length > 0;
+    },
+
+    versionsDropdown () {
+      const currentVersion = this.$versions[0];
+      const currentLink = this.$page.path
+      const routes = this.$router.options.routes
+      return {
+        text: this.$page.version,
+        items: ['next', ...this.$versions].map(version => {
+          const text = version;
+          let link;
+          if (version === this.$page.version) {
+            link = currentLink;
+          } else {
+            if (this.$page.version !== currentVersion) {
+              link = currentLink.replace(this.$page.version, version);
+            } else {
+              link = `/${version}${currentLink}`;
+            }
+            if (!routes.some(route => route.path === link)) {
+              link = `/${version}/`;
+            }
+          }
+          const item = { text, link };
+          if (version === currentVersion) {
+            item.subText = 'current';
+          } else if (version === 'next') {
+            item.text = 'master';
+            item.subText = 'next';
+          }
+          return item;
+        })
+      }
     }
   }
 }
@@ -120,6 +162,25 @@ $navbar-horizontal-padding = 1.5rem
     .search-box
       flex: 0 0 auto
       vertical-align top
+
+  .versions-dropdown
+    display inline-block
+    position relative
+    margin-left 1.5rem
+    .dropdown-wrapper
+      .nav-dropdown
+        left -1.25rem
+        right inherit
+        .dropdown-item
+          a
+            color $textColor
+            &:hover
+              color $accentColor
+            &.router-link-active
+              color $accentColor
+              &:hover
+                color $accentColor
+
 
 @media (max-width: $MQMobile)
   .navbar
