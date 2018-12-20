@@ -30,7 +30,7 @@ export default {
       return headers.map(header => {
         const currentAnchor = this.currentAnchor || { hash: this.$route.hash, path: this.$route.path };
         const selfActive = currentAnchor.hash === '#' + header.slug;
-        const active = selfActive || header.children.some(c => currentAnchor.hash === '#' + c.slug);
+        const active = selfActive || (header.children && header.children.some(c => currentAnchor.hash === '#' + c.slug));
         return {
           type: 'auto',
           title: header.title,
