@@ -129,6 +129,9 @@ module.exports = (options, context) => {
 
     extendPageData(page) {
       const currentVersion = versions[0];
+      if (page.path === '/404.html') {
+        return;
+      }
       if (page._filePath.startsWith(versionedSourceDir)) {
         const version = page._filePath.substring(versionedSourceDir.length + 1, page._filePath.indexOf('/', versionedSourceDir.length +1));
         page.version = version;
