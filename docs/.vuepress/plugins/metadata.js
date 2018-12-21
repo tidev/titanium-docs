@@ -111,6 +111,7 @@ module.exports = (options = {}, context) => ({
     const tempMetadataPath = path.resolve(context.tempPath, 'metadata');
     fs.ensureDirSync(tempMetadataPath);
     for (const version in processed) {
+      fs.ensureDirSync(path.join(tempMetadataPath, version));
       for (const typeName in processed[version]) {
         const metadata = metadataService.findMetadata(typeName, version);
         const destPath = path.join(tempMetadataPath, version, `${typeName.toLowerCase()}.json`);
