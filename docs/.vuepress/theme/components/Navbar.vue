@@ -99,13 +99,12 @@ export default {
           if (version === this.$page.version) {
             link = currentLink;
           } else {
-            if (this.$page.version !== currentVersion) {
-              link = currentLink.replace(this.$page.version, version);
-            } else {
-              link = `/${version}${currentLink}`;
+            link = currentLink.replace(`/${this.$page.version}`, '');
+            if (version !== currentVersion) {
+              link = `/${version}${link}`;
             }
             if (!routes.some(route => route.path === link)) {
-              link = `/${version}/`;
+              link = version === currentVersion ? '/' : `/${version}/`;
             }
           }
           const item = { text, link };
