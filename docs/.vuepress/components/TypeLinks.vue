@@ -28,13 +28,16 @@ export default {
   },
   methods: {
     hasType(typeName) {
-      return typeName in typeLinks;
+      let isKnownType = typeName in typeLinks;
+      if (!isKnownType) {
+        isKnownType = /^(Array|Callback|Dictionary)</.test(typeName);
+      }
+      return isKnownType;
     }
   },
   computed: {
     normalizedTypes: function () {
       if (typeof this.types === 'string') {
-        // @todo Handle Array/Dictionary
         return this.types.split('|');
       } else if (Array.isArray(this.types)) {
         return this.types.map(type => type.type ? type.type : type)

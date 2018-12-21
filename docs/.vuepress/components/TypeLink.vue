@@ -1,5 +1,6 @@
 <template>
-  <router-link :to="typeLink">{{type}}</router-link>
+  <span v-if="isGeneric(type)">{{genericTypeName}}&lt;<router-link :to="typeLink">{{genericParameterName}}</router-link>&gt;</span>
+  <router-link v-else :to="typeLink">{{type}}</router-link>
 </template>
 
 <script>
@@ -7,17 +8,56 @@ import typeLinks from '@dynamic/type-links';
 
 export default {
   props: {
-    type: String,
-    required: true
+    type: {
+      type: String,
+      required: true
+    }
   },
   computed: {
     typeLink() {
-      if (this.$versions && this.$page.version !== this.$versions[0]) {
-        const link = typeLinks[this.type];
-        return `${this.$page.version}/${link}`;
+      let link;
+
+      if (this.isGeneric(this.type)) {
+        link = this.findTypeLink(this.genericParameterName);
       } else {
-        return typeLinks[this.type];
+        link = this.findTypeLink(this.type);
       }
+
+      if (link === null) {
+        // @todo link to MDN for known JS types?
+        return '';
+      }
+
+      if (this.$versions && this.$page.version !== this.$versions[0]) {
+        link = `${this.$page.version}/${link}`;
+      }
+
+      return link;
+    },
+    genericTypeName() {
+      return this.type.substring(0, this.type.indexOf('<'));
+    },
+    genericParameterName() {
+      return this.type.substring(this.type.indexOf('<') + 1, this.type.length - 1);
+    }
+  },
+  methods: {
+    isGeneric(type) {
+      if (/^(Array|Callback|Dictionary)</.test(type)) {
+        return true;
+      }
+    },
+    findTypeLink(typeName) {
+      let link = typeLinks[typeName];
+      if (!link) {
+        const lastDotIndex = typeName.lastIndexOf('.');
+        const parentTypeName = typeName.substring(0, lastDotIndex);
+        if (!typeLinks[parentTypeName]) {
+          return null;
+        }
+        link = `${typeLinks[parentTypeName]}#${typeName.substring(lastDotIndex + 1).toLowerCase()}`;
+      }
+      return link;
     }
   }
 }

@@ -268,7 +268,7 @@ class MetadataProcessor {
   rewriteTypeLinks(markdownString) {
     const customLinkPattern = /<([^>\/]+)>/g;
     const mdLinkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
-    const version = versions.length > 0 ? this.version : null;
+    const version = (versions.length === 0 || this.version === versions[0]) ? null : this.version;
 
     markdownString = markdownString.replace(customLinkPattern, (match, linkValue) => {
       const link = getLinkForKeyPath(linkValue, this.base, version);
