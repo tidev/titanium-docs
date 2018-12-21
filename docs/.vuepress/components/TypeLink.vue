@@ -1,7 +1,13 @@
 <template>
-  <span v-if="isGeneric(type)">{{genericTypeName}}&lt;<router-link :to="typeLink">{{genericParameterName}}</router-link>&gt;</span>
+  <span v-if="isGeneric(type)" class="generic-type">
+    {{genericTypeName}}
+    &lt;
+    <router-link v-if="typeLink" :to="typeLink">{{genericParameterName}}</router-link>
+    <span v-else class="unknown-type">{{genericParameterName}}</span>
+    &gt;
+  </span>
   <router-link v-else-if="typeLink" :to="typeLink">{{type}}</router-link>
-  <span class="unknown-type" v-else>{{type}}</span>
+  <span v-else class="unknown-type">{{type}}</span>
 </template>
 
 <script>
