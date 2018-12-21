@@ -1,6 +1,7 @@
 <template>
   <span v-if="isGeneric(type)">{{genericTypeName}}&lt;<router-link :to="typeLink">{{genericParameterName}}</router-link>&gt;</span>
-  <router-link v-else :to="typeLink">{{type}}</router-link>
+  <router-link v-else-if="typeLink" :to="typeLink">{{type}}</router-link>
+  <span class="unknown-type" v-else>{{type}}</span>
 </template>
 
 <script>
@@ -25,7 +26,7 @@ export default {
 
       if (link === null) {
         // @todo link to MDN for known JS types?
-        return '';
+        return link;
       }
 
       if (this.$versions && this.$page.version !== this.$versions[0]) {
@@ -43,9 +44,7 @@ export default {
   },
   methods: {
     isGeneric(type) {
-      if (/^(Array|Callback|Dictionary)</.test(type)) {
-        return true;
-      }
+      return /^(Array|Callback|Dictionary)</.test(type);
     },
     findTypeLink(typeName) {
       let link = typeLinks[typeName];
@@ -63,6 +62,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="stylus">
+.unknown-type
+  font-weight 500
 </style>

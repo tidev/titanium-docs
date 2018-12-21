@@ -4,7 +4,7 @@
       <div class="summary-content" v-html="metadata.summary"></div>
       <div class="proxy-metas">
         <AvailabilityInfo :platforms="metadata.platforms"/>
-        <div class="proxy-meta">
+        <div v-if="metadata.extends" class="proxy-meta">
           <div class="proxy-meta-name">
             Extends
           </div>
