@@ -1,13 +1,8 @@
 <template>
   <span class="type-links">
     <template v-for="(typeName, index) in normalizedTypes">
-      <template v-if="hasType(typeName)">
-        <type-link :type="typeName"></type-link>
-      </template>
-      <template v-else>
-        <span>{{typeName}}</span>
-      </template>
-      <template v-if="index < normalizedTypes.length - 1"> | </template>
+      <type-link :type="typeName"></type-link>
+      <span class="type-devider" v-if="index < normalizedTypes.length - 1"> | </span>
     </template>
   </span>
 </template>
@@ -26,15 +21,6 @@ export default {
       required: true
     }
   },
-  methods: {
-    hasType(typeName) {
-      let isKnownType = typeName in typeLinks;
-      if (!isKnownType) {
-        isKnownType = /^(Array|Callback|Dictionary)</.test(typeName);
-      }
-      return isKnownType;
-    }
-  },
   computed: {
     normalizedTypes: function () {
       if (typeof this.types === 'string') {
@@ -50,5 +36,7 @@ export default {
 </script>
 
 <style lang="stylus">
-
+.type-links
+  .type-devider
+    color #aaa
 </style>
