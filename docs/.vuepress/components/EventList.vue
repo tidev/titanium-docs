@@ -44,9 +44,10 @@ export default {
   components: {
     AvailabilityInfo
   },
-  computed: {
-    events: function() {
-      return this.$store.state.metadata[this.$page.metadataKey].events;
+  props: {
+    events: {
+      type: Array,
+      default: () => []
     }
   }
 }

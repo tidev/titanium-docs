@@ -27,9 +27,11 @@ export default context => new Promise((resolve, reject) => {
         return resolve(app);
       }
 
+      const version = app.$page.version || 'next';
+      const versionedMetadataKey = `${version}/${metadataKey}`;
       store.replaceState({
         metadata: {
-          [metadataKey]: metadata[metadataKey]
+          [versionedMetadataKey]: metadata[version][versionedMetadataKey]
         }
       });
       context.state = store.state;

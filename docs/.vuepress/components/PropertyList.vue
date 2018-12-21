@@ -1,5 +1,5 @@
 <template>
-  <div class="member-list property-list" v-if="properties && properties.length">
+  <div class="member-list property-list" v-if="properties.length">
     <h2 id="properties">
       <a href="#properties" class="header-anchor">#</a> Properties
     </h2>
@@ -28,9 +28,10 @@ export default {
   components: {
     AvailabilityInfo
   },
-  computed: {
-    properties: function() {
-      return this.$store.state.metadata[this.$page.metadataKey].properties;
+  props: {
+    properties: {
+      type: Array,
+      default: () => []
     }
   }
 }
