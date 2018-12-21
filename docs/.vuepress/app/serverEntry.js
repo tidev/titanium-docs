@@ -22,7 +22,7 @@ export default context => new Promise((resolve, reject) => {
       }
 
       const metadataKey = app.$page.metadataKey;
-      if (metadataKey === '') {
+      if (!metadataKey) {
         // Skip pages with no associated API metadata
         return resolve(app);
       }
@@ -31,7 +31,7 @@ export default context => new Promise((resolve, reject) => {
       const versionedMetadataKey = `${version}/${metadataKey}`;
       store.replaceState({
         metadata: {
-          [versionedMetadataKey]: metadata[version][versionedMetadataKey]
+          [versionedMetadataKey]: metadata[version][metadataKey]
         }
       });
       context.state = store.state;
