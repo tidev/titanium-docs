@@ -23,12 +23,13 @@ export default {
   },
   computed: {
     normalizedTypes: function () {
-      if (typeof this.types === 'string') {
-        return this.types.split('|');
-      } else if (Array.isArray(this.types)) {
-        return this.types.map(type => type.type ? type.type : type)
+      const types = this.types.type ? this.types.type : this.types;
+      if (typeof types === 'string') {
+        return types.split('|');
+      } else if (Array.isArray(types)) {
+        return types.map(type => type.type ? type.type : type);
       } else {
-        return [this.types.type ? this.types.type : this.types];
+        throw Error(`Unknown type format: ${JSON.stringify(types)}`);
       }
     }
   }
