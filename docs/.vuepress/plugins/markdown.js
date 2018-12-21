@@ -1,7 +1,6 @@
 const { isValidType } = require('../utils/metadata');
 
 const typeLinkPattern = /^<([a-zA-Z][a-zA-Z0-9._]+)>/;
-let hasOpenTypeLink;
 
 module.exports = {
   name: 'titanium/markdown-rules',
@@ -28,9 +27,13 @@ module.exports = {
  * @param {Object} md markdown-it instance
  */
 function linkConverterPlugin(md) {
-  const defaultRender = md.renderer.rules.link_open || function(tokens, idx, options, env, self) {
+  const renderLinkOpen = md.renderer.rules.link_open || function(tokens, idx, options, env, self) {
     return self.renderToken(tokens, idx, options);
   };
+  const renderLinkClose = md.renderer.rules.link_close || function(tokens, idx, options, env, self) {
+    return self.renderToken(tokens, idx, options);
+  };
+  let hasOpenTypeLink;
 
   md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
     const token = tokens[idx];
@@ -42,11 +45,12 @@ function linkConverterPlugin(md) {
     const link = token.attrs[hrefIndex]
     const href = link[1];
     if (isValidType(href)) {
-      hasOpenTypeLink = true
-      tokens[idx] = toTypeLink(token, link)
-    } else {
-      return defaultRender(tokens, idx, options, env, self);
+      hasOpenTypeLink = true;
+      tokens[idx] = toTypeLink(token, link);
+      return self.renderToken(tokens, idx, options);
     }
+
+    return renderLinkOpen(tokens, idx, options, env, self);
   };
 
   md.renderer.rules.link_close = (tokens, idx, options, env, self) => {
@@ -54,8 +58,10 @@ function linkConverterPlugin(md) {
     if (hasOpenTypeLink) {
       token.tag = 'type-link'
       hasOpenTypeLink = false
+      return self.renderToken(tokens, idx, options);
     }
-    return self.renderToken(tokens, idx, options)
+
+    return renderLinkClose(tokens, idx, options, env, self);
   }
 
   function toTypeLink(token, link) {

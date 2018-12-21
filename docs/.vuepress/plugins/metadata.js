@@ -4,6 +4,7 @@ const path = require('path');
 const semver = require('semver');
 
 const { metadataService, getLinkForKeyPath } = require('../utils/metadata');
+const { versions } = require('../utils/version');
 
 let processed = {};
 // @todo make this configurable per build for versioned docs
@@ -30,7 +31,7 @@ module.exports = (options = {}, context) => ({
     page.frontmatter.sidebarDepth = 0;
 
     const typeName = page.frontmatter.metadataKey || page.title;
-    const version = page.version;
+    const version = page.version || 'next';
     const metadata = metadataService.findMetadata(typeName, version);
 
     if (!metadata) {
@@ -157,6 +158,7 @@ class MetadataProcessor {
    */
   transoformMetadataAndCollectHeaders(metadata) {
     delete metadata.description;
+    delete metadata.examples;
 
     this.filterInheritedAndRemovedMembers(metadata);
 
@@ -265,9 +267,10 @@ class MetadataProcessor {
   rewriteTypeLinks(markdownString) {
     const customLinkPattern = /<([^>\/]+)>/g;
     const mdLinkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+    const version = versions.length > 0 ? this.version : null;
 
     markdownString = markdownString.replace(customLinkPattern, (match, linkValue) => {
-      const link = getLinkForKeyPath(linkValue, this.base, this.version);
+      const link = getLinkForKeyPath(linkValue, this.base, version);
       if (link) {
         return `[${link.name}](${link.path})`;
       }
@@ -275,7 +278,7 @@ class MetadataProcessor {
     });
 
     markdownString = markdownString.replace(mdLinkPattern, (match, linkText, linkValue) => {
-      const link = getLinkForKeyPath(linkValue, this.base, this.version);
+      const link = getLinkForKeyPath(linkValue, this.base, version);
       if (link) {
         return `[${link.name}](${link.path})`;
       }

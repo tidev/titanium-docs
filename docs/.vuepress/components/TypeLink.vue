@@ -7,7 +7,8 @@ import typeLinks from '@dynamic/type-links';
 
 export default {
   props: {
-    type: String
+    type: String,
+    required: true
   },
   computed: {
     typeLink() {

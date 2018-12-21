@@ -21,7 +21,10 @@ export default {
     TypeLink
   },
   props: {
-    types: [Array, Object, String]
+    types: {
+      type: [Array, Object, String],
+      required: true
+    }
   },
   methods: {
     hasType(typeName) {
@@ -44,7 +47,5 @@ export default {
 </script>
 
 <style lang="stylus">
-.type-links
-  font-family monospace
-  color #aaaaaa
+
 </style>
