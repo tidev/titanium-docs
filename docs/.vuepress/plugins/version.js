@@ -3,6 +3,7 @@ const path = require('path');
 const { logger, globby, sort } = require('@vuepress/shared-utils');
 
 const { metadataService } = require('../utils/metadata');
+const versionManager = require('../utils/version');
 
 module.exports = (options, context) => {
   const pluginName = 'titanium/version'
@@ -11,52 +12,107 @@ module.exports = (options, context) => {
   context.versionedSourceDir = versionedSourceDir;
 
   const versionsFilePath = path.join(context.sourceDir, '.vuepress', 'versions.json');
-  let versions = [];
-  if (fs.existsSync(versionsFilePath)) {
-    versions = JSON.parse(fs.readFileSync(versionsFilePath).toString());
-  }
+  versionManager.loadVersions(versionsFilePath);
+  const versions = versionManager.versions;
 
   metadataService.loadMetadata(context, versions);
 
-  function extendCli(cli) {
-    cli
-      .command('version <targetDir> <version>', '')
-      .option('--debug', 'enable debug logging')
-      .action((dir, version, ) => {
-        if (versions.includes(version)) {
-          logger.error(`Version ${version} already exists in version.json. Please use a different version.`);
-          return;
+  const defaultPluginOptions = {
+    name: pluginName,
+
+    ready() {
+      const currentSidebarConfigPath = path.join(context.sourceDir, '.vuepress', 'sidebar.config.js');
+      if (versions.length === 0) {
+        if (fs.existsSync(currentSidebarConfigPath)) {
+          context.themeConfig.sidebar = require(currentSidebarConfigPath);
         }
 
-        const vuepressPath = path.join(context.sourceDir, '.vuepress');
-        const versionDestPath = path.join(versionedSourceDir, version);
-        fs.copySync(context.sourceDir, versionDestPath, {
-          filter: (src, dest) => {
-            if (src === vuepressPath) {
-              return false;
-            }
+        return;
+      }
 
-            return true;
+      if (!context.themeConfig.sidebar) {
+        throw new Error('Versioned sidebars require an empty Array or Object as the themeConfig.sidebar option depending on your sidebar structure.');
+      }
+
+      function rewriteSidebarConfig(sidebarConfig, version) {
+        if (Array.isArray(sidebarConfig)) {
+          return sidebarConfig.map(path => {
+            return Array.isArray(path) ? `${version}${path[0]}` : `${version}${path}`;
+          })
+        } else {
+          return Object.keys(sidebarConfig).reduce((config, key) => {
+            config[`/${version}${key}`] = sidebarConfig[key];
+            return config;
+          }, {});
+        }
+      }
+
+      function mergeSidebarConfig(target, source) {
+        if (Array.isArray(target)) {
+          return target.concat(source);
+        } else {
+          return Object.assign(target, source);
+        }
+      }
+
+      if (fs.existsSync(currentSidebarConfigPath)) {
+        const sidebarConfig = rewriteSidebarConfig(require(currentSidebarConfigPath), 'next');
+        mergeSidebarConfig(context.themeConfig.sidebar, sidebarConfig);
+      }
+
+      const currentVersion = versions[0];
+      for (const version of versions) {
+        const versionSidebarConfigPath = path.join(versionedSourceDir, version, 'sidebar.config.js');
+        if (fs.existsSync(versionSidebarConfigPath)) {
+          let sidebarConfig;
+          if (version === currentVersion) {
+            sidebarConfig = require(versionSidebarConfigPath);
+          } else {
+            sidebarConfig = rewriteSidebarConfig(require(versionSidebarConfigPath), version);
           }
+          mergeSidebarConfig(context.themeConfig.sidebar, sidebarConfig);
+        }
+      }
+    },
+
+    extendCli(cli) {
+      cli
+        .command('version <targetDir> <version>', '')
+        .option('--debug', 'enable debug logging')
+        .action((dir, version, ) => {
+          if (versions.includes(version)) {
+            logger.error(`Version ${version} already exists in version.json. Please use a different version.`);
+            return;
+          }
+
+          const vuepressPath = path.join(context.sourceDir, '.vuepress');
+          const versionDestPath = path.join(versionedSourceDir, version);
+          fs.copySync(context.sourceDir, versionDestPath, {
+            filter: (src, dest) => {
+              if (src === vuepressPath) {
+                return false;
+              }
+
+              return true;
+            }
+          });
+
+          fs.copy(path.join(vuepressPath, 'sidebar.config.js'), path.join(versionDestPath, 'sidebar.config.js'));
+          fs.copy(path.join(context.sourceDir, 'api', 'api.json'), path.join(versionDestPath, 'api.json'));
+
+          versions.unshift(version);
+          fs.writeFileSync(versionsFilePath, JSON.stringify(versions, null, 2));
+
+          logger.success(`Created snapshot of ${context.sourceDir} as version ${version} in ${versionDestPath}`);
         });
-
-        fs.copy(path.join(vuepressPath, 'sidebar.config.js'), path.join(versionDestPath, 'sidebar.config.js'));
-        fs.copy(path.join(context.sourceDir, 'api', 'api.json'), path.join(versionDestPath, 'api.json'));
-
-        versions.unshift(version);
-        fs.writeFileSync(versionsFilePath, JSON.stringify(versions, null, 2));
-
-        logger.success(`Created snapshot of ${context.sourceDir} as version ${version} in ${versionDestPath}`);
-      })
+    }
   }
 
   if (versions.length === 0) {
-    return { name: pluginName, extendCli };
+    return defaultPluginOptions;
   }
 
-  return {
-    name: pluginName,
-
+  return Object.assign(defaultPluginOptions, {
     async additionalPages () {
       const patterns = ['**/*.md', '**/*.vue', '!.vuepress', '!node_modules']
       const pageFiles = sort(await globby(patterns, { cwd: versionedSourceDir }))
@@ -85,53 +141,6 @@ module.exports = (options, context) => {
       }
     },
 
-    ready() {
-      if (!context.themeConfig.sidebar) {
-        throw new Error('Versioned sidebars require an empty Array or Object as the themeConfig.sidebar option depending on your sidebar structure.');
-      }
-
-      function rewriteSidebarConfig(sidebarConfig, version) {
-        if (Array.isArray(sidebarConfig)) {
-          return sidebarConfig.map(path => {
-            return Array.isArray(path) ? `${version}${path[0]}` : `${version}${path}`;
-          })
-        } else {
-          return Object.keys(sidebarConfig).reduce((config, key) => {
-            config[`/${version}${key}`] = sidebarConfig[key];
-            return config;
-          }, {});
-        }
-      }
-
-      function mergeSidebarConfig(target, source) {
-        if (Array.isArray(target)) {
-          return target.concat(source);
-        } else {
-          return Object.assign(target, source);
-        }
-      }
-
-      const sidebarConfigPath = path.join(context.sourceDir, '.vuepress', 'sidebar.config.js');
-      if (fs.existsSync(sidebarConfigPath)) {
-        const sidebarConfig = rewriteSidebarConfig(require(sidebarConfigPath), 'next');
-        mergeSidebarConfig(context.themeConfig.sidebar, sidebarConfig);
-      }
-
-      const currentVersion = versions[0];
-      for (const version of versions) {
-        const versionSidebarConfigPath = path.join(versionedSourceDir, version, 'sidebar.config.js');
-        if (fs.existsSync(versionSidebarConfigPath)) {
-          let sidebarConfig;
-          if (version === currentVersion) {
-            sidebarConfig = require(versionSidebarConfigPath);
-          } else {
-            sidebarConfig = rewriteSidebarConfig(require(versionSidebarConfigPath), version);
-          }
-          mergeSidebarConfig(context.themeConfig.sidebar, sidebarConfig);
-        }
-      }
-    },
-
     // @fixme siteData is not extendable, store versions as a computed property on Vue for now
     enhanceAppFiles: [{
       name: 'versions-site-data',
@@ -142,8 +151,6 @@ module.exports = (options, context) => {
     }
   })
 }`
-    }],
-
-    extendCli
-  }
+    }]
+  });
 }
