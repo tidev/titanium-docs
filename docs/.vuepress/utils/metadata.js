@@ -23,7 +23,8 @@ class MetadataService {
       this.metadata[version] = typesMetadata;
     }
 
-    this.versions = versions;
+    this.versions = versions.slice();
+    this.versions.unshift('next');
     this.initialized = true;
   }
 
@@ -82,7 +83,7 @@ function isValidType(keyPath, version) {
  * @param {String} version Version of the metadata file to use for type metadata lookups
  */
 function getLinkForKeyPath(keyPath, basePath, version) {
-  prefix = `${basePath}${version ? version : ''}/api`;
+  prefix = `${basePath}${version ? `${version}/` : ''}api`;
 
   if (!version) {
     verion = metadataService.versions[0];
