@@ -23,7 +23,7 @@ module.exports = (options = {}, context) => ({
    * @param {Page} page
    */
   extendPageData(page) {
-    if (!/^\/api\//.test(page.regularPath)) {
+    if (!/^(\/[\w.\-]+)?\/api\//.test(page.regularPath)) {
       return;
     }
 
