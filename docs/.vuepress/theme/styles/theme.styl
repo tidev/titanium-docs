@@ -14,13 +14,13 @@ html, body
   background-color #fff
 
 body
-  font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+  font-family "Source Sans Pro", "Helvetica Neue", Arial, sans-serif
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
   font-size 16px
   color $textColor
   min-height 100vh
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility
 
 .theme-container
   display flex
@@ -160,10 +160,13 @@ a.header-anchor
     text-decoration none
 
 code, kbd, .line-number
-  font-family source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+  font-family "Roboto Mono", Monaco, courier, monospace;
+
+p
+  word-spacing 0.05em
 
 p, ul, ol
-  line-height 1.7
+  line-height 1.6em
 
 hr
   border 0
@@ -174,6 +177,13 @@ table
   margin 1rem 0
   display: block
   overflow-x: auto
+
+caption
+  padding-top .75rem
+  padding-bottom .75rem
+  color $lightTextColor
+  text-align left
+  caption-side bottom
 
 tr
   border-top 1px solid #dfe2e5
