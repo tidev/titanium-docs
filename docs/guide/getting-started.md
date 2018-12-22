@@ -17,9 +17,9 @@ Your system environment must meet the following requirements to run Studio:
 For Windows, you can use either 32-bit or 64-bit versions of Java JDK. Please refer to Studio Java Support for more information.
 :::
 
-For more details, please refer to [Prerequisites](/guides/prerequisites.md) document.
+For more details, please refer to [Prerequisites](./prerequisites.md) document.
 
-For a complete list of compatibility of system environments, dependencies, and other requirements, please review the [Titanium Compatibility Matrix](/guide/prequisites.md#compatibility-matrix).
+For a complete list of compatibility of system environments, dependencies, and other requirements, please review the [Titanium Compatibility Matrix](./prerequisites.md#compatibility-matrix).
 
 ## Download and install Studio
 
