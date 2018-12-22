@@ -64,6 +64,30 @@ npm run docs:dev
 
 Now start editing the docs and you can immediatly see the results in your browser.
 
+## Versioning
+
+You can use the version script to cut a new documentation version based on the latest content in the `docs` directory. That specific set of documentation will then be preserved and is accessible even as the documentation in the docs directory changes moving forward.
+
+> 💡 Versioning is heavily inspired by [Docusaurus](https://docusaurus.io/docs/en/versioningv) and was ported as a [plugin](./docs/.vuepress/plugins/version.js) to VuePress.
+
+### How to Create New Versions
+
+Run the script with a command line argument of the version you wish to create. e.g.,
+
+```bash
+npm run docs:version 8.0
+```
+
+This will preserve all documents currently in the `docs` directory and make them available as documentation for version `8.0`.
+
+Documents in the `docs` directory will be considered part of version `next` and they are available, for example, at the URL `/next/doc1.html`. Documents from the latest version use the URL `/doc1.html`.
+
+### Storing Files for Each Version
+
+Versioned documents are placed into `versioned_docs/${version}`, where `${version}` is the version number you supplied to the version script.
+
+The current [`sidebar.config.js`](./docs/.vuepress/sidebar.config.js) and [`api.json`](./docs/api/api.json) will also be preserved and copied into the folder of the newly created version.
+
 ## Migrating docs to VuePress
 
 [VuePress](https://vuepress.vuejs.org/) renders gorgeously looking documentation directly from markdown files. This means that our currents guides and parts of the api docs have to be migrated to markdown files. Thanks to VuePress they can be enhanced with Vue components to bypass the restriction of markdown in terms of rendering complex HTML structures.
