@@ -1,63 +1,69 @@
 <template>
-  <div
-    class="theme-container"
-    :class="pageClasses"
-    @touchstart="onTouchStart"
-    @touchend="onTouchEnd"
-  >
-    <Navbar
-      v-if="shouldShowNavbar"
-      @toggle-sidebar="toggleSidebar"
-    />
-
+  <div class="main-docs-wrapper">
     <div
-      class="sidebar-mask"
-      @click="toggleSidebar(false)"
-    ></div>
-
-    <Sidebar
-      :items="sidebarItems"
-      @toggle-sidebar="toggleSidebar"
+      class="theme-container"
+      :class="pageClasses"
+      @touchstart="onTouchStart"
+      @touchend="onTouchEnd"
     >
-      <slot
-        name="sidebar-top"
-        slot="top"
+      <Navbar
+        v-if="shouldShowNavbar"
+        @toggle-sidebar="toggleSidebar"
       />
-      <slot
-        name="sidebar-bottom"
-        slot="bottom"
-      />
-    </Sidebar>
 
-    <Home v-if="$page.frontmatter.home"/>
+      <div
+        class="sidebar-mask"
+        @click="toggleSidebar(false)"
+      ></div>
 
-    <Page
-      v-else
-      :sidebar-items="sidebarItems"
-    >
-      <slot
-        name="page-top"
-        slot="top"
-      />
-      <slot
-        name="page-bottom"
-        slot="bottom"
-      />
-    </Page>
+      <Sidebar
+        :items="sidebarItems"
+        @toggle-sidebar="toggleSidebar"
+      >
+        <slot
+          name="sidebar-top"
+          slot="top"
+        />
+        <slot
+          name="sidebar-bottom"
+          slot="bottom"
+        />
+      </Sidebar>
+
+      <Home v-if="$page.frontmatter.home"/>
+
+      <Page
+        v-else
+        :sidebar-items="sidebarItems"
+      >
+        <slot
+          name="page-top"
+          slot="top"
+        />
+        <slot
+          name="page-bottom"
+          slot="bottom"
+        />
+      </Page>
+    </div>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
 import nprogress from 'nprogress'
-import Home from '@parent-theme/components/Home.vue'
-import Navbar from '../components/Navbar.vue'
 import Page from '@parent-theme/components/Page.vue'
-import Sidebar from '../components/Sidebar.vue'
 import { resolveSidebarItems } from '@parent-theme/util'
 
+
+import Footer from '../components/Footer.vue'
+import Home from '../components/Home.vue'
+import Navbar from '../components/Navbar.vue'
+import Sidebar from '../components/Sidebar.vue'
+
 export default {
-  components: { Home, Page, Sidebar, Navbar },
+  components: { Home, Footer, Page, Sidebar, Navbar },
 
   data () {
     return {

@@ -41,7 +41,7 @@
     display flex
     justify-content space-between
     margin 0 auto 3rem
-    max-width 720px
+    max-width $contentWidth
     >.sitemap-section
       >h5
         color #ca2127
