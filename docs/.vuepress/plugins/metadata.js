@@ -3,7 +3,8 @@ const fs = require('fs-extra');
 const path = require('path');
 const semver = require('semver');
 
-const { typesMetadata, getLinkForKeyPath } = require('../utils/metadata');
+const { metadataService, getLinkForKeyPath } = require('../utils/metadata');
+const { versions } = require('../utils/version');
 
 let processed = {};
 // @todo make this configurable per build for versioned docs
@@ -22,7 +23,7 @@ module.exports = (options = {}, context) => ({
    * @param {Page} page
    */
   extendPageData(page) {
-    if (!/^\/api\//.test(page.regularPath)) {
+    if (!/^(\/[\w.\-]+)?\/api\//.test(page.regularPath)) {
       return;
     }
 
@@ -30,10 +31,12 @@ module.exports = (options = {}, context) => ({
     page.frontmatter.sidebarDepth = 0;
 
     const typeName = page.frontmatter.metadataKey || page.title;
-    const metadata = typesMetadata[typeName];
+    const version = page.version || 'next';
+    const metadata = metadataService.findMetadata(typeName, version);
 
     if (!metadata) {
       logger.warn(`no metadata found for API page ${page.path}`);
+      metadataService.currentPage = null;
       return;
     }
 
@@ -44,17 +47,23 @@ module.exports = (options = {}, context) => ({
     page.metadataKey = typeName;
     page.frontmatter.pageClass = 'api-page';
 
-    if (processed[typeName]) {
-      const metadataProcessor = processed[typeName];
+
+    if (processed[version] && processed[version][typeName]) {
+      const metadataProcessor = processed[version][typeName];
       metadataProcessor.appendAdditionalHeaders(page);
+      metadataService.currentPage = null;
       return;
     }
 
-    const metadataProcessor = new MetadataProcessor(context);
+    const metadataProcessor = new MetadataProcessor(context, version);
     metadataProcessor.transoformMetadataAndCollectHeaders(metadata);
     metadataProcessor.appendAdditionalHeaders(page);
 
-    processed[typeName] = metadataProcessor;
+    if (!processed[version]) {
+      processed[version] = {}
+    }
+    processed[version][typeName] = metadataProcessor;
+    metadataService.currentPage = null;
   },
 
   /**
@@ -64,7 +73,7 @@ module.exports = (options = {}, context) => ({
   clientDynamicModules() {
     return {
       name: 'metadata.js',
-      content: `export default ${JSON.stringify(typesMetadata)}`
+      content: `export default ${JSON.stringify(metadataService.metadata)}`
     }
   },
 
@@ -74,14 +83,15 @@ module.exports = (options = {}, context) => ({
   enhanceDevServer (app) {
     app.use((ctx, next) => {
       ctx.assert(ctx.request.accepts('json'), 406);
-      const metadataRoutePattern = /\/([\w.]+).json$/;
+      const metadataRoutePattern = /\/([\w.]+)\/([\w.]+).json$/;
       const match = ctx.path.match(metadataRoutePattern);
       if (!match) {
         return next();
       }
 
-      const typeName = match[1];
-      const metadata = findMetadataWithLowerCasedKey(typeName);
+      const version = match[1]
+      const typeName = match[2];
+      const metadata = findMetadataWithLowerCasedKey(typeName, version);
       if (metadata) {
         ctx.body = JSON.stringify(metadata);
         return;
@@ -96,19 +106,25 @@ module.exports = (options = {}, context) => ({
    * loaded by Vuex on subsequent page loads once Vue takes over on the client.
    */
   async generated () {
+    // @todo check context.markdown.$data.typeLinks for existence
+
     const tempMetadataPath = path.resolve(context.tempPath, 'metadata');
     fs.ensureDirSync(tempMetadataPath);
-    for(let typeName in processed) {
-      const metadata = typesMetadata[typeName];
-      const destPath = path.resolve(tempMetadataPath, `${typeName.toLowerCase()}.json`);
-      fs.writeFileSync(destPath, JSON.stringify(metadata));
+    for (const version in processed) {
+      fs.ensureDirSync(path.join(tempMetadataPath, version));
+      for (const typeName in processed[version]) {
+        const metadata = metadataService.findMetadata(typeName, version);
+        const destPath = path.join(tempMetadataPath, version, `${typeName.toLowerCase()}.json`);
+        fs.writeFileSync(destPath, JSON.stringify(metadata));
+      }
     }
 
     await fs.copy(tempMetadataPath, path.resolve(context.outDir, 'metadata'));
   }
 });
 
-function findMetadataWithLowerCasedKey(lowerCasedTypeName) {
+function findMetadataWithLowerCasedKey(lowerCasedTypeName, version) {
+  const typesMetadata = metadataService.metadata[version];
   for(let typeName in typesMetadata) {
     if (typeName.toLowerCase() === lowerCasedTypeName) {
       return typesMetadata[typeName];
@@ -127,9 +143,10 @@ function findMetadataWithLowerCasedKey(lowerCasedTypeName) {
  * Each instance of this processor can only be used to transform one single type.
  */
 class MetadataProcessor {
-  constructor(context) {
+  constructor(context, version) {
     this.markdown = context.markdown;
     this.base = context.base;
+    this.version = version;
     this.additionalHeaders = [];
     this.constantNamingPattern = /^[A-Z0-9_]+$/;
     this.hasConstants = false;
@@ -142,6 +159,7 @@ class MetadataProcessor {
    */
   transoformMetadataAndCollectHeaders(metadata) {
     delete metadata.description;
+    delete metadata.examples;
 
     this.filterInheritedAndRemovedMembers(metadata);
 
@@ -250,9 +268,10 @@ class MetadataProcessor {
   rewriteTypeLinks(markdownString) {
     const customLinkPattern = /<([^>\/]+)>/g;
     const mdLinkPattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+    const version = (versions.length === 0 || this.version === versions[0]) ? null : this.version;
 
     markdownString = markdownString.replace(customLinkPattern, (match, linkValue) => {
-      const link = getLinkForKeyPath(linkValue, this.base);
+      const link = getLinkForKeyPath(linkValue, this.base, version);
       if (link) {
         return `[${link.name}](${link.path})`;
       }
@@ -260,7 +279,7 @@ class MetadataProcessor {
     });
 
     markdownString = markdownString.replace(mdLinkPattern, (match, linkText, linkValue) => {
-      const link = getLinkForKeyPath(linkValue, this.base);
+      const link = getLinkForKeyPath(linkValue, this.base, version);
       if (link) {
         return `[${link.name}](${link.path})`;
       }

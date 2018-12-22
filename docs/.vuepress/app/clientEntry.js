@@ -44,12 +44,13 @@ function fetchMetadata(route) {
       return resolve();
     }
 
-    if (store.state.metadata[metadataKey]) {
+    const versionedMetadataKey = `${page.version || 'next'}/${metadataKey}`;
+    if (store.state.metadata[versionedMetadataKey]) {
       console.log('State data already available');
       return resolve();
     }
 
-    store.dispatch('fetchMetadata', metadataKey).then(resolve, reject);
+    store.dispatch('fetchMetadata', versionedMetadataKey).then(resolve, reject);
   });
 }
 

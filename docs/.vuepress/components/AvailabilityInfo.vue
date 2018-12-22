@@ -16,6 +16,10 @@ export default {
   },
   computed: {
     normalizedPlaforms: function () {
+      if (!this.platforms) {
+        return [];
+      }
+
       const normalizedPlaforms = Array.from(this.platforms);
 
       // Find the index of both platforms

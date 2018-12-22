@@ -1,31 +1,74 @@
 const fs = require('fs-extra');
 const path = require('path');
 
-const metadataFilePath = path.resolve(__dirname, '..', '..', 'api', 'api.json');
-const typesMetadata = JSON.parse(fs.readFileSync(metadataFilePath).toString());
-
-function isValidType(keyPath) {
-  const metadata = typesMetadata[keyPath];
-  if (metadata) {
-    return true;
+class MetadataService {
+  constructor() {
+    this.initialized = false;
+    this.versions = [];
+    this.metadata = {};
   }
 
-  const parentKeyPath = keyPath.substring(0, keyPath.lastIndexOf('.'));
-  const memberName = keyPath.substring(parentKeyPath.length + 1);
-  const parentMetadata = typesMetadata[parentKeyPath];
+  loadMetadata(context, versions) {
+    if (this.initialized) {
+      return;
+    }
 
-  if (!parentMetadata) {
-    return false;
+    let metadataFilePath = path.join(context.sourceDir, 'api', 'api.json');
+    let typesMetadata = JSON.parse(fs.readFileSync(metadataFilePath).toString());
+    this.metadata.next = typesMetadata;
+
+    for (const version of versions) {
+      metadataFilePath = path.join(context.versionedSourceDir, version, 'api', 'api.json');
+      typesMetadata = JSON.parse(fs.readFileSync(metadataFilePath).toString());
+      this.metadata[version] = typesMetadata;
+    }
+
+    this.versions = versions.slice();
+    this.versions.unshift('next');
+    this.initialized = true;
   }
 
-  const memberTypeCandidates = ['properties', 'methods', 'events', 'constants'];
-  return memberTypeCandidates.some(memberType => {
-    const members = parentMetadata[memberType];
-    if (!members) {
+  findMetadata(typeName, version) {
+    if (!version) {
+      version = 'next';
+    }
+    return this.metadata[version] ? this.metadata[version][typeName] : undefined;
+  }
+}
+
+const metadataService = new MetadataService();
+
+/**
+ * Checks if the given identifier is a known type in our metadata. If no version
+ * is given it will search through all available versions.
+ *
+ * @param {String} keyPath Type identifier as a fully qualified key-path
+ * @param {String} version Optional version of the metadta used for the type lookup
+ */
+function isValidType(keyPath, version) {
+  return metadataService.versions.filter(v => version ? v === version : true).some(v => {
+    const metadata = metadataService.findMetadata(keyPath, v);
+    if (metadata) {
+      return true;
+    }
+
+    const parentKeyPath = keyPath.substring(0, keyPath.lastIndexOf('.'));
+    const memberName = keyPath.substring(parentKeyPath.length + 1);
+    const parentMetadata = metadataService.findMetadata(parentKeyPath, v);
+
+    if (!parentMetadata) {
       return false;
     }
 
-    return members.some(memberMetadata => memberMetadata.name = memberName);
+    const memberTypeCandidates = ['properties', 'methods', 'events', 'constants'];
+    return memberTypeCandidates.some(memberType => {
+      const members = parentMetadata[memberType];
+      if (!members) {
+        return false;
+      }
+
+      return members.some(memberMetadata => memberMetadata.name = memberName);
+    });
   });
 }
 
@@ -36,13 +79,17 @@ function isValidType(keyPath) {
  * a member of a type (Titanium.UI.View.add).
  *
  * @param {String} keyPath Key path to the type which to generate the link for
- * @param {String} basePath Optional base path used as a prefix in the returned path
+ * @param {String} basePath Base path used as a prefix in the returned path
+ * @param {String} version Version of the metadata file to use for type metadata lookups
  */
-function getLinkForKeyPath(keyPath, basePath) {
-  let prefix = basePath ? `${basePath}api` : 'api';
+function getLinkForKeyPath(keyPath, basePath, version) {
+  prefix = `${basePath}${version ? `${version}/` : ''}api`;
 
-  if (typesMetadata[keyPath]) {
-    const metadata = typesMetadata[keyPath];
+  if (!version) {
+    verion = metadataService.versions[0];
+  }
+  const metadata = metadataService.findMetadata(keyPath, version);
+  if (metadata) {
     if (metadata.type === 'pseudo') {
       prefix += '/structs';
     }
@@ -54,7 +101,7 @@ function getLinkForKeyPath(keyPath, basePath) {
 
   const parentKeyPath = keyPath.substring(0, keyPath.lastIndexOf('.'));
   const memberName = keyPath.substring(parentKeyPath.length + 1);
-  const parentMetadata = typesMetadata[parentKeyPath];
+  const parentMetadata = metadataService.findMetadata(parentKeyPath, version);
   if (!parentMetadata) {
     return null;
   }
@@ -82,7 +129,7 @@ function getLinkForKeyPath(keyPath, basePath) {
 }
 
 module.exports = {
-  typesMetadata,
+  metadataService,
   isValidType,
   getLinkForKeyPath
 }

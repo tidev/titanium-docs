@@ -1,5 +1,5 @@
 <template>
-  <div class="member-list" v-if="constants && constants.length">
+  <div class="member-list" v-if="constants.length">
     <h2 id="constants">
       <a href="#constants" class="header-anchor">#</a> Constants
     </h2>
@@ -26,9 +26,10 @@ export default {
   components: {
     AvailabilityInfo
   },
-  computed: {
-    constants: function() {
-      return this.$store.state.metadata[this.$page.metadataKey].constants;
+  props: {
+    constants: {
+      type: Array,
+      default: () => []
     }
   }
 }

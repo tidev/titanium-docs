@@ -1,5 +1,5 @@
 <template>
-  <div class="member-list method-list" v-if="methods && methods.length">
+  <div class="member-list method-list" v-if="methods.length">
     <h2 id="methods">
       <a href="#methods" class="header-anchor">#</a> Methods
     </h2>
@@ -27,7 +27,7 @@
         <tbody>
           <tr v-for="parameter in method.parameters">
             <td><code>{{parameter.name}}</code></td>
-            <td><TypeLink :types="parameter.type"/></td>
+            <td><TypeLinks :types="parameter.type"/></td>
             <td>{{parameter.summary}}</td>
           </tr>
         </tbody>
@@ -37,7 +37,7 @@
       <p>
         <dl class="type-info">
           <dt>Type</dt>
-          <dd><TypeLink :types="method.returns"/></dd>
+          <dd><TypeLinks :types="method.returns"/></dd>
         </dl>
       </p>
       <hr v-if="index < methods.length - 1">
@@ -54,9 +54,10 @@ export default {
     AvailabilityInfo,
     TypeLink
   },
-  computed: {
-    methods: function () {
-      return this.$store.state.metadata[this.$page.metadataKey].methods;
+  props: {
+    methods: {
+      type: Array,
+      default: () => []
     }
   }
 }

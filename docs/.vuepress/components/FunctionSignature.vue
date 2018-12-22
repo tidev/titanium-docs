@@ -1,6 +1,6 @@
 <template>
   <p class="type-signature function-signature">
-    <span class="static" v-if="!instance">(static)</span> <span>{{name}}({{parameterNames.join(', ')}})</span> <span class="return-type">→ <TypeLink :types="returns"/></span>
+    <span class="static" v-if="!instance">(static)</span> <span>{{name}}({{parameterNames.join(', ')}})</span> <span class="return-type">→ <TypeLinks :types="returns"/></span>
   </p>
 </template>
 
@@ -28,9 +28,6 @@ export default {
 
 <style lang="stylus">
 .function-signature
-  font-family: monospace
-  font-size: 16px
-
   &>.static, .return-type
     color: #aaaaaa
 </style>
