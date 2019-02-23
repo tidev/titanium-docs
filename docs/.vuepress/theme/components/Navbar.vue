@@ -101,9 +101,11 @@ export default {
           } else {
             link = currentLink.replace(`/${this.$page.version}`, '');
             if (version !== currentVersion) {
+              // try to stay on current page for different version
               link = `/${version}${link}`;
             }
             if (!routes.some(route => route.path === link)) {
+              // fallback to homepage
               link = version === currentVersion ? '/' : `/${version}/`;
             }
           }
