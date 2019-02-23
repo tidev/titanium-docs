@@ -39,7 +39,7 @@ function linkConverterPlugin(md) {
     const token = tokens[idx];
     const hrefIndex = token.attrIndex('href');
     if (hrefIndex === -1) {
-      return defaultRender(tokens, idx, options, env, self);
+      return renderLinkOpen(tokens, idx, options, env, self);
     }
 
     const link = token.attrs[hrefIndex]
@@ -115,7 +115,7 @@ function typeAutolink(md) {
         token.markup = 'autolink';
         token.info = 'auto';
 
-        token= state.push('text', '', 0);
+        token = state.push('text', '', 0);
         token.content = url;
 
         token = state.push('link_close', 'a', -1);
