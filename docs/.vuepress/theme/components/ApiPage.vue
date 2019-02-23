@@ -29,13 +29,7 @@
 <script>
 import { resolvePage, normalize, outboundRE, endingSlashRE } from '@parent-theme/util'
 
-import Breadcrumb from '../components/Breadcrumb.vue';
-
 export default {
-  components: {
-    Breadcrumb
-  },
-
   props: ['sidebarItems'],
 
   computed: {
