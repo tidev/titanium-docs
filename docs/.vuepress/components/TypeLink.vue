@@ -63,6 +63,6 @@ export default {
 </script>
 
 <style lang="stylus">
-.unknown-type
+.unknown-type, .generic-type
   font-weight 500
 </style>
