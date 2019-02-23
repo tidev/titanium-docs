@@ -63,7 +63,7 @@ export default {
     justify-content flex-end
 
     &>.platform-item
-      color #aaaaaa
+      color $lightTextColor
       margin-left: 0.8rem
       display flex
       flex-shrink 0
