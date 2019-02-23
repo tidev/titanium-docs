@@ -16,7 +16,7 @@
       <div class="member-summary" v-html="method.summary"></div>
       <div class="member-description" v-html="method.description"></div>
       <h4 v-if="method.parameters.length">Parameters</h4>
-      <table v-if="method.parameters.length" class="parameter-table">
+      <table v-if="method.parameters.length" class="table parameter-table">
         <thead>
           <tr>
             <th>Name</th>
@@ -65,15 +65,6 @@ export default {
 
 <style lang="stylus">
 .parameter-table
-  width 100%
-
-  th
-    text-align left
-
-  th, td
-    font-size: 14px
-    line-height 1.5
-
   td:last-child
     width 100%
 
