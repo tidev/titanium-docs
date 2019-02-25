@@ -43,12 +43,13 @@
 </template>
 
 <script>
-import SidebarButton from '@parent-theme/components/SidebarButton.vue'
 import AlgoliaSearchBox from '@AlgoliaSearchBox'
 import SearchBox from '@SearchBox'
-import NavLinks from './NavLinks.vue'
+
 import ApiSidebarButton from './ApiSidebarButton'
 import DropdownLink from './DropdownLink.vue'
+import NavLinks from './NavLinks.vue'
+import SidebarButton from './SidebarButton.vue'
 
 export default {
   components: { ApiSidebarButton, DropdownLink, SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },

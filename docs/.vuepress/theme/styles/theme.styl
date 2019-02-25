@@ -7,6 +7,7 @@
 @require './toc'
 @require './table'
 
+// Custom vars
 $apiSidebarWidth = 12rem
 
 html, body
@@ -136,8 +137,12 @@ h1, h2, h3, h4, h5, h6
       margin-bottom 1rem
       + p, + pre, + .custom-block
         margin-top 2rem
-  &:hover .header-anchor
-    opacity: 1
+    .header-anchor
+      &:hover
+        text-decoration none
+
+h1, h2, h3, h4, strong
+  color #2c3e50
 
 h1
   font-size 2.2rem
@@ -156,7 +161,6 @@ a.header-anchor
   margin-left -0.87em
   padding-right 0.23em
   margin-top 0.125em
-  opacity 0
   &:hover
     text-decoration none
 

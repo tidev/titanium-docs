@@ -26,13 +26,13 @@
 import throttle from 'lodash.throttle'
 import nprogress from 'nprogress'
 import Vue from 'vue'
-import { resolveSidebarItems } from '@parent-theme/util'
 
 import ApiPage from '../components/ApiPage.vue'
 import ApiSidebar from '../components/ApiSidebar.vue'
 import Footer from '../components/Footer.vue'
 import Navbar from '../components/Navbar.vue'
 import Sidebar from '../components/Sidebar.vue'
+import { resolveSidebarItems } from '../util'
 
 function calculateCurrentAnchor (anchors) {
   const l = anchors.length

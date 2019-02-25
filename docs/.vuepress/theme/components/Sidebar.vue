@@ -22,8 +22,8 @@
 <script>
 import SidebarGroup from './SidebarGroup.vue'
 import SidebarLink from './SidebarLink.vue'
-import NavLinks from '@parent-theme/components/NavLinks.vue'
-import { isActive } from '@parent-theme/util'
+import NavLinks from './NavLinks.vue'
+import { isActive } from '../util'
 
 export default {
   components: { SidebarGroup, SidebarLink, NavLinks },

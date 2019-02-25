@@ -1,5 +1,5 @@
 <script>
-import { hashRE, groupHeaders } from '@parent-theme/util'
+import { hashRE, groupHeaders } from '../util'
 
 export default {
   functional: true,

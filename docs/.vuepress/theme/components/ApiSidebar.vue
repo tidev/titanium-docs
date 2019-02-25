@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { groupHeaders } from '@parent-theme/util';
+import { groupHeaders } from '../util';
 
 import ApiSidebarLink from './ApiSidebarLink.vue'
 

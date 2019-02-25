@@ -53,8 +53,8 @@
 <script>
 import Vue from 'vue'
 import nprogress from 'nprogress'
-import Page from '@parent-theme/components/Page.vue'
-import { resolveSidebarItems } from '@parent-theme/util'
+import Page from '../components/Page.vue'
+import { resolveSidebarItems } from '../util'
 
 
 import Footer from '../components/Footer.vue'

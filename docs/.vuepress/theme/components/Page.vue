@@ -1,8 +1,10 @@
 <template>
-  <div class="page">
+  <main class="page">
+    <slot name="top"/>
+
     <Content/>
 
-    <div class="page-edit" v-if="contentMounted">
+    <footer class="page-edit">
       <div
         class="edit-link"
         v-if="editLink"
@@ -22,8 +24,41 @@
         <span class="prefix">{{ lastUpdatedText }}: </span>
         <span class="time">{{ lastUpdated }}</span>
       </div>
+    </footer>
+
+    <div class="page-nav" v-if="prev || next">
+      <p class="inner">
+        <span
+          v-if="prev"
+          class="prev"
+        >
+          ←
+          <router-link
+            v-if="prev"
+            class="prev"
+            :to="prev.path"
+          >
+            {{ prev.title || prev.path }}
+          </router-link>
+        </span>
+
+        <span
+          v-if="next"
+          class="next"
+        >
+          <router-link
+            v-if="next"
+            :to="next.path"
+          >
+            {{ next.title || next.path }}
+          </router-link>
+          →
+        </span>
+      </p>
     </div>
-  </div>
+
+    <slot name="bottom"/>
+  </main>
 </template>
 
 <script>
@@ -33,10 +68,6 @@ export default {
   props: ['sidebarItems'],
 
   computed: {
-    contentMounted () {
-      return this.$vuepress.$get('contentMounted')
-    },
-
     lastUpdated () {
       return this.$page.lastUpdated
     },
@@ -49,6 +80,28 @@ export default {
         return this.$site.themeConfig.lastUpdated
       }
       return 'Last Updated'
+    },
+
+    prev () {
+      const prev = this.$page.frontmatter.prev
+      if (prev === false) {
+        return
+      } else if (prev) {
+        return resolvePage(this.$site.pages, prev, this.$route.path)
+      } else {
+        return resolvePrev(this.$page, this.sidebarItems)
+      }
+    },
+
+    next () {
+      const next = this.$page.frontmatter.next
+      if (next === false) {
+        return
+      } else if (next) {
+        return resolvePage(this.$site.pages, next, this.$route.path)
+      } else {
+        return resolveNext(this.$page, this.sidebarItems)
+      }
     },
 
     editLink () {
@@ -76,9 +129,9 @@ export default {
 
     editLinkText () {
       return (
-        this.$themeLocaleConfig.editLinkText ||
-        this.$site.themeConfig.editLinkText ||
-        `Edit this page`
+        this.$themeLocaleConfig.editLinkText
+        || this.$site.themeConfig.editLinkText
+        || `Edit this page`
       )
     }
   },
@@ -91,11 +144,12 @@ export default {
           ? docsRepo
           : repo
         return (
-          base.replace(endingSlashRE, '') +
-           `/${docsBranch}` +
-           (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '') +
-           path +
-           `?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
+          base.replace(endingSlashRE, '')
+           + `/src`
+           + `/${docsBranch}`
+           + (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '')
+           + path
+           + `?mode=edit&spa=0&at=${docsBranch}&fileviewer=file-view-default`
         )
       }
 
@@ -104,14 +158,44 @@ export default {
         : `https://github.com/${docsRepo}`
 
       return (
-        base.replace(endingSlashRE, '') +
-        `/edit/${docsBranch}` +
-        (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '') +
-        path
+        base.replace(endingSlashRE, '')
+        + `/edit/${docsBranch}`
+        + (docsDir ? '/' + docsDir.replace(endingSlashRE, '') : '')
+        + path
       )
     }
   }
 }
+
+function resolvePrev (page, items) {
+  return find(page, items, -1)
+}
+
+function resolveNext (page, items) {
+  return find(page, items, 1)
+}
+
+function find (page, items, offset) {
+  const res = []
+  flattern(items, res)
+  for (let i = 0; i < res.length; i++) {
+    const cur = res[i]
+    if (cur.type === 'page' && cur.path === decodeURIComponent(page.path)) {
+      return res[i + offset]
+    }
+  }
+}
+
+function flattern (items, res) {
+  for (let i = 0, l = items.length; i < l; i++) {
+    if (items[i].type === 'group') {
+      flattern(items[i].children || [], res)
+    } else {
+      res.push(items[i])
+    }
+  }
+}
+
 </script>
 
 <style lang="stylus">
@@ -119,6 +203,7 @@ export default {
 
 .page
   padding-bottom 2rem
+  display block
 
 .page-edit
   @extend $wrapper

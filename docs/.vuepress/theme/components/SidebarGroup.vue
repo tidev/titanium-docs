@@ -38,8 +38,8 @@
 </template>
 
 <script>
+import DropdownTransition from './DropdownTransition.vue'
 import SidebarLink from './SidebarLink.vue'
-import DropdownTransition from '@parent-theme/components/DropdownTransition.vue'
 
 export default {
   name: 'SidebarGroup',
