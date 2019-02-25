@@ -80,11 +80,15 @@ module.exports = (options = {}, context) => ({
   /**
    * Enhance the Koa dev server and serve api metadata directly from memory
    */
-  enhanceDevServer (app) {
-    app.use((ctx, next) => {
-      ctx.assert(ctx.request.accepts('json'), 406);
+  beforeDevServer (app) {
+    app.use((req, res, next) => {
+      if (!req.accepts('json')) {
+        res.status(406);
+        return;
+      }
+
       const metadataRoutePattern = /\/([\w.]+)\/([\w.]+).json$/;
-      const match = ctx.path.match(metadataRoutePattern);
+      const match = req.path.match(metadataRoutePattern);
       if (!match) {
         return next();
       }
@@ -92,12 +96,11 @@ module.exports = (options = {}, context) => ({
       const version = match[1]
       const typeName = match[2];
       const metadata = findMetadataWithLowerCasedKey(typeName, version);
-      if (metadata) {
-        ctx.body = JSON.stringify(metadata);
-        return;
+      if (!metadata) {
+        return next();
       }
 
-      return;
+      res.json(metadata);
     });
   },
 

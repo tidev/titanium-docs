@@ -13,11 +13,11 @@
   "author": "Axway Appcelerator",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.30",
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.39",
     "axios": "^0.18.0",
     "fs-extra": "^7.0.1",
     "semver": "^5.6.0",
-    "vuepress": "^1.0.0-alpha.30",
+    "vuepress": "^1.0.0-alpha.39",
     "vuex": "^3.0.1",
     "vuex-router-sync": "^5.0.0"
   }
