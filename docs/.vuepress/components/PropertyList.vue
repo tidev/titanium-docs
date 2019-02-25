@@ -7,7 +7,7 @@
     <template v-for="(property, index) in properties">
       <div class="member-header">
         <h3 :id="property.name.toLowerCase()">
-          <a :href="`#${property.name.toLowerCase()}`" class="header-anchor">#</a> {{property.name}} <Badge v-if="property.permission === 'read-only'" text="READONLY" type="light"/> <Badge v-if="property.deprecated" text="DEPRECATED" type="warn"/>
+          <a :href="`#${property.name.toLowerCase()}`" class="header-anchor">#</a> {{property.name}} <Badge v-if="property.permission === 'read-only'" text="READONLY" type="light"/><Badge v-if="property.availability === 'creation'" text="CREATION ONLY" type="info"/><Badge v-if="property.deprecated" text="DEPRECATED" type="warn"/>
         </h3>
         <AvailabilityInfo :platforms="property.platforms"/>
       </div>
