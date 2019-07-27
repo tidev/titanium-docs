@@ -4,7 +4,7 @@
 
 ## Overview
 
-You create a `NavigationWindow` with the <Titanium.UI.createNavigationWindow> factory method, or
+You create a `NavigationWindow` with the <Titanium.UI.createNavigationWindow> factory method or
 a `<NavigationWindow>` Alloy element.
 
 All `NavigationWindow` objects must have at least one root window that cannot be removed. When
