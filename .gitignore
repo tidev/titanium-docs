@@ -5,5 +5,6 @@ Thumbs.db
 # Dependency directories
 node_modules/
 
-# VuePress dist
+# VuePress dist and temp
+.temp
 docs/.vuepress/dist
