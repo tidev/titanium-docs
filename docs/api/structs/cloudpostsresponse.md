@@ -1,5 +1,0 @@
-# CloudPostsResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

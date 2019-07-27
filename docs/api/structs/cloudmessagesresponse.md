@@ -1,5 +1,0 @@
-# CloudMessagesResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

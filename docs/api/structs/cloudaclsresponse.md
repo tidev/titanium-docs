@@ -1,5 +1,0 @@
-# CloudACLsResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

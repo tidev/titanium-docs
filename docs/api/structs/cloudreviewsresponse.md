@@ -1,5 +1,0 @@
-# CloudReviewsResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

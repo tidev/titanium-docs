@@ -1,5 +1,0 @@
-# CloudChatGroupsResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

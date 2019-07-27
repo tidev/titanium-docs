@@ -1,5 +1,0 @@
-# CloudFriendRequestsResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

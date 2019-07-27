@@ -1,5 +1,0 @@
-# CloudResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

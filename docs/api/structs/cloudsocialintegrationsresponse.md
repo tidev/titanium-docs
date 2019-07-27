@@ -1,5 +1,0 @@
-# CloudSocialIntegrationsResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

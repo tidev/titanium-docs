@@ -1,5 +1,0 @@
-# CloudFilesResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

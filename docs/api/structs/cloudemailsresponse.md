@@ -1,5 +1,0 @@
-# CloudEmailsResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

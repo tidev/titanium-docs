@@ -1,5 +1,0 @@
-# CloudPushNotificationSuccessArg
-
-<ProxySummary/>
-
-<ApiDocs/>

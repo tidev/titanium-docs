@@ -1,5 +1,0 @@
-# CloudKeyValuesResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

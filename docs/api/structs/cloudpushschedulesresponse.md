@@ -1,5 +1,0 @@
-# CloudPushSchedulesResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

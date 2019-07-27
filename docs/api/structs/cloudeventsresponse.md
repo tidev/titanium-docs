@@ -1,5 +1,0 @@
-# CloudEventsResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

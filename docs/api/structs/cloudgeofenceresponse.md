@@ -1,5 +1,0 @@
-# CloudGeoFenceResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

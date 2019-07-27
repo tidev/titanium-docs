@@ -1,5 +1,0 @@
-# CloudStreamProgress
-
-<ProxySummary/>
-
-<ApiDocs/>

@@ -1,5 +1,0 @@
-# CloudUsersResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

@@ -1,5 +1,0 @@
-# CloudUsersSecureDialog
-
-<ProxySummary/>
-
-<ApiDocs/>

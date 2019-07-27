@@ -1,5 +1,0 @@
-# CloudPushNotificationsQueryChannelResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

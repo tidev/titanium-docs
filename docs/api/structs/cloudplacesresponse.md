@@ -1,5 +1,0 @@
-# CloudPlacesResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

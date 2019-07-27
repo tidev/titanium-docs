@@ -1,5 +1,0 @@
-# CloudPhotoCollectionsPhotosResponse
-
-<ProxySummary/>
-
-<ApiDocs/>

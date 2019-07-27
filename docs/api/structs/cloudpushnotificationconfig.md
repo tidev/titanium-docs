@@ -1,5 +1,0 @@
-# CloudPushNotificationConfig
-
-<ProxySummary/>
-
-<ApiDocs/>
