@@ -7,7 +7,7 @@
     "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs",
     "docs:version": "vuepress version docs",
-    "docs:metadata": "vuepress metadata docs",
+    "docs:metadata": "vuepress metadata docs ../titanium_mobile/apidoc/Titanium ../titanium_mobile/apidoc/Global ../titanium_mobile_windows/apidoc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,9 +16,9 @@
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.0.2",
     "vuepress": "^1.0.2",
-    "vuepress-plugin-apidocs": "^0.1.1",
+    "vuepress-plugin-apidocs": "^0.1.2",
     "vuepress-plugin-versioning": "^0.1.0",
-    "vuepress-theme-titanium": "^0.1.0",
+    "vuepress-theme-titanium": "^0.1.2",
     "vuex": "^3.1.1",
     "vuex-router-sync": "^5.0.0"
   },
