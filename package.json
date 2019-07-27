@@ -13,12 +13,13 @@
   "author": "Axway Appcelerator",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.39",
-    "axios": "^0.18.0",
-    "fs-extra": "^7.0.1",
-    "semver": "^5.6.0",
-    "vuepress": "^1.0.0-alpha.39",
-    "vuex": "^3.0.1",
+    "@vuepress/plugin-back-to-top": "^1.0.2",
+    "vuepress": "^1.0.2",
+    "vuepress-plugin-apidocs": "^0.1.1",
+    "vuepress-plugin-versioning": "^0.1.0",
+    "vuepress-theme-titanium": "^0.1.0",
+    "vuex": "^3.1.1",
     "vuex-router-sync": "^5.0.0"
-  }
+  },
+  "dependencies": {}
 }
