@@ -1,11 +1,11 @@
 # Titanium.App.Windows
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
 ExtendedExecution provides a way to postpone application suspension.
-This method is useful expecially for Windows desktop apps because app suspension happens when you 
+This method is useful expecially for Windows desktop apps because app suspension happens when you
 minimize the app Window, which happens often on desktop. Note that extended execution is not available
 for use in Windows Store applications.
 

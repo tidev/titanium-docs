@@ -1,5 +1,5 @@
 # PushNotificationSuccessArg
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

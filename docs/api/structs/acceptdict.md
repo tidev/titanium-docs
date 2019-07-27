@@ -1,6 +1,6 @@
 # AcceptDict
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

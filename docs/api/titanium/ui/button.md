@@ -1,6 +1,6 @@
 # Titanium.UI.Button
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -11,7 +11,7 @@
       <td><img src="images/button/button_ios.png" height="50" /></td>
       <td><img src="images/button/button_wp.png" height="50" /></td>
     </tr>
-  <tbody>
+  </tbody>
   <tfoot>
     <tr>
       <th>Android</th>

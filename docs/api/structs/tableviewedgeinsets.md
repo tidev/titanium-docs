@@ -1,6 +1,6 @@
 # TableViewEdgeInsets
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

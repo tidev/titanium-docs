@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.ListViewScrollPosition
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

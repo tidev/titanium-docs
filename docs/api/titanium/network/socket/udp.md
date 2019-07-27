@@ -1,6 +1,6 @@
 # Titanium.Network.Socket.UDP
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

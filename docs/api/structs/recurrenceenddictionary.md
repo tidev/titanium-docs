@@ -1,5 +1,5 @@
 # recurrenceEndDictionary
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

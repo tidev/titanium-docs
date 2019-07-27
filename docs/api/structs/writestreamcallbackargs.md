@@ -1,5 +1,5 @@
 # WriteStreamCallbackArgs
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

@@ -1,5 +1,5 @@
 # daysOfTheWeekDictionary
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

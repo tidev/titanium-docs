@@ -1,6 +1,6 @@
 # Titanium.App.iOS.SearchableItem
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,5 +1,5 @@
 # TabIconInsets
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

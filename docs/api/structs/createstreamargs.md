@@ -1,5 +1,5 @@
 # CreateStreamArgs
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

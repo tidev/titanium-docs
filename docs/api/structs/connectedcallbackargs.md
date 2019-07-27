@@ -1,6 +1,6 @@
 # ConnectedCallbackArgs
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

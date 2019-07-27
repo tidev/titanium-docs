@@ -1,5 +1,5 @@
 # RequestCameraAccessResult
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

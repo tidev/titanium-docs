@@ -1,5 +1,5 @@
 # PreviewImageOptions
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

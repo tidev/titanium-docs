@@ -1,5 +1,5 @@
 # Titanium.XML.NodeList
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

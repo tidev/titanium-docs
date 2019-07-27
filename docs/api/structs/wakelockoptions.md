@@ -1,5 +1,5 @@
 # wakeLockOptions
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

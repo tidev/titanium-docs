@@ -1,6 +1,6 @@
 # Titanium.Platform
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Examples
 

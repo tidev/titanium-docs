@@ -1,6 +1,6 @@
 # ListViewAnimationProperties
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

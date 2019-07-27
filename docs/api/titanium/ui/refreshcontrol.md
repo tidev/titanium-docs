@@ -1,11 +1,11 @@
 # Titanium.UI.RefreshControl
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
-You use a `RefreshControl` with a <Titanium.UI.TableView>, <Titanium.UI.ListView> or <Titanium.UI.ScrollView> object. 
-It provides an alternate method to implement **pull to refresh** functionality provided by 
+You use a `RefreshControl` with a <Titanium.UI.TableView>, <Titanium.UI.ListView> or <Titanium.UI.ScrollView> object.
+It provides an alternate method to implement **pull to refresh** functionality provided by
 <Titanium.UI.TableView.headerPullView> and <Titanium.UI.ListView.pullView> properties.
 
 Use the <Titanium.UI.createRefreshControl> method to create a RefreshControl.
@@ -20,7 +20,7 @@ by default to match the native behavior.
 ### Basic Pull To Refresh
 
 A basic sample showing the usage of refreshstart event with endRefreshing functionality.
-            
+
     var win = Ti.UI.createWindow({
         fullscreen:true
     });

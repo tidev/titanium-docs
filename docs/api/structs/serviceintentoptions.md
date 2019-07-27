@@ -1,5 +1,5 @@
 # ServiceIntentOptions
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

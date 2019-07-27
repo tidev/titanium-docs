@@ -1,5 +1,5 @@
 # NotificationParams
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

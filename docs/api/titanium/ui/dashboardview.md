@@ -1,54 +1,54 @@
 # Titanium.UI.DashboardView
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
-The DashboardView is created using the <Titanium.UI.createDashboardView> method or **`<DashboardView>`** 
+The DashboardView is created using the <Titanium.UI.createDashboardView> method or **`<DashboardView>`**
 Alloy element.
 
-Dashboard view's edit mode may be activated by a longpress of a <Titanium.UI.DashboardItem> item, 
-unless this behavior has been disabled by the [editable](Titanium.UI.DashboardView.editable) 
-property. As a dashboard view does not inherently provide a way to exit edit mode, this must be 
+Dashboard view's edit mode may be activated by a longpress of a <Titanium.UI.DashboardItem> item,
+unless this behavior has been disabled by the [editable](Titanium.UI.DashboardView.editable)
+property. As a dashboard view does not inherently provide a way to exit edit mode, this must be
 explicitly defined.
 
-When edit mode has been activated, the item icons wobble by default to act as a visual cue. 
+When edit mode has been activated, the item icons wobble by default to act as a visual cue.
 This behavior may be disabled using the [wobble](Titanium.UI.DashboardView.wobble) property.
 
-If a dashboard contains more than 9 items, it will be paged into screens in a 3 x 3 formation 
-using its built-in scrollable view. A paging control is added to the bottom of the view to 
+If a dashboard contains more than 9 items, it will be paged into screens in a 3 x 3 formation
+using its built-in scrollable view. A paging control is added to the bottom of the view to
 indicate the active page.
 
-Note that a dashboard is only intended to be used in [PORTRAIT](Titanium.UI.PORTRAIT) 
+Note that a dashboard is only intended to be used in [PORTRAIT](Titanium.UI.PORTRAIT)
 orientation mode.
 
 ## Examples
 
 ### Dashboard Demo
 
-Create a toolbar with an edit/done button and a dashboard of items on a single screen. 
-Set the badge value for some items, and allow them to be reset with a click. Enter edit mode 
-with a longpress of a dashboard item (default behavior). Toggle edit mode with a click to 
+Create a toolbar with an edit/done button and a dashboard of items on a single screen.
+Set the badge value for some items, and allow them to be reset with a click. Enter edit mode
+with a longpress of a dashboard item (default behavior). Toggle edit mode with a click to
 the toolbar button.
 
 Copy your image files to the local project `/images/dashboard` directory.
 
-        
+
     var win = Ti.UI.createWindow({
         backgroundColor: '#13386c'
     });
-    
+
     var button = Ti.UI.createButton({
         title: 'Edit',
         style: Ti.UI.iOS.SystemButtonStyle.DONE,
     });
-    
+
     var toolbar = Ti.UI.iOS.createToolbar({
         items: [button],
         top: 0
     });
     win.add(toolbar);
-    
+
     var label = Ti.UI.createLabel({
       color: 'white',
       font: { fontSize: 14 },
@@ -59,20 +59,20 @@ Copy your image files to the local project `/images/dashboard` directory.
       width: 300
     });
     win.add(label);
-    
+
     var dashboardData = [];
     var itemData = [
       { name: 'account', badge: 10 },
       { name: 'cases', badge: 2 },
       { name: 'calls', badge: 2 },
       { name: 'contacts', badge: 5},
-      { name: 'emps' }, 
+      { name: 'emps' },
       { name: 'leads' },
       { name: 'meetings', badge: 3 },
       { name: 'opps',  badge:  126 }, // badge will be displayed as "99+"
       { name: 'tasks' }
     ];
-    
+
     for (var i = 0; i < itemData.length; i++) {
       var item = Ti.UI.createDashboardItem({
         badge: itemData[i].badge,
@@ -82,16 +82,16 @@ Copy your image files to the local project `/images/dashboard` directory.
       });
       dashboardData.push(item);
     }
-    
+
     var dashboard = Ti.UI.createDashboardView({
       data: dashboardData,
       wobble: true,
       top: 100
     });
     win.add(dashboard);
-    
+
     var isEditable = false;
-    
+
     button.addEventListener('click', function(e) {
       if (isEditable) {
         dashboard.stopEditing();
@@ -99,23 +99,23 @@ Copy your image files to the local project `/images/dashboard` directory.
         dashboard.startEditing();
       }
     });
-    
+
     dashboard.addEventListener('edit', function(e) {
       button.title = 'Done';
       button.style = Ti.UI.iOS.SystemButtonStyle.DONE;
       isEditable = true;
     });
-    
+
     dashboard.addEventListener('commit', function(e) {
       button.title = 'Edit';
       button.style = Ti.UI.iOS.SystemButtonStyle.PLAIN;
       isEditable = false;
     });
-    
+
     dashboard.addEventListener('click', function(e) {
       e.item.badge = 0;
     });
-    
+
     win.open();
 
 ### Alloy XML Markup

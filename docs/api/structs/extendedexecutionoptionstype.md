@@ -1,5 +1,5 @@
 # ExtendedExecutionOptionsType
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

@@ -1,5 +1,5 @@
 # showParams
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

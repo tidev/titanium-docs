@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.AlertDialogStyle
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

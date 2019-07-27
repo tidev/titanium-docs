@@ -1,6 +1,6 @@
 # Titanium.UI.SearchBar
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,5 +1,5 @@
 # Titanium.XML.Text
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

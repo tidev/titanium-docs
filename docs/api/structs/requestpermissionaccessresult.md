@@ -1,5 +1,5 @@
 # RequestPermissionAccessResult
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

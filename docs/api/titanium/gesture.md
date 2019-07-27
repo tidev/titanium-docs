@@ -1,5 +1,5 @@
 # Titanium.Gesture
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

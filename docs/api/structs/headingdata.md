@@ -1,5 +1,5 @@
 # HeadingData
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

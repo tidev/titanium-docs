@@ -1,6 +1,6 @@
 # Titanium.Android.BigTextStyle
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

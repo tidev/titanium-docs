@@ -1,5 +1,5 @@
 # ScreenshotResult
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

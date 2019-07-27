@@ -1,6 +1,6 @@
 # Titanium.UI.ScrollView
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

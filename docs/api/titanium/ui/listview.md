@@ -1,6 +1,6 @@
 # Titanium.UI.ListView
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -592,7 +592,7 @@ below demonstrates how to use `searchView`, `headerView` and `footerView`.
 
 ### Alloy example of <PullView> element
 
-The example below demonstrates how to use a `<PullView>` Alloy element.
+The example below demonstrates how to use a `<PullView/>` Alloy element.
 
     <!-- views/index.xml -->
     <Alloy>

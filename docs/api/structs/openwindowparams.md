@@ -1,5 +1,5 @@
 # openWindowParams
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

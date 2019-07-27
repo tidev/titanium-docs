@@ -1,6 +1,6 @@
 # Titanium.UI.Windows.AppBarSeparator
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

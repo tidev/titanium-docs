@@ -1,6 +1,6 @@
 # Titanium.XML.DocumentType
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

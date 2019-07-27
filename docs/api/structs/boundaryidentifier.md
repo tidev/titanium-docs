@@ -1,5 +1,5 @@
 # BoundaryIdentifier
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

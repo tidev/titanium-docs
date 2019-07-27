@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.TableViewCellSelectionStyle
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

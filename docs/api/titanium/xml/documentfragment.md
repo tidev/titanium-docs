@@ -1,6 +1,6 @@
 # Titanium.XML.DocumentFragment
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

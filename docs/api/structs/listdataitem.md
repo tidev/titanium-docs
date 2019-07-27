@@ -1,6 +1,6 @@
 # ListDataItem
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

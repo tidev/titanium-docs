@@ -1,5 +1,5 @@
 # RequestPhotoGalleryAccessResult
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

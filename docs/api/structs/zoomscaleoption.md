@@ -1,6 +1,6 @@
 # zoomScaleOption
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

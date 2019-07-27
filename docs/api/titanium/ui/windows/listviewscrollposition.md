@@ -1,5 +1,5 @@
 # Titanium.UI.Windows.ListViewScrollPosition
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

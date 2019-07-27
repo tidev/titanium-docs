@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.DocumentViewer
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

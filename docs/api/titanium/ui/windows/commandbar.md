@@ -1,6 +1,6 @@
 # Titanium.UI.Windows.CommandBar
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

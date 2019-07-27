@@ -1,6 +1,6 @@
 # Titanium.UI.OptionDialog
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

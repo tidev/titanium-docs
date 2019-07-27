@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.MenuPopup
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Examples
 

@@ -1,6 +1,6 @@
 # Titanium.Codec
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

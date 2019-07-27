@@ -1,6 +1,6 @@
 # Titanium.BufferStream
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

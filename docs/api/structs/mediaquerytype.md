@@ -1,5 +1,5 @@
 # MediaQueryType
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

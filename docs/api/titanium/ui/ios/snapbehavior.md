@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.SnapBehavior
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -21,7 +21,7 @@ The following example snaps the block to the location of a click on the window.
 <img src="images/animator/snapbehavior.gif" height="455" style="border:1px solid black"/>
 
     var win = Ti.UI.createWindow({backgroundColor: 'white', fullscreen: true});
-    
+
     // Create an Animator object using the window as the coordinate system
     var animator = Ti.UI.iOS.createAnimator({referenceView: win});
 

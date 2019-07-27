@@ -1,6 +1,6 @@
 # Titanium.XML.Comment
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

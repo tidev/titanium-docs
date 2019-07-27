@@ -1,5 +1,5 @@
 # Titanium.Event
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

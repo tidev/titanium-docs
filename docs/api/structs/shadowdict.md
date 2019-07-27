@@ -1,5 +1,5 @@
 # shadowDict
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

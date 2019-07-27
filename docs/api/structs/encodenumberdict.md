@@ -1,5 +1,5 @@
 # EncodeNumberDict
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

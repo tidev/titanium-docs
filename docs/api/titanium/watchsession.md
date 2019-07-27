@@ -1,6 +1,6 @@
 # Titanium.WatchSession
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

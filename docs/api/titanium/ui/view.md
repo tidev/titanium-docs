@@ -1,6 +1,6 @@
 # Titanium.UI.View
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

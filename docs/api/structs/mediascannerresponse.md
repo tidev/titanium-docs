@@ -1,6 +1,6 @@
 # MediaScannerResponse
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

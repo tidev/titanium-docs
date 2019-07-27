@@ -1,5 +1,5 @@
 # Titanium.Filesystem.FileStream
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

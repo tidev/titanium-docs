@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.AdView
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

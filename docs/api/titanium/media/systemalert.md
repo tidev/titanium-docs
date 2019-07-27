@@ -1,13 +1,13 @@
 # Titanium.Media.SystemAlert
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
-You can use this module to provide audible system alerts. 
+You can use this module to provide audible system alerts.
 
-You can use it to play short (30 seconds or shorter) sounds. The interface does not provide level, positioning, 
-looping, or timing control, and does not support simultaneous playback: You can play only one sound at a time. 
+You can use it to play short (30 seconds or shorter) sounds. The interface does not provide level, positioning,
+looping, or timing control, and does not support simultaneous playback: You can play only one sound at a time.
 
 This module differs from the Sound module because it honors the ringtone volume, not the Music volume.
 

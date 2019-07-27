@@ -1,5 +1,5 @@
 # textAreaSelectedParams
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

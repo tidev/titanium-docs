@@ -1,6 +1,6 @@
 # Titanium.UI.PickerRow
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

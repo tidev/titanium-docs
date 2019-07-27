@@ -1,5 +1,5 @@
 # TextFieldPadding
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

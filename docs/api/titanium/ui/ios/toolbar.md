@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.Toolbar
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -77,7 +77,7 @@ the toolbar buttons would be grouped tightly together on the left side of the to
 
 ### Toolbar with extended background
 
-The following code excerpt creates a simple toolbar, placed at the top of the window which extends its background under the status bar. 
+The following code excerpt creates a simple toolbar, placed at the top of the window which extends its background under the status bar.
 
     var win = Ti.UI.createWindow({
         backgroundColor: 'white'

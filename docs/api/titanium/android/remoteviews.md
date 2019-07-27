@@ -1,6 +1,6 @@
 # Titanium.Android.RemoteViews
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -18,12 +18,12 @@ To use a remote view hierarchy in a notification, see
 Because the remote view hierarchy belongs to another process, you cannot call methods on it
 directly, but you can call methods on the `RemoteViews` object to update views in the
 heirarchy by ID. To reference a view inside the layout, use the
-<Titanium.App.Android.R> object to reference the view's ID. For example, if you have a 
+<Titanium.App.Android.R> object to reference the view's ID. For example, if you have a
 view with the ID `notify_imageview`, you can refer to it using:
-    
+
     Ti.App.Android.R.id.notify_imageview
 
-See also: 
+See also:
 
 *   [RemoteViews](https://developer.android.com/reference/android/widget/RemoteViews.html)
     in the Android Developer Reference.
@@ -35,7 +35,7 @@ See also:
 
 ### Create a Remote View
 
-The following code excerpt creates a `RemoteViews` object based on a custom layout 
+The following code excerpt creates a `RemoteViews` object based on a custom layout
 called `custom_layout.xml`, and set a label's text.
 
 
@@ -47,8 +47,8 @@ This example uses a simple custom layout:
 
     <?xml version="1.0" encoding="utf-8"?>
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent" 
-            android:layout_height="fill_parent" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
             android:orientation="vertical" >
         <TextView android:id="@+id/custom_text"
                 android:layout_width="fill_parent"

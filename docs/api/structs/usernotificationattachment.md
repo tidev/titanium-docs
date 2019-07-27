@@ -1,5 +1,5 @@
 # UserNotificationAttachment
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

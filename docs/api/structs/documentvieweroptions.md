@@ -1,6 +1,6 @@
 # DocumentViewerOptions
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

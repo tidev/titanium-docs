@@ -1,6 +1,6 @@
 # TableViewAnimationProperties
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

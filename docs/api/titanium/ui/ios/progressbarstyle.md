@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.ProgressBarStyle
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

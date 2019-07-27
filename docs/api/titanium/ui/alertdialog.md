@@ -1,6 +1,6 @@
 # Titanium.UI.AlertDialog
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

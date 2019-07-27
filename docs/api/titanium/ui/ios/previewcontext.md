@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.PreviewContext
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

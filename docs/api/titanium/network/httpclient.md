@@ -1,6 +1,6 @@
 # Titanium.Network.HTTPClient
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -71,7 +71,7 @@ the client and server.
       <th>Android</th>
       <th>iOS</th>
     </tr>
-  <thead>
+  </thead>
   <tbody>
     <tr>
       <th align="left">TLS 1.0</th>
@@ -88,7 +88,7 @@ the client and server.
       <td>4.1+</td>
       <td>5.0+</td>
     </tr>
-  <tbody>
+  </tbody>
 </table>
 
 In Titanium, if a connection with TLS 1.2 fails, Titanium will re-attempt the connection with

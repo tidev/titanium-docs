@@ -1,6 +1,6 @@
 # Titanium.UI.Label
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

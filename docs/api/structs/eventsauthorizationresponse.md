@@ -1,5 +1,5 @@
 # EventsAuthorizationResponse
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

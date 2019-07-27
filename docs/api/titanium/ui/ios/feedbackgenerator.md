@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.FeedbackGenerator
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -10,7 +10,7 @@ haptic feedback as users interact with them. Your app can also ask the system to
 iOS manages the strength and behavior of this feedback.
 
 There are three different kind of feedback generators that can be used for different interaction scenarios:
- 
+
   1. **Selection Feedback**: Indicates that a task or action, such as depositing a check or unlocking a vehicle, has completed,
      failed, or produced a warning of some kind.. This feedback type can be used when specifying the
      <Titanium.UI.iOS.FEEDBACK_GENERATOR_TYPE_SELECTION> constant in the `type` property of the feedback generator.
@@ -26,7 +26,7 @@ There are three different kind of feedback generators that can be used for diffe
      scrolling a picker wheel. This feedback is intended for communicating movement through a series of discrete values, not
      making or confirming a selection. This feedback type can be used when using the <Titanium.UI.iOS.FEEDBACK_GENERATOR_TYPE_NOTIFICATION>
      constant in the `type` property of the feedback generator.
-     
+
 **Example**
 When clicking a button you should trigger an impact feedback as displayed below.
 
@@ -34,8 +34,8 @@ When clicking a button you should trigger an impact feedback as displayed below.
       type: Ti.UI.iOS.FEEDBACK_GENERATOR_TYPE_IMPACT,
       style: Ti.UI.iOS.FEEDBACK_GENERATOR_IMPACT_STYLE_LIGHT
     });
-    generator.impactOccurred();     
-  
+    generator.impactOccurred();
+
 We're not using `generator.prepare()` here because we're triggering the feedback immediately. When you know a feedback generator is triggered within a couple seconds you should use `prepare()` to know for sure the timing is correct.
 
 See also:

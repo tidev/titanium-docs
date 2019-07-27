@@ -1,6 +1,6 @@
 # Titanium.Network.Cookie
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

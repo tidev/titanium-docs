@@ -1,6 +1,6 @@
 # APSConnectionDelegate
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,5 +1,5 @@
 # UserNotificationDictionary
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

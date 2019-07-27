@@ -1,6 +1,6 @@
 # MenuPopupShowParams
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

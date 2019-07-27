@@ -1,5 +1,5 @@
 # PreviewImageError
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

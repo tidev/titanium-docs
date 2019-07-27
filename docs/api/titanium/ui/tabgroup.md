@@ -1,6 +1,6 @@
 # Titanium.UI.TabGroup
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

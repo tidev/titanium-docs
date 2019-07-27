@@ -1,6 +1,6 @@
 # Titanium.UI.Picker
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

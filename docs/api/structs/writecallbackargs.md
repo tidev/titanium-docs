@@ -1,5 +1,5 @@
 # WriteCallbackArgs
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

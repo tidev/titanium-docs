@@ -1,5 +1,5 @@
 # DecodeNumberDict
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

@@ -1,6 +1,6 @@
 # Titanium.UI.Android.DrawerLayout
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

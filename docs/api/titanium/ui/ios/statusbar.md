@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.StatusBar
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

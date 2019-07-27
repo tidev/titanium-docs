@@ -1,5 +1,5 @@
 # CropRectType
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

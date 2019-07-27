@@ -1,6 +1,6 @@
 # MessageReply
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Examples
 

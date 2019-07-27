@@ -1,6 +1,6 @@
 # Attribute
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

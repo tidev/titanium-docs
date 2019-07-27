@@ -1,6 +1,6 @@
 # Titanium.Media.VideoPlayer
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

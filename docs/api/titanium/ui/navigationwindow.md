@@ -1,6 +1,6 @@
 # Titanium.UI.NavigationWindow
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

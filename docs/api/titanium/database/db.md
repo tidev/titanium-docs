@@ -1,5 +1,5 @@
 # Titanium.Database.DB
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

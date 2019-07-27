@@ -1,5 +1,5 @@
 # MovieSize
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

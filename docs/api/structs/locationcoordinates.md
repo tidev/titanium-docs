@@ -1,5 +1,5 @@
 # LocationCoordinates
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

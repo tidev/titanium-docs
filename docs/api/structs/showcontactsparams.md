@@ -1,5 +1,5 @@
 # showContactsParams
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

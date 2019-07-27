@@ -1,6 +1,6 @@
 # Titanium.App.iOS.UserNotificationAction
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,5 +1,5 @@
 # CalendarPermissionResponse
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

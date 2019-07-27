@@ -1,5 +1,5 @@
 # Titanium.XML.DOMImplementation
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

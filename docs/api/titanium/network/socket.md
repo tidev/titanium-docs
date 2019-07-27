@@ -1,5 +1,5 @@
 # Titanium.Network.Socket
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

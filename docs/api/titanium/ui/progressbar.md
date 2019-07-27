@@ -1,6 +1,6 @@
 # Titanium.UI.ProgressBar
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

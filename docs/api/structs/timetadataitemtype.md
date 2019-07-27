@@ -1,6 +1,6 @@
 # TiMetadataItemType
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

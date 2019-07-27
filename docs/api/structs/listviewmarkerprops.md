@@ -1,6 +1,6 @@
 # ListViewMarkerProps
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

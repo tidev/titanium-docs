@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.ListViewCellSelectionStyle
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

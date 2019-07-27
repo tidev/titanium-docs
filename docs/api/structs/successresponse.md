@@ -1,5 +1,5 @@
 # SuccessResponse
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

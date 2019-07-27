@@ -1,6 +1,6 @@
 # Titanium.App.iOS.UserDefaults
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

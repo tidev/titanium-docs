@@ -1,6 +1,6 @@
 # Titanium.XML.EntityReference
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

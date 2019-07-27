@@ -1,5 +1,5 @@
 # Titanium.App.iOS.UserNotificationCenter
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

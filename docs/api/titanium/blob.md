@@ -1,6 +1,6 @@
 # Titanium.Blob
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

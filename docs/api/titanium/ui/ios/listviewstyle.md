@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.ListViewStyle
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

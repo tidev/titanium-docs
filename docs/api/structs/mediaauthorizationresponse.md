@@ -1,5 +1,5 @@
 # MediaAuthorizationResponse
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

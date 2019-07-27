@@ -1,6 +1,6 @@
 # ViewTemplate
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

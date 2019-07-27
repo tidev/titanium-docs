@@ -1,6 +1,6 @@
 # Titanium.App.iOS.UserActivity
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Titanium.UI.Windows.Style
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -16,7 +16,7 @@ In `Styles.xaml`, you can define a theme using `ResourceDictionary.ThemeDictiona
 and any `Style` with unique key like below.
 
     <ResourceDictionary
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
         <ResourceDictionary.ThemeDictionaries>
@@ -26,7 +26,7 @@ and any `Style` with unique key like below.
                 <SolidColorBrush x:Key="ButtonBorderBrushPressed" Color="Yellow"/>
             </ResourceDictionary>
         </ResourceDictionary.ThemeDictionaries>
-        
+
         <Style x:Key="ButtonStyle" TargetType="Button">
             <Setter Property="BorderThickness" Value="2" />
         </Style>
@@ -52,7 +52,7 @@ If you want to apply theme only and you don't need specific `Style`, you can omi
     });
     style.apply(button);
 
-For more information about XAML Style and Theme, 
+For more information about XAML Style and Theme,
 refer to [XAML styles](https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/xaml-styles).
 
 <ApiDocs/>

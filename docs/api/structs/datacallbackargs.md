@@ -1,5 +1,5 @@
 # DataCallbackArgs
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

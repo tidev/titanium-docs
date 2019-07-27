@@ -1,5 +1,5 @@
 # Titanium.Map
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

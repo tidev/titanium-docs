@@ -1,6 +1,6 @@
 # Titanium.Android.BroadcastReceiver
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

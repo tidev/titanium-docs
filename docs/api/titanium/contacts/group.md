@@ -1,6 +1,6 @@
 # Titanium.Contacts.Group
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

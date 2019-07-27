@@ -1,6 +1,6 @@
 # Titanium.Android.Service
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

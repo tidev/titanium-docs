@@ -1,6 +1,6 @@
 # Titanium.UI.Windows.AppBarButton
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

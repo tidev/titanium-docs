@@ -1,5 +1,5 @@
 # Titanium.XML.NamedNodeMap
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

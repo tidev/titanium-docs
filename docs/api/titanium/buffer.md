@@ -1,6 +1,6 @@
 # Titanium.Buffer
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

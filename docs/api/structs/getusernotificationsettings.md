@@ -1,5 +1,5 @@
 # GetUserNotificationSettings
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

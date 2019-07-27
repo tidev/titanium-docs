@@ -1,6 +1,6 @@
 # Titanium.UI.Switch
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

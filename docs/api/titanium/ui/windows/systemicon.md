@@ -1,6 +1,6 @@
 # Titanium.UI.Windows.SystemIcon
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Font
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

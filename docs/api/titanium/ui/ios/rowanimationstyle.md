@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.RowAnimationStyle
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

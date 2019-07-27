@@ -1,6 +1,6 @@
 # LocationProviderDict
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

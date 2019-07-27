@@ -1,6 +1,6 @@
 # Titanium.Media.AudioPlayer
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

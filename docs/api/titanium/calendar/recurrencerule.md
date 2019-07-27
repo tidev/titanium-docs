@@ -1,6 +1,6 @@
 # Titanium.Calendar.RecurrenceRule
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

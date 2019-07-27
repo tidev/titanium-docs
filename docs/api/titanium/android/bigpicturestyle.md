@@ -1,6 +1,6 @@
 # Titanium.Android.BigPictureStyle
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

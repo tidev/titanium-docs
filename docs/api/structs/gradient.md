@@ -1,5 +1,5 @@
 # Gradient
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

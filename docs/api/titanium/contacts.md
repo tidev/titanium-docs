@@ -1,6 +1,6 @@
 # Titanium.Contacts
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -19,7 +19,7 @@ reload them from the `Contacts` module before modifying them.
 
 See the examples for a sample use of the `reload` event.
 
-If 'ABAddressBookErrorDomain error 0' occurs, it implies that you are not allowed to add or edit 
+If 'ABAddressBookErrorDomain error 0' occurs, it implies that you are not allowed to add or edit
 certain fields. Check your default account in the iOS settings under contacts. If it's not 'iCloud',
 most likely it will not support fields such as alternateBirthday or socialProfile.
 
@@ -46,8 +46,8 @@ if (Ti.Contacts.hasContactsPermissions()) {
 Output to the console all properties of all people.
 
     var singleValue = [
-      'recordId', 'firstName', 'middleName', 'lastName', 'fullName', 'prefix', 'suffix', 
-      'nickname', 'firstPhonetic', 'middlePhonetic', 'lastPhonetic', 'organization', 
+      'recordId', 'firstName', 'middleName', 'lastName', 'fullName', 'prefix', 'suffix',
+      'nickname', 'firstPhonetic', 'middlePhonetic', 'lastPhonetic', 'organization',
       'jobTitle', 'department', 'note', 'birthday', 'created', 'modified', 'kind'
     ];
     var multiValue = [
@@ -68,7 +68,7 @@ Output to the console all properties of all people.
 
 ### Add New System Address Book Records
 
-Create two new records in the system address book. Note that the <Titanium.Contacts.Person> 
+Create two new records in the system address book. Note that the <Titanium.Contacts.Person>
 object is queried in the same way that it is created (as shown in the previous example.)
 
     Ti.API.info('Saving contact...');
@@ -135,7 +135,7 @@ object is queried in the same way that it is created (as shown in the previous e
       }
     });
     Ti.API.info('Contact saved');
-    
+
     Ti.API.info('Saving contact...');
     var workAddress1 = {
       'CountryCode': 'us',
@@ -145,7 +145,7 @@ object is queried in the same way that it is created (as shown in the previous e
       'Country': 'United States',
       'ZIP': '94043'
     };
-    
+
     Ti.Contacts.createPerson({
       firstName:'Arthur',
       lastName:'Evans',

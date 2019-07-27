@@ -1,5 +1,5 @@
 # ForwardGeocodeResponse
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

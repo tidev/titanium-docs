@@ -1,6 +1,6 @@
 # Titanium.Calendar
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

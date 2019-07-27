@@ -1,6 +1,6 @@
 # Titanium.XML.CDATASection
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

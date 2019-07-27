@@ -1,5 +1,5 @@
 # closeWindowParams
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

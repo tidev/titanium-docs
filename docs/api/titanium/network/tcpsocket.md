@@ -1,6 +1,6 @@
 # Titanium.Network.TCPSocket
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

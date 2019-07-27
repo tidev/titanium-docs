@@ -1,5 +1,5 @@
 # ViewPadding
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

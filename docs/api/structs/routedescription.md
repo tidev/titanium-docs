@@ -1,5 +1,5 @@
 # RouteDescription
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

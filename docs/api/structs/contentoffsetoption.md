@@ -1,6 +1,6 @@
 # contentOffsetOption
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

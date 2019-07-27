@@ -1,6 +1,6 @@
 # Titanium.UI.Windows.AppBarToggleButton
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

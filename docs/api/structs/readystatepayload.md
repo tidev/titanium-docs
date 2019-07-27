@@ -1,5 +1,5 @@
 # ReadyStatePayload
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

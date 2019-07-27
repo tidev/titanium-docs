@@ -1,5 +1,5 @@
 # UserNotificationCallbackResponse
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

@@ -1,5 +1,5 @@
 # Titanium.UI.Windows
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

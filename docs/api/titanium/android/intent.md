@@ -1,6 +1,6 @@
 # Titanium.Android.Intent
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

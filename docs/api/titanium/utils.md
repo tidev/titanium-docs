@@ -1,5 +1,5 @@
 # Titanium.Utils
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

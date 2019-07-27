@@ -1,5 +1,5 @@
 # textFieldSelectedParams
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

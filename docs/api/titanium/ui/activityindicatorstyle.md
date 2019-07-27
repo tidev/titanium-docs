@@ -1,5 +1,5 @@
 # Titanium.UI.ActivityIndicatorStyle
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

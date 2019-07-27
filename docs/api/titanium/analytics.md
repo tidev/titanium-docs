@@ -1,19 +1,19 @@
 # Titanium.Analytics
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
-The Analytics module can be used to supply additional context or application-specific 
+The Analytics module can be used to supply additional context or application-specific
 information which can then be accessed during analysis using Analytics.
 
 Use the [featureEvent](Titanium.Analytics.featureEvent) method to generate custom
-events that you can view through the Analytics product. You can specify a name for 
+events that you can view through the Analytics product. You can specify a name for
 the feature event which is visible through Analytics.
 
-**NOTE** The Analytics module lets you transmit some data that is stored, but 
+**NOTE** The Analytics module lets you transmit some data that is stored, but
 not made accessible through the Analytics UI. To access this data, you must
-sign up for the optional raw data export service. 
+sign up for the optional raw data export service.
 
 *The following types of data are stored but not made available through the Analytics UI:*
 
@@ -21,8 +21,8 @@ sign up for the optional raw data export service.
 
 *   Extra data added to feature events (the `data` parameter).
 
-Viewing navigation events in the Analytics UI will be supported in a future version 
-of the Analytics product. There is no plan to support the other event types, and they 
+Viewing navigation events in the Analytics UI will be supported in a future version
+of the Analytics product. There is no plan to support the other event types, and they
 should not be used.
 
 **GDPR Compliance**
@@ -39,7 +39,7 @@ should handle it within your app logic.
 
 ### Custom Feature Event
 
-This example shows how to send a feature event during an application session to indicate 
+This example shows how to send a feature event during an application session to indicate
 some feature that you would like to track was used.
 
     Ti.Analytics.featureEvent('app.feature');

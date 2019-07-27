@@ -1,6 +1,6 @@
 # Titanium.UI.AttributedString
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,5 +1,5 @@
 # Titanium.XML.Notation
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

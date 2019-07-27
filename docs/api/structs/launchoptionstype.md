@@ -1,5 +1,5 @@
 # LaunchOptionsType
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

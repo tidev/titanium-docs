@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.TableViewScrollPosition
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

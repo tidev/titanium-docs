@@ -1,5 +1,5 @@
 # CameraOptionsType
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

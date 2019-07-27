@@ -1,6 +1,6 @@
 # Titanium.UI.3DMatrix
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

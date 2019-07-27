@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.PreviewActionGroup
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

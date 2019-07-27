@@ -1,10 +1,10 @@
 # Titanium.UI.iOS.ApplicationShortcuts
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
-3D Touch gives iOS 9 users an additional interaction dimension. On supported devices, people can quickly choose 
+3D Touch gives iOS 9 users an additional interaction dimension. On supported devices, people can quickly choose
 app-specific actions from the Home screen by pressing on the app icon. The pressing of an application shortcut
 will then fire the `shortcutitemclick` <Titanium.App.iOS> event.
 
@@ -17,7 +17,7 @@ Here is an example how to create static application shortcuts in the `tiapp.xml`
     <ti:app>
       ...
       <ios>
-        <plist>  
+        <plist>
           <dict>
             <key>UIApplicationShortcutItems</key>
             <array>
@@ -34,8 +34,8 @@ Here is an example how to create static application shortcuts in the `tiapp.xml`
                 <dict/>
               </dict>
             </array>
-          </dict>  
-        </plist>  
+          </dict>
+        </plist>
       </ios>
       ...
     </ti:app>

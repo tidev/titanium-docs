@@ -1,6 +1,6 @@
 # Titanium.App
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -79,7 +79,7 @@ event followed by the `resumed` event, returning the app to the normal state.
       <th colspan="2">Going into Background</th>
       <th colspan="2">Coming into  Foreground</th>
     </tr>
-  <thead>
+  </thead>
   <tbody>
     <tr>
       <th colspan="2" align="left">Alert-Based/Fast App Switching</th>

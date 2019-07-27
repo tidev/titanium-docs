@@ -1,6 +1,6 @@
 # Titanium.App.Windows.BackgroundService
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

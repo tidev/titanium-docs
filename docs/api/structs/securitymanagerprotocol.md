@@ -1,6 +1,6 @@
 # SecurityManagerProtocol
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

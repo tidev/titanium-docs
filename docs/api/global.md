@@ -4,7 +4,7 @@ metadataKey: Global
 
 # Global JavaScript APIs
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

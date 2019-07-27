@@ -1,6 +1,6 @@
 # Titanium.App.iOS.UserNotificationCategory
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

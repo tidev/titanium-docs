@@ -1,6 +1,6 @@
 # Titanium.UI.TextArea
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

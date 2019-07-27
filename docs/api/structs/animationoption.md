@@ -1,6 +1,6 @@
 # animationOption
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

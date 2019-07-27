@@ -1,5 +1,5 @@
 # ClipboardItemsType
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

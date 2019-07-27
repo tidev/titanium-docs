@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.Stepper
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.AnimationStyle
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

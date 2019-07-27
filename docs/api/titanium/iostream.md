@@ -1,6 +1,6 @@
 # Titanium.IOStream
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Titanium.BlobStream
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,5 +1,5 @@
 # CreateBufferArgs
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

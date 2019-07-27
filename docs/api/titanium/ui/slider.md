@@ -1,6 +1,6 @@
 # Titanium.UI.Slider
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

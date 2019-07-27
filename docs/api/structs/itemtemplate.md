@@ -1,6 +1,6 @@
 # ItemTemplate
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

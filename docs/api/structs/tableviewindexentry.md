@@ -1,5 +1,5 @@
 # TableViewIndexEntry
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

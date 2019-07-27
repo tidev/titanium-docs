@@ -1,6 +1,6 @@
 # Titanium.Android.MenuItem
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

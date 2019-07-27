@@ -1,6 +1,6 @@
 # Titanium.UI.PickerColumn
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

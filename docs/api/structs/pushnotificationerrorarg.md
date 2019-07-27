@@ -1,5 +1,5 @@
 # PushNotificationErrorArg
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

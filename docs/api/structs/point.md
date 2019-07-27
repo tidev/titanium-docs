@@ -1,5 +1,5 @@
 # Point
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

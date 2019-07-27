@@ -1,6 +1,6 @@
 # Titanium.UI.Clipboard
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

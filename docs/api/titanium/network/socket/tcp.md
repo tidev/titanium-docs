@@ -1,6 +1,6 @@
 # Titanium.Network.Socket.TCP
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

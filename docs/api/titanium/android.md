@@ -1,6 +1,6 @@
 # Titanium.Android
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -10,8 +10,8 @@ The Android module allows the application to manage various Android components.
 
 The drawer-layout components acts as a top-level container for window content that allows
 for interactive "drawer" views to be pulled out from one or both vertical edges of the window.
-It is represented by a `centerView` and optional `leftView` and `rightView` components that 
-can be swiped in and out with additional configuration and transitions. Learn more about 
+It is represented by a `centerView` and optional `leftView` and `rightView` components that
+can be swiped in and out with additional configuration and transitions. Learn more about
 drawer-layouts in it's dedicated <Titanium.UI.Android.DrawerLayout> docs.
 
 ### Action Bar
@@ -110,7 +110,7 @@ For more information about services, see the
 Starting from Android 6.0 (API level 23), users need to grant certain permissions to apps while the
 app is running. You can read it more [here](https://developer.android.com/training/permissions/requesting.html).
 
-In Titanium SDK, to support this, we have the <Titanium.Android.requestPermissions> method. It is used to 
+In Titanium SDK, to support this, we have the <Titanium.Android.requestPermissions> method. It is used to
 request any permission you may need. An example of using it is shown below:
 
     var permissions = [ 'android.permission.CAMERA', 'android.permission.READ_EXTERNAL_STORAGE' ];

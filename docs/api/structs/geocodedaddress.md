@@ -1,5 +1,5 @@
 # GeocodedAddress
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

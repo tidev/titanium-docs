@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.ScrollIndicatorStyle
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

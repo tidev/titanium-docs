@@ -1,5 +1,5 @@
 # RequestStorageAccessResult
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

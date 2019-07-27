@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.TableViewStyle
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

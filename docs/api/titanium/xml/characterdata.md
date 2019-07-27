@@ -1,5 +1,5 @@
 # Titanium.XML.CharacterData
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

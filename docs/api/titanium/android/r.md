@@ -1,12 +1,12 @@
 # Titanium.Android.R
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
 To access your application's resources, use <Titanium.App.Android.R>.
 
-These properties and sub-properties correspond directly to the properties of the the `android.R` 
+These properties and sub-properties correspond directly to the properties of the the `android.R`
 class, and should have the same syntax. For example, to retrieve the "OK" string in Android:
 
     Ti.Android.currentActivity.getString(Ti.Android.R.string.ok);

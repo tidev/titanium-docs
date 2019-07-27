@@ -1,25 +1,25 @@
 # Dictionary
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
-The type `Dictionary` is used to describe a plain JavaScript object used to pass a 
+The type `Dictionary` is used to describe a plain JavaScript object used to pass a
 set of properties.
 
 The type `Dictionary<` _Type_ `>` is used to describe a dictionary
-where the properties correspond to the properties of the named _Type_. So 
+where the properties correspond to the properties of the named _Type_. So
 `Dictionary<` `Titanium.UI.Window` `>` refers to a dictionary of `Window`
-properties. 
+properties.
 
-Property dictionaries are used extensively in the Titanium API, especially when 
-creating objects. For example, You can specify the initial properties for 
-a new window by passing a `Dictionary<` `Titanium.UI.Window` `>` object to the 
+Property dictionaries are used extensively in the Titanium API, especially when
+creating objects. For example, You can specify the initial properties for
+a new window by passing a `Dictionary<` `Titanium.UI.Window` `>` object to the
 [createWindow](Titanium.UI.createWindow) method:
 
     var window = Ti.UI.createWindow({
-        title: "Test", 
-        fullscreen: true, 
+        title: "Test",
+        fullscreen: true,
         backgroundColor: '#aea'
     });
 

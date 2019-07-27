@@ -1,5 +1,5 @@
 # Titanium.UI.iOS
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

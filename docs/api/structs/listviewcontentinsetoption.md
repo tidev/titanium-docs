@@ -1,6 +1,6 @@
 # ListViewContentInsetOption
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

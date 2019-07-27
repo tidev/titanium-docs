@@ -1,6 +1,6 @@
 # Titanium.App.Properties
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -47,7 +47,7 @@ Store a string property.
 Output all saved properties to the console.
 
     var props = Ti.App.Properties.listProperties();
-    
+
     for (var i=0, ilen=props.length; i<ilen; i++){
         var value = Ti.App.Properties.getString(props[i]);
         Ti.API.info(props[i] + ' = ' + value);

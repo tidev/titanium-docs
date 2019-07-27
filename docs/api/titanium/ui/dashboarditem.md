@@ -1,6 +1,6 @@
 # Titanium.UI.DashboardItem
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

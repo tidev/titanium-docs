@@ -1,6 +1,6 @@
 # Titanium.Android.ActionBar
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Titanium.UI.TextField
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

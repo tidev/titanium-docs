@@ -1,5 +1,5 @@
 # windowToolbarParam
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

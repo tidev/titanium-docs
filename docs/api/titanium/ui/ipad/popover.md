@@ -1,6 +1,6 @@
 # Titanium.UI.iPad.Popover
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

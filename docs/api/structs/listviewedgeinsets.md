@@ -1,6 +1,6 @@
 # ListViewEdgeInsets
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Titanium.UI.ImageView
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -11,11 +11,11 @@ the aspect ratio maintained, up to a maximum size that does not exceed its paren
 
 ### Remote Images
 
-You can display both local and remote images in an ImageView. When loading remote images, you should 
-set the defaultImage property to a local image, which will be displayed while the remote image is being 
+You can display both local and remote images in an ImageView. When loading remote images, you should
+set the defaultImage property to a local image, which will be displayed while the remote image is being
 downloaded. Remote images are cached automatically on the iOS-, Android- and Windows platform.
 
-Android Note: Android 6 and later uses runtime permissions to secure the user's privacy. 
+Android Note: Android 6 and later uses runtime permissions to secure the user's privacy.
 Therefore, you should call <Titanium.Filesystem.requestStoragePermissions> before attempting to load remote images.
 
 Read more about remote images and general best practices in the [Image Best Practices Guide](https://wiki.appcelerator.org/display/guides2/Image+Best+Practices#ImageBestPractices-Cachingremoteimages).

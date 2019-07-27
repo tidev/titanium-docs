@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.NavigationWindow
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

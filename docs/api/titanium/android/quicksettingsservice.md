@@ -1,12 +1,12 @@
 # Titanium.Android.QuickSettingsService
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
 A special kind of service providing access to a tile in the quick settings menu. Used for customization
 and event handling of the tile. Usage is similar to default <Titanium.Android.Service> but with the
-addition of some specific attributes and methods. This service is not started from within the application 
+addition of some specific attributes and methods. This service is not started from within the application
 with the help of an Intent, but instead whenever the custom tile is added in the quick settings menu by the
 user. Applications can have multiple tiles in the quick settigs menu, but a <Titanium.Android.QuickSettingsService>
 corresponds to a single one - you need separate service file for every tile.

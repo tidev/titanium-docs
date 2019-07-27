@@ -1,5 +1,5 @@
 # ActivityResult
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

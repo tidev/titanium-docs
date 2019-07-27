@@ -1,5 +1,5 @@
 # RequestMusicLibraryAccessResult
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

@@ -1,6 +1,6 @@
 # Titanium.App.Windows.BackgroundServiceTask
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -12,7 +12,7 @@ BackgroundServiceTask represents background task for Windows.
       Ti.API.info("Background task is registered: task id=" + task.taskId);
 
       //
-      // Unregister task. Equivalent to 
+      // Unregister task. Equivalent to
       //
       // Ti.App.Windows.BackgroundService.unregisterTask(task);
       // or

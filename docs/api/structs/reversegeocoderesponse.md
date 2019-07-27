@@ -1,5 +1,5 @@
 # ReverseGeocodeResponse
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

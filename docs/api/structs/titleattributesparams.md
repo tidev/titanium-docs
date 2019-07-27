@@ -1,6 +1,6 @@
 # titleAttributesParams
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Examples
 

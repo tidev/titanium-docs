@@ -1,10 +1,10 @@
 # Titanium.UI.iOS.CoverFlowView
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
-The cover flow view is created by the <Titanium.UI.iOS.createCoverFlowView> method or 
+The cover flow view is created by the <Titanium.UI.iOS.createCoverFlowView> method or
 **`<CoverFlowView>`** element in an Alloy application.
 
 ## Examples

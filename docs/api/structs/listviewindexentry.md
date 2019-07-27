@@ -1,6 +1,6 @@
 # ListViewIndexEntry
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

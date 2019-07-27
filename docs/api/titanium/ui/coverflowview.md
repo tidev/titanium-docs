@@ -1,6 +1,6 @@
 # Titanium.UI.CoverFlowView
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

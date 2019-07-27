@@ -1,5 +1,5 @@
 # YQLResponse
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

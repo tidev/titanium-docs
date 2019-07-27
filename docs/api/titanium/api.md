@@ -1,5 +1,5 @@
 # Titanium.API
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

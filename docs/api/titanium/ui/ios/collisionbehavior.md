@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.CollisionBehavior
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -48,7 +48,7 @@ console.
     var HEIGHT = Ti.Platform.displayCaps.platformHeight;
 
     // Create a bunch of random blocks; add to the window and behaviors
-    var blocks = [];   
+    var blocks = [];
     for (var i = 0; i < 25; i++) {
         var r = Math.round(Math.random() * 255);
         var g = Math.round(Math.random() * 255);

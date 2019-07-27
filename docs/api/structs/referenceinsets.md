@@ -1,5 +1,5 @@
 # ReferenceInsets
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

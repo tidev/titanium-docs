@@ -1,5 +1,5 @@
 # Titanium.Platform.Android
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

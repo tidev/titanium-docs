@@ -1,5 +1,5 @@
 # Titanium.Calendar.Alert
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

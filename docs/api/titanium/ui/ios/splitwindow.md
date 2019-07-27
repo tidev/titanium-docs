@@ -1,10 +1,10 @@
 # Titanium.UI.iOS.SplitWindow
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
-The [masterView](Titanium.UI.iOS.SplitWindow.masterView) and [detailView](Titanium.UI.iOS.SplitWindow.detailView) 
+The [masterView](Titanium.UI.iOS.SplitWindow.masterView) and [detailView](Titanium.UI.iOS.SplitWindow.detailView)
 properties are required before the SplitWindow is opened.
 
 You use this class to implement a master-detail interface, in which the left-side view presents

@@ -1,6 +1,6 @@
 # Titanium.UI.Android.CardView
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

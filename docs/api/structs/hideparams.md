@@ -1,5 +1,5 @@
 # hideParams
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

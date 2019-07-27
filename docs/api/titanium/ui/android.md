@@ -1,6 +1,6 @@
 # Titanium.UI.Android
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Examples
 
@@ -49,13 +49,13 @@ Create preferences interface for the application.
         <ListPreference
           android:title="List Preference"
           android:summary="You may chose from multiple choices"
-          android:key="list" 
+          android:key="list"
         android:entries="@array/listNames"
-        android:entryValues="@array/listValues" 
+        android:entryValues="@array/listValues"
         />
       </PreferenceCategory>
     </PreferenceScreen>
-    
+
 #### `platform/android/res/values/array/array.xml`
 
     <?xml version="1.0" encoding="utf-8"?>

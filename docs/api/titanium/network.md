@@ -1,6 +1,6 @@
 # Titanium.Network
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

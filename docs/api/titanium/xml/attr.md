@@ -1,6 +1,6 @@
 # Titanium.XML.Attr
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

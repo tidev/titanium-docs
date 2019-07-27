@@ -1,5 +1,5 @@
 # OnLinkURLResponse
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

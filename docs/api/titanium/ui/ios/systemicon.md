@@ -1,5 +1,5 @@
 # Titanium.UI.iOS.SystemIcon
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

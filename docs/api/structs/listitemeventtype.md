@@ -1,5 +1,5 @@
 # ListItemEventType
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

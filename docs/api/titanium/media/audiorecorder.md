@@ -1,6 +1,6 @@
 # Titanium.Media.AudioRecorder
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -8,8 +8,8 @@ Use the <Titanium.Media.createAudioRecorder> method to create an audio recorder.
 
 Ensure to request the permissions for audio-recording before starting a new record-session.
 This can be done by using <Titanium.Media.hasAudioRecorderPermissions> to check whether
-audio-permissions are granted and <Titanium.Media.requestAudioRecorderPermissions> to 
-request audio-permissions. 
+audio-permissions are granted and <Titanium.Media.requestAudioRecorderPermissions> to
+request audio-permissions.
 
 **Android Platform Note**: On Android, you also need to include the following permission
 into the `<android>` section of the tiapp.xml:
@@ -29,27 +29,27 @@ The following code-example creates a window that controls the audio-recorder flo
     var window = Ti.UI.createWindow({
       backgroundColor: '#fff'
     });
-    
+
     var recordStart = Ti.UI.createButton({
       title: 'Start',
       top: 10
     });
-    
+
     var recordPause = Ti.UI.createButton({
       title: 'Pause',
       top: 60
     });
-    
+
     var recordStop = Ti.UI.createButton({
       title: 'Stop',
       top: 110
     });
-    
+
     var recordPlay = Ti.UI.createButton({
       title: 'Play',
       top: 160
     });
-    
+
     var audioRecorder = Ti.Media.createAudioRecorder();
     var record;
     var audioPlayer;

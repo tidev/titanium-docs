@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.GravityBehavior
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -65,7 +65,7 @@ which pulls the blocks in a random direction.
 
     animator.addBehavior(collision);
     animator.addBehavior(gravity);
-               
+
     // Start the animation when the window opens
     win.addEventListener('open', function(e){
         animator.startAnimator();

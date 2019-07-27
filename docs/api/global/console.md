@@ -4,7 +4,7 @@ metadataKey: Global.console
 
 # console
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

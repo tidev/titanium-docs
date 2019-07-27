@@ -1,5 +1,5 @@
 # PushNotificationConfig
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

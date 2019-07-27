@@ -1,6 +1,6 @@
 # MatrixCreationDict
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

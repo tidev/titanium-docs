@@ -1,6 +1,6 @@
 # transitionAnimationParam
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Examples
 

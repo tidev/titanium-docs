@@ -1,6 +1,6 @@
 # TableViewContentInsetOption
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

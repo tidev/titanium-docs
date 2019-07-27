@@ -1,5 +1,5 @@
 # ReadCallbackArgs
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

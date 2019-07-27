@@ -1,5 +1,5 @@
 # LocationResults
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

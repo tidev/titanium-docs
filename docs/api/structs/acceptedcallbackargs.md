@@ -1,5 +1,5 @@
 # AcceptedCallbackArgs
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

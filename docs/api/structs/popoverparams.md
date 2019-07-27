@@ -1,6 +1,6 @@
 # PopoverParams
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

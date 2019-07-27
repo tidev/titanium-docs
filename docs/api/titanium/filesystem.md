@@ -1,6 +1,6 @@
 # Titanium.Filesystem
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,5 +1,5 @@
 # MusicLibraryResponseType
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

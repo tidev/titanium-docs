@@ -1,6 +1,6 @@
 # Titanium.UI.EmailDialog
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -18,7 +18,7 @@
       <th>iOS</th>
       <th>Windows Phone</th>
     </tr>
-  <tfoot>
+  </tfoot>
 </table>
 
 The Email Dialog is created with the <Titanium.UI.createEmailDialog> method. The user needs to

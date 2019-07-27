@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.ViewAttachmentBehavior
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -87,7 +87,7 @@ or blue block to change which one the green block is anchored to.
     blueBlock.addEventListener('click', function(e){
         anchor.anchorItem = blueBlock;
     });
-    
+
     // Start the animation when the window opens
     win.addEventListener('open', function(e){
         animator.startAnimator();

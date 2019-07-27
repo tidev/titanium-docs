@@ -1,5 +1,5 @@
 # ContactsAuthorizationResponse
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

@@ -1,26 +1,26 @@
 # Titanium.Accelerometer
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
-An accelerometer is a hardware unit integrated into a mobile device, that detects when the 
-device has moved, and returns its new orientation in a three-dimensional space. With its 
+An accelerometer is a hardware unit integrated into a mobile device, that detects when the
+device has moved, and returns its new orientation in a three-dimensional space. With its
 single `update` event, this module provides an interface to access the output positional data.
 
-An accelerometer needs to be switched on in order for it to report to the operating system, 
-which consumes a lot of power that will deplete the battery over time. This is why it is 
+An accelerometer needs to be switched on in order for it to report to the operating system,
+which consumes a lot of power that will deplete the battery over time. This is why it is
 recommended that the accelerometer is switched off when not in use.
 
-The accelerometer may be switched on and off by simply adding and removing the `update` 
+The accelerometer may be switched on and off by simply adding and removing the `update`
 event listener function. See the example for a demonstration.
 
 ## Examples
 
 ### Basic Accelerometer Event
 
-Adds an accelerometer update event listener, and displays the x, y and z axis in the 
-window when the device is moved. On Android, the accelerometer is switched off and on when 
+Adds an accelerometer update event listener, and displays the x, y and z axis in the
+window when the device is moved. On Android, the accelerometer is switched off and on when
 the application is paused and resumed.
 
     var win = Ti.UI.createWindow({
@@ -28,7 +28,7 @@ the application is paused and resumed.
       exitOnClose:true,
       layout: 'vertical'
     });
-    
+
     opts = {
       color:'black',
       font:{fontSize:20},
@@ -45,14 +45,14 @@ the application is paused and resumed.
     var labelz = Ti.UI.createLabel(opts);
     win.add(labelz);
     win.open();
-    
+
     var accelerometerCallback = function(e) {
       labelTimestamp.text = 'timestamp: ' + e.timestamp;
       labelx.text = 'x: ' + e.x;
       labely.text = 'y: ' + e.y;
       labelz.text = 'z: ' + e.z;
     };
-    
+
     if (Ti.Platform.model === 'Simulator' || Ti.Platform.model.indexOf('sdk') !== -1 ) {
       alert('Accelerometer does not work on a virtual device');
     } else {

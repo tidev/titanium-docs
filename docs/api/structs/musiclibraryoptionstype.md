@@ -1,5 +1,5 @@
 # MusicLibraryOptionsType
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

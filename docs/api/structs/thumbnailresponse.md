@@ -1,6 +1,6 @@
 # ThumbnailResponse
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

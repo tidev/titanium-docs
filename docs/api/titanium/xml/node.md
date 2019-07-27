@@ -1,6 +1,6 @@
 # Titanium.XML.Node
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

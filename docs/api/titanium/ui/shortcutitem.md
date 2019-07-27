@@ -1,6 +1,6 @@
 # Titanium.UI.ShortcutItem
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

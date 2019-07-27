@@ -4,6 +4,6 @@ metadataKey: Global.JSON
 
 # JSON
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

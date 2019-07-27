@@ -1,6 +1,6 @@
 # Titanium.Android.Notification
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Titanium.UI.TableViewRow
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

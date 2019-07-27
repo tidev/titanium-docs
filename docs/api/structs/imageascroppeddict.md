@@ -1,5 +1,5 @@
 # ImageAsCroppedDict
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>

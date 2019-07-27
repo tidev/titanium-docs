@@ -1,6 +1,6 @@
 # Titanium.UI.iOS.PushBehavior
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -39,7 +39,7 @@ The following example generates a random push force on the block when it stops.
     var collision = Ti.UI.iOS.createCollisionBehavior();
     collision.addItem(block);
     animator.addBehavior(collision);
-    
+
     // Push the block down when the application first starts
     var push = Ti.UI.iOS.createPushBehavior({
         pushDirection: {x: 0.0, y: 1.0},

@@ -1,6 +1,6 @@
 # Titanium.UI.MaskedImage
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Titanium.UI.Animation
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 
@@ -91,7 +91,7 @@ entire animation is repeated three times.
       });
       box.animate(a);
     });
-    
+
     win.add(box);
 
 ### Using an anchorPoint (Android and iOS)

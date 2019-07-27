@@ -1,6 +1,6 @@
 # Dimension
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

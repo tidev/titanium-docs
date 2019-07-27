@@ -1,6 +1,6 @@
 # Titanium.UI.ActivityIndicator
 
-<ProxySummary/>
+<TypeHeader/>
 
 ## Overview
 

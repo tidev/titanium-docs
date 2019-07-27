@@ -1,5 +1,5 @@
 # PreviewRectType
 
-<ProxySummary/>
+<TypeHeader/>
 
 <ApiDocs/>
