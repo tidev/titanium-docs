@@ -84,15 +84,6 @@ Below is an Alloy version of the previous example. The first window is the `mast
 
     **controllers/index.js:**
 
-    $.index.addEventListener('visible',function(e){
-      if (e.view === 'detail') {
-        e.button.title = "Master";
-        $.index.detailView.getWindow().leftNavButton = e.button;
-      } else if (e.view === 'master') {
-        $.index.detailView.getWindow().leftNavButton = null;
-      }
-    });
-
     $.index.open();
 
 <ApiDocs/>

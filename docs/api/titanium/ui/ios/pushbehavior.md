@@ -32,7 +32,7 @@ The following example generates a random push force on the block when it stops.
         width: 100,
         height: 100,
         backgroundColor: 'blue',
-        transform: Ti.UI.create2DMatrix({ rotate: 45 })
+        transform: Ti.UI.createMatrix2D({ rotate: 45 })
     });
 
     // Create a default collision behavior, using the window edges as boundaries

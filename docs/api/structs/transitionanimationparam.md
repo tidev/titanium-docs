@@ -16,13 +16,13 @@ window closes, define a transition animation for the blue window.
         transitionTo: {
             opacity: 1,
             duration: 300,
-            transform: Ti.UI.create2DMatrix()
+            transform: Ti.UI.createMatrix2D()
         },
         // The hide transition makes the window transparent and rotates it upside down
         transitionFrom: {
             opacity: 0,
             duration: 300 / 2,
-            transform: Ti.UI.create2DMatrix().rotate(180),
+            transform: Ti.UI.createMatrix2D().rotate(180),
         }
     });
 
@@ -31,7 +31,7 @@ window closes, define a transition animation for the blue window.
         title: 'Red Window',
         transitionAnimation: transition,
         opacity: 0,
-        transform: Ti.UI.create2DMatrix().rotate(180)
+        transform: Ti.UI.createMatrix2D().rotate(180)
     });
     var button2 = Ti.UI.createButton({
         title: 'Close Red Window'
@@ -41,7 +41,7 @@ window closes, define a transition animation for the blue window.
         // In order to see the blue window again,
         // need to reverse the transition animation
         win1.opacity = 1;
-        win1.transform = Ti.UI.create2DMatrix().rotate(0);
+        win1.transform = Ti.UI.createMatrix2D().rotate(0);
     });
     win2.add(button2);
 

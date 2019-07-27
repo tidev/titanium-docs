@@ -57,13 +57,13 @@ When `manualMode` is `true`, the following configuration settings in the
 *   [Geolocation.frequency](Titanium.Geolocation.frequency)
 *   [Geolocation.preferredProvider](Titanium.Geolocation.preferredProvider)
 
-When `manualMode` is `false`, the `accuracy`, `frequency` and `preferredProvider` 
+When `manualMode` is `false`, the `accuracy`, `frequency` and `preferredProvider`
 settings from <Titanium.Geolocation> are used to configure location updates.
 Any location providers and location rules set in <Titanium.Geolocation.Android> 
 are retained, but they have no effect.
 
 ### Location Providers
-    
+
 Android supports three kinds of location providers: GPS, network, and the 
 "passive" location provider, which provides only cached information. 
 
@@ -78,8 +78,8 @@ Location providers are represented by the
 To specify a location provider, create a new provider object, then register it
 with [addLocationProvider](Titanium.Geolocation.Android.createLocationProvider):
 
-    gpsProvider = Ti.Geolocation.Android.createLocationProvider({
-        name: Ti.Geolocation.PROVIDER_GPS,
+    var gpsProvider = Ti.Geolocation.Android.createLocationProvider({
+        name: Ti.Geolocation.Android.PROVIDER_GPS,
         minUpdateTime: 60, 
         minUpdateDistance: 100
     });

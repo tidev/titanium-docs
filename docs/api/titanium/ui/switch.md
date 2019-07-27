@@ -5,12 +5,20 @@
 ## Overview
 
 <table id="platformComparison">
-  <tr>
-    <td><img src="images/switch/switch_android.png" height="75" /></td>
-    <td><img src="images/switch/switch_ios.png" height="75" /></td>
-    <td><img src="images/switch/switch_wp.png" height="75" /></td>
-  </tr>
-  <tr><th>Android</th><th>iOS</th><th>Windows Phone</th></tr>
+  <tbody>
+    <tr>
+      <td><img src="images/switch/switch_android.png" height="75" /></td>
+      <td><img src="images/switch/switch_ios.png" height="75" /></td>
+      <td><img src="images/switch/switch_wp.png" height="75" /></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Android</th>
+      <th>iOS</th>
+      <th>Windows Phone</th>
+    </tr>
+  </tfoot>
 </table>
 
 The appearance of a `Switch` control varies by platform:

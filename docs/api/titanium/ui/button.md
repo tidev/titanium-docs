@@ -5,12 +5,20 @@
 ## Overview
 
 <table id="platformComparison">
-  <tr>
-    <td><img src="images/button/button_android.png" height="50" /></td>
-    <td><img src="images/button/button_ios.png" height="50" /></td>
-    <td><img src="images/button/button_wp.png" height="50" /></td>
-  </tr>
-  <tr><th>Android</th><th>iOS</th><th>Windows Phone</th></tr>
+  <tbody>
+    <tr>
+      <td><img src="images/button/button_android.png" height="50" /></td>
+      <td><img src="images/button/button_ios.png" height="50" /></td>
+      <td><img src="images/button/button_wp.png" height="50" /></td>
+    </tr>
+  <tbody>
+  <tfoot>
+    <tr>
+      <th>Android</th>
+      <th>iOS</th>
+      <th>Windows Phone</th>
+    </tr>
+  </tfoot>
 </table>
 
 A button displays its  selected state while it is being pressed. The focused state is

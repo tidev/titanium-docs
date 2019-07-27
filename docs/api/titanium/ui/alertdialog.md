@@ -5,12 +5,20 @@
 ## Overview
 
 <table id="platformComparison">
-  <tr>
-    <td><img src="images/alertdialog/alertdialog_android.png" height="75" /></td>
-    <td><img src="images/alertdialog/alertdialog_ios.png" height="75" /></td>
-    <td><img src="images/alertdialog/alertdialog_wp.png" height="75" /></td>
-  </tr>
-  <tr><th>Android</th><th>iOS</th><th>Windows Phone</th></tr>
+  <tbody>
+    <tr>
+      <td><img src="images/alertdialog/alertdialog_android.png" height="75" /></td>
+      <td><img src="images/alertdialog/alertdialog_ios.png" height="75" /></td>
+      <td><img src="images/alertdialog/alertdialog_wp.png" height="75" /></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Android</th>
+      <th>iOS</th>
+      <th>Windows Phone</th>
+    </tr>
+  </tfoot>
 </table>
 
 An alert dialog is created using <Titanium.UI.createAlertDialog> or **`<AlertDialog>`** Alloy element.
@@ -196,7 +204,7 @@ alertdialog.js:
     function doClick(e) {
         Ti.API.info('e.text: ' + e.text);
     }
-    
+
     $.win.open();
 
 <ApiDocs/>

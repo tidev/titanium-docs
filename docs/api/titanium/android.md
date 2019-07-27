@@ -66,11 +66,6 @@ can define intent filters to let Android know your application can handle those 
 For more information about intent filters, see the
 [Android Intent Filters guide](https://docs.appcelerator.com/platform/latest/#!/guide/Android_Intent_Filters).
 
-### Launch Modes
-
-Defining launch modes using `android:launchMode` is not supported by Titanium Android.
-However, `singleTask` behaviour can be accomplished when using [intent filters](https://docs.appcelerator.com/platform/latest/#!/guide/Android_Intent_Filters).
-
 ### Notifications
 
 Notifications alert the user that something is happening to your application while it is
@@ -103,7 +98,9 @@ with it, only your application.
 
 The Titanium SDK gives you the ability to write your own Android Services using JavaScript.
 The service executes your JavaScript code at intervals you specify. Note that the service
-may stop running if the application is killed.
+will stop running when you back out of the app. So, if you want the service to continue running,
+then it's recommended that you set the root window's [exitOnClose](Titanium.UI.Window.exitOnClose)
+property to `false` so that the window will persist in the background like iOS.
 
 For more information about services, see the
 [Titanium.Android.Service API reference](Titanium.Android.Service).

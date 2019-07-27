@@ -5,18 +5,26 @@
 ## Overview
 
 <table id="platformComparison">
-  <tr>
-    <td><img src="images/listview/listview_android.png" height="200" style="border: 1px solid black;"/></td>
-    <td><img src="images/listview/listview_ios.png" height="200" style="border: 1px solid black;"/></td>
-    <td><img src="images/listview/listview_wp.png" height="200" style="border: 1px solid black;"/></td>
-  </tr>
-  <tr><th>Android</th><th>iOS</th><th>Windows Phone</th></tr>
+  <tbody>
+    <tr>
+      <td><img src="images/listview/listview_android.png" height="200" /></td>
+      <td><img src="images/listview/listview_ios.png" height="200" /></td>
+      <td><img src="images/listview/listview_wp.png" height="200" /></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Android</th>
+      <th>iOS</th>
+      <th>Windows Phone</th>
+    </tr>
+  </tfoot>
 </table>
 
 Use the <Titanium.UI.createListView> method or **`<ListView>`** Alloy element to create a `ListView`.
 
-A `ListView` object is a container for [ListSection](Titanium.UI.ListSection) 
-objects that are, in turn, containers for [ListItem](Titanium.UI.ListItem) objects. This is 
+A `ListView` object is a container for [ListSection](Titanium.UI.ListSection)
+objects that are, in turn, containers for [ListItem](Titanium.UI.ListItem) objects. This is
 easily visualized as an Alloy view:
 
     <Alloy>
@@ -27,7 +35,7 @@ easily visualized as an Alloy view:
                 <ListItem title="List item 3"></ListItem>
             </ListSection>
         </ListView>
-    </Alloy>        
+    </Alloy>
 
 For more instructions and examples of using `ListView`, refer to the
 [ListViews guide](https://docs.appcelerator.com/platform/latest/#!/guide/ListViews).
@@ -91,7 +99,7 @@ In a `TableView`, a `TableViewRow` can be directly added to a `TableView` becaus
 `TableViewSection` is implicitly created and added to the `TableView`.
 
 A `ListItem` object is not created in the same method as a `TableViewRow`.
-A `ListItem` is create by passing an array of `ListDataItem` objects to the `ListSection`.
+A `ListItem` is created by passing an array of `ListDataItem` objects to the `ListSection`.
 
 You cannot add views to a `ListItem` using the `add` method, which could be done with a
 `TableViewRow`. To add views to a `ListItem`, you need to define an <ItemTemplate>,
@@ -151,7 +159,7 @@ must be set to the window that is containing the `ListView`, otherwise the [Text
 
 When a [TextField](Titanium.UI.TextField) is placed in a row near the bottom of a `ListView`,
 in a window that is configured with
-[SOFT_INPUT_ADJUST_PAN](Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN), it is expected for the 
+[SOFT_INPUT_ADJUST_PAN](Titanium.UI.Android.SOFT_INPUT_ADJUST_PAN), it is expected for the
 text field to automatically move to a visible position after it is focused and the software
 keyboard displayed. However, due to a known problem caused by native Android's `ListView` behavior,
 the keyboard is likely to completely obscure the text field.
@@ -165,8 +173,8 @@ Editing a ListView through user initiated actions is supported through the follo
 
 - **ListItem properties**:
 
-    - [canEdit](Titanium.UI.ListItem.canEdit) - When this is set to true, it allows the item to be deleted 
-      from the ListView through a user initiated action. The item can only be deleted when the ListView is 
+    - [canEdit](Titanium.UI.ListItem.canEdit) - When this is set to true, it allows the item to be deleted
+      from the ListView through a user initiated action. The item can only be deleted when the ListView is
       in editing mode. The ListView can enter 'editing' mode either by explicitly setting the [editing](Titanium.UI.ListView.editing)
       property to true, or by swiping accross an item whose `canEdit` property is set to true. When the user
       deletes the item, a [delete](Titanium.UI.ListView.delete) event is fired.
@@ -186,8 +194,8 @@ Editing a ListView through user initiated actions is supported through the follo
       and [appendItems](Titanium.UI.ListSection.appendItems).
 
     - [canMove](Titanium.UI.ListItem.canMove) - When this item is set to true, it allows the item to be moved
-      to a different location within the ListView. The item can only be moved when the ListView is put in 
-      editing mode by explicitly setting the [editing](Titanium.UI.ListView.editing) property to true. When the 
+      to a different location within the ListView. The item can only be moved when the ListView is put in
+      editing mode by explicitly setting the [editing](Titanium.UI.ListView.editing) property to true. When the
       user moves an item, a [move](Titanium.UI.ListView.move) event is fired.
 
 - **ListView properties**:
@@ -195,8 +203,8 @@ Editing a ListView through user initiated actions is supported through the follo
     - [editing](Titanium.UI.ListView.editing) - Determines if the List View is in a state where items can
       be deleted or reordered.
 
-    - [pruneSectionsOnEdit](Titanium.UI.ListView.pruneSectionsOnEdit) - When this property is set to true and the 
-      user action results in a section having no other items, the section is deleted from the List View. Please note 
+    - [pruneSectionsOnEdit](Titanium.UI.ListView.pruneSectionsOnEdit) - When this property is set to true and the
+      user action results in a section having no other items, the section is deleted from the List View. Please note
       that this property only applies to the sections whose items are being edited.
 
 ## Examples
@@ -206,7 +214,7 @@ Editing a ListView through user initiated actions is supported through the follo
 Creates a list with three sections, each with two rows.
 Adds two sections to the table before and one after it is rendered.
 
-    var win = Ti.UI.createWindow({backgroundColor: 'white'});
+    var win = Ti.UI.createWindow({backgroundColor: 'gray'});
     var listView = Ti.UI.createListView();
     var sections = [];
 
@@ -244,7 +252,7 @@ Modifies the previous example to create a list using an item template to customi
 
     var win = Ti.UI.createWindow({backgroundColor: 'white'});
 
-    // Create a custom template that displays an image on the left, 
+    // Create a custom template that displays an image on the left,
     // then a title next to it with a subtitle below it.
     var myTemplate = {
         childTemplates: [
@@ -255,8 +263,8 @@ Modifies the previous example to create a list using an item template to customi
                     width: '50dp', height: '50dp', left: 0
                 }
             },
-            {                            // Title 
-                type: 'Ti.UI.Label',     // Use a label for the title 
+            {                            // Title
+                type: 'Ti.UI.Label',     // Use a label for the title
                 bindId: 'info',          // Maps to a custom info property of the item data
                 properties: {            // Sets the label properties
                     color: 'black',
@@ -357,7 +365,7 @@ create a refresh control.
 
     function resetPullHeader(){
         actInd.hide();
-        imageArrow.transform=Ti.UI.create2DMatrix();
+        imageArrow.transform=Ti.UI.createMatrix2D();
         if (refreshCount < 2) {
             imageArrow.show();
             labelStatus.text = 'Pull down to refresh...';
@@ -378,7 +386,7 @@ create a refresh control.
             listView.appendSection(vegSection);
         } else if (refreshCount == 1) {
             listView.appendSection(fishSection);
-        } 
+        }
         refreshCount ++;
         resetPullHeader();
     }
@@ -386,11 +394,11 @@ create a refresh control.
     function pullListener(e){
         eventStatus.text = 'EVENT pull FIRED. e.active = '+e.active;
         if (e.active == false) {
-            var unrotate = Ti.UI.create2DMatrix();
+            var unrotate = Ti.UI.createMatrix2D();
             imageArrow.animate({transform:unrotate, duration:180});
             labelStatus.text = 'Pull down to refresh...';
         } else {
-            var rotate = Ti.UI.create2DMatrix().rotate(180);
+            var rotate = Ti.UI.createMatrix2D().rotate(180);
             imageArrow.animate({transform:rotate, duration:180});
             if (refreshCount == 0) {
                 labelStatus.text = 'Release to get Vegetables...';
@@ -402,9 +410,9 @@ create a refresh control.
 
     function pullendListener(e){
         eventStatus.text = 'EVENT pullend FIRED.';
-     
+
         if (refreshCount == 0) {
-            labelStatus.text = 'Loading Vegetables...';        
+            labelStatus.text = 'Loading Vegetables...';
         } else {
             labelStatus.text = 'Loading Fish...';
         }

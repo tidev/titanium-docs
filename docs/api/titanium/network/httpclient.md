@@ -64,11 +64,32 @@ To communicate to servers with the TLS protocol, you need to use the same TLS ve
 the client and server.
 
 <table class="doc-table" summary="This table provides information about TLS versions.">
-<caption><b>TLS versions by platform</b></caption>
-<tr><th>Protocol</th><th>Android<th>iOS</th></tr>
-<tr><th align="left">TLS 1.0</th><td>1.0+</td><td>1.0+</td></tr>
-<tr><th align="left">TLS 1.1</th><td>4.1+</td><td>5.0+</td></tr>
-<tr><th align="left">TLS 1.2</th><td>4.1+</td><td>5.0+</td></tr>
+  <caption><b>TLS versions by platform</b></caption>
+  <thead>
+    <tr>
+      <th>Protocol</th>
+      <th>Android</th>
+      <th>iOS</th>
+    </tr>
+  <thead>
+  <tbody>
+    <tr>
+      <th align="left">TLS 1.0</th>
+      <td>1.0+</td>
+      <td>1.0+</td>
+    </tr>
+    <tr>
+      <th align="left">TLS 1.1</th>
+      <td>4.1+</td>
+      <td>5.0+</td>
+    </tr>
+    <tr>
+      <th align="left">TLS 1.2</th>
+      <td>4.1+</td>
+      <td>5.0+</td>
+    </tr>
+  <tbody>
+</table>
 
 In Titanium, if a connection with TLS 1.2 fails, Titanium will re-attempt the connection with
 TLS 1.1 and TLS 1.0. By default, TLS 1.2 is attempted first.
@@ -81,6 +102,14 @@ provides added security by denying attempts to use lower TLS versions.
 
 Starting with Release 3.6.0, you can set the TLS version for the Android and iOS platforms.
 Prior to Release 3.6.0, you can only set the TLS version for iOS.
+
+### Caching Data
+
+You can also use the HTTP client API to cache image, response data or related. A convenient
+way to do so is by setting the <Titanium.Network.HTTPClient.file> property to a path or target
+file, which will be populated with the response data in a successful case (e.g. in the `onload`
+callback). For more complex use cases, make sure to check [To.ImageCache](https://github.com/Topener/To.ImageCache/)
+which also supports expire-handling and extended cache control.
 
 ### Android Platform Implementation Notes
 

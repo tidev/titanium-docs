@@ -107,14 +107,12 @@ either the `Titanium.UI.createWindow()` method or the Window object's `open()` m
 
 ### Android Behavior
 
-The Android platform does not have a concept of a modal window but instead uses modal
-dialogs. You may want to use a <Titanium.UI.AlertDialog> or <Titanium.UI.OptionDialog> and
-use the `androidView` property rather than a modal window.
+The Android platform does not has the concept of a modal window but instead uses modal
+dialogs. You are probably looking for a <Titanium.UI.AlertDialog> or <Titanium.UI.OptionDialog> and
+the `androidView` property rather than a modal window.
 
-For Android, Titanium creates a heavyweight window with a translucent background
-(if the background properties are not set). Before API level 14 (Android 4.x), the
-modal window will blur the background.  On API level 14 and above, the Android OS no longer
-supports the blur effect.
+However, if you know what you are doing and use `modal`, Titanium creates a window with
+a translucent background (if the background properties are not set).
 
 The combination of `fullscreen:true` and `modal:true` will not work as expected.
 If the background window displays the status bar or action bar, it will be visible behind the modal
@@ -199,16 +197,16 @@ back to it's original size at 100%. This gives the bounce effect during animatio
 
 `app/controllers/index.js`:
 
-    $.index.transform = Titanium.UI.create2DMatrix().scale(0);
+    $.index.transform = Titanium.UI.createMatrix2D().scale(0);
     $.index.open();
 
     var a = Ti.UI.createAnimation({
-        transform : Ti.UI.create2DMatrix().scale(1.1),
+        transform : Ti.UI.createMatrix2D().scale(1.1),
         duration : 2000,
     });
     a.addEventListener('complete', function() {
         $.index.animate({
-            transform: Ti.UI.create2DMatrix(),
+            transform: Ti.UI.createMatrix2D(),
             duration: 200
         });
     });
@@ -217,9 +215,8 @@ back to it's original size at 100%. This gives the bounce effect during animatio
         $.index.animate(a);
     }
 
-Note that to animate an Android heavyweight window while you open it, you need
-to follow a specific procedure which is explained below in "Heavyweight
-Window Transitions in Android".
+Note that to animate an Android window while you open it, you need to follow a specific
+procedure which is explained below in "Window Transitions in Android".
 
 ### iOS Platform Notes
 
@@ -289,13 +286,13 @@ making them transparent:
         transitionTo: {
             opacity: 1,
             duration: 300,
-            transform: Ti.UI.create2DMatrix()
+            transform: Ti.UI.createMatrix2D()
         },
         // The hide transition makes the window transparent and rotates it upside down
         transitionFrom: {
             opacity: 0,
             duration: 300 / 2,
-            transform: Ti.UI.create2DMatrix().rotate(180),
+            transform: Ti.UI.createMatrix2D().rotate(180),
         }
     });
 
@@ -321,55 +318,26 @@ making them transparent:
         transitionTo: {
             opacity: 1,
             duration: 300,
-            transform: Ti.UI.create2DMatrix()
+            transform: Ti.UI.createMatrix2D()
         },
         // The hide transition makes the window transparent and rotates it upside down
         transitionFrom: {
             opacity: 0,
             duration: 300 / 2,
-            transform: Ti.UI.create2DMatrix().rotate(180),
+            transform: Ti.UI.createMatrix2D().rotate(180),
         }
     });
 
-    $.bluewin.transform = Ti.UI.create2DMatrix().rotate(180);
+    $.bluewin.transform = Ti.UI.createMatrix2D().rotate(180);
 
 ### Android Platform Notes
 
-### Android Heavyweight and Lightweight Windows
+### Window Transitions in Android
 
-Prior to Release Titanium 3.2.0 in Android, Titanium windows can be heavyweight or lightweight:
-
-- A *heavyweight* window is associated with a new Android
-  [Activity](Titanium.Android.Activity).
-
-- A *lightweight* window is a fullscreen view, and runs in the current Android Activity.
-
-The [createWindow](Titanium.UI.createWindow) call creates a heavyweight window
-if any of the following properties are defined (set to either `true` or `false`)
-on creation:
-
-* `fullscreen`
-* `navBarHidden`
-* `modal`
-* `windowSoftInputMode`
-
-Starting with Release 3.2.0 in Android, all the windows are heavyweight. If you still want
-the old behavior, you can enable the `ti.android.useLegacyWindow` property in the `tiapp.xml`:
-
-    <property name="ti.android.useLegacyWindow" type="bool">true</property>
-
-Note that this property only works with Release 3.2.x. It has no effect on other releases.
-
-A heavyweight window is always created when you open a new window from inside a
-[TabGroup](Titanium.UI.TabGroup).
-
-### Heavyweight Window Transitions in Android
-
-As explained above, heavyweight windows are their own Android Activity. The only way
+A window is associated with a new Android [Activity](Titanium.Android.Activity). The only way
 to animate the opening or closing of an Activity in Android is to apply an animation _resource_
-to it.  Passing a <Titanium.UI.Animation> object as a parameter to <Titanium.UI.Window.open>
-or <Titanium.UI.Window.close> will have no effect if the window being opened/closed is heavyweight
-and thus opens/closes its own Activity.
+to it. Passing a <Titanium.UI.Animation> object as a parameter to <Titanium.UI.Window.open>
+or <Titanium.UI.Window.close> will have no effect.
 
 Instead, in the parameter dictionary you pass to <Titanium.UI.Window.open> or <Titanium.UI.Window.close>,
 you should set the `activityEnterAnimation` and `activityExitAnimation` keys to
@@ -383,10 +351,7 @@ built-in resources or <Titanium.App.Android.R> for resources that you package in
 As an example, you may wish for the window that you are opening to fade in while the window
 you are leaving should fade out:
 
-    var win2 = Ti.UI.createWindow({
-        fullscreen: false // Makes it heavyweight before Titanium 3.2.0
-    });
-
+    var win2 = Ti.UI.createWindow();
     win2.open({
         activityEnterAnimation: Ti.Android.R.anim.fade_in,
         activityExitAnimation: Ti.Android.R.anim.fade_out
@@ -437,11 +402,11 @@ For example to transition a title label in window A to a title label in window B
     windowB.addSharedElement(titleInWinA, "title");
     windowB.open();
 
-Further you can use `activityEnterTransition`, `activityExitTransition`, `activityReenterTransition` and `activityReturnTransition` to customize
-the way activities transition into the scene. Currently activity transition will work only when atleast a shared element is used between the participating
-activities.
-
-Note that specifying the transitions is not mandatory. If not specified it defaults to Material theme transition.
+Further you can use `activityEnterTransition`, `activityExitTransition`, `activityReenterTransition`
+and `activityReturnTransition` to customize the way activities transition into the scene. These are intended
+to be used with views set up as "shared elements" via the `addSharedElement()` method where these views
+will be moved from window to the other. As of Titanium 8.0.1, you don't have to add views as shared elements
+to use these transition animations, while in older version of Titanium that was required.
 
 See the official Android [Activity Transitions](https://developer.android.com/training/material/animations.html#Transitions)
 documentation for more information and supported transitons.

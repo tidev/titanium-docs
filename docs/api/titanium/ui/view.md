@@ -24,43 +24,46 @@ When a value is specified as string, the value can consist of:
 The following units are supported:
 
 <table class="doc-table" width="60%">
+  <thead>
     <tr>
-        <th>Unit</th>
-        <th>Specifier</th>
-        <th>Note</th>
+      <th>Unit</th>
+      <th>Specifier</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pixels</td>
+      <td>px</td>
+      <td></td>
     </tr>
     <tr>
-        <td>pixels</td>
-        <td>px</td>
-        <td></td>
+      <td>density-independent pixels</td>
+      <td>dip</td>
+      <td>Equivalent to Apple "points."</td>
     </tr>
     <tr>
-        <td>density-independent pixels</td>
-        <td>dip</td>
-        <td>Equivalent to Apple "points."</td>
+      <td>inches</td>
+      <td>in</td>
+      <td></td>
     </tr>
     <tr>
-        <td>inches</td>
-        <td>in</td>
-        <td></td>
+      <td>millimeters</td>
+      <td>mm</td>
+      <td>Android, iOS only</td>
     </tr>
     <tr>
-        <td>millimeters</td>
-        <td>mm</td>
-        <td>Android, iOS only</td>
+      <td>centimeters</td>
+      <td>cm</td>
+      <td>Android, iOS only</td>
     </tr>
     <tr>
-        <td>centimeters</td>
-        <td>cm</td>
-        <td>Android, iOS only</td>
+      <td>points</td>
+      <td>pt</td>
+      <td>Typographical points of 1/72 of an inch. On Android, you can specify sizes and coordinates in typographical points. On other platforms, this unit is only used to specify font sizes. Not to be confused with Apple "points."</td>
     </tr>
-    <tr>
-        <td>points</td>
-        <td>pt</td>
-        <td>Typographical points of 1/72 of an inch. On Android, you can specify sizes and coordinates in typographical points. On other platforms, this unit is only used to specify font sizes. Not to be confused with Apple "points."</td>
-    </tr>
+  </tbody>
 </table>
-
 
 The interpretation of the density-independent pixel (DIP) varies by platform:
 
@@ -138,7 +141,7 @@ a layout cycle.
 
 ### Accessibility
 
-Four accessibility-related view properties became available in Titanium Mobile 3.0.0 for iOS
+Four accessibility-related view properties are available in Titanium Mobile for iOS
 and Android:
 
 * <Titanium.UI.View.accessibilityLabel>
@@ -184,7 +187,7 @@ For best results on ImageView set up the `backgroundLeftCap` and `backgroundTopC
 
 ### iOS Clipping Behavior
 
-Four new view related properties became available in Titanium Mobile 3.3.0 for iOS.
+Four view related properties are available in Titanium Mobile for iOS.
 
 * <Titanium.UI.View.viewShadowRadius>
 * <Titanium.UI.View.viewShadowColor>

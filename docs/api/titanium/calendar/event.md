@@ -4,7 +4,7 @@
 
 ## Overview
 
-The API supports retrieving information about existing events and creating new events.  
+The API supports retrieving information about existing events and creating new events.
 On iOS, existing events can be modified or deleted. On Android, only recurrence rules
 can be modified.
 

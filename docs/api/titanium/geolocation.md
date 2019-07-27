@@ -80,18 +80,18 @@ key to the iOS plist section of the project's `tiapp.xml` file.
             </plist>
         </ios>
     </ti:app>
-    
+
 For iOS 11 and later, also add the [`NSLocationAlwaysAndWhenInUseUsageDescription`](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/request_always_authorization)
 when planning to request the "Always" permission. Using the above key, you are also able to upgrade your permissions from
 "When in Use" to "Always", which is the recommended way for managing location permissions in iOS 11 and later.
-Please also remember to request your desired location-permissions before using any geolocation-related API in 
+Please also remember to request your desired location-permissions before using any geolocation-related API in
 order to receive the best usability and permission-control during the app-lifecycle using <Titanium.Geolocation.hasLocationPermissions>
-and <Titanium.Geolocation.requestLocationPermissions>. Also note that you also need to include the `NSLocationWhenInUseUsageDescription` key 
+and <Titanium.Geolocation.requestLocationPermissions>. Also note that you also need to include the `NSLocationWhenInUseUsageDescription` key
 in *any* case when targeting iOS 11 and later. Descriptive error-logs will be thrown if required permissions are missing.
 
 ### Configurating Location Updates on Android
 
-On Android, three different location service modes are supported: *simple*, *manual*, and *legacy*.
+On Android, two different location service modes are supported: *simple*, and *manual*.
 
 *   *Simple mode* provides a compromise mode that provides adaquate support for
     undemanding location applications without requiring developers to
@@ -111,31 +111,6 @@ On Android, three different location service modes are supported: *simple*, *man
     Manual mode is used when the <Titanium.Geolocation.Android.manualMode> flag is set
     to `true`. In manual mode, the `accuracy` property is not used, and all
     configuration is done through the <Titanium.Geolocation.Android> module.
-
-*   *Legacy mode* is the mode that existed prior to 2.0. Legacy mode is
-    used when the `manualMode` flag is `false` and the `accuracy` property is
-    set to one of the iOS `ACCURACY` constants:
-
-    *   [ACCURACY_BEST](Titanium.Geolocation.ACCURACY_BEST) (highest accuracy and power consumption)
-    *   [ACCURACY_NEAREST_TEN_METERS](Titanium.Geolocation.ACCURACY_NEAREST_TEN_METERS)
-    *   [ACCURACY_HUNDRED_METERS](Titanium.Geolocation.ACCURACY_HUNDRED_METERS)
-    *   [ACCURACY_KILOMETER](Titanium.Geolocation.ACCURACY_KILOMETER)
-    *   [ACCURACY_THREE_KILOMETERS](Titanium.Geolocation.ACCURACY_THREE_KILOMETERS) (lowest
-        accuracy and power consumption).
-
-    This mode is deprecated and should not be used for new development.
-
-    In this mode, the specified `accuracy` value determines the
-    *minimum distance between location updates*. If `accuracy` is set to
-    `ACCURACY_BEST`, no distance filter is used on updates.
-
-    In legacy mode, only a single location provider (GPS, network, or passive) is
-    enabled at a time. You can specify a the location provider using the
-    [preferredProvider](Titanium.Geolocation.preferredProvider) property.
-
-    You can also specifying a desired update frequency using the
-    [frequency](Titanium.Geolocation.frequency) property. The `preferredProvider`
-    and `frequency` properties are not used in any other mode.
 
 As of Titanium SDK 7.1.0 and later, including the [`ti.playservices`](https://github.com/appcelerator-modules/ti.playservices) module will allow Google Play Services 
 to be used by default to obtain location information. This means the provider passed into [createLocationProvider](Titanium.Geolocation.Android.createLocationProvider)

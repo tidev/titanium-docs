@@ -74,7 +74,7 @@ custom alert sound, see [Notification.sound](Titanium.Android.Notification.sound
         // Substitue the correct package name for your application
         packageName: 'com.appcelerator.notificationsample'
     });
-    intent.flags |= Ti.Android.FLAG_ACTIVITY_CLEAR_TOP | Ti.Android.FLAG_ACTIVITY_NEW_TASK;
+    intent.flags |= Ti.Android.FLAG_ACTIVITY_NEW_TASK;
     intent.addCategory(Ti.Android.CATEGORY_LAUNCHER);
 
     // Create a PendingIntent to tie together the Activity and Intent

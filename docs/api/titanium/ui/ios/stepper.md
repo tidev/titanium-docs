@@ -5,10 +5,12 @@
 ## Overview
 
 <table id="iOS Stepper">
-  <tr>
-    <td><img src="images/stepper/stepper.png" height="25" /></td>
-    <td><img src="images/stepper/stepper_custom.png" height="25" /></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td><img src="images/stepper/stepper.png" height="25" /></td>
+      <td><img src="images/stepper/stepper_custom.png" height="25" /></td>
+    </tr>
+  </tbody>
 </table>
 
 A Stepper displays its selected state while it is being pressed.

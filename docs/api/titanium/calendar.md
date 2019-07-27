@@ -4,7 +4,7 @@
 
 ## Overview
 
-This module supports retrieving information about existing events and creating new events. 
+This module supports retrieving information about existing events and creating new events.
 Modifying or deleting existing events and creating recurring events are only supported on iOS.
 
 Currently, on Android, calendar permissions must be explicitly configured in `tiapp.xml` in order to access the
@@ -15,7 +15,7 @@ calendar. See "Common Requirements" in
 
 ### All Calendars vs Selectable Calendars
 
-Print the names of all calendars, and the names of calendars that 
+Print the names of all calendars, and the names of calendars that
 have been selected in the native Android calendar application.
 
     function showCalendars(calendars) {
@@ -60,7 +60,7 @@ Creates an event and adds an e-mail reminder for 10 minutes before the event.
 
 ### Events in a year
 
-Create a picker to allow an existing calendar to be selected and, when a button is clicked, 
+Create a picker to allow an existing calendar to be selected and, when a button is clicked,
 generate details of all events in that calendar for the current year .
 
     var calendars = [];
@@ -68,7 +68,7 @@ generate details of all events in that calendar for the current year .
     var selectedid;
     var pickerData = [];
     var osname = Ti.Platform.osname;
-    
+
     //**read events from calendar*******
     function performCalendarReadFunctions(){
         var scrollView = Ti.UI.createScrollView({
@@ -76,7 +76,7 @@ generate details of all events in that calendar for the current year .
           height: 500,
           top: 20
         });
-    
+
         var label = Ti.UI.createLabel({
           backgroundColor: 'white',
           text: 'Click on the button to display the events for the selected calendar',
@@ -84,7 +84,7 @@ generate details of all events in that calendar for the current year .
           top: 20
         });
         scrollView.add(label);
-    
+
         var selectableCalendars = Ti.Calendar.allCalendars;
         for (var i = 0, ilen = selectableCalendars.length; i < ilen; i++) {
           calendars.push({ name: selectableCalendars[i].name, id: selectableCalendars[i].id });
@@ -94,19 +94,19 @@ generate details of all events in that calendar for the current year .
             selectedid = selectableCalendars[i].id;
           }
         }
-        
+
         if(!calendars.length){
           label.text = 'No calendars available. Select at least one in the native calendar before using this app';
         } else {
           label.text = 'Click button to view calendar events';
-          
+
           var picker = Ti.UI.createPicker({
             top:20
           });
-          
+
           picker.add(pickerData);
           win.add(picker);
-          
+
           picker.addEventListener('change', function(e){
             for (var i = 0, ilen = calendars.length; i < ilen; i++) {
               if(calendars[i].name === e.row.title){
@@ -116,31 +116,31 @@ generate details of all events in that calendar for the current year .
               }
             }
           });
-          
+
           var button = Ti.UI.createButton({
             title: 'View events',
             top: 20
           });
           win.add(button);
-          
+
           button.addEventListener('click', function(e){
             label.text = 'Generating...';
-            
+
             var currentYear = new Date().getFullYear();
-            
+
             var consoleString = '';
-            
+
             function print(s) {
               if (consoleString.length) {
                 consoleString = consoleString + '\n';
               }
               consoleString = consoleString + s;
             }
-            
+
             var calendar = Ti.Calendar.getCalendarById(selectedid);
             Ti.API.info('Calendar was of type' + calendar);
             Ti.API.info('calendar that we are going to fetch is :: '+ calendar.id + ' name:' + calendar.name);
-            
+
             function printReminder(r) {
                 if (osname === 'android') {
                     var typetext = '[method unknown]';
@@ -156,7 +156,7 @@ generate details of all events in that calendar for the current year .
                     print(typetext + ' reminder to be sent ' + r.minutes + ' minutes before the event');
                 }
             }
-            
+
             function printAlert(a) {
                 if (osname === 'android') {
                       print('Alert id ' + a.id + ' begin ' + a.begin + '; end ' + a.end + '; alarmTime ' + a.alarmTime + '; minutes ' + a.minutes);
@@ -164,14 +164,14 @@ generate details of all events in that calendar for the current year .
                     print('Alert absoluteDate ' + a.absoluteDate + ' relativeOffset ' + a.relativeOffset);
                 }
             }
-            
+
             function printEvent(event) {
               if (event.allDay) {
                 print('Event: ' + event.title + '; ' + event.begin + ' (all day)');
               } else {
                 print('Event: ' + event.title + '; ' + event.begin + ' ' + event.begin+ '-' + event.end);
               }
-              
+
               var reminders = event.reminders;
               if (reminders && reminders.length) {
                   print('There is/are ' + reminders.length + ' reminder(s)');
@@ -186,7 +186,7 @@ generate details of all events in that calendar for the current year .
                   printAlert(alerts[i]);
                 }
               }
-              
+
               var status = event.status;
               if (status == Ti.Calendar.STATUS_TENTATIVE) {
                 print('This event is tentative');
@@ -198,7 +198,7 @@ generate details of all events in that calendar for the current year .
                 print('This event was canceled');
               }
             }
-            
+
             var events = calendar.getEventsInYear(currentYear);
             if (events && events.length) {
               print(events.length + ' event(s) in ' + currentYear);
@@ -210,15 +210,15 @@ generate details of all events in that calendar for the current year .
             } else {
               print('No events');
             }
-            
+
             label.text = consoleString;
           });
         }
-    
+
         win.add(scrollView);
     }
-    
-    
+
+
     var win = Ti.UI.createWindow({
       backgroundColor: 'white',
       exitOnClose: true,
@@ -242,7 +242,7 @@ generate details of all events in that calendar for the current year .
 
     win.open();
 
-### Create a Recurring Event with Alerts on iOS
+### Create a Recurring Event with Alerts
 
 Create a recurring event with alerts.
 
@@ -250,120 +250,122 @@ Create a recurring event with alerts.
         Ti.API.info('eventID:' + eventID);
         var defCalendar = Ti.Calendar.defaultCalendar;
         var eventFromCalendar = defCalendar.getEventById(eventID);
-        if (eventFromCalendar != null) {
+        if (eventFromCalendar) {
             Ti.API.info('Printing event values ::');
-            Ti.API.info('title : '+ eventFromCalendar.title);
-            Ti.API.info('notes : ' + eventFromCalendar.notes);
-            Ti.API.info('location:' + eventFromCalendar.location);
-            Ti.API.info('allDay ? :' + eventFromCalendar.allDay);
-            Ti.API.info('status : '+ eventFromCalendar.status);
-            Ti.API.info('availability : '+ eventFromCalendar.availability);
-            Ti.API.info('hasAlarm ? : '+ eventFromCalendar.hasAlarm);
-            Ti.API.info('id : '+ eventFromCalendar.id);
-            Ti.API.info('isDetached ? : '+ eventFromCalendar.isDetached);
-            Ti.API.info('begin : '+ eventFromCalendar.begin);
-            Ti.API.info('end : '+ eventFromCalendar.end);
+            Ti.API.info('title: '+ eventFromCalendar.title);
+            Ti.API.info('notes: ' + eventFromCalendar.notes);
+            Ti.API.info('location: ' + eventFromCalendar.location);
+            Ti.API.info('allDay?:' + eventFromCalendar.allDay);
+            Ti.API.info('status: '+ eventFromCalendar.status);
+            Ti.API.info('availability: '+ eventFromCalendar.availability);
+            Ti.API.info('hasAlarm?: '+ eventFromCalendar.hasAlarm);
+            Ti.API.info('id: '+ eventFromCalendar.id);
+            Ti.API.info('isDetached?: '+ eventFromCalendar.isDetached);
+            Ti.API.info('begin: '+ eventFromCalendar.begin);
+            Ti.API.info('end: '+ eventFromCalendar.end);
             var eventRule = eventFromCalendar.recurrenceRules;
-            Ti.API.info("recurrenceRules : " + eventRule);
+            Ti.API.info('recurrenceRules : ' + eventRule);
             for (var i = 0; i < eventRule.length; i++) {
-                Ti.API.info("Rule # "+ i);
-                Ti.API.info('frequency : ' + eventRule[i].frequency);
-                Ti.API.info('interval : ' + eventRule[i].interval);
-                Ti.API.info('daysofTheWeek : ' );
-                var daysofTheWeek = eventRule[i].daysOfTheWeek; 
+                Ti.API.info('Rule # ' + i);
+                Ti.API.info('frequency: ' + eventRule[i].frequency);
+                Ti.API.info('interval: ' + eventRule[i].interval);
+                Ti.API.info('daysofTheWeek: ' );
+                var daysofTheWeek = eventRule[i].daysOfTheWeek;
                 for (var j = 0; j < daysofTheWeek.length; j++) {
-                    Ti.API.info('{ dayOfWeek : '+ daysofTheWeek[j].dayOfWeek +'weekNumber : '+daysofTheWeek[j].week +'}, ');
+                    Ti.API.info('{ dayOfWeek: ' + daysofTheWeek[j].dayOfWeek + ', weekNumber: ' + daysofTheWeek[j].week + ' }, ');
                 }
-                Ti.API.info('firstDayOfTheWeek : ' + eventRule[i].firstDayOfTheWeek);
-                Ti.API.info('daysOfTheMonth : ');
+                Ti.API.info('firstDayOfTheWeek: ' + eventRule[i].firstDayOfTheWeek);
+                Ti.API.info('daysOfTheMonth: ');
                 var daysOfTheMonth = eventRule[i].daysOfTheMonth;
-                for(var j=0;j<daysOfTheMonth.length;j++) {
+                for(var j = 0; j < daysOfTheMonth.length; j++) {
                     Ti.API.info(' ' + daysOfTheMonth[j]);
                 }
-                Ti.API.info('daysOfTheYear : ');
+                Ti.API.info('daysOfTheYear: ');
                 var daysOfTheYear = eventRule[i].daysOfTheYear;
-                for(var j=0;i<daysOfTheYear.length;j++) {
+                for(var j = 0; j < daysOfTheYear.length; j++) {
                     Ti.API.info(' ' + daysOfTheYear[j]);
                 }
-                Ti.API.info('weeksOfTheYear : ');
+                Ti.API.info('weeksOfTheYear: ');
                 var weeksOfTheYear = eventRule[i].weeksOfTheYear;
-                for(var j=0;j<weeksOfTheYear.length;j++) {
+                for(var j = 0; j < weeksOfTheYear.length; j++) {
                     Ti.API.info(' ' + weeksOfTheYear[j]);
                 }
-                Ti.API.info('monthsOfTheYear : ');
+                Ti.API.info('monthsOfTheYear: ');
                 var monthsOfTheYear = eventRule[i].monthsOfTheYear;
-                for(var j=0;j<monthsOfTheYear.length;j++) {
+                for(var j = 0; j < monthsOfTheYear.length; j++) {
                     Ti.API.info(' ' + monthsOfTheYear[j]);
                 }
-                Ti.API.info('daysOfTheYear : ');
-                var setPositions = eventRule[i].setPositions;
-                for(var j=0;j<setPositions.length;j++) {
-                    Ti.API.info(' ' + setPositions[j]);
+                Ti.API.info('daysOfTheYear: ');
+                if (osname !== 'android') {
+                    var setPositions = eventRule[i].setPositions;
+                    for(var j = 0; j < setPositions.length; j++) {
+                        Ti.API.info(' ' + setPositions[j]);
+                    }
                 }
             };
-            Ti.API.info('alerts : '+ eventFromCalendar.alerts);
+            Ti.API.info('alerts: ' + eventFromCalendar.alerts);
             var newAlerts = eventFromCalendar.alerts;
-            
-            for(var i=0 ; i < newAlerts.length ; i++) {
-                Ti.API.info('*****ALert '+ i);
-                Ti.API.info('absoluteDate :'+ newAlerts[i].absoluteDate);
-                Ti.API.info('relativeOffset ;' + newAlerts[i].relativeOffset);
+
+            for(var i = 0 ; i < newAlerts.length ; i++) {
+                Ti.API.info('*****Alert ' + i);
+                Ti.API.info('absoluteDate: ' + newAlerts[i].absoluteDate);
+                Ti.API.info('relativeOffset: ' + newAlerts[i].relativeOffset);
             }
        }
     }
-    function performCalendarWriteFunctions(){
+    function performCalendarWriteFunctions() {
         var defCalendar = Ti.Calendar.defaultCalendar;
         var date1 = new Date(new Date().getTime() + 3000),
             date2 = new Date(new Date().getTime() + 900000);
-        Ti.API.info('Date1 : '+ date1 + 'Date2 : '+ date2);
+        Ti.API.info('Date1: ' + date1 + ', Date2: ' + date2);
         var event1 = defCalendar.createEvent({
-                            title: 'Sample Event',
-                            notes: 'This is a test event which has some values assigned to it.',
-                            location: 'Appcelerator Inc',
-                            begin: date1,
-                            end: date2,
-                            availability: Ti.Calendar.AVAILABILITY_FREE,
-                            allDay: false,
-                    });
+            title: 'Sample Event',
+            notes: 'This is a test event which has some values assigned to it.',
+            location: 'Appcelerator Inc',
+            begin: date1,
+            end: date2,
+            availability: Ti.Calendar.AVAILABILITY_FREE,
+            allDay: false,
+        });
         var alert1 = event1.createAlert({
-                            absoluteDate: new Date(new Date().getTime() - (1000*60*20))
-                    });
+            absoluteDate: new Date(new Date().getTime() - (1000 * 60 * 20))
+        });
         var alert2 = event1.createAlert({
-            relativeOffset:-(60*15)
-        })
+            relativeOffset: -(60 * 15)
+        });
         var allAlerts = new Array(alert1,alert2);
         event1.alerts = allAlerts;
         var newRule = event1.createRecurrenceRule({
-                            frequency: Ti.Calendar.RECURRENCEFREQUENCY_MONTHLY,
-                            interval: 1,
-                            daysOfTheWeek: [{dayOfWeek:1,week:2},{dayOfWeek:2}],
-                            end: {occurrenceCount:10}
-                    });
-        Ti.API.info('newRule : '+ newRule);
+            frequency: Ti.Calendar.RECURRENCEFREQUENCY_MONTHLY,
+            interval: 1,
+            daysOfTheWeek: [ { dayOfWeek: 1, week: 2 }, { dayOfWeek: 2 } ],
+            end: { occurrenceCount: 10 }
+        });
+        Ti.API.info('newRule: '+ newRule);
         event1.recurrenceRules = [newRule];
         Ti.API.info('Going to save event now');
         event1.save(Ti.Calendar.SPAN_THISEVENT);
-        Ti.API.info('Done with saving event,\n Now trying to retreive it.');
+        Ti.API.info('Done with saving event,\n Now trying to retrieve it.');
         printEventDetails(event1.id);
     }
     var win = Ti.UI.createWindow({
-                            backgroundColor: 'white',
-                            title: 'Calendar Demo'
-                });
-    
+        backgroundColor: 'white',
+        title: 'Calendar Demo'
+    });
+
     var label = Ti.UI.createLabel({
-                            text: 'Check console log',
-                            height: Ti.UI.size,
-                            width: Ti.UI.size
-                });
+        text: 'Check console log',
+        height: Ti.UI.size,
+        width: Ti.UI.size
+    });
     win.add(label);
-    
+
     if (Ti.Calendar.hasCalendarPermissions()) {
-        performCalendarReadFunctions();
+        performCalendarWriteFunctions();
     } else {
         Ti.Calendar.requestCalendarPermissions(function(e) {
             if (e.success) {
-                performCalendarReadFunctions();
+                performCalendarWriteFunctions();
             } else {
                 alert('Access to calendar is not allowed');
             }

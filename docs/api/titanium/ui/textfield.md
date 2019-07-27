@@ -5,12 +5,20 @@
 ## Overview
 
 <table id="platformComparison">
-  <tr>
-    <td><img src="images/textfield/textfield_android.png" height="25" /></td>
-    <td><img src="images/textfield/textfield_ios.png" height="25" /></td>
-    <td><img src="images/textfield/textfield_wp.png" height="25" /></td>
-  </tr>
-  <tr><th>Android</th><th>iOS</th><th>Windows Phone</th></tr>
+  <tbody>
+    <tr>
+      <td><img src="images/textfield/textfield_android.png" height="25" /></td>
+      <td><img src="images/textfield/textfield_ios.png" height="25" /></td>
+      <td><img src="images/textfield/textfield_wp.png" height="25" /></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Android</th>
+      <th>iOS</th>
+      <th>Windows Phone</th>
+    </tr>
+  </tfoot>
 </table>
 
 Use the <Titanium.UI.createTextField> method or **`<TextField>`** Alloy element to create a text field.
@@ -28,7 +36,7 @@ Create a simple text field with green text color.
     var textField = Ti.UI.createTextField({
       backgroundColor: '#fafafa',
       color: 'green',
-      width: 250, 
+      width: 250,
       height: 40
     });
 
@@ -71,7 +79,7 @@ This code excerpt creates a text field with a toolbar:
         keyboardToolbarColor: '#999',
         keyboardToolbarHeight: 40,
         top: 10,
-        width: 300, 
+        width: 300,
         height: 35
     });
 
@@ -103,10 +111,10 @@ You can also declare the `leftButton` and `rightButton` properties in XML markup
             <TextField
                 platform="ios"
                 borderStyle="Ti.UI.INPUT_BORDERSTYLE_BEZEL"
-                keyboardToolbarColor="#999" 
+                keyboardToolbarColor="#999"
                 keyboardToolbarHeight="40"
-                top="10" 
-                height="35" 
+                top="10"
+                height="35"
                 width="300"
                 value="Focus to see keyboard with toolbar">
 

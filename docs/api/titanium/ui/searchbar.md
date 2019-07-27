@@ -5,16 +5,24 @@
 ## Overview
 
 <table id="platformComparison">
-  <tr>
-    <td><img src="images/searchbar/searchbar_android.png" height="25" /></td>
-    <td><img src="images/searchbar/searchbar_ios.png" height="25" /></td>
-    <td><img src="images/searchbar/searchbar_windows.png" height="25" /></td>
-  </tr>
-  <tr><th>Android</th><th>iOS</th><th>Windows</th></tr>
+  <tbody>
+    <tr>
+      <td><img src="images/searchbar/searchbar_android.png" height="25" /></td>
+      <td><img src="images/searchbar/searchbar_ios.png" height="25" /></td>
+      <td><img src="images/searchbar/searchbar_windows.png" height="25" /></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Android</th>
+      <th>iOS</th>
+      <th>Windows</th>
+    </tr>
+  </tfoot>
 </table>
 
 The `SearchBar` object is closely modeled on an iOS native search bar.
-As such, not all features are supported on other platforms. For Android applications, 
+As such, not all features are supported on other platforms. For Android applications,
 consider using a <Titanium.UI.Android.SearchView> object instead.
 
 Search bars are most commonly used for filtering the rows in a [TableView](Titanium.UI.TableView).
@@ -30,10 +38,10 @@ Use the <Titanium.UI.createSearchBar> method or Alloy **`<SearchBar>`** element 
 
 On Android, there are several issues with the current implementation:
 
-* The cancel button does not work. It does not clear the search bar text or 
+* The cancel button does not work. It does not clear the search bar text or
   close the onscreen keyboard.
 
-* Calling the `blur` method on the search bar closes the onscreen keyboard, 
+* Calling the `blur` method on the search bar closes the onscreen keyboard,
   but the search bar retains its focused appearance.
 
 * The search bar does not lose focus when the user clicks on a row in the search
@@ -45,7 +53,7 @@ To use a search bar on Android, you may need to explicitly control the focus and
 clearing of the search bar, depending on your desired behavior. For example, to clear
 the search bar and dismiss the onscreen keyboard when the user selects a row, you
 could add code like this to the `click` event handler on your table view:
-    
+
     myTableView.addEventListener('click', function(e) {
         if (Ti.Platform.name === 'android') {
             // Clear search bar
@@ -55,8 +63,8 @@ could add code like this to the `click` event handler on your table view:
             mySearchBar.show();
         }
         // standard click event handling here
-        
-**Note**: Due to native limitations, the SearchBar's positional properties may not work properly 
+
+**Note**: Due to native limitations, the SearchBar's positional properties may not work properly
 when nested within a TableView or ListView (properties such as left, right, width and so on).
 
 ## Examples
@@ -64,7 +72,7 @@ when nested within a TableView or ListView (properties such as left, right, widt
 ### Simple Search Bar
 
 var search = Titanium.UI.createSearchBar({
-	barColor:'#000', 
+	barColor:'#000',
 	showCancel:true,
 	height:43,
 	top:0,

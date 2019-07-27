@@ -5,12 +5,20 @@
 ## Overview
 
 <table id="platformComparison">
-  <tr>
-    <td><img src="images/tableview/tableview_android.png" height="200" style="border: 1px solid black;" /></td>
-    <td><img src="images/tableview/tableview_ios.png" height="200" style="border: 1px solid black;" /></td>
-    <td><img src="images/tableview/tableview_wp.png" height="200" style="border: 1px solid black;" /></td>
-  </tr>
-  <tr><th>Android</th><th>iOS</th><th>Windows Phone</th></tr>
+  <tbody>
+    <tr>
+      <td><img src="images/tableview/tableview_android.png" height="200" /></td>
+      <td><img src="images/tableview/tableview_ios.png" height="200" /></td>
+      <td><img src="images/tableview/tableview_wp.png" height="200" /></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Android</th>
+      <th>iOS</th>
+      <th>Windows Phone</th>
+    </tr>
+  </tfoot>
 </table>
 
 A `TableView` object is a container for [TableViewSection](Titanium.UI.TableViewSection)
