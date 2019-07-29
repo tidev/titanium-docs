@@ -50,11 +50,11 @@ module.exports = {
             items: [
               {
                 text: 'SDK',
-                link: 'https://sdk.titanium.io'
+                link: '/'
               },
               {
                 text: 'Hyperloop',
-                link: 'https://hyperloop.titanium.io'
+                link: 'https://docs.appcelerator.com/platform/latest/#!/guide/Hyperloop'
               }
             ]
           },
@@ -63,15 +63,15 @@ module.exports = {
             items: [
               {
                 text: 'Alloy',
-                link: 'https://alloy.titanium.io'
+                link: 'https://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Framework'
               },
               {
                 text: 'Vue.js',
-                link: 'https://vue.titanium.io'
+                link: 'https://github.com/appcelerator/titanium-vue'
               },
               {
                 text: 'Angular',
-                link: 'https://angular.titanium.io'
+                link: 'https://docs.appcelerator.com/platform/latest/#!/guide/Titanium_and_Angular'
               }
             ]
           },
