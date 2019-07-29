@@ -74,7 +74,7 @@ For more info please refer to the [versioning guide](https://titanium-docs-devki
 
 Guides reside under `docs/guide` and a few documents already have been ported as examples. However none of those guides are complete yet.
 
-To add a new guide first create a new markdown file under `docs/guide`. To add it to the sidebar navigation open `docs/.vuepress/config.js` and edit the `/guide/` section under `themeConfig.sidebar`. The key you want to add is the name of the new markdown file without the `.md` extension.
+To add a new guide first create a new markdown file under `docs/guide`. To add it to the sidebar navigation open `docs/.vuepress/config.js` and edit the `/guide/` section under `themeConfig.sidebar`. The key you want to add is the name of the new markdown file without the `.md` extension.
 
 ```js
 module.exports = {
