@@ -33,7 +33,7 @@ for (let typeName in metadataService.metadata.next) {
   const mdContent =
 `# ${metadata.name}
 
-<ProxySummary/>${overview}${examples}<ApiDocs/>
+<TypeHeader/>${overview}${examples}<ApiDocs/>
 `;
 
   if (!fs.existsSync(destPath)) {
