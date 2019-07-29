@@ -9,8 +9,8 @@ These docs aim to be a hybrid solution of Markdown bases guides and dynamically 
 ### Installation
 
 ```bash
-git clone https://github.com/appcelerator/titanium-vuepress-docs.git
-cd titanium-vuepress-docs
+git clone https://github.com/appcelerator/titanium-docs.git
+cd titanium-docs
 npm i
 ```
 
@@ -36,7 +36,7 @@ The following steps assume you have checked out this repo parallel to Titanium (
 ./
 ├── titanium_mobile/
 ├── titanium_mobile_window
-└── titanium-vuepress-docs/
+└── titanium-docs/
 ```
 
 Now generate the `api.json` into the `docs/api` folder
@@ -48,7 +48,7 @@ npm run docs:metadata
 Finally, let VuePress build the awesome new docs.
 
 ```bash
-cd ../titanium-vuepress-docs
+cd ../titanium-docs
 npm run docs:build
 ```
 
