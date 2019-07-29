@@ -6,8 +6,6 @@
 
 These docs aim to be a hybrid solution of Markdown bases guides and dynamically generated docs for API references using the existing [apidoc](https://github.com/appcelerator/titanium_mobile/tree/master/apidoc) from Titanium.
 
-> ⚠️ This repo is highly experimental. The doc in here are not complete and are powered by VuePress 1.0 alpha. For currently stable and live documentation please visit https://docs.appcelerator.com/
-
 ### Installation
 
 ```bash
@@ -15,6 +13,16 @@ git clone https://github.com/appcelerator/titanium-vuepress-docs.git
 cd titanium-vuepress-docs
 npm i
 ```
+
+### Development
+
+VuePress supports a dev mode with hot reloading for a convenient developing experience.
+
+```bash
+npm run docs:dev
+```
+
+Now start editing the docs and you can immediatly see the results in your browser.
 
 ### Building the docs
 
@@ -31,18 +39,10 @@ The following steps assume you have checked out this repo parallel to Titanium (
 └── titanium-vuepress-docs/
 ```
 
-If you haven't done so, first checkout the following branch of Titanium which includes a new generator for an `api.json` which contains the raw markdown data.
-
-```bash
-cd titanium_mobile
-git checkout -b raw-docs-generator master
-git pull https://github.com/janvennemann/titanium_mobile raw-docs-generator
-```
-
 Now generate the `api.json` into the `docs/api` folder
 
 ```bash
-node apidoc/docgen.js -f json-raw -o ../titanium-vuepress-docs/docs/api/
+npm run docs:metadata
 ```
 
 Finally, let VuePress build the awesome new docs.
@@ -54,23 +54,7 @@ npm run docs:build
 
 This will output the statically rendered docs into `docs/.vuepress/dist`.
 
-### Development
-
-VuePress supports a dev mode with hot reloading for a convenient developing experience.
-
-```bash
-npm run docs:dev
-```
-
-Now start editing the docs and you can immediatly see the results in your browser.
-
 ## Versioning
-
-You can use the version script to cut a new documentation version based on the latest content in the `docs` directory. That specific set of documentation will then be preserved and is accessible even as the documentation in the docs directory changes moving forward.
-
-> 💡 Versioning is heavily inspired by [Docusaurus](https://docusaurus.io/docs/en/versioningv) and was ported as a [plugin](./docs/.vuepress/plugins/version.js) to VuePress.
-
-### How to Create New Versions
 
 Run the script with a command line argument of the version you wish to create. e.g.,
 
@@ -80,13 +64,7 @@ npm run docs:version 8.0
 
 This will preserve all documents currently in the `docs` directory and make them available as documentation for version `8.0`.
 
-Documents in the `docs` directory will be considered part of version `next` and they are available, for example, at the URL `/next/doc1.html`. Documents from the latest version use the URL `/doc1.html`.
-
-### Storing Files for Each Version
-
-Versioned documents are placed into `versioned_docs/${version}`, where `${version}` is the version number you supplied to the version script.
-
-The current [`sidebar.config.js`](./docs/.vuepress/sidebar.config.js) and [`api.json`](./docs/api/api.json) will also be preserved and copied into the folder of the newly created version.
+For more info please refer to the [versioning guide](https://titanium-docs-devkit.netlify.com/guide/versioning.html).
 
 ## Migrating docs to VuePress
 
@@ -139,8 +117,6 @@ Apart of the [predefined variables](https://vuepress.vuejs.org/guide/frontmatter
 | Name | Descriptions |
 | --- | --- |
 | `metadataKey` | Fully qualified type name which is used to find metadata for a type in `api.json`. The page title will be used if this is not set. |
-| `breadcrumbLabel` | Title of this page in the breadcrumb, usually set to the last part of a fully qualified type name, e.g. `View` for `Titanium.UI.View` |
-
 
 Once you have made sure the automatically generated markdown is correct you can add the new type to the sidebar in `docs/.vuepress/config.js` under the `/api/` key.
 
