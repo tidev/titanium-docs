@@ -1,6 +1,6 @@
-# titanium-vuepress-docs
+# titanium-docs
 
-> Experimental approach to use [VuePress](https://vuepress.vuejs.org/) for Guides and API docs.
+> Website with Guides and API docs for the [Titanium Mobile SDK](https://github.com/appcelerator/titanium_mobile) (Powered by [VuePress](https://vuepress.vuejs.org/)).
 
 ## Getting started
 
