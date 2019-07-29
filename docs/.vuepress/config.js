@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/titanium-vuepress-docs/',
+  base: '/titanium-docs/',
   title: 'Titanium Mobile',
   description: 'Native iOS-, Android- and Windows Apps with JavaScript',
   head: [
