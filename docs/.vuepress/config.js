@@ -33,7 +33,7 @@ module.exports = {
             items: [
               {
                 text: 'Slack',
-                link: 'https://ti-slack.slack.com'
+                link: 'https://tislack.org'
               },
               {
                 text: 'Contribution Guide',
