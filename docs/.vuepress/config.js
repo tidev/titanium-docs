@@ -1,3 +1,6 @@
+
+const path = require('path');
+
 const guideSidebar = require('./guide');
 const apiSidebar = {
   '/api/': require('./api')
@@ -133,5 +136,8 @@ module.exports = {
     'apidocs',
     '@vuepress/back-to-top',
     require('./guides-content-sidebar') // Show right-hand sidebar for in-page headers in guides
-  ]
-};
+  ],
+  chainWebpack(config) {
+    config.resolve.alias.set('@components', path.resolve(__dirname, 'local-components'));
+  }
+}
