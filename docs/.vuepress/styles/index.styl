@@ -1,0 +1,40 @@
+.landing
+  .content:not(.custom)
+    > *:first-child
+      margin-top 0
+  .navbar
+    display flex
+    align-items center
+    justify-content: space-between
+    transition background-color .5s ease, border-color .5s ease, heigth .5s ease
+    .links
+      position relative
+      top 0
+      background-color transparent
+
+  .navbar:not(.scrolling)
+    background-color transparent
+    border-color transparent
+    height 6rem
+
+    .links
+      .nav-item
+        > .nav-link
+          color: #fff
+      .dropdown-title
+        .title
+          color: #fff
+      .repo-link
+        color: #fff
+        .icon
+          &.outbound
+            color: #fff
+
+  .content:not(.custom)
+    max-width none
+    padding 0
+    margin 0
+
+  .landing-content
+    max-width 936px
+    margin 0 auto
