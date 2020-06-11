@@ -92,7 +92,10 @@ module.exports = {
       }
     ],
 
-    sidebar: require('./sidebar.json'),
+    sidebar: {
+      '/guide/': require('./guide.json'),
+      '/api/': require('./api.json')
+    },
 
     // Repo settings
     docsDir: 'docs',
