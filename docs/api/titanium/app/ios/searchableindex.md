@@ -48,5 +48,4 @@ indexer.addToDefaultSearchableIndex([searchItems],function(e){
 });
 ```
 
-
 <ApiDocs/>

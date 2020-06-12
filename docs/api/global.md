@@ -1,18 +1,10 @@
----
-metadataKey: Global
----
-
-# Global JavaScript APIs
+# Global
 
 <TypeHeader/>
 
 ## Overview
 
 Titanium provides a number of global built-in objects, detailed below.
-
-### JSON
-
-Titanium provides a built-in [JSON](Global.JSON) object two functions, `parse` and `stringify`.
 
 ### String Utilities
 
@@ -21,16 +13,15 @@ global [String](Global.String) object.
 
 ### console
 
-Titanium provides [console](Global.console) support familiar to many javascript developers
-for logging at the toplevel, in addition to the <Titanium.API> logging facilities.
+Titanium provides [console](Global.Console) support familiar to many javascript developers
+for logging at the toplevel, in addition to the [Titanium](Titanium.API) logging facilities.
 
 ### Timers
 
 Titanium has built-in support for one-off and repeating timers:
 
-*    Use [setTimeout](Global.setTimeout) to start a one-off timer.
-
-*    Use [setInterval](Global.setInterval) to start a repeating timer.
+* Use [setTimeout](Global.setTimeout) to start a one-off timer.
+* Use [setInterval](Global.setInterval) to start a repeating timer.
 
 ### Alert
 

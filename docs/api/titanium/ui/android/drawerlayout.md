@@ -56,5 +56,4 @@ win.add(drawer);
 win.open();
 ```
 
-
 <ApiDocs/>

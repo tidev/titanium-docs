@@ -43,7 +43,6 @@ if (Ti.Contacts.hasContactsPermissions()) {
 }
 ```
 
-
 ### Query Existing System Address Book Records
 
 Output to the console all properties of all people.
@@ -70,7 +69,6 @@ for (var i=0, ilen=people.length; i<ilen; i++){
   }
 }
 ```
-
 
 ### Add New System Address Book Records
 
@@ -163,7 +161,6 @@ Ti.Contacts.createPerson({
 Ti.API.info('Contact saved');
 ```
 
-
 ### Repopulate contact data if it was modified externally
 
 Listen for the `reload` event to repopulate the contact data
@@ -201,6 +198,5 @@ reloadContacts();
 win.add(table);
 win.open();
 ```
-
 
 <ApiDocs/>

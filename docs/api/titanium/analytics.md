@@ -49,5 +49,4 @@ Ti.Analytics.featureEvent('app.feature');
 In this case, the Analytics product would show statistics about how many times the
 'app.feature' event was generated.
 
-
 <ApiDocs/>

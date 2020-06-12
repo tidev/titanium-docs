@@ -123,7 +123,6 @@ button.addEventListener('click',function(e)
 });
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -145,6 +144,5 @@ function doClick(e){
     Titanium.API.info("You clicked the button");
 };
 ```
-
 
 <ApiDocs/>

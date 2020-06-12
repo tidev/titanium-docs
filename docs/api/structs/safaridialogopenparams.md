@@ -1,0 +1,5 @@
+# SafariDialogOpenParams
+
+<TypeHeader/>
+
+<ApiDocs/>

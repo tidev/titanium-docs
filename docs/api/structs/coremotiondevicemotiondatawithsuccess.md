@@ -1,0 +1,5 @@
+# CoreMotionDeviceMotionDataWithSuccess
+
+<TypeHeader/>
+
+<ApiDocs/>

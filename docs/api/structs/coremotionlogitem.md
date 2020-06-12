@@ -1,0 +1,5 @@
+# CoreMotionLogItem
+
+<TypeHeader/>
+
+<ApiDocs/>

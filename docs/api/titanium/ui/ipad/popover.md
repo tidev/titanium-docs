@@ -53,7 +53,6 @@ var popover = Ti.UI.iPad.createPopover({
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy project.
@@ -104,6 +103,5 @@ function showAlert(e) {
 // button.addEventListener('click', showAlert);
 // $.popover.rightNavButton = button;
 ```
-
 
 <ApiDocs/>

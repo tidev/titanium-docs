@@ -79,5 +79,4 @@ Ti.UI.currentWindow.add(button);
 </resources>
 ```
 
-
 <ApiDocs/>

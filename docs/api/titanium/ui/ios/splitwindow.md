@@ -53,7 +53,6 @@ var splitWin = Ti.UI.iOS.createSplitWindow({
 splitWin.open();
 ```
 
-
 ### Alloy XML Markup
 
 Below is an Alloy version of the previous example. The first window is the `masterView` and the second window is the `detailView`. You can also use the `<Require>` element to add a `<Window>` or `<NavigationWindow>`.
@@ -90,6 +89,5 @@ Below is an Alloy version of the previous example. The first window is the `mast
 ``` js
 $.index.open();
 ```
-
 
 <ApiDocs/>

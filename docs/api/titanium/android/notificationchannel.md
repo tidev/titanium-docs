@@ -34,5 +34,4 @@ var channel = Ti.Android.NotificationManager.createNotificationChannel({
 Ti.Android.NotificationManager.notify(100, notification);
 ```
 
-
 <ApiDocs/>

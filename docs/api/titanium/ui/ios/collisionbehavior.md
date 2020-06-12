@@ -79,5 +79,4 @@ win.addEventListener('open', function(e){
 win.open();
 ```
 
-
 <ApiDocs/>

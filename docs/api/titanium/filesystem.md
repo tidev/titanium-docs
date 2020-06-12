@@ -24,5 +24,4 @@ var f = Ti.Filesystem.getFile(suiteDir,'emptyfile.txt');
 f.write('The file is no longer empty!');
 ```
 
-
 <ApiDocs/>

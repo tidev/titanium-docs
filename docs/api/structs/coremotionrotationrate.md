@@ -1,0 +1,5 @@
+# CoreMotionRotationRate
+
+<TypeHeader/>
+
+<ApiDocs/>

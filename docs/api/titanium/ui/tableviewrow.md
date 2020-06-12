@@ -92,7 +92,6 @@ var view = Titanium.UI.createView({
 row.add(view);
 ```
 
-
 ### Row Swipe Gestures
 
 Create a table of rows. When a row is swiped, output its ID to the log.
@@ -156,7 +155,6 @@ win.add(table);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous simple table view row example as an Alloy view.
@@ -168,6 +166,5 @@ Previous simple table view row example as an Alloy view.
     </TableViewRow>
 </Alloy>
 ```
-
 
 <ApiDocs/>

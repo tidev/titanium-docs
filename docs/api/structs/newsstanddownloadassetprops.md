@@ -1,0 +1,5 @@
+# NewsstandDownloadAssetProps
+
+<TypeHeader/>
+
+<ApiDocs/>

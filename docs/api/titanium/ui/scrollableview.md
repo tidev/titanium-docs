@@ -48,7 +48,6 @@ win.add(scrollableView);
 win.open();
 ```
 
-
 ### Simple Scrollable View with 2 Zoomable Images
 
 Create two scroll views, each containing an image view, and assign them as pages to a
@@ -79,7 +78,6 @@ var photosView = Ti.UI.createScrollableView({
 });
 win.add(photosView);
 ```
-
 
 ### Scrollable View with multiple visible views
 
@@ -116,7 +114,6 @@ win.add(scrollableView);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 First example as an Alloy view.
@@ -138,6 +135,5 @@ First example as an Alloy view.
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

@@ -38,5 +38,4 @@ var socket = Ti.Network.Socket.createUDP({
 });
 socket.start(6262);
 
-
 <ApiDocs/>

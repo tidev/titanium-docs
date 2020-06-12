@@ -77,7 +77,6 @@ controls on either side of it. Available space in the toolbar is divided between
 flexible space buttons in the toolbar. Without the flexible spaces in this example,
 the toolbar buttons would be grouped tightly together on the left side of the toolbar.
 
-
 ### Toolbar with extended background
 
 The following code excerpt creates a simple toolbar, placed at the top of the window which extends its background under the status bar. 
@@ -114,7 +113,6 @@ win.add(toolbar);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Simple Toolbar example as an Alloy view.
@@ -139,6 +137,5 @@ Simple Toolbar example as an Alloy view.
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

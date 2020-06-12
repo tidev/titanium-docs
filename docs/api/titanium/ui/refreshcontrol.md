@@ -57,5 +57,4 @@ win.add(listView);
 win.open();
 ```
 
-
 <ApiDocs/>

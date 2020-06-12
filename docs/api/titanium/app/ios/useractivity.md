@@ -71,7 +71,6 @@ if (!activity.isSupported()) {
 </ti:app>
 ```
 
-
 ### iOS 12+ Siri Shortcuts
 
 The following example shows how to add and delete a UserActivity for Siri Shortcuts
@@ -132,6 +131,5 @@ btn.addEventListener('click', function () {
 win.add(btn);
 win.open();
 ```
-
 
 <ApiDocs/>

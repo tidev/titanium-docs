@@ -1,0 +1,5 @@
+# NewsstandSetBasicAuthProps
+
+<TypeHeader/>
+
+<ApiDocs/>

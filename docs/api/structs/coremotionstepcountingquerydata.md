@@ -1,0 +1,5 @@
+# CoreMotionStepCountingQueryData
+
+<TypeHeader/>
+
+<ApiDocs/>

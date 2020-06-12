@@ -1,0 +1,5 @@
+# CoreMotionAccelerometerDataWithSuccess
+
+<TypeHeader/>
+
+<ApiDocs/>

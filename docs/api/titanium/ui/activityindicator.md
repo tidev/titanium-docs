@@ -80,7 +80,6 @@ win1.open();
 win2.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as two Alloy views.
@@ -122,6 +121,5 @@ function showIndicator(e) {
     }, 6000);
 }
 ```
-
 
 <ApiDocs/>

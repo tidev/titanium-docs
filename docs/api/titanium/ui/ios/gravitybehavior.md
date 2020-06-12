@@ -85,5 +85,4 @@ win.add(button);
 win.open();
 ```
 
-
 <ApiDocs/>

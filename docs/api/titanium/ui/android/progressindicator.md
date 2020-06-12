@@ -72,7 +72,6 @@ win.add(button);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view-controller.
@@ -111,6 +110,5 @@ function showIndicator(e) {
 }
 $.index.open();
 ```
-
 
 <ApiDocs/>

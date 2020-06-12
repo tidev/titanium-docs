@@ -60,5 +60,4 @@ win.add(scrollView);
 win.open();
 ```
 
-
 <ApiDocs/>

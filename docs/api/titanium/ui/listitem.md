@@ -154,7 +154,6 @@ win.add(listView);
 win.open();
 ```
 
-
 ### Default List Items (Alloy version)
 
 Alloy version of previous example. For additional Alloy examples of using `ListView`, see <Titanium.UI.ListView>. 
@@ -190,7 +189,6 @@ $.listView.addEventListener('itemclick', function(e) {
     $.section.updateItemAt(e.itemIndex, item);
 });
 ```
-
 
 ### List Items with an Item Template
 
@@ -301,6 +299,5 @@ function toggleCheck(e) {
 win.add(listView);
 win.open();
 ```
-
 
 <ApiDocs/>

@@ -1,0 +1,5 @@
+# SharePhotoContentParams
+
+<TypeHeader/>
+
+<ApiDocs/>

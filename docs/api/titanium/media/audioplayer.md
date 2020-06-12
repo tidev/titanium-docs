@@ -93,5 +93,4 @@ win.addEventListener('close', function() {
 win.open();
 ```
 
-
 <ApiDocs/>

@@ -99,7 +99,6 @@ var notification = Titanium.Android.createNotification({
 Titanium.Android.NotificationManager.notify(1, notification);
 ```
 
-
 ### Bundled Notifications Example
 
 The following example shows how to create bundled notifications.
@@ -128,6 +127,5 @@ Ti.Android.NotificationManager.notify(id++,
     })
 );
 ```
-
 
 <ApiDocs/>

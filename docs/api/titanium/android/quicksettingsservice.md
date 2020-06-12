@@ -66,5 +66,4 @@ Register the service in tiapp.xml:
 </ti:app>
 ```
 
-
 <ApiDocs/>

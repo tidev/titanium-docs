@@ -56,7 +56,6 @@ win3.add(button2);
 win1.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as two Alloy view-controllers.  Requires Alloy 1.2.2 and later.
@@ -97,6 +96,5 @@ function closeWindow(){
     $.win3.close();
 }
 ```
-
 
 <ApiDocs/>

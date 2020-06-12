@@ -248,7 +248,6 @@ fishSection.setItems(fishDataSet);
 listView.appendSection(fishSection);
 ```
 
-
 ### List View with Custom Item Template
 
 Modifies the previous example to create a list using an item template to customize the view layout.
@@ -328,7 +327,6 @@ listView.setSections(sections);
 win.add(listView);
 win.open();
 ```
-
 
 ### List View with a pullView (Only supported on iOS since 3.2.0)
 
@@ -491,7 +489,6 @@ win.add(eventStatus);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 'List View with Custom Item Template' as an Alloy view.  List view markup is supported in
@@ -558,7 +555,6 @@ Alloy 1.2.0 and later.
 }
 ```
 
-
 ### Alloy example of ListView properties
 
 Supported in Alloy 1.3.0 and later.
@@ -604,7 +600,6 @@ below demonstrates how to use `searchView`, `headerView` and `footerView`.
 </Alloy>
 ```
 
-
 ### Alloy example of <PullView> element
 
 The example below demonstrates how to use a `<PullView>` Alloy element.
@@ -627,6 +622,5 @@ The example below demonstrates how to use a `<PullView>` Alloy element.
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

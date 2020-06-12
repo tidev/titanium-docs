@@ -1,0 +1,5 @@
+# CoreMotionStartPedometerArgs
+
+<TypeHeader/>
+
+<ApiDocs/>

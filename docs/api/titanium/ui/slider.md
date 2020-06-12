@@ -66,7 +66,6 @@ slider.addEventListener('change', function(e) {
 });
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -94,6 +93,5 @@ function updateLabel(e) {
 }
 $.window.open();
 ```
-
 
 <ApiDocs/>

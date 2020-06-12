@@ -37,5 +37,4 @@ if(Ti.Platform.osname === 'android'){
 }
 ```
 
-
 <ApiDocs/>

@@ -117,7 +117,6 @@ activity.onCreateOptionsMenu = function(e){
 win.open();
 ```
 
-
 ### Creating a Dynamic Menu
 
 This sample creates an Android menu that displays a menu item named
@@ -159,7 +158,6 @@ activity.onPrepareOptionsMenu = function(e) {
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous simple menu example as an Alloy view.
@@ -198,6 +196,5 @@ function doOpen(e) {
     $.win.activity.invalidateOptionsMenu();
 }
 ```
-
 
 <ApiDocs/>

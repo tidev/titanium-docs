@@ -1,0 +1,5 @@
+# CipherUpgradeResult
+
+<TypeHeader/>
+
+<ApiDocs/>

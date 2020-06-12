@@ -1,0 +1,5 @@
+# CoreMotionMagneticField
+
+<TypeHeader/>
+
+<ApiDocs/>

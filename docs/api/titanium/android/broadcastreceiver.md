@@ -63,5 +63,4 @@ var bc = Ti.Android.createBroadcastReceiver({
 Ti.Android.registerBroadcastReceiver(bc, [Ti.Android.ACTION_AIRPLANE_MODE_CHANGED]);
 ```
 
-
 <ApiDocs/>

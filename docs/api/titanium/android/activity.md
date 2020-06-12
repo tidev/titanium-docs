@@ -107,5 +107,4 @@ activity.startActivityForResult(intent, function(e) {
 });
 ```
 
-
 <ApiDocs/>

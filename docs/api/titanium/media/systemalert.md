@@ -26,5 +26,4 @@ var player = Ti.Media.createSystemAlert({url:"alert.wav"});
 player.play();
 ```
 
-
 <ApiDocs/>

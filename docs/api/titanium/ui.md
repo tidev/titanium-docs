@@ -214,5 +214,4 @@ win.add(table);
 win.open();
 ```
 
-
 <ApiDocs/>

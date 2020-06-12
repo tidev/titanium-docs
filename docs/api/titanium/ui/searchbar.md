@@ -83,7 +83,6 @@ var search = Titanium.UI.createSearchBar({
 });
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -93,7 +92,6 @@ Previous example as an Alloy view.
     <SearchBar id="search" barColor="#000" showCancel="true" height="43" top="0" />
 </Alloy>
 ```
-
 
 ### Search Bar with TableView
 
@@ -106,7 +104,6 @@ var tableview = Ti.UI.createTableView({
 });
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -118,6 +115,5 @@ Previous example as an Alloy view.
     </TableView>
 </Alloy>
 ```
-
 
 <ApiDocs/>

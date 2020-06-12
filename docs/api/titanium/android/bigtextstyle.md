@@ -32,5 +32,4 @@ var notification = Titanium.Android.createNotification({
 Titanium.Android.NotificationManager.notify(1, notification);
 ```
 
-
 <ApiDocs/>

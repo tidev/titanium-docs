@@ -71,7 +71,6 @@ win.add(pb);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -109,6 +108,5 @@ index.tss:
     style: Titanium.UI.iOS.ProgressBarStyle.PLAIN
 }
 ```
-
 
 <ApiDocs/>

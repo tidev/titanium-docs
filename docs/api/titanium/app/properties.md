@@ -48,7 +48,6 @@ Ti.App.Properties.setString('givenName', 'Paul');
 Ti.API.info('The value of the givenName property is: ' + Ti.App.Properties.getString('givenName'));
 ```
 
-
 ### Enumerate over saved properties
 
 Output all saved properties to the console.
@@ -61,6 +60,5 @@ for (var i = 0, ilen = props.length; i < ilen; i++){
     Ti.API.info(props[i] + ' = ' + value);
 }
 ```
-
 
 <ApiDocs/>

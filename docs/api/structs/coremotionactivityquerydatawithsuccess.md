@@ -1,0 +1,5 @@
+# CoreMotionActivityQueryDataWithSuccess
+
+<TypeHeader/>
+
+<ApiDocs/>

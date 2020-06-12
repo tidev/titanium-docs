@@ -63,5 +63,4 @@ win.add(redBlock);
 win.open();
 ```
 
-
 <ApiDocs/>

@@ -1,0 +1,5 @@
+# MapBoundsCoordinateType
+
+<TypeHeader/>
+
+<ApiDocs/>

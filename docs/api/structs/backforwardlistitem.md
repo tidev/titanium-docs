@@ -15,7 +15,6 @@ window.add(webview);
 window.open({modal:true});
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -27,7 +26,6 @@ Previous example as an Alloy view.
     </Window>
 </Alloy>
 ```
-
 
 ### Listening to Web View properties in iOS
 
@@ -45,7 +43,6 @@ var window = Ti.UI.createWindow();
 window.add(webview);
 window.open();
 ```
-
 
 ### Usage of allowedURLSchemes and handleurl in iOS
 
@@ -66,6 +63,5 @@ var window = Ti.UI.createWindow();
 window.add(webview);
 window.open();
 ```
-
 
 <ApiDocs/>

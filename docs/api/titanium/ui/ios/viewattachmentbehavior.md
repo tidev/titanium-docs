@@ -100,5 +100,4 @@ win.add(blueBlock);
 win.open();
 ```
 
-
 <ApiDocs/>

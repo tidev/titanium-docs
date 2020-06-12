@@ -57,7 +57,6 @@ win.add(image);
 win.open();
 ```
 
-
 ### Button with Nine-patch Background Image
 
 Create a button with a nine-patch image background, that swaps with another image when
@@ -89,7 +88,6 @@ win.add(button);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous basic image view example as an Alloy view.
@@ -101,6 +99,5 @@ Previous basic image view example as an Alloy view.
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

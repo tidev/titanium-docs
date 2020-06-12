@@ -78,7 +78,6 @@ if(!isAndroid){
 }
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -113,6 +112,5 @@ multicolumnpicker.js:
 $.picker.setSelectedRow(0, 2, false);
 $.picker.setSelectedRow(1, 3, false);
 ```
-
 
 <ApiDocs/>

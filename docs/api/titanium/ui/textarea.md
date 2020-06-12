@@ -55,7 +55,6 @@ win.add(textArea);
 win.open();
 ```
 
-
 ### Text Area with Custom Keyboard Toolbar (iOS)
 
 On iOS, a configurable toolbar can be displayed above the virtual keyboard.
@@ -96,7 +95,6 @@ var textarea = Ti.UI.createTextArea({
 });
 ```
 
-
 ### Alloy XML Markup
 
 Previous basic text area with customizations example as an Alloy view.
@@ -111,6 +109,5 @@ Previous basic text area with customizations example as an Alloy view.
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

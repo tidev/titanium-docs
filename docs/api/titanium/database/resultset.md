@@ -56,5 +56,4 @@ db.close();
 Note that the above `SELECT` query contains the [rowid](http://www.sqlite.org/lang_createtable.html#rowid)
 field, which contains an SQLite-specific unique identifier for each row.
 
-
 <ApiDocs/>

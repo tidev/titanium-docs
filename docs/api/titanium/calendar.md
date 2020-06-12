@@ -45,7 +45,6 @@ function printCalendars() {
 }
 ```
 
-
 ### Create an Event and Reminder on Android
 
 Creates an event and adds an e-mail reminder for 10 minutes before the event.
@@ -74,7 +73,6 @@ var reminderDetails = {
 
 event.createReminder(reminderDetails);
 ```
-
 
 ### Events in a year
 
@@ -262,7 +260,6 @@ if (Ti.Calendar.hasCalendarPermissions()) {
 win.open();
 ```
 
-
 ### Create a Recurring Event with Alerts on iOS (add the code to the sample above)
 
 Create a recurring event with alerts.
@@ -389,6 +386,5 @@ button2.addEventListener('click', function () {
     performCalendarWriteFunctions();
 });
 ```
-
 
 <ApiDocs/>

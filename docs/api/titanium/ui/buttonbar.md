@@ -42,7 +42,6 @@ var bb1 = Titanium.UI.createButtonBar({
 win.add(bb1);
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -64,6 +63,5 @@ Previous example as an Alloy view.
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

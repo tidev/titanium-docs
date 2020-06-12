@@ -41,5 +41,4 @@ Send the notification.
 Titanium.Android.NotificationManager.notify(1, notification);
 ```
 
-
 <ApiDocs/>

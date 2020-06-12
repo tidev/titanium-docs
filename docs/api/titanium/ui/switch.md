@@ -58,7 +58,6 @@ win.open();
 Ti.API.info('Switch value: ' + basicSwitch.value);
 ```
 
-
 ### Toggle Button Switch Example (Android)
 
 Create a standard (toggle button) switch with a customized title for each on/off state, and
@@ -85,7 +84,6 @@ basicSwitch.addEventListener('change',function(e){
 win.open();
 ```
 
-
 ### Checkbox Switch Example (Android)
 
 Create a checkbox switch, and output value property on each `change` event.
@@ -111,7 +109,6 @@ basicSwitch.addEventListener('change',function(e){
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous simple switch example as an Alloy view.
@@ -133,6 +130,5 @@ function outputState(){
     Ti.API.info('Switch value: ' + $.basicSwitch.value);
 }
 ```
-
 
 <ApiDocs/>

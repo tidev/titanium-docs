@@ -47,5 +47,4 @@ HeaderView and FooterView are supported on Alloy 1.3.0 and later.
 </Alloy>
 ```
 
-
 <ApiDocs/>

@@ -67,7 +67,6 @@ file = null;
 blob = null;
 ```
 
-
 ### Creating a Subdirectory
 
 Files that the application writes to need to be stored outside of the
@@ -95,6 +94,5 @@ if (imageFile.write(myImageData)===false) {
 imageFile = null;
 imageDir = null;
 ```
-
 
 <ApiDocs/>

@@ -99,7 +99,6 @@ win.addEventListener('click', function(e) {
 win.open();
 ```
 
-
 ### Single-button Alert Dialog (standard)
 
 Create a single-button alert dialog, without explicitly defining it using the `buttonNames`
@@ -124,7 +123,6 @@ win.addEventListener('click', function(e) {
 });
 win.open();
 ```
-
 
 ### Three-button Alert Dialog
 
@@ -159,7 +157,6 @@ win.addEventListener('click', function(e) {
 win.open();
 ```
 
-
 ### Alert Dialog with Plain Text Input
 
 Create an alert dialog and allow the user enter plain text, which is invoked when the
@@ -184,7 +181,6 @@ win.addEventListener('click', function(e) {
 });
 win.open();
 ```
-
 
 ### Alloy XML Markup
 
@@ -222,6 +218,5 @@ function doClick(e) {
 
 $.win.open();
 ```
-
 
 <ApiDocs/>

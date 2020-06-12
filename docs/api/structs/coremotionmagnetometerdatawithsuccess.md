@@ -1,0 +1,5 @@
+# CoreMotionMagnetometerDataWithSuccess
+
+<TypeHeader/>
+
+<ApiDocs/>

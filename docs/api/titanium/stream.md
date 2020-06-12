@@ -37,7 +37,6 @@ var pumpCallback = function(arg) {
 Ti.Stream.pump(inputStream, pumpCallback, 1024);
 ```
 
-
 ### Write Stream to File
 
 The following example uses the [writeStream](Titanium.Stream.writeStream) method
@@ -54,6 +53,5 @@ Ti.API.info('Wrote ' + bytesWritten + ' bytes, closing both streams.');
 inputStream.close();
 outFileStream.close();
 ```
-
 
 <ApiDocs/>

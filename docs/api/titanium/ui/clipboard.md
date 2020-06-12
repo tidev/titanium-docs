@@ -49,7 +49,6 @@ Ti.API.info('Clipboard.hasText(), should be true: ' + Ti.UI.Clipboard.hasText())
 Ti.API.info('Clipboard.getText(), should be hello: ' + Ti.UI.Clipboard.getText());
 ```
 
-
 ### Set multiple items including privacy options (iOS 10 and later)
 
 The items are represented as an array that holds different objects of key-value items. Optionally,
@@ -97,7 +96,6 @@ win.add(btn2);
 win.open();
 ```
 
-
 ### Use of named clipboard in iOS
 
 ``` js
@@ -117,7 +115,6 @@ Ti.API.info('clipboard1.getText() ' + clipboard1.getText());
 Ti.API.info('clipboard2.getText() ' + clipboard2.getText());
 ```
 
-
 ### Use of unique named clipboard in iOS
 
 ``` js
@@ -129,6 +126,5 @@ clipboard.setText('hello');
 Ti.API.info('clipboard name is: ' + clipboard.name);
 Ti.API.info('clipboard.getText() ' + clipboard.getText());
 ```
-
 
 <ApiDocs/>

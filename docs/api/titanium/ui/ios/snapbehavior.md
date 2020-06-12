@@ -54,5 +54,4 @@ win.add(block);
 win.open();
 ```
 
-
 <ApiDocs/>

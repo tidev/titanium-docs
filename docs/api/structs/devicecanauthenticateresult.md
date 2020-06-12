@@ -1,0 +1,5 @@
+# DeviceCanAuthenticateResult
+
+<TypeHeader/>
+
+<ApiDocs/>

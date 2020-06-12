@@ -47,7 +47,6 @@ win.add(label2);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -69,6 +68,5 @@ so they cannot be included in the markup.
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

@@ -150,7 +150,6 @@ btn7.addEventListener("click", function () {
 win.open();
 ```
 
-
 ### Add a Titanium.Contact.Person as icon.
 
 ``` js
@@ -214,6 +213,5 @@ function createShortcut() {
 
 win.open();
 ```
-
 
 <ApiDocs/>

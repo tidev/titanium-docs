@@ -1,0 +1,5 @@
+# DownloadTaskType
+
+<TypeHeader/>
+
+<ApiDocs/>

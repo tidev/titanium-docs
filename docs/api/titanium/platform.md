@@ -17,5 +17,4 @@ Titanium.Platform.addEventListener('battery', function(e){
 });
 ```
 
-
 <ApiDocs/>

@@ -75,7 +75,6 @@ function readCallback(e) {
 }
 ```
 
-
 ### Listening Socket Example
 
 The following sample shows a trivial example of using a listening
@@ -169,6 +168,5 @@ setTimeout(function(e)
     clientSocket.connect();
 }, 500);
 ```
-
 
 <ApiDocs/>

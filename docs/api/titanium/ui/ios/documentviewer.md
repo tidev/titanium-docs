@@ -142,5 +142,4 @@ winButton.addEventListener('click', function(){
 navWin.open();
 ```
 
-
 <ApiDocs/>

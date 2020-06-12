@@ -26,7 +26,6 @@ var toast = Ti.UI.createNotification({
 toast.show();
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -45,6 +44,5 @@ index.js
 $.index.open();
 $.toast.show();
 ```
-
 
 <ApiDocs/>

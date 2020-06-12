@@ -464,7 +464,6 @@ var window = Titanium.UI.createWindow({
 window.open({fullscreen:true});
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -474,6 +473,5 @@ Previous example as an Alloy view.
     <Window id="win" backgroundColor="red" fullscreen="true" />
 </Alloy>
 ```
-
 
 <ApiDocs/>

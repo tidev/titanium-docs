@@ -1,0 +1,5 @@
+# WebDialogOpenParams
+
+<TypeHeader/>
+
+<ApiDocs/>

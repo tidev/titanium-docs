@@ -25,7 +25,6 @@ bytesWritten = outStream.write(outBuffer, 2, 5);  // only writes "ite m" to stre
 Ti.API.info("Bytes written:" + bytesWritten);  // should be 5
 ```
 
-
 ### Read Data From a Stream
 
 This shows a simple example of reading data from a stream, one buffer full at a
@@ -39,7 +38,6 @@ while ((size = instream.read(buffer)) > -1) {
     Ti.API.info("Read " + size + " bytes.");
 }
 ```
-
 
 ### Read Data With Offset and Length
 
@@ -72,6 +70,5 @@ like this:
 [INFO] Bytes read: 8
 [INFO] Hello [ Titanium  ]
 ```
-
 
 <ApiDocs/>

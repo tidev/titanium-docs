@@ -1,0 +1,5 @@
+# TouchIdAuthenticationType
+
+<TypeHeader/>
+
+<ApiDocs/>

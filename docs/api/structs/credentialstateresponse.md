@@ -1,0 +1,5 @@
+# CredentialStateResponse
+
+<TypeHeader/>
+
+<ApiDocs/>

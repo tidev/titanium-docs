@@ -63,7 +63,6 @@ win.add(toolbar);
 win.open();
 ```
 
-
 ### Toolbar (iOS) with extended background
 
 The following code excerpt creates a simple toolbar, placed at the top of the window which extends its background under the status bar. 
@@ -106,7 +105,6 @@ controls on either side of it. Available space in the toolbar is divided between
 flexible space buttons in the toolbar. Without the flexible spaces in this example,
 the toolbar buttons would be grouped tightly together on the left side of the toolbar.
 
-
 ### Alloy Example (simple Toolbar)
 
 Simple Toolbar example as an Alloy view.
@@ -127,7 +125,6 @@ Simple Toolbar example as an Alloy view.
     </Window>
 </Alloy>
 ```
-
 
 ### Alloy Example (Toolbar as ActionBar)
 
@@ -161,6 +158,5 @@ Example how to set up Toolbar as an ActionBar
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

@@ -15,22 +15,24 @@ to its `Ti` alias, it is always recommended to use `Ti` in your code.
 
 For example, the following pairs of Titanium calls behave exactly the same.
 
-    Titanium.API.info('Hello Titanium!');
-    Ti.API.info('Hello Titanium!');
+``` js
+Titanium.API.info('Hello Titanium!');
+Ti.API.info('Hello Titanium!');
 
-    Titanium.Utils.sha256('Hello Titanium!');
-    Ti.Utils.sha256('Hello Titanium!');
+Titanium.Utils.sha256('Hello Titanium!');
+Ti.Utils.sha256('Hello Titanium!');
 
-    Titanium.App.Properties.setString('hello_msg','Hello Titanium!');
-    Ti.App.Properties.setString('hello_msg','Hello Titanium!');
+Titanium.App.Properties.setString('hello_msg','Hello Titanium!');
+Ti.App.Properties.setString('hello_msg','Hello Titanium!');
 
-    Titanium.Database.open('mydb');
-    Ti.Database.open('mydb');
+Titanium.Database.open('mydb');
+Ti.Database.open('mydb');
+```
 
 ### Global APIs
 
 Titanium includes a number of built-in JavaScript objects that are not part of the Titanium
-namespace, including JSON parsing, String formatting, timers, and the CommonJS `require` function.
+namespace, including String formatting, timers, and the CommonJS `require` function.
 See [Global APIs](Global) for details.
 
 <ApiDocs/>

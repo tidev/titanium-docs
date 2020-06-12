@@ -27,7 +27,6 @@ var bb1 = Titanium.UI.iOS.createTabbedBar({
 win.add(bb1);
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -55,6 +54,5 @@ Previous example as an Alloy view.
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

@@ -1,0 +1,5 @@
+# CoreMotionMagnetometerData
+
+<TypeHeader/>
+
+<ApiDocs/>

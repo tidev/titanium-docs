@@ -25,5 +25,4 @@ window.add(webView);
 window.open();
 ```
 
-
 <ApiDocs/>

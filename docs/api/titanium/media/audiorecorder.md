@@ -102,5 +102,4 @@ window.add(recordPlay);
 window.open();
 ```
 
-
 <ApiDocs/>

@@ -45,7 +45,6 @@ httpBonjourBrowser.addEventListener('updatedservices', function (e) {
 httpBonjourBrowser.search();
 ```
 
-
 ### Create and Publish a local HTTP/TCP service
 
 The following code excerpt creates a zeroconf bonjour service and publishes it out to the local network.
@@ -90,6 +89,5 @@ localService.publish(bonjourSocket, fnction (err, bool) {
   // Now you can find the service on your network (including using a Ti.Network.BonjourBrowser)
 });
 ```
-
 
 <ApiDocs/>

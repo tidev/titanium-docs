@@ -49,7 +49,6 @@ win.add(stepper);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -71,6 +70,5 @@ function doClick(e) {
 
 $.window.open();
 ```
-
 
 <ApiDocs/>

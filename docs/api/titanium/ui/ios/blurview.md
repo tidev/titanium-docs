@@ -51,5 +51,4 @@ win.add(img);
 win.open();
 ```
 
-
 <ApiDocs/>

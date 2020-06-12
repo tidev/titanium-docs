@@ -45,5 +45,4 @@ emailDialog.addAttachment(f);
 emailDialog.open();
 ```
 
-
 <ApiDocs/>

@@ -1,4 +1,4 @@
-# Titanium.Map.View
+# PersonName
 
 <TypeHeader/>
 

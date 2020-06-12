@@ -119,7 +119,6 @@ dashboard.addEventListener('click', function(e) {
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -184,6 +183,5 @@ function resetBadge(e) {
   e.item.badge = 0;
 }
 ```
-
 
 <ApiDocs/>

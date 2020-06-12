@@ -66,7 +66,6 @@ Default Titanium project as an Alloy view.
 </Alloy>
 ```
 
-
 ### Classic Titanium Example
 
 Simple two-tabbed app.
@@ -97,6 +96,5 @@ tabGroup = Ti.UI.createTabGroup({
 });
 tabGroup.open();
 ```
-
 
 <ApiDocs/>

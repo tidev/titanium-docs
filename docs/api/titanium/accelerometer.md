@@ -73,5 +73,4 @@ if (Ti.Platform.model === 'Simulator' || Ti.Platform.model.indexOf('sdk') !== -1
 }
 ```
 
-
 <ApiDocs/>

@@ -1,0 +1,5 @@
+# CoreMotionAcceleration
+
+<TypeHeader/>
+
+<ApiDocs/>

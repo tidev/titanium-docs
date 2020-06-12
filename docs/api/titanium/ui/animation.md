@@ -69,7 +69,6 @@ animation.addEventListener('complete',animationHandler);
 view.animate(animation);
 ```
 
-
 ### Animation Using Matrix Transforms
 
 The following example uses a transformation matrix to animate
@@ -100,7 +99,6 @@ box.addEventListener('click', function() {
 
 win.add(box);
 ```
-
 
 ### Using an anchorPoint (Android and iOS)
 
@@ -173,6 +171,5 @@ button.addEventListener('click', function(){
 
 win.open();
 ```
-
 
 <ApiDocs/>

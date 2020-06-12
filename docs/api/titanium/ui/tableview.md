@@ -146,7 +146,6 @@ win.add(table);
 win.open();
 ```
 
-
 ### Table View Sections
 
 Create a table with three sections, each with two rows. Add two sections to the table
@@ -181,7 +180,6 @@ sectionFish.add(Ti.UI.createTableViewRow({ title: 'Haddock' }));
 // property should not be used on iOS with Release 3.0.x.
 table.insertSectionBefore(0, sectionFish);
 ```
-
 
 ### Table View with Composite Layout
 
@@ -267,7 +265,6 @@ win.add(tableView);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous table view sections example as an Alloy view.
@@ -292,6 +289,5 @@ Previous table view sections example as an Alloy view.
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

@@ -1,0 +1,5 @@
+# ShareLinkContentParams
+
+<TypeHeader/>
+
+<ApiDocs/>

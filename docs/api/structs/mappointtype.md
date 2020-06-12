@@ -1,0 +1,5 @@
+# MapPointType
+
+<TypeHeader/>
+
+<ApiDocs/>

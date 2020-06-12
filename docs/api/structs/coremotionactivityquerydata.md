@@ -1,0 +1,5 @@
+# CoreMotionActivityQueryData
+
+<TypeHeader/>
+
+<ApiDocs/>

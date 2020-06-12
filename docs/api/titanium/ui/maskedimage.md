@@ -51,5 +51,4 @@ var imageMask = Titanium.UI.createMaskedImage({
 });
 ```
 
-
 <ApiDocs/>

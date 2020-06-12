@@ -1,0 +1,5 @@
+# NewsstandGetIssueProps
+
+<TypeHeader/>
+
+<ApiDocs/>

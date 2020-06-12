@@ -62,7 +62,6 @@ win.add(scrollView);
 win.open();
 ```
 
-
 ### Scroll View as a Table View
 
 Create a scroll view that contains a set of views in a layout to resemble a table view with
@@ -119,7 +118,6 @@ win.add(label);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous simple scroll view example as an Alloy view.
@@ -133,6 +131,5 @@ Previous simple scroll view example as an Alloy view.
      </Window>
  </Alloy>
  ```
-
 
 <ApiDocs/>

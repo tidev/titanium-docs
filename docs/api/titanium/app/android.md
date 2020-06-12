@@ -32,5 +32,4 @@ var mystring = activity.getString(R.string.mystring);
 Ti.API.debug("mystring = " + mystring);
 ```
 
-
 <ApiDocs/>

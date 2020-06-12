@@ -81,7 +81,6 @@ vidWin.add(videoPlayer);
 vidWin.open();
 ```
 
-
 ### Android Fullscreen Video Player
 
 The Android fullscreen video player operates differently from other video players.
@@ -142,7 +141,6 @@ win.add(openButton);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous simple example as an Alloy view.
@@ -156,6 +154,5 @@ Previous simple example as an Alloy view.
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

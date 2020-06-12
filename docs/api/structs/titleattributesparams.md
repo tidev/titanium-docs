@@ -20,5 +20,4 @@ var nav = Ti.UI.createNavigationWindow({window: win});
 nav.open();
 ```
 
-
 <ApiDocs/>

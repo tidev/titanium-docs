@@ -1,0 +1,5 @@
+# CameraAnimationParams
+
+<TypeHeader/>
+
+<ApiDocs/>

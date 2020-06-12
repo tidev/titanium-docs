@@ -77,7 +77,6 @@ var label = Titanium.UI.createLabel({
 win.add(label);
 ```
 
-
 ### Adds attributes, one by one.
 
 ``` js
@@ -108,6 +107,5 @@ var label = Titanium.UI.createLabel({
 
 win.add(label);
 ```
-
 
 <ApiDocs/>

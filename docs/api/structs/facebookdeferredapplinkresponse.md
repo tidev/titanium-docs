@@ -1,0 +1,5 @@
+# FacebookDeferredAppLinkResponse
+
+<TypeHeader/>
+
+<ApiDocs/>

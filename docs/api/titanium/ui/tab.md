@@ -70,7 +70,6 @@ var tab = Ti.UI.createTab({
 tabGroup.addTab(tab);
 ```
 
-
 ### Alloy XML Markup
 
 Previous example an an Alloy view.
@@ -84,6 +83,5 @@ Previous example an an Alloy view.
       </TabGroup>
 </Alloy>
 ```
-
 
 <ApiDocs/>

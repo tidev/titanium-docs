@@ -69,7 +69,6 @@ picker.setSelectedRow(0, 2, false); // select Mangos
 picker.setSelectedRow(1, 3, false); // select Orange
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -113,6 +112,5 @@ pickerrowexample.js:
 $.picker.setSelectedRow(0, 2, false);
 $.picker.setSelectedRow(1, 3, false);
 ```
-
 
 <ApiDocs/>

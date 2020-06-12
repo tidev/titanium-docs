@@ -1,0 +1,5 @@
+# BarcodeCaptureDict
+
+<TypeHeader/>
+
+<ApiDocs/>

@@ -1,0 +1,5 @@
+# ShareToMessengerParams
+
+<TypeHeader/>
+
+<ApiDocs/>

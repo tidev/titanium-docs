@@ -50,7 +50,6 @@ win.add(textField);
 win.open();
 ```
 
-
 ### Custom Keyboard Toolbar (iOS)
 
 On iOS, a configurable toolbar can be displayed above the virtual keyboard.
@@ -96,7 +95,6 @@ win.add(textField);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous basic text field with green text color example using Alloy.
@@ -110,7 +108,6 @@ Alternatively, define the properties using the TSS file.
     </Window>
 </Alloy>
 ```
-
 
 ### Alloy Custom Keyboard Toolbar (iOS)
 
@@ -149,6 +146,5 @@ You can also declare the `leftButton` and `rightButton` properties in XML markup
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

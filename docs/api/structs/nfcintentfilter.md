@@ -1,4 +1,4 @@
-# Titanium.Map.Annotation
+# NfcIntentFilter
 
 <TypeHeader/>
 

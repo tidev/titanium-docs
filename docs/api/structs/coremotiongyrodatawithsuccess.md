@@ -1,0 +1,5 @@
+# CoreMotionGyroDataWithSuccess
+
+<TypeHeader/>
+
+<ApiDocs/>

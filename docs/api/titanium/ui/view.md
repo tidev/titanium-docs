@@ -227,7 +227,6 @@ var view = Titanium.UI.createView({
 window.add(view);
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -237,6 +236,5 @@ Previous example as an Alloy view.
     <View id="view" borderRadius="10" backgroundColor="red" width="50" height="50" />
 </Alloy>
 ```
-
 
 <ApiDocs/>

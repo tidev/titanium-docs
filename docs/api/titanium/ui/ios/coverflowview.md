@@ -21,7 +21,6 @@ var view = Titanium.UI.iOS.createCoverFlowView({
 window.add(view);
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
@@ -49,6 +48,5 @@ Previous example as an Alloy view.
     </Window>
 </Alloy>
 ```
-
 
 <ApiDocs/>

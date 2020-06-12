@@ -95,7 +95,6 @@ Adds action items and sets several properties on a window's action bar in the XM
 }
 ```
 
-
 ### Action Bar Example
 
 The following example sets several properties on a window's action bar.
@@ -129,6 +128,5 @@ win.open();
 
 Nearly identical code can be used for a tab group, but in Release 3.0, the tab group's
 activity must be accessed using the [getActivity](Titanium.UI.TabGroup.getActivity) method.
-
 
 <ApiDocs/>

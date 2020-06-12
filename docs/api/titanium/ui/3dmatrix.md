@@ -50,5 +50,4 @@ button.addEventListener('click', function(){
 win.open();
 ```
 
-
 <ApiDocs/>

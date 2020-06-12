@@ -100,7 +100,6 @@ win.add(button);
 win.open();
 ```
 
-
 ### PreviewContext example using a ListView as receiver.
 
 ```js
@@ -190,6 +189,5 @@ listView.setSections([section1, section2]);
 win.add(listView);
 win.open();
 ```
-
 
 <ApiDocs/>

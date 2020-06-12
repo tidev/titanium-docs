@@ -121,7 +121,6 @@ intent.addCategory(Ti.Android.CATEGORY_LAUNCHER);
 Ti.Android.currentActivity.startActivity(intent);
 ```
 
-
 ### Create an Intent to get a Contact URI
 
 This example creates an intent to retrieve contact information from the user's
@@ -134,7 +133,6 @@ var intent = Ti.Android.createIntent({
 });
 ```
 
-
 ### Pick a Photo from the Photo Gallery
 
 This example creates an intent to pick an image from the photo gallery.
@@ -146,7 +144,6 @@ var intent = Ti.Android.createIntent({
 });
 intent.addCategory(Ti.Android.CATEGORY_DEFAULT);
 ```
-
 
 ### Create an ImageView from an Image Send Intent
 
@@ -204,6 +201,5 @@ var win = Ti.UI.createWindow({
   });
   win.open();
   ```
-
 
 <ApiDocs/>

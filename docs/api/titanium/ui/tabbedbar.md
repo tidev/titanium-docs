@@ -28,7 +28,6 @@ var bb1 = Ti.UI.createTabbedBar({
 win.add(bb1);
 ```
 
-
 ### TabGroup like behavior for views instead of windows
 
 ``` js
@@ -58,6 +57,5 @@ win.add(scrollView);
 win.add(tabbedBar);
 win.open();
 ```
-
 
 <ApiDocs/>

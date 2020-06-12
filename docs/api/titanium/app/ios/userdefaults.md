@@ -20,5 +20,4 @@ var props = Ti.App.iOS.createUserDefaults({
 });
 ```
 
-
 <ApiDocs/>

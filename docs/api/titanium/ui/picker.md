@@ -80,7 +80,6 @@ notation for `PickerColumn` and `PickerRow`, respectively.
 $.win.open();
 ```
 
-
 ### Date Picker using Alloy XML Markup
 
 Creates a date picker, then monitors the `change` event to see when the user updates the picker.
@@ -112,7 +111,6 @@ function report(e) {
 $.index.open();
 ```
 
-
 ### Basic Single Column Picker
 
 Create a one-column, platform-specific style, picker and automatically select a row.
@@ -143,7 +141,6 @@ win.open();
 // must be after picker has been displayed
 picker.setSelectedRow(0, 2, false); // select Mangos
 ```
-
 
 ### Multi-Column Picker
 
@@ -193,7 +190,6 @@ picker.setSelectedRow(0, 2, false); // select Mangos
 picker.setSelectedRow(1, 3, false); // select Orange
 ```
 
-
 ### Date Picker
 
 Create a date picker and handle the subsequent user action.
@@ -221,7 +217,6 @@ picker.addEventListener('change',function(e){
 });
 ```
 
-
 ### Date Picker using showDatePickerDialog() (Android only)
 
 Create a date picker that is automatically displayed as a modal dialog and handle the
@@ -248,6 +243,5 @@ picker.showDatePickerDialog({
   }
 });
 ```
-
 
 <ApiDocs/>

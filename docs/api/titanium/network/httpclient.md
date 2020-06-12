@@ -153,5 +153,4 @@ client.open("GET", url);
 client.send();
 ```
 
-
 <ApiDocs/>

@@ -67,7 +67,6 @@ win.add(tableview);
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy project.
@@ -112,6 +111,5 @@ searchview.xml:
     <SearchView id="searchView" ns="Ti.UI.Android" platform="android" hintText="Table Search" />
 </Alloy>
 ```
-
 
 <ApiDocs/>

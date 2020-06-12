@@ -89,7 +89,6 @@ win.addEventListener('click', function(e){
 win.open();
 ```
 
-
 ### Dialog with 2 Options and 1 Button on Android and 3 Options on iOS
 
 `` js
@@ -140,7 +139,6 @@ function onSelectDialog(e) {
 win.open();
 ```
 
-
 ### Alloy XML Markup
 
 Previous example as an Alloy view. You can set [cancel](Titanium.UI.OptionDialog.cancel)
@@ -186,6 +184,5 @@ function showOptions(){
     $.dialog.show();
 }
 ```
-
 
 <ApiDocs/>

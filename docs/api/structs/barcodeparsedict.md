@@ -1,0 +1,5 @@
+# BarcodeParseDict
+
+<TypeHeader/>
+
+<ApiDocs/>

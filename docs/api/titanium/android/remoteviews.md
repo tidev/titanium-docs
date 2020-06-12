@@ -68,5 +68,4 @@ This example uses a simple custom layout:
 The layout file for this example must be placed in
 `platform/android/res/layout/custom_layout.xml`.
 
-
 <ApiDocs/>

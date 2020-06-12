@@ -1,0 +1,5 @@
+# CoreMotionStepCountingQueryDataWithSuccess
+
+<TypeHeader/>
+
+<ApiDocs/>

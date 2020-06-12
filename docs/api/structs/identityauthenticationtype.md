@@ -1,0 +1,5 @@
+# IdentityAuthenticationType
+
+<TypeHeader/>
+
+<ApiDocs/>
