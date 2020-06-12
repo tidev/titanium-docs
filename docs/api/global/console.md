@@ -1,8 +1,4 @@
----
-metadataKey: Global.console
----
-
-# console
+# Global.Console
 
 <TypeHeader/>
 

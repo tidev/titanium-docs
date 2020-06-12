@@ -4,7 +4,7 @@
 
 ## Overview
 
-The [masterView](Titanium.UI.iOS.SplitWindow.masterView) and [detailView](Titanium.UI.iOS.SplitWindow.detailView)
+The [masterView](Titanium.UI.iOS.SplitWindow.masterView) and [detailView](Titanium.UI.iOS.SplitWindow.detailView) 
 properties are required before the SplitWindow is opened.
 
 You use this class to implement a master-detail interface, in which the left-side view presents
@@ -35,55 +35,61 @@ The SplitWindow is a top-level window and cannot be contained within another win
 
 This is an example of a Split Window.
 
-    var detail = Ti.UI.createWindow({ backgroundColor: 'white' });
-    var label1 = Ti.UI.createLabel({ text: 'Detail View' });
-    detail.add(label1);
-    var detailNav = Ti.UI.createNavigationWindow({ window: detail });
+``` js
+var detail = Ti.UI.createWindow({ backgroundColor: 'white' });
+var label1 = Ti.UI.createLabel({ text: 'Detail View' });
+detail.add(label1);
+var detailNav = Ti.UI.createNavigationWindow({ window: detail });
 
-    var master = Ti.UI.createWindow({ backgroundColor: 'gray' });
-    var label2 = Ti.UI.createLabel({ text: 'Master View' });
-    master.add(label2);
-    var masterNav = Ti.UI.createNavigationWindow({ window: master });
+var master = Ti.UI.createWindow({ backgroundColor: 'gray' });
+var label2 = Ti.UI.createLabel({ text: 'Master View' });
+master.add(label2);
+var masterNav = Ti.UI.createNavigationWindow({ window: master });
 
-    var splitWin = Ti.UI.iOS.createSplitWindow({
-        detailView: detailNav,
-        masterView: masterNav
-    });
-    splitWin.open();
+var splitWin = Ti.UI.iOS.createSplitWindow({
+    detailView: detailNav,
+    masterView: masterNav
+});
+splitWin.open();
+```
+
 
 ### Alloy XML Markup
 
 Below is an Alloy version of the previous example. The first window is the `masterView` and the second window is the `detailView`. You can also use the `<Require>` element to add a `<Window>` or `<NavigationWindow>`.
 
-    **views/index.xml:**
+**views/index.xml:**
+``` xml
+<Alloy>
+  <SplitWindow backgroundColor="white" showMasterInPortrait="true">
 
-    <Alloy>
-      <SplitWindow backgroundColor="white" showMasterInPortrait="true">
+    <!-- First window is the masterView -->
+    <NavigationWindow>
+      <Window title="Master View">
+        <ListView>
+          <ListSection headerTitle="Some items">
+            <ListItem title="Item 1" />
+            <ListItem title="Item 2" />
+            <ListItem title="Item 3" />
+          </ListSection>
+        </ListView>
+      </Window>
+    </NavigationWindow>
 
-        <!-- First window is the masterView -->
-        <NavigationWindow>
-          <Window title="Master View">
-            <ListView>
-              <ListSection headerTitle="Some items">
-                <ListItem title="Item 1" />
-                <ListItem title="Item 2" />
-                <ListItem title="Item 3" />
-              </ListSection>
-            </ListView>
-          </Window>
-        </NavigationWindow>
+    <!-- Second window is the detailView -->
+    <NavigationWindow>
+      <Window title="Detail View">
+        <Label>I am the detail view.</Label>
+      </Window>
+    </NavigationWindow>
+  </SplitWindow>
+</Alloy>
+```
 
-        <!-- Second window is the detailView -->
-        <NavigationWindow>
-          <Window title="Detail View">
-            <Label>I am the detail view.</Label>
-          </Window>
-        </NavigationWindow>
-      </SplitWindow>
-    </Alloy>
+**controllers/index.js:**
+``` js
+$.index.open();
+```
 
-    **controllers/index.js:**
-
-    $.index.open();
 
 <ApiDocs/>

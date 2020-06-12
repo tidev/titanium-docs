@@ -56,14 +56,17 @@ Data files shipped with the application are stored in the resources directory.
 
 This example reads string data from a text file.
 
-    // resourcesDirectory is actually the default location, so the first
-    // argument could be omitted here.
-    file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "textfile.txt");
-    var blob = file.read();
-    var readText = blob.text;
-    // dispose of file handle & blob.
-    file = null;
-    blob = null;
+``` js
+// resourcesDirectory is actually the default location, so the first
+// argument could be omitted here.
+file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "textfile.txt");
+var blob = file.read();
+var readText = blob.text;
+// dispose of file handle & blob.
+file = null;
+blob = null;
+```
+
 
 ### Creating a Subdirectory
 
@@ -75,20 +78,23 @@ The example assumes that two variables are defined elsewhere in the code:
 myImageID, a string containing some kind of ID for the downloaded image,
 and myImageData, a `Blob` containing JPEG image data.
 
-    var imageDir = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,
-        'downloaded_images');
-    if (! imageDir.exists()) {
-        imageDir.createDirectory();
-    }
+``` js
+var imageDir = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,
+    'downloaded_images');
+if (! imageDir.exists()) {
+    imageDir.createDirectory();
+}
 
-    // .resolve() provides the resolved native path for the directory.
-    var imageFile  = Ti.Filesystem.getFile(imageDir.resolve(), myImageID + '.jpg');
-    Ti.API.info("ImageFile path is: " + imageFile.resolve());
-    if (imageFile.write(myImageData)===false) {
-        // handle write error
-    }
-    // dispose of file handles
-    imageFile = null;
-    imageDir = null;
+// .resolve() provides the resolved native path for the directory.
+var imageFile  = Ti.Filesystem.getFile(imageDir.resolve(), myImageID + '.jpg');
+Ti.API.info("ImageFile path is: " + imageFile.resolve());
+if (imageFile.write(myImageData)===false) {
+    // handle write error
+}
+// dispose of file handles
+imageFile = null;
+imageDir = null;
+```
+
 
 <ApiDocs/>

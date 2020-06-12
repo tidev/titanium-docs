@@ -1,0 +1,5 @@
+# AnimatedWithDurationOptions
+
+<TypeHeader/>
+
+<ApiDocs/>

@@ -68,6 +68,7 @@ items from being displayed on Android.
 
 ### Dialog with 3 Options
 
+``` js
 Ti.UI.setBackgroundColor('white');
 var win = Ti.UI.createWindow({
   title: 'Click window to test',
@@ -86,9 +87,12 @@ win.addEventListener('click', function(e){
   var dialog = Ti.UI.createOptionDialog(opts).show();
 });
 win.open();
+```
+
 
 ### Dialog with 2 Options and 1 Button on Android and 3 Options on iOS
 
+`` js
 var win = Ti.UI.createWindow({
   title: 'Click window to test OptionDialog',
   backgroundColor: 'white'
@@ -134,48 +138,54 @@ function onSelectDialog(e) {
 }
 
 win.open();
+```
+
 
 ### Alloy XML Markup
 
-Previous example as an Alloy view.
+Previous example as an Alloy view. You can set [cancel](Titanium.UI.OptionDialog.cancel)
+and [destructive](Titanium.UI.OptionDialog.destructive) on a `<Option/>` tag.
 
 optiondialog.xml:
+``` xml
+<Alloy>
+    <Window id="win" onClick="showOptions" title="Click window to test"
+        fullscreen="false" onExit="true" backgroundColor="white">
 
-    <Alloy>
-        <Window id="win" onClick="showOptions" title="Click window to test"
-            fullscreen="false" onExit="true" backgroundColor="white">
+        <!--
+            The OptionDialog tag declares an option dialog,
+            which will need to be opened by the controller.
+        -->
+        <OptionDialog id="dialog" title="Delete File?">
 
-            <!--
-                The OptionDialog tag declares an option dialog,
-                which will need to be opened by the controller.
-            -->
-            <OptionDialog id="dialog" title="Delete File?">
+            <!-- The Options tag sets the options property. -->
+            <Options>
+                <Option destructive="true">Confirm</Option>
+                <Option platform="ios">Help</Option>
+                <Option cancel="true">Cancel</Option>
+            </Options>
 
-                <!-- The Options tag sets the options property. -->
-                <Options>
-                    <Option>Confirm</Option>
-                    <Option platform="ios">Help</Option>
-                    <Option>Cancel</Option>
-                </Options>
+            <!-- The ButtonNames tag sets the Android-only buttonNames property. -->
+            <ButtonNames>
+                <ButtonName>Help</ButtonName>
+            </ButtonNames>
 
-                <!-- The ButtonNames tag sets the Android-only buttonNames property. -->
-                <ButtonNames>
-                    <ButtonName>Help</ButtonName>
-                </ButtonNames>
+            <!-- Add a View for the androidView property here. -->
 
-                <!-- Add a View for the androidView property here. -->
+        </OptionDialog>
 
-            </OptionDialog>
+        <!-- Add views here -->
 
-            <!-- Add views here -->
-
-        </Window>
-    </Alloy>
+    </Window>
+</Alloy>
+```
 
 optiondialog.js:
+``` js
+function showOptions(){
+    $.dialog.show();
+}
+```
 
-    function showOptions(){
-        $.dialog.show();
-    }
 
 <ApiDocs/>

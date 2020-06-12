@@ -26,8 +26,10 @@ original `HTTPClient` object itself, or a response object that holds all
 of the response-related properties defined for the `HTTPClient` object. So the
 callbacks can use code like this to access the response values:
 
-    httpResponse = this.responseText;
-    status = this.status;
+``` js
+httpResponse = this.responseText;
+status = this.status;
+```
 
 ### Content-Type Header
 
@@ -88,6 +90,11 @@ the client and server.
       <td>4.1+</td>
       <td>5.0+</td>
     </tr>
+    <tr>
+      <th align="left">TLS 1.3</th>
+      <td>10.0+</td>
+      <td>12.2+</td>
+    </tr>
   </tbody>
 </table>
 
@@ -100,8 +107,7 @@ Titanium will not fallback with a lower TLS version if the `tlsVersion` property
 Setting the TLS version saves time from re-attempting connections with lower TLS versions and
 provides added security by denying attempts to use lower TLS versions.
 
-Starting with Release 3.6.0, you can set the TLS version for the Android and iOS platforms.
-Prior to Release 3.6.0, you can only set the TLS version for iOS.
+You can set the TLS version for the Android and iOS platforms.
 
 ### Caching Data
 
@@ -126,23 +132,26 @@ cookie stores using the methods <Titanium.Network.addHTTPCookie>, <Titanium.Netw
 
 The following code excerpt does a simple GET request and logs the response text.
 
-     var url = "http://www.appcelerator.com";
-     var client = Ti.Network.createHTTPClient({
-         // function called when the response data is available
-         onload : function(e) {
-             Ti.API.info("Received text: " + this.responseText);
-             alert('success');
-         },
-         // function called when an error occurs, including a timeout
-         onerror : function(e) {
-             Ti.API.debug(e.error);
-             alert('error');
-         },
-         timeout : 5000  // in milliseconds
-     });
-     // Prepare the connection.
-     client.open("GET", url);
-     // Send the request.
-     client.send();
+``` js
+var url = "http://www.appcelerator.com";
+var client = Ti.Network.createHTTPClient({
+    // function called when the response data is available
+    onload : function(e) {
+        Ti.API.info("Received text: " + this.responseText);
+        alert('success');
+    },
+    // function called when an error occurs, including a timeout
+    onerror : function(e) {
+        Ti.API.debug(e.error);
+        alert('error');
+    },
+    timeout : 5000  // in milliseconds
+});
+// Prepare the connection.
+client.open("GET", url);
+// Send the request.
+client.send();
+```
+
 
 <ApiDocs/>

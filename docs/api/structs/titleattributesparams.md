@@ -6,6 +6,7 @@
 
 ### Simple Example
 
+``` js
 var win = Ti.UI.createWindow({
     title: 'Title',
     barColor: 'yellow',
@@ -17,5 +18,7 @@ var win = Ti.UI.createWindow({
 });
 var nav = Ti.UI.createNavigationWindow({window: win});
 nav.open();
+```
+
 
 <ApiDocs/>

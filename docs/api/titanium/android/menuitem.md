@@ -12,10 +12,12 @@ new action items.
 
 In Alloy you can define **`<MenuItem>`** elements inside a `<Menu>` element.
 
-    <Menu id="menu" platform="android">
-        <MenuItem id="saveitem" title="Save" icon="item1.png" onClick="doSave" />
-        <MenuItem id="closeitem" title="Close" icon="item1.png" onClick="doClose" />
-    </Menu>
+``` xml
+<Menu id="menu" platform="android">
+    <MenuItem id="saveitem" title="Save" icon="item1.png" onClick="doSave" />
+    <MenuItem id="closeitem" title="Close" icon="item1.png" onClick="doClose" />
+</Menu>
+```
 
 Action items can appear in either the action bar or the action bar's
 overflow menu.  To determine how an action item is displayed, set

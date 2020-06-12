@@ -66,20 +66,22 @@ or
 [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW26)
 key to the iOS plist section of the project's `tiapp.xml` file.
 
-    <ti:app>
-        <ios>
-            <plist>
-                <dict>
-                    <key>NSLocationAlwaysUsageDescription</key>
-                    <string>
-                        Specify the reason for accessing the user's location information.
-                        This appears in the alert dialog when asking the user for permission to
-                        access their location.
-                    </string>
-                </dict>
-            </plist>
-        </ios>
-    </ti:app>
+``` xml
+<ti:app>
+    <ios>
+        <plist>
+            <dict>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <string>
+                    Specify the reason for accessing the user's location information.
+                    This appears in the alert dialog when asking the user for permission to
+                    access their location.
+                </string>
+            </dict>
+        </plist>
+    </ios>
+</ti:app>
+```
 
 For iOS 11 and later, also add the [`NSLocationAlwaysAndWhenInUseUsageDescription`](https://developer.apple.com/documentation/corelocation/choosing_the_authorization_level_for_location_services/request_always_authorization)
 when planning to request the "Always" permission. Using the above key, you are also able to upgrade your permissions from
@@ -112,38 +114,40 @@ On Android, two different location service modes are supported: *simple*, and *m
     to `true`. In manual mode, the `accuracy` property is not used, and all
     configuration is done through the <Titanium.Geolocation.Android> module.
 
-As of Titanium SDK 7.1.0 and later, including the [`ti.playservices`](https://github.com/appcelerator-modules/ti.playservices) module will allow Google Play Services
+As of Titanium SDK 7.1.0 and later, including the [`ti.playservices`](https://github.com/appcelerator-modules/ti.playservices) module will allow Google Play Services 
 to be used by default to obtain location information. This means the provider passed into [createLocationProvider](Titanium.Geolocation.Android.createLocationProvider)
 will be ignored, as Google Play Services will select the best provider based on current device conditions.
 If Google Play Services is not available it will fallback to previous behaviour of using Android location APIs.
 
 To retrieve location events:
 
-    var win = Ti.UI.createWindow({ backgroundColor: 'white' });
+``` js
+var win = Ti.UI.createWindow({ backgroundColor: 'white' });
 
-    Ti.Geolocation.accuracy = Ti.Geolocation.ACCURACY_HIGH;
+Ti.Geolocation.accuracy = Ti.Geolocation.ACCURACY_HIGH;
 
-    function getLocation() {
-        Ti.Geolocation.addEventListener('location', function(e) {
-            alert(JSON.stringify(e, null, 2));
+function getLocation() {
+    Ti.Geolocation.addEventListener('location', function(e) {
+        alert(JSON.stringify(e, null, 2));
+    });
+}
+
+win.addEventListener('open', function() {
+    if (Ti.Geolocation.hasLocationPermissions()) {
+        getLocation();
+      } else {
+        Ti.Geolocation.requestLocationPermissions(Ti.Geolocation.AUTHORIZATION_ALWAYS, function(e) {
+            if (e.success) {
+                getLocation();
+            } else {
+                alert('could not obtain location permissions');
+            }
         });
     }
+});
 
-    win.addEventListener('open', function() {
-        if (Ti.Geolocation.hasLocationPermissions()) {
-            getLocation();
-         } else {
-            Ti.Geolocation.requestLocationPermissions(Ti.Geolocation.AUTHORIZATION_ALWAYS, function(e) {
-                if (e.success) {
-                    getLocation();
-                } else {
-                    alert('could not obtain location permissions');
-                }
-            });
-        }
-    });
-
-    win.open();
+win.open();
+```
 
 ### Using the Compass
 
@@ -157,12 +161,14 @@ To retrieve compass readings, you can either use
 previous example, or add a listener for the
 [heading](Titanium.Geolocation.heading) event, as shown below:
 
-    function compassHandler (e) {
-      if (e.success) {
-        Ti.API.info('Heading: ' + e.heading.magneticHeading);
-      }
-    }
-    Ti.Geolocation.addEventListener('heading', compassHandler);
+``` js
+function compassHandler (e) {
+  if (e.success) {
+    Ti.API.info('Heading: ' + e.heading.magneticHeading);
+  }
+}
+Ti.Geolocation.addEventListener('heading', compassHandler);
+```
 
 Note that Android did not include a `success` property in the `heading` event prior to SDK 7.5.0.
 Heading events are only generated on Android when heading data is available. So if
@@ -176,7 +182,9 @@ As with location updates, the application should unregister for heading updates
 when it is no longer being used, or when it goes into the background. Use
 `removeEventListener` to stop heading updates:
 
-    Ti.Geolocation.removeEventListener('heading', compassHandler);
+``` js
+Ti.Geolocation.removeEventListener('heading', compassHandler);
+```
 
 Finally, note that neither the Android emulator nor the iOS simulator provide
 compass support. Compass code must be tested on physical devices.

@@ -18,18 +18,21 @@ Further Reading:
 
 The following example shows how to create a notification with a channel.
 
-    var channel = Ti.Android.NotificationManager.createNotificationChannel({
-            id: 'my_channel',
-            name: 'TEST CHANNEL',
-            importance: Ti.Android.IMPORTANCE_DEFAULT
-        }),
-        notification = Ti.Android.createNotification({
-            icon: Ti.Android.R.drawable.ic_dialog_info,
-            contentTitle: 'TITLE',
-            contentText : 'This is a test',
-            channelId: channel.getId()
-        });
+``` js
+var channel = Ti.Android.NotificationManager.createNotificationChannel({
+        id: 'my_channel',
+        name: 'TEST CHANNEL',
+        importance: Ti.Android.IMPORTANCE_DEFAULT
+    }),
+    notification = Ti.Android.createNotification({
+        icon: Ti.Android.R.drawable.ic_dialog_info,
+        contentTitle: 'TITLE',
+        contentText : 'This is a test',
+        channelId: channel.getId()
+    });
 
-    Ti.Android.NotificationManager.notify(100, notification);
+Ti.Android.NotificationManager.notify(100, notification);
+```
+
 
 <ApiDocs/>

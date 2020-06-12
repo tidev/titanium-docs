@@ -1,4 +1,4 @@
-# CropRectType
+# SelectedRowObject
 
 <TypeHeader/>
 

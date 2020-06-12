@@ -57,7 +57,9 @@ application.
 For example, if the application ID is `com.appcelerator.notificationsample` and the
 application name is `NotificationSample`, the class name will be:
 
-    com.appcelerator.notificationsample.NotificationsampleActivity
+```
+com.appcelerator.notificationsample.NotificationsampleActivity
+```
 
 The notification icon must be specified as an Android resource ID. In this case,
 the icon, `my_icon.png` would be placed in `platforms/android/res/drawable/my_icon.png`.
@@ -66,60 +68,66 @@ See <Titanium.App.Android.R> for more information.
 This example does not include a custom alert sound. For information on adding a
 custom alert sound, see [Notification.sound](Titanium.Android.Notification.sound).
 
-    // Intent object to launch the application
-    var intent = Ti.Android.createIntent({
-        action: Ti.Android.ACTION_MAIN,
-        // Substitute the correct class name for your application
-        className: 'com.appcelerator.notificationsample.NotificationsampleActivity',
-        // Substitue the correct package name for your application
-        packageName: 'com.appcelerator.notificationsample'
-    });
-    intent.flags |= Ti.Android.FLAG_ACTIVITY_NEW_TASK;
-    intent.addCategory(Ti.Android.CATEGORY_LAUNCHER);
+``` js
+// Intent object to launch the application
+var intent = Ti.Android.createIntent({
+    action: Ti.Android.ACTION_MAIN,
+    // Substitute the correct class name for your application
+    className: 'com.appcelerator.notificationsample.NotificationsampleActivity',
+    // Substitue the correct package name for your application
+    packageName: 'com.appcelerator.notificationsample'
+});
+intent.flags |= Ti.Android.FLAG_ACTIVITY_NEW_TASK;
+intent.addCategory(Ti.Android.CATEGORY_LAUNCHER);
 
-    // Create a PendingIntent to tie together the Activity and Intent
-    var pending = Titanium.Android.createPendingIntent({
-        intent: intent,
-        flags: Titanium.Android.FLAG_UPDATE_CURRENT
-    });
+// Create a PendingIntent to tie together the Activity and Intent
+var pending = Titanium.Android.createPendingIntent({
+    intent: intent,
+    flags: Titanium.Android.FLAG_UPDATE_CURRENT
+});
 
-    // Create the notification
-    var notification = Titanium.Android.createNotification({
-    	// icon is passed as an Android resource ID -- see Ti.App.Android.R.
-        icon: Ti.App.Android.R.drawable.my_icon,
-    	contentTitle: 'Something Happened',
-    	contentText : 'Click to return to the application.',
-    	contentIntent: pending
-    });
+// Create the notification
+var notification = Titanium.Android.createNotification({
+  // icon is passed as an Android resource ID -- see Ti.App.Android.R.
+    icon: Ti.App.Android.R.drawable.my_icon,
+  contentTitle: 'Something Happened',
+  contentText : 'Click to return to the application.',
+  contentIntent: pending
+});
 
-    // Send the notification.
-    Titanium.Android.NotificationManager.notify(1, notification);
+// Send the notification.
+Titanium.Android.NotificationManager.notify(1, notification);
+```
+
 
 ### Bundled Notifications Example
 
 The following example shows how to create bundled notifications.
 
-    var id = 100,
-        groupKey = 'group_key';
+``` js
+var id = 100,
+    groupKey = 'group_key';
 
-    for (var i = 3; i > 0; i--) {
-        Ti.Android.NotificationManager.notify(id++,
-            Ti.Android.createNotification({
-                icon: Ti.Android.R.drawable.ic_dialog_info,
-                contentTitle: 'NOTIFICATION #' + i,
-                contentText : 'Lorem ipsum dolor sit amet, facer eruditi omittantur cu pri, nibh nonumy putant eam eu.'
-                groupKey: groupKey
-            })
-        );
-    }
+for (var i = 3; i > 0; i--) {
     Ti.Android.NotificationManager.notify(id++,
         Ti.Android.createNotification({
             icon: Ti.Android.R.drawable.ic_dialog_info,
-            contentTitle: 'NOTIFICATIONS',
-            contentText : 'You have 3 notifications.',
-            groupKey: groupKey,
-            groupSummary: true
+            contentTitle: 'NOTIFICATION #' + i,
+            contentText : 'Lorem ipsum dolor sit amet, facer eruditi omittantur cu pri, nibh nonumy putant eam eu.'
+            groupKey: groupKey
         })
     );
+}
+Ti.Android.NotificationManager.notify(id++,
+    Ti.Android.createNotification({
+        icon: Ti.Android.R.drawable.ic_dialog_info,
+        contentTitle: 'NOTIFICATIONS',
+        contentText : 'You have 3 notifications.',
+        groupKey: groupKey,
+        groupSummary: true
+    })
+);
+```
+
 
 <ApiDocs/>

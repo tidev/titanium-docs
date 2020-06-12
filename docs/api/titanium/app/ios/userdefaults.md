@@ -14,8 +14,11 @@ To create a UserDefaults object, use the <Titanium.App.iOS.createUserDefaults> m
 
 Creating a UserDefaults object
 
-    var props = Ti.App.iOS.createUserDefaults({
-        suiteName: 'group.mySuite'
-    });
+``` js
+var props = Ti.App.iOS.createUserDefaults({
+    suiteName: 'group.mySuite'
+});
+```
+
 
 <ApiDocs/>

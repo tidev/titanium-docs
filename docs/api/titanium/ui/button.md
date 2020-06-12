@@ -80,11 +80,15 @@ automatically, so you can create a button by setting only the `systemButton` pro
 
 For example:
 
-    var cancelButton = Ti.UI.createButton({ systemButton: Ti.UI.iOS.SystemButton.CANCEL });
+``` js
+var cancelButton = Ti.UI.createButton({ systemButton: Ti.UI.iOS.SystemButton.CANCEL });
+```
 
 In Alloy, you can omit the namespace when setting the `systemButton` property:
 
-    <Button id="cancelbtn" systemButton="CANCEL"></Button>
+``` xml
+<Button id="cancelbtn" systemButton="CANCEL"></Button>
+```
 
 Note that the `systemButton` property specifies *appearance*, not behavior. For
 example, to bring up the camera when the user presses the **Camera** button, you must
@@ -106,35 +110,41 @@ when the button is pressed.
 
 ### Simple Button Example
 
+``` js
 var button = Titanium.UI.createButton({
-   title: 'Hello',
-   top: 10,
-   width: 100,
-   height: 50
+    title: 'Hello',
+    top: 10,
+    width: 100,
+    height: 50
 });
 button.addEventListener('click',function(e)
 {
-   Titanium.API.info("You clicked the button");
+    Titanium.API.info("You clicked the button");
 });
+```
+
 
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
 
 button.xml:
-
-    <Alloy>
-        <Window id="win" backgroundColor="white">
-            <!-- The title property can also be defined as node text. -->
-            <Button id="button" onClick="doClick" title="Hello"
-                top="10" width="100" height="50" />
-        </Window>
-    </Alloy>
+``` xml
+<Alloy>
+    <Window id="win" backgroundColor="white">
+        <!-- The title property can also be defined as node text. -->
+        <Button id="button" onClick="doClick" title="Hello"
+            top="10" width="100" height="50" />
+    </Window>
+</Alloy>
+```
 
 button.js:
+``` js
+function doClick(e){
+    Titanium.API.info("You clicked the button");
+};
+```
 
-    function doClick(e){
-        Titanium.API.info("You clicked the button");
-    };
 
 <ApiDocs/>

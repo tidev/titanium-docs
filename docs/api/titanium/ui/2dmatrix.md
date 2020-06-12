@@ -36,9 +36,11 @@ Use the <Titanium.UI.create2DMatrix> method to create a new 2D matrix. You can
 pass an optional <MatrixCreationDict> dictionary to the method to initialize the
 matrix. For example, the following creates a new matrix with a 45 degree rotation.
 
-    var m = Ti.UI.create2DMatrix({
-        rotate: 45
-    });
+``` js
+var m = Ti.UI.create2DMatrix({
+    rotate: 45
+});
+```
 
 If you pass no arguments, `create2DMatrix` returns an identity matrix.
 
@@ -48,33 +50,36 @@ If you pass no arguments, `create2DMatrix` returns an identity matrix.
 
 The following uses a 2D matrix to translate a label in the y direction.
 
-    var win = Ti.UI.createWindow({
-      backgroundColor: 'white'
-    });
+``` js
+var win = Ti.UI.createWindow({
+  backgroundColor: 'white'
+});
 
-    var label = Ti.UI.createLabel({
-      font:{fontSize:50},
-      text:'Titanium',
-      textAlign:'center',
-      top: 100
-    });
-    win.add(label);
+var label = Ti.UI.createLabel({
+  font:{fontSize:50},
+  text:'Titanium',
+  textAlign:'center',
+  top: 100
+});
+win.add(label);
 
-    var button = Ti.UI.createButton({
-      title:'Animate',
-      bottom:20,
-      width:200, height:40
-    });
-    win.add(button);
+var button = Ti.UI.createButton({
+  title:'Animate',
+  bottom:20,
+  width:200, height:40
+});
+win.add(button);
 
-    button.addEventListener('click', function(){
-      var t1 = Ti.UI.create2DMatrix();
-      t1 = t1.translate(0, 300);
-      var a1 = Ti.UI.createAnimation();
-      a1.transform = t1;
-      a1.duration = 800;
-      label.animate(a1);
-    });
-    win.open();
+button.addEventListener('click', function(){
+  var t1 = Ti.UI.create2DMatrix();
+  t1 = t1.translate(0, 300);
+  var a1 = Ti.UI.createAnimation();
+  a1.transform = t1;
+  a1.duration = 800;
+  label.animate(a1);
+});
+win.open();
+```
+
 
 <ApiDocs/>

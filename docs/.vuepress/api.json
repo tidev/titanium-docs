@@ -13,7 +13,6 @@
 			"titanium/ui/button",
 			"titanium/ui/buttonbar",
 			"titanium/ui/clipboard",
-			"titanium/ui/coverflowview",
 			"titanium/ui/dashboarditem",
 			"titanium/ui/dashboardview",
 			"titanium/ui/emaildialog",
@@ -64,7 +63,6 @@
 		"title": "User Interface (iOS)",
 		"children": [
 			"titanium/ui/ios",
-			"titanium/ui/ios/adview",
 			"titanium/ui/ios/alertdialogstyle",
 			"titanium/ui/ios/anchorattachmentbehavior",
 			"titanium/ui/ios/animationstyle",
@@ -126,7 +124,6 @@
 		"children": [
 			"titanium/app",
 			"titanium/app/android",
-			"titanium/app/android/r",
 			"titanium/app/ios",
 			"titanium/app/ios/backgroundservice",
 			"titanium/app/ios/localnotification",
@@ -295,6 +292,6 @@
 	},
 	{
 		"title": "Other",
-		"children": ["global", "global/console", "global/json", "global/string"]
+		"children": ["global", "global/console", "global/string"]
 	}
 ]

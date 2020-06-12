@@ -1,0 +1,5 @@
+# BatchQueryError
+
+<TypeHeader/>
+
+<ApiDocs/>

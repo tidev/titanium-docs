@@ -1,5 +1,0 @@
-# ScrollViewAnimationProperties
-
-<TypeHeader/>
-
-<ApiDocs/>

@@ -113,13 +113,15 @@ app is running. You can read it more [here](https://developer.android.com/traini
 In Titanium SDK, to support this, we have the <Titanium.Android.requestPermissions> method. It is used to
 request any permission you may need. An example of using it is shown below:
 
-    var permissions = [ 'android.permission.CAMERA', 'android.permission.READ_EXTERNAL_STORAGE' ];
-    Ti.Android.requestPermissions(permissions, function (e) {
-        if (e.success) {
-            Ti.API.info('SUCCESS');
-        } else {
-            Ti.API.info('ERROR: ' + e.error);
-        }
-    });
+``` js
+var permissions = [ 'android.permission.CAMERA', 'android.permission.READ_EXTERNAL_STORAGE', 'android.permission.WRITE_EXTERNAL_STORAGE' ];
+Ti.Android.requestPermissions(permissions, function (e) {
+    if (e.success) {
+        Ti.API.info('SUCCESS');
+    } else {
+        Ti.API.info('ERROR: ' + e.error);
+    }
+});
+```
 
 <ApiDocs/>

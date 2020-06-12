@@ -86,7 +86,9 @@ On Android and iOS, the default unit can be overriden on a per-application level
 `ti.ui.defaultunit` property in `tiapp.xml`. For example, to use DIPs as the
 default on all platforms, set `defaultunit` to `dip`:
 
-    <property name="ti.ui.defaultunit" type="string">dip</property>
+``` xml
+<property name="ti.ui.defaultunit" type="string">dip</property>
+```
 
 The value for `ti.ui.defaultunit` can be any of the unit specifiers defined above, or
 `system` to specify that the platform's default unit should be used.
@@ -215,20 +217,26 @@ In earlier versions of Titanium Mobile, views had clipping enabled by default.
 
 Create a rounded view.
 
-    var view = Titanium.UI.createView({
-       borderRadius:10,
-       backgroundColor:'red',
-       width:50,
-       height:50
-    });
-    window.add(view);
+``` js
+var view = Titanium.UI.createView({
+    borderRadius:10,
+    backgroundColor:'red',
+    width:50,
+    height:50
+});
+window.add(view);
+```
+
 
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
 
-    <Alloy>
-        <View id="view" borderRadius="10" backgroundColor="red" width="50" height="50" />
-    </Alloy>
+``` xml
+<Alloy>
+    <View id="view" borderRadius="10" backgroundColor="red" width="50" height="50" />
+</Alloy>
+```
+
 
 <ApiDocs/>

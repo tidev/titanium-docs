@@ -8,24 +8,26 @@ A list item is a combination of a <ListDataItem> and <ItemTemplate>.  The list d
 represents the actual data, while the item template represents the style elements of the item.
 
 You should not create `ListItem` objects with a JavaScript factory method, as you do other Titanium proxies.
-Instead, you should pass a <ListDataItem> array to the `setItems` method of a `ListSection`. The list data items
+Instead, you should pass a <ListDataItem> array to the `setItems` method of a `ListSection`. The list data items 
 contain the data you want to display in the list.
 
 Alloy applications can use **`<ListItem>`** elements to create `ListItem` objects. `<ListItem>` elements
-must be nested inside a **`<ListSection>`** element, which itself is nested in a `<ListView>` element,
+must be nested inside a **`<ListSection>`** element, which itself is nested in a `<ListView>` element, 
 as shown below:
 
-    <Alloy>
-        <ListView id="list">
-            <ListSection id="accounts">
-                <ListItem image="images/checking_account.png" title="Checking"/>
-                <ListItem image="images/saving_account.png" title="Savings"/>
-            </ListSection>
-        </ListView>
-    </Alloy>
+``` xml
+<Alloy>
+    <ListView id="list">
+        <ListSection id="accounts">
+            <ListItem image="images/checking_account.png" title="Checking"/>
+            <ListItem image="images/saving_account.png" title="Savings"/>
+        </ListSection>
+    </ListView>
+</Alloy>
+```
 
 By default, only the `title`, `image` and `accessoryType` keys of the list data item's
-`properties` dictionary are displayed if an item template is not defined.  See "Default List Items"
+`properties` dictionary are displayed if an item template is not defined.  See "Default List Items" 
 under "Examples" section for an example of using the default template.
 
 
@@ -101,7 +103,7 @@ To monitor events that bubble to the `ListItem` or to monitor events of the view
 bind them to the item by using the `events` dictionary of the item template or the child view
 templates respectively. Add the bindings as key-value pairs, where the key is the event name
 and the value is the callback (or array of callbacks for multiple bindings). See "List Items
-with an Item Template" under "Examples" section for an example of binding a `click` event to an
+with an Item Template" under "Examples" section for an example of binding a `click` event to an 
 item using an item template.
 
 ## Examples
@@ -111,78 +113,84 @@ item using an item template.
 Creates a list without using an item template. Monitors the `itemclick` event to check and
 uncheck tasks.
 
-    var win = Ti.UI.createWindow({backgroundColor: 'white'});
-    var listView = Ti.UI.createListView();
+``` js
+var win = Ti.UI.createWindow({backgroundColor: 'white'});
+var listView = Ti.UI.createListView();
 
-    var tasks = [
-        {id: 'trash', name: 'Take Out the Trash', icon: 'trash.png'},
-        {id: 'dishes', name: 'Do the Dishes', icon: 'dishes.png'},
-        {id: 'doggie', name: 'Walk the Dog', icon: 'doggie.png'}
-    ];
+var tasks = [
+    {id: 'trash', name: 'Take Out the Trash', icon: 'trash.png'},
+    {id: 'dishes', name: 'Do the Dishes', icon: 'dishes.png'},
+    {id: 'doggie', name: 'Walk the Dog', icon: 'doggie.png'}
+];
 
-    var data = [];
-    for (var i = 0; i < tasks.length; i++) {
-        data.push({
-            properties: {
-                itemId: tasks[i].id,
-                title: tasks[i].name,
-                image: tasks[i].icon,
-                accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_NONE,
-                color: 'black'
-            }
-        });
-    }
-
-    var section = Ti.UI.createListSection();
-    section.setItems(data);
-    listView.sections = [section];
-    listView.addEventListener('itemclick', function(e) {
-        var item = section.getItemAt(e.itemIndex);
-        if (item.properties.accessoryType == Ti.UI.LIST_ACCESSORY_TYPE_NONE) {
-            item.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_CHECKMARK;
-            item.properties.color = 'red';
-        } else {
-            item.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_NONE;
-            item.properties.color = 'black';
+var data = [];
+for (var i = 0; i < tasks.length; i++) {
+    data.push({ 
+        properties: {
+            itemId: tasks[i].id,
+            title: tasks[i].name,
+            image: tasks[i].icon,
+            accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_NONE,
+            color: 'black'
         }
-        section.updateItemAt(e.itemIndex, item);
     });
-    win.add(listView);
-    win.open();
+}
+
+var section = Ti.UI.createListSection();
+section.setItems(data);
+listView.sections = [section];
+listView.addEventListener('itemclick', function(e) {
+    var item = section.getItemAt(e.itemIndex);
+    if (item.properties.accessoryType == Ti.UI.LIST_ACCESSORY_TYPE_NONE) {
+        item.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_CHECKMARK;
+        item.properties.color = 'red';
+    } else {
+        item.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_NONE;
+        item.properties.color = 'black';
+    }
+    section.updateItemAt(e.itemIndex, item);
+});
+win.add(listView);
+win.open();
+```
+
 
 ### Default List Items (Alloy version)
 
-Alloy version of previous example. For additional Alloy examples of using `ListView`, see <Titanium.UI.ListView>.
+Alloy version of previous example. For additional Alloy examples of using `ListView`, see <Titanium.UI.ListView>. 
 
 index.xml
-
-    <!-- views/index.xml -->
-    <Alloy>
-        <Window class="container" title="Some things">
-            <ListView id="listView">
-                <ListSection id="section">
-                    <ListItem image="images/trash.jpg" title="Take Out the Trash"/>
-                    <ListItem image="images/dishes.png" title="Do the Dishes"/>
-                    <ListItem image="images/doge.png" title="Walk the Dog"/>
-                </ListSection>
-            </ListView>
-        </Window>
-    </Alloy>
+``` xml
+<!-- views/index.xml -->
+<Alloy>
+    <Window class="container" title="Some things">
+        <ListView id="listView">
+            <ListSection id="section">
+                <ListItem image="images/trash.jpg" title="Take Out the Trash"/>
+                <ListItem image="images/dishes.png" title="Do the Dishes"/>
+                <ListItem image="images/doge.png" title="Walk the Dog"/>
+            </ListSection>
+        </ListView>
+    </Window>
+</Alloy>
+```
 
 index.js
+``` js
+// controllers/index.js
+$.listView.addEventListener('itemclick', function(e) {
+    var item = $.section.getItemAt(e.itemIndex);
+    if (item.properties.accessoryType == Ti.UI.LIST_ACCESSORY_TYPE_NONE) {
+        item.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_CHECKMARK;
+        item.properties.color = 'red';
+    } else {
+        item.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_NONE;
+        item.properties.color = 'black';
+    }
+    $.section.updateItemAt(e.itemIndex, item);
+});
+```
 
-    <!-- controllers/index.js -->
-    $.listView.addEventListener('itemclick', function(e) {
-        var item = $.section.getItemAt(e.itemIndex);
-        if (item.properties.accessoryType == Ti.UI.LIST_ACCESSORY_TYPE_NONE) {
-            item.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_CHECKMARK;
-            item.properties.color = 'red';
-        } else {
-            item.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_NONE;
-            item.properties.color = 'black';
-        }
-        $.section.updateItemAt(e.itemIndex, item);
-    });
 
 ### List Items with an Item Template
 
@@ -192,104 +200,107 @@ smaller text.
 
 Monitors the `click` event of the item rather than the `itemclick` event of the list view.
 
-    var win = Ti.UI.createWindow({backgroundColor: 'white'});
+``` js
+var win = Ti.UI.createWindow({backgroundColor: 'white'});
 
-    var plainTemplate = {
-        childTemplates: [
-            {                            // Image justified left
-                type: 'Ti.UI.ImageView', // Use an image view for the image
-                bindId: 'pic',           // Maps to a custom pic property of the item data
-                properties: {            // Sets the image view properties
-                    width: '50dp', height: '50dp', left: 0
-                }
-            },
-            {                            // Title
-                type: 'Ti.UI.Label',     // Use a label for the title
-                bindId: 'title',         // Maps to a custom title property of the item data
-                properties: {            // Sets the label properties
-                    color: 'black',
-                    font: { fontFamily:'Arial', fontSize: '20dp', fontWeight:'bold' },
-                    left: '60dp', top: 0,
-                },
-            },
-            {                            // Subtitle
-                type: 'Ti.UI.Label',     // Use a label for the subtitle
-                bindId: 'subtitle',      // Maps to a custom subtitle property of the item data
-                properties: {            // Sets the label properties
-                    color: 'gray',
-                    font: { fontFamily:'Arial', fontSize: '14dp' },
-                    left: '60dp', top: '25dp',
-                }
+var plainTemplate = {
+    childTemplates: [
+        {                            // Image justified left
+            type: 'Ti.UI.ImageView', // Use an image view for the image
+            bindId: 'pic',           // Maps to a custom pic property of the item data
+            properties: {            // Sets the image view properties
+                width: '50dp', height: '50dp', left: 0
             }
-        ],
-        // Binds a callback to the click event, which catches events bubbled by the view subcomponents.
-        events: {click: toggleCheck }
-    };
-
-    // The following JSON API calls copy the plainTemplate object minus functions.
-    // This method of copying an object is simple but not quick.
-    // If performance is a factor, create your own method to copy an object.
-
-    var redTemplate = JSON.parse(JSON.stringify(plainTemplate));
-    // Change the text color to red
-    redTemplate.childTemplates[1].properties.color = 'red';
-    redTemplate.childTemplates[2].properties.color = 'red';
-    // Rebind the click event callback
-    redTemplate.events.click = toggleCheck;
-
-    var listView = Ti.UI.createListView({
-        // Maps plainTemplate to 'uncheck' and redTemplate to 'check'
-        templates: { 'uncheck': plainTemplate, 'check': redTemplate },
-        // Use 'uncheck', that is, the plainTemplate created earlier for all items
-        // Can be overridden by the item's template property
-        defaultItemTemplate: 'uncheck'
-    });
-
-    var tasks = [
-        {id: 'trash', name: 'Take Out the Trash', person: 'Yakko', icon: 'trash.png'},
-        {id: 'dishes', name: 'Do the Dishes', person: 'Wakko', icon: 'dishes.png'},
-        {id: 'doggie', name: 'Walk the Dog', person: 'Dot', icon: 'doggie.png'}
-    ];
-
-    var data = [];
-    for (var i = 0; i < tasks.length; i++) {
-        data.push({
-            // Maps to the title component in the template
-            // Sets the text property of the Label component
-            title : { text: tasks[i].name },
-            // Maps to the subtitle component in the template
-            // Sets the text property of the Label component
-            subtitle : { text : tasks[i].person },
-            // Maps to the pic component in the template
-            // Sets the image property of the ImageView component
-            pic : { image : tasks[i].icon },
-            // Sets the regular list data properties
-            properties : {
-                itemId: tasks[i].id,
-                accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_NONE,
+        },
+        {                            // Title
+            type: 'Ti.UI.Label',     // Use a label for the title
+            bindId: 'title',         // Maps to a custom title property of the item data
+            properties: {            // Sets the label properties
+                color: 'black',
+                font: { fontFamily:'Arial', fontSize: '20dp', fontWeight:'bold' },
+                left: '60dp', top: 0,
+            },
+        },
+        {                            // Subtitle
+            type: 'Ti.UI.Label',     // Use a label for the subtitle
+            bindId: 'subtitle',      // Maps to a custom subtitle property of the item data
+            properties: {            // Sets the label properties
+                color: 'gray',
+                font: { fontFamily:'Arial', fontSize: '14dp' },
+                left: '60dp', top: '25dp',
             }
-        });
-    }
-
-    var section = Ti.UI.createListSection();
-    section.setItems(data);
-    listView.sections = [section];
-
-    // Modified version of the `itemclick` event listener
-    // Changes the item template rather than the list item's color property
-    function toggleCheck(e) {
-        var item = section.getItemAt(e.itemIndex);
-        if (item.properties.accessoryType == Ti.UI.LIST_ACCESSORY_TYPE_NONE) {
-            item.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_CHECKMARK;
-            item.template = 'check';
-        } else {
-            item.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_NONE;
-            item.template = 'uncheck';
         }
-        section.updateItemAt(e.itemIndex, item);
-    }
+    ],
+    // Binds a callback to the click event, which catches events bubbled by the view subcomponents.
+    events: {click: toggleCheck }
+};
 
-    win.add(listView);
-    win.open();
+// The following JSON API calls copy the plainTemplate object minus functions.
+// This method of copying an object is simple but not quick.
+// If performance is a factor, create your own method to copy an object.
+
+var redTemplate = JSON.parse(JSON.stringify(plainTemplate));
+// Change the text color to red
+redTemplate.childTemplates[1].properties.color = 'red';
+redTemplate.childTemplates[2].properties.color = 'red';
+// Rebind the click event callback
+redTemplate.events.click = toggleCheck;
+
+var listView = Ti.UI.createListView({
+    // Maps plainTemplate to 'uncheck' and redTemplate to 'check' 
+    templates: { 'uncheck': plainTemplate, 'check': redTemplate },
+    // Use 'uncheck', that is, the plainTemplate created earlier for all items
+    // Can be overridden by the item's template property
+    defaultItemTemplate: 'uncheck'
+});
+
+var tasks = [
+    {id: 'trash', name: 'Take Out the Trash', person: 'Yakko', icon: 'trash.png'},
+    {id: 'dishes', name: 'Do the Dishes', person: 'Wakko', icon: 'dishes.png'},
+    {id: 'doggie', name: 'Walk the Dog', person: 'Dot', icon: 'doggie.png'}
+];
+
+var data = [];
+for (var i = 0; i < tasks.length; i++) {
+    data.push({
+        // Maps to the title component in the template
+        // Sets the text property of the Label component
+        title : { text: tasks[i].name },
+        // Maps to the subtitle component in the template
+        // Sets the text property of the Label component
+        subtitle : { text : tasks[i].person },
+        // Maps to the pic component in the template
+        // Sets the image property of the ImageView component
+        pic : { image : tasks[i].icon },
+        // Sets the regular list data properties
+        properties : {
+            itemId: tasks[i].id,
+            accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_NONE,
+        }
+    });
+}
+
+var section = Ti.UI.createListSection();
+section.setItems(data);
+listView.sections = [section];
+
+// Modified version of the `itemclick` event listener
+// Changes the item template rather than the list item's color property
+function toggleCheck(e) {
+    var item = section.getItemAt(e.itemIndex);
+    if (item.properties.accessoryType == Ti.UI.LIST_ACCESSORY_TYPE_NONE) {
+        item.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_CHECKMARK;
+        item.template = 'check';
+    } else {
+        item.properties.accessoryType = Ti.UI.LIST_ACCESSORY_TYPE_NONE;
+        item.template = 'uncheck';
+    }
+    section.updateItemAt(e.itemIndex, item);
+} 
+
+win.add(listView);
+win.open();
+```
+
 
 <ApiDocs/>

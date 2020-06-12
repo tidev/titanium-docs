@@ -11,14 +11,18 @@ property is defined inside the root-level `<ti:app>` element with the `<property
 Use the `name` attribute to define your property name and place the value inline with the
 `<property>` element. For example, to define an app property called `foo` with the value `42`:
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <ti:app xmlns:ti="http://ti.appcelerator.org">
-        <property name="foo" type="string">42</property>
-    </ti:app>
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="foo" type="string">42</property>
+</ti:app>
+```
 
 Then, you can retrieve the property during runtime with the following API call:
 
-    var foo = Ti.App.Properties.getString('foo');
+``` js
+var foo = Ti.App.Properties.getString('foo');
+```
 
 As of Release 3.2.0, any application properties defined in the `tiapp.xml` file are stored in the
 device's secure storage, making them read-only.  Additionally, external access to these
@@ -39,18 +43,24 @@ overwritten by these APIs and accessed externally by other applications and modu
 
 Store a string property.
 
-    Ti.App.Properties.setString('givenName', 'Paul');
-    Ti.API.info('The value of the givenName property is: ' + Ti.App.Properties.getString('givenName'));
+``` js
+Ti.App.Properties.setString('givenName', 'Paul');
+Ti.API.info('The value of the givenName property is: ' + Ti.App.Properties.getString('givenName'));
+```
+
 
 ### Enumerate over saved properties
 
 Output all saved properties to the console.
 
-    var props = Ti.App.Properties.listProperties();
+``` js
+var props = Ti.App.Properties.listProperties();
 
-    for (var i=0, ilen=props.length; i<ilen; i++){
-        var value = Ti.App.Properties.getString(props[i]);
-        Ti.API.info(props[i] + ' = ' + value);
-    }
+for (var i = 0, ilen = props.length; i < ilen; i++){
+    var value = Ti.App.Properties.getString(props[i]);
+    Ti.API.info(props[i] + ' = ' + value);
+}
+```
+
 
 <ApiDocs/>

@@ -13,6 +13,7 @@ This style object attaches to a <Titanium.Android.Notification> object and modif
 
 ### Big text style Example
 
+``` js
 var bigTextStyle = Titanium.Android.createBigTextStyle({
     bigText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     bigContentTitle: "Title for big text",
@@ -29,5 +30,7 @@ var notification = Titanium.Android.createNotification({
 
 // Send the notification.
 Titanium.Android.NotificationManager.notify(1, notification);
+```
+
 
 <ApiDocs/>

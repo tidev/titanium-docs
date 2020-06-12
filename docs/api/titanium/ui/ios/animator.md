@@ -12,7 +12,7 @@ multiple behaviors as long as those behaviors belong to the same animator.
 
 To use these dynamic animations, first create the items to animate, then:
 
-**1.** Create an animator using the <Titanium.UI.iOS.createAnimator> method.
+**1.** Create an animator using the <Titanium.UI.iOS.createAnimator> method. 
 
 **2.** Set the [referenceView](Titanium.UI.iOS.Animator.referenceView) property to establish the
    coordinate system for the animations.

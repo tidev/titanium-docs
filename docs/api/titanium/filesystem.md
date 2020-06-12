@@ -14,12 +14,15 @@ as well as the other Filesystem submodule API documentation.
 
 This example writes a string to a text file in a shared directory
 
-    var suiteDir = Ti.Filesystem.directoryForSuite('group.appc.Sharing');
-    if (!suiteDir) {
-        logInApp('Suite Directory not found, check Entitlements.');
-        return;
-    }
-    var f = Ti.Filesystem.getFile(suiteDir,'emptyfile.txt');
-    f.write('The file is no longer empty!');
+``` js
+var suiteDir = Ti.Filesystem.directoryForSuite('group.appc.Sharing');
+if (!suiteDir) {
+    logInApp('Suite Directory not found, check Entitlements.');
+    return;
+}
+var f = Ti.Filesystem.getFile(suiteDir,'emptyfile.txt');
+f.write('The file is no longer empty!');
+```
+
 
 <ApiDocs/>

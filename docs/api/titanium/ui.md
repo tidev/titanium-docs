@@ -135,6 +135,44 @@ If a color property is undefined, the default color of the particular UI element
 If a color value is not valid on iOS, the default color is applied, whereas, on Android, the
 color yellow is applied.
 
+### Dark Mode
+
+In iOS 13 Apple introduced support for users to adopt a system-wide Dark Mode setting where the screens, view, menus, and controls use a darker color palette. You can read more about this in the Apple Human Interface Guidelines.
+
+There are two aspects to dark mode that can be specified for your app, colors and images.
+
+#### Specifying Dark Mode colors
+
+To specify colors for dark mode, also known as semantic colors, first create a file called `semantic.colors.json` in the Resources directory for classic applications, or in the assets directory for Alloy applications. Then you can specify color names in the following format:
+
+``` json
+  {
+    "textColor": { // the name for your color
+      "dark": {
+        "color": "#ff85e2", // hex color code to be set
+        "alpha": "50.0" // can be set from a range of 0-100
+      },
+      "light": "#ff1f1f"
+    }
+  }
+```
+
+To reference these colors in your application use the <Titanium.UI.fetchSemanticColor> API, this is a cross platform API that on iOS 13 and above will use the native method that checks the users system-wide setting, and in all other instances will check the <Titanium.UI.semanticColorType> property and return the correct color for the current setting.
+
+#### Specifying Dark Mode images
+
+Note: Dark Mode images are iOS only.
+
+To specify dark mode images, use the `-dark` suffix on the image name. When building your app the images are set as the dark mode variant, then refer to images as normal and iOS will select the correct image dependent on the users system-wide setting.
+
+For example given an image `logo.png` with `@2x` and `@3x` variants, the following dark mode images should exist:
+
+  * logo-dark.png
+  * logo-dark@2x.png
+  * logo-dark@3x.png
+
+And you would reference the image as before using `logo-dark.png`
+
 ## Examples
 
 ### Color Demo
@@ -142,36 +180,39 @@ color yellow is applied.
 The following example demonstrates all the color formats, and color names, that are intended
 to be supported by Titanium. See the [description](Titanium.UI) section for details.
 
-    var colorArray = [
-      '#ff00ff', '#f0f', 'rgb(255,0,255)',
-      'transparent', '#55ff00ff', '#5f0f', 'rgba(255,0,255,0.3)',
-      'aqua', 'black', 'blue', 'brown', 'cyan', 'darkgray', 'fuchsia', 'gray', 'green',
-      'lightgray', 'lime', 'magenta', 'maroon', 'navy', 'olive', 'orange', 'pink',
-      'purple', 'red', 'silver', 'teal', 'white', 'yellow',
-    ];
-    var win = Ti.UI.createWindow({
-      backgroundColor: 'black',
-      exitOnClose: true,
-      fullscreen: false,
-      layout: 'vertical',
-      title: 'Color Demo'
-    });
-    var rows = [];
-    var row;
-    for (var i=0, ilen = colorArray.length; i < ilen; i++){
-      row = Ti.UI.createTableViewRow({
-        color:'black',
-        backgroundColor: colorArray[i],
-        title: colorArray[i],
-        height: 40
-      });
-      rows.push(row);
-    }
-    var table = Ti.UI.createTableView({
-      data: rows,
-      backgroundColor: 'white'
-    });
-    win.add(table);
-    win.open();
+``` js
+var colorArray = [
+  '#ff00ff', '#f0f', 'rgb(255,0,255)',
+  'transparent', '#55ff00ff', '#5f0f', 'rgba(255,0,255,0.3)',
+  'aqua', 'black', 'blue', 'brown', 'cyan', 'darkgray', 'fuchsia', 'gray', 'green',
+  'lightgray', 'lime', 'magenta', 'maroon', 'navy', 'olive', 'orange', 'pink',
+  'purple', 'red', 'silver', 'teal', 'white', 'yellow',
+];
+var win = Ti.UI.createWindow({
+  backgroundColor: 'black',
+  exitOnClose: true,
+  fullscreen: false,
+  layout: 'vertical',
+  title: 'Color Demo'
+});
+var rows = [];
+var row;
+for (var i=0, ilen = colorArray.length; i < ilen; i++){
+  row = Ti.UI.createTableViewRow({
+    color:'black',
+    backgroundColor: colorArray[i],
+    title: colorArray[i],
+    height: 40
+  });
+  rows.push(row);
+}
+var table = Ti.UI.createTableView({
+  data: rows,
+  backgroundColor: 'white'
+});
+win.add(table);
+win.open();
+```
+
 
 <ApiDocs/>

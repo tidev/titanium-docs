@@ -56,28 +56,34 @@ As on iOS, the root tab window cannot be closed.
 
 In this example, we create a simple tab and add it to a tab group.
 
-    var window = Ti.UI.createWindow({
-        title: 'My Tab'
-    });
+``` js
+var window = Ti.UI.createWindow({
+    title: 'My Tab'
+});
 
-    var tab = Ti.UI.createTab({
-        window: window,
-        title: 'My Tab',
-        icon: 'myicon.png'
-    });
+var tab = Ti.UI.createTab({
+    window: window,
+    title: 'My Tab',
+    icon: 'myicon.png'
+});
 
-    tabGroup.addTab(tab);
+tabGroup.addTab(tab);
+```
+
 
 ### Alloy XML Markup
 
 Previous example an an Alloy view.
 
-    <Alloy>
-        <TabGroup id="tabGroup">
-            <Tab id="tab" title="My Tab" icon="myicon.png">
-                <Window id="window" title="My Tab" />
-            </Tab>
-         </TabGroup>
-    </Alloy>
+``` xml
+<Alloy>
+    <TabGroup id="tabGroup">
+        <Tab id="tab" title="My Tab" icon="myicon.png">
+            <Window id="window" title="My Tab" />
+        </Tab>
+      </TabGroup>
+</Alloy>
+```
+
 
 <ApiDocs/>

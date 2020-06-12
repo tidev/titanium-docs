@@ -19,64 +19,68 @@ For examples of Attributed Strings, see the
 Creates an AttributedString proxy, adds some attributes to it, and applies them
 to a <Titanium.UI.Label>.
 
-    var win = Titanium.UI.createWindow({
-        backgroundColor: '#ddd',
-    });
+``` js
+var win = Titanium.UI.createWindow({
+    backgroundColor: '#ddd',
+});
 
-    win.open();
+win.open();
 
-    var text =  'Bacon ipsum dolor Appcelerator Titanium rocks! sit amet fatback leberkas salami sausage tongue strip steak.';
+var text =  'Bacon ipsum dolor Appcelerator Titanium rocks! sit amet fatback leberkas salami sausage tongue strip steak.';
 
-    var attr = Titanium.UI.createAttributedString({
-        text: text,
-        attributes: [
-            // Underlines text
-            {
-                type: Titanium.UI.ATTRIBUTE_UNDERLINES_STYLE,
-                value: Ti.UI.ATTRIBUTE_UNDERLINE_STYLE_SINGLE,
-                range: [text.indexOf('Titanium'), ('Titanium').length]
-            },
-            // Sets a background color
-            {
-                type: Titanium.UI.ATTRIBUTE_BACKGROUND_COLOR,
-                value: "red",
-                range: [text.indexOf('Appcelerator'), ('Appcelerator').length]
-            },
-            {
-                type: Titanium.UI.ATTRIBUTE_BACKGROUND_COLOR,
-                value: "blue",
-                range: [text.indexOf('Titanium'), ('Titanium').length]
-            },
-            {
-                type: Titanium.UI.ATTRIBUTE_BACKGROUND_COLOR,
-                value: "yellow",
-                range: [text.indexOf('rocks!'), ('rocks!').length]
-            },
-            // Sets a foreground color
-            {
-                type: Titanium.UI.ATTRIBUTE_FOREGROUND_COLOR,
-                value: "orange",
-                range: [0,  text.length]
-            },
-            {
-                type: Titanium.UI.ATTRIBUTE_FOREGROUND_COLOR,
-                value: "black",
-                range: [text.indexOf('rocks!'), ('rocks!').length]
-            }
-        ]
-    });
+var attr = Titanium.UI.createAttributedString({
+    text: text,
+    attributes: [
+        // Underlines text
+        {
+            type: Titanium.UI.ATTRIBUTE_UNDERLINES_STYLE,
+            value: Ti.UI.ATTRIBUTE_UNDERLINE_STYLE_SINGLE,
+            range: [text.indexOf('Titanium'), ('Titanium').length]
+        },
+        // Sets a background color
+        {
+            type: Titanium.UI.ATTRIBUTE_BACKGROUND_COLOR,
+            value: "red",
+            range: [text.indexOf('Appcelerator'), ('Appcelerator').length]
+        },
+        {
+            type: Titanium.UI.ATTRIBUTE_BACKGROUND_COLOR,
+            value: "blue",
+            range: [text.indexOf('Titanium'), ('Titanium').length]
+        },
+        {
+            type: Titanium.UI.ATTRIBUTE_BACKGROUND_COLOR,
+            value: "yellow",
+            range: [text.indexOf('rocks!'), ('rocks!').length]
+        },
+        // Sets a foreground color
+        {
+            type: Titanium.UI.ATTRIBUTE_FOREGROUND_COLOR,
+            value: "orange",
+            range: [0,  text.length]
+        },
+        {
+            type: Titanium.UI.ATTRIBUTE_FOREGROUND_COLOR,
+            value: "black",
+            range: [text.indexOf('rocks!'), ('rocks!').length]
+        }
+    ]
+});
 
-    var label = Titanium.UI.createLabel({
-        left: 20,
-        right: 20,
-        height: Titanium.UI.SIZE,
-        attributedString: attr
-    });
+var label = Titanium.UI.createLabel({
+    left: 20,
+    right: 20,
+    height: Titanium.UI.SIZE,
+    attributedString: attr
+});
 
-    win.add(label);
+win.add(label);
+```
+
 
 ### Adds attributes, one by one.
 
+``` js
 var win = Titanium.UI.createWindow({
     backgroundColor: '#ddd',
 });
@@ -103,5 +107,7 @@ var label = Titanium.UI.createLabel({
 });
 
 win.add(label);
+```
+
 
 <ApiDocs/>

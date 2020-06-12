@@ -60,24 +60,27 @@ This makes it difficult for the content to render properly inside a ScrollView.
 
 The following code creates a simple video player to play a local video file.
 
-    var vidWin = Titanium.UI.createWindow({
-        title : 'Video View Demo',
-        backgroundColor : '#fff'
-    });
+``` js
+var vidWin = Titanium.UI.createWindow({
+    title : 'Video View Demo',
+    backgroundColor : '#fff'
+});
 
-    var videoPlayer = Titanium.Media.createVideoPlayer({
-        top : 2,
-        autoplay : true,
-        backgroundColor : 'blue',
-        height : 300,
-        width : 300,
-        mediaControlStyle : Titanium.Media.VIDEO_CONTROL_DEFAULT,
-        scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FIT
-    });
+var videoPlayer = Titanium.Media.createVideoPlayer({
+    top : 2,
+    autoplay : true,
+    backgroundColor : 'blue',
+    height : 300,
+    width : 300,
+    mediaControlStyle : Titanium.Media.VIDEO_CONTROL_DEFAULT,
+    scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FIT
+});
 
-    videoPlayer.url = 'movie.mp4';
-    vidWin.add(videoPlayer);
-    vidWin.open();
+videoPlayer.url = 'movie.mp4';
+vidWin.add(videoPlayer);
+vidWin.open();
+```
+
 
 ### Android Fullscreen Video Player
 
@@ -90,64 +93,69 @@ demonstrate a method for dismissing the player programmatically. In practice, th
 can always dismiss the player by using the **Back** button, so an on-screen
 control would not be required.
 
-    Titanium.UI.setBackgroundColor('#000');
-    var win = Titanium.UI.createWindow({
-        title : 'Test',
-        backgroundColor : '#fff',
-        exitOnClose : true
+``` js
+Titanium.UI.setBackgroundColor('#000');
+var win = Titanium.UI.createWindow({
+    title : 'Test',
+    backgroundColor : '#fff',
+    exitOnClose : true
+});
+
+// Change to a valid URL
+var contentURL = "http://www.example.com/stream.mp4";
+
+var openButton = Ti.UI.createButton({
+    title : "Start Video",
+    top : "0dp",
+    height : "40dp",
+    left : "10dp",
+    right : "10dp"
+});
+
+openButton.addEventListener('click', function() {
+    var activeMovie = Titanium.Media.createVideoPlayer({
+        url : contentURL,
+        backgroundColor : 'blue',
+        mediaControlStyle : Titanium.Media.VIDEO_CONTROL_DEFAULT,
+        scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FILL,
+        fullscreen : true,
+        autoplay : true
     });
 
-    // Change to a valid URL
-    var contentURL = "http://www.example.com/stream.mp4";
-
-    var openButton = Ti.UI.createButton({
-        title : "Start Video",
+    var closeButton = Ti.UI.createButton({
+        title : "Exit Video",
         top : "0dp",
         height : "40dp",
         left : "10dp",
         right : "10dp"
     });
 
-    openButton.addEventListener('click', function() {
-        var activeMovie = Titanium.Media.createVideoPlayer({
-            url : contentURL,
-            backgroundColor : 'blue',
-            mediaControlStyle : Titanium.Media.VIDEO_CONTROL_DEFAULT,
-            scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FILL,
-            fullscreen : true,
-            autoplay : true
-        });
-
-        var closeButton = Ti.UI.createButton({
-            title : "Exit Video",
-            top : "0dp",
-            height : "40dp",
-            left : "10dp",
-            right : "10dp"
-        });
-
-        closeButton.addEventListener('click', function() {
-            activeMovie.hide();
-            activeMovie.release();
-            activeMovie = null;
-        });
-
-        activeMovie.add(closeButton);
+    closeButton.addEventListener('click', function() {
+        activeMovie.hide();
+        activeMovie.release();
+        activeMovie = null;
     });
-    win.add(openButton);
-    win.open();
+
+    activeMovie.add(closeButton);
+});
+win.add(openButton);
+win.open();
+```
+
 
 ### Alloy XML Markup
 
 Previous simple example as an Alloy view.
 
-simplevideoplayer.xml:
+**simplevideoplayer.xml:**
+``` xml
+<Alloy>
+    <Window id="vidWin" title="Video View Demo" backgroundColor="#fff">
+        <VideoPlayer id="videoPlayer" ns="Ti.Media" top="2" url="/movie.mp4"
+                      height="300" width="300" backgroundColor="blue" autoplay="true" />
+    </Window>
+</Alloy>
+```
 
-    <Alloy>
-        <Window id="vidWin" title="Video View Demo" backgroundColor="#fff">
-            <VideoPlayer id="videoPlayer" ns="Ti.Media" top="2" url="/movie.mp4"
-                         height="300" width="300" backgroundColor="blue" autoplay="true" />
-        </Window>
-    </Alloy>
 
 <ApiDocs/>

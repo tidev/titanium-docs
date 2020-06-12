@@ -11,11 +11,11 @@ the aspect ratio maintained, up to a maximum size that does not exceed its paren
 
 ### Remote Images
 
-You can display both local and remote images in an ImageView. When loading remote images, you should
-set the defaultImage property to a local image, which will be displayed while the remote image is being
+You can display both local and remote images in an ImageView. When loading remote images, you should 
+set the defaultImage property to a local image, which will be displayed while the remote image is being 
 downloaded. Remote images are cached automatically on the iOS-, Android- and Windows platform.
 
-Android Note: Android 6 and later uses runtime permissions to secure the user's privacy.
+Android Note: Android 6 and later uses runtime permissions to secure the user's privacy. 
 Therefore, you should call <Titanium.Filesystem.requestStoragePermissions> before attempting to load remote images.
 
 Read more about remote images and general best practices in the [Image Best Practices Guide](https://wiki.appcelerator.org/display/guides2/Image+Best+Practices#ImageBestPractices-Cachingremoteimages).
@@ -47,13 +47,16 @@ The nine-patch technique may be used with any of Titanium's static image propert
 
 In this example, we create a simple image view:
 
-    Ti.UI.backgroundColor = 'white';
-    var win = Ti.UI.createWindow();
-    var image = Ti.UI.createImageView({
-      image:'/images/myimage.png'
-    });
-    win.add(image);
-    win.open();
+``` js
+Ti.UI.backgroundColor = 'white';
+var win = Ti.UI.createWindow();
+var image = Ti.UI.createImageView({
+  image:'/images/myimage.png'
+});
+win.add(image);
+win.open();
+```
+
 
 ### Button with Nine-patch Background Image
 
@@ -63,35 +66,41 @@ selected, and generates a message in the console when clicked.
 Note that images are referenced in the code without the `.9` part of the filename, and that
 the project should be cleaned to ensure that the files are correctly copied to the project.
 
-    var win = Ti.UI.createWindow({
-        backgroundColor: 'white',
-        exitOnClose: true,
-        fullscreen: false,
-        title: 'Click button to test'
-    });
+``` js
+var win = Ti.UI.createWindow({
+    backgroundColor: 'white',
+    exitOnClose: true,
+    fullscreen: false,
+    title: 'Click button to test'
+});
 
-    var button = Ti.UI.createButton({
-        backgroundImage: '/images/custom-slider-right.png',
-        backgroundSelectedImage:'/images/custom-slider-left.png',
-        title: 'Click me!',
-        top: 10,
-        width: 300,
-        height: 200
-    });
-    button.addEventListener('click',function(e){
-        Ti.API.info("You clicked the button");
-    });
-    win.add(button);
-    win.open();
+var button = Ti.UI.createButton({
+    backgroundImage: '/images/custom-slider-right.png',
+    backgroundSelectedImage:'/images/custom-slider-left.png',
+    title: 'Click me!',
+    top: 10,
+    width: 300,
+    height: 200
+});
+button.addEventListener('click',function(e){
+    Ti.API.info("You clicked the button");
+});
+win.add(button);
+win.open();
+```
+
 
 ### Alloy XML Markup
 
 Previous basic image view example as an Alloy view.
 
-    <Alloy>
-        <Window id="win" backgroundColor="white">
-            <ImageView id="image" image="/images/myimage.png" />
-        </Window>
-    </Alloy>
+``` xml
+<Alloy>
+    <Window id="win" backgroundColor="white">
+        <ImageView id="image" image="/images/myimage.png" />
+    </Window>
+</Alloy>
+```
+
 
 <ApiDocs/>

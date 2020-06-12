@@ -29,6 +29,7 @@ set to 'transparent'.
 
 ### Simple Stepper Example
 
+``` js
 var win = Ti.UI.createWindow({
     backgroundColor: '#fff'
 });
@@ -46,25 +47,30 @@ stepper.addEventListener("change", function(e) {
 
 win.add(stepper);
 win.open();
+```
+
 
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
 
 stepper.xml:
-
-    <Alloy>
-        <Window id="window">
-            <Stepper id="stepper" onClick="doClick" tintColor="green" steps="3" />
-        </Window>
-    </Alloy>
+``` xml
+<Alloy>
+    <Window id="window">
+        <Stepper id="stepper" onClick="doClick" tintColor="green" steps="3" />
+    </Window>
+</Alloy>
+```
 
 stepper.js:
+``` js
+function doClick(e) {
+    alert(e.value);
+}
 
-    function doClick(e) {
-        alert(e.value);
-    }
+$.window.open();
+```
 
-    $.window.open();
 
 <ApiDocs/>

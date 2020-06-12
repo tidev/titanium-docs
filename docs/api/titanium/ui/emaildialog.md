@@ -11,14 +11,14 @@
       <td><img src="images/emaildialog/emaildialog_ios.png" height="150"/></td>
       <td><img src="images/emaildialog/emaildialog_wp.png" height="150"/></td>
     </tr>
-  <tbody>
+  </tbody>
   <tfoot>
     <tr>
       <th>Android</th>
       <th>iOS</th>
       <th>Windows Phone</th>
     </tr>
-  </tfoot>
+  <tfoot>
 </table>
 
 The Email Dialog is created with the <Titanium.UI.createEmailDialog> method. The user needs to
@@ -35,12 +35,15 @@ On iOS, you cannot test the e-mail dialog on the iOS Simulator. Test the email d
 
 Create and send an email with a file attachment.
 
-    var emailDialog = Ti.UI.createEmailDialog()
-    emailDialog.subject = "Hello from Titanium";
-    emailDialog.toRecipients = ['foo@yahoo.com'];
-    emailDialog.messageBody = '<b>Appcelerator Titanium Rocks!</b>';
-    var f = Ti.Filesystem.getFile('cricket.wav');
-    emailDialog.addAttachment(f);
-    emailDialog.open();
+``` js
+var emailDialog = Ti.UI.createEmailDialog()
+emailDialog.subject = "Hello from Titanium";
+emailDialog.toRecipients = ['foo@yahoo.com'];
+emailDialog.messageBody = '<b>Appcelerator Titanium Rocks!</b>';
+var f = Ti.Filesystem.getFile('cricket.wav');
+emailDialog.addAttachment(f);
+emailDialog.open();
+```
+
 
 <ApiDocs/>

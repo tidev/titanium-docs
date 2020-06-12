@@ -20,13 +20,16 @@ and methods for generating SHA-1 and SHA-256 hashes and MD5 digests from blob da
 The [Buffer](Titanium.Buffer) object can also contain binary data, and is
 more easily mutable. Extracting blob data to a buffer is somewhat roundabout:
 
-    var blobStream = Ti.Stream.createStream({ source: myBlob, mode: Ti.Stream.MODE_READ });
-    var newBuffer = Ti.createBuffer({ length: myBlob.length });
-    var bytes = blobStream.read(newBuffer);
+``` js
+var blobStream = Ti.Stream.createStream({ source: myBlob, mode: Ti.Stream.MODE_READ });
+var newBuffer = Ti.createBuffer({ length: myBlob.length });
+var bytes = blobStream.read(newBuffer);
+```
 
 Creating a blob from a buffer is much easier:
-
-    var newBlob = myBuffer.toBlob();
+``` js
+var newBlob = myBuffer.toBlob();
+```
 
 In both cases, the conversion involves copying the data from one object to another, so
 you should be conscious of the amount of the data being copied.

@@ -39,60 +39,65 @@ Alloy.createController method, then retrieve the data with the special variable 
 in the controller code.
 
 `app/lib/foo.js`:
+``` js
+// For a classic Titanium project, save the file to 'Resources/foo.js'
+var data = {};
+function setData (obj){
+    data = obj;
+}
+function getData () {
+    return data;
+}
 
-    // For a classic Titanium project, save the file to 'Resources/foo.js'
-    var data = {};
-    function setData (obj){
-        data = obj;
-    }
-    function getData () {
-        return data;
-    }
-
-    // The special variable 'exports' exposes the functions as public
-    exports.setData = setData;
-    exports.getData = getData;
+// The special variable 'exports' exposes the functions as public
+exports.setData = setData;
+exports.getData = getData;
+```
 
 `app/views/index.xml`:
-
-    <Alloy>
-        <Window backgroundColor="blue">
-            <Label onClick="openWindow">Open the Red Window!</Label>
-        </Window>
-    </Alloy>
+``` xml
+<Alloy>
+    <Window backgroundColor="blue">
+        <Label onClick="openWindow">Open the Red Window!</Label>
+    </Window>
+</Alloy>
+```
 
 `app/controllers/index.js`:
+``` js
+var foo = require('foo');
+foo.setData({foobar: 42});
 
-    var foo = require('foo');
-    foo.setData({foobar: 42});
+function openWindow () {
+    var win2 = Alloy.createController('win2').getView();
+    // For Alloy projects, you can pass context
+    // to the controller in the Alloy.createController method.
+    // var win2 = Alloy.createController('win2', {foobar: 42}).getView();
+    win2.open();
+}
 
-    function openWindow () {
-        var win2 = Alloy.createController('win2').getView();
-        // For Alloy projects, you can pass context
-        // to the controller in the Alloy.createController method.
-        // var win2 = Alloy.createController('win2', {foobar: 42}).getView();
-        win2.open();
-    }
-
-    $.index.open();
+$.index.open();
+```
 
 `app/views/win2.xml`:
-
-    <Alloy>
-        <Window backgroundColor="red">
-            <Label id="label">I am a red window.</Label>
-        </Window>
-    </Alloy>
+``` xml
+<Alloy>
+    <Window backgroundColor="red">
+        <Label id="label">I am a red window.</Label>
+    </Window>
+</Alloy>
+```
 
 `app/controllers/win2.js`:
+``` js
+var foo = require('foo');
+$.label.text = foo.getData().foobar;
 
-    var foo = require('foo');
-    $.label.text = foo.getData().foobar;
-
-    // For Alloy projects, you can also pass in context
-    // with the Alloy.createController method and retrieve
-    // it in the controller code.
-    // $.label.text = $.args.foobar;
+// For Alloy projects, you can also pass in context
+// with the Alloy.createController method and retrieve
+// it in the controller code.
+// $.label.text = $.args.foobar;
+```
 
 ### Modal Windows
 
@@ -164,18 +169,19 @@ The example below is a modal window using the Form sheet style:
 
 You can create this type of modal window on iPad with the following code snippet:
 
-    var win = Ti.UI.createNavigationWindow({
-        window: Ti.UI.createWindow({
-            title: "Modal Window"
-        })
-    });
+``` js
+var win = Ti.UI.createNavigationWindow({
+    window: Ti.UI.createWindow({
+        title: "Modal Window"
+    })
+});
 
-    win.open({
-        modal: true,
-        modalTransitionStyle: Ti.UI.iOS.MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL,
-        modalStyle: Ti.UI.iOS.MODAL_PRESENTATION_FORMSHEET
-    });
-
+win.open({
+    modal: true,
+    modalTransitionStyle: Ti.UI.iOS.MODAL_TRANSITION_STYLE_FLIP_HORIZONTAL,
+    modalStyle: Ti.UI.iOS.MODAL_PRESENTATION_FORMSHEET
+});
+```
 
 ### Animations
 
@@ -188,32 +194,34 @@ size from 0 to 110% of it's original size, then, after 1/20th of a second, it is
 back to it's original size at 100%. This gives the bounce effect during animation.
 
 `app/views/index.xml`:
-
-    <Alloy>
-        <Window backgroundColor="blue" onPostlayout="animateOpen" >
-            <Label color="orange">Animated Window</Label>
-        </Window>
-    </Alloy>
+``` xml
+<Alloy>
+    <Window backgroundColor="blue" onPostlayout="animateOpen" >
+        <Label color="orange">Animated Window</Label>
+    </Window>
+</Alloy>
+```
 
 `app/controllers/index.js`:
+``` js
+$.index.transform = Titanium.UI.createMatrix2D().scale(0);
+$.index.open();
 
-    $.index.transform = Titanium.UI.createMatrix2D().scale(0);
-    $.index.open();
-
-    var a = Ti.UI.createAnimation({
-        transform : Ti.UI.createMatrix2D().scale(1.1),
-        duration : 2000,
+var a = Ti.UI.createAnimation({
+    transform : Ti.UI.createMatrix2D().scale(1.1),
+    duration : 2000,
+});
+a.addEventListener('complete', function() {
+    $.index.animate({
+        transform: Ti.UI.createMatrix2D(),
+        duration: 200
     });
-    a.addEventListener('complete', function() {
-        $.index.animate({
-            transform: Ti.UI.createMatrix2D(),
-            duration: 200
-        });
-    });
+});
 
-    function animateOpen() {
-        $.index.animate(a);
-    }
+function animateOpen() {
+    $.index.animate(a);
+}
+```
 
 Note that to animate an Android window while you open it, you need to follow a specific
 procedure which is explained below in "Window Transitions in Android".
@@ -227,29 +235,32 @@ iOS contains built-in transition animations when switching between non-modal win
 For example, to flip right-to-left between two windows:
 
 `app/views/index.xml`:
-
-    <Alloy>
-        <Window backgroundColor="blue" onOpen="animateOpen">
-            <Label id="label">I am a blue window!</Label>
-        </Window>
-    </Alloy>
+``` xml
+<Alloy>
+    <Window backgroundColor="blue" onOpen="animateOpen">
+        <Label id="label">I am a blue window!</Label>
+    </Window>
+</Alloy>
+```
 
 `app/controllers/index.js`
-
-    function animateOpen() {
-        Alloy.createController('win2').getView().open({
-            transition: Ti.UI.iOS.AnimationStyle.FLIP_FROM_LEFT
-        });
-    }
-    $.index.open();
+``` js
+function animateOpen() {
+    Alloy.createController('win2').getView().open({
+        transition: Ti.UI.iOS.AnimationStyle.FLIP_FROM_LEFT
+    });
+}
+$.index.open();
+```
 
 `app/views/win2.xml`:
-
-    <Alloy>
-        <Window backgroundColor="red">
-            <Label id="label">I am a red window!</Label>
-        </Window>
-    </Alloy>
+``` xml
+<Alloy>
+    <Window backgroundColor="red">
+        <Label id="label">I am a red window!</Label>
+    </Window>
+</Alloy>
+```
 
 In the above example, the red window will be animated from the right-to-left over the blue window.
 
@@ -264,71 +275,75 @@ In the example below, the windows are closed by rotating them upside down while 
 making them transparent:
 
 `app/views/index.xml`:
-
-    <Alloy>
-        <NavigationWindow platform="ios">
-            <Window id="redwin" title="Red Window" backgroundColor="red">
-                <Button id="button" onClick="openBlueWindow">Open Blue Window</Button>
-            </Window>
-        </NavigationWindow>
-    </Alloy>
+``` xml
+<Alloy>
+    <NavigationWindow platform="ios">
+        <Window id="redwin" title="Red Window" backgroundColor="red">
+            <Button id="button" onClick="openBlueWindow">Open Blue Window</Button>
+        </Window>
+    </NavigationWindow>
+</Alloy>
+```
 
 `app/controllers/index.js`:
+``` js
+function openBlueWindow(e) {
+    var bluewin = Alloy.createController('bluewin').getView();
+    $.index.openWindow(bluewin);
+}
 
-    function openBlueWindow(e) {
-        var bluewin = Alloy.createController('bluewin').getView();
-        $.index.openWindow(bluewin);
-    }
-
-    $.redwin.transitionAnimation = Ti.UI.iOS.createTransitionAnimation({
+$.redwin.transitionAnimation = Ti.UI.iOS.createTransitionAnimation({
+    duration: 300,
+    // The show transition makes the window opaque and rotates it correctly
+    transitionTo: {
+        opacity: 1,
         duration: 300,
-        // The show transition makes the window opaque and rotates it correctly
-        transitionTo: {
-            opacity: 1,
-            duration: 300,
-            transform: Ti.UI.createMatrix2D()
-        },
-        // The hide transition makes the window transparent and rotates it upside down
-        transitionFrom: {
-            opacity: 0,
-            duration: 300 / 2,
-            transform: Ti.UI.createMatrix2D().rotate(180),
-        }
-    });
+        transform: Ti.UI.createMatrix2D()
+    },
+    // The hide transition makes the window transparent and rotates it upside down
+    transitionFrom: {
+        opacity: 0,
+        duration: 300 / 2,
+        transform: Ti.UI.createMatrix2D().rotate(180),
+    }
+});
 
-    $.index.open();
+$.index.open();
+```
 
 `app/views/bluewin.xml`:
-
-    <Alloy>
-        <Window title="Blue Window" backgroundColor="blue" opacity="0">
-            <Button onClick="closeWindow">Close Window</Button>
-        </Window>
-    </Alloy>
+``` xml
+<Alloy>
+    <Window title="Blue Window" backgroundColor="blue" opacity="0">
+        <Button onClick="closeWindow">Close Window</Button>
+    </Window>
+</Alloy>
+```
 
 `app/controllers/bluewin.js`:
+``` js
+function closeWindow(){
+    $.bluewin.close();
+}
 
-    function closeWindow(){
-        $.bluewin.close();
-    }
-
-    $.bluewin.transitionAnimation = Ti.UI.iOS.createTransitionAnimation({
+$.bluewin.transitionAnimation = Ti.UI.iOS.createTransitionAnimation({
+    duration: 300,
+    // The show transition makes the window opaque and rotates it correctly
+    transitionTo: {
+        opacity: 1,
         duration: 300,
-        // The show transition makes the window opaque and rotates it correctly
-        transitionTo: {
-            opacity: 1,
-            duration: 300,
-            transform: Ti.UI.createMatrix2D()
-        },
-        // The hide transition makes the window transparent and rotates it upside down
-        transitionFrom: {
-            opacity: 0,
-            duration: 300 / 2,
-            transform: Ti.UI.createMatrix2D().rotate(180),
-        }
-    });
+        transform: Ti.UI.createMatrix2D()
+    },
+    // The hide transition makes the window transparent and rotates it upside down
+    transitionFrom: {
+        opacity: 0,
+        duration: 300 / 2,
+        transform: Ti.UI.createMatrix2D().rotate(180),
+    }
+});
 
-    $.bluewin.transform = Ti.UI.createMatrix2D().rotate(180);
+$.bluewin.transform = Ti.UI.createMatrix2D().rotate(180);
+```
 
 ### Android Platform Notes
 
@@ -351,11 +366,13 @@ built-in resources or <Titanium.App.Android.R> for resources that you package in
 As an example, you may wish for the window that you are opening to fade in while the window
 you are leaving should fade out:
 
-    var win2 = Ti.UI.createWindow();
-    win2.open({
-        activityEnterAnimation: Ti.Android.R.anim.fade_in,
-        activityExitAnimation: Ti.Android.R.anim.fade_out
-    });
+``` js
+var win2 = Ti.UI.createWindow();
+win2.open({
+    activityEnterAnimation: Ti.Android.R.anim.fade_in,
+    activityExitAnimation: Ti.Android.R.anim.fade_out
+});
+```
 
 See the official Android [R.anim](https://developer.android.com/reference/android/R.anim.html) documentation
 for information about built-in animations.
@@ -381,26 +398,28 @@ and shown.
 
 For example to transition a title label in window A to a title label in window B.
 
-    // Create label in window A with a unique transitionName.
-    var titleInWinA = new Ti.UI.createLabel({
-        text:'Top 10 pics from Mars!',
-        left:70, top: 6,
-        width:200, height: 30,
-        transitionName: 'title'
-    });
-    windowA.add(titleInWinA);
+``` js
+// Create label in window A with a unique transitionName.
+var titleInWinA = new Ti.UI.createLabel({
+    text:'Top 10 pics from Mars!',
+    left:70, top: 6,
+    width:200, height: 30,
+    transitionName: 'title'
+});
+windowA.add(titleInWinA);
 
-    // Creating label in window B, note that the same transitionName is used.
-    var titleInWinB = new Ti.UI.createLabel({
-        text:'Top 10 pics from Mars!',
-        left:50, top: 10,
-        width:200, height: 30,
-        transitionName: 'title'
-    });
+// Creating label in window B, note that the same transitionName is used.
+var titleInWinB = new Ti.UI.createLabel({
+    text:'Top 10 pics from Mars!',
+    left:50, top: 10,
+    width:200, height: 30,
+    transitionName: 'title'
+});
 
-    // Before opening window B specify the common UI elements.
-    windowB.addSharedElement(titleInWinA, "title");
-    windowB.open();
+// Before opening window B specify the common UI elements.
+windowB.addSharedElement(titleInWinA, "title");
+windowB.open();
+```
 
 Further you can use `activityEnterTransition`, `activityExitTransition`, `activityReenterTransition`
 and `activityReturnTransition` to customize the way activities transition into the scene. These are intended
@@ -422,10 +441,12 @@ press the back button from your lowest window on the stack.
 To indicate that a particular window should cause an application to exit when the back
 button is pressed, pass `exitOnClose: true` as one of the creation arguments, as shown here:
 
-    var win = Titanium.UI.createWindow({
-      title: 'My Root Window',
-      exitOnClose: true
-    });
+``` js
+var win = Titanium.UI.createWindow({
+  title: 'My Root Window',
+  exitOnClose: true
+});
+```
 
 Starting with Release 3.2.0, the root window's `exitOnClose` property is set to `true` by
 default.  Prior to Release 3.2.0, the default value of the property was `false` for all windows.
@@ -436,17 +457,23 @@ default.  Prior to Release 3.2.0, the default value of the property was `false` 
 
 Create a fullscreen window with a red background.
 
-    var window = Titanium.UI.createWindow({
-       backgroundColor:'red'
-    });
-    window.open({fullscreen:true});
+``` js
+var window = Titanium.UI.createWindow({
+    backgroundColor:'red'
+});
+window.open({fullscreen:true});
+```
+
 
 ### Alloy XML Markup
 
 Previous example as an Alloy view.
 
-    <Alloy>
-        <Window id="win" backgroundColor="red" fullscreen="true" />
-    </Alloy>
+``` xml
+<Alloy>
+    <Window id="win" backgroundColor="red" fullscreen="true" />
+</Alloy>
+```
+
 
 <ApiDocs/>

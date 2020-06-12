@@ -4,7 +4,7 @@
 
 ## Overview
 
-A LocalNotification is created by <Titanium.App.iOS.scheduleLocalNotification>.
+A LocalNotification is created by <Titanium.App.iOS.scheduleLocalNotification>.  
 
 Local notifications are a way for an application that is not running in the foreground to let
 users know that it has information for them. When invoked, the application either displays a

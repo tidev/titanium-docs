@@ -78,8 +78,10 @@ fail to render. If the WebView fails to render the content, the web view will cl
 itself, displaying only the default background color. The following log messages will be
 displayed in the console:
 
-    [WARN] :   AwContents: nativeOnDraw failed; clearing to background color.
-    [INFO] :   chromium: [INFO:async_pixel_transfer_manager_android.cc(56)]
+```
+[WARN] :   AwContents: nativeOnDraw failed; clearing to background color.
+[INFO] :   chromium: [INFO:async_pixel_transfer_manager_android.cc(56)]
+```
 
 To workaround this issue, you can enable software rendering by setting the WebView's
 [borderRadius](Titanium.UI.WebView.borderRadius) property to a value greater than zero.
@@ -95,9 +97,11 @@ heights of the components.  For example, if you have a div element with an id se
 that needs to use the entire web view, the following callback resizes the content to use the
 full height of the web view:
 
-    window.onresize= function(){
-        document.getElementById("component").style.height = window.innerHeight + 'px';
-    };
+``` js
+window.onresize= function(){
+    document.getElementById("component").style.height = window.innerHeight + 'px';
+};
+```
 
 For more information, see the following topics:
 
@@ -106,8 +110,7 @@ For more information, see the following topics:
 
 **Plugin Support**
 
-The Android web view supports native plugins such as Flash Player. Note that the Chromium-based
-web view introduced in Android 4.4 does not support the Flash Player plugin.
+The Android web view supports native plugins.
 
 To use plugin content, you must set the [pluginState](Titanium.UI.WebView.pluginState) property
 to either [WEBVIEW_PLUGINS_ON](Titanium.UI.Android.WEBVIEW_PLUGINS_ON) or
@@ -127,6 +130,73 @@ cookie stores using the methods <Titanium.Network.addHTTPCookie>, <Titanium.Netw
 <Titanium.Network.getHTTPCookies>, <Titanium.Network.getHTTPCookiesForDomain>, <Titanium.Network.getSystemCookies>,
 <Titanium.Network.removeHTTPCookie>, <Titanium.Network.removeHTTPCookiesForDomain>, <Titanium.Network.removeAllHTTPCookies>,
 <Titanium.Network.removeSystemCookie>, <Titanium.Network.removeAllSystemCookies>.
+
+**WKWebView**
+
+With Titanium SDK 8.0.0, we now use WKWebView to implement Ti.UI.WebView (as Apple has deprecated UIWebView).
+WKWebView has few restriction specially with local file accessing. For supporting custom-fonts with WKWebView 
+a little modification is required in the HTML files:
+
+``` html
+<style>
+  @font-face
+    {
+      font-family: 'Lato-Regular';
+      src: url('fonts/Lato-Regular.ttf');
+    }
+</style>
+```
+
+To have a WKWebView scale the page the same way as UIWebView, add the following meta tag to the HTML header:
+
+``` html
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+</html>
+```
+
+### Ti.UI.SIZE and WebViews
+
+With Titanium 8.0.0+, <Titanium.UI.SIZE> does not work for WebViews. We recommend to give a **fixed height** 
+to <Titanium.UI.WebView> (as noted in [TIDOC-3355](https://jira.appcelerator.org/browse/TIDOC-3355)).
+
+As a workaround you can try to get the `document.body.scrollHeight` inside <Titanium.UI.WebView.load> event 
+of webview and set the height to webview. See following example.
+
+``` js
+var win = Ti.UI.createWindow({
+  backgroundColor: 'white';
+});
+
+var verticalView = Ti.UI.createView({layout: 'vertical', width: "100%", height: "100%"});
+
+verticalView.add(Ti.UI.createLabel({text: 'Label 1', top: 30, width: Ti.UI.SIZE, height: Ti.UI.SIZE}));
+
+var htmla = "<div style='font-family: Helvetica Neue; font-size:16px'><ul><li>Item 1</li><li>Item 2</li></ul></div>";
+var html = "<!DOCTYPE html>";
+
+html += "<html><head><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'><style type='text/css'>html {-webkit-text-size-adjust: none;}</style><script type='text/javascript'>document.ontouchmove = function(event){event.preventDefault();}</script></head><body style='overflow: hidden'>";
+html += htmla;
+html += "</body></html>";
+
+var webview = Ti.UI.createWebView({left: '14dp', right: '14dp', top: '7dp', height: Ti.UI.SIZE, html: html, backgroundColor: "yellow"});
+
+verticalView.add(webview);
+
+verticalView.add(Ti.UI.createLabel({text: 'Label 2', top: 30, width: Ti.UI.SIZE, height: Ti.UI.SIZE}));
+
+win.add(verticalView);
+
+win.open();
+
+webview.addEventListener('load', function(e) {
+  var result = webview.evalJSSync('document.body.scrollHeight');
+  Ti.API.info('webview height: ' + result);
+  webview.height = result;
+});
+``` 
 
 ### For More Information
 

@@ -1,4 +1,4 @@
-# ViewPadding
+# Padding
 
 <TypeHeader/>
 

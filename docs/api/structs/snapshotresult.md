@@ -1,0 +1,5 @@
+# SnapshotResult
+
+<TypeHeader/>
+
+<ApiDocs/>

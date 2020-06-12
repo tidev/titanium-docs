@@ -1,4 +1,4 @@
-# ImageAsCroppedDict
+# HorizontalInsets
 
 <TypeHeader/>
 

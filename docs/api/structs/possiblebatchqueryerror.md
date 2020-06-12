@@ -1,0 +1,5 @@
+# PossibleBatchQueryError
+
+<TypeHeader/>
+
+<ApiDocs/>

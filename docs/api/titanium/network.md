@@ -32,29 +32,33 @@ If you wish to re-enable ATS, add the `NSAppTransportSecurity` dict to the `ios 
 of the `tiapp.xml` file, then add the `NSAllowArbitraryLoads` key and set it to `false`, indicating
 that you want to manage your whitelisted URL's yourself.
 
-    <ti:app>
-      ...
-      <ios>
-        <plist>
-          <dict>
-            <key>NSAppTransportSecurity</key>
-            <dict>
-              <key>NSAllowsArbitraryLoads</key>
-              <false/>
-            </dict>
-          </dict>
-        </plist>
-      </ios>
-      ...
-    </ti:app>
+``` xml
+<ti:app>
+  <!-- ... -->
+  <ios>
+    <plist>
+      <dict>
+        <key>NSAppTransportSecurity</key>
+        <dict>
+          <key>NSAllowsArbitraryLoads</key>
+          <false/>
+        </dict>
+      </dict>
+    </plist>
+  </ios>
+  <!-- ... -->
+</ti:app>
+```
 
 Note that Titanium will inject code into the plist file to whitelist `appcelerator.com` subdomains,
 which is needed to communicate with the Appcelerator Anayltics server. To disable the whitelist,
 set the `ios.whitelist.appcelerator.com` tiapp application property to false.
 
-    <ti:app>
-        <property name="ios.whitelist.appcelerator.com" type="bool">false</property>
-    </ti:app>
+``` xml
+<ti:app>
+    <property name="ios.whitelist.appcelerator.com" type="bool">false</property>
+</ti:app>
+```
 
 Listed below are other guidelines from Apple.
 
@@ -78,41 +82,42 @@ For more information, see
 
 Example:
 
-    <ti:app>
-      ...
-      <ios>
-        <plist>
-          <dict>
-            <key>NSAppTransportSecurity</key>
-            <dict>
-              <!-- 1) Default: Disable ATS completely -->
-              <key>NSAllowsArbitraryLoads</key>
-              <true/>
+``` xml
+<ti:app>
+  <!-- ... -->
+  <ios>
+    <plist>
+      <dict>
+        <key>NSAppTransportSecurity</key>
+        <dict>
+          <!-- 1) Default: Disable ATS completely -->
+          <key>NSAllowsArbitraryLoads</key>
+          <true/>
 
-              <-- 2) Alternative: Define whitelisted domains -->
-              <key>NSExceptionDomains</key>
-              <dict>
-                <!-- Loosen security measure for www.foo.com domain -->
-                <key>www.foo.com</key>
-                <dict>
-                  <!-- Set TLS v1.0 as the minimum TLS version -->
-                  <key>NSExceptionMinimumTLSVersion</key>
-                  <string>TLSv1.0</string>
-                  <!-- Can use other ciphers besides forward secrecy ciphers -->
-                  <key>NSExceptionRequiresForwardSecrecy</key>
-                  <false/>
-                  <!-- Allow HTTP connections -->
-                  <key>NSExceptionAllowsInsecureHTTPLoads</key>
-                  <true/>
-                </dict>
-              </dict>
+          <-- 2) Alternative: Define whitelisted domains -->
+          <key>NSExceptionDomains</key>
+          <dict>
+            <!-- Loosen security measure for www.foo.com domain -->
+            <key>www.foo.com</key>
+            <dict>
+              <!-- Set TLS v1.0 as the minimum TLS version -->
+              <key>NSExceptionMinimumTLSVersion</key>
+              <string>TLSv1.0</string>
+              <!-- Can use other ciphers besides forward secrecy ciphers -->
+              <key>NSExceptionRequiresForwardSecrecy</key>
+              <false/>
+              <!-- Allow HTTP connections -->
+              <key>NSExceptionAllowsInsecureHTTPLoads</key>
+              <true/>
             </dict>
           </dict>
-        </plist>
-      </ios>
-      ...
-    </ti:app>
-
+        </dict>
+      </dict>
+    </plist>
+  </ios>
+  <!-- ... -->
+</ti:app>
+```
 
 **Test IPV6 DNS64/NAT64**
 

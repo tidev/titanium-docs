@@ -4,7 +4,7 @@
 
 ## Overview
 
-Starting with Release 3.3.0, the Menu and MenuItems APIs are used to create the action items
+The Menu and MenuItems APIs are used to create the action items
 for the action bar. Action items can appear in either the action bar or the action bar's
 overflow menu.
 
@@ -15,11 +15,13 @@ Use the Menu's [add()](Titanium.Android.Menu.add) method to create new action it
 
 In Alloy you can use `<Menu>` and `<MenuItem>` elements to create an options menu.
 
-    <Menu id="menu" platform="android">
-        <!-- Cannot specify node text.  Use attributes only. -->
-        <MenuItem id="saveitem" title="Save" icon="item1.png" onClick="doSave" />
-        <MenuItem id="closeitem" title="Close" icon="item1.png" onClick="doClose" />
-    </Menu>
+``` xml
+<Menu id="menu" platform="android">
+    <!-- Cannot specify node text.  Use attributes only. -->
+    <MenuItem id="saveitem" title="Save" icon="item1.png" onClick="doSave" />
+    <MenuItem id="closeitem" title="Close" icon="item1.png" onClick="doClose" />
+</Menu>
+```
 
 To switch menu items dynamically, call
 [invalidateOptionsMenu](Titanium.Android.Activity.invalidateOptionsMenu), which causes
@@ -27,10 +29,7 @@ the `onCreateOptionsMenu` callback to be called again.
 
 ### Menus on Tab Groups
 
-Prior to Titanium 3.0, menu items could be added to the individual windows of a tab
-group.
-
-Starting in Titanium 3.0, menus must be added to tab groups using the tab group's
+Menus must be added to tab groups using the tab group's
 activity. These changes were required to support the Android 3.0 action bar.
 
 The TabGroup activity is available using [TabGroup.getActivity](Titanium.UI.TabGroup.getActivity).
@@ -39,21 +38,22 @@ the tab group's activity before the tab group is opened. To add a menu to a tab 
 set the `onCreateOptionsMenu` property to the tab group's `open` event listener, and
 then call `invalidateOptionsMenu` to force the changes to take effect.
 
-    tabGroup.addEventListener("open", function(e) {
-        var activity = globals.tabs.getActivity();
-        activity.onCreateOptionsMenu = function(e) {
-            var menuItem = e.menu.add({
-                title : "Add Task",
-                showAsAction : Ti.Android.SHOW_AS_ACTION_ALWAYS,
-                icon : "add_icon.png"
-            });
-            menuItem.addEventListener("click", function(e) {
-                //
-            });
-        }
-        activity.invalidateOptionsMenu();
-    });
-
+``` js
+tabGroup.addEventListener("open", function(e) {
+    var activity = globals.tabs.getActivity();
+    activity.onCreateOptionsMenu = function(e) {
+        var menuItem = e.menu.add({
+            title : "Add Task",
+            showAsAction : Ti.Android.SHOW_AS_ACTION_ALWAYS,
+            icon : "add_icon.png"
+        });
+        menuItem.addEventListener("click", function(e) {
+            //
+        });
+    }
+    activity.invalidateOptionsMenu();
+});
+```
 
 ### Application Notes for Release 3.2.x and earlier
 
@@ -95,25 +95,28 @@ which logs a debug message when clicked.
 
 If the action bar is in use, the menu item will be displayed as an action item if there is room in the action bar.
 
-    var win = Ti.UI.createWindow({
-      fullscreen: true
-    });
+``` js
+var win = Ti.UI.createWindow({
+  fullscreen: true
+});
 
-    var activity = win.activity;
+var activity = win.activity;
 
-    activity.onCreateOptionsMenu = function(e){
-      var menu = e.menu;
-      var menuItem = menu.add({
-        title: "Item 1",
-        icon:  "item1.png",
-        showAsAction: Ti.Android.SHOW_AS_ACTION_IF_ROOM
-      });
-      menuItem.addEventListener("click", function(e) {
-        Ti.API.debug("I was clicked");
-      });
-    };
+activity.onCreateOptionsMenu = function(e){
+  var menu = e.menu;
+  var menuItem = menu.add({
+    title: "Item 1",
+    icon:  "item1.png",
+    showAsAction: Ti.Android.SHOW_AS_ACTION_IF_ROOM
+  });
+  menuItem.addEventListener("click", function(e) {
+    Ti.API.debug("I was clicked");
+  });
+};
 
-    win.open();
+win.open();
+```
+
 
 ### Creating a Dynamic Menu
 
@@ -121,38 +124,41 @@ This sample creates an Android menu that displays a menu item named
 "Login" or "Logout", depending on the value of a `loggedIn` Boolean variable.
 Click on the item to toggle the variable's value.
 
-    var win = Ti.UI.createWindow({
-      fullscreen: true
-    });
-    var LOGIN = 1, LOGOUT = 2;
-    var loggedIn = false;
+``` js
+var win = Ti.UI.createWindow({
+  fullscreen: true
+});
+var LOGIN = 1, LOGOUT = 2;
+var loggedIn = false;
 
-    var activity = win.activity;
+var activity = win.activity;
 
-    activity.onCreateOptionsMenu = function(e){
-      var menu = e.menu;
-      var login = menu.add({ title: "Login", itemId: LOGIN });
-      login.setIcon("login.png");
-      login.addEventListener("click", function(e) {
-        loggedIn = true;
-        // In Android 3.0 and above we need to call invalidateOptionsMenu() for menu changes at runtime
-        win.activity.invalidateOptionsMenu();
-      });
-      var logout = menu.add({ title: "Logout", itemId: LOGOUT });
-      logout.setIcon("logout.png");
-      logout.addEventListener("click", function(e) {
-        loggedIn = false;
-        // In Android 3.0 and above we need to call invalidateOptionsMenu() for menu changes at runtime
-        win.activity.invalidateOptionsMenu();
-      });
-    };
+activity.onCreateOptionsMenu = function(e){
+  var menu = e.menu;
+  var login = menu.add({ title: "Login", itemId: LOGIN });
+  login.setIcon("login.png");
+  login.addEventListener("click", function(e) {
+    loggedIn = true;
+    // In Android 3.0 and above we need to call invalidateOptionsMenu() for menu changes at runtime
+    win.activity.invalidateOptionsMenu();
+  });
+  var logout = menu.add({ title: "Logout", itemId: LOGOUT });
+  logout.setIcon("logout.png");
+  logout.addEventListener("click", function(e) {
+    loggedIn = false;
+    // In Android 3.0 and above we need to call invalidateOptionsMenu() for menu changes at runtime
+    win.activity.invalidateOptionsMenu();
+  });
+};
 
-    activity.onPrepareOptionsMenu = function(e) {
-      var menu = e.menu;
-      menu.findItem(LOGIN).setVisible(!loggedIn);
-      menu.findItem(LOGOUT).setVisible(loggedIn);
-    };
-    win.open();
+activity.onPrepareOptionsMenu = function(e) {
+  var menu = e.menu;
+  menu.findItem(LOGIN).setVisible(!loggedIn);
+  menu.findItem(LOGOUT).setVisible(loggedIn);
+};
+win.open();
+```
+
 
 ### Alloy XML Markup
 
@@ -164,31 +170,34 @@ to be displayed, call `invalidateOptionsMenu` from the `open` event listener of 
 where the menu is defined.
 
 index.xml:
+``` xml
+<Alloy>
+    <!-- Create a heavyweight window to use the Android menu. -->
+    <Window id="win" fullscreen="true" onOpen="doOpen">
 
-    <Alloy>
-        <!-- Create a heavyweight window to use the Android menu. -->
-        <Window id="win" fullscreen="true" onOpen="doOpen">
+        <!-- The Menu tag adds the Android menu. -->
+        <Menu id="menu" platform="android">
 
-            <!-- The Menu tag adds the Android menu. -->
-            <Menu id="menu" platform="android">
+            <!-- Cannot specify node text.  Use attributes only. -->
+            <MenuItem id="menuItem" title="Item 1" icon="item1.png" onClick="doClick" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
+        </Menu>
 
-                <!-- Cannot specify node text.  Use attributes only. -->
-                <MenuItem id="menuItem" title="Item 1" icon="item1.png" onClick="doClick" showAsAction="Ti.Android.SHOW_AS_ACTION_IF_ROOM" />
-            </Menu>
-
-            <!-- Place additional views here -->
-        </Window>
-    </Alloy>
+        <!-- Place additional views here -->
+    </Window>
+</Alloy>
+```
 
 index.js:
+``` js
+function doClick(e) {
+    Ti.API.info("Menu item clicked: " + e.source.title);
+}
 
-    function doClick(e) {
-        Ti.API.info("Menu item clicked: " + e.source.title);
-    }
+// Ensure menu is displayed
+function doOpen(e) {
+    $.win.activity.invalidateOptionsMenu();
+}
+```
 
-    // Ensure menu is displayed
-    function doOpen(e) {
-        $.win.invalidateOptionsMenu();
-    }
 
 <ApiDocs/>
