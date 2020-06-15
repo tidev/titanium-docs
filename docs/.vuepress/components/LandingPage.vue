@@ -21,7 +21,7 @@
     <section class="landing-content">
       <div class="feature hyperloop">
         <div class="feature-media">
-          <img src="/images/hyperloop.png" alt="hyperloop"></img>
+          <img :src="$withBase('/images/hyperloop.png')" alt="hyperloop"></img>
         </div>
         <div class="feature-description">
           <h2 class="center">Full flexibility</h2>
