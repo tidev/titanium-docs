@@ -6,22 +6,22 @@
       <ul class="module-examples">
         <li>
           <a href="https://github.com/hansemannn/titanium-firebase" class="firebase">
-            <img src="/images/firebase-logo.png" />
+            <img :src="$withBase('/images/firebase-logo.png')" />
           </a>
         </li>
         <li>
           <a href="https://github.com/appcelerator-modules/ti.map">
-            <img src="/images/google-maps-logo.png" />
+            <img :src="$withBase('/images/google-maps-logo.png')" />
           </a>
         </li>
         <li>
           <a href="">
-            <img src="/images/firebase-logo.png" />
+            <img :src="$withBase('/images/firebase-logo.png')" />
           </a>
         </li>
         <li>
           <a href="https://github.com/appcelerator-modules/ti.facebook">
-            <img src="/images/facebook-logo.png" />
+            <img :src="$withBase('/images/facebook-logo.png')" />
           </a>
         </li>
       </ul>

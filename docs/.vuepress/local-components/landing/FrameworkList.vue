@@ -2,24 +2,24 @@
   <ul class="framework-list">
     <li>
       <a href="">
-        <img src="/images/appc-logo.png" />
+        <img :src="$withBase('/images/appc-logo.png')" />
       </a>
     </li>
     <li>
       <a href="">
         <span class="framework-badge">Beta</span>
-        <img src="/images/vue-logo.png" />
+        <img :src="$withBase('/images/vue-logo.png')" />
       </a>
     </li>
     <li>
       <a href="">
         <span class="framework-badge">Beta</span>
-        <img src="/images/angular-logo.png" />
+        <img :src="$withBase('/images/angular-logo.png')" />
       </a>
     </li>
     <li>
       <a href="">
-        <img src="/images/js-logo.png" />
+        <img :src="$withBase('/images/js-logo.png')" />
       </a>
     </li>
   </ul>

@@ -7,19 +7,19 @@
     <ul class="platform-features">
       <li>
         <a href="https://www.axway.com/en/products/api-management">
-          <img src="/images/gear.png" />
+          <img :src="$withBase('/images/gear.png')" />
           API Management
         </a>
       </li>
       <li>
         <a href="https://www.axway.com/en/products/b2b-integration">
-          <img src="/images/b2b.png" />
+          <img :src="$withBase('/images/b2b.png')" />
           B2B
         </a>
       </li>
       <li>
         <a href="https://www.axway.com/en/products/application-integration">
-          <img src="/images/integration.png" />
+          <img :src="$withBase('/images/integration.png')" />
           Integrations
         </a>
       </li>
