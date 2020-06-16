@@ -1,3 +1,9 @@
+const guideSidebar = require('./guide');
+const apiSidebar = {
+  '/api/': require('./api')
+};
+const sidebar = Object.assign({}, guideSidebar, apiSidebar);
+
 module.exports = {
   base: '/titanium-docs/',
   title: 'Titanium Mobile',
@@ -5,14 +11,14 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
-  theme: 'titanium',
+  theme: 'titanium', // FIMXE: Our titanium theme doesn't support nested sidebar groups!
   themeConfig: {
     logo: '/titanium-logo.png',
     footerCopyright: 'Copyright © 2019-present Axway Appcelerator',
     footerLogo: '/images/axway-appcelerator-logo.png',
     footerSitemap: {
       'Docs': [
-        { text: 'Alloy', link: 'https://docs.appcelerator.com/' }
+        { text: 'Alloy', link: '/guide/Alloy_Framework/' }
       ],
       'Other': [
         { text: 'Some link', link: 'https://docs.appcelerator.com/' }
@@ -23,7 +29,27 @@ module.exports = {
     },
     // Top navigation bar
     nav: [
-      { text: 'Guide', link: '/guide/' },
+      {
+        text: 'Guide',
+        items: [
+          {
+            text: 'Titanium SDK',
+            link: '/guide/Titanium_SDK/'
+          },
+          {
+            text: 'Alloy',
+            link: '/guide/Alloy_Framework/'
+          },
+          {
+            text: 'Appcelerator Studio',
+            link: '/guide/Axway_Appcelerator_Studio/'
+          },
+          {
+            text: 'Appcelerator CLI',
+            link: '/guide/Appcelerator_CLI/'
+          }
+        ]
+      },
       { text: 'API Reference', link: '/api/' },
       {
         text: 'Ecosystem',
@@ -41,7 +67,7 @@ module.exports = {
               },
               {
                 text: 'TDoc Specificiation',
-                link: '/tdoc-spec.md'
+                link: '/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Platform_Development/Specs/TDoc_Specification'
               }
             ]
           },
@@ -50,11 +76,11 @@ module.exports = {
             items: [
               {
                 text: 'SDK',
-                link: '/'
+                link: '/guide/Titanium_SDK/'
               },
               {
                 text: 'Hyperloop',
-                link: 'https://docs.appcelerator.com/platform/latest/#!/guide/Hyperloop'
+                link: '/guide/Titanium_SDK/Titanium_SDK_Guide/Hyperloop/'
               }
             ]
           },
@@ -63,7 +89,7 @@ module.exports = {
             items: [
               {
                 text: 'Alloy',
-                link: 'https://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Framework'
+                link: '/guide/Alloy_Framework/'
               },
               {
                 text: 'Vue.js',
@@ -71,7 +97,7 @@ module.exports = {
               },
               {
                 text: 'Angular',
-                link: 'https://docs.appcelerator.com/platform/latest/#!/guide/Titanium_and_Angular'
+                link: '/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_and_Angular/'
               }
             ]
           },
@@ -92,21 +118,20 @@ module.exports = {
       }
     ],
 
-    sidebar: {
-      '/guide/': require('./guide.json'),
-      '/api/': require('./api.json')
-    },
+    sidebar,
+    sidebarDepth: 5,
 
     // Repo settings
     docsDir: 'docs',
     repo: 'appcelerator/titanium_mobile',
-    docsRepo: 'appcelerator/titanium-vuepress-docs',
+    docsRepo: 'appcelerator/titanium-docs',
     editLinks: true,
     editLinkText: 'Edit this page on GitHub'
   },
   plugins: [
     'versioning',
     'apidocs',
-    '@vuepress/back-to-top'
+    '@vuepress/back-to-top',
+    require('./guides-content-sidebar') // Show right-hand sidebar for in-page headers in guides
   ]
 };
