@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean:api": "rm -rf docs/api; rm -f docs/.vuepress/api.json",
+    "clean:guide": "rm -rf docs/guide; rm -rf docs/.vuepress/public/images/guide; rm -f docs/.vuepress/guide.json",
     "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs",
     "docs:version": "vuepress version docs",
