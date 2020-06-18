@@ -21,7 +21,7 @@ To create a dynamic connection between an item and anchor point, use <Titanium.U
 The following example anchors a green block to either a red or blue block.  Click on the red
 or blue block to change which one the green block is anchored to.
 
-<img src="images/animator/viewattachment.gif" height= 275" style="border:1px solid black"/>
+![View Attachment](./viewattachment.gif)
 
 ``` js
 var win = Ti.UI.createWindow({backgroundColor: 'white', fullscreen: true});

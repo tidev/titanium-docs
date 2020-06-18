@@ -4,22 +4,9 @@
 
 ## Overview
 
-<table id="platformComparison">
-  <tbody>
-    <tr>
-      <td><img src="images/progressbar/progressbar_android.png" height="50" /></td>
-      <td><img src="images/progressbar/progressbar_ios.png" height="25" /></td>
-      <td><img src="images/progressbar/progressbar_wp.png" height="25" /></td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <th>Android</th>
-      <th>iOS</th>
-      <th>Windows Phone</th>
-    </tr>
-  </tfoot>
-</table>
+| Android | iOS | Windows |
+| --- | --- | --- |
+| ![Android](./progressbar_android.png) | ![iOS](./progressbar_ios.png) | ![Windows](./progressbar_wp.png) |
 
 A progress bar is used for displaying an ongoing activity with a defined progression.
 For an activity without a defined progression, you can use <Titanium.UI.ActivityIndicator>.

@@ -4,22 +4,9 @@
 
 ## Overview
 
-<table id="platformComparison">
-  <tbody>
-    <tr>
-      <td><img src="images/listview/listview_android.png" height="200" /></td>
-      <td><img src="images/listview/listview_ios.png" height="200" /></td>
-      <td><img src="images/listview/listview_wp.png" height="200" /></td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <th>Android</th>
-      <th>iOS</th>
-      <th>Windows Phone</th>
-    </tr>
-  </tfoot>
-</table>
+| Android | iOS | Windows |
+| --- | --- | --- |
+| ![Android](./listview_android.png) | ![iOS](./listview_ios.png) | ![Windows](./listview_wp.png) |
 
 Use the <Titanium.UI.createListView> method or **`<ListView>`** Alloy element to create a `ListView`.
 

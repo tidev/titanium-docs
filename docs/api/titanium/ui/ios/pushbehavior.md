@@ -11,7 +11,7 @@ define a push behavior:
   2. To define a force vector, either set the
      [angle](Titanium.UI.iOS.PushBehavior.angle) and
      [magnitude](Titanium.UI.iOS.PushBehavior.magnitude) properties, or set the
-     [pushDiretion](Titanium.UI.iOS.PushBehavior.pushDirection) property.
+     [pushDirection](Titanium.UI.iOS.PushBehavior.pushDirection) property.
   3. Use the [addItem](Titanium.UI.iOS.PushBehavior.addItem) method to add items to the behavior.
   4. Add the behavior to an [Animator object](Titanium.UI.iOS.Animator).
 
@@ -21,7 +21,7 @@ define a push behavior:
 
 The following example generates a random push force on the block when it stops.
 
-<img src="images/animator/pushforce.gif" height="455" style="border:1px solid black"/>
+![Random Push Force](./pushforce.gif)
 
 ``` js
 var win = Ti.UI.createWindow({backgroundColor: 'white', fullscreen: true});

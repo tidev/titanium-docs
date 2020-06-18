@@ -4,22 +4,9 @@
 
 ## Overview
 
-<table id="platformComparison">
-  <tbody>
-    <tr>
-      <td><img src="images/slider/slider_android.png" height="25" /></td>
-      <td><img src="images/slider/slider_ios.png" height="25" /></td>
-      <td><img src="images/slider/slider_wp.png" height="25" /></td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <th>Android</th>
-      <th>iOS</th>
-      <th>Windows Phone</th>
-    </tr>
-  </tfoot>
-</table>
+| Android | iOS | Windows |
+| --- | --- | --- |
+| ![Android](./slider_android.png) | ![iOS](./slider_ios.png) | ![Windows](./slider_wp.png) | 
 
 A slider lets the user select from a range of values by dragging the slider thumb.
 

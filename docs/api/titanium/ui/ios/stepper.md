@@ -7,8 +7,8 @@
 <table id="iOS Stepper">
   <tbody>
     <tr>
-      <td><img src="images/stepper/stepper.png" height="25" /></td>
-      <td><img src="images/stepper/stepper_custom.png" height="25" /></td>
+      <td>![Stepper](./stepper.png)</td>
+      <td>![Custom](./stepper_custom.png)</td>
     </tr>
   </tbody>
 </table>

@@ -20,7 +20,7 @@ The following example create two blocks, which are pushed towards each other.  B
 red block is more dense and has higher resistance than the blue block, the red block moves
 steadily to the left, while the blue block spins around unpredictably.
 
-<img src="images/animator/dynamicitem.gif" height="455" style="border:1px solid black"/>
+![Dynamic Item](./dynamicitem.gif)
 
 ``` js
 var win = Ti.UI.createWindow({backgroundColor: 'white', fullscreen: true});

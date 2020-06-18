@@ -18,7 +18,7 @@ effect, ending with an oscillation.
 
 The following example snaps the block to the location of a click on the window.
 
-<img src="images/animator/snapbehavior.gif" height="455" style="border:1px solid black"/>
+![Snap Behavior](./snapbehavior.gif)
 
 ``` js
 var win = Ti.UI.createWindow({backgroundColor: 'white', fullscreen: true});

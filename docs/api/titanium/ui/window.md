@@ -165,7 +165,7 @@ and "Form sheet" style windows:
 
 The example below is a modal window using the Form sheet style:
 
-<img src="images/window/window-modal.png" width="400" />
+![Modal Window](./window-modal.png)
 
 You can create this type of modal window on iPad with the following code snippet:
 

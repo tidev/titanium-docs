@@ -21,7 +21,7 @@ To create a dynamic connection between two items, use <Titanium.UI.iOS.ViewAttac
 The following example creates a red block and anchors it to a point near the top-center of
 the window.  Using a gravitational force, the red block swings like a pendulum.
 
-<img src="images/animator/anchorattachment.gif" height="200" style="border:1px solid black"/>
+![Anchor Attachment](./anchorattachment.gif)
 
 ``` js
 var win = Ti.UI.createWindow({backgroundColor: 'white', fullscreen: true});

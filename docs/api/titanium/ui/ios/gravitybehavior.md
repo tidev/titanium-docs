@@ -25,7 +25,7 @@ The following example creates many random blocks.  The initial gravitational for
 blocks downward. Clicking on the `Change` button generates a new random gravity vector,
 which pulls the blocks in a random direction.
 
-<img src="images/animator/gravity.gif" height="455" style="border:1px solid black"/>
+![Gravity](./gravity.gif)
 
 ``` js
 var win = Ti.UI.createWindow({backgroundColor: 'white', fullscreen: true});

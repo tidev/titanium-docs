@@ -4,22 +4,9 @@
 
 ## Overview
 
-<table id="platformComparison">
-  <tbody>
-    <tr>
-      <td><img src="images/emaildialog/emaildialog_android.png" height="150"/></td>
-      <td><img src="images/emaildialog/emaildialog_ios.png" height="150"/></td>
-      <td><img src="images/emaildialog/emaildialog_wp.png" height="150"/></td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <th>Android</th>
-      <th>iOS</th>
-      <th>Windows Phone</th>
-    </tr>
-  <tfoot>
-</table>
+| Android | iOS | Windows |
+| --- | --- | --- |
+| ![Android](./emaildialog_android.png) | ![iOS](./emaildialog_ios.png) | ![Windows](./emaildialog_wp.png) |
 
 The Email Dialog is created with the <Titanium.UI.createEmailDialog> method. The user needs to
 register an e-mail account on the device in order to open the dialog.  The dialog will not
