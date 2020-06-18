@@ -1,8 +1,78 @@
 [
 	{
 		"title": "User Interface",
+		"path": "/api/titanium/ui",
 		"children": [
-			"titanium/ui",
+			{
+				"title": "Android",
+				"path": "/api/titanium/ui/android",
+				"children": [	
+					"titanium/ui/android/cardview",
+					"titanium/ui/android/drawerlayout",
+					"titanium/ui/android/progressindicator",
+					"titanium/ui/android/searchview"
+				]
+			},
+			{
+				"title": "iOS",
+				"path": "/api/titanium/ui/ios",
+				"children": [
+					"titanium/ui/ios/alertdialogstyle",
+					"titanium/ui/ios/anchorattachmentbehavior",
+					"titanium/ui/ios/animationstyle",
+					"titanium/ui/ios/animator",
+					"titanium/ui/ios/applicationshortcuts",
+					"titanium/ui/ios/blurview",
+					"titanium/ui/ios/collisionbehavior",
+					"titanium/ui/ios/coverflowview",
+					"titanium/ui/ios/documentviewer",
+					"titanium/ui/ios/dynamicitembehavior",
+					"titanium/ui/ios/feedbackgenerator",
+					"titanium/ui/ios/gravitybehavior",
+					"titanium/ui/ios/listviewcellselectionstyle",
+					"titanium/ui/ios/listviewscrollposition",
+					"titanium/ui/ios/listviewstyle",
+					"titanium/ui/ios/livephoto",
+					"titanium/ui/ios/livephotoview",
+					"titanium/ui/ios/menupopup",
+					"titanium/ui/ios/navigationwindow",
+					"titanium/ui/ios/previewaction",
+					"titanium/ui/ios/previewactiongroup",
+					"titanium/ui/ios/previewcontext",
+					"titanium/ui/ios/progressbarstyle",
+					"titanium/ui/ios/pushbehavior",
+					"titanium/ui/ios/rowanimationstyle",
+					"titanium/ui/ios/scrollindicatorstyle",
+					"titanium/ui/ios/snapbehavior",
+					"titanium/ui/ios/splitwindow",
+					"titanium/ui/ios/statusbar",
+					"titanium/ui/ios/stepper",
+					"titanium/ui/ios/systembutton",
+					"titanium/ui/ios/systembuttonstyle",
+					"titanium/ui/ios/systemicon",
+					"titanium/ui/ios/tabbedbar",
+					"titanium/ui/ios/tableviewcellselectionstyle",
+					"titanium/ui/ios/tableviewscrollposition",
+					"titanium/ui/ios/tableviewstyle",
+					"titanium/ui/ios/toolbar",
+					"titanium/ui/ios/viewattachmentbehavior",
+					"titanium/ui/ipad",
+					"titanium/ui/ipad/popover"
+				]
+			},
+			{
+				"title": "Windows",
+				"path": "/api/titanium/ui/windows",
+				"children": [
+					"titanium/ui/windows/appbarbutton",
+					"titanium/ui/windows/appbarseparator",
+					"titanium/ui/windows/appbartogglebutton",
+					"titanium/ui/windows/commandbar",
+					"titanium/ui/windows/listviewscrollposition",
+					"titanium/ui/windows/style",
+					"titanium/ui/windows/systemicon"
+				]
+			},
 			"titanium/ui/2dmatrix",
 			"titanium/ui/3dmatrix",
 			"titanium/ui/activityindicator",
@@ -50,79 +120,9 @@
 		]
 	},
 	{
-		"title": "User Interface (Android)",
+		"title": "App",
+		"path": "/api/titanium/app",
 		"children": [
-			"titanium/ui/android",
-			"titanium/ui/android/cardview",
-			"titanium/ui/android/drawerlayout",
-			"titanium/ui/android/progressindicator",
-			"titanium/ui/android/searchview"
-		]
-	},
-	{
-		"title": "User Interface (iOS)",
-		"children": [
-			"titanium/ui/ios",
-			"titanium/ui/ios/alertdialogstyle",
-			"titanium/ui/ios/anchorattachmentbehavior",
-			"titanium/ui/ios/animationstyle",
-			"titanium/ui/ios/animator",
-			"titanium/ui/ios/applicationshortcuts",
-			"titanium/ui/ios/blurview",
-			"titanium/ui/ios/collisionbehavior",
-			"titanium/ui/ios/coverflowview",
-			"titanium/ui/ios/documentviewer",
-			"titanium/ui/ios/dynamicitembehavior",
-			"titanium/ui/ios/feedbackgenerator",
-			"titanium/ui/ios/gravitybehavior",
-			"titanium/ui/ios/listviewcellselectionstyle",
-			"titanium/ui/ios/listviewscrollposition",
-			"titanium/ui/ios/listviewstyle",
-			"titanium/ui/ios/livephoto",
-			"titanium/ui/ios/livephotoview",
-			"titanium/ui/ios/menupopup",
-			"titanium/ui/ios/navigationwindow",
-			"titanium/ui/ios/previewaction",
-			"titanium/ui/ios/previewactiongroup",
-			"titanium/ui/ios/previewcontext",
-			"titanium/ui/ios/progressbarstyle",
-			"titanium/ui/ios/pushbehavior",
-			"titanium/ui/ios/rowanimationstyle",
-			"titanium/ui/ios/scrollindicatorstyle",
-			"titanium/ui/ios/snapbehavior",
-			"titanium/ui/ios/splitwindow",
-			"titanium/ui/ios/statusbar",
-			"titanium/ui/ios/stepper",
-			"titanium/ui/ios/systembutton",
-			"titanium/ui/ios/systembuttonstyle",
-			"titanium/ui/ios/systemicon",
-			"titanium/ui/ios/tabbedbar",
-			"titanium/ui/ios/tableviewcellselectionstyle",
-			"titanium/ui/ios/tableviewscrollposition",
-			"titanium/ui/ios/tableviewstyle",
-			"titanium/ui/ios/toolbar",
-			"titanium/ui/ios/viewattachmentbehavior",
-			"titanium/ui/ipad",
-			"titanium/ui/ipad/popover"
-		]
-	},
-	{
-		"title": "User Interface (Windows)",
-		"children": [
-			"titanium/ui/windows",
-			"titanium/ui/windows/appbarbutton",
-			"titanium/ui/windows/appbarseparator",
-			"titanium/ui/windows/appbartogglebutton",
-			"titanium/ui/windows/commandbar",
-			"titanium/ui/windows/listviewscrollposition",
-			"titanium/ui/windows/style",
-			"titanium/ui/windows/systemicon"
-		]
-	},
-	{
-		"title": "App & Platform",
-		"children": [
-			"titanium/app",
 			"titanium/app/android",
 			"titanium/app/ios",
 			"titanium/app/ios/backgroundservice",
@@ -139,16 +139,21 @@
 			"titanium/app/properties",
 			"titanium/app/windows",
 			"titanium/app/windows/backgroundservice",
-			"titanium/app/windows/backgroundservicetask",
-			"titanium/platform",
+			"titanium/app/windows/backgroundservicetask"
+		]
+	},
+	{
+		"title": "Platform",
+		"path": "/api/titanium/platform",
+		"children": [
 			"titanium/platform/android",
 			"titanium/platform/displaycaps"
 		]
 	},
 	{
 		"title": "Calendar",
+		"path": "/api/titanium/calendar",
 		"children": [
-			"titanium/calendar",
 			"titanium/calendar/alert",
 			"titanium/calendar/attendee",
 			"titanium/calendar/calendar",
@@ -159,8 +164,8 @@
 	},
 	{
 		"title": "Contacts",
+		"path": "/api/titanium/contacts",
 		"children": [
-			"titanium/contacts",
 			"titanium/contacts/group",
 			"titanium/contacts/person"
 		]
@@ -182,8 +187,8 @@
 	},
 	{
 		"title": "Media",
+		"path": "/api/titanium/media",
 		"children": [
-			"titanium/media",
 			"titanium/media/android",
 			"titanium/media/audioplayer",
 			"titanium/media/audiorecorder",
@@ -196,8 +201,8 @@
 	},
 	{
 		"title": "Network",
+		"path": "/api/titanium/network",
 		"children": [
-			"titanium/network",
 			"titanium/network/bonjourbrowser",
 			"titanium/network/bonjourservice",
 			"titanium/network/cookie",
@@ -228,8 +233,8 @@
 	},
 	{
 		"title": "XML",
+		"path": "/api/titanium/xml",
 		"children": [
-			"titanium/xml",
 			"titanium/xml/attr",
 			"titanium/xml/cdatasection",
 			"titanium/xml/characterdata",
@@ -251,8 +256,8 @@
 	},
 	{
 		"title": "Android",
+		"path": "/api/titanium/android",
 		"children": [
-			"titanium/android",
 			"titanium/android/actionbar",
 			"titanium/android/activity",
 			"titanium/android/bigpicturestyle",
@@ -295,124 +300,121 @@
 		"children": [ "global", "global/console", "global/string" ]
 	},
 	{
-		"title": "Barcode Module",
-		"children": [ "modules/barcode" ]
-	},
-	{
-		"title": "Crash Analytics Module",
-		"children": [ "modules/aca" ]
-	},
-	{
-		"title": "Encrypted Database Module",
-		"children": [ "modules/encrypteddatabase" ]
-	},
-	{
-		"title": "Facebook Module",
-		"children": [ "modules/facebook", "modules/facebook/loginbutton", "modules/facebook/messengerbutton" ]
-	},
-	{
-		"title": "Geofencing Module",
-		"children": [ "modules/geofence", "modules/geofence/region" ]
-	},
-	{
-		"title": "SSL Certificate Pinning Module",
-		"children": [ "modules/https" ]
-	},
-	{
-		"title": "Identity Module",
-		"children": [ "modules/identity", "modules/identity/keychainitem" ]
-	},
-	{
-		"title": "Map Module",
+		"title": "Modules",
 		"children": [
-			"modules/map",
-			"modules/map/annotation",
-			"modules/map/camera",
-			"modules/map/circle",
-			"modules/map/imageoverlay",
-			"modules/map/polygon",
-			"modules/map/polyline",
-			"modules/map/route",
-			"modules/map/snapshotter",
-			"modules/map/streetviewpanorama",
-			"modules/map/view"
-		]
-	},
-	{
-		"title": "Web Dialog Module",
-		"children": [
-			"modules/webdialog",
-			"modules/webdialog/authenticationsession"
-		]
-	},
-	{
-		"title": "Playservices Module (Android)",
-		"children": [ "modules/playservices" ]
-	},
-	{
-		"title": "NFC Module (Android)",
-		"children": [
-			"modules/nfc",
-			"modules/nfc/ndefmessage",
-			"modules/nfc/ndefrecord",
-			"modules/nfc/ndefrecordapplication",
-			"modules/nfc/ndefrecordempty",
-			"modules/nfc/ndefrecordexternal",
-			"modules/nfc/ndefrecordmedia",
-			"modules/nfc/ndefrecordsmartposter",
-			"modules/nfc/ndefrecordtext",
-			"modules/nfc/ndefrecordunknown",
-			"modules/nfc/ndefrecorduri",
-			"modules/nfc/nfcforegrounddispatchfilter",
-			"modules/nfc/nfctag",
-			"modules/nfc/tagtechnology",
-			"modules/nfc/tagtechnologyisodep",
-			"modules/nfc/tagtechnologymifareclassic",
-			"modules/nfc/tagtechnologymifareultralight",
-			"modules/nfc/tagtechnologyndef",
-			"modules/nfc/tagtechnologyndefformatable",
-			"modules/nfc/tagtechnologynfca",
-			"modules/nfc/tagtechnologynfcb",
-			"modules/nfc/tagtechnologynfcf",
-			"modules/nfc/tagtechnologynfcv"
-		]
-	},
-	{
-		"title": "Apple Sign-in Module (iOS)",
-		"children": [ "modules/applesignin", "modules/applesignin/loginbutton" ]
-	},
-	{
-		"title": "CoreMotion Module (iOS)",
-		"children": [
-			"modules/coremotion",
-			"modules/coremotion/accelerometer",
-			"modules/coremotion/altimeter",
-			"modules/coremotion/devicemotion",
-			"modules/coremotion/gyroscope",
-			"modules/coremotion/magnetometer",
-			"modules/coremotion/motionactivity",
-			"modules/coremotion/pedometer",
-			"modules/coremotion/stepcounter"
-		]
-	},
-	{
-		"title": "News Stand Module (iOS)",
-		"children": [ "modules/newsstand", "modules/newsstand/issue" ]
-	},
-	{
-		"title": "Safari Dialog Module (iOS)",
-		"children": [ "modules/safaridialog", "modules/safaridialog/authenticationsession" ]
-	},
-	{
-		"title": "TouchId Module (iOS)",
-		"children": [ "modules/touchid", "modules/touchid/keychainitem" ]
-	},
-	{
-		"title": "URLSession Module (iOS)",
-		"children": [
-			"modules/urlsession",
-			"modules/urlsession/session",
-			"modules/urlsession/sessionconfiguration"
+			"modules/barcode",
+			"modules/aca",
+			"modules/encrypteddatabase",
+			{
+				"title": "Facebook Module",
+				"path": "/api/modules/facebook",
+				"children": [ "modules/facebook/loginbutton", "modules/facebook/messengerbutton" ]
+			},
+			{
+				"title": "Geofencing Module",
+				"path": "/api/modules/geofence",
+				"children": ["modules/geofence/region" ]
+			},
+			"modules/https",
+			{
+				"title": "Identity Module",
+				"path": "/api/modules/identity",
+				"children": [ "modules/identity/keychainitem" ]
+			},
+			{
+				"title": "Map Module",
+				"path": "/api/modules/map",
+				"children": [
+					"modules/map/annotation",
+					"modules/map/camera",
+					"modules/map/circle",
+					"modules/map/imageoverlay",
+					"modules/map/polygon",
+					"modules/map/polyline",
+					"modules/map/route",
+					"modules/map/snapshotter",
+					"modules/map/streetviewpanorama",
+					"modules/map/view"
+				]
+			},
+			{
+				"title": "Web Dialog Module",
+				"path": "/api/modules/webdialog",
+				"children": [
+					"modules/webdialog/authenticationsession"
+				]
+			},
+			"modules/playservices",
+			{
+				"title": "NFC Module (Android)",
+				"path": "/api/modules/nfc",
+				"children": [
+					"modules/nfc/ndefmessage",
+					"modules/nfc/ndefrecord",
+					"modules/nfc/ndefrecordapplication",
+					"modules/nfc/ndefrecordempty",
+					"modules/nfc/ndefrecordexternal",
+					"modules/nfc/ndefrecordmedia",
+					"modules/nfc/ndefrecordsmartposter",
+					"modules/nfc/ndefrecordtext",
+					"modules/nfc/ndefrecordunknown",
+					"modules/nfc/ndefrecorduri",
+					"modules/nfc/nfcforegrounddispatchfilter",
+					"modules/nfc/nfctag",
+					"modules/nfc/tagtechnology",
+					"modules/nfc/tagtechnologyisodep",
+					"modules/nfc/tagtechnologymifareclassic",
+					"modules/nfc/tagtechnologymifareultralight",
+					"modules/nfc/tagtechnologyndef",
+					"modules/nfc/tagtechnologyndefformatable",
+					"modules/nfc/tagtechnologynfca",
+					"modules/nfc/tagtechnologynfcb",
+					"modules/nfc/tagtechnologynfcf",
+					"modules/nfc/tagtechnologynfcv"
+				]
+			},
+			{
+				"title": "Apple Sign-in Module (iOS)",
+				"path": "/api/modules/applesignin",
+				"children": [ "modules/applesignin/loginbutton" ]
+			},
+			{
+				"title": "CoreMotion Module (iOS)",
+				"path": "/api/modules/coremotion",
+				"children": [
+					"modules/coremotion/accelerometer",
+					"modules/coremotion/altimeter",
+					"modules/coremotion/devicemotion",
+					"modules/coremotion/gyroscope",
+					"modules/coremotion/magnetometer",
+					"modules/coremotion/motionactivity",
+					"modules/coremotion/pedometer",
+					"modules/coremotion/stepcounter"
+				]
+			},
+			{
+				"title": "News Stand Module (iOS)",
+				"path": "/api/modules/newsstand",
+				"children": [ "modules/newsstand/issue" ]
+			},
+			{
+				"title": "Safari Dialog Module (iOS)",
+				"path": "/api/modules/safaridialog",
+				"children": [ "modules/safaridialog/authenticationsession" ]
+			},
+			{
+				"title": "TouchId Module (iOS)",
+				"path": "/api/modules/touchid",
+				"children": [ "modules/touchid/keychainitem" ]
+			},
+			{
+				"title": "URLSession Module (iOS)",
+				"path": "/api/modules/urlsession",
+				"children": [
+					"modules/urlsession/session",
+					"modules/urlsession/sessionconfiguration"
+				]
+			}
 		]
 	}
 ]
