@@ -11,7 +11,7 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
-  theme: 'titanium', // FIMXE: Our titanium theme doesn't support nested sidebar groups!
+  theme: 'titanium',
   themeConfig: {
     logo: '/titanium-logo.png',
     footerCopyright: 'Copyright © 2019-present Axway Appcelerator',
