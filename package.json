@@ -7,7 +7,7 @@
     "clean:api": "rm -rf docs/api; rm -f docs/.vuepress/api.json",
     "clean:guide": "rm -rf docs/guide; rm -rf docs/.vuepress/public/images/guide; rm -f docs/.vuepress/guide.json",
     "docs:dev": "vuepress dev docs --temp .temp",
-    "docs:build": "vuepress build docs",
+    "docs:build": "NODE_OPTIONS=\"--max-old-space-size=8192\" vuepress build docs",
     "docs:version": "vuepress version docs",
     "docs:metadata": "vuepress metadata docs ../titanium_mobile/apidoc/common ../titanium_mobile/apidoc/Titanium ../titanium_mobile/apidoc/Global ../titanium_mobile_windows/apidoc",
     "test": "echo \"Error: no test specified\" && exit 1"
