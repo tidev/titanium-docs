@@ -1,0 +1,1 @@
+{"name":"Titanium.UI.iOS.WebViewProcessPool","summary":"<p>It represents a pool of Web Content processes.</p>\n","extends":"Titanium.Proxy","platforms":[{"pretty_name":"iPhone","since":"8.0.0","name":"iphone"},{"pretty_name":"iPad","since":"8.0.0","name":"ipad"}],"type":"object","methods":[],"properties":[],"subtype":"proxy","events":[],"constants":[]}
