@@ -6,6 +6,7 @@
   "scripts": {
     "clean:api": "rm -rf docs/api; rm -f docs/.vuepress/api.json",
     "clean:guide": "rm -rf docs/guide; rm -rf docs/.vuepress/public/images/guide; rm -f docs/.vuepress/guide.json",
+    "deploy": "gh-pages -d docs/.vuepress/dist",
     "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "NODE_OPTIONS=\"--max-old-space-size=8192\" vuepress build docs",
     "docs:version": "vuepress version docs",
@@ -17,6 +18,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.5.2",
+    "gh-pages": "^3.1.0",
     "vuepress": "^1.5.2",
     "vuepress-plugin-apidocs": "^4.5.2",
     "vuepress-plugin-versioning": "^4.5.0",
