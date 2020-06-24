@@ -5,6 +5,7 @@ library 'pipeline-library'
 properties([buildDiscarder(logRotator(numToKeepStr: '30', artifactNumToKeepStr: '3'))])
 
 def nodeVersion = '10.19.0'
+def isMainBranch = env.BRANCH_NAME.equals('master') || env.BRANCH_NAME.equals('main')
 
 node('linux || osx') {
 	timestamps {
@@ -23,8 +24,13 @@ node('linux || osx') {
 			}
 		}
 		stage('Deploy') {
-			// TODO: Can we take docs/.vuepress/dist and publish that to gh-pages branch?
-			archiveArtifacts 'docs/.vuepress/dist/'
+			if (isMainBranch) {
+				// Push to gh-pages branch to deploy to https://appcelerator.github.io/titanium-docs
+				sh 'npm run deploy'
+			} else {
+				// PRs and non-main branches, just archive the generated site
+				archiveArtifacts 'docs/.vuepress/dist/'
+			}
 		}
 	}
 }
