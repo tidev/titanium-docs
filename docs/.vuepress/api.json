@@ -225,8 +225,8 @@
 	},
 	{
 		"title": "SQLite Database",
+		"path": "/api/titanium/database",
 		"children": [
-			"titanium/database",
 			"titanium/database/db",
 			"titanium/database/resultset"
 		]
@@ -302,27 +302,27 @@
 	{
 		"title": "Modules",
 		"children": [
-			"modules/barcode",
-			"modules/aca",
-			"modules/encrypteddatabase",
+			[ "modules/barcode", "Barcode" ],
+			[ "modules/aca", "Crash Reporting" ],
+			[ "modules/encrypteddatabase", "Encrypted Database" ],
 			{
-				"title": "Facebook Module",
+				"title": "Facebook",
 				"path": "/api/modules/facebook",
 				"children": [ "modules/facebook/loginbutton", "modules/facebook/messengerbutton" ]
 			},
 			{
-				"title": "Geofencing Module",
+				"title": "Geofencing",
 				"path": "/api/modules/geofence",
 				"children": ["modules/geofence/region" ]
 			},
-			"modules/https",
+			[ "modules/https", "HTTPS Cert Pinning" ],
 			{
-				"title": "Identity Module",
+				"title": "Identity",
 				"path": "/api/modules/identity",
 				"children": [ "modules/identity/keychainitem" ]
 			},
 			{
-				"title": "Map Module",
+				"title": "Map",
 				"path": "/api/modules/map",
 				"children": [
 					"modules/map/annotation",
@@ -338,81 +338,91 @@
 				]
 			},
 			{
-				"title": "Web Dialog Module",
+				"title": "Web Dialog",
 				"path": "/api/modules/webdialog",
 				"children": [
 					"modules/webdialog/authenticationsession"
 				]
 			},
-			"modules/playservices",
 			{
-				"title": "NFC Module (Android)",
-				"path": "/api/modules/nfc",
+				"title": "Android",
 				"children": [
-					"modules/nfc/ndefmessage",
-					"modules/nfc/ndefrecord",
-					"modules/nfc/ndefrecordapplication",
-					"modules/nfc/ndefrecordempty",
-					"modules/nfc/ndefrecordexternal",
-					"modules/nfc/ndefrecordmedia",
-					"modules/nfc/ndefrecordsmartposter",
-					"modules/nfc/ndefrecordtext",
-					"modules/nfc/ndefrecordunknown",
-					"modules/nfc/ndefrecorduri",
-					"modules/nfc/nfcforegrounddispatchfilter",
-					"modules/nfc/nfctag",
-					"modules/nfc/tagtechnology",
-					"modules/nfc/tagtechnologyisodep",
-					"modules/nfc/tagtechnologymifareclassic",
-					"modules/nfc/tagtechnologymifareultralight",
-					"modules/nfc/tagtechnologyndef",
-					"modules/nfc/tagtechnologyndefformatable",
-					"modules/nfc/tagtechnologynfca",
-					"modules/nfc/tagtechnologynfcb",
-					"modules/nfc/tagtechnologynfcf",
-					"modules/nfc/tagtechnologynfcv"
+					[ "modules/playservices", "Google Play Services (Android)" ],
+					{
+						"title": "NFC (Android)",
+						"path": "/api/modules/nfc",
+						"children": [
+							"modules/nfc/ndefmessage",
+							"modules/nfc/ndefrecord",
+							"modules/nfc/ndefrecordapplication",
+							"modules/nfc/ndefrecordempty",
+							"modules/nfc/ndefrecordexternal",
+							"modules/nfc/ndefrecordmedia",
+							"modules/nfc/ndefrecordsmartposter",
+							"modules/nfc/ndefrecordtext",
+							"modules/nfc/ndefrecordunknown",
+							"modules/nfc/ndefrecorduri",
+							"modules/nfc/nfcforegrounddispatchfilter",
+							"modules/nfc/nfctag",
+							"modules/nfc/tagtechnology",
+							"modules/nfc/tagtechnologyisodep",
+							"modules/nfc/tagtechnologymifareclassic",
+							"modules/nfc/tagtechnologymifareultralight",
+							"modules/nfc/tagtechnologyndef",
+							"modules/nfc/tagtechnologyndefformatable",
+							"modules/nfc/tagtechnologynfca",
+							"modules/nfc/tagtechnologynfcb",
+							"modules/nfc/tagtechnologynfcf",
+							"modules/nfc/tagtechnologynfcv"
+						]
+					}
 				]
 			},
 			{
-				"title": "Apple Sign-in Module (iOS)",
-				"path": "/api/modules/applesignin",
-				"children": [ "modules/applesignin/loginbutton" ]
-			},
-			{
-				"title": "CoreMotion Module (iOS)",
-				"path": "/api/modules/coremotion",
+				"title": "iOS",
 				"children": [
-					"modules/coremotion/accelerometer",
-					"modules/coremotion/altimeter",
-					"modules/coremotion/devicemotion",
-					"modules/coremotion/gyroscope",
-					"modules/coremotion/magnetometer",
-					"modules/coremotion/motionactivity",
-					"modules/coremotion/pedometer",
-					"modules/coremotion/stepcounter"
-				]
-			},
-			{
-				"title": "News Stand Module (iOS)",
-				"path": "/api/modules/newsstand",
-				"children": [ "modules/newsstand/issue" ]
-			},
-			{
-				"title": "Safari Dialog Module (iOS)",
-				"path": "/api/modules/safaridialog",
-				"children": [ "modules/safaridialog/authenticationsession" ]
-			},
-			{
-				"title": "TouchId Module (iOS)",
-				"path": "/api/modules/touchid",
-				"children": [ "modules/touchid/keychainitem" ]
-			},
-			{
-				"title": "URLSession Module (iOS)",
-				"path": "/api/modules/urlsession",
-				"children": [
-					"modules/urlsession/session",
-					"modules/urlsession/sessionconfiguration"
+					{
+						"title": "Apple Sign-in (iOS)",
+						"path": "/api/modules/applesignin",
+						"children": [ "modules/applesignin/loginbutton" ]
+					},
+					{
+						"title": "CoreMotion (iOS)",
+						"path": "/api/modules/coremotion",
+						"children": [
+							"modules/coremotion/accelerometer",
+							"modules/coremotion/altimeter",
+							"modules/coremotion/devicemotion",
+							"modules/coremotion/gyroscope",
+							"modules/coremotion/magnetometer",
+							"modules/coremotion/motionactivity",
+							"modules/coremotion/pedometer",
+							"modules/coremotion/stepcounter"
+						]
+					},
+					{
+						"title": "News Stand (iOS)",
+						"path": "/api/modules/newsstand",
+						"children": [ "modules/newsstand/issue" ]
+					},
+					{
+						"title": "Safari Dialog (iOS)",
+						"path": "/api/modules/safaridialog",
+						"children": [ "modules/safaridialog/authenticationsession" ]
+					},
+					{
+						"title": "TouchId (iOS)",
+						"path": "/api/modules/touchid",
+						"children": [ "modules/touchid/keychainitem" ]
+					},
+					{
+						"title": "URLSession (iOS)",
+						"path": "/api/modules/urlsession",
+						"children": [
+							"modules/urlsession/session",
+							"modules/urlsession/sessionconfiguration"
+						]
+					}
 				]
 			}
 		]
