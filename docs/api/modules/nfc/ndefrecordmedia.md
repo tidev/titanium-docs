@@ -5,6 +5,6 @@
 ## Overview
 
 See also:
-[createMime](http://developer.android.com/reference/android/nfc/NdefRecord.html#createMime(java.lang.String, byte[]))
+[createMime](http://developer.android.com/reference/android/nfc/NdefRecord.html#createMime(java.lang.String,%20byte[]))
 
 <ApiDocs/>

@@ -6,6 +6,7 @@
 
 ### Login button to signin
 
+``` javascript
 var AppleSignin = require('ti.applesignin');
 
 var win = Ti.UI.createWindow({
@@ -37,5 +38,6 @@ AppleSignin.addEventListener('login', function (e) {
 
 win.add(signInButton);
 win.open();
+```
 
 <ApiDocs/>

@@ -11,7 +11,6 @@ magnetometer. The Core Motion module allows you to access the metrics provided b
 For instruction and examples of using the Core Motion Module, see the
 [Core Motion Module guide](http://docs.appcelerator.com/platform/latest/#!/guide/Core_Motion_Module).
 
-
 ### Requirements
 
 This module only works with devices running iOS 7 and later. Not all devices have the same hardware sensors,
@@ -26,30 +25,30 @@ use the "Motion Activity" permission. When the application uses the Core Motion 
 time, iOS prompts the user to either approve or deny access to the Core Motion features of the
 device. The user can change the permission settings with **Settings** > **Privacy**.
 
-
 ### Getting Started
 
 Once you have [installed](#!/guide/Using_a_Module) the module and added it as a depedency,
 use `require()` to access it from JavaScript:
 
-    var CoreMotion = require("ti.coremotion");
+``` javascript
+var CoreMotion = require("ti.coremotion");
 
-    // The `CoreMotion` variable is a reference to the Module object.  Use this reference to make
-    // subsequent calls to the CoreMotion Module API. The following example shows the step counting
-    // API of `CoreMotion`.
+// The `CoreMotion` variable is a reference to the Module object.  Use this reference to make
+// subsequent calls to the CoreMotion Module API. The following example shows the step counting
+// API of `CoreMotion`.
 
-    var pedometer = CoreMotion.createPedometer();
+var pedometer = CoreMotion.createPedometer();
 
-    // This code checks to see if the device can gather step counting data
-    if (pedometer.isStepCountingAvailable()) {
-        // If it can, it starts the step counter and outputs the data to the console
-        pedometer.startPedometerUpdates(function(e) {
-            Ti.API.info(JSON.stringify(e));
-        });
-    } else {
-        Ti.API.warn('This device does not support counting steps.');
-    }
-
+// This code checks to see if the device can gather step counting data
+if (pedometer.isStepCountingAvailable()) {
+    // If it can, it starts the step counter and outputs the data to the console
+    pedometer.startPedometerUpdates(function(e) {
+        Ti.API.info(JSON.stringify(e));
+    });
+} else {
+    Ti.API.warn('This device does not support counting steps.');
+}
+```
 
 ### Sample Application
 

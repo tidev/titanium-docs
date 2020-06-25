@@ -15,46 +15,48 @@ For information on getting started and usage examples, refer to the
 
 If you wish to try out the ACA module, try this sample app (app.js)
 
-    const aca = require('com.appcelerator.aca');
-    const win = Ti.UI.createWindow({ backgroundColor: 'gray', layout: 'vertical' });
+``` javascript
+const aca = require('com.appcelerator.aca');
+const win = Ti.UI.createWindow({ backgroundColor: 'gray', layout: 'vertical' });
 
-    add('Breadcrumb', () => {
-        aca.leaveBreadcrumb('example breadcrumb #1');
-        // do stuff...
-        aca.leaveBreadcrumb('example breadcrumb #2');
+add('Breadcrumb', () => {
+    aca.leaveBreadcrumb('example breadcrumb #1');
+    // do stuff...
+    aca.leaveBreadcrumb('example breadcrumb #2');
+});
+
+add('Username', () => {
+    aca.setUsername('Tester');
+});
+
+add('Metadata', () => {
+    // specify metadata using key, value
+    aca.setMetadata('testKey', 'testKeyValue');
+
+    // specify metadata using object
+    aca.setMetadata({
+        testObj: 'testObjValue'
     });
+});
 
-    add('Username', () => {
-        aca.setUsername('Tester');
-    });
-
-    add('Metadata', () => {
-        // specify metadata using key, value
-        aca.setMetadata('testKey', 'testKeyValue');
-
-        // specify metadata using object
-        aca.setMetadata({
-            testObj: 'testObjValue'
-        });
-    });
-
-    add('Log Exception', () => {
-        try {
-            throw new Error('example exception');
-        } catch (e) {
-            aca.logHandledException(e);
-        }
-    });
-
-    add('Opt Out', () => {
-        aca.setOptOutStatus(!aca.getOptOutStatus());
-        console.log('set optOutStatus: ' + aca.getOptOutStatus());
-    });
-
-    function add(name, callback) {
-        const btn = Ti.UI.createButton({ title: name, left: 5, right: 5 });
-        btn.addEventListener('click', callback);
-        win.add(btn);
+add('Log Exception', () => {
+    try {
+        throw new Error('example exception');
+    } catch (e) {
+        aca.logHandledException(e);
     }
+});
+
+add('Opt Out', () => {
+    aca.setOptOutStatus(!aca.getOptOutStatus());
+    console.log('set optOutStatus: ' + aca.getOptOutStatus());
+});
+
+function add(name, callback) {
+    const btn = Ti.UI.createButton({ title: name, left: 5, right: 5 });
+    btn.addEventListener('click', callback);
+    win.add(btn);
+}
+```
 
 <ApiDocs/>

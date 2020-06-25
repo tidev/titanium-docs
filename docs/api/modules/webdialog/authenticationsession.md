@@ -36,23 +36,25 @@ Please make sure you have at least Xcode 9 to build to the required sources.
 ### Getting Started
 
 Create a new authentication session by providing a `url` and `scheme`, create an event-listener and start:
-    
-    var WebDialog = require('ti.webdialog');
-    
-    var authSession = WebDialog.createAuthenticationSession({
-      url: 'https://example.com/oauth?callbackURL=myapp://',
-      scheme: 'myapp://'
-    });
-    
-    authSession.addEventListener('callback', function(e) {
-      if (!e.success) {
-          Ti.API.error('Error authenticating: ' + e.error);
-          return;
-      }
-      
-      Ti.API.info('Callback URL: ' + e.callbackURL);
-    });
-    
-    authSession.start(); // Or cancel() to cancel it manually.
+
+``` javascript
+var WebDialog = require('ti.webdialog');
+
+var authSession = WebDialog.createAuthenticationSession({
+  url: 'https://example.com/oauth?callbackURL=myapp://',
+  scheme: 'myapp://'
+});
+
+authSession.addEventListener('callback', function(e) {
+  if (!e.success) {
+      Ti.API.error('Error authenticating: ' + e.error);
+      return;
+  }
+  
+  Ti.API.info('Callback URL: ' + e.callbackURL);
+});
+
+authSession.start(); // Or cancel() to cancel it manually.
+```
 
 <ApiDocs/>

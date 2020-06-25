@@ -1,0 +1,5 @@
+# CloudLikesResponse
+
+<TypeHeader/>
+
+<ApiDocs/>

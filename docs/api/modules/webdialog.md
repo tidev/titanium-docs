@@ -19,25 +19,31 @@ Please make sure you have at least Xcode 7 to build to the required iOS sources.
 Add the module as a dependency to your application by adding a **`<module>`** item to the
 **`<modules>`** element of your `tiapp.xml` file:
 
-    <ti:app>
-      ...
-      <modules>
-        <module platform="iphone">ti.webdialog</module>
-      </modules>
-      ...
-    </ti:app>
+``` xml
+<ti:app>
+  <!-- ... -->
+  <modules>
+    <module platform="iphone">ti.webdialog</module>
+  </modules>
+  <!-- ... -->
+</ti:app>
+```
 
 Use `require()` to access the module from JavaScript:
 
-    var dialog = require('ti.webdialog');
+``` javascript
+var dialog = require('ti.webdialog');
+```
 
 The `dialog` variable is a reference to the module. Make API calls using this reference:
 
-    if (dialog.isSupported()) {
-        dialog.open({
-            url: 'https://appcelerator.com'
-        });
-    }
+``` javascript
+if (dialog.isSupported()) {
+    dialog.open({
+        url: 'https://appcelerator.com'
+    });
+}
+```
 
 ### Sample Application
 

@@ -1,0 +1,5 @@
+# CloudSocialIntegrationsResponse
+
+<TypeHeader/>
+
+<ApiDocs/>

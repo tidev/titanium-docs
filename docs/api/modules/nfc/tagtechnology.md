@@ -24,41 +24,43 @@ See also:
 
 This example uses the TECH_NDEF tag technology to write a <Modules.Nfc.NdefMessage> message to a tag.
 
-    var tech = nfc.createTagTechnologyNdef({
-        tag: scannedTag
-    });
+``` javascript
+var tech = nfc.createTagTechnologyNdef({
+    tag: scannedTag
+});
 
-    if (!tech.isValid()) {
-        alert("Failed to create Ndef tag type");
-        return;
+if (!tech.isValid()) {
+    alert("Failed to create Ndef tag type");
+    return;
+}
+
+// Attempt to write an Ndef record to the tag
+try {
+    tech.connect();
+
+    // It's possible that the tag is not writable, so we need to check first.
+    if (!tech.isWritable()) {
+        alert ("Tag is not writable");
+    } else {
+        // Create a new message to write to the tag
+        var date = new Date();
+        var textRecord = nfc.createNdefRecordText({
+            text: "Titanium NFC module. Tag updated on " + date.toLocaleString() + "!!!"
+        });
+        var msg = nfc.createNdefMessage({
+            records: [ textRecord ]
+        });
+    
+        // Write to the tag
+        tech.writeNdefMessage(msg);
     }
-
-    // Attempt to write an Ndef record to the tag
-    try {
-        tech.connect();
-
-        // It's possible that the tag is not writable, so we need to check first.
-        if (!tech.isWritable()) {
-            alert ("Tag is not writable");
-        } else {
-            // Create a new message to write to the tag
-            var date = new Date();
-            var textRecord = nfc.createNdefRecordText({
-                text: "Titanium NFC module. Tag updated on " + date.toLocaleString() + "!!!"
-            });
-            var msg = nfc.createNdefMessage({
-                records: [ textRecord ]
-            });
-        
-            // Write to the tag
-            tech.writeNdefMessage(msg);
-        }
-    } catch (e) {
-        alert("Error: " + e.message);
-    } finally {
-        if (tech.isConnected()) {
-            tech.close();
-        }
+} catch (e) {
+    alert("Error: " + e.message);
+} finally {
+    if (tech.isConnected()) {
+        tech.close();
     }
+}
+```
 
 <ApiDocs/>

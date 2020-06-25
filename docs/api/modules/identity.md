@@ -16,26 +16,32 @@ This module only works with devices running iOS 8 and later.
 Add the module as a dependency to your application by adding a **`<module>`** item to the
 **`<modules>`** element of your `tiapp.xml` file:
 
-    <ti:app>
-      ...
-      <modules>
-        <module platform="iphone">ti.identity</module>
-      </modules>
-      ...
-    </ti:app>
+``` xml
+<ti:app>
+  <!-- ... -->
+  <modules>
+    <module platform="iphone">ti.identity</module>
+  </modules>
+  <!-- ... -->
+</ti:app>
+```
 
 Use `require()` to access the module from JavaScript:
 
-    var Identity = require('ti.identity');
+``` javascript
+var Identity = require('ti.identity');
+```
 
 The `Identity` variable is a reference to the module. Make API calls using this reference:
 
-    Identity.authenticate({
-        reason: 'Verify to modify personal settings',
-        callback: function(e) {
-            Ti.API.info(e);
-        }
-    });
+``` javascript
+Identity.authenticate({
+    reason: 'Verify to modify personal settings',
+    callback: function(e) {
+        Ti.API.info(e);
+    }
+});
+```
 
 ### Lifetime Notes (iOS-only)
 
@@ -49,33 +55,37 @@ evaluation of an auth-context, e.g. to hide the auth-dialoag.
 Use the <Modules.Identity.biometryType> to receive the currently used biometry type. See an example of
 using the property to create a personalized interface when using Touch ID and Face ID:
 
-    var authPhrase = 'Unknown';
+``` javascript
+var authPhrase = 'Unknown';
 
-    if (TiIdentity.biometryType === TiIdentity.BIOMETRY_TYPE_FACE_ID) { // Face ID
-        authPhrase = 'Face ID';
-    } else if (TiIdentity.biometryType === TiIdentity.BIOMETRY_TYPE_TOUCH_ID) { // Touch ID
-        authPhrase = 'Touch ID';
-    }
+if (TiIdentity.biometryType === TiIdentity.BIOMETRY_TYPE_FACE_ID) { // Face ID
+    authPhrase = 'Face ID';
+} else if (TiIdentity.biometryType === TiIdentity.BIOMETRY_TYPE_TOUCH_ID) { // Touch ID
+    authPhrase = 'Touch ID';
+}
+```
     
 ## Face ID Requirements (iOS only)
 
 For Face ID to work properly, you need to add a **`<key>`** item to the
 **`<plist>`** element of your `tiapp.xml` file:
 
-    <ti:app>
-      ...
-      <ios>
-        ...
-        <plist>
-          <dict>
-            <key>NSFaceIDUsageDescription</key>
-            <string>Why you need Face ID.</string>
-          </dict>
-        </plist>
-        ...
-      </ios>
-      ...
-    </ti:app>
+``` xml
+<ti:app>
+  <!-- ... -->
+  <ios>
+    <!-- ... -->
+    <plist>
+      <dict>
+        <key>NSFaceIDUsageDescription</key>
+        <string>Why you need Face ID.</string>
+      </dict>
+    </plist>
+    <!-- ... -->
+  </ios>
+  <!-- ... -->
+</ti:app>
+```
 
 ### Native Keychain Integration
 

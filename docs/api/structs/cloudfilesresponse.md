@@ -1,0 +1,5 @@
+# CloudFilesResponse
+
+<TypeHeader/>
+
+<ApiDocs/>

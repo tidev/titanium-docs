@@ -1,4 +1,4 @@
-# InviteDialogParams
+# CloudClientsResponse
 
 <TypeHeader/>
 

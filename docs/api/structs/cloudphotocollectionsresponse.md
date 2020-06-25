@@ -1,0 +1,5 @@
+# CloudPhotoCollectionsResponse
+
+<TypeHeader/>
+
+<ApiDocs/>

@@ -20,58 +20,68 @@ See the RegionMonitoring example in the module ZIP download.
 
 Once you have [installed](#!/guide/Using_a_Module) the module, use `require()` to access it from JavaScript:
 
-    var Geofence = require('ti.geofence');
+``` javascript
+var Geofence = require('ti.geofence');
+```
 
 ### Location Permissions
 
 Please ensure to request proper location permissions before attempting to use geofencing feautures. See
-[Titanium.Geolocation.hasLocationPermissions(<type>)](Titanium.Geolocation.hasLocationPermissions) and [Titanium.Geolocation.requestLocationPermissions(<type>, <callback>)](Titanium.Geolocation.requestLocationPermissions)
+[Titanium.Geolocation.hasLocationPermissions(type)](Titanium.Geolocation.hasLocationPermissions) and [Titanium.Geolocation.requestLocationPermissions(type, callback)](Titanium.Geolocation.requestLocationPermissions)
 for details. Example:
   
-    if (!Ti.Geolocation.hasLocationPermissions(Ti.Geolocation.AUTHORIZATION_ALWAYS)) {
-        Ti.Geolocation.requestLocationPermissions(Ti.Geolocation.AUTHORIZATION_ALWAYS, function (e) {
-            if (!e.success) {
-                alert('Location permissions declined!');
-                return;
-            }
-            
-            alert('Location permissions ready');
-            // Initialize monitoring here
-        });
-    }
+``` javascript
+if (!Ti.Geolocation.hasLocationPermissions(Ti.Geolocation.AUTHORIZATION_ALWAYS)) {
+    Ti.Geolocation.requestLocationPermissions(Ti.Geolocation.AUTHORIZATION_ALWAYS, function (e) {
+        if (!e.success) {
+            alert('Location permissions declined!');
+            return;
+        }
+
+        alert('Location permissions ready');
+        // Initialize monitoring here
+    });
+}
+```
 
 ### Creating and monitoring geofence regions
 
 You use the [Geofence.createRegion()](Modules.Geofence.createRegion) method to define a [Region](Modules.Geofence.Region) object.
 A geofence is a circular area defined by a point (latitude and longitude) and a radius (in meters).
 
-    var newRegion = Geofence.createRegion({
-        center: {
-            latitude: 37.389601,
-            longitude: -122.050169
-        },
-        radius: 500,
-        identifier:'Appcelerator'
-    });
+``` javascript
+var newRegion = Geofence.createRegion({
+    center: {
+        latitude: 37.389601,
+        longitude: -122.050169
+    },
+    radius: 500,
+    identifier: 'Appcelerator'
+});
+```
 
 To start monitoring a region, call the [Geofence.startMonitoringForRegions()](Modules.Geofence.startMonitoringForRegions) method, passing it the
 region or regions you want to monitor.
 
-    Geofence.startMonitoringForRegions([region1, region2]);
+``` javascript
+Geofence.startMonitoringForRegions([region1, region2]);
+```
 
 To be notified when the device moves into or out of a geofence region, create an event listener
 for the [enterregions](Modules.Geofence.enterregions) or [exitregions](Modules.Geofence.exitregions) events, respectively.
 For example:
 
-    Geofence.addEventListener('enterregions', function(e) {
-        e.regions.forEach(function (region) {
-            // Display local notification
-            showNotification({
-                title: 'ENTER',
-                body: 'enter - ' + region.identifier
-            });
+``` javascript
+Geofence.addEventListener('enterregions', function (e) {
+    e.regions.forEach(function (region) {
+        // Display local notification
+        showNotification({
+            title: 'ENTER',
+            body: 'enter - ' + region.identifier
         });
     });
+});
+```
 
 The event object passed to the event handler contains a `regions` property that identifies the region(s)
 that were entered or exited. On iOS this property contains an array of [Region](Modules.Geofence.Region) objects;
@@ -108,7 +118,9 @@ This method will work on both the iOS Simulator and on device.
 
 Add the following to your `tiapp.xml`.
 
-    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+``` xml
+<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+```
 
 For more information, see [Provide Mock Location Data](https://developer.android.com/guide/topics/location/strategies#MockData)
 

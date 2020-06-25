@@ -13,7 +13,9 @@ Use the <Modules.Map.createView> method to create a map view.
 In Alloy, use the **`<Module>`** element with the `module` attribute set to `ti.map`
 and `method` attribute set to `createView` to create a map view in XML markup:
 
-    <Module module="ti.map" method="createView" />
+``` xml
+<Module module="ti.map" method="createView" />
+```
 
 All latitude and longitude values are specified in decimal degrees. Values in degrees,
 minutes and seconds (DMS) must be converted to decimal degrees before being passed to
@@ -33,19 +35,21 @@ or
 [`NSLocationAlwaysUsageDescription`](https://developer.apple.com/library/prerelease/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW18)
 key to the iOS plist section of the project's `tiapp.xml` file.
 
-    <ti:app>
-        <ios>
-            <plist>
-                <dict>
-                    <key>NSLocationAlwaysUsageDescription</key>
-                    <string>
-                        Specify the reason for accessing the user's location information.
-                        This appears in the alert dialog when asking the user for permission to
-                        access their location.
-                    </string>
-                </dict>
-            </plist>
-        </ios>
-    </ti:app>
+``` xml
+<ti:app>
+    <ios>
+        <plist>
+            <dict>
+                <key>NSLocationAlwaysUsageDescription</key>
+                <string>
+                    Specify the reason for accessing the user's location information.
+                    This appears in the alert dialog when asking the user for permission to
+                    access their location.
+                </string>
+            </dict>
+        </plist>
+    </ios>
+</ti:app>
+```
 
 <ApiDocs/>

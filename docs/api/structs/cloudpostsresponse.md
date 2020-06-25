@@ -1,0 +1,5 @@
+# CloudPostsResponse
+
+<TypeHeader/>
+
+<ApiDocs/>

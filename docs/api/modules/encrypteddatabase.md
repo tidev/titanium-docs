@@ -7,7 +7,7 @@
 This module exposes the same API as Titanium.Database, but it encrypts all content (even the schema) using
 a password you specify.
 
-<p class="note">Note: This feature requires a Pro or Enterprise subscription. More infos <a href="https://www.appcelerator.com/pricing/" target="_blank">here</a>!</p>
+<p class="note">Note: This feature requires a Pro or Enterprise subscription. More info <a href="https://www.appcelerator.com/pricing/" target="_blank">here</a>!</p>
 
 ### Getting Started
 
@@ -18,7 +18,9 @@ a password you specify.
 
 -   Use `require` to access this module from JavaScript:
 
-        var encryptedDatabase = require('appcelerator.encrypteddatabase');
+    ``` javascript
+    var encryptedDatabase = require('appcelerator.encrypteddatabase');
+    ```
 
     The `encryptedDatabase` variable is a reference to the Module object.
 
@@ -33,6 +35,7 @@ a password you specify.
 
 ### Open an encrypted database
 
+``` javascript
 var DB = require('appcelerator.encrypteddatabase');
 var instance = null;
 var dataTofetch = null;
@@ -101,9 +104,11 @@ function closeDB() {
 }
 win.add(indicator);
 win.open();
+```
 
 ### Use the JSON1-extension to encode/decode JSON-based content
 
+``` javascript
 var DB = require('appcelerator.encrypteddatabase');
 
 var win = Ti.UI.createWindow({ backgroundColor: 'white' });
@@ -130,5 +135,6 @@ function accessDatabase() {
     Ti.API.info('Closing DB ...');
     instance.close();
 }
+```
 
 <ApiDocs/>

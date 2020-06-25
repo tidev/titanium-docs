@@ -17,20 +17,23 @@
 ### Configure iOS: Capabilities and Provisioning Profiles
 
 -   Required capabilities:
-  
-        <key>com.apple.developer.applesignin</key>
-        <array>
-          <string>Default</string>
-        </array>
+
+    ``` xml  
+    <key>com.apple.developer.applesignin</key>
+    <array>
+      <string>Default</string>
+    </array>
+    ```
 
 -   Provisioning Profile entitled with 'Sign In with Apple' capability
-
 
 ### Accessing the Module
 
 -   Use `require` to access this module from JavaScript:
 
-        var AppleSignin = require('ti.applesignin');
+    ``` javascript
+    var AppleSignin = require('ti.applesignin');
+    ```
 
     The `AppleSignin` variable is a reference to the Module object.
 

@@ -1,0 +1,5 @@
+# CloudPushNotificationsQueryChannelResponse
+
+<TypeHeader/>
+
+<ApiDocs/>

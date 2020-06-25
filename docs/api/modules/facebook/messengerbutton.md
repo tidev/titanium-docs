@@ -22,6 +22,7 @@ This functionality is currently iOS-only.
 
 ### Messenger button to share the Appcelerator website.
 
+``` javascript
 var fb = require("facebook");
 var messengerButton = fb.createMessengerButton({
     mode: fb.MESSENGER_BUTTON_MODE_RECTANGULAR
@@ -38,5 +39,6 @@ messengerButton.addEventListener("click", function() {
 });
 
 win.add(messengerButton);
+```
 
 <ApiDocs/>

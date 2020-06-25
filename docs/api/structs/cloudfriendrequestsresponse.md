@@ -1,0 +1,5 @@
+# CloudFriendRequestsResponse
+
+<TypeHeader/>
+
+<ApiDocs/>

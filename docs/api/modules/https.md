@@ -55,11 +55,13 @@ not configured, then the default OS authentication is triggered.
 Once you have [installed](#!/guide/Using_a_Module) the module and added it as a depedency and
 use `require()` (ES5) or `import` (ES6+) to access it from JavaScript:
 
-    // ES5
-    var https = require('appcelerator.https');
+``` javascript
+// ES5
+var https = require('appcelerator.https');
 
-    // ES6+
-    import 'https' from 'appcelerator.https';
+// ES6+
+import 'https' from 'appcelerator.https';
+```
 
 The `https` variable is a reference to the module object.  Use this reference to call the 
 `createX509CertificatePinningSecurityManager()` method to authenticate the specified HTTPS URLs.
@@ -72,41 +74,47 @@ dictionary in the array contains three keys (two of them required):
 
 For example:
 
-    var securityManager = https.createX509CertificatePinningSecurityManager([
-        {
-            url: 'https://www.example.com',
-            serverCertificate: 'exampleServerCertificate.der',
-            trustChainIndex: 0
-        }
-    ]);
+``` javascript
+var securityManager = https.createX509CertificatePinningSecurityManager([
+    {
+        url: 'https://www.example.com',
+        serverCertificate: 'exampleServerCertificate.der',
+        trustChainIndex: 0
+    }
+]);
+```
 
 After the security manager is created, create an `HTTPClient` object and set the
 [securityManager](Titanium.Network.HTTPClient.securityManager) property to the security manager
 object you just created.  You must set this property when creating the `HTTPClient` instance.
 
-    var httpClient = Ti.Network.createHTTPClient({
-        onload: function(e) {
-            Ti.API.info('Received text: ' + httpClient.responseText);
-        },
-        onerror: function(e) {
-            Ti.API.error(e.error);
-        },
-        timeout: 5000,
-        // You can only set this property when creating the HTTPClient
-        securityManager: securityManager
-    });
+``` javascript
+var httpClient = Ti.Network.createHTTPClient({
+    onload: function(e) {
+        Ti.API.info('Received text: ' + httpClient.responseText);
+    },
+    onerror: function(e) {
+        Ti.API.error(e.error);
+    },
+    timeout: 5000,
+    // You can only set this property when creating the HTTPClient
+    securityManager: securityManager
+});
+```
 
 After the `securityManager` property is set, call the `HTTPClient`'s `open()` and `send()`
 methods to initiate the HTTPS request.
 
-    httpClient.open('GET', 'https://example.com');
-    httpClient.send();
+``` javascript
+httpClient.open('GET', 'https://example.com');
+httpClient.send();
+```
 
 If the authentication fails, a security exception is thrown. The HTTP client's `onerror`
 callback will be passed an error object with the `code` key set to `-1` and the `message` key
 set to the following message:
 
-    Certificate could not be verified with provided public key
+    `Certificate could not be verified with provided public key`
 
 To perform another HTTPS request, you need to create another `HTTPClient` object and follow the
 same procedure to initiate an HTTPS request.  You can reuse the same security manager object.
@@ -125,44 +133,46 @@ The second URL, https://www.wellsfargo.com, is pinned to the public
 key in the X.509 certificate, named `wellsfargo.der`, located the application's
 `Resources` directory (Classic) or `app/assets/` directory (Alloy).
 
-    // Require in the module
-    var https = require('appcelerator.https'),
-        securityManager,
-        httpClient;
+``` javascript
+// Require in the module
+var https = require('appcelerator.https'),
+    securityManager,
+    httpClient;
 
-    // Use the module to create a Security Manager that authenticates the specified URLs
-    securityManager = https.createX509CertificatePinningSecurityManager([
-        {
-            url: 'https://dashboard.appcelerator.com',
-            serverCertificate: 'dashboard.appcelerator.com.der'
-        },
-        {
-            url: 'https://www.wellsfargo.com',
-            serverCertificate: 'wellsfargo.der'
-        }
-    ]);
+// Use the module to create a Security Manager that authenticates the specified URLs
+securityManager = https.createX509CertificatePinningSecurityManager([
+    {
+        url: 'https://dashboard.appcelerator.com',
+        serverCertificate: 'dashboard.appcelerator.com.der'
+    },
+    {
+        url: 'https://www.wellsfargo.com',
+        serverCertificate: 'wellsfargo.der'
+    }
+]);
 
-    // Create an HTTP client the same way you always have
-    // but pass in the optional Security Manager that was created previously.
-    httpClient = Ti.Network.createHTTPClient({
-        onload: function(e) {
-            Ti.API.info('Received text: ' + httpClient.responseText);
-        },
-        onerror: function(e) {
-            Ti.API.error(e.error);
-        },
-        timeout: 5000,
-        // Set this property before calling the `open` method. 
-        securityManager: securityManager
-    });
+// Create an HTTP client the same way you always have
+// but pass in the optional Security Manager that was created previously.
+httpClient = Ti.Network.createHTTPClient({
+    onload: function(e) {
+        Ti.API.info('Received text: ' + httpClient.responseText);
+    },
+    onerror: function(e) {
+        Ti.API.error(e.error);
+    },
+    timeout: 5000,
+    // Set this property before calling the `open` method. 
+    securityManager: securityManager
+});
 
-    // Prepare the HTTPS connection in the same way you always have
-    // and the Security Manager will authenticate all servers for
-    // which it was configured before any communication happens.
-    httpClient.open('GET', 'https://dashboard.appcelerator.com');
+// Prepare the HTTPS connection in the same way you always have
+// and the Security Manager will authenticate all servers for
+// which it was configured before any communication happens.
+httpClient.open('GET', 'https://dashboard.appcelerator.com');
 
-    // Send the request in the same way you always have.
-    // Throws a Security Exception if authentication fails.
-    httpClient.send();
+// Send the request in the same way you always have.
+// Throws a Security Exception if authentication fails.
+httpClient.send();
+```
 
 <ApiDocs/>

@@ -1,0 +1,5 @@
+# CloudChatGroupsResponse
+
+<TypeHeader/>
+
+<ApiDocs/>

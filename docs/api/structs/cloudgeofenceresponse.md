@@ -1,0 +1,5 @@
+# CloudGeoFenceResponse
+
+<TypeHeader/>
+
+<ApiDocs/>

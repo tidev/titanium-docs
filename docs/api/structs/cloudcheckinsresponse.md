@@ -1,0 +1,5 @@
+# CloudCheckinsResponse
+
+<TypeHeader/>
+
+<ApiDocs/>
