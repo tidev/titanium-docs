@@ -338,6 +338,39 @@
 				]
 			},
 			{
+				"title": "NFC",
+				"path": "/api/modules/nfc",
+				"children": [
+					"modules/nfc/ndefmessage",
+					"modules/nfc/ndefrecord",
+					"modules/nfc/ndefrecordapplication",
+					"modules/nfc/ndefrecordempty",
+					"modules/nfc/ndefrecordexternal",
+					"modules/nfc/ndefrecordmedia",
+					"modules/nfc/ndefrecordsmartposter",
+					"modules/nfc/ndefrecordtext",
+					"modules/nfc/ndefrecordunknown",
+					"modules/nfc/ndefrecorduri",
+					"modules/nfc/nfcforegrounddispatchfilter",
+					"modules/nfc/nfctag",
+					"modules/nfc/tagtechnology",
+					"modules/nfc/tagtechnologyisodep",
+					"modules/nfc/tagtechnologymifareclassic",
+					"modules/nfc/tagtechnologymifareultralight",
+					"modules/nfc/tagtechnologyndef",
+					"modules/nfc/tagtechnologyndefformatable",
+					"modules/nfc/tagtechnologynfca",
+					"modules/nfc/tagtechnologynfcb",
+					"modules/nfc/tagtechnologynfcf",
+					"modules/nfc/tagtechnologynfcv"
+				]
+			},
+			{
+				"title": "TouchId (Deprecated)",
+				"path": "/api/modules/touchid",
+				"children": [ "modules/touchid/keychainitem" ]
+			},
+			{
 				"title": "Web Dialog",
 				"path": "/api/modules/webdialog",
 				"children": [
@@ -347,47 +380,19 @@
 			{
 				"title": "Android",
 				"children": [
-					[ "modules/playservices", "Google Play Services (Android)" ],
-					{
-						"title": "NFC (Android)",
-						"path": "/api/modules/nfc",
-						"children": [
-							"modules/nfc/ndefmessage",
-							"modules/nfc/ndefrecord",
-							"modules/nfc/ndefrecordapplication",
-							"modules/nfc/ndefrecordempty",
-							"modules/nfc/ndefrecordexternal",
-							"modules/nfc/ndefrecordmedia",
-							"modules/nfc/ndefrecordsmartposter",
-							"modules/nfc/ndefrecordtext",
-							"modules/nfc/ndefrecordunknown",
-							"modules/nfc/ndefrecorduri",
-							"modules/nfc/nfcforegrounddispatchfilter",
-							"modules/nfc/nfctag",
-							"modules/nfc/tagtechnology",
-							"modules/nfc/tagtechnologyisodep",
-							"modules/nfc/tagtechnologymifareclassic",
-							"modules/nfc/tagtechnologymifareultralight",
-							"modules/nfc/tagtechnologyndef",
-							"modules/nfc/tagtechnologyndefformatable",
-							"modules/nfc/tagtechnologynfca",
-							"modules/nfc/tagtechnologynfcb",
-							"modules/nfc/tagtechnologynfcf",
-							"modules/nfc/tagtechnologynfcv"
-						]
-					}
+					[ "modules/playservices", "Google Play Services" ]
 				]
 			},
 			{
 				"title": "iOS",
 				"children": [
 					{
-						"title": "Apple Sign-in (iOS)",
+						"title": "Apple Sign-in",
 						"path": "/api/modules/applesignin",
 						"children": [ "modules/applesignin/loginbutton" ]
 					},
 					{
-						"title": "CoreMotion (iOS)",
+						"title": "CoreMotion",
 						"path": "/api/modules/coremotion",
 						"children": [
 							"modules/coremotion/accelerometer",
@@ -401,22 +406,17 @@
 						]
 					},
 					{
-						"title": "News Stand (iOS)",
+						"title": "News Stand",
 						"path": "/api/modules/newsstand",
 						"children": [ "modules/newsstand/issue" ]
 					},
 					{
-						"title": "Safari Dialog (iOS)",
+						"title": "Safari Dialog",
 						"path": "/api/modules/safaridialog",
 						"children": [ "modules/safaridialog/authenticationsession" ]
 					},
 					{
-						"title": "TouchId (iOS)",
-						"path": "/api/modules/touchid",
-						"children": [ "modules/touchid/keychainitem" ]
-					},
-					{
-						"title": "URLSession (iOS)",
+						"title": "URLSession",
 						"path": "/api/modules/urlsession",
 						"children": [
 							"modules/urlsession/session",
