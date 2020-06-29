@@ -1,6 +1,6 @@
 ---
 title: Axway Appcelerator Studio
-weight: '130'
+weight: '60'
 ---
 
 # Axway Appcelerator Studio

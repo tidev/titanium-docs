@@ -79,15 +79,15 @@ Here you will find documentation and guides that cover Titanium Mobile and Titan
 
 * [Titanium SDK FAQ](/guide/Titanium_SDK/Titanium_SDK_FAQ/)
 
-### Appcelerator Dashboard
+### AMPLIFY Dashboard
 
-* [Appcelerator Dashboard Getting Started](/guide/Appcelerator_Dashboard/Appcelerator_Dashboard_Getting_Started/)
+* [AMPLIFY Dashboard Getting Started](/guide/AMPLIFY_Dashboard/AMPLIFY_Dashboard_Getting_Started/)
 
-* [Appcelerator Dashboard Guide](/guide/Appcelerator_Dashboard/Appcelerator_Dashboard_Guide/)
+* [AMPLIFY Dashboard Guide](/guide/AMPLIFY_Dashboard/AMPLIFY_Dashboard_Guide/)
 
-* [Appcelerator Dashboard Release Notes](/guide/Appcelerator_Dashboard/Appcelerator_Dashboard_Release_Notes/)
+* [AMPLIFY Dashboard Release Notes](/guide/AMPLIFY_Dashboard/AMPLIFY_Dashboard_Release_Notes/)
 
-* [Appcelerator Dashboard FAQ](/guide/Appcelerator_Dashboard/Appcelerator_Dashboard_FAQ/)
+* [AMPLIFY Dashboard FAQ](/guide/AMPLIFY_Dashboard/AMPLIFY_Dashboard_FAQ/)
 
 ### Appcelerator CLI
 

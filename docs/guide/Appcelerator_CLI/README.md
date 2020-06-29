@@ -1,6 +1,6 @@
 ---
 title: Appcelerator CLI
-weight: '110'
+weight: '50'
 ---
 
 # Appcelerator CLI

@@ -21,7 +21,7 @@ define a push behavior:
 
 The following example generates a random push force on the block when it stops.
 
-![Random Push Force](./pushforce.gif)
+<img src="./pushforce.gif" height="455" style="border:1px solid black"/>
 
 ``` js
 var win = Ti.UI.createWindow({backgroundColor: 'white', fullscreen: true});

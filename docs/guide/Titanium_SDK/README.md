@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK
-weight: '90'
+weight: '40'
 ---
 
 # Titanium SDK

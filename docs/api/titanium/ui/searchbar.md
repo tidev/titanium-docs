@@ -5,7 +5,7 @@
 ## Overview
 
 | Android | iOS | Windows |
-| --- | --- | --- |
+| ------- | --- | ------- |
 | ![Android](./searchbar_android.png) | ![iOS](./searchbar_ios.png) | ![Windows](./searchbar_windows.png) |
 
 The `SearchBar` object is closely modeled on an iOS native search bar.

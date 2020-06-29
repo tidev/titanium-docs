@@ -25,7 +25,7 @@ The Appcelerator Platform consists of several components:
 
 * **[Axway API Builder](/guide/Axway_API_Builder/)**: an opinionated framework to build and deploy APIs to the cloud that can be consumed by multiple clients.
 
-* **[Appcelerator Dashboard](/guide/Appcelerator_Dashboard/)**: a web portal used to monitor your application's heath and usage. This dashboard is aimed for technical users.
+* **[Appcelerator Dashboard](https://wiki.appcelerator.org/display/guides2/Appcelerator+Dashboard)**: a web portal used to monitor your application's heath and usage. This dashboard is aimed for technical users.
 
 * **[AMPLIFY Appcelerator Services](/guide/AMPLIFY_Appcelerator_Services/)**: set of features that includes free analytics services, and the performance management and automated testing services, which require an Enterprise subscription.
 
@@ -35,4 +35,4 @@ To start using the Appcelerator Platform, you need an account to log in to the A
 
 * If you are part of an Appcelerator Organization, your organization's Appcelerator Platform administrator sends an invitation to you to log in to the Appcelerator Dashboard and create an account.
 
-* If you are an administrator, see [Managing Organizations](/guide/Appcelerator_Dashboard/Appcelerator_Dashboard_Guide/Managing_Organizations/) for more information about adding users to your organization's Appcelerator Platform and provisioning them either Dashboard access.
+* If you are an administrator, see [Managing Organizations](/guide/AMPLIFY_Dashboard/AMPLIFY_Dashboard_Guide/Managing_Organizations/) for more information about adding users to your organization's Appcelerator Platform and provisioning them either Dashboard access.

@@ -5,7 +5,7 @@
 ## Overview
 
 | Android | iOS | Windows |
-| --- | --- | --- |
+| ------- | --- | ------- |
 | ![Android](./progressbar_android.png) | ![iOS](./progressbar_ios.png) | ![Windows](./progressbar_wp.png) |
 
 A progress bar is used for displaying an ongoing activity with a defined progression.

@@ -5,7 +5,7 @@
 ## Overview
 
 | Android | iOS | Windows |
-| --- | --- | --- |
+| ------- | --- | ------- |
 | ![Android](./picker_android.png) | ![iOS](./picker_ios.png) | ![Windows](./picker_wp.gif) |
 
 Use the <Titanium.UI.createPicker> method or Alloy **`<Picker>`** element to create a picker control.

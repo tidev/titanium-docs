@@ -1,6 +1,6 @@
 ---
 title: Alloy Framework
-weight: '80'
+weight: '30'
 ---
 
 # Alloy Framework

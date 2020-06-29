@@ -5,7 +5,7 @@
 ## Overview
 
 | Android | iPhone | iPad |
-| --- | --- | --- |
+| ------- | ------ | ---- |
 | ![Android](./optiondialog_android.png) | ![iPhone](./optiondialog_iphone.png) | ![iPad](./optiondialog_ipad.png) |
 
 An option dialog is created using <Titanium.UI.createOptionDialog> or Alloy `<OptionDialog>`
@@ -78,7 +78,7 @@ win.open();
 
 ### Dialog with 2 Options and 1 Button on Android and 3 Options on iOS
 
-`` js
+``` js
 var win = Ti.UI.createWindow({
   title: 'Click window to test OptionDialog',
   backgroundColor: 'white'

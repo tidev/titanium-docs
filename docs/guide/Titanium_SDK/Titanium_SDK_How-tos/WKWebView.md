@@ -78,56 +78,56 @@ Download the [stable release](https://github.com/appcelerator-modules/ti.wkwebvi
 
 | Name | Type |
 | --- | --- |
-| `disableBounce` | Boolean |
-| `scalesPageToFit` | Boolean |
-| `disableZoom` | Boolean |
-| `allowsBackForwardNavigationGestures` | Boolean |
-| `allowsLinkPreview` | Boolean |
-| `scrollsToTop` | Boolean |
-| `disableContextMenu` | Boolean |
-| `userAgent` | String |
-| `url` | String |
-| `data` | Ti.Blob, Ti.File |
-| `html` | String |
-| `title` | String |
-| `progress` | Number |
-| `backForwardList` | Object |
-| `ignoreSslError` | Boolean |
-| `basicAuhentication` | Object<br /><br />* username (String)<br />    <br />* password (String)<br />    <br />* persistence (CREDENTIAL\_PERSISTENCE\_\*) |
-| `cachePolicy` | CACHE\_POLICY\_\* |
-| `timeout` | Number |
-| `selectionGranularity` | SELECTION\_GRANULARITY\_\* |
+| `disableBounce` | `Boolean` |
+| `scalesPageToFit` | `Boolean` |
+| `disableZoom` | `Boolean` |
+| `allowsBackForwardNavigationGestures` | `Boolean` |
+| `allowsLinkPreview` | `Boolean` |
+| `scrollsToTop` | `Boolean` |
+| `disableContextMenu` | `Boolean` |
+| `userAgent` | `String` |
+| `url` | `String` |
+| `data` | `Ti.Blob`, `Ti.File` |
+| `html` | `String` |
+| `title` | `String` |
+| `progress` | `Number` |
+| `backForwardList` | `Object` |
+| `ignoreSslError` | `Boolean` |
+| `basicAuthentication` | `Object`<br /><br />* username (`String`)<br />    <br />* password (`String`)<br />    <br />* persistence (CREDENTIAL\_PERSISTENCE\_\*) |
+| `cachePolicy` | `CACHE_POLICY_*` |
+| `timeout` | `Number` |
+| `selectionGranularity` | `SELECTION_GRANULARITY_*` |
 | `allowedURLSchemes` | `Array<String>` |
-| `touchEnabled` | Boolean |
-| `willHandleTouches` | Boolean |
+| `touchEnabled` | `Boolean` |
+| `willHandleTouches` | `Boolean` |
 | `requestHeaders` | `Object<String, Any>` |
-| `zoomLevel` | Number |
-| `keyboardDisplayRequiresUserAction` | Boolean |
+| `zoomLevel` | `Number` |
+| `keyboardDisplayRequiresUserAction` | `Boolean` |
 
 #### Methods
 
 | Name | Parameter | Return |
 | --- | --- | --- |
-| `stopLoading` | \- | Void |
-| `setHtml` | html, options (Object - { baseURL, mimeType }, optional) | Void |
-| `reload` | \- | Void |
-| `repaint` | \- | Void |
-| `goBack` | \- | Void |
-| `goForward` | \- | Void |
-| `canGoBack` | \- | Boolean |
-| `canGoForward` | \- | Boolean |
-| `isLoading` | \- | Boolean |
-| `evalJS **` | Code (String), Callback (Function) |  |
-| `startListeningToProperties` | Array | Void |
-| `stopListeningToProperties` | Array | Void |
-| `fireEvent` | Name (String), Payload (Object) | Void |
-| `addEventListener` | Name (String), Callback (Function) | Void |
-| `removeEventListener` | Name (String), Callback (Function) | Void |
-| `takeSnapshot *` | Callback (Function) | Void |
-| `addUserScript` | Object: source (String), injectionTime (INJECTION\_TIME\_\*), mainFrameOnly (Boolean) | Void |
-| `removeAllUserScripts` | \- | Void |
-| `addScriptMessageHandler` | Name (String) | Void |
-| `removeScriptMessageHandler` | Name (String) | Void |
+| `stopLoading` | \- | `Void` |
+| `setHtml` | html, options (`Object - { baseURL, mimeType }`, optional) | `Void` |
+| `reload` | \- | `Void` |
+| `repaint` | \- | `Void` |
+| `goBack` | \- | `Void` |
+| `goForward` | \- | `Void` |
+| `canGoBack` | \- | `Boolean` |
+| `canGoForward` | \- | `Boolean` |
+| `isLoading` | \- | `Boolean` |
+| `evalJS **` | Code (`String`), Callback (`Function`) |  |
+| `startListeningToProperties` | `Array` | `Void` |
+| `stopListeningToProperties` | `Array` | `Void` |
+| `fireEvent` | Name (`String`), Payload (`Object`) | `Void` |
+| `addEventListener` | Name (`String`), Callback (`Function`) | `Void` |
+| `removeEventListener` | Name (`String`), Callback (`Function`) | `Void` |
+| `takeSnapshot *` | Callback (`Function`) | `Void` |
+| `addUserScript` | Object: source (`String`), injectionTime (`INJECTION_TIME_*`), mainFrameOnly (`Boolean`) | `Void` |
+| `removeAllUserScripts` | \- | `Void` |
+| `addScriptMessageHandler` | Name (`String`) | `Void` |
+| `removeScriptMessageHandler` | Name (`String`) | `Void` |
 
 \* Available on iOS 11.0+
 
@@ -298,12 +298,12 @@ var webView = WK.createWebView({ configuration: config });
 
 | Name | Type |
 | --- | --- |
-| `mediaTypesRequiringUserActionForPlayback` | AUDIOVISUAL\_MEDIA\_TYPE\_\* |
-| `suppressesIncrementalRendering` | Boolean |
-| `preferences` | Object<br /><br />* minimumFontSize (Double)<br />    <br />* javaScriptEnabled (Boolean)<br />    <br />* javaScriptCanOpenWindowsAutomatically (Boolean) |
-| `allowsInlineMediaPlayback` | Boolean |
-| `allowsAirPlayMediaPayback` | Boolean |
-| `allowsPictureInPictureMediaPlaback` | Boolean |
+| `mediaTypesRequiringUserActionForPlayback` | `AUDIOVISUAL_MEDIA_TYPE_*` |
+| `suppressesIncrementalRendering` | `Boolean` |
+| `preferences` | `Object`<br /><br />* `minimumFontSize (Double)`<br />    <br />* `javaScriptEnabled (Boolean)`<br />    <br />* `javaScriptCanOpenWindowsAutomatically (Boolean)` |
+| `allowsInlineMediaPlayback` | `Boolean` |
+| `allowsAirPlayMediaPayback` | `Boolean` |
+| `allowsPictureInPictureMediaPlaback` | `Boolean` |
 | `processPool` | ProcessPool |
 
 ### Process pool

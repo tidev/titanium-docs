@@ -5,7 +5,7 @@
 ## Overview
 
 | Android | iOS | Windows |
-| --- | --- | --- |
+| ------- | --- | ------- |
 | ![Android](./button_android.png) | ![iOS](./button_ios.png) | ![Windows](./button_wp.png) |
 
 A button displays its  selected state while it is being pressed. The focused state is

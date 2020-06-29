@@ -4,14 +4,9 @@
 
 ## Overview
 
-<table id="iOS Stepper">
-  <tbody>
-    <tr>
-      <td>![Stepper](./stepper.png)</td>
-      <td>![Custom](./stepper_custom.png)</td>
-    </tr>
-  </tbody>
-</table>
+| Default | Custom |
+| ------- | ------ |
+| ![Stepper](./stepper.png) | ![Custom](./stepper_custom.png) |
 
 A Stepper displays its selected state while it is being pressed.
 You can specify background images for each state on iOS.

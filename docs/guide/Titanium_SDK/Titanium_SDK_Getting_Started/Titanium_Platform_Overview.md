@@ -63,7 +63,7 @@ Titanium is built as a series of modules that extend a few core functions of the
 
 ### Axway Appcelerator Dashboard
 
-[Appcelerator Dashboard](/guide/Appcelerator_Dashboard/) is an integrated user interface to manage all aspects of your Axway Appcelerator Services development. The dashboard enables users to create, deliver, analyze and manage your mobile apps which could be native cross-platform Titanium applications, as well as iOS, Android, Windows and Node.js applications
+[AMPLIFY Dashboard](/guide/AMPLIFY_Dashboard/) is an integrated user interface to manage all aspects of your Axway Appcelerator Services development. The dashboard enables users to create, deliver, analyze and manage your mobile apps which could be native cross-platform Titanium applications, as well as iOS, Android, Windows and Node.js applications
 
 ### Axway API Builder
 
@@ -97,4 +97,4 @@ To start using the Titanium Platform, you need an account to log in to the Appce
 
 * If you are part of an Appcelerator Organization, your organization's Appcelerator Platform administrator sends an invitation to you to log in to the Appcelerator Dashboard and create an account.
 
-* If you are an administrator, see [Managing Organizations](/guide/Appcelerator_Dashboard/Appcelerator_Dashboard_Guide/Managing_Organizations/) for more information about adding users to your organization's Appcelerator Platform and provisioning them either Dashboard access.
+* If you are an administrator, see [Managing Organizations](/guide/AMPLIFY_Dashboard/AMPLIFY_Dashboard_Guide/Managing_Organizations/) for more information about adding users to your organization's Appcelerator Platform and provisioning them either Dashboard access.

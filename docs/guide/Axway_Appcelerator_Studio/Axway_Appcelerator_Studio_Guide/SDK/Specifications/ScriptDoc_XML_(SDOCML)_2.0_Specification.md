@@ -449,7 +449,7 @@ Holds constructor information for a class.
 
 In JS, functions can serve as standard functions and they can be used to construct new object instances. Typically, when defining types in SDOCML files, the instances cannot be constructed directly. However, there are occasions where a constructor method for a type is needed. That's where the constructor element steps in.
 
-When a constructor element is encountered, a new global property matching the type name is created. It's return type is setup to `Function<type>` where "type" is the name of the type where the constructor element is defined.
+When a constructor element is encountered, a new global property matching the type name is created. It's return type is setup to`Function<type>` where "type" is the name of the type where the constructor element is defined.
 
 **Syntax**
 

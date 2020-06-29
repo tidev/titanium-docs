@@ -5,7 +5,7 @@
 ## Overview
 
 | Android | iOS | Windows |
-| --- | --- | --- |
+| ------- | --- | ------- |
 | ![Android](./switch_android.png) | ![iOS](./switch_ios.png) | ![Windows](./switch_wp.png) |
 
 The appearance of a `Switch` control varies by platform:
