@@ -406,11 +406,6 @@
 						]
 					},
 					{
-						"title": "News Stand",
-						"path": "/api/modules/newsstand",
-						"children": [ "modules/newsstand/issue" ]
-					},
-					{
 						"title": "Safari Dialog",
 						"path": "/api/modules/safaridialog",
 						"children": [ "modules/safaridialog/authenticationsession" ]
