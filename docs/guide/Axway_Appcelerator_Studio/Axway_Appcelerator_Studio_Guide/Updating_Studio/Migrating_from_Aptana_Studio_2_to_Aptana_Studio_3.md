@@ -67,7 +67,7 @@ Studio 2 utilized the Eclipse PHP Development Tools for PHP support. Studio 3 in
 
 ## Rails
 
-Aptana Studio 3 includes RadRails, so no separate download is required. We've removed some of the helper views from before, as most rails developers are familiar with how to do many of the tasks on the command line that those views facilitated. For more information, see [Rails Development](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Rails_Development/).
+Aptana Studio 3 includes RadRails, so no separate download is required. We've removed some of the helper views from before, as most rails developers are familiar with how to do many of the tasks on the command line that those views facilitated. For more information, see [Rails Development](#undefined).
 
 ## Customization/Preferences
 

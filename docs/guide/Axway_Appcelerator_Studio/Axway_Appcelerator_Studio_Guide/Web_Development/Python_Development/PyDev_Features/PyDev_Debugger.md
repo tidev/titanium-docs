@@ -5,7 +5,7 @@ weight: '80'
 
 # PyDev Debugger
 
-This section is targetted at explaining how to use the debugger. If you want more details on how to use the remote debugger, please check the [Remote Debugger page](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Remote_Debugger/).
+This section is targetted at explaining how to use the debugger. If you want more details on how to use the remote debugger, please check the [Remote Debugger page](#undefined).
 
 Ok, probably the first thing you'll want to do is: add a breakpoint to some file and then run the file (and wait for it to hit the breakpoint). To do that, let's start with the example below:
 
@@ -115,4 +115,4 @@ So, now, if you resume execution, it will only hit that breakpoint again when th
 
 ## What more?
 
-Now, on to the [Remote Debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Remote_Debugger/) and the [Debug Console](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Debug_Console/)...
+Now, on to the [Remote Debugger](#undefined) and the [Debug Console](#undefined)...

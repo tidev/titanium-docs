@@ -30,7 +30,7 @@ You may finish on this screen or go to the next, where you will be asked which p
 
 The referenced projects are the projects whose source folders are added to the PYTHONPATH for the referrer project.
 
-The [next tutorial page](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/PyDev_Project_Configuration/) enters into more details on project references
+The [next tutorial page](#undefined) enters into more details on project references
 
 ## Creating a Project from existing sources
 

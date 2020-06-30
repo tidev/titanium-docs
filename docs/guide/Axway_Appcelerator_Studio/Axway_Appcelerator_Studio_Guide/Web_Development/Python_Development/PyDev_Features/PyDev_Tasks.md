@@ -7,7 +7,7 @@ weight: '230'
 
 ## My tasks are not being updated!
 
-The most common problem for tasks not being updated is that your files are not under your PYTHONPATH (that's right, the only analyzed files are the ones that are under your project PYTHONPATH – check how to configure it under the [PyDev Getting Started](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/))
+The most common problem for tasks not being updated is that your files are not under your PYTHONPATH (that's right, the only analyzed files are the ones that are under your project PYTHONPATH – check how to configure it under the [PyDev Getting Started](#undefined))
 
 ## Where can I configure which comments should appear as tasks?
 

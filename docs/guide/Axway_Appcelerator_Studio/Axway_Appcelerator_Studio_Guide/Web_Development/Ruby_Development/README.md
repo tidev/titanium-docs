@@ -13,7 +13,7 @@ Studio will not attempt to install Ruby for you. Please be sure that Ruby is ins
 
 Studio attempts to maintain the same environment used and seen inside your terminal. As a result, we use the PATH to find the applicable Ruby executable, libraries, gems, and bin scripts. We also respect RVM's settings and use of .rvmrc files. Please be sure to test out the environment inside our embedded Terminal view or editor to see if it matches your expectations.
 
-**If you plan to make use of the debugger**, you may also want to consult [Ruby Debugger Pre-requisites](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Ruby_Development/Ruby_Debugger/#pre-requisites).
+**If you plan to make use of the debugger**, you may also want to consult [Ruby Debugger Pre-requisites](#undefined).
 
 ## Creating/Importing a Ruby project
 
@@ -98,6 +98,4 @@ Note that the 'off' and 'on' tags are also customizable through the formatter pr
 
 ## Related topics
 
-* [Ruby Debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Ruby_Development/Ruby_Debugger/)
-
-* [Ruby Outline View](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Ruby_Development/Ruby_Outline_View/)
+Page not found: null.

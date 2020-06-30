@@ -9,7 +9,7 @@ This document has information about requirements for PyDev.
 
 ## Important
 
-First-time users are **strongly** advised to read the [PyDev Getting Started](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/), which explains how to configure PyDev properly.
+First-time users are **strongly** advised to read the [PyDev Getting Started](#undefined), which explains how to configure PyDev properly.
 
 ## Requirements
 

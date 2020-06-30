@@ -248,12 +248,6 @@ Since Release 3.2.0, all windows are heavyweight by default and you cannot contr
 
 See the [Window](http://developer.appcelerator.com/apidoc/mobile/latest/Titanium.UI.Window-object.html) reference page for more information on these special events. The Menu button is handled specially as an event fired against the Android activity. See this [Kitchen Sink example](https://github.com/appcelerator-developer-relations/KitchenSink/blob/master/Resources/ui/handheld/android/baseui/android_menu_1.js) for sample code for creating and displaying a menu.
 
-::: warning ⚠️ Warning
-With SDK 6.0.0+, we changed how the override of a default behavior for the back button on Android works. This change requires apps using this version to override the back button to update their code when using calls like this: `win.addEventListener('androidback', onBack);`
-
-See [TIMOB-19919](https://jira.appcelerator.org/browse/TIMOB-19919) for more details.
-:::
-
 ### Considerations and best practices
 
 Event listeners must be defined _before_ their respective events are likely to be fired, otherwise they are not guaranteed to be called. For example, a window's [open](#!/api/Titanium.UI.Window-method-open) and [focus](#!/api/Titanium.UI.Window-event-focus) listeners must be defined before the window is opened. Evaluating events as late as possible while bearing the above consideration in mind, however, can significantly improve application responsiveness. For example, an event listener for a click event may be defined after the parent window has been opened.

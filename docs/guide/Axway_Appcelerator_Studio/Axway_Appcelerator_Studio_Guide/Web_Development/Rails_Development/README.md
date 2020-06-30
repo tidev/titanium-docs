@@ -7,7 +7,7 @@ weight: '40'
 
 ## Rails Support
 
-Studio is shipped with built-in support for Rails editing. This is additional support beyond that described in [Ruby Development](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Ruby_Development/), [HTML Development](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/HTML_Development/), [CSS Development](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/CSS_Development/), and [JavaScript Development](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/).
+Studio is shipped with built-in support for Rails editing. This is additional support beyond that described in [Ruby Development](#undefined), [HTML Development](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/HTML_Development/), [CSS Development](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/CSS_Development/), and [JavaScript Development](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/).
 
 It should be noted that Studio relies on developers to be familiar with the standard Rails command-line tools, generators, and tasks. RadRails used to provide UI view front-ends to the generators, servers, and so forth. In Studio, we embed a Terminal view and expect users to be familiar with Rails enough to be able to generate models, controllers, and so forth and run servers from the command line.
 
@@ -48,4 +48,4 @@ For Servers, you can launch a server via the command line or the gear menu of th
 
 ## Related Topics
 
-* [RHTML Editor](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Rails_Development/RHTML_Editor/)
+Page not found: null.

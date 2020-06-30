@@ -15,28 +15,28 @@ The feature matrix can be seen below. You can check details for each feature by 
 | IronPython integration |  |  |
 | Syntax highlighting |  |  |
 | Wizards (new project, src folder, module, package) | Ctrl+N |  |
-| Script PyDev with Jython |  | [article](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Jython_Scripting/) |
-| Unittest integration |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Unittest_integration/) |
+| Script PyDev with Jython |  | [article](#undefined) |
+| Unittest integration |  | [Link](#undefined) |
 | Google App Engine |  | [Video](http://pydev.blogspot.com/2009/05/pydev-146-released-google-app-engine-on.html) / [Link](http://pydev.blogspot.com/2009/05/testing-on-pydev-146-google-app-engine.html) |
 | Wizard for new Project |  |  |
 | Launching |  |  |
 | Uploading and doing other actions |  |  |
-| Django |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Django/) |
+| Django |  | [Link](#undefined) |
 | Wizard for new Project |  |  |
 | Launching |  |  |
 | Interactive shell |  |  |
 | manage.py commands with context menu |  |  |
 | custom manage.py commands | ctrl+2+dj+optional\_command |  |
-| Launching |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Launching/) |
+| Launching |  | [Link](#undefined) |
 | Regular | F9 |  |
 | Unittest | Ctrl+F9 |  |
 | Relaunch last in Regular | Ctrl+F11 |  |
 | Relaunch last in Debug | F11 |  |
-| Interactive Console |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Interactive_Console/) |
-| Interactive console shortcuts | Ctrl+Alt+Enter | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Interactive_Console/) |
+| Interactive Console |  | [Link](#undefined) |
+| Interactive console shortcuts | Ctrl+Alt+Enter | [Link](#undefined) |
 | Code completion |  |  |
 | Auto-import |  |  |
-| Editor |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Editor_preferences/) |
+| Editor |  | [Link](#undefined) |
 | Matching brackets highlighted |  |  |
 | Selection for tabs or spaces (or adapt to file) |  |  |
 | Block indent (and dedent) | Tab / Shift-Tab |  |
@@ -55,12 +55,12 @@ The feature matrix can be seen below. You can check details for each feature by 
 | Auto-edit: add 'import' in import lines |  |  |
 | Search |  |  |
 | Find References | Ctrl+Shift+G |  |
-| Refactoring |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Refactoring/) |
+| Refactoring |  | [Link](#undefined) |
 | Rename | Shift+Alt+R |  |
 | Extract method | Shift+Alt+M |  |
 | Extract local variable | Shift+Alt+L |  |
 | Inline local variable | Shift+Alt+I |  |
-| Editor Content Assistants |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Content_Assistants/) |
+| Editor Content Assistants |  | [Link](#undefined) |
 | Assign result to attribute or local | Ctrl+1 |  |
 | Assign parameters to attributes | Ctrl+1 |  |
 | Surround code with try..catch / finally | Ctrl+1 |  |
@@ -69,28 +69,28 @@ The feature matrix can be seen below. You can check details for each feature by 
 | Auto-Import 'quick-fix' for undefined variables | Ctrl+1 |  |
 | Ignore error 'quick-fix' | Ctrl+1 |  |
 | Ignore file in code-analysis | Ctrl+1 |  |
-| Mark Occurrences |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Mark_Occurrences/) |
-| Rename Occurrences | Ctrl+2+R | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Rename_Occurrences/) |
+| Mark Occurrences |  | [Link](#undefined) |
+| Rename Occurrences | Ctrl+2+R | [Link](#undefined) |
 | Reporting |  |  |
 | Syntax errors reported |  |  |
 | Hovering shows error description |  |  |
-| Code coverage |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Code_Coverage/) |
-| TODO Tasks |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Tasks/) |
-| Code-analysis (real-time or on save) |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Code_Analysis/) |
-| PyLint (only on save) |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_PyLint/) |
+| Code coverage |  | [Link](#undefined) |
+| TODO Tasks |  | [Link](#undefined) |
+| Code-analysis (real-time or on save) |  | [Link](#undefined) |
+| PyLint (only on save) |  | [Link](#undefined) |
 | Navigation |  |  |
 | Hyperlink stack-traces in the console |  |  |
 | Outline view |  |  |
-| Quick Outline | Ctrl+O | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Quick_Outline/) |
-| Quick Open Definition Outline | Ctrl+Shift+T | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Open_Declaration_Quick_Outline/) |
-| Hierarchy View | F4 | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Hierarchy_View/) |
-| Go to definition | F3 | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Go_to_Definition/) |
+| Quick Outline | Ctrl+O | [Link](#undefined) |
+| Quick Open Definition Outline | Ctrl+Shift+T | [Link](#undefined) |
+| Hierarchy View | F4 | [Link](#undefined) |
+| Go to definition | F3 | [Link](#undefined) |
 | Code completion |  |  |
-| Templates Code completion | Ctrl+Space | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Templates_completion/) |
-| Context-sensitive Code Completion | Ctrl+Space | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Context-sensitive_completions/) |
-| Context-insensitive Code Completion with auto-import | Ctrl+Space | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Context-insensitive_completions/) |
-| Auto-suggest keywords and other customizable tokens |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Auto-suggest_keywords/) |
-| Debugger |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Debugger/) |
+| Templates Code completion | Ctrl+Space | [Link](#undefined) |
+| Context-sensitive Code Completion | Ctrl+Space | [Link](#undefined) |
+| Context-insensitive Code Completion with auto-import | Ctrl+Space | [Link](#undefined) |
+| Auto-suggest keywords and other customizable tokens |  | [Link](#undefined) |
+| Debugger |  | [Link](#undefined) |
 | Python and Jython support |  |  |
 | Expression Watch |  |  |
 | Add Breakpoints |  |  |
@@ -98,8 +98,8 @@ The feature matrix can be seen below. You can check details for each feature by 
 | Step in/out/over/resume |  |  |
 | Multiple threads |  |  |
 | Variable display |  |  |
-| Debug 'server' for remote debugging |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Remote_Debugger/) |
-| Debug console |  | [Link](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Debug_Console/) |
+| Debug 'server' for remote debugging |  | [Link](#undefined) |
+| Debug console |  | [Link](#undefined) |
 
 **Notes:**
 

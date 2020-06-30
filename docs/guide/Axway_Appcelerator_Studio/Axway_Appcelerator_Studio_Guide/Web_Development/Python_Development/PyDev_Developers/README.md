@@ -43,9 +43,9 @@ Ok, this may be the most difficult thing... especially because answers may chang
 
 To start in any of those approaches, it might be worth taking a look at some Eclipse documentation, to try to grasp some of its concepts. One of the finest documentations for that is the [Eclipse FAQ](http://wiki.eclipse.org/index.php/Eclipse_FAQs).
 
-If you want to take the Jython approach, check out this article on how to do [jython scripting in PyDev](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Jython_Scripting/)
+If you want to take the Jython approach, check out this article on how to do [jython scripting in PyDev](#undefined)
 
-For supporting a new Python based language, the first step would be creating a grammar that can parse it while providing a Python like AST. See: [PyDev Grammar](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Developers/PyDev_Grammar/) for instructions on that.
+For supporting a new Python based language, the first step would be creating a grammar that can parse it while providing a Python like AST. See: [PyDev Grammar](#undefined) for instructions on that.
 
 And that's it. If you have further doubts about how to code in PyDev, direct your questions to the [pydev-code list](http://lists.sourceforge.net/lists/listinfo/pydev-code) at sourceforge.
 
@@ -71,4 +71,4 @@ Create a pull request in Github: [https://help.github.com/articles/creating-a-pu
 
 ## Related docs
 
-* [PyDev Grammar](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Developers/PyDev_Grammar/)
+Page not found: null.

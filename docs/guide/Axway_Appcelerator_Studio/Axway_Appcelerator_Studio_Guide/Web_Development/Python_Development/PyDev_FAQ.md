@@ -53,7 +53,7 @@ You can check the [Users Forum](http://sourceforge.net/forum/forum.php?forum_id=
 
 ## How do I get started with PyDev?
 
-Check the getting started manual at [PyDev Getting Started](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/).
+Check the getting started manual at [PyDev Getting Started](#undefined).
 
 Also, there are some videos available at [http://www.youtube.com/user/pydev](http://www.youtube.com/user/pydev), which may help you in getting started.
 
@@ -133,7 +133,7 @@ If the `.pydevproject` file was created, those values could already be added to 
 
 ## How do I configure my PYTHONPATH?
 
-Please refer to the Getting Started Guide at [PyDev Getting Started](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/) for up-to-date information on how to correctly install and configure your PYTHONPATH.
+Please refer to the Getting Started Guide at [PyDev Getting Started](#undefined) for up-to-date information on how to correctly install and configure your PYTHONPATH.
 
 ## When I do a code-completion, PyDev hangs, what can I do?
 
@@ -157,7 +157,7 @@ The eclipse console is not an exact copy of a shell... one of the changes is tha
 
 ## My todo-tasks are not showing, is there something wrong?
 
-Check the [tasks](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Tasks/) page for info on tasks.
+Check the [tasks](#undefined) page for info on tasks.
 
 ## Some keybindings Ctrl+\[0-9\] don't work under Ubuntu. What can I do about it?
 
@@ -179,7 +179,7 @@ Some libraries once installed do not show in code completion because they do not
 
 ## How do I configure a python shell for experimenting with Python?
 
-PyDev has an interactive console you can use. See the [PyDev Interactive Console](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Interactive_Console/).
+PyDev has an interactive console you can use. See the [PyDev Interactive Console](#undefined).
 
 ## The PyDev builder is taking too much of my time, what can I do about it?
 
@@ -259,7 +259,7 @@ It's the same thing but works when debugging.
 
 2. Check if your project and your python path are correctly configured. Pylint is only passed in files in the python path for a project. If any of those are not well configured, pylint won't work correctly.
 
-3. If your installation is all ok, try reading the [PyLint](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_PyLint/) provided page to see if it is correctly configured in the eclipse side.
+3. If your installation is all ok, try reading the [PyLint](#undefined) provided page to see if it is correctly configured in the eclipse side.
 
 4. If everything fails, you can ask in the forum or submit a bug report for it (don't forget to add the following information: pylint installation path, pylint version, and the other information requested on the 'How do I Report a BUG?' faq.
 
@@ -335,7 +335,7 @@ The solution is to set the trace function for the ORB threads explicitly.
 
 ## OK, I know that many features are available, but I don't know how I can access them through my keyboard!!
 
-Please refer to [PyDev Keybindings](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Keybindings/) for up-to-date info on the most useful keybindings provided by PyDev and Eclipse.
+Please refer to [PyDev Keybindings](#undefined) for up-to-date info on the most useful keybindings provided by PyDev and Eclipse.
 
 ## How do I uninstall PyDev
 

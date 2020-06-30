@@ -58,7 +58,7 @@ Starting with iOS 11, to request Always permission you must replace the `NSLocat
 
 In general, testing geolocation code should be done on a device so that you accurately and realistically test your app in an environment close to a real-world usage scenario. However, Emulators created using Android Studio 3 support GPS out the box too.
 
-Starting at [TiSDK 7.1.0.GA](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.1.0.GA_Release_Note/) there is support for [FusedLocationProvider](https://developers.google.com/location-context/fused-location-provider/). To enable this, the only thing you need to do is include the [Ti.PlayServices](#!/api/Modules.PlayServices) module in your app. This will enable battery efficient geolocation API's in your app.
+Starting at [TiSDK 7.1.0.GA](#!/guide/Titanium_SDK_7.1.0.GA_Release_Note) there is support for [FusedLocationProvider](https://developers.google.com/location-context/fused-location-provider/). To enable this, the only thing you need to do is include the [Ti.PlayServices](#!/api/Modules.PlayServices) module in your app. This will enable battery efficient geolocation API's in your app.
 
 #### Windows development considerations
 

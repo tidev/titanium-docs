@@ -167,6 +167,4 @@ See [Setting up an external webserver to preview PHP and other non-HTML pages](/
 
 ## Related Topics
 
-* [PHP Script Debugging](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/PHP_Development/PHP_Script_Debugging/)
-
-* [PHP Web Page Debugging](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/PHP_Development/PHP_Web_Page_Debugging/)
+Page not found: null.

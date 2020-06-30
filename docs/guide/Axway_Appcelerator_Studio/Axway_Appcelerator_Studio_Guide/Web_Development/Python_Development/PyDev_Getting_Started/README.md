@@ -9,46 +9,46 @@ This manual assumes that you have already had **Python and Jython and IronPython
 
 **Manual topics:**
 
-[Installing](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/PyDev_Install/)
+[Installing](#undefined)
 
 * from update site and zips
 
 * uninstalling
 
-[Configuring the interpreter](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/PyDev_Interpreter_Configuration/)
+[Configuring the interpreter](#undefined)
 
 * specify the python interpreter and system PYTHONPATH
 
 * choose the modules to be dynamically analyzed (forced builtins)
 
-[Creating a project](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/PyDev_Project_Creation/)
+[Creating a project](#undefined)
 
 * Create the project
 
 * Specify referenced projects
 
-[Further configuring your project](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/PyDev_Project_Configuration/)
+[Further configuring your project](#undefined)
 
 * specify folders containing the sources – added to the project PYTHONPATH
 
 * specify additional external folders to be added to the project PYTHONPATH
 
-[Creating your first python module](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/PyDev_Module_Creation/)
+[Creating your first python module](#undefined)
 
 * Checking code-completion
 
-[Running/Debugging your program](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/PyDev_Running_a_program/)
-[Configuring Eclipse Essentials](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/PyDev_Configuring_Eclipse/)
+[Running/Debugging your program](#undefined)
+[Configuring Eclipse Essentials](#undefined)
 
 * Auto-refresh
 
-[Tips for programming with PyDev](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Getting_Started/PyDev_Useful_tips/)
+[Tips for programming with PyDev](#undefined)
 
 **Further info on:**
 
 * Working with Turbogears: [http://pydev.blogspot.com/2006/07/configuring-pydev-to-work-with.html](http://pydev.blogspot.com/2006/07/configuring-pydev-to-work-with.html)
 
-* Working with Django: [PyDev Django](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Django/)
+* Working with Django: [PyDev Django](#undefined)
 
 * Editing Django Templates: [http://pydev.blogspot.com/2010/08/django-templates-editor.html](http://pydev.blogspot.com/2010/08/django-templates-editor.html)
 

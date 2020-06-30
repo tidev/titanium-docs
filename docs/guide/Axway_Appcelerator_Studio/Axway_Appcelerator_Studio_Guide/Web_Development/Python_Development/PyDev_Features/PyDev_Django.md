@@ -59,7 +59,7 @@ Another option is using (with focus on a PyDev editor):
 
 ## Interactive shell with Django
 
-Note that the **Shell with django environment** action will create a shell properly configured with your settings, providing the default features from the PyDev shell, such as code completion, history, context assistants (ctrl+1), making an execfile of the editor, and so forth (see: [Interactive Console](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Interactive_Console/) for more details).
+Note that the **Shell with django environment** action will create a shell properly configured with your settings, providing the default features from the PyDev shell, such as code completion, history, context assistants (ctrl+1), making an execfile of the editor, and so forth (see: [Interactive Console](#undefined) for more details).
 
 It can be activated through **ctrl+2+dj shell** (if on a PyDev Editor) or right-clicking the project > **Django > Shell with django environment**.
 
@@ -82,4 +82,4 @@ If the --noreload is not passed, only the parent process will be killed from Ecl
 
 ## Run/Debug as Django with auto-reload
 
-If you don't want to see the --noreload flag, please take a look at the [Remote Debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Python_Development/PyDev_Features/PyDev_Remote_Debugger/) for instructions on how to make the debugging work properly with the auto-reload feature.
+If you don't want to see the --noreload flag, please take a look at the [Remote Debugger](#undefined) for instructions on how to make the debugging work properly with the auto-reload feature.

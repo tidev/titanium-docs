@@ -39,7 +39,7 @@ After those steps, you should have a screen as presented below:
 
 The **System libs** must contain at least the Lib and the Lib/site-packages directory.
 
-The **Forced builtin libs** must contain the modules built into the interpreter (and others whose analysis should be done dynamically. See: [#Forced Builtins](#ForcedBuiltins)).
+The **Forced builtin libs** must contain the modules built into the interpreter (and others whose analysis should be done dynamically. See: [#Forced Builtins](#undefined)).
 
 ## What if it is not correct?
 
@@ -77,7 +77,7 @@ For **Jython**, it's composed of **folders and jars**.
 
 ## Forced Builtins
 
-The Forced builtin libs are the libraries that are built-in the interpreter, such as **\__builtin_\_, sha, and so forth** or libraries that should forcefully be analyzed through a shell (in other words, to analyze modules in this list, PyDev will spawn a shell and do a dir() on the module to get the available tokens for completions and code-analysis) – still, sometimes even that is not always possible, in which case, [#Predefined Completions](#PredefinedCompletions) may be used to let PyDev know about the structure of the code.
+The Forced builtin libs are the libraries that are built-in the interpreter, such as **\__builtin_\_, sha, and so forth** or libraries that should forcefully be analyzed through a shell (in other words, to analyze modules in this list, PyDev will spawn a shell and do a dir() on the module to get the available tokens for completions and code-analysis) – still, sometimes even that is not always possible, in which case, [#Predefined Completions](#undefined) may be used to let PyDev know about the structure of the code.
 
 For **Python**, you should have around **50** entries.
 

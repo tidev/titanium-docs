@@ -73,32 +73,4 @@ With the release of Titanium SDK 9.0.0, Windows platform will no longer be suppo
 
 ### Recent Releases
 
-* [Titanium SDK 7.5.2.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.5.2.GA_Release_Note/)
-
-* [Titanium SDK 7.5.2.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.5.2.RC_Release_Note/)
-
-* [Titanium SDK 7.5.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.5.1.GA_Release_Note/)
-
-* [Titanium SDK 7.4.2.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.4.2.GA_Release_Note/)
-
-* [Titanium SDK 7.5.1.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.5.1.RC_Release_Note/)
-
-* [Titanium SDK 7.5.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.5.0.GA_Release_Note/)
-
-* [Titanium SDK 7.4.2.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.4.2.RC_Release_Note/)
-
-* [Titanium SDK 7.5.0.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.5.0.RC_Release_Note/)
-
-* [Titanium SDK 7.4.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.4.1.GA_Release_Note/)
-
-* [Titanium SDK 7.4.1.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.4.1.RC_Release_Note/)
-
-* [Titanium SDK 7.4.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.4.0.GA_Release_Note/)
-
-* [Titanium SDK 7.4.0.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.4.0.RC_Release_Note/)
-
-* [Titanium SDK 7.3.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.3.1.GA_Release_Note/)
-
-* [Titanium SDK 7.3.1.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.3.1.RC_Release_Note/)
-
-* [Titanium SDK 7.3.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.3.0.GA_Release_Note/)
+Page not found: DA:Titanium SDK Release Notes 7.x.
