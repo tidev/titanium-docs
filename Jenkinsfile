@@ -18,7 +18,6 @@ node('linux || osx') {
 					ensureNPM()
 					timeout(120) {
 						sh 'npm ci'
-						sh 'patch -p1 < vuepress.patch'
 						sh 'npm run docs:build'
 					}
 				}
