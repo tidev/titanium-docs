@@ -15,7 +15,7 @@ Appcelerator and Titanium Studio are extended versions of [Aptana Studio](http:/
 | Titanium Studio | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | Add-On\* | Add-On\* | Add-On\* | Add-On\* | ![check](/images/guide/download/attachments/30083020/check.png) | ![error](/images/guide/download/attachments/30083020/error.png) |
 | Aptana Studio | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![error](/images/guide/download/attachments/30083020/error.png) | ![error](/images/guide/download/attachments/30083020/error.png) |
 
-\*Refer to [Adding PHP Ruby or Python Support](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Adding_PHP_Ruby_or_Python_Support/) for installing these add-on modules. As they are so closely related, we often use the term "Studio" to refer to Appcelerator, Titanium, and Aptana Studio together.
+\*Refer to [Adding PHP Ruby or Python Support](#undefined) for installing these add-on modules. As they are so closely related, we often use the term "Studio" to refer to Appcelerator, Titanium, and Aptana Studio together.
 
 When updating or adding Eclipse plugins or software, the software repository varies with the version of Studio:
 

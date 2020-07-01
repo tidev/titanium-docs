@@ -1,6 +1,6 @@
 ---
 title: Alloy Views
-weight: '50'
+weight: '40'
 ---
 
 # Alloy Views

@@ -1,6 +1,6 @@
 ---
 title: Transitioning to the New UI Layout System
-weight: '50'
+weight: '30'
 ---
 
 # Transitioning to the New UI Layout System

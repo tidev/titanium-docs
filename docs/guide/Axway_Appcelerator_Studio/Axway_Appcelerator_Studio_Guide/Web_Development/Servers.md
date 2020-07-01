@@ -1,6 +1,6 @@
 ---
 title: Servers
-weight: '120'
+weight: '60'
 ---
 
 # Servers

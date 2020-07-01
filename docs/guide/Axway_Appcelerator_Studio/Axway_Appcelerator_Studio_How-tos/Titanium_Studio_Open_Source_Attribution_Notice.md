@@ -1,6 +1,6 @@
 ---
 title: Titanium Studio Open Source Attribution Notice
-weight: '60'
+weight: '50'
 ---
 
 # Titanium Studio Open Source Attribution Notice

@@ -103,8 +103,6 @@ These are explained in more detail in the following sections.
 
         * [UI Composite Layout Behavior Spec](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Platform_Development/Specs/UI_Composite_Layout_Behavior_Spec/)
 
-    * [Writing Unit Tests with Drillbit](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Platform_Development/Writing_Unit_Tests_with_Drillbit/)
-
 * [Contributing to Open Source Titanium Modules](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Contributing_to_Open_Source_Titanium_Modules/)
 
 * [Reviewing pull requests](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Reviewing_pull_requests/)

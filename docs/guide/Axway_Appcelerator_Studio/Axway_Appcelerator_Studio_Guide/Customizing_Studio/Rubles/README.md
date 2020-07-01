@@ -10,7 +10,7 @@ Ruble (short for RUby BundLE) is a runtime environment that allows for the exten
 To begin, you might wish to start with [Modifying an existing Ruble](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Rubles/Modifying_an_existing_Ruble/) and then move on to [Creating a new Ruble](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Rubles/Creating_a_new_Ruble/) to hold your custom code.
 
 ::: warning ⚠️ Warning
-The Ruby editor is no longer included as part of the Studio installer. To edit Rubles in Studio, install the Ruby plug-in as instructed in [Adding PHP Ruby or Python Support](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Adding_PHP_Ruby_or_Python_Support/).
+The Ruby editor is no longer included as part of the Studio installer. To edit Rubles in Studio, install the Ruby plug-in as instructed in [Adding PHP Ruby or Python Support](#undefined).
 :::
 
 ## Related docs

@@ -1,6 +1,6 @@
 ---
 title: CSS Development
-weight: '70'
+weight: '40'
 ---
 
 # CSS Development

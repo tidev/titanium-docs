@@ -7,7 +7,7 @@ weight: '40'
 
 Studio has a large set of features designed to make your web development experience better and easier. By default, we include editors for CSS, HTML, JS, PHP\*, Python\*, and Ruby\* files. Specifics about each editor type are included in the subsections below.
 
-(\*) For Titanium and Appcelerator Studio, you need to install an additional plugin to support PHP, Python, and Ruby development as described in [Adding PHP Ruby or Python Support](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Adding_PHP_Ruby_or_Python_Support/).
+(\*) For Titanium and Appcelerator Studio, you need to install an additional plugin to support PHP, Python, and Ruby development as described in [Adding PHP Ruby or Python Support](#undefined).
 
 ## Chapters
 
@@ -70,35 +70,5 @@ Studio has a large set of features designed to make your web development experie
     * [Installing Node.js](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Node.js_Development/Installing_Node.js/)
 
     * [Upgrading Node.js](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Node.js_Development/Upgrading_Node.js/)
-
-* [Previewing](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Previewing/)
-
-    * [Previewing a project in a web browser](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Previewing/Previewing_a_project_in_a_web_browser/)
-
-    * [Setting up your web browser configuration](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Previewing/Setting_up_your_web_browser_configuration/)
-
-    * [Side-by-Side Previewing](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Previewing/Side-by-Side_Previewing/)
-
-    * [Creating a Custom Preview Server](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Previewing/Creating_a_Custom_Preview_Server/)
-
-    * [Setting up an external webserver to preview PHP and other non-HTML pages](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Previewing/Setting_up_an_external_webserver_to_preview_PHP_and_other_non-HTML_pages/)
-
-* [Publishing](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Publishing/)
-
-    * [Capistrano Deployment](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Publishing/Capistrano_Deployment/)
-
-    * [Engine Yard Deployment](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Publishing/Engine_Yard_Deployment/)
-
-    * [FTP SFTP and FTPS Deployment](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Publishing/FTP_SFTP_and_FTPS_Deployment/)
-
-        * [Create a FTP Connection](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Publishing/FTP_SFTP_and_FTPS_Deployment/Create_a_FTP_Connection/)
-
-        * [Managing FTP Connections](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Publishing/FTP_SFTP_and_FTPS_Deployment/Managing_FTP_Connections/)
-
-    * [Heroku Deployment](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Publishing/Heroku_Deployment/)
-
-    * [OpenShift Deployment](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Publishing/OpenShift_Deployment/)
-
-        * [Errors Logging into OpenShift](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Publishing/OpenShift_Deployment/Errors_Logging_into_OpenShift/)
 
 * [Servers](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Servers/)

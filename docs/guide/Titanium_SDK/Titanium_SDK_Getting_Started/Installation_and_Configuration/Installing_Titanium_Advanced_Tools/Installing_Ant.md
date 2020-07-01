@@ -1,6 +1,6 @@
 ---
 title: Installing Ant
-weight: '70'
+weight: '40'
 ---
 
 # Installing Ant

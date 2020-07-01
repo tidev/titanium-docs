@@ -1,6 +1,6 @@
 ---
 title: Aptana Core Release Notes
-weight: '80'
+weight: '70'
 ---
 
 # Aptana Core Release Notes

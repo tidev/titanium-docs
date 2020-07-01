@@ -79,7 +79,7 @@ Aptana Studio 3 introduced the concept of Rubles, Ruby-based scripting bundles b
 
 ### Previewing Files/Run/Launch Configurations
 
-Studio 2 relied on an internal browser preview utilizing the native platform browser. Studio 3 instead relies on Chromium for previewing, a WebKit-based browser. You can find out more about previewing files here: [Previewing](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Previewing/).
+Studio 2 relied on an internal browser preview utilizing the native platform browser. Studio 3 instead relies on Chromium for previewing, a WebKit-based browser. You can find out more about previewing files here: [Previewing](#undefined).
 
 Launch configurations may be exported and imported using the standard Eclipse export/import mechanism. See here: [Exporting and importing preferences](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Exporting_and_importing_preferences/).
 

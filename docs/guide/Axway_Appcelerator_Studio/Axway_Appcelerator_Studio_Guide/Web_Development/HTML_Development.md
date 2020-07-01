@@ -1,6 +1,6 @@
 ---
 title: HTML Development
-weight: '60'
+weight: '30'
 ---
 
 # HTML Development
@@ -101,6 +101,6 @@ You can hover over any warning or error that the validation output to see its de
 
 ## Previewing
 
-Studio is equipped with an internal server that allows a quick preview of HTML content. See [Previewing a project in a web browser](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Previewing/Previewing_a_project_in_a_web_browser/)
+Studio is equipped with an internal server that allows a quick preview of HTML content. See [Previewing a project in a web browser](#undefined)
 
-If you wish, you can have your source and preview side-by-side: [Side-by-Side Previewing](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Previewing/Side-by-Side_Previewing/)
+If you wish, you can have your source and preview side-by-side: [Side-by-Side Previewing](#undefined)

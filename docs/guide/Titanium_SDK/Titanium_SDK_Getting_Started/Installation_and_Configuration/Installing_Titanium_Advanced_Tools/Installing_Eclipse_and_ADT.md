@@ -1,6 +1,6 @@
 ---
 title: Installing Eclipse and ADT
-weight: '60'
+weight: '30'
 ---
 
 # Installing Eclipse and ADT

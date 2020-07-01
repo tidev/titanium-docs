@@ -526,35 +526,15 @@ See [Installing Git](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installati
 
 ### Python
 
-Python is required to compile the Titanium SDK from source using SCons.
+Error rendering macro 'excerpt-include' : User 'doc-robot' does not have permission to view the page 'DA:Installing Python'.
 
-Titanium supports the following versions of Python for each respective Operating System:
-
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
-
-| Operating System | Package Version | Package Architecture Version | Download Location |
-| --- | --- | --- | --- |
-| OS X | 2.x.x (currently, 2.7.x) | 32bit and 64bit | Installed on OS by default |
-| Windows | 2.x.x (currently, 2.7.x) | 32bit **only** | [Official Python Website](http://www.python.org/download/) |
-| Ubuntu | 2.x.x (currently, 2.7.x) | 32bit and 64bit | Default Repositories |
-
-Download the installer from the applicable download location above.
-
-See [Installing Python](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Python/) for detailed instructions.
+See [Installing Python](#undefined) for detailed instructions.
 
 ### Required Python packages
 
-Python's `setuptools` can be installed from the following locations:
+Error rendering macro 'excerpt-include' : User 'doc-robot' does not have permission to view the page 'DA:Installing Required Python Packages'.
 
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
-
-| Operating System | Package Version | Package Architecture Version | Download Location |
-| --- | --- | --- | --- |
-| OS X | Latest version compatible with installed Python version | 32-bit and 64-bit | Installed on OS by default |
-| Windows | Latest version compatible with installed Python version | 32-bit **only** | [Official setuptools Website](http://pypi.python.org/pypi/setuptools#downloads) |
-| Ubuntu | Latest version compatible with installed Python version | 32-bit and 64-bit | Default Repositories |
-
-See [Installing Required Python Packages](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Required_Python_Packages/) for detailed instructions.
+See [Installing Required Python Packages](#undefined) for detailed instructions.
 
 ### gperf
 

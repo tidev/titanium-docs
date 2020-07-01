@@ -11,12 +11,6 @@ weight: '30'
 
 * [Installing Git](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Git/)
 
-* [Installing Python](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Python/)
-
-* [Installing Required Python Packages](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Required_Python_Packages/)
-
-* [Installing SCons](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_SCons/)
-
 * [Installing the Android NDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_the_Android_NDK/)
 
 * [Installing Eclipse and ADT](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Eclipse_and_ADT/)
@@ -25,55 +19,11 @@ weight: '30'
 
 * [Installing gperf](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_gperf/)
 
-* [Installing Genymotion](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Genymotion/)
-
 ## Overview
 
 The following packages may be useful for advanced Titanium users, but are not necessary to develop with Titanium.
 
 If you want to build the Titanium SDK from source, or to build native Android modules, you should read this section for software requirements.
-
-Python is useful for users who want to build and run Titanium applications from the command line, users building native modules, or users building the Titanium SDK from source.
-
-### Python (optional)
-
-Python is required to compile the Titanium SDK from source using SCons.
-
-Titanium supports the following versions of Python for each respective Operating System:
-
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
-
-| Operating System | Package Version | Package Architecture Version | Download Location |
-| --- | --- | --- | --- |
-| OS X | 2.x.x (currently, 2.7.x) | 32bit and 64bit | Installed on OS by default |
-| Windows | 2.x.x (currently, 2.7.x) | 32bit **only** | [Official Python Website](http://www.python.org/download/) |
-| Ubuntu | 2.x.x (currently, 2.7.x) | 32bit and 64bit | Default Repositories |
-
-Download the installer from the applicable download location above.
-
-See [Installing Python](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Python/) for detailed instructions about how to install, including the program location and system environment variables that should be used.
-
-### SCons (optional)
-
-[SCons](http://en.wikipedia.org/wiki/SCons) (Software Construction tool) is a build tool, similar to the classic `make` utility. It is used to build the [Titanium SDK](https://github.com/appcelerator/titanium_mobile).
-
-Installing `scons` is required if you want to build the Titanium SDK from source. It is not required for building, running, or distributing applications using the Titanium SDK.
-
-::: warning ⚠️ Warning
-Python is a prerequisite for SCons, and should be installed first. See [Installing Python](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Python/) for instructions.
-:::
-
-Obtain the SCons version listed below for your Operating System:
-
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
-
-| Operating System | Package Version | Download Location |
-| --- | --- | --- |
-| OS X | Latest Stable | [Official Website](http://scons.org/pages/download.html) |
-| Windows | Latest Stable | [Official Website](http://scons.org/pages/download.html) |
-| Ubuntu | Latest Stable | Default Repositories |
-
-See [Installing SCons](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_SCons/) for detailed instructions about how to install, including the program location and system environment variables that should be used.
 
 ### Android Native Development Tools (NDK) (optional)
 

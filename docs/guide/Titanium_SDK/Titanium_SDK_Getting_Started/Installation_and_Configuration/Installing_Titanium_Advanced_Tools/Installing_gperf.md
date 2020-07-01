@@ -1,6 +1,6 @@
 ---
 title: Installing gperf
-weight: '80'
+weight: '50'
 ---
 
 # Installing gperf

@@ -23,7 +23,7 @@ While Javascript popularity stems from its strong web browser presence, it has b
 
 * Various supersets of JavaScript or higher-level languages seek to standardize programming patterns, add advanced features, and so forth. Systems like CoffeeScript, Objective-J, Quby, and more "compile" to JavaScript for broadest possible support in the web browser
 
-* Titanium is, of course, a JavaScript framework for mobile app development (see [ECMA-262-5 Compliance](/guide/Titanium_SDK/Titanium_SDK_Guide/Appendices/ECMA-262-5_Compliance/) for more info on language support and standards compliance).
+* Titanium is, of course, a JavaScript framework for mobile app development (see [ECMA-262-5 Compliance](#undefined) for more info on language support and standards compliance).
 
 Here are a few of the features of the language that make it a favorite among its developers:
 

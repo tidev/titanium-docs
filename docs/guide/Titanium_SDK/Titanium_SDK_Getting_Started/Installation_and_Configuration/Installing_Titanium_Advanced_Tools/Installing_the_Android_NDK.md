@@ -1,6 +1,6 @@
 ---
 title: Installing the Android NDK
-weight: '50'
+weight: '20'
 ---
 
 # Installing the Android NDK

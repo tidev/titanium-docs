@@ -10,7 +10,7 @@ weight: '40'
 If you want to extend the functionality of Studio, you can do so by creating a new Ruble or extending an existing one.
 
 ::: warning ⚠️ Warning
-Starting with Studio Release 3.1.0, the Ruby editor is no longer included as part of the Studio installer. To edit Rubles in Studio, install the Ruby plug-in as instructed in [Adding PHP Ruby or Python Support](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Adding_PHP_Ruby_or_Python_Support/).
+Starting with Studio Release 3.1.0, the Ruby editor is no longer included as part of the Studio installer. To edit Rubles in Studio, install the Ruby plug-in as instructed in [Adding PHP Ruby or Python Support](#undefined).
 :::
 
 ## Creating a new Ruble Using the Wizard

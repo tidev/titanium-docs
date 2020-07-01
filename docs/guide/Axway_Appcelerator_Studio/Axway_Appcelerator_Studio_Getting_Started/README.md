@@ -41,8 +41,6 @@ Have an older version of Appcelerator Studio installed? Please review [Updating 
 
 * [Installing the Java Development Tools](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Installing_the_Java_Development_Tools/)
 
-* [Adding PHP Ruby or Python Support](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Adding_PHP_Ruby_or_Python_Support/)
-
 * [Aptana Core Release Notes](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Aptana_Core_Release_Notes/)
 
 * [Legal and Licensing](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Legal_and_Licensing/)

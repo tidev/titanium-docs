@@ -50,7 +50,7 @@ There are a few guidelines to observe when creating a new scope or using them in
 
 | Scope | Description |
 | --- | --- |
-| [preview](http://jira.appcelerator.org/secure/IssueNavigator!executeAdvanced.jspa?jqlQuery=component%3D%22preview%22) | [Previewing](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Previewing/) core infrastructure |
+| [preview](http://jira.appcelerator.org/secure/IssueNavigator!executeAdvanced.jspa?jqlQuery=component%3D%22preview%22) | [Previewing](#undefined) core infrastructure |
 | [preview.\*](http://jira.appcelerator.org/secure/IssueNavigator!executeAdvanced.jspa?jqlQuery=component%3D%22preview%22) | Language/editor-specific previewing issues |
 
 ## Scripting
