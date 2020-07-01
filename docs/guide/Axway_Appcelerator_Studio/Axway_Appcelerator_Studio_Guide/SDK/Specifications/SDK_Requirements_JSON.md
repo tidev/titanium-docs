@@ -1,6 +1,6 @@
 ---
 title: SDK Requirements JSON
-weight: '60'
+weight: '50'
 ---
 
 # SDK Requirements JSON

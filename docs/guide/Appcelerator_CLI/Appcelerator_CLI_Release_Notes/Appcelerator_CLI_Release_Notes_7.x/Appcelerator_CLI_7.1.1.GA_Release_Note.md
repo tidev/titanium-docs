@@ -1,6 +1,6 @@
 ---
 title: Appcelerator CLI 7.1.1.GA - 6 September 2019
-weight: '50'
+weight: '40'
 ---
 
 # Appcelerator CLI 7.1.1.GA - 6 September 2019

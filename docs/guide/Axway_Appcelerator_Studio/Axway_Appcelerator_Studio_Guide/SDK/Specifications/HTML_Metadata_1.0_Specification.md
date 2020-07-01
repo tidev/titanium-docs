@@ -1,6 +1,6 @@
 ---
 title: HTML Metadata 1.0 Specification
-weight: '70'
+weight: '60'
 ---
 
 # HTML Metadata 1.0 Specification

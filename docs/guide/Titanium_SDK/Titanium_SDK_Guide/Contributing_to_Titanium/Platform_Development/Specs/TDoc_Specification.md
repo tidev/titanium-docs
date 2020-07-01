@@ -1,6 +1,6 @@
 ---
 title: TDoc Specification
-weight: '50'
+weight: '10'
 ---
 
 # TDoc Specification
@@ -787,7 +787,7 @@ Another example is [Titanium.Media.openPhotoGallery](http://developer.appcelerat
 
 ##### Interfaces
 
-Similarly, parts of our API might accept properties or parameters that don't necessarily need to be instances of specific proxies but rather must implement a particular interface. One might think of this as a kind of "[duck typing](http://en.wikipedia.org/wiki/Duck_typing)". An upcoming example of this can be seen in our new [Stream specification](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Platform_Development/Specs/Stream_Spec/), in which two Titanium types – file streams and socket streams – implement a Stream interface. From the documentation perspective, there should be no need for stream-related methods and properties to be documented for both of those types. Instead, a generic stream type should be documented just once so that the documentation definitions for file streams and socket streams can simply extend it, and so that any method parameters or properties throughout the rest of our API which accept streams can have their `type` key set to the special documented type.
+Similarly, parts of our API might accept properties or parameters that don't necessarily need to be instances of specific proxies but rather must implement a particular interface. One might think of this as a kind of "[duck typing](http://en.wikipedia.org/wiki/Duck_typing)". An upcoming example of this can be seen in our new [Stream specification](#undefined), in which two Titanium types – file streams and socket streams – implement a Stream interface. From the documentation perspective, there should be no need for stream-related methods and properties to be documented for both of those types. Instead, a generic stream type should be documented just once so that the documentation definitions for file streams and socket streams can simply extend it, and so that any method parameters or properties throughout the rest of our API which accept streams can have their `type` key set to the special documented type.
 
 ##### Solution: Pseudo-Types
 

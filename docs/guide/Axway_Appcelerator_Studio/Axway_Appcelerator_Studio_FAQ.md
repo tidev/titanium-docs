@@ -1,6 +1,6 @@
 ---
 title: Axway Appcelerator Studio FAQ
-weight: '60'
+weight: '50'
 ---
 
 # Axway Appcelerator Studio FAQ

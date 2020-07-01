@@ -1,6 +1,6 @@
 ---
 title: Layout Limitations Spec
-weight: '60'
+weight: '20'
 ---
 
 # Layout Limitations Spec

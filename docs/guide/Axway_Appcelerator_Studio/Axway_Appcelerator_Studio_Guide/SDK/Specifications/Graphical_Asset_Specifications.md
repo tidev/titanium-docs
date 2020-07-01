@@ -1,6 +1,6 @@
 ---
 title: Graphical Asset Specifications
-weight: '90'
+weight: '80'
 ---
 
 # Graphical Asset Specifications

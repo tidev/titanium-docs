@@ -78,18 +78,6 @@ You might be trying to create an Android-only Titanium object. Use the platform 
 
 If the top-level UI component in your view has an assigned ID, that is, the id attribute in the XML markup is defined for that component, the controller cannot use `$.<controller_name>` to reference it. It needs to use the assigned ID.
 
-### Mobile Web: Changes to code do not take effect
-
-Mobile Web applications cannot be built in Studio, since Mobile Web does not support compiler plugins. If you are building a Mobile Web application using Alloy, you need to compile the code using the Alloy command-line interface:
-
-```
-$ alloy compile --config platform=mobileweb
-```
-
-### Mobile Web: \[ERROR\] alloy run not supported by mobileweb
-
-Mobile Web applications cannot run from the command-line interface. Run the program from Studio.
-
 ### Studio: Unable to find alloy binary
 
 There was probably an issue installing Alloy with Studio or the alloy binary is not in your PATH. Check to see if alloy is installed and is in your PATH (usually in '/usr/local/bin') or follow the [Manual Installation instructions](/guide/Alloy_Framework/Alloy_Getting_Started/#command-line-interface-installation) to install it.

@@ -24,7 +24,9 @@ When mixed together, 'os' values override 'env' values, which override 'global' 
 
 Example of a configuration file:
 
-```
+**config.json**
+
+```json
 {
     "global": { "foo": 1 },
     "env:development": { "foo": 2 },

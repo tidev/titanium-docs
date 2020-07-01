@@ -1,6 +1,6 @@
 ---
 title: JSCA 1.0 Specification
-weight: '30'
+weight: '20'
 ---
 
 # JSCA 1.0 Specification

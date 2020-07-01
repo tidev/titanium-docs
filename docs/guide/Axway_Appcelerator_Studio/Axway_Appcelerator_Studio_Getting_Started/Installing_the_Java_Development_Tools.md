@@ -1,6 +1,6 @@
 ---
 title: Installing the Java Development Tools
-weight: '60'
+weight: '50'
 ---
 
 # Installing the Java Development Tools
@@ -11,12 +11,13 @@ This guide explains how to install the Java Development Tools (JDT) into Studio.
 
 When updating or adding Eclipse plugins or software, the software repository varies with the version of Studio:
 
-| Appcelerator/Titanium Studio Version | Eclipse Repository Name | Eclipse Version |
+| Appcelerator Studio Version | Eclipse Repository Name | Eclipse Version |
 | --- | --- | --- |
 | 2.1.x | Helios | 3.6 |
 | 3.0.x - 3.1.3 | Indigo | 3.7 |
 | 3.1.4 - 3.4.x | Kepler | 4.3 |
-| 4.0.0 - latest | Luna | 4.4 |
+| 4.0.0 - 5.x | Luna | 4.4 |
+| 6.x - latest | 2019-09 | 4.13 |
 
 ## Install the Eclipse Java Development Tools plugin
 

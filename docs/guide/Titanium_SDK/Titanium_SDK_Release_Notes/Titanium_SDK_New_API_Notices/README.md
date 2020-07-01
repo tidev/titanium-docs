@@ -705,7 +705,3 @@ The following APIs are new or have expanded platform support in Release 7.0.0 as
 | Titanium.UI.iOS.LARGE\_TITLE\_DISPLAY\_MODE\_ALWAYS | property | Always use a larger title when this item is top most. (New API, supported on iPhone and iPad.) |
 | Titanium.UI.iOS.LARGE\_TITLE\_DISPLAY\_MODE\_AUTOMATIC | property | Automatically use the large out-of-line title based on the state of the previous item in the navigation bar. (New API, supported on iPhone and iPad.) |
 | Titanium.UI.iOS.LARGE\_TITLE\_DISPLAY\_MODE\_NEVER | property | Never use a larger title when this item is top most. (New API, supported on iPhone and iPad.) |
-
-The included page could not be found.
-
-The included page could not be found.

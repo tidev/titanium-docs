@@ -1,38 +1,32 @@
 ---
 title: Studio Feature Comparison
-weight: '40'
+weight: '30'
 ---
 
 # Studio Feature Comparison
 
 ## Overview
 
-Appcelerator and Titanium Studio are extended versions of [Aptana Studio](http://www.aptana.com/), the professional, open-source, Integrated Development Environment (IDE) tool for web development. In addition to Aptana Studio's web features, Titanium Studio adds the opportunity to develop Appcelerator Titanium Mobile projects.
+Axway Appcelerator Studio is an extended version of [Aptana Studio](http://www.aptana.com/), the professional, open-source, Integrated Development Environment (IDE) tool for web development. In addition to Aptana Studio's web features, Axway Appcelerator Studio adds the opportunity to develop Titanium Mobile projects.
 
 | Project Type | CSS | HTML | JavaScript | Python | Ruby | Ruby on Rails | PHP | Titanium SDK | Additional Features |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Appcelerator Studio | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | Add-On\* | Add-On\* | Add-On\* | Add-On\* | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) |
-| Titanium Studio | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | Add-On\* | Add-On\* | Add-On\* | Add-On\* | ![check](/images/guide/download/attachments/30083020/check.png) | ![error](/images/guide/download/attachments/30083020/error.png) |
+| Appcelerator Studio | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![error](/images/guide/download/attachments/30083020/error.png) | ![error](/images/guide/download/attachments/30083020/error.png) | ![error](/images/guide/download/attachments/30083020/error.png) | ![error](/images/guide/download/attachments/30083020/error.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) |
 | Aptana Studio | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![check](/images/guide/download/attachments/30083020/check.png) | ![error](/images/guide/download/attachments/30083020/error.png) | ![error](/images/guide/download/attachments/30083020/error.png) |
-
-\*Refer to [Adding PHP Ruby or Python Support](#undefined) for installing these add-on modules. As they are so closely related, we often use the term "Studio" to refer to Appcelerator, Titanium, and Aptana Studio together.
 
 When updating or adding Eclipse plugins or software, the software repository varies with the version of Studio:
 
-| Appcelerator/Titanium Studio Version | Eclipse Repository Name | Eclipse Version |
+| Appcelerator Studio Version | Eclipse Repository Name | Eclipse Version |
 | --- | --- | --- |
 | 2.1.x | Helios | 3.6 |
 | 3.0.x - 3.1.3 | Indigo | 3.7 |
 | 3.1.4 - 3.4.x | Kepler | 4.3 |
-| 4.0.0 - latest | Luna | 4.4 |
+| 4.0.0 - 5.x | Luna | 4.4 |
+| 6.x - latest | 2019-09 | 4.13 |
 
 ## Appcelerator Studio
 
-Appcelerator Studio extends the features of Titanium Studio to help manage your mobile project through its entire lifecycle and develop your application more efficiently. Appcelerator Studio provides additional services, such as code profiling to find performance bottlenecks in your application, live view to help design application, and code analysis, to help you write better code. Additionally, Appcelerator Studio helps integrate cloud, automated testing, analytics, and crash reporting services, which can be monitored by the [Appcelerator Dashboard](http://platform.appcelerator.com).
-
-## Titanium Studio
-
-Titanium Studio makes it easy to get started with a mobile project built upon the Titanium SDK to produce professional cross-platform mobile applications. It includes integrated templates, sample applications, and vast amounts of educational material to ensure that you are always building on your skills. It helps you to manage your Titanium projects, including writing, developing and integrating add-on modules, debugging, integrating with [cloud services](http://www.appcelerator.com/cloud), testing, packaging, and deploying.
+Appcelerator Studio makes it easy to get started with a mobile project built upon the Titanium SDK to produce professional cross-platform mobile applications. It includes integrated templates, sample applications, and vast amounts of educational material to ensure that you are always building on your skills. It helps you to manage your Titanium projects, including writing, developing and integrating add-on modules, debugging, integrating with [cloud services](http://www.appcelerator.com/cloud), testing, packaging, and deploying. Additionally, Appcelerator Studio helps integrate cloud, automated testing, analytics, and crash reporting services, which can be monitored by the [Appcelerator Dashboard](http://platform.appcelerator.com).
 
 ## Aptana Studio
 

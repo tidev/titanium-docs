@@ -1,6 +1,6 @@
 ---
 title: JFF 1.0 Specification
-weight: '40'
+weight: '30'
 ---
 
 # JFF 1.0 Specification

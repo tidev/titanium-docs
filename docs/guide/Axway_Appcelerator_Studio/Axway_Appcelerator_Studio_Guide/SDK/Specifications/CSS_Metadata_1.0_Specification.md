@@ -1,6 +1,6 @@
 ---
 title: CSS Metadata 1.0 Specification
-weight: '80'
+weight: '70'
 ---
 
 # CSS Metadata 1.0 Specification

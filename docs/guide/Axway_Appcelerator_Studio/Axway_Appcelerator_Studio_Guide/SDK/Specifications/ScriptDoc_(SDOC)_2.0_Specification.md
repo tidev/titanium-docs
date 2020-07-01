@@ -1,6 +1,6 @@
 ---
 title: ScriptDoc (SDOC) 2.0 Specification
-weight: '50'
+weight: '40'
 ---
 
 # ScriptDoc (SDOC) 2.0 Specification

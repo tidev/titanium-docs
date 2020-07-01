@@ -1,6 +1,6 @@
 ---
 title: UI Composite Layout Behavior Spec
-weight: '70'
+weight: '30'
 ---
 
 # UI Composite Layout Behavior Spec

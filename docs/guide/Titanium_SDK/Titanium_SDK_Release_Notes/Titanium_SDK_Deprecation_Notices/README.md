@@ -3663,7 +3663,3 @@ The following APIs are deprecated in Release 7.0.0 as of December 8th, 2017.
 | Titanium.Media.VideoPlayer.getLoadState | method | On iOS, use Titanium.Media.VideoPlayer.moviePlayerStatus instead. |
 | Titanium.Media.VideoPlayer.loadState | property | On iOS, use Titanium.Media.VideoPlayer.moviePlayerStatus instead. |
 | Titanium.Media.VideoPlayer.setBackgroundView | method | Use Titanium.Media.VideoPlayer.overlayView instead. |
-
-The included page could not be found.
-
-The included page could not be found.

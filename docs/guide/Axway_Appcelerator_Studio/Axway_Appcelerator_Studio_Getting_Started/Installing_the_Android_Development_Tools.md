@@ -1,6 +1,6 @@
 ---
 title: Installing the Android Development Tools
-weight: '50'
+weight: '40'
 ---
 
 # Installing the Android Development Tools

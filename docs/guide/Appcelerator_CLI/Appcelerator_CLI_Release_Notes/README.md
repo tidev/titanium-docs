@@ -45,8 +45,6 @@ Appcelerator CLI 8 removes API Builder from distribution. For information on mig
 
 ## Recent Releases
 
-* [Appcelerator CLI Release Notes 7.0.x](/guide/Appcelerator_CLI/Appcelerator_CLI_Release_Notes/Appcelerator_CLI_Release_Notes_7.x/Appcelerator_CLI_Release_Notes_7.0.x/)
-
 * [Appcelerator CLI 7.1.2.RC Release Note](/guide/Appcelerator_CLI/Appcelerator_CLI_Release_Notes/Appcelerator_CLI_Release_Notes_7.x/Appcelerator_CLI_7.1.2.RC_Release_Note/)
 
 * [Appcelerator CLI 7.1.2.GA Release Note](/guide/Appcelerator_CLI/Appcelerator_CLI_Release_Notes/Appcelerator_CLI_Release_Notes_7.x/Appcelerator_CLI_7.1.2.GA_Release_Note/)

@@ -1,6 +1,6 @@
 ---
 title: Using Studio From Behind a Proxy
-weight: '30'
+weight: '20'
 ---
 
 # Using Studio From Behind a Proxy

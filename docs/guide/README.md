@@ -121,6 +121,4 @@ Here you will find documentation and guides that cover Titanium Mobile and Titan
 
 * [Axway Appcelerator Studio Release Notes](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Release_Notes/)
 
-* [Appcelerator Studio Release Notes](/guide/Axway_Appcelerator_Studio/Appcelerator_Studio_Release_Notes/)
-
 * [Axway Appcelerator Studio FAQ](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_FAQ/)

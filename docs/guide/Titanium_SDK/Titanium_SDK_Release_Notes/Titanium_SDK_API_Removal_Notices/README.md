@@ -147,7 +147,3 @@ The following APIs have been removed in Release 7.0.1 as of December 21st, 2017.
 | Titanium.UI.iPhone.TableViewScrollPosition | object | Use Titanium.UI.iOS.TableViewScrollPosition instead. |
 | Titanium.UI.iPhone.TableViewSeparatorStyle | object | Use Titanium.UI.TABLE\_VIEW\_SEPARATOR\_STYLE\_SINGLE\_LINE and Titanium.UI.TABLE\_VIEW\_SEPARATOR\_STYLE\_NONE instead. |
 | Titanium.UI.iPhone.TableViewStyle | object | Use Titanium.UI.iOS.TableViewStyle instead. |
-
-The included page could not be found.
-
-The included page could not be found.

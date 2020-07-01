@@ -75,8 +75,6 @@ This document provides a series of links for the Titanium SDK.
 
 * [Specifications](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/SDK/Specifications/)
 
-    * [Debugger Protocol](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/SDK/Specifications/Debugger_Protocol/)
-
     * [ScriptDoc XML (SDOCML) 2.0 Specification](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/SDK/Specifications/ScriptDoc_XML_(SDOCML)_2.0_Specification/)
 
     * [JSCA 1.0 Specification](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/SDK/Specifications/JSCA_1.0_Specification/)
