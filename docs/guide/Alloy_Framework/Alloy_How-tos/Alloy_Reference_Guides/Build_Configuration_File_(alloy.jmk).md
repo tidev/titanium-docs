@@ -11,7 +11,7 @@ Example of a JMK file:
 
 **alloy.jmk**
 
-```
+```javascript
 task('pre:compile', function(event, logger) {
     logger.showTimestamp = true;
     logger.info('building project at '+ event.dir.project);
