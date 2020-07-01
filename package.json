@@ -8,7 +8,7 @@
     "clean:guide": "rm -rf docs/guide; rm -rf docs/.vuepress/public/images/guide; rm -f docs/.vuepress/guide.json",
     "deploy": "gh-pages -d docs/.vuepress/dist",
     "docs:dev": "vuepress dev docs --temp .temp",
-    "docs:build": "NODE_OPTIONS=\"--max-old-space-size=8192\" vuepress build docs",
+    "docs:build": "NODE_OPTIONS=\"--max-old-space-size=6144\" vuepress build docs",
     "docs:version": "vuepress version docs",
     "docs:metadata": "vuepress metadata docs ../titanium_mobile/apidoc ../titanium_mobile_windows/apidoc",
     "docs:migrate": "node ./scripts/migrate ../titanium_mobile/apidoc ../titanium_mobile_windows/apidoc",
