@@ -5,7 +5,7 @@ weight: '10'
 
 # Integrating Windows Runtime Components in C#
 
-## /\*<!\[CDATA\[\*/ div.rbtoc1593709721267 {padding: 0px;} div.rbtoc1593709721267 ul {list-style: disc;margin-left: 0px;} div.rbtoc1593709721267 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
+## /\*<!\[CDATA\[\*/ div.rbtoc1593768802592 {padding: 0px;} div.rbtoc1593768802592 ul {list-style: disc;margin-left: 0px;} div.rbtoc1593768802592 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
 
 ## Introduction
 
