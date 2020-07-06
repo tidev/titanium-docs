@@ -10,10 +10,15 @@ under the hood when converting the passed in String representations. One major e
 <Titanium.UI.fetchSemanticColor> method, which will return an instance to be passed to UI components.
 This instance will automatically "adapt" the receiver to light/dark mode changes.
 
+The only current instance you'd receive this type on Android is through the <Titanium.Android.UI.getColorResource> method.
 Note that Android does not currently support passing in instances of this type for UI components/properties!
+You must convert to a hex string representation to pass this in to any color properties on Android.
 
 See [UI Element Colors](https://developer.apple.com/documentation/uikit/uicolor/ui_element_colors?language=objc) and
 [Standard Colors](https://developer.apple.com/documentation/uikit/uicolor/standard_colors?language=objc) for lists of
 named colors to pass to <Titanium.UI.fetchSemanticColor> on iOS.
+
+See [R.color](https://developer.android.com/reference/android/R.color) for a list of system color names to use to pass to
+<Titanium.Android.UI.getColorResource> on Android.
 
 <ApiDocs/>
