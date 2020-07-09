@@ -10,7 +10,7 @@ weight: '10'
 Users can create new samples that appear in the Samples view, where they could be imported into projects.
 
 ::: tip 💡 Hint
-We assume you've [created a new Ruble](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Rubles/Creating_a_new_Ruble/) as a placeholder for the following content.
+We assume you've [created a new Ruble](#undefined) as a placeholder for the following content.
 :::
 
 ## Creating a new sample
@@ -91,4 +91,4 @@ If you instead have a project sample hosted on a Git repo, you can reference tha
 
 Open the Samples view (**Window** > **Show View** > **Samples** if it is not opened), and you should see your new sample appear under the appropriate category. Right-click on it and select \***Import sample as project...**\* to import the sample into the workspace as a project.
 
-The [Ruble Specification](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Rubles/Ruble_Specification/) gives a complete discussion on the new Ruble scripting system in Studio.
+The [Ruble Specification](#undefined) gives a complete discussion on the new Ruble scripting system in Studio.

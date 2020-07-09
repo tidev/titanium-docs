@@ -35,8 +35,6 @@ To update to one of these, see [Changing the Update Type](/guide/Axway_Appcelera
 
 * [Setting Memory Levels](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Updating_Studio/Setting_Memory_Levels/)
 
-* [Migrating from Aptana Studio 2 to Aptana Studio 3](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Updating_Studio/Migrating_from_Aptana_Studio_2_to_Aptana_Studio_3/)
-
 * [Changing the Studio UI into a Different Language](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Updating_Studio/Changing_the_Studio_UI_into_a_Different_Language/)
 
 * [Modifying Your Configuration](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Updating_Studio/Modifying_Your_Configuration/)

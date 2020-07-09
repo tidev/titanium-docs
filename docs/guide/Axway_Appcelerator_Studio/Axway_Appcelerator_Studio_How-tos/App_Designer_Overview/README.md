@@ -1,6 +1,6 @@
 ---
 title: App Designer Overview
-weight: '20'
+weight: '10'
 ---
 
 # App Designer Overview

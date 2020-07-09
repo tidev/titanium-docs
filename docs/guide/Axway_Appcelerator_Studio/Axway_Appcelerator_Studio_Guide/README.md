@@ -15,8 +15,6 @@ This document provides links to various guides on setting up and using Axway App
 
 * [Web Development](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/)
 
-* [SDK](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/SDK/)
-
 * [Titanium Development](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Titanium_Development/)
 
 * [Studio Analytics Events](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Studio_Analytics_Events/)

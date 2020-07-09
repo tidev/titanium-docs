@@ -23,10 +23,10 @@ We provide here two reference application frameworks that have been used success
 
 ### MVC style app framework
 
-This sample framework adapts a model-view-controller architecture, defines an event architecture, and defines an object inheritance pattern. It is not a pure MVC implementation. It also was created prior to our adoption of CommonJS require() as the preferred technique. Still, it is an instructive model and has been used successfully for Appcelerator-led projects. see [MVC Style App Framework](/guide/Titanium_SDK/Titanium_SDK_Guide/Best_Practices_and_Recommendations/Application_Frameworks/MVC_Style_App_Framework/) for more details.
+This sample framework adapts a model-view-controller architecture, defines an event architecture, and defines an object inheritance pattern. It is not a pure MVC implementation. It also was created prior to our adoption of CommonJS require() as the preferred technique. Still, it is an instructive model and has been used successfully for Appcelerator-led projects. see [MVC Style App Framework](#undefined) for more details.
 
 ### Modern JavaScript app framework
 
 The Developer Relations team's Community app represents a type of "true" JavaScript app that doesn't attempt to apply another language's constructs. It uses CommonJS modules and carefully protects the global scope. It takes advantage of Titanium's platform build directories for run-time optimization. And it demonstrates how to wrap native proxies rather than extending them (which is a no-no!).
 
-This app is not a template for new projects. It is a living app, one that is in constant development by our Development Relations team. We encourage you to pull ideas from the app rather than specific code. Learn more about it here: [Community app](/guide/Titanium_SDK/Titanium_SDK_Guide/Best_Practices_and_Recommendations/Application_Frameworks/Community_app/)
+This app is not a template for new projects. It is a living app, one that is in constant development by our Development Relations team. We encourage you to pull ideas from the app rather than specific code. Learn more about it here: [Community app](#undefined)

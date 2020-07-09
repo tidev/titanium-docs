@@ -35,10 +35,6 @@ Have an older version of Appcelerator Studio installed? Please review [Updating 
 
 * [Studio Feature Comparison](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Studio_Feature_Comparison/)
 
-* [Installing the Android Development Tools](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Installing_the_Android_Development_Tools/)
-
 * [Installing the Java Development Tools](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Installing_the_Java_Development_Tools/)
-
-* [Aptana Core Release Notes](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Aptana_Core_Release_Notes/)
 
 * [Legal and Licensing](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Legal_and_Licensing/)

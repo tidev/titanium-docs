@@ -1,6 +1,6 @@
 ---
 title: Titanium Development
-weight: '60'
+weight: '50'
 ---
 
 # Titanium Development
@@ -26,9 +26,5 @@ This document contains a series of links for Titanium development.
 * [Configuring XCode inside Studio](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Titanium_Development/Configuring_XCode_inside_Studio/)
 
 * [LiveView](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Titanium_Development/LiveView/)
-
-* [Code Profiler](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Titanium_Development/Code_Profiler/)
-
-* [Code Analyzer](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Titanium_Development/Code_Analyzer/)
 
 * [Platform Services](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Titanium_Development/Platform_Services/)

@@ -1,6 +1,6 @@
 ---
 title: Source Control
-weight: '80'
+weight: '70'
 ---
 
 # Source Control

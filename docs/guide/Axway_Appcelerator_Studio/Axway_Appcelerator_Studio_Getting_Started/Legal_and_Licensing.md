@@ -1,6 +1,6 @@
 ---
 title: Legal and Licensing
-weight: '70'
+weight: '50'
 ---
 
 # Legal and Licensing

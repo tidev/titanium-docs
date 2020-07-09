@@ -1,13 +1,13 @@
 ---
 title: Running the debugger
-weight: '80'
+weight: '60'
 ---
 
 # Running the debugger
 
 ## Introduction
 
-Once you have the JavaScript debugger configured and installed for your browser (see [Installing the JavaScript debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Installing_the_JavaScript_debugger/)), you can run the JavaScript debugger. Use the debugger to help you troubleshoot your JavaScript code.
+Once you have the JavaScript debugger configured and installed for your browser (see [Installing the JavaScript debugger](#undefined)), you can run the JavaScript debugger. Use the debugger to help you troubleshoot your JavaScript code.
 
 ## Instructions
 
@@ -33,7 +33,7 @@ To stop debugging and close your browser window, click the Terminate button ![Ic
 
 * [About the Debug perspective](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/About_the_Debug_perspective/)
 
-* [Installing the JavaScript debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Installing_the_JavaScript_debugger/)
+* [Installing the JavaScript debugger](#undefined)
 
 * [Stepping into and over functions](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Stepping_into_and_over_functions/)
 

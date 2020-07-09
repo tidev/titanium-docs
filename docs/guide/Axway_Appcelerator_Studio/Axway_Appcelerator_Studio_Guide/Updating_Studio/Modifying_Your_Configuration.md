@@ -1,6 +1,6 @@
 ---
 title: Modifying Your Configuration
-weight: '100'
+weight: '90'
 ---
 
 # Modifying Your Configuration

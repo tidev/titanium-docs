@@ -29,7 +29,7 @@ If you want to use Studio, install:
 
 * [Eclipse Java Development Tools plugin](https://eclipse.org/jdt/). See [Installing the Java Development Tools](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Installing_the_Java_Development_Tools/).
 
-* [Android Development Tools plugin](http://developer.android.com/tools/sdk/eclipse-adt.html). See [Installing the Android Development Tools](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Installing_the_Android_Development_Tools/).
+* [Android Development Tools plugin](http://developer.android.com/tools/sdk/eclipse-adt.html). See [Installing the Android Development Tools](#undefined).
 
 ## Project Structure
 

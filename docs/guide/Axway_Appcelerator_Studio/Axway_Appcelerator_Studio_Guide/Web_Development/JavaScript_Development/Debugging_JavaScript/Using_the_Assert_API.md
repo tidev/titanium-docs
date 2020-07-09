@@ -1,6 +1,6 @@
 ---
 title: Using the Assert API
-weight: '110'
+weight: '90'
 ---
 
 # Using the Assert API
@@ -339,7 +339,7 @@ aptana.assertNotTypeOf(1,"number", "arg1", "arg2");
 
 * [About the Debug perspective](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/About_the_Debug_perspective/)
 
-* [Installing the JavaScript debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Installing_the_JavaScript_debugger/)
+* [Installing the JavaScript debugger](#undefined)
 
 * [Uninstalling the debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Uninstalling_the_debugger/)
 

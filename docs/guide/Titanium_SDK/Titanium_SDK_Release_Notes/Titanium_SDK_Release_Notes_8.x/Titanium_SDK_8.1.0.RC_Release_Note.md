@@ -467,35 +467,6 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ### New APIs
 
-The following APIs are new or have expanded platform support in release 8.1.0.
-
-| API | Type | Notes |
-| --- | --- | --- |
-| Titanium.Database.DB.executeAll | method | Synchronously executes an array of SQL statements against the database and returns an array of `ResultSet`.On failure, this will throw an Error that reports the failed index and partial results(New API, supported on Android.) |
-| Titanium.Database.DB.executeAllAsync | method | Asynchronously executes an array of SQL statements against the database and fires a callback with a possible Error, and an array of `ResultSet`.On failure, this will call the callback with an Error that reports the failed index, and a second arguemnt with the partial results(New API, supported on Android.) |
-| Titanium.Database.DB.executeAsync | method | Asynchronously executes an SQL statement against the database and fires a callback with a possible `Error` argument, and a second argument holding a possible `ResultSet`.(New API, supported on Android.) |
-| Titanium.Platform.canOpenURL | method | Returns whether the system is configured with a default application to handle the URL's protocol/scheme.(Added support for Android.) |
-| Titanium.UI.Animation.dampingRatio | property | The damping ratio for the spring animation as it approaches its quiescent state.(New API, supported on iPhone and iPad.) |
-| Titanium.UI.Animation.getDampingRatio | method | Access Titanium.UI.Animation.dampingRatio instead. |
-| Titanium.UI.Animation.getSpringVelocity | method | Access Titanium.UI.Animation.springVelocity instead. |
-| Titanium.UI.Animation.setDampingRatio | method | Set the value using Titanium.UI.Animation.dampingRatio instead. |
-| Titanium.UI.Animation.setSpringVelocity | method | Set the value using Titanium.UI.Animation.springVelocity instead. |
-| Titanium.UI.Animation.springVelocity | property | The initial spring velocity. (New API, supported on iPhone and iPad.) |
-| Titanium.UI.ListView.getSeparatorStyle | method | Access Titanium.UI.ListView.separatorStyle instead. |
-| Titanium.UI.ListView.getShowSearchBarInNavBar | method | Access Titanium.UI.ListView.showSearchBarInNavBar instead. |
-| Titanium.UI.ListView.separatorStyle | property | Separator style constant. (Added support for Android.) |
-| Titanium.UI.ListView.setSeparatorStyle | method | Set the value using Titanium.UI.ListView.separatorStyle instead. |
-| Titanium.UI.ListView.setShowSearchBarInNavBar | method | Set the value using Titanium.UI.ListView.showSearchBarInNavBar instead. |
-| Titanium.UI.ListView.showSearchBarInNavBar | property | A Boolean indicating whether search bar will be in navigation bar. (New API, supported on iPhone and iPad.) |
-| Titanium.UI.TEXT\_STYLE\_LARGE\_TITLE | property | Specifies the text style for the Font Object. (New API, supported on iPhone and iPad.) |
-| Titanium.UI.TableView.getShowSearchBarInNavBar | method | Access Titanium.UI.TableView.showSearchBarInNavBar instead. |
-| Titanium.UI.TableView.setShowSearchBarInNavBar | method | Set the value using Titanium.UI.TableView.showSearchBarInNavBar instead. |
-| Titanium.UI.TableView.showSearchBarInNavBar | property | A Boolean indicating whether search bar will be in navigation bar. (New API, supported on iPhone and iPad.) |
-| Titanium.UI.WebView.setHtml | method | Sets the value of html property. (Added support for Android.) |
-| Titanium.UI.Window.getHidesSearchBarWhenScrolling | method | Access Titanium.UI.Window.hidesSearchBarWhenScrolling instead. |
-| Titanium.UI.Window.hidesSearchBarWhenScrolling | property | A Boolean value indicating whether the integrated search bar is hidden when scrolling any underlying content. (New API, supported on iPhone and iPad.) |
-| Titanium.UI.Window.setHidesSearchBarWhenScrolling | method | Set the value using Titanium.UI.Window.hidesSearchBarWhenScrolling instead. |
-
 ## SDK modules versions
 
 ### Android and iOS

@@ -7,8 +7,6 @@ weight: '30'
 
 This chapter has several sections dedicated to how-to instructions for Axway Appcelerator Studio.
 
-* [Appcelerator Studio](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_How-tos/Appcelerator_Studio/)
-
 * [App Designer Overview](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_How-tos/App_Designer_Overview/)
 
 * [App Preview](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_How-tos/App_Preview/)

@@ -34,15 +34,3 @@ Our basic guides to extending Titanium Mobile with additional native functionali
     * [iOS Module 64-bit Support](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/iOS_Module_Development_Guide/iOS_Module_64-bit_Support/)
 
     * [iOS Module Debugging](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/iOS_Module_Development_Guide/iOS_Module_Debugging/)
-
-* [Windows Module Development Guide](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/Windows_Module_Development_Guide/)
-
-    * [Integrating Windows Runtime Components in C#](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/Windows_Module_Development_Guide/Integrating_Windows_Runtime_Components_in_C_/)
-
-    * [Windows Background Service Quick Start](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/Windows_Module_Development_Guide/Windows_Background_Service_Quick_Start/)
-
-    * [Windows Module Architecture](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/Windows_Module_Development_Guide/Windows_Module_Architecture/)
-
-    * [Windows Module Project](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/Windows_Module_Development_Guide/Windows_Module_Project/)
-
-    * [Windows Module Quick Start](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/Windows_Module_Development_Guide/Windows_Module_Quick_Start/)

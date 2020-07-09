@@ -1,6 +1,6 @@
 ---
 title: Using the Console View
-weight: '120'
+weight: '100'
 ---
 
 # Using the Console View
@@ -56,7 +56,7 @@ Use the **aptana.trace()** command to generate a stack trace in the Console.
 
 * [About the Debug perspective](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/About_the_Debug_perspective/)
 
-* [Installing the JavaScript debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Installing_the_JavaScript_debugger/)
+* [Installing the JavaScript debugger](#undefined)
 
 * [Running the debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Running_the_debugger/)
 

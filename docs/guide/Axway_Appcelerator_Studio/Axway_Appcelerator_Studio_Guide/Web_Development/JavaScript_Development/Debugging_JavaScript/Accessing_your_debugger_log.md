@@ -11,7 +11,7 @@ Just like Studio has a log file to help diagnose bugs, the JavaScript debugger h
 
 ## Instructions
 
-You will need to have installed the debugger into your browser to be able to access your log. See [Installing the JavaScript debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Installing_the_JavaScript_debugger/) or [Installing the Internet Explorer debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Installing_the_Internet_Explorer_debugger/) for installation help.
+You will need to have installed the debugger into your browser to be able to access your log. See [Installing the JavaScript debugger](#undefined) or [Installing the Internet Explorer debugger](#undefined) for installation help.
 
 ### Accessing the Firefox debugger log
 

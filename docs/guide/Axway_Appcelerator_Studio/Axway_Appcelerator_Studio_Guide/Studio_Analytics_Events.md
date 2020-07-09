@@ -1,6 +1,6 @@
 ---
 title: Studio Analytics Events
-weight: '70'
+weight: '60'
 ---
 
 # Studio Analytics Events

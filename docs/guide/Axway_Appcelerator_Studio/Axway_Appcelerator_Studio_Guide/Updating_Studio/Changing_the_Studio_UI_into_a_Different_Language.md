@@ -1,6 +1,6 @@
 ---
 title: Changing the Studio UI into a Different Language
-weight: '90'
+weight: '80'
 ---
 
 # Changing the Studio UI into a Different Language

@@ -1,6 +1,6 @@
 ---
 title: Installing the Java Development Tools
-weight: '50'
+weight: '40'
 ---
 
 # Installing the Java Development Tools

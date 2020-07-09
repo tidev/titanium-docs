@@ -1,6 +1,6 @@
 ---
 title: Studio Troubleshooting
-weight: '90'
+weight: '80'
 ---
 
 # Studio Troubleshooting
