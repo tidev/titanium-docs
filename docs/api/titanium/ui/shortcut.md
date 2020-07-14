@@ -15,30 +15,31 @@ Use the <Titanium.UI.createShortcut> method to manage shortcut creation.
 
 Create a shortcut item and detect its click with the `shortcutitemclick` event.
 
-    const win = Ti.UI.createWindow({ backgroundColor: 'grey' }),
-    const btn = Ti.UI.createButton({ title: 'ADD SHORTCUT' }),
+``` javascript
+const win = Ti.UI.createWindow({ backgroundColor: 'grey' });
 
-    const shortcut = Ti.UI.createShortcut();
+const shortcut = Ti.UI.createShortcut();
+Ti.UI.Shortcut.addEventListener('click', e => {
+    console.log(`id: ${e.id}`);
+
+    // Set background to 'blue' on shortcut click event.
+    win.backgroundColor = 'blue';
+});
+
+// Button to add a shortcut item
+const btn = Ti.UI.createButton({ title: 'ADD SHORTCUT' });
+btn.addEventListener('click', () => {
+    // Add shortcut item to shortcut
     const shortcutItem = Ti.UI.createShortcutItem({
         id: 'test_shortcut',
         title: 'TEST',
         description: 'DESCRIPTION'
     });
+    shortcut.add(shortcutItem);
+});
 
-    Ti.UI.Shortcut.addEventListener('click', e => {
-        console.log(`id: ${e.id}`);
-
-        // Set background to 'blue' on shortcut click event.
-        win.backgroundColor = 'blue';
-    });
-
-    btn.addEventListener('click', () => {
-
-        // Add shortcut.
-        shortcut.add(shortcutItem);
-    });
-
-    win.add(btn);
-    win.open();
+win.add(btn);
+win.open();
+```
 
 <ApiDocs/>
