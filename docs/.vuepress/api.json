@@ -300,7 +300,16 @@
 	},
 	{
 		"title": "Globals",
-		"children": [ "global", "global/console", "global/string" ]
+		"children": [ 
+			"global",
+			"global/console",
+			{
+				"title": "Intl",
+				"path": "/api/global/intl",
+				"children": [ "global/intl/collator", "global/intl/datetimeformat", "global/intl/numberformat" ]
+			},
+			"global/string"
+		]
 	},
 	{
 		"title": "Modules",
