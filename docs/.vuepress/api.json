@@ -301,14 +301,18 @@
 	{
 		"title": "Globals",
 		"children": [ 
-			"global",
-			"global/console",
+			[ "global", "global" ],
+			[ "global/console", "console" ],
 			{
 				"title": "Intl",
 				"path": "/api/global/intl",
-				"children": [ "global/intl/collator", "global/intl/datetimeformat", "global/intl/numberformat" ]
+				"children": [
+					[ "global/intl/collator", "Intl.Collator" ],
+					[ "global/intl/datetimeformat", "Intl.DateTimeFormat" ],
+					[ "global/intl/numberformat", "Intl.NumberFormat" ]
+				]
 			},
-			"global/string"
+			[ "global/string", "String" ]
 		]
 	},
 	{
