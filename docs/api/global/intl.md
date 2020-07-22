@@ -1,4 +1,4 @@
-# Intl
+# Global.Intl
 
 <TypeHeader/>
 

@@ -1,4 +1,4 @@
-# DateTimeFormat
+# Global.Intl.DateTimeFormat
 
 <TypeHeader/>
 

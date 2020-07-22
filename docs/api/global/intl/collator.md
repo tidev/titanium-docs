@@ -1,4 +1,4 @@
-# Collator
+# Global.Intl.Collator
 
 <TypeHeader/>
 
@@ -32,7 +32,7 @@ console.log(collator.compare('a', 'á') === 0);  // Not Equal
 console.log(collator.compare('a', 'A') === 0);  // Not Equal
 console.log(collator.compare('a', 'b') === 0);  // Not Equal
 
-// Match strings that are the same case, ignoring accent marks.
+// Case sensitive matching, ignoring accents marks.
 console.log('Case Sensitivity:');
 collator = new Intl.Collator(Ti.Locale.currentLocale, { sensitivity: 'case' });
 console.log(collator.compare('a', 'a') === 0);  // Equal

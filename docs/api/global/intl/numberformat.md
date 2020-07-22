@@ -1,12 +1,12 @@
-# NumberFormat
+# Global.Intl.NumberFormat
 
 <TypeHeader/>
 
 ## Overview
 
 A `NumberFormat` object is used to convert a `Number` value to a localized numeric string.
-It provides various formatting options controlling the amount of integer and fractional digits
-to be displayed. It can also output a currency values, percentage based values, and
+It provides various formatting options controlling the number of integer and fractional digits
+to be displayed. It can also output currency values, percentage based values, and
 scientific notation.
 
 For more detail, see the MDN website about
@@ -59,7 +59,7 @@ console.log(formatter.format(1.23456));
 ### Currency Format
 
 ``` js
-// Set up currency style numeric format options.
+// Set up currency style format options.
 const options = {
     style: 'currency',
     maximumFractionDigits: 2,
@@ -115,7 +115,7 @@ console.log(formatter.format(12.3456));
 ``` js
 // Logs: 1.235E5
 // Decimal point will be a period, comma, or space depending on the locale.
-let formatter = new Intl.NumberFormat(Ti.Locale.currentLocale, { notation: 'scientific' });
+const formatter = new Intl.NumberFormat(Ti.Locale.currentLocale, { notation: 'scientific' });
 console.log(formatter.format(123456.7));
 ```
 
