@@ -7,10 +7,8 @@
 Allows the creation of application shortcuts, which can be detected using
 the `click` event from <Titanium.UI.Shortcut>.
 
-Use the <Titanium.UI.createShortcut> method to manage shortcut creation.
-
-In iOS, to use this feature make sure you have a 3D Touch compatible device. To
-check for the feature, use the <Titanium.UI.iOS.forceTouchSupported> property.
+On iOS, shortcuts are only supported on a 3D Touch compatible device.
+Use the <Titanium.UI.iOS.forceTouchSupported> property to see if it's supported.
 
 ## Examples
 
@@ -21,27 +19,27 @@ Create a shortcut item and detect its click with the `click` event.
 ``` javascript
 const win = Ti.UI.createWindow({ backgroundColor: 'grey' });
 
-const shortcut = Ti.UI.createShortcut();
-shortcut.addEventListener('click', e => {
+// Listen for shortcut item clicks from the end-user.
+Ti.UI.Shortcut.addEventListener('click', e => {
+    // Event's "item" property indicates which shortcut item was clicked on.
     console.log(`id: ${e.item.id}`);
 
-    // Set background to 'blue' on shortcut click event.
+    // Set background to 'blue' when a shortcut was clicked on.
     win.backgroundColor = 'blue';
 });
 
-// Button to add a shortcut item
+// Button to add a shortcut item.
 const btn = Ti.UI.createButton({ title: 'ADD SHORTCUT' });
 btn.addEventListener('click', () => {
-    // Add shortcut item to shortcut
     const shortcutItem = Ti.UI.createShortcutItem({
         id: 'test_shortcut',
         title: 'TEST',
         description: 'DESCRIPTION'
     });
-    shortcut.add(shortcutItem);
+    Ti.UI.Shortcut.add(shortcutItem);
 });
-
 win.add(btn);
+
 win.open();
 ```
 
