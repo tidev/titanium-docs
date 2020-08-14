@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK 8.2.0.GA - 19 September 2019
-weight: '100'
+weight: '50'
 ---
 
 # Titanium SDK 8.2.0.GA - 19 September 2019
