@@ -201,7 +201,7 @@ If false, uses the custom `AndroidManifest.xml` file without performing any merg
 
 Path to the Android NDK.
 
-#### andoird.sdkPath
+#### android.sdkPath
 
 Path to the Android SDK. If undefined, the CLI attempts to use the ANDROID\_SDK or PATH variable to determine the location. If the CLI cannot find the Android SDK, it will prompt you to enter the location.
 
