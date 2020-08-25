@@ -1,6 +1,6 @@
 ---
 title: Appcelerator CLI 8.0.0.RC  - 9 March 2020
-weight: '20'
+weight: '40'
 ---
 
 # Appcelerator CLI 8.0.0.RC - 9 March 2020

@@ -1,24 +1,21 @@
 ---
-title: Titanium SDK 9.1.0.RC - 14 August 2020
-weight: '20'
+title: Titanium SDK 9.1.0.GA - 25 August 2020
+weight: '10'
 ---
 
-# Titanium SDK 9.1.0.RC - 14 August 2020
+# Titanium SDK 9.1.0.GA - 25 August 2020
 
 ## About this release
 
 Titanium SDK 9.1.0 is a minor release of the SDK, addressing high-priority issues from previous releases, as well as the addition of new features/functionality/APIs.
 
-As of this release, Titanium SDK 9.0.x will not receive updates more than six months after the release of 9.1.0 (2021-02-14). Any needed fixes will be in 9.1.x or later supported releases within the 9.x branch. See [Axway Appcelerator Deprecation Policy](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_deprecation_policy.html) and [Nominal Lifetimes](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_product_lifecycle.html#AxwayAppceleratorProductLifecycle-NominalLifetimes) documents for details.
+As of this release, Titanium SDK 9.0.x will not receive updates more than six months after the release of 9.1.0 (2021-02-25). Any needed fixes will be in 9.1.x or later supported releases within the 9.x branch. See [Axway Appcelerator Deprecation Policy](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_deprecation_policy.html) and [Nominal Lifetimes](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_product_lifecycle.html#AxwayAppceleratorProductLifecycle-NominalLifetimes) documents for details.
 
 ::: danger ❗️ Warning
 With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. Node 10.13.0 will be the new minimum supported version with SDK 9.0.0.
 :::
 ::: danger ❗️ Warning
 Deprecation Notice: The next major release of the Titanium CLI, version 6.0.0, will no longer support plugins and hooks for commands other than "appc ti clean", "ti clean", "appc run", and "ti build". Titanium CLI v6 will have a new plugin system with a new hook system and it will be incompatible with Titanium CLI v5 plugins and hooks. Please refer to [TIMOB-27233](https://jira.appcelerator.org/browse/TIMOB-27233) and [TIMOB-27255](https://jira.appcelerator.org/browse/TIMOB-27255) for more information.
-:::
-::: danger ❗️ Warning
-With the release of Titanium SDK 9.0.0, Windows platform will no longer be supported and has been removed from distribution in the SDK. Customers on Pro and Enterprise plans may continue to request critical fixes on SDK 8.x releases until August 18, 2020.
 :::
 
 ## Overview
@@ -103,6 +100,12 @@ Titanium SDK 9.1.0's Notable new features include: [Webpack project support](htt
 
 * [TIMOB-28020](https://jira.appcelerator.org/browse/TIMOB-28020) - Parity with iOS Shortcut click event payload ([dc102e3](https://github.com/appcelerator/titanium_mobile/commit/dc102e3ac6c78c35ce294b46a653de710c4958cd))
 
+* [TIMOB-28064](https://jira.appcelerator.org/browse/TIMOB-28064) - Setting border fills view when backgroundColor is not specified
+
+* [TIMOB-28073](https://jira.appcelerator.org/browse/TIMOB-28073) - DateTimeFormat mishandles some combinations of settings on Android 8
+
+* [TIMOB-28092](https://jira.appcelerator.org/browse/TIMOB-28092) - Native modules pinned to build Titanium SDK version
+
 * changing picker row color should update selected text ([7aa5290](https://github.com/appcelerator/titanium_mobile/commit/7aa5290036b054bee75240488ae22f8228218906))
 
 * clean/rebuild should release gradle file locks ([be923f1](https://github.com/appcelerator/titanium_mobile/commit/be923f1d1904912db50218e1addc9acd7147974f))
@@ -143,6 +146,10 @@ Titanium SDK 9.1.0's Notable new features include: [Webpack project support](htt
 
 * [TIMOB-28031](https://jira.appcelerator.org/browse/TIMOB-28031) - CLI: Unable to find an iOS Simulator running iOS 14.0.
 
+* [TIMOB-28067](https://jira.appcelerator.org/browse/TIMOB-28067) - iOS: swipe down gallery photo picker does not fire cancel callback
+
+* [TIMOB-28095](https://jira.appcelerator.org/browse/TIMOB-28095) - Border Radius of a view cannot be changed
+
 * allow custom property getters to work in bindings ([a53f8c6](https://github.com/appcelerator/titanium_mobile/commit/a53f8c6e05ab34ce7735af617e62f4c308d4f83f))
 
 * call callback with success no byte event on writeFromBuffer with no length ([8a639d8](https://github.com/appcelerator/titanium_mobile/commit/8a639d8bb50f66468b4ac6cefbe3501c9027110f))
@@ -178,6 +185,8 @@ Titanium SDK 9.1.0's Notable new features include: [Webpack project support](htt
 * [TIMOB-26649](https://jira.appcelerator.org/browse/TIMOB-26649) - LiveView: Unable to use LiveView with KitchenSink-v2
 
 * [TIMOB-26798](https://jira.appcelerator.org/browse/TIMOB-26798) - Angular: Project template is outdated
+
+* [TIMOB-28054](https://jira.appcelerator.org/browse/TIMOB-28054) - WebPack (Android/IOS) : .tss changes do not show up after app rebuild
 
 * do not remove log file when cleaning ([a699bf5](https://github.com/appcelerator/titanium_mobile/commit/a699bf594d0e41167d4c441de9d958bdc46a9fb4))
 

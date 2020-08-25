@@ -1,17 +1,17 @@
 ---
-title: Appcelerator CLI 8.1.0 RC - 14 August 2020
-weight: '20'
+title: Appcelerator CLI 8.1.0 GA - 25 August 2020
+weight: '10'
 ---
 
-# Appcelerator CLI 8.1.0 RC - 14 August 2020
+# Appcelerator CLI 8.1.0 GA - 25 August 2020
 
-Appcelerator CLI 8.1.0 RC is a release candidate for a minor release that includes new features, improvements, and bug fixes.
+Appcelerator CLI 8.1.0 GA is a minor release that includes new features, improvements, and bug fixes.
 
 ## Component versions
 
 The following components are shipped with CLI 8.1.0:
 
-<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Alloy</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>1.15.1</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Cloud CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>2.1.3</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Titanium CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>5.2.2</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Daemon</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>3.2.0</p></td></tr></tbody></table>
+<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Alloy</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>1.15.1</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Cloud CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>2.1.8</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Titanium CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>5.2.2</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Daemon</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>3.2.0</p></td></tr></tbody></table>
 
 ## New Features
 
@@ -36,6 +36,8 @@ The following components are shipped with CLI 8.1.0:
 * [CLI-1393](https://jira.appcelerator.org/browse/CLI-1393) - Allow passing template option through when creating a classic application
 
     * The `--template` option will now be respected when creating an application with the `--classic` flag
+
+* [CLI-1395](https://jira.appcelerator.org/browse/CLI-1395) - Upgrade to acs 2.1.8
 
 ## Fixed issues
 
