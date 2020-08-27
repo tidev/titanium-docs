@@ -136,4 +136,31 @@ First example as an Alloy view.
 </Alloy>
 ```
 
+### Scrollable View with indicator image (iOS only)
+
+Create three views and assign them as pages to a scrollable view. Assign preferred indicator image.
+After window opens, update second page indicator image.
+
+``` js
+var win = Ti.UI.createWindow({ extendSafeArea: false });
+
+var view1 = Ti.UI.createView({ backgroundColor:'#123' });
+var view2 = Ti.UI.createView({ backgroundColor:'#246' });
+var view3 = Ti.UI.createView({ backgroundColor:'#48b' });
+var backwardImage = Ti.UI.iOS.systemImage('backward');
+var scrollableView = Ti.UI.createScrollableView({
+  views:[view1,view2,view3],
+  showPagingControl:true,
+  preferredIndicatorImage: backwardImage
+});
+
+win.add(scrollableView);
+win.addEventListener('open', function () {
+  var forwardImage = Ti.UI.iOS.systemImage('forward');
+  scrollableView.setIndicatorImageForPage(forwardImage, 1);
+});
+
+win.open();
+```
+
 <ApiDocs/>
