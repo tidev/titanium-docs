@@ -109,7 +109,7 @@ if (Ti.Platform.name === 'android') {
   // iOS specific params
   params.width = '90%';
 }
-
+var scrollableView = Ti.UI.createScrollableView(params);
 win.add(scrollableView);
 win.open();
 ```
