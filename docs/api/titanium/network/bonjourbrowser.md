@@ -17,4 +17,33 @@ services list, but you should not rely on it being delivered before user input. 
 a window which uses Bonjour browsing is closed, if you do not want to continue searching, 
 you must call the stop() method.
 
+In iOS 14.0+, to browse services add key `NSLocalNetworkUsageDescription` and `NSBonjourServices` to the `ios plist` section of the tiapp.xml file.
+
+Example:
+
+``` xml
+<ti:app>
+  <!-- ... -->
+  <ios>
+    <plist>
+      <dict>
+        <!-- Reason to access local network-->
+        <key>NSLocalNetworkUsageDescription</key>
+        <string>
+            Specify the reason for accessing the local network.
+            This appears in the alert dialog when asking the user 
+            for permission to access local network.
+        </string>
+        <!-- List of bonjour service type-->
+        <key>NSBonjourServices</key>
+        <array>
+          <string>_test._tcp</string>
+        <array/>
+      </dict>
+    </plist>
+  </ios>
+  <!-- ... -->
+</ti:app>
+```
+
 <ApiDocs/>

@@ -141,6 +141,34 @@ cookie stores using the methods <Titanium.Network.addHTTPCookie>, <Titanium.Netw
 <Titanium.Network.removeHTTPCookie>, <Titanium.Network.removeHTTPCookiesForDomain>, <Titanium.Network.removeAllHTTPCookies>,
 <Titanium.Network.removeSystemCookie>, <Titanium.Network.removeAllSystemCookies>.
 
+### Connect to local network in iOS
+
+On iOS 14 and later, while connecting to local network a prompt will be shown to request user's permission.
+Add key `NSLocalNetworkUsageDescription` to the `ios plist` section of the tiapp.xml file to show the message on prompt.
+If this key is not added default message will be shown in prompt.
+
+Example:
+
+``` xml
+<ti:app>
+  <!-- ... -->
+  <ios>
+    <plist>
+      <dict>
+        <!-- Reason to access local network-->
+        <key>NSLocalNetworkUsageDescription</key>
+        <string>
+            Specify the reason for accessing the local network.
+            This appears in the alert dialog when asking the user 
+            for permission to access local network.
+        </string>
+      </dict>
+    </plist>
+  </ios>
+  <!-- ... -->
+</ti:app>
+```
+
 ## Examples
 
 ### Simple GET Request

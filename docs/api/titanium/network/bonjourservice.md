@@ -15,6 +15,35 @@ the service first.  When a window which publishes a Bonjour service is closed, y
 stop the service if the associated socket is also to be closed, or if it is no longer 
 necessary to publish.  Bonjour service resolution and publishing is asynchronous.
 
+In iOS 14.0+, to publish service add key `NSLocalNetworkUsageDescription` and `NSBonjourServices` in tiapp.xml file.
+
+Example:
+
+``` xml
+<ti:app>
+  <!-- ... -->
+  <ios>
+    <plist>
+      <dict>
+        <!-- Reason to access local network-->
+        <key>NSLocalNetworkUsageDescription</key>
+        <string>
+            Specify the reason for accessing the local network.
+            This appears in the alert dialog when asking the user 
+            for permission to access local network.
+        </string>
+        <!-- List of bonjour service type-->
+        <key>NSBonjourServices</key>
+        <array>
+          <string>_test._tcp</string>
+        <array/>
+      </dict>
+    </plist>
+  </ios>
+  <!-- ... -->
+</ti:app>
+```
+
 ## Examples
 
 ### Resolve local HTTP/TCP services
