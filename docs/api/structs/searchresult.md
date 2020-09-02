@@ -1,0 +1,5 @@
+# SearchResult
+
+<TypeHeader/>
+
+<ApiDocs/>
