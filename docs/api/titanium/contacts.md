@@ -23,6 +23,8 @@ If 'ABAddressBookErrorDomain error 0' occurs, it implies that you are not allowe
 certain fields. Check your default account in the iOS settings under contacts. If it's not 'iCloud',
 most likely it will not support fields such as alternateBirthday or socialProfile.
 
+These APIs are unavailable on macOS if the app is built on a version of Xcode < 12.
+
 ## Examples
 
 ### Request access to the address book
