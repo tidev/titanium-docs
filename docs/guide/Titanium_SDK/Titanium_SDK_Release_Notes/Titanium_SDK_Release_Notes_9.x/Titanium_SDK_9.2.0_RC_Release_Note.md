@@ -1,11 +1,9 @@
 ---
 title: Titanium SDK 9.2.0.RC - 15 September 2020
-weight: '80'
+weight: '10'
 ---
 
 # Titanium SDK 9.2.0.RC - 15 September 2020
-
-## /\*<!\[CDATA\[\*/ div.rbtoc1600210853982 {padding: 0px;} div.rbtoc1600210853982 ul {list-style: disc;margin-left: 0px;} div.rbtoc1600210853982 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
 
 ## About this release
 
@@ -13,9 +11,11 @@ Titanium SDK 9.2.0 is a minor release of the SDK, addressing high-priority issue
 
 As of this release, Titanium SDK 9.1.x will not receive updates more than six months after the release of 9.2.0 (2021-03-15). Any needed fixes will be in 9.2.x or later supported releases within the 9.x branch. See [Axway Appcelerator Deprecation Policy](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_deprecation_policy.html) and [Nominal Lifetimes](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_product_lifecycle.html#AxwayAppceleratorProductLifecycle-NominalLifetimes) documents for details.
 
-:warning: With the release of Titanium SDK 9.0.0, we no longer support Node.js 8.X. Node 10.13.0 is the new minimum supported version.
+::: danger ❗️ Warning
+With the release of Titanium SDK 9.0.0, we no longer support Node.js 8.X. Node 10.13.0 is the new minimum supported version.
+:::
 
-## Overview
+Overview
 
 Titanium SDK 9.2.0 is primarily focused on providing support for iOS 14 and Xcode 12. Fixing high priority issues, adding support for new APIs, support for using xcframeworks in native modules, as well as a beta for macOS support via Mac Catalyst.
 

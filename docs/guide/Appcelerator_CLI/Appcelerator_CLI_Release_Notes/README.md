@@ -5,51 +5,34 @@ weight: '40'
 
 # Appcelerator CLI Release Notes
 
-## Appcelerator CLI 8.1.0 GA - 25 August 2020
+## Appcelerator CLI 8.1.1 GA - 15 September 2020
 
-Appcelerator CLI 8.1.0 GA is a minor release that includes new features, improvements, and bug fixes.
+Appcelerator CLI 8.1.1 GA is a patch release that includes bug fixes.
 
 ### Component versions
 
-The following components are shipped with CLI 8.1.0:
+The following components are shipped with CLI 8.1.1:
 
-<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Alloy</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>1.15.1</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Cloud CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>2.1.8</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Titanium CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>5.2.2</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Daemon</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>3.2.0</p></td></tr></tbody></table>
-
-### New Features
-
-* [ALOY-1732](https://jira.appcelerator.org/browse/ALOY-1732) - Add ability to run in the background without UI
-
-    * This change is dependent on the to be released Titanium SDK ticket [TIMOB-27896](https://jira.appcelerator.org/browse/TIMOB-27896) and is shipping ahead of time to make upgrades to that version smoother
-
-### Improvements
-
-* [ALOY-1253](https://jira.appcelerator.org/browse/ALOY-1253) - Alloy: Support WPATH in widget XML view attribute values
-
-* [ALOY-1733](https://jira.appcelerator.org/browse/ALOY-1733) - Add templates for webpack usage
-
-* [ALOY-1735](https://jira.appcelerator.org/browse/ALOY-1735) - Add vscode settings file to projects
-
-* [CLI-1391](https://jira.appcelerator.org/browse/CLI-1391) - Allow specifying Native Module templates
-
-    * Module templates will now be prompted for when creating a module. You can also specify them by using the `--android-code-base` and the `--ios-code-base` options
-
-* [CLI-1392](https://jira.appcelerator.org/browse/CLI-1392) - Improve handling of no MBaaS entitlement
-
-* [CLI-1393](https://jira.appcelerator.org/browse/CLI-1393) - Allow passing template option through when creating a classic application
-
-    * The `--template` option will now be respected when creating an application with the `--classic` flag
-
-* [CLI-1395](https://jira.appcelerator.org/browse/CLI-1395) - Upgrade to acs 2.1.8
+<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Alloy</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>1.15.2</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Cloud CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>2.1.8</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Titanium CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>5.2.4</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Daemon</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>3.2.0</p></td></tr></tbody></table>
 
 ### Fixed issues
 
-* [ALOY-1256](https://jira.appcelerator.org/browse/ALOY-1256) - Widget/Require as top-level element uses controller as view
+* [ALOY-1738](https://jira.appcelerator.org/browse/ALOY-1738) - Regression in behaviour of the Require XML tag
 
-* [ALOY-1720](https://jira.appcelerator.org/browse/ALOY-1720) - Version string comparison will break for SDK 10.0.0
+* [ALOY-1737](https://jira.appcelerator.org/browse/ALOY-1737) - Alloy: ListView dataBinding creates deprecated setItems call
+    [CLI-1394](https://jira.appcelerator.org/browse/CLI-1394) - Duplicate symbol error when using Appc Source Code Encryption
 
-* [ALOY-1734](https://jira.appcelerator.org/browse/ALOY-1734) - JS files imported in "alloy.js" don't have access to Alloy globals as of Titanium 9.0.0
+    * Fixes a potential symbol clash between appc-verify and some modules, this fix is available for use in SDK 9.2.0 and above, and also SDK 9.1.0 and below
 
-* [ALOY-1736](https://jira.appcelerator.org/browse/ALOY-1736) - aloy new fails if dev dependencies do not exist in package.Json
+* [CLI-1396](https://jira.appcelerator.org/browse/CLI-1396) - Always prompted for iOS code base on module creation even if set
+
+* [CLI-1397](https://jira.appcelerator.org/browse/CLI-1397) - Update appc-verify to be built as an xcframework
+
+    * Adds SDK 9.2.0 compatability to appc-verify which is used for Appc Source Code Encryption
+
+* [CLI-1398](https://jira.appcelerator.org/browse/CLI-1398) \- Update to Titanium CLI 5.2.4
+
+    * This fixes an issue where symlinks were not preserved when installing Titanium
 
 ## Recent Releases
 
