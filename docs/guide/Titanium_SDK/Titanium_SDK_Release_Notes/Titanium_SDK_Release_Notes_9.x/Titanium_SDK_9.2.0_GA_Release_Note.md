@@ -1,13 +1,11 @@
 ---
-title: Titanium SDK Release Notes
-weight: '40'
+title: Titanium SDK 9.2.0.GA - 23 September 2020
+weight: '10'
 ---
 
-# Titanium SDK Release Notes
+# Titanium SDK 9.2.0.GA - 23 September 2020
 
-## Titanium SDK 9.2.0.GA - 23 September 2020
-
-### About this release
+## About this release
 
 Titanium SDK 9.2.0 is a minor release of the SDK, addressing high-priority issues from previous releases.
 
@@ -17,11 +15,11 @@ As of this release, Titanium SDK 9.1.x will not receive updates more than six mo
 With the release of Titanium SDK 9.0.0, we no longer support Node.js 8.X. Node 10.13.0 is the new minimum supported version.
 :::
 
-### Overview
+## Overview
 
 Titanium SDK 9.2.0 is primarily focused on providing support for iOS 14 and Xcode 12. Fixing high priority issues, adding support for new APIs, support for using xcframeworks in native modules, as well as a beta for macOS support via Mac Catalyst.
 
-#### macOS support
+### macOS support
 
 This release includes an initial beta for supporting macOS applications via [Mac Catalyst](https://developer.apple.com/mac-catalyst/), which allows you to run your iOS application on Mac as if they were apps built for the Mac.
 
@@ -39,7 +37,7 @@ This initial beta mostly focuses on enabling the target and necessary build chan
 
 We will iterate on the macOS support in the coming releases and when we feel that it's stable enough we will remove it from beta. But we encourage you to give it a spin, and report any issues you might find to us on our [JIRA](http://jira.appcelerator.org/).
 
-#### Rebuilding iOS modules
+### Rebuilding iOS modules
 
 It is not required, but it is heavily recommended to rebuild your native modules with SDK 9.2.0. Not doing so will produce a warning during application build and will lead to build failures when Apple ships the upcoming "Silicon Macs". To build your application to macOS it's also required to rebuild the module.
 
@@ -59,7 +57,7 @@ To update your module:
 
 For an example of the changes required, see the [PR to update ti.coremotion](https://github.com/appcelerator-modules/ti.coremotion/pull/27)
 
-### Community Credits
+## Community Credits
 
 * Hans Knöchel
 
@@ -75,13 +73,13 @@ For an example of the changes required, see the [PR to update ti.coremotion](htt
 
     * fix Ti.UI.Window.extendSafeArea default value text ([136620c](https://github.com/appcelerator/titanium_mobile/commit/136620c668e4a2eb4501331d97cd228c5bca4aed))
 
-### Bug Fixes
+## Bug Fixes
 
-#### Android platform
+### Android platform
 
 * [TIMOB-28090](https://jira.appcelerator.org/browse/TIMOB-28090) - allow node to clear event loop ([d6d9a5b](https://github.com/appcelerator/titanium_mobile/commit/d6d9a5b8333425366fef96333c51942b0f28d799))
 
-#### iOS platform
+### iOS platform
 
 * [TIMOB-27132](https://jira.appcelerator.org/browse/TIMOB-27132) - fix location of Ti.Filesystem.applicationDataDirectory on macos ([9caf847](https://github.com/appcelerator/titanium_mobile/commit/9caf8475b5c55ffac256c181896809d01a5b62e3))
 
@@ -137,13 +135,13 @@ For an example of the changes required, see the [PR to update ti.coremotion](htt
 
 * fix location of Ti.Filesystem.applicationDataDirectory on macos ([9caf847](https://github.com/appcelerator/titanium_mobile/commit/9caf8475b5c55ffac256c181896809d01a5b62e3))
 
-#### Multiple platforms
+### Multiple platforms
 
 * [TIMOB-28094](https://jira.appcelerator.org/browse/TIMOB-28094) - process.toString() ([a15f7f6](https://github.com/appcelerator/titanium_mobile/commit/a15f7f65a6c738ab444570c7236435245e72d6b2))
 
-### Features
+## Features
 
-#### iOS platform
+### iOS platform
 
 * [TIMOB-27986](https://jira.appcelerator.org/browse/TIMOB-27986) - support xcframeworks in modules/platform folders ([b2ccfbf](https://github.com/appcelerator/titanium_mobile/commit/b2ccfbf7fb44d5ffa03dd358ad8d5930258be838))
 
@@ -169,7 +167,7 @@ For an example of the changes required, see the [PR to update ti.coremotion](htt
 
 * [TIMOB-28116](https://jira.appcelerator.org/browse/TIMOB-28116) - use/support/build xcframeworks ([133527e](https://github.com/appcelerator/titanium_mobile/commit/133527ed517518b13a64cd50a8dd65d61c8b76b7))
 
-#### Multiple platforms
+### Multiple platforms
 
 * [TIMOB-28061](https://jira.appcelerator.org/browse/TIMOB-28061) - add os version major/minor int constants ([3fd8535](https://github.com/appcelerator/titanium_mobile/commit/3fd8535013797129fbe6ca381692fce5b7ae55da))
 
@@ -183,7 +181,7 @@ For an example of the changes required, see the [PR to update ti.coremotion](htt
 
 * [TIMOB-28030](https://jira.appcelerator.org/browse/TIMOB-28030) - add WebView blockedURLs property ([9006c00](https://github.com/appcelerator/titanium_mobile/commit/9006c0044c6657976951ebb5fb1ede4dde0e2d35))
 
-#### Android platform
+### Android platform
 
 * add Ti.Blob.toArrayBuffer() ([36e7244](https://github.com/appcelerator/titanium_mobile/commit/36e7244f5333f40b108eb7847403e629f98ff57f))
 
@@ -191,13 +189,13 @@ For an example of the changes required, see the [PR to update ti.coremotion](htt
 
 * support converting byte\[\] to ArrayBuffer ([9e77600](https://github.com/appcelerator/titanium_mobile/commit/9e77600acbaed9dd7d2d301c9fec3687bcf6a77b))
 
-### Performance Improvements
+## Performance Improvements
 
-#### Multiple platforms
+### Multiple platforms
 
 * make buffer shim more efficient ([9efe874](https://github.com/appcelerator/titanium_mobile/commit/9efe8742508abc1ce40f35d8add9100e675cbab3))
 
-### SDK Module Versions
+## SDK Module Versions
 
 | Module | Android version | iOS Version |
 | --- | --- | --- |
@@ -212,7 +210,3 @@ For an example of the changes required, see the [PR to update ti.coremotion](htt
 | ti.applesignin | n/a | 2.0.0 |
 | ti.cloud | 3.2.11 | 3.2.11 |
 | hyperloop | 6.0.0 | 6.0.0 |
-
-### Recent Releases
-
-Page not found: DA:Titanium SDK Release Notes 7.x.

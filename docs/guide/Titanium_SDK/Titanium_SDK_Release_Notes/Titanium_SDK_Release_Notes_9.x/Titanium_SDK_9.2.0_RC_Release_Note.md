@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK 9.2.0.RC - 15 September 2020
-weight: '10'
+weight: '20'
 ---
 
 # Titanium SDK 9.2.0.RC - 15 September 2020
