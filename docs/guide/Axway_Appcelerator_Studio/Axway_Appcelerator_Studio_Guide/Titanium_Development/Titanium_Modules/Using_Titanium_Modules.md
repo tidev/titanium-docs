@@ -7,31 +7,13 @@ weight: '20'
 
 Titanium Modules provide JavaScript bindings for your application to use and access native features and libraries. Titanium Modules are linked (or bundled) at build time. They must be built to support the target architectures that your application is also targeting.
 
-## Finding Modules
+## Finding and Downloading Modules
 
-When looking for a specific Titanium Module, there are two places you should search:
+When looking for a specific Titanium Module, you should search gitTio: [http://gitt.io/](http://gitt.io/). Follow the instructions on [http://gitt.io/cli](http://gitt.io/cli) to download the modules.
 
-* The Official Marketplace: [https://marketplace.axway.com](https://marketplace.axway.com/home#!attribute/4824)
-
-* gitTio: [http://gitt.io/](http://gitt.io/)
-
-The Marketplace contains enterprise and professional developed modules as well as links to open source modules. gitTio is exclusively free and open source modules.
-
-## Downloading Modules
-
-### Marketplace
-
-Once you have selected and purchased the modules you are interested in using, you'll need to download them.
-
-1. In **marketplace.axway.com**, click on **My Products**.
-
-2. Click on the module you wish to download. It should download a .zip file to your computer. You may need to click on the little gear icon to find the download link the first time you download a module.
-
-3. Locate the .zip file on disk.
-
-### gitTio
-
-Follow the instructions on **[http://gitt.io/cli](http://gitt.io/cli)**.
+::: tip 💡 Hint
+Previously, the Appcelerator Marketplace was a location to find and download Titanium modules. The Appcelerator Marketplace is no longer used and Titanium artifacts are no longer available through the Marketplace in the **AMPLIFY Platform**. If you need access to a Titanium artifact, or if you have questions about artifacts that you have purchased through the Appcelerator Marketplace previously, please contact Axway at [marketplace-admin@axway.com](https://axway.jiveon.com/external-link.jspa?url=https%3A%2F%2Feur01.safelinks.protection.outlook.com%2F%3Furl%3Dhttp%253A%252F%252Fclick.axway.com%252FZDfeb0HT30000y04P30jVTh%26data%3D02%257C01%257Cbvandenberg%2540axway.com%257C3264da447c264d49144908d858c7b56f%257C300f59df78e6436f9b27b64973e34f7d%257C1%257C0%257C637356962044056122%26sdata%3DILggs9f%252Baq7cHg3Ve0DGccGw97Fd91ciBPynYEFX8SI%253D%26reserved%3D0).
+:::
 
 ## Installing Modules
 

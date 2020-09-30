@@ -85,8 +85,6 @@ You may need to whitelist several URLs in some network environments. Below are t
 
 * [secure-identity.cloud.appcelerator.com](http://secure-identity.cloud.appcelerator.com)
 
-* [marketplace.axway.com](https://marketplace.axway.com/home#!category/31050) (Connectors)
-
 * [downloads.platform.axway.com](http://downloads.platform.axway.com)
 
 The port numbers used for the URLs are 80 and 443.

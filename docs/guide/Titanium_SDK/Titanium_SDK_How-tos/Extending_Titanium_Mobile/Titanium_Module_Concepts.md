@@ -9,11 +9,11 @@ The Titanium API is made up of _modules_\--collections of related methods, prope
 
 * The Titanium namespace is made up of built-in modules--modules such as `Titanium.UI` and `Titanium.Geolocation`. These modules are always available to Titanium applications.
 
-* Packaged modules are optional extensions to the Titanium API that can be imported into your application using the `require` method. Packaged modules are imported using an identifier (such as `ti.cloud`). Packaged modules can include native code, JavaScript, or both. Packaged modules are available from the Appcelerator Marketplace, as well as other sources.
+* Packaged modules are optional extensions to the Titanium API that can be imported into your application using the `require`method. Packaged modules are imported using an identifier (such as `ti.cloud`). Packaged modules can include native code, JavaScript, or both.
 
 * CommonJS modules can be used in your application to structure and organize code. Unlike packaged modules, CommonJS modules are not managed by Studio or the `titanium` command-line interface. To import a CommonJS module, you import it using the absolute or relative path to the module inside your project's `Resources` folder.
 
-This section deals with extending the Titanium API by building packaged modules, which can be sold through the Appcelerator Marketplace or distributed through other means.
+This section deals with extending the Titanium API by building packaged modules, which can be distributed through other means.
 
 ## Packaged Titanium modules
 
