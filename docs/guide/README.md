@@ -105,11 +105,13 @@ Here you will find documentation and guides that cover Titanium Mobile and Titan
 
 * [AMPLIFY CLI Quick Start](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Quick_Start/)
 
-* [AMPLIFY CLI Commands](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Commands/)
+* [AMPLIFY CLI Configuration](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Configuration/)
 
-* [AMPLIFY CLI Error Messages During Installation](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Error_Messages_During_Installation/)
+* [AMPLIFY CLI Authentication](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Authentication/)
 
-* [AMPLIFY CLI Package Manager](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Package_Manager/)
+* [AMPLIFY CLI Package Management](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Package_Management/)
+
+* [AMPLIFY CLI Troubleshooting](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Troubleshooting/)
 
 ### Axway Appcelerator Studio
 
