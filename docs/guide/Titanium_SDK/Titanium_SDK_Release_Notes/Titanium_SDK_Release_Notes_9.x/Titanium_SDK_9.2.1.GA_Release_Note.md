@@ -1,15 +1,15 @@
 ---
-title: Titanium SDK 9.2.1.GA - 5 October 2020
+title: Titanium SDK 9.2.1.GA - 6 October 2020
 weight: '10'
 ---
 
-# Titanium SDK 9.2.1.GA - 5 October 2020
+# Titanium SDK 9.2.1.GA - 6 October 2020
 
 ## About this release
 
 Titanium SDK 9.2.1 is a patch release of the SDK, addressing high-priority issues from previous releases.
 
-As of this GA release, the previous Titanium SDK minor release (9.2.0) is no longer supported. End of support for this version will be 2021-04-05 or until the next patch release. Note: major and minor releases continue to be supported according to their nominal lifetime. See [Axway Appcelerator Deprecation Policy](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_deprecation_policy.html) and [Nominal Lifetimes](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_product_lifecycle.html#AxwayAppceleratorProductLifecycle-NominalLifetimes) documents for details.
+As of this GA release, the previous Titanium SDK minor release (9.2.0) is no longer supported. End of support for this version will be 2021-04-06 or until the next patch release. Note: major and minor releases continue to be supported according to their nominal lifetime. See [Axway Appcelerator Deprecation Policy](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_deprecation_policy.html) and [Nominal Lifetimes](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_product_lifecycle.html#AxwayAppceleratorProductLifecycle-NominalLifetimes) documents for details.
 
 ::: danger ❗️ Warning
 With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. Node 10.13.0 is the new minimum supported version.

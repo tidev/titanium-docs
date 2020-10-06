@@ -5,7 +5,7 @@
 ## Overview
 
 The Titanium module provides the Titanium Mobile API, allowing developers to access native
-features of each target environment. Currently, the Android and iOS environments are supported.
+features of each target environment. Currently, the Android and iOSenvironments are supported.
 
 ### Titanium Namespace
 
