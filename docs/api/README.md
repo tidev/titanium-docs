@@ -12,7 +12,7 @@ This object is also frequently accessed by its alias, `Ti`.
 const root = global.Titanium;
 // explicitly access to alias object
 const alias = global.Ti;
-// use impliciat global reference
+// use implicit global reference
 const implicit = Titanium;
 ```
 
