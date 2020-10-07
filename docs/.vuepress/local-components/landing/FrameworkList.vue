@@ -1,8 +1,8 @@
 <template>
-  <ul class="framework-list">
+  <ul class="framework-list mt-12">
     <li>
       <a href="">
-        <img :src="$withBase('/images/appc-logo.png')" />
+        <img :src="$withBase('/images/icons/icon-alloy.svg')" />
       </a>
     </li>
     <li>
@@ -28,15 +28,15 @@
 <style lang="stylus">
 .framework-list
   display flex
-  list-style none
-  padding-left 0
 
   li
     position relative
     display flex
     align-items center
-    max-width 48px
     padding 10px
+
+    img
+      width 70px
 
     .framework-badge
       position absolute
