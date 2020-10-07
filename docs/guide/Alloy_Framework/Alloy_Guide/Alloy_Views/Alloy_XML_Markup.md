@@ -74,13 +74,13 @@ The following table lists the special XML elements besides the Titanium UI compo
 
 `index.xml` is a special case that only accepts the following view components as direct children of the Alloy tag:
 
-* Ti.UI.Window or <Window>
+* `Ti.UI.Window` or `<Window>`
 
-* Ti.UI.TabGroup or <TabGroup>
+* `Ti.UI.TabGroup` or `<TabGroup>`
 
-* Ti.UI.NavigationWindow or <NavigationWindow>
+* `Ti.UI.NavigationWindow` or `<NavigationWindow>`
 
-* Ti.UI.iOS.SplitWindow or <SplitWindow>
+* `Ti.UI.iOS.SplitWindow` or `<SplitWindow>`
 
 Other views do not have any format restrictions.
 
@@ -182,7 +182,7 @@ drama.set('author', 'William Shakespeare');
 
 You can require a CommonJS module in an Alloy view using the `module` attribute of an XML element. To use the module attribute:
 
-1. Place the CommonJS module in your project's `app/lib` folder. This CommonJS module must expose a public method called `create<XXX>`, where <`XXX>` is used as the XML element in the Alloy view. This method also must return a Titanium UI object that can be added to the view.
+1. Place the CommonJS module in your project's `app/lib` folder. This CommonJS module must expose a public method called `create<XXX>`, where `<XXX>` is used as the XML element in the Alloy view. This method also must return a Titanium UI object that can be added to the view.
 
 2. Add the `<XXX>` element to the Alloy view and set the `module` attribute to the path (after the `app/lib` folder) and name of the CommonJS module minus the extension. Custom attributes of the element are passed to the public method.
 
@@ -584,21 +584,21 @@ Currently, the following Titanium proxies and properties implemented using this 
 
 | Titanium Proxy Object / Alloy tag | Proxy Property | Child Alloy Tag | Since |
 | --- | --- | --- | --- |
-| [Titanium.Android.MenuItem](#!/api/Titanium.Android.MenuItem) / <MenuItem> | [actionView](#!/api/Titanium.Android.MenuItem-property-actionView) | <ActionView> | Alloy 1.6.0 |
-| [Titanium.UI.iPad.Popover](#!/api/Titanium.UI.iPad.Popover) / <PopOver> | [contentView](#!/api/Titanium.UI.iPad.Popover-property-contentView) | <ContentView> | Alloy 1.4.0 |
-| [Titanium.UI.Label](#!/api/Titanium.UI.Label) / <Label> | [attributedString](#!/api/Titanium.UI.Label-property-attributedString) | <AttributedString> | Alloy 1.7.6 |
-| [Titanium.UI.ListSection](#!/api/Titanium.UI.ListSection) / <ListSection> | [footerView](#!/api/Titanium.UI.ListSection-property-footerView)<br /><br />[headerView](#!/api/Titanium.UI.ListSection-property-headerView) | <FooterView><br /><br /><HeaderView> | Alloy 1.3.0 |
-| [Titanium.UI.ListView](#!/api/Titanium.UI.ListView) / <ListView> | [footerView](#!/api/Titanium.UI.ListView-property-footerView)<br /><br />[headerView](#!/api/Titanium.UI.ListView-property-headerView)<br /><br />[pullView](#!/api/Titanium.UI.ListView-property-pullView)<br /><br />[searchView](#!/api/Titanium.UI.ListView-property-searchView) | <FooterView><br /><br /><HeaderView><br /><br /><PullView><br /><br /><SearchBar> or <SearchView platform="android"> | Alloy 1.3.0 |
-| [Titanium.UI.OptionDialog](#!/api/Titanium.UI.OptionDialog) / <OptionDialog> | [androidView](#!/api/Titanium.UI.OptionDialog-property-androidView) | <AndroidView> or <View> | Alloy 1.5.0 |
-| [Titanium.UI.TableView](#!/api/Titanium.UI.TableView) / <TableView> | [footerView](#!/api/Titanium.UI.TableView-property-footerView)<br /><br />[headerPullView](#!/api/Titanium.UI.TableView-property-headerPullView)<br /><br />[headerView](#!/api/Titanium.UI.TableView-property-headerView)<br /><br />[search](#!/api/Titanium.UI.TableView-property-search) | <FooterView><br /><br /><HeaderPullView><br /><br /><HeaderView><br /><br /><Search> | Alloy 1.1.0 |
-| [Titanium.UI.TableViewSection](#!/api/Titanium.UI.TableViewSection) / <TableViewSection> | [headerView](#!/api/Titanium.UI.TableViewSection-property-headerView) | <HeaderView> |  |
-| [Titanium.UI.TextArea](#!/api/Titanium.UI.TextArea) / <TextArea> | [attributedString](#!/api/Titanium.UI.TextArea-property-attributedString)<br /><br />[keyboardToolbar](#!/api/Titanium.UI.TextArea-property-keyboardToolbar) | <AttributedString><br /><br /><KeyboardToolbar> | Alloy 1.7.6<br /><br />Alloy 1.5.0 |
-| [Titanium.UI.TextField](#!/api/Titanium.UI.TextField) / <TextField> | [attributedHintText](#!/api/Titanium.UI.TextField-property-attributedHintText)<br /><br />[attributedString](#!/api/Titanium.UI.TextField-property-attributedString)<br /><br />[keyboardToolbar](#!/api/Titanium.UI.TextField-property-keyboardToolbar)<br /><br />[leftButton](#!/api/Titanium.UI.TextField-property-leftButton)<br /><br />[rightButton](#!/api/Titanium.UI.TextField-property-rightButton) | <AttributeHintText><br /><br /><AttributedString><br /><br /><KeyboardToolbar><br /><br /><LeftButton><br /><br /><RightButton> | Alloy 1.7.6<br /><br />Alloy 1.7.6<br /><br />Alloy 1.3.0<br /><br />Alloy 1.3.0<br /><br />Alloy 1.3.0 |
-| [Titanium.UI.Window](#!/api/Titanium.UI.Window) / <Window> | [leftNavButton](#!/api/Titanium.UI.Window-property-leftNavButton)<br /><br />[rightNavButton](#!/api/Titanium.UI.Window-property-rightNavButton)<br /><br />[titleControl](#!/api/Titanium.UI.Window-property-titleControl)<br /><br />[toolbar](#!/api/Titanium.UI.Window-property-toolbar)[](#!/api/Titanium.UI.Window-property-) | <LeftNavButton><br /><br /><RightNavButton><br /><br /><TitleControl><br /><br /><WindowToolbar> | Alloy 1.6.0 |
+| [Titanium.Android.MenuItem](#!/api/Titanium.Android.MenuItem) / `<MenuItem>` | [actionView](#!/api/Titanium.Android.MenuItem-property-actionView) | `<ActionView>` | Alloy 1.6.0 |
+| [Titanium.UI.iPad.Popover](#!/api/Titanium.UI.iPad.Popover) / `<PopOver>` | [contentView](#!/api/Titanium.UI.iPad.Popover-property-contentView) | `<ContentView>` | Alloy 1.4.0 |
+| [Titanium.UI.Label](#!/api/Titanium.UI.Label) / `<Label>` | [attributedString](#!/api/Titanium.UI.Label-property-attributedString) | `<AttributedString>` | Alloy 1.7.6 |
+| [Titanium.UI.ListSection](#!/api/Titanium.UI.ListSection) / `<ListSection>` | [footerView](#!/api/Titanium.UI.ListSection-property-footerView)<br /><br />[headerView](#!/api/Titanium.UI.ListSection-property-headerView) | `<FooterView>`<br /><br />`<HeaderView>` | Alloy 1.3.0 |
+| [Titanium.UI.ListView](#!/api/Titanium.UI.ListView) / `<ListView>` | [footerView](#!/api/Titanium.UI.ListView-property-footerView)<br /><br />[headerView](#!/api/Titanium.UI.ListView-property-headerView)<br /><br />[pullView](#!/api/Titanium.UI.ListView-property-pullView)<br /><br />[searchView](#!/api/Titanium.UI.ListView-property-searchView) | `<FooterView>`<br /><br />`<HeaderView>`<br /><br />`<PullView>`<br /><br />`<SearchBar>` or `<SearchView platform="android">` | Alloy 1.3.0 |
+| [Titanium.UI.OptionDialog](#!/api/Titanium.UI.OptionDialog) / `<OptionDialog>` | [androidView](#!/api/Titanium.UI.OptionDialog-property-androidView) | `<AndroidView>` or `<View>` | Alloy 1.5.0 |
+| [Titanium.UI.TableView](#!/api/Titanium.UI.TableView) / `<TableView>` | [footerView](#!/api/Titanium.UI.TableView-property-footerView)<br /><br />[headerPullView](#!/api/Titanium.UI.TableView-property-headerPullView)<br /><br />[headerView](#!/api/Titanium.UI.TableView-property-headerView)<br /><br />[search](#!/api/Titanium.UI.TableView-property-search) | `<FooterView>`<br /><br />`<HeaderPullView>`<br /><br />`<HeaderView>`<br /><br />`<Search>` | Alloy 1.1.0 |
+| [Titanium.UI.TableViewSection](#!/api/Titanium.UI.TableViewSection) / `<TableViewSection>` | [headerView](#!/api/Titanium.UI.TableViewSection-property-headerView) | `<HeaderView>` |  |
+| [Titanium.UI.TextArea](#!/api/Titanium.UI.TextArea) / `<TextArea>` | [attributedString](#!/api/Titanium.UI.TextArea-property-attributedString)<br /><br />[keyboardToolbar](#!/api/Titanium.UI.TextArea-property-keyboardToolbar) | `<AttributedString>`<br /><br />`<KeyboardToolbar>` | Alloy 1.7.6<br /><br />Alloy 1.5.0 |
+| [Titanium.UI.TextField](#!/api/Titanium.UI.TextField) / `<TextField>` | [attributedHintText](#!/api/Titanium.UI.TextField-property-attributedHintText)<br /><br />[attributedString](#!/api/Titanium.UI.TextField-property-attributedString)<br /><br />[keyboardToolbar](#!/api/Titanium.UI.TextField-property-keyboardToolbar)<br /><br />[leftButton](#!/api/Titanium.UI.TextField-property-leftButton)<br /><br />[rightButton](#!/api/Titanium.UI.TextField-property-rightButton) | `<AttributeHintText>`<br /><br />`<AttributedString>`<br /><br />`<KeyboardToolbar>`<br /><br />`<LeftButton>`<br /><br />`<RightButton>` | Alloy 1.7.6<br /><br />Alloy 1.7.6<br /><br />Alloy 1.3.0<br /><br />Alloy 1.3.0<br /><br />Alloy 1.3.0 |
+| [Titanium.UI.Window](#!/api/Titanium.UI.Window) / `<Window>` | [leftNavButton](#!/api/Titanium.UI.Window-property-leftNavButton)<br /><br />[rightNavButton](#!/api/Titanium.UI.Window-property-rightNavButton)<br /><br />[titleControl](#!/api/Titanium.UI.Window-property-titleControl)<br /><br />[toolbar](#!/api/Titanium.UI.Window-property-toolbar)[](#!/api/Titanium.UI.Window-property-) | `<LeftNavButton>`<br /><br />`<RightNavButton>`<br /><br />`<TitleControl>`<br /><br />`<WindowToolbar>` | Alloy 1.6.0 |
 
 ### Android ActionBar
 
-You can set [ActionBar properties](#!/api/Titanium.Android.ActionBar) in the `ActionBar` element to modify the application's action bar. Add the `ActionBar` element as a child of either a `Window` or `TabGroup`, then set `ActionBar` attributes in the XML or TSS file. To add action items to the action bar, add the `Menu` element as a child of either a `Window` or `TabGroup` , then add `MenuItem` elements as children of the `Menu` element. S et `MenuItem` attributes in either the XML or TSS file.
+You can set [ActionBar properties](#!/api/Titanium.Android.ActionBar) in the `ActionBar` element to modify the application's action bar. Add the `ActionBar` element as a child of either a `Window` or `TabGroup`, then set `ActionBar` attributes in the XML or TSS file. To add action items to the action bar, add the `Menu` element as a child of either a `Window` or `TabGroup` , then add `MenuItem` elements as children of the `Menu` element. Set `MenuItem` attributes in either the XML or TSS file.
 
 **app/views/index.xml**
 

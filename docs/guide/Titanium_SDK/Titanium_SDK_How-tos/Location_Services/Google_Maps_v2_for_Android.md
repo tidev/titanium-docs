@@ -432,7 +432,7 @@ The Map View object provides a few extra events that provide additional control 
 
 * `pinchangedragstate` - This event fires when the pin's drag state changes if the pin's `draggable` property is set to true. Check the event object's `annotation` property to see which annotation was clicked and the `newState` property for one of the following:
 
-    * < MapModule>.ANNOTATION\_DRAG\_STATE\_START – indicates the user started dragging the pin.
+    * <MapModule>.ANNOTATION\_DRAG\_STATE\_START – indicates the user started dragging the pin.
 
     * <MapModule>.ANNOTATION\_DRAG\_STATE\_END – indicates the user stopped dragging the pin.
 

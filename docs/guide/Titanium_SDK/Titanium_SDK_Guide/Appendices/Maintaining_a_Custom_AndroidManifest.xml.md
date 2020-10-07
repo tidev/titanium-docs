@@ -42,7 +42,7 @@ For the most part, if you add a manifest entry to the `tiapp.xml` file, it repla
 
 Most elements inside the `<manifest>` will be added as children to the `<manifest>` element inside of `AndroidManifest.xml` at build time, with some intelligence built in. The `<supports-screen>` tag in your tiapp.xml replaces the default `<supports-screen>` tag.
 
-The manifest's all-important [<application>](http://developer.android.com/guide/topics/manifest/application-element.html) element is handled differently. Your elements are applied additively, rather than replacing the **whole** `<application>` element.
+The manifest's all-important [`<application>`](http://developer.android.com/guide/topics/manifest/application-element.html) element is handled differently. Your elements are applied additively, rather than replacing the **whole** `<application>` element.
 
 For example, let's say you want the `debuggable` attribute of `<application>` to be set to `true` (it's false in the default manifest template), you can do this:
 

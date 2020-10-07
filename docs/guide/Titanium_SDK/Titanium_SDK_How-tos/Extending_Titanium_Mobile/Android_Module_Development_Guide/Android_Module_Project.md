@@ -50,9 +50,9 @@ The `build.properties` file contains build variables used by the Ant CLI. Using 
 | Variable | Description | Example |
 | --- | --- | --- |
 | titanium.platform | Path to the Titanium SDK `android` folder | /Users/<USERNAME>/Library/Application Support/Titanium/mobilesdk/osx/<VERSION>/android |
-| android.platform | Path to the Android SDK `platforms` folder | /Users/<USERNAME>/ opts /android- sdk /platforms/android-25 |
-| google.apis | Path to the Google APIs `add-ons` folder | /Users/<USERNAME>/ opts /android- sdk /add-ons/addon-google\_apis-google-25 |
-| android.ndk | Path to the Android NDK (if needed) | /Users/<USERNAME>/ opts /android-ndk |
+| android.platform | Path to the Android SDK `platforms` folder | /Users/<USERNAME>/opts/android-sdk/platforms/android-25 |
+| google.apis | Path to the Google APIs `add-ons` folder | /Users/<USERNAME>/opts/android-sdk/add-ons/addon-google\_apis-google-25 |
+| android.ndk | Path to the Android NDK (if needed) | /Users/<USERNAME>/opts/android-ndk |
 
 ### Manifest file
 

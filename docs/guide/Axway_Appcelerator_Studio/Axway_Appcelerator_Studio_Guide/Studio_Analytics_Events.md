@@ -109,27 +109,27 @@ The following is a list of the data sent as part of an analytic event:
 
 Event that happens when a user launches or quits Studio:
 
-* ti.start
+* `ti.start`
 
-* ti.end
+* `ti.end`
 
 #### Editors
 
 Events every time an editor is opened or closed. The last segment indicates the type of editor opened (e.g. `editor.opened.js`):
 
-* editor.closed.<editor-type>
+* `editor.closed.<editor-type>`
 
-* editor.opened.<editor-type>
+* `editor.opened.<editor-type>`
 
 #### Project events
 
 Events created when interacting with a project. The project type can be of type web, mobile, module, desktop, php, ruby, or rails.
 
-* project.create.<project-type>
+* `project.create.<project-type>`
 
-* project.delete.<project-type>
+* `project.delete.<project-type>`
 
-* project.import
+* `project.import`
 
 #### Platform events
 

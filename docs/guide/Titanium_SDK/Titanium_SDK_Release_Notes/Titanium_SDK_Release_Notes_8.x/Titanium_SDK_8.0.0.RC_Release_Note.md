@@ -301,7 +301,7 @@ As of this release, Titanium SDK 8.x will not be supported one calendar year (20
 
 * [TIMOB-26535](https://jira.appcelerator.org/browse/TIMOB-26535) - Android: Fix analytics session events
 
-* [TIMOB-26537](https://jira.appcelerator.org/browse/TIMOB-26537) - Android: Module "AndroidManifest.xml" <uses> elements overwrites "tiapp.xml" elements
+* [TIMOB-26537](https://jira.appcelerator.org/browse/TIMOB-26537) - Android: Module "AndroidManifest.xml" `<uses>` elements overwrites "tiapp.xml" elements
 
 * [TIMOB-26538](https://jira.appcelerator.org/browse/TIMOB-26538) - Android: Services should be stopped when exiting the app
 

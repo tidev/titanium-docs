@@ -575,8 +575,8 @@ appc install [<componentNames>] [options]
 
 | Option | Description |
 | --- | --- |
-| \-h, --help | output usage information |
-| \-t, --type <type> | component type |
+| `-h, --help` | output usage information |
+| `-t, --type <type>` | component type |
 | `-g, --global` | Install the component globally for all projects. Saves it in the global cache. |
 | `-f, --force` | Force install |
 | \--skip-npm | Skip install NPM dependencies. Only install Appcelerator components. |
