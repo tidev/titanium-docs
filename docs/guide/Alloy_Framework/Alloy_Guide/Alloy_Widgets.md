@@ -1,6 +1,6 @@
 ---
 title: Alloy Widgets
-weight: '60'
+weight: '50'
 ---
 
 # Alloy Widgets

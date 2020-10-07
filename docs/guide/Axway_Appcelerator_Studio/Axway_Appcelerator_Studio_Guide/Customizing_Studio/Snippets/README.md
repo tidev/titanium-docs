@@ -1,6 +1,6 @@
 ---
 title: Snippets
-weight: '100'
+weight: '90'
 ---
 
 # Snippets
@@ -28,7 +28,7 @@ Typing part of the trigger will show the snippet in content assist. If the trigg
 If you instead want to modify an existing piece of content (say to modify the current selection in the editor), you'll want to look at creating a command instead.
 
 ::: warning ⚠️ Warning
-You'll need to [create a new Ruble](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Rubles/Creating_a_new_Ruble/) as a placeholder for any new content.
+You'll need to [create a new Ruble](#undefined) as a placeholder for any new content.
 :::
 
 ## Chapters

@@ -17,4 +17,4 @@ This document provides links to the Android, iOS, and Windows programming guides
 
 ## Windows
 
-**[Windows Hyperloop Programming Guide](/guide/Titanium_SDK/Titanium_SDK_Guide/Hyperloop/Hyperloop_Guides/Windows_Hyperloop_Programming_Guide/)** has information on running a demo application specifically for Windows and you can learn how to use Hyperloop in your own project.
+**[Windows Hyperloop Programming Guide](#undefined)** has information on running a demo application specifically for Windows and you can learn how to use Hyperloop in your own project.

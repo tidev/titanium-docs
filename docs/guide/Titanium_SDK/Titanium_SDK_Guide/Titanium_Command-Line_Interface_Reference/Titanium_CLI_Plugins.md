@@ -136,13 +136,13 @@ All of the following APIs are optional. Prepend the APIs with the `exports` vari
 
 #### Properties
 
-**cliVersion**: String
+**cliVersion**: `String`
 Specify which version(s) of the CLI the command supports. For example, "3.2.0" specifies the command only supports version 3.2.0, while ">=3.2.0" specifies the command supports version 3.2.0 and greater.
 
-**desc**: String
+**desc**: `String`
 Defines the shorthand help description of the command when executing `titanium --help`.
 
-**extenededDesc**: String
+**extenededDesc**: `String`
 Defines the extended help description of the command when using the `--help` option with the command.
 
 **title**: String
@@ -164,9 +164,9 @@ config (Object logger, Object config, Object cli): Object
 
 | Name | Type | Description |
 | --- | --- | --- |
-| logger | Object | Handle to the logger object. See [logger](#logger). |
-| config | Object | CLI configuration options. Same properties as reported by the `titanium config` command. |
-| cli | Object | Handle to the CLI object. See [cli](#cli). |
+| logger | `Object` | Handle to the logger object. See [logger](#logger). |
+| config | `Object` | CLI configuration options. Same properties as reported by the `titanium config` command. |
+| cli | `Object` | Handle to the CLI object. See [cli](#cli). |
 
 **Returns:**
 
@@ -174,10 +174,10 @@ Returns an object specifying the commands configurable options. All properties a
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `noAuth` | Boolean | If set to true, the user does not need to be logged in to use the command. If set to false, the user is required to be logged in to use the command. |
-| `skipBanner` | Boolean | If set to true, the CLI's banner message is not outputted to the console. If set to false, the CLI's banner message is outputted to the console when the command is executed. |
-| `flags` | Object | Contains key-value pairs for the command-line flags. The key is the name of the flag, while the value is an object with the following optional key-value pairs:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| abbr | String | Shorthand notation for the flag. Use capital letters. Lowercase letters is the notation used by global CLI flags. If there is a conflict, the flag will be ignored. |<br />| desc | String | Help description for the flag. |<br /><br />**Example**:<br /><br />```javascript<br />// Implements: ti mycommand -F<br />var optObj = {<br />    flags: {<br />        myFlag : {<br />            abbr: 'F',<br />            desc: 'This flag does something awesome!'<br />        }<br />    }<br />};<br />``` |
-| `options` | Object | Contains key-value pairs for the command-line options. The key is the name of the option, while the value is an object with the following optional key-value pairs:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| abbr | String | Shorthand notation for the flag. Use capital letters. Lowercase letters is the notation used by global CLI flags. If there is a conflict, the flag will be ignored. |<br />| default | String/Number/Boolean | Default value for the option. |<br />| desc | String | Help description for the flag. |<br />| values | `Array<String/Number/Boolean>` | Values that the option will accept. The CLI will automatically validate the option against these values when the command is invoked. |<br /><br />**Example**:<br /><br />```javascript<br />//Implements: ti mycommand -O neko<br />var optObj = {<br />    options: {<br />        myOption : {<br />            abbr: 'O',<br />            default: 'cat',<br />            desc: 'I like chicken! I like tuna!',<br />            values: ['cat', 'chat', 'gato', 'neko']<br />        }<br />    }<br />};<br />``` |
+| `noAuth` | `Boolean` | If set to true, the user does not need to be logged in to use the command. If set to false, the user is required to be logged in to use the command. |
+| `skipBanner` | `Boolean` | If set to true, the CLI's banner message is not outputted to the console. If set to false, the CLI's banner message is outputted to the console when the command is executed. |
+| `flags` | `Object` | Contains key-value pairs for the command-line flags. The key is the name of the flag, while the value is an object with the following optional key-value pairs:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| abbr | `String` | Shorthand notation for the flag. Use capital letters. Lowercase letters is the notation used by global CLI flags. If there is a conflict, the flag will be ignored. |<br />| desc | `String` | Help description for the flag. |<br /><br />**Example**:<br /><br />```javascript<br />// Implements: ti mycommand -F<br />var optObj = {<br />    flags: {<br />        myFlag : {<br />            abbr: 'F',<br />            desc: 'This flag does something awesome!'<br />        }<br />    }<br />};<br />``` |
+| `options` | `Object` | Contains key-value pairs for the command-line options. The key is the name of the option, while the value is an object with the following optional key-value pairs:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| abbr | `String` | Shorthand notation for the flag. Use capital letters. Lowercase letters is the notation used by global CLI flags. If there is a conflict, the flag will be ignored. |<br />| default | `String/Number/Boolean` | Default value for the option. |<br />| desc | `String` | Help description for the flag. |<br />| values | `Array<String/Number/Boolean>` | Values that the option will accept. The CLI will automatically validate the option against these values when the command is invoked. |<br /><br />**Example**:<br /><br />```javascript<br />//Implements: ti mycommand -O neko<br />var optObj = {<br />    options: {<br />        myOption : {<br />            abbr: 'O',<br />            default: 'cat',<br />            desc: 'I like chicken! I like tuna!',<br />            values: ['cat', 'chat', 'gato', 'neko']<br />        }<br />    }<br />};<br />``` |
 
 ##### validate
 
@@ -193,9 +193,9 @@ validate (Object logger, Object config, Object cli): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| logger | Object | Handle to the logger object. See [logger](#logger). |
-| config | Object | CLI configuration options. Same properties as reported by the `titanium config` command. |
-| cli | Object | Handle to the CLI object. See [cli](#cli). |
+| logger | `Object` | Handle to the logger object. See [logger](#logger). |
+| config | `Object` | CLI configuration options. Same properties as reported by the `titanium config` command. |
+| cli | `Object` | Handle to the CLI object. See [cli](#cli). |
 
 ##### run
 
@@ -211,9 +211,9 @@ run (Object logger, Object config, Object cli): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| logger | Object | Handle to the logger object. See [logger](#logger). |
-| config | Object | CLI configuration options. Same properties as reported by the `titanium config` command. |
-| cli | Object | Handle to the CLI object. See [cli](#cli). |
+| logger | `Object` | Handle to the logger object. See [logger](#logger). |
+| config | `Object` | CLI configuration options. Same properties as reported by the `titanium config` command. |
+| cli | `Object` | Handle to the CLI object. See [cli](#cli). |
 
 ## Function and Event Hooks
 
@@ -436,10 +436,10 @@ init (Object logger, Object config, Object cli, [Object nodeappc]): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| logger | Object | Handle to the logger object. See [logger](#logger). |
-| config | Object | CLI configuration options. Same properties as reported by the `titanium config` command. |
-| cli | Object | Handle to the CLI object. See [cli](#cli). |
-| nodeappc | Object | Handle to the node-appc object. See [nodeappc](#nodeappc). |
+| logger | `Object` | Handle to the logger object. See [logger](#logger). |
+| config | `Object` | CLI configuration options. Same properties as reported by the `titanium config` command. |
+| cli | `Object` | Handle to the CLI object. See [cli](#cli). |
+| nodeappc | `Object` | Handle to the node-appc object. See [nodeappc](#nodeappc). |
 
 ## CLI Common API
 
@@ -502,9 +502,9 @@ emit(String hookName, [Object context], [Function callback])
 
 | Name | Type | Description |
 | --- | --- | --- |
-| hookName | String | Name of the hook. |
-| context | Object | Context to send to the hook callback. |
-| callback | Function | Function to call after the event finishes firing. |
+| hookName | `String` | Name of the hook. |
+| context | `Object` | Context to send to the hook callback. |
+| callback | `Function` | Function to call after the event finishes firing. |
 
 ##### on
 
@@ -518,8 +518,8 @@ on(String hookName, Function/Object callback)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| hookName | String | Name of the hook. |
-| callback | Function/Object | Function to call after the event finishes firing.<br /><br />If an object is used, specify any of the optional properties:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| post | Function | Callback to execute after the hook finishes. |<br />| pre | Function | Callback to execute before the hook starts. |<br />| priority | Number | Hook execution priority. Lower values are executed first. Default value is 1000. | |
+| hookName | `String` | Name of the hook. |
+| callback | `Function/Object` | Function to call after the event finishes firing.<br /><br />If an object is used, specify any of the optional properties:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| post | `Function` | Callback to execute after the hook finishes. |<br />| pre | `Function` | Callback to execute before the hook starts. |<br />| priority | `Number` | Hook execution priority. Lower values are executed first. Default value is 1000. | |
 
 #### Events
 
@@ -697,23 +697,23 @@ Fired before the help menu is displayed.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| args | Array | Arguments passed to the function specified by the `fn` property. |
-| cli | Object | Handle to the CLI object. |
-| command | Object | Information about the command invoked, such as the complete command-line options. |
-| ctx | Object | Event-specific context. |
-| fn | Function | Function before the hook callback. |
-| result | Array | Return value of executing the function `fn`. |
-| type | String | Name of the hook fired. |
+| args | `Array` | Arguments passed to the function specified by the `fn` property. |
+| cli | `Object` | Handle to the CLI object. |
+| command | `Object` | Information about the command invoked, such as the complete command-line options. |
+| ctx | `Object` | Event-specific context. |
+| fn | `Function` | Function before the hook callback. |
+| result | `Array` | Return value of executing the function `fn`. |
+| type | `String` | Name of the hook fired. |
 
 ##### Function Hook
 
 | Name | Type | Description |
 | --- | --- | --- |
-| args | Array | Arguments passed to the function specified by the `fn` property. |
-| ctx | Object | Command- and platform-specific context. |
-| fn | Function | Function invoked between the pre and post hook callbacks. |
-| result | Array | Return value of executing the function `fn`. Only available for post functions. |
-| type | String | Name of the hook fired. |
+| args | `Array` | Arguments passed to the function specified by the `fn` property. |
+| ctx | `Object` | Command- and platform-specific context. |
+| fn | `Function` | Function invoked between the pre and post hook callbacks. |
+| result | `Array` | Return value of executing the function `fn`. Only available for post functions. |
+| type | `String` | Name of the hook fired. |
 
 ### logger
 
@@ -721,7 +721,7 @@ The logger class based on the winston library. Use this class to output messages
 
 #### Properties
 
-**levels**: `Array<Strings>` – READ-ONLY
+**levels**: `Array<String>` – READ-ONLY
 Log levels.
 
 #### Functions
@@ -756,7 +756,7 @@ error(String message): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| message | String | Message to display in the console. |
+| message | `String` | Message to display in the console. |
 
 ##### exception
 
@@ -772,7 +772,7 @@ exception(Error e): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| e | Error | This is a standard JavaScript Error object. Refer to the [ECMAScript Language Specification Section 15.11](http://www.ecma-international.org/ecma-262/5.1/#sec-15.11) for more information. |
+| e | `Error` | This is a standard JavaScript Error object. Refer to the [ECMAScript Language Specification Section 15.11](http://www.ecma-international.org/ecma-262/5.1/#sec-15.11) for more information. |
 
 ##### getLevels
 
@@ -781,7 +781,7 @@ Retrieves the settable log levels.
 **Syntax**
 
 ```
-getLevels(void): Array<Strings>
+getLevels(void): Array<String>
 ```
 
 **Returns**:
@@ -802,7 +802,7 @@ info(String message): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| message | String | Message to display in the console. |
+| message | `String` | Message to display in the console. |
 
 ##### log
 
@@ -818,7 +818,7 @@ log(String message): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| message | String | Message to display in the console. |
+| message | `String` | Message to display in the console. |
 
 ##### setLevel
 
@@ -834,7 +834,7 @@ setLevel(Number logLevel): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| logLevel | Number | Value indicating the highest log level that may be outputted to the console. |
+| logLevel | `Number` | Value indicating the highest log level that may be outputted to the console. |
 
 ##### silence
 
@@ -850,7 +850,7 @@ silence(Boolean val): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| val | Boolean | Disable (true) or enable (false) console output. |
+| val | `Boolean` | Disable (true) or enable (false) console output. |
 
 ##### trace
 
@@ -866,7 +866,7 @@ trace(String message): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| message | String | Message to display in the console. |
+| message | `String` | Message to display in the console. |
 
 ##### warn
 
@@ -882,7 +882,7 @@ warn(String message): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| message | String | Message to display in the console. |
+| message | `String` | Message to display in the console. |
 
 ### nodeappc
 
@@ -906,9 +906,9 @@ parallel (Object context, Array<Functions> tasks, Function callback): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `context` | Object | Context to pass to the tasks |
-| `tasks` | `Array<Functions>` | Array of tasks |
-| `callback` | Function | A function to call after executing all the tasks |
+| `context` | `Object` | Context to pass to the tasks |
+| `tasks` | `Array<Function>` | Array of tasks |
+| `callback` | `Function` | A function to call after executing all the tasks |
 
 ##### series method
 
@@ -924,9 +924,9 @@ series (Object context, Array<Functions> tasks, Function callback): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `context` | Object | Context to pass to the tasks |
-| `tasks` | `Array<Functions>` | Array of tasks |
-| `callback` | Function | A function to call after executing all the tasks |
+| `context` | `Object` | Context to pass to the tasks |
+| `tasks` | `Array<Function>` | Array of tasks |
+| `callback` | `Function` | A function to call after executing all the tasks |
 
 #### busyindicator
 
@@ -985,8 +985,8 @@ detect ([Object cli], Function callback): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `cli` | Object | Handle to the CLI object. |
-| `callback` | Function | Callback function. Takes an optional object as its only parameter, which contains the environment information. |
+| `cli` | `Object` | Handle to the CLI object. |
+| `callback` | `Function` | Callback function. Takes an optional object as its only parameter, which contains the environment information. |
 
 #### encoding
 
@@ -1006,7 +1006,7 @@ decodeOctalUTF8 (String input): String
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `input` | String | String to decode |
+| `input` | `String` | String to decode |
 
 **Returns**:
 
@@ -1037,7 +1037,7 @@ getOSInfo (Function callback): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| callback | Function | Callback to invoke when done. Takes an optional object as its only parameter, which contains the environment information. |
+| callback | `Function` | Callback to invoke when done. Takes an optional object as its only parameter, which contains the environment information. |
 
 **Example:**
 
@@ -1061,7 +1061,7 @@ getSDK (String version): Object
 
 | Name | Type | Description |
 | --- | --- | --- |
-| version | String | Version of the SDK, for example, "3.2.0.GA". |
+| version | `String` | Version of the SDK, for example, "3.2.0.GA". |
 
 **Returns:**
 
@@ -1098,7 +1098,7 @@ new exception(String message): Object
 
 | Name | Type | Description |
 | --- | --- | --- |
-| message | String | Error message to log |
+| message | `String` | Error message to log |
 
 ##### dump method
 
@@ -1112,7 +1112,7 @@ dump(Object logger): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| logger | Object | Handle to a logger instance |
+| logger | `Object` | Handle to a logger instance |
 
 ##### log method
 
@@ -1126,7 +1126,7 @@ dump(String error): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| message | String | Error message to log |
+| message | `String` | Error message to log |
 
 ##### toString method
 
@@ -1167,9 +1167,9 @@ detect ([Object config,] [Object options,] Function callback): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| config | Object | CLI configuration object. |
-| options | Object | Device options:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| bypassCache | Boolean | If set to false, returns the cached info. If set to true, retrieves values directly from the system. | |
-| callback | Function | Callback to invoke when done. Takes an optional object as its only parameter, which contains the environment information. |
+| config | `Object` | CLI configuration object. |
+| options | `Object` | Device options:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| bypassCache | `Boolean` | If set to false, returns the cached info. If set to true, retrieves values directly from the system. | |
+| callback | `Function` | Callback to invoke when done. Takes an optional object as its only parameter, which contains the environment information. |
 
 **Example:**
 
@@ -1197,10 +1197,10 @@ resize (String src, Array<Object> dest, [Function callback], [Object logger]): v
 
 | Name | Type | Description |
 | --- | --- | --- |
-| src | String | CLI configuration object. |
-| dst | `Array<Object>` | Array of objects specifying the required destination properties:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| file | String | Path and name of the resize images. |<br />| height | Number | Height to scale the image. |<br />| width | Number | Width to scale the image. | |
-| callback | Function | Callback to invoke when done. Takes an optional error and result objects as its only parameter. |
-| logger | Object | Handle to the logger object. |
+| src | `String` | CLI configuration object. |
+| dst | `Array<Object>` | Array of objects specifying the required destination properties:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| file | `String` | Path and name of the resize images. |<br />| height | `Number` | Height to scale the image. |<br />| width | `Number` | Width to scale the image. | |
+| callback | `Function` | Callback to invoke when done. Takes an optional error and result objects as its only parameter. |
+| logger | `Object` | Handle to the logger object. |
 
 **Example:**
 
@@ -1233,9 +1233,9 @@ detect ([Object config], [Object options], Function callback): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| config | Object | CLI configuration object. |
-| options | Object | Device options:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| bypassCache | Boolean | If set to false, returns the cached info. If set to true, retrieves values directly from the system. | |
-| callback | Function | Callback to invoke when done. Takes an optional results object as its only parameter, which contains the environment information. |
+| config | `Object` | CLI configuration object. |
+| options | `Object` | Device options:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| bypassCache | `Boolean` | If set to false, returns the cached info. If set to true, retrieves values directly from the system. | |
+| callback | `Function` | Callback to invoke when done. Takes an optional results object as its only parameter, which contains the environment information. |
 
 **Example:**
 
@@ -1263,7 +1263,7 @@ interfaces (Function callback): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| callback | Function | Callback to invoke when done. Takes an optional results object as its only parameter, which contains the environment information. |
+| callback | `Function` | Callback to invoke when done. Takes an optional results object as its only parameter, which contains the environment information. |
 
 **Example:**
 
@@ -1287,7 +1287,7 @@ interfaces (Function callback): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| callback | Function | Callback to invoke when done. Takes an optional error object and result value as its only parameter. The results value is a boolean value indicating if the computer is online or not. |
+| callback | `Function` | Callback to invoke when done. Takes an optional error object and result value as its only parameter. The results value is a boolean value indicating if the computer is online or not. |
 
 **Example:**
 
@@ -1313,7 +1313,7 @@ urlEncode (Object obj): String
 
 | Name | Type | Description |
 | --- | --- | --- |
-| obj | Object | Object to convert |
+| obj | `Object` | Object to convert |
 
 **Returns:**
 
@@ -1348,7 +1348,7 @@ new plist ([String file]): Object
 
 | Name | Type | Description |
 | --- | --- | --- |
-| file | String | plist file to open and parse |
+| file | `String` | plist file to open and parse |
 
 **Returns:**
 
@@ -1372,8 +1372,8 @@ new progress (String format, Object options): Object
 
 | Name | Type | Description |
 | --- | --- | --- |
-| format | String | Use the following strings to format the progress bar:<br /><br />* ':bar' - progress bar<br />    <br />* ':current' - current progress value<br />    <br />* ':total' - total progress value<br />    <br />* ':elapsed' - current elapsed time of the task<br />    <br />* ':eta' - estimated time when the task completes<br />    <br />* ':percent' - percent value of the current progress<br />    <br />* ':paddedPercent' - padded percent value of the current progress |
-| options | Object | Optional progress bar options:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| complete | String | Character to indicate completed progress in the bar. |<br />| incomplete | String | Character to indicate incomplete progress in the bar. |<br />| total | Number | Total number to be tracked by the progress bar. |<br />| width | Number | Width in characters of the progress bar. | |
+| format | `String` | Use the following strings to format the progress bar:<br /><br />* ':bar' - progress bar<br />    <br />* ':current' - current progress value<br />    <br />* ':total' - total progress value<br />    <br />* ':elapsed' - current elapsed time of the task<br />    <br />* ':eta' - estimated time when the task completes<br />    <br />* ':percent' - percent value of the current progress<br />    <br />* ':paddedPercent' - padded percent value of the current progress |
+| options | `Object` | Optional progress bar options:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| complete | `String` | Character to indicate completed progress in the bar. |<br />| incomplete | `String` | Character to indicate incomplete progress in the bar. |<br />| total | `Number` | Total number to be tracked by the progress bar. |<br />| width | `Number` | Width in characters of the progress bar. | |
 
 ##### tick method
 
@@ -1389,7 +1389,7 @@ tick ([Number len]): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| len | Number | Value to increment to progress bar by. Default value is 1. |
+| len | `Number` | Value to increment to progress bar by. Default value is 1. |
 
 ##### Example
 
@@ -1432,7 +1432,7 @@ capitalize (String str): String
 
 | Name | Type | Description |
 | --- | --- | --- |
-| str | String | String to capitalize. |
+| str | `String` | String to capitalize. |
 
 **Returns:**
 
@@ -1452,8 +1452,8 @@ levenshtein (String str1, String str2): Number
 
 | Name | Type | Description |
 | --- | --- | --- |
-| str1 | String | First string. |
-| str2 | String | Second string. |
+| str1 | `String` | First string. |
+| str2 | `String` | Second string. |
 
 **Returns:**
 
@@ -1473,9 +1473,9 @@ lpad (String str, Number len, [String pad]): String
 
 | Name | Type | Description |
 | --- | --- | --- |
-| str | String | String to pad. |
-| len | Number | Total length of the string. |
-| pad | String | Character to use as the padding. Default is a space. |
+| str | `String` | String to pad. |
+| len | `Number` | Total length of the string. |
+| pad | `String` | Character to use as the padding. Default is a space. |
 
 **Returns:**
 
@@ -1496,8 +1496,8 @@ renderColumns (Array<String> items, Number margin, Number maxwidth): String
 | Name | Type | Description |
 | --- | --- | --- |
 | items | `Array<String>` | Array of items to render. |
-| margin | String | Row title in the left margin. |
-| maxwidth | Number | Maximum width before wrapping. |
+| margin | `String` | Row title in the left margin. |
+| maxwidth | `Number` | Maximum width before wrapping. |
 
 **Returns:**
 
@@ -1517,9 +1517,9 @@ lpad (String str, Number len, [String pad]): String
 
 | Name | Type | Description |
 | --- | --- | --- |
-| str | String | String to pad. |
-| len | Number | Total length of the string. |
-| pad | String | Character to use as the padding. Default is a space. |
+| str | `String` | String to pad. |
+| len | `Number` | Total length of the string. |
+| pad | `String` | Character to use as the padding. Default is a space. |
 
 **Returns:**
 
@@ -1539,10 +1539,10 @@ suggest (String str, Array<Strings> options, Function logger, [Number threshold]
 
 | Name | Type | Description |
 | --- | --- | --- |
-| str | String | String to find a match for. |
+| str | `String` | String to find a match for. |
 | options | `Array<String>` | Array of strings to find a match with. |
-| logger | Function | Callback to output the suggestions. Takes one string value as a parameter. |
-| threshold | Number | Match threshold. Default is 3. |
+| logger | `Function` | Callback to output the suggestions. Takes one string value as a parameter. |
+| threshold | `Number` | Match threshold. Default is 3. |
 
 ##### wrap method
 
@@ -1558,8 +1558,8 @@ wrap (String str, [Number width]): String
 
 | Name | Type | Description |
 | --- | --- | --- |
-| str | String | String to wrap. |
-| wrap | Number | Length to wrap the text. Default is the console width. |
+| str | `String` | String to wrap. |
+| wrap | `Number` | Length to wrap the text. Default is the console width. |
 
 **Returns:**
 
@@ -1704,7 +1704,7 @@ prettyDiff (Date from, Date to, Object options): String
 | --- | --- | --- |
 | from | `Date` | First date. |
 | to | `Date` | Second date. |
-| options | Object | Options:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| colorize | Boolean | If set to true, colorizes the output. False by default. |<br />| hideMS | Boolean | If set to true, hides the millisecond results. False by default. |<br />| showFullName | Boolean | If set to true, uses the full name rather than an abbreviation. False by default. | |
+| options | `Object` | Options:<br /><br />| Name | Type | Description |<br />| --- | --- | --- |<br />| colorize | `Boolean` | If set to true, colorizes the output. False by default. |<br />| hideMS | `Boolean` | If set to true, hides the millisecond results. False by default. |<br />| showFullName | `Boolean` | If set to true, uses the full name rather than an abbreviation. False by default. | |
 
 **Returns**:
 
@@ -1779,10 +1779,10 @@ find (Array<Object> modules, Array<String>/String platform, Array<String>/String
 | modules | `Array<Object>` | Modules to search for. |
 | platform | `Array<String>/String` | Platforms to search for. |
 | deployTypes | `Array<String>/String` | Deploy types to search for. |
-| sdkVersion | String | SDK version for minimum SDK version check. |
+| sdkVersion | `String` | SDK version for minimum SDK version check. |
 | `searchPaths` | `Array<String>` | Paths to search for modules. |
-| `logger` | Object | Handle to the CLI object. |
-| `callback` | Function | Callback function. Takes an optional object as its only parameter, which contains the module information. |
+| `logger` | `Object` | Handle to the CLI object. |
+| `callback` | `Function` | Callback function. Takes an optional object as its only parameter, which contains the module information. |
 
 ##### scopedDetect method
 
@@ -1799,9 +1799,9 @@ scopedDetect (Array<String> searchPaths, Object config, Object logger, Function 
 | Name | Type | Description |
 | --- | --- | --- |
 | `searchPaths` | `Array<String>` | Paths to search for modules. |
-| `config` | Object | CLI configuration object. |
-| `logger` | Object | Handle to the CLI object. |
-| `callback` | Function | Callback function. Takes an optional object as its only parameter, which contains the module information. |
+| `config` | `Object` | CLI configuration object. |
+| `logger` | `Object` | Handle to the CLI object. |
+| `callback` | `Function` | Callback function. Takes an optional object as its only parameter, which contains the module information. |
 
 #### tiplugin
 
@@ -1821,10 +1821,10 @@ detect (String projectDir, Object config, Object logger, Function callback): voi
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `projectDir` | String | Project path to search for plugins. |
-| `config` | Object | CLI configuration object. |
-| `logger` | Object | Handle to the CLI object. |
-| `callback` | Function | Callback function. Takes an optional object as its only parameter, which contains the plugin information. |
+| `projectDir` | `String` | Project path to search for plugins. |
+| `config` | `Object` | CLI configuration object. |
+| `logger` | `Object` | Handle to the CLI object. |
+| `callback` | `Function` | Callback function. Takes an optional object as its only parameter, which contains the plugin information. |
 
 ##### find method
 
@@ -1841,10 +1841,10 @@ find (Array<Object> plugins, Array<String> searchPaths, Object logger, Function 
 | Name | Type | Description |
 | --- | --- | --- |
 | `plugins` | `Array<Object>` | Plugins to search for. |
-| `searchPaths` | String | Path to the project directory. |
-| `config` | Object | CLI configuration object. |
-| `logger` | Object | Handle to the CLI object. |
-| `callback` | Function | Callback function. Takes an optional object as its only parameter, which contains the plugin information. |
+| `searchPaths` | `String` | Path to the project directory. |
+| `config` | `Object` | CLI configuration object. |
+| `logger` | `Object` | Handle to the CLI object. |
+| `callback` | `Function` | Callback function. Takes an optional object as its only parameter, which contains the plugin information. |
 
 ##### scopedDetect method
 
@@ -1861,9 +1861,9 @@ scopedDetect (Array<String> searchPaths, Object config, Object logger, Function 
 | Name | Type | Description |
 | --- | --- | --- |
 | `searchPaths` | `Array<String>` | Paths to search for modules. |
-| `config` | Object | CLI configuration object. |
-| `logger` | Object | Handle to the CLI object. |
-| `callback` | Function | Callback function. Takes an optional object as its only parameter, which contains the plugin information. |
+| `config` | `Object` | CLI configuration object. |
+| `logger` | `Object` | Handle to the CLI object. |
+| `callback` | `Function` | Callback function. Takes an optional object as its only parameter, which contains the plugin information. |
 
 #### util
 
@@ -1883,8 +1883,8 @@ mix (Object obj1, ...): Object
 
 | Name | Type | Description |
 | --- | --- | --- |
-| obj1 | Object | First object to mix in other objects with. |
-| ... | Object | More objects to mix in with the first object. |
+| obj1 | `Object` | First object to mix in other objects with. |
+| ... | `Object` | More objects to mix in with the first object. |
 
 **Returns**:
 
@@ -1904,8 +1904,8 @@ mixObj (Object obj1, ...): Object
 
 | Name | Type | Description |
 | --- | --- | --- |
-| obj1 | Object | First object to mix in other objects with. |
-| ... | Object | More objects to mix in with the first object. |
+| obj1 | `Object` | First object to mix in other objects with. |
+| ... | `Object` | More objects to mix in with the first object. |
 
 **Returns**:
 
@@ -1995,8 +1995,8 @@ forEachAttr (Object node, Function callback): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| node | Object | XML node. |
-| callback | Function | Callback function. Takes an object as it only parameter, which represents the attribute information. |
+| node | `Object` | XML node. |
+| callback | `Function` | Callback function. Takes an object as it only parameter, which represents the attribute information. |
 
 ##### forEachElement method
 
@@ -2012,8 +2012,8 @@ forEachElement (Object node, Function callback): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| node | Object | XML node. |
-| callback | Function | Callback function. Takes an object as it only parameter, which represents the element information. |
+| node | `Object` | XML node. |
+| callback | `Function` | Callback function. Takes an object as it only parameter, which represents the element information. |
 
 ##### getAttr method
 
@@ -2029,8 +2029,8 @@ getAttr (Object node, String attr): Primitive
 
 | Name | Type | Description |
 | --- | --- | --- |
-| node | Object | XML node. |
-| attr | String | Attribute to get. |
+| node | `Object` | XML node. |
+| attr | `String` | Attribute to get. |
 
 **Returns:**
 
@@ -2050,7 +2050,7 @@ getValue (Object node): String
 
 | Name | Type | Description |
 | --- | --- | --- |
-| node | Object | XML node. |
+| node | `Object` | XML node. |
 
 **Returns:**
 
@@ -2070,7 +2070,7 @@ parse (String value): Primitive
 
 | Name | Type | Description |
 | --- | --- | --- |
-| value | String | Value of the XML node. |
+| value | `String` | Value of the XML node. |
 
 **Returns:**
 
@@ -2125,8 +2125,8 @@ eq(String version1, String version2): Boolean
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `version1` | String | First version to compare |
-| `version2` | String | Second version to compare |
+| `version1` | `String` | First version to compare |
+| `version2` | `String` | Second version to compare |
 
 **Returns**:
 
@@ -2144,10 +2144,10 @@ format(String version, Number min, Number max, [Boolean chopDash]): String
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `version` | String | Version to format |
-| `min` | Number | Minimum number of segments |
-| `min` | Number | Maximum number of segments |
-| `chopDash` | Boolean | If true, remove everything after a dash in the version string |
+| `version` | `String` | Version to format |
+| `min` | `Number` | Minimum number of segments |
+| `min` | `Number` | Maximum number of segments |
+| `chopDash` | `Boolean` | If true, remove everything after a dash in the version string |
 
 **Returns**:
 
@@ -2165,8 +2165,8 @@ gt(String version1, String version2): Boolean
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `version1` | String | First version to compare |
-| `version2` | String | Second version to compare |
+| `version1` | `String` | First version to compare |
+| `version2` | `String` | Second version to compare |
 
 **Returns**:
 
@@ -2184,8 +2184,8 @@ gte(String version1, String version2): Boolean
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `version1` | String | First version to compare |
-| `version2` | String | Second version to compare |
+| `version1` | `String` | First version to compare |
+| `version2` | `String` | Second version to compare |
 
 **Returns**:
 
@@ -2203,8 +2203,8 @@ lt(String version1, String version2): Boolean
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `version1` | String | First version to compare |
-| `version2` | String | Second version to compare |
+| `version1` | `String` | First version to compare |
+| `version2` | `String` | Second version to compare |
 
 **Returns**:
 
@@ -2222,8 +2222,8 @@ lte(String version1, String version2): Boolean
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `version1` | String | First version to compare |
-| `version2` | String | Second version to compare |
+| `version1` | `String` | First version to compare |
+| `version2` | `String` | Second version to compare |
 
 **Returns**:
 
@@ -2241,7 +2241,7 @@ lte(String range): String
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `range` | String | Space-delimited list of versions or version expressions, such as ">3.2.0" or "<3.2.0" |
+| `range` | `String` | Space-delimited list of versions or version expressions, such as ">3.2.0" or "<3.2.0" |
 
 **Returns**:
 
@@ -2259,7 +2259,7 @@ lte(String range): String
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `range` | String | Space-delimited list of versions or versions expressions, such as ">3.2.0" or "<3.2.0" |
+| `range` | `String` | Space-delimited list of versions or versions expressions, such as ">3.2.0" or "<3.2.0" |
 
 **Returns**:
 
@@ -2277,9 +2277,9 @@ satisfies(String version, String range, [Boolean maybe]): Boolean
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `version` | String | Version to check |
-| `range` | String | Space-delimited list of versions or version expressions, such as ">3.2.0" or "<3.2.0" |
-| `maybe` | Boolean | If true and the version is greater than at least one of the supplied version, returns "maybe". |
+| `version` | `String` | Version to check |
+| `range` | `String` | Space-delimited list of versions or version expressions, such as ">3.2.0" or "<3.2.0" |
+| `maybe` | `Boolean` | If true and the version is greater than at least one of the supplied version, returns "maybe". |
 
 **Returns**:
 
@@ -2357,7 +2357,7 @@ unzip(String file, String dest, Object opts, Function callback): void
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `file` | String | The file to extract |
-| `dest` | String | The destination to extract the files to |
-| `opts` | Object | Optional extract options:<br /><br />| Name | Type | Default | Description |<br />| --- | --- | --- | --- |<br />| `visitor` | Function |  | A function to call when visiting each file being extracted |<br />| `overwrite` | Boolean | true | If true, overwrites files on extraction |<br />| `defaultPerm` | Number | 0644 | The default file permissions; should be in octet format | |
-| `callback` | Function | A function to call when done extracting all files |
+| `file` | `String` | The file to extract |
+| `dest` | `String` | The destination to extract the files to |
+| `opts` | `Object` | Optional extract options:<br /><br />| Name | Type | Default | Description |<br />| --- | --- | --- | --- |<br />| `visitor` | `Function` |  | A function to call when visiting each file being extracted |<br />| `overwrite` | `Boolean` | `true` | If true, overwrites files on extraction |<br />| `defaultPerm` | `Number` | `0644` | The default file permissions; should be in octet format | |
+| `callback` | `Function` | A function to call when done extracting all files |

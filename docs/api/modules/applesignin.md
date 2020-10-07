@@ -18,7 +18,7 @@
 
 -   Required capabilities:
 
-    ``` xml  
+    ``` xml
     <key>com.apple.developer.applesignin</key>
     <array>
       <string>Default</string>

@@ -27,7 +27,7 @@ The Appcelerator Platform consists of several components:
 
 * **[Axway API Builder](/guide/Axway_API_Builder/)**: an opinionated framework to build and deploy APIs to the cloud that can be consumed by multiple clients.
 
-* **[Axway Appcelerator Dashboard](/guide/Appcelerator_Dashboard/)**: a web portal used to monitor your application's heath and usage. This dashboard is aimed for technical users.
+* **[Axway Appcelerator Dashboard](/guide/AMPLIFY_Dashboard/)**: a web portal used to monitor your application's heath and usage. This dashboard is aimed for technical users.
 
 * **[AMPLIFY Appcelerator Services](/guide/AMPLIFY_Appcelerator_Services/)**: set of features that includes free analytics services, and the performance management and automated testing services, which require an Enterprise subscription.
 
@@ -37,7 +37,7 @@ To start using the Appcelerator Platform, you need an account to log in to the A
 
 * If you are part of an Appcelerator Organization, your organization's Appcelerator Platform administrator sends an invitation to you to log in to the Axway Appcelerator Dashboard and create an account.
 
-* If you are an administrator, see [Managing Organizations](/guide/Appcelerator_Dashboard/Appcelerator_Dashboard_Guide/Managing_Organizations/) for more information about adding users to your organization's Appcelerator Platform and provisioning them either Dashboard access.
+* If you are an administrator, see [Managing Organizations](/guide/AMPLIFY_Dashboard/AMPLIFY_Dashboard_Guide/Managing_Organizations/) for more information about adding users to your organization's Appcelerator Platform and provisioning them either Dashboard access.
 
 ## Axway Appcelerator Dashboard
 
@@ -47,7 +47,7 @@ To use the dashboard, log in to [https://platform.axway.com/](https://platform.a
 
 Once the dashboard is displayed, select your application from the **Apps** list in the top-left corner and click on the different Appcelerator Service tabs on the top to view difference usage statistics and reports. To manage your account, click on the **Profile** drop-down menu (your name) in the top-right corner and select an option.
 
-For more information about the dashboard, see [Axway Appcelerator Dashboard](/guide/Appcelerator_Dashboard/).
+For more information about the dashboard, see [Axway Appcelerator Dashboard](/guide/AMPLIFY_Dashboard/).
 
 ## Axway Appcelerator Studio
 
@@ -181,7 +181,7 @@ To try out the features of the Appcelerator Platform:
 
 * See [AMPLIFY Appcelerator Services](/guide/AMPLIFY_Appcelerator_Services/) for information about Appcelerator Analytics, Performance and Test services.
 
-* See [Appcelerator Dashboard](/guide/Appcelerator_Dashboard/) for more information about using the Appcelerator Dashboard.
+* See [AMPLIFY Dashboard](/guide/AMPLIFY_Dashboard/) for more information about using the Appcelerator Dashboard.
 
 * See [Titanium Development](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Titanium_Development/) for more information about the developing Titanium applications with Appcelerator Studio, such as code profiling or analysis.
 

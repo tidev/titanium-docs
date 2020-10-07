@@ -30,26 +30,32 @@ For information on setting up Touch ID, see
 Add the module as a dependency to your application by adding a **`<module>`** item to the
 **`<modules>`** element of your `tiapp.xml` file:
 
-    <ti:app>
-      ...
-      <modules>
-        <module platform="iphone">ti.touchid</module>
-      </modules>
-      ...
-    </ti:app>
+``` xml
+<ti:app>
+  <!-- ... -->
+  <modules>
+    <module platform="iphone">ti.touchid</module>
+  </modules>
+  <!-- ... -->
+</ti:app>
+```
 
 Use `require()` to access the module from JavaScript:
 
-    var TouchID = require('ti.touchid');
+``` javascript
+var TouchID = require('ti.touchid');
+```
 
 The `TouchId` variable is a reference to the module. Make API calls using this reference:
 
-    TouchID.authenticate({
-        reason: 'Verify to modify personal settings',
-        callback: function(e) {
-            Ti.API.info(e);
-        }
-    });
+``` javascript
+TouchID.authenticate({
+    reason: 'Verify to modify personal settings',
+    callback: function(e) {
+        Ti.API.info(e);
+    }
+});
+```
     
 ### Lifetime Notes (iOS-only)
 

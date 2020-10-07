@@ -7,10 +7,17 @@ const apiSidebar = {
 };
 const sidebar = Object.assign({}, guideSidebar, apiSidebar);
 
+const docSections = [
+  { text: 'Titanium SDK', link: '/guide/Titanium_SDK/' },
+  { text: 'Alloy', link: '/guide/Alloy_Framework/' },
+  { text: 'Appcelerator CLI', link: '/guide/Appcelerator_CLI/' },
+  { text: 'Axway Appcelerator Studio', link: '/guide/Axway_Appcelerator_Studio/' },
+];
+
 module.exports = {
   base: '/titanium-docs/',
   title: 'Titanium Mobile',
-  description: 'Native iOS-, Android- and Windows Apps with JavaScript',
+  description: 'Native iOS and Android Apps with JavaScript',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
@@ -20,13 +27,13 @@ module.exports = {
     footerCopyright: 'Copyright © 2019-present Axway Appcelerator',
     footerLogo: '/images/axway-appcelerator-logo.png',
     footerSitemap: {
-      'Docs': [
-        { text: 'Alloy', link: '/guide/Alloy_Framework/' }
-      ],
+      'Docs': docSections,
       'Other': [
         { text: 'Some link', link: 'https://docs.appcelerator.com/' }
       ],
       'Social': [
+        { text: 'Blog', link: 'https://appcelerator.com/blog' },
+        { text: 'Slack', link: 'https://tislack.org' },
         { text: 'Twitter', link: 'https://twitter.com/appcelerator' }
       ]
     },
@@ -34,24 +41,7 @@ module.exports = {
     nav: [
       {
         text: 'Guide',
-        items: [
-          {
-            text: 'Titanium SDK',
-            link: '/guide/Titanium_SDK/'
-          },
-          {
-            text: 'Alloy',
-            link: '/guide/Alloy_Framework/'
-          },
-          {
-            text: 'Appcelerator Studio',
-            link: '/guide/Axway_Appcelerator_Studio/'
-          },
-          {
-            text: 'Appcelerator CLI',
-            link: '/guide/Appcelerator_CLI/'
-          }
-        ]
+        items: docSections
       },
       { text: 'API Reference', link: '/api/' },
       {

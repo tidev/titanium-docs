@@ -1,6 +1,6 @@
 ---
 title: Using Studio From Behind a Proxy
-weight: '30'
+weight: '20'
 ---
 
 # Using Studio From Behind a Proxy
@@ -84,8 +84,6 @@ You may need to whitelist several URLs in some network environments. Below are t
 * [security.appcelerator.com](http://security.appcelerator.com)
 
 * [secure-identity.cloud.appcelerator.com](http://secure-identity.cloud.appcelerator.com)
-
-* [marketplace.axway.com](https://marketplace.axway.com/home#!category/31050) (Connectors)
 
 * [downloads.platform.axway.com](http://downloads.platform.axway.com)
 

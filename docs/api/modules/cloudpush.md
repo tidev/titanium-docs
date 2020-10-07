@@ -16,23 +16,7 @@ project to send push notifications, see <Modules.Cloud.PushNotifications>.
 The CloudPush module only supports [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) (FCM) for push
 notifications.
 
-### Getting Started
-
-To use the CloudPush module in your JavaScript code, you need to require it in and
-get a device token with the `retrieveDeviceToken` method to enable push notifications with Arrow Push.
-In your project's `tiapp.xml`, you need to add some keys to configure push notifications.
-
-Note that this module is not included in the Titanium namespace, but it is bundled with the Titanium SDK as of
-version 2.0.0. To use it, you must require it, like this:
-
-    var CloudPush = require('ti.cloudpush');
-
-Then, call the `retrieveDeviceToken` method to get a unique token specific to that device and
-Arrow DB application.  This token is used with [Arrow PushNotifications calls](Modules.Cloud.PushNotifications)
-to subscribe and unsubscribe the device to push notification channels.
-
-Once the device is subscribed to at least one push channel, listen to the module's `callback`,
-`trayClickLaunchedApp`, and `trayClickFocusedApp` events to monitor for incoming push notifications.
+### Project Configuration
 
 This module must also be added to the modules section in your tiapp.xml. This can be done using the Modules list in
 the Titanium Studio TiApp Editor, or by editing the XML directly and adding the following line to the modules
@@ -60,6 +44,20 @@ If a deployment-specific setting is provided (production or development) then th
 *WARNING*: The default properties of this module are used until you set a property for the first time. Because the
 properties are persisted to the device settings (via <Titanium.App.Properties>), the most recent value you set will
 always be used.
+
+### Google Services JSON
+
+As of Titanium 9.1.0 (using `ti.cloudpush` module version 7.1.0), you must download a `google-services.json` file
+from Google's [Firebase Console](https://console.firebase.google.com/) website and add it your Titanium project.
+This file provides the keys needed to retrieve a device token for push notifications.
+
+For Alloy projects, download the file to folder...
+
+    ./app/platform/android
+
+For Classic projects, download the file to folder...
+
+    ./platform/android
 
 ### Virtual Private Cloud Configuration
 
@@ -102,29 +100,56 @@ The `$number$` variable indicates the number of unread messages.
 
 ### Listening for Push Notifications
 
-This example lets the application retrieve the device token and listens for several events
-to monitor incoming push notifications.
+```js
+const CloudPush = require('ti.cloudpush');
 
-    var CloudPush = require('ti.cloudpush');
+// Show notifications in status bar while app is backgrounded.
+CloudPush.showTrayNotification = true;
+
+// Show notifications in status bar while app is in the foreground.
+CloudPush.showTrayNotificationsWhenFocused = true;
+
+// Fetches app's push notification token and registers it with the cloud if changed.
+function registerForPushNotifications() {
     CloudPush.retrieveDeviceToken({
-        success: function deviceTokenSuccess(e) {
-            // Use this device token with Ti.Cloud.PushNotifications calls
-            // to subscribe and unsubscribe to push notification channels
+        success: function (e) {
+            // We've successfully obtained a token.
             Ti.API.info('Device Token: ' + e.deviceToken);
+
+            // You should call "ti.cloud" module's PushNotifications subscribe() method next,
+            // but only after successfully logging in to the cloud.
         },
-        error: function deviceTokenError(e) {
-            alert('Failed to register for push! ' + e.error);
+        error: function (e) {
+            // We've failed to acquire a token.
+            Ti.API.error('Failed to register for CloudPush. Reason: ' + e.error);
         }
     });
-    // These events monitor incoming push notifications
-    CloudPush.addEventListener('callback', function (evt) {
-        alert(evt.payload);
-    });
-    CloudPush.addEventListener('trayClickLaunchedApp', function (evt) {
-        Ti.API.info('Tray Click Launched App (app was not running)');
-    });
-    CloudPush.addEventListener('trayClickFocusedApp', function (evt) {
-        Ti.API.info('Tray Click Focused App (app was already running)');
-    });
+}
+
+// Always fetch token from system on app startup in case it changed since last startup.
+registerForPushNotifications();
+
+// Called for every push notification received by the app.
+CloudPush.addEventListener('callback', function (e) {
+    alert(e.payload);
+});
+
+// Called when last token has expired and has become invalid.
+// We must obtain a new token in order for this app to keep receiving push notifications.
+CloudPush.addEventListener('deviceTokenExpired', function (e) {
+    Ti.API.info('Previous CloudPush token has expired. Acquiring a new token.');
+    registerForPushNotifications();
+});
+
+// Called when cold-starting app by tapping notification in status bar.
+CloudPush.addEventListener('trayClickLaunchedApp', function (e) {
+    Ti.API.info('Tray Click Launched App (app was not running)');
+});
+
+// Called when resuming app from background by tapping notification in status bar.
+CloudPush.addEventListener('trayClickFocusedApp', function (e) {
+    Ti.API.info('Tray Click Focused App (app was already running)');
+});
+```
 
 <ApiDocs/>

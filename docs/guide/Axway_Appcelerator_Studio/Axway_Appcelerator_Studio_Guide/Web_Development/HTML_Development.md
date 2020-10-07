@@ -1,6 +1,6 @@
 ---
 title: HTML Development
-weight: '60'
+weight: '30'
 ---
 
 # HTML Development
@@ -35,7 +35,7 @@ To do so, right-click the project you have just imported and select 'Properties'
 ## Editing
 
 Paste in your files, import them, or create new ones using the new file wizard.
-When in the 'App Explorer', the new file wizard will offer you to create a file from a template as an option on the 'Next' page. These file-templates are contributed by the "HTML Ruble", and we discuss the 'Ruble' support at the [Ruble Specification](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Rubles/Ruble_Specification/) page.
+When in the 'App Explorer', the new file wizard will offer you to create a file from a template as an option on the 'Next' page. These file-templates are contributed by the "HTML Ruble", and we discuss the 'Ruble' support at the [Ruble Specification](#undefined) page.
 
 The HTML editor provides these features:
 
@@ -60,7 +60,7 @@ The editor provides a code-assist mechanism that displays suggestions by the con
 
 * Typing an open tag '<' character will auto-show the content assist pop-up with a list of available tags (this behavior can be controlled by the 'Editors' preferences).
 
-* Typing a letter or part of a word and then Ctrl+Space will bring up any possible completion proposals that start with the character's input. The content pop-up will show proposals for known HTML tags, and also for any HTML code snippets that were contributed by the [HTML Ruble](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Rubles/Ruble_Specification/).
+* Typing a letter or part of a word and then Ctrl+Space will bring up any possible completion proposals that start with the character's input. The content pop-up will show proposals for known HTML tags, and also for any HTML code snippets that were contributed by the [HTML Ruble](#undefined).
 
     <table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/30083084/html_template_completion.jpg" alt="images/download/attachments/30083084/html_template_completion.jpg" class="confluence-embedded-image image-left"></p></td></tr></tbody></table>
 
@@ -101,6 +101,6 @@ You can hover over any warning or error that the validation output to see its de
 
 ## Previewing
 
-Studio is equipped with an internal server that allows a quick preview of HTML content. See [Previewing a project in a web browser](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Previewing/Previewing_a_project_in_a_web_browser/)
+Studio is equipped with an internal server that allows a quick preview of HTML content. See [Previewing a project in a web browser](#undefined)
 
-If you wish, you can have your source and preview side-by-side: [Side-by-Side Previewing](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/Previewing/Side-by-Side_Previewing/)
+If you wish, you can have your source and preview side-by-side: [Side-by-Side Previewing](#undefined)

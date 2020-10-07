@@ -100,7 +100,7 @@ The minimum requirements (builds tools and SDKs, not including Windows Mobile Em
 
 ## Further Information
 
-* Module development: [Windows Module Development Guide](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/Windows_Module_Development_Guide/)
+* Module development: [Windows Module Development Guide](#undefined)
 
 * Building to devices: [Deploying to Windows Devices](/guide/Titanium_SDK/Titanium_SDK_Guide/Preparing_for_Distribution/Deploying_to_Windows_Devices/)
 

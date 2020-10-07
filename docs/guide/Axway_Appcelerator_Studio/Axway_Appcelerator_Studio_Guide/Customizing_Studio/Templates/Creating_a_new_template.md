@@ -10,7 +10,7 @@ weight: '20'
 Users can create new templates or modify existing templates to allow easy creation of default content.
 
 ::: tip 💡 Hint
-We assume you've [created a new Ruble](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Rubles/Creating_a_new_Ruble/) as a placeholder for the following content.
+We assume you've [created a new Ruble](#undefined) as a placeholder for the following content.
 :::
 
 ## Creating a new file template
@@ -112,7 +112,7 @@ If you instead have a project template hosted on a Git repo, you can reference t
 
 **File > New > Project...** and create a project of the appropriate type above; you should see your template in the list.
 
-The [Ruble Specification](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Rubles/Ruble_Specification/) gives a complete discussion on the new Ruble scripting system in Studio.
+The [Ruble Specification](#undefined) gives a complete discussion on the new Ruble scripting system in Studio.
 
 ### Template variables
 

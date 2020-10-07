@@ -1,6 +1,6 @@
 ---
 title: Appcelerator CLI 7.1.2.RC - 18 November 2019
-weight: '60'
+weight: '50'
 ---
 
 # Appcelerator CLI 7.1.2.RC - 18 November 2019

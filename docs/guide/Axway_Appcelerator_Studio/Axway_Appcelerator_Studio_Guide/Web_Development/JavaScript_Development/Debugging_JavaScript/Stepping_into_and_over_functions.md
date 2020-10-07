@@ -1,6 +1,6 @@
 ---
 title: Stepping into and over functions
-weight: '90'
+weight: '70'
 ---
 
 # Stepping into and over functions
@@ -33,7 +33,7 @@ To step into or step over a JavaScript function:
 
 * [About the Debug perspective](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/About_the_Debug_perspective/)
 
-* [Installing the JavaScript debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Installing_the_JavaScript_debugger/)
+* [Installing the JavaScript debugger](#undefined)
 
 * [Running the debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Running_the_debugger/)
 

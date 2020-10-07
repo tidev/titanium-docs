@@ -21,7 +21,7 @@ When writing JavaScript for your Titanium apps, you should strive to achieve the
 
 * Protect the global scope
 
-* Keep your code DRY (http://en.wikipedia.org/wiki/Don't\_repeat\_yourself)
+* Keep your code DRY
 
 * Use a single execution context
 
@@ -83,7 +83,7 @@ myapp.info('Hello World');
 
 #### Stay DRY
 
-By DRY (http://en.wikipedia.org/wiki/Don't\_repeat\_yourself), we mean "don't repeat yourself." The less you repeat code, the easier it is to write, maintain, and fix that code. There are many techniques that will help you keep your code DRY. Among these are creating [factory methods](http://en.wikipedia.org/wiki/Factory_method_pattern) for instantiating program components, capitalizing on JavaScript's [inheritance](http://javascript.crockford.com/prototypal.html) model, and creating libraries of [reusable modules](http://vimeopro.com/appcelerator/forging-titanium/video/27447911).
+By DRY, we mean "don't repeat yourself." The less you repeat code, the easier it is to write, maintain, and fix that code. There are many techniques that will help you keep your code DRY. Among these are creating [factory methods](http://en.wikipedia.org/wiki/Factory_method_pattern) for instantiating program components, capitalizing on JavaScript's [inheritance](http://javascript.crockford.com/prototypal.html) model, and creating libraries of [reusable modules](http://vimeopro.com/appcelerator/forging-titanium/video/27447911).
 
 #### Execution contexts
 
@@ -91,7 +91,9 @@ If you've ever created web pages, you know that JavaScript variables on one page
 
 By default, a Titanium Mobile application has a single execution context in which it runs. Your application's app.js file bootstraps your application and serves as the root context. Your application can have multiple execution contexts (but as we'll show, you generally don't want it to). New execution contexts are typically created by opening a new window that points to an external URL in its `url` property:
 
-```
+**app.js**
+
+```javascript
 Ti.UI.createWindow({
   url:'window.js'
 }).open();
@@ -102,6 +104,8 @@ When the window is opened, the script window.js is immediately run in a new exec
 1. Create a new Titanium Mobile project.
 
 2. In app.js, cut the following text and paste it into a new file named win1.js:
+
+    **win1.js**
 
     ```javascript
     var label1 = Titanium.UI.createLabel({
@@ -116,6 +120,8 @@ When the window is opened, the script window.js is immediately run in a new exec
 
 3. Then, update the code that defines win1, like this:
 
+    **app.js**
+
     ```javascript
     var win1 = Titanium.UI.createWindow({
         title:'Tab 1',
@@ -128,6 +134,8 @@ When the window is opened, the script window.js is immediately run in a new exec
 
 5. In win1.js, add this statement at the top:
 
+    **win1.js**
+
     ```javascript
     var win1 = Ti.UI.currentWindow;
     ```
@@ -135,6 +143,8 @@ When the window is opened, the script window.js is immediately run in a new exec
 6. Build your project for the simulator/emulator and this time it will run without errors. To pass data into a separate context, you can add custom properties to your window object.
 
 7. In app.js, update the code to read:
+
+    **app.js**
 
     ```javascript
     var win1 = Titanium.UI.createWindow({
@@ -146,6 +156,8 @@ When the window is opened, the script window.js is immediately run in a new exec
     ```
 
 8. Then, in win1.js, update the code to read:
+
+    **win1.js**
 
     ```javascript
     var label1 = Titanium.UI.createLabel({
@@ -164,7 +176,9 @@ Let's modify the project you just used to demonstrate multiple contexts.
 
 1. In win1.js, add this code:
 
-    ```
+    **win1.js**
+
+    ```javascript
     label1.addEventListener('click', function() {
       Ti.App.fireEvent('app:labelclicked', {newlabel:'Sent from win1.js'});
     });
@@ -172,7 +186,9 @@ Let's modify the project you just used to demonstrate multiple contexts.
 
 2. Back in app.js, scroll down to find the `label2` code. This code is in the app.js context, walled off from the win1.js context. We'll add an event listener here to update the text of `label2` when label1 is clicked. Add this code after `label2`:
 
-    ```
+    **app.js**
+
+    ```javascript
     Ti.App.addEventListener('app:labelclicked', function(e) {
       label2.text = e.newlabel;
     });

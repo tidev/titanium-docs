@@ -1,0 +1,5 @@
+# CameraMediaMultipleItemsType
+
+<TypeHeader/>
+
+<ApiDocs/>

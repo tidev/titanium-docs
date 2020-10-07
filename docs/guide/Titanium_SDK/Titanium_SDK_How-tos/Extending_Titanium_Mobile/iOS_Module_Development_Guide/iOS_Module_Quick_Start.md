@@ -19,7 +19,7 @@ To develop an iOS-based Module, you'll need all of the software required to buil
 
 * Studio or the Appcelerator Command-Line Interface (CLI) for creating modules, and building and running test applications
 
-ComExampleTestModuleIn addition, Python, Python setuptools and the Python markdown (or markdown2) module are both required by the module build scripts. For Mac OS X, Python and the Python setuptools should already be installed. For the markdown module, see [Installing Required Python Packages](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Required_Python_Packages/).
+ComExampleTestModuleIn addition, Python, Python setuptools and the Python markdown (or markdown2) module are both required by the module build scripts. For Mac OS X, Python and the Python setuptools should already be installed. For the markdown module, see [Installing Required Python Packages](#undefined).
 
 Like iOS application development, iOS module development is only supported on OS X.
 

@@ -13,15 +13,15 @@ In this section, you will learn about the various locations to which official an
 
 ### Appcelerator Marketplace
 
-The Appcelerator Marketplace – [https://marketplace.appcelerator.com/](https://marketplace.appcelerator.com/) – is an app store-like exchange for Appcelerator- and community-developed modules, templates, and other assets that you could use in a Titanium project. Modules are available via the Marketplace ranging from free to various per-month or one-time fees.
+The Appcelerator Marketplace was one location where Titanium modules were distributed. The Appcelerator Marketplace is no longer used.
 
-For Appcelerator-developed modules in the Marketplace, support and on-going module maintenance is provided by Appcelerator. However, Appcelerator is not responsible for maintenance and support for modules developed by independent developers and published via the Marketplace. You'll need to work directly with those developers for support.
-
-Once you purchase or download a module, the Marketplace system will keep track of your download. When updates to those modules are published, you should receive an email informing you of the available update. Some modules require an on-going subscription. Titanium will check your eligibility to use the module at build time and will display an error message in your app if your license has expired.
+::: tip 💡 Hint
+Titanium artifacts are no longer available through the Marketplace in the **AMPLIFY Platform**. If you need access to a Titanium artifact, or if you have questions about artifacts that you have purchased through the Appcelerator Marketplace previously, please contact Axway at [marketplace-admin@axway.com](https://axway.jiveon.com/external-link.jspa?url=https%3A%2F%2Feur01.safelinks.protection.outlook.com%2F%3Furl%3Dhttp%253A%252F%252Fclick.axway.com%252FZDfeb0HT30000y04P30jVTh%26data%3D02%257C01%257Cbvandenberg%2540axway.com%257C3264da447c264d49144908d858c7b56f%257C300f59df78e6436f9b27b64973e34f7d%257C1%257C0%257C637356962044056122%26sdata%3DILggs9f%252Baq7cHg3Ve0DGccGw97Fd91ciBPynYEFX8SI%253D%26reserved%3D0).
+:::
 
 ### Appcelerator Enterprise Extensions
 
-Various modules are made available to Appcelerator subscribers. Plans vary, of course. At the time of this writing, the Enterprise Extensions modules are available with all paid subscriptions. If you log into the Marketplace (or to the Developer Center, then visit the Marketplace), the Enterprise Extensions modules will be shown as available for free. These modules are also published on the Support site available to Enterprise subscribers. Some modules require an on-going subscription. Titanium will check your eligibility to use the module at build time and will display an error message in your app if your license has expired.
+Various modules are made available to Appcelerator subscribers. Plans vary, of course. At the time of this writing, the Enterprise Extensions modules are available with all paid subscriptions. These modules are published on the Support site available to Enterprise subscribers. Some modules require an on-going subscription. Titanium will check your eligibility to use the module at build time and will display an error message in your app if your license has expired.
 
 ![tiplus](./tiplus.png)
 
@@ -41,7 +41,7 @@ At the time of this writing, these are some of the modules included in the TiPlu
 
 ### Open-source Appcelerator modules
 
-In addition to publishing modules via the Marketplace and Support site, Appcelerator publishes a few modules on its GitHub account. Those modules are open source (check the individual licenses for full details) and are provided as-is without official support. You'll find these modules at [https://github.com/appcelerator/titanium\_modules](https://github.com/appcelerator/titanium_modules)
+Appcelerator publishes a few modules on its GitHub account. Those modules are open source (check the individual licenses for full details) and are provided as-is without official support. You'll find these modules at [https://github.com/appcelerator/titanium\_modules](https://github.com/appcelerator/titanium_modules)
 
 ### Community-contributed modules
 

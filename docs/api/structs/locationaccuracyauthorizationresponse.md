@@ -1,0 +1,5 @@
+# LocationAccuracyAuthorizationResponse
+
+<TypeHeader/>
+
+<ApiDocs/>

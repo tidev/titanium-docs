@@ -526,35 +526,15 @@ See [Installing Git](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installati
 
 ### Python
 
-Python is required to compile the Titanium SDK from source using SCons.
+Error rendering macro 'excerpt-include' : User 'doc-robot' does not have permission to view the page 'DA:Installing Python'.
 
-Titanium supports the following versions of Python for each respective Operating System:
-
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
-
-| Operating System | Package Version | Package Architecture Version | Download Location |
-| --- | --- | --- | --- |
-| OS X | 2.x.x (currently, 2.7.x) | 32bit and 64bit | Installed on OS by default |
-| Windows | 2.x.x (currently, 2.7.x) | 32bit **only** | [Official Python Website](http://www.python.org/download/) |
-| Ubuntu | 2.x.x (currently, 2.7.x) | 32bit and 64bit | Default Repositories |
-
-Download the installer from the applicable download location above.
-
-See [Installing Python](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Python/) for detailed instructions.
+See [Installing Python](#undefined) for detailed instructions.
 
 ### Required Python packages
 
-Python's `setuptools` can be installed from the following locations:
+Error rendering macro 'excerpt-include' : User 'doc-robot' does not have permission to view the page 'DA:Installing Required Python Packages'.
 
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
-
-| Operating System | Package Version | Package Architecture Version | Download Location |
-| --- | --- | --- | --- |
-| OS X | Latest version compatible with installed Python version | 32-bit and 64-bit | Installed on OS by default |
-| Windows | Latest version compatible with installed Python version | 32-bit **only** | [Official setuptools Website](http://pypi.python.org/pypi/setuptools#downloads) |
-| Ubuntu | Latest version compatible with installed Python version | 32-bit and 64-bit | Default Repositories |
-
-See [Installing Required Python Packages](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Required_Python_Packages/) for detailed instructions.
+See [Installing Required Python Packages](#undefined) for detailed instructions.
 
 ### gperf
 
@@ -577,24 +557,6 @@ See [Installing gperf](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installa
 
 ### Ant
 
-::: danger ❗️ Warning
-Titanium 9.0.0 and newer versions no longer use Apache Ant. The below only applies to older SDK versions.
-:::
+Error rendering macro 'excerpt-include' : User 'doc-robot' does not have permission to view the page 'DA:Installing Ant'.
 
-Apache Ant is the standard build tool for Java. It can be used to build Titanium native Android modules and to build the Titanium SDK for Android. Ant is not required for building, running, or distributing applications using the Titanium SDK.
-
-::: warning ⚠️ Warning
-Java is a prerequisite for Ant, and should be installed first. See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/) for instructions.
-:::
-
-Obtain the latest stable version of Apache Ant. Ant is supplied as a multi-platform archive. You can choose the archive format that's easiest for you to extract: all archives contain the same files.
-
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
-
-| Operating System | Package Version | Download Location |
-| --- | --- | --- |
-| OS X | Latest Stable | [Official Website](http://ant.apache.org/bindownload.cgi) |
-| Windows | Latest Stable | [Official Website](http://ant.apache.org/bindownload.cgi) |
-| Ubuntu | Latest Stable | Default Repositories or [Official Website](http://ant.apache.org/bindownload.cgi) |
-
-See [Installing Ant](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Ant/) for detailed instructions.
+See [Installing Ant](#undefined) for detailed instructions.

@@ -1,6 +1,6 @@
 ---
 title: App Preview
-weight: '40'
+weight: '20'
 ---
 
 # App Preview

@@ -82,7 +82,9 @@ The style file formats and styles the components in the view file. For example, 
 
 Replace the contents of `app/styles/index.tss` with the following:
 
-```
+**app/styles/index.tss**
+
+```javascript
 "Window": {
   backgroundColor:"white"
 },
@@ -105,6 +107,8 @@ Replace the contents of `app/styles/index.tss` with the following:
 The controller file contains the presentation logic, which responds to input from the user. For example, the controller code below creates an alert dialog when the user clicks on the image and opens the window when the application starts.
 
 Replace the contents of `app/controllers/index.js` with the following:
+
+**app/controllers/index.js**
 
 ```javascript
 function clickImage(e) {

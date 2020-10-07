@@ -1,6 +1,6 @@
 ---
 title: Maintaining a Custom AndroidManifest.xml
-weight: '30'
+weight: '20'
 ---
 
 # Maintaining a Custom AndroidManifest.xml

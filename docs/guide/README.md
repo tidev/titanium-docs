@@ -79,15 +79,15 @@ Here you will find documentation and guides that cover Titanium Mobile and Titan
 
 * [Titanium SDK FAQ](/guide/Titanium_SDK/Titanium_SDK_FAQ/)
 
-### Appcelerator Dashboard
+### AMPLIFY Dashboard
 
-* [Appcelerator Dashboard Getting Started](/guide/Appcelerator_Dashboard/Appcelerator_Dashboard_Getting_Started/)
+* [AMPLIFY Dashboard Getting Started](/guide/AMPLIFY_Dashboard/AMPLIFY_Dashboard_Getting_Started/)
 
-* [Appcelerator Dashboard Guide](/guide/Appcelerator_Dashboard/Appcelerator_Dashboard_Guide/)
+* [AMPLIFY Dashboard Guide](/guide/AMPLIFY_Dashboard/AMPLIFY_Dashboard_Guide/)
 
-* [Appcelerator Dashboard Release Notes](/guide/Appcelerator_Dashboard/Appcelerator_Dashboard_Release_Notes/)
+* [AMPLIFY Dashboard Release Notes](/guide/AMPLIFY_Dashboard/AMPLIFY_Dashboard_Release_Notes/)
 
-* [Appcelerator Dashboard FAQ](/guide/Appcelerator_Dashboard/Appcelerator_Dashboard_FAQ/)
+* [AMPLIFY Dashboard FAQ](/guide/AMPLIFY_Dashboard/AMPLIFY_Dashboard_FAQ/)
 
 ### Appcelerator CLI
 
@@ -105,11 +105,13 @@ Here you will find documentation and guides that cover Titanium Mobile and Titan
 
 * [AMPLIFY CLI Quick Start](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Quick_Start/)
 
-* [AMPLIFY CLI Commands](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Commands/)
+* [AMPLIFY CLI Configuration](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Configuration/)
 
-* [AMPLIFY CLI Error Messages During Installation](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Error_Messages_During_Installation/)
+* [AMPLIFY CLI Authentication](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Authentication/)
 
-* [AMPLIFY CLI Package Manager](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Package_Manager/)
+* [AMPLIFY CLI Package Management](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Package_Management/)
+
+* [AMPLIFY CLI Troubleshooting](/guide/AMPLIFY_CLI/AMPLIFY_CLI_Troubleshooting/)
 
 ### Axway Appcelerator Studio
 
@@ -120,7 +122,5 @@ Here you will find documentation and guides that cover Titanium Mobile and Titan
 * [Axway Appcelerator Studio How-tos](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_How-tos/)
 
 * [Axway Appcelerator Studio Release Notes](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Release_Notes/)
-
-* [Appcelerator Studio Release Notes](/guide/Axway_Appcelerator_Studio/Appcelerator_Studio_Release_Notes/)
 
 * [Axway Appcelerator Studio FAQ](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_FAQ/)

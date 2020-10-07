@@ -1,6 +1,6 @@
 ---
 title: Samples
-weight: '90'
+weight: '80'
 ---
 
 # Samples

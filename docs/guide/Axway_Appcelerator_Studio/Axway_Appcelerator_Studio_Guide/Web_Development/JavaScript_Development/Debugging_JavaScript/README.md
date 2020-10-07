@@ -7,7 +7,7 @@ weight: '10'
 
 The JavaScript debugger provides you with numerous tools to help you closely examine and troubleshoot your JavaScript code. The JavaScript debugger uses its own Debug perspective (see [About the Debug perspective](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/About_the_Debug_perspective/)) so that debugging tasks are separated from development tasks.
 
-Before you can use the debugger, you will need to install it into your web browser. (See [Installing the JavaScript debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Installing_the_JavaScript_debugger/).) Currently, the debugger only works with Firefox and Internet Explorer, although it will be compatible with other browsers in the future.
+Before you can use the debugger, you will need to install it into your web browser. (See [Installing the JavaScript debugger](#undefined).) Currently, the debugger only works with Firefox and Internet Explorer, although it will be compatible with other browsers in the future.
 
 Unless you are using a third-party debugging tool, you will most likely do your debugging in Eclipse or Studio via the Debug Perspective. The Debug Perspective is a perspective that is separate from the development perspective that you will likely use for most of your programming work.
 
@@ -42,10 +42,6 @@ Some of the features that can help you with your debugging are listed below:
 * [Debugger Troubleshooting](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Debugger_Troubleshooting/)
 
 * [Getting started with Studio Debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Getting_started_with_Studio_Debugger/)
-
-* [Installing the Internet Explorer debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Installing_the_Internet_Explorer_debugger/)
-
-* [Installing the JavaScript debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Installing_the_JavaScript_debugger/)
 
 * [Running the debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Running_the_debugger/)
 

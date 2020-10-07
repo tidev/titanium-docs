@@ -86,7 +86,7 @@ You need to create an Android emulator or setup Genymotion before running these 
 
 * To create an Android emulator, see [Native Android Debugging and Testing Tools: Creating an emulator](/guide/Titanium_SDK/Titanium_SDK_How-tos/Debugging_and_Profiling/Native_Android_Debugging_and_Testing_Tools/#creating-an-emulator).
 
-* To setup Genymotion, see [Installing Genymotion](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Genymotion/).
+* To setup Genymotion, see [Installing Genymotion](#undefined).
 
 To build for an emulator, run `appc run -p android`. Because no other options were specified, the CLI launches your default Android emulator and installs the application on it.
 

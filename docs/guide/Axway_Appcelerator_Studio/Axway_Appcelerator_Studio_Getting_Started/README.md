@@ -23,13 +23,11 @@ As part of the getting-started process, you go through the following steps:
 
 If you're coming from the background of Aptana Studio or Titanium Studio, please check the comparison [here](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Studio_Feature_Comparison/). However, Titanium Studio is replaced with the Appcelerator Studio to support enterprise and professional mobile app development features.
 
-If your work is primarily web application development, we recommend installing the standalone [Aptana Studio](http://www.aptana.com/products/studio3/download); if your work also involves Java development, we recommend installing [Aptana Studio as an Eclipse plugin](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Plugging_Studio_into_an_existing_Eclipse_configuration/).
+If your work is primarily web application development, we recommend installing the standalone [Aptana Studio](http://www.aptana.com/products/studio3/download); if your work also involves Java development, we recommend installing [Aptana Studio as an Eclipse plugin](#undefined).
 
 Have an older version of Appcelerator Studio installed? Please review [Updating the Current Version](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Updating_Studio/Updating_the_Current_Version/).
 
 ## Chapters
-
-* [Plugging Studio into an existing Eclipse configuration](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Plugging_Studio_into_an_existing_Eclipse_configuration/)
 
 * [Downloading and Installing Studio](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Downloading_and_Installing_Studio/)
 
@@ -37,14 +35,6 @@ Have an older version of Appcelerator Studio installed? Please review [Updating 
 
 * [Studio Feature Comparison](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Studio_Feature_Comparison/)
 
-* [Installing the Android Development Tools](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Installing_the_Android_Development_Tools/)
-
 * [Installing the Java Development Tools](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Installing_the_Java_Development_Tools/)
 
-* [Adding PHP Ruby or Python Support](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Adding_PHP_Ruby_or_Python_Support/)
-
-* [Aptana Core Release Notes](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Aptana_Core_Release_Notes/)
-
 * [Legal and Licensing](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Legal_and_Licensing/)
-
-* [Appcelerator Studio Getting Started](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Appcelerator_Studio_Getting_Started/)

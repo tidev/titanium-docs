@@ -43,7 +43,7 @@ In the **Project Location** window, you'll need to fill in the following fields:
 
 * **Deployment Targets**: you can create a single project to target.
 
-* **Enable Axway Appcelerator Platform Services**: Toggle to enable or disable app features such as [Cloud](/guide/AMPLIFY_Appcelerator_Services/), [Analytics](/guide/AMPLIFY_Appcelerator_Services/AMPLIFY_Appcelerator_Services_Guide/Appcelerator_Analytics/), and [Hyperloop](/guide/Titanium_SDK/Titanium_SDK_Guide/Hyperloop/).
+* **Enable Axway Appcelerator Platform Services**: Toggle to enable or disable app features such as [Cloud](/guide/AMPLIFY_Appcelerator_Services/), [Analytics](/guide/AMPLIFY_Appcelerator_Services/AMPLIFY_Appcelerator_Services_Guide/AMPLIFY_Appcelerator_Analytics/), and [Hyperloop](/guide/Titanium_SDK/Titanium_SDK_Guide/Hyperloop/).
 
 Once filling in these fields, Studio will create a default project structure for you based on the given meta-information.
 

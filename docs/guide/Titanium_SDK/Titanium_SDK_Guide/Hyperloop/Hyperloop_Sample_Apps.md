@@ -1,6 +1,6 @@
 ---
 title: Hyperloop Sample Apps
-weight: '40'
+weight: '30'
 ---
 
 # Hyperloop Sample Apps

@@ -46,7 +46,7 @@ Titanium uses the settings in the `tiapp.xml` file to package your project. Some
 
 1. Open the project's `tiapp.xml` file.
 
-2. Locate the <name> element. The node text of the element must match the name of the application in the Windows Dev Center.
+2. Locate the `<name>` element. The node text of the element must match the name of the application in the Windows Dev Center.
 
 3. Locate the `<publisher>` element. The node text of the element must match the _Publisher display name_ of your Microsoft Developer account.
 

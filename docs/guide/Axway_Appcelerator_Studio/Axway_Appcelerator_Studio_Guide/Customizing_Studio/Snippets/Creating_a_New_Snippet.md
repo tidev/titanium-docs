@@ -10,7 +10,7 @@ weight: '10'
 Users can create new templates or modify existing snippets to allow easy creation of default content.
 
 ::: warning ⚠️ Warning
-We assume you've [created a new Ruble](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Rubles/Creating_a_new_Ruble/) as a placeholder for the following content
+We assume you've [created a new Ruble](#undefined) as a placeholder for the following content
 :::
 
 ## Creating a new snippet
@@ -121,7 +121,7 @@ Adding a scope means that the snippet will only show up in certain editors or la
 
 Note that this snippet is now only available in JavaScript files. A list of scopes is available here: [Current Theme Scopes](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Themes/Current_Theme_Scopes/)
 
-The [Ruble Specification](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Rubles/Ruble_Specification/) gives a complete discussion on the new Ruble scripting system in Studio.
+The [Ruble Specification](#undefined) gives a complete discussion on the new Ruble scripting system in Studio.
 
 ### Adding a snippet to a menu
 

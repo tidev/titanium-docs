@@ -11,6 +11,7 @@ magnetometer. The Core Motion module allows you to access the metrics provided b
 For instruction and examples of using the Core Motion Module, see the
 [Core Motion Module guide](http://docs.appcelerator.com/platform/latest/#!/guide/Core_Motion_Module).
 
+
 ### Requirements
 
 This module only works with devices running iOS 7 and later. Not all devices have the same hardware sensors,
@@ -24,6 +25,7 @@ Some features may require permission to use "Motion Activity". iOS requires the 
 use the "Motion Activity" permission. When the application uses the Core Motion API for the first
 time, iOS prompts the user to either approve or deny access to the Core Motion features of the
 device. The user can change the permission settings with **Settings** > **Privacy**.
+
 
 ### Getting Started
 

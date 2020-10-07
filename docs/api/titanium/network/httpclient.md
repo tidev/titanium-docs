@@ -101,13 +101,28 @@ the client and server.
 In Titanium, if a connection with TLS 1.2 fails, Titanium will re-attempt the connection with
 TLS 1.1 and TLS 1.0. By default, TLS 1.2 is attempted first.
 
-Use the <Titanium.Network.HTTPClient.tlsVersion> property to set the version of the TLS protocol
+On Android, use the <Titanium.Network.HTTPClient.tlsVersion> property to set the version of the TLS protocol
 if you know the version the server is running.  If you do not know, do not set this property.
-Titanium will not fallback with a lower TLS version if the `tlsVersion` property is set.
+
+On iOS, add the `NSExceptionMinimumTLSVersion` key in the `<plist>` section of `tiapp.xml` to set a minimum TLS version. 
+See following example:
+
+```
+<key>NSAppTransportSecurity</key>
+<dict>
+  <key>NSExceptionDomains</key>
+  <dict>
+    <key>www.appcelerator.com</key>
+    <dict>
+      <key>NSExceptionMinimumTLSVersion</key>
+      <string>TLSv1.3</string>
+    </dict>
+  </dict>
+</dict>
+```  
+Titanium will not fallback with a lower TLS version if the `tlsVersion` property in android or `NSExceptionMinimumTLSVersion` in iOS, is set.
 Setting the TLS version saves time from re-attempting connections with lower TLS versions and
 provides added security by denying attempts to use lower TLS versions.
-
-You can set the TLS version for the Android and iOS platforms.
 
 ### Caching Data
 
@@ -125,6 +140,34 @@ cookie stores using the methods <Titanium.Network.addHTTPCookie>, <Titanium.Netw
 <Titanium.Network.getHTTPCookies>, <Titanium.Network.getHTTPCookiesForDomain>, <Titanium.Network.getSystemCookies>,
 <Titanium.Network.removeHTTPCookie>, <Titanium.Network.removeHTTPCookiesForDomain>, <Titanium.Network.removeAllHTTPCookies>,
 <Titanium.Network.removeSystemCookie>, <Titanium.Network.removeAllSystemCookies>.
+
+### Connect to local network in iOS
+
+On iOS 14 and later, while connecting to local network a prompt will be shown to request user's permission.
+Add key `NSLocalNetworkUsageDescription` to the `ios plist` section of the tiapp.xml file to show the message on prompt.
+If this key is not added default message will be shown in prompt.
+
+Example:
+
+``` xml
+<ti:app>
+  <!-- ... -->
+  <ios>
+    <plist>
+      <dict>
+        <!-- Reason to access local network-->
+        <key>NSLocalNetworkUsageDescription</key>
+        <string>
+            Specify the reason for accessing the local network.
+            This appears in the alert dialog when asking the user 
+            for permission to access local network.
+        </string>
+      </dict>
+    </plist>
+  </ios>
+  <!-- ... -->
+</ti:app>
+```
 
 ## Examples
 

@@ -1,6 +1,6 @@
 ---
 title: Alloy Tasks
-weight: '70'
+weight: '60'
 ---
 
 # Alloy Tasks

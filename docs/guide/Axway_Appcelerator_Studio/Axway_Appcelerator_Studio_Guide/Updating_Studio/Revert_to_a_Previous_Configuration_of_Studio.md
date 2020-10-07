@@ -1,6 +1,6 @@
 ---
 title: Revert to a Previous Configuration of Studio
-weight: '110'
+weight: '100'
 ---
 
 # Revert to a Previous Configuration of Studio

@@ -1,6 +1,6 @@
 ---
 title: Hyperloop FAQ
-weight: '50'
+weight: '40'
 ---
 
 # Hyperloop FAQ

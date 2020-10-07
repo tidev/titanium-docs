@@ -621,7 +621,6 @@ appc login [options]
 | Option | Description |
 | --- | --- |
 | `-H, --host <HOST_SERVER>` | Host for login. |
-| `-t, --token <TOKEN>` | Login using a generated token. |
 
 ### Logout
 

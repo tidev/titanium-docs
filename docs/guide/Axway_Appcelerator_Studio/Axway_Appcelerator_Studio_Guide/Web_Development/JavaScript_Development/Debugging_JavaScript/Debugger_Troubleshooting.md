@@ -21,4 +21,4 @@ It is compatible with Firefox 3+ and Firebug 1.7+
 
 ## Internet Explorer (IE) Users
 
-Go to [Installing the Internet Explorer debugger](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/Debugging_JavaScript/Installing_the_Internet_Explorer_debugger/).
+Go to [Installing the Internet Explorer debugger](#undefined).

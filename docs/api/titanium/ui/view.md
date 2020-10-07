@@ -211,6 +211,10 @@ When set to <Titanium.UI.iOS.CLIP_MODE_DEFAULT> or when this property is not set
 
 In earlier versions of Titanium Mobile, views had clipping enabled by default.
 
+### iOS Animation on shadow associated with view
+
+If `borderRadius` property has multiple values, animation on shadow associated with the view will not work.
+
 ## Examples
 
 ### Round View Example

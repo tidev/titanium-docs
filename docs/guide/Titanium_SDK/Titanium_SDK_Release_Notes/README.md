@@ -5,100 +5,60 @@ weight: '40'
 
 # Titanium SDK Release Notes
 
-## Titanium SDK 9.0.3.GA - 10 June 2020
+## Titanium SDK 9.2.1.GA - 6 October 2020
 
 ### About this release
 
-Titanium SDK 9.0.3 is a patch release of the SDK, addressing high-priority issues from previous releases.
+Titanium SDK 9.2.1 is a patch release of the SDK, addressing high-priority issues from previous releases.
 
-As of this GA release, the previous Titanium SDK patch release (9.0.2) is no longer supported. End of support for this version will be 2020-12-10 or until the next patch release. Note: major and minor releases continue to be supported according to their nominal lifetime. See [Axway Appcelerator Deprecation Policy](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_deprecation_policy.html) and [Nominal Lifetimes](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_product_lifecycle.html#AxwayAppceleratorProductLifecycle-NominalLifetimes)documents for details.
+As of this GA release, the previous Titanium SDK minor release (9.2.0) is no longer supported. End of support for this version will be 2021-04-06 or until the next patch release. Note: major and minor releases continue to be supported according to their nominal lifetime. See [Axway Appcelerator Deprecation Policy](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_deprecation_policy.html) and [Nominal Lifetimes](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_product_lifecycle.html#AxwayAppceleratorProductLifecycle-NominalLifetimes) documents for details.
 
 ::: danger ❗️ Warning
 With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. Node 10.13.0 is the new minimum supported version.
 :::
-::: danger ❗️ Warning
-Deprecation Notice: The next major release of the Titanium CLI, version 6.0.0, will no longer support plugins and hooks for commands other than "appc ti clean", "ti clean", "appc run", and "ti build". Titanium CLI v6 will have a new plugin system with a new hook system and it will be incompatible with Titanium CLI v5 plugins and hooks. Please refer to [TIMOB-27233](https://jira.appcelerator.org/browse/TIMOB-27233) and [TIMOB-27255](https://jira.appcelerator.org/browse/TIMOB-27255) for more information.
-:::
-::: danger ❗️ Warning
-With the release of Titanium SDK 9.0.0, Windows platform will no longer be supported and has been removed from distribution in the SDK. Customers on Pro and Enterprise plans may continue to request critical fixes on SDK 8.x releases until August 18, 2020.
-:::
 
 ### Bug Fixes
 
-#### Android platform
-
-* [TIMOB-27573](https://jira.appcelerator.org/browse/TIMOB-27573) - Hiding/Showing progress indicator back-to-back puts it in a bad state as of 8.1.1 ([4e4b509](https://github.com/appcelerator/titanium_mobile/commit/4e4b5094a2d3bc2cabdf46798543fb4b291fa5ed))
-
-* [TIMOB-27776](https://jira.appcelerator.org/browse/TIMOB-27776) - NDK version 21 outputs "Bad file descriptor"
-
-* [TIMOB-27795](https://jira.appcelerator.org/browse/TIMOB-27795) - WebView crashes when given local HTML URL with parameters as of 8.1.0 ([5038295](https://github.com/appcelerator/titanium_mobile/commit/50382954eacaf5f7a30f2915a3cd1f7f549cef55))
-
-* [TIMOB-27830](https://jira.appcelerator.org/browse/TIMOB-27830) - TabGroup.titleColor has no effect ([#11741](https://github.com/appcelerator/titanium_mobile/pull/11741))
-
-* [TIMOB-27831](https://jira.appcelerator.org/browse/TIMOB-27831) - Implement TabGroup.tintColor ([#11741](https://github.com/appcelerator/titanium_mobile/pull/11741))
-
-* [TIMOB-27904](https://jira.appcelerator.org/browse/TIMOB-27904) - Incremental build duplicates "bootstrap.json" entries as of 8.1.0 ([5ab9a5a](https://github.com/appcelerator/titanium_mobile/commit/5ab9a5a54f88922fc233c221ccafb1389d7e3854))
-
-* [TIMOB-27911](https://jira.appcelerator.org/browse/TIMOB-27911) - ActiveTab not highlighted ([#11741](https://github.com/appcelerator/titanium_mobile/pull/11741))
-
-* [TIMOB-27912](https://jira.appcelerator.org/browse/TIMOB-27912) - chrome devtools URL is no longer valid ([edcb376](https://github.com/appcelerator/titanium_mobile/commit/edcb37672b058678819b3a3e6efdf03205e770f0))
-
-* [TIMOB-27939](https://jira.appcelerator.org/browse/TIMOB-27939) - Module builds should auto-download NDK r21c by default if needed
-
-* allow Tab barColor to be set ([98718ac](https://github.com/appcelerator/titanium_mobile/commit/98718acd44f71c074e6dbd83ee9d27a4ef6ac95f))
-
 #### iOS platform
 
-* [TIMOB-27847](https://jira.appcelerator.org/browse/TIMOB-27847) - Implement Tab tintColor and activeTintColor ([#11741](https://github.com/appcelerator/titanium_mobile/pull/11741))
+* [TIMOB-28127](https://jira.appcelerator.org/browse/TIMOB-28127) - TiUIListItemProxy overreleased causing intermittent crashing w/ macOS ([6d22e29](https://github.com/appcelerator/titanium_mobile/commit/6d22e297bb686afa974c0701c578265557acc2e0))
 
-* [TIMOB-27898](https://jira.appcelerator.org/browse/TIMOB-27898) - Race condition in setTimeout/clearTimeout (regression) ([bbba4cd](https://github.com/appcelerator/titanium_mobile/commit/bbba4cd46aa0a4d5b3ca94c939db176efe27652c))
+* [TIMOB-28156](https://jira.appcelerator.org/browse/TIMOB-28156) - Module build failing for modules not having platform directory ([c4d90fe](https://github.com/appcelerator/titanium_mobile/commit/c4d90fe0e1cc65f7481c5e715182f0f73f28048f))
 
-* [TIMOB-27903](https://jira.appcelerator.org/browse/TIMOB-27903) - APSHTTPRequest dealloc logged when using http calls ([14c98df](https://github.com/appcelerator/titanium_mobile/commit/14c98dfb1b316d33aa9daeb1cbacdcde348dd4a8))
+* [TIMOB-28150](https://jira.appcelerator.org/browse/TIMOB-28150) - Updating backgroundImage displays irrelavant image inbetween change ([de88803](https://github.com/appcelerator/titanium_mobile/commit/de88803637c7956aba8160fff7e6e1489830bf1b))
+
+* [TIMOB-28152](https://jira.appcelerator.org/browse/TIMOB-28152) - Compile error when SDK forces a rebuild ([9b516e4](https://github.com/appcelerator/titanium_mobile/commit/9b516e4e0163f89187b3ab1ddd2b0f750fad0893))
+
+* [TIMOB-27812](https://jira.appcelerator.org/browse/TIMOB-27812) - format js errors in cli output ([bc32947](https://github.com/appcelerator/titanium_mobile/commit/bc32947554f94acd51561e0bba4585c5a74c56b5))
+
+* [TIMOB-28151](https://jira.appcelerator.org/browse/TIMOB-28151) - Compile error if using Ti.Media APIs without openPhotoGallery ([c5d6d8d](https://github.com/appcelerator/titanium_mobile/commit/c5d6d8d2083db0cc18d03a7c67158101bafcae35))
+
+* [TIMOB-28158](https://jira.appcelerator.org/browse/TIMOB-28158) - Duplicate framework search paths ([35e4058](https://github.com/appcelerator/titanium_mobile/commit/35e4058784e5ad6c104cf6ea2b16f3887e8f58b9))
+
+* [TIMOB-28148](https://jira.appcelerator.org/browse/TIMOB-28148) - app crashes when updating tableview ([23c01db](https://github.com/appcelerator/titanium_mobile/commit/23c01db715a486898f401f68c2aa032550528176))
+
+* [TIMOB-28154](https://jira.appcelerator.org/browse/TIMOB-28154) - Build failing on 9.2.0 with Hyperloop
+
+* [TIMOB-28159](https://jira.appcelerator.org/browse/TIMOB-28159) - Building Swift module created with sdk < [9.2.0.GA](http://9.2.0.ga/) fails
+
+* [TIMOB-27812](https://jira.appcelerator.org/browse/TIMOB-27812) - Improve display of uncaught errors
 
 ### SDK Module Versions
 
 | Module | Android version | iOS Version |
 | --- | --- | --- |
-| facebook | 9.0.0 | 7.0.1 |
-| ti.cloudpush | 7.0.0 | n/a |
-| ti.map | 5.0.1 | 3.3.0 |
-| ti.webdialog | 2.0.0 | 1.2.0 |
+| facebook | 10.0.0 | 9.0.0 |
+| ti.cloudpush | 7.1.0 | n/a |
+| ti.map | 5.0.1 | 4.0.1 |
+| ti.webdialog | 2.0.0 | 2.0.0 |
 | ti.playservices | 17.1.1 | n/a |
-| ti.identity | 3.0.1 | 1.1.0 |
-| urlSession | n/a | 2.2.0 |
-| ti.coremotion | n/a | 2.1.0 |
-| ti.applesignin | n/a | 1.1.1 |
+| ti.identity | 3.0.2 | 2.0.0 |
+| urlSession | n/a | 3.0.0 |
+| ti.coremotion | n/a | 3.0.0 |
+| ti.applesignin | n/a | 2.0.0 |
 | ti.cloud | 3.2.11 | 3.2.11 |
-| hyperloop | 5.0.3 | 5.0.3 |
+| hyperloop | 6.0.2 | 6.0.2 |
 
 ### Recent Releases
 
-* [Titanium SDK 7.5.2.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.5.2.GA_Release_Note/)
-
-* [Titanium SDK 7.5.2.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.5.2.RC_Release_Note/)
-
-* [Titanium SDK 7.5.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.5.1.GA_Release_Note/)
-
-* [Titanium SDK 7.4.2.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.4.2.GA_Release_Note/)
-
-* [Titanium SDK 7.5.1.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.5.1.RC_Release_Note/)
-
-* [Titanium SDK 7.5.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.5.0.GA_Release_Note/)
-
-* [Titanium SDK 7.4.2.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.4.2.RC_Release_Note/)
-
-* [Titanium SDK 7.5.0.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.5.0.RC_Release_Note/)
-
-* [Titanium SDK 7.4.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.4.1.GA_Release_Note/)
-
-* [Titanium SDK 7.4.1.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.4.1.RC_Release_Note/)
-
-* [Titanium SDK 7.4.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.4.0.GA_Release_Note/)
-
-* [Titanium SDK 7.4.0.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.4.0.RC_Release_Note/)
-
-* [Titanium SDK 7.3.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.3.1.GA_Release_Note/)
-
-* [Titanium SDK 7.3.1.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.3.1.RC_Release_Note/)
-
-* [Titanium SDK 7.3.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.3.0.GA_Release_Note/)
+Page not found: DA:Titanium SDK Release Notes 7.x.

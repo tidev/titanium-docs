@@ -8,7 +8,7 @@ weight: '40'
 This walkthrough will instruct you on how to create a new web project and get started with your coding using a pre-documented JavaScript library. For this example, we will use jQuery.
 
 ::: warning ⚠️ Warning
-The library you are using must have either a [JSCA 1.0 Specification](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/SDK/Specifications/JSCA_1.0_Specification/) file, be documented using the [ScriptDoc](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/SDK/Specifications/ScriptDoc_(SDOC)_2.0_Specification/) spec, be documented using [VSDoc](http://weblogs.asp.net/bleroy/archive/2007/04/23/the-format-for-javascript-doc-comments.aspx) for JavaScript, or have an [Aptana Studio 2.X](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/SDK/Specifications/ScriptDoc_XML_(SDOCML)_2.0_Specification/) code assist XML file. If using the Studio 2.X XML code assist file, you need to change the file extension to .sdocml.
+The library you are using must have either a [JSCA 1.0 Specification](#undefined) file, be documented using the [ScriptDoc](#undefined) spec, be documented using [VSDoc](http://weblogs.asp.net/bleroy/archive/2007/04/23/the-format-for-javascript-doc-comments.aspx) for JavaScript, or have an [Aptana Studio 2.X](#undefined) code assist XML file. If using the Studio 2.X XML code assist file, you need to change the file extension to .sdocml.
 :::
 
 ## Accessing your projects

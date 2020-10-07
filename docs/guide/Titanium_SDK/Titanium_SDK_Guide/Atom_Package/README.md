@@ -7,7 +7,7 @@ weight: '60'
 
 ## Overview
 
-With the release of [SDK 7.0.0](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_7.x/Titanium_SDK_7.0.0.GA_Release_Note/), Axway Appcelerator introduces the Titanium package for **[Atom](https://atom.io/)**. The initial release includes the following features:
+With the release of [SDK 7.0.0](#undefined), Axway Appcelerator introduces the Titanium package for **[Atom](https://atom.io/)**. The initial release includes the following features:
 
 * Toolbar with quick access to build commands and code signing assistance
 

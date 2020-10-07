@@ -45,7 +45,7 @@ Before debugging, you must have created a Titanium project with an Android deplo
 
 The application will launch on the device and you can use the **Debug** perspective to start debugging your application.
 
-After you have launched one debug session for a given application, Studio creates a launch configuration for you, named **Titanium Android Device - _AppName_**. You can select this launch configuration, after launching the **Debug Configuration** wizard by select **Debug Configurations** from the **Target** drop-down list, to skip the wizard and start a new debug session using the same parameters.
+After you have launched one debug session for a given application, Studio creates a launch configuration for you, named **Titanium Android Device - _AppName_** . You can select this launch configuration, after launching the **Debug Configuration** wizard by select **Debug Configurations** from the **Target** drop-down list, to skip the wizard and start a new debug session using the same parameters.
 
 To change the SDK version that the application is built against:
 

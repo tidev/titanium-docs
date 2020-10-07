@@ -23,7 +23,7 @@ As an additional note, you need to make sure the path to your Studio workspace d
 
 Creating a new module is accomplished by running through a wizard. Below summarizes the properties required, and a description of the values.
 
-<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>Property</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>Description/Purpose</p></td></tr><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>moduleid</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>This is a read-only module id of your module that is generated when you created your project. You should not edit this value.</p><div class="confbox admonition admonition-note aui-message warning shadowed information-macro"><p>You must generate a unique id. We recommend using your reverse-DNS company name + module_name as a pattern to guarantee uniqueness. The Titanium Marketplace will only allow unique module ids when distributing modules. If you must edit this value, you must also edit the value in your module implementation file.</p></div></td></tr><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>version</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>This is the version of your module. You should change this value each time you make major changes and distribute them. Version should be in the dotted notation (X.Y.Z) and must not con-tain any spaces or non-number characters.</p></td></tr><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>description</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>This is a human-readable description of your module. It should be short and suitable for display next to your module name.</p></td></tr><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>author</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>This is a human-readable author name you want to display next to your module. It can simply be your personal name or an organizational name such as "Appcelerator".</p></td></tr><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>license</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>This is a human-readable name of your license. You should use a short description such as "Apache Public License" or "Commercial".</p></td></tr><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>copyright</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>This is a human-readable copyright string for your module. For example, "Copyright (c) 2010 by Appcelerator, Inc."</p></td></tr></tbody></table>
+<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>Property</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>Description/Purpose</p></td></tr><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>moduleid</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>This is a read-only module id of your module that is generated when you created your project. You should not edit this value.</p><div class="confbox admonition admonition-note aui-message warning shadowed information-macro"><p>You must generate a unique id. We recommend using your reverse-DNS company name + module_name as a pattern to guarantee uniqueness. If you must edit this value, you must also edit the value in your module implementation file.</p></div></td></tr><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>version</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>This is the version of your module. You should change this value each time you make major changes and distribute them. Version should be in the dotted notation (X.Y.Z) and must not con-tain any spaces or non-number characters.</p></td></tr><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>description</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>This is a human-readable description of your module. It should be short and suitable for display next to your module name.</p></td></tr><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>author</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>This is a human-readable author name you want to display next to your module. It can simply be your personal name or an organizational name such as "Appcelerator".</p></td></tr><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>license</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>This is a human-readable name of your license. You should use a short description such as "Apache Public License" or "Commercial".</p></td></tr><tr><td class="confluenceTh" rowspan="1" colspan="1"><p>copyright</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>This is a human-readable copyright string for your module. For example, "Copyright (c) 2010 by Appcelerator, Inc."</p></td></tr></tbody></table>
 
 ### Module Creation Steps
 
@@ -82,25 +82,3 @@ If you see this, you need to add android.ndk to the build.properties file. Set i
 ## Using Your Module
 
 Follow the instructions in [Using Titanium Modules](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Titanium_Development/Titanium_Modules/Using_Titanium_Modules/) for more information.
-
-## Uploading your Module to the Marketplace
-
-To distribute your module through the Titanium+Plus Marketplace, you'll first need to package normally. Once you have tested your module locally and are ready to distribute it, you can then submit it to the marketplace for distribution. There are several prerequisites you'll need before you can distribute:
-
-* You must have a valid Appcelerator developer account.
-
-* You must have fully completed filling our your manifest values.
-
-* You must have a valid license text in the LICENSE file in your project.
-
-* You must have a valid documentation file in the index.md file in your documentation directory of your project.
-
-* You must specify some additional metadata upon upload such as the price (which can be free).
-
-* If you are charging for your module, you must establish a payment setup with Appcelerator so we can pay you.
-
-* You must accept the Titanium+Plus Marketplace terms of service agreement.
-
-* Once you have upload your module and completed the necessary submission steps, your module will be queued for submission and availability in the marketplace directory.
-
-Start by visiting the [Open Module Marketplace](https://marketplace.appcelerator.com).

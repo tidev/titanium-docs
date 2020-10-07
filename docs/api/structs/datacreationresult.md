@@ -1,0 +1,5 @@
+# DataCreationResult
+
+<TypeHeader/>
+
+<ApiDocs/>

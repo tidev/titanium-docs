@@ -33,7 +33,7 @@ A [nice one-page cheat sheet](http://www.scribd.com/doc/10040039/ScriptDoc-Cheat
 
 * The first line in the block, except for file overviews, should be a short description of the function or class.
 
-* After the description, add [tags](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/SDK/Specifications/ScriptDoc_(SDOC)_2.0_Specification/) that explain the function, including a description, what parameters it takes, and its return type. You can also use the [ScriptDoc tag quick reference](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/ScriptDoc_tag_quick_reference/) to quickly lookup a tag once you are familiar with the syntax for each tag.
+* After the description, add [tags](#undefined) that explain the function, including a description, what parameters it takes, and its return type. You can also use the [ScriptDoc tag quick reference](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/ScriptDoc_tag_quick_reference/) to quickly lookup a tag once you are familiar with the syntax for each tag.
 
 ## Example: A basic documentation block for a getFoo() function
 
@@ -101,6 +101,6 @@ Add your tags in the following order, as appropriate:
 
 * [About Content Assist](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Basic_Concepts/Content_Assist/About_Content_Assist/)
 
-* [ScriptDoc (SDOC) 2.0 Specification](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/SDK/Specifications/ScriptDoc_(SDOC)_2.0_Specification/)
+* [ScriptDoc (SDOC) 2.0 Specification](#undefined)
 
 * [ScriptDoc tag quick reference](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Web_Development/JavaScript_Development/ScriptDoc_tag_quick_reference/)

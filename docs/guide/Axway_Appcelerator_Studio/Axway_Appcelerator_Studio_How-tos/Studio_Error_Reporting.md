@@ -1,6 +1,6 @@
 ---
 title: Studio Error Reporting
-weight: '50'
+weight: '30'
 ---
 
 # Studio Error Reporting

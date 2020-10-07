@@ -1,6 +1,6 @@
 ---
 title: Appcelerator CLI 8.0.0.GA  - 18 March 2020
-weight: '10'
+weight: '30'
 ---
 
 # Appcelerator CLI 8.0.0.GA - 18 March 2020

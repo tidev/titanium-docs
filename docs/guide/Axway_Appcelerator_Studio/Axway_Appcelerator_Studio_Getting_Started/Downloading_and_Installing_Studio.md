@@ -1,6 +1,6 @@
 ---
 title: Downloading and Installing Studio
-weight: '20'
+weight: '10'
 ---
 
 # Downloading and Installing Studio
@@ -9,7 +9,7 @@ weight: '20'
 
 This page describes how to download and install the IDE if you do not already have Eclipse installed.
 
-* Eclipse users: download and extract the appropriate installer for Studio at [Plugging Studio into an existing Eclipse configuration](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Plugging_Studio_into_an_existing_Eclipse_configuration/)
+* Eclipse users: download and extract the appropriate installer for Studio at [Plugging Studio into an existing Eclipse configuration](#undefined)
 
 * Standalone Studio users: Complete the instructions on this page
 

@@ -128,7 +128,7 @@ import Module from '$MODULE_ID'
 import Map from 'ti.map'
 ```
 
-Finally, you'll use the module's object, properties, and methods to enable its features and functionality. Each module distributed in the Marketplace should include documentation and a sample app that demonstrates the basic use of the module. That information would be a great place to start with learning how to use a specific module.
+Finally, you'll use the module's object, properties, and methods to enable its features and functionality. Each module should include documentation and a sample app that demonstrates the basic use of the module. That information would be a great place to start with learning how to use a specific module.
 
 ## Example Module Use
 

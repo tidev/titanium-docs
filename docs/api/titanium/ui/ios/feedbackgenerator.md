@@ -12,7 +12,7 @@ iOS manages the strength and behavior of this feedback.
 There are three different kind of feedback generators that can be used for different interaction scenarios:
  
   1. **Selection Feedback**: Indicates that a task or action, such as depositing a check or unlocking a vehicle, has completed,
-     failed, or produced a warning of some kind.. This feedback type can be used when specifying the
+     failed, or produced a warning of some kind. This feedback type can be used when specifying the
      <Titanium.UI.iOS.FEEDBACK_GENERATOR_TYPE_SELECTION> constant in the `type` property of the feedback generator.
 
   2. **Impact Feedback**: Provides a physical metaphor that complements the visual experience. For example, the user might feel
@@ -20,7 +20,7 @@ There are three different kind of feedback generators that can be used for diffe
      <Titanium.UI.iOS.FEEDBACK_GENERATOR_TYPE_IMPACT> constant in the `type` property of the feedback generator. Note that if you use
      this generator type, you also have to specify the `style` property that can be one of the
      <Titanium.UI.iOS.FEEDBACK_GENERATOR_IMPACT_STYLE_LIGHT>, <Titanium.UI.iOS.FEEDBACK_GENERATOR_IMPACT_STYLE_MEDIUM> or
-     <Titanium.UI.iOS.FEEDBACK_GENERATOR_IMPACT_STYLE_HEAVY> constant.
+     <Titanium.UI.iOS.FEEDBACK_GENERATOR_IMPACT_STYLE_HEAVY> constants.
 
   3. **Notification Feedback**: Indicates that the selection is actively changing. For example, the user feels light taps while
      scrolling a picker wheel. This feedback is intended for communicating movement through a series of discrete values, not

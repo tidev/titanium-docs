@@ -13,8 +13,6 @@ This document contains links for Alloy guide documents.
 
 * [Alloy Models](/guide/Alloy_Framework/Alloy_Guide/Alloy_Models/)
 
-* [Alloy Test Apps](/guide/Alloy_Framework/Alloy_Guide/Alloy_Test_Apps/)
-
 * [Alloy Views](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/)
 
 * [Alloy Widgets](/guide/Alloy_Framework/Alloy_Guide/Alloy_Widgets/)

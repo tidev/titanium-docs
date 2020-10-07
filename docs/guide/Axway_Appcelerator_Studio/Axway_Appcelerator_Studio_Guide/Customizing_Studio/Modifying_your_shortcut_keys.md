@@ -84,7 +84,7 @@ Rubles do not currently allow associated key commands to be changed using the re
 
 3. Open up the bundle project, and find the command of interest under the "commands" folder. In general, the command file name will be reflective of the command in the menu.
 
-4. Edit (or add) the key\_binding section as part of the command. If you need to use modifier keys, see the reference [Ruble Specification](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Rubles/Ruble_Specification/) on how to specify keys such as Command, Shift, Option, and Control.
+4. Edit (or add) the key\_binding section as part of the command. If you need to use modifier keys, see the reference [Ruble Specification](#undefined) on how to specify keys such as Command, Shift, Option, and Control.
 
 5. Restart Studio. Your new key bindings should be in effect.
 

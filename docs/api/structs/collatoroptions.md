@@ -1,0 +1,5 @@
+# CollatorOptions
+
+<TypeHeader/>
+
+<ApiDocs/>

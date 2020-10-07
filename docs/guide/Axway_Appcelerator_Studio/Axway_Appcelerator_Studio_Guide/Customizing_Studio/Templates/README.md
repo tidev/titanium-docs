@@ -1,6 +1,6 @@
 ---
 title: Templates
-weight: '80'
+weight: '70'
 ---
 
 # Templates

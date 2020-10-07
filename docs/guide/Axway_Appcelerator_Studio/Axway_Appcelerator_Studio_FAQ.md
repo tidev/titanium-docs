@@ -1,6 +1,6 @@
 ---
 title: Axway Appcelerator Studio FAQ
-weight: '60'
+weight: '50'
 ---
 
 # Axway Appcelerator Studio FAQ
@@ -337,7 +337,7 @@ See [Using Studio From Behind a Proxy](/guide/Axway_Appcelerator_Studio/Axway_Ap
 
 ## How do I install Android Development Tools with Studio?
 
-See [Installing the Android Development Tools](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Installing_the_Android_Development_Tools/) for details.
+See [Installing the Android Development Tools](#undefined) for details.
 
 ## How do I install Java Development Tools with Studio?
 
@@ -345,7 +345,7 @@ See [Installing the Java Development Tools](/guide/Axway_Appcelerator_Studio/Axw
 
 ## How do I extend Studio?
 
-See [Extending Studio](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/SDK/Extending_Studio/) and select the document that is appropriate for your situation.
+See [Extending Studio](#undefined) and select the document that is appropriate for your situation.
 
 ## Can I add source control to Studio?
 

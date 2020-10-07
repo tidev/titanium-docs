@@ -5,7 +5,7 @@
 ## Overview
 
 | Android | iOS | Windows |
-| --- | --- | --- |
+| ------- | --- | ------- |
 | ![Android](./textfield_android.png) | ![iOS](./textfield_ios.png) | ![Windows](./textfield_wp.png) |
 
 Use the <Titanium.UI.createTextField> method or **`<TextField>`** Alloy element to create a text field.

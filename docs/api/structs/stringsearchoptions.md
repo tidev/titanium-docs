@@ -1,0 +1,5 @@
+# StringSearchOptions
+
+<TypeHeader/>
+
+<ApiDocs/>

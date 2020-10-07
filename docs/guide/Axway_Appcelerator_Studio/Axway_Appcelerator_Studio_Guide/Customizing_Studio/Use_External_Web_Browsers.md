@@ -1,6 +1,6 @@
 ---
 title: Use External Web Browsers
-weight: '120'
+weight: '110'
 ---
 
 # Use External Web Browsers

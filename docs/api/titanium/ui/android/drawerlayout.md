@@ -56,4 +56,33 @@ win.add(drawer);
 win.open();
 ```
 
+### Alloy DrawerLayout example
+
+The following code shows an Alloy version of the drawer-layout.
+``` xml
+<Alloy>
+    <Window class="container">
+        <ActionBar platform="android" displayHomeAsUp="true" onHomeIconItemSelected="onClickDrawer" />
+        <DrawerLayout id="drawer" platform="android">
+            <LeftView>
+                <View backgroundColor="#fff"></View>
+            </LeftView>
+            <CenterView>
+                <View>
+                    <Label text="Center view" />
+                </View>
+            </CenterView>
+        </DrawerLayout>
+    </Window>
+</Alloy>
+```
+
+``` js
+function onClickDrawer(e){
+    $.drawer.toggleLeft();
+}
+
+$.index.open();
+```
+
 <ApiDocs/>

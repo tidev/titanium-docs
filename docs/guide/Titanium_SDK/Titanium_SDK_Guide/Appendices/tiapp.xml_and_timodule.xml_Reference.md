@@ -95,7 +95,7 @@ On Android, if you change the name to a value that starts with a digit, you need
 
 ### analytics
 
-Whether or not to automatically collect analytics for this application. Enabled by default. See [Analytics Architecture](/guide/AMPLIFY_Appcelerator_Services/AMPLIFY_Appcelerator_Services_Guide/Appcelerator_Analytics/Analytics_Architecture/).
+Whether or not to automatically collect analytics for this application. Enabled by default. See [Analytics Architecture](/guide/AMPLIFY_Appcelerator_Services/AMPLIFY_Appcelerator_Services_Guide/AMPLIFY_Appcelerator_Analytics/Analytics_Architecture/).
 
 **Example: Enable Ti.Analytics**
 

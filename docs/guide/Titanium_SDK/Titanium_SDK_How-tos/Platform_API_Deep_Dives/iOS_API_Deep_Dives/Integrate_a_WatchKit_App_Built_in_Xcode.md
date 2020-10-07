@@ -23,10 +23,6 @@ A WatchKit app contains a specialized app extension that runs on either the Appl
 
 * Paired iOS devices must run iOS 9.0 or greater
 
-::: warning ⚠️ Warning
-As of SDK 6.0.0, the watchOS 1 template and all related code are no longer supported. See [TIMOB-20083](https://jira.appcelerator.org/browse/TIMOB-20083) for details.
-:::
-
 ## Create an Apple Watch Application
 
 **Using Studio**

@@ -5,8 +5,8 @@
 ## Overview
 
 | Android | iOS | Windows |
-| --- | --- | --- |
-| ![Android](./slider_android.png) | ![iOS](./slider_ios.png) | ![Windows](./slider_wp.png) | 
+| ------- | --- | ------- |
+| ![Android](./slider_android.png) | ![iOS](./slider_ios.png) | ![Windows](./slider_wp.png) |
 
 A slider lets the user select from a range of values by dragging the slider thumb.
 

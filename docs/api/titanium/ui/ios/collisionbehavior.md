@@ -22,7 +22,7 @@ The following example creates many blocks scattered across the top of the window
 start falling after the window opens.  The item and boundary collisions are reported to the
 console.
 
-![Collision](./collision.gif)
+<img src="./collision.gif" height="455" style="border:1px solid black"/>
 
 ``` js
 var win = Ti.UI.createWindow({backgroundColor: 'white', fullscreen: true});
