@@ -1,3 +1,7 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
 .landing
   .content:not(.custom)
     > *:first-child
@@ -6,7 +10,7 @@
     display flex
     align-items center
     justify-content: space-between
-    transition background-color .5s ease, border-color .5s ease, heigth .5s ease
+    transition background-color .3s ease, border-color .3s ease, heigth .3s ease
     .links
       position relative
       top 0
@@ -34,6 +38,12 @@
     max-width none
     padding 0
     margin 0
+    .container
+      padding-right 2rem
+      padding-left 2rem
+      @screen md
+        padding-right 1rem
+        padding-left 1rem
 
   .landing-content
     max-width 936px

@@ -125,6 +125,7 @@ module.exports = {
     'versioning',
     'apidocs',
     '@vuepress/back-to-top',
+    '@silvanite/tailwind',
     require('./guides-content-sidebar') // Show right-hand sidebar for in-page headers in guides
   ],
   chainWebpack(config) {

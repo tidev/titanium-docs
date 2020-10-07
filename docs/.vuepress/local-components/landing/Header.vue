@@ -4,17 +4,34 @@
       <div class="bottom" />
       <div class="top" />
     </div>
-    <div class="landing-content hero">
-      <div class="hero-left">
-        <h1>Native iOS-, Android- and Windows Apps with JavaScript</h1>
-        <a href="guide" class="nav-link action-button">Get Started</a>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-4 mt-16 mb-2">
+      <div class="md:col-span-7 lg:col-span-5 flex flex-col justify-center sm:text-center md:text-left">
+        <h1>Write in JavaScript.<br>Run native everywhere.</h1>
+        <p class="text-xl pb-4">
+          Axway's Titanium lets you develop cross-platform native mobile applications and build great mobile experiences using JavaScript.
+        </p>
+        <div class="w-full flex items-start justify-center md:justify-start">
+          <a href="guide" class="btn btn-red btn-pill btn-lg">Get Started</a>
+          <a href="login" class="btn btn-red btn-pill btn-outline btn-lg ml-4">Login</a>
+        </div>
+        <framework-list />
       </div>
-      <div class="hero-right">
-        <img src="https://s3.amazonaws.com/www.appcelerator.com.images/slides-img_DevRant.png" />
+      <div class="md:col-span-5 lg:col-span-6 lg:col-start-7 flex flex-col justify-center relative">
+        <img :src="$withBase('images/home-hero-code.png')" class="invisible" />
+        <img :src="$withBase('images/home-hero-code.png')" class="hero-code" />
+        <img :src="$withBase('images/home-app-without-shadow.png')" class="hero-device" />
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import FrameworkList from './FrameworkList'
+
+export default {
+  components: { FrameworkList }
+}
+</script>
 
 <style lang="stylus">
 .landing-header
@@ -22,48 +39,32 @@
   overflow hidden
   padding-top 7rem
 
-  .hero
-    min-height 600px
-    display flex
-    position relative
-    .hero-left
-      width: 50%
-      display flex
-      flex-direction column
-      justify-content center
-      align-items center
-      text-align center
-    .hero-right
-      width 50%
-      display flex
-      align-items center
-      justify-content center
-    .action-button
-      background-color #B22128
-      display inline-block
-      font-size 1.2rem
-      color #fff
-      padding .8rem 1.6rem
-      border-radius 4px
-      transition background-color .1s ease
-      box-sizing border-box
-      &:hover
-        text-decoration none
-        background-color #9F1920
-
   .landing-background
     > div
       position: absolute
-      transform rotate(-30deg) skewX(5deg)
       border-radius 100px
-      top: -500px
-      width 1000px
       width calc(100vw - 400px)
       height 900px
       &.top
-        left 45%
-        background-image: linear-gradient(135deg, #B22128, #9F1920);
+        transform translate(70%, -550px) rotate(-45deg)
+        background-image: linear-gradient(135deg, #CA2127, #B1080E);
       &.bottom
-        left 55%
-        background-image: linear-gradient(90deg, #CC3B42, #B9333A);
+        transform translate(64%, -400px) rotate(-45deg)
+        height 700px
+        background-image: linear-gradient(90deg, #F3F4F6, #DADBDD);
+
+  .hero-code
+    backface-visibility: hidden;
+    border-radius: 0.5rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: perspective(48rem) rotate3d(0.25, 1, -0.6, 15deg);
+    width: 90%;
+
+  .hero-device
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    width: 46%;
 </style>
