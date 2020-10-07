@@ -130,7 +130,7 @@ When calling a callback from a module, the callback is invoked on the appropriat
 
 ### Packaged JavaScript and hybrid modules
 
-To package JavaScript as a native module, create a JavaScript module named <module-id>.js in the module's `assets` folder. The APIs exported by this module form the API of the packaged module.
+To package JavaScript as a native module, create a JavaScript module named `<module-id>.js` in the module's `assets` folder. The APIs exported by this module form the API of the packaged module.
 
 For Android and iOS modules, the module must be formatted as a CommonJS module.
 

@@ -169,7 +169,7 @@ To make it easier to debug your module, you can link the module to the test appl
 
 4. Click **Remove Reference**.
 
-5. Right-click the project name and select **Add Files to <PROJECT\_NAME>...**
+5. Right-click the project name and select **Add Files to PROJECT\_NAME...**
 
 6. In the dialog:
 
@@ -201,7 +201,7 @@ To use a third-party framework in your module, add the framework to the module's
 
 2. Open the module project (`ios/<PROJECT_NAME>.xcodeproj)`in **Xcode.**
 
-3. **Add the framework** to the project: Right-click the project name and select **Add File to <PROJECT\_NAME>...**
+3. **Add the framework** to the project: Right-click the project name and select **Add File to PROJECT\_NAME...**
 
 ::: tip 💡 Stripping unused architectures from dynamic frameworks
 For a proper app store submission, all used dynamic frameworks in the final app need to be stripped of unused architectures. To do so, our SDK will automatically integrate Realm's popular [strip-frameworks.sh](https://github.com/realm/realm-cocoa/blob/master/scripts/strip-frameworks.sh) script into the Xcode project. If any of the frameworks used in your module needs additional handling or scripts, you can instruct your users to create a custom script under `platform/ios/strip-frameworks.sh` inside the app project. If this file is present, the pre-bundled script from Realm will be ignored and the script inside the project will be used instead.
@@ -209,7 +209,7 @@ For a proper app store submission, all used dynamic frameworks in the final app 
 
 ## Bundle module assets
 
-To distribute module assets with your module distribution, you must place them in the `assets` directory of your project. Any assets within this folder (with the exception of JavaScript files) will be distributed and copied into the folder pattern "module/<moduleid>" in the application bundle. You can then load them using this relative path from your Objective-C code. For example, assuming you had a module image named "foo.png". You could load that using the following example:
+To distribute module assets with your module distribution, you must place them in the `assets` directory of your project. Any assets within this folder (with the exception of JavaScript files) will be distributed and copied into the folder pattern `module/<moduleid>` in the application bundle. You can then load them using this relative path from your Objective-C code. For example, assuming you had a module image named "foo.png". You could load that using the following example:
 
 ```objectivec
 NSString *path = [NSString stringWithFormat:@"modules/%@/foo.png",[self moduleId]];

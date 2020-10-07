@@ -104,7 +104,7 @@ For Windows users, execute the same commands without the `sudo` command within t
     appc login
     ```
 
-3. **Download and install [Studio](https://platform.appcelerator.com/#/product/studio)**. Installing Studio automatically installs all other prerequisite software.
+3. **Download and install [Studio](https://platform.appcelerator.com/#/product/studio)** . Installing Studio automatically installs all other prerequisite software.
 
 ## Appcelerator Studio is unable to install latest appc CLI due to proxy/network configuration issues
 
@@ -201,7 +201,7 @@ Please try following steps:
 
 3. **Copy the output** and open **`tiapp.xml`** file.
 
-4. **Find <guid> tag** and **replace the value** with the copied value from the terminal output.
+4. **Find `<guid>` tag** and **replace the value** with the copied value from the terminal output.
 
 5. **Clean your project** several times and build.
 
@@ -313,7 +313,7 @@ Linux systems require the GTK windowing system, Node.js, and the JDK to be insta
     appc setup
     ```
 
-3. **Download and install [Studio](https://platform.appcelerator.com/#/product/studio)**.
+3. **Download and install [Studio](https://platform.appcelerator.com/#/product/studio)** .
 
 ::: warning ⚠️ Warning
 Appcelerator Axway doesn't officially support Linux installs.

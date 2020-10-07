@@ -113,55 +113,55 @@ If set to true, excludes the bad i18n strings from the build and the build conti
 
 Path to the Android Asset Packaging Tool (appt) executable (including the executable name). If defined, the CLI will attempt to use this first before using the default location.
 
-**Default**: "android-sdk/build-tools/<version>/aapt" if the Android SDK path is known
+**Default**: `"android-sdk/build-tools/<version>/aapt"` if the Android SDK path is known
 
 #### android.executables.adb
 
 Path to the Android Debugger Bridge (adb) executable (including the executable name). If defined, the CLI will attempt to use this first before using the default location.
 
-**Default**: "android-sdk/platform-tools/adb" if the Android SDK path is known
+**Default**: `"android-sdk/platform-tools/adb"` if the Android SDK path is known
 
 #### android.executables.aidl
 
 Path to the `aidl` executable (including the executable name). If defined, the CLI will attempt to use this first before using the default location.
 
-**Default**: "android-sdk/build-tools/<version>/aidl" if the Android SDK path is known
+**Default**: `"android-sdk/build-tools/<version>/aidl"` if the Android SDK path is known
 
 #### android.executables.android
 
 Path to the Android (`android`) script (including the script name). If defined, the CLI will attempt to use this first before using the default location.
 
-**Default**: "android-sdk/tools/android" if the Android SDK path is known
+**Default**: `"android-sdk/tools/android"` if the Android SDK path is known
 
 #### android.executables.dx
 
 Path to the Dexer (`dx`) script (including the script name). If defined, the CLI will attempt to use this first before using the default location.
 
-**Default**: "android-sdk/build-tools/<version>/dx" if the Android SDK path is known
+**Default**: `"android-sdk/build-tools/<version>/dx"` if the Android SDK path is known
 
 #### android.executables.emulator
 
 Path to the Android Emulator (`emulator`) executable (including the executable name). If defined, the CLI will attempt to use this first before using the default location.
 
-**Default**: "android-sdk/tools/emulator" if the Android SDK path is known
+**Default**: `"android-sdk/tools/emulator"` if the Android SDK path is known
 
 #### android.executables.mksdcard
 
 Path to the `mksdcard` executable (including the executable name). If defined, the CLI will attempt to use this first before using the default location.
 
-**Default**: "android-sdk/tools/mksdcard" if the Android SDK path is known
+**Default**: `"android-sdk/tools/mksdcard"` if the Android SDK path is known
 
 #### android.executables.ndkbuild
 
 Path to the `ndk-build` script (including the script name). If defined, the CLI will attempt to use this first before using the default location.
 
-**Default**: "android-ndk/ndk-build" if the Android NDK path is known
+**Default**: `"android-ndk/ndk-build"` if the Android NDK path is known
 
 #### android.executables.zipalign
 
 Path to the `zipalign` executable (including the executable name). If defined, the CLI will attempt to use this first before using the default location.
 
-**Default**: "android-sdk/tools/zipalign" if the Android SDK path is known
+**Default**: `"android-sdk/tools/zipalign"` if the Android SDK path is known
 
 #### android.javac.maxmemory
 

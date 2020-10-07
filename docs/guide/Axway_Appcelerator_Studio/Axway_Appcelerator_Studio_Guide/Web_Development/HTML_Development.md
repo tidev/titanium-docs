@@ -70,7 +70,7 @@ The editor provides a code-assist mechanism that displays suggestions by the con
 
 ### Auto Indentation & Code Formatting
 
-Auto indentation is done as you type and move to a new line. For example, typing a new line after a '<html>' element will auto-indent the edit point in the new line.
+Auto indentation is done as you type and move to a new line. For example, typing a new line after a `<html>` element will auto-indent the edit point in the new line.
 
 Code formatting is an advanced feature that allows you to format your entire file as a post-editing action. The formatter is triggered by clicking Ctrl+Shif+F, or by selecting 'Source -> Format' in the editor's pop-up menu or top menu-bar.
 
