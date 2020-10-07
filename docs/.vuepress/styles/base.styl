@@ -1,0 +1,27 @@
+/* Re-apply some base styles that were overwritten by Tailwind */
+
+@css {
+  html {
+    line-height: 1.15
+  }
+
+  p, ul, dl {
+    @apply my-5
+  }
+
+  ul {
+    @apply list-disc
+  }
+
+  li > p {
+    @apply my-0
+  }
+
+  dl > dd {
+    @apply ml-8
+  }
+
+  hr {
+    @apply my-12
+  }
+}

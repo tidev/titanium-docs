@@ -8,17 +8,14 @@ Titanium SDK provides a root namespace object, [Titanium](/api/titanium/) as the
 This object is also frequently accessed by its alias, `Ti`.
 
 ``` js
-// explicitly access the namespace object
-const root = global.Titanium;
-// explicitly access to alias object
-const alias = global.Ti;
-// use implicit global reference
-const implicit = Titanium;
+const button = Titanium.UI.createButton({ title: 'Send' });
+// `Ti` convenience shorthand
+const win = Ti.UI.createWindow({ title: 'Home' });
 ```
 
-You'll find the APIs arranged around this root namespace in the sidebar.
+You'll find all APIs arranged under this root namespace. Browse the full list of available APIs via the sidebar to the left, check out the most frequently used ones in the groups below.
 
-It may also be useful to think of the APIs in broader groupings, such as:
+<ModuleGroups />
 
 ### User Interface
 
