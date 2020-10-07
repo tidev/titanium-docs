@@ -10,18 +10,25 @@ import {
   faCheckSquare,
   faDatabase,
   faEnvelope,
+  faExpandAlt,
   faFileAlt,
+  faGlobeAmericas,
   faImage,
+  faLanguage,
+  faLayerGroup,
   faMapMarkerAlt,
+  faMobileAlt,
   faPen,
   faShareAlt,
   faStar,
+  faStream,
   faSuitcase,
   faThLarge,
   faThList,
   faUnlockAlt,
   faUserFriends,
-  faUsers
+  faUsers,
+  faWifi
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faAt)
@@ -34,12 +41,18 @@ library.add(faCommentDots)
 library.add(faCheckSquare)
 library.add(faDatabase)
 library.add(faEnvelope)
+library.add(faExpandAlt)
 library.add(faFileAlt)
+library.add(faGlobeAmericas)
 library.add(faImage)
+library.add(faLayerGroup)
+library.add(faLanguage)
 library.add(faMapMarkerAlt)
+library.add(faMobileAlt)
 library.add(faPen)
 library.add(faShareAlt)
 library.add(faStar)
+library.add(faStream)
 library.add(faSuitcase)
 library.add(faThLarge)
 library.add(faThList)
@@ -47,3 +60,4 @@ library.add(faSuitcase)
 library.add(faUnlockAlt)
 library.add(faUserFriends)
 library.add(faUsers)
+library.add(faWifi)
