@@ -2,6 +2,13 @@
 @tailwind components
 @tailwind utilities
 
+@import buttons
+
+html,
+body
+  overflow-x hidden
+  width 100%
+
 .landing
   .content:not(.custom)
     > *:first-child
@@ -21,6 +28,9 @@
     border-color transparent
     height 6rem
 
+    .sidebar-button
+      top 1.75rem
+
     .links
       .nav-item
         > .nav-link
@@ -38,12 +48,6 @@
     max-width none
     padding 0
     margin 0
-    .container
-      padding-right 2rem
-      padding-left 2rem
-      @screen md
-        padding-right 1rem
-        padding-left 1rem
 
   .landing-content
     max-width 936px

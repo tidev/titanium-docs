@@ -1,16 +1,16 @@
 <template>
-  <section class="container">
+  <section class="container px-6 xl:px-12 mx-auto">
     <div class="grid">
       <div class="grid-col-10 grid-start-1 text-center">
         <h1>Part of the AMPLIFY platform.</h1>
-        <p>Speed the discovery, use, and deployment of new integrations in your apps with <a href="#">AMPLIFY</a>.</p>
+        <p>Speed the discovery, use, and deployment of new integrations in your apps with <a href="https://www.axway.com/en/platform" target="_blank">AMPLIFY</a>.</p>
       </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-features mt-8">
       <div class="features">
           <div class="features-item">
               <h2>
-                  <img src="images/icons/icon-titanium.svg" class="features__icon lg:order-last" alt="">
+                  <img src="images/titanium-logo.png" class="features__icon lg:order-last" alt="">
                   Titanium SDK
               </h2>
               <p>Node.js-based utilities to compile your JavaScript code and static assets into a native iOS and Android application.</p>

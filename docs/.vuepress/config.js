@@ -19,11 +19,12 @@ module.exports = {
   title: 'Titanium Mobile',
   description: 'Native iOS and Android Apps with JavaScript',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' } ]
   ],
   theme: 'titanium',
   themeConfig: {
-    logo: '/titanium-logo.png',
+    logo: '/images/titanium-logo.png',
     footerCopyright: 'Copyright © 2019-present Axway Appcelerator',
     footerLogo: '/images/axway-appcelerator-logo.png',
     footerSitemap: {
@@ -126,6 +127,7 @@ module.exports = {
     'apidocs',
     '@vuepress/back-to-top',
     '@silvanite/tailwind',
+    '@titanium-sdk/fontawesome',
     require('./guides-content-sidebar') // Show right-hand sidebar for in-page headers in guides
   ],
   chainWebpack(config) {
