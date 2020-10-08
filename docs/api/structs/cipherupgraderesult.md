@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/EncryptedDatabase.yml
+editUrl: https://github.com/appcelerator-modules/appcelerator.encrypteddatabase/edit/master/apidoc/EncryptedDatabase.yml
 ---
 # CipherUpgradeResult
 

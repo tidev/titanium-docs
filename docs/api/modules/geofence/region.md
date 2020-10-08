@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/region.yml
+editUrl: https://github.com/appcelerator-modules/ti.geofence/edit/master/apidoc/region.yml
 ---
 # Modules.Geofence.Region
 

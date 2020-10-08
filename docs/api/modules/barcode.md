@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/BarcodeModule.yml
+editUrl: https://github.com/appcelerator-modules/ti.barcode/edit/master/apidoc/BarcodeModule.yml
 ---
 # Modules.Barcode
 

@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/NdefMessage.yml
+editUrl: https://github.com/appcelerator-modules/ti.nfc/edit/master/apidoc/NdefMessage.yml
 ---
 # Modules.Nfc.NdefMessage
 

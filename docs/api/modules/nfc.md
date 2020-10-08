@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Nfc.yml
+editUrl: https://github.com/appcelerator-modules/ti.nfc/edit/master/apidoc/Nfc.yml
 ---
 # Modules.Nfc
 

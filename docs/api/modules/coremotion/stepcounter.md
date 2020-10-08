@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/StepCounter.yml
+editUrl: https://github.com/appcelerator-modules/ti.coremotion/edit/master/apidoc/StepCounter.yml
 ---
 # Modules.CoreMotion.StepCounter
 

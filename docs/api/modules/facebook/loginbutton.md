@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/LoginButton.yml
+editUrl: https://github.com/appcelerator-modules/ti.facebook/edit/master/apidoc/LoginButton.yml
 ---
 # Modules.Facebook.LoginButton
 

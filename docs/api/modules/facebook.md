@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Facebook.yml
+editUrl: https://github.com/appcelerator-modules/ti.facebook/edit/master/apidoc/Facebook.yml
 ---
 # Modules.Facebook
 

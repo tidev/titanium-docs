@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/NfcAdapter.yml
+editUrl: https://github.com/appcelerator-modules/ti.nfc/edit/master/apidoc/NfcAdapter.yml
 ---
 # NdefDiscovered
 

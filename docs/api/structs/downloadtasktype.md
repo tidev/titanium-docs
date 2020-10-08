@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Session.yml
+editUrl: https://github.com/appcelerator-modules/ti.urlsession/edit/master/apidoc/Session.yml
 ---
 # DownloadTaskType
 
