@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/iOS/LocalNotification.yml
+---
 # Titanium.App.iOS.LocalNotification
 
 <TypeHeader/>
