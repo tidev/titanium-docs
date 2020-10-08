@@ -33,7 +33,7 @@ You can use the `Ti.API` logging methods within HTML content loaded from the dev
 
 * `warn(message)` - Creates a Titanium log out of the `message` parameter and assigns it the log level of `warn`
 
-These functions are great for adding logging to our native Titanium code, but they can also be used to add logging to web content in `WebViews`. Let's take a look at a simple example. Here will we add Titanium logging to a `WebView` to let us know when the <body> element of the web content has loaded.
+These functions are great for adding logging to our native Titanium code, but they can also be used to add logging to web content in `WebViews`. Let's take a look at a simple example. Here will we add Titanium logging to a `WebView` to let us know when the `<body>` element of the web content has loaded.
 
 **logging.html**
 
@@ -54,7 +54,7 @@ win.add(webview);
 win.open();
 ```
 
-When the above app runs and the <body> of the `WebView` is loaded, it will put an informational message in the Titanium logging console that says "body loaded!". This is a very simple case, but shows that you can use the logging capabilities of Titanium even when executing Javascript from the context of a `WebView`'s content. These API calls can be made anywhere in your web content's Javascript.
+When the above app runs and the `<body>` of the `WebView` is loaded, it will put an informational message in the Titanium logging console that says "body loaded!". This is a very simple case, but shows that you can use the logging capabilities of Titanium even when executing Javascript from the context of a `WebView`'s content. These API calls can be made anywhere in your web content's Javascript.
 
 #### Ti.App Events
 

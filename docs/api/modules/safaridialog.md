@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator-modules/Ti.SafariDialog/edit/master/apidoc/SafariDialog.yml
+---
 # Modules.SafariDialog
 
 <TypeHeader/>

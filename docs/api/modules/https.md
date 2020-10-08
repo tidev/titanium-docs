@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator-modules/appcelerator.https/edit/master/apidoc/Https.yml
+---
 # Modules.Https
 
 <TypeHeader/>

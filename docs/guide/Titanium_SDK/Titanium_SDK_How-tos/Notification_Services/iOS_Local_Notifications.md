@@ -67,7 +67,7 @@ To send a local notification, use the `Titanium.App.iOS.scheduleLocalNotificatio
 
 ### Register for Local Notifications
 
-For devices running iOS 8 and later, you need to register the application to use the local notification services. Use the `Titanium.App.iOS.registerUserNotificationSettings()`method to enroll the application in local notification services. Pass the method a dictionary with the `types` property set to an array of notification types to use.
+For devices running iOS 8 and later, you need to register the application to use the local notification services. Use the `Titanium.App.iOS.registerUserNotificationSettings()` method to enroll the application in local notification services. Pass the method a dictionary with the `types` property set to an array of notification types to use.
 
 * `Titanium.App.iOS.USER_NOTIFICATION_TYPE_ALERT`: allow the application to display an alert or banner message.
 
@@ -105,7 +105,7 @@ The application can monitor the `usernotificationsettings` event to know when an
 
 To send a local notification, use the `Titanium.App.iOS.scheduleLocalNotification()` method. Pass the method a dictionary with the following properties. All properties are optional:
 
-* `alertAction`: modify the default slider text of the alert ("slide to view") (see diagram below) or the title of the **Open** button for the alert dialog. The value replaces "view" for the slide text, so the message will be "slide to <alertAction>".
+* `alertAction`: modify the default slider text of the alert ("slide to view") (see diagram below) or the title of the **Open** button for the alert dialog. The value replaces "view" for the slide text, so the message will be `"slide to <alertAction>"`.
 
 * `alertBody`: text to display in the alert or banner message (see diagram below). If omitted, an alert is not displayed.
 

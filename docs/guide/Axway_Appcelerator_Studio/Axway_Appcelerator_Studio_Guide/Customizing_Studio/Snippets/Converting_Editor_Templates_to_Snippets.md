@@ -33,12 +33,11 @@ The editor templates are located under Aptana Studio 2 preferences. For example,
 
 ## Editor Template Format
 
-The editor template should be in an XML format. The top-level XML node should be a <templates> node, with <template> nodes as children.
+The editor template should be in an XML format. The top-level XML node should be a `<templates>` node, with `<template>` nodes as children.
 
 Here is an example of an editor template with a single entry:
 
 ```javascript
-<?xml version="1.0" encoding="UTF-8"?>
 <templates>
 <template autoinsert="true" context="com.aptana.ide.editors.contextType.text/javascript" deleted="false" description="Function" enabled="true"
         id="com.aptana.ide.editors.js.templates.function.tm" name="fun">function ${name} (${args}) {
@@ -49,13 +48,13 @@ Here is an example of an editor template with a single entry:
 
 ## Converting a template entry
 
-In this section, we will reference the editor template above and convert the template entry into a snippet. From the example above, each <template> node would correspond to a snippet that will want to add to your ruble.
+In this section, we will reference the editor template above and convert the template entry into a snippet. From the example above, each `<template>` node would correspond to a snippet that will want to add to your ruble.
 
 As you may know from the [Creating a New Snippet](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Customizing_Studio/Snippets/Creating_a_New_Snippet/) section, there are three key items for a snippet (trigger, expansion, and scope). The relationship between the template node and the key items are as follows:
 
 * trigger: The 'name' attribute.
 
-* expansion: The content inside the <template> node.
+* expansion: The content inside the `<template>` node.
 
 * scope: The editor scope where this snippet will be active (in this case, it would be javascript).
 

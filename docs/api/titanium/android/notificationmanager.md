@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Android/NotificationManager/NotificationManager.yml
+---
 # Titanium.Android.NotificationManager
 
 <TypeHeader/>

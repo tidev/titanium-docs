@@ -190,7 +190,7 @@ Auto-generated property accessors store property values in the internal dictiona
 
 * Retrieve the entire dictionary using `getProperties()`.
 
-In addition, you can register a _model listener_ – another Java object that  receives updates whenever a value is set in the property dictionary. This pattern is commonly used for views and view proxies.
+In addition, you can register a _model listener_ – another Java object that receives updates whenever a value is set in the property dictionary. This pattern is commonly used for views and view proxies.
 
 Using custom getter and setter methods is somewhat simpler, and is described first. Subsequent sections describe exposing properties using `propertyAccessors`, and responding to property changes using a model listener.
 

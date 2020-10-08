@@ -25,11 +25,11 @@ In the Studio-specific submenu, navigate to **Help** > **Studio** \> **View Log 
 
 Your current .log file is located in a .metadata folder in your current workspace directory. The following is the path if you are working on the default workspace.
 
-* Windows XP: C:\\Documents and Settings\\username\\My Documents\\<Studio Workspace>\\.metadata\\.log
+* Windows XP: `C:\Documents and Settings\username\My Documents\<Studio Workspace>\.metadata\.log`
 
-* Windows Vista/Windows 7: C:\\Users\\username\\Documents\\<Studio Workspace>\\.metadata\\.log
+* Windows Vista/Windows 7: `C:\Users\username\Documents\<Studio Workspace>\.metadata\.log`
 
-* Mac OS X: ~/Documents/<Studio Workspace>/.metadata/.log
+* Mac OS X: `~/Documents/<Studio Workspace>/.metadata/.log`
 
 ## Diagnostic Test
 

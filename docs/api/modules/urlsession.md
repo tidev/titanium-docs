@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator-modules/ti.urlsession/edit/master/apidoc/urlsession.yml
+---
 # Modules.URLSession
 
 <TypeHeader/>

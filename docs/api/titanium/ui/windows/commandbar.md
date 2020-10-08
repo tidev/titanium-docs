@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator/titanium_mobile_windows/edit/master/apidoc/WindowsOnly/Titanium.UI.Windows.CommandBar.yml
+---
 # Titanium.UI.Windows.CommandBar
 
 <TypeHeader/>

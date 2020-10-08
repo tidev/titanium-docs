@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Android/NotificationChannel.yml
+---
 # Titanium.Android.NotificationChannel
 
 <TypeHeader/>

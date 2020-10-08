@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Modules/Cloud/KeyValues/KeyValues.yml
+---
 # Modules.Cloud.KeyValues
 
 <TypeHeader/>

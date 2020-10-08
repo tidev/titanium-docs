@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator-modules/ti.nfc/edit/master/apidoc/NfcTag.yml
+---
 # Modules.Nfc.NfcTag
 
 <TypeHeader/>

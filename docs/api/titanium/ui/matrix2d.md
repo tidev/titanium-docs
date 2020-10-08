@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/Matrix2D.yml
+---
 # Titanium.UI.Matrix2D
 
 <TypeHeader/>

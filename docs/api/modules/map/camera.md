@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator-modules/ti.map/edit/master/apidoc/Camera.yml
+---
 # Modules.Map.Camera
 
 <TypeHeader/>

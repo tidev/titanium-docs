@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator/titanium_mobile_windows/edit/master/apidoc/WindowsOnly/Ti.App.Windows.BackgroundServiceTask.yml
+---
 # Titanium.App.Windows.BackgroundServiceTask
 
 <TypeHeader/>

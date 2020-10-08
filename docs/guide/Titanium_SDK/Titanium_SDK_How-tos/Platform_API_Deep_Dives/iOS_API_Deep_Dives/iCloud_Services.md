@@ -97,7 +97,7 @@ The device displays an itemized list of how much iCloud storage space each appli
 
 ## Test restoring an iCloud backup
 
-To test restoring an iCloud backup, you need to reset your device and erase the application settings and content. After the reset, during the "Set Up iPhone"  step of the iOS Setup Assistant, select to **Restore from iCloud Backup** and choose a previous device backup to start restoring your device.
+To test restoring an iCloud backup, you need to reset your device and erase the application settings and content. After the reset, during the "Set Up iPhone" step of the iOS Setup Assistant, select to **Restore from iCloud Backup** and choose a previous device backup to start restoring your device.
 
 Before proceeding make sure have a current backup of your device. See the previous section to perform a manual backup.
 

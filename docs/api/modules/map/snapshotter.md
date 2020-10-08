@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator-modules/ti.map/edit/master/apidoc/Snapshotter.yml
+---
 # Modules.Map.Snapshotter
 
 <TypeHeader/>

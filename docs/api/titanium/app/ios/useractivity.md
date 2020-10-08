@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/iOS/UserActivity.yml
+---
 # Titanium.App.iOS.UserActivity
 
 <TypeHeader/>

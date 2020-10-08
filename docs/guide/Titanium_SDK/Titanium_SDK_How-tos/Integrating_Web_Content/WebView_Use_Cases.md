@@ -44,9 +44,9 @@ This is a one-time dialog that your users will immediately recognize. This is a 
 
 Titanium, through its core API, does not include a canvas-like rendering context. While Titanium can animate properties of its UI components, it can't generate graphics, animation, physics, and other interactions as one would expect in a game. Modules give us the opportunity to extend rendering capabilities through native code, but in many cases a simpler solution is more appropriate.
 
-Titanium developers, like other web-based mobile developers, can use the `WebView` component to render animations and interactions in the HTML5 <canvas> element. While the <canvas> element has varying levels of support in desktop browsers, Android and iOS webviews have supported it for some time now. Because of this, Titanium developers can deliver rich interactive apps via this powerful HTML5 element.
+Titanium developers, like other web-based mobile developers, can use the `WebView` component to render animations and interactions in the HTML5 `<canvas>` element. While the `<canvas>` element has varying levels of support in desktop browsers, Android and iOS webviews have supported it for some time now. Because of this, Titanium developers can deliver rich interactive apps via this powerful HTML5 element.
 
-A tutorial explaining how to develop with the HTML5 <canvas> element is beyond the scope of this document, but that doesn't mean we can't take a look at what's possible. The following screenshots give just a taste of what's possible with <canvas> rendering. In addition to the visuals shown, the animation and user interaction possible with this element can create very complex and immersive user experiences.
+A tutorial explaining how to develop with the HTML5 `<canvas>` element is beyond the scope of this document, but that doesn't mean we can't take a look at what's possible. The following screenshots give just a taste of what's possible with `<canvas>` rendering. In addition to the visuals shown, the animation and user interaction possible with this element can create very complex and immersive user experiences.
 
 ![asteroid](./asteroid.jpg) ![hakin-trail](./hakin-trail.jpg)
 
@@ -54,7 +54,7 @@ A tutorial explaining how to develop with the HTML5 <canvas> element is beyond t
 
 ![molecule](./molecule.jpg) ![strange-attraction](./strange-attraction.jpg)
 
-As though the examples seen here aren't impressive enough, Titanium offers us even more. Titanium uniquely gives us the ability to augment our <canvas> code in `WebViews` with native UI components and services. The possibilities here can range from simple buttons and sliders to modify <canvas> settings to a full heads-up display overlay on fully interactive, animated web content.
+As though the examples seen here aren't impressive enough, Titanium offers us even more. Titanium uniquely gives us the ability to augment our `<canvas>` code in `WebViews` with native UI components and services. The possibilities here can range from simple buttons and sliders to modify `<canvas>` settings to a full heads-up display overlay on fully interactive, animated web content.
 
 ### Forms
 
@@ -70,6 +70,6 @@ You can control which keyboard type is displayed with a WebView form by setting 
 
 ## Summary
 
-In this section we saw a few particular cases where `WebViews` are the most appropriate way to add functionality to our apps. The `Ti.Facebook` module makes use of a `WebView` to offer users a simple and familiar way to login to the world's most popular social network. We also saw how we can use the HTML5 <canvas> element to create graphics, animations, and interaction that go well beyond the core capabilities of the Titanium API.
+In this section we saw a few particular cases where `WebViews` are the most appropriate way to add functionality to our apps. The `Ti.Facebook` module makes use of a `WebView` to offer users a simple and familiar way to login to the world's most popular social network. We also saw how we can use the HTML5 `<canvas>` element to create graphics, animations, and interaction that go well beyond the core capabilities of the Titanium API.
 
 `Ti.UI.WebViews` are a powerful component of the Titanium API. But as we know, with great power comes great responsibility. With the knowledge gained in this chapter, you should be well equipped to determine when a `WebView` is appropriate, and how to best leverage its capabilities in order to deliver a high quality user experience.

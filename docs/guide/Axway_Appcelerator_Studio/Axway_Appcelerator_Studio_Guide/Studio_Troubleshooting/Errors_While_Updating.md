@@ -100,11 +100,11 @@ It may be that the update server is not serving the appropriate list of availabl
 
 1. Open a web browser
 
-2. Paste in the url [https://api.appcelerator.net/p/v2/release-list?name=mobilesdk&v=](https://api.appcelerator.net/p/v2/release-list?name=mobilesdk&v=)<version>&limit=5&os=<os>, substituting your operating system value, and version of **Studio**with only the first three version specifiers
+2. Paste in the url [https://api.appcelerator.net/p/v2/release-list?name=mobilesdk&v=](https://api.appcelerator.net/p/v2/release-list?name=mobilesdk&v=)`<version>`&limit=5&os=`<os>`, substituting your operating system value, and version of **Studio**with only the first three version specifiers
 
-    * <os>: osx, win32
+    * `<os>`: osx, win32
 
-    * <version>: 2.0.1.2012042345 => 2.0.1
+    * `<version>`: 2.0.1.2012042345 => 2.0.1
 
 3. An example might be: [https://api.appcelerator.net/p/v2/release-list?name=mobilesdk&v=2.0.0&limit=5&os=osx](https://api.appcelerator.net/p/v2/release-list?name=mobilesdk&v=2.0.0&limit=5&os=osx)
 

@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Media/Sound.yml
+---
 # Titanium.Media.Sound
 
 <TypeHeader/>

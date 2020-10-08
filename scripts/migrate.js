@@ -98,7 +98,10 @@ async function generateMarkDownForType(metadata, targetVersion) {
   }
 
   const mdContent =
-`# ${metadata.name}
+`---
+editUrl: ${metadata.editUrl}
+---
+# ${metadata.name}
 
 <TypeHeader/>${overview}${examples}<ApiDocs/>
 `;

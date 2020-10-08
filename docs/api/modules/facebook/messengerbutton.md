@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator-modules/ti.facebook/edit/master/apidoc/MessengerButton.yml
+---
 # Modules.Facebook.MessengerButton
 
 <TypeHeader/>

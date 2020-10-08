@@ -1,3 +1,6 @@
+---
+editUrl: https://github.com/appcelerator-modules/ti.geofence/edit/master/apidoc/region.yml
+---
 # Modules.Geofence.Region
 
 <TypeHeader/>
