@@ -1,7 +1,7 @@
 <template>
-  <ul class="framework-list mt-12">
+  <ul class="framework-list justify-center md:justify-start mt-12 pl-0">
     <li>
-      <a href="">
+      <a href="./guide/Alloy_Framework/">
         <img :src="$withBase('/images/icons/icon-alloy.svg')" />
       </a>
     </li>
@@ -18,7 +18,7 @@
       </a>
     </li>
     <li>
-      <a href="">
+      <a href="./api/">
         <img :src="$withBase('/images/js-logo.png')" />
       </a>
     </li>
