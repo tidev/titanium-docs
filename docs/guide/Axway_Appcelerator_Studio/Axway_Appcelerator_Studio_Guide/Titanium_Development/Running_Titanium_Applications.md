@@ -23,7 +23,7 @@ Alternatively, you can select **Run Configurations** (the last device option) to
 
 Use **Run Configurations** to change your run-time options on the fly. You can create custom run configurations for each of your projects and save them as a different name.
 
-In the **Project Explorer** view, first select your project, then from the global toolbar, select **Run** from the **Launch Mode** drop-down list and select the **Run Configuration...** option under the **Device** drop-down list  to launch the **Run Configurations** dialog. Select the deployment target you want to build and launch your application for, then configure your run-time options in the **Main** tab.
+In the **Project Explorer** view, first select your project, then from the global toolbar, select **Run** from the **Launch Mode** drop-down list and select the **Run Configuration...** option under the **Device** drop-down list to launch the **Run Configurations** dialog. Select the deployment target you want to build and launch your application for, then configure your run-time options in the **Main** tab.
 
 The following sections below list the run configurations for building your application on a specific emulator, simulator or device. Some common configuration settings include:
 

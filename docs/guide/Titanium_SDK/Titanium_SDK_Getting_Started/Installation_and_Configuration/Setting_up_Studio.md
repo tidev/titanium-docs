@@ -315,7 +315,7 @@ Typically, you can use the Platform Configuration dialog to download and install
 
 **To configure advanced platform settings:**
 
-1. Open the Preferences  dialog:
+1. Open the Preferences dialog:
 
     * On Mac OS X, press **Command key-Comma (,)** or **Appcelerator Studio** \> **Preferences** from the application menu.
 

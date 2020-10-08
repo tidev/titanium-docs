@@ -25,7 +25,7 @@ To configure your proxy settings once Studio has started, open the **Preferences
 
     1. **Windows**: select **Windows** > **Preferences**.
 
-    2. **Mac OS**:  select **Titanium Studio** > **Preferences** or **Appcelerator Studio** > **Preferences**.
+    2. **Mac OS**: select **Titanium Studio** > **Preferences** or **Appcelerator Studio** > **Preferences**.
 
 2. Navigate to **General** \> **Network Connections**.
 

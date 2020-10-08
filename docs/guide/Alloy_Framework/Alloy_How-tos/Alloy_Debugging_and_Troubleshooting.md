@@ -21,7 +21,7 @@ Breakpoints set in the CommonJS modules and Alloy Model files in the `app` direc
 
 If your `Resources` folder is hidden:
 
-1. In the  **Project Explorer** view, click the **View Menu** button (white triangle pointing down).
+1. In the **Project Explorer** view, click the **View Menu** button (white triangle pointing down).
 
 2. Select **Customize Views...**, then the **Available Customizations** dialog appears.
 
