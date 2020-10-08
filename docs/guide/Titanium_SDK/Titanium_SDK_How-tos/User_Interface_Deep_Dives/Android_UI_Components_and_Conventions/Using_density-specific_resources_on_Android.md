@@ -33,7 +33,7 @@ We can be even more specific about when these resources should be used. This is 
 
 ## Folder name breakdown
 
-Images that are in a folder named "res-long-land-hdpi" will be used for:
+Images that are in a folder named `"res-long-land-hdpi"` will be used for:
 
 * **Long** screens, such as WQVGA, WVGA, FWVGA
 
@@ -44,11 +44,11 @@ Images that are in a folder named "res-long-land-hdpi" will be used for:
 ## Working with the folder names
 
 With this naming convention you can be as specific or as broad as you need to be.
-For instance, if you have these two folders in "Resources/android/images":
+For instance, if you have these two folders in `"Resources/android/images"`:
 
-* "res-long-land-hdpi"
+* `"res-long-land-hdpi"`
 
-* "res-notlong-land-hdpi"
+* `"res-notlong-land-hdpi"`
 
 But you don't need to have different images based on it being long or notlong. So all you need to do is remove that property from the folder name. So you end up with one folder named:
 
@@ -78,9 +78,9 @@ The method above will not work for the appicon.png because the it is referenced 
 
 To use density specific versions of the appicon you will need to create a folder structure in the root of the app that looks something like this:
 
-* "<app>/platform/android/res/drawable"
+* `"<app>/platform/android/res/drawable"`
 
-* "<app>/platform/android/res/drawable-hdpi"
+* `"<app>/platform/android/res/drawable-hdpi"`
 
 ![20110915-93bn2rtifjcjk838xmrjsx4y5](./20110915-93bn2rtifjcjk838xmrjsx4y5.jpg)
 

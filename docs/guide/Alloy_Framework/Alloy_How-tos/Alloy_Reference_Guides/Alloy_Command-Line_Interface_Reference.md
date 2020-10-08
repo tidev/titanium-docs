@@ -47,11 +47,11 @@ alloy new [<project_path>] [<project_template>] [--force] [--no-colors]
 
 | Options | Description |
 | --- | --- |
-| <project\_path> | Path to a skeleton Titanium project, otherwise the current working directory is used. |
-| <project\_template> | Selects the template. Choose between **default** for a single pane application or **two\_tabbed** or a tabbed application. Defaults to **default**. |
-| \--testapp <test\_app\_path> | Relative path after the `alloy/test/apps/` path to a test application in the Alloy Github repo to use as the new application. |
-| \-f, --force | Forces the command to execute. |
-| \-n, --no-colors | Disables color output. |
+| `<project_path>` | Path to a skeleton Titanium project, otherwise the current working directory is used. |
+| `<project_template>` | Selects the template. Choose between **default** for a single pane application or **two\_tabbed** or a tabbed application. Defaults to **default**. |
+| `--testapp <test_app_path>` | Relative path after the `alloy/ test / apps /` path to a test application in the Alloy Github repo to use as the new application. |
+| `-f, --force` | Forces the command to execute. |
+| `-n, --no-colors` | Disables color output. |
 
 ## Generate
 
@@ -63,19 +63,19 @@ alloy generate <component> [--widgetname <widget_name>] [--outputPath <output_pa
 
 | Options | Description |
 | --- | --- |
-| <component> | Format is component specific. |
-| controller <name> | Create a skeleton controller, view and style. |
-| jmk | Creates `alloy.jmk`. |
-| model <name> <adapter> \[schema\] | Creates a model with the specified `name`. See [Model Format](#model-format) below. |
-| migration <model\_name> | Creates a skeleton migration file for the specified model. |
-| style <<name> | --all> | Creates a skeleton style file with the specified name.  <br />If the name is associated with a view-controller, Alloy uses the id and class names from the markup file to populate the style file.  <br />If `--all` flag is specified, Alloy generates skeleton style files for all view-controllers.  <br />If you add new id or class attributes to the markup file, running this command updates the style file with the new attributes. |
-| view <name> | Creates a skeleton view and style with the specified `name`. |
-| widget <name> | Creates a basic widget with the specified `name`. |
-| \--widgetname <name> | Creates a component for the specified widget. Can only be used to create controllers, views or styles. |
-| \-o, --outputPath <outputPath> | Output path for generated code. Point to the 'app' directory. |
-| \--platform <platform> | Create a platform-specific view or controller component, where <platform> is either `android`, `ios` or `windows`. |
-| \-f, --force | Forces the command to execute. |
-| \-n, --no-colors | Disables color output. |
+| `<component>` | Format is component specific. |
+| `controller <name>` | Create a skeleton controller, view and style. |
+| `jmk` | Creates `alloy.jmk`. |
+| `model <name> <adapter> [schema]` | Creates a model with the specified `name`. See [Model Format](#model-format) below. |
+| `migration <model_name>` | Creates a skeleton migration file for the specified model. |
+| `style <<name> | --all>` | Creates a skeleton style file with the specified name.  <br />If the name is associated with a view-controller, Alloy uses the id and class names from the markup file to populate the style file.  <br />If `--all` flag is specified, Alloy generates skeleton style files for all view-controllers.  <br />If you add new id or class attributes to the markup file, running this command updates the style file with the new attributes. |
+| `view <name>` | Creates a skeleton view and style with the specified `name`. |
+| `widget <name>` | Creates a basic widget with the specified `name`. |
+| `--widgetname <name>` | Creates a component for the specified widget. Can only be used to create controllers, views or styles. |
+| `-o, --outputPath <outputPath>` | Output path for generated code. Point to the 'app' directory. |
+| `--platform <platform>` | Create a platform-specific view or controller component, where `<platform>` is either `android`, `ios` or `windows`. |
+| `-f, --force` | Forces the command to execute. |
+| `-n, --no-colors` | Disables color output. |
 
 ### Model Format
 
@@ -111,9 +111,9 @@ alloy install <module> [<project_path>]
 
 | Options | Description |
 | --- | --- |
-| <module> | Format is module specific. |
-| plugin | Installs the compiler plugin to hook the Alloy project to Studio. |
-| <project\_path> | Path to the Alloy project, otherwise the current working directory is used. |
+| `<module>` | Format is module specific. |
+| `plugin` | Installs the compiler plugin to hook the Alloy project to Studio. |
+| `<project_path>` | Path to the Alloy project, otherwise the current working directory is used. |
 
 ## Compile
 
@@ -125,9 +125,9 @@ alloy compile [<project_path>] [--config <compiler_options>] [--no-colors]
 
 | Options | Description |
 | --- | --- |
-| <project\_path> | Path to the Alloy project, otherwise the current working directory is used. |
-| \-c, --config <compiler\_options> | Compiler configuration options to use. See [Compiler Options](#compiler-options) below. |
-| \-n, --no-colors | Disables color output. |
+| `<project_path>` | Path to the Alloy project, otherwise the current working directory is used. |
+| `-c, --config <compiler_options>` | Compiler configuration options to use. See [Compiler Options](#compiler-options) below. |
+| `-n, --no-colors` | Disables color output. |
 
 ### Compiler Options
 

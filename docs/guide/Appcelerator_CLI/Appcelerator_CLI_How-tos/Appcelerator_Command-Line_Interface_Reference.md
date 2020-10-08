@@ -862,8 +862,8 @@ The following options only apply to Titanium applications:
 | `-D, --deploy-type <type>` | Controls several settings such as optimization, encryption, and analytics. Type can be **development**, **test**, or **production**.<br /><br />When --target is "simulator", the deploy type defaults to **development**, but can be set to **test**.<br /><br />When --target is "device", the deploy type defaults to **test**, but can be set to **development**.<br /><br />When --target is "dist-appstore" or "dist-adhoc", the deploy type is **production** and cannot be overwritten.<br /><br />Note that **test** will minify and encrypt your JavaScript source code. Any JavaScript syntax errors, even files you are not using, will result in a build failure. |
 | `--force-copy` | Forces files to be copied instead of symlinked for simulator builds only. |
 | `--force-copy-all` | Identical to the --force-copy flag except this will also copy the 32.5 MB libTiCore.a file. **Removed since 8.0.0 and moving to the native JavaScriptCore library.** |
-| `--launch-watch-app` | Launch both the watch app and main app; only used when target is **simulator**. |
-| `--launch-watch-app-only` | Launch only the watch app; only used when target is **simulator**. |
+| `--launch-watch-app` | Launch both the watch app and main app; only used when target is **simulator** . |
+| `--launch-watch-app-only` | Launch only the watch app; only used when target is **simulator** . |
 | `--sim-focus` | Focus the iOS simulator (default is true). To not focus the simulator, use --no-sim-focus. |
 | `-V, --developer-name <name>` | iOS Developer Certificate to use; required when target is **device**. |
 | `-F, --device-family <value>` | Device family to build for (**iphone**, **ipad**, or **universal**). Default is **universal**, however if --target is set to "ipad", then the value defaults to **ipad**. |
@@ -875,8 +875,8 @@ The following options only apply to Titanium applications:
 | `-R, --distribution-name <name>` | iOS Distribution Certificate to use; required when target is **dist-appstore** or **dist-adhoc**. |
 | `--sim-focus` | Focus the iOS Simulator after launching. Defaults to **true**. |
 | `-T, --target <value>` | Target to build for: **simulator**, **device**, **dist-appstore**, or **dist-adhoc**. |
-| `--watch-app-name <name>` | Name of the watch app to launch; only used when target is **simulator**. |
-| `-W, --watch-device-id <udid>` | Watch simulator UDID to launch when building an app with a watch app; only used when target is **simulator**. |
+| `--watch-app-name <name>` | Name of the watch app to launch; only used when target is **simulator** . |
+| `-W, --watch-device-id <udid>` | Watch simulator UDID to launch when building an app with a watch app; only used when target is **simulator** . |
 | `-Y, --sim-type <type>` | iOS Simulator type: **iphone** or **ipad**; only used when target is **simulator**. |
 
 #### Windows build options
@@ -892,7 +892,7 @@ Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3
 | --- | --- |
 | `-C, --device-id <value>` | UDID of the Windows Phone 8 device or emulator to build for. Only used when the target is **wp-emulator** or **wp-device**.<br /><br />Note: An app can only be installed to a single device at a time. |
 | `-D, --deploy-type <type>` | Type of deployment (**test**, **development** or **production**). Only used when the target is **wp-emulator**, **wp-device** or **ws-local**. |
-| `-G, --wp-publisher-guid <GUID>` | Windows Phone Publisher ID. Only used when the target is **wp-emulator**, **wp-device** or **dist-**phonestore****. |
+| `-G, --wp-publisher-guid <GUID>` | Windows Phone Publisher ID. Only used when the target is **wp-emulator**, **wp-device** or **dist-**phonestore**** . |
 | `-I, --win-publisher-id <ID>` | Windows Publisher ID. Required to build the application. |
 | `--wp-product-guid <GUID>` | **Deprecated as of 6.1.0**. Windows 8 product ID, used for upgrading Win 8 apps to Win 8.1. Deprecated and will be removed in future version, use --win-product-guid instead. |
 | `-H, --win-product-guid <GUID>` | **Since Release 6.1.0**. Windows 10 product ID, used for upgrading Windows 8.1 apps to Windows 10. |
@@ -900,7 +900,7 @@ Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3
 | `--ws-cert <file>` | **Deprecated as of Release 6.1.0**. Location of the Windows Store certificate file. Only used when target is **ws-local** or **dist-winstore**. Deprecated and will be removed in future version, use --win-cert instead. |
 | `-R, --win-cert <file>` | **Since Release 6.1.0**. Location of the Windows Store certificate file. Only used when target is **ws-local** or **dist-winstore**. |
 | `--wp-sdk <version>` | **Deprecated as of Release 6.1.0**. Windows Phone SDK version. Deprecated and will be removed in future version, use --win-sdk instead. |
-| `-S, --win-sdk <version>` | **Since Release 6.1.0**. Windows SDK version. When you run CLI on Windows 10, you can specify **10.0** to indicate building for Windows 10 _Universal Windows Platform_ (_UWP_) app. You can target more specific SDK version, such as **`10.0.15063.0`**. |
+| `-S, --win-sdk <version>` | **Since Release 6.1.0**. Windows SDK version. When you run CLI on Windows 10, you can specify **10.0** to indicate building for Windows 10 _Universal Windows Platform_ (_UWP_) app. You can target more specific SDK version, such as **`10.0.15063.0`** . |
 | `-V, --vs-target <version>` | Visual Studio target to build for.<br /><br />* **12.0** to use Visual Studio 2013<br />    <br />* **14.0** to use Visual Studio 2015<br />    <br />* **Visual Studio Community 2017** to use Visual Studio Community 2017<br />    <br />* **Visual Studio Professional 2017** to use Visual Studio Professional 2017<br />    <br />* **Visual Studio Enterprise 2017** to use Visual Studio Enterprise 2017 |
 | `-T, --target <value>` | Target to build for:<br /><br />* **wp-emulator** to run a Windows Phone app on the emulator<br />    <br />* **wp-device** to run a Window Phone app on a device connected to your host machine<br />    <br />* **dist-**phonestore**** to pakcage a Windows Phone app<br />    <br />* **ws-local** to run a Windows Store app on your local machine<br />    <br />* **dist-winstore** to package a Windows Store app |
 | \--`skipInstallDependencies` | **Since Release 6.1.0.** Skip installing dependency packages. If you had trouble with app deployment on device, try this option. |

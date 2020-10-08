@@ -42,12 +42,12 @@ Call these methods on the `TiApp.app()` singleton.
 | Name | Parameters | Return | Description |
 | --- | --- | --- | --- |
 | showModalController(controller, animated) | UIViewController, BOOL | void | Presents a view controller on the top presented view controller (e.g. "`presentViewController:animated`:"). |
-| hideModalController(controller, animated) | UIViewController, BOOL | void | Hides a currently presented view controller (e.g. "`dismissViewControllerAnimated:completion`:"). |
+| hideModalController(controller, animated) | UIViewController, BOOL | void | Hides a currently presented view controller (e.g. " `dismissViewControllerAnimated:completion`:"). |
 | showModalError(error) | NSString | void | Shows the "red screen of death" indicating an unhandled error. |
 | startNetwork() | void | void | Tells application to show network activity indicator. |
 | stopNetwork() | void | void | Tells application to hide network activity indicator. |
-| registerApplicationDelegate(delegate) | id<UIApplicationDelegate> | void | Registers a new `UIApplicationDelegate` to the host application. |
-| unregisterApplicationDelegate(delegate) | id<UIApplicationDelegate> | void | Unregisters an existing `UIApplicationDelegate` from the host application. |
+| registerApplicationDelegate(delegate) | `id<UIApplicationDelegate>` | void | Registers a new `UIApplicationDelegate` to the host application. |
+| unregisterApplicationDelegate(delegate) | `id<UIApplicationDelegate>` | void | Unregisters an existing `UIApplicationDelegate` from the host application. |
 | windowIsKeyWindow() | void | BOOL | Indicates weather the current window is the key-window of the host application. |
 | getRemoteDeviceUUID() | void | NSString | Returns the remote UUID for the current running device. |
 | getSessionId() | void | NSString | Returns the unique identifier for the current application launch. |

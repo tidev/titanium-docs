@@ -15,7 +15,7 @@ While it's highly encouraged to use native UI components whenever possible, ther
 
 * Rendering existing HTML/CSS
 
-* Animation and interaction via the HTML5 <canvas> tag
+* Animation and interaction via the HTML5 `<canvas>` tag
 
 * Integrating web-based tools
 

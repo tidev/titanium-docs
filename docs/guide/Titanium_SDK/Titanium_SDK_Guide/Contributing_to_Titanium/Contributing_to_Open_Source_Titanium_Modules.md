@@ -27,7 +27,7 @@ The process for contributing to open source modules is the same as contributing 
 
 ### Versioning
 
-Versions will follow [standard OSGI naming](http://www.osgi.org/wiki/uploads/Links/SemanticVersioning.pdf) with a numberic "dot" format: <major>.<minor>.<patch>.
+Versions will follow [standard OSGI naming](http://www.osgi.org/wiki/uploads/Links/SemanticVersioning.pdf) with a numberic "dot" format: `<major>.<minor>.<patch>`.
 
 ### Checklist
 

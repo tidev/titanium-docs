@@ -54,7 +54,7 @@ Be sure to turn on use-jscore-framework as listed in [Enable use-jscore-framewor
 
     1. Simulator: **Safari** > **Developer** > **Simulator** > **JSContext**
 
-    2. Device: **Safari** > **Developer** > **<device name>** > **JSContext**
+    2. Device: **Safari** > **Developer** > **`<device name>`** > **JSContext**
 
 ### Safari Breakpoints
 

@@ -51,7 +51,7 @@ Before declaring an intent filter, you need to copy the `<activity>` node contai
     </manifest>
     ```
 
-3. Paste the default root activity into the Android section of your `tiapp.xml` file inside the `<application>` element. You may need to add the <`manifest>` and <`application>` elements to the <`android>` element of your `tiapp.xml` file:
+3. Paste the default root activity into the Android section of your `tiapp.xml` file inside the `<application>` element. You may need to add the `<manifest>` and `<application>` elements to the `<android>` element of your `tiapp.xml` file:
 
     **tiapp.xml**
 
@@ -86,11 +86,11 @@ To declare an intent filter, add **`<intent-filter>`** elements as children of t
 
 * the `<category android:name="android.intent.category.DEFAULT"/>` element to allow it to receive implicit intents as well as any additional categories you want to add to describe the purpose of the activity
 
-* and a <`data>` element describing which data types the activity can receive
+* and a `<data>` element describing which data types the activity can receive
 
 The elements are described in more detail below.
 
-After adding an <intent-filter> tag, add the following children elements to it:
+After adding an `<intent-filter>` tag, add the following children elements to it:
 
 * **`<action/>`** element: Describes which actions the activity can do. Assign the `android:name` attribute an action. An action is one of the `ACTION_*` constants from the [Android Intent class](http://developer.android.com/reference/android/content/Intent.html). Remove the `ACTION_` prefix from the constant, then prefix it with the `android.intent.action` namespace. Examples:
 

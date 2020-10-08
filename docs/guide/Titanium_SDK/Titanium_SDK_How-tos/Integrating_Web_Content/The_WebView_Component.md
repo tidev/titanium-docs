@@ -11,7 +11,7 @@ With Titanium SDK 8.0.0, we now use [WKWebView](/guide/Titanium_SDK/Titanium_SDK
 
 ## Overview
 
-Despite the fact that Titanium gives us the opportunity to use native UI components, sometimes we still need to make use of web content. Whether it's displaying an existing website, making use of the <canvas>, or handling an RSS feed, leveraging web content is something mobile developers need to be able to do. In order to make use of a platform's native webview component, we need only use `Ti.UI.WebView`. This API allows us to create, display, and interact with both local and remote web content.
+Despite the fact that Titanium gives us the opportunity to use native UI components, sometimes we still need to make use of web content. Whether it's displaying an existing website, making use of the `<canvas>`, or handling an RSS feed, leveraging web content is something mobile developers need to be able to do. In order to make use of a platform's native webview component, we need only use `Ti.UI.WebView`. This API allows us to create, display, and interact with both local and remote web content.
 
 In the following sections we'll see exactly how we can create `WebViews` in our apps using the Titanium API, use both local and remote data as the source of our web content, and examine how we can use the properties and functions of the `Ti.UI.WebView` to enhance the user experience.
 
@@ -118,7 +118,7 @@ All of the above files are placed in the `Resources` directory of your project. 
 
 ![local_full](./local_full.png)
 
-The included HTML/CSS/JS does not have to be this simplistic, though. With local web content you can include any HTML/CSS/JS that the platform's browser will support. This include graphics libraries for <canvas> or even using jQuery inside your `WebViews`. You get the best of both worlds with Titanium: Access to native components along with all the power of the web.
+The included HTML/CSS/JS does not have to be this simplistic, though. With local web content you can include any HTML/CSS/JS that the platform's browser will support. This include graphics libraries for `<canvas>` or even using jQuery inside your `WebViews`. You get the best of both worlds with Titanium: Access to native components along with all the power of the web.
 
 In addition to being able to specify local HTML files, you can also add HTML dynamically to your `WebViews` via the `html` property. This can be used for adding everything from simple styled text to a full fledged webpage. Here's how you would specify HTML in your own `WebView` via `html`. This would display a very simple paragraph in an unstyled `WebView`.
 
