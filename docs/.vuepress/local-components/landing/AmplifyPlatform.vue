@@ -72,6 +72,7 @@
         flex: 0 0 2.5rem;
         margin-right: 0.75rem;
         width: 2.5rem;
+        height: 2.5rem;
     p
       margin 0
   @screen sm
