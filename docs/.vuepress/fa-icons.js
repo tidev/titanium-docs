@@ -1,9 +1,11 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faAt,
+  faBarcode,
   faBell,
   faCalendarWeek,
   faCamera,
+  faCarCrash,
   faCommentDots,
   faCheckSquare,
   faDatabase,
@@ -23,9 +25,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faAt)
+library.add(faBarcode)
 library.add(faBell)
 library.add(faCalendarWeek)
 library.add(faCamera)
+library.add(faCarCrash)
 library.add(faCommentDots)
 library.add(faCheckSquare)
 library.add(faDatabase)

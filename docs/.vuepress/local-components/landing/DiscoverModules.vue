@@ -23,9 +23,13 @@ export default {
   data: () => ({
     modules: [
       { icon: 'images/google-maps-logo.png', link: './api/modules/map.html' },
+      { name: 'Barcode', icon: ['fas', 'barcode'], link: './api/modules/barcode.html' },
+      { icon: 'images/facebook-logo.png', link: './api/modules/facebook.html' },
       { name: 'ImageView', icon: ['fas', 'image'], link: 'https://github.com/AndreaVitale/av.imageview' },
-      { icon: 'images/facebook-logo.png', link: '' },
-      { icon: 'images/lottie-logo.png', link: 'https://github.com/m1ga/ti.animation#readme' }
+      { name: 'Crash Reporting', icon: ['fas', 'car-crash'], link: './api/modules/aca.html' },
+      { icon: 'images/lottie-logo.png', link: 'https://github.com/m1ga/ti.animation#readme' },
+      { name: 'Encrypted Database', icon: ['fas', 'database'], link: './api/modules/encrypteddatabase.html' },
+      { icon: 'images/firebase-logo.png', link: 'https://github.com/hansemannn/titanium-firebase-core#readme' },
     ]
   })
 }
