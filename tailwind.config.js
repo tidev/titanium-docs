@@ -1,11 +1,7 @@
 const { colors } = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  plugins: [
-    ["@silvanite/tailwind", {
-      purgecss: { enabled: false }
-    }]
-  ],
+  purge: false,
   theme: {
     extend: {
       colors: {
