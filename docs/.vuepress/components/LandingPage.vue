@@ -63,6 +63,8 @@
       <p class="mb-6">Today's biggest enterprises are using Titanium to scale their app development, manage their mobile integrations, and drive success with their mobile applications.</p>
     </feature>
 
+    <discover-modules />
+
     <sign-up-call />
   </div>
 </template>
@@ -70,6 +72,7 @@
 <script>
 import AmplifyPlatform from '@components/landing/AmplifyPlatform'
 import Customers from '@components/landing/Customers'
+import DiscoverModules from '@components/landing/DiscoverModules'
 import Feature from '@components/landing/Feature'
 import LandingHeader from '@components/landing/Header'
 import PlatformServices from '@components/landing/PlatformServices'
@@ -79,6 +82,7 @@ export default {
   components: {
     AmplifyPlatform,
     Customers,
+    DiscoverModules,
     Feature,
     LandingHeader,
     PlatformServices,

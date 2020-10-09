@@ -1,0 +1,38 @@
+@css {
+  .btn {
+    @apply font-semibold py-2 px-4 rounded;
+  }
+  .content:not(.custom) a.btn:hover {
+    text-decoration: none;
+  }
+  .btn-lg {
+    @apply py-4 px-8;
+  }
+  .btn-white {
+    @apply bg-white text-red-500;
+  }
+  .btn-white:hover {
+    @apply bg-red-100
+  }
+  .btn-red {
+    @apply bg-red-500 text-white;
+  }
+  .btn-red:hover {
+    @apply bg-red-700;
+  }
+  .btn-pill {
+    @apply rounded-full;
+  }
+  .btn-outline {
+    @apply bg-transparent border-2 text-white;
+  }
+  .btn-outline.btn-white:hover {
+    @apply text-red-500 bg-red-100 border-red-100
+  }
+  .btn-outline.btn-red {
+    @apply text-red-500 border-red-500
+  }
+  .btn-outline.btn-red:hover {
+    @apply text-white bg-red-700 border-red-700
+  }
+}
