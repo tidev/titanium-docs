@@ -130,7 +130,8 @@ module.exports = {
       purgecss: { enabled: false }
     }],
     '@titanium-sdk/fontawesome',
-    require('./guides-content-sidebar') // Show right-hand sidebar for in-page headers in guides
+    require('./plugins/guides-content-sidebar'), // Show right-hand sidebar for in-page headers in guides
+    require('./plugins/purgecss')
   ],
   chainWebpack(config) {
     config.resolve.alias.set('@components', path.resolve(__dirname, 'local-components'));
