@@ -407,6 +407,6 @@ Select your app in the list and you will then be directed to your application co
 
 * [Android Developers: Intents and Intent Filters](http://developer.android.com/guide/topics/intents/intents-filters.html)
 
-* [Android Developers: <intent-filter>](http://developer.android.com/guide/topics/manifest/intent-filter-element.html)
+* [Android Developers: `<intent-filter>`](http://developer.android.com/guide/topics/manifest/intent-filter-element.html)
 
 * [Appcelerator Enterprise Mobility Blog: Android Intents](http://www.appcelerator.com/blog/2011/08/android-intents/)

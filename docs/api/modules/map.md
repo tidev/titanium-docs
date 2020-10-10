@@ -240,7 +240,7 @@ $.index.open();
 
 This is a map-example which creates marker annotation and clustering of annotations.
 
-The `clusterIdentifier` property and the `clusterstart` event are required in order to enable 
+The `clusterIdentifier` property and the `clusterstart` event are required in order to enable
 clustering. You can control the clustering by defining the `collisionMode` property and
 setting special cluster annotations using the `setClusterAnnotation` method on your map
 view instance.
