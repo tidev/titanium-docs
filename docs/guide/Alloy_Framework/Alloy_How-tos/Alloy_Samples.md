@@ -1,9 +1,71 @@
 ---
-title: Using Custom Conditional Statements in Titanium Alloy Views
-weight: '20'
+title: Alloy Samples
+weight: '40'
 ---
 
-# Using Custom Conditional Statements in Titanium Alloy Views
+# Alloy Samples
+
+## /\*<!\[CDATA\[\*/ div.rbtoc1602581526695 {padding: 0px;} div.rbtoc1602581526695 ul {list-style: disc;margin-left: 0px;} div.rbtoc1602581526695 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
+
+## Kitchen Sink
+
+Want to check out Alloy Samples in an actual app? Look at the [KitchenSink-v2 application on GitHub](https://github.com/appcelerator/kitchensink-v2).
+
+## Controller Sample
+
+This provides a sample of how to use an Alloy Controller.
+
+**index.js**
+
+```javascript
+// These "builtin" requires will be detected by the alloy compile process.
+// You do not need to manually copy them to their project location.
+// When the alloy compile finds these require calls, it will include them
+// in your Titanium project as "Resources/alloy/animation.js" and
+// "Resources/alloy/string.js" automatically.
+var animation = require('alloy/animation'),
+  string = require('alloy/string');
+
+function shake(e) {
+    animation.shake($.mover, 0, function (){
+      alert("Shake ended.");
+    });
+}
+
+function flash(e) {
+    animation.flash($.mover);
+}
+
+function trim(e) {
+  $.label.text = string.trim($.label.text);
+}
+
+if (OS_IOS) {
+  function flip(e) {
+    var front, back;
+    e.bubbleParent = false;
+    if (e.source === $.back) {
+      front = $.back;
+      back = $.front;
+    } else {
+      front = $.front;
+      back = $.back;
+    }
+    animation.flipHorizontal(front, back, 500, function(e) {
+      Ti.API.info('flipped');
+    });
+  }
+}
+
+$.index.open();
+
+// runtime unit tests
+if (!ENV_PROD) {
+  require('specs/index')($);
+}
+```
+
+## Conditional Statements in Views
 
 One of the many great features of Alloy is how it separates the business logic of an app and the user interface. You use XML views and TSS files to define the elements and styling of your views, and controllers contain the JavaScript to make everything work.
 
@@ -12,7 +74,7 @@ One challenge that comes up from time to time is how to hide and show content in
 Here’s a simple example that shows a View that has two visual states — one where it shows the user is logged in and one when they’re not.
 
 ::: tip 💡 Hint
-In this example, there’s some additional TSS that’s used allowing views and windows to use a vertical layout and the `View` tag has been set to have a default height and width of `Ti.UI.SIZE``.`
+In this example, there’s some additional TSS that’s used allowing views and windows to use a vertical layout and the `View` tag has been set to have a default height and width of `Ti.UI.SIZE` `.`
 :::
 
 ```xml

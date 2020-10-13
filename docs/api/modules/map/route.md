@@ -16,4 +16,8 @@ Use the <Modules.Map.createRoute> method to create a route.
 
 The `addRoute` method no longer accepts a dictionary as a parameter. Pass a <Modules.Map.Route> object instead.
 
+### Android Platform Notes
+The parameter `points` accepts additional the route in format `encoded polyline`.  
+https://developers.google.com/maps/documentation/utilities/polylinealgorithm
+
 <ApiDocs/>
