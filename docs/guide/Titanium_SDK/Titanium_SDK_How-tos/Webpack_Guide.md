@@ -65,6 +65,10 @@ ti create --template webpack-default
 
 This will create a new Titanium project and automatically install all required project dependencies. After this you can start working on your Titanium project (almost) as usual.
 
+::: tip 💡 Alloy CLI
+If you use the Alloy CLI to turn a new or existing Titanium classic project into an Alloy project you need to specify the webpack template here as well. Instead of `alloy new`, run `alloy new . webpack-default` inside the project folder.
+:::
+
 ## Working with Webpack
 
 When working with webpack in your Titanium project a few things are handled differently compared to a standard Titanium project. This section will go through the important changes and explain how things work with webpack. For more in-depth details visit the [code migration](https://github.com/appcelerator/appcd-plugin-webpack/blob/develop/migration.md#code-migration) section in our migration guide for existing projects.

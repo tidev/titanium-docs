@@ -29,23 +29,11 @@ Oh, and don't forget to file a bug report under the [FRAME](https://jira.appcele
 
 The basic features of all elements under the UI namespace are supported as of now. However, some platform specific views are still missing. Please refer to the following list to see which elements are **NOT** yet supported in templates (you can still create them programmatically in your components):
 
-* Android
-
-    * DrawerLayout
-
-    * ProgressIndicator
-
-    * SearchView
-
 * iOS
 
     * CoverFlowView
 
     * SplitWindow
-
-* Multiple platforms
-
-    * NavigationWindow
 
 ### Accessing the Titanium view/proxy of template elements
 
@@ -111,6 +99,4 @@ class ExampleComponent implements AfterViewInit {
 
 ## Titanium Router
 
-Currently you can only use the Angular's routing feature for normal window and tab groups. The support to open modal windows is also not yet implemented.
-
-**Note**: Prior to Titanium 8.0.0, platform specific navigation components like the NavigationWindow on iOS are not yet supported.
+Currently you cannot use modal windows with the Titanium router.

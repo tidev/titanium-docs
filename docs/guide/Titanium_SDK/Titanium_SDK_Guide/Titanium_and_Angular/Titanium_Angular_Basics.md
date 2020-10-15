@@ -7,69 +7,63 @@ weight: '20'
 
 ## Project structure
 
-Let's take a closer look at the directory structure of an Titanium Angular project;
+Let's take a closer look at the directory structure of your new Titanium Angular project created from the default template:
 
 **Titanium Angular project structure**
 
 ```
 .
 └── project-name
-    ├── app
-    ├── hooks
+    ├── src
     ├── platform
+    │   ├── android
+    │   └── ios
     ├── Resources
-    └── tiapp.xml
+    ├── .eslintrc.json
+    ├── tiapp.xml
+    └── tsconfig.json
 ```
 
 These various files and folders all have a specific purpose:
 
-* **app**: This folder contains all development resources. It is pretty similar to a standard Angular project but contains some additional folders that are specific to Titanium.
+* **src**: This folder contains all development resources and is pretty similar to a standard Angular project.
 
-* **hooks**: Project level hook that triggers the Webpack build which will compile the TypeScript source files and bundle everything up into separate chunks. Only edit this if you need to change specific Webpack settings.
+* **platform**: Contains platform specific files for Android and iOS
 
-* **platform**: Contains platform specific files. Generated from the `app/platform` directory. **DO NOT EDIT ANY OF THESE FILES!**
+* **Resources**: A generated directory which contains resources for the final app build including Webpack bundles and resources such as images. **DO NOT EDIT ANY **OF THESE** FILES**
 
-* **Resources**: Another generated directory which contains resources for the final app build including Webpack bundles and resources such as images. **DO NOT EDIT ANY **OF THESE** FILES**
+* **.eslintrc.json**: Configuration file for ESLint using [angular-eslint](https://github.com/angular-eslint/angular-eslint)
 
 * **tiapp.xml**: This is the main configuration file for your project. You can make platform specific configurations and adjust general build or runtime settings. For more info see the [tiapp.xml and timodule.xml Reference](/guide/Titanium_SDK/Titanium_SDK_Guide/Appendices/tiapp.xml_and_timodule.xml_Reference/).
 
-Inside the `app` folder you'll find all important files that will bootstrap the Angular core inside a Titanium app. This is also the folder you'll be working with most of the time as it contains your Angular source files as well as all other app resources.
+* **tsconfig.json**: Configuration file for TypeScript
+
+Inside the `src` folder you'll find all important files that will bootstrap the Angular core inside a Titanium app. This is also the folder you'll be working with most of the time as it contains your Angular source files as well as all other app resources.
 
 ```
 project-name
-└── app
-    ├── assets
-    ├── platform
-    │   ├── android
-    │   └── ios
-    ├── src
+└── src
+    ├── app
     │   ├── app.component.ts
     │   ├── app.module.ts
-    │   ├── main.ts
     │   └── ...
-    ├── vendor
-    ├── tsconfig.json
-    ├── webpack.config.json
+    ├── assets
+    ├── main.ts
+    ├── polyfills.ts
     └── ...
 ```
 
 Here is what those various files and folder do:
 
+* ****app/**app.component.ts**: The root component that will be loaded when your applications starts.
+
+* ****app/**app.module.ts**: This contains the main module that configures a great part of your application.
+
 * **assets:** Contains assets such as images. Similar to Alloy, all resources you would place under the `Resources` folder in classic apps go here instead.
 
-* **platform:** Place any platform specific files here. They will be copied to the project root `platform` folder during build.
+* **main.ts**: The entry point to your application that bootstraps Angular and loads the `AppModule`.
 
-* ****src/**app.component.ts**: The root component that will be loaded when your applications starts.
-
-* ****src/**app.module.ts**: This contains the main module that configures a great part of your application.
-
-* ****src/**main.ts**: The entry point to your application that bootstraps Angular and loads the `AppModule`.
-
-* **vendor:** Contains the `vendor.js` file which defines what modules Webpack should bundle into the vendor chunk.
-
-* **tsconfig.json**: Configuration file for TypeScript
-
-* **webpack.config.json**: Configuration file for Webpack
+* **polyfills.ts:** Contains additional polyfills needed by Angular. You can add your own extra polyfills to this file.
 
 ::: tip 💡 Ahead-of-time compilation issue
 Among those files, you will notice additional files with an `.aot` file extension. Those are for Angular's Ahead-of-time compilation that is used for faster load times in production builds. This is currently not yet supported in the current Tech Preview.
@@ -77,15 +71,17 @@ Among those files, you will notice additional files with an `.aot` file extensio
 
 ## Titanium Angular startup
 
-The files in the `app/src` folder are almost identical to the files in an [Angular web application](https://angular.io/guide/quickstart#the-src-folder). Let's take a closer look at those files to point out the differences, starting with the `main.ts.`
+The files in the `src/app` folder are almost identical to the files in an [Angular web application](https://angular.io/start). Let's take a closer look at those files to point out the differences, starting with the `main.ts.`
 
 **main.ts**
 
 ```typescript
+import './polyfills';
 import { platformTitaniumDynamic } from 'titanium-angular';
-import { AppModule } from './app.module';
+import { AppModule } from './app/app.module';
 
-platformTitaniumDynamic().bootstrapModule(AppModule);
+platformTitaniumDynamic()
+  .bootstrapModule(AppModule);
 ```
 
 Through an import statement, we pull in the `platformTitaniumDynamic` function and a TypeScript class calles `AppModule`. The `platformTitaniumDynamic` function comes from the `titanium-angular` module, which provides the platform which is required to run Angular inside Titanium. Just like Angular's own `platformBrowserDynamic` function is used to setup Angular in an browser enviornment, `platformTitaniumDynamic` sets up Angular in Titanium App.
@@ -97,15 +93,28 @@ The following `bootstrapModule` function is the same as in an Angular web applic
 ```typescript
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { TitaniumModule } from 'titanium-angular';
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home.component';
+import { IntroComponent } from './intro.component';
 
 @NgModule({
-    declarations: [AppComponent],
-    bootstrap: [AppComponent],
-    imports: [TitaniumModule],
-    schemas: [NO_ERRORS_SCHEMA]
+  bootstrap: [AppComponent],
+  declarations: [
+    AppComponent,
+    IntroComponent,
+    HomeComponent
+  ],
+  imports: [
+    TitaniumModule,
+    AppRoutingModule
+  ],
+  schemas: [NO_ERRORS_SCHEMA]
 })
-export class AppModule { }
+export class AppModule {
+
+}
 ```
 
 The two important things here to note are the `bootstrap` and `imports` properties. Through the `import` property, we pull in the `TitaniumModule`, which, for example, allows you to use Titanium elements as tags in templates but also does a lot more under the hood to properly setup Angular for the use in Titanium.
@@ -115,27 +124,27 @@ The `bootstrap` property defines that, after Angular is done with its internal b
 **app.component.ts**
 
 ```typescript
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { AlertDialog, DeviceEnvironment } from 'titanium-angular';
+import { Component } from '@angular/core';
 
+/**
+ * This is the root component of your app which setups routing between the
+ * different components via the `ti-router-outlet` directive.
+ */
 @Component({
-    selector: "ti-app",
-    templateUrl: "./app.component.html"
+  template: '<ti-router-outlet></ti-router-outlet>'
 })
-export class AppComponent implements AfterViewInit, OnInit {
-    ...
-}
+export class AppComponent {}
 ```
 
 ::: tip 💡 Component interaction with the template and Titanium views
-If you open the file in your editor, you'll notice that the file contains different examples that demonstrate how you can interact with Titanium views within the component. This follows the same pattern as in a default Angular web application. Visit Angular's [Components & Templates](https://angular.io/guide/displaying-data) guide for an in depth tutorial on this topic.
+If you open the other component files in your editor, you'll notice that the files contain different examples that demonstrate how you can interact with Titanium views within the component. This follows the same pattern as in a default Angular web application. Visit Angular's [Components & Templates](https://angular.io/guide/displaying-data) guide for an in depth tutorial on this topic.
 :::
 
-In the above excerpt, the `app.compoinent.ts` defines it's template through the templateUrl property. In such a template you can make use of Titanium UI elements to create your app's user interface.
+In the above excerpt, the `app.compoinent.ts` defines it's template through the template property. In such a template you can make use of Titanium UI elements to create your app's user interface.
 
 ## Titanium UI elements in Angular
 
-The usage of Titanium UI elements is the main difference compared to building Angular apps on the web. Instead of the usual `div` or `span` elements you are used to when developing for browser environments, you compose your app's UI using various Titanium elements. There are a wide range of Titanium UI elements (link to UI API docs) that you can use for this matter.
+The usage of Titanium UI elements is the main difference compared to building Angular apps on the web. Instead of the usual `div` or `span` elements you are used to when developing for browser environments, you compose your app's UI using various Titanium elements. There are a wide range of [Titanium UI](#!/api/Titanium.UI) elements that you can use for this matter.
 
 To create a simple button, for example, you can use the `Button` element. This uses a [Titanium.UI.Button](#!/api/Titanium.UI.Button) which will be rendered as a `UIButton` on iOS, or as an `android.widget.Button` on Android. You don't need to know any implementation details from either of these native controls as Titanium does all of the actual rendering for you.
 

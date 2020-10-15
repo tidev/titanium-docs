@@ -7,12 +7,16 @@ weight: '10'
 
 ## Creating Angular projects
 
-With the latest nightly builds of Titanium SDK installed you have the option to create projects using the new Angular project template. Open your terminal and run the following command to create a new project that uses the Angular template:
+Titanium Angular projects are created using a new Angular project template. Open your terminal and run the following command to create a new project that uses the Angular template:
 
 **Create a new Angular project**
 
 ```bash
+// appc-cli
 appc new -t app --ng
+
+// ti-cli
+ti create -t app --template angular-default
 ```
 
 With the `--ng` option, you instruct the Appc CLI to use the Angular template when creating the new project. You can use all other available options to customize the creation of your new project (see the [Command-Line Interface Reference](/guide/Appcelerator_CLI/Appcelerator_CLI_How-tos/Appcelerator_Command-Line_Interface_Reference/#LineInterfaceReference-New)).
@@ -37,6 +41,6 @@ You might notice a lot of additional debug information during the build and whil
 
 ### Selecting a code editor
 
-You can develop a Titanium Angular project in any code editor you like. Edit your app's source files and run the above command to build and run your Angular project and you are good to go. However, we recommend you to use an editor which makes use of TypeScripts additional type information. For example, take a look at [Visual Studio Code](https://code.visualstudio.com/) which is a fast and extendible editor with excellent TypeScript support backed by Microsoft.
+You can develop a Titanium Angular project in any code editor you like. Edit your app's source files and run the above command to build and run your Angular project and you are good to go. However, we recommend you to use an editor which makes use of TypeScripts additional type information. For example, take a look at [Visual Studio Code](https://code.visualstudio.com/) which is a fast and extendible editor with excellent TypeScript support backed by Microsoft. Add our [Titanium extension](https://marketplace.visualstudio.com/items?itemName=axway.vscode-titanium) and you are all set.
 
 Another good alternative is [Atom](https://atom.io/) with the [appcelerator-titanium](https://atom.io/packages/appcelerator-titanium) and [TypeScript](https://atom.io/packages/atom-typescript) packages.
