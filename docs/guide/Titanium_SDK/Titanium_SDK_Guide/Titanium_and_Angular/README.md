@@ -15,16 +15,16 @@ If you run into problems read the [Titanium Angular - FAQ](/guide/Titanium_SDK/T
 
 ## Prerequisites
 
-In order to use Titanium and Angular together, Titanium SDK 9.1.0 or higher needs to be installed. If you don't already have that installed, you can get the latest available version by running the following commands from your terminal:
+In order to use Titanium and Angular together you will need a recent nightly build of the Titanium SDK. Both the `master` and `9_2_X` branch will have the latest updates for the Angular support. We recommend using `9_2_X` as that branch is already in maintenance mode, whereas `master` is under active development.
 
 **Install Appcelerator CLI with Angular support**
 
 ```bash
 // appc-cli
-appc ti sdk install latest
+appc ti sdk install 9_2_X
 
 // ti-cli
-ti sdk install latest
+ti sdk install latest 9_2_X
 ```
 
 Titanium Angular makes use of our new webpack build pipeline introduced with SDK 9.1.0. For this you need to have the Appcelerator Daemon (appcd) and webpack plugin installed as well. For `appc` CLI versions 8.0.0+, appcd comes bundled with the CLI so you will already have it. If you use the `ti` CLI you need to install appcd globally on your machine.
