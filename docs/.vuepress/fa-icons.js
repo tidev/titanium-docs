@@ -17,8 +17,10 @@ import {
   faLanguage,
   faLayerGroup,
   faMapMarkerAlt,
+  faMemory,
   faMobileAlt,
   faPen,
+  faPollH,
   faShareAlt,
   faStar,
   faStream,
@@ -48,8 +50,10 @@ library.add(faImage)
 library.add(faLayerGroup)
 library.add(faLanguage)
 library.add(faMapMarkerAlt)
+library.add(faMemory);
 library.add(faMobileAlt)
 library.add(faPen)
+library.add(faPollH)
 library.add(faShareAlt)
 library.add(faStar)
 library.add(faStream)
