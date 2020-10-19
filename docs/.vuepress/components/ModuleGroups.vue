@@ -5,30 +5,30 @@
       <module-card
         title="UI"
         icon="layer-group"
-        link="api/titanium/ui.html"
+        link="/api/titanium/ui.html"
       >
         Root namespace for UI related code/widgets
       </module-card>
       <module-card
         title="DisplayCaps"
         icon="mobile-alt"
-        link="api/titanium/.html"
+        link="/api/titanium/platform/displaycaps.html"
       >
         Details on the specific hardware densities, dimensions of the device
       </module-card>
       <module-card
         title="Locale"
         icon="language"
-        link="api/titanium/ui.html"
+        link="/api/titanium/locale.html"
       >
         APIs for formatting text, numbers, currency for locales and setting current locale.
       </module-card>
       <module-card
         title="Intl"
         icon="globe-americas"
-        link="api/titanium/ui.html"
+        link="/api/global/intl.html"
       >
-        Web comaptible Intl APIs for formatting dates, times, numbers and sorting strings.
+        Web compatible Intl APIs for formatting dates, times, numbers and sorting strings.
       </module-card>
     </div>
 
@@ -37,28 +37,28 @@
       <module-card
         title="Network"
         icon="wifi"
-        link="api/titanium/ui.html"
+        link="/api/titanium/network.html"
       >
         Root namespace for network related code, such as an <router-link to="./titanium/network/httpclient.html">HTTP client</router-link>.
       </module-card>
       <module-card
         title="Filesystem"
         icon="file-alt"
-        link="api/titanium/ui.html"
+        link="/api/titanium/filesystem.html"
       >
         Root namespace for interacting with the filesystem
       </module-card>
       <module-card
         title="Stream"
         icon="stream"
-        link="api/titanium/ui.html"
+        link="/api/titanium/stream.html"
       >
         Utility methods for reading/writing to/from streams
       </module-card>
       <module-card
         title="Buffer"
-        icon="buffer"
-        link="api/titanium/ui.html"
+        icon="memory"
+        link="/api/titanium/buffer.html"
       >
         A read/write instance of bytes typically used in conjunction with streams
       </module-card>
@@ -69,55 +69,48 @@
       <module-card
         title="Accelerometer"
         icon="layer-group"
-        link="api/titanium/ui.html"
+        link="/api/titanium/accelerometer.html"
       >
         Register for events when the device's x/y/z rotation changes.
       </module-card>
       <module-card
         title="Geolocation"
         icon="map-marker-alt"
-        link="api/titanium/ui.html"
+        link="/api/titanium/geolocation.html"
       >
         Requesting and accessing location coordinates and geocoding addresses.
       </module-card>
       <module-card
         title="Gesture"
         icon="expand-alt"
-        link="api/titanium/ui.html"
+        link="/api/titanium/gesture.html"
       >
         Query for device orientation and register for orientation changes or shake events.
       </module-card>
     </div>
 
-    <h3>User Interface</h3>
+    <h3>SQLite Database</h3>
     <div class="grid grid-cols-2 gap-6 my-5">
       <module-card
-        title="UI"
+        title="Database"
         icon="layer-group"
-        link="api/titanium/ui.html"
+        link="/api/titanium/database.html"
       >
-        Root namespace for UI related code/widgets
+        Root namespace for APIs to manage Databases
       </module-card>
       <module-card
-        title="DisplayCaps"
-        icon="mobile-alt"
-        link="api/titanium/ui.html"
+        title="DB"
+        icon="database"
+        link="/api/titanium/database/db.html"
       >
-        Details on the specific hardware densities, dimensions of the device
+        An instance of a Database
       </module-card>
       <module-card
-        title="Locale"
-        icon="language"
-        link="api/titanium/ui.html"
+        title="ResultSet"
+        icon="poll-h"
+        link="/api/titanium/database/resultset.html"
       >
-        APIs for formatting text, numbers, currency for locales and setting current locale.
-      </module-card>
-      <module-card
-        title="DisplayCaps"
-        icon="globe-americas"
-        link="api/titanium/ui.html"
-      >
-        Web comaptible Intl APIs for formatting dates, times, numbers and sorting strings.
+        Result Sets from querying/manipulating a Database
       </module-card>
     </div>
   </section>
