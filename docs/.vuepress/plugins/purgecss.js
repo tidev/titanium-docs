@@ -11,21 +11,18 @@ module.exports = (options, context) => {
     return plugin
   }
 
-  /**
-   * Ensure default resets and normalised classes are not removed by PurgeCSS
-   */
-  const whitelistPatterns = [
-    /^(h\d|p$|ul|li$|div|ol|table|td$|th$|thead|tbody|main|input|button|form|md-|hljs)/
-  ]
   const purgecss = require('@fullhuman/postcss-purgecss')
   siteConfig.postcss.plugins.push(purgecss({
     content: [
       `${sourceDir}/**/*.md`,
       `${sourceDir}/**/*.vue`,
+      `${sourceDir}/.vuepress/**/*.vue`,
       `${sourceDir}/../website/pages/**/*.md`,
-      `${sourceDir}/../website/pages/**/*.vue`
+      `${sourceDir}/../website/pages/**/*.vue`,
+      `node_modules/@vuepress/plugin-*/**/*.vue`,
+      `node_modules/vuepress-plugin-*/**/*.vue`,
+      `node_modules/vuepress-theme-*/**/*.vue`
     ],
-    whitelistPatterns,
     defaultExtractor: content => {
       // Capture as liberally as possible, including things like `h-(screen-1.5)`
       const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || []
