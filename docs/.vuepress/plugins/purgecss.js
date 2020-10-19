@@ -22,11 +22,11 @@ module.exports = (options, context) => {
     content: [
       `${sourceDir}/**/*.md`,
       `${sourceDir}/**/*.vue`,
-      `${sizrceDir}/../website/pages/**/*.md`,
-      `${sizrceDir}/../website/pages/**/*.vue`
+      `${sourceDir}/../website/pages/**/*.md`,
+      `${sourceDir}/../website/pages/**/*.vue`
     ],
     whitelistPatterns,
-    defaultExtractor: context => {
+    defaultExtractor: content => {
       // Capture as liberally as possible, including things like `h-(screen-1.5)`
       const broadMatches = content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || []
 
