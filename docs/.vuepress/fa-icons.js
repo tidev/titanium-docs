@@ -1,26 +1,37 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
+  faAlignJustify,
+  faAlignLeft,
   faAt,
+  faAtom,
   faBarcode,
   faBell,
   faCalendarWeek,
   faCamera,
   faCarCrash,
+  faCog,
   faCommentDots,
   faCheckSquare,
   faDatabase,
   faEnvelope,
+  faExpand,
   faExpandAlt,
   faFileAlt,
+  faFilm,
   faGlobeAmericas,
+  faHdd,
   faImage,
   faLanguage,
   faLayerGroup,
   faMapMarkerAlt,
   faMemory,
   faMobileAlt,
+  faMusic,
   faPen,
+  faPhotoVideo,
+  faPlay,
   faPollH,
+  faSearch,
   faShareAlt,
   faStar,
   faStream,
@@ -30,30 +41,42 @@ import {
   faUnlockAlt,
   faUserFriends,
   faUsers,
-  faWifi
+  faWifi,
+  faWindowRestore
 } from '@fortawesome/free-solid-svg-icons'
 
+library.add(faAlignJustify)
+library.add(faAlignLeft)
 library.add(faAt)
+library.add(faAtom)
 library.add(faBarcode)
 library.add(faBell)
 library.add(faCalendarWeek)
 library.add(faCamera)
 library.add(faCarCrash)
+library.add(faCog)
 library.add(faCommentDots)
 library.add(faCheckSquare)
 library.add(faDatabase)
 library.add(faEnvelope)
+library.add(faExpand)
 library.add(faExpandAlt)
 library.add(faFileAlt)
+library.add(faFilm)
 library.add(faGlobeAmericas)
+library.add(faHdd)
 library.add(faImage)
 library.add(faLayerGroup)
 library.add(faLanguage)
 library.add(faMapMarkerAlt)
-library.add(faMemory);
+library.add(faMemory)
 library.add(faMobileAlt)
+library.add(faMusic)
 library.add(faPen)
+library.add(faPhotoVideo)
+library.add(faPlay)
 library.add(faPollH)
+library.add(faSearch)
 library.add(faShareAlt)
 library.add(faStar)
 library.add(faStream)
@@ -65,3 +88,4 @@ library.add(faUnlockAlt)
 library.add(faUserFriends)
 library.add(faUsers)
 library.add(faWifi)
+library.add(faWindowRestore)
