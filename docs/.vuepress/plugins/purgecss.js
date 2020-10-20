@@ -20,6 +20,7 @@ module.exports = (options, context) => {
       `${sourceDir}/../website/pages/**/*.md`,
       `${sourceDir}/../website/pages/**/*.vue`,
       `node_modules/@vuepress/plugin-*/**/*.vue`,
+      `node_modules/@vuepress/core/lib/**/*.vue`,
       `node_modules/vuepress-plugin-*/**/*.vue`,
       `node_modules/vuepress-theme-*/**/*.vue`
     ],
