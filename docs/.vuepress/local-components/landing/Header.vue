@@ -5,7 +5,7 @@
       <div class="top" />
     </div>
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-4 mt-16 mb-2 px-6">
-      <div class="md:col-span-7 lg:col-span-5 flex flex-col justify-center sm:text-center md:text-left">
+      <div class="md:col-span-7 lg:col-span-5 flex flex-col justify-center sm:text-center md:text-left landing-header-text">
         <h1>Write in JavaScript.<br>Run native everywhere.</h1>
         <p class="text-xl pb-4">
           Axway's Titanium lets you develop cross-platform native mobile applications and build great mobile experiences using JavaScript.
@@ -52,6 +52,9 @@ export default {
         transform translate(92%, -40%) rotate(-45deg)
         height calc(100vw / 2)
         background-image: linear-gradient(90deg, #F3F4F6, #DADBDD)
+
+  .landing-header-text
+    z-index 1
 
   .hero-code
     backface-visibility: hidden
