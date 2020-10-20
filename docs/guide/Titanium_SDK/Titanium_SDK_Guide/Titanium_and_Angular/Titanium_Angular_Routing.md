@@ -9,11 +9,15 @@ Up to this point most of the Angular concepts are the same as in a normal Angula
 
 Starting with the application routing however, there are a few fundamental changes. How to setup and use routing in Titanium Angular will be described in detail here. If you haven't dealt with routing in Angular before, the [Routing & Navigation](https://angular.io/guide/router) guide is a great read.
 
+::: tip 💡 Updated Angular Template
+The Angular template was recently updated and now already contains a routing setup. The steps described here are now already built-in into the default Angular template and not required anymore. You can still read through this page for additional information about routing and the reasoning behind the implementation details.
+:::
+
 ## Setting up routing
 
 If you followed our [Titanium Angular Getting Started Guide](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_and_Angular/Titanium_Angular_Getting_Started_Guide/) and [Titanium Angular Basics](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_and_Angular/Titanium_Angular_Basics/) guides you noticed that until now everything revolved around the `app.component.ts` and `app.component.html`. Let's change that and move to multiple components and setup the routing for those.
 
-First, open `app/src/app.component.ts` and copy its content to `app/src/intro.component.ts`. Do the same for `app/src/app.component.html` and copy it over to `app/src/intro.component.html`. Open `intro.component.ts` again and change the component name and its template to reflect those recent changes.
+First, open `src/app/app.component.ts` and copy its content to `src/app/intro.component.ts`. Do the same for `src/app/app.component.html` and copy it over to `src/app/intro.component.html`. Open `intro.component.ts` again and change the component name and its template to reflect those recent changes.
 
 **intro.component.ts**
 
@@ -104,7 +108,7 @@ You can now build your app again and routing will be enabled. But the app won't 
 
 ## Adding another component
 
-Now that routing is in place, it is time to add a new component and navigate to it using the Angular Router. Create `app/src/home.component.ts` and paste the following code.
+Now that routing is in place, it is time to add a new component and navigate to it using the Angular Router. Create `src/app/home.component.ts` and paste the following code.
 
 **home.component.ts**
 
