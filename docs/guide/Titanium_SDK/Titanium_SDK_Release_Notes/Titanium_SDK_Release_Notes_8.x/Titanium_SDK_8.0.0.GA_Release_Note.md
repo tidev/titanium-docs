@@ -3940,9 +3940,9 @@ The following APIs are deprecated in release 8.0.0.
 | Titanium.UI.iOS.ListViewCellSelectionStyle.setBubbleParent | method | Set the value using Titanium.UI.iOS.ListViewCellSelectionStyle.bubbleParent instead. |
 | Titanium.UI.iOS.ListViewScrollPosition.getBubbleParent | method | Access Titanium.UI.iOS.ListViewScrollPosition.bubbleParent instead. |
 | Titanium.UI.iOS.ListViewScrollPosition.setBubbleParent | method | Set the value using Titanium.UI.iOS.ListViewScrollPosition.bubbleParent instead. |
-
+|  |  |  |
 | Titanium.UI.iOS.ListViewStyle.getBubbleParent | method | Access Titanium.UI.iOS.ListViewStyle.bubbleParent instead. |
-
+|  |  |  |
 | Titanium.UI.iOS.ListViewStyle.setBubbleParent | method | Set the value using Titanium.UI.iOS.ListViewStyle.bubbleParent instead. |
 | Titanium.UI.iOS.LivePhotoView.getLivePhoto | method | Access Titanium.UI.iOS.LivePhotoView.livePhoto instead. |
 | Titanium.UI.iOS.LivePhotoView.getMuted | method | Access Titanium.UI.iOS.LivePhotoView.muted instead. |
