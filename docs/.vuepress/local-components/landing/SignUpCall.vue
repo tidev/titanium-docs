@@ -15,8 +15,9 @@
 
 <style lang="stylus">
 .cta
-  background-image url('../../public/images/icons/icon-titanium-red.svg')
+  background-image url('../../public/images/icons/icon-titanium-grey.svg')
   background-position 50% 40%
   background-repeat no-repeat
   background-size 60%
+  background-blend-mode overlay
 </style>
