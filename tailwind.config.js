@@ -7,8 +7,9 @@ module.exports = {
       colors: {
         red: {
           ...colors.red,
-          '500': '#CA2127',
-          '700': '#B1080E'
+          '100': '#ffebee', // $danger-ltr
+          '500': '#D22630', // $danger
+          '700': '#800008' // $danger-dk
         }
       },
       gridTemplateColumns: {
