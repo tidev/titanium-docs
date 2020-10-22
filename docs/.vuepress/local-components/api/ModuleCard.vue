@@ -1,12 +1,14 @@
 <template>
   <div class="docs-card rounded">
     <router-link :to="link" class="block p-6">
-      <div class="card-icon text-2xl flex justify-center items-center rounded-full mb-3 w-12 h-12 text-gray-700">
-        <font-awesome-icon :icon="['fas', icon]" />
+      <div class="flex justify-between items-center">
+        <header class="text-xl font-medium mb-3">
+          {{ title }}
+        </header>
+        <div class="card-icon text-2xl flex justify-center items-center rounded-full mb-3 w-12 h-12 text-gray-700">
+          <font-awesome-icon :icon="['fas', icon]" />
+        </div>
       </div>
-      <header class="text-xl font-medium mb-3">
-        {{ title }}
-      </header>
       <div class="text-sm font-normal leading-normal text-gray-600">
         <slot />
       </div>
