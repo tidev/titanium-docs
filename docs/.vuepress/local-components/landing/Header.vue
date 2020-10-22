@@ -46,12 +46,12 @@ export default {
       width calc(100vw / 2)
       &.top
         transform translate(110%, -45%) rotate(-45deg)
-        background-image: linear-gradient(135deg, #CA2127, #B1080E)
+        background-image: linear-gradient(135deg, $danger, $danger-dk)
         height calc(100vw / 1.3)
       &.bottom
         transform translate(92%, -40%) rotate(-45deg)
         height calc(100vw / 2)
-        background-image: linear-gradient(90deg, #F3F4F6, #DADBDD)
+        background-image: linear-gradient(90deg, $gray-lt, $gray)
 
   .landing-header-text
     z-index 1
