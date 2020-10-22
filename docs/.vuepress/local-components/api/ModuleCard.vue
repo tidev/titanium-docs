@@ -41,6 +41,8 @@ export default {
 
     .card-icon
       background-color $primary-ltr
+      svg
+        color $primary
 
     &:hover
       .card-icon
