@@ -100,7 +100,7 @@ export default {
 
   .gray-diamond-left::before,
   .gray-diamond-right::before
-    background-color #34495E
+    background-color #34495E // roughly becomes equivalent of $gray-lt with opacity over white
     border-radius 14%
     content:''
     display block
