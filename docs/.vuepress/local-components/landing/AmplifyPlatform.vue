@@ -10,7 +10,7 @@
       <div class="features">
         <div class="features-item">
           <h2>
-            <img src="images/titanium-logo.png" class="features__icon lg:order-last" alt="">
+            <img src="images/icons/icon-titanium-red.svg" class="features__icon lg:order-last" alt="">
             Titanium SDK
           </h2>
           <p>Node.js-based utilities to compile your JavaScript code and static assets into a native iOS and Android application.</p>
