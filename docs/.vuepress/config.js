@@ -24,7 +24,7 @@ module.exports = {
   ],
   theme: 'titanium',
   themeConfig: {
-    logo: '/images/titanium-logo.png',
+    logo: '/images/icons/icon-titanium-red.svg',
     footerCopyright: 'Copyright © 2019-present Axway Appcelerator',
     footerLogo: '/images/axway-appcelerator-logo.png',
     footerSitemap: {
