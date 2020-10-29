@@ -1,13 +1,11 @@
 ---
-title: Titanium SDK Release Notes
-weight: '40'
+title: Titanium SDK 9.2.2.GA - 29 October 2020
+weight: '10'
 ---
 
-# Titanium SDK Release Notes
+# Titanium SDK 9.2.2.GA - 29 October 2020
 
-## Titanium SDK 9.2.2.GA - 29 October 2020
-
-### About this release
+## About this release
 
 Titanium SDK 9.2.2 is a patch release of the SDK, addressing high-priority issues from previous releases.
 
@@ -17,7 +15,7 @@ As of this GA release, the previous Titanium SDK patch release (9.2.1) is no lon
 With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. Node 10.13.0 is the new minimum supported version.
 :::
 
-### Community Credits
+## Community Credits
 
 * Hans Knöchel
 
@@ -25,9 +23,9 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
     * [TIMOB-28203](https://jira.appcelerator.org/browse/TIMOB-28203) \- Remove deprecated frameworks (AddressBook, AddressBookUI, OpenGLES)
 
-### Bug Fixes
+## Bug Fixes
 
-#### Multiple platforms
+### Multiple platforms
 
 * [TIMOB-28210](https://jira.appcelerator.org/browse/TIMOB-28210) - silence aca load failure ([f9e00fd](https://github.com/appcelerator/titanium_mobile/commit/f9e00fdfb58779adafaf2a3042029010ab9f39ff))
 
@@ -41,11 +39,11 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 * [TIMOB-28174](https://jira.appcelerator.org/browse/TIMOB-28174) \- Analytics: Exception can occur when constructing payload
 
-#### Android platform
+### Android platform
 
 * [TIMOB-28193](https://jira.appcelerator.org/browse/TIMOB-28193) - openPhotoGallery() crash selecting multiple files ([29b4116](https://github.com/appcelerator/titanium_mobile/commit/29b41167184ce7a7f9b6bfc102e203a9d0cf000b))
 
-#### iOS platform
+### iOS platform
 
 * [TIMOB-28202](https://jira.appcelerator.org/browse/TIMOB-28202) - fix MediaModule compile error ([b8d2cd1](https://github.com/appcelerator/titanium_mobile/commit/b8d2cd1d414abb27f0a29c913e476f7d2f028029))
 
@@ -57,7 +55,7 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 * [TIMOB-13903](https://jira.appcelerator.org/browse/TIMOB-13903) - tableview "sectionCount" property crash ([3b0d8a4](https://github.com/appcelerator/titanium_mobile/commit/3b0d8a4f27bbfe01cfc042e14e83781f30f92c35))
 
-### SDK Module Versions
+## SDK Module Versions
 
 | Module | Android version | iOS Version |
 | --- | --- | --- |
@@ -72,27 +70,3 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 | ti.applesignin | n/a | 2.0.0 |
 | ti.cloud | 3.2.11 | 3.2.11 |
 | hyperloop | 6.0.2 | 6.0.2 |
-
-### Recent Releases
-
-* [Titanium SDK 9.2.2.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.2.2.GA_Release_Note/)
-
-* [Titanium SDK 9.2.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.2.1.GA_Release_Note/)
-
-* [Titanium SDK 9.2.0 GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.2.0_GA_Release_Note/)
-
-* [Titanium SDK 9.2.0 RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.2.0_RC_Release_Note/)
-
-* [Titanium SDK 9.1.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.1.0.GA_Release_Note/)
-
-* [Titanium SDK 9.1.0.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.1.0.RC_Release_Note/)
-
-* [Titanium SDK 9.0.3.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.0.3.GA_Release_Note/)
-
-* [Titanium SDK 9.0.2.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.0.2.GA_Release_Note/)
-
-* [Titanium SDK 9.0.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.0.1.GA_Release_Note/)
-
-* [Titanium SDK 9.0.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.0.0.GA_Release_Note/)
-
-* [Titanium SDK 9.0.0.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.0.0.RC_Release_Note/)
