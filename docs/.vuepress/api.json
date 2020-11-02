@@ -203,8 +203,8 @@
 					[ "titanium/ui/buttonbar", "ButtonBar" ],
 					[ "titanium/ui/clipboard", "Clipboard" ],
 					[ "titanium/ui/color", "Color" ],
-					[ "titanium/ui/dashboarditem", "DashbaordItem" ],
-					[ "titanium/ui/dashboardview", "DashbaordView"],
+					[ "titanium/ui/dashboarditem", "DashboardItem" ],
+					[ "titanium/ui/dashboardview", "DashboardView"],
 					[ "titanium/ui/emaildialog", "EmailDialog" ],
 					[ "titanium/ui/imageview", "ImageView" ],
 					{
