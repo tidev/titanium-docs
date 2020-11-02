@@ -65,18 +65,18 @@ The following code creates a simple video player to play a local video file.
 
 ``` js
 var vidWin = Titanium.UI.createWindow({
-    title : 'Video View Demo',
-    backgroundColor : '#fff'
+    title: 'Video View Demo',
+    backgroundColor: '#fff'
 });
 
 var videoPlayer = Titanium.Media.createVideoPlayer({
-    top : 2,
-    autoplay : true,
-    backgroundColor : 'blue',
-    height : 300,
-    width : 300,
-    mediaControlStyle : Titanium.Media.VIDEO_CONTROL_DEFAULT,
-    scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FIT
+    top: 2,
+    autoplay: true,
+    backgroundColor: 'blue',
+    height: 300,
+    width: 300,
+    mediaControlStyle: Titanium.Media.VIDEO_CONTROL_DEFAULT,
+    scalingMode: Titanium.Media.VIDEO_SCALING_RESIZE_ASPECT
 });
 
 videoPlayer.url = 'movie.mp4';
@@ -98,38 +98,38 @@ control would not be required.
 ``` js
 Titanium.UI.setBackgroundColor('#000');
 var win = Titanium.UI.createWindow({
-    title : 'Test',
-    backgroundColor : '#fff',
-    exitOnClose : true
+    title: 'Test',
+    backgroundColor: '#fff',
+    exitOnClose: true
 });
 
 // Change to a valid URL
 var contentURL = "http://www.example.com/stream.mp4";
 
 var openButton = Ti.UI.createButton({
-    title : "Start Video",
-    top : "0dp",
-    height : "40dp",
-    left : "10dp",
-    right : "10dp"
+    title: "Start Video",
+    top: "0dp",
+    height: "40dp",
+    left: "10dp",
+    right: "10dp"
 });
 
 openButton.addEventListener('click', function() {
     var activeMovie = Titanium.Media.createVideoPlayer({
-        url : contentURL,
-        backgroundColor : 'blue',
-        mediaControlStyle : Titanium.Media.VIDEO_CONTROL_DEFAULT,
-        scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FILL,
-        fullscreen : true,
-        autoplay : true
+        url: contentURL,
+        backgroundColor: 'blue',
+        mediaControlStyle: Titanium.Media.VIDEO_CONTROL_DEFAULT,
+        scalingMode: Titanium.Media.VIDEO_SCALING_RESIZE_ASPECT_FILL,
+        fullscreen: true,
+        autoplay: true
     });
 
     var closeButton = Ti.UI.createButton({
-        title : "Exit Video",
-        top : "0dp",
-        height : "40dp",
-        left : "10dp",
-        right : "10dp"
+        title: "Exit Video",
+        top: "0dp",
+        height: "40dp",
+        left: "10dp",
+        right: "10dp"
     });
 
     closeButton.addEventListener('click', function() {
