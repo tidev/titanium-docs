@@ -9,14 +9,6 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 The Android module allows the application to manage various Android components.
 
-### Drawer Layout
-
-The drawer-layout components acts as a top-level container for window content that allows
-for interactive "drawer" views to be pulled out from one or both vertical edges of the window.
-It is represented by a `centerView` and optional `leftView` and `rightView` components that
-can be swiped in and out with additional configuration and transitions. Learn more about
-drawer-layouts in it's dedicated <Titanium.UI.Android.DrawerLayout> docs.
-
 ### Action Bar
 
 An action bar is a UI feature that identifies the application and user location, and
