@@ -103,13 +103,13 @@ win.open();
 
 ``` js
 var clipboard1 = Ti.UI.createClipboard({
-    name : 'myClipboard',
-    allowCreation : true
+    name: 'myClipboard',
+    allowCreation: true
 });
 clipboard1.setText('hello');
 
 var clipboard2 = Ti.UI.createClipboard({
-    name : 'myClipboard'
+    name: 'myClipboard'
 });
 
 Ti.API.info('Clipboard name is: ' + clipboard1.name);
@@ -122,7 +122,7 @@ Ti.API.info('clipboard2.getText() ' + clipboard2.getText());
 
 ``` js
 var clipboard = Ti.UI.createClipboard({
-    unique : true
+    unique: true
 });
 clipboard.setText('hello');
 
