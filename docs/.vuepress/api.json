@@ -1,7 +1,7 @@
 [
 	{
 		"title": "Globals",
-		"children": [ 
+		"children": [
 			[ "global", "global" ],
 			[ "global/console", "console" ],
 			{
@@ -38,7 +38,7 @@
 					[ "titanium/android/notificationchannel", "NotificationChannel" ],
 					[ "titanium/android/notificationmanager", "NotificationManager" ],
 					[ "titanium/android/pendingintent", "PendingIntent" ],
-					[ "titanium/android/quicksettingsservice", "QuickSettingsService"], 
+					[ "titanium/android/quicksettingsservice", "QuickSettingsService"],
 					[ "titanium/android/r", "R" ],
 					[ "titanium/android/remoteviews", "RemoteViews" ],
 					[ "titanium/android/service", "Service" ]
@@ -113,7 +113,7 @@
 			},
 			{
 				"title": "Filesystem",
-				"path": "titanium/filesystem",
+				"path": "/api/titanium/filesystem",
 				"children": [
 					[ "titanium/filesystem/file", "File" ],
 					[ "titanium/filesystem/filestream", "FileStream" ]
@@ -121,7 +121,7 @@
 			},
 			{
 				"title": "Geolocation",
-				"path": "titanium/geolocation",
+				"path": "/api/titanium/geolocation",
 				"children": [
 					{
 						"title": "Android",
@@ -190,7 +190,7 @@
 					{
 						"title": "Android",
 						"path": "/api/titanium/ui/android",
-						"children": [	
+						"children": [
 							"titanium/ui/android/cardview",
 							"titanium/ui/android/drawerlayout",
 							"titanium/ui/android/progressindicator",
