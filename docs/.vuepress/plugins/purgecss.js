@@ -14,9 +14,10 @@ module.exports = (options, context) => {
   const purgecss = require('@fullhuman/postcss-purgecss')
   siteConfig.postcss.plugins.push(purgecss({
     content: [
-      `${sourceDir}/**/*.md`,
-      `${sourceDir}/**/*.vue`,
-      `${sourceDir}/.vuepress/**/*.vue`,
+      // `${sourceDir}/**/*.md`,
+      `${sourceDir}/api/**/*.md`,
+      `${sourceDir}/.vuepress/components/*.vue`,
+      `${sourceDir}/.vuepress/local-components/**/*.vue`,
       `${sourceDir}/../website/pages/**/*.md`,
       `${sourceDir}/../website/pages/**/*.vue`,
       `node_modules/@vuepress/plugin-*/**/*.vue`,
