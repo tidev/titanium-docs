@@ -17,6 +17,61 @@
 		]
 	},
 	{
+		"title": "Node.js",
+		"children": [
+			{
+				"title": "Buffer",
+				"path": "/api/structs/buffer",
+				"children": [
+					[ "/api/structs/buffer/buffer", "Buffer" ]
+				]
+			},
+			{
+				"title": "Events",
+				"path": "/api/structs/events",
+				"children": [
+					[ "/api/structs/eventemitter", "EventEmitter" ]
+				]
+			},
+			{
+				"title": "File System",
+				"path": "/api/structs/fs",
+				"children": [
+					[ "/api/structs/fs/constants", "constants" ],
+					[ "/api/structs/fs/stats", "Stats" ],
+					[ "/api/structs/fs/readstream", "ReadStream" ],
+					[ "/api/structs/fs/writestream", "WriteStream" ]
+				]
+			},
+			{
+				"title": "OS",
+				"path": "/api/structs/os",
+				"children": [
+					[ "/api/structs/os/constants", "constants" ]
+				]
+			},
+			{
+				"title": "Path",
+				"path": "/api/structs/path"
+			},
+			{
+				"title": "Process",
+				"path": "/api/structs/process"
+			},
+			{
+				"title": "String Decoder",
+				"path": "/api/structs/string_decoder"
+			},
+			{
+				"title": "Utilities",
+				"path": "/api/structs/util",
+				"children": [
+					[ "/api/structs/util/types", "types" ]
+				]
+			}
+		]
+	},
+	{
 		"title": "Titanium",
 		"path": "/api/titanium",
 		"children": [
