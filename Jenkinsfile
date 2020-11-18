@@ -7,7 +7,7 @@ properties([buildDiscarder(logRotator(numToKeepStr: '30', artifactNumToKeepStr: 
 def nodeVersion = '10.19.0'
 def isMainBranch = env.BRANCH_NAME.equals('master') || env.BRANCH_NAME.equals('main')
 
-node('linux || osx') {
+node('ubuntu-duckdodgers') {
 	timestamps {
 		stage('Checkout') {
 			checkout scm
