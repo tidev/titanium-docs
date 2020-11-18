@@ -41,6 +41,8 @@ Before we get into the mechanics of accessing the file system, let's talk about 
 
 * **Ti.Filesystem.tempDirectory**: A read-write directory where your application can place temporary files. The contents of this directory persist until your application fully closes, at which time the operating system could delete your files.
 
+* **Ti.Filesystem.externalCacheDirectory**: A read-write directory where your application can cache data on external storage (SD card), if such a location exists. Check first with `Ti.Filesystem.isExternalStoragePresent()` (which returns a Boolean). Only available on Android.
+
 * **Ti.Filesystem.externalStorageDirectory**: A read-write directory on the external storage device (SD card) accessible by your app, if such a location exists. Check first with `Ti.Filesystem.isExternalStoragePresent()` (which returns a Boolean). Available only for the Android and Windows platforms.
 
 * **Ti.Filesystem.applicationCacheDirectory**: A read-write directory where your application can cache data. The contents of this directory persist after your application fully closes but at the discretion of the operating system.

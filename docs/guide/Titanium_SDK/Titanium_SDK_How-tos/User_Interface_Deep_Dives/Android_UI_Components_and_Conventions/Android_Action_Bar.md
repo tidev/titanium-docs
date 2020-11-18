@@ -7,88 +7,64 @@ weight: '10'
 
 The action bar is a major UI feature for Android applications in Android 3.0 and later. To understand all of the features of the action bar and its place in Android applications, we recommend reviewing the [Android Design: Action Bar](http://developer.android.com/design/patterns/actionbar.html) and the [Action Bar API guide](http://developer.android.com/guide/topics/ui/actionbar.html) on the Android developer site.
 
-## Supported and unsupported features
-
-Titanium SDK 3.0 includes support for the Android action bar element, including support for action bar tabs, action items, and access to the action bar title, background, and home icon.
-
-The following features are _not_ supported:
-
-* Drawer-style navigation is not supported. Only tabs are supported at this time. Depending on screen space and the number of tabs, Android may display the tabs as standard tabs, scrolling tabs, or a drop-down list.
-
-* Contextual action bars are not supported.
-
-* Action providers are not supported.
-
-* Most styling on the action bar must be done using Android themes and styles.
-
-## Enabling the action bar
-
-Starting with Release 3.3.0, the Titanium SDK uses the appcompat library to provide support for the Action Bar on device's running Android 2.3.x and later. The Action Bar is automatically enabled by default on all Android applications. The target SDK version must be set at least 14.
-
-Prior to Release 3.3.0, to enable the action bar features, applications must be built with a target SDK version of 11 (Android 3.0/Honeycomb) or later. For expanding and collapsing action items, the target SDK version must be at least 14. To set the target SDK version, add code like this in your `tiapp.xml` file:
-
-```xml
-<android xmlns:android="http://schemas.android.com/apk/res/android">
-  <tool-api-level>14</tool-api-level>
-  <manifest>
-    <uses-sdk android:targetSdkVersion="14"/>
-    <!-- other manifest entries -->
-  </manifest>
-</android>
-```
-
-The `tool-api-level` identifies the version of the Android tools to use. If in doubt, use a recent version, such as 15. This does not have to correspond to the `targetSdkVersion`.
-
-::: warning ⚠️ Warning
-Do not set the `navBarHidden` property to `true` for either the Window or TabGroup containing the activity used by the Action Bar. Setting this property to true disables the Action Bar since it is part of the navigation title bar.
-:::
-
 ## Hiding the action bar
 
-There are two ways to hide the Action Bar. You can either hide the activity's Action Bar in your JavaScript code or modify the default theme to hide the Action Bar.
+Titanium shows an Action Bar by default in all windows. If you do not want to show them, then there are 2 ways to do so.
 
-**In your JavaScript code**, get the activity's action bar instance and call the [hide](#!/api/Titanium.Android.ActionBar-method-hide) method. This hides the action bar once it appears on screen.
+**In a theme XML file,** you can remove the Action Bar from the window when it is opened.
 
-```
-// "win" is a previously opened window
-// you can only get the activity after the window appears on screen
-win.activity.actionBar.hide();
-```
+Titanium provides the following built-in themes which derive from `"Theme.AppCompat.*"`. The "NoTitleBar" based themes remove the Action Bar. The "Fullscreen" theme removes both the Action Bar and Status Bar.
 
-**To automatically hide the action bar when opening a window or tab group,** you need to modify the theme to hide the action bar:
+* `"Theme.AppCompat.NoTitleBar"`
 
-1\. Add a custom theme file to your project, and set the `android:windowActionBar` item to false and `android:windowNoTitle` to true.
+* "Theme.AppCompat.Fullscreen"
 
-**platform/android/res/values/custom\_theme.xml**
+As of Titanium 9.3.0, the following `"Theme.Titanium.*"` prefixed themes are available. These themes derive from the `AndroidManifest.xml` file's `<application/>` assigned theme, which is set to `"Theme.MaterialComponents.Bridge"` by default.
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.NoActionBar" parent="@style/Theme.AppCompat">
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowNoTitle">true</item>
-    <!-- AppCompat Compatibility -->
-    <item name="windowActionBar">false</item>
-    <item name="windowNoTitle">true</item>
-    </style>
-</resources>
-```
+* `"Theme.Titanium.NoTitleBar"`
 
-2\. Modify your `tiapp.xml` file to use the modified theme. This will globally hide the action bar in all of your activities:
+* `"Theme.Titanium.Fullscreen"`
+
+You can then remove the Action Bar from all windows by default by setting the theme in the `tiapp.xml` file's `<application/>` element.
 
 ```xml
 <android xmlns:android="http://schemas.android.com/apk/res/android">
     <manifest>
-        <application android:theme="@style/Theme.NoActionBar"/>
+        <application android:theme="@style/Theme.AppCompat.NoTitleBar"/>
     </manifest>
 </android>
 ```
 
+**In JavaScript code**, you can hide/remove the Action Bar 2 different ways. This is preferred if you only want to hide an Action Bar in particular windows, not all windows.
+
+You can remove the Action Bar before by setting the window's "theme" creation property.
+
+```javascript
+// Set a theme which does not have an Action Bar.
+const win = Ti.UI.createWindow({
+    theme: 'Theme.AppCompat.NoTitleBar'
+});
+win.open();
+```
+
+Alternatively, you can hide the Action Bar after the window is opened by getting the activity's action bar instance and call the [hide](#!/api/Titanium.Android.ActionBar-method-hide) method.
+
+```javascript
+// Hide the Action Bar after the window has been opened.
+const win = Ti.UI.createWindow();
+win.addEventListener("open", () => {
+    if (OS_ANDROID) {
+        win.activity.actionBar.hide();
+    }
+});
+win.open();
+```
+
 ## Action bar tabs
 
-For tab groups, the new action bar tabs will automatically be used on devices that support them. The actual display of the tabs depends on the number of tabs and the amount of screen space available. If there is not enough space to fit all of the tabs on the action bar, Android may display scrolling tabs or a drop-down list instead.
+For Titanium 7.x.x and older versions, a tab group might display its tabs within the action bar depending on device orientation and the size of the screen. The actual display of the tabs depends on the number of tabs and the amount of screen space available. If there is not enough space to fit all of the tabs on the action bar, Android may display scrolling tabs or a drop-down list instead.
 
-With the new-style tab group, all of the windows in a tab group share a single activity. You can use `TabGroup.getActivity` to obtain the activity for the tab group. Note that since all the tabs share the same activity, you can't change the contents of the options menu for each tab by setting `onCreateOptionsMenu` on each window's activity. See [Dynamically Updating Action Items](#DynamicallyUpdatingActionItems) for an alternate implementation.
+For Titanium 8.0.0 and higher, tabs are never shown within the action bar.
 
 ## Action items
 
@@ -212,14 +188,11 @@ To change the style of the action bar, create a custom theme to override the [Ac
     <style name="MyTheme" parent="@style/Widget.AppCompat.ActionBar" />
     ```
 
-3. Define action bar properties in the style resource to override the default values from the parent style. To support devices running Android 2.3.x, the property name does not use the `android:` prefix, so you need to duplicate the properties then remove the `android:` prefix from the name.
+3. Define action bar properties in the style resource to override the default values from the parent style.
 
     ```xml
     <style name="MyTheme" parent="@style/Widget.AppCompat.ActionBar">
-        <!-- For Android 3.x. and above -->
         <item name="android:background">@drawable/actionbar_background</item>
-        <!-- For Android 2.3.x -->
-        <item name="background">@drawable/actionbar_background</item>
     </style>
     ```
 
@@ -240,8 +213,6 @@ To change the style of the action bar, create a custom theme to override the [Ac
     <android xmlns:android="http://schemas.android.com/apk/res/android">
         <manifest>
             <application android:theme="@style/Theme.CustomActionBar"/>
-            <!-- Need to specify at least API level 11 for Titanium SDK 3.2.x and prior -->
-            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
         </manifest>
     </android>
     ```
@@ -254,27 +225,14 @@ The example below modifies the Action Bar's background color and title text colo
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Theme.CustomActionBar" parent="@style/Theme.AppCompat">
-        <!-- Specify an Action Bar style to use -->
-        <item name="android:actionBarStyle">@style/MyActionBar</item>
-        <!-- This item is required for Android 2.3.x support -->
         <item name="actionBarStyle">@style/MyActionBar</item>
     </style>
 
     <!-- Define the ActionBar styles -->
-    <style name="MyActionBar"
-           parent="@style/Widget.AppCompat.ActionBar">
-        <!-- Create another style resource to specify the text color -->
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
         <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
-
-        <!-- For Android 3.x and later, you can specify either a color or background image -->
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
         <item name="android:background">#ffa500</item>
-
-        <!-- These item are required for Android 2.3.x support -->
-        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
-
-        <!-- For Android 2.3.x, you can only specify a background image not a color -->
-        <!-- This example references the platform/android/res/drawable-nodpi/actionbar_background.png image -->
-        <item name="background">@drawable/actionbar_background</item>
     </style>
 
     <!-- Define a text color for the Action Bar title -->
