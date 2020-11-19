@@ -250,10 +250,10 @@
 						"title": "Android",
 						"path": "/api/titanium/ui/android",
 						"children": [
-							"titanium/ui/android/cardview",
-							"titanium/ui/android/drawerlayout",
-							"titanium/ui/android/progressindicator",
-							"titanium/ui/android/searchview"
+							[ "titanium/ui/android/cardview", "CardView" ],
+							[ "titanium/ui/android/drawerlayout", "DrawerLayout" ],
+							[ "titanium/ui/android/progressindicator", "ProgressIndicator" ],
+							[ "titanium/ui/android/searchview", "SearchView" ]
 						]
 					},
 					[ "titanium/ui/animation", "Animation" ],
@@ -403,73 +403,97 @@
 			{
 				"title": "Facebook",
 				"path": "/api/modules/facebook",
-				"children": [ "modules/facebook/loginbutton", "modules/facebook/messengerbutton" ]
+				"children": [
+					[ "modules/facebook/loginbutton", "LoginButton" ],
+					[ "modules/facebook/messengerbutton", "MessengerButton" ]
+				]
 			},
 			{
 				"title": "Geofencing",
 				"path": "/api/modules/geofence",
-				"children": ["modules/geofence/region" ]
+				"children": [
+					[ "modules/geofence/region", "Region" ]
+				]
 			},
 			[ "modules/https", "HTTPS Cert Pinning" ],
 			{
 				"title": "Identity",
 				"path": "/api/modules/identity",
-				"children": [ "modules/identity/keychainitem" ]
+				"children": [
+					[ "modules/identity/keychainitem", "KeychainItem" ]
+				]
 			},
 			{
 				"title": "Map",
 				"path": "/api/modules/map",
 				"children": [
-					"modules/map/annotation",
-					"modules/map/camera",
-					"modules/map/circle",
-					"modules/map/imageoverlay",
-					"modules/map/polygon",
-					"modules/map/polyline",
-					"modules/map/route",
-					"modules/map/snapshotter",
-					"modules/map/streetviewpanorama",
-					"modules/map/view"
+					[ "modules/map/annotation", "Annotation" ],
+					[ "modules/map/camera", "Camera" ],
+					[ "modules/map/circle", "Circle" ],
+					[ "modules/map/imageoverlay", "ImageOverlay" ],
+					[ "modules/map/polygon", "Polygon" ],
+					[ "modules/map/polyline", "Polyline" ],
+					[ "modules/map/route", "Route" ],
+					[ "modules/map/snapshotter", "Snapshotter" ],
+					[ "modules/map/streetviewpanorama", "StreetViewPanorama" ],
+					[ "modules/map/view", "View" ]
 				]
 			},
 			{
 				"title": "NFC",
 				"path": "/api/modules/nfc",
 				"children": [
-					"modules/nfc/ndefmessage",
-					"modules/nfc/ndefrecord",
-					"modules/nfc/ndefrecordapplication",
-					"modules/nfc/ndefrecordempty",
-					"modules/nfc/ndefrecordexternal",
-					"modules/nfc/ndefrecordmedia",
-					"modules/nfc/ndefrecordsmartposter",
-					"modules/nfc/ndefrecordtext",
-					"modules/nfc/ndefrecordunknown",
-					"modules/nfc/ndefrecorduri",
-					"modules/nfc/nfcforegrounddispatchfilter",
-					"modules/nfc/nfctag",
-					"modules/nfc/tagtechnology",
-					"modules/nfc/tagtechnologyisodep",
-					"modules/nfc/tagtechnologymifareclassic",
-					"modules/nfc/tagtechnologymifareultralight",
-					"modules/nfc/tagtechnologyndef",
-					"modules/nfc/tagtechnologyndefformatable",
-					"modules/nfc/tagtechnologynfca",
-					"modules/nfc/tagtechnologynfcb",
-					"modules/nfc/tagtechnologynfcf",
-					"modules/nfc/tagtechnologynfcv"
+					[ "modules/nfc/ndefmessage", "NDEF Message" ],
+					{
+						"title": "NDEF Record",
+						"path": "/api/modules/nfc/ndefrecord",
+						"children": [
+							[ "modules/nfc/ndefrecordapplication", "Application" ],
+							[ "modules/nfc/ndefrecordempty", "Empty" ],
+							[ "modules/nfc/ndefrecordexternal", "External" ],
+							[ "modules/nfc/ndefrecordmedia", "Media" ],
+							[ "modules/nfc/ndefrecordsmartposter", "Smart Poster" ],
+							[ "modules/nfc/ndefrecordtext", "Text" ],
+							[ "modules/nfc/ndefrecordunknown", "Unknown" ],
+							[ "modules/nfc/ndefrecorduri", "URI" ]
+						]
+					},
+					[ "modules/nfc/nfcforegrounddispatchfilter", "Foreground Dispatch filter"],
+					{
+						"title": "NFC Tag",
+						"path": "/api/modules/nfc/nfctag",
+						"children": [
+							{
+								"title": "Technology",
+								"path": "/api/modules/nfc/tagtechnology",
+								"children": [
+									[ "modules/nfc/tagtechnologyisodep", "ISO-DEP"],
+									[ "modules/nfc/tagtechnologymifareclassic", "MIFARE Classic" ],
+									[ "modules/nfc/tagtechnologymifareultralight", "MIFARE Ultralight" ],
+									[ "modules/nfc/tagtechnologyndef", "NDEF" ],
+									[ "modules/nfc/tagtechnologyndefformatable", "NDEF format" ],
+									[ "modules/nfc/tagtechnologynfca", "NFC-A" ],
+									[ "modules/nfc/tagtechnologynfcb", "NFC-B" ],
+									[ "modules/nfc/tagtechnologynfcf", "NFC-F" ],
+									[ "modules/nfc/tagtechnologynfcv", "NFC-V" ]
+								]
+							}
+						]
+					}
 				]
 			},
 			{
 				"title": "TouchId (Deprecated)",
 				"path": "/api/modules/touchid",
-				"children": [ "modules/touchid/keychainitem" ]
+				"children": [
+					[ "modules/touchid/keychainitem", "KeychainItem" ]
+				]
 			},
 			{
 				"title": "Web Dialog",
 				"path": "/api/modules/webdialog",
 				"children": [
-					"modules/webdialog/authenticationsession"
+					[ "modules/webdialog/authenticationsession", "AuthenticationSession" ]
 				]
 			},
 			{
@@ -484,33 +508,37 @@
 					{
 						"title": "Apple Sign-in",
 						"path": "/api/modules/applesignin",
-						"children": [ "modules/applesignin/loginbutton" ]
+						"children": [
+							[ "modules/applesignin/loginbutton", "LoginButton" ]
+						]
 					},
 					{
 						"title": "CoreMotion",
 						"path": "/api/modules/coremotion",
 						"children": [
-							"modules/coremotion/accelerometer",
-							"modules/coremotion/altimeter",
-							"modules/coremotion/devicemotion",
-							"modules/coremotion/gyroscope",
-							"modules/coremotion/magnetometer",
-							"modules/coremotion/motionactivity",
-							"modules/coremotion/pedometer",
-							"modules/coremotion/stepcounter"
+							[ "modules/coremotion/accelerometer", "Accelerometer" ],
+							[ "modules/coremotion/altimeter", "Altimeter" ],
+							[ "modules/coremotion/devicemotion", "DeviceMotion" ],
+							[ "modules/coremotion/gyroscope", "Gyroscope" ],
+							[ "modules/coremotion/magnetometer", "Megnetometer" ],
+							[ "modules/coremotion/motionactivity", "MotionActivity" ],
+							[ "modules/coremotion/pedometer", "Pedometer" ],
+							[ "modules/coremotion/stepcounter", "StepCounter" ]
 						]
 					},
 					{
 						"title": "Safari Dialog",
 						"path": "/api/modules/safaridialog",
-						"children": [ "modules/safaridialog/authenticationsession" ]
+						"children": [
+							[ "modules/safaridialog/authenticationsession", "AuthenticationSession" ]
+						]
 					},
 					{
 						"title": "URLSession",
 						"path": "/api/modules/urlsession",
 						"children": [
-							"modules/urlsession/session",
-							"modules/urlsession/sessionconfiguration"
+							[ "modules/urlsession/session", "Session" ],
+							[ "modules/urlsession/sessionconfiguration", "SessionConfiguration" ]
 						]
 					}
 				]
