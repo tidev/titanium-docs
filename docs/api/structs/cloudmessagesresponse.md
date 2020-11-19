@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Modules/Cloud/Messages/Messages.yml
+editUrl: https://github.com/appcelerator-modules/ti.cloud/edit/master/apidoc/Messages/Messages.yml
 ---
 # CloudMessagesResponse
 

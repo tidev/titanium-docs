@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Modules/Cloud/GeoFences/GeoFences.yml
+editUrl: https://github.com/appcelerator-modules/ti.cloud/edit/master/apidoc/GeoFences/GeoFences.yml
 ---
 # Modules.Cloud.GeoFences
 

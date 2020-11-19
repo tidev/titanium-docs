@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Modules/Cloud/Posts/Posts.yml
+editUrl: https://github.com/appcelerator-modules/ti.cloud/edit/master/apidoc/Posts/Posts.yml
 ---
 # Modules.Cloud.Posts
 

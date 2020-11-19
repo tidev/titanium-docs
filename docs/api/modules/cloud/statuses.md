@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Modules/Cloud/Statuses/Statuses.yml
+editUrl: https://github.com/appcelerator-modules/ti.cloud/edit/master/apidoc/Statuses/Statuses.yml
 ---
 # Modules.Cloud.Statuses
 

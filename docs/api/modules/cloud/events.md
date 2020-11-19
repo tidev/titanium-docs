@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Modules/Cloud/Events/Events.yml
+editUrl: https://github.com/appcelerator-modules/ti.cloud/edit/master/apidoc/Events/Events.yml
 ---
 # Modules.Cloud.Events
 

@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Modules/Cloud/Likes/Likes.yml
+editUrl: https://github.com/appcelerator-modules/ti.cloud/edit/master/apidoc/Likes/Likes.yml
 ---
 # Modules.Cloud.Likes
 
