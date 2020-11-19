@@ -23,6 +23,7 @@
     "@titanium-sdk/vuepress-plugin-fontawesome": "^4.8.3",
     "@vuepress/plugin-back-to-top": "^1.7.1",
     "gh-pages": "^3.1.0",
+    "titanium-docgen": "^4.10.0",
     "vuepress": "^1.7.1",
     "vuepress-plugin-apidocs": "^4.9.1",
     "vuepress-plugin-versioning": "^4.9.0",
