@@ -58,7 +58,7 @@ Specifically, system buttons may be used in the following locations:
 * <Titanium.UI.iOS.Toolbar>. The `items` array can contain system buttons.
 * <Titanium.UI.iPad.Popover>. The `leftNavButton` and `rightNavButton` properties can
   refer to system buttons
-* <Titanium.UI.iPad.SplitWindow>. The `toolbar` array can contain system buttons.
+* <Titanium.UI.iOS.SplitWindow>. The `toolbar` array can contain system buttons.
 * <Titanium.UI.TextField>. The `keyboardToolbar` array can contain system buttons.
 * <Titanium.UI.TextArea>. The `keyboardToolbar` array can contain system buttons.
 * <Titanium.UI.Window>. The `leftNavButton` and `rightNavButton` properties can refer to

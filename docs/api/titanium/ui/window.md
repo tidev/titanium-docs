@@ -18,7 +18,7 @@ Windows *contain* other views, but in general they are not *contained* inside
 other views. There are a few specialized views that manage windows:
 
 * [NavigationWindow](Titanium.UI.NavigationWindow)
-* [SplitWindow](Titanium.UI.iPad.SplitWindow)
+* [SplitWindow](Titanium.UI.iOS.SplitWindow)
 * [TabGroup](Titanium.UI.TabGroup)
 * [Tab](Titanium.UI.Tab)
 
