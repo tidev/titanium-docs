@@ -20,6 +20,10 @@
 		"title": "Node.js",
 		"children": [
 			{
+				"title": "Assertion testing",
+				"path": "/api/structs/assert"
+			},
+			{
 				"title": "Buffer",
 				"path": "/api/structs/buffer",
 				"children": [
