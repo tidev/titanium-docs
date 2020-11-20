@@ -5,7 +5,7 @@ weight: '40'
 
 # Alloy Samples
 
-## /\*<!\[CDATA\[\*/ div.rbtoc1605695527222 {padding: 0px;} div.rbtoc1605695527222 ul {list-style: disc;margin-left: 0px;} div.rbtoc1605695527222 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
+## /\*<!\[CDATA\[\*/ div.rbtoc1605868331606 {padding: 0px;} div.rbtoc1605868331606 ul {list-style: disc;margin-left: 0px;} div.rbtoc1605868331606 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
 
 ## Kitchen Sink
 

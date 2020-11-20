@@ -42,13 +42,6 @@ The `tiapp.xml` file and its close cousin the `timodule.xml` file are XML config
         <tool-api-level>10</tool-api-level>
         <abi>all</abi>
   </android>
-    <mobileweb>
-        <splash>
-            <enabled>true</enabled>
-            <inline-css-images>true</inline-css-images>
-        </splash>
-        <theme>default</theme>
-    </mobileweb>
   <modules/>
 </ti:app>
 ```
@@ -120,7 +113,6 @@ This element contains subelements of deployment targets used by Studio to determ
     <target device="android">true</target>
     <target device="ipad">false</target>
     <target device="iphone">false</target>
-    <target device="mobileweb">false</target>
 </deployment-targets>
 ```
 
@@ -134,9 +126,7 @@ The description of this application.
 
 ### fullscreen
 
-Whether or not the application will start by taking up the entire screen. Default is false.
-
-Since Release 5.0.0, on Android, the theme will be set to `Theme.AppCompat.NoTitleBar.Fullscreen`.
+Whether or not the application will start by taking up the entire screen and remove the status bar. Default is false.
 
 ### icon
 
@@ -173,7 +163,7 @@ This element includes subelements of modules to include with the project.
 
 Whether or not the navigation bar is hidden for this application. Default is false.
 
-Supported since Release 5.0.0 for Android. On Android, the theme will be set to`Theme.AppCompat.NoTitleBar` unless `fullscreen` or `statusbar-hidden` is set to `true`.
+On Android, this will remove the top action/title bar.
 
 ### plugins
 
@@ -205,7 +195,7 @@ The publisher of this application.
 
 ### statusbar-hidden
 
-Only supported on Android. Set to `true` to set the theme to `Theme.AppCompat.NoTitleBar.Fullscreen`. Default is false.
+Only supported on Android. Will remove the top status bar if set `true`. Default is false.
 
 ### sdk-version
 
@@ -538,7 +528,7 @@ Finally, you need to add the `<uses-sdk>` tag within the `<manifest>` node. This
 
 #### Requesting a large heap from Dalvik
 
-To request a large heap size on Android 3.x and later, set the `android:largeHeap` property of the `<application>` attribute to `true`. Requires API level 11 or higher. Note that you are not guaranteed a fixed increase in available memory, because some devices are constrained by their total available memory.
+To request a large heap size, set the `android:largeHeap` property of the `<application>` attribute to `true`. Requires API level 11 or higher. Note that you are not guaranteed a fixed increase in available memory, because some devices are constrained by their total available memory.
 
 ```xml
 <android xmlns:android="http://schemas.android.com/apk/res/android">
