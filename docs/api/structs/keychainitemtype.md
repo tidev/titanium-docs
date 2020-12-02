@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/ti.touchid/edit/master/apidoc/KeychainItem.yml
+editUrl: https://github.com/appcelerator-modules/titanium-identity/edit/master/apidoc/KeychainItem.yml
 ---
 # KeychainItemType
 
