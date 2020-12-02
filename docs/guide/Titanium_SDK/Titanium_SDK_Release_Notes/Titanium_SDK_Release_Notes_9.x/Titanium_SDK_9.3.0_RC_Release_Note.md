@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK 9.3.0.RC - 1 December 2020
-weight: '120'
+weight: '10'
 ---
 
 # Titanium SDK 9.3.0.RC - 1 December 2020
@@ -27,7 +27,7 @@ Titanium SDK 9.3.0 is primarily focused on providing support for Android 11.
 
 * Michael Gangolf
 
-    * [TIDOC-3186](https://jira.appcelerator.org/browse/TIDOC-3186)adding drawerlayout alloy example ([7d5b1f5](https://github.com/appcelerator/titanium_mobile/commit/7d5b1f58a6fe443db2b79c46310828ed481ce17c))
+    * [TIDOC-3186](https://jira.appcelerator.org/browse/TIDOC-3186) - adding drawerlayout alloy example ([7d5b1f5](https://github.com/appcelerator/titanium_mobile/commit/7d5b1f58a6fe443db2b79c46310828ed481ce17c))
 
     * [TIMOB-27779](https://jira.appcelerator.org/browse/TIMOB-27779) - fix TabbedBar Click loop ([1c5327d](https://github.com/appcelerator/titanium_mobile/commit/1c5327df7f719267a6e9d3f1c6935b90440fbda1))
 
