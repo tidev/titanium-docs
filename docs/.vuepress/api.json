@@ -399,6 +399,13 @@
 		"children": [
 			[ "modules/barcode", "Barcode" ],
 			[ "modules/aca", "Crash Reporting" ],
+			{
+				"title": "Crypto",
+				"path": "/api/modules/crypto",
+				"children": [
+					[ "modules/crypto/cryptor", "Cryptor" ]
+				]
+			},
 			[ "modules/encrypteddatabase", "Encrypted Database" ],
 			{
 				"title": "Facebook",
