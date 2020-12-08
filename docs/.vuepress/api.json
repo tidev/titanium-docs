@@ -483,13 +483,6 @@
 				]
 			},
 			{
-				"title": "TouchId (Deprecated)",
-				"path": "/api/modules/touchid",
-				"children": [
-					[ "modules/touchid/keychainitem", "KeychainItem" ]
-				]
-			},
-			{
 				"title": "Web Dialog",
 				"path": "/api/modules/webdialog",
 				"children": [
@@ -524,13 +517,6 @@
 							[ "modules/coremotion/motionactivity", "MotionActivity" ],
 							[ "modules/coremotion/pedometer", "Pedometer" ],
 							[ "modules/coremotion/stepcounter", "StepCounter" ]
-						]
-					},
-					{
-						"title": "Safari Dialog",
-						"path": "/api/modules/safaridialog",
-						"children": [
-							[ "modules/safaridialog/authenticationsession", "AuthenticationSession" ]
 						]
 					},
 					{
