@@ -15,7 +15,7 @@ const docSections = [
 ];
 
 module.exports = {
-  base: '/titanium-docs/',
+  base: '/',
   title: 'Titanium Mobile',
   description: 'Native iOS and Android Apps with JavaScript',
   head: [
