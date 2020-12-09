@@ -20,8 +20,10 @@ started with using this module in your application.
 
 To access this module from JavaScript, you would do the following:
 
-  var crypto = require("ti.crypto");
+``` javascript
+var crypto = require("ti.crypto");
+```
 
-The crypto variable is a reference to the Module object.
+The `crypto` variable is a reference to the Module object.
 
 <ApiDocs/>
