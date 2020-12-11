@@ -10,19 +10,21 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 The Clipboard is a temporary data store, used to save a single item of data that may then
 be accessed by the user using UI copy and paste interactions within an app or between apps.
 
-On iOS, the module's `*Data()` methods enable multiple representations of the
+On iOS, the module's `setData()` and `getData()` methods enable multiple representations of the
 same data item to be stored together with their respective
 [MIME type](http://en.wikipedia.org/wiki/Internet_media_type) to describe their format. For
 example, `'text'` and `'text/plain'` for text, and `'image/jpg'` and `'image/png'` for an image.
+iOS Will report back the type of data representation in `getItems()` as 
+[Universal Type Identifiers](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Articles/System-DeclaredUniformTypeIdentifiers.html).
 
-When working with text, either the `*Data()` methods may be used with a `'text/plain'` type, or
-the `*Text()` methods without the need to specify the type.
+When working with text, either of the `getData()`/`setData()` methods may be used with a `'text/plain'` type, or
+the `getText()`/`hasText()`/`setText()` methods without the need to specify the type.
 
-Android currently only supports text type of data to be stored.
+Android currently only supports text data to be stored.
 
 ### Clipboard Data Types
 
-The `*Text()` methods are equivalent to calling `*Data()` with a `'text'` or `'text/plain'`
+The `getText()`/`hasText()`/`setText()` methods are equivalent to calling `getData()`/`setData()` with a `'text'` or `'text/plain'`
 type. These work with plain Unicode strings.
 
 An image is stored using the `'image'` type, or an explicit image MIME type, and is returned as
@@ -60,22 +62,23 @@ same two keys in one object and the key must match a valid mime-type. If no vali
 
 ``` js
 var win = Ti.UI.createWindow({
-    backgroundColor : "#fff"
+    backgroundColor: "#fff"
 });
 
 var btn1 = Ti.UI.createButton({
-    title : "Set clipboard items",
+    title: "Set clipboard items",
     top: 40
 });
 
 var btn2 = Ti.UI.createButton({
-    title : "Get clipboard items",
+    title: "Get clipboard items",
     top: 80
 });
 
-btn1.addEventListener("click", function() {
-  var localOnly = Ti.UI.CLIPBOARD_OPTION_LOCAL_ONLY;
-  var expirationDate = Ti.UI.CLIPBOARD_OPTION_EXPIRATION_DATE;
+btn1.addEventListener("click", function () {
+  const options = {};
+  options[Ti.UI.CLIPBOARD_OPTION_LOCAL_ONLY] = true;
+  options[Ti.UI.CLIPBOARD_OPTION_EXPIRATION_DATE] = new Date(2030, 4, 20);
 
     Ti.UI.Clipboard.setItems({
       items: [{
@@ -83,14 +86,11 @@ btn1.addEventListener("click", function() {
       },{
           "text/plain": "Doe"
       }],
-      options: {
-          localOnly: true,
-          expirationDate: new Date(2020, 04, 20)
-      }
+      options
   });
 });
 
-btn2.addEventListener("click", function() {
+btn2.addEventListener("click", function () {
     alert(Ti.UI.Clipboard.getItems());
 });
 
