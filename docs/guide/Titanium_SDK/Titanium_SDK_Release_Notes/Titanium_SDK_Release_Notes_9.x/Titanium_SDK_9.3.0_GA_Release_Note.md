@@ -1,15 +1,15 @@
 ---
-title: Titanium SDK 9.3.0.RC - 1 December 2020
-weight: '20'
+title: Titanium SDK 9.3.0.GA - 14 December 2020
+weight: '10'
 ---
 
-# Titanium SDK 9.3.0.RC - 1 December 2020
+# Titanium SDK 9.3.0.GA - 14 December 2020
 
 ## About this release
 
 Titanium SDK 9.3.0 is a minor release of the SDK, addressing high-priority issues from previous releases.
 
-As of this release, Titanium SDK 9.2.x will not receive updates more than six months after the release of 9.3.0 (2021-05-01). Any needed fixes will be in 9.3.x or later supported releases within the 9.x branch. See [Axway Appcelerator Deprecation Policy](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_deprecation_policy.html) and [Nominal Lifetimes](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_product_lifecycle.html#AxwayAppceleratorProductLifecycle-NominalLifetimes) documents for details.
+As of this release, Titanium SDK 9.2.x will not receive updates more than six months after the release of 9.3.0 (2021-05-14). Any needed fixes will be in 9.3.x or later supported releases within the 9.x branch. See [Axway Appcelerator Deprecation Policy](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_deprecation_policy.html) and [Nominal Lifetimes](https://docs.axway.com/bundle/AMPLIFY_Appcelerator_Services_Overview_allOS_en/page/axway_appcelerator_product_lifecycle.html#AxwayAppceleratorProductLifecycle-NominalLifetimes) documents for details.
 
 ::: danger ❗️ Warning
 With the release of Titanium SDK 9.0.0, we no longer support Node.js 8.X. Node 10.13.0 is the new minimum supported version.
@@ -38,6 +38,8 @@ Titanium SDK 9.3.0 is primarily focused on providing support for Android 11.
 * Hans Knöchel
 
     * [TIMOB-28104](https://jira.appcelerator.org/browse/TIMOB-28104) - support new date picker styles ([78bce40](https://github.com/appcelerator/titanium_mobile/commit/78bce40cd4dd9b90a06929729122dd9e17272450))
+
+    * [TIMOB-28232](https://jira.appcelerator.org/browse/TIMOB-28232) - iOS: Several memory leaks in Titanium
 
 ## Features
 
@@ -124,6 +126,8 @@ Titanium SDK 9.3.0 is primarily focused on providing support for Android 11.
 * [TIMOB-28230](https://jira.appcelerator.org/browse/TIMOB-28230) - Add Ti.Filesystem.externalCacheDirectory support
 
 * [TIMOB-28231](https://jira.appcelerator.org/browse/TIMOB-28231) - Change Ti.Filesystem.externalStorageDirectory to use scoped storage
+
+* [TIMOB-28269](https://jira.appcelerator.org/browse/TIMOB-28269) - Amend session event behaviour
 
 * [MOD-2588](https://jira.appcelerator.org/browse/MOD-2588) - add passcode fallback to ti.identity ([7e7934d](https://github.com/appcelerator/titanium_mobile/commit/7e7934d1c61d9099c02146519048b30046d68d25))
 
@@ -213,6 +217,14 @@ Titanium SDK 9.3.0 is primarily focused on providing support for Android 11.
 
 * [TIMOB-28246](https://jira.appcelerator.org/browse/TIMOB-28246) - Ti.Media.previewImage() fails to display in-memory blobs as of 9.1.0 ([984f811](https://github.com/appcelerator/titanium_mobile/commit/984f8118d6f39b68c2bdb576871291a0cbb680db))
 
+* [TIMOB-28252](https://jira.appcelerator.org/browse/TIMOB-28252) - Modules built before 9.3.0 will return empty string instead of null
+
+* [TIMOB-28271](https://jira.appcelerator.org/browse/TIMOB-28271) - The searchBar border not shown in tableview/listview
+
+* [TIMOB-28276](https://jira.appcelerator.org/browse/TIMOB-28276) - ListView/TableView "headerView" may not show when setting height as of 9.3.0
+
+* [TIMOB-28283](https://jira.appcelerator.org/browse/TIMOB-28283) - Hyperloop based requires fail to load when using "remote" encryption policy
+
 * add accessor for Ti.Media.fullscreen property, default initialPlaybackTime to 0 ([204827d](https://github.com/appcelerator/titanium_mobile/commit/204827d863ee3c8f5b546f8e996ee59870127810))
 
 * allow overriding of toString() ([f20ed51](https://github.com/appcelerator/titanium_mobile/commit/f20ed5123c9da72a581ad4ed5d9f67d99d79747b))
@@ -285,6 +297,8 @@ Titanium SDK 9.3.0 is primarily focused on providing support for Android 11.
 
 * [TIMOB-28221](https://jira.appcelerator.org/browse/TIMOB-28221) - Default value of property Ti.Media.VideoPlayer.pictureInPictureEnabled should be true ([ba7e5aa](https://github.com/appcelerator/titanium_mobile/commit/ba7e5aab70925e9b1ad8cb197e0c1c39056081c2))
 
+* [TIMOB-28232](https://jira.appcelerator.org/browse/TIMOB-28232) - Several memory leaks in Titanium
+
 * [TIMOB-28227](https://jira.appcelerator.org/browse/TIMOB-28227) - Ti.UI.dateTimeColor is crashing on mac
 
 * fix Ti.Filesystem.getAsset and getFile on devices ([3b2865d](https://github.com/appcelerator/titanium_mobile/commit/3b2865daf131eaabdfeaac2c5b6b6772e514e3dc))
@@ -312,7 +326,7 @@ Titanium SDK 9.3.0 is primarily focused on providing support for Android 11.
 | ti.map | 5.0.1 | 4.0.1 |
 | ti.webdialog | 2.0.0 | 2.0.0 |
 | ti.playservices | 17.5.0 | n/a |
-| ti.identity | 3.0.2 | 2.0.0 |
+| ti.identity | 3.0.2 | 3.0.0 |
 | urlSession | n/a | 3.0.0 |
 | ti.coremotion | n/a | 3.0.0 |
 | ti.applesignin | n/a | 2.0.0 |
