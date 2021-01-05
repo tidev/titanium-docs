@@ -21,7 +21,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@silvanite/vuepress-plugin-tailwind": "^1.3.0",
     "@titanium-sdk/vuepress-plugin-fontawesome": "^4.8.3",
-    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "@vuepress/plugin-back-to-top": "^1.8.0",
     "gh-pages": "^3.1.0",
     "titanium-docgen": "^4.10.0",
     "vuepress": "^1.7.1",
