@@ -13,8 +13,7 @@ holds the "contents" of the tab. Users can select a tab by clicking on the tab b
 Use the <Titanium.UI.createTab> method or **`<Tab>`** Alloy element to create a tab.
 
 Use [TabGroup.setActiveTab](Titanium.UI.TabGroup.setActiveTab) to switch between tabs
-in a tab group. The <Titanium.UI.currentTab> property provides a global reference to
-the currently active tab.
+in a tab group.
 
 The behavior of tabs and tab groups follows the platform's native navigation style,
 which varies significantly between platforms.

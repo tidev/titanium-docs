@@ -20,7 +20,7 @@ button.addEventListener('click', function() {
   Ti.API.info('Current value for editText: ' + Ti.App.Properties.getString('editText'));
   Ti.UI.Android.openPreferences();
 });
-Ti.UI.currentWindow.add(button);
+currentWindow.add(button);
 ```
 
 #### `platform/android/res/xml/preferences.xml`
