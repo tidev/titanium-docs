@@ -37,14 +37,18 @@ Each Titanium SDK supports a specific range of Xcode versions, shown in the tabl
 
 | Titanium SDK Version | Min Xcode Version | Max Xcode Version | Notes |
 | --- | --- | --- | --- |
-| 8.2.0 | 8.0.x | 11.x | Full support for iOS 13 |
-| 8.0.0 - 8.1.1 | 8.0.x | 10.x |  |
-| 7.5.0 - 7.5.2 | 8.0.x | 10.x |  |
+| 9.3.0 - latest | 11.0.0 | 12.x |  |
+| 9.2.0 - 9.2.2 | 11.0.0 | 12.x | Full support for iOS 14 and beta support for macOS via Mac Catalyst |
+| 9.0.0 - 9.1.0 | 9.0.0 | 11.x | Dropped iOS 9 support |
+| 8.3.0 - 8.3.1 | 8.0.0 | 11.x |  |
+| 8.2.0 - 8.2.1 | 8.0.0 | 11.x | Full support for iOS 13 |
+| 8.0.0 - 8.1.1 | 8.0.0 | 10.x |  |
 
 #### Unsupported versions of Xcode
 
 | Titanium SDK Version | Min Xcode Version | Max Xcode Version | Notes |
 | --- | --- | --- | --- |
+| 7.5.0 - 7.5.2 | 8.0.0 | 10.x |  |
 | 7.4.0 - 7.4.2 | 8.0.x | 10.x | Full support for iOS 12 |
 | 7.0.0 - 7.3.1 | 6.0.x | 9.0.x |  |
 | 6.3.0 | 6.0.x | 9.0.x |  |
@@ -58,22 +62,27 @@ Deploying for iOS 11.x requires Xcode 9.x, and macOS 10.12.4 and later.
 
 Deploying for iOS 12.x requires Xcode 10.x, and macOS 10.13.6 and later.
 
+As per apple guidelines, Starting April 2020 all apps submitted to App Store must be built with iOS 13 SDK or later, included in Xcode 11 or later.
+
 ### iOS SDK / Target iOS platform
 
 Each Titanium SDK supports a specific range of iOS base SDKs and deployment targets. To build an application for a specific iOS target version, you must have the appropriate iOS SDK installed.
 
 #### Supported versions of iOS SDK / Target iOS platform
 
-| Titanium SDK version | Minimum SDK version | Maximum SDK version | Minimum target iOS version | Maximum target iOS version |
+| Titanium SDK version | Minimum iOS SDK version | Maximum iOS SDK version | Minimum target iOS version | Maximum target iOS version |
 | --- | --- | --- | --- | --- |
-| 8.0.0 - latest | 9.0.x | 12.x | 9.0 | 12.x |
-| 7.4.0 - 7.5.x | 8.0.x | 12.x | 8.0 | 12.x |
-| 7.0.0 - 7.3.x | 8.0.x | 11.x | 8.0 | 12.x |
+| 9.2.0 - latest | 13.0.0 | 14.x | 10.0 | 14.x |
+| 9.0.0 - 9.1.2 | 11.0.0 | 13.x | 10.0 | 13.x |
+| 8.2.0 - 8.3.1 | 10.0.0 | 13.x | 9.0 | 13.x |
+| 8.0.0 - 8.1.1 | 10.0.0 | 12.x | 9.0 | 12.x |
 
 #### Unsupported versions of iOS SDK / Target iOS platform
 
 | Titanium SDK version | Minimum SDK version | Maximum SDK version | Minimum target iOS version | Maximum target iOS version |
 | --- | --- | --- | --- | --- |
+| 7.4.0 - 7.5.x | 8.0.0 | 12.x | 8.0 | 12.x |
+| 7.0.0 - 7.3.x | 8.0.0 | 11.x | 8.0 | 12.x |
 | 6.2.0 - 6.3.x | 8.0.x | 11.x | 8.0 | 12.x |
 | 6.0.0 - 6.1.x | 8.0.x | 10.x | 8.0 | 12.x |
 | 5.5.x | 8.0.x | 10.x | 7.1.x | 9.3.x |
