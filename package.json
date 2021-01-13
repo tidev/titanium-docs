@@ -25,7 +25,7 @@
     "gh-pages": "^3.1.0",
     "titanium-docgen": "^4.10.0",
     "vuepress": "^1.8.0",
-    "vuepress-plugin-apidocs": "^4.10.0",
+    "vuepress-plugin-apidocs": "^4.10.1",
     "vuepress-plugin-versioning": "^4.9.0",
     "vuepress-theme-titanium": "^4.9.0",
     "vuex": "^3.6.0",
