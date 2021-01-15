@@ -29,9 +29,6 @@ module.exports = {
     footerLogo: '/images/axway-appcelerator-logo.png',
     footerSitemap: {
       'Docs': docSections,
-      'Other': [
-        { text: 'Some link', link: 'https://docs.appcelerator.com/' }
-      ],
       'Social': [
         { text: 'Blog', link: 'https://appcelerator.com/blog' },
         { text: 'Slack', link: 'https://tislack.org' },
