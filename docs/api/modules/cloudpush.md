@@ -1,7 +1,7 @@
 ---
 editUrl: https://github.com/appcelerator-modules/cloudpush/edit/master/apidoc/Cloudpush.yml
 ---
-# Modules.Cloudpush
+# Modules.CloudPush
 
 <TypeHeader/>
 
@@ -23,7 +23,7 @@ The default property values listed below are used until you set a property for t
 persisted to the device settings (just like Ti.App.Properties), the most recent value you set will always be used.
 
 ## TiApp.xml
-The constants this module uses can be overriden in your tiapp.xml, as follows:
+The constants this module uses can be overridden in your tiapp.xml, as follows:
 
 ### acs-push-api-url, acs-push-api-url-production, acs-push-api-url-development
 Specifies which ACS api url is used.

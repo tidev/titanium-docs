@@ -1,7 +1,7 @@
 ---
 editUrl: https://github.com/appcelerator-modules/cloudpush/edit/master/apidoc/Cloudpush.yml
 ---
-# Modules.Cloudpush.Error
+# Modules.CloudPush.Error
 
 <TypeHeader/>
 
