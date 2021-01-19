@@ -38,21 +38,6 @@ explicitly create a listener for every individual row.
 See the [TableView](Titanium.UI.TableView) description and examples section for more information
 about creating table rows.
 
-### Improved Table Performance (Android)
-
-If you are experiencing performance issues on Android when using custom rows, you can
-try setting the [className](Titanium.UI.TableViewRow.className) property. The class name serves as a
-cue for reusing the underlying views used to display the rows.
-
-A given `className` value indicates a row with a particular set of child views.
-All rows that share a class name must have the same set of children -- for example, the class
-name "myCustomRow" could identify a row containing two labels and an image view.
-
-The properties of the child controls may be different. For example, each instance of
-"myCustomRow" could have a different image and different text on the labels.
-
-Note that `className` is no longer used on iOS, and is ignored.
-
 ### Platform Implementation Notes
 
 The `top`, `left` and other positional parameters are not used for their usual purposes, because

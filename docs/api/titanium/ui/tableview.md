@@ -69,9 +69,9 @@ Release 3.0:
     ([TIMOB-12625](https://jira.appcelerator.org/browse/TIMOB-12625)). This issue has been
     addressed in Release 3.3.0 of the Titanium SDK
 
-### Row Editing and Moving Modes (iOS only)
+### Row Editing and Moving Modes
 
-On iOS, table views have an `editing` and a `moving` mode that may be activated to using their
+Table views have an `editing` and a `moving` mode that may be activated to using their
 respective [editing](Titanium.UI.TableView.editing) and [moving](Titanium.UI.TableView.moving)
 properties. These allow rows to be deleted or re-ordered by the user, depending on each row's
 [editable](Titanium.UI.TableViewRow.editable) and [moveable](Titanium.UI.TableViewRow.moveable)

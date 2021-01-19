@@ -159,7 +159,7 @@ the keyboard is likely to completely obscure the text field.
 To mitigate this, a `ScrollView` may be used instead of a list view, as demonstrated in the
 [ScrollView](Titanium.UI.ScrollView), "Scroll View as a Table View", example.
 
-### Editing Support (iOS)
+### Editing Support
 
 Editing a ListView through user initiated actions is supported through the following properties.
 
