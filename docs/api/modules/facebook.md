@@ -13,7 +13,7 @@ This module supports the following features:
 * Logging in to Facebook and authorizing your application with either the
   [Login button](Modules.Facebook.LoginButton) or programatically.
 
-* Making requests through the Facebook Graph API v3 using the
+* Making requests through the Facebook Graph API using the
   [requestWithGraphPath()](Modules.Facebook.requestWithGraphPath) method.
 
 ## Getting Started
@@ -96,30 +96,7 @@ to handle the switching in and out of your app:
 </array>
 ```
 
-If you are using the older Ti.Facebook Module 4.0.5 and wish to support iOS9, you will instead need to include the following key
-and values in `tiapp.xml` to handle the switching in and out of your app:
-
-``` xml
-<key>LSApplicationQueriesSchemes</key>
-<array>
-    <string>fbapi</string>
-    <string>fbapi20130214</string>
-    <string>fbapi20130410</string>
-    <string>fbapi20130702</string>
-    <string>fbapi20131010</string>
-    <string>fbapi20131219</string>
-    <string>fbapi20140410</string>
-    <string>fbapi20140116</string>
-    <string>fbapi20150313</string>
-    <string>fbapi20150629</string>
-    <string>fbauth</string>
-    <string>fbauth2</string>
-    <string>fb-messenger-api20140430</string>
-</array>
-```
-
-For iOS 9+ and Titanium 5.0.0.GA and above, App Transport Security is disabled by default.
-If you choose to enable it, you have to set the following keys and values in `tiapp.xml` `<ios>` section for facebook module:
+If you choose to enable App Transport Security (ATS), you have to set the following keys and values in `tiapp.xml` `<ios>` section for facebook module:
 
 ``` xml
 <key>NSAppTransportSecurity</key>
@@ -360,6 +337,14 @@ win.add(messengerButton);
 ```
 
 For more information, see the [MessengerButton API reference](Modules.Facebook.MessengerButton).
+
+### Login Tracking (iOS only)
+
+The Ti.Facecebook iOS version 10.0.0 and later supports the `loginTracking` property in the [LoginButton](Modules.Facebook.LoginButton.loginTracking)
+and as a top-level property [loginTracking](Modules.Facebook.loginTracking). You can choose between the two constants
+[LOGIN_TRACKING_ENABLED](Modules.Facebook.LOGIN_TRACKING_ENABLED) (default) and [LOGIN_TRACKING_LIMITED](Modules.Facebook.LOGIN_TRACKING_LIMITED).
+
+For more information, see the [Login Tracking API reference](https://developers.facebook.com/docs/facebook-login/limited-login) and review the constants above.
 
 ## Examples
 
