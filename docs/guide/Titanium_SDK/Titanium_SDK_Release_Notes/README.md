@@ -337,6 +337,8 @@ Titanium SDK 9.3.0 is primarily focused on providing support for Android 11.
 
 ### Recent Releases
 
+* [Titanium SDK 9.3.1 GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.3.1_GA_Release_Note/)
+
 * [Titanium SDK 9.3.0 GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.3.0_GA_Release_Note/)
 
 * [Titanium SDK 9.3.0 RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.3.0_RC_Release_Note/)

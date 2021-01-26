@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK 9.3.0.GA - 14 December 2020
-weight: '10'
+weight: '20'
 ---
 
 # Titanium SDK 9.3.0.GA - 14 December 2020
