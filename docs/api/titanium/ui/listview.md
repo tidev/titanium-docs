@@ -211,32 +211,29 @@ var win = Ti.UI.createWindow({backgroundColor: 'gray'});
 var listView = Ti.UI.createListView();
 var sections = [];
 
-var fruitSection = Ti.UI.createListSection({ headerTitle: 'Fruits'});
 var fruitDataSet = [
     {properties: { title: 'Apple'}},
     {properties: { title: 'Banana'}},
 ];
-fruitSection.setItems(fruitDataSet);
+var fruitSection = Ti.UI.createListSection({ headerTitle: 'Fruits', items: fruitDataSet});
 sections.push(fruitSection);
 
-var vegSection = Ti.UI.createListSection({ headerTitle: 'Vegetables'});
 var vegDataSet = [
     {properties: { title: 'Carrots'}},
     {properties: { title: 'Potatoes'}},
 ];
-vegSection.setItems(vegDataSet);
 sections.push(vegSection);
+var vegSection = Ti.UI.createListSection({ headerTitle: 'Vegetables', items: vegDataSet});
 
 listView.sections = sections;
 win.add(listView);
 win.open();
 
-var fishSection = Ti.UI.createListSection({ headerTitle: 'Fish'});
 var fishDataSet = [
     {properties: { title: 'Cod'}},
     {properties: { title: 'Haddock'}},
 ];
-fishSection.setItems(fishDataSet);
+var fishSection = Ti.UI.createListSection({ headerTitle: 'Fish', items: fishDataSet});
 listView.appendSection(fishSection);
 ```
 
@@ -288,7 +285,6 @@ var listView = Ti.UI.createListView({
 });
 var sections = [];
 
-var fruitSection = Ti.UI.createListSection({ headerTitle: 'Fruits / Frutas'});
 var fruitDataSet = [
     // the text property of info maps to the text property of the title label
     // the text property of es_info maps to text property of the subtitle label
@@ -296,23 +292,21 @@ var fruitDataSet = [
     { info: {text: 'Apple'}, es_info: {text: 'Manzana'}, pic: {image: 'apple.png'}},
     { info: {text: 'Banana'}, es_info: {text: 'Banana'}, pic: {image: 'banana.png'}}
 ];
-fruitSection.setItems(fruitDataSet);
+var fruitSection = Ti.UI.createListSection({ headerTitle: 'Fruits / Frutas', items: fruitDataSet});
 sections.push(fruitSection);
 
-var vegSection = Ti.UI.createListSection({ headerTitle: 'Vegetables / Verduras'});
 var vegDataSet = [
     { info: {text: 'Carrot'}, es_info: {text: 'Zanahoria'}, pic: {image: 'carrot.png'}},
     { info: {text: 'Potato'}, es_info: {text: 'Patata'}, pic: {image: 'potato.png'}}
 ];
-vegSection.setItems(vegDataSet);
+var vegSection = Ti.UI.createListSection({ headerTitle: 'Vegetables / Verduras', items: vegDataSet});
 sections.push(vegSection);
 
-var grainSection = Ti.UI.createListSection({ headerTitle: 'Grains / Granos'});
 var grainDataSet = [
     { info: {text: 'Corn'}, es_info: {text: 'Maiz'}, pic: {image: 'corn.png'}},
     { info: {text: 'Rice'}, es_info: {text: 'Arroz'}, pic: {image: 'rice.png'}}
 ];
-grainSection.setItems(grainDataSet);
+var grainSection = Ti.UI.createListSection({ headerTitle: 'Grains / Granos', items: grainDataSet});
 sections.push(grainSection);
 
 listView.setSections(sections);
@@ -320,7 +314,7 @@ win.add(listView);
 win.open();
 ```
 
-### List View with a pullView (Only supported on iOS since 3.2.0)
+### List View with a pullView
 
 This sample shows how the [pullView](Titanium.UI.ListView.pullView) property could be
 utilized along with the [pull](Titanium.UI.ListView.pull) and [pullend](Titanium.UI.ListView.pullend) events to
@@ -331,27 +325,25 @@ var win = Ti.UI.createWindow({backgroundColor: 'white'});
 var listView = Ti.UI.createListView({height:'90%', top:0});
 var sections = [];
 
-var fruitSection = Ti.UI.createListSection({ headerTitle: 'Fruits'});
 var fruitDataSet = [
     {properties: { title: 'Apple'}},
     {properties: { title: 'Banana'}},
 ];
-fruitSection.setItems(fruitDataSet);
+var fruitSection = Ti.UI.createListSection({ headerTitle: 'Fruits', items: fruitDataSet});
 sections.push(fruitSection);
 
-var vegSection = Ti.UI.createListSection({ headerTitle: 'Vegetables'});
 var vegDataSet = [
     {properties: { title: 'Carrots'}},
     {properties: { title: 'Potatoes'}},
 ];
-vegSection.setItems(vegDataSet);
+var vegSection = Ti.UI.createListSection({ headerTitle: 'Vegetables', items: vegDataSet});
 
-var fishSection = Ti.UI.createListSection({ headerTitle: 'Fish'});
 var fishDataSet = [
     {properties: { title: 'Cod'}},
     {properties: { title: 'Haddock'}},
 ];
-fishSection.setItems(fishDataSet);
+var fishSection = Ti.UI.createListSection({ headerTitle: 'Fish', items: fishDataSet});
+
 listView.sections = sections;
 var refreshCount = 0;
 
