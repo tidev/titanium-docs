@@ -343,7 +343,7 @@
 					[ "titanium/ui/tab", "Tab" ],
 					[ "titanium/ui/tabbedbar", "TabbedBar" ],
 					[ "titanium/ui/tabgroup", "TabGroup" ],
-					[ "titanium/ui/tableview", "TablewView" ],
+					[ "titanium/ui/tableview", "TableView" ],
 					[ "titanium/ui/tableviewrow", "TableViewRow" ],
 					[ "titanium/ui/tableviewsection", "TableViewSection" ],
 					[ "titanium/ui/textarea", "TextArea" ],
