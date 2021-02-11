@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK 9.3.1.GA - 25 January 2021
-weight: '10'
+weight: '20'
 ---
 
 # Titanium SDK 9.3.1.GA - 25 January 2021

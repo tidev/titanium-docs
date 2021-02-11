@@ -1,13 +1,11 @@
 ---
-title: Titanium SDK Release Notes
-weight: '40'
+title: Titanium SDK 9.3.2.GA - 11 February 2021
+weight: '10'
 ---
 
-# Titanium SDK Release Notes
+# Titanium SDK 9.3.2.GA - 11 February 2021
 
-## Titanium SDK 9.3.2.GA - 11 February 2021
-
-### About this release
+## About this release
 
 Titanium SDK 9.3.2 is a patch release of the SDK, addressing high-priority issues from previous releases.
 
@@ -17,15 +15,15 @@ As of this GA release, the previous Titanium SDK patch release (9.3.1) is no lon
 With the release of Titanium SDK 9.0.0, we no longer support Node.js 8.X. Node 10.13.0 is the new minimum supported version.
 :::
 
-### Community Credits
+## Community Credits
 
 * Michael Gangolf
 
     * [TIMOB-28333](https://jira.appcelerator.org/browse/TIMOB-28333) - rgba(int,int,int) parity with iOS ([925f6f2](https://github.com/appcelerator/titanium_mobile/commit/925f6f26ab2eabbff43eaffef8622f4e305d6360))
 
-### Bug Fixes
+## Bug Fixes
 
-#### Android platform
+### Android platform
 
 * [TIMOB-28337](https://jira.appcelerator.org/browse/TIMOB-28337) - ListView properties missing in "longpress" event in Alloy as of 9.3.0 ([0935358](https://github.com/appcelerator/titanium_mobile/commit/093535877cadf38e48efa840c7902bfa7a12f902))
 
@@ -35,7 +33,7 @@ With the release of Titanium SDK 9.0.0, we no longer support Node.js 8.X. Node 1
 
 * [TIMOB-28333](https://jira.appcelerator.org/browse/TIMOB-28333) - rgba(int,int,int) parity with iOS ([925f6f2](https://github.com/appcelerator/titanium_mobile/commit/925f6f26ab2eabbff43eaffef8622f4e305d6360))
 
-#### iOS platform
+### iOS platform
 
 * [TIMOB-28325](https://jira.appcelerator.org/browse/TIMOB-28325) - Calculate proper row width for UITableViewStyleInsetGrouped ([a34e964](https://github.com/appcelerator/titanium_mobile/commit/a34e9643c6a9c9686e76e3893ce501a3f9073413))
 
@@ -47,11 +45,11 @@ With the release of Titanium SDK 9.0.0, we no longer support Node.js 8.X. Node 1
 
 * Expose Ti.Media.AudioPlayer.externalPlaybackActive as boolean properly ([2712dc6](https://github.com/appcelerator/titanium_mobile/commit/2712dc6be533b9752b9b62dccc7e022596a03558))
 
-#### Multiple platforms
+### Multiple platforms
 
 * declare i18n function before its usage ([e4bc8a9](https://github.com/appcelerator/titanium_mobile/commit/e4bc8a9265f6e6ba2cb801612c65dbe49a953b05))
 
-### SDK Module Versions
+## SDK Module Versions
 
 | Module | Android version | iOS Version |
 | --- | --- | --- |
@@ -66,35 +64,3 @@ With the release of Titanium SDK 9.0.0, we no longer support Node.js 8.X. Node 1
 | ti.applesignin | n/a | 2.0.0 |
 | ti.cloud | 3.2.11 | 3.2.11 |
 | hyperloop | 6.0.2 |  |
-
-### Recent Releases
-
-* [Titanium SDK 9.3.2.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.3.2.GA_Release_Note/)
-
-* [Titanium SDK 9.3.1 GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.3.1_GA_Release_Note/)
-
-* [Titanium SDK 9.3.0 GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.3.0_GA_Release_Note/)
-
-* [Titanium SDK 9.3.0 RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.3.0_RC_Release_Note/)
-
-* [Titanium SDK 9.2.2.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.2.2.GA_Release_Note/)
-
-* [Titanium SDK 9.2.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.2.1.GA_Release_Note/)
-
-* [Titanium SDK 9.2.0 GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.2.0_GA_Release_Note/)
-
-* [Titanium SDK 9.2.0 RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.2.0_RC_Release_Note/)
-
-* [Titanium SDK 9.1.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.1.0.GA_Release_Note/)
-
-* [Titanium SDK 9.1.0.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.1.0.RC_Release_Note/)
-
-* [Titanium SDK 9.0.3.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.0.3.GA_Release_Note/)
-
-* [Titanium SDK 9.0.2.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.0.2.GA_Release_Note/)
-
-* [Titanium SDK 9.0.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.0.1.GA_Release_Note/)
-
-* [Titanium SDK 9.0.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.0.0.GA_Release_Note/)
-
-* [Titanium SDK 9.0.0.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_9.x/Titanium_SDK_9.0.0.RC_Release_Note/)
