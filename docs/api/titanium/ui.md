@@ -35,7 +35,7 @@ can take different shapes and sizes, can have display and interaction properties
 fullscreen or modal and can be customized, such as changing their opacity or background color.
 Windows themselves are views and also inherit a views properties, functions and events. There
 are a few specialization of Windows such as a [Tab Group](Titanium.UI.TabGroup) which offer
-additional behavior beyond the basic Window. It is considered a best practice to use a 
+additional behavior beyond the basic Window. It is considered a best practice to use a
 [NavigationWindow](Titanium.UI.NavigationWindow) as the root of your application.
 
 Titanium uses the [Factory Pattern](http://en.wikipedia.org/wiki/Factory_method_pattern) for
@@ -58,7 +58,7 @@ longer using it.  You can safely call `open` on the window again to re-open it.
 
 ### Global Context
 
-Prior to the release of Titanium SDK `9.0.0.GA` any variable declared in `app.js` or `alloy.js` 
+Prior to the release of Titanium SDK `9.0.0.GA` any variable declared in `app.js` or `alloy.js`
 was added to a global scope. This however is no longer the case since `9.0.0.GA`. However
 it is still possible to add variables to a global scope by adding `global.` in front of any
 variabled declared in `app.js` or `alloy.js`. However you should be careful with adding variables
