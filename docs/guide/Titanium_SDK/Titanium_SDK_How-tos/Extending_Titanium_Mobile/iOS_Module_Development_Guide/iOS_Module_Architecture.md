@@ -239,7 +239,14 @@ The following Objective-C types can be returned without conversion:
 
 To return a primitive value from either a method or property, you should return an NSNumber with the appropriate wrapped primitive value. Titanium provides a set of macros to make this easier:
 
-<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p><strong class=" ">Macro</strong></p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><strong class=" ">Description</strong></p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>NUMINT</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>Equivalent to [NSNumber numberWithInt:value]</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>NUMBOOL</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>Equivalent to [NSNumber numberWithInt:value]</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>NUMLONG</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>Equivalent to [NSNumber numberWithLong:value]</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>NUMLONGLONG</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>Equivalent to [NSNumber numberWithLongLong:value]</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>NUMDOUBLE</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>Equivalent to [NSNumber numberWithDouble:value]</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>NUMFLOAT</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>Equivalent to [NSNumber numberWithFloat:value]</p></td></tr></tbody></table>
+| **Macro** | **Description** |
+| --- | --- |
+| NUMINT | Equivalent to \[NSNumber numberWithInt:value\] |
+| NUMBOOL | Equivalent to \[NSNumber numberWithInt:value\] |
+| NUMLONG | Equivalent to \[NSNumber numberWithLong:value\] |
+| NUMLONGLONG | Equivalent to \[NSNumber numberWithLongLong:value\] |
+| NUMDOUBLE | Equivalent to \[NSNumber numberWithDouble:value\] |
+| NUMFLOAT | Equivalent to \[NSNumber numberWithFloat:value\] |
 
 #### Returning Complex Values
 
