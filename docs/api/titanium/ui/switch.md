@@ -59,7 +59,7 @@ var win = Ti.UI.createWindow({
 });
 
 var basicSwitch = Ti.UI.createSwitch({
-  style: Ti.UI.Android.SWITCH_STYLE_TOGGLEBUTTON,
+  style: Ti.UI.SWITCH_STYLE_TOGGLE_BUTTON,
   titleOn:'Notifications Enabled',
   titleOff:'Notifications Disabled',
   value:true,
@@ -84,7 +84,7 @@ var win = Ti.UI.createWindow({
 });
 
 var basicSwitch = Ti.UI.createSwitch({
-  style: Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
+  style: Ti.UI.SWITCH_STYLE_CHECKBOX,
   textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
   title:'Notifications',
   value:true,
