@@ -72,7 +72,7 @@ In the example code above, the Label object in the view inherits styles from bot
 **app/alloy.js**
 
 ```javascript
-Alloy.Globals.rotateLeft = Ti.UI.create2DMatrix().rotate(-90);
+Alloy.Globals.rotateLeft = Ti.UI.createMatrix2D().rotate(-90);
 ```
 
 ### Global styles

@@ -531,7 +531,7 @@ Since Release 3.2.0, you can add search capabilities to your list to filter or f
 
 To use the `searchView` property, create a `Titanium.UI.SearchBar` object and set it to the ListView's `searchView` property. Then, you need to add the `searchableText`property to each item in your list when you create it to assign it the text to match when searching. You can optionally set the `caseInsensitiveSearch` property to `false` to enable case sensitive searches and set the `keepSectionsInSearch` to `true` to preserve section labels while searching.
 
-For the Android platform, you can also use a `Titanium.UI.Android.SearchView` object rather than a `SearchBar`. The example below creates a list of fruits that can be searched with the search bar at the top of the list.
+On Android, `Titanium.UI.SearchBar` is not native when build with Titanium versions older than 10.0.0. In this case, it's recommended to use `Titanium.UI.Android.SearchView` instead which is native. As of Titanium 10.0.0, `Titanium.UI.SearchBar` is native.
 
 To use the `searchText` property, set the property to the value you want to search for and the list automatically updates with the results. You still need to add the `searchableText` property to each item in your list. See the commented code sections below.
 

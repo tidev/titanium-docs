@@ -7,7 +7,7 @@ weight: '20'
 
 ## Introduction
 
-Android allows you to set the appearance of your application using themes. A theme specifies default colors, fonts, and images, for an Android activity or an entire application. Your application can use the device's built-in themes, or include custom themes. Titanium's root splash screen activity uses `"Theme.Titanium"` by default. All other activity windows will use `"Theme.MaterialComponents.Bridge"` as of Titanium 9.3.0. Older Titanium versions will use "Theme.AppCompat" for all activity windows.
+Android allows you to set the appearance of your application using themes. A theme specifies default colors, fonts, and images, for an Android activity or an entire application. Your application can use the device's built-in themes, or include custom themes. Titanium's root splash screen activity uses `"Theme.Titanium"` by default. All other activity windows will use `"Theme.MaterialComponents.*" derived theme` as of Titanium 9.3.0. Older Titanium versions will use "Theme.AppCompat" for all activity windows.
 
 To update the look of your application, you can either:
 
@@ -23,7 +23,11 @@ To update the look of your application, you can either:
 
 You can also assign a unique theme to an activity instead which would override the application's assigned theme.
 
-## Android themes
+## Android AppCompat themes
+
+::: danger ❗️ Warning
+As of Titanium 10.0.0, AppCompat themes are no longer supported. Using them will cause a runtime error occur. This is because Titanium 10.0.0 uses native material widgets/views that require MaterialComponents based themes to work.
+:::
 
 Android provides some built-in themes to easily change the overall appearance of your application. To use a built-in theme, you need to create a theme XML file for your project, specify the built-in theme you want to use, and reference it in the Android manifest section of your `tiapp.xml` file.
 
@@ -58,43 +62,75 @@ The screenshots below show the difference between the various built-in themes:
 | --- | --- | --- |
 | ![HoloLight](./HoloLight.png) | ![Holo](./Holo.png) | ![LightDarBar](./LightDarBar.png) |
 
-## Titanium themes
+## Titanium material themes
 
-The Titanium SDK includes the below predefined themes. You can use these themes instead of creating your own.
-
-**NOTE: Do not create a theme with the same name as a predefined theme.**
+As of Titanium 10.0.0, all of the below are material based themes which support displaying Google's native material widgets/views. You can apply these themes to your application or individual activities instead of creating your own custom theme.
 
 | Theme Name | SDK Version | Description |
 | --- | --- | --- |
-| Theme.Titanium | \* | Theme applied to the root splash screen activity only. Does not show a top action bar.<br /><br />As of Titanium 9.3.0, this theme is based on `Theme.MaterialComponents.Bridge`.<br /><br />Prior to 9.3.0, this theme is based on `Theme.AppCompat`. |
-| Theme.AppCompat.Translucent | 3.4.0 | Based on `Theme.AppCompat`. Has a transparent background. |
-| Theme.AppCompat.Translucent.NoTitleBar | 3.4.0 | Based on `Theme.AppCompat`. Has a transparent background and no action bar. |
-| Theme.AppCompat.Translucent.NoTitleBar.Fullscreen | 3.4.0 | Based on `Theme.AppCompat`. Has a transparent background. Has no action bar or status bar. |
-| Theme.AppCompat.Fullscreen | 3.4.0 | Based on `Theme.AppCompat`. Has no action or status bar. |
-| Theme.AppCompat.NoTitleBar | 4.2.0 | Based on `Theme.AppCompat`. Has no action bar. |
-| Theme.AppCompat.NoTitleBar.Fullscreen | 4.2.0 | Exactly the same as `Theme.AppCompat.Fullscreen` above. |
+| Theme.Titanium | 1.0.0 | Theme applied to the root splash screen activity only. Does not show a top action bar. As of 10.0.0, the top status bar and bottom navigation bar are translucent.<br /><br />This splash theme inherits from a material theme as of Titanium 9.3.0. |
+| Theme.Titanium.DayNight | 10.0.0 | Supports light/dark material theme switching. Shows an action bar and status bar.<br /><br />This is the default application theme as of Titanium 10.0.0. |
+| Theme.Titanium.DayNight.NoTitleBar | 10.0.0 | Supports light/dark material theme switching without an action bar. Shows a status bar. |
+| Theme.Titanium.DayNight.Fullscreen | 10.0.0 | Supports light/dark material theme switching without an action bar and status bar. |
+| Theme.Titanium.Dark | 10.0.0 | Dark material theme. Shows an action bar and status bar. |
+| Theme.Titanium.Dark.NoTitleBar | 10.0.0 | Dark material theme without an action bar. Shows a status bar. |
+| Theme.Titanium.Dark.Fullscreen | 10.0.0 | Dark material theme without an action bar and status bar. |
+| Theme.Titanium.Light | 10.0.0 | Light material theme. Shows an action bar and status bar. |
+| Theme.Titanium.Light.NoTitleBar | 10.0.0 | Light material theme without an action bar. Shows a status bar. |
+| Theme.Titanium.Light.Fullscreen | 10.0.0 | Light material theme without an action bar and status bar. |
+| Theme.AppDerived.NoTitleBar | 10.0.0 | Derives from `<application/>` assigned theme. Excludes the action and keeps the status bar.<br /><br />Can only be applied to activities and not the application. |
+| Theme.AppDerived.Fullscreen | 10.0.0 | Derives from `<application/>` assigned theme. Excludes the action bar and status bar.<br /><br />Can only be applied to activities and not the application. |
+| Theme.AppDerived.Translucent | 10.0.0 | Derives from `<application/>` assigned theme and applies a transparent background.<br /><br />Can only be applied to activities and not the application. |
+| Theme.AppDerived.Translucent.NoTitleBar | 10.0.0 | Derives from `<application/>` assigned theme, applies a transparent background, excludes action bar, and keeps the status bar.<br /><br />Can only be applied to activities and not the application. |
+| Theme.AppDerived.Translucent.Fullscreen | 10.0.0 | Derives from `<application/>` assigned theme, applies a transparent background, excludes action bar, and excludes status bar.<br /><br />Can only be applied to activities and not the application. |
+
+## Titanium deprecated themes
+
+The below Titanium defined themes have been deprecated as of 10.0.0. The below should only be used by older Titanium versions.
+
+| Theme Name | SDK Version | Description |
+| --- | --- | --- |
 | Theme.MaterialComponents.Fullscreen.Bridge | 9.3.0 | Based on `Theme.MaterialComponents.Bridge`. Has no action bar or status bar. |
 | Theme.Titanium.NoTitleBar | 9.3.0 | Based on the application's assigned theme, which uses `Theme.MaterialComponents.Bridge` by default. Has no action bar.<br /><br />Can only be applied to activities and not the application. |
 | Theme.Titanium.Fullscreen | 9.3.0 | Based on the application's assigned theme, which uses `Theme.MaterialComponents.Bridge` by default. Has no action bar or status bar.<br /><br />Can only be applied to activities and not the application. |
 | Theme.Titanium.Translucent.NoTitleBar | 9.3.0 | Based on the application's assigned theme, which uses `Theme.MaterialComponents.Bridge` by default. Has a transparent background and no action bar.<br /><br />Can only be applied to activities and not the application. |
 | Theme.Titanium.Translucent.Fullscreen | 9.3.0 | Based on the application's assigned theme, which uses `Theme.MaterialComponents.Bridge` by default. Has a transparent background. Has no action bar or status bar.<br /><br />Can only be applied to activities and not the application. |
+| Theme.AppCompat.NoTitleBar | 4.2.0 | Based on `Theme.AppCompat`. Has no action bar. |
+| Theme.AppCompat.NoTitleBar.Fullscreen | 4.2.0 | Exactly the same as `Theme.AppCompat.Fullscreen` above. |
+| Theme.AppCompat.Fullscreen | 3.4.0 | Based on `Theme.AppCompat`. Has no action or status bar. |
+| Theme.AppCompat.Translucent | 3.4.0 | Based on `Theme.AppCompat`. Has a transparent background. |
+| Theme.AppCompat.Translucent.NoTitleBar | 3.4.0 | Based on `Theme.AppCompat`. Has a transparent background and no action bar. |
+| Theme.AppCompat.Translucent.NoTitleBar.Fullscreen | 3.4.0 | Based on `Theme.AppCompat`. Has a transparent background. Has no action bar or status bar. |
 
-To apply a theme globally, in the `tiapp.xml` file, set the `android:theme` attribute to the theme name in the `<application/>` element of the Android manifest section. As of Titanium 9.0.0, you can use a `Theme.MaterialComponents.*` based theme to support Google's material design.
+## Applying Titanium themes
+
+To apply a theme globally, then in the `tiapp.xml` file you must set the `android:theme` attribute to the theme name in the `<application/>` XML element of the Android manifest section. As of Titanium 9.0.0, you can use a `Theme.MaterialComponents.*` based theme to support Google's material design. Note that Titanium 10.0.0 and higher **requires** a material based theme or else a runtime error will occur.
+
+For example, do the below to set up a Titanium 10.x.x app to use a dark only theme (ie: do not support dark/light theme switching).
 
 ```xml
 <android xmlns:android="http://schemas.android.com/apk/res/android">
     <manifest>
-        <!-- For Titanium 8.x.x and older, use "Theme.AppCompat.NoTitleBar" instead. -->
-        <application android:theme="@style/Theme.MaterialComponents.NoActionBar.Bridge"/>
+        <application android:theme="@style/Theme.Titanium.Dark"/>
     </manifest>
 </android>
 ```
 
-To change the theme on a per-window basis, set the theme name to a Window's `theme` property. For Titanium 9.3.0 and higher, you should use a `Theme.Titanium.*` based theme since they are based on the theme assigned to `<application/>`, making it look consistent with other windows. For Titanium versions older than 9.3.0, you should use a `Theme.AppCompat.*` based theme.
+Do the below to set up a Titanium 10.x.x app to not show an action bar, but keep dark/light theme switching.
+
+```xml
+<android xmlns:android="http://schemas.android.com/apk/res/android">
+    <manifest>
+        <application android:theme="@style/Theme.Titanium.DayNight.NoTitleBar"/>
+    </manifest>
+</android>
+```
+
+To change the theme on a per-window basis, set the theme name to a Window's `theme` property. For Titanium 10.0.0 and higher, you should use a `Theme.AppDerived.*` based theme since they are based on the theme assigned to `<application/>`, making it look consistent with other windows. For Titanium versions older than 9.3.0, you should use a `Theme.AppCompat.*` based theme.
 
 ```javascript
-var win = Ti.UI.createWindow({
- theme: "Theme.Titanium.Fullscreen"
+const win = Ti.UI.createWindow({
+    theme: "Theme.AppDerived.Fullscreen"
 });
 ```
 
@@ -111,59 +147,35 @@ For example, if you want your theme to be based on the Light theme, create the f
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Define a theme using the AppCompat.Light theme as a base theme -->
+    <!-- Define a custom light based theme. -->
+    <!-- Note: For Titanium 9.x.x, use "Theme.MaterialComponents.Light.Bridge" instead. -->
     <!-- Note: For Titanium 8.x.x and older, use "Theme.AppCompat.Light" instead. -->
-    <style name="Theme.MyTheme" parent="Theme.MaterialComponents.Light.Bridge">
-        <!-- Overrides the background color-->
-        <item name="android:windowBackground">@drawable/example</item>
-        <!-- Overrides the default text color -->
-        <item name="android:textColorPrimary">@color/myTextColor</item>
-        <!-- Overrides the default cursor color -->
-        <item name="android:textCursorDrawable">@null</item>
-        <!-- Overrides style for a component with custom one -->
-        <item name="android:buttonStyle">@style/myButtonStyle</item>
-    </style>
-    <!-- Define custom style for Buttons. -->
-    <style name="myButtonStyle" parent="Widget.AppCompat.Button">
-        <item name="android:minHeight">@dimen/myMinButtonHeight</item>
-        <item name="android:minWidth">@dimen/myMinButtonWidth</item>
+    <style name="Theme.MyTheme" parent="@style/Theme.Titanium.Light">
+        <item name="colorPrimary">#c91326</item>
+        <item name="colorPrimaryDark">#900000</item>
+        <item name="colorAccent">#c91326</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:statusBarColor">#c91326</item>
+        <item name="android:navigationBarColor">#c91326</item>
     </style>
 </resources>
 ```
+
+If you want to support dark/light theme switching, then add the following under `values-night` to define a custom dark theme. This is supported as of Titanium 10.0.0.
 
 **platform/android/res/values/colors.xml**
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="myBackground">#EE5678</color>
-    <color name="myButton">#39FF21</color>
-    <color name="myTextColor">#0000FF</color>
-    <color name="myButtonTextColor">#FFFF00</color>
+    <style name="Theme.MyTheme" parent="@style/Theme.Titanium.Dark">
+        <item name="colorPrimary">#d5544b</item>
+        <item name="colorAccent">#d5544b</item>
+    </style>
 </resources>
 ```
 
-**platform/android/res/values/dimens.xml**
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-  <dimen name="myMinButtonWidth">250dp</dimen>
-  <dimen name="myMinButtonHeight">125dp</dimen>
-</resources>
-```
-
-The theme file above contains two custom style items:
-
-1. The first item defines the "Theme.MyTheme" based on the Android Light theme. The style sets the window background using the image located at `platform/android/res/drawable/example.png`.
-
-2. The second item overrides the default text color used in the theme. For convenience all colors can be defined in a separate file located at `platform/android/res/values/colors.xml`.
-
-3. The third item overrides the Light theme's default cursor color for text fields and uses the TextField's `color` property as the cursor color.
-
-4. The last item overrides the whole style used for buttons. The custom style is defined in the theme's file as a child of `Widget.AppCompat.Button`. In the custom style every property of it can be overriden. In this example the minimum width and height for every button are set to custom values. For convenience dimensions can be defined in a separate file located at `platform/android/res/values/dimens.xml`
-
-To use the "Theme.MyTheme" theme in your application, modify the Android section of your `tiapp.xml` file:
+To use the above custom "Theme.MyTheme" in your application, modify the Android section of your `tiapp.xml` file:
 
 ```xml
 <android xmlns:android="http://schemas.android.com/apk/res/android">
@@ -208,8 +220,9 @@ The following XML file below defines a theme that extends a material based theme
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- For Titanium 9.x.x, use "Theme.MaterialComponents.Bridge" instead. -->
     <!-- For Titanium 8.x.x and older, use "Theme.AppCompat" instead. -->
-  <style name="MyMaterialTheme" parent="@style/Theme.MaterialComponents.Bridge">
+  <style name="MyMaterialTheme" parent="@style/Theme.MaterialComponents">
       <item name="colorPrimary">#1565C0</item>
       <item name="colorPrimaryDark">#0D47A1</item>
       <item name="colorAccent">#FF80AB</item>
@@ -245,11 +258,11 @@ If you have a global theme set, the application can override the theme for a win
 
 ### Override a window theme
 
-Use the `theme` property to override the global theme for an individual window. Set the property to the name of the theme you want to apply to the window. The property can only be set when creating the Window object and cannot be changed after it is set. For Titanium 9.3.0 and higher, you should use a `Theme.Titanium.*` based theme since they are based on the theme assigned to `<application/>`, making it look consistent with other windows. For Titanium versions older than 9.3.0, you should use a `Theme.AppCompat.*` based theme.
+Use the `theme` property to override the global theme for an individual window. Set the property to the name of the theme you want to apply to the window. The property can only be set when creating the Window object and cannot be changed after it is set. For Titanium 10.0.0 and higher, you should use one of the `Theme.AppDerived.*` based themes since they are based on the theme assigned to `<application/>`, making it look consistent with other windows. For Titanium 9.3.x, use a `Theme.Titanium.*` based theme. For older Titanium versions, you should use a `Theme.AppCompat.*` based theme.
 
 ```javascript
-var win = Ti.UI.createWindow({
-    theme: "Theme.Titanium.Fullscreen"
+const win = Ti.UI.createWindow({
+    theme: "Theme.AppDerived.Fullscreen"
 });
 ```
 
@@ -266,7 +279,7 @@ As you can see in the previous examples, an application-wide theme can be specif
 </activity>
 
 <activity android:name="org.appcelerator.titanium.TiActivity"/>
-<activity android:name="org.appcelerator.titanium.TiTranslucentActivity" android:theme="@android:style/Theme.Titanium.Translucent"/>
+<activity android:name="org.appcelerator.titanium.TiTranslucentActivity" android:theme="@android:style/Theme.AppDerived.Translucent"/>
 ```
 
 ::: warning ⚠️ Warning
@@ -294,35 +307,6 @@ To override the theme for one of these activities, copy the activity definition 
 ::: warning ⚠️ Warning
 If you change the name of the application, you will need to copy the newly generated `android:name` value from the `AndroidManifest.xml` file and overwrite the old value in the `tiapp.xml` file.
 :::
-
-## Custom theme generator
-
-### Android Action Bar Style Generator
-
-The [Android Action Bar Style Generator](http://jgilfelt.github.io/android-actionbarstylegenerator) is a website tool that builds and generates an Android Action Bar style based on the customizations you select. This tool generates the XML files and graphic assets you need and packages them in to a ZIP file, which you can unpack in your project.
-
-To create a custom Action Bar style:
-
-1. Go to [Android Action Bar Style Generator](http://jgilfelt.github.io/android-actionbarstylegenerator).
-
-2. Enter a name for your style. This name will be used to reference your style in the Android manifest. If you want to use a theme generated by the Android Holo Colors Generator, do not use the same name.
-
-3. For **Style Compatibility**, use **AppCompat.**
-
-4. Choose the style customizations you want to use.
-
-5. Click **Download .ZIP** button near the button of the web page to download your custom theme.
-
-Once you have your custom Action Bar style, unpack the ZIP file and copy the `res` folder to your project's `platform/android` folder. Then, modify your `tiapp.xml` file to use the custom style, for example:
-
-```xml
-<android xmlns:android="http://schemas.android.com/apk/res/android">
-    <manifest>
-        <!-- Replace StyleName with the name of your style -->
-        <application android:theme="@style/Theme.StyleName"/>
-    </manifest>
-</android>
-```
 
 ## Further reading
 

@@ -13,24 +13,30 @@ Titanium shows an Action Bar by default in all windows. If you do not want to sh
 
 **In a theme XML file,** you can remove the Action Bar from the window when it is opened.
 
-Titanium provides the following built-in themes which derive from `"Theme.AppCompat.*"`. The "NoTitleBar" based themes remove the Action Bar. The "Fullscreen" theme removes both the Action Bar and Status Bar.
+As of Titanium 10.0.0, it's recommended to use one of the below themes to remove the Action Bar. These themes derive from the AndroidManifest.xml file's `<application/>` assigned theme, which is set to a material theme by default. The "NoTitleBar" theme removes the Action Bar. The "Fullscreen" theme removes both the Action Bar and Status Bar.
 
-* `"Theme.AppCompat.NoTitleBar"`
+* `"Theme.AppDerived.NoTitleBar"`
 
-* "Theme.AppCompat.Fullscreen"
+* `"Theme.AppDerived.Fullscreen"`
 
-As of Titanium 9.3.0, the following `"Theme.Titanium.*"` prefixed themes are available. These themes derive from the `AndroidManifest.xml` file's `<application/>` assigned theme, which is set to `"Theme.MaterialComponents.Bridge"` by default.
+For Titanium 9.3.x, it's recommended to use the following themes to remove the Action Bar. These themes derive from the `AndroidManifest.xml` file's `<application/>` assigned theme, like the above. These themes are deprecated as of Titanium 10.0.0.
 
 * `"Theme.Titanium.NoTitleBar"`
 
 * `"Theme.Titanium.Fullscreen"`
+
+For Titanium versions older than 9.3.0, you can use the below themes to remove the Action Bar. Note that these derive from Google's "Theme.AppCompat" theme. If your define your own custom theme in `<application/>`, then you should create your own equivalent of the below themes yourself.
+
+* `"Theme.AppCompat.NoTitleBar"`
+
+* `"Theme.AppCompat.Fullscreen"`
 
 You can then remove the Action Bar from all windows by default by setting the theme in the `tiapp.xml` file's `<application/>` element.
 
 ```xml
 <android xmlns:android="http://schemas.android.com/apk/res/android">
     <manifest>
-        <application android:theme="@style/Theme.AppCompat.NoTitleBar"/>
+        <application android:theme="@style/Theme.AppDerived.NoTitleBar"/>
     </manifest>
 </android>
 ```
@@ -42,7 +48,7 @@ You can remove the Action Bar before by setting the window's "theme" creation pr
 ```javascript
 // Set a theme which does not have an Action Bar.
 const win = Ti.UI.createWindow({
-    theme: 'Theme.AppCompat.NoTitleBar'
+ theme: 'Theme.AppDerived.NoTitleBar'
 });
 win.open();
 ```
@@ -62,13 +68,11 @@ win.open();
 
 ## Action bar tabs
 
-For Titanium 7.x.x and older versions, a tab group might display its tabs within the action bar depending on device orientation and the size of the screen. The actual display of the tabs depends on the number of tabs and the amount of screen space available. If there is not enough space to fit all of the tabs on the action bar, Android may display scrolling tabs or a drop-down list instead.
-
 For Titanium 8.0.0 and higher, tabs are never shown within the action bar.
 
-## Action items
+For Titanium 7.x.x and older versions, a tab group might display its tabs within the action bar depending on device orientation and the size of the screen. The actual display of the tabs depends on the number of tabs and the amount of screen space available. If there is not enough space to fit all of the tabs on the action bar, Android may display scrolling tabs or a drop-down list instead.
 
-For action items, you can add items to the action bar by creating menu items and specifying the new [`showAsAction`](#!/api/Titanium.Android.MenuItem-property-showAsAction) property. Valid values are:
+Action items For action items, you can add items to the action bar by creating menu items and specifying the new [`showAsAction`](#!/api/Titanium.Android.MenuItem-property-showAsAction) property. Valid values are:
 
 * `SHOW_AS_ACTION_ALWAYS`. Show item in action bar.
 
@@ -176,71 +180,84 @@ if (activity != undefined && activity.actionBar != undefined) {
 }
 ```
 
+## Theming the action bar
+
+As of Titanium 10.0.0, you can change the colors of the action bar via the material `"actionBarTheme"` style, which overrides the colors set by `"actionBarStyle"` in the theme. You would do this by creating an XML file in the `platform/android/res/values` folder as shown below.
+
+**platform/android/res/values/values.xml**
+
+```xml
+<style name="MyTheme" parent="@style/Widget.AppCompat.ActionBar">
+    <!-- My custom action bar theme with a white background and black text. -->
+    <style name="ThemeOverlay.MyActionBar.Light" parent="@style/ThemeOverlay.MaterialComponents.Light">
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#000000</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColorSecondary">#000000</item>
+    </style>
+
+    <!-- My custom app theme using above white action bar theme. -->
+    <!-- Note: This is only supported on Titanium 10.0.0 or higher. -->
+    <style name="Theme.MyTheme" parent="@style/Theme.Titanium.Light">
+        <item name="actionBarTheme">@style/ThemeOverlay.MyActionBar.Light</item>
+    </style>
+</style>
+```
+
+You would then set the above theme to your application in the `tiapp.xml` as follows.
+
+**tiapp.xml**
+
+```xml
+<android xmlns:android="http://schemas.android.com/apk/res/android">
+    <manifest>
+        <application android:theme="@style/Theme.MyTheme"/>
+    </manifest>
+</android>
+```
+
 ## Styling the action bar
 
-To change the style of the action bar, create a custom theme to override the [Action Bar style properties](https://developer.android.com/guide/topics/ui/actionbar.html#Style). To create a custom theme:
+For Titanium 9.x.x and older, your only option to change the colors of the action bar is via `"actionBarStyle"` in a custom theme. You can customize the `"actionBarStyle"` in Titanium 10.0.0, but the `"actionBarTheme"` (documented above) will override the style's colors. Note that `"actionBarStyle"` can be used to customize other aspects of the widget such as it text appearance, size, etc.
 
-1. Create an XML file in `platform/android/res/values`.
+You would do this by creating an XML file in the `platform/android/res/values` folder as shown below.
 
-2. In the XML file, create an action bar style resource and set the parent style of the action bar style to `Widget.AppCompat.ActionBar` or another supported Action Bar parent.
-
-    ```xml
-    <style name="MyTheme" parent="@style/Widget.AppCompat.ActionBar" />
-    ```
-
-3. Define action bar properties in the style resource to override the default values from the parent style.
-
-    ```xml
-    <style name="MyTheme" parent="@style/Widget.AppCompat.ActionBar">
-        <item name="android:background">@drawable/actionbar_background</item>
-    </style>
-    ```
-
-4. In the theme, set the `android:actionBarStyle` to name of action bar style you created.
-
-    ```xml
-    <style name="Theme.CustomActionBar" parent="@style/Theme.AppCompat">
-        <item name="android:actionBarStyle">@style/MyActionBar</item>
-        <item name="actionBarStyle">@style/MyActionBar</item>
-    </style>
-    ```
-
-5. Modify your `tiapp.xml` file to use the custom theme:
-
-    **tiapp.xml**
-
-    ```xml
-    <android xmlns:android="http://schemas.android.com/apk/res/android">
-        <manifest>
-            <application android:theme="@style/Theme.CustomActionBar"/>
-        </manifest>
-    </android>
-    ```
-
-The example below modifies the Action Bar's background color and title text color.
-
-**platform/android/res/values/mytheme.xml**
+**platform/android/res/values/values.xml**
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.CustomActionBar" parent="@style/Theme.AppCompat">
-        <item name="actionBarStyle">@style/MyActionBar</item>
+    <!-- Define a text color for the Action Bar title. -->
+    <style name="TextAppearance.MyActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#000080</item>
     </style>
 
-    <!-- Define the ActionBar styles -->
-    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
-        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
-        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+    <!-- My custom action bar style. -->
+    <style name="Widget.MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/TextAppearance.MyActionBarTitle</item>
+        <item name="titleTextStyle">@style/TextAppearance.MyActionBarTitle</item>
         <item name="android:background">#ffa500</item>
     </style>
 
-    <!-- Define a text color for the Action Bar title -->
-    <style name="MyActionBarTitleText"
-           parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">#000080</item>
+    <!-- My custom app theme using above white action bar theme. -->
+    <!-- Note: This applies to Titanium 9.x.x and older versions. -->
+    <style name="Theme.MyTheme" parent="@style/Theme.AppCompat">
+        <item name="actionBarStyle">@style/Widget.MyActionBar</item>
     </style>
 </resources>
+```
+
+You would then set the above theme to your application in the `tiapp.xml` as follows.
+
+**tiapp.xml**
+
+```xml
+<android xmlns:android="http://schemas.android.com/apk/res/android">
+    <manifest>
+        <application android:theme="@style/Theme.MyTheme"/>
+    </manifest>
+</android>
 ```
 
 ### Further reading

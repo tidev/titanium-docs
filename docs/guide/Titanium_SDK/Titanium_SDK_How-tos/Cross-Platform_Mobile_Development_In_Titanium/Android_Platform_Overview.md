@@ -69,6 +69,8 @@ Finally, density describes the actual pixels (aka dots) per square inch resoluti
 
 * xxhdpi screens are roughly 480 dpi
 
+* xxxhdpi screens are roughly 640 dpi
+
 Titanium enables you to simply scale your user interface to fit the device's screen. But it also offers convenient features for specifically handling assets and layout for various screen sizes. You should plan to test on multiple devices if you want your user interface to be "pixel perfect" on all devices.
 
 There is also a nodpi option where your images will not be scaled by the system if you do not want to create various assets for each density.

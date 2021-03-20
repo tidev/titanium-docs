@@ -717,6 +717,8 @@ Some Titanium view elements use special syntax. Refer to the **Alloy XML Markup*
 
 * [Menu](#!/api/Titanium.Android.Menu) or Ti.Android.Menu
 
+* [OptionBar](#!/api/Titanium.UI.OptionBar) or Ti.UI.OptionBar
+
 * [OptionDialog](#!/api/Titanium.UI.OptionDialog) or Ti.UI.OptionDialog
 
 * [Picker](#!/api/Titanium.UI.Picker) or Ti.UI.Picker
