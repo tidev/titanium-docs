@@ -7,7 +7,7 @@ weight: '20'
 
 Appcelerator CLI 7.1.0.GA is a minor release that includes new features, improvements, and bug fixes. This release also brings **full support for Node 10** to the Appcelerator CLI.
 
-As of this release, CLI 7.0.x will not be supported six months (2020-02-13) from 7.1.0.GA's release date. See [Axway Appcelerator Deprecation Policy](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Deprecation_Policy/) and [Nominal Lifetimes](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Product_Lifecycle/#nominal-lifetimes) documents for details.
+As of this release, CLI 7.0.x will not be supported six months (2020-02-13) from 7.1.0.GA's release date. See [Axway Appcelerator Deprecation Policy](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Deprecation_Policy/) and [Nominal Lifetimes](#undefined) documents for details.
 
 ## Component versions
 

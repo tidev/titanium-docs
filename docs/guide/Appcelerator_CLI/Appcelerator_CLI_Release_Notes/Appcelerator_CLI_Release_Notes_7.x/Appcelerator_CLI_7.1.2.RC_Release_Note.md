@@ -7,7 +7,7 @@ weight: '50'
 
 Appcelerator CLI 7.1.2.RC is a patch release that includes new features, improvements, and bug fixes.
 
-As of this GA release, the previous CLI patch release is no longer supported. End of support for this version will be up to 2020-05-18 or until the next patch release . Note: major and minor releases continue to be supported according to their nominal lifetime. See [Axway Appcelerator Deprecation Policy](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Deprecation_Policy/) and [Nominal Lifetimes](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Product_Lifecycle/#nominal-lifetimes) documents for details.
+As of this GA release, the previous CLI patch release is no longer supported. End of support for this version will be up to 2020-05-18 or until the next patch release . Note: major and minor releases continue to be supported according to their nominal lifetime. See [Axway Appcelerator Deprecation Policy](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Deprecation_Policy/) and [Nominal Lifetimes](#undefined) documents for details.
 
 Additionally, with this release the formal deprecation of API Builder 3.x begins. Support for API Builder 3.x will cease on 30th April 2020. Use the [v3 to v4 upgrade guide to help migrate](https://docs.axway.com/bundle/API_Builder_4x_allOS_en/page/api_builder_v3_to_v4_upgrade_guide.html) your applications to API Builder 4.x.
 

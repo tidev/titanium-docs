@@ -27,7 +27,7 @@ Moved from `Ti.UI.iOS.NavigationWindow` to `Ti.UI.NavigationWindow` in order to 
 
 ### Support
 
-As of this release, Titanium SDK 7.x will not be supported one calendar year (2020-03-14) from 8.0.0.GA's release date. See [Axway Appcelerator Deprecation Policy](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Deprecation_Policy/) and [Nominal Lifetimes](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Product_Lifecycle/#nominal-lifetimes) documents for details.
+As of this release, Titanium SDK 7.x will not be supported one calendar year (2020-03-14) from 8.0.0.GA's release date. See [Axway Appcelerator Deprecation Policy](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Deprecation_Policy/) and [Nominal Lifetimes](#undefined) documents for details.
 
 ## Notice of feature and behavior changes
 

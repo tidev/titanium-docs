@@ -13,13 +13,13 @@ Here you will find documentation and guides that cover Titanium Mobile and Titan
 
 ### AMPLIFY Appcelerator Services Overview
 
-* [Axway Appcelerator Product Lifecycle](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Product_Lifecycle/)
-
 * [Axway Appcelerator Support](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Support/)
 
 * [Axway Appcelerator Deprecation Policy](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Deprecation_Policy/)
 
 * [AMPLIFY Appcelerator Platform Troubleshooting](/guide/AMPLIFY_Appcelerator_Services_Overview/AMPLIFY_Appcelerator_Platform_Troubleshooting/)
+
+* [Axway Appcelerator Product Lifecycle](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Product_Lifecycle/)
 
 ### AMPLIFY Runtime Services
 

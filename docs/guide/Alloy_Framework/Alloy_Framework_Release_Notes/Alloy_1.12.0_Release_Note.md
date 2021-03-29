@@ -7,7 +7,7 @@ weight: '30'
 
 Alloy 1.12.0 is a minor release that includes several improvements and bug fixes.
 
-As of this release, Alloy 1.10.x will not be supported six months from 1.12.0's release date. See [Axway Appcelerator Deprecation Policy](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Deprecation_Policy/) and [Nominal Lifetimes](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Product_Lifecycle/#nominal-lifetimes) documents for details.
+As of this release, Alloy 1.10.x will not be supported six months from 1.12.0's release date. See [Axway Appcelerator Deprecation Policy](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Deprecation_Policy/) and [Nominal Lifetimes](#undefined) documents for details.
 
 ## Improvements
 

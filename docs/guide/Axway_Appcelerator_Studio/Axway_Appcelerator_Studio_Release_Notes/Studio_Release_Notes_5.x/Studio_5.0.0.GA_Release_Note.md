@@ -7,7 +7,7 @@ weight: '100'
 
 Studio 5.0.0.GA is a major release that includes new features, improvements, and bug fixes.
 
-As of this release, Studio 4.x will not be supported one calendar year from 5.0.0.GA's release date. See [Axway Appcelerator Deprecation Policy](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Deprecation_Policy/) and [Nominal Lifetimes](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Product_Lifecycle/#nominal-lifetimes) documents for details.
+As of this release, Studio 4.x will not be supported one calendar year from 5.0.0.GA's release date. See [Axway Appcelerator Deprecation Policy](/guide/AMPLIFY_Appcelerator_Services_Overview/Axway_Appcelerator_Deprecation_Policy/) and [Nominal Lifetimes](#undefined) documents for details.
 
 * Continued to update Axway Appcelerator Studio with branding changes ([DASH-31](https://jira.appcelerator.org/browse/DASH-31))
 
