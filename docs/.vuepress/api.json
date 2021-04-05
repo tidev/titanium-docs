@@ -399,6 +399,36 @@
 		"children": [
 			[ "modules/barcode", "Barcode" ],
 			{
+				"title": "Bluetooth",
+				"path": "/api/modules/bluetooth",
+				"children": [
+					[ "modules/bluetooth/bluetoothdevice", "Device" ],
+					[ "modules/bluetooth/bluetoothserversocket", "Server Socket" ],
+					[ "modules/bluetooth/bluetoothsocket", "Socket" ]
+				]
+			},
+			{
+				"title": "Bluetooth Low Energy",
+				"path": "/api/modules/ble",
+				"children": [
+					[ "modules/ble/beacon", "Beacon" ],
+					[ "modules/ble/beaconidentityconstraint", "Beacon Identity Constraint" ],
+					[ "modules/ble/beaconregion", "Beacon Region" ],
+					[ "modules/ble/central", "Central" ],
+					[ "modules/ble/centralmanager", "Central Manager" ],
+					[ "modules/ble/characteristic", "Characteristic" ],
+					[ "modules/ble/descriptorrequest", "Descriptor Request" ],
+					[ "modules/ble/l2capchannel", "L2CAPChannel" ],
+					[ "modules/ble/mutablecharacteristic", "Mutable Characteristic" ],
+					[ "modules/ble/peer", "Peer" ],
+					[ "modules/ble/peripheral", "Peripheral" ],
+					[ "modules/ble/peripheralmanager", "Peripheral Manager" ],
+					[ "modules/ble/regionmanager", "Region Manager" ],
+					[ "modules/ble/request", "Request" ],
+					[ "modules/ble/service", "Service" ]
+				]
+			},
+			{
 				"title": "Cloud",
 				"path": "/api/modules/cloud",
 				"children": [
