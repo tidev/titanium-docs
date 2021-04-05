@@ -470,8 +470,7 @@
 				"title": "Facebook",
 				"path": "/api/modules/facebook",
 				"children": [
-					[ "modules/facebook/loginbutton", "LoginButton" ],
-					[ "modules/facebook/messengerbutton", "MessengerButton" ]
+					[ "modules/facebook/loginbutton", "LoginButton" ]
 				]
 			},
 			{
