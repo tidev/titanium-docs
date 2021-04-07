@@ -140,7 +140,7 @@ for (var i = 0; i < tasks.length; i++) {
 }
 
 var section = Ti.UI.createListSection();
-section.setItems(data);
+section.items = data;
 listView.sections = [section];
 listView.addEventListener('itemclick', function(e) {
     var item = section.getItemAt(e.itemIndex);
@@ -282,7 +282,7 @@ for (var i = 0; i < tasks.length; i++) {
 }
 
 var section = Ti.UI.createListSection();
-section.setItems(data);
+section.items = data;
 listView.sections = [section];
 
 // Modified version of the `itemclick` event listener

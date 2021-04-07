@@ -78,10 +78,10 @@ recordStart.addEventListener('click', function(e) {
 
 recordPause.addEventListener('click', function(e) {
   if (audioRecorder.getPaused()) {
-    recordPause.setTitle('Pause');
+    recordPause.title = 'Pause';
     audioRecorder.resume()
   } else {
-    recordPause.setTitle('Resume');
+    recordPause.title = 'Resume';
     audioRecorder.pause();
   }
 });

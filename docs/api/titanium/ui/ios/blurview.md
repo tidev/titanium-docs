@@ -46,7 +46,7 @@ var effects = [
 ];
 
 tabs.addEventListener("click", function(e) {
-    blur.setEffect(effects[e.index]);
+    blur.effect = effects[e.index];
 });
 
 win.add(tabs);

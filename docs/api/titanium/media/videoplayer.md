@@ -96,11 +96,9 @@ can always dismiss the player by using the **Back** button, so an on-screen
 control would not be required.
 
 ``` js
-Titanium.UI.setBackgroundColor('#000');
 var win = Titanium.UI.createWindow({
     title: 'Test',
-    backgroundColor: '#fff',
-    exitOnClose: true
+    backgroundColor: '#fff'
 });
 
 // Change to a valid URL

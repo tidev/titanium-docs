@@ -129,7 +129,7 @@ for (var i = 0; i <= 20; i++){
   tableData.push(row);
 }
 
-table.setData(tableData);
+table.data = tableData;
 
 table.addEventListener('swipe', function(e){
   if (e.source && e.source.objName !== 'table'){

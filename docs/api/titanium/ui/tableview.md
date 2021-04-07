@@ -176,11 +176,8 @@ table.insertSectionBefore(0, sectionFish);
 Create a table of rows that contain a custom child-view layout.
 
 ``` js
-Ti.UI.setBackgroundColor('#000');
 var win = Ti.UI.createWindow({
   backgroundColor: 'black',
-  exitOnClose: true,
-  fullscreen: false,
   title: 'TableView Demo'
 });
 

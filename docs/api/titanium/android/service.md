@@ -112,18 +112,18 @@ function getLocation () {
             }
 
             // Insert location data.
-            section.setItems([
+            section.items = [
                 { properties: { title: 'LOCATION:\n' + e.latitude + ', ' + e.longitude, color: 'green' } },
                 { properties: { title: 'ALTITUDE:\n' + e.altitude, color: 'green' } },
                 { properties: { title: 'ACCURACY:\n' + e.accuracy, color: 'green' } }
-            ]);
+            ])
 
         } else {
 
             // Oops! Something bad happened.
-            section.setItems([
+            section.items = [
                 { properties: { title: 'ERROR:\n' + e.error, color: 'red' } }
-            ]);
+            ];
         }
 
         // Add section to listView

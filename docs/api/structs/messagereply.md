@@ -127,7 +127,7 @@ Ti.WatchSession.addEventListener('receivefile', function(e) {
     var cacheFile = e.data.getFile();
     var downloadedFile = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, cacheFile.getName());
     downloadedFile.write(e.data);
-    imageView.setImage(downloadedFile);
+    imageView.image = downloadedFile;
 });
 
 Ti.WatchSession.addEventListener('receiveapplicationcontext', function(e) {

@@ -189,7 +189,7 @@ function MainWindow() {
       }
       listViewData.push(obj);
     }
-    listSection.setItems(listViewData);
+    listSection.items = listViewData;
   });
   listView.addEventListener('itemclick', function(e) {
     var item = e.section.getItemAt(e.itemIndex);

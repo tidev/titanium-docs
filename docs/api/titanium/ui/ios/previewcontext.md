@@ -185,9 +185,9 @@ for(var i = 1; i <= 5; i++) {
     });
 }
 
-section1.setItems(items);
-section2.setItems(items);
-listView.setSections([section1, section2]);
+section1.items = items;
+section2.items = items;
+listView.sections = [section1, section2];
 
 win.add(listView);
 win.open();

@@ -75,12 +75,9 @@ Android only, you can change the `message` property while the alert dialog is be
 Create a single-button alert dialog using the global `alert()` alias.
 
 ``` js
-Ti.UI.setBackgroundColor('white');
 var win = Ti.UI.createWindow({
   title: 'Click window to test',
-  backgroundColor: 'white',
-  exitOnClose: true,
-  fullscreen: false
+  backgroundColor: 'white'
 });
 
 win.addEventListener('click', function(e) {
@@ -95,12 +92,9 @@ Create a single-button alert dialog, without explicitly defining it using the `b
 property, which is invoked when the app window is clicked.
 
 ``` js
-Ti.UI.setBackgroundColor('white');
 var win = Ti.UI.createWindow({
   title: 'Click window to test',
-  backgroundColor: 'white',
-exitOnClose: true,
-fullscreen: false
+  backgroundColor: 'white'
 });
 
 win.addEventListener('click', function(e) {
@@ -120,12 +114,9 @@ Create a three-button alert dialog, which is invoked when the app window is clic
 Output a message to the log when the cancel button is clicked.
 
 ``` js
-Ti.UI.setBackgroundColor('white');
 var win = Ti.UI.createWindow({
   title: 'Click window to test',
-  backgroundColor: 'white',
-  exitOnClose: true,
-  fullscreen: false
+  backgroundColor: 'white'
 });
 win.addEventListener('click', function(e) {
   var dialog = Ti.UI.createAlertDialog({
@@ -154,7 +145,6 @@ app window is clicked.
 Output entered text value to the log when the OK button is clicked.
 
 ``` js
-Ti.UI.setBackgroundColor('white');
 var win = Ti.UI.createWindow({
   title: 'Click window to test'
 });

@@ -309,7 +309,7 @@ var grainDataSet = [
 var grainSection = Ti.UI.createListSection({ headerTitle: 'Grains / Granos', items: grainDataSet});
 sections.push(grainSection);
 
-listView.setSections(sections);
+listView.sections = sections;
 win.add(listView);
 win.open();
 ```
