@@ -489,6 +489,16 @@
 				]
 			},
 			{
+				"title": "MLDAP",
+				"path": "/api/modules/ldap",
+				"children": [
+					[ "modules/ldap/connection", "Connection" ],
+					[ "modules/ldap/entry", "Entry" ],
+					[ "modules/ldap/searchrequest", "Search Request" ],
+					[ "modules/ldap/searchresult", "Search Result" ]
+				]
+			},
+			{
 				"title": "Map",
 				"path": "/api/modules/map",
 				"children": [
