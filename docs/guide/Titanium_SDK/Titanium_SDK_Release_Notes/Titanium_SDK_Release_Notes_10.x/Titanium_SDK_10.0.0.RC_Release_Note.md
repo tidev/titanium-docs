@@ -1,13 +1,13 @@
 ---
-title: Titanium SDK 10.0.0.RC - 13 April 2021
+title: Titanium SDK 10.0.0.RC - 14 April 2021
 weight: '10'
 ---
 
-# Titanium SDK 10.0.0.RC - 13 April 2021
+# Titanium SDK 10.0.0.RC - 14 April 2021
 
 ## About this release
 
-Titanium SDK 10.0.0 is a major release of the SDK, addressing high-priority issues from previous releases; introducing some breaking changes; and removing a number of long-deprecated APIs. This version is the last major version released by Axway. Axway support for this version and prior versions released by Axway will be discontinued after March 1,2022.
+Titanium SDK 10.0.0 is a major release of the SDK, addressing high-priority issues from previous releases; introducing some breaking changes; and removing a number of long-deprecated APIs. This version is the last major version released by Axway. Axway support for this version and prior versions released by Axway will be discontinued after March 1, 2022.
 
 ## Community Credits
 
@@ -52,6 +52,37 @@ Titanium SDK 10.0.0 is a major release of the SDK, addressing high-priority issu
 * [TIMOB-28403](https://jira.appcelerator.org/browse/TIMOB-28403) - Analytics: Limit number of cached events
 
 * [TIMOB-28198](https://jira.appcelerator.org/browse/TIMOB-28198) - Deprecate TableViewRow header footer properties
+
+The following APIs were removed in 10.0.0:
+
+| Removed API | Notes / Replacement |
+| --- | --- |
+| `Ti.Android.PENDING_INTENT_FOR_ACTIVITY` | No longer used. |
+| `Ti.Android.PENDING_INTENT_FOR_BROADCAST` | No longer used. |
+| `Ti.Android.PENDING_INTENT_FOR_SERVICE` | No longer used. |
+| `Ti.Android.PENDING_INTENT_MAX_VALUE` | No longer used. |
+| `Ti.Android.Intent#getData()` | Use the `Ti.Android.Intent.data` property instead. |
+| `Ti.Android.MenuItem#setCheckable()` | Use the `Ti.Android.MenuItem.checkable` property instead. |
+| `Ti.Android.MenuItem#setChecked()` | Use the `Ti.Android.MenuItem.checked` property instead. |
+| `Ti.Android.MenuItem#setEnabled()` | Use the `Ti.Android.MenuItem.enabled` property instead. |
+| `Ti.Android.MenuItem#setVisible()` | Use the `Ti.Android.MenuItem.visible` property instead. |
+| `Ti.Media.AudioPlayer#getPaused()` | Use the cross-platform API `Ti.Media.AudioPlayer.paused` property instead. |
+| `Ti.Media.AudioPlayer#isPaused()` | Use the cross-platform API `Ti.Media.AudioPlayer.paused` property instead. |
+| `Ti.Media.AudioPlayer#getPlaying()` | Use the cross-platform API `Ti.Media.AudioPlayer.playing` property instead. |
+| `Ti.Media.AudioPlayer#isPlaying()` | Use the cross-platform API `Ti.Media.AudioPlayer.playing` property instead. |
+| `Ti.Media.AudioPlayer#setPaused()` | Use the cross-platform API `Ti.Media.AudioPlayer.pause` instead. |
+| `Ti.Media#hasAudioPermissions()` | Use `Ti.Media.hasAudioRecorderPermissions` instead. |
+| `PreviewImageError.message` | Use `error` property instead |
+| `Ti.Media.Sound.error.message` | Use the `error` property instead |
+| `Ti.Media.VideoPlayer.error.message` | Use `error` property instead |
+| `Ti.Network.HTTPClient#setTimeout()` | Use the `Ti.Network.HTTPClient.timeout` property instead. |
+| `Ti.UI.iOS.NavigationWindow` | Use `Ti.UI.NavigationWindow` instead. |
+| `Ti.UI.iOS.TabbedBar` | Use `Ti.UI.TabbedBar` instead. |
+| `Ti.UI.iOS.Toolbar` | Use the cross-platform `Ti.UI.Toolbar` instead. |
+| `Ti.UI.TabGroup#getActiveTab()` | Use the `Ti.UI.TabGroup.activeTab` property instead. |
+| `Ti.UI.TabGroup#setActiveTab()` | Use the `Ti.UI.TabGroup.activeTab` property instead. |
+| `Ti.UI.TabGroup#getTabs()` | Use the `Ti.UI.TabGroup.tabs` property instead. |
+| `Ti.UI.TableView#setHeaderPullView()` | Use the `Ti.UI.TableView.headerPullView` property instead. |
 
 ## Bug Fixes
 
