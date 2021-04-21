@@ -1,9 +1,9 @@
 ---
-title: Titanium SDK 10.0.0.RC - 14 April 2021
+title: Titanium SDK 10.0.0.RC - 21 April 2021
 weight: '10'
 ---
 
-# Titanium SDK 10.0.0.RC - 14 April 2021
+# Titanium SDK 10.0.0.RC - 21 April 2021
 
 ## About this release
 
