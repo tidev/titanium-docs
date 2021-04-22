@@ -48,3 +48,7 @@ The following components are shipped with CLI 9.0.0:
 * [CLI-1404](https://jira.appcelerator.org/browse/CLI-1404) - "This app is not provisioned for crash analytics." error when adding ACA to an application and performing a device or distribution build
 
 * [ALOY-1743](https://jira.appcelerator.org/browse/ALOY-1743) - Runtime error when a Widget includes another Widget at the top level
+
+## Known issues
+
+* [DAEMON-342](https://jira.appcelerator.org/browse/DAEMON-342) - No watchOS simulators shown in Studio
