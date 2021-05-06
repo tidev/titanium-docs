@@ -72,7 +72,8 @@ Each Titanium SDK supports a specific range of iOS base SDKs and deployment targ
 
 | Titanium SDK version | Minimum iOS SDK version | Maximum iOS SDK version | Minimum target iOS version | Maximum target iOS version |
 | --- | --- | --- | --- | --- |
-| 9.2.0 - latest | 13.0.0 | 14.x | 10.0 | 14.x |
+| 10.0.0 - latest | 13.0.0 | 14.x | 12.0 | 14.x |
+| 9.2.0 - 9.3.x | 13.0.0 | 14.x | 10.0 | 14.x |
 | 9.0.0 - 9.1.2 | 11.0.0 | 13.x | 10.0 | 13.x |
 | 8.2.0 - 8.3.1 | 10.0.0 | 13.x | 9.0 | 13.x |
 | 8.0.0 - 8.1.1 | 10.0.0 | 12.x | 9.0 | 12.x |
