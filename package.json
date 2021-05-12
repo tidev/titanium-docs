@@ -10,8 +10,8 @@
     "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "NODE_OPTIONS=\"--max-old-space-size=6144\" vuepress build docs && cp CNAME docs/.vuepress/dist",
     "docs:version": "vuepress version docs",
-    "docs:metadata": "vuepress metadata docs ../titanium_mobile/apidoc ../titanium_mobile_windows/apidoc",
-    "docs:migrate": "node ./scripts/migrate ../titanium_mobile/apidoc ../titanium_mobile_windows/apidoc",
+    "docs:metadata": "vuepress metadata docs ../titanium_mobile/apidoc",
+    "docs:migrate": "node ./scripts/migrate ../titanium_mobile/apidoc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
