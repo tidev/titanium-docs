@@ -5,45 +5,56 @@ weight: '40'
 
 # Appcelerator CLI Release Notes
 
-## Appcelerator CLI 8.1.1 GA - 15 September 2020
+## Appcelerator CLI 9.0.0 GA - 17 May 2021
 
-Appcelerator CLI 8.1.1 GA is a patch release that includes bug fixes.
+Appcelerator CLI 9.0.0 GA is a major release that includes new features, improvements, and bug fixes.
+
+Appcelerator CLI will no longer be supported after March 2022.
+
+::: danger ❗️ Warning
+Appcelerator CLI 9 removes support for Node.js versions older than 12.13.0.
+:::
 
 ### Component versions
 
-The following components are shipped with CLI 8.1.1:
+The following components are shipped with CLI 9.0.0:
 
-<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Alloy</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>1.15.2</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Cloud CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>2.1.8</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Titanium CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>5.2.4</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Daemon</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>3.2.0</p></td></tr></tbody></table>
+<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Alloy</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>1.16.0</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Cloud CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>2.1.10</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Titanium CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>5.3.1</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Daemon</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>4.0.4</p></td></tr></tbody></table>
+
+### New Features
+
+* [ALOY-1746](https://jira.appcelerator.org/browse/ALOY-1746) - Support Ti.UI.OptionBar as a tag
+
+* [CLI-1402](https://jira.appcelerator.org/browse/CLI-1402) - Update to Daemon v4
+
+* [CLI-1400](https://jira.appcelerator.org/browse/CLI-1400) - Update to acs CLI 2.1.10
+
+### Improvements
+
+* [CLI-1406](https://jira.appcelerator.org/browse/CLI-1406) - Disable Daemon update check when running appcd commands
+
+* [CLI-1401](https://jira.appcelerator.org/browse/CLI-1401) - Support Node.js 14 and 15
+
+* [ALOY-1744](https://jira.appcelerator.org/browse/ALOY-1744) - Allow TabGroup as a child of a NavigationWindow
+
+* [ALOY-1741](https://jira.appcelerator.org/browse/ALOY-1741) - Remove iOS splash screens from Alloy template
 
 ### Fixed issues
 
-* [ALOY-1738](https://jira.appcelerator.org/browse/ALOY-1738) - Regression in behaviour of the Require XML tag
+* [CLI-1409](https://jira.appcelerator.org/browse/CLI-1409) - "Resource Not Found" error when building an app that is not registered with the platform
 
-* [ALOY-1737](https://jira.appcelerator.org/browse/ALOY-1737) - Alloy: ListView dataBinding creates deprecated setItems call
-    [CLI-1394](https://jira.appcelerator.org/browse/CLI-1394) - Duplicate symbol error when using Appc Source Code Encryption
+* [CLI-1408](https://jira.appcelerator.org/browse/CLI-1408) - Daemon process is stopped when recompiling native modules for a Node.js version change
 
-    * Fixes a potential symbol clash between appc-verify and some modules, this fix is available for use in SDK 9.2.0 and above, and also SDK 9.1.0 and below
+* [CLI-1405](https://jira.appcelerator.org/browse/CLI-1405) - TypeError when running appc appcd
 
-* [CLI-1396](https://jira.appcelerator.org/browse/CLI-1396) - Always prompted for iOS code base on module creation even if set
+* [CLI-1404](https://jira.appcelerator.org/browse/CLI-1404) - "This app is not provisioned for crash analytics." error when adding ACA to an application and performing a device or distribution build
 
-* [CLI-1397](https://jira.appcelerator.org/browse/CLI-1397) - Update appc-verify to be built as an xcframework
+* [ALOY-1743](https://jira.appcelerator.org/browse/ALOY-1743) - Runtime error when a Widget includes another Widget at the top level
 
-    * Adds SDK 9.2.0 compatability to appc-verify which is used for Appc Source Code Encryption
-
-* [CLI-1398](https://jira.appcelerator.org/browse/CLI-1398) \- Update to Titanium CLI 5.2.4
-
-    * This fixes an issue where symlinks were not preserved when installing Titanium
+* [DAEMON-342](https://jira.appcelerator.org/browse/DAEMON-342) - No watchOS simulators shown in Studio
 
 ## Recent Releases
 
-* [Appcelerator CLI 7.1.2.RC Release Note](/guide/Appcelerator_CLI/Appcelerator_CLI_Release_Notes/Appcelerator_CLI_Release_Notes_7.x/Appcelerator_CLI_7.1.2.RC_Release_Note/)
+* [Appcelerator CLI 9.0.0 RC Release Note](/guide/Appcelerator_CLI/Appcelerator_CLI_Release_Notes/Appcelerator_CLI_Release_Notes_9.x/Appcelerator_CLI_9.0.0_RC_Release_Note/)
 
-* [Appcelerator CLI 7.1.2.GA Release Note](/guide/Appcelerator_CLI/Appcelerator_CLI_Release_Notes/Appcelerator_CLI_Release_Notes_7.x/Appcelerator_CLI_7.1.2.GA_Release_Note/)
-
-* [Appcelerator CLI 7.1.1.RC Release Note](/guide/Appcelerator_CLI/Appcelerator_CLI_Release_Notes/Appcelerator_CLI_Release_Notes_7.x/Appcelerator_CLI_7.1.1.RC_Release_Note/)
-
-* [Appcelerator CLI 7.1.1.GA Release Note](/guide/Appcelerator_CLI/Appcelerator_CLI_Release_Notes/Appcelerator_CLI_Release_Notes_7.x/Appcelerator_CLI_7.1.1.GA_Release_Note/)
-
-* [Appcelerator CLI 7.1.0.RC Release Note](/guide/Appcelerator_CLI/Appcelerator_CLI_Release_Notes/Appcelerator_CLI_Release_Notes_7.x/Appcelerator_CLI_7.1.0.RC_Release_Note/)
-
-* [Appcelerator CLI 7.1.0.GA Release Note](/guide/Appcelerator_CLI/Appcelerator_CLI_Release_Notes/Appcelerator_CLI_Release_Notes_7.x/Appcelerator_CLI_7.1.0.GA_Release_Note/)
+* [Appcelerator CLI 9.0.0 GA Release Note](/guide/Appcelerator_CLI/Appcelerator_CLI_Release_Notes/Appcelerator_CLI_Release_Notes_9.x/Appcelerator_CLI_9.0.0_GA_Release_Note/)
