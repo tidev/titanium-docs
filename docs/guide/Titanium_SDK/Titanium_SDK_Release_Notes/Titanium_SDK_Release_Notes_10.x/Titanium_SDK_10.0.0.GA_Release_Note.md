@@ -1,9 +1,9 @@
 ---
-title: Titanium SDK 10.0.0.RC - 21 April 2021
-weight: '20'
+title: Titanium SDK 10.0.0.GA - 17 May 2021
+weight: '10'
 ---
 
-# Titanium SDK 10.0.0.RC - 21 April 2021
+# Titanium SDK 10.0.0.GA - 17 May 2021
 
 ## About this release
 
@@ -26,6 +26,8 @@ Titanium SDK 10.0.0 is a major release of the SDK, addressing high-priority issu
     * [TIMOB-28333](https://jira.appcelerator.org/browse/TIMOB-28333) - rgba(int,int,int) parity ([d36c5c7](https://github.com/appcelerator/titanium_mobile/commit/d36c5c7d543de43b8bd6952e8ca917ab4032b5a8))
 
     * add missing parameter in NotificationChannel ([fa17daf](https://github.com/appcelerator/titanium_mobile/commit/fa17daf2de5981e1f00a3b78a5109b3e470f202d))
+
+    * docs(api): add information about material Buttons ([e5eb0a0](https://github.com/appcelerator/titanium_mobile/commit/e5eb0a0968c03e5639f12ac818b5a38730d1c82f))
 
 * Sergey Volkov
 
@@ -98,6 +100,8 @@ The following APIs were removed in 10.0.0:
 
 * [TIMOB-28401](https://jira.appcelerator.org/browse/TIMOB-28401) - declare all variables before their usage ([062c06d](https://github.com/appcelerator/titanium_mobile/commit/062c06d7e1b5c961b693ddc8e154be5d6bf9d6db))
 
+* [TIMOB-28440](https://jira.appcelerator.org/browse/TIMOB-28440) - Production builds crash if Node 14 is installed ([94ab6bf](https://github.com/appcelerator/titanium_mobile/commit/94ab6bf235924ac777375a33d22ac8d7e25acf7b),[948b4bd](https://github.com/appcelerator/titanium_mobile/commit/948b4bd8cf63d110b5c09aee2835fb7d7969435f))
+
 * replace shortened [appcelerator.com](http://appcelerator.com/) URLs with long URLs ([d0caea0](https://github.com/appcelerator/titanium_mobile/commit/d0caea05e8d21e4aae74818dd6af3a6a30f67bea))
 
 * filepath compatibility with windows ([824488f](https://github.com/appcelerator/titanium_mobile/commit/824488f419df6917f5fa3ee90cdbc34a927b50da))
@@ -156,9 +160,19 @@ The following APIs were removed in 10.0.0:
 
 * [TIMOB-28404](https://jira.appcelerator.org/browse/TIMOB-28404) - amend TabGroup selected tab ([c08379b](https://github.com/appcelerator/titanium_mobile/commit/c08379b8b935749ba620b5b793235af145116d34)) ([d13c884](https://github.com/appcelerator/titanium_mobile/commit/d13c884760db30c283f1709158d4d463d601c119))
 
-* [TIMOB-28406](https://jira.appcelerator.org/browse/TIMOB-28406) - ListView on a modal with a \* transparent background is invisible ([55910d8](https://github.com/appcelerator/titanium_mobile/commit/55910d86ce2e7115d778fd360ee37cd0e0648213))
+* [TIMOB-28406](https://jira.appcelerator.org/browse/TIMOB-28406) - ListView in a modal window with a transparent background is invisible ([55910d8](https://github.com/appcelerator/titanium_mobile/commit/55910d86ce2e7115d778fd360ee37cd0e0648213))
 
 * [TIMOB-28410](https://jira.appcelerator.org/browse/TIMOB-28410) - ListView causes ArrayIndexOutOfBoundsException in production ([aa7a8c2](https://github.com/appcelerator/titanium_mobile/commit/aa7a8c20cdd0a8d8a3ec9464d6f8a37801780ac1))
+
+* [TIMOB-28423](https://jira.appcelerator.org/browse/TIMOB-28423) - Windows - Unable to launch application on 2nd run without cleaning ([7d6ba8a](https://github.com/appcelerator/titanium_mobile/commit/7d6ba8ad05b19fd864c11b1ab11c2ffa240cfb36), [6a0cfa5](https://github.com/appcelerator/titanium_mobile/commit/6a0cfa55f5c1e49bab3ca09e5eb498832e47b4a1))
+
+* [TIMOB-28424](https://jira.appcelerator.org/browse/TIMOB-28424) - Drop-down picker text color does not change when switching dark/light theme ([499cba5](https://github.com/appcelerator/titanium_mobile/commit/499cba5423c5ec39cbfd8339eaddb0cba82f5783))
+
+* [TIMOB-28430](https://jira.appcelerator.org/browse/TIMOB-28430) - Use correct TableView moveable property ([da7b6b4](https://github.com/appcelerator/titanium_mobile/commit/da7b6b4ac47c3779294a7446cde06b7ccd4c8d08))
+
+* [TIMOB-28438](https://jira.appcelerator.org/browse/TIMOB-28438) - TableViewSection header displays the first header text for all other headers ([ccd55c4](https://github.com/appcelerator/titanium_mobile/commit/ccd55c4a4fe66ef2d107dc97ecd4ab25abfda8c2))
+
+* [TIMOB-28442](https://jira.appcelerator.org/browse/TIMOB-28442) - maxDate is not respected when value of picker is set higher than maxDate ([1c8b82b](https://github.com/appcelerator/titanium_mobile/commit/1c8b82bdb2c9cc6dfe47847e14b233232896781b))
 
 * add back Ti.Media.Sound.setLooping for now ([1c14926](https://github.com/appcelerator/titanium_mobile/commit/1c14926d922d3908d952d6fddc53c8825e0a92c9))
 
@@ -218,7 +232,7 @@ The following APIs were removed in 10.0.0:
 
 * [TIMOB-28267](https://jira.appcelerator.org/browse/TIMOB-28267) - removing eventlistener multiple times ourCallbackCount should not be in negative value ([798bd54](https://github.com/appcelerator/titanium_mobile/commit/798bd544e577092beee35dacd9f1eb106c9e8141))
 
-* [TIMOB-28275](https://jira.appcelerator.org/browse/TIMOB-28275) - RemovingEventListener in Location event will freeze App ([0749a30](https://github.com/appcelerator/titanium_mobile/commit/0749a30ea0979b01c9f38cd71faf9541a907bfa1))
+* [TIMOB-28275](https://jira.appcelerator.org/browse/TIMOB-28275) - Removing event listener in "location" event will freeze App ([0749a30](https://github.com/appcelerator/titanium_mobile/commit/0749a30ea0979b01c9f38cd71faf9541a907bfa1))
 
 * [TIMOB-28281](https://jira.appcelerator.org/browse/TIMOB-28281) - Support Big Sur / Apple Silicon
 
@@ -243,6 +257,22 @@ The following APIs were removed in 10.0.0:
 * [TIMOB-28404](https://jira.appcelerator.org/browse/TIMOB-28404) - tabGroup.setActiveTab() and text.setSelection() shows an error ([fff45b2](https://github.com/appcelerator/titanium_mobile/commit/fff45b2c29ada27c2878eb8e18ec2b1edfa37538))
 
 * [TIMOB-28408](https://jira.appcelerator.org/browse/TIMOB-28408) - App with remote policy encryption crashes when offline ([5c9d3f9](https://github.com/appcelerator/titanium_mobile/commit/5c9d3f95f880ca50aceb07e16d137719647f1f39))
+
+* [TIMOB-28422](https://jira.appcelerator.org/browse/TIMOB-28422) - Debugger not hitting breakpoint ([0099dc3](https://github.com/appcelerator/titanium_mobile/commit/0099dc3a10106affb5cee851ee525be7aebefe6a))
+
+* [TIMOB-28339](https://jira.appcelerator.org/browse/TIMOB-28339) - macOS catalyst apps intermittently crashing on Ti.UI.iOS.CollisionBehavior tests ([02e400a](https://github.com/appcelerator/titanium_mobile/commit/02e400ad433207dcc75f4d0d0420a9f92365b004))
+
+* [TIMOB-28413](https://jira.appcelerator.org/browse/TIMOB-28413) - intermittent crash on TableView INSET\_GROUPED test ([6b3a9ec](https://github.com/appcelerator/titanium_mobile/commit/6b3a9ec53be576221dc0330837a6f0636262962c))
+
+* [TIMOB-28344](https://jira.appcelerator.org/browse/TIMOB-28344) - Table view unit test is crashing sometimes on iPad ([6b3a9ec](https://github.com/appcelerator/titanium_mobile/commit/6b3a9ec53be576221dc0330837a6f0636262962c))
+
+* [TIMOB-28296](https://jira.appcelerator.org/browse/TIMOB-28296) - macOS Frequently Crashing due to Ti.UI.Picker tests ([0468283](https://github.com/appcelerator/titanium_mobile/commit/0468283024344bd2306df7c717c314368952cf2d))
+
+* [TIMOB-28429](https://jira.appcelerator.org/browse/TIMOB-28429) - Build failed with assets containing a tilde (~) in filename ([0f1b754](https://github.com/appcelerator/titanium_mobile/commit/0f1b754760c4f42ee559a67189d64099731394ce))
+
+* [TIMOB-28443](https://jira.appcelerator.org/browse/TIMOB-28443) - ScrollView setZoomScale()/setContentOffset() methods crash as of 10.0.0 ([8dcf5c8](https://github.com/appcelerator/titanium_mobile/commit/8dcf5c807bb568877b13ee869ef09f5e52b6264e))
+
+* [TIMOB-28444](https://jira.appcelerator.org/browse/TIMOB-28444) - Missing setters with 2 arguments([8fd166c](https://github.com/appcelerator/titanium_mobile/commit/8fd166c295847c30d5d1f256c56faad94370076f))
 
 * autorelease Ti.Blob#arrayBuffer() Promise ([9afe176](https://github.com/appcelerator/titanium_mobile/commit/9afe176c18bc9ece20fe188f483b1d7a5a346c7c))
 

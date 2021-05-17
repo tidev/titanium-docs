@@ -1,11 +1,11 @@
 ---
-title: Appcelerator CLI 9.0.0 RC - 21 April 2021
-weight: '20'
+title: Appcelerator CLI 9.0.0 GA - 17 May 2021
+weight: '10'
 ---
 
-# Appcelerator CLI 9.0.0 RC - 21 April 2021
+# Appcelerator CLI 9.0.0 GA - 17 May 2021
 
-Appcelerator CLI 9.0.0 RC is a release candidate for a major release that includes new features, improvements, and bug fixes.
+Appcelerator CLI 9.0.0 GA is a major release that includes new features, improvements, and bug fixes.
 
 Appcelerator CLI will no longer be supported after March 2022.
 
@@ -17,7 +17,7 @@ Appcelerator CLI 9 removes support for Node.js versions older than 12.13.0.
 
 The following components are shipped with CLI 9.0.0:
 
-<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Alloy</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>1.16.0</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Cloud CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>2.1.10</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Titanium CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>5.3.0</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Daemon</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>4.0.3</p></td></tr></tbody></table>
+<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Alloy</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>1.16.0</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Cloud CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>2.1.10</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Titanium CLI</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>5.3.1</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Daemon</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>4.0.4</p></td></tr></tbody></table>
 
 ## New Features
 
@@ -48,7 +48,5 @@ The following components are shipped with CLI 9.0.0:
 * [CLI-1404](https://jira.appcelerator.org/browse/CLI-1404) - "This app is not provisioned for crash analytics." error when adding ACA to an application and performing a device or distribution build
 
 * [ALOY-1743](https://jira.appcelerator.org/browse/ALOY-1743) - Runtime error when a Widget includes another Widget at the top level
-
-## Known issues
 
 * [DAEMON-342](https://jira.appcelerator.org/browse/DAEMON-342) - No watchOS simulators shown in Studio
