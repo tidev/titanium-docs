@@ -22,7 +22,7 @@
     "@silvanite/vuepress-plugin-tailwind": "^1.3.0",
     "@titanium-sdk/vuepress-plugin-fontawesome": "^4.8.3",
     "@vuepress/plugin-back-to-top": "^1.8.2",
-    "gh-pages": "^3.2.2",
+    "gh-pages": "^3.2.3",
     "titanium-docgen": "^4.10.3",
     "vuepress": "^1.8.2",
     "vuepress-plugin-apidocs": "^4.10.3",
