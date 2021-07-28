@@ -1,25 +1,23 @@
 ---
-title: Titanium SDK Release Notes
-weight: '40'
+title: Titanium SDK 10.0.1.GA - 28 July 2021
+weight: '30'
 ---
 
-# Titanium SDK Release Notes
+# Titanium SDK 10.0.1.GA - 28 July 2021
 
-## Titanium SDK 10.0.1.GA - 28 July 2021
-
-### About this release
+## About this release
 
 Titanium SDK 10.0.1 is a patch release of the SDK, addressing high-priority issues from previous releases.
 
 As of this GA release, the previous Titanium SDK patch release (10.0.0) is no longer supported. Axway support for this version and prior versions released by Axway will be discontinued after March 1, 2022.
 
-### Bug Fixes
+## Bug Fixes
 
-#### Multiple platforms
+### Multiple platforms
 
 * [TIMOB-28398](https://jira.appcelerator.org/browse/TIMOB-28398) - convertPointToView() to apply ScrollView contentOffset ([a9d6c7d](https://github.com/appcelerator/titanium_mobile/commit/a9d6c7de2c31db12a39ed01bb57d617d9092f458))
 
-#### Android platform
+### Android platform
 
 * [TIMOB-28464](https://jira.appcelerator.org/browse/TIMOB-28464) - ECONNREFUSED error when starting emulator with Node.js 14 ([3bd1b4e](https://github.com/appcelerator/titanium_mobile/commit/3bd1b4e8af543cb1bd77a45171e3d1f5f8834951))
 
@@ -49,7 +47,7 @@ As of this GA release, the previous Titanium SDK patch release (10.0.0) is no lo
 
 * [TIMOB-28504](https://jira.appcelerator.org/browse/TIMOB-28504) - ScrollableView "views" property is wrongly empty before window open ([743475a](https://github.com/appcelerator/titanium_mobile/commit/743475a903c588421e7e1240907f03f5d48d763a))
 
-#### iOS platform
+### iOS platform
 
 * [TIMOB-27236](https://jira.appcelerator.org/browse/TIMOB-27236) - Animating view width/height from 0 doesn't work ([9624472](https://github.com/appcelerator/titanium_mobile/commit/962447258a22bbaa20abd5ec07acffba47d7a7b6))
 
@@ -77,9 +75,9 @@ As of this GA release, the previous Titanium SDK patch release (10.0.0) is no lo
 
 * [TIMOB-28509](https://jira.appcelerator.org/browse/TIMOB-28509) - Revert modules targeting iOS 11 ([4a0153f](https://github.com/appcelerator/titanium_mobile/commit/4a0153f9017a11401662cdff63f8f2eb966c97e6))
 
-### Features
+## Features
 
-#### Android platform
+### Android platform
 
 * [TIMOB-28370](https://jira.appcelerator.org/browse/TIMOB-28370) - Add title support to Ti.UI.Switch slider style ([1c41606](https://github.com/appcelerator/titanium_mobile/commit/1c41606a1ffe024e67fc6a507d5daab1bb8f4ebf))
 
@@ -103,13 +101,13 @@ As of this GA release, the previous Titanium SDK patch release (10.0.0) is no lo
 
 * [TIMOB-28457](https://jira.appcelerator.org/browse/TIMOB-28457) - Update module Kotlin language support to 1.5.x ([d360bd8](https://github.com/appcelerator/titanium_mobile/commit/d360bd8a14c06d3566ad4d3555d5e968f8adb34c))
 
-#### iOS
+### iOS
 
 * [TIMOB-28412](https://jira.appcelerator.org/browse/TIMOB-28412) - Optimize JS Promise creation on iOS 12 ([a07c56c](https://github.com/appcelerator/titanium_mobile/commit/a07c56c8fd293aa7ca68a00e36c3983237ed1996))
 
 * [TIMOB-28461](https://jira.appcelerator.org/browse/TIMOB-28461) - Support running LiveView with Hyperloop ([98847ff](https://github.com/appcelerator/titanium_mobile/commit/98847ff103dea01c56b274e3e857c6ac8a956331))
 
-#### Multiple platforms
+### Multiple platforms
 
 * [TIMOB-28367](https://jira.appcelerator.org/browse/TIMOB-28367) - Add animation support to Ti.UI.ProgressBar ([387d6be](https://github.com/appcelerator/titanium_mobile/commit/387d6be1db0b2e047e20ab200048325de4a969e6))
 
@@ -117,7 +115,7 @@ As of this GA release, the previous Titanium SDK patch release (10.0.0) is no lo
 
 * [TIMOB-28369](https://jira.appcelerator.org/browse/TIMOB-28369) - Add Ti.UI.overrideUserInterfaceStyle property ([2a32030](https://github.com/appcelerator/titanium_mobile/commit/2a32030fcb89232599bc2f7975703f3d3d6d2895))
 
-### SDK Module Versions
+## SDK Module Versions
 
 | Module | Android version | iOS Version |
 | --- | --- | --- |
@@ -132,11 +130,3 @@ As of this GA release, the previous Titanium SDK patch release (10.0.0) is no lo
 | ti.applesignin | n/a | 3.1.1 |
 | ti.cloud | 3.2.11 | 3.2.11 |
 | hyperloop | 7.0.4 |  |
-
-### Recent Releases
-
-* [Titanium SDK 10.0.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_10.x/Titanium_SDK_10.0.1.GA_Release_Note/)
-
-* [Titanium SDK 10.0.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_10.x/Titanium_SDK_10.0.0.GA_Release_Note/)
-
-* [Titanium SDK 10.0.0.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_10.x/Titanium_SDK_10.0.0.RC_Release_Note/)
