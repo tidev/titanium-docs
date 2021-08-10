@@ -1,27 +1,25 @@
 ---
-title: Titanium SDK Release Notes
+title: Titanium SDK 10.0.2.GA - 10 August 2021
 weight: '40'
 ---
 
-# Titanium SDK Release Notes
+# Titanium SDK 10.0.2.GA - 10 August 2021
 
-## Titanium SDK 10.0.2.GA - 10 August 2021
-
-### About this release
+## About this release
 
 Titanium SDK 10.0.2 is a patch release of the SDK, addressing high-priority issues from previous releases.
 
 As of this GA release, the previous Titanium SDK patch release (10.0.1) is no longer supported. Axway support for this version and prior versions released by Axway will be discontinued after March 1, 2022.
 
-### Community Credits
+## Community Credits
 
 * Hans Knöchel
 
     * [TIMOB-28514](https://jira.appcelerator.org/browse/TIMOB-28514) - Properly map user activity for cold starts ([f0ee118](https://github.com/appcelerator/titanium_mobile/commit/f0ee1185174d19b2b95268e2c12e7a0f164b2020))
 
-### Bug Fixes
+## Bug Fixes
 
-#### Android platform
+### Android platform
 
 * [TIMOB-28503](https://jira.appcelerator.org/browse/TIMOB-28503) - Views added to ScrollableView can be lost upon window open ([2dabc8d](https://github.com/appcelerator/titanium_mobile/commit/2dabc8d627ec8b4743fa1d37ee6636f34c7ec4f8))
 
@@ -31,7 +29,7 @@ As of this GA release, the previous Titanium SDK patch release (10.0.1) is no lo
 
 * [TIMOB-28517](https://jira.appcelerator.org/browse/TIMOB-28517) - Support CardView touchFeedbackColor property ([7b9c488](https://github.com/appcelerator/titanium_mobile/commit/7b9c4889b7e957a6862393ee9c78d5ddeb5a5c3c))
 
-#### iOS platform
+### iOS platform
 
 * [TIMOB-28510](https://jira.appcelerator.org/browse/TIMOB-28510) - Do not create invalid swift compiler flags from symbol usage ([14985f1](https://github.com/appcelerator/titanium_mobile/commit/14985f1c6213e9d6609189d0b10b9c6f2a44114d))
 
@@ -39,7 +37,7 @@ As of this GA release, the previous Titanium SDK patch release (10.0.1) is no lo
 
 * [TIMOB-28506](https://jira.appcelerator.org/browse/TIMOB-28506) - Xcode project change detection causing unnecessary rebuilds ([89773aa](https://github.com/appcelerator/titanium_mobile/commit/89773aa46eb2017d5c80b9aab0595d4397940bd4))
 
-### SDK Module Versions
+## SDK Module Versions
 
 | Module | Android version | iOS Version |
 | --- | --- | --- |
@@ -54,13 +52,3 @@ As of this GA release, the previous Titanium SDK patch release (10.0.1) is no lo
 | ti.applesignin | n/a | 3.1.1 |
 | ti.cloud | 3.2.11 | 3.2.11 |
 | hyperloop | 7.0.4 | 7.0.4 |
-
-### Recent Releases
-
-* [Titanium SDK 10.0.2.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_10.x/Titanium_SDK_10.0.2.GA_Release_Note/)
-
-* [Titanium SDK 10.0.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_10.x/Titanium_SDK_10.0.1.GA_Release_Note/)
-
-* [Titanium SDK 10.0.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_10.x/Titanium_SDK_10.0.0.GA_Release_Note/)
-
-* [Titanium SDK 10.0.0.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_10.x/Titanium_SDK_10.0.0.RC_Release_Note/)
