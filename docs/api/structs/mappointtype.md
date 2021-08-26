@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/ti.map/edit/master/apidoc/MapPointType.yml
+editUrl: https://github.com/appcelerator-modules/ti.map/edit/master/apidoc/Map.yml
 ---
 # MapPointType
 
