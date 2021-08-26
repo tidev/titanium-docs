@@ -30,15 +30,24 @@ As of Titanium 10.0.0, all of the below are material based themes which support 
 | Theme Name | SDK Version | Description |
 | --- | --- | --- |
 | Theme.Titanium | 1.0.0 | Theme applied to the root splash screen activity only. Does not show a top action bar. As of 10.0.0, the top status bar and bottom navigation bar are translucent.<br /><br />This splash theme inherits from a material theme as of Titanium 9.3.0. |
-| Theme.Titanium.DayNight | 10.0.0 | Supports light/dark material theme switching. Shows an action bar and status bar.<br /><br />This is the default application theme as of Titanium 10.0.0. |
-| Theme.Titanium.DayNight.NoTitleBar | 10.0.0 | Supports light/dark material theme switching without an action bar. Shows a status bar. |
+| Theme.Titanium.DayNight | 10.0.0 | Supports light/dark material theme switching. Shows an action bar and status bar using "colorPrimary" and "colorPrimaryDark" respectively.<br /><br />This is the default application theme for Titanium 10.0.x. |
+| Theme.Titanium.DayNight.NoTitleBar | 10.0.0 | Supports light/dark material theme switching without an action bar. Shows a status bar using "colorPrimaryDark". |
 | Theme.Titanium.DayNight.Fullscreen | 10.0.0 | Supports light/dark material theme switching without an action bar and status bar. |
-| Theme.Titanium.Dark | 10.0.0 | Dark material theme. Shows an action bar and status bar. |
-| Theme.Titanium.Dark.NoTitleBar | 10.0.0 | Dark material theme without an action bar. Shows a status bar. |
+| Theme.Titanium.DayNight.Solid | 10.1.0 | Supports light/dark material theme switching. Shows an action bar and status bar using "colorBackground".<br /><br />Shows a seamless background color from the top status bar down to the bottom navigation bar on Android 8.1 and higher.<br /><br />This is the default application theme as of Titanium 10.1.0. |
+| Theme.Titanium.DayNight.Solid.NoTitleBar | 10.1.0 | Supports light/dark material theme switching without an action bar. Shows a status bar using "colorBackground".<br /><br />Shows a seamless background color from the top status bar down to the bottom navigation bar on Android 8.1 and higher. |
+| Theme.Titanium.DayNight.Solid.Fullscreen | 10.1.0 | Supports light/dark material theme switching without an action bar and status bar.<br /><br />Shows a seamless background color from the top of the screen down to the bottom navigation bar on Android 8.1 and higher. |
+| Theme.Titanium.Dark | 10.0.0 | Dark material theme. Shows an action bar and status bar using "colorPrimary" and "colorPrimaryDark" respectively. |
+| Theme.Titanium.Dark.NoTitleBar | 10.0.0 | Dark material theme without an action bar. Shows a status bar using "colorPrimaryDark". |
 | Theme.Titanium.Dark.Fullscreen | 10.0.0 | Dark material theme without an action bar and status bar. |
+| Theme.Titanium.Dark.Solid | 10.1.0 | Dark material theme. Shows an action bar and status bar using "colorBackground".<br /><br />Shows a seamless background color from the top status bar down to the bottom navigation bar on Android 8.1 and higher. |
+| Theme.Titanium.Dark.Solid.NoTitleBar | 10.1.0 | Dark material theme without an action bar. Shows a status bar using "colorBackground".<br /><br />Shows a seamless background color from the top status bar down to the bottom navigation bar on Android 8.1 and higher. |
+| Theme.Titanium.Dark.Solid.Fullscreen | 10.1.0 | Dark material theme without an action bar and status bar.<br /><br />Shows a seamless background color from the top of the screen down to the bottom navigation bar on Android 8.1 and higher. |
 | Theme.Titanium.Light | 10.0.0 | Light material theme. Shows an action bar and status bar. |
 | Theme.Titanium.Light.NoTitleBar | 10.0.0 | Light material theme without an action bar. Shows a status bar. |
 | Theme.Titanium.Light.Fullscreen | 10.0.0 | Light material theme without an action bar and status bar. |
+| Theme.Titanium.Light.Solid | 10.1.0 | Light material theme. Shows an action bar and status bar using "colorBackground".<br /><br />Shows a seamless background color from the top status bar down to the bottom navigation bar on Android 8.1 and higher. |
+| Theme.Titanium.Light.Solid.NoTitleBar | 10.1.0 | Light material theme without an action bar. Shows a status bar using "colorBackground".<br /><br />Shows a seamless background color from the top status bar down to the bottom navigation bar on Android 8.1 and higher. |
+| Theme.Titanium.Light.Solid.Fullscreen | 10.1.0 | Light material theme without an action bar and status bar.<br /><br />Shows a seamless background color from the top of the screen down to the bottom navigation bar on Android 8.1 and higher. |
 | Theme.AppDerived.NoTitleBar | 10.0.0 | Derives from `<application/>` assigned theme. Excludes the action and keeps the status bar.<br /><br />Can only be applied to activities and not the application. |
 | Theme.AppDerived.Fullscreen | 10.0.0 | Derives from `<application/>` assigned theme. Excludes the action bar and status bar.<br /><br />Can only be applied to activities and not the application. |
 | Theme.AppDerived.Translucent | 10.0.0 | Derives from `<application/>` assigned theme and applies a transparent background.<br /><br />Can only be applied to activities and not the application. |
