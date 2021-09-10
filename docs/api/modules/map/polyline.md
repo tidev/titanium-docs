@@ -12,4 +12,21 @@ The `Polyline` object gives you low-level control over polylines that can be add
 
 Use the <Modules.Map.createPolyline> method to create a polyline.
 
+### Example
+
+``` javascript
+var polyline = Map.createPolyline({
+    points: [{
+            latitude: -33.891614,
+            longitude: 151.276417
+        },
+        [-33.87365, 151.20689]
+    ],
+    strokeWidth: 3,
+    strokeColor: '#f00',
+    zIndex: 1
+});
+mapView.addPolyline(polyline);
+```
+
 <ApiDocs/>
