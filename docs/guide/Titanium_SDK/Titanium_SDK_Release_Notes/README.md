@@ -57,6 +57,8 @@ As of this GA release, the previous Titanium SDK patch release (10.0.1) is no lo
 
 ### Recent Releases
 
+* [Titanium SDK 10.1.0.RC Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_10.x/Titanium_SDK_10.1.0.RC_Release_Note/)
+
 * [Titanium SDK 10.0.2.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_10.x/Titanium_SDK_10.0.2.GA_Release_Note/)
 
 * [Titanium SDK 10.0.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_10.x/Titanium_SDK_10.0.1.GA_Release_Note/)
