@@ -47,20 +47,18 @@ If you are using Studio for Mac OS X and Windows, Studio prompts you to install 
 
 #### Java Development Kit
 
-Oracle's Java Development Kit (JDK) is required to be installed in order to work with Titanium.
+The Java Development Kit (JDK) is required to build Titanium apps and modules for Android.(Studio also requires the JDK. It's recommended that you use the 64-bit version of JDK 8 with Studio 5.1 or higher.)
 
-::: warning ⚠️ Warning
-Be aware that no other flavors of JDK, such as OpenJDK, currently work with Titanium; only Oracle's will suffice.
-:::
+| Titanium SDK version | Min JDK version | Max JDK version |
+| --- | --- | --- |
+| 10.1.0 - latest | 11 | 16 |
+| 9.0.2 - 9.3.2 | 8 | 15 |
+| 9.0.1 | 8 | 13 |
+| 9.0.0 | 8 | 12 |
+| 7.5.0 - 8.3.1 | 8 | 14 |
+| 7.0.0 - 7.4.2 | 8 | 10 |
 
-Titanium supports the following versions of JDK for each respective Operating System:
-
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
-
-| Operating System | Min JDK Version | Max JDK Version | Package Arch Version | Download Location | Notes |
-| --- | --- | --- | --- | --- | --- |
-| OS X | 8 | 8 latest revision | 64-bit | [Official Website](http://www.oracle.com/technetwork/java/javase/downloads/index.html) | * On Mac OS X 10.6 (Snow Leopard) and earlier, the JDK is preinstalled.<br />    <br />* On Mac OS X 10.7 (Lion) and later, the OS should prompt you to install it when needed.<br />    <br />* Android Development on OS X systems requires JDK 8 or higher to be installed. |
-| Windows | 8 | 8 latest revision | **32-bit** (x86 / i586) (see note) | [Official Website](http://www.oracle.com/technetwork/java/javase/downloads/index.html) | * The 32-bit version of the JDK is required regardless of whether Titanium is running on a 32-bit Windows system.<br />    <br />* Studio offers to install JDK 8 if no JDK is found.<br />    <br /><br />**Note**: From Studio 5.1.0 and up, 64-bit JDK is supported |
+![download_05](/images/guide/download/attachments/29004836/download_05.png) [Download Location](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/) for detailed instructions.
 

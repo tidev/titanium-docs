@@ -37,7 +37,9 @@ Each Titanium SDK supports a specific range of Xcode versions, shown in the tabl
 
 | Titanium SDK Version | Min Xcode Version | Max Xcode Version | Notes |
 | --- | --- | --- | --- |
-| 9.3.0 - latest | 11.0.0 | 12.x |  |
+| 10.1.0 - latest | 11.0.0 | 13.x | Full support for iOS 15 |
+| 10.0.0 - 10.0.2 | 11.0.0 | 12.x | Dropped iOS 11 support |
+| 9.3.0 - 9.3.2 | 11.0.0 | 12.x |  |
 | 9.2.0 - 9.2.2 | 11.0.0 | 12.x | Full support for iOS 14 and beta support for macOS via Mac Catalyst |
 | 9.0.0 - 9.1.0 | 9.0.0 | 11.x | Dropped iOS 9 support |
 | 8.3.0 - 8.3.1 | 8.0.0 | 11.x |  |
@@ -72,7 +74,8 @@ Each Titanium SDK supports a specific range of iOS base SDKs and deployment targ
 
 | Titanium SDK version | Minimum iOS SDK version | Maximum iOS SDK version | Minimum target iOS version | Maximum target iOS version |
 | --- | --- | --- | --- | --- |
-| 10.0.0 - latest | 13.0.0 | 14.x | 12.0 | 14.x |
+| 10.1.0 - latest | 13.0.0 | 15.x | 12.0 | 15.x |
+| 10.0.0 - 10.0.2 | 13.0.0 | 14.x | 12.0 | 14.x |
 | 9.2.0 - 9.3.x | 13.0.0 | 14.x | 10.0 | 14.x |
 | 9.0.0 - 9.1.2 | 11.0.0 | 13.x | 10.0 | 13.x |
 | 8.2.0 - 8.3.1 | 10.0.0 | 13.x | 9.0 | 13.x |

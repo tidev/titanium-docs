@@ -48,19 +48,24 @@ Each Titanium SDK supports building against a specific range of Android versions
 
 #### Supported versions
 
-| Titanium SDK Version | Min Target Android/SDK Version  <br />(android:targetSdkVersion) | Max Target Android/SDK Version  <br />(android:targetSdkVersion) | Minimum Android/SDK Version  <br />(android:minSdkVersion) |
+| Titanium SDK Version | Min Target Android Version  <br />(android:targetSdkVersion) | Max Target Android Version  <br />(android:targetSdkVersion) | Min Supported Android Version  <br />(android:minSdkVersion) |
 | --- | --- | --- | --- |
-| 10.0.0 - latest | 6.0.x (API 23) | 11.0.x (API 30) | 5.0.x (API 21) |
-| 9.3.0 - latest | 6.0.x (API 23) | 11.0.x (API 30) | 4.4.x (API 19) |
+| 10.1.0 - latest\* | 6.0.x (API 23) | 12.0.x (API 31) | 5.0.x (API 21) |
+| 10.0.0 - 10.0.2 | 6.0.x (API 23) | 11.0.x (API 30) | 5.0.x (API 21) |
+| 9.3.0 - 9.3.2 | 6.0.x (API 23) | 11.0.x (API 30) | 4.4.x (API 19) |
 | 8.3.0 - 9.2.2 | 6.0.x (API 23) | 10.0.x (API 29) | 4.4.x (API 19) |
 | 8.0.0 - 8.2.2 | 6.0.x (API 23) | 9.0.x (API 28) | 4.4.x (API 19) |
 | 7.5.0 - 7.5.1 | 6.0.x (API 23) | 9.0.x (API 28) | 4.1.x (API 16) |
 | 7.3.0 - 7.4.1 | 6.0.x (API 23) | 8.1.x (API 27) | 4.1.x (API 16) |
 | 7.0.0 - 7.2.0 | 6.0.x (API 23) | 7.0.x (API 25) | 4.1.x (API 16) |
 
+::: warning ⚠️ Notes
+\* As of 10.1.0, Titanium requires JDK 11 or higher to build Android projects.
+:::
+
 #### Unsupported versions
 
-| Titanium SDK Version | Min Target Android/SDK Version  <br />(android:targetSdkVersion) | Max Target Android/SDK Version  <br />(android:targetSdkVersion) | Minimum Android/SDK Version  <br />(android:minSdkVersion) |
+| Titanium SDK Version | Min Target Android Version  <br />(android:targetSdkVersion) | Max Target Android Version  <br />(android:targetSdkVersion) | Min Supported Android Version  <br />(android:minSdkVersion) |
 | --- | --- | --- | --- |
 | 6.2.0 - 6.3.0 | 7.1.x (API 25) | 6.0.x (API 23) | 4.1.x (API 16) |
 | 6.0.0 - 6.1.x | 6.0.x (API 23) | 6.0.x (API 23) | 4.1.x (API 16) |
@@ -162,7 +167,7 @@ In the Android SDK Manager, you will see different versions of the following ite
 
 * **Google APIs by Google Inc** - provides the libraries for building for a specific version of Android that uses the _enhanced_ Google APIs (includes maps support).
 
-* **System Image** - For Android API versions 14 and above, the emulator system images are packaged separately from the SDK Platform package. Three versions of the system images are provided – ARM, Intel x86, and MIPS. The ARM system image is supplied by default in earlier SDK Platform packages, and corresponds to the hardware in most phones.
+* **System Image** - For Android API versions 14 and above, the emulator system images are packaged separately from the SDK Platform package. Two versions of the system images are provided – "x86 Atom" and "x86 Atom\_64" which are 32-bit and 64-bit system images respectively.
 
 To install Android SDK on macOS:
 
