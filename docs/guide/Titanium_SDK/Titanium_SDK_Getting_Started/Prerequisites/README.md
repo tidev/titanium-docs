@@ -47,12 +47,14 @@ If you are using Studio for Mac OS X and Windows, Studio prompts you to install 
 
 #### Java Development Kit
 
-The Java Development Kit (JDK) is required to build Titanium apps and modules for Android.(Studio also requires the JDK. It's recommended that you use the 64-bit version of JDK 8 with Studio 5.1 or higher.)
+The Java Development Kit (JDK) is required to build Titanium apps and modules for Android.
+
+(Studio also requires the JDK. It's recommended that you use the 64-bit version of JDK 8 with Studio 5.1 or higher.)
 
 | Titanium SDK version | Min JDK version | Max JDK version |
 | --- | --- | --- |
 | 10.1.0 - latest | 11 | 16 |
-| 9.0.2 - 9.3.2 | 8 | 15 |
+| 9.0.2 - 10.0.2 | 8 | 15 |
 | 9.0.1 | 8 | 13 |
 | 9.0.0 | 8 | 12 |
 | 7.5.0 - 8.3.1 | 8 | 14 |
