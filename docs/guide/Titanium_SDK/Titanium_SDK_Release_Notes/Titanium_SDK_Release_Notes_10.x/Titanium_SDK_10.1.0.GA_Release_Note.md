@@ -1,11 +1,11 @@
 ---
-title: Titanium SDK 10.1.0.RC Release Note
-weight: '60'
+title: Titanium SDK 10.1.0.GA Release Note
+weight: '50'
 ---
 
-# Titanium SDK 10.1.0.RC Release Note
+# Titanium SDK 10.1.0.GA Release Note
 
-## Titanium SDK 10.1.0.RC - 14 September 2021
+## Titanium SDK 10.1.0.GA - 28 September 2021
 
 ## About this release
 
@@ -51,7 +51,15 @@ Axway support for this version and prior versions released by Axway will be disc
 
 * [MOD-2739](https://jira.appcelerator.org/browse/MOD-2739) - ti.identity module error when authenticating 2nd time ([ec53cf4](https://github.com/appcelerator/titanium_mobile/commit/ec53cf42a150b01c8dc1fcf4bc7ba1de747aa67c))
 
+* [TIMOB-28533](https://jira.appcelerator.org/browse/TIMOB-28533) - ListView scrollToItem always uses first section ([5c3b9d5](https://github.com/appcelerator/titanium_mobile/commit/5c3b9d5fa6749b368a7ef1918187635d2c12b8fd))
+
 * [TIMOB-28437](https://jira.appcelerator.org/browse/TIMOB-28437) - Optimize proxy constructor lookup ([54132d2](https://github.com/appcelerator/titanium_mobile/commit/54132d29ca27531c8ea29f2c326994eebf8317bb))
+
+* [TIMOB-28537](https://jira.appcelerator.org/browse/TIMOB-28537) - auto-scaling mode must stretch ImageView if both width/height set ([ea0d99c](https://github.com/appcelerator/titanium_mobile/commit/ea0d99cc34f7299d01922036558540f40dfaebe9))
+
+* [TIMOB-28538](https://jira.appcelerator.org/browse/TIMOB-28538) - ImageView image download performance slow if HTTP response error occurs ([bdf7e68](https://github.com/appcelerator/titanium_mobile/commit/bdf7e68f3f35b92fd7c422c4fa8293d4433a50ef))
+
+* [TIMOB-18786](https://jira.appcelerator.org/browse/TIMOB-18786) - ImageView sometimes loads wrong image due to hash code collision ([bdf7e68](https://github.com/appcelerator/titanium_mobile/commit/bdf7e68f3f35b92fd7c422c4fa8293d4433a50ef))
 
 * Remove HTTPClient addKeyManager() and addTrustManager() methods ([50225e1](https://github.com/appcelerator/titanium_mobile/commit/50225e12c27cb0bfb440105c6204a7c69dcb0f15))
 
@@ -76,6 +84,8 @@ Axway support for this version and prior versions released by Axway will be disc
 * [TIMOB-28527](https://jira.appcelerator.org/browse/TIMOB-28527) - "ti.map" polyline click events not working if it only has 2 points ([4a4c0a3](https://github.com/appcelerator/titanium_mobile/commit/4a4c0a3726611622e3746d2c5c9a1db22b54ca4a))
 
 * [TIMOB-28488](https://jira.appcelerator.org/browse/TIMOB-28488) - Modal navigation window jumps navigation bar ([d334ac9](https://github.com/appcelerator/titanium_mobile/commit/d334ac970f3d81d6628d068ef9e26d648f56c98f))
+
+* [TIMOB-28536](https://jira.appcelerator.org/browse/TIMOB-28536) - TableView maintains search view focus after close ([7041f6f](https://github.com/appcelerator/titanium_mobile/commit/7041f6f6caab54827c980b339afaac02836c4a3d))
 
 ### Features
 
