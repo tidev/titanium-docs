@@ -32,21 +32,6 @@ bluetooth-peripheral :The app shares data using the Core Bluetooth framework.
 The Apple documentation states that applications are allowed to scan while backgrounded but the
 scan must specify the service types. wild card scan is not supported in the background.
 
-- Note(Android): Add the following `uses-permission` element to the Android manifest section of
-  the tiapp.xml file required for this module. You may need to add the `manifest elements. Starting
-  Android 9(API level 28), its mandatory to request the FOREGROUND_SERVICE for using the foreground service.
-  ``` xml
-    <ti:app>
-        <android xmlns:android="http://schemas.android.com/apk/res/android">
-            <manifest>
-                <uses-permission android:name="android.permission.BLUETOOTH" />
-                <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-                <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-                <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-            </manifest>
-        </android>
-    </ti:app>
-  ```
-  Note: A detailed information about how to use module in your application, can be found with artifacts at path modules/iphone (platform)/appcelerator.ble/x.y.z (version of module)/documentation/index.html
+Note: A detailed information about how to use module in your application, can be found with artifacts at path modules/iphone (platform)/appcelerator.ble/x.y.z (version of module)/documentation/index.html
 
 <ApiDocs/>

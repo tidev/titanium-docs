@@ -31,19 +31,6 @@ The module is used for connecting your application via bluetooth.
   ``` javascript
   bluetooth.isSupported();
   ```
-- Add the following `uses-permission` element to the Android manifest section of the tiapp.xml
-    file. You may need to add the `manifest elements.
-    ``` xml
-    <ti:app>
-        <android xmlns:android="http://schemas.android.com/apk/res/android">
-            <manifest>
-                <uses-permission android:name="android.permission.BLUETOOTH" />
-                <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-                <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> 
-            </manifest>
-        </android>
-    </ti:app>
-    ```
 
 ### Example application
   Please see the /modules/android/appcelerator.bluetooth/x.y.z (version of module)/example folder.
