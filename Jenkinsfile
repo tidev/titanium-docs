@@ -4,7 +4,7 @@ library 'pipeline-library'
 // Keep logs/reports/etc of last 30 builds, only keep build artifacts of last 3 builds
 properties([buildDiscarder(logRotator(numToKeepStr: '30', artifactNumToKeepStr: '3'))])
 
-def nodeVersion = '10.19.0'
+def nodeVersion = '12.18.0'
 def isMainBranch = env.BRANCH_NAME.equals('master') || env.BRANCH_NAME.equals('main')
 
 node('linux || osx') {
@@ -41,6 +41,3 @@ node('linux || osx') {
 		}
 	}
 }
-
-
-				
