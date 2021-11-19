@@ -16,7 +16,7 @@ As of this GA release, the previous Titanium SDK patch release (10.1.0) is no lo
 
 * Michael Gangolf
 
-    * [TIMOB-28532](https://jira.appcelerator.org/browse/TIMOB-28532) - Drag-and-dropped text into TextArea will crash on iOS 15 if it exceeds maxLength ([a54f632](https://github.com/appcelerator/titanium_mobile/commit/a54f63281787e675cb52656c8a610b7b4116d799))
+    * [TIMOB-28532](https://jira.appcelerator.org/browse/TIMOB-28532) - openPhotoGallery() does not invoke cancel callback if swiped down ([a54f632](https://github.com/appcelerator/titanium_mobile/commit/a54f63281787e675cb52656c8a610b7b4116d799))
 
 ### Bug Fixes
 
