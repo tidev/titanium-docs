@@ -41,6 +41,9 @@ To download and install Appcelerator Studio:
 
 4. Launch the downloaded installer and follow the steps to install. If the installer asks to install a specific version of Java, allow it. See [Titanium Compatibility Matrix#JavaDevelopmentKit](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/#java-development-kit) for details on which versions we support.
 
+**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
+**Admin Info: The error is: license VERSION\_MISMATCH**
+
 ### Titanium SDK
 
 Titanium SDK is included in the installation of Appcelerator Studio.

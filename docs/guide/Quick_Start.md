@@ -103,6 +103,9 @@ Studio begins downloading and installing each SDK you selected, according to the
 
 ![PlatformConfigDialog](/images/guide/download/attachments/37540095/PlatformConfigDialog.png)
 
+**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
+**Admin Info: The error is: license VERSION\_MISMATCH**
+
 ## Creating your first mobile app
 
 The following directions guide you through the steps of importing the **Employee Directory** sample project, which demonstrates some components of the Appcelerator Platform.

@@ -19,6 +19,9 @@ When updating or adding Eclipse plugins or software, the software repository var
 | 4.0.0 - 5.x | Luna | 4.4 |
 | 6.x - latest | 2019-09 | 4.13 |
 
+**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
+**Admin Info: The error is: license VERSION\_MISMATCH**
+
 ## Installation
 
 In case you installed the Studio as a plugin to eclipse distribution, CVS is already bundled and ready to be used. In any other case, follow these instructions to install the CVS support.

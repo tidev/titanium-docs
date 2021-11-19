@@ -84,6 +84,9 @@ if (intent.hasExtra(Ti.Android.EXTRA_TEXT) && (extra = intent.getStringExtra(Ti.
     // Do something with the extra
 }
 ```
+
+**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
+**Admin Info: The error is: license VERSION\_MISMATCH**
 :::
 
 The example below demonstrates the usage of some of the service APIs. The service monitors some of its events and stops itself after ten iterations.

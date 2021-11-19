@@ -134,6 +134,9 @@ Use the qualifiers below to support devices with different DPIs or screen resolu
 | scale-180 | 1.8 | Up to ~172 (720p emulator) | At least 1920x1440 |  |
 | scale-240 | 2.4 | Up to ~230 (WXGA and 1080p emulators) | N/A | Windows Phone OS 8.1 only |
 
+**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
+**Admin Info: The error is: license VERSION\_MISMATCH**
+
 For more details, see [Windows Asset Qualifiers](/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Windows_UI_Components_and_Conventions/Windows_Asset_Qualifiers/).
 
 ::: danger ❗️ Warning

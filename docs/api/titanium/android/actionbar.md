@@ -7,16 +7,14 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-Starting with Release 3.3.0, the Titanium SDK uses the appcompat library to provide support for
-the action bar, including devices running Android 2.3.x and prior. If you are using a release earlier
-than 3.3.0, refer to the _Applicaton Note_ below for additional information.
-
 You can add action items to the action bar by defining an Android menu and setting the
 menu items to display as action items. See [Menu](Titanium.Android.Menu) and
 [MenuItem](Titanium.Android.MenuItem) for details.
 
-In JavaScript, wait for the window or tab group's `open` event before accessing
-the action bar from the window or tab group's [activity](Titanium.Android.Activity).
+You cannot change the action bar's settings until the window's [activity](Titanium.UI.Window.activity)
+or tab group's [activity](Titanium.UI.TabGroup.activity) has been created.
+You can detect this by assigning a callback to the activity's [onCreate](Titanium.Android.Activity.onCreate)
+property.
 
 Note that setting the [Window.navBarHidden](Titanium.UI.Window.navBarHidden) property
 to true disables the Action Bar since it is part of the navigation title bar.
@@ -39,26 +37,6 @@ a `<Window>` or `<TabGroup>`, then add `<MenuItem>` tags as children of the `<Me
 Set MenuItem attributes in either the XML or TSS file.
 
 For an example of using the Action Bar with Alloy, see "Action Bar using Alloy XML Markup" below.
-
-### Action Bar Icon
-
-Starting with Release 4.0, due to the requirement that the target SDK must be set to Android 5.0
-(API level 21) or higher, the action bar icon may not display. Google is discouraging
-the use of icons in toolbars:
-
-> In modern Android UIs developers should lean more on a visually distinct color scheme for toolbars
-> than on their application icon. The use of application icon plus title as a standard layout is
-> discouraged on API 21 devices and newer.
-
-Source: [Android Developer: Toolbar API reference](https://developer.android.com/reference/android/support/v7/widget/Toolbar.html)
-
-### Application Note for Release 3.2.x and earlier
-
-If you are using Release 3.2.x or earlier, this feature is only available in Android 3.0
-(API level 11) and above.
-
-To access the action bar, you must first open a heavyweight window or tab group that
-uses one of the action bar themes (such as the Android Holo theme).
 
 ## Examples
 
@@ -103,33 +81,27 @@ Adds action items and sets several properties on a window's action bar in the XM
 The following example sets several properties on a window's action bar.
 
 ``` js
-var win = Ti.UI.createWindow({
+const win = Ti.UI.createWindow({
     title: "Old Title",
     navBarHidden: false
 });
-var actionBar;
-
-win.addEventListener("open", function() {
-    if (Ti.Platform.osname === "android") {
-        if (! win.activity) {
-            Ti.API.error("Can't access action bar on a lightweight window.");
-        } else {
-            actionBar = win.activity.actionBar;
-            if (actionBar) {
-                actionBar.backgroundImage = "/bg.png";
-                actionBar.title = "New Title";
-                actionBar.onHomeIconItemSelected = function() {
-                    Ti.API.info("Home icon clicked!");
-                };
-            }
+if (OS_ANDROID) {
+    win.activity.onCreate = () => {
+        const actionBar = win.activity.actionBar;
+        if (actionBar) {
+            actionBar.backgroundImage = "/bg.png";
+            actionBar.title = "New Title";
+            actionBar.onHomeIconItemSelected = () => {
+                Ti.API.info("Home icon clicked!");
+            };
         }
-    }
-});
-
+    };
+}
 win.open();
 ```
 
-Nearly identical code can be used for a tab group, but in Release 3.0, the tab group's
-activity must be accessed using the [getActivity](Titanium.UI.TabGroup.getActivity) method.
+The above can be done for a tab group via its [activity](Titanium.UI.TabGroup.activity) property.
+Note that individual tab windows do not have an activity. Only the root tab group (which hosts the tabs)
+provides an activity property.
 
 <ApiDocs/>

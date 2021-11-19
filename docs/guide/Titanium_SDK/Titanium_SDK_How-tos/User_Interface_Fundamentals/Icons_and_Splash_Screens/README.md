@@ -387,6 +387,9 @@ The following table describes the image assets you may upload with your applicat
 | App tile icon | 300 x 300 | PNG |  | For Windows Phone and earlier |
 | Promotional artwork | * 358 x 173 (wide icon)<br />    <br />* 358 x 358 (square icon)<br />    <br />* 1000 x 800 (background image)<br />    <br />* 414 x 180<br />    <br />* 414 x 468<br />    <br />* 558 x 558<br />    <br />* 558 x 756<br />    <br />* 846 x 468<br />    <br />* 2400 x 1200 (recommended) |  |  | Used to showcase your application in the store.<br /><br />May submit only one image per file size.<br /><br />It is highly recommended to submit a 2400 x 1200 image, which the Microsoft team will resize and crop for promotional layouts. |
 
+**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
+**Admin Info: The error is: license VERSION\_MISMATCH**
+
 For more information about app submission, see [Distributing Windows Applications](/guide/Titanium_SDK/Titanium_SDK_Guide/Preparing_for_Distribution/Distributing_Windows_Applications/).
 
 ## Localized splash screens

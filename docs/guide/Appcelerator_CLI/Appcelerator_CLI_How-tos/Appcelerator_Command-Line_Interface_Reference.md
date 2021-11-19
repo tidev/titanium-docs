@@ -905,6 +905,9 @@ Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3
 | `-T, --target <value>` | Target to build for:<br /><br />* **wp-emulator** to run a Windows Phone app on the emulator<br />    <br />* **wp-device** to run a Window Phone app on a device connected to your host machine<br />    <br />* **dist-**phonestore**** to pakcage a Windows Phone app<br />    <br />* **ws-local** to run a Windows Store app on your local machine<br />    <br />* **dist-winstore** to package a Windows Store app |
 | \--`skipInstallDependencies` | **Since Release 6.1.0.** Skip installing dependency packages. If you had trouble with app deployment on device, try this option. |
 
+**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
+**Admin Info: The error is: license VERSION\_MISMATCH**
+
 ### Search
 
 Search for components in the registry.

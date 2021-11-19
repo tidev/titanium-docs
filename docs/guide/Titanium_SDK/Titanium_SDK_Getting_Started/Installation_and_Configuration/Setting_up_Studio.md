@@ -35,6 +35,9 @@ A system must satisfy the following requirements in order to run Studio.
 Minimum system memory requirements is 8GB of RAM. 16GB is highly recommended.
 :::
 
+**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
+**Admin Info: The error is: license VERSION\_MISMATCH**
+
 #### Disk space
 
 We recommend the following as a guideline for estimating how much disk space is necessary to build applications using Axway Appcelerator Studio:
@@ -62,6 +65,9 @@ As of Titanium 9.0.0, building Windows apps is no longer supported.
 ::: danger ❗️ Warning
 Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
 :::
+
+**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
+**Admin Info: The error is: license VERSION\_MISMATCH**
 
 #### Node.js
 

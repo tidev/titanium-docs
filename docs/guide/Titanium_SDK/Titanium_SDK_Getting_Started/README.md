@@ -77,6 +77,9 @@ Studio begins downloading and installing each SDK you selected, according to the
 
 ![PlatformConfigDialog](/images/guide/download/attachments/37540095/PlatformConfigDialog.png)
 
+**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
+**Admin Info: The error is: license VERSION\_MISMATCH**
+
 ### Checking for Studio and SDK updates
 
 When Studio launches for the first time, it automatically downloads and installs the latest Titanium SDKs and additional command-line tools. Once complete, confirm that no further updates are pending and that Studio is at the latest version.

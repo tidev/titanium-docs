@@ -66,6 +66,9 @@ As of Titanium 9.0.0, building Windows apps is no longer supported.
 | --- | --- | --- |
 | 5.1.0 - 6.3.0 | Windows 10 Mobile, Windows Phone | Windows 10, Windows 8.1 |
 
+**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
+**Admin Info: The error is: license VERSION\_MISMATCH**
+
 ## Installing the Windows SDKs
 
 The minimum requirements (builds tools and SDKs, not including Windows Mobile Emulators), will take around 10 GB of storage.
