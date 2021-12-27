@@ -24,7 +24,7 @@
     "@vuepress/plugin-back-to-top": "^1.8.2",
     "gh-pages": "^3.2.2",
     "titanium-docgen": "^4.10.3",
-    "vuepress": "^1.8.2",
+    "vuepress": "^1.9.5",
     "vuepress-plugin-apidocs": "^4.10.3",
     "vuepress-plugin-versioning": "^4.10.2",
     "vuepress-theme-titanium": "^4.9.0",
