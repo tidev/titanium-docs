@@ -43,7 +43,7 @@ win.open();
 ### Custom Keyboard Toolbar (iOS)
 
 On iOS, a configurable toolbar can be displayed above the virtual keyboard.
-Toolbars can be used with both text areas and text fields. See <Titanium.UI.iOS.Toolbar>
+Toolbars can be used with both text areas and text fields. See <Titanium.UI.Toolbar>
 for more information.
 
 This code excerpt creates a text field with a toolbar:
