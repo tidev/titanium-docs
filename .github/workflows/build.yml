@@ -1,0 +1,104 @@
+name: Build docs site
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: titanium-docs
+    steps:
+      # There's no way to avoid this mass cloning unfortunately :(
+      - uses: actions/checkout@v2
+        with:
+          path: titanium-docs
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator/titanium_mobile
+          path: titanium_mobile
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/ti.map
+          path: ti.map
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/ti.facebook
+          path: ti.facebook
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/ti.coremotion
+          path: ti.coremotion
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/ti.crypto
+          path: ti.crypto
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/ti.urlsession
+          path: ti.urlsession
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/titanium-identity
+          path: titanium-identity
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/ti.playservices
+          path: ti.playservices
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/ti.geofence
+          path: ti.geofence
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/appcelerator.ble
+          path: appcelerator.ble
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/appcelerator.bluetooth
+          path: appcelerator.bluetooth
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/appcelerator.https
+          path: appcelerator.https
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/appcelerator.encrypteddatabase
+          path: appcelerator.encrypteddatabase
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/titanium-web-dialog
+          path: titanium-web-dialog
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/ti.barcode
+          path: ti.barcode
+      - uses: actions/checkout@v2
+        with:
+          repository: appcelerator-modules/titanium-apple-sign-in
+          path: titanium-apple-sign-in
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12.x'
+      - run: npm ci
+      - run: |
+          npm run docs:metadata -- ../ti.map/apidoc ../ti.facebook/apidoc ../ti.coremotion/apidoc ../ti.crypto/apidoc ../ti.urlsession/apidoc ../titanium-identity/apidoc ../ti.playservices/apidoc ../ti.geofence/apidoc ../appcelerator.ble/apidoc ../appcelerator.bluetooth/apidoc ../appcelerator.https/apidoc ../appcelerator.encrypteddatabse/apidoc ../titanium-web-dialog/apidoc ../ti.barcode/apidoc ../titanium-apple-sign-in/apidoc
+          npm run docs:migrate  -- ../ti.map/apidoc ../ti.facebook/apidoc ../ti.coremotion/apidoc ../ti.crypto/apidoc ../ti.urlsession/apidoc ../titanium-identity/apidoc ../ti.playservices/apidoc ../ti.geofence/apidoc ../appcelerator.ble/apidoc ../appcelerator.bluetooth/apidoc ../appcelerator.https/apidoc ../appcelerator.encrypteddatabse/apidoc ../titanium-web-dialog/apidoc ../ti.barcode/apidoc ../titanium-apple-sign-in/apidoc
+          npm run docs:build
+      - uses: actions/upload-artifact@v2
+        with:
+          name: built-docs
+          path: titanium-docs/docs/.vuepress/dist
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v2
+        with:
+          name: built-docs
+          path: docs/.vuepress/dist
+      - uses: JamesIves/github-pages-deploy-action@4.1.9
+        with:
+          branch: gh-pages
+          folder: docs/.vuepress/dist
