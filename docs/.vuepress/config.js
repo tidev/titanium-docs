@@ -62,19 +62,6 @@ module.exports = {
             ]
           },
           {
-            text: 'Core',
-            items: [
-              {
-                text: 'SDK',
-                link: '/guide/Titanium_SDK/'
-              },
-              {
-                text: 'Hyperloop',
-                link: '/guide/Titanium_SDK/Titanium_SDK_Guide/Hyperloop/'
-              }
-            ]
-          },
-          {
             text: 'Frameworks',
             items: [
               {
@@ -99,8 +86,25 @@ module.exports = {
               //   link: 'https://appcelerator.com/blog'
               // },
               {
-                text: 'Twitter',
+                text: 'Titanium SDK Twitter',
                 link: 'https://twitter.com/titaniumsdk'
+              }
+            ]
+          },
+          {
+            text: 'TiDev',
+            items: [
+              {
+                text: 'Foundation',
+                link: 'https://tidev.io'
+              },
+              {
+                text: 'TiDev Twitter',
+                link: 'https://twitter.com/tidevio'
+              },
+              {
+                text: 'Donate',
+                link: 'https://en.liberapay.com/tidev'
               }
             ]
           }
