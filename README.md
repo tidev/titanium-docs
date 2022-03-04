@@ -128,7 +128,7 @@ One time:
 
 Then to release:
 
-	git push dokku main
+	git push dokku master:main
 
 ## Contributions
 
