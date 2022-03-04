@@ -124,7 +124,7 @@ Once you have made sure the automatically generated markdown is correct you can 
 
 One time:
 
-	git remote add dokku dokku@tisdk.com:tisdk.com
+	git remote add dokku dokku@titaniumsdk.com:titaniumsdk.com
 
 Then to release:
 
