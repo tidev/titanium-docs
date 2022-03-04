@@ -9,14 +9,12 @@ const sidebar = Object.assign({}, guideSidebar, apiSidebar);
 
 const docSections = [
   { text: 'Titanium SDK', link: '/guide/Titanium_SDK/' },
-  { text: 'Alloy', link: '/guide/Alloy_Framework/' },
-  { text: 'Appcelerator CLI', link: '/guide/Appcelerator_CLI/' },
-  { text: 'Axway Appcelerator Studio', link: '/guide/Axway_Appcelerator_Studio/' },
+  { text: 'Alloy', link: '/guide/Alloy_Framework/' }
 ];
 
 module.exports = {
   base: '/',
-  title: 'Titanium Mobile',
+  title: 'Titanium SDK',
   description: 'Native iOS and Android Apps with JavaScript',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -25,14 +23,15 @@ module.exports = {
   theme: 'titanium',
   themeConfig: {
     logo: '/images/icons/icon-titanium-red.svg',
-    footerCopyright: 'Copyright © 2019-present Axway Appcelerator',
-    footerLogo: '/images/axway-appcelerator-logo.png',
+    footerCopyright: `Copyright © ${new Date().getFullYear()} TiDev`,
+    footerLogo: '/images/tidev-logo-inverted.png',
+    footerLogoLink: 'https://tidev.io',
     footerSitemap: {
       'Docs': docSections,
       'Social': [
-        { text: 'Blog', link: 'https://appcelerator.com/blog' },
-        { text: 'Slack', link: 'https://tislack.org' },
-        { text: 'Twitter', link: 'https://twitter.com/appcelerator' }
+        // { text: 'Blog', link: 'https://appcelerator.com/blog' },
+        { text: 'Slack', link: 'https://tidev.slack.com' },
+        { text: 'Twitter', link: 'https://twitter.com/titaniumsdk' }
       ]
     },
     // Top navigation bar
@@ -50,7 +49,7 @@ module.exports = {
             items: [
               {
                 text: 'Slack',
-                link: 'https://tislack.org'
+                link: 'https://tidev.slack.com'
               },
               {
                 text: 'Contribution Guide',
@@ -95,13 +94,13 @@ module.exports = {
           {
             text: 'News',
             items: [
-              {
-                text: 'Blog',
-                link: 'https://appcelerator.com/blog'
-              },
+              // {
+              //   text: 'Blog',
+              //   link: 'https://appcelerator.com/blog'
+              // },
               {
                 text: 'Twitter',
-                link: 'https://twitter.com/appcelerator'
+                link: 'https://twitter.com/titaniumsdk'
               }
             ]
           }
@@ -114,8 +113,8 @@ module.exports = {
 
     // Repo settings
     docsDir: 'docs',
-    repo: 'appcelerator/titanium_mobile',
-    docsRepo: 'appcelerator/titanium-docs',
+    repo: 'tidev/titanium_mobile',
+    docsRepo: 'tidev/titanium-docs',
     editLinks: true,
     editLinkText: 'Edit this page on GitHub'
   },

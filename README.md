@@ -120,10 +120,20 @@ Apart of the [predefined variables](https://vuepress.vuejs.org/guide/frontmatter
 
 Once you have made sure the automatically generated markdown is correct you can add the new type to the sidebar in `docs/.vuepress/config.js` under the `/api/` key.
 
+## Deploy
+
+One time:
+
+	git remote add dokku dokku@tisdk.com:tisdk.com
+
+Then to release:
+
+	git push dokku main
+
 ## Contributions
 
-Open source contributions are greatly appreciated! If you have a bugfix, improvement or new feature, please create
-[an issue](https://github.com/appcelerator/titanium-vuepress-docs/issues/new) first and submit a [pull request](https://github.com/appcelerator/titanium-vuepress-docs/pulls/new) against master.
+Open source contributions are greatly appreciated! If you have a bugfix, improvement or new feature, first make sure you have signed the [TiDev CLA](https://github.com/tidev/organization-docs/blob/main/AUTHORIZED_CONTRIBUTORS.md), then create
+[an issue](https://github.com/appcelerator/titanium-docs/issues/new) first and submit a [pull request](https://github.com/appcelerator/titanium-docs/pulls/new) against master.
 
 ## License
 
