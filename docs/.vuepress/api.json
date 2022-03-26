@@ -2,18 +2,18 @@
 	{
 		"title": "Globals",
 		"children": [
-			[ "global", "global" ],
-			[ "global/console", "console" ],
+			["global", "global"],
+			["global/console", "console"],
 			{
 				"title": "Intl",
 				"path": "/api/global/intl",
 				"children": [
-					[ "global/intl/collator", "Intl.Collator" ],
-					[ "global/intl/datetimeformat", "Intl.DateTimeFormat" ],
-					[ "global/intl/numberformat", "Intl.NumberFormat" ]
+					["global/intl/collator", "Intl.Collator"],
+					["global/intl/datetimeformat", "Intl.DateTimeFormat"],
+					["global/intl/numberformat", "Intl.NumberFormat"]
 				]
 			},
-			[ "global/string", "String" ]
+			["global/string", "String"]
 		]
 	},
 	{
@@ -26,33 +26,27 @@
 			{
 				"title": "Buffer",
 				"path": "/api/structs/buffer",
-				"children": [
-					[ "/api/structs/buffer/buffer", "Buffer" ]
-				]
+				"children": [["/api/structs/buffer/buffer", "Buffer"]]
 			},
 			{
 				"title": "Events",
 				"path": "/api/structs/events",
-				"children": [
-					[ "/api/structs/eventemitter", "EventEmitter" ]
-				]
+				"children": [["/api/structs/eventemitter", "EventEmitter"]]
 			},
 			{
 				"title": "File System",
 				"path": "/api/structs/fs",
 				"children": [
-					[ "/api/structs/fs/constants", "constants" ],
-					[ "/api/structs/fs/stats", "Stats" ],
-					[ "/api/structs/fs/readstream", "ReadStream" ],
-					[ "/api/structs/fs/writestream", "WriteStream" ]
+					["/api/structs/fs/constants", "constants"],
+					["/api/structs/fs/stats", "Stats"],
+					["/api/structs/fs/readstream", "ReadStream"],
+					["/api/structs/fs/writestream", "WriteStream"]
 				]
 			},
 			{
 				"title": "OS",
 				"path": "/api/structs/os",
-				"children": [
-					[ "/api/structs/os/constants", "constants" ]
-				]
+				"children": [["/api/structs/os/constants", "constants"]]
 			},
 			{
 				"title": "Path",
@@ -69,9 +63,7 @@
 			{
 				"title": "Utilities",
 				"path": "/api/structs/util",
-				"children": [
-					[ "/api/structs/util/types", "types" ]
-				]
+				"children": [["/api/structs/util/types", "types"]]
 			}
 		]
 	},
@@ -79,103 +71,103 @@
 		"title": "Titanium",
 		"path": "/api/titanium",
 		"children": [
-			[ "titanium/accelerometer", "Accelerometer" ],
-			[ "titanium/analytics", "Analytics" ],
+			["titanium/accelerometer", "Accelerometer"],
+			["titanium/analytics", "Analytics"],
 			{
 				"title": "Android",
 				"path": "/api/titanium/android",
 				"children": [
-					[ "titanium/android/actionbar", "ActionBar" ],
-					[ "titanium/android/activity", "Activity" ],
-					[ "titanium/android/bigpicturestyle", "BigPictureStyle" ],
-					[ "titanium/android/bigtextstyle", "BigTextStyle" ],
-					[ "titanium/android/broadcastreceiver", "BroadcastReceiver" ],
-					[ "titanium/android/intent", "Intent" ],
-					[ "titanium/android/menu", "Menu" ],
-					[ "titanium/android/menuitem", "MenuItem" ],
-					[ "titanium/android/notification", "Notification" ],
-					[ "titanium/android/notificationchannel", "NotificationChannel" ],
-					[ "titanium/android/notificationmanager", "NotificationManager" ],
-					[ "titanium/android/pendingintent", "PendingIntent" ],
-					[ "titanium/android/quicksettingsservice", "QuickSettingsService"],
-					[ "titanium/android/r", "R" ],
-					[ "titanium/android/remoteviews", "RemoteViews" ],
-					[ "titanium/android/service", "Service" ]
+					["titanium/android/actionbar", "ActionBar"],
+					["titanium/android/activity", "Activity"],
+					["titanium/android/bigpicturestyle", "BigPictureStyle"],
+					["titanium/android/bigtextstyle", "BigTextStyle"],
+					["titanium/android/broadcastreceiver", "BroadcastReceiver"],
+					["titanium/android/intent", "Intent"],
+					["titanium/android/menu", "Menu"],
+					["titanium/android/menuitem", "MenuItem"],
+					["titanium/android/notification", "Notification"],
+					["titanium/android/notificationchannel", "NotificationChannel"],
+					["titanium/android/notificationmanager", "NotificationManager"],
+					["titanium/android/pendingintent", "PendingIntent"],
+					["titanium/android/quicksettingsservice", "QuickSettingsService"],
+					["titanium/android/r", "R"],
+					["titanium/android/remoteviews", "RemoteViews"],
+					["titanium/android/service", "Service"]
 				]
 			},
-			[ "titanium/api", "API" ],
+			["titanium/api", "API"],
 			{
 				"title": "App",
 				"path": "/api/titanium/app",
 				"children": [
-					[ "titanium/app/android", "Android" ],
+					["titanium/app/android", "Android"],
 					{
 						"title": "iOS",
 						"path": "/api/titanium/app/ios",
 						"children": [
-							[ "titanium/app/ios/backgroundservice", "BackgroundService" ],
-							[ "titanium/app/ios/localnotification", "LocalNotification" ],
-							[ "titanium/app/ios/searchableindex", "SearchableIndex" ],
-							[ "titanium/app/ios/searchableitem", "SearchableItem" ],
-							[ "titanium/app/ios/searchableitemattributeset", "SearchableItemAttributeSet" ],
-							[ "titanium/app/ios/searchquery", "SearchQuery" ],
-							[ "titanium/app/ios/useractivity", "UserActivity" ],
-							[ "titanium/app/ios/userdefaults", "UserDefaults" ],
-							[ "titanium/app/ios/usernotificationaction", "UserNotificationAction" ],
-							[ "titanium/app/ios/usernotificationcategory", "UserNotificationCategory" ],
-							[ "titanium/app/ios/usernotificationcenter", "UserNotificationCenter" ]
+							["titanium/app/ios/backgroundservice", "BackgroundService"],
+							["titanium/app/ios/localnotification", "LocalNotification"],
+							["titanium/app/ios/searchableindex", "SearchableIndex"],
+							["titanium/app/ios/searchableitem", "SearchableItem"],
+							["titanium/app/ios/searchableitemattributeset", "SearchableItemAttributeSet"],
+							["titanium/app/ios/searchquery", "SearchQuery"],
+							["titanium/app/ios/useractivity", "UserActivity"],
+							["titanium/app/ios/userdefaults", "UserDefaults"],
+							["titanium/app/ios/usernotificationaction", "UserNotificationAction"],
+							["titanium/app/ios/usernotificationcategory", "UserNotificationCategory"],
+							["titanium/app/ios/usernotificationcenter", "UserNotificationCenter"]
 						]
 					},
-					[ "titanium/app/properties", "Properties" ],
+					["titanium/app/properties", "Properties"],
 					{
 						"title": "Windows",
 						"path": "/api/titanium/app/windows",
 						"children": [
-							[ "titanium/app/windows/backgroundservice", "BackgroundService" ],
-							[ "titanium/app/windows/backgroundservicetask", "BackgroundServiceTask" ]
+							["titanium/app/windows/backgroundservice", "BackgroundService"],
+							["titanium/app/windows/backgroundservicetask", "BackgroundServiceTask"]
 						]
 					}
 				]
 			},
-			[ "titanium/blob", "Blob" ],
-			[ "titanium/blobstream", "BlobStream" ],
-			[ "titanium/buffer", "Buffer" ],
-			[ "titanium/bufferstream", "BufferStream" ],
+			["titanium/blob", "Blob"],
+			["titanium/blobstream", "BlobStream"],
+			["titanium/buffer", "Buffer"],
+			["titanium/bufferstream", "BufferStream"],
 			{
 				"title": "Calendar",
 				"path": "/api/titanium/calendar",
 				"children": [
-					[ "titanium/calendar/alert", "Alert" ],
-					[ "titanium/calendar/attendee", "Attendee" ],
-					[ "titanium/calendar/calendar", "Calendar" ],
-					[ "titanium/calendar/event", "Event" ],
-					[ "titanium/calendar/recurrencerule", "RecurrenceRule" ],
-					[ "titanium/calendar/reminder", "Reminder" ]
+					["titanium/calendar/alert", "Alert"],
+					["titanium/calendar/attendee", "Attendee"],
+					["titanium/calendar/calendar", "Calendar"],
+					["titanium/calendar/event", "Event"],
+					["titanium/calendar/recurrencerule", "RecurrenceRule"],
+					["titanium/calendar/reminder", "Reminder"]
 				]
 			},
-			[ "titanium/codec", "Codec" ],
+			["titanium/codec", "Codec"],
 			{
 				"title": "Contacts",
 				"path": "/api/titanium/contacts",
 				"children": [
-					[ "titanium/contacts/group", "Group" ],
-					[ "titanium/contacts/person", "Person" ]
+					["titanium/contacts/group", "Group"],
+					["titanium/contacts/person", "Person"]
 				]
 			},
 			{
 				"title": "Database",
 				"path": "/api/titanium/database",
 				"children": [
-					[ "titanium/database/db", "DB" ],
-					[ "titanium/database/resultset", "ResultSet" ]
+					["titanium/database/db", "DB"],
+					["titanium/database/resultset", "ResultSet"]
 				]
 			},
 			{
 				"title": "Filesystem",
 				"path": "/api/titanium/filesystem",
 				"children": [
-					[ "titanium/filesystem/file", "File" ],
-					[ "titanium/filesystem/filestream", "FileStream" ]
+					["titanium/filesystem/file", "File"],
+					["titanium/filesystem/filestream", "FileStream"]
 				]
 			},
 			{
@@ -186,210 +178,209 @@
 						"title": "Android",
 						"path": "/api/titanium/geolocation/android",
 						"children": [
-							[ "titanium/geolocation/android/locationprovider", "LocationProvider" ],
-							[ "titanium/geolocation/android/locationrule", "LocationRule" ]
+							["titanium/geolocation/android/locationprovider", "LocationProvider"],
+							["titanium/geolocation/android/locationrule", "LocationRule"]
 						]
 					}
 				]
 			},
-			[ "titanium/gesture", "Gesture" ],
-			[ "titanium/iostream", "IOStream" ],
-			[ "titanium/locale", "Locale" ],
+			["titanium/gesture", "Gesture"],
+			["titanium/iostream", "IOStream"],
+			["titanium/locale", "Locale"],
 			{
 				"title": "Media",
 				"path": "/api/titanium/media",
 				"children": [
-					[ "titanium/media/android", "Android" ],
-					[ "titanium/media/audioplayer", "AudioPlayer" ],
-					[ "titanium/media/audiorecorder", "AudioRecorder" ],
-					[ "titanium/media/item", "Item" ],
-					[ "titanium/media/musicplayer", "MusicPlayer" ],
-					[ "titanium/media/sound", "Sound" ],
-					[ "titanium/media/systemalert", "SystemAlert" ],
-					[ "titanium/media/videoplayer", "VideoPlayer" ]
+					["titanium/media/android", "Android"],
+					["titanium/media/audioplayer", "AudioPlayer"],
+					["titanium/media/audiorecorder", "AudioRecorder"],
+					["titanium/media/item", "Item"],
+					["titanium/media/musicplayer", "MusicPlayer"],
+					["titanium/media/sound", "Sound"],
+					["titanium/media/systemalert", "SystemAlert"],
+					["titanium/media/videoplayer", "VideoPlayer"]
 				]
 			},
-			[ "titanium/module", "Module" ],
+			["titanium/module", "Module"],
 			{
 				"title": "Network",
 				"path": "/api/titanium/network",
 				"children": [
-					[ "titanium/network/bonjourbrowser", "BonjourBrowser" ],
-					[ "titanium/network/bonjourservice", "BonjourService" ],
-					[ "titanium/network/cookie", "Cookie" ],
-					[ "titanium/network/httpclient", "HTTPClient" ],
+					["titanium/network/bonjourbrowser", "BonjourBrowser"],
+					["titanium/network/bonjourservice", "BonjourService"],
+					["titanium/network/cookie", "Cookie"],
+					["titanium/network/httpclient", "HTTPClient"],
 					{
 						"title": "Socket",
 						"path": "/api/titanium/network/socket",
 						"children": [
-							[ "titanium/network/socket/tcp", "TCP" ],
-							[ "titanium/network/socket/udp", "UDP" ]
+							["titanium/network/socket/tcp", "TCP"],
+							["titanium/network/socket/udp", "UDP"]
 						]
 					},
-					[ "titanium/network/tcpsocket", "TCPSocket" ]
+					["titanium/network/tcpsocket", "TCPSocket"]
 				]
 			},
 			{
 				"title": "Platform",
 				"path": "/api/titanium/platform",
 				"children": [
-					[ "titanium/platform/android", "Android" ],
-					[ "titanium/platform/displaycaps", "DisplayCaps" ]
+					["titanium/platform/android", "Android"],
+					["titanium/platform/displaycaps", "DisplayCaps"]
 				]
 			},
-			[ "titanium/proxy", "Proxy" ],
-			[ "titanium/stream", "Stream" ],
+			["titanium/proxy", "Proxy"],
+			["titanium/stream", "Stream"],
 			{
 				"title": "UI",
 				"path": "/api/titanium/ui",
 				"children": [
-					[ "titanium/ui/activityindicator", "ActivityIndicator" ],
-					[ "titanium/ui/activityindicatorstyle", "ActivityIndicatorStyle" ],
-					[ "titanium/ui/alertdialog", "AlertDialog" ],
+					["titanium/ui/activityindicator", "ActivityIndicator"],
+					["titanium/ui/activityindicatorstyle", "ActivityIndicatorStyle"],
+					["titanium/ui/alertdialog", "AlertDialog"],
 					{
 						"title": "Android",
 						"path": "/api/titanium/ui/android",
 						"children": [
-							[ "titanium/ui/android/cardview", "CardView" ],
-							[ "titanium/ui/android/drawerlayout", "DrawerLayout" ],
-							[ "titanium/ui/android/progressindicator", "ProgressIndicator" ],
-							[ "titanium/ui/android/searchview", "SearchView" ]
+							["titanium/ui/android/cardview", "CardView"],
+							["titanium/ui/android/drawerlayout", "DrawerLayout"],
+							["titanium/ui/android/progressindicator", "ProgressIndicator"],
+							["titanium/ui/android/searchview", "SearchView"]
 						]
 					},
-					[ "titanium/ui/animation", "Animation" ],
-					[ "titanium/ui/attributedstring", "AttributedString" ],
-					[ "titanium/ui/button", "Button" ],
-					[ "titanium/ui/buttonbar", "ButtonBar" ],
-					[ "titanium/ui/clipboard", "Clipboard" ],
-					[ "titanium/ui/color", "Color" ],
-					[ "titanium/ui/dashboarditem", "DashboardItem" ],
-					[ "titanium/ui/dashboardview", "DashboardView"],
-					[ "titanium/ui/emaildialog", "EmailDialog" ],
-					[ "titanium/ui/imageview", "ImageView" ],
+					["titanium/ui/animation", "Animation"],
+					["titanium/ui/attributedstring", "AttributedString"],
+					["titanium/ui/button", "Button"],
+					["titanium/ui/buttonbar", "ButtonBar"],
+					["titanium/ui/clipboard", "Clipboard"],
+					["titanium/ui/color", "Color"],
+					["titanium/ui/dashboarditem", "DashboardItem"],
+					["titanium/ui/dashboardview", "DashboardView"],
+					["titanium/ui/emaildialog", "EmailDialog"],
+					["titanium/ui/imageview", "ImageView"],
 					{
 						"title": "iOS",
 						"path": "/api/titanium/ui/ios",
 						"children": [
-							[ "titanium/ui/ios/alertdialogstyle", "AlertDialogStyle" ],
-							[ "titanium/ui/ios/anchorattachmentbehavior", "AnchorAttachmentBehavior" ],
-							[ "titanium/ui/ios/animationstyle", "AnimationStyle" ],
-							[ "titanium/ui/ios/animator", "Animator" ],
-							[ "titanium/ui/ios/applicationshortcuts", "ApplicationShortcuts" ],
-							[ "titanium/ui/ios/blurview", "BlurView" ],
-							[ "titanium/ui/ios/collisionbehavior", "CollisionBehavior" ],
-							[ "titanium/ui/ios/coverflowview", "CoverFlowView" ],
-							[ "titanium/ui/ios/documentviewer", "DocumentViewer" ],
-							[ "titanium/ui/ios/dynamicitembehavior", "DynamicItemBehavior" ],
-							[ "titanium/ui/ios/feedbackgenerator", "FeedbackGenerator" ],
-							[ "titanium/ui/ios/gravitybehavior", "GravityBehavior" ],
-							[ "titanium/ui/ios/listviewcellselectionstyle", "ListViewCellSelectionStyle" ],
-							[ "titanium/ui/ios/listviewscrollposition", "ListViewScrollPosition" ],
-							[ "titanium/ui/ios/listviewstyle", "ListViewStyle" ],
-							[ "titanium/ui/ios/livephoto", "LivePhoto" ],
-							[ "titanium/ui/ios/livephotoview", "LivePhotoView" ],
-							[ "titanium/ui/ios/menupopup", "MenuPopup" ],
-							[ "titanium/ui/ios/navigationwindow", "NavigationWindow" ],
-							[ "titanium/ui/ios/previewaction", "PreviewAction" ],
-							[ "titanium/ui/ios/previewactiongroup", "PreviewActionGroup" ],
-							[ "titanium/ui/ios/previewcontext", "PreviewContext" ],
-							[ "titanium/ui/ios/progressbarstyle", "ProgressBarStyle" ],
-							[ "titanium/ui/ios/pushbehavior", "PushBehavior" ],
-							[ "titanium/ui/ios/rowanimationstyle", "RowAnimationStyle" ],
-							[ "titanium/ui/ios/scrollindicatorstyle", "ScrollIndicatorStyle" ],
-							[ "titanium/ui/ios/snapbehavior", "SnapBehavior" ],
-							[ "titanium/ui/ios/splitwindow", "SplitWindow" ],
-							[ "titanium/ui/ios/statusbar", "StatusBar" ],
-							[ "titanium/ui/ios/stepper", "Stepper" ],
-							[ "titanium/ui/ios/systembutton", "SystemButton" ],
-							[ "titanium/ui/ios/systembuttonstyle", "SystemButtonStyle" ],
-							[ "titanium/ui/ios/systemicon", "SystemIcon" ],
-							[ "titanium/ui/ios/tabbedbar", "TabbedBar" ],
-							[ "titanium/ui/ios/tableviewcellselectionstyle", "TableViewCellSelectionStyle" ],
-							[ "titanium/ui/ios/tableviewscrollposition", "TableViewScrollPosition" ],
-							[ "titanium/ui/ios/tableviewstyle", "TableViewStyle" ],
-							[ "titanium/ui/ios/toolbar", "Toolbar" ],
-							[ "titanium/ui/ios/viewattachmentbehavior", "ViewAttachmentBehavior" ]
+							["titanium/ui/ios/alertdialogstyle", "AlertDialogStyle"],
+							["titanium/ui/ios/anchorattachmentbehavior", "AnchorAttachmentBehavior"],
+							["titanium/ui/ios/animationstyle", "AnimationStyle"],
+							["titanium/ui/ios/animator", "Animator"],
+							["titanium/ui/ios/applicationshortcuts", "ApplicationShortcuts"],
+							["titanium/ui/ios/blurview", "BlurView"],
+							["titanium/ui/ios/collisionbehavior", "CollisionBehavior"],
+							["titanium/ui/ios/coverflowview", "CoverFlowView"],
+							["titanium/ui/ios/documentviewer", "DocumentViewer"],
+							["titanium/ui/ios/dynamicitembehavior", "DynamicItemBehavior"],
+							["titanium/ui/ios/feedbackgenerator", "FeedbackGenerator"],
+							["titanium/ui/ios/gravitybehavior", "GravityBehavior"],
+							["titanium/ui/ios/listviewcellselectionstyle", "ListViewCellSelectionStyle"],
+							["titanium/ui/ios/listviewscrollposition", "ListViewScrollPosition"],
+							["titanium/ui/ios/listviewstyle", "ListViewStyle"],
+							["titanium/ui/ios/livephoto", "LivePhoto"],
+							["titanium/ui/ios/livephotoview", "LivePhotoView"],
+							["titanium/ui/ios/menupopup", "MenuPopup"],
+							["titanium/ui/ios/navigationwindow", "NavigationWindow"],
+							["titanium/ui/ios/previewaction", "PreviewAction"],
+							["titanium/ui/ios/previewactiongroup", "PreviewActionGroup"],
+							["titanium/ui/ios/previewcontext", "PreviewContext"],
+							["titanium/ui/ios/progressbarstyle", "ProgressBarStyle"],
+							["titanium/ui/ios/pushbehavior", "PushBehavior"],
+							["titanium/ui/ios/rowanimationstyle", "RowAnimationStyle"],
+							["titanium/ui/ios/scrollindicatorstyle", "ScrollIndicatorStyle"],
+							["titanium/ui/ios/snapbehavior", "SnapBehavior"],
+							["titanium/ui/ios/splitwindow", "SplitWindow"],
+							["titanium/ui/ios/statusbar", "StatusBar"],
+							["titanium/ui/ios/stepper", "Stepper"],
+							["titanium/ui/ios/systembutton", "SystemButton"],
+							["titanium/ui/ios/systembuttonstyle", "SystemButtonStyle"],
+							["titanium/ui/ios/systemicon", "SystemIcon"],
+							["titanium/ui/ios/tabbedbar", "TabbedBar"],
+							["titanium/ui/ios/tableviewcellselectionstyle", "TableViewCellSelectionStyle"],
+							["titanium/ui/ios/tableviewscrollposition", "TableViewScrollPosition"],
+							["titanium/ui/ios/tableviewstyle", "TableViewStyle"],
+							["titanium/ui/ios/toolbar", "Toolbar"],
+							["titanium/ui/ios/viewattachmentbehavior", "ViewAttachmentBehavior"]
 						]
 					},
 					{
 						"title": "iPad",
 						"path": "/api/titanium/ui/ipad",
-						"children": [
-							[ "titanium/ui/ipad/popover", "Popover" ]
-						]
+						"children": [["titanium/ui/ipad/popover", "Popover"]]
 					},
-					[ "titanium/ui/label", "Label" ],
-					[ "titanium/ui/listitem", "ListItem" ],
-					[ "titanium/ui/listsection", "ListSection" ],
-					[ "titanium/ui/listview", "ListView" ],
-					[ "titanium/ui/maskedimage", "MaskedImage" ],
-					[ "titanium/ui/matrix2d", "Matrix2D" ],
-					[ "titanium/ui/matrix3d", "Matrix3D" ],
-					[ "titanium/ui/navigationwindow", "NavigationWindow" ],
-					[ "titanium/ui/notification", "Notification" ],
-					[ "titanium/ui/optiondialog", "OptionDialog" ],
-					[ "titanium/ui/picker", "Picker" ],
-					[ "titanium/ui/pickercolumn", "PickerColumn" ],
-					[ "titanium/ui/pickerrow", "PickerRow" ],
-					[ "titanium/ui/progressbar", "ProgressBar" ],
-					[ "titanium/ui/refreshcontrol", "RefreshControl "],
-					[ "titanium/ui/scrollableview", "ScrollableView" ],
-					[ "titanium/ui/scrollview", "ScrollView" ],
-					[ "titanium/ui/searchbar", "SearchBar" ],
-					[ "titanium/ui/shortcut", "Shortcut" ],
-					[ "titanium/ui/shortcutitem", "ShortcutItem" ],
-					[ "titanium/ui/slider", "Slider" ],
-					[ "titanium/ui/switch", "Switch" ],
-					[ "titanium/ui/tab", "Tab" ],
-					[ "titanium/ui/tabbedbar", "TabbedBar" ],
-					[ "titanium/ui/tabgroup", "TabGroup" ],
-					[ "titanium/ui/tableview", "TableView" ],
-					[ "titanium/ui/tableviewrow", "TableViewRow" ],
-					[ "titanium/ui/tableviewsection", "TableViewSection" ],
-					[ "titanium/ui/textarea", "TextArea" ],
-					[ "titanium/ui/textfield", "TextField" ],
-					[ "titanium/ui/toolbar", "Toolbar" ],
-					[ "titanium/ui/view", "View" ],
-					[ "titanium/ui/webview", "WebView" ],
-					[ "titanium/ui/window", "Window" ],
+					["titanium/ui/label", "Label"],
+					["titanium/ui/listitem", "ListItem"],
+					["titanium/ui/listsection", "ListSection"],
+					["titanium/ui/listview", "ListView"],
+					["titanium/ui/maskedimage", "MaskedImage"],
+					["titanium/ui/matrix2d", "Matrix2D"],
+					["titanium/ui/matrix3d", "Matrix3D"],
+					["titanium/ui/navigationwindow", "NavigationWindow"],
+					["titanium/ui/notification", "Notification"],
+					["titanium/ui/optionbar", "OptionBar"],
+					["titanium/ui/optiondialog", "OptionDialog"],
+					["titanium/ui/picker", "Picker"],
+					["titanium/ui/pickercolumn", "PickerColumn"],
+					["titanium/ui/pickerrow", "PickerRow"],
+					["titanium/ui/progressbar", "ProgressBar"],
+					["titanium/ui/refreshcontrol", "RefreshControl "],
+					["titanium/ui/scrollableview", "ScrollableView"],
+					["titanium/ui/scrollview", "ScrollView"],
+					["titanium/ui/searchbar", "SearchBar"],
+					["titanium/ui/shortcut", "Shortcut"],
+					["titanium/ui/shortcutitem", "ShortcutItem"],
+					["titanium/ui/slider", "Slider"],
+					["titanium/ui/switch", "Switch"],
+					["titanium/ui/tab", "Tab"],
+					["titanium/ui/tabbedbar", "TabbedBar"],
+					["titanium/ui/tabgroup", "TabGroup"],
+					["titanium/ui/tableview", "TableView"],
+					["titanium/ui/tableviewrow", "TableViewRow"],
+					["titanium/ui/tableviewsection", "TableViewSection"],
+					["titanium/ui/textarea", "TextArea"],
+					["titanium/ui/textfield", "TextField"],
+					["titanium/ui/toolbar", "Toolbar"],
+					["titanium/ui/view", "View"],
+					["titanium/ui/webview", "WebView"],
+					["titanium/ui/window", "Window"],
 					{
 						"title": "Windows",
 						"path": "/api/titanium/ui/windows",
 						"children": [
-							[ "titanium/ui/windows/appbarbutton", "AppBarButton" ],
-							[ "titanium/ui/windows/appbarseparator", "AppBarSeparator" ],
-							[ "titanium/ui/windows/appbartogglebutton", "AppBarToggleButton" ],
-							[ "titanium/ui/windows/commandbar", "CommandBar" ],
-							[ "titanium/ui/windows/listviewscrollposition", "ListViewScrollPosition" ],
-							[ "titanium/ui/windows/style", "Style" ],
-							[ "titanium/ui/windows/systemicon", "SystemIcon" ]
+							["titanium/ui/windows/appbarbutton", "AppBarButton"],
+							["titanium/ui/windows/appbarseparator", "AppBarSeparator"],
+							["titanium/ui/windows/appbartogglebutton", "AppBarToggleButton"],
+							["titanium/ui/windows/commandbar", "CommandBar"],
+							["titanium/ui/windows/listviewscrollposition", "ListViewScrollPosition"],
+							["titanium/ui/windows/style", "Style"],
+							["titanium/ui/windows/systemicon", "SystemIcon"]
 						]
 					}
 				]
 			},
-			[ "titanium/utils", "Utils" ],
-			[ "titanium/watchsession", "WatchSession" ],
+			["titanium/utils", "Utils"],
+			["titanium/watchsession", "WatchSession"],
 			{
 				"title": "XML",
 				"path": "/api/titanium/xml",
 				"children": [
-					[ "titanium/xml/attr", "Attr" ],
-					[ "titanium/xml/cdatasection", "CDataSection" ],
-					[ "titanium/xml/characterdata", "CharacterData" ],
-					[ "titanium/xml/comment", "Comment" ],
-					[ "titanium/xml/document", "Document" ],
-					[ "titanium/xml/documentfragment", "DocumentFragment" ],
-					[ "titanium/xml/documenttype", "DocumentType" ],
-					[ "titanium/xml/domimplementation", "DOMImplementation" ],
-					[ "titanium/xml/element", "Element" ],
-					[ "titanium/xml/entity", "Entity" ],
-					[ "titanium/xml/entityreference", "EntityReference" ],
-					[ "titanium/xml/namednodemap", "NamedNodeMap" ],
-					[ "titanium/xml/node", "Node" ],
-					[ "titanium/xml/nodelist", "NodeList" ],
-					[ "titanium/xml/notation", "Notation" ],
-					[ "titanium/xml/processinginstruction", "ProcessingInstruction" ],
-					[ "titanium/xml/text", "Text" ]
+					["titanium/xml/attr", "Attr"],
+					["titanium/xml/cdatasection", "CDataSection"],
+					["titanium/xml/characterdata", "CharacterData"],
+					["titanium/xml/comment", "Comment"],
+					["titanium/xml/document", "Document"],
+					["titanium/xml/documentfragment", "DocumentFragment"],
+					["titanium/xml/documenttype", "DocumentType"],
+					["titanium/xml/domimplementation", "DOMImplementation"],
+					["titanium/xml/element", "Element"],
+					["titanium/xml/entity", "Entity"],
+					["titanium/xml/entityreference", "EntityReference"],
+					["titanium/xml/namednodemap", "NamedNodeMap"],
+					["titanium/xml/node", "Node"],
+					["titanium/xml/nodelist", "NodeList"],
+					["titanium/xml/notation", "Notation"],
+					["titanium/xml/processinginstruction", "ProcessingInstruction"],
+					["titanium/xml/text", "Text"]
 				]
 			}
 		]
@@ -397,143 +388,135 @@
 	{
 		"title": "Modules",
 		"children": [
-			[ "modules/barcode", "Barcode" ],
+			["modules/barcode", "Barcode"],
 			{
 				"title": "Bluetooth",
 				"path": "/api/modules/bluetooth",
 				"children": [
-					[ "modules/bluetooth/bluetoothdevice", "Device" ],
-					[ "modules/bluetooth/bluetoothserversocket", "Server Socket" ],
-					[ "modules/bluetooth/bluetoothsocket", "Socket" ]
+					["modules/bluetooth/bluetoothdevice", "Device"],
+					["modules/bluetooth/bluetoothserversocket", "Server Socket"],
+					["modules/bluetooth/bluetoothsocket", "Socket"]
 				]
 			},
 			{
 				"title": "Bluetooth Low Energy",
 				"path": "/api/modules/ble",
 				"children": [
-					[ "modules/ble/beacon", "Beacon" ],
-					[ "modules/ble/beaconidentityconstraint", "Beacon Identity Constraint" ],
-					[ "modules/ble/beaconregion", "Beacon Region" ],
-					[ "modules/ble/central", "Central" ],
-					[ "modules/ble/centralmanager", "Central Manager" ],
-					[ "modules/ble/characteristic", "Characteristic" ],
-					[ "modules/ble/descriptorrequest", "Descriptor Request" ],
-					[ "modules/ble/l2capchannel", "L2CAPChannel" ],
-					[ "modules/ble/mutablecharacteristic", "Mutable Characteristic" ],
-					[ "modules/ble/peer", "Peer" ],
-					[ "modules/ble/peripheral", "Peripheral" ],
-					[ "modules/ble/peripheralmanager", "Peripheral Manager" ],
-					[ "modules/ble/regionmanager", "Region Manager" ],
-					[ "modules/ble/request", "Request" ],
-					[ "modules/ble/service", "Service" ]
+					["modules/ble/beacon", "Beacon"],
+					["modules/ble/beaconidentityconstraint", "Beacon Identity Constraint"],
+					["modules/ble/beaconregion", "Beacon Region"],
+					["modules/ble/central", "Central"],
+					["modules/ble/centralmanager", "Central Manager"],
+					["modules/ble/characteristic", "Characteristic"],
+					["modules/ble/descriptorrequest", "Descriptor Request"],
+					["modules/ble/l2capchannel", "L2CAPChannel"],
+					["modules/ble/mutablecharacteristic", "Mutable Characteristic"],
+					["modules/ble/peer", "Peer"],
+					["modules/ble/peripheral", "Peripheral"],
+					["modules/ble/peripheralmanager", "Peripheral Manager"],
+					["modules/ble/regionmanager", "Region Manager"],
+					["modules/ble/request", "Request"],
+					["modules/ble/service", "Service"]
 				]
 			},
 			{
 				"title": "Cloud",
 				"path": "/api/modules/cloud",
 				"children": [
-					[ "modules/cloud/acls", "ACLs" ],
-					[ "modules/cloud/chats", "Chats" ],
-					[ "modules/cloud/checkins", "Checkins" ],
-					[ "modules/cloud/clients", "Clients" ],
-					[ "modules/cloud/emails", "Emails" ],
-					[ "modules/cloud/events", "Events" ],
-					[ "modules/cloud/files", "Files" ],
-					[ "modules/cloud/friends", "Friends" ],
-					[ "modules/cloud/geofences", "Geofences" ],
-					[ "modules/cloud/keyvalues", "KeyValues" ],
-					[ "modules/cloud/likes", "Likes" ],
-					[ "modules/cloud/messages", "Messages" ],
-					[ "modules/cloud/objects", "Objects" ],
-					[ "modules/cloud/photocollections", "PhotoCollections" ],
-					[ "modules/cloud/photos", "Photos" ],
-					[ "modules/cloud/places", "Places" ],
-					[ "modules/cloud/posts", "Posts" ],
-					[ "modules/cloud/pushnotifications", "PushNotifications" ],
-					[ "modules/cloud/pushschedules", "PushSchedules" ],
-					[ "modules/cloud/reviews", "Reviews" ],
-					[ "modules/cloud/socialintegrations", "SocialIntegrations" ],
-					[ "modules/cloud/statuses", "Statuses" ],
-					[ "modules/cloud/users", "Users" ]
+					["modules/cloud/acls", "ACLs"],
+					["modules/cloud/chats", "Chats"],
+					["modules/cloud/checkins", "Checkins"],
+					["modules/cloud/clients", "Clients"],
+					["modules/cloud/emails", "Emails"],
+					["modules/cloud/events", "Events"],
+					["modules/cloud/files", "Files"],
+					["modules/cloud/friends", "Friends"],
+					["modules/cloud/geofences", "Geofences"],
+					["modules/cloud/keyvalues", "KeyValues"],
+					["modules/cloud/likes", "Likes"],
+					["modules/cloud/messages", "Messages"],
+					["modules/cloud/objects", "Objects"],
+					["modules/cloud/photocollections", "PhotoCollections"],
+					["modules/cloud/photos", "Photos"],
+					["modules/cloud/places", "Places"],
+					["modules/cloud/posts", "Posts"],
+					["modules/cloud/pushnotifications", "PushNotifications"],
+					["modules/cloud/pushschedules", "PushSchedules"],
+					["modules/cloud/reviews", "Reviews"],
+					["modules/cloud/socialintegrations", "SocialIntegrations"],
+					["modules/cloud/statuses", "Statuses"],
+					["modules/cloud/users", "Users"]
 				]
 			},
-			[ "modules/aca", "Crash Reporting" ],
+			["modules/aca", "Crash Reporting"],
 			{
 				"title": "Crypto",
 				"path": "/api/modules/crypto",
-				"children": [
-					[ "modules/crypto/cryptor", "Cryptor" ]
-				]
+				"children": [["modules/crypto/cryptor", "Cryptor"]]
 			},
-			[ "modules/encrypteddatabase", "Encrypted Database" ],
+			["modules/encrypteddatabase", "Encrypted Database"],
 			{
 				"title": "Facebook",
 				"path": "/api/modules/facebook",
-				"children": [
-					[ "modules/facebook/loginbutton", "LoginButton" ]
-				]
+				"children": [["modules/facebook/loginbutton", "LoginButton"]]
 			},
 			{
 				"title": "Geofencing",
 				"path": "/api/modules/geofence",
-				"children": [
-					[ "modules/geofence/region", "Region" ]
-				]
+				"children": [["modules/geofence/region", "Region"]]
 			},
-			[ "modules/https", "HTTPS Cert Pinning" ],
+			["modules/https", "HTTPS Cert Pinning"],
 			{
 				"title": "Identity",
 				"path": "/api/modules/identity",
-				"children": [
-					[ "modules/identity/keychainitem", "KeychainItem" ]
-				]
+				"children": [["modules/identity/keychainitem", "KeychainItem"]]
 			},
 			{
 				"title": "MLDAP",
 				"path": "/api/modules/ldap",
 				"children": [
-					[ "modules/ldap/connection", "Connection" ],
-					[ "modules/ldap/entry", "Entry" ],
-					[ "modules/ldap/searchrequest", "Search Request" ],
-					[ "modules/ldap/searchresult", "Search Result" ]
+					["modules/ldap/connection", "Connection"],
+					["modules/ldap/entry", "Entry"],
+					["modules/ldap/searchrequest", "Search Request"],
+					["modules/ldap/searchresult", "Search Result"]
 				]
 			},
 			{
 				"title": "Map",
 				"path": "/api/modules/map",
 				"children": [
-					[ "modules/map/annotation", "Annotation" ],
-					[ "modules/map/camera", "Camera" ],
-					[ "modules/map/circle", "Circle" ],
-					[ "modules/map/imageoverlay", "ImageOverlay" ],
-					[ "modules/map/polygon", "Polygon" ],
-					[ "modules/map/polyline", "Polyline" ],
-					[ "modules/map/route", "Route" ],
-					[ "modules/map/snapshotter", "Snapshotter" ],
-					[ "modules/map/streetviewpanorama", "StreetViewPanorama" ],
-					[ "modules/map/view", "View" ]
+					["modules/map/annotation", "Annotation"],
+					["modules/map/camera", "Camera"],
+					["modules/map/circle", "Circle"],
+					["modules/map/imageoverlay", "ImageOverlay"],
+					["modules/map/polygon", "Polygon"],
+					["modules/map/polyline", "Polyline"],
+					["modules/map/route", "Route"],
+					["modules/map/snapshotter", "Snapshotter"],
+					["modules/map/streetviewpanorama", "StreetViewPanorama"],
+					["modules/map/view", "View"]
 				]
 			},
 			{
 				"title": "NFC",
 				"path": "/api/modules/nfc",
 				"children": [
-					[ "modules/nfc/ndefmessage", "NDEF Message" ],
+					["modules/nfc/ndefmessage", "NDEF Message"],
 					{
 						"title": "NDEF Record",
 						"path": "/api/modules/nfc/ndefrecord",
 						"children": [
-							[ "modules/nfc/ndefrecordapplication", "Application" ],
-							[ "modules/nfc/ndefrecordempty", "Empty" ],
-							[ "modules/nfc/ndefrecordexternal", "External" ],
-							[ "modules/nfc/ndefrecordmedia", "Media" ],
-							[ "modules/nfc/ndefrecordsmartposter", "Smart Poster" ],
-							[ "modules/nfc/ndefrecordtext", "Text" ],
-							[ "modules/nfc/ndefrecordunknown", "Unknown" ],
-							[ "modules/nfc/ndefrecorduri", "URI" ]
+							["modules/nfc/ndefrecordapplication", "Application"],
+							["modules/nfc/ndefrecordempty", "Empty"],
+							["modules/nfc/ndefrecordexternal", "External"],
+							["modules/nfc/ndefrecordmedia", "Media"],
+							["modules/nfc/ndefrecordsmartposter", "Smart Poster"],
+							["modules/nfc/ndefrecordtext", "Text"],
+							["modules/nfc/ndefrecordunknown", "Unknown"],
+							["modules/nfc/ndefrecorduri", "URI"]
 						]
 					},
-					[ "modules/nfc/nfcforegrounddispatchfilter", "Foreground Dispatch filter"],
+					["modules/nfc/nfcforegrounddispatchfilter", "Foreground Dispatch filter"],
 					{
 						"title": "NFC Tag",
 						"path": "/api/modules/nfc/nfctag",
@@ -542,15 +525,15 @@
 								"title": "Technology",
 								"path": "/api/modules/nfc/tagtechnology",
 								"children": [
-									[ "modules/nfc/tagtechnologyisodep", "ISO-DEP"],
-									[ "modules/nfc/tagtechnologymifareclassic", "MIFARE Classic" ],
-									[ "modules/nfc/tagtechnologymifareultralight", "MIFARE Ultralight" ],
-									[ "modules/nfc/tagtechnologyndef", "NDEF" ],
-									[ "modules/nfc/tagtechnologyndefformatable", "NDEF format" ],
-									[ "modules/nfc/tagtechnologynfca", "NFC-A" ],
-									[ "modules/nfc/tagtechnologynfcb", "NFC-B" ],
-									[ "modules/nfc/tagtechnologynfcf", "NFC-F" ],
-									[ "modules/nfc/tagtechnologynfcv", "NFC-V" ]
+									["modules/nfc/tagtechnologyisodep", "ISO-DEP"],
+									["modules/nfc/tagtechnologymifareclassic", "MIFARE Classic"],
+									["modules/nfc/tagtechnologymifareultralight", "MIFARE Ultralight"],
+									["modules/nfc/tagtechnologyndef", "NDEF"],
+									["modules/nfc/tagtechnologyndefformatable", "NDEF format"],
+									["modules/nfc/tagtechnologynfca", "NFC-A"],
+									["modules/nfc/tagtechnologynfcb", "NFC-B"],
+									["modules/nfc/tagtechnologynfcf", "NFC-F"],
+									["modules/nfc/tagtechnologynfcv", "NFC-V"]
 								]
 							}
 						]
@@ -560,15 +543,13 @@
 			{
 				"title": "Web Dialog",
 				"path": "/api/modules/webdialog",
-				"children": [
-					[ "modules/webdialog/authenticationsession", "AuthenticationSession" ]
-				]
+				"children": [["modules/webdialog/authenticationsession", "AuthenticationSession"]]
 			},
 			{
 				"title": "Android",
 				"children": [
-					[ "modules/playservices", "Google Play Services" ],
-					[ "modules/cloudpush", "Push Notifications" ]
+					["modules/playservices", "Google Play Services"],
+					["modules/cloudpush", "Push Notifications"]
 				]
 			},
 			{
@@ -577,30 +558,28 @@
 					{
 						"title": "Apple Sign-in",
 						"path": "/api/modules/applesignin",
-						"children": [
-							[ "modules/applesignin/loginbutton", "LoginButton" ]
-						]
+						"children": [["modules/applesignin/loginbutton", "LoginButton"]]
 					},
 					{
 						"title": "CoreMotion",
 						"path": "/api/modules/coremotion",
 						"children": [
-							[ "modules/coremotion/accelerometer", "Accelerometer" ],
-							[ "modules/coremotion/altimeter", "Altimeter" ],
-							[ "modules/coremotion/devicemotion", "DeviceMotion" ],
-							[ "modules/coremotion/gyroscope", "Gyroscope" ],
-							[ "modules/coremotion/magnetometer", "Megnetometer" ],
-							[ "modules/coremotion/motionactivity", "MotionActivity" ],
-							[ "modules/coremotion/pedometer", "Pedometer" ],
-							[ "modules/coremotion/stepcounter", "StepCounter" ]
+							["modules/coremotion/accelerometer", "Accelerometer"],
+							["modules/coremotion/altimeter", "Altimeter"],
+							["modules/coremotion/devicemotion", "DeviceMotion"],
+							["modules/coremotion/gyroscope", "Gyroscope"],
+							["modules/coremotion/magnetometer", "Megnetometer"],
+							["modules/coremotion/motionactivity", "MotionActivity"],
+							["modules/coremotion/pedometer", "Pedometer"],
+							["modules/coremotion/stepcounter", "StepCounter"]
 						]
 					},
 					{
 						"title": "URLSession",
 						"path": "/api/modules/urlsession",
 						"children": [
-							[ "modules/urlsession/session", "Session" ],
-							[ "modules/urlsession/sessionconfiguration", "SessionConfiguration" ]
+							["modules/urlsession/session", "Session"],
+							["modules/urlsession/sessionconfiguration", "SessionConfiguration"]
 						]
 					}
 				]
