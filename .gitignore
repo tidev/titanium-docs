@@ -9,3 +9,6 @@ pnpm-lock.yaml
 # VuePress dist and temp
 .temp
 docs/.vuepress/dist
+
+# VSCode settings
+.vscode/
