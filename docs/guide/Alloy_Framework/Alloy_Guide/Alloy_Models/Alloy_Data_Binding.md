@@ -459,7 +459,7 @@ exports.definition = {
 
 ### Populating a model after data binding
 
-When Alloy compiles your views and controllers, the [generated view code precedes your controller code](https://github.com/appcelerator/alloy/blob/master/Alloy/template/component.js#L45). Any models you define for data binding in the XML will also be created at that point. So how would you bind an already existing model? I’ve seen several _workarounds_ for this, but if you think about it it is actually not that much different from binding a collection, which also starts off empty. Just like you call `fetch()` to populate the collection, you do the exact same thing for the model. Depending on the sync adapter you either pass the query/ID as options or first set the model’s id-attribute and then call `fetch()`.
+When Alloy compiles your views and controllers, the [generated view code precedes your controller code](https://github.com/tidev/alloy/blob/master/Alloy/template/component.js#L45). Any models you define for data binding in the XML will also be created at that point. So how would you bind an already existing model? I’ve seen several _workarounds_ for this, but if you think about it it is actually not that much different from binding a collection, which also starts off empty. Just like you call `fetch()` to populate the collection, you do the exact same thing for the model. Depending on the sync adapter you either pass the query/ID as options or first set the model’s id-attribute and then call `fetch()`.
 
 **index.xml**
 

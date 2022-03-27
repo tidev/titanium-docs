@@ -32,7 +32,7 @@ By default, these installation directions will install the latest Alloy release.
 To install the latest development version of Alloy, after installing [Node.js](http://nodejs.org/) , clone the Alloy GitHub repository and perform an npm install from the Alloy project's root directory:
 
 ```bash
-git clone https://github.com/appcelerator/alloy.git
+git clone https://github.com/tidev/alloy.git
 cd alloy
 [sudo] npm install -g .
 ```

@@ -13,11 +13,11 @@ All that is required is the TypeScript compiler and a CLI plugin that will compi
 
 To get you started quickly with TypeScript, we have prepared two example apps:
 
-* [typescript-alloy-app](https://github.com/appcelerator/titanium-boilerplates/tree/master/templates/typescript-alloy-app#readme)
+* [typescript-alloy-app](https://github.com/tidev/titanium-boilerplates/tree/master/templates/typescript-alloy-app#readme)
 
-* [typescript-classic-app](https://github.com/appcelerator/titanium-boilerplates/tree/master/templates/typescript-classic-app#readme)
+* [typescript-classic-app](https://github.com/tidev/titanium-boilerplates/tree/master/templates/typescript-classic-app#readme)
 
-You can also find them in our new [titanium-boilerplates](https://github.com/appcelerator/titanium-boilerplates) repository on GitHub.
+You can also find them in our new [titanium-boilerplates](https://github.com/tidev/titanium-boilerplates) repository on GitHub.
 
 These are simple greeter app examples written in TypeScript that is already setup with typings for all Titanium APIs, including Alloy, a base configuration for TypeScript, and linting using TSLint.
 
@@ -89,7 +89,7 @@ The compiler settings are just reasonable defaults and you can adjust them depen
 
 ### ALLOY ONLY: copy Alloy typings
 
-Alloy currently does not provide typings on its own. However, you can copy the typings from the Alloy boilerplate project. Copy the [globals.d.ts](https://github.com/appcelerator/titanium-boilerplates/blob/master/templates/typescript-alloy-app/app/globals.d.ts) file over to your project’s `app` folder.
+Alloy currently does not provide typings on its own. However, you can copy the typings from the Alloy boilerplate project. Copy the [globals.d.ts](https://github.com/tidev/titanium-boilerplates/blob/master/templates/typescript-alloy-app/app/globals.d.ts) file over to your project’s `app` folder.
 
 ## Migrating your JavaScript files
 

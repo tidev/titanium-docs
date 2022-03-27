@@ -7,7 +7,7 @@ weight: '30'
 
 This documentation covers Alloy, an Appcelerator framework for the Titanium SDK designed to rapidly develop quality Titanium applications. It is based on the model-view-controller architecture and contains built-in support for [Backbone.js](http://docs.appcelerator.com/backbone/0.9.2/) and [Underscore.js](http://underscorejs.org/).
 
-Review the [Alloy Release Notes](https://github.com/appcelerator/alloy/blob/master/CHANGELOG.md) to see what has changed.
+Review the [Alloy Release Notes](https://github.com/tidev/alloy/blob/master/CHANGELOG.md) to see what has changed.
 
 ## Chapters
 

@@ -49,7 +49,7 @@ You can also visit the [webpack Guide](/guide/Titanium_SDK/Titanium_SDK_How-tos/
 
 ## Open Source
 
-Make sure to also check out the [titanium-angular](https://github.com/appcelerator/titanium-angular) repository on GitHub, which includes the most active state of the Angular support in Titanium.
+Make sure to also check out the [titanium-angular](https://github.com/tidev/titanium-angular) repository on GitHub, which includes the most active state of the Angular support in Titanium.
 
 ## Related documents
 
