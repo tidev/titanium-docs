@@ -18,13 +18,13 @@ To create and manage Alloy applications, you need the Alloy command-line interfa
 2. From a terminal, run the following command to install the CLI:
 
     ```bash
-    [sudo] npm install appcelerator -g
+    [sudo] npm install titanium alloy -g
     ```
 
 3. After installation, run the setup command to install required components:
 
     ```bash
-    appc setup
+    ti setup
     ```
 
     After the CLI downloads and installs the required components, you will be prompted to login and authorize your computer. The CLI will ask to send an authorization token to your e-mail account or as a text to your mobile phone. Enter the authorization token once you receive it to complete the registration process.
@@ -48,7 +48,7 @@ A new skeleton Alloy project will be generated. If you are familiar with classic
 To create a new Alloy project, use the Appcelerator CLI to create a new Alloy project. Run the following command in a terminal:
 
 ```bash
-ti create -t app
+ti create
 ```
 
 You will be prompted to enter an application name and application ID.
@@ -135,12 +135,12 @@ In the **Project Explorer** view, select your project, then from the global tool
 From a console window, go to the root directory of the project, then
 
 ```bash
-appc run [-p platform]
+ti build [-p platform]
 ```
 
 The Appcelerator CLI contains hooks to the Alloy CLI, so you do not need to run any Alloy commands.
 
-Refer to the [Appcelerator Command-Line Interface Reference](/guide/Appcelerator_CLI/Appcelerator_CLI_How-tos/Appcelerator_Command-Line_Interface_Reference/) for more information about using the `appc run` command.
+Refer to the [Titanium Command-Line Interface Reference](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/) for more information about using the `ti build` command.
 
 ## More examples
 

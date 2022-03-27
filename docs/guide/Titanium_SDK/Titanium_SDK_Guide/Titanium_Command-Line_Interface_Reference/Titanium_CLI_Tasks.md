@@ -86,7 +86,7 @@ To create a new Titanium project, run the `ti create` command. The CLI will prom
 ```bash
 ti create -t app --id <APP_ID> -n <APP_NAME> -p <PLATFORMS> -d <WORKSPACE_DIRECTORY> -u <APP_URL>
 ## Example
-ti create -t app --id com.appcelerator.sample -n SampleProject -p android,ios -d ~/Documents/Titanium_Studio_Workspace -u http://www.appcelerator.com
+ti create -t app --id com.appcelerator.sample -n SampleProject -p android,ios -d ~/Documents/Titanium_Studio_Workspace -u https://titaniumsdk.com
 ```
 
 ### Build an application
