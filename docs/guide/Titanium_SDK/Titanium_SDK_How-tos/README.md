@@ -33,10 +33,6 @@ This chapter has several sections dedicated to how-to instructions for Titanium 
 
 * [Notification Services](/guide/Titanium_SDK/Titanium_SDK_How-tos/Notification_Services/)
 
-* [Migrate a Titanium Application to the Platform](/guide/Titanium_SDK/Titanium_SDK_How-tos/Migrate_a_Titanium_Application_to_the_Platform/)
-
-* [GDPR Opt Out Sample App](/guide/Titanium_SDK/Titanium_SDK_How-tos/GDPR_Opt_Out_Sample_App/)
-
 * [Titanium Boilerplates](/guide/Titanium_SDK/Titanium_SDK_How-tos/Titanium_Boilerplates/)
 
 * [Titanium SDK Tutorials](/guide/Titanium_SDK/Titanium_SDK_How-tos/Titanium_SDK_Tutorials/)
