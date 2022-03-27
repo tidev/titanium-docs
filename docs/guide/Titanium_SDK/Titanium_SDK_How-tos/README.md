@@ -7,6 +7,8 @@ weight: '30'
 
 This chapter has several sections dedicated to how-to instructions for Titanium SDK.
 
+* [Transfer your app from Appcelerator CLI to Titanium CLI](/guide/Titanium_SDK/Titanium_SDK_How-tos/Transfer_your_app_from_appc_CLI_to_ti_CLI/)
+
 * [Cross-Platform Mobile Development In Titanium](/guide/Titanium_SDK/Titanium_SDK_How-tos/Cross-Platform_Mobile_Development_In_Titanium/)
 
 * [Debugging and Profiling](/guide/Titanium_SDK/Titanium_SDK_How-tos/Debugging_and_Profiling/)
@@ -32,10 +34,6 @@ This chapter has several sections dedicated to how-to instructions for Titanium 
 * [User Interface Fundamentals](/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Fundamentals/)
 
 * [Notification Services](/guide/Titanium_SDK/Titanium_SDK_How-tos/Notification_Services/)
-
-* [Migrate a Titanium Application to the Platform](/guide/Titanium_SDK/Titanium_SDK_How-tos/Migrate_a_Titanium_Application_to_the_Platform/)
-
-* [GDPR Opt Out Sample App](/guide/Titanium_SDK/Titanium_SDK_How-tos/GDPR_Opt_Out_Sample_App/)
 
 * [Titanium Boilerplates](/guide/Titanium_SDK/Titanium_SDK_How-tos/Titanium_Boilerplates/)
 
