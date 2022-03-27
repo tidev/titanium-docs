@@ -71,4 +71,4 @@ Here is an example of using the previous code to load a FloatingActionButton ins
 
 ## Full Example
 
-For a full example and many other native examples, see the [Hyperloop Sample App](https://github.com/appcelerator/hyperloop-examples) for details.
+For a full example and many other native examples, see the [Hyperloop Sample App](https://github.com/tidev/hyperloop-examples) for details.

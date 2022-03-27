@@ -23,7 +23,7 @@ Many references exist that describe JavaScript language rules to follow. We'll l
 
 * Use `this` with extreme care, as it sometimes doesn't refer to the object you expect. [Read more](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml?showone=this#this)
 
-We have codified our set of internal formatting and linting rules for ESLint at our repository: [https://github.com/appcelerator/eslint-config-axway](https://github.com/appcelerator/eslint-config-axway)
+We have codified our set of internal formatting and linting rules for ESLint at our repository: [https://github.com/tidev/eslint-config-axway](https://github.com/tidev/eslint-config-axway)
 
 This is the set of lint rules we apply to our own JavaScript source for any SDK-related NPM packages, CLI code, etc.
 
@@ -198,7 +198,7 @@ function getCustomer(customerName) {}
 
 * [Google's JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
 
-* [Axway Appcelerator's ESLint Configuration](https://github.com/appcelerator/eslint-config-axway)
+* [Axway Appcelerator's ESLint Configuration](https://github.com/tidev/eslint-config-axway)
 
 ## Summary
 

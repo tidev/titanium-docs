@@ -27,7 +27,7 @@ Kitchen Sink 2.0 is a refactored Alloy-based version of the KitchenSink demo-app
 
 ![kitchensink-overview](./kitchensink-overview.png)
 
-[Kitchen Sink 2.0 on GitHub](https://github.com/appcelerator/kitchensink-v2)
+[Kitchen Sink 2.0 on GitHub](https://github.com/tidev/kitchensink-v2)
 
 ## Hyperloop examples
 
@@ -39,7 +39,7 @@ Learn more about Hyperloop [here](http://www.appcelerator.com/mobile-app-develop
 | --- | --- |
 | ![hyperloop-ios](./hyperloop-ios.png) | ![hyperloop-android](./hyperloop-android.png) |
 
-[Hyperloop Examples on GitHub](https://github.com/appcelerator/hyperloop-examples)
+[Hyperloop Examples on GitHub](https://github.com/tidev/hyperloop-examples)
 
 ## Drag 'n Drop
 

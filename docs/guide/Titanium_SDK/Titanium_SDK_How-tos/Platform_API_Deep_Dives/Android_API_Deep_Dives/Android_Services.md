@@ -344,7 +344,7 @@ While you are testing your service you can back out completely from the applicat
 
 See the following for other examples of services:
 
-* KitchenSink's [android\_services.js](https://github.com/appcelerator/KitchenSink/blob/stable/Resources/ui/handheld/android/platform/android_services.js) script
+* KitchenSink's [android\_services.js](https://github.com/tidev/KitchenSink/blob/stable/Resources/ui/handheld/android/platform/android_services.js) script
 
 ## Further reading
 

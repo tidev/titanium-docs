@@ -11,7 +11,7 @@ There are many Hyperloop open source projects on Github already. Make sure to ch
 
 Cross-platform example app
 
-Our cross-platform example app can be found in this Github repo: [https://github.com/appcelerator/hyperloop-examples](https://github.com/appcelerator/hyperloop-examples)
+Our cross-platform example app can be found in this Github repo: [https://github.com/tidev/hyperloop-examples](https://github.com/tidev/hyperloop-examples)
 
 * A large sample app that demonstrates native APIs for all three platforms (iOS, Android & Windows), including CocoaPods and Android `.aar` packages
 

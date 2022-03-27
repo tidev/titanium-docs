@@ -19,23 +19,23 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ### Android platform
 
-* [TIMOB-27694](https://jira.appcelerator.org/browse/TIMOB-27694) - default Ti.Ui.TextField.editable is true in #focus() ([243afd0](https://github.com/appcelerator/titanium_mobile/commit/243afd00e0760f2060e797312942ee65d47b9f5f))
+* [TIMOB-27694](https://jira.appcelerator.org/browse/TIMOB-27694) - default Ti.Ui.TextField.editable is true in #focus() ([243afd0](https://github.com/tidev/titanium_mobile/commit/243afd00e0760f2060e797312942ee65d47b9f5f))
 
-* [TIMOB-25945](https://jira.appcelerator.org/browse/TIMOB-25945) - fix losing elevation effect after dimensions change ([4b8b22a](https://github.com/appcelerator/titanium_mobile/commit/4b8b22a296cab1174917a0a672150f75bcecdcf0))
+* [TIMOB-25945](https://jira.appcelerator.org/browse/TIMOB-25945) - fix losing elevation effect after dimensions change ([4b8b22a](https://github.com/tidev/titanium_mobile/commit/4b8b22a296cab1174917a0a672150f75bcecdcf0))
 
-* [TIMOB-27572](https://jira.appcelerator.org/browse/TIMOB-27572) - getCurrentPosition() compatibility with some Samsung devices ([1e832a6](https://github.com/appcelerator/titanium_mobile/commit/1e832a6720aeddbfeec4442efaf02267bf8e1ca7))
+* [TIMOB-27572](https://jira.appcelerator.org/browse/TIMOB-27572) - getCurrentPosition() compatibility with some Samsung devices ([1e832a6](https://github.com/tidev/titanium_mobile/commit/1e832a6720aeddbfeec4442efaf02267bf8e1ca7))
 
 ### iOS platform
 
-* [TIMOB-27158](https://jira.appcelerator.org/browse/TIMOB-27158) - ui glitch in lazyloading fixed ([a32f713](https://github.com/appcelerator/titanium_mobile/commit/a32f71313139e6a75fcc7ad99c284a3b6839c65e))
+* [TIMOB-27158](https://jira.appcelerator.org/browse/TIMOB-27158) - ui glitch in lazyloading fixed ([a32f713](https://github.com/tidev/titanium_mobile/commit/a32f71313139e6a75fcc7ad99c284a3b6839c65e))
 
-* [TIMOB-27622](https://jira.appcelerator.org/browse/TIMOB-27622) - expose TiApp singleton accessor to swift ([981869a](https://github.com/appcelerator/titanium_mobile/commit/981869a4d40fa5e1aa8c4e34db2f1a096fc11407))
+* [TIMOB-27622](https://jira.appcelerator.org/browse/TIMOB-27622) - expose TiApp singleton accessor to swift ([981869a](https://github.com/tidev/titanium_mobile/commit/981869a4d40fa5e1aa8c4e34db2f1a096fc11407))
 
-* [TIMOB-27623](https://jira.appcelerator.org/browse/TIMOB-27623) - server is receiving two consecutive calls for the same url and cookies updated while reloading webview ([8646a46](https://github.com/appcelerator/titanium_mobile/commit/8646a4606dac6ff8d554593708d2b29bb17d4d62))
+* [TIMOB-27623](https://jira.appcelerator.org/browse/TIMOB-27623) - server is receiving two consecutive calls for the same url and cookies updated while reloading webview ([8646a46](https://github.com/tidev/titanium_mobile/commit/8646a4606dac6ff8d554593708d2b29bb17d4d62))
 
-* [TIMOB-27609](https://jira.appcelerator.org/browse/TIMOB-27609) - status bar background color crash fix ios13 ([0e0220c](https://github.com/appcelerator/titanium_mobile/commit/0e0220c6f349e55763acd28053b7f4ce9e4d01a6))
+* [TIMOB-27609](https://jira.appcelerator.org/browse/TIMOB-27609) - status bar background color crash fix ios13 ([0e0220c](https://github.com/tidev/titanium_mobile/commit/0e0220c6f349e55763acd28053b7f4ce9e4d01a6))
 
-* [TIMOB-27350](https://jira.appcelerator.org/browse/TIMOB-27350) - updated Ti.Blob.toString() behaviour to original ([cbb82a6](https://github.com/appcelerator/titanium_mobile/commit/cbb82a6a97062b47c7a482f50d221027576215e7))
+* [TIMOB-27350](https://jira.appcelerator.org/browse/TIMOB-27350) - updated Ti.Blob.toString() behaviour to original ([cbb82a6](https://github.com/tidev/titanium_mobile/commit/cbb82a6a97062b47c7a482f50d221027576215e7))
 
 ## SDK modules versions
 
