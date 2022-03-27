@@ -138,8 +138,6 @@ From a console window, go to the root directory of the project, then
 ti build [-p platform]
 ```
 
-The Appcelerator CLI contains hooks to the Alloy CLI, so you do not need to run any Alloy commands.
-
 Refer to the [Titanium Command-Line Interface Reference](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/) for more information about using the `ti build` command.
 
 ## More examples
