@@ -7,6 +7,8 @@ weight: '30'
 
 This chapter has several sections dedicated to how-to instructions for Titanium SDK.
 
+* [Transfer your app from appc CLI to ti CLI](/guide/Titanium_SDK/Titanium_SDK_How-tos/Transfer_your_app_from_appc_CLI_to_ti_CLI/)
+
 * [Cross-Platform Mobile Development In Titanium](/guide/Titanium_SDK/Titanium_SDK_How-tos/Cross-Platform_Mobile_Development_In_Titanium/)
 
 * [Debugging and Profiling](/guide/Titanium_SDK/Titanium_SDK_How-tos/Debugging_and_Profiling/)
