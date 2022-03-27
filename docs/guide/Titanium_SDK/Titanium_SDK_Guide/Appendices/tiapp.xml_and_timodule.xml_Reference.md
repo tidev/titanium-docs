@@ -938,12 +938,7 @@ Because images are store in the Asset Catalog, reading image files manually from
 
 **Since Release 5.1.0**. Enables the iOS [auto-layout engine](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853) to layout the children components of a view. Disabled by default.
 
-::: danger ❗️ Experimental Feature
-This is an experimental feature with known issues:
-
-* [TIMOB-19806](https://jira-archive.titaniumsdk.com/TIMOB-19806)
-
-If you find any issue using this feature, file a bug in [JIRA](https://jira.appcelerator.org/).
+If you find any issue using this feature, file a bug in [GitHub Issues](https://github.com/tidev/titanium_mobile/issues).
 :::
 
 ```xml
