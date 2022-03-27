@@ -83,7 +83,7 @@ Can't find a feature Titanium exposed? Create your own native module to access f
 
 **[Contributing to Titanium](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/)**
 
-Want to help out? [Report a bug](https://jira.appcelerator.org/), contribute to the docs, or submit a pull request to the [Titanium repo](https://github.com/tidev/titanium_mobile).
+Want to help out? [Report a bug](https://github.com/tidev/titanium_mobile/issues), contribute to the docs, or submit a pull request to the [Titanium repo](https://github.com/tidev/titanium_mobile).
 
 **[Appendices](/guide/Titanium_SDK/Titanium_SDK_Guide/Appendices/)**
 
