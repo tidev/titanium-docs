@@ -27,7 +27,7 @@ Kitchen Sink 2.0 is a refactored Alloy-based version of the KitchenSink demo-app
 
 ![kitchensink-overview](./kitchensink-overview.png)
 
-[Kitchen Sink 2.0 on GitHub](https://github.com/tidev/kitchensink-v2)
+[Kitchen Sink 2.0 on GitHub](https://github.com/tidev/kitchensink-v2-v2)
 
 ## Hyperloop examples
 
