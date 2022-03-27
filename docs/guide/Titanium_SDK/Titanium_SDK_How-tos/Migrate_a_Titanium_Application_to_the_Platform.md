@@ -41,4 +41,4 @@ Follow these steps and your app will be imported into the Platform.
 
 1. First, verify that you have the [Appcelerator CLI](/guide/Appcelerator_CLI/) installed. If you are using the Titanium CLI, this procedure will not work.
 
-2. Once installed, you can import your existing Titanium app by running the following in your console from the Titanium project directory: `appc new --import`
+2. Once installed, you can import your existing Titanium app by running the following in your console from the Titanium project directory: `ti create --import`

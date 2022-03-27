@@ -27,7 +27,7 @@ Our cross-platform example app can be found in this Github repo: [https://github
 
 **BEFORE** attempting to run this application, ensure that you have downloaded and followed the instructions from the appropriate guide below. There are specific prerequisites that must be first met before this application will run properly.
 
-This sample application only runs on the simulator because it uses a demo application GUID. If you would like to run this application on device, you need to import the application into your own platform account using `appc new ---import`.
+This sample application only runs on the simulator because it uses a demo application GUID. If you would like to run this application on device, you need to import the application into your own platform account using `ti create ---import`.
 
 ## Hyperloop examples organization on Github
 

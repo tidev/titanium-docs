@@ -48,7 +48,7 @@ A new skeleton Alloy project will be generated. If you are familiar with classic
 To create a new Alloy project, use the Appcelerator CLI to create a new Alloy project. Run the following command in a terminal:
 
 ```bash
-appc new -t titanium
+ti create -t app
 ```
 
 You will be prompted to enter an application name and application ID.

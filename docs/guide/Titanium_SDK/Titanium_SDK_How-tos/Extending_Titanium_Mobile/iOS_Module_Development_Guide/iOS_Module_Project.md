@@ -99,11 +99,11 @@ Before you distribute your module, you must edit this manifest and change a few 
 To create a new module project, run the following Titanium CLI command:
 
 ```bash
-appc new -d /PATH/TO/WORKSPACE -n <MODULE_NAME> --id <MODULE_ID>
+ti create -d /PATH/TO/WORKSPACE -n <MODULE_NAME> --id <MODULE_ID>
 ### when prompted for the project type, select "Titanium Module"
 
 ### Example
-$ appc new -p ios -n test --id com.example.test
+$ ti create -p ios -n test --id com.example.test
 Appcelerator Command-Line Interface, version 7.0.2
 Copyright (c) 2014-2018, Appcelerator, Inc.  All Rights Reserved.
 ? What type of project are you creating?

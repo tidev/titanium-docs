@@ -57,7 +57,7 @@ There is a new template called `webpack-default` available in SDK 9.1.0+ which c
 
 ```bash
 # appc-cli
-appc new --template webpack-default
+ti create --template webpack-default
 
 # ti-cli
 ti create --template webpack-default

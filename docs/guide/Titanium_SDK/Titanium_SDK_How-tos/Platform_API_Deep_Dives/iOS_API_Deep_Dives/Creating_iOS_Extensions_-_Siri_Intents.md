@@ -13,7 +13,7 @@ The repository for this tutorial can be found open-source on **[Github](https://
 
 ## Step-by-step guide
 
-1. Create a native Titanium App with `appc new -p ios,` using Appcelerator Studio, or use your existing project.
+1. Create a native Titanium App with `ti create -p ios,` using Appcelerator Studio, or use your existing project.
 
 2. The name of the example is TestApp, the `<id>` in tiapp.xml will be something like `com.appc.testapp` .
 

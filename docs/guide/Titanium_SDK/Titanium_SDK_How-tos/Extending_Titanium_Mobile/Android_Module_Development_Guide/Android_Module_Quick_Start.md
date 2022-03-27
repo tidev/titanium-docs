@@ -40,7 +40,7 @@ From a terminal, change the current working directory to your workspace and run:
 
 ```bash
 cd /PATH/TO/WORKSPACE
-appc new --n test --id com.example.test -p Android
+ti create --n test --id com.example.test -p Android
 ## when prompted, select "Titanium Module"
 ```
 :::
@@ -103,7 +103,7 @@ From a new terminal window, change the current working directory to your workspa
 
 ```bash
 cd /PATH/TO/WORKSPACE
-appc new -t titanium -p android -d . -n Hello -u http:// --id com.example.hello
+ti create -t app -p android -d . -n Hello -u http:// --id com.example.hello
 cd Hello/
 ```
 :::

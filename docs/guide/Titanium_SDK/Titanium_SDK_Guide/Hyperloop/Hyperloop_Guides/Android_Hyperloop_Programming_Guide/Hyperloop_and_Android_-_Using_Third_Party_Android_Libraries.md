@@ -17,7 +17,7 @@ First, you will have to download the compiled version of the library or build it
 
 ## Setting up the app
 
-In the next step, we create a new Titanium project with `appc new` and click **Yes** to “Would you like to enable native API access with Hyperloop for this app?”.
+In the next step, we create a new Titanium project with `ti create` and click **Yes** to “Would you like to enable native API access with Hyperloop for this app?”.
 
 We create a folder called `app/platform/android/` and copy the AAR file into this folder.
 

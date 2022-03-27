@@ -462,7 +462,7 @@ Indicates if tab completion is enabled or not.
 Information reported by the `titanium config` command as a JSON object.
 
 **env**: Object
-Information about the Titanium build environment similar to `titanium info -t titanium`.
+Information about the Titanium build environment similar to `titanium info -t app`.
 
 **globalContext**: Object
 CLI command, flag and option context.

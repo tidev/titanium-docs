@@ -82,9 +82,9 @@ Before you distribute your module, you must edit this manifest and change a few 
 To create a new module project, run the following Appcelerator CLI command:
 
 ```bash
-appc new -d /PATH/TO/WORKSPACE -n <MODULE NAME> --id <MODULE ID>
+ti create -d /PATH/TO/WORKSPACE -n <MODULE NAME> --id <MODULE ID>
 
-$ appc new -n <MODULE NAME> --id <MODULE ID>
+$ ti create -n <MODULE NAME> --id <MODULE ID>
 Appcelerator Command-Line Interface, version 7.1.2
 Copyright (c) 2014-2018, Appcelerator, Inc.  All Rights Reserved.
 ? What type of project are you creating?

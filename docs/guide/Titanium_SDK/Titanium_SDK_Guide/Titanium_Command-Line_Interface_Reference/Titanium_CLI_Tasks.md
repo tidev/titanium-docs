@@ -81,12 +81,12 @@ Once you have your development environment correctly configured, you can create 
 
 ### Create a Titanium project
 
-To create a new Titanium project, run the `appc new` command. The CLI will prompt you to fill in the necessary information to create a project, such as which platforms the application runs on and the name of the project. To create a new project with all the information specified in the command, run:
+To create a new Titanium project, run the `ti create` command. The CLI will prompt you to fill in the necessary information to create a project, such as which platforms the application runs on and the name of the project. To create a new project with all the information specified in the command, run:
 
 ```bash
-appc new -t app --id <APP_ID> -n <APP_NAME> -p <PLATFORMS> -d <WORKSPACE_DIRECTORY> -u <APP_URL>
+ti create -t app --id <APP_ID> -n <APP_NAME> -p <PLATFORMS> -d <WORKSPACE_DIRECTORY> -u <APP_URL>
 ## Example
-appc new -t app --id com.appcelerator.sample -n SampleProject -p android,ios -d ~/Documents/Titanium_Studio_Workspace -u http://www.appcelerator.com
+ti create -t app --id com.appcelerator.sample -n SampleProject -p android,ios -d ~/Documents/Titanium_Studio_Workspace -u http://www.appcelerator.com
 ```
 
 ### Build an application
