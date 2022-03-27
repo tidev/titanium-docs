@@ -1,8 +1,8 @@
-# Transfer your app from `appc` CLI to `ti` CLI
+# Transfer your app from Appcelerator CLI to Titanium CLI
 
 ## Introduction
 
-Axway announced that they will hand over Titanum to the community at <a href="https://devblog.axway.com/featured/product-update-changes-to-application-development-services-appcelerator/" target="_blank">March 2022</a>. <b>You still create apps or use existing apps!</b>. But you won't have access to the Axway services (e.g. Push, Analytics). You might also see a message like `You cannot perform this operation with your current plan. Please upgrade to build your application for production distribution`. It's time to update the CLI!
+Axway handed over Titanum to the community at <a href="https://devblog.axway.com/featured/product-update-changes-to-application-development-services-appcelerator/" target="_blank">March 2022</a>. <b>You still create apps or use existing apps!</b>. But you won't have access to the Axway services (e.g. Push, Analytics). You might also see a message like `You cannot perform this operation with your current plan. Please upgrade to build your application for production distribution`. It's time to update the CLI!
 
 Here are some steps you have to have a look at or change if you want to build your apps:
 
@@ -36,7 +36,7 @@ and follow that menu. Then inside that folder run `alloy new` to convert the cla
 
 ## Editor
 
-As of March 2nd 2022 the editor packages will now only use the `ti` and `alloy` CLI's. If your package is still using the `appc` CLI please check for extension updates.
+As of March 2nd 2022 the editor packages now only use the `ti` and `alloy` CLI's. If your package is still using the `appc` CLI please check for extension updates.
 
 ## Modules
 
