@@ -13,7 +13,7 @@ Titanium SDK 10.0.0 is a major release of the SDK, addressing high-priority issu
 
 * Hans Knöchel
 
-    * [TIMOB-28376](https://jira.appcelerator.org/browse/TIMOB-28376) - fragments in children of list view and tableview header/footerview ([ef5c95d](https://github.com/appcelerator/titanium_mobile/commit/ef5c95dcbd2d911291309cbe9d632f360ded6ce7))
+    * [TIMOB-28376](https://jira-archive.titaniumsdk.com/TIMOB-28376) - fragments in children of list view and tableview header/footerview ([ef5c95d](https://github.com/appcelerator/titanium_mobile/commit/ef5c95dcbd2d911291309cbe9d632f360ded6ce7))
 
     * remove unused event ([56ddf95](https://github.com/appcelerator/titanium_mobile/commit/56ddf95eb7581d41c1fbb74b9b9e03eee55c3214))
 
@@ -21,9 +21,9 @@ Titanium SDK 10.0.0 is a major release of the SDK, addressing high-priority issu
 
 * Michael Gangolf
 
-    * [TIMOB-28348](https://jira.appcelerator.org/browse/TIMOB-28348) - text alignment justify ([851b4f6](https://github.com/appcelerator/titanium_mobile/commit/851b4f6849d3c73f57b760850a86cfa2abb09dc5))
+    * [TIMOB-28348](https://jira-archive.titaniumsdk.com/TIMOB-28348) - text alignment justify ([851b4f6](https://github.com/appcelerator/titanium_mobile/commit/851b4f6849d3c73f57b760850a86cfa2abb09dc5))
 
-    * [TIMOB-28333](https://jira.appcelerator.org/browse/TIMOB-28333) - rgba(int,int,int) parity ([d36c5c7](https://github.com/appcelerator/titanium_mobile/commit/d36c5c7d543de43b8bd6952e8ca917ab4032b5a8))
+    * [TIMOB-28333](https://jira-archive.titaniumsdk.com/TIMOB-28333) - rgba(int,int,int) parity ([d36c5c7](https://github.com/appcelerator/titanium_mobile/commit/d36c5c7d543de43b8bd6952e8ca917ab4032b5a8))
 
     * add missing parameter in NotificationChannel ([fa17daf](https://github.com/appcelerator/titanium_mobile/commit/fa17daf2de5981e1f00a3b78a5109b3e470f202d))
 
@@ -33,27 +33,27 @@ Titanium SDK 10.0.0 is a major release of the SDK, addressing high-priority issu
 
     * "requestPermissions" and Geolocation APIs return Promise ([971e71e](https://github.com/appcelerator/titanium_mobile/commit/971e71e876284d0828617a74607b8bb4107a2faf))
 
-    * [TIMOB-24549](https://jira.appcelerator.org/browse/TIMOB-24549) - native Promise API ([ea75a0f](https://github.com/appcelerator/titanium_mobile/commit/ea75a0fc9a5291fcc6efbd3c47a50367a85ced11))
+    * [TIMOB-24549](https://jira-archive.titaniumsdk.com/TIMOB-24549) - native Promise API ([ea75a0f](https://github.com/appcelerator/titanium_mobile/commit/ea75a0fc9a5291fcc6efbd3c47a50367a85ced11))
 
 ## BREAKING CHANGES
 
-* [TIMOB-28346](https://jira.appcelerator.org/browse/TIMOB-28346) - TiAPI: Remove getter/setter methods for properties
+* [TIMOB-28346](https://jira-archive.titaniumsdk.com/TIMOB-28346) - TiAPI: Remove getter/setter methods for properties
 
-* [TIMOB-28011](https://jira.appcelerator.org/browse/TIMOB-28011) - iOS: Drop iOS 10 support in Titanium SDK 10
+* [TIMOB-28011](https://jira-archive.titaniumsdk.com/TIMOB-28011) - iOS: Drop iOS 10 support in Titanium SDK 10
 
-* [TIMOB-28343](https://jira.appcelerator.org/browse/TIMOB-28343) - CLI: Update minimum Node.js version to 12.13.0
+* [TIMOB-28343](https://jira-archive.titaniumsdk.com/TIMOB-28343) - CLI: Update minimum Node.js version to 12.13.0
 
-* [TIMOB-28263](https://jira.appcelerator.org/browse/TIMOB-28263) - Android: Change min supported version to Android 5.0 (API Level 21) ([8440ad7](https://github.com/appcelerator/titanium_mobile/commit/8440ad792a35bc11f9f518ab1584e0ac674a108b))
+* [TIMOB-28263](https://jira-archive.titaniumsdk.com/TIMOB-28263) - Android: Change min supported version to Android 5.0 (API Level 21) ([8440ad7](https://github.com/appcelerator/titanium_mobile/commit/8440ad792a35bc11f9f518ab1584e0ac674a108b))
 
-* [TIMOB-28298](https://jira.appcelerator.org/browse/TIMOB-28298) - Android: Material widget support (Requires "Theme.MaterialComponents" based theme)
+* [TIMOB-28298](https://jira-archive.titaniumsdk.com/TIMOB-28298) - Android: Material widget support (Requires "Theme.MaterialComponents" based theme)
 
-* [TIMOB-28395](https://jira.appcelerator.org/browse/TIMOB-28395) - Android: Use native APIs for forward/reverseGeocoder()
+* [TIMOB-28395](https://jira-archive.titaniumsdk.com/TIMOB-28395) - Android: Use native APIs for forward/reverseGeocoder()
 
-* [TIMOB-28396](https://jira.appcelerator.org/browse/TIMOB-28396) - iOS: Use native APIs for forward/reverseGeocoder()
+* [TIMOB-28396](https://jira-archive.titaniumsdk.com/TIMOB-28396) - iOS: Use native APIs for forward/reverseGeocoder()
 
-* [TIMOB-28403](https://jira.appcelerator.org/browse/TIMOB-28403) - Analytics: Limit number of cached events
+* [TIMOB-28403](https://jira-archive.titaniumsdk.com/TIMOB-28403) - Analytics: Limit number of cached events
 
-* [TIMOB-28198](https://jira.appcelerator.org/browse/TIMOB-28198) - Deprecate TableViewRow header footer properties
+* [TIMOB-28198](https://jira-archive.titaniumsdk.com/TIMOB-28198) - Deprecate TableViewRow header footer properties
 
 The following APIs were removed in 10.0.0:
 
@@ -90,17 +90,17 @@ The following APIs were removed in 10.0.0:
 
 ### Multiple platforms
 
-* [TIMOB-26304](https://jira.appcelerator.org/browse/TIMOB-26304) - TiAPI: Ti.UI.TableViewRow.\* selectedBackgroundColor partially deprecated
+* [TIMOB-26304](https://jira-archive.titaniumsdk.com/TIMOB-26304) - TiAPI: Ti.UI.TableViewRow.\* selectedBackgroundColor partially deprecated
 
-* [TIMOB-27807](https://jira.appcelerator.org/browse/TIMOB-27807) - convertPointToView() to use "ti.ui.defaultunit" ([b4f6c3e](https://github.com/appcelerator/titanium_mobile/commit/b4f6c3ed76707ae96b244499acd0636559220412))
+* [TIMOB-27807](https://jira-archive.titaniumsdk.com/TIMOB-27807) - convertPointToView() to use "ti.ui.defaultunit" ([b4f6c3e](https://github.com/appcelerator/titanium_mobile/commit/b4f6c3ed76707ae96b244499acd0636559220412))
 
-* [TIMOB-28205](https://jira.appcelerator.org/browse/TIMOB-28205) - Angular: packaging an angular app fails
+* [TIMOB-28205](https://jira-archive.titaniumsdk.com/TIMOB-28205) - Angular: packaging an angular app fails
 
-* [TIMOB-28264](https://jira.appcelerator.org/browse/TIMOB-28264) - Improve Ti.UI documentation to reflect current state
+* [TIMOB-28264](https://jira-archive.titaniumsdk.com/TIMOB-28264) - Improve Ti.UI documentation to reflect current state
 
-* [TIMOB-28401](https://jira.appcelerator.org/browse/TIMOB-28401) - declare all variables before their usage ([062c06d](https://github.com/appcelerator/titanium_mobile/commit/062c06d7e1b5c961b693ddc8e154be5d6bf9d6db))
+* [TIMOB-28401](https://jira-archive.titaniumsdk.com/TIMOB-28401) - declare all variables before their usage ([062c06d](https://github.com/appcelerator/titanium_mobile/commit/062c06d7e1b5c961b693ddc8e154be5d6bf9d6db))
 
-* [TIMOB-28440](https://jira.appcelerator.org/browse/TIMOB-28440) - Production builds crash if Node 14 is installed ([94ab6bf](https://github.com/appcelerator/titanium_mobile/commit/94ab6bf235924ac777375a33d22ac8d7e25acf7b),[948b4bd](https://github.com/appcelerator/titanium_mobile/commit/948b4bd8cf63d110b5c09aee2835fb7d7969435f))
+* [TIMOB-28440](https://jira-archive.titaniumsdk.com/TIMOB-28440) - Production builds crash if Node 14 is installed ([94ab6bf](https://github.com/appcelerator/titanium_mobile/commit/94ab6bf235924ac777375a33d22ac8d7e25acf7b),[948b4bd](https://github.com/appcelerator/titanium_mobile/commit/948b4bd8cf63d110b5c09aee2835fb7d7969435f))
 
 * replace shortened [appcelerator.com](http://appcelerator.com/) URLs with long URLs ([d0caea0](https://github.com/appcelerator/titanium_mobile/commit/d0caea05e8d21e4aae74818dd6af3a6a30f67bea))
 
@@ -116,63 +116,63 @@ The following APIs were removed in 10.0.0:
 
 ### Android platform
 
-* [TIMOB-24365](https://jira.appcelerator.org/browse/TIMOB-24365) - Ti.UI.ActivityIndicator "indicatorColor" not working
+* [TIMOB-24365](https://jira-archive.titaniumsdk.com/TIMOB-24365) - Ti.UI.ActivityIndicator "indicatorColor" not working
 
-* [TIMOB-24735](https://jira.appcelerator.org/browse/TIMOB-24735) - AttributedString link underline color
+* [TIMOB-24735](https://jira-archive.titaniumsdk.com/TIMOB-24735) - AttributedString link underline color
 
-* [TIMOB-26663](https://jira.appcelerator.org/browse/TIMOB-26663) - touchFeedbackColor doesn't work if view has a transparent backgroundColor and a border ([5b5ac48](https://github.com/appcelerator/titanium_mobile/commit/5b5ac486e9c409e760541db5f8ca29a647f7b171))
+* [TIMOB-26663](https://jira-archive.titaniumsdk.com/TIMOB-26663) - touchFeedbackColor doesn't work if view has a transparent backgroundColor and a border ([5b5ac48](https://github.com/appcelerator/titanium_mobile/commit/5b5ac486e9c409e760541db5f8ca29a647f7b171))
 
-* [TIMOB-27504](https://jira.appcelerator.org/browse/TIMOB-27504) - touchFeedback / ripple does not work when tapped from child view ([5e77724](https://github.com/appcelerator/titanium_mobile/commit/5e777247be7b69257b446a97d9cd3b23f2e4c644))
+* [TIMOB-27504](https://jira-archive.titaniumsdk.com/TIMOB-27504) - touchFeedback / ripple does not work when tapped from child view ([5e77724](https://github.com/appcelerator/titanium_mobile/commit/5e777247be7b69257b446a97d9cd3b23f2e4c644))
 
-* [TIMOB-27807](https://jira.appcelerator.org/browse/TIMOB-27807) - convertPointToView() returns pixels instead of default units
+* [TIMOB-27807](https://jira-archive.titaniumsdk.com/TIMOB-27807) - convertPointToView() returns pixels instead of default units
 
-* [TIMOB-28270](https://jira.appcelerator.org/browse/TIMOB-28270) - App builds fail if it includes the "jaxen" library
+* [TIMOB-28270](https://jira-archive.titaniumsdk.com/TIMOB-28270) - App builds fail if it includes the "jaxen" library
 
-* [TIMOB-28272](https://jira.appcelerator.org/browse/TIMOB-28272) - Accelerometer spams warning messages when exiting app ([e10b6e6](https://github.com/appcelerator/titanium_mobile/commit/e10b6e676c6ecf76866a74c4cd4359a3a6c269da))
+* [TIMOB-28272](https://jira-archive.titaniumsdk.com/TIMOB-28272) - Accelerometer spams warning messages when exiting app ([e10b6e6](https://github.com/appcelerator/titanium_mobile/commit/e10b6e676c6ecf76866a74c4cd4359a3a6c269da))
 
-* [TIMOB-28329](https://jira.appcelerator.org/browse/TIMOB-28329) - touchFeedback property on ListView is ignored and true by default ([5e77724](https://github.com/appcelerator/titanium_mobile/commit/5e777247be7b69257b446a97d9cd3b23f2e4c644))
+* [TIMOB-28329](https://jira-archive.titaniumsdk.com/TIMOB-28329) - touchFeedback property on ListView is ignored and true by default ([5e77724](https://github.com/appcelerator/titanium_mobile/commit/5e777247be7b69257b446a97d9cd3b23f2e4c644))
 
-* [TIMOB-28330](https://jira.appcelerator.org/browse/TIMOB-28330) - Application crashes when scrolling a listview with zero items in the first section:
+* [TIMOB-28330](https://jira-archive.titaniumsdk.com/TIMOB-28330) - Application crashes when scrolling a listview with zero items in the first section:
 
-* [TIMOB-28333](https://jira.appcelerator.org/browse/TIMOB-28333) - rgba(int,int,int) parity with iOS ([d36c5c7](https://github.com/appcelerator/titanium_mobile/commit/d36c5c7d543de43b8bd6952e8ca917ab4032b5a8))
+* [TIMOB-28333](https://jira-archive.titaniumsdk.com/TIMOB-28333) - rgba(int,int,int) parity with iOS ([d36c5c7](https://github.com/appcelerator/titanium_mobile/commit/d36c5c7d543de43b8bd6952e8ca917ab4032b5a8))
 
-* [TIMOB-28345](https://jira.appcelerator.org/browse/TIMOB-28345) - CLI: -b shorthand does not work for Android and perform a full build
+* [TIMOB-28345](https://jira-archive.titaniumsdk.com/TIMOB-28345) - CLI: -b shorthand does not work for Android and perform a full build
 
-* [TIMOB-28352](https://jira.appcelerator.org/browse/TIMOB-28352) - Application crashes when scrolling to listview marker
+* [TIMOB-28352](https://jira-archive.titaniumsdk.com/TIMOB-28352) - Application crashes when scrolling to listview marker
 
-* [TIMOB-28375](https://jira.appcelerator.org/browse/TIMOB-28375) - Hyperloop fails to access enum types with JDK 12
+* [TIMOB-28375](https://jira-archive.titaniumsdk.com/TIMOB-28375) - Hyperloop fails to access enum types with JDK 12
 
-* [TIMOB-28376](https://jira.appcelerator.org/browse/TIMOB-28376) - Update header and footer view activity ([ef5c95d](https://github.com/appcelerator/titanium_mobile/commit/ef5c95dcbd2d911291309cbe9d632f360ded6ce7))
+* [TIMOB-28376](https://jira-archive.titaniumsdk.com/TIMOB-28376) - Update header and footer view activity ([ef5c95d](https://github.com/appcelerator/titanium_mobile/commit/ef5c95dcbd2d911291309cbe9d632f360ded6ce7))
 
-* [TIMOB-28383](https://jira.appcelerator.org/browse/TIMOB-28383) - minRowHeight of tableview does not work
+* [TIMOB-28383](https://jira-archive.titaniumsdk.com/TIMOB-28383) - minRowHeight of tableview does not work
 
-* [TIMOB-28384](https://jira.appcelerator.org/browse/TIMOB-28384) - rightImage property for tableviewrow does not work for res images in "/images/" folder
+* [TIMOB-28384](https://jira-archive.titaniumsdk.com/TIMOB-28384) - rightImage property for tableviewrow does not work for res images in "/images/" folder
 
-* [TIMOB-28385](https://jira.appcelerator.org/browse/TIMOB-28385) - ListView crash error on SDK 9.3.X
+* [TIMOB-28385](https://jira-archive.titaniumsdk.com/TIMOB-28385) - ListView crash error on SDK 9.3.X
 
-* [TIMOB-28387](https://jira.appcelerator.org/browse/TIMOB-28387) - index in TableView click event is no longer unique
+* [TIMOB-28387](https://jira-archive.titaniumsdk.com/TIMOB-28387) - index in TableView click event is no longer unique
 
-* [TIMOB-28388](https://jira.appcelerator.org/browse/TIMOB-28388) - Calling updateRow does not update rows other than the first row
+* [TIMOB-28388](https://jira-archive.titaniumsdk.com/TIMOB-28388) - Calling updateRow does not update rows other than the first row
 
-* [TIMOB-28389](https://jira.appcelerator.org/browse/TIMOB-28389) - Calling TableViewRow.remove does not remove child view that is a Label
+* [TIMOB-28389](https://jira-archive.titaniumsdk.com/TIMOB-28389) - Calling TableViewRow.remove does not remove child view that is a Label
 
-* [TIMOB-28399](https://jira.appcelerator.org/browse/TIMOB-28399) - TableView setData does not preserve TableViewRow child views ([cee557b](https://github.com/appcelerator/titanium_mobile/commit/cee557b5f7fb345d26a89d40cdfdedf671e80742))
+* [TIMOB-28399](https://jira-archive.titaniumsdk.com/TIMOB-28399) - TableView setData does not preserve TableViewRow child views ([cee557b](https://github.com/appcelerator/titanium_mobile/commit/cee557b5f7fb345d26a89d40cdfdedf671e80742))
 
-* [TIMOB-28404](https://jira.appcelerator.org/browse/TIMOB-28404) - amend TabGroup selected tab ([c08379b](https://github.com/appcelerator/titanium_mobile/commit/c08379b8b935749ba620b5b793235af145116d34)) ([d13c884](https://github.com/appcelerator/titanium_mobile/commit/d13c884760db30c283f1709158d4d463d601c119))
+* [TIMOB-28404](https://jira-archive.titaniumsdk.com/TIMOB-28404) - amend TabGroup selected tab ([c08379b](https://github.com/appcelerator/titanium_mobile/commit/c08379b8b935749ba620b5b793235af145116d34)) ([d13c884](https://github.com/appcelerator/titanium_mobile/commit/d13c884760db30c283f1709158d4d463d601c119))
 
-* [TIMOB-28406](https://jira.appcelerator.org/browse/TIMOB-28406) - ListView in a modal window with a transparent background is invisible ([55910d8](https://github.com/appcelerator/titanium_mobile/commit/55910d86ce2e7115d778fd360ee37cd0e0648213))
+* [TIMOB-28406](https://jira-archive.titaniumsdk.com/TIMOB-28406) - ListView in a modal window with a transparent background is invisible ([55910d8](https://github.com/appcelerator/titanium_mobile/commit/55910d86ce2e7115d778fd360ee37cd0e0648213))
 
-* [TIMOB-28410](https://jira.appcelerator.org/browse/TIMOB-28410) - ListView causes ArrayIndexOutOfBoundsException in production ([aa7a8c2](https://github.com/appcelerator/titanium_mobile/commit/aa7a8c20cdd0a8d8a3ec9464d6f8a37801780ac1))
+* [TIMOB-28410](https://jira-archive.titaniumsdk.com/TIMOB-28410) - ListView causes ArrayIndexOutOfBoundsException in production ([aa7a8c2](https://github.com/appcelerator/titanium_mobile/commit/aa7a8c20cdd0a8d8a3ec9464d6f8a37801780ac1))
 
-* [TIMOB-28423](https://jira.appcelerator.org/browse/TIMOB-28423) - Windows - Unable to launch application on 2nd run without cleaning ([7d6ba8a](https://github.com/appcelerator/titanium_mobile/commit/7d6ba8ad05b19fd864c11b1ab11c2ffa240cfb36), [6a0cfa5](https://github.com/appcelerator/titanium_mobile/commit/6a0cfa55f5c1e49bab3ca09e5eb498832e47b4a1))
+* [TIMOB-28423](https://jira-archive.titaniumsdk.com/TIMOB-28423) - Windows - Unable to launch application on 2nd run without cleaning ([7d6ba8a](https://github.com/appcelerator/titanium_mobile/commit/7d6ba8ad05b19fd864c11b1ab11c2ffa240cfb36), [6a0cfa5](https://github.com/appcelerator/titanium_mobile/commit/6a0cfa55f5c1e49bab3ca09e5eb498832e47b4a1))
 
-* [TIMOB-28424](https://jira.appcelerator.org/browse/TIMOB-28424) - Drop-down picker text color does not change when switching dark/light theme ([499cba5](https://github.com/appcelerator/titanium_mobile/commit/499cba5423c5ec39cbfd8339eaddb0cba82f5783))
+* [TIMOB-28424](https://jira-archive.titaniumsdk.com/TIMOB-28424) - Drop-down picker text color does not change when switching dark/light theme ([499cba5](https://github.com/appcelerator/titanium_mobile/commit/499cba5423c5ec39cbfd8339eaddb0cba82f5783))
 
-* [TIMOB-28430](https://jira.appcelerator.org/browse/TIMOB-28430) - Use correct TableView moveable property ([da7b6b4](https://github.com/appcelerator/titanium_mobile/commit/da7b6b4ac47c3779294a7446cde06b7ccd4c8d08))
+* [TIMOB-28430](https://jira-archive.titaniumsdk.com/TIMOB-28430) - Use correct TableView moveable property ([da7b6b4](https://github.com/appcelerator/titanium_mobile/commit/da7b6b4ac47c3779294a7446cde06b7ccd4c8d08))
 
-* [TIMOB-28438](https://jira.appcelerator.org/browse/TIMOB-28438) - TableViewSection header displays the first header text for all other headers ([ccd55c4](https://github.com/appcelerator/titanium_mobile/commit/ccd55c4a4fe66ef2d107dc97ecd4ab25abfda8c2))
+* [TIMOB-28438](https://jira-archive.titaniumsdk.com/TIMOB-28438) - TableViewSection header displays the first header text for all other headers ([ccd55c4](https://github.com/appcelerator/titanium_mobile/commit/ccd55c4a4fe66ef2d107dc97ecd4ab25abfda8c2))
 
-* [TIMOB-28442](https://jira.appcelerator.org/browse/TIMOB-28442) - maxDate is not respected when value of picker is set higher than maxDate ([1c8b82b](https://github.com/appcelerator/titanium_mobile/commit/1c8b82bdb2c9cc6dfe47847e14b233232896781b))
+* [TIMOB-28442](https://jira-archive.titaniumsdk.com/TIMOB-28442) - maxDate is not respected when value of picker is set higher than maxDate ([1c8b82b](https://github.com/appcelerator/titanium_mobile/commit/1c8b82bdb2c9cc6dfe47847e14b233232896781b))
 
 * add back Ti.Media.Sound.setLooping for now ([1c14926](https://github.com/appcelerator/titanium_mobile/commit/1c14926d922d3908d952d6fddc53c8825e0a92c9))
 
@@ -220,59 +220,59 @@ The following APIs were removed in 10.0.0:
 
 ### iOS platform
 
-* [TIMOB-26913](https://jira.appcelerator.org/browse/TIMOB-26913) - New SearchBar property "showSearchBarInNavBar" does not work with custom item templates
+* [TIMOB-26913](https://jira-archive.titaniumsdk.com/TIMOB-26913) - New SearchBar property "showSearchBarInNavBar" does not work with custom item templates
 
-* [TIMOB-27888](https://jira.appcelerator.org/browse/TIMOB-27888) - circular references in require don't work
+* [TIMOB-27888](https://jira-archive.titaniumsdk.com/TIMOB-27888) - circular references in require don't work
 
-* [TIMOB-28037](https://jira.appcelerator.org/browse/TIMOB-28037) - Relative path require not working with node\_modules
+* [TIMOB-28037](https://jira-archive.titaniumsdk.com/TIMOB-28037) - Relative path require not working with node\_modules
 
-* [TIMOB-28209](https://jira.appcelerator.org/browse/TIMOB-28209) - App orientations stopped when using the search bar in the listview ([10c1a25](https://github.com/appcelerator/titanium_mobile/commit/10c1a25f7a2bc48194aad00a52b50be3155dee67))
+* [TIMOB-28209](https://jira-archive.titaniumsdk.com/TIMOB-28209) - App orientations stopped when using the search bar in the listview ([10c1a25](https://github.com/appcelerator/titanium_mobile/commit/10c1a25f7a2bc48194aad00a52b50be3155dee67))
 
-* [TIMOB-28217](https://jira.appcelerator.org/browse/TIMOB-28217) - Ti.Media.VideoPlayer is crashing when setting showsControls earlier than url property ([e84ce9d](https://github.com/appcelerator/titanium_mobile/commit/e84ce9d4ba12407b67633b029e4b6d464f5181e4))
+* [TIMOB-28217](https://jira-archive.titaniumsdk.com/TIMOB-28217) - Ti.Media.VideoPlayer is crashing when setting showsControls earlier than url property ([e84ce9d](https://github.com/appcelerator/titanium_mobile/commit/e84ce9d4ba12407b67633b029e4b6d464f5181e4))
 
-* [TIMOB-28267](https://jira.appcelerator.org/browse/TIMOB-28267) - removing eventlistener multiple times ourCallbackCount should not be in negative value ([798bd54](https://github.com/appcelerator/titanium_mobile/commit/798bd544e577092beee35dacd9f1eb106c9e8141))
+* [TIMOB-28267](https://jira-archive.titaniumsdk.com/TIMOB-28267) - removing eventlistener multiple times ourCallbackCount should not be in negative value ([798bd54](https://github.com/appcelerator/titanium_mobile/commit/798bd544e577092beee35dacd9f1eb106c9e8141))
 
-* [TIMOB-28275](https://jira.appcelerator.org/browse/TIMOB-28275) - Removing event listener in "location" event will freeze App ([0749a30](https://github.com/appcelerator/titanium_mobile/commit/0749a30ea0979b01c9f38cd71faf9541a907bfa1))
+* [TIMOB-28275](https://jira-archive.titaniumsdk.com/TIMOB-28275) - Removing event listener in "location" event will freeze App ([0749a30](https://github.com/appcelerator/titanium_mobile/commit/0749a30ea0979b01c9f38cd71faf9541a907bfa1))
 
-* [TIMOB-28281](https://jira.appcelerator.org/browse/TIMOB-28281) - Support Big Sur / Apple Silicon
+* [TIMOB-28281](https://jira-archive.titaniumsdk.com/TIMOB-28281) - Support Big Sur / Apple Silicon
 
-* [TIMOB-28297](https://jira.appcelerator.org/browse/TIMOB-28297) - support ti symbols via xcconfig file to work with swift ([c61d943](https://github.com/appcelerator/titanium_mobile/commit/c61d943e409660ba73c8be69f6c8efae1e0b0e97))
+* [TIMOB-28297](https://jira-archive.titaniumsdk.com/TIMOB-28297) - support ti symbols via xcconfig file to work with swift ([c61d943](https://github.com/appcelerator/titanium_mobile/commit/c61d943e409660ba73c8be69f6c8efae1e0b0e97))
 
-* [TIMOB-28324](https://jira.appcelerator.org/browse/TIMOB-28324) - image from filereader function not being called ([a18fb68](https://github.com/appcelerator/titanium_mobile/commit/a18fb688ab36ff6d4dbea12043edc2d4cd3873e3))
+* [TIMOB-28324](https://jira-archive.titaniumsdk.com/TIMOB-28324) - image from filereader function not being called ([a18fb68](https://github.com/appcelerator/titanium_mobile/commit/a18fb688ab36ff6d4dbea12043edc2d4cd3873e3))
 
-* [TIMOB-28325](https://jira.appcelerator.org/browse/TIMOB-28325) - ListView row is incorrectly sized when using INSET\_GROUPED and Ti.UI.SIZE ([4488fe2](https://github.com/appcelerator/titanium_mobile/commit/4488fe26331c0b8aca1dcbd41ac9cd65572721a3))
+* [TIMOB-28325](https://jira-archive.titaniumsdk.com/TIMOB-28325) - ListView row is incorrectly sized when using INSET\_GROUPED and Ti.UI.SIZE ([4488fe2](https://github.com/appcelerator/titanium_mobile/commit/4488fe26331c0b8aca1dcbd41ac9cd65572721a3))
 
-* [TIMOB-28331](https://jira.appcelerator.org/browse/TIMOB-28331) - Updating the "labels" property in the "Ti.UI.TabbedBar" sometimes does not work ([6ffe8f9](https://github.com/appcelerator/titanium_mobile/commit/6ffe8f9430a77cc2a411bf8cd197091056255d37))
+* [TIMOB-28331](https://jira-archive.titaniumsdk.com/TIMOB-28331) - Updating the "labels" property in the "Ti.UI.TabbedBar" sometimes does not work ([6ffe8f9](https://github.com/appcelerator/titanium_mobile/commit/6ffe8f9430a77cc2a411bf8cd197091056255d37))
 
-* [TIMOB-28360](https://jira.appcelerator.org/browse/TIMOB-28360) - DocumentViewer setAnnotation method causing a crash ([bba9eef](https://github.com/appcelerator/titanium_mobile/commit/bba9eefd06c5ba22cffbabb6ad273dbadd35b510))
+* [TIMOB-28360](https://jira-archive.titaniumsdk.com/TIMOB-28360) - DocumentViewer setAnnotation method causing a crash ([bba9eef](https://github.com/appcelerator/titanium_mobile/commit/bba9eefd06c5ba22cffbabb6ad273dbadd35b510))
 
-* [TIMOB-28361](https://jira.appcelerator.org/browse/TIMOB-28361) - largeTitleDisplayMode always is not respected on load when using a ListView in a Window ([26b5bfe](https://github.com/appcelerator/titanium_mobile/commit/26b5bfe301ebb49b800afcfce9d9723bfed154da))
+* [TIMOB-28361](https://jira-archive.titaniumsdk.com/TIMOB-28361) - largeTitleDisplayMode always is not respected on load when using a ListView in a Window ([26b5bfe](https://github.com/appcelerator/titanium_mobile/commit/26b5bfe301ebb49b800afcfce9d9723bfed154da))
 
-* [TIMOB-28382](https://jira.appcelerator.org/browse/TIMOB-28382) - Requiring a native module errors when building with liveview
+* [TIMOB-28382](https://jira-archive.titaniumsdk.com/TIMOB-28382) - Requiring a native module errors when building with liveview
 
-* [TIMOB-28394](https://jira.appcelerator.org/browse/TIMOB-28394) - openWindow transition broken / frame dropping (10.x regression)
+* [TIMOB-28394](https://jira-archive.titaniumsdk.com/TIMOB-28394) - openWindow transition broken / frame dropping (10.x regression)
 
-* [TIMOB-28401](https://jira.appcelerator.org/browse/TIMOB-28401) - Building an app with a DefaultIcon that contains alpha errors
+* [TIMOB-28401](https://jira-archive.titaniumsdk.com/TIMOB-28401) - Building an app with a DefaultIcon that contains alpha errors
 
-* [TIMOB-28404](https://jira.appcelerator.org/browse/TIMOB-28404) - tabGroup.setActiveTab() and text.setSelection() shows an error ([fff45b2](https://github.com/appcelerator/titanium_mobile/commit/fff45b2c29ada27c2878eb8e18ec2b1edfa37538))
+* [TIMOB-28404](https://jira-archive.titaniumsdk.com/TIMOB-28404) - tabGroup.setActiveTab() and text.setSelection() shows an error ([fff45b2](https://github.com/appcelerator/titanium_mobile/commit/fff45b2c29ada27c2878eb8e18ec2b1edfa37538))
 
-* [TIMOB-28408](https://jira.appcelerator.org/browse/TIMOB-28408) - App with remote policy encryption crashes when offline ([5c9d3f9](https://github.com/appcelerator/titanium_mobile/commit/5c9d3f95f880ca50aceb07e16d137719647f1f39))
+* [TIMOB-28408](https://jira-archive.titaniumsdk.com/TIMOB-28408) - App with remote policy encryption crashes when offline ([5c9d3f9](https://github.com/appcelerator/titanium_mobile/commit/5c9d3f95f880ca50aceb07e16d137719647f1f39))
 
-* [TIMOB-28422](https://jira.appcelerator.org/browse/TIMOB-28422) - Debugger not hitting breakpoint ([0099dc3](https://github.com/appcelerator/titanium_mobile/commit/0099dc3a10106affb5cee851ee525be7aebefe6a))
+* [TIMOB-28422](https://jira-archive.titaniumsdk.com/TIMOB-28422) - Debugger not hitting breakpoint ([0099dc3](https://github.com/appcelerator/titanium_mobile/commit/0099dc3a10106affb5cee851ee525be7aebefe6a))
 
-* [TIMOB-28339](https://jira.appcelerator.org/browse/TIMOB-28339) - macOS catalyst apps intermittently crashing on Ti.UI.iOS.CollisionBehavior tests ([02e400a](https://github.com/appcelerator/titanium_mobile/commit/02e400ad433207dcc75f4d0d0420a9f92365b004))
+* [TIMOB-28339](https://jira-archive.titaniumsdk.com/TIMOB-28339) - macOS catalyst apps intermittently crashing on Ti.UI.iOS.CollisionBehavior tests ([02e400a](https://github.com/appcelerator/titanium_mobile/commit/02e400ad433207dcc75f4d0d0420a9f92365b004))
 
-* [TIMOB-28413](https://jira.appcelerator.org/browse/TIMOB-28413) - intermittent crash on TableView INSET\_GROUPED test ([6b3a9ec](https://github.com/appcelerator/titanium_mobile/commit/6b3a9ec53be576221dc0330837a6f0636262962c))
+* [TIMOB-28413](https://jira-archive.titaniumsdk.com/TIMOB-28413) - intermittent crash on TableView INSET\_GROUPED test ([6b3a9ec](https://github.com/appcelerator/titanium_mobile/commit/6b3a9ec53be576221dc0330837a6f0636262962c))
 
-* [TIMOB-28344](https://jira.appcelerator.org/browse/TIMOB-28344) - Table view unit test is crashing sometimes on iPad ([6b3a9ec](https://github.com/appcelerator/titanium_mobile/commit/6b3a9ec53be576221dc0330837a6f0636262962c))
+* [TIMOB-28344](https://jira-archive.titaniumsdk.com/TIMOB-28344) - Table view unit test is crashing sometimes on iPad ([6b3a9ec](https://github.com/appcelerator/titanium_mobile/commit/6b3a9ec53be576221dc0330837a6f0636262962c))
 
-* [TIMOB-28296](https://jira.appcelerator.org/browse/TIMOB-28296) - macOS Frequently Crashing due to Ti.UI.Picker tests ([0468283](https://github.com/appcelerator/titanium_mobile/commit/0468283024344bd2306df7c717c314368952cf2d))
+* [TIMOB-28296](https://jira-archive.titaniumsdk.com/TIMOB-28296) - macOS Frequently Crashing due to Ti.UI.Picker tests ([0468283](https://github.com/appcelerator/titanium_mobile/commit/0468283024344bd2306df7c717c314368952cf2d))
 
-* [TIMOB-28429](https://jira.appcelerator.org/browse/TIMOB-28429) - Build failed with assets containing a tilde (~) in filename ([0f1b754](https://github.com/appcelerator/titanium_mobile/commit/0f1b754760c4f42ee559a67189d64099731394ce))
+* [TIMOB-28429](https://jira-archive.titaniumsdk.com/TIMOB-28429) - Build failed with assets containing a tilde (~) in filename ([0f1b754](https://github.com/appcelerator/titanium_mobile/commit/0f1b754760c4f42ee559a67189d64099731394ce))
 
-* [TIMOB-28443](https://jira.appcelerator.org/browse/TIMOB-28443) - ScrollView setZoomScale()/setContentOffset() methods crash as of 10.0.0 ([8dcf5c8](https://github.com/appcelerator/titanium_mobile/commit/8dcf5c807bb568877b13ee869ef09f5e52b6264e))
+* [TIMOB-28443](https://jira-archive.titaniumsdk.com/TIMOB-28443) - ScrollView setZoomScale()/setContentOffset() methods crash as of 10.0.0 ([8dcf5c8](https://github.com/appcelerator/titanium_mobile/commit/8dcf5c807bb568877b13ee869ef09f5e52b6264e))
 
-* [TIMOB-28444](https://jira.appcelerator.org/browse/TIMOB-28444) - Missing setters with 2 arguments([8fd166c](https://github.com/appcelerator/titanium_mobile/commit/8fd166c295847c30d5d1f256c56faad94370076f))
+* [TIMOB-28444](https://jira-archive.titaniumsdk.com/TIMOB-28444) - Missing setters with 2 arguments([8fd166c](https://github.com/appcelerator/titanium_mobile/commit/8fd166c295847c30d5d1f256c56faad94370076f))
 
 * autorelease Ti.Blob#arrayBuffer() Promise ([9afe176](https://github.com/appcelerator/titanium_mobile/commit/9afe176c18bc9ece20fe188f483b1d7a5a346c7c))
 
@@ -346,63 +346,63 @@ The following APIs were removed in 10.0.0:
 
 ### Multiple platforms
 
-* [TIMOB-24549](https://jira.appcelerator.org/browse/TIMOB-24549) - TiAPI: Add support for Promises ([ea75a0f](https://github.com/appcelerator/titanium_mobile/commit/ea75a0fc9a5291fcc6efbd3c47a50367a85ced11)) ([23541b3](https://github.com/appcelerator/titanium_mobile/commit/23541b36b51708b4e3a2dddb34b2d454b6a2f835)) ([bbb48f8](https://github.com/appcelerator/titanium_mobile/commit/bbb48f84fde98b3676a90fb929082bc43564d216))
+* [TIMOB-24549](https://jira-archive.titaniumsdk.com/TIMOB-24549) - TiAPI: Add support for Promises ([ea75a0f](https://github.com/appcelerator/titanium_mobile/commit/ea75a0fc9a5291fcc6efbd3c47a50367a85ced11)) ([23541b3](https://github.com/appcelerator/titanium_mobile/commit/23541b36b51708b4e3a2dddb34b2d454b6a2f835)) ([bbb48f8](https://github.com/appcelerator/titanium_mobile/commit/bbb48f84fde98b3676a90fb929082bc43564d216))
 
-* [TIMOB-26352](https://jira.appcelerator.org/browse/TIMOB-26352) - CLI: node\_modules in project root should be handled properly
+* [TIMOB-26352](https://jira-archive.titaniumsdk.com/TIMOB-26352) - CLI: node\_modules in project root should be handled properly
 
-* [TIMOB-28302](https://jira.appcelerator.org/browse/TIMOB-28302) - add checkbox style to Ti.UI.Switch ([446d215](https://github.com/appcelerator/titanium_mobile/commit/446d21532e967619f870cf4e0372546eb9244078))
+* [TIMOB-28302](https://jira-archive.titaniumsdk.com/TIMOB-28302) - add checkbox style to Ti.UI.Switch ([446d215](https://github.com/appcelerator/titanium_mobile/commit/446d21532e967619f870cf4e0372546eb9244078))
 
-* [TIMOB-28317](https://jira.appcelerator.org/browse/TIMOB-28317) - add Ti.UI.OptionBar ([260f65b](https://github.com/appcelerator/titanium_mobile/commit/260f65bb7bac31b21629cbcd731b644f2b9bd3ec))
+* [TIMOB-28317](https://jira-archive.titaniumsdk.com/TIMOB-28317) - add Ti.UI.OptionBar ([260f65b](https://github.com/appcelerator/titanium_mobile/commit/260f65bb7bac31b21629cbcd731b644f2b9bd3ec))
 
-* [TIMOB-28328](https://jira.appcelerator.org/browse/TIMOB-28328) - Update to recommend installing @appcd/plugin-webpack via appcd pm rather than from npm
+* [TIMOB-28328](https://jira-archive.titaniumsdk.com/TIMOB-28328) - Update to recommend installing @appcd/plugin-webpack via appcd pm rather than from npm
 
-* [TIMOB-28340](https://jira.appcelerator.org/browse/TIMOB-28340) - Return Promise for Ti.UI.Window open() and close()
+* [TIMOB-28340](https://jira-archive.titaniumsdk.com/TIMOB-28340) - Return Promise for Ti.UI.Window open() and close()
 
-* [TIMOB-28364](https://jira.appcelerator.org/browse/TIMOB-28364) - TiAPI: Return Promises for async Ti.\* Geolocation APIs
+* [TIMOB-28364](https://jira-archive.titaniumsdk.com/TIMOB-28364) - TiAPI: Return Promises for async Ti.\* Geolocation APIs
 
-* [TIMOB-28367](https://jira.appcelerator.org/browse/TIMOB-28367) - Ti.UI.ProgressBar should smoothly animate value changes
+* [TIMOB-28367](https://jira-archive.titaniumsdk.com/TIMOB-28367) - Ti.UI.ProgressBar should smoothly animate value changes
 
-* [TIMOB-28369](https://jira.appcelerator.org/browse/TIMOB-28369) - Add Ti.UI.overrideUserInterfaceStyle property
+* [TIMOB-28369](https://jira-archive.titaniumsdk.com/TIMOB-28369) - Add Ti.UI.overrideUserInterfaceStyle property
 
-* [TIMOB-28372](https://jira.appcelerator.org/browse/TIMOB-28372) - Remove native module verification
+* [TIMOB-28372](https://jira-archive.titaniumsdk.com/TIMOB-28372) - Remove native module verification
 
 ### Android platform
 
-* [TIMOB-24735](https://jira.appcelerator.org/browse/TIMOB-24735) - implement ATTRIBUTE\_UNDERLINE\_COLOR functionality ([645c91e](https://github.com/appcelerator/titanium_mobile/commit/645c91ea1b9d237790d73349f51d059a79aaf2dd))
+* [TIMOB-24735](https://jira-archive.titaniumsdk.com/TIMOB-24735) - implement ATTRIBUTE\_UNDERLINE\_COLOR functionality ([645c91e](https://github.com/appcelerator/titanium_mobile/commit/645c91ea1b9d237790d73349f51d059a79aaf2dd))
 
-* [TIMOB-25954](https://jira.appcelerator.org/browse/TIMOB-25954) - Add "Ti.UI.ButtonBar" support ([5a6be04](https://github.com/appcelerator/titanium_mobile/commit/5a6be04f8d7144da0181b7500920a6bb1c789ace))
+* [TIMOB-25954](https://jira-archive.titaniumsdk.com/TIMOB-25954) - Add "Ti.UI.ButtonBar" support ([5a6be04](https://github.com/appcelerator/titanium_mobile/commit/5a6be04f8d7144da0181b7500920a6bb1c789ace))
 
-* [TIMOB-26263](https://jira.appcelerator.org/browse/TIMOB-26263) - Add "MaterialButton" support to "Ti.UI.Button" ([f835bba](https://github.com/appcelerator/titanium_mobile/commit/f835bba2e29e4ba2516e30457a5b88fd0218ad5f))
+* [TIMOB-26263](https://jira-archive.titaniumsdk.com/TIMOB-26263) - Add "MaterialButton" support to "Ti.UI.Button" ([f835bba](https://github.com/appcelerator/titanium_mobile/commit/f835bba2e29e4ba2516e30457a5b88fd0218ad5f))
 
-* [TIMOB-28082](https://jira.appcelerator.org/browse/TIMOB-28082) - Update "CardView" to support material theme ([a828779](https://github.com/appcelerator/titanium_mobile/commit/a828779fc722e78eff30a9798118e6ab8c7732a5))
+* [TIMOB-28082](https://jira-archive.titaniumsdk.com/TIMOB-28082) - Update "CardView" to support material theme ([a828779](https://github.com/appcelerator/titanium_mobile/commit/a828779fc722e78eff30a9798118e6ab8c7732a5))
 
-* [TIMOB-28083](https://jira.appcelerator.org/browse/TIMOB-28083) - Update dialogs to support material theme
+* [TIMOB-28083](https://jira-archive.titaniumsdk.com/TIMOB-28083) - Update dialogs to support material theme
 
-* [TIMOB-28086](https://jira.appcelerator.org/browse/TIMOB-28086) - Update "Toolbar" to support material theme ([1c1431d](https://github.com/appcelerator/titanium_mobile/commit/1c1431dde9f2c64032b84d66b23dd1ee78813629))
+* [TIMOB-28086](https://jira-archive.titaniumsdk.com/TIMOB-28086) - Update "Toolbar" to support material theme ([1c1431d](https://github.com/appcelerator/titanium_mobile/commit/1c1431dde9f2c64032b84d66b23dd1ee78813629))
 
-* [TIMOB-28286](https://jira.appcelerator.org/browse/TIMOB-28286) - Touch events should fire synchronously
+* [TIMOB-28286](https://jira-archive.titaniumsdk.com/TIMOB-28286) - Touch events should fire synchronously
 
-* [TIMOB-28299](https://jira.appcelerator.org/browse/TIMOB-28299) - Add new material theme styles to "TextField" and "TextArea" ([4d81389](https://github.com/appcelerator/titanium_mobile/commit/4d813894527c0268679a3ac1f4b117e8128a6ad9)) ([ed22a7d](https://github.com/appcelerator/titanium_mobile/commit/ed22a7d14c19e938a5be1a4989c6f25b1aa02888))
+* [TIMOB-28299](https://jira-archive.titaniumsdk.com/TIMOB-28299) - Add new material theme styles to "TextField" and "TextArea" ([4d81389](https://github.com/appcelerator/titanium_mobile/commit/4d813894527c0268679a3ac1f4b117e8128a6ad9)) ([ed22a7d](https://github.com/appcelerator/titanium_mobile/commit/ed22a7d14c19e938a5be1a4989c6f25b1aa02888))
 
-* [TIMOB-28300](https://jira.appcelerator.org/browse/TIMOB-28300) - Add material "chip" style to Ti.UI.Switch ([4295acc](https://github.com/appcelerator/titanium_mobile/commit/4295acc6a9249da420f514af883e9bc23e44664c))
+* [TIMOB-28300](https://jira-archive.titaniumsdk.com/TIMOB-28300) - Add material "chip" style to Ti.UI.Switch ([4295acc](https://github.com/appcelerator/titanium_mobile/commit/4295acc6a9249da420f514af883e9bc23e44664c))
 
-* [TIMOB-28301](https://jira.appcelerator.org/browse/TIMOB-28301) - Use the material DayNight theme by default ([86a704f](https://github.com/appcelerator/titanium_mobile/commit/86a704f3b682e79a197313d89df84040a1c94eb0))
+* [TIMOB-28301](https://jira-archive.titaniumsdk.com/TIMOB-28301) - Use the material DayNight theme by default ([86a704f](https://github.com/appcelerator/titanium_mobile/commit/86a704f3b682e79a197313d89df84040a1c94eb0))
 
-* [TIMOB-28326](https://jira.appcelerator.org/browse/TIMOB-28326) - Number-based "itemId" is transformed into string in ListView
+* [TIMOB-28326](https://jira-archive.titaniumsdk.com/TIMOB-28326) - Number-based "itemId" is transformed into string in ListView
 
-* [TIMOB-28336](https://jira.appcelerator.org/browse/TIMOB-28336) - Update V8 runtime to 8.8 ([738b2c2](https://github.com/appcelerator/titanium_mobile/commit/738b2c2ccbc76cc0082db41767ddeb7add77877a)) ([be490ba](https://github.com/appcelerator/titanium_mobile/commit/be490bae867f42a4f5f13a3d69d0e21c02f82454))
+* [TIMOB-28336](https://jira-archive.titaniumsdk.com/TIMOB-28336) - Update V8 runtime to 8.8 ([738b2c2](https://github.com/appcelerator/titanium_mobile/commit/738b2c2ccbc76cc0082db41767ddeb7add77877a)) ([be490ba](https://github.com/appcelerator/titanium_mobile/commit/be490bae867f42a4f5f13a3d69d0e21c02f82454))
 
-* [TIMOB-28348](https://jira.appcelerator.org/browse/TIMOB-28348) - Add TEXT\_ALIGNMENT\_JUSTIFY support ([851b4f6](https://github.com/appcelerator/titanium_mobile/commit/851b4f6849d3c73f57b760850a86cfa2abb09dc5))
+* [TIMOB-28348](https://jira-archive.titaniumsdk.com/TIMOB-28348) - Add TEXT\_ALIGNMENT\_JUSTIFY support ([851b4f6](https://github.com/appcelerator/titanium_mobile/commit/851b4f6849d3c73f57b760850a86cfa2abb09dc5))
 
-* [TIMOB-28351](https://jira.appcelerator.org/browse/TIMOB-28351) - Update ProgressBars/ActivityIndicators to use material theme ([b1c5d0a](https://github.com/appcelerator/titanium_mobile/commit/b1c5d0aa2e0339a477bd11ff712eada9e3f70ac5))
+* [TIMOB-28351](https://jira-archive.titaniumsdk.com/TIMOB-28351) - Update ProgressBars/ActivityIndicators to use material theme ([b1c5d0a](https://github.com/appcelerator/titanium_mobile/commit/b1c5d0aa2e0339a477bd11ff712eada9e3f70ac5))
 
-* [TIMOB-28353](https://jira.appcelerator.org/browse/TIMOB-28353) - Update Date/Time picker dialogs to use material theme ([6fbe014](https://github.com/appcelerator/titanium_mobile/commit/6fbe0141da2d4101e26bb121da30d3d8d544b22d))
+* [TIMOB-28353](https://jira-archive.titaniumsdk.com/TIMOB-28353) - Update Date/Time picker dialogs to use material theme ([6fbe014](https://github.com/appcelerator/titanium_mobile/commit/6fbe0141da2d4101e26bb121da30d3d8d544b22d))
 
-* [TIMOB-28370](https://jira.appcelerator.org/browse/TIMOB-28370) - Add "title" support to Ti.UI.Switch slider style
+* [TIMOB-28370](https://jira-archive.titaniumsdk.com/TIMOB-28370) - Add "title" support to Ti.UI.Switch slider style
 
-* [TIMOB-28390](https://jira.appcelerator.org/browse/TIMOB-28390) - Change Ti.UI.SearchBar to use native SearchView ([9637ac1](https://github.com/appcelerator/titanium_mobile/commit/9637ac1cae29b3bdf1e9bf8ed9081193bdd6fc0d))
+* [TIMOB-28390](https://jira-archive.titaniumsdk.com/TIMOB-28390) - Change Ti.UI.SearchBar to use native SearchView ([9637ac1](https://github.com/appcelerator/titanium_mobile/commit/9637ac1cae29b3bdf1e9bf8ed9081193bdd6fc0d))
 
-* [TIMOB-28402](https://jira.appcelerator.org/browse/TIMOB-28402) - Implement delete event for ListView and TableView ([6b60f5f](https://github.com/appcelerator/titanium_mobile/commit/6b60f5f5ae84c108b6448211d27ec3121411981d))
+* [TIMOB-28402](https://jira-archive.titaniumsdk.com/TIMOB-28402) - Implement delete event for ListView and TableView ([6b60f5f](https://github.com/appcelerator/titanium_mobile/commit/6b60f5f5ae84c108b6448211d27ec3121411981d))
 
 * "requestPermissions" and Geolocation APIs return Promise ([971e71e](https://github.com/appcelerator/titanium_mobile/commit/971e71e876284d0828617a74607b8bb4107a2faf))
 
@@ -432,25 +432,25 @@ The following APIs were removed in 10.0.0:
 
 ### iOS platform
 
-* [TIMOB-20473](https://jira.appcelerator.org/browse/TIMOB-20473) - Support storyboard in iOS-modules ([7292d1b](https://github.com/appcelerator/titanium_mobile/commit/7292d1bf3b26f2577ae2468ab5fcfb2e2b2570f8))
+* [TIMOB-20473](https://jira-archive.titaniumsdk.com/TIMOB-20473) - Support storyboard in iOS-modules ([7292d1b](https://github.com/appcelerator/titanium_mobile/commit/7292d1bf3b26f2577ae2468ab5fcfb2e2b2570f8))
 
-* [TIMOB-27355](https://jira.appcelerator.org/browse/TIMOB-27355) - Support native iOS 13+ JavaScriptCore promises
+* [TIMOB-27355](https://jira-archive.titaniumsdk.com/TIMOB-27355) - Support native iOS 13+ JavaScriptCore promises
 
-* [TIMOB-27865](https://jira.appcelerator.org/browse/TIMOB-27865) - Titanium should add view controllers as children
+* [TIMOB-27865](https://jira-archive.titaniumsdk.com/TIMOB-27865) - Titanium should add view controllers as children
 
-* [TIMOB-28259](https://jira.appcelerator.org/browse/TIMOB-28259) - Replace OSSpinLock usage with os\_unfair\_lock
+* [TIMOB-28259](https://jira-archive.titaniumsdk.com/TIMOB-28259) - Replace OSSpinLock usage with os\_unfair\_lock
 
-* [TIMOB-28282](https://jira.appcelerator.org/browse/TIMOB-28282) - Use supportedInterfaceOrientations of UINavigationController.topViewController instead of UINavigationController
+* [TIMOB-28282](https://jira-archive.titaniumsdk.com/TIMOB-28282) - Use supportedInterfaceOrientations of UINavigationController.topViewController instead of UINavigationController
 
-* [TIMOB-28297](https://jira.appcelerator.org/browse/TIMOB-28297) - swift files doesn't recognize macros defined in defines.h
+* [TIMOB-28297](https://jira-archive.titaniumsdk.com/TIMOB-28297) - swift files doesn't recognize macros defined in defines.h
 
-* [TIMOB-28302](https://jira.appcelerator.org/browse/TIMOB-28302) - macOS: Add checkbox style to Ti.UI.Switch
+* [TIMOB-28302](https://jira-archive.titaniumsdk.com/TIMOB-28302) - macOS: Add checkbox style to Ti.UI.Switch
 
-* [TIMOB-28304](https://jira.appcelerator.org/browse/TIMOB-28304) - Enabling swift in Objc based module is failing while building
+* [TIMOB-28304](https://jira-archive.titaniumsdk.com/TIMOB-28304) - Enabling swift in Objc based module is failing while building
 
-* [TIMOB-28334](https://jira.appcelerator.org/browse/TIMOB-28334) - Update modules to set minimum target iOS 11
+* [TIMOB-28334](https://jira-archive.titaniumsdk.com/TIMOB-28334) - Update modules to set minimum target iOS 11
 
-* [TIMOB-28342](https://jira.appcelerator.org/browse/TIMOB-28342) - Drop iOS 11 support in titanium SDK 10
+* [TIMOB-28342](https://jira-archive.titaniumsdk.com/TIMOB-28342) - Drop iOS 11 support in titanium SDK 10
 
 * have Ti.Database.DB.executeAllAsync return a Promise ([6c4253f](https://github.com/appcelerator/titanium_mobile/commit/6c4253f0a32be191e02717c897864e63b61ac952))
 

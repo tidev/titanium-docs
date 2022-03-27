@@ -11,7 +11,7 @@ As of this release, Alloy 1.11.x will not be supported six months from 1.12.0's 
 
 ## Improvement
 
-* [ALOY-1315](https://jira.appcelerator.org/browse/ALOY-1315) - Update out-of-date Alloy dependencies
+* [ALOY-1315](https://jira-archive.titaniumsdk.com/ALOY-1315) - Update out-of-date Alloy dependencies
 
     * Updated the following dependencies versions:
 

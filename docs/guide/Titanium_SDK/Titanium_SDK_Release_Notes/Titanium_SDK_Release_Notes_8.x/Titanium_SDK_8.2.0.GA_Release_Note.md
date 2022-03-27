@@ -17,7 +17,7 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ## Notice of feature and behavior Changes
 
-* [TIMOB-27126](https://jira.appcelerator.org/browse/TIMOB-27126) - iOS 13: Support dark mode
+* [TIMOB-27126](https://jira-archive.titaniumsdk.com/TIMOB-27126) - iOS 13: Support dark mode
 
     * Added TiColor support for all color-setters
 
@@ -53,21 +53,21 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ## New features
 
-* [MOD-2534](https://jira.appcelerator.org/browse/MOD-2534) - TiAPI: Update Facebook SDK's to latest (iOS 5.5.0, Android 5.4.0) to support iOS 13
+* [MOD-2534](https://jira-archive.titaniumsdk.com/MOD-2534) - TiAPI: Update Facebook SDK's to latest (iOS 5.5.0, Android 5.4.0) to support iOS 13
 
     * Updated Facebook SDK's to 5.5.0 for iOS and 5.4.0 for Android
 
     * Facebook has removed support for Share to Messenger SDK. See [Sharing to Messenger for iOS and Android](https://developers.facebook.com/docs/sharing/messenger) for more details.
 
-* [TIMOB-26566](https://jira.appcelerator.org/browse/TIMOB-26566) - iOS: Add ability to remove previously added motion effects
+* [TIMOB-26566](https://jira-archive.titaniumsdk.com/TIMOB-26566) - iOS: Add ability to remove previously added motion effects
 
     * Added `clearMotionEffects()` method
 
-* [TIMOB-27127](https://jira.appcelerator.org/browse/TIMOB-27127) - iOS 13 : Expose new APIs to support Apple login
+* [TIMOB-27127](https://jira-archive.titaniumsdk.com/TIMOB-27127) - iOS 13 : Expose new APIs to support Apple login
 
     * Added [ti.applesignin 1.1.0](#!/api/Modules.Applesignin) module
 
-* [TIMOB-27133](https://jira.appcelerator.org/browse/TIMOB-27133) - iOS 13: Add support for SF Symbols
+* [TIMOB-27133](https://jira-archive.titaniumsdk.com/TIMOB-27133) - iOS 13: Add support for SF Symbols
 
     * Added support for [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/)
 
@@ -107,7 +107,7 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
         win.open();
         ```
 
-* [TIMOB-27142](https://jira.appcelerator.org/browse/TIMOB-27142) - iOS 13 : Multiple row selection in ListView
+* [TIMOB-27142](https://jira-archive.titaniumsdk.com/TIMOB-27142) - iOS 13 : Multiple row selection in ListView
 
     * Added multiple row selection support in ListView and TableView
 
@@ -179,59 +179,59 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
         nav.open();
         ```
 
-* [TIMOB-27376](https://jira.appcelerator.org/browse/TIMOB-27376) - iOS: Malformed Xcode project warning printed on every build
+* [TIMOB-27376](https://jira-archive.titaniumsdk.com/TIMOB-27376) - iOS: Malformed Xcode project warning printed on every build
 
     * Fixed duplicate reference warnings
 
 ## Community credits
 
-* Christy Thomas - [TIMOB-24171](https://jira.appcelerator.org/browse/TIMOB-24171)
+* Christy Thomas - [TIMOB-24171](https://jira-archive.titaniumsdk.com/TIMOB-24171)
 
-* Fabian Martinez - [TIMOB-27205](https://jira.appcelerator.org/browse/TIMOB-27205)
+* Fabian Martinez - [TIMOB-27205](https://jira-archive.titaniumsdk.com/TIMOB-27205)
 
-* Sergey Volkov - [TIMOB-27234](https://jira.appcelerator.org/browse/TIMOB-27234)
+* Sergey Volkov - [TIMOB-27234](https://jira-archive.titaniumsdk.com/TIMOB-27234)
 
-* Hans Knöchel - [MOD-2534](https://jira.appcelerator.org/browse/MOD-2534), [MOD-2537](https://jira.appcelerator.org/browse/MOD-2537), [TIMOB-27263](https://jira.appcelerator.org/browse/TIMOB-27263), [TIMOB-27367](https://jira.appcelerator.org/browse/TIMOB-27367), [TIMOB-27169](https://jira.appcelerator.org/browse/TIMOB-27169), [TIMOB-27171](https://jira.appcelerator.org/browse/TIMOB-27171), [TIMOB-27209](https://jira.appcelerator.org/browse/TIMOB-27209)
+* Hans Knöchel - [MOD-2534](https://jira-archive.titaniumsdk.com/MOD-2534), [MOD-2537](https://jira-archive.titaniumsdk.com/MOD-2537), [TIMOB-27263](https://jira-archive.titaniumsdk.com/TIMOB-27263), [TIMOB-27367](https://jira-archive.titaniumsdk.com/TIMOB-27367), [TIMOB-27169](https://jira-archive.titaniumsdk.com/TIMOB-27169), [TIMOB-27171](https://jira-archive.titaniumsdk.com/TIMOB-27171), [TIMOB-27209](https://jira-archive.titaniumsdk.com/TIMOB-27209)
 
 ## Fixed issues
 
-* [TIMOB-24171](https://jira.appcelerator.org/browse/TIMOB-24171) - iOS: AccessibilityLabel or AccessibilityValue does not work.
+* [TIMOB-24171](https://jira-archive.titaniumsdk.com/TIMOB-24171) - iOS: AccessibilityLabel or AccessibilityValue does not work.
 
-* [TIMOB-27195](https://jira.appcelerator.org/browse/TIMOB-27195) - iOS: Using a commonjs module in an itemtemplate fails in a classic app
+* [TIMOB-27195](https://jira-archive.titaniumsdk.com/TIMOB-27195) - iOS: Using a commonjs module in an itemtemplate fails in a classic app
 
-* [TIMOB-27205](https://jira.appcelerator.org/browse/TIMOB-27205) - Webview http redirects not working as on 7.5.1
+* [TIMOB-27205](https://jira-archive.titaniumsdk.com/TIMOB-27205) - Webview http redirects not working as on 7.5.1
 
-* [TIMOB-27234](https://jira.appcelerator.org/browse/TIMOB-27234) - iOS: VideoPlayer natural size
+* [TIMOB-27234](https://jira-archive.titaniumsdk.com/TIMOB-27234) - iOS: VideoPlayer natural size
 
-* [TIMOB-27263](https://jira.appcelerator.org/browse/TIMOB-27263) - iOS 13: Modal windows with large titles do not honor barColor
+* [TIMOB-27263](https://jira-archive.titaniumsdk.com/TIMOB-27263) - iOS 13: Modal windows with large titles do not honor barColor
 
-* [TIMOB-27292](https://jira.appcelerator.org/browse/TIMOB-27292) - iOS: App crashes on startup on iOS 9
+* [TIMOB-27292](https://jira-archive.titaniumsdk.com/TIMOB-27292) - iOS: App crashes on startup on iOS 9
 
-* [TIMOB-27351](https://jira.appcelerator.org/browse/TIMOB-27351) - iOS: Unit tests failing on Xcode 11 / iOS 13
+* [TIMOB-27351](https://jira-archive.titaniumsdk.com/TIMOB-27351) - iOS: Unit tests failing on Xcode 11 / iOS 13
 
-* [TIMOB-27360](https://jira.appcelerator.org/browse/TIMOB-27360) - Watch app does not get installed on the watch with watch OS 6.0 & IOS 13
+* [TIMOB-27360](https://jira-archive.titaniumsdk.com/TIMOB-27360) - Watch app does not get installed on the watch with watch OS 6.0 & IOS 13
 
-* [TIMOB-27362](https://jira.appcelerator.org/browse/TIMOB-27362) - Hyperloop example with Xcode 11 throws error on pod
+* [TIMOB-27362](https://jira-archive.titaniumsdk.com/TIMOB-27362) - Hyperloop example with Xcode 11 throws error on pod
 
-* [TIMOB-27367](https://jira.appcelerator.org/browse/TIMOB-27367) - iOS: Apps can be rejected when including UIWebView refs
+* [TIMOB-27367](https://jira-archive.titaniumsdk.com/TIMOB-27367) - iOS: Apps can be rejected when including UIWebView refs
 
-* [TIMOB-27386](https://jira.appcelerator.org/browse/TIMOB-27386) - iOS: Correctly decode push notification token
+* [TIMOB-27386](https://jira-archive.titaniumsdk.com/TIMOB-27386) - iOS: Correctly decode push notification token
 
 ## Improvements
 
-* [TIMOB-26573](https://jira.appcelerator.org/browse/TIMOB-26573) - TiAPI: Make Ti.Buffer Node-compatible with Node's Buffer type
+* [TIMOB-26573](https://jira-archive.titaniumsdk.com/TIMOB-26573) - TiAPI: Make Ti.Buffer Node-compatible with Node's Buffer type
 
     * Added Node.js compatible Buffer module
 
-* [TIMOB-27125](https://jira.appcelerator.org/browse/TIMOB-27125) - iOS 13: Make iOS development-project compatible with Xcode 11
+* [TIMOB-27125](https://jira-archive.titaniumsdk.com/TIMOB-27125) - iOS 13: Make iOS development-project compatible with Xcode 11
 
     * Added support for Xcode 11 and iOS 13 development environment
 
-* [TIMOB-27163](https://jira.appcelerator.org/browse/TIMOB-27163) - iOS: Update Xcode project template settings and resolve warnings
+* [TIMOB-27163](https://jira-archive.titaniumsdk.com/TIMOB-27163) - iOS: Update Xcode project template settings and resolve warnings
 
     * Resolved project warnings for missing method selectors, nullability flags, and strict prototypes
 
-* [TIMOB-27169](https://jira.appcelerator.org/browse/TIMOB-27169) - iOS 13: Prevent modal windows from being swiped down
+* [TIMOB-27169](https://jira-archive.titaniumsdk.com/TIMOB-27169) - iOS 13: Prevent modal windows from being swiped down
 
     * Added support to prevent modal windows from being swiped down
 
@@ -267,11 +267,11 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
         });
         ```
 
-* [TIMOB-27171](https://jira.appcelerator.org/browse/TIMOB-27171) - iOS 13: Support new UITableViewStyleInsetGrouped style in list-view
+* [TIMOB-27171](https://jira-archive.titaniumsdk.com/TIMOB-27171) - iOS 13: Support new UITableViewStyleInsetGrouped style in list-view
 
     * Added support for UITableViewStyleInsetGrouped style in ListView
 
-* [TIMOB-27209](https://jira.appcelerator.org/browse/TIMOB-27209) - iOS: Be able to determine dark / light mode, as well as changes on it
+* [TIMOB-27209](https://jira-archive.titaniumsdk.com/TIMOB-27209) - iOS: Be able to determine dark / light mode, as well as changes on it
 
     * Added feature that allows for detection of dark and light mode
 
@@ -312,7 +312,7 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
         }
         ```
 
-* [TIMOB-27273](https://jira.appcelerator.org/browse/TIMOB-27273) - iOS 13: Support new type of status bar style UIStatusBarStyleDarkContent
+* [TIMOB-27273](https://jira-archive.titaniumsdk.com/TIMOB-27273) - iOS 13: Support new type of status bar style UIStatusBarStyleDarkContent
 
     * Added support for UIStatusBarStyleDarkContent
 
@@ -333,19 +333,19 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
         win.open();
         ```
 
-* [TIMOB-27310](https://jira.appcelerator.org/browse/TIMOB-27310) - iOS 13: Support new type of UIBlurEffectStyle constants
+* [TIMOB-27310](https://jira-archive.titaniumsdk.com/TIMOB-27310) - iOS 13: Support new type of UIBlurEffectStyle constants
 
     * Added support for UIBlurEffectStyle
 
-* [TIMOB-27318](https://jira.appcelerator.org/browse/TIMOB-27318) - iOS: Use swift 5 for apple watch template
+* [TIMOB-27318](https://jira-archive.titaniumsdk.com/TIMOB-27318) - iOS: Use swift 5 for apple watch template
 
     * Updated Swift to version 5 for Apple watch template
 
-* [TIMOB-27358](https://jira.appcelerator.org/browse/TIMOB-27358) - iOS: Support Apple Developer certificates
+* [TIMOB-27358](https://jira-archive.titaniumsdk.com/TIMOB-27358) - iOS: Support Apple Developer certificates
 
     * Added support for generic Apple certificates
 
-* [TIMOB-27395](https://jira.appcelerator.org/browse/TIMOB-27395) - iOS: Support new devices in os.cpus()
+* [TIMOB-27395](https://jira-archive.titaniumsdk.com/TIMOB-27395) - iOS: Support new devices in os.cpus()
 
     * Included new iPhone models into `os` extension
 

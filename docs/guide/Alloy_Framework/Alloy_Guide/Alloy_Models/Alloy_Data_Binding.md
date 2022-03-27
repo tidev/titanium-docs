@@ -335,7 +335,7 @@ This only works if the Backbone method fires the change event and does not enabl
 
 ## Bind deep object properties
 
-You can [bind deep object properties](https://jira.appcelerator.org/browse/ALOY-1482):
+You can [bind deep object properties](https://jira-archive.titaniumsdk.com/ALOY-1482):
 
 ```xml
 <Alloy>
@@ -357,7 +357,7 @@ Prior to CLI 7.1.0, the only way to set object properties (e.g. `font.fontFamily
 
 ## Use models and properties names with special characters
 
-You can bind models and properties that use [names with special characters](https://jira.appcelerator.org/browse/ALOY-1478) like dashes and spaces. Simply wrap the names in square brackets and quotes like you’d do in JavaScript:
+You can bind models and properties that use [names with special characters](https://jira-archive.titaniumsdk.com/ALOY-1478) like dashes and spaces. Simply wrap the names in square brackets and quotes like you’d do in JavaScript:
 
 ```xml
 <Alloy>
@@ -368,7 +368,7 @@ You can bind models and properties that use [names with special characters](http
 
 ## Bind multiple models to the same view
 
-You have the ability to [bind multiple models to the same view](https://jira.appcelerator.org/browse/ALOY-1481):
+You have the ability to [bind multiple models to the same view](https://jira-archive.titaniumsdk.com/ALOY-1481):
 
 ```xml
 <Alloy>
@@ -380,7 +380,7 @@ You have the ability to [bind multiple models to the same view](https://jira.app
 
 ## Define transformations in the model
 
-Until Alloy 1.8.1, only simple model data-binding would call an optional `transform()`method on the model to allow you to provide derived properties. It was [broken](https://jira.appcelerator.org/browse/ALOY-1368) for complex data binding and [not implemented](https://jira.appcelerator.org/browse/ALOY-1369) for collection data binding.
+Until Alloy 1.8.1, only simple model data-binding would call an optional `transform()`method on the model to allow you to provide derived properties. It was [broken](https://jira-archive.titaniumsdk.com/ALOY-1368) for complex data binding and [not implemented](https://jira-archive.titaniumsdk.com/ALOY-1369) for collection data binding.
 
 Since Alloy 1.8.1, all types of data binding will generate the following logic to determine what object will be bound to the view. Note that only with collection binding you can also define a controller-based transform function to use via the `dataTransform` XML attribute.
 

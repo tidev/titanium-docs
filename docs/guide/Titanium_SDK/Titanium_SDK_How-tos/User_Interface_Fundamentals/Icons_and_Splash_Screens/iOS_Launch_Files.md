@@ -88,7 +88,7 @@ To use an image in your custom Storyboard, simply set the `Image` property of an
 ![image](./image.png)
 
 ::: tip 💡 Hint
-[Currently](https://jira.appcelerator.org/browse/TIMOB-20429) Titanium does not package the `LaunchLogo*.png` file if you use a custom storyboard. You need to rename this image before you can use it.
+[Currently](https://jira-archive.titaniumsdk.com/TIMOB-20429) Titanium does not package the `LaunchLogo*.png` file if you use a custom storyboard. You need to rename this image before you can use it.
 :::
 
 **Important**: If you have the [use-app-thinning](/guide/Titanium_SDK/Titanium_SDK_Guide/Appendices/tiapp.xml_and_timodule.xml_Reference/#use-app-thinning) enabled, you will have to use the name of the generated asset catalog. This is a hash based on the image path. To find out the hash for your image build the app, look up the right `[hash].imageset` under `build/iphone/Assets.xcassets/` and use the `[hash]` part.
@@ -107,7 +107,7 @@ Thats it! Save the storyboard, clean the build directory and cache (see chapter 
 
 ## Dealing with Launch File cache
 
-As you modify the (custom) storyboard, you might not always see your changes immediately. This is because iOS caches the snapshot it makes from your Launch File and a [known issue](https://jira.appcelerator.org/browse/TIMOB-20430) where Titanium does not always recompile the storyboard.
+As you modify the (custom) storyboard, you might not always see your changes immediately. This is because iOS caches the snapshot it makes from your Launch File and a [known issue](https://jira-archive.titaniumsdk.com/TIMOB-20430) where Titanium does not always recompile the storyboard.
 
 To deal with this follow these steps before you build:
 

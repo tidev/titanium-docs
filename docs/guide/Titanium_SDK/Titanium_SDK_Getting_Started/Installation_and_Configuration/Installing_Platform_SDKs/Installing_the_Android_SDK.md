@@ -195,7 +195,7 @@ To install Android SDK on Windows:
 
 6. Once the requested components have been installed, click **Finish** button.
 
-The following steps are the normal process to install an Android SDK with Axway Appcelerator Studio (Appc Studio) but due to the bug noted in [TISTUD-9035](https://jira.appcelerator.org/browse/TISTUD-9035), Studio cannot install Android SDKs at this time.
+The following steps are the normal process to install an Android SDK with Axway Appcelerator Studio (Appc Studio) but due to the bug noted in [TISTUD-9035](https://jira-archive.titaniumsdk.com/TISTUD-9035), Studio cannot install Android SDKs at this time.
 
 In Appc Studio, confirm that your Android SDK(s) have been installed:
 

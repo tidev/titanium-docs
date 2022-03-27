@@ -49,8 +49,8 @@ The open source community created this Q&A using our old archive. Most of the in
 
 ## Hyperloop app's breakpoint in main listview click event never gets a hit
 
-Debugging capabilities for Hyperloop in Studio are not optimal at the time of writing this document. The main reason for this is because Hyperloop modifies the source files which throws the debugger off track. [TIMOB-24037](https://jira.appcelerator.org/browse/TIMOB-24037) will hopefully address this issue and is currently slated to be address with the SDK 7.0.0 release (November 2017).
+Debugging capabilities for Hyperloop in Studio are not optimal at the time of writing this document. The main reason for this is because Hyperloop modifies the source files which throws the debugger off track. [TIMOB-24037](https://jira-archive.titaniumsdk.com/TIMOB-24037) will hopefully address this issue and is currently slated to be address with the SDK 7.0.0 release (November 2017).
 
 Nonetheless, in iOS, it is possible to debug apps using the Safari Web Inspector which allows debugging Hyperloop because it is directly talking to the active JS context inside the running app. Shockoe has posted a short tutorial called [Debugging Titanium Applications using Safari Web Inspector](https://shockoe.com/blog/debugging-titanium-applications-using-safari-web-inspector/). This approach allows debugging of all Hyperloop code up to where it switches over to the native side. The only downside to this is that there are no source maps available for process Alloy controllers.
 
-[TIMOB-24723](https://jira.appcelerator.org/browse/TIMOB-24723) (currently slated for SDK 7.0.0 release) addresses the Android equivalent of this issue what allows the utilization of Chrome Dev tools
+[TIMOB-24723](https://jira-archive.titaniumsdk.com/TIMOB-24723) (currently slated for SDK 7.0.0 release) addresses the Android equivalent of this issue what allows the utilization of Chrome Dev tools

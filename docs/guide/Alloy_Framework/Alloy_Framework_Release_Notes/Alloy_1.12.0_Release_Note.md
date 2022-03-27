@@ -11,7 +11,7 @@ As of this release, Alloy 1.10.x will not be supported six months from 1.12.0's 
 
 ## Improvements
 
-* [ALOY-1603](https://jira.appcelerator.org/browse/ALOY-1603) : Update momentjs to 2.21.0
+* [ALOY-1603](https://jira-archive.titaniumsdk.com/ALOY-1603) : Update momentjs to 2.21.0
 
     * Updated Moment.js to 2.21.0
 
@@ -19,16 +19,16 @@ As of this release, Alloy 1.10.x will not be supported six months from 1.12.0's 
 
 ## Fixed issues
 
-* [ALOY-1606](https://jira.appcelerator.org/browse/ALOY-1606): Android: Debugger not hitting breakpoints on Windows
+* [ALOY-1606](https://jira-archive.titaniumsdk.com/ALOY-1606): Android: Debugger not hitting breakpoints on Windows
 
-* [ALOY-1602](https://jira.appcelerator.org/browse/ALOY-1602): Avoid some global variables to be only available in parent controller
+* [ALOY-1602](https://jira-archive.titaniumsdk.com/ALOY-1602): Avoid some global variables to be only available in parent controller
 
-* [ALOY-1607](https://jira.appcelerator.org/browse/ALOY-1607): Fix BaseController.removeListener
+* [ALOY-1607](https://jira-archive.titaniumsdk.com/ALOY-1607): Fix BaseController.removeListener
 
-* [ALOY-1609](https://jira.appcelerator.org/browse/ALOY-1609): Add plugins/ti.alloy to gitignore
+* [ALOY-1609](https://jira-archive.titaniumsdk.com/ALOY-1609): Add plugins/ti.alloy to gitignore
 
-* [ALOY-1599](https://jira.appcelerator.org/browse/ALOY-1599): Model Data binding problem with the first upper case in the model src
+* [ALOY-1599](https://jira-archive.titaniumsdk.com/ALOY-1599): Model Data binding problem with the first upper case in the model src
 
-* [ALOY-1595](https://jira.appcelerator.org/browse/ALOY-1595): alloy compile broken on node 9.3.0
+* [ALOY-1595](https://jira-archive.titaniumsdk.com/ALOY-1595): alloy compile broken on node 9.3.0
 
 * [PR-878](https://github.com/appcelerator/alloy/pull/878): Fix links in README
