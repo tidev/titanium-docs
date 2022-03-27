@@ -42,7 +42,7 @@ Studio will generate a new Xcode WatchKit project in the Titaniuim project's `ex
 To create an Apple Watch application, run the following command from the Titanium project that will include the watch application:
 
 ```bash
-appc new -t applewatch -n <WATCH_APP_NAME> --template watchos2
+ti create -t applewatch -n <WATCH_APP_NAME> --template watchos2
 ```
 
 If you omit the `--template option`, the CLI will create a watchOS 2 project by default.
