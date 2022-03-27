@@ -5,8 +5,6 @@ weight: '40'
 
 # Alloy Samples
 
-## /\*<!\[CDATA\[\*/ div.rbtoc1637342372796 {padding: 0px;} div.rbtoc1637342372796 ul {list-style: disc;margin-left: 0px;} div.rbtoc1637342372796 li {margin-left: 0px;padding-left: 0px;} /\*\]\]>\*/
-
 ## Kitchen Sink
 
 Want to check out Alloy Samples in an actual app? Look at the [KitchenSink-v2 application on GitHub](https://github.com/tidev/kitchensink-v2).
