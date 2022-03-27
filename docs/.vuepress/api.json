@@ -327,6 +327,7 @@
 					[ "titanium/ui/matrix3d", "Matrix3D" ],
 					[ "titanium/ui/navigationwindow", "NavigationWindow" ],
 					[ "titanium/ui/notification", "Notification" ],
+					[ "titanium/ui/optionbar", "OptionBar" ],
 					[ "titanium/ui/optiondialog", "OptionDialog" ],
 					[ "titanium/ui/picker", "Picker" ],
 					[ "titanium/ui/pickercolumn", "PickerColumn" ],
