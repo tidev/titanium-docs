@@ -9,7 +9,7 @@ weight: '40'
 
 ## Kitchen Sink
 
-Want to check out Alloy Samples in an actual app? Look at the [KitchenSink-v2 application on GitHub](https://github.com/tidev/kitchensink-v2-v2).
+Want to check out Alloy Samples in an actual app? Look at the [KitchenSink-v2 application on GitHub](https://github.com/tidev/kitchensink-v2).
 
 ## Controller Sample
 
