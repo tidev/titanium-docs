@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Axway handed over Titanum to the community at <a href="https://devblog.axway.com/featured/product-update-changes-to-application-development-services-appcelerator/" target="_blank">March 2022</a>. <b>You still create apps or use existing apps!</b>. But you won't have access to the Axway services (e.g. Push, Analytics). You might also see a message like `You cannot perform this operation with your current plan. Please upgrade to build your application for production distribution`. It's time to update the CLI!
+Axway transferred Titanium to the community in <a href="https://devblog.axway.com/featured/product-update-changes-to-application-development-services-appcelerator/" target="_blank">March 2022</a>. You can still create apps or use existing apps, but you won't have access to the Axway services (e.g. Push, Analytics). You might also see a message like `You cannot perform this operation with your current plan. Please upgrade to build your application for production distribution`. It's time to update the CLI!
 
 Here are some steps you have to have a look at or change if you want to build your apps:
 
