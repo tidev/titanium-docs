@@ -30,7 +30,7 @@ When you create a new project, it generates the following directories and files.
 | `example` | The directory where your module example(s) should go. The file `app.js` will be generated to include a sample loading of your module in a test window. This file can be used for quickly testing your module as well as give an example to end-users on how to use your module. This directory is distributed with your module. |
 | `ios/Classes` | The directory where you Objective-C headers and implementation classes should go, used by the Xcode compiler. By default, when you create a new project, you are given a boiler plate module class (`ModuleIdModule.h` and `ModuleIdModule.m`) and the auto-generated module assets class (`ModuleIdModuleAssets.h` and `ModuleIdModuleAssets.m`). These files are not distributed with your module. For information about these files, see [iOS Module Architecture](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/iOS_Module_Development_Guide/iOS_Module_Architecture/). |
 | `ios/<MODULE_ID>_Prefix.pch` | The pre-compiled header file used by the Xcode compiler. This file is not distributed with your module. |
-| `ios/build.py` | This file is a script that will compile and package your module for usage and distribution. Usage of this script has been replaced with `appc run -p ios --build-only`. |
+| `ios/build.py` | This file is a script that will compile and package your module for usage and distribution. Usage of this script has been replaced with `ti build -p ios --build-only`. |
 | `ios/manifest` | A special file that describes metadata about your module and used by the Titanium compiler. This file is required and is distributed with your module. |
 | `ios/module.xcconfig` | A special file used by Xcode when your module is compiled in an end-user Titanium application which references your module.  <br />This file is a Xcode configuration file which can setup special compiler and linker directives that are specific to your module. This file is distributed with your module. |
 | `ios/platform` | Directory to place native frameworks and (static) libraries in. Examples are `.framework` and `.a` files. |
@@ -117,7 +117,7 @@ If you omit any of the options, the CLI will prompt you to enter them.
 
 ### Build and package the module
 
-To build and package a module, run the `appc run -p ios --build-only` command inside the `ios` directory.
+To build and package a module, run the `ti build -p ios --build-only` command inside the `ios` directory.
 
 ```
 cd /<PATH_TO_MODULE_PROJECT>/<MODULE_NAME>/ios

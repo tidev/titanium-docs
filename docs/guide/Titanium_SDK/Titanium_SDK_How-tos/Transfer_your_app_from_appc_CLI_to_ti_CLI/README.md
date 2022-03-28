@@ -12,7 +12,7 @@ Here are some steps you have to have a look at or change if you want to build yo
 
 The `appc` CLI will go away and you have to use the `ti` commands. Basically they are the same and you can create and compile your apps with both CLIs. E.g.
 ```bash
-appc run -p android  -T device
+ti build -p android  -T device
 ```
 will be
 ```bash

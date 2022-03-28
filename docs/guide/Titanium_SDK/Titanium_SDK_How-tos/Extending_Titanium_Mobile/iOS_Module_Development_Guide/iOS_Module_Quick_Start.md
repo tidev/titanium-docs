@@ -60,11 +60,11 @@ You should validate the used Titanium SDK version inside the `titanium.xcconfig`
 Next, build the module and package it. This process produces a ZIP file containing a binary library with unprocessed module assets, example code and documentation.
 
 ::: tip 💡 CLI Instructions
-From a terminal, go to the module's `ios` directory and run the `appc run` command:
+From a terminal, go to the module's `ios` directory and run the `ti build` command:
 
 ```bash
 cd test/ios
-appc run -p ios --build-only
+ti build -p ios --build-only
 ```
 
 Optional: After the build completes, either unzip the built module in the Titanium SDK home path or in your local project:
@@ -189,7 +189,7 @@ test.exampleProp = "This is a test value";
 From a terminal that has the test app as its current working directory, run:
 
 ```bash
-appc run -p ios
+ti build -p ios
 ```
 :::
 

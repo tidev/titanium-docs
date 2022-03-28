@@ -64,13 +64,13 @@ Deploying the application using the CLI
 To launch the application using the Titanium CLI, run the following command:
 
 ```bash
-appc run -p android -T device --device-id "<DEVICE_ID>"
+ti build -p android -T device --device-id "<DEVICE_ID>"
 ```
 
 You may omit the `--device-id` parameter if you only have one device connected. To retrieve a list of connected devices, run one of the following commands:
 
 ```bash
-appc ti info -t android
+ti info -t android
 ## or
 adb devices -l
 ```

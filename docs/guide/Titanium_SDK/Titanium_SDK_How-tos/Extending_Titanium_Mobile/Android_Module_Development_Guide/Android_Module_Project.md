@@ -45,7 +45,7 @@ The CLI creates a module project that contains multiple platforms. Each platform
 This was deprecated since 5.0.0.
 :::
 
-The `build.properties` file contains build variables used by the Ant CLI. Using the build.properties is deprecated in favor of the unified build-command `appc ti build -p android --build-only.`
+The `build.properties` file contains build variables used by the Ant CLI. Using the build.properties is deprecated in favor of the unified build-command `ti build -p android --build-only.`
 
 | Variable | Description | Example |
 | --- | --- | --- |
@@ -79,7 +79,7 @@ Before you distribute your module, you must edit this manifest and change a few 
 
 ### Create a new module project
 
-To create a new module project, run the following Appcelerator CLI command:
+To create a new module project, run the following Titanium CLI command:
 
 ```bash
 ti create -d /PATH/TO/WORKSPACE -n <MODULE NAME> --id <MODULE ID>
@@ -102,7 +102,7 @@ To build and package a module, run ti build in the `android` directory.
 
 ```bash
 cd /<PATH_TO_MODULE_PROJECT>/<MODULE_NAME>/android
-appc run -p android --build-only
+ti build -p android --build-only
 ```
 
 After the build completes, you should have a ZIP file in the `android/dist` directory and see the following message in the console:
@@ -322,4 +322,4 @@ If the Android NDK build fails, it can be because of various reasons:
 
 * Your project path contains spaces, which is not recommended for projects in general but especially causes build failures like `/android-ndk/build/core/build-local.mk:158: *** Android NDK: Aborting`, which is an Android NDK error for spaces in projects OR invalid directories for the Android NDK. Please note that spaces in a sub-directory can also cause this.
 
-In any case, ensure to run your Titanium module build with log-level "trace" (e.g. `appc run -p android -build-only -l trace`) to see the whole build command. If you find issues that are not listed here, feel free to let us know via [JIRA](http://jira.appcelerator.org) or [TiSlack](http://tislack.org).
+In any case, ensure to run your Titanium module build with log-level "trace" (e.g. `ti build -p android -build-only -l trace`) to see the whole build command. If you find issues that are not listed here, feel free to let us know via [JIRA](http://jira.appcelerator.org) or [TiSlack](http://tislack.org).
