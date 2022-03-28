@@ -31,24 +31,19 @@ To create and manage Alloy applications, you need the Alloy command-line interfa
 
 ## Create a project
 
-### Using Studio
-
-To create a new Alloy project, start Appcelerator Studio, then
-
-1. From the menu, select **File > New > Mobile App Project**. The **New Mobile App Project** wizard appears.
-
-2. Select **Alloy** in the **Available Templates** box, choose a template, then click the **Next** button.
-
-3. Complete all of the fields, then click the **Finish** button.
-
-A new skeleton Alloy project will be generated. If you are familiar with classic Titanium development, the `Resources` folder is hidden from the App and Project Explorer. All work for an Alloy project is done in the `app` directory.
-
 ### Using the CLI
 
 To create a new Alloy project, use the Appcelerator CLI to create a new Alloy project. Run the following command in a terminal:
 
 ```bash
 ti create
+```
+
+After successful creation you can initiate Alloy
+
+```bash
+cd YOUR_PROJECT_NAME
+alloy new
 ```
 
 You will be prompted to enter an application name and application ID.
@@ -125,10 +120,6 @@ Create a folder called `app/assets/images` and copy the [`apple_logo.jpg` file](
 ### Compile and run
 
 The Alloy CLI converts the view, style and controller in to a Titanium project, which can be built and ran by Studio or the Appcelerator CLI.
-
-#### Using Studio
-
-In the **Project Explorer** view, select your project, then from the global tool bar, select **Run** from the **Launch Mode** drop-down and select the device to launch the application on in the **Target** drop-down. Alloy will generate the Titanium files from the Alloy project files, which will then be compiled by Studio and launched on the device simulator.
 
 #### Using the CLI
 
