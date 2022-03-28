@@ -5,7 +5,7 @@ weight: '30'
 
 # Titanium SDK Overview
 
-Welcome to the Appcelerator Platform! The Appcelerator Platform helps you develop cross-platform mobile applications using the Titanium SDK, Alloy, Appcelerator Studio and the Appcelerator CLI, then lets you manage the entire lifecycle of the application with debugging, testing, deploying, crash monitoring and analytic data collection.
+Welcome to the Appcelerator Platform! The Appcelerator Platform helps you develop cross-platform mobile applications using the Titanium SDK, Alloy, Appcelerator Studio and the Titanium CLI, then lets you manage the entire lifecycle of the application with debugging, testing, deploying, crash monitoring and analytic data collection.
 
 This guide introduces the Appcelerator Platform and walks through the steps of setting up Appcelerator Studio, downloading and installing the necessary Titanium and third-party SDKs and tools, and creating a simple project.
 
@@ -19,7 +19,7 @@ Appcelerator Platform is available as a service referred as App Builder through 
 
 The Appcelerator Platform consists of several components:
 
-* **[Axway Appcelerator Studio](/guide/Axway_Appcelerator_Studio/)** and **[Appcelerator CLI](/guide/Appcelerator_CLI/)**: tools to create and develop your mobile and cloud applications.
+* **[Axway Appcelerator Studio](/guide/Axway_Appcelerator_Studio/)** and **[Titanium CLI](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/)**: tools to create and develop your mobile and cloud applications.
 
 * **[Alloy Framework](/guide/Alloy_Framework/)** and the **[Titanium SDK](/guide/Titanium_SDK/)**: an MVC framework and cross-platform SDK to help you rapidly develop mobile applications from a single code base.
 

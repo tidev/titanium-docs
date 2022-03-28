@@ -9,13 +9,13 @@ The Alloy Command-Line Interface (CLI) is a command-line tool for managing and b
 
 ## Command-Line Interface Installation
 
-The Alloy command-line interface and plugin will be automatically installed by Appcelerator Studio or the Appcelerator CLI.
+The Alloy command-line interface and plugin will be automatically installed by Appcelerator Studio or the Titanium CLI.
 
 If there were installation problems or if you wish to install the Alloy CLI independent of the other tools, refer to the manual installation instructions below.
 
 ### Manual Installation
 
-The Appcelerator CLI needs to be installed and configured before installing the Alloy CLI. The following steps install the latest released version of Alloy:
+The Titanium CLI needs to be installed and configured before installing the Alloy CLI. The following steps install the latest released version of Alloy:
 
 1. Download and install Node.js from [http://nodejs.org/#download](http://nodejs.org/#download), which includes the npm package manager needed to install Alloy.
 

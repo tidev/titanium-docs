@@ -11,9 +11,9 @@ This guide provides basic instructions on creating a quick Alloy project. Alloy 
 
 ## Command-line interface installation
 
-To create and manage Alloy applications, you need the Alloy command-line interface. If you already installed Appcelerator Studio or the Appcelerator CLI, the Alloy CLI will be automatically installed for you. If you need to install Appcelerator Studio, see the [Titanium SDK Getting Started](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/) or if you need to manually install the Appcelerator CLI:
+To create and manage Alloy applications, you need the Alloy command-line interface. If you already installed Appcelerator Studio or the Titanium CLI, the Alloy CLI will be automatically installed for you. If you need to install Appcelerator Studio, see the [Titanium SDK Getting Started](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/) or if you need to manually install the Titanium CLI:
 
-1. Download and install Node.js from [http://nodejs.org/#download](http://nodejs.org/#download), which includes the npm package manager needed to install the Appcelerator CLI.
+1. Download and install Node.js from [http://nodejs.org/#download](http://nodejs.org/#download), which includes the npm package manager needed to install the Titanium CLI.
 
 2. From a terminal, run the following command to install the CLI:
 
@@ -45,7 +45,7 @@ A new skeleton Alloy project will be generated. If you are familiar with classic
 
 ### Using the CLI
 
-To create a new Alloy project, use the Appcelerator CLI to create a new Alloy project. Run the following command in a terminal:
+To create a new Alloy project, use the Titanium CLI to create a new Alloy project. Run the following command in a terminal:
 
 ```bash
 ti create
@@ -124,7 +124,7 @@ Create a folder called `app/assets/images` and copy the [`apple_logo.jpg` file](
 
 ### Compile and run
 
-The Alloy CLI converts the view, style and controller in to a Titanium project, which can be built and ran by Studio or the Appcelerator CLI.
+The Alloy CLI converts the view, style and controller in to a Titanium project, which can be built and ran by Studio or the Titanium CLI.
 
 #### Using Studio
 

@@ -44,7 +44,7 @@
             <img src="images/icons/icon-cli.svg" class="features__icon" alt="">
             Command-line Tools
           </h2>
-          <p>The Appcelerator CLI provides a unified interface for using the rest of the CLI tools, such as Titanium CLI and AMPLIFY Runtime Services.</p>
+          <p>The Titanium CLI provides a unified interface for using the rest of the CLI tools, such as Titanium CLI and AMPLIFY Runtime Services.</p>
         </div>
         <div class="features-item">
           <h2>

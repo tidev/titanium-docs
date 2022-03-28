@@ -51,7 +51,7 @@ To view the console output of a connected device:
 
 1. Connect your device.
 
-2. Build and deploy the app to the device using either the CLI (`appc run -p ios -T device`) or Studio.
+2. Build and deploy the app to the device using either the CLI (`ti build -p ios -T device`) or Studio.
 
 3. Sync the application to the device using the [iPhone Configuration Utility](https://support.apple.com/downloads/iPhone-Configuration-Utility) (if you are not building directly to device).
 

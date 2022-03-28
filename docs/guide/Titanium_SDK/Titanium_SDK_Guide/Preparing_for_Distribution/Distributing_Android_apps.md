@@ -88,7 +88,7 @@ After you publish an application for the first time, the next subsequent invocat
 To use the Titanium CLI to package your Android application, after you have created your keystore, run the following command:
 
 ```bash
-appc run -p android -T dist-playstore [-K <KEYSTORE_FILE> -P <KEYSTORE_PASSWORD> -L <KEYSTORE_ALIAS> -O <OUTPUT_DIRECTORY>]
+ti build -p android -T dist-playstore [-K <KEYSTORE_FILE> -P <KEYSTORE_PASSWORD> -L <KEYSTORE_ALIAS> -O <OUTPUT_DIRECTORY>]
 ```
 
 If you omit any of the optional parameters, you will be prompted by the CLI to enter these values.

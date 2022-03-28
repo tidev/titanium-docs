@@ -77,7 +77,7 @@ Your app will be built, installed to your device and automatically launched.
 To deploy an application to a device with the CLI, run the following command:
 
 ```bash
-appc run -p windows -T wp-device
+ti build -p windows -T wp-device
 ```
 
 ## Windows tablet

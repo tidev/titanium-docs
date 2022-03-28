@@ -53,7 +53,7 @@ _A_lso ensure to have the "run-on-main-thread" property set in the top-level of 
 
 When creating a new project, the CLI will check if you are entitled to use Hyperloop. If you are, the CLI will prompt you with the following message: "Would you like to enable Hyperloop for this app (This may take a while...)". If you enable Hyperloop, it may take some time to retrieve the module and set up your project. Newer SDK versions ship the module and will not need to download it.
 
-**Note:** If you have any issue enabling Hyperloop from the CLI, or, you are not asked if you want to enable Hyperloop, ensure you are logged into the platform with the appropriate subscription, use the `appc login` command to confirm you are logged in.
+**Note:** If you have any issue enabling Hyperloop from the CLI, or, you are not asked if you want to enable Hyperloop, ensure you are logged into the platform with the appropriate subscription, use the `ti login` command to confirm you are logged in.
 
 ### Enabling via Studio
 
