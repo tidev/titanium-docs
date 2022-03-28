@@ -5,7 +5,7 @@ weight: '20'
 
 # Installing Node
 
-Node.js is required for several Appcelerator components, including the Axway Appcelerator CLI, Alloy, and the API Builder. Node.js is also required to build the Titanium SDK.
+Node.js is required for several Appcelerator components, including the Axway Titanium CLI, Alloy, and the API Builder. Node.js is also required to build the Titanium SDK.
 
 ## Compatibility and download
 

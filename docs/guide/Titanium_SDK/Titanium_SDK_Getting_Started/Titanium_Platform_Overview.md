@@ -17,7 +17,7 @@ At a high-level, Titanium is the combination of:
 
 * [Titanium SDK](#titanium-sdk)
 
-* [Appcelerator CLI](#appcelerator-cli)
+* [Titanium CLI](#appcelerator-cli)
 
 * [Hyperloop](#hyperloop)
 
@@ -37,9 +37,9 @@ At a high-level, Titanium is the combination of:
 
 The [Titanium SDK](/guide/Titanium_SDK/) tools comprise a set of Node.js-based utilities and supporting tools that work with the native SDK tool chains. The Titanium tools combine your JavaScript source code, a JavaScript interpreter, and your static assets into an application binary that will be installed to an emulator or mobile device. Fortunately for you, Studio will manage almost every aspect of this build chain, leaving you to focus on building your apps.
 
-### Appcelerator CLI
+### Titanium CLI
 
-The [Appcelerator CLI](/guide/Appcelerator_CLI/) is a set of command-line tools to develop and deploy mobile and cloud applications. The Appcelerator CLI provides a unified interface for using the other Appcelerator command-line tools, such as the Titanium CLI, Alloy CLI and AMPLIFY Runtime Services CLI.
+The [Titanium CLI](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/) is a set of command-line tools to develop and deploy mobile and cloud applications. The Titanium CLI provides a unified interface for using the other Appcelerator command-line tools, such as the Titanium CLI, Alloy CLI and AMPLIFY Runtime Services CLI.
 
 ### Hyperloop
 

@@ -27,7 +27,7 @@ If you discover a corrupt package, simply download each previous day's release u
 
 ## Installing the build
 
-### Appcelerator CLI install
+### Titanium CLI install
 
 To install a Titanium SDK using the `appc` cli, follow these steps:
 

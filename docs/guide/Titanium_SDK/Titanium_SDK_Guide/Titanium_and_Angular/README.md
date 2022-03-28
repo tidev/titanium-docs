@@ -17,7 +17,7 @@ If you run into problems read the [Titanium Angular - FAQ](/guide/Titanium_SDK/T
 
 In order to use Titanium and Angular together you will need a recent nightly build of the Titanium SDK. Both the `master` and `9_2_X` branch will have the latest updates for the Angular support. We recommend using `9_2_X` as that branch is already in maintenance mode, whereas `master` is under active development. Chose one of the following commands to install the latest build from the `9_2_X` branch and automatically select it as your default SDK.
 
-**Install Appcelerator CLI with Angular support**
+**Install Titanium CLI with Angular support**
 
 ```bash
 // appc-cli

@@ -7,7 +7,7 @@ weight: '10'
 
 ## Getting help overview
 
-This guide walkthroughs the setup of **Axway Appcelerator Studio** (Studio). Although using Studio is not mandatory for mobile application development, which can be done using a text editor and our [command-line tools](/guide/Appcelerator_CLI/), we believe that it is the most effective way to speed up your development process and increase your productivity when building quality applications using Alloy and the Titanium SDK.
+This guide walkthroughs the setup of **Axway Appcelerator Studio** (Studio). Although using Studio is not mandatory for mobile application development, which can be done using a text editor and our [command-line tools](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/), we believe that it is the most effective way to speed up your development process and increase your productivity when building quality applications using Alloy and the Titanium SDK.
 
 ## Compatibility and download
 

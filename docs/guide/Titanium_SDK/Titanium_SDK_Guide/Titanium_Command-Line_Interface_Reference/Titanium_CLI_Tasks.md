@@ -5,7 +5,7 @@ weight: '30'
 
 # Titanium CLI Tasks
 
-Titainum provides a command-line interface to check and configure your environment setup, create and build applications, and much more. The Titanium CLI is distributed as apart of the Appcelerator CLI. Please refer to [Appcelerator CLI Getting Started](/guide/Appcelerator_CLI/Appcelerator_CLI_Getting_Started/) for details on installing the Appcelerator CLI.
+Titainum provides a command-line interface to check and configure your environment setup, create and build applications, and much more. The Titanium CLI is distributed as apart of the Titanium CLI. Please refer to [Titanium CLI Getting Started](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/Appcelerator_CLI_Getting_Started/) for details on installing the Titanium CLI.
 
 Run `ti ti --help` to see all available target options or see the [Titanium Command-Line Interface Reference](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/).
 

@@ -13,9 +13,9 @@ You’ll need to have the following installed on your machine as the recommended
 
 * Titanium SDK: 9.0.0+
 
-* Appcelerator CLI: 7.0.0+
+* Titanium CLI: 7.0.0+
 
-You can install [Appcelerator Studio](https://platform.axway.com/#/product/studio) and [Appcelerator CLI](https://platform.axway.com/#/product/cli) to get the latest version of all these components.
+You can install [Appcelerator Studio](https://platform.axway.com/#/product/studio) and [Titanium CLI](https://platform.axway.com/#/product/cli) to get the latest version of all these components.
 
 ### Optional Dependencies
 
@@ -48,10 +48,10 @@ To download and install Appcelerator Studio:
 
 Titanium SDK is included in the installation of Appcelerator Studio.
 
-### Appcelerator CLI
+### Titanium CLI
 
-Refer to [Setting up the Appcelerator CLI](/guide/Appcelerator_CLI/Appcelerator_CLI_Getting_Started/) for instructions and preparation for installing Appcelerator CLI.
+Refer to [Setting up the Titanium CLI](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/Appcelerator_CLI_Getting_Started/) for instructions and preparation for installing Titanium CLI.
 
 ### Alloy Framework
 
-The Alloy command-line interface and plugin will be automatically installed by Appcelerator Studio or the Appcelerator CLI.
+The Alloy command-line interface and plugin will be automatically installed by Appcelerator Studio or the Titanium CLI.

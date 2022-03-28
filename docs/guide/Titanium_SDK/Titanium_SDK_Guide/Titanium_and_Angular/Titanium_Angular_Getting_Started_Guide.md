@@ -19,7 +19,7 @@ ti create -t app --template angular-default
 ti create -t app --template angular-default
 ```
 
-With the `--ng` option, you instruct the Appc CLI to use the Angular template when creating the new project. You can use all other available options to customize the creation of your new project (see the [Command-Line Interface Reference](/guide/Appcelerator_CLI/Appcelerator_CLI_How-tos/Appcelerator_Command-Line_Interface_Reference/#LineInterfaceReference-New)).
+With the `--ng` option, you instruct the Appc CLI to use the Angular template when creating the new project. You can use all other available options to customize the creation of your new project (see the [Command-Line Interface Reference](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/Appcelerator_CLI_How-tos/Appcelerator_Command-Line_Interface_Reference/#LineInterfaceReference-New)).
 
 ## Running Angular projects
 

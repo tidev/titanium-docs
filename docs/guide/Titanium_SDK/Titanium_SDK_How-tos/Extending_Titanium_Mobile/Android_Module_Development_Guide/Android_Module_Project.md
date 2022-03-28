@@ -79,7 +79,7 @@ Before you distribute your module, you must edit this manifest and change a few 
 
 ### Create a new module project
 
-To create a new module project, run the following Appcelerator CLI command:
+To create a new module project, run the following Titanium CLI command:
 
 ```bash
 ti create -d /PATH/TO/WORKSPACE -n <MODULE NAME> --id <MODULE ID>

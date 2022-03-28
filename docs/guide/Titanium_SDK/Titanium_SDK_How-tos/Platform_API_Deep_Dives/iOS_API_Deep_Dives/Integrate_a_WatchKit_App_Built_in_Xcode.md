@@ -13,7 +13,7 @@ A WatchKit app contains a specialized app extension that runs on either the Appl
 
 ### Prerequisites
 
-* Appcelerator CLI 5.0 or greater
+* Titanium CLI 5.0 or greater
 
 * Titanium SDK 5.0 or greater
 
