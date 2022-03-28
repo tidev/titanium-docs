@@ -11,7 +11,7 @@ This document describes the process you can follow to test any of the "NPM-insta
 
 ## One-time setup:
 
-1. Clone the project repo to a local directory. For example, for Alloy you would use `git clone https://github.com/appcelerator/alloy.git` (you can't do this with your fork of the project)
+1. Clone the project repo to a local directory. For example, for Alloy you would use `git clone https://github.com/tidev/alloy.git` (you can't do this with your fork of the project)
 
 2. In the resulting directory, open the **.git/config** file in your text editor.
 

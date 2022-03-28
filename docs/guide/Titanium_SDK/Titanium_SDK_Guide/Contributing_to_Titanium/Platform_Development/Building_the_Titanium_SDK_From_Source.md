@@ -56,7 +56,7 @@ The following environment variables must be set in order to build the SDK from s
 The simplest way to get the SDK source is to simply clone it:
 
 ```
-git clone https://github.com/appcelerator/titanium_mobile.git
+git clone https://github.com/tidev/titanium_mobile.git
 ```
 
 However, if you have any interest in contributing to Titanium, you should create your own fork of the `titanium_mobile` repository on github, as described in the [Pull Request Guide](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Platform_Development/Pull_Request_Guide/).
@@ -74,7 +74,7 @@ If you want to test a changes that is a pull request on Github, you can add and 
     ```
     [remote "upstream"]
             fetch = +refs/heads/*:refs/remotes/upstream/*
-            url = https://github.com/appcelerator/titanium_mobile.git
+            url = https://github.com/tidev/titanium_mobile.git
     ```
 
 3. Add the following line to the section and replace `<remote_name>` with the name of the remote repo:
@@ -88,7 +88,7 @@ If you want to test a changes that is a pull request on Github, you can add and 
     ```
     [remote "upstream"]
             fetch = +refs/heads/*:refs/remotes/upstream/*
-            url = https://github.com/appcelerator/titanium_mobile.git
+            url = https://github.com/tidev/titanium_mobile.git
             fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
     ```
 
@@ -112,7 +112,7 @@ git fetch upstream --prune
 
 ## Build the SDK
 
-The method written below is the old way. The repo has now been updated to do away with scons. Please refer to [https://github.com/appcelerator/titanium\_mobile/blob/master/README.md#building-locally](https://github.com/appcelerator/titanium_mobile/blob/master/README.md#building-locally) on how to build locally with Node.JS scrips.
+The method written below is the old way. The repo has now been updated to do away with scons. Please refer to [https://github.com/tidev/titanium\_mobile/blob/master/README.md#building-locally](https://github.com/tidev/titanium_mobile/blob/master/README.md#building-locally) on how to build locally with Node.JS scrips.
 
 In the root of your `titanium_mobile` repo, run the following commands:
 
@@ -165,7 +165,7 @@ The default installation folder for SDKs varies by operating system:
 
 ## Speeding Up the Titanium SDK Build
 
-The process of compiling the [Titanium SDK source code](https://github.com/appcelerator/titanium_mobile) can be very time consuming if your environment is not primed to do so. Here's a short list of tips and tricks for getting that compile time down. In our testing so far, these tips can reduce compile time by as much as 80%!
+The process of compiling the [Titanium SDK source code](https://github.com/tidev/titanium_mobile) can be very time consuming if your environment is not primed to do so. Here's a short list of tips and tricks for getting that compile time down. In our testing so far, these tips can reduce compile time by as much as 80%!
 
 ::: warning ⚠️ Warning
 At this time, the instructions refer specifically to speeding up the Titanium SDK build on a macOS machine.

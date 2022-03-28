@@ -75,7 +75,7 @@ This will also change the background color of your app between after the launch 
 
 ### Option B: Use a custom Storyboard
 
-To use a custom Storyboard, put this file in [app/platform/ios/LaunchScreen.storyboard](https://github.com/appcelerator/titanium_mobile/blob/master/iphone/iphone/LaunchScreen.storyboard) (for Alloy projects) or [platform/ios/LaunchScreen.storyboard](https://github.com/appcelerator/titanium_mobile/blob/master/iphone/iphone/LaunchScreen.storyboard) (for classic projects). As you can see the sample has it disabled using a `_` prefix. Just remove the underscore and do a clean build to see the difference:
+To use a custom Storyboard, put this file in [app/platform/ios/LaunchScreen.storyboard](https://github.com/tidev/titanium_mobile/blob/master/iphone/iphone/LaunchScreen.storyboard) (for Alloy projects) or [platform/ios/LaunchScreen.storyboard](https://github.com/tidev/titanium_mobile/blob/master/iphone/iphone/LaunchScreen.storyboard) (for classic projects). As you can see the sample has it disabled using a `_` prefix. Just remove the underscore and do a clean build to see the difference:
 
 ![launch-custom](./launch-custom.png)
 

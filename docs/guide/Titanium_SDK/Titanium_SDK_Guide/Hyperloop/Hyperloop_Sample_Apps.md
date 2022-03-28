@@ -11,7 +11,7 @@ There are many Hyperloop open source projects on Github already. Make sure to ch
 
 Cross-platform example app
 
-Our cross-platform example app can be found in this Github repo: [https://github.com/appcelerator/hyperloop-examples](https://github.com/appcelerator/hyperloop-examples)
+Our cross-platform example app can be found in this Github repo: [https://github.com/tidev/hyperloop-examples](https://github.com/tidev/hyperloop-examples)
 
 * A large sample app that demonstrates native APIs for all three platforms (iOS, Android & Windows), including CocoaPods and Android `.aar` packages
 
@@ -26,8 +26,6 @@ Our cross-platform example app can be found in this Github repo: [https://github
 ### Running this app
 
 **BEFORE** attempting to run this application, ensure that you have downloaded and followed the instructions from the appropriate guide below. There are specific prerequisites that must be first met before this application will run properly.
-
-This sample application only runs on the simulator because it uses a demo application GUID. If you would like to run this application on device, you need to import the application into your own platform account using `appc new ---import`.
 
 ## Hyperloop examples organization on Github
 

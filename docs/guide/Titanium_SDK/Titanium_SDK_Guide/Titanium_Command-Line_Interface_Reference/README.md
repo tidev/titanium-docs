@@ -246,7 +246,7 @@ Creates a new application or module project.
 titanium create [ --type <type> ] [ --platforms <platforms> ] [--project-dir <value>] [--sdk <value>] [--log-level <level>]
 
 # Appcelerator CLI
-appc new [ --type <type> ] [ --platform <platforms> ] [--project-dir <value>] [--sdk <value>] [--log-level <level>]
+ti create [ --type <type> ] [ --platform <platforms> ] [--project-dir <value>] [--sdk <value>] [--log-level <level>]
 ```
 
 #### Create options

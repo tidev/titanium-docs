@@ -99,11 +99,11 @@ Before you distribute your module, you must edit this manifest and change a few 
 To create a new module project, run the following Titanium CLI command:
 
 ```bash
-appc new -d /PATH/TO/WORKSPACE -n <MODULE_NAME> --id <MODULE_ID>
+ti create -d /PATH/TO/WORKSPACE -n <MODULE_NAME> --id <MODULE_ID>
 ### when prompted for the project type, select "Titanium Module"
 
 ### Example
-$ appc new -p ios -n test --id com.example.test
+$ ti create -p ios -n test --id com.example.test
 Appcelerator Command-Line Interface, version 7.0.2
 Copyright (c) 2014-2018, Appcelerator, Inc.  All Rights Reserved.
 ? What type of project are you creating?
@@ -250,7 +250,7 @@ UIImage *image = [TiUtils image:url proxy:self];
 
 The Titanium SDK uses clang-format to have a unified code-style in its source-code (clang-format for iOS and Android, ESLint for the CLI). You can do the same by following the following few steps:
 
-1. Copy the `.clang-format` file from [here](https://github.com/appcelerator/titanium_mobile/blob/master/iphone/.clang-format) to the "`ios/`" directory of your module project, e.g. `<module-root>/ios/.clang-format`
+1. Copy the `.clang-format` file from [here](https://github.com/tidev/titanium_mobile/blob/master/iphone/.clang-format) to the "`ios/`" directory of your module project, e.g. `<module-root>/ios/.clang-format`
 
 2. Install the [clang-format CLI](https://clang.llvm.org/docs/ClangFormat.html): `npm install -g clang-format`
 

@@ -13,7 +13,7 @@ Titanium Angular projects are created using a new Angular project template. Open
 
 ```bash
 // appc-cli
-appc new -t app --ng
+ti create -t app --template angular-default
 
 // ti-cli
 ti create -t app --template angular-default

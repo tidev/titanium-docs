@@ -33,7 +33,7 @@ This refers to the Swagger version. We currently support version 2. Swagger has 
 
 XIB files and Storyboards are supported however, they need to be programmatically loaded.
 
-[Hyperloop examples - xib.js](https://github.com/appcelerator/hyperloop-examples/blob/master/app/controllers/ios/xib.js) is an example for XIB files.
+[Hyperloop examples - xib.js](https://github.com/tidev/hyperloop-examples/blob/master/app/controllers/ios/xib.js) is an example for XIB files.
 
 [UIStoryboard](https://developer.apple.com/documentation/uikit/uistoryboard) provides an overview to use a storyboard that can be loaded.
 

@@ -70,7 +70,7 @@ module.exports = {
               },
               {
                 text: 'Vue.js',
-                link: 'https://github.com/appcelerator/titanium-vue'
+                link: 'https://github.com/tidev/titanium-vue'
               },
               {
                 text: 'Angular',
