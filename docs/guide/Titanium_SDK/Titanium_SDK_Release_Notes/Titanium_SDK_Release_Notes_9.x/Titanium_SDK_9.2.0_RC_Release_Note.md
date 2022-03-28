@@ -33,7 +33,7 @@ This initial beta mostly focuses on enabling the target and necessary build chan
 
 * Currently there are no new APIs exposed for macOS development such as Menu APIs. As a result apps will feel more like an iPad app currently.
 
-* Appcelerator Studio and our editor plugins currently do not expose macOS as a build target, currently the only way to build is to using the CLI via `[appc run|ti build] -p ios -T macos`
+* Appcelerator Studio and our editor plugins currently do not expose macOS as a build target, currently the only way to build is to using the CLI via `[ti build|ti build] -p ios -T macos`
 
 We will iterate on the macOS support in the coming releases and when we feel that it's stable enough we will remove it from beta. But we encourage you to give it a spin, and report any issues you might find to us on our [JIRA](http://jira.appcelerator.org/).
 

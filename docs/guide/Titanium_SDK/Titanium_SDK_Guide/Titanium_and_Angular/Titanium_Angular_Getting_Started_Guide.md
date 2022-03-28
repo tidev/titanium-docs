@@ -28,13 +28,13 @@ To build and run your Angular based project, use the following command as usual 
 **Build and run Angular project**
 
 ```bash
-appc run -p [android|ios]
+ti build -p [android|ios]
 ```
 
 There are no extra steps you need to do to build and run an Angular enabled project. Compilation of the TypeScript source and bundling is automatically done during Titaniums build steps.
 
 ::: tip 💡 Titanium Angular debug output
-You might notice a lot of additional debug information during the build and while the app is running. Since Titanium Angular is still under active development we make extensive use of logging. The number of messages should decline in later Preview versions. A lot of it is already limited to debug and trace log levels (which you may enable by appending `-l debug` or `-l trace` to the `appc run` command).
+You might notice a lot of additional debug information during the build and while the app is running. Since Titanium Angular is still under active development we make extensive use of logging. The number of messages should decline in later Preview versions. A lot of it is already limited to debug and trace log levels (which you may enable by appending `-l debug` or `-l trace` to the `ti build` command).
 :::
 
 ## Appendix and tips

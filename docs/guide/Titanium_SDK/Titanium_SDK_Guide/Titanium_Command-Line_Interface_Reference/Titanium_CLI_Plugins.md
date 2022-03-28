@@ -439,7 +439,7 @@ init (Object logger, Object config, Object cli, [Object nodeappc]): void
 | logger | `Object` | Handle to the logger object. See [logger](#logger). |
 | config | `Object` | CLI configuration options. Same properties as reported by the `titanium config` command. |
 | cli | `Object` | Handle to the CLI object. See [cli](#cli). |
-| nodeappc | `Object` | Handle to the node-appc object. See [nodeappc](#nodeappc). |
+| nodeti | `Object` | Handle to the node-ti object. See [nodeappc](#nodeappc). |
 
 ## CLI Common API
 
@@ -886,7 +886,7 @@ warn(String message): void
 
 ### nodeappc
 
-The node-appc class provides access to various utility libraries.
+The node-ti class provides access to various utility libraries.
 
 #### async
 

@@ -113,7 +113,7 @@ To deal with this follow these steps before you build:
 
 1. Use _Simulator > Reset Content and Settings…_
 
-2. Use _Project > Clean…_ or `appc ti clean` from CLI.
+2. Use _Project > Clean…_ or `ti ti clean` from CLI.
 
 Alternatively you can reset an individual app using a tool like [SimPholders](https://simpholders.com/). With this app, just hold `alt/⌥` and click the app from the dropdown:
 

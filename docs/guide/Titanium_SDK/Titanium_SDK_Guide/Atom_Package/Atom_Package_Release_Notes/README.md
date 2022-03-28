@@ -64,7 +64,7 @@ Atom Package 1.1.0 is a minor release that includes new features, improvements, 
 
 * [ATOM-50](https://jira.appcelerator.org/browse/ATOM-50) - Call \`appc\` command with full path
 
-    * Added ability to specify full path to appc command in package settings. This may be required if Atom is unable to find the appc command automatically.
+    * Added ability to specify full path to ti command in package settings. This may be required if Atom is unable to find the ti command automatically.
 
 ### Fixed issues
 

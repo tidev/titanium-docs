@@ -153,14 +153,14 @@ platform :ios do
     desc "Build App for Simulator Tests"
     lane :buildapp do
       ti_build_app(
-    appc_cli: "appc run build --platform ios --target dist-adhoc --distribution-name 'implicitli, LLC. (G52GS5PAND)' --pp-uuid c6ea530d-70ea-5661-b013-beb4d25b2a7b --output-dir /dist"
+    appc_cli: "ti build build --platform ios --target dist-adhoc --distribution-name 'implicitli, LLC. (G52GS5PAND)' --pp-uuid c6ea530d-70ea-5661-b013-beb4d25b2a7b --output-dir /dist"
   )
     end
 
     desc "Runs the tests of the iOS App"
     lane :test do
       ti_build_app(
-          appc_cli: "appc run -f -T simulator -p ipad -i 11.2 --device-id 6945AC80-7F29-4A5A-8256-49467E9D1A7D --build-only"
+          appc_cli: "ti build -f -T simulator -p ipad -i 11.2 --device-id 6945AC80-7F29-4A5A-8256-49467E9D1A7D --build-only"
         )
       mocha_run_tests(
         mocha_js_file_name: '/Users/{USERDIR}/Appium_Tests/dash_test.js'

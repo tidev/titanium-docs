@@ -45,7 +45,7 @@ As of this GA release, the previous Titanium SDK patch release is no longer supp
 
 * [TIMOB-27101](https://jira.appcelerator.org/browse/TIMOB-27101) - Android: Window open() wrongly does a shared-element fade-in animation by default as of 8.0.1
 
-* [TIMOB-27102](https://jira.appcelerator.org/browse/TIMOB-27102) - iOS: "appc run" wrongly edits a Titanium SDK installed file causing studio to beachball and rebuild its workspace
+* [TIMOB-27102](https://jira.appcelerator.org/browse/TIMOB-27102) - iOS: "ti build" wrongly edits a Titanium SDK installed file causing studio to beachball and rebuild its workspace
 
 * [TIMOB-27106](https://jira.appcelerator.org/browse/TIMOB-27106) - iOS: MusicLibrary compilation error in 8.0.1.GA
 

@@ -37,7 +37,7 @@ Create a Titanium module:
 
 2. Change directories to `android`.
 
-3. Execute this command: `appc run -p android --build-only`
+3. Execute this command: `ti build -p android --build-only`
 
 4. Verify the `libs` and `dist/<whatever>.zip` file only contains the desired architectures.
 
@@ -80,7 +80,7 @@ An example of updated `tiapp.xml` file might look something like this:
 
 To verify your buildtools version, go to your Android SDK location: `/users/<user>/Library/Android/sdk/build-tools/ <version_number>`
 
-You can change the build tools version using this command: `appc ti config android.buildTools.selectedVersion ##.##.##`
+You can change the build tools version using this command: `ti ti config android.buildTools.selectedVersion ##.##.##`
 
 ## How do you check if a module supports 64bit or not?
 

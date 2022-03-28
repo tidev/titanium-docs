@@ -211,13 +211,13 @@ You can navigate to the iOS Platform preference page to view and modify current 
 To build your application using the Titanium CLI, run the following command:
 
 ```bash
-appc run -p ios -T device  -C <DEVICE_UDID> [-V "<DEVELOPER_CERTIFICATE_NAME>"  -P <PROVISIONING_PROFILE_UUID>]
+ti build -p ios -T device  -C <DEVICE_UDID> [-V "<DEVELOPER_CERTIFICATE_NAME>"  -P <PROVISIONING_PROFILE_UUID>]
 ```
 
 If you omit any of the optional parameters, the CLI will prompt you for the information and provide you with available options. You can also retrieve the information from Xcode's Devices and Simulators window or using the following CLI command:
 
 ```bash
-appc ti info -t ios
+ti ti info -t ios
 ```
 
 ### Installing apps to remote devices
