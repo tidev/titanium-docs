@@ -107,6 +107,23 @@
             ]
         },
         {
+            "title": "PurgeTSS",
+            "path": "/guide/Alloy_Framework/Alloy_PurgeTSS/", 
+            "children": [
+                [
+                    "Alloy_PurgeTSS/Configuring_Guide",
+                    "Configuring Guide" 
+                ],
+                {
+                    "title": "What's New",
+                    "path": "/guide/Alloy_Framework/Alloy_PurgeTSS/Whats_New/",
+                    "children": [
+                        
+                    ]
+                }
+            ]
+        },
+        {
             "title": "Framework Release Notes",
             "path": "/guide/Alloy_Framework/Alloy_Framework_Release_Notes/",
             "children": [
