@@ -49,17 +49,11 @@ The CLA is a simple form you can sign electronically by visiting the following U
 
 You must first electronically sign the before you can contribute code, documentation or any other materials to the project. **You are only required to do this once**.
 
-### 2\. Find or create a JIRA ticket / GitHub issue to associate with your pull request.
+### 2\. GitHub issue to associate with your pull request.
 
-All pull requests that get integrated into the Titanium SDK have an associated Jira ticket. To make sure that your pull request gets accepted, you also need to have an associated ticket. Community members cannot submit tickets directly to the Titanium Mobile (TIMOB) Jira project, so you have 3 options:
+File a new GitHub issue on the main repository ([tidev/titanium_mobile](https://github.com/tidev/titanium_mobile)) by filling out the template with the feature, bugfix or improvement you want to contribute. Our team links GitHub issues with Jira, so it can be tracked by the internal engineering team
 
-1. Find an existing Titanium Mobile (TIMOB) ticket with which to associate your ticket. You can search the TIMOB project for an existing feature request or bug with the following link: [Titanium Mobile (TIMOB) Jira project](http://jira.appcelerator.org/secure/IssueNavigator.jspa)
-
-2. Find or create a new ticket in the Titanium Community (TC) Jira project. Community members have the ability to create new tickets here, unlike the TIMOB project. If you want to add a feature or fix a bug that has not yet been logged in either Jira project, you can do so at the following link: [Titanium Community (TC) Jira project](https://jira-archive.titaniumsdk.com/TC)
-
-3. File a new GitHub issue on the main repository ([appcelerator/titanium\_mobile](https://github.com/tidev/titanium_mobile)) by filling out the template with the feature, bugfix or improvement you want to contribute. Our team links GitHub issues with Jira, so it can be tracked by the internal engineering team
-
-Once you have created/found the Jira ticket or GitHub issue that you would like to address with your pull request, remember it. The ticket number will be used to identify your development branch in a later step. In addition, code for testing your pull request should be included in the Jira ticket.
+Once you have created/found the GitHub issue that you would like to address with your pull request, remember it. The ticket number will be used to identify your development branch in a later step. In addition, code for testing your pull request should be included in the Jira ticket.
 
 For comprehensive instructions on everything associated with submitting Jira tickets, see [How to Report a Bug or Make a Feature Request](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/How_to_Report_a_Bug_or_Make_a_Feature_Request/).
 
