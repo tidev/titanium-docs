@@ -23,8 +23,6 @@ const view = Titanium.UI.createView();
 const castedView = <any>view;
 ```
 
-Oh, and don't forget to file a bug report under the [FRAME](https://jira.appcelerator.org/projects/FRAME/) project in Jira so we can fix it! Community help is always welcomed!
-
 ## Working with Titanium elements
 
 The basic features of all elements under the UI namespace are supported as of now. However, some platform specific views are still missing. Please refer to the following list to see which elements are **NOT** yet supported in templates (you can still create them programmatically in your components):

@@ -19,27 +19,27 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ### iOS platform
 
-* [TIMOB-28127](https://jira.appcelerator.org/browse/TIMOB-28127) - TiUIListItemProxy overreleased causing intermittent crashing w/ macOS ([6d22e29](https://github.com/tidev/titanium_mobile/commit/6d22e297bb686afa974c0701c578265557acc2e0))
+* [TIMOB-28127](https://jira-archive.titaniumsdk.com/TIMOB-28127) - TiUIListItemProxy overreleased causing intermittent crashing w/ macOS ([6d22e29](https://github.com/tidev/titanium_mobile/commit/6d22e297bb686afa974c0701c578265557acc2e0))
 
-* [TIMOB-28156](https://jira.appcelerator.org/browse/TIMOB-28156) - Module build failing for modules not having platform directory ([c4d90fe](https://github.com/tidev/titanium_mobile/commit/c4d90fe0e1cc65f7481c5e715182f0f73f28048f))
+* [TIMOB-28156](https://jira-archive.titaniumsdk.com/TIMOB-28156) - Module build failing for modules not having platform directory ([c4d90fe](https://github.com/tidev/titanium_mobile/commit/c4d90fe0e1cc65f7481c5e715182f0f73f28048f))
 
-* [TIMOB-28150](https://jira.appcelerator.org/browse/TIMOB-28150) - Updating backgroundImage displays irrelavant image inbetween change ([de88803](https://github.com/tidev/titanium_mobile/commit/de88803637c7956aba8160fff7e6e1489830bf1b))
+* [TIMOB-28150](https://jira-archive.titaniumsdk.com/TIMOB-28150) - Updating backgroundImage displays irrelavant image inbetween change ([de88803](https://github.com/tidev/titanium_mobile/commit/de88803637c7956aba8160fff7e6e1489830bf1b))
 
-* [TIMOB-28152](https://jira.appcelerator.org/browse/TIMOB-28152) - Compile error when SDK forces a rebuild ([9b516e4](https://github.com/tidev/titanium_mobile/commit/9b516e4e0163f89187b3ab1ddd2b0f750fad0893))
+* [TIMOB-28152](https://jira-archive.titaniumsdk.com/TIMOB-28152) - Compile error when SDK forces a rebuild ([9b516e4](https://github.com/tidev/titanium_mobile/commit/9b516e4e0163f89187b3ab1ddd2b0f750fad0893))
 
-* [TIMOB-27812](https://jira.appcelerator.org/browse/TIMOB-27812) - format js errors in cli output ([bc32947](https://github.com/tidev/titanium_mobile/commit/bc32947554f94acd51561e0bba4585c5a74c56b5))
+* [TIMOB-27812](https://jira-archive.titaniumsdk.com/TIMOB-27812) - format js errors in cli output ([bc32947](https://github.com/tidev/titanium_mobile/commit/bc32947554f94acd51561e0bba4585c5a74c56b5))
 
-* [TIMOB-28151](https://jira.appcelerator.org/browse/TIMOB-28151) - Compile error if using Ti.Media APIs without openPhotoGallery ([c5d6d8d](https://github.com/tidev/titanium_mobile/commit/c5d6d8d2083db0cc18d03a7c67158101bafcae35))
+* [TIMOB-28151](https://jira-archive.titaniumsdk.com/TIMOB-28151) - Compile error if using Ti.Media APIs without openPhotoGallery ([c5d6d8d](https://github.com/tidev/titanium_mobile/commit/c5d6d8d2083db0cc18d03a7c67158101bafcae35))
 
-* [TIMOB-28158](https://jira.appcelerator.org/browse/TIMOB-28158) - Duplicate framework search paths ([35e4058](https://github.com/tidev/titanium_mobile/commit/35e4058784e5ad6c104cf6ea2b16f3887e8f58b9))
+* [TIMOB-28158](https://jira-archive.titaniumsdk.com/TIMOB-28158) - Duplicate framework search paths ([35e4058](https://github.com/tidev/titanium_mobile/commit/35e4058784e5ad6c104cf6ea2b16f3887e8f58b9))
 
-* [TIMOB-28148](https://jira.appcelerator.org/browse/TIMOB-28148) - app crashes when updating tableview ([23c01db](https://github.com/tidev/titanium_mobile/commit/23c01db715a486898f401f68c2aa032550528176))
+* [TIMOB-28148](https://jira-archive.titaniumsdk.com/TIMOB-28148) - app crashes when updating tableview ([23c01db](https://github.com/tidev/titanium_mobile/commit/23c01db715a486898f401f68c2aa032550528176))
 
-* [TIMOB-28154](https://jira.appcelerator.org/browse/TIMOB-28154) - Build failing on 9.2.0 with Hyperloop
+* [TIMOB-28154](https://jira-archive.titaniumsdk.com/TIMOB-28154) - Build failing on 9.2.0 with Hyperloop
 
-* [TIMOB-28159](https://jira.appcelerator.org/browse/TIMOB-28159) - Building Swift module created with sdk < [9.2.0.GA](http://9.2.0.ga/) fails
+* [TIMOB-28159](https://jira-archive.titaniumsdk.com/TIMOB-28159) - Building Swift module created with sdk < [9.2.0.GA](http://9.2.0.ga/) fails
 
-* [TIMOB-27812](https://jira.appcelerator.org/browse/TIMOB-27812) - Improve display of uncaught errors
+* [TIMOB-27812](https://jira-archive.titaniumsdk.com/TIMOB-27812) - Improve display of uncaught errors
 
 ## SDK Module Versions
 

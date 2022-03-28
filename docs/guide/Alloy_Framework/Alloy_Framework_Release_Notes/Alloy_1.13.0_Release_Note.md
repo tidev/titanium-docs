@@ -11,6 +11,6 @@ As of this release, Alloy 1.13.x will not be supported six months from 1.14.0's 
 
 ## New feature
 
-* [ALOY-1518](https://jira.appcelerator.org/browse/ALOY-1518) - ListView: Custom widget support in templates
+* [ALOY-1518](https://jira-archive.titaniumsdk.com/ALOY-1518) - ListView: Custom widget support in templates
 
     * Added support for Widgets in ListView templates

@@ -405,4 +405,4 @@ For another demonstration of the PushNotification API, run the Cloud demo app an
 
 ### Error: APSCloudPush has not been enabled. Call APSCloud.enable(context, key) to enable. (Android)
 
-If LiveView is enabed, disable it. There are some known conflict when using LiveView and push notification services ([TIMOB-19233](https://jira.appcelerator.org/browse/TIMOB-19233)).
+If LiveView is enabed, disable it. There are some known conflict when using LiveView and push notification services ([TIMOB-19233](https://jira-archive.titaniumsdk.com/TIMOB-19233)).
