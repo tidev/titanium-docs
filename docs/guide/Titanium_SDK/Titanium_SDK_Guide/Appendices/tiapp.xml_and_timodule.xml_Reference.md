@@ -442,11 +442,11 @@ Android also supports a number of application properties for various internal se
 As of Titanium 8.0.0, this has been deprecated. The new behavior is a data intent will resume a backgrounded app will be resumed and the fire a "newintent" event. Also, the restart dialog box has been removed.
 :::
 
-See [TIMOB-4941](http://jira.appcelerator.org/browse/TIMOB-4941), [TIMOB-1559](http://jira.appcelerator.org/browse/TIMOB-1559) and [TIMOB-9285](http://jira.appcelerator.org/browse/TIMOB-9285) for information about the Titanium workaround to Google issues [2373](http://code.google.com/p/android/issues/detail?id=2373) and [5277](http://code.google.com/p/android/issues/detail?id=5277). TIMOB-9285 in particular has a useful [explanation](https://jira.appcelerator.org/browse/TIMOB-9285?focusedCommentId=210304&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-210304) of the issue and of `ti.android.bug2373.finishfalseroot`, the newest of the properties listed below.
+See [TIMOB-4941](https://jira-archive.titaniumsdk.com/TIMOB-4941), [TIMOB-1559](https://jira-archive.titaniumsdk.com/TIMOB-1559) and [TIMOB-9285](https://jira-archive.titaniumsdk.com/TIMOB-9285) for information about the Titanium workaround to Google issues [2373](http://code.google.com/p/android/issues/detail?id=2373) and [5277](http://code.google.com/p/android/issues/detail?id=5277). TIMOB-9285 in particular has a useful [explanation](https://jira-archive.titaniumsdk.com/TIMOB-9285?focusedCommentId=210304&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-210304) of the issue and of `ti.android.bug2373.finishfalseroot`, the newest of the properties listed below.
 
 | Property Name | Type | Default Value | Description |
 | --- | --- | --- | --- |
-| ti.android.bug2373.finishfalseroot | bool | true | Setting to true will avoid showing any messages to the user and will force any subsequent, anomalous instantiations of the application's launch Activity to finish and disappear without disturbing the user. This is [explained in greater detail](https://jira.appcelerator.org/browse/TIMOB-9285?focusedCommentId=210304&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-210304) in JIRA issue TIMOB-9285. This property should be used by itself, without any of the other "bug2373" properties. It is the least intrusive of these properties and should give the best user experience. |
+| ti.android.bug2373.finishfalseroot | bool | true | Setting to true will avoid showing any messages to the user and will force any subsequent, anomalous instantiations of the application's launch Activity to finish and disappear without disturbing the user. This is [explained in greater detail](https://jira-archive.titaniumsdk.com/TIMOB-9285?focusedCommentId=210304&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-210304) in JIRA issue TIMOB-9285. This property should be used by itself, without any of the other "bug2373" properties. It is the least intrusive of these properties and should give the best user experience. |
 | ti.android.bug2373.disableDetection | bool | false | setting to true will completely disable the workaround |
 | ti.android.bug2373.title | String | Restart Required | title of dialog |
 | ti.android.bug2373.message | String | An application restart is required | message used in dialog. if _skipAlert_ is true the message is shown in a Toast if message length is > 0 |
@@ -937,14 +937,6 @@ Because images are store in the Asset Catalog, reading image files manually from
 ### use-autolayout
 
 **Since Release 5.1.0**. Enables the iOS [auto-layout engine](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853) to layout the children components of a view. Disabled by default.
-
-::: danger ❗️ Experimental Feature
-This is an experimental feature with known issues:
-
-* [TIMOB-19806](https://jira.appcelerator.org/browse/TIMOB-19806)
-
-If you find any issue using this feature, file a bug in [JIRA](https://jira.appcelerator.org/).
-:::
 
 ```xml
 <ti:app>

@@ -19,7 +19,7 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ### Android platform
 
-* [TIMOB-4041](https://jira.appcelerator.org/browse/TIMOB-4041) - Android: Add "separatorStyle" property to Ti.UI.ListView
+* [TIMOB-4041](https://jira-archive.titaniumsdk.com/TIMOB-4041) - Android: Add "separatorStyle" property to Ti.UI.ListView
 
     * Added support for `ListView.separatorStyle`
 
@@ -46,11 +46,11 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
         win.open();
         ```
 
-* [TIMOB-14460](https://jira.appcelerator.org/browse/TIMOB-14460) - Android: Add Ti.Platform.canOpenURL() support
+* [TIMOB-14460](https://jira-archive.titaniumsdk.com/TIMOB-14460) - Android: Add Ti.Platform.canOpenURL() support
 
     * Added support for Ti.Platform.canOpenURL()
 
-* [TIMOB-26793](https://jira.appcelerator.org/browse/TIMOB-26793) - Android: Hide radio buttons OptionDialog
+* [TIMOB-26793](https://jira-archive.titaniumsdk.com/TIMOB-26793) - Android: Hide radio buttons OptionDialog
 
     * Added support to use `OptionDialog` without radio buttons
 
@@ -95,11 +95,11 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ### iOS platform
 
-* [TIMOB-18421](https://jira.appcelerator.org/browse/TIMOB-18421) - iOS: Add animation properties "springVelocity" and "dampingRatio"
+* [TIMOB-18421](https://jira-archive.titaniumsdk.com/TIMOB-18421) - iOS: Add animation properties "springVelocity" and "dampingRatio"
 
     * Added `dampingRatio` and `springVelocity` to allow iOS spring animations
 
-* [TIMOB-26523](https://jira.appcelerator.org/browse/TIMOB-26523) - iOS 11+: Support large title style (dynamic fonts)
+* [TIMOB-26523](https://jira-archive.titaniumsdk.com/TIMOB-26523) - iOS 11+: Support large title style (dynamic fonts)
 
     * Added support for dynamic fonts in `UIFontTextStyleLargeTitle`
 
@@ -142,21 +142,21 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
         win.open();
         ```
 
-* [TIMOB-26599](https://jira.appcelerator.org/browse/TIMOB-26599) - iOS: Add "allowTranscoding" option to Ti.Media.openPhotoGallery()
+* [TIMOB-26599](https://jira-archive.titaniumsdk.com/TIMOB-26599) - iOS: Add "allowTranscoding" option to Ti.Media.openPhotoGallery()
 
     * Added option to disable video compression when importing video
 
-* [TIMOB-26973](https://jira.appcelerator.org/browse/TIMOB-26973) - iOS: Add accessibilityIdentifier
+* [TIMOB-26973](https://jira-archive.titaniumsdk.com/TIMOB-26973) - iOS: Add accessibilityIdentifier
 
     * Added `accessibilityIdentifier` which can compose views on iOS the same way `content description` is composed on Android
 
-* [TIMOB-27124](https://jira.appcelerator.org/browse/TIMOB-27124) - iOS 13: Support running on Xcode 11 Simulators
+* [TIMOB-27124](https://jira-archive.titaniumsdk.com/TIMOB-27124) - iOS 13: Support running on Xcode 11 Simulators
 
     * Added support for Xcode 11
 
 ### Windows platform
 
-* [TIMOB-25778](https://jira.appcelerator.org/browse/TIMOB-25778) - Windows: Implement Ti.UI.Label.ellipsize
+* [TIMOB-25778](https://jira-archive.titaniumsdk.com/TIMOB-25778) - Windows: Implement Ti.UI.Label.ellipsize
 
     * Implemented `Ti.UI.Label.ellipsize`
 
@@ -164,15 +164,15 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ### Multiple platforms
 
-* [TIMOB-26571](https://jira.appcelerator.org/browse/TIMOB-26571) - TiAPI: Global process object compatible with Node.js
+* [TIMOB-26571](https://jira-archive.titaniumsdk.com/TIMOB-26571) - TiAPI: Global process object compatible with Node.js
 
     * Expanded the global process object to be more compatible with Node.js
 
-* [TIMOB-26669](https://jira.appcelerator.org/browse/TIMOB-26669) - TiAPI: Create Node-compatible assert module API
+* [TIMOB-26669](https://jira-archive.titaniumsdk.com/TIMOB-26669) - TiAPI: Create Node-compatible assert module API
 
     * Added Node.js-compatible `asset` module API
 
-* [TIMOB-26670](https://jira.appcelerator.org/browse/TIMOB-26670) - TiAPI: Create Node-compatible util module API
+* [TIMOB-26670](https://jira-archive.titaniumsdk.com/TIMOB-26670) - TiAPI: Create Node-compatible util module API
 
     * Added Node.js-compatible `util` module API
 
@@ -180,199 +180,199 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
     * Currently supports `depth`, `showHidden`, and to some degree `breakLength`
 
-* [TIMOB-27150](https://jira.appcelerator.org/browse/TIMOB-27150) - Add ability to alias required modules in Titanium
+* [TIMOB-27150](https://jira-archive.titaniumsdk.com/TIMOB-27150) - Add ability to alias required modules in Titanium
 
     * Added ability to alias required modules
 
 ## Community credits
 
-* Prafulla Bansode - [TIMOB-24415](https://jira.appcelerator.org/browse/TIMOB-24415)
+* Prafulla Bansode - [TIMOB-24415](https://jira-archive.titaniumsdk.com/TIMOB-24415)
 
-* Sandro Lain - [TIMOB-24418](https://jira.appcelerator.org/browse/TIMOB-24418), [TIMOB-24423](https://jira.appcelerator.org/browse/TIMOB-24423), [TIMOB-24443](https://jira.appcelerator.org/browse/TIMOB-24443)
+* Sandro Lain - [TIMOB-24418](https://jira-archive.titaniumsdk.com/TIMOB-24418), [TIMOB-24423](https://jira-archive.titaniumsdk.com/TIMOB-24423), [TIMOB-24443](https://jira-archive.titaniumsdk.com/TIMOB-24443)
 
-* Hans Knöchel - [TIMOB-26101](https://jira.appcelerator.org/browse/TIMOB-26101), [TIMOB-26854](https://jira.appcelerator.org/browse/TIMOB-26854), [TIMOB-26862](https://jira.appcelerator.org/browse/TIMOB-26862), [TIMOB-26885](https://jira.appcelerator.org/browse/TIMOB-26885), [TIMOB-26946](https://jira.appcelerator.org/browse/TIMOB-26946), [TIMOB-27049](https://jira.appcelerator.org/browse/TIMOB-27049), [TIMOB-27082](https://jira.appcelerator.org/browse/TIMOB-27082), [TIMOB-27089](https://jira.appcelerator.org/browse/TIMOB-27089), [TIMOB-27090](https://jira.appcelerator.org/browse/TIMOB-27090), [TIMOB-27100](https://jira.appcelerator.org/browse/TIMOB-27100), [TIMOB-27103](https://jira.appcelerator.org/browse/TIMOB-27103), [TIMOB-26523](https://jira.appcelerator.org/browse/TIMOB-26523), [TIMOB-26566](https://jira.appcelerator.org/browse/TIMOB-26566), [TIMOB-26509](https://jira.appcelerator.org/browse/TIMOB-26509), [TIMOB-26686](https://jira.appcelerator.org/browse/TIMOB-26686), [TIMOB-26770](https://jira.appcelerator.org/browse/TIMOB-26770), [TIMOB-27155](https://jira.appcelerator.org/browse/TIMOB-27155), [TIMOB-27210](https://jira.appcelerator.org/browse/TIMOB-27210)
+* Hans Knöchel - [TIMOB-26101](https://jira-archive.titaniumsdk.com/TIMOB-26101), [TIMOB-26854](https://jira-archive.titaniumsdk.com/TIMOB-26854), [TIMOB-26862](https://jira-archive.titaniumsdk.com/TIMOB-26862), [TIMOB-26885](https://jira-archive.titaniumsdk.com/TIMOB-26885), [TIMOB-26946](https://jira-archive.titaniumsdk.com/TIMOB-26946), [TIMOB-27049](https://jira-archive.titaniumsdk.com/TIMOB-27049), [TIMOB-27082](https://jira-archive.titaniumsdk.com/TIMOB-27082), [TIMOB-27089](https://jira-archive.titaniumsdk.com/TIMOB-27089), [TIMOB-27090](https://jira-archive.titaniumsdk.com/TIMOB-27090), [TIMOB-27100](https://jira-archive.titaniumsdk.com/TIMOB-27100), [TIMOB-27103](https://jira-archive.titaniumsdk.com/TIMOB-27103), [TIMOB-26523](https://jira-archive.titaniumsdk.com/TIMOB-26523), [TIMOB-26566](https://jira-archive.titaniumsdk.com/TIMOB-26566), [TIMOB-26509](https://jira-archive.titaniumsdk.com/TIMOB-26509), [TIMOB-26686](https://jira-archive.titaniumsdk.com/TIMOB-26686), [TIMOB-26770](https://jira-archive.titaniumsdk.com/TIMOB-26770), [TIMOB-27155](https://jira-archive.titaniumsdk.com/TIMOB-27155), [TIMOB-27210](https://jira-archive.titaniumsdk.com/TIMOB-27210)
 
-* kedomuz - [TIMOB-26326](https://jira.appcelerator.org/browse/TIMOB-26326)
+* kedomuz - [TIMOB-26326](https://jira-archive.titaniumsdk.com/TIMOB-26326)
 
-* Michael Gangolf - [TIMOB-26456](https://jira.appcelerator.org/browse/TIMOB-26456), [TIMOB-26993](https://jira.appcelerator.org/browse/TIMOB-26993), [TIMOB-25556](https://jira.appcelerator.org/browse/TIMOB-25556), [TIMOB-26793](https://jira.appcelerator.org/browse/TIMOB-26793)
+* Michael Gangolf - [TIMOB-26456](https://jira-archive.titaniumsdk.com/TIMOB-26456), [TIMOB-26993](https://jira-archive.titaniumsdk.com/TIMOB-26993), [TIMOB-25556](https://jira-archive.titaniumsdk.com/TIMOB-25556), [TIMOB-26793](https://jira-archive.titaniumsdk.com/TIMOB-26793)
 
-* Sergey Volkov - [TIMOB-26973](https://jira.appcelerator.org/browse/TIMOB-26973)
+* Sergey Volkov - [TIMOB-26973](https://jira-archive.titaniumsdk.com/TIMOB-26973)
 
-* shumne - [TIMOB-26795](https://jira.appcelerator.org/browse/TIMOB-26795)
+* shumne - [TIMOB-26795](https://jira-archive.titaniumsdk.com/TIMOB-26795)
 
-* alessandro la rocca - [TIMOB-26829](https://jira.appcelerator.org/browse/TIMOB-26829)
+* alessandro la rocca - [TIMOB-26829](https://jira-archive.titaniumsdk.com/TIMOB-26829)
 
-* Andreas Pingas - [TIMOB-26878](https://jira.appcelerator.org/browse/TIMOB-26878), [TIMOB-27188](https://jira.appcelerator.org/browse/TIMOB-27188), [TIMOB-27232](https://jira.appcelerator.org/browse/TIMOB-27232)
+* Andreas Pingas - [TIMOB-26878](https://jira-archive.titaniumsdk.com/TIMOB-26878), [TIMOB-27188](https://jira-archive.titaniumsdk.com/TIMOB-27188), [TIMOB-27232](https://jira-archive.titaniumsdk.com/TIMOB-27232)
 
-* Arbind - [TIMOB-26898](https://jira.appcelerator.org/browse/TIMOB-26898)
+* Arbind - [TIMOB-26898](https://jira-archive.titaniumsdk.com/TIMOB-26898)
 
-* grebulon - [TIMOB-26954](https://jira.appcelerator.org/browse/TIMOB-26954)
+* grebulon - [TIMOB-26954](https://jira-archive.titaniumsdk.com/TIMOB-26954)
 
-* Muhammad Ahmed Fahad - [TIMOB-26986](https://jira.appcelerator.org/browse/TIMOB-26986)
+* Muhammad Ahmed Fahad - [TIMOB-26986](https://jira-archive.titaniumsdk.com/TIMOB-26986)
 
-* Adam Armstrong - [TIMOB-27087](https://jira.appcelerator.org/browse/TIMOB-27087)
+* Adam Armstrong - [TIMOB-27087](https://jira-archive.titaniumsdk.com/TIMOB-27087)
 
-* Tim Poulsen - [TIMOB-14460](https://jira.appcelerator.org/browse/TIMOB-14460)
+* Tim Poulsen - [TIMOB-14460](https://jira-archive.titaniumsdk.com/TIMOB-14460)
 
-* Richard Lustemberg - [TIMOB-26599](https://jira.appcelerator.org/browse/TIMOB-26599)
+* Richard Lustemberg - [TIMOB-26599](https://jira-archive.titaniumsdk.com/TIMOB-26599)
 
-* Mark Henderson - [TIMOB-27098](https://jira.appcelerator.org/browse/TIMOB-27098)
+* Mark Henderson - [TIMOB-27098](https://jira-archive.titaniumsdk.com/TIMOB-27098)
 
 ## Fixed issues
 
 ### Android
 
-* [TIMOB-24415](https://jira.appcelerator.org/browse/TIMOB-24415) - Android: Listview not able to add accessibility label in the ListItem components
+* [TIMOB-24415](https://jira-archive.titaniumsdk.com/TIMOB-24415) - Android: Listview not able to add accessibility label in the ListItem components
 
-* [TIMOB-24881](https://jira.appcelerator.org/browse/TIMOB-24881) - Android: Label ellipsize modes START and MIDDLE don't work if "autoLink" is true
+* [TIMOB-24881](https://jira-archive.titaniumsdk.com/TIMOB-24881) - Android: Label ellipsize modes START and MIDDLE don't work if "autoLink" is true
 
-* [TIMOB-26456](https://jira.appcelerator.org/browse/TIMOB-26456) - Android: Optimize TiBlob.imageAsResized
+* [TIMOB-26456](https://jira-archive.titaniumsdk.com/TIMOB-26456) - Android: Optimize TiBlob.imageAsResized
 
-* [TIMOB-26650](https://jira.appcelerator.org/browse/TIMOB-26650) - Android: Using toImage on views with border properties not added to UI results in empty blob
+* [TIMOB-26650](https://jira-archive.titaniumsdk.com/TIMOB-26650) - Android: Using toImage on views with border properties not added to UI results in empty blob
 
-* [TIMOB-26841](https://jira.appcelerator.org/browse/TIMOB-26841) - Android: Reading TextField "backgroundDisabledColor" will crash if background/border color is assigned
+* [TIMOB-26841](https://jira-archive.titaniumsdk.com/TIMOB-26841) - Android: Reading TextField "backgroundDisabledColor" will crash if background/border color is assigned
 
-* [TIMOB-26862](https://jira.appcelerator.org/browse/TIMOB-26862) - Android: TextField/TextArea within a TableView can have performance issues with some keyboards
+* [TIMOB-26862](https://jira-archive.titaniumsdk.com/TIMOB-26862) - Android: TextField/TextArea within a TableView can have performance issues with some keyboards
 
-* [TIMOB-26869](https://jira.appcelerator.org/browse/TIMOB-26869) - CLI: Android build fails with cannot find module error
+* [TIMOB-26869](https://jira-archive.titaniumsdk.com/TIMOB-26869) - CLI: Android build fails with cannot find module error
 
-* [TIMOB-26878](https://jira.appcelerator.org/browse/TIMOB-26878) - Android: Ti.Database.install() fails if destination directory does not exist
+* [TIMOB-26878](https://jira-archive.titaniumsdk.com/TIMOB-26878) - Android: Ti.Database.install() fails if destination directory does not exist
 
-* [TIMOB-26954](https://jira.appcelerator.org/browse/TIMOB-26954) - Android: Reading a JSON file fails on Android Q
+* [TIMOB-26954](https://jira-archive.titaniumsdk.com/TIMOB-26954) - Android: Reading a JSON file fails on Android Q
 
-* [TIMOB-26993](https://jira.appcelerator.org/browse/TIMOB-26993) - Android: WebView sometimes crashes on window close after zooming content
+* [TIMOB-26993](https://jira-archive.titaniumsdk.com/TIMOB-26993) - Android: WebView sometimes crashes on window close after zooming content
 
-* [TIMOB-27087](https://jira.appcelerator.org/browse/TIMOB-27087) - Android: ShortcutItem not being updated based on "id"
+* [TIMOB-27087](https://jira-archive.titaniumsdk.com/TIMOB-27087) - Android: ShortcutItem not being updated based on "id"
 
-* [TIMOB-27094](https://jira.appcelerator.org/browse/TIMOB-27094) - Android: ListView's SearchBar/SearchView wrongly overlaps rows as of 8.0.1
+* [TIMOB-27094](https://jira-archive.titaniumsdk.com/TIMOB-27094) - Android: ListView's SearchBar/SearchView wrongly overlaps rows as of 8.0.1
 
-* [TIMOB-27100](https://jira.appcelerator.org/browse/TIMOB-27100) - Android: TabGroup labels not displayed anymore (SDK 8.1.0+)
+* [TIMOB-27100](https://jira-archive.titaniumsdk.com/TIMOB-27100) - Android: TabGroup labels not displayed anymore (SDK 8.1.0+)
 
-* [TIMOB-27153](https://jira.appcelerator.org/browse/TIMOB-27153) - Android: Prevent multiple exception logs
+* [TIMOB-27153](https://jira-archive.titaniumsdk.com/TIMOB-27153) - Android: Prevent multiple exception logs
 
-* [TIMOB-27188](https://jira.appcelerator.org/browse/TIMOB-27188) - Android: TabGroup crashes if tab "title" property is not set as of 8.0.2
+* [TIMOB-27188](https://jira-archive.titaniumsdk.com/TIMOB-27188) - Android: TabGroup crashes if tab "title" property is not set as of 8.0.2
 
-* [TIMOB-27232](https://jira.appcelerator.org/browse/TIMOB-27232) - Android: Setting Window "barColor" while using a theme without an ActionBar/TitleBar will cause a crash as of 8.1.0
+* [TIMOB-27232](https://jira-archive.titaniumsdk.com/TIMOB-27232) - Android: Setting Window "barColor" while using a theme without an ActionBar/TitleBar will cause a crash as of 8.1.0
 
-* [TIMOB-27269](https://jira.appcelerator.org/browse/TIMOB-27269) - Android: Do not retry sending events if no connectivity
+* [TIMOB-27269](https://jira-archive.titaniumsdk.com/TIMOB-27269) - Android: Do not retry sending events if no connectivity
 
-* [TIMOB-27300](https://jira.appcelerator.org/browse/TIMOB-27300) - Android: AssetCryptImpl buffer overflow for large JS assets
+* [TIMOB-27300](https://jira-archive.titaniumsdk.com/TIMOB-27300) - Android: AssetCryptImpl buffer overflow for large JS assets
 
-* [TIMOB-27314](https://jira.appcelerator.org/browse/TIMOB-27314) - Android: Unable to build to device on Windows
+* [TIMOB-27314](https://jira-archive.titaniumsdk.com/TIMOB-27314) - Android: Unable to build to device on Windows
 
 ### iOS
 
-* [TIMOB-26795](https://jira.appcelerator.org/browse/TIMOB-26795) - iOS: Event listener on overlay is not working for camera when camera is kept idle for a few minutes
+* [TIMOB-26795](https://jira-archive.titaniumsdk.com/TIMOB-26795) - iOS: Event listener on overlay is not working for camera when camera is kept idle for a few minutes
 
-* [TIMOB-26829](https://jira.appcelerator.org/browse/TIMOB-26829) - iOS: Titanium.Media.openMusicLibrary returns empty items on iOS 9.3.5
+* [TIMOB-26829](https://jira-archive.titaniumsdk.com/TIMOB-26829) - iOS: Titanium.Media.openMusicLibrary returns empty items on iOS 9.3.5
 
-* [TIMOB-26833](https://jira.appcelerator.org/browse/TIMOB-26833) - iOS: Two startup log messages are output
+* [TIMOB-26833](https://jira-archive.titaniumsdk.com/TIMOB-26833) - iOS: Two startup log messages are output
 
-* [TIMOB-26838](https://jira.appcelerator.org/browse/TIMOB-26838) - iOS: the openWindow() method of NavigationWindow does not work when called from base window open event
+* [TIMOB-26838](https://jira-archive.titaniumsdk.com/TIMOB-26838) - iOS: the openWindow() method of NavigationWindow does not work when called from base window open event
 
-* [TIMOB-26854](https://jira.appcelerator.org/browse/TIMOB-26854) - iOS: Crash when handling user-activities
+* [TIMOB-26854](https://jira-archive.titaniumsdk.com/TIMOB-26854) - iOS: Crash when handling user-activities
 
-* [TIMOB-26885](https://jira.appcelerator.org/browse/TIMOB-26885) - iOS: Crash when trying to push a window twice (e.g. on slow devices)
+* [TIMOB-26885](https://jira-archive.titaniumsdk.com/TIMOB-26885) - iOS: Crash when trying to push a window twice (e.g. on slow devices)
 
-* [TIMOB-26946](https://jira.appcelerator.org/browse/TIMOB-26946) - iOS: Launch screen shows last screen when quickly relaunching the app
+* [TIMOB-26946](https://jira-archive.titaniumsdk.com/TIMOB-26946) - iOS: Launch screen shows last screen when quickly relaunching the app
 
-* [TIMOB-27049](https://jira.appcelerator.org/browse/TIMOB-27049) - iOS: Simulator can crash because of the "trackUserInteraction" feature
+* [TIMOB-27049](https://jira-archive.titaniumsdk.com/TIMOB-27049) - iOS: Simulator can crash because of the "trackUserInteraction" feature
 
-* [TIMOB-27074](https://jira.appcelerator.org/browse/TIMOB-27074) - IOS: Rebuilding the app with simulator fails with due to log port being occupied
+* [TIMOB-27074](https://jira-archive.titaniumsdk.com/TIMOB-27074) - IOS: Rebuilding the app with simulator fails with due to log port being occupied
 
-* [TIMOB-27082](https://jira.appcelerator.org/browse/TIMOB-27082) - iOS: Modules using TiBlob and built before SDK 8.1 causing app crash
+* [TIMOB-27082](https://jira-archive.titaniumsdk.com/TIMOB-27082) - iOS: Modules using TiBlob and built before SDK 8.1 causing app crash
 
-* [TIMOB-27089](https://jira.appcelerator.org/browse/TIMOB-27089) - iOS: App crashes when asking for location permissions (SDK 8.1.0+)
+* [TIMOB-27089](https://jira-archive.titaniumsdk.com/TIMOB-27089) - iOS: App crashes when asking for location permissions (SDK 8.1.0+)
 
-* [TIMOB-27090](https://jira.appcelerator.org/browse/TIMOB-27090) - iOS: Using a non-string value in alert() causes app to crash in SDK 8.0.0+
+* [TIMOB-27090](https://jira-archive.titaniumsdk.com/TIMOB-27090) - iOS: Using a non-string value in alert() causes app to crash in SDK 8.0.0+
 
-* [TIMOB-27098](https://jira.appcelerator.org/browse/TIMOB-27098) - iOS: debugger does not show all app files loaded
+* [TIMOB-27098](https://jira-archive.titaniumsdk.com/TIMOB-27098) - iOS: debugger does not show all app files loaded
 
-* [TIMOB-27103](https://jira.appcelerator.org/browse/TIMOB-27103) - iOS: Native extensions without sources are crashing build
+* [TIMOB-27103](https://jira-archive.titaniumsdk.com/TIMOB-27103) - iOS: Native extensions without sources are crashing build
 
-* [TIMOB-27155](https://jira.appcelerator.org/browse/TIMOB-27155) - iOS: Incremental builds broken
+* [TIMOB-27155](https://jira-archive.titaniumsdk.com/TIMOB-27155) - iOS: Incremental builds broken
 
-* [TIMOB-27175](https://jira.appcelerator.org/browse/TIMOB-27175) - iOS: [Ti.Platform.id](http://ti.platform.id/) changes when updating to SDK 8.0.0
+* [TIMOB-27175](https://jira-archive.titaniumsdk.com/TIMOB-27175) - iOS: [Ti.Platform.id](http://ti.platform.id/) changes when updating to SDK 8.0.0
 
-* [TIMOB-27202](https://jira.appcelerator.org/browse/TIMOB-27202) - IOS:Rebuilding app on device throws Couldn't find module error
+* [TIMOB-27202](https://jira-archive.titaniumsdk.com/TIMOB-27202) - IOS:Rebuilding app on device throws Couldn't find module error
 
-* [TIMOB-27203](https://jira.appcelerator.org/browse/TIMOB-27203) - iOS: no apiversion validation performed on application build
+* [TIMOB-27203](https://jira-archive.titaniumsdk.com/TIMOB-27203) - iOS: no apiversion validation performed on application build
 
-* [TIMOB-27210](https://jira.appcelerator.org/browse/TIMOB-27210) - iOS: Cannot find iOS 13 simulators in Xcode 11 Beta 3
+* [TIMOB-27210](https://jira-archive.titaniumsdk.com/TIMOB-27210) - iOS: Cannot find iOS 13 simulators in Xcode 11 Beta 3
 
-* [TIMOB-27230](https://jira.appcelerator.org/browse/TIMOB-27230) - iOS: CLI prefers Xcode 11/iOS 13 even though Xcode 10.2.1 is selected
+* [TIMOB-27230](https://jira-archive.titaniumsdk.com/TIMOB-27230) - iOS: CLI prefers Xcode 11/iOS 13 even though Xcode 10.2.1 is selected
 
-* [TIMOB-27270](https://jira.appcelerator.org/browse/TIMOB-27270) - iOS: Allow capture of signal exceptions
+* [TIMOB-27270](https://jira-archive.titaniumsdk.com/TIMOB-27270) - iOS: Allow capture of signal exceptions
 
-* [TIMOB-27277](https://jira.appcelerator.org/browse/TIMOB-27277) - iOS: Invalid analytics platform
+* [TIMOB-27277](https://jira-archive.titaniumsdk.com/TIMOB-27277) - iOS: Invalid analytics platform
 
-* [TIMOB-27278](https://jira.appcelerator.org/browse/TIMOB-27278) - iOS: App crashes upon giving permission to Calendar
+* [TIMOB-27278](https://jira-archive.titaniumsdk.com/TIMOB-27278) - iOS: App crashes upon giving permission to Calendar
 
-* [TIMOB-27313](https://jira.appcelerator.org/browse/TIMOB-27313) - IOS:Regression-Console.log does not concatenate and log if it has multiple arguments with space
+* [TIMOB-27313](https://jira-archive.titaniumsdk.com/TIMOB-27313) - IOS:Regression-Console.log does not concatenate and log if it has multiple arguments with space
 
 ### Windows
 
-* [TIMOB-24418](https://jira.appcelerator.org/browse/TIMOB-24418) - Windows Phone: OptionDialog undefined error
+* [TIMOB-24418](https://jira-archive.titaniumsdk.com/TIMOB-24418) - Windows Phone: OptionDialog undefined error
 
-* [TIMOB-24423](https://jira.appcelerator.org/browse/TIMOB-24423) - Windows Phone: TableViewRow and Label layout not respected
+* [TIMOB-24423](https://jira-archive.titaniumsdk.com/TIMOB-24423) - Windows Phone: TableViewRow and Label layout not respected
 
-* [TIMOB-24443](https://jira.appcelerator.org/browse/TIMOB-24443) - Windows Phone: Progressbar not respect width and not resize
+* [TIMOB-24443](https://jira-archive.titaniumsdk.com/TIMOB-24443) - Windows Phone: Progressbar not respect width and not resize
 
-* [TIMOB-25134](https://jira.appcelerator.org/browse/TIMOB-25134) - Windows: Mocha test Titanium.UI.TextField padding test failure
+* [TIMOB-25134](https://jira-archive.titaniumsdk.com/TIMOB-25134) - Windows: Mocha test Titanium.UI.TextField padding test failure
 
-* [TIMOB-26550](https://jira.appcelerator.org/browse/TIMOB-26550) - Windows: Add support for file property to HTTPClient
+* [TIMOB-26550](https://jira-archive.titaniumsdk.com/TIMOB-26550) - Windows: Add support for file property to HTTPClient
 
-* [TIMOB-26664](https://jira.appcelerator.org/browse/TIMOB-26664) - Windows: Ti.Geolocation.lastGeolocation should return string
+* [TIMOB-26664](https://jira-archive.titaniumsdk.com/TIMOB-26664) - Windows: Ti.Geolocation.lastGeolocation should return string
 
-* [TIMOB-26689](https://jira.appcelerator.org/browse/TIMOB-26689) - Windows: Wrong height for TableViewRow with Label
+* [TIMOB-26689](https://jira-archive.titaniumsdk.com/TIMOB-26689) - Windows: Wrong height for TableViewRow with Label
 
-* [TIMOB-26690](https://jira.appcelerator.org/browse/TIMOB-26690) - Windows: TabGroup does not fire open/close events
+* [TIMOB-26690](https://jira-archive.titaniumsdk.com/TIMOB-26690) - Windows: TabGroup does not fire open/close events
 
-* [TIMOB-26791](https://jira.appcelerator.org/browse/TIMOB-26791) - Windows: Ti.UI.View reports top/left/bottom/right values as Strings always
+* [TIMOB-26791](https://jira-archive.titaniumsdk.com/TIMOB-26791) - Windows: Ti.UI.View reports top/left/bottom/right values as Strings always
 
-* [TIMOB-26797](https://jira.appcelerator.org/browse/TIMOB-26797) - Windows: removeEventListener removes wrong callback
+* [TIMOB-26797](https://jira-archive.titaniumsdk.com/TIMOB-26797) - Windows: removeEventListener removes wrong callback
 
-* [TIMOB-26969](https://jira.appcelerator.org/browse/TIMOB-26969) - Windows: Codec encodeNumber/decodeNumber should throw Error on invalid setup
+* [TIMOB-26969](https://jira-archive.titaniumsdk.com/TIMOB-26969) - Windows: Codec encodeNumber/decodeNumber should throw Error on invalid setup
 
-* [TIMOB-27257](https://jira.appcelerator.org/browse/TIMOB-27257) - \[Windows\] Error is shown when packaging a windows module
+* [TIMOB-27257](https://jira-archive.titaniumsdk.com/TIMOB-27257) - \[Windows\] Error is shown when packaging a windows module
 
 ### Multiple platforms
 
-* [TIMOB-27204](https://jira.appcelerator.org/browse/TIMOB-27204) - CLI: apiversion validation always fails for native modules installed via npm
+* [TIMOB-27204](https://jira-archive.titaniumsdk.com/TIMOB-27204) - CLI: apiversion validation always fails for native modules installed via npm
 
 ## Improvements
 
 ### Android
 
-* [TIMOB-26686](https://jira.appcelerator.org/browse/TIMOB-26686) - Android: Allow Ti.Network.HTTPClient "file" parameter to be set to Ti.Filesystem.File object like iOS
+* [TIMOB-26686](https://jira-archive.titaniumsdk.com/TIMOB-26686) - Android: Allow Ti.Network.HTTPClient "file" parameter to be set to Ti.Filesystem.File object like iOS
 
     * Parity for `File` object support
 
-* [TIMOB-26817](https://jira.appcelerator.org/browse/TIMOB-26817) - Android: Add parity for Window's barColor property.
+* [TIMOB-26817](https://jira-archive.titaniumsdk.com/TIMOB-26817) - Android: Add parity for Window's barColor property.
 
     * Parity for `barColor` property of Ti.UI.Window
 
-* [TIMOB-26848](https://jira.appcelerator.org/browse/TIMOB-26848) - Android: Re-add "baseURL" support to WebView.setHtml() that was removed in 6.0.3
+* [TIMOB-26848](https://jira-archive.titaniumsdk.com/TIMOB-26848) - Android: Re-add "baseURL" support to WebView.setHtml() that was removed in 6.0.3
 
     * Re-implemented `baseURL` to support `WebView.setHtml`
 
-* [TIMOB-26877](https://jira.appcelerator.org/browse/TIMOB-26877) - Android: Ti.Database.install() should throw exception like iOS if source db file not found
+* [TIMOB-26877](https://jira-archive.titaniumsdk.com/TIMOB-26877) - Android: Ti.Database.install() should throw exception like iOS if source db file not found
 
     * Modified `Ti.Database.install()` to throw an exception if given source database file was not found
 
-* [TIMOB-26909](https://jira.appcelerator.org/browse/TIMOB-26909) - Android: Improve V8 cold start performance
+* [TIMOB-26909](https://jira-archive.titaniumsdk.com/TIMOB-26909) - Android: Improve V8 cold start performance
 
     * Updated V8 to 7.3.492.26 which provides performance updates
 
-* [TIMOB-26957](https://jira.appcelerator.org/browse/TIMOB-26957) - Android: Update V8 runtime to 7.3.492.26
+* [TIMOB-26957](https://jira-archive.titaniumsdk.com/TIMOB-26957) - Android: Update V8 runtime to 7.3.492.26
 
     * Updated V8 to 7.3.492.26 which provides performance updates
 
-* [TIMOB-27042](https://jira.appcelerator.org/browse/TIMOB-27042) - Android: Update ti.playservices to 16.1.3
+* [TIMOB-27042](https://jira-archive.titaniumsdk.com/TIMOB-27042) - Android: Update ti.playservices to 16.1.3
 
     * Updated `ti.playservices` to version 16.1.3
 
-* [TIMOB-27111](https://jira.appcelerator.org/browse/TIMOB-27111) - Android: Implement async Ti.Database.DB methods
+* [TIMOB-27111](https://jira-archive.titaniumsdk.com/TIMOB-27111) - Android: Implement async Ti.Database.DB methods
 
     * Implement asynchronous `Ti.Database.DB` methods for executing SQL queries
 
@@ -384,19 +384,19 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ### iOS
 
-* [TIMOB-26509](https://jira.appcelerator.org/browse/TIMOB-26509) - iOS: Allow Ti.UI.SearchBar to be displayed in navigation-bar
+* [TIMOB-26509](https://jira-archive.titaniumsdk.com/TIMOB-26509) - iOS: Allow Ti.UI.SearchBar to be displayed in navigation-bar
 
     * Added support to show search bar navigation for `TiUIListView` and `TiUITableView`
 
-* [TIMOB-26770](https://jira.appcelerator.org/browse/TIMOB-26770) - iOS: Use Swift 5 by default
+* [TIMOB-26770](https://jira-archive.titaniumsdk.com/TIMOB-26770) - iOS: Use Swift 5 by default
 
     * Added support for Swift 5
 
-* [TIMOB-27043](https://jira.appcelerator.org/browse/TIMOB-27043) - Cache JS processing between builds
+* [TIMOB-27043](https://jira-archive.titaniumsdk.com/TIMOB-27043) - Cache JS processing between builds
 
     * Improved incremental app build times
 
-* [TIMOB-27047](https://jira.appcelerator.org/browse/TIMOB-27047) - iOS: Version of SDKs default modules are not up to date
+* [TIMOB-27047](https://jira-archive.titaniumsdk.com/TIMOB-27047) - iOS: Version of SDKs default modules are not up to date
 
     * Updated the following modules
 
@@ -408,7 +408,7 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
         * ti.identity from 1.0.5 to 1.0.6
 
-* [TIMOB-27164](https://jira.appcelerator.org/browse/TIMOB-27164) - iOS: Implement async Ti.Database.DB methods
+* [TIMOB-27164](https://jira-archive.titaniumsdk.com/TIMOB-27164) - iOS: Implement async Ti.Database.DB methods
 
     * Implement asynchronous `Ti.Database.DB` methods for executing SQL queries
 
@@ -420,7 +420,7 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ### Windows
 
-* [TIMOB-19965](https://jira.appcelerator.org/browse/TIMOB-19965) - Windows: Implement WebView.data
+* [TIMOB-19965](https://jira-archive.titaniumsdk.com/TIMOB-19965) - Windows: Implement WebView.data
 
     * Implemented `WebView.data`
 
@@ -443,15 +443,15 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
         win.open();
         ```
 
-* [TIMOB-26575](https://jira.appcelerator.org/browse/TIMOB-26575) - Windows: Support async variants of Ti.Network.TCP #read and #write
+* [TIMOB-26575](https://jira-archive.titaniumsdk.com/TIMOB-26575) - Windows: Support async variants of Ti.Network.TCP #read and #write
 
     * Parity for `async` variants of `Ti.Network.TCP`
 
-* [TIMOB-26855](https://jira.appcelerator.org/browse/TIMOB-26855) - Windows: Add "baseURL" support to WebView.setHtml()
+* [TIMOB-26855](https://jira-archive.titaniumsdk.com/TIMOB-26855) - Windows: Add "baseURL" support to WebView.setHtml()
 
     * Re-implemented `baseURL` to support `WebView.setHtml`
 
-* [TIMOB-26961](https://jira.appcelerator.org/browse/TIMOB-26961) - Windows: Save HttpClient instance until callback is fired
+* [TIMOB-26961](https://jira-archive.titaniumsdk.com/TIMOB-26961) - Windows: Save HttpClient instance until callback is fired
 
     * The httpClient instance is saved until onerror or onloadcallback is called
 
@@ -480,19 +480,19 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ### Multiple platforms
 
-* [TIMOB-26574](https://jira.appcelerator.org/browse/TIMOB-26574) - TiAPI: Implement set/clearImmediate
+* [TIMOB-26574](https://jira-archive.titaniumsdk.com/TIMOB-26574) - TiAPI: Implement set/clearImmediate
 
     * Implemented `process.nextTick()` and the global `setImmediate`/`clearImmediate`
 
-* [TIMOB-26729](https://jira.appcelerator.org/browse/TIMOB-26729) - TiAPI: Ship baseline polyfills in built SDK
+* [TIMOB-26729](https://jira-archive.titaniumsdk.com/TIMOB-26729) - TiAPI: Ship baseline polyfills in built SDK
 
     * This update injects the core-js/regenerator polyfills into the bundle `common` JS SDK code we ship when we build
 
-* [TIMOB-27045](https://jira.appcelerator.org/browse/TIMOB-27045) - Pass along ENV variables to process.env on development builds
+* [TIMOB-27045](https://jira-archive.titaniumsdk.com/TIMOB-27045) - Pass along ENV variables to process.env on development builds
 
     * Write `env.json` file with `ENV` variables
 
-* [TIMOB-27182](https://jira.appcelerator.org/browse/TIMOB-27182) - Update Hyperloop to 4.0.3
+* [TIMOB-27182](https://jira-archive.titaniumsdk.com/TIMOB-27182) - Update Hyperloop to 4.0.3
 
     * Android: Debugging in Hyperloop enabled projects
 

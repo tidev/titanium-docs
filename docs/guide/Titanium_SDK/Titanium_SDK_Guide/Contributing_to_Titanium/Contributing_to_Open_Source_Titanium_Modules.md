@@ -19,7 +19,7 @@ Thus, you must first electronically sign the [CLA](http://developer.appcelerator
 
 ## Create a Ticket
 
-If you are having an issue with an open source module, please create a ticket for it under the [TIMODOPEN](https://jira.appcelerator.org/browse/TIMODOPEN) project. Even if you are going to fix the issue yourself and submit a pull request, it is important to have a ticket so we can track the issue. When creating a ticket, be sure to add sample code and instructions that can be used to reproduce the issue.
+If you are having an issue with an open source module, please please create a ticket in that module's repository issue tracker (https://github.com/tidev/PROJECT/issues). Even if you are going to fix the issue yourself and submit a pull request, it is important to have a ticket so we can track the issue. When creating a ticket, be sure to add sample code and instructions that can be used to reproduce the issue.
 
 ## Submitting Contributions
 

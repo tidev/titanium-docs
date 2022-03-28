@@ -27,7 +27,7 @@ When working with Hyperloop and native modules, there are situations where you w
 
 * User activity handling
 
-Titanium exposes events to the SDK for all of these, but for module developers (both for Objective-C modules and Hyperloop modules), there have been confusion on how to access them. For example, a module developer would like to use an own provider for handling background push notifications. As part of [TIMOB-24266](https://jira.appcelerator.org/browse/TIMOB-24266), we generically expose those events ("delegates" in the native world) to developers. In detail, we expose all delegates of the [UIApplicationDelegate](https://developer.apple.com/documentation/uikit/uiapplicationdelegate?language=objc).
+Titanium exposes events to the SDK for all of these, but for module developers (both for Objective-C modules and Hyperloop modules), there have been confusion on how to access them. For example, a module developer would like to use an own provider for handling background push notifications. As part of [TIMOB-24266](https://jira-archive.titaniumsdk.com/TIMOB-24266), we generically expose those events ("delegates" in the native world) to developers. In detail, we expose all delegates of the [UIApplicationDelegate](https://developer.apple.com/documentation/uikit/uiapplicationdelegate?language=objc).
 
 ## Examples
 

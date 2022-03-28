@@ -27,19 +27,6 @@ For more control over the results, the [advanced search interface](http://jira.a
 
 To help organize the information, every JIRA ticket is assigned to one of a small number of Appcelerator projects. The following table shows the project permissions that community members are granted by default.
 
-**JIRA Project Permissions** **for Community Members**
-
-| Project | Key | View | Create | Comment |
-| --- | --- | --- | --- | --- |
-| [Aptana Studio](http://jira.appcelerator.org/browse/APSTUD) | APSTUD | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) | ![error](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/error.png) | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) |
-| [Appcelerator - INBOX](http://jira.appcelerator.org/browse/AC) | AC | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) |
-| [Documentation](http://jira.appcelerator.org/browse/TIDOC) | TIDOC | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) | ![error](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/error.png) | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) |
-| [Titanium SDK & CLI](http://jira.appcelerator.org/browse/TIMOB) | TIMOB | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) | ![error](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/error.png) | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) |
-| [Alloy](http://jira.appcelerator.org/browse/ALOY) | ALOY | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) | ![error](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/error.png) | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) |
-| [Appcelerator Studio](http://jira.appcelerator.org/browse/TISTUD) | TISTUD | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) | ![error](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/error.png) | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png) |
-
-You can drill down via the [Browse Projects](https://jira.appcelerator.org/secure/BrowseProjects.jspa#all) page to obtain a summary of the recent achievements of each project.
-
 **Note**: for Axway employees, you will be given individual access (as needed) that will grant you the basic rights such as viewing, creating, and commenting on select JIRA projects. If you need to be granted rights to certain projects, please contact our DevOps team.
 
 #### Appcelerator - INBOX project
@@ -111,8 +98,7 @@ A good read on this is Eric Lippert's [How to debug small programs](http://ericl
 
 Assuming you have consulted the community via the Q&A, and you have your [test case](#CreatingaTestCase) to hand, you are ready to create a ticket:
 
-* open the JIRA [Titanium Community](http://jira.appcelerator.org/browse/TC) project page. See the [#Projects Overview](#ProjectsOverview) section for more information about the projects.
-    NOTE: Your JIRA login is different than your AMPLIFY Appcelerator Services login. If you do not have a JIRA login with us, please select the link under the login boxes to contact the JIRA administrators and request a login. Logins typically provided within one business day.
+* open the Titanium [GitHub Issues](https://github.com/tidev/titanium_mobile/issues) page. See the [#Projects Overview](#ProjectsOverview) section for more information about the projects.
 
 * select from the list of ticket types in the top right-hand corner, although usually only **Bug**, **Improvement** or **New Feature** will be applicable
 

@@ -88,6 +88,6 @@ Use the [Titanium Community Questions and Answers Forum](https://developer.axway
 
 ## Submitting a Bug Report
 
-Use [JIRA](http://jira.appcelerator.org/) to search for existing issues or submit a bug report. Select 'Alloy' as the component when submitting a Titanium Community JIRA ticket and include the Alloy version as part of the environment information. To get the Alloy version, run the `alloy --version`command in a console.
+Use [GitHub Issues](https://github.com/tidev/alloy/issues) to search for existing issues or submit a bug report. Select 'Alloy' as the component when submitting a Titanium Community JIRA ticket and include the Alloy version as part of the environment information. To get the Alloy version, run the `alloy --version`command in a console.
 
 Refer to [How to Report a Bug or Make a Feature Request](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/How_to_Report_a_Bug_or_Make_a_Feature_Request/) for more information.

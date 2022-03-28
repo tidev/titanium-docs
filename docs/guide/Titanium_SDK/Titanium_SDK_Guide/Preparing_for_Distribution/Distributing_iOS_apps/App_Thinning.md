@@ -51,4 +51,4 @@ Currently, bitcode is disabled for Titanium because all application frameworks r
 
 On-demand resources are resources, such as large data and sound files, that are tagged by you into groups to be downloaded when the application needs them. The resources are stored and managed by the Apple servers. When the application needs a resource group, it will download it from the Apple servers. If the user's device is low on disk space, the on-demand resources will be purged by iOS.
 
-Currently, the Titanium SDK does not provide a way to tag on-demand resources, but support for the feature is in development ([TIMOB-19069](https://jira.appcelerator.org/browse/TIMOB-19069)).
+Currently, the Titanium SDK does not provide a way to tag on-demand resources, but support for the feature is in development ([TIMOB-19069](https://jira-archive.titaniumsdk.com/TIMOB-19069)).
