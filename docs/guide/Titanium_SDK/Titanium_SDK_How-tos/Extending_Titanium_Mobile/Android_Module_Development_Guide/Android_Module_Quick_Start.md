@@ -64,11 +64,11 @@ Studio sets up a new folder called `test` that contains your module project.
 Next, build the module and package it. This process produces a ZIP file in the `android` `/dist` directory containing a binary library with unprocessed module assets, example code and documentation.
 
 ::: tip 💡 CLI Instructions
-From a terminal, go to the module's `android` directory and run `appc run -p android --build-only`:
+From a terminal, go to the module's `android` directory and run `ti build -p android --build-only`:
 
 ```bash
 cd test/android
-appc run -p android --build-only
+ti build -p android --build-only
 ```
 
 After the build completes, unzip the built module in the Titanium SDK home path:
@@ -176,7 +176,7 @@ test.exampleProp = "This is a test value";
 From a terminal that has the test app as its current working directory, run:
 
 ```bash
-appc run -p android
+ti build -p android
 ```
 :::
 

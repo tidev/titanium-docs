@@ -218,7 +218,7 @@ alloy compile --config platform=android,file=app/controller/index.js
 To build and run an application, execute the following command:
 
 ```bash
-appc run --platform <platform> [--project-dir <value>] [--sdk <value>] [ <platform_build_options> ]
+ti build --platform <platform> [--project-dir <value>] [--sdk <value>] [ <platform_build_options> ]
 ```
 
 Running this from the root directory of the project compiles the files to the correct location automatically.

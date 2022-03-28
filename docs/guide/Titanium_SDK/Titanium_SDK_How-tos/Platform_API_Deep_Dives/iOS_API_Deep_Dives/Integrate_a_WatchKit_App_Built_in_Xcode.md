@@ -13,7 +13,7 @@ A WatchKit app contains a specialized app extension that runs on either the Appl
 
 ### Prerequisites
 
-* Appcelerator CLI 5.0 or greater
+* Titanium CLI 5.0 or greater
 
 * Titanium SDK 5.0 or greater
 
@@ -197,10 +197,10 @@ For Studio, use the run command from the launch options toolbar. If you want to 
 
 ![StudioWatchSimulator](./StudioWatchSimulator.png)
 
-For the CLI, execute `appc run -p ios` with the additional build options.
+For the CLI, execute `ti build -p ios` with the additional build options.
 
 ```bash
-appc run -p ios --launch-watch-app
+ti build -p ios --launch-watch-app
 ```
 
 If you have more than one watch application extensions, specify the watch application to launch with the `--watch-app-name <APP_NAME>` option.
@@ -209,7 +209,7 @@ If you want to specify the watch simulator, use the `--watch-device-id <UDID>` o
 
 ## Package the Application
 
-To package the application with the extension, just package the project like you would any other Titanium application. For Studio, use the package command from the launch options toolbar, and for the CLI, execute `appc run` command with the package options.
+To package the application with the extension, just package the project like you would any other Titanium application. For Studio, use the package command from the launch options toolbar, and for the CLI, execute `ti build` command with the package options.
 
 ## Further Reading
 

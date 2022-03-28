@@ -19,7 +19,7 @@ ti create -t app --template angular-default
 ti create -t app --template angular-default
 ```
 
-With the `--ng` option, you instruct the Appc CLI to use the Angular template when creating the new project. You can use all other available options to customize the creation of your new project (see the [Command-Line Interface Reference](/guide/Appcelerator_CLI/Appcelerator_CLI_How-tos/Appcelerator_Command-Line_Interface_Reference/#LineInterfaceReference-New)).
+With the `--ng` option, you instruct the Appc CLI to use the Angular template when creating the new project. You can use all other available options to customize the creation of your new project (see the [Command-Line Interface Reference](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/Appcelerator_CLI_How-tos/Appcelerator_Command-Line_Interface_Reference/#LineInterfaceReference-New)).
 
 ## Running Angular projects
 
@@ -28,13 +28,13 @@ To build and run your Angular based project, use the following command as usual 
 **Build and run Angular project**
 
 ```bash
-appc run -p [android|ios]
+ti build -p [android|ios]
 ```
 
 There are no extra steps you need to do to build and run an Angular enabled project. Compilation of the TypeScript source and bundling is automatically done during Titaniums build steps.
 
 ::: tip 💡 Titanium Angular debug output
-You might notice a lot of additional debug information during the build and while the app is running. Since Titanium Angular is still under active development we make extensive use of logging. The number of messages should decline in later Preview versions. A lot of it is already limited to debug and trace log levels (which you may enable by appending `-l debug` or `-l trace` to the `appc run` command).
+You might notice a lot of additional debug information during the build and while the app is running. Since Titanium Angular is still under active development we make extensive use of logging. The number of messages should decline in later Preview versions. A lot of it is already limited to debug and trace log levels (which you may enable by appending `-l debug` or `-l trace` to the `ti build` command).
 :::
 
 ## Appendix and tips

@@ -121,7 +121,7 @@ Studio will prompt you to enter a location to copy the generated APPX file to.
 To package an APPX file for the Windows Phone Store, run:
 
 ```bash
-appc run -p windows -T dist-phonestore -O <OUTPUT_DIRECTORY>
+ti build -p windows -T dist-phonestore -O <OUTPUT_DIRECTORY>
 ```
 
 ## Package for Windows Store
@@ -155,7 +155,7 @@ To specify a certificate to use, select **Use Existing**, enter the location of 
 If you need to generate a certificate, run the following CLI command:
 
 ```bash
-C:\Users\JoeUser\Documents\Appcelerator_Studio_Workspace\WindowsApp> appc run -p windows -T dist-winstore -O dist
+C:\Users\JoeUser\Documents\Appcelerator_Studio_Workspace\WindowsApp> ti build -p windows -T dist-winstore -O dist
 Appcelerator Command-Line Interface, version 4.1.0
 Copyright (c) 2014-2015, Appcelerator, Inc.  All Rights Reserved.
 Where is the pfx file used to sign the app? (leave blank to generate):
@@ -177,7 +177,7 @@ After the certificate is generated, the CLI will automatically create and sign t
 To package an APPX file for the Windows Store after you have generated the certificate, run:
 
 ```bash
-appc run -p windows -T dist-winstore -R <PFX_CERTIFICATE_FILE> -P <PFX_PASSWORD> -O <OUTPUT_DIRECTORY>
+ti build -p windows -T dist-winstore -R <PFX_CERTIFICATE_FILE> -P <PFX_PASSWORD> -O <OUTPUT_DIRECTORY>
 ```
 
 ## Submit an Application

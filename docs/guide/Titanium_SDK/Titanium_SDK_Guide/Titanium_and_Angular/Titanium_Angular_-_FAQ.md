@@ -68,9 +68,9 @@ VS Code will then create and open the `task.json` file which you can modify to d
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Appc run - iOS",
+            "label": "ti build - iOS",
             "type": "shell",
-            "command": "appc run -p ios",
+            "command": "ti build -p ios",
             "group": {
                 "kind": "build",
                 "isDefault": true

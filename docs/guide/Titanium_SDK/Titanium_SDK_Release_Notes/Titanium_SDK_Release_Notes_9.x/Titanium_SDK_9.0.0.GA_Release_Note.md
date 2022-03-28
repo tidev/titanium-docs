@@ -15,7 +15,7 @@ As of this release, Titanium SDK 8.x will not be supported one calendar year (20
 With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. Node 10.13.0 will be the new minimum supported version with SDK 9.0.0.
 :::
 ::: danger ❗️ Warning
-Deprecation Notice: The next major release of the Titanium CLI, version 6.0.0, will no longer support plugins and hooks for commands other than "appc ti clean", "ti clean", "appc run", and "ti build". Titanium CLI v6 will have a new plugin system with a new hook system and it will be incompatible with Titanium CLI v5 plugins and hooks. Please refer to [TIMOB-27233](https://jira.appcelerator.org/browse/TIMOB-27233) and [TIMOB-27255](https://jira.appcelerator.org/browse/TIMOB-27255) for more information.
+Deprecation Notice: The next major release of the Titanium CLI, version 6.0.0, will no longer support plugins and hooks for commands other than "appc ti clean", "ti clean", "ti build", and "ti build". Titanium CLI v6 will have a new plugin system with a new hook system and it will be incompatible with Titanium CLI v5 plugins and hooks. Please refer to [TIMOB-27233](https://jira.appcelerator.org/browse/TIMOB-27233) and [TIMOB-27255](https://jira.appcelerator.org/browse/TIMOB-27255) for more information.
 :::
 ::: danger ❗️ Warning
 With the release of Titanium SDK 9.0.0, Windows platform will no longer be supported and has been removed from distribution in the SDK. Customers on Pro and Enterprise plans may continue to request critical fixes on SDK 8.x releases until August 18, 2020.
@@ -395,7 +395,7 @@ With the release of Titanium SDK 9.0.0, Windows platform will no longer be suppo
 
 * \[ [TISTUD-9204](https://jira.appcelerator.org/browse/TISTUD-9204) \] - Android: Module packaging disabled in Studio for module created with SDK supporting gradle
 
-    * For now, Android modules can be packaged from the command line using `appc run -p android` from the `android` folder of your module
+    * For now, Android modules can be packaged from the command line using `ti build -p android` from the `android` folder of your module
 
 ## SDK modules versions
 

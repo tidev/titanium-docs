@@ -78,7 +78,7 @@ The repository for this tutorial can be found open-source on **[Github](https://
     </plist>
     ```
 
-14. You made it!! Use `appc run -p ios -T device` or Appcelerator Studio to run your app on the device. Remember that iOS currently does not support Siri on the Simulator.
+14. You made it!! Use `ti build -p ios -T device` or Appcelerator Studio to run your app on the device. Remember that iOS currently does not support Siri on the Simulator.
 
 15. You can test the changes by talking to Siri:
 

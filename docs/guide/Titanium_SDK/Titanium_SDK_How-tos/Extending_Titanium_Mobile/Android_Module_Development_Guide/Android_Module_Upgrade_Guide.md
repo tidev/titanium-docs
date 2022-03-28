@@ -11,7 +11,7 @@ With major releases of the Titanium SDK, you may need to update older modules. T
 
 ## Migration to SDK 9.0.0
 
-When using Titanium SDK 9.0.0 and later, you can simply switch to your Android module project (e.g. `cd ti.map/android`) and use `appc run -p android --build-only`. The command will prompt you to confirm the migration and update your manifest file for you. The details of the migration are described below.
+When using Titanium SDK 9.0.0 and later, you can simply switch to your Android module project (e.g. `cd ti.map/android`) and use `ti build -p android --build-only`. The command will prompt you to confirm the migration and update your manifest file for you. The details of the migration are described below.
 
 The following components of the Android manifest file need to be updated:
 

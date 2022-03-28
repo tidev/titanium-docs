@@ -1036,7 +1036,7 @@ Ti.App.setProximityDetection(true);
 </windows>
 ```
 
-And you build the app with this command: `appc run -p windows -S 10.0 --build-only`
+And you build the app with this command: `ti build -p windows -S 10.0 --build-only`
 
 The result should be this:
 

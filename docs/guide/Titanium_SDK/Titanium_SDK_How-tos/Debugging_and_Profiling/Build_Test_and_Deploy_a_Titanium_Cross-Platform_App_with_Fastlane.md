@@ -153,14 +153,14 @@ platform :ios do
     desc "Build App for Simulator Tests"
     lane :buildapp do
       ti_build_app(
-    appc_cli: "appc run build --platform ios --target dist-adhoc --distribution-name 'implicitli, LLC. (G52GS5PAND)' --pp-uuid c6ea530d-70ea-5661-b013-beb4d25b2a7b --output-dir /dist"
+    appc_cli: "ti build build --platform ios --target dist-adhoc --distribution-name 'implicitli, LLC. (G52GS5PAND)' --pp-uuid c6ea530d-70ea-5661-b013-beb4d25b2a7b --output-dir /dist"
   )
     end
 
     desc "Runs the tests of the iOS App"
     lane :test do
       ti_build_app(
-          appc_cli: "appc run -f -T simulator -p ipad -i 11.2 --device-id 6945AC80-7F29-4A5A-8256-49467E9D1A7D --build-only"
+          appc_cli: "ti build -f -T simulator -p ipad -i 11.2 --device-id 6945AC80-7F29-4A5A-8256-49467E9D1A7D --build-only"
         )
       mocha_run_tests(
         mocha_js_file_name: '/Users/{USERDIR}/Appium_Tests/dash_test.js'
@@ -180,7 +180,7 @@ Fastlane runs on what they call ‘lanes’. These lanes allow you to break out 
 
 In your Titanium project, run this from terminal: `fastlane add_plugin ti_build_app`
 
-This plugin leverages the full Appcelerator CLI.
+This plugin leverages the full Titanium CLI.
 
 To add simple runs to your mocha test JavaScript file: `fastlane add_plugin mocha_run_tests`
 
@@ -196,7 +196,7 @@ The second lane, `test` has 2 actions:
 
 2. test the app.
 
-In this example, it uses different Appcelerator CLI commands so that the app is built to a specific simulator and `--build-only` prevents it from launching (mocha will launch the simulator and attach to the correct session on its own). Then, the next step executes the mocha test file.
+In this example, it uses different Titanium CLI commands so that the app is built to a specific simulator and `--build-only` prevents it from launching (mocha will launch the simulator and attach to the correct session on its own). Then, the next step executes the mocha test file.
 
 ::: warning ⚠️ Warning
 The simulator defined in Fastlane MUST match the simulator defined in my mocha test file.
@@ -206,7 +206,7 @@ The simulator defined in Fastlane MUST match the simulator defined in my mocha t
 
 To run the `test` lane, all one has to do is execute this command: `bundle exec fastlane test`
 
-You will see Appcelerator CLI commands flash across the screen as it builds the app to simulator, then mocha executes, simulator opens, and webdriver io performs all your UI interactions.
+You will see Titanium CLI commands flash across the screen as it builds the app to simulator, then mocha executes, simulator opens, and webdriver io performs all your UI interactions.
 
 Example fastlane output:
 
