@@ -55,7 +55,7 @@ All pull requests that get integrated into the Titanium SDK have an associated J
 
 1. Find an existing Titanium Mobile (TIMOB) ticket with which to associate your ticket. You can search the TIMOB project for an existing feature request or bug with the following link: [Titanium Mobile (TIMOB) Jira project](http://jira.appcelerator.org/secure/IssueNavigator.jspa)
 
-2. Find or create a new ticket in the Titanium Community (TC) Jira project. Community members have the ability to create new tickets here, unlike the TIMOB project. If you want to add a feature or fix a bug that has not yet been logged in either Jira project, you can do so at the following link: [Titanium Community (TC) Jira project](http://jira.appcelerator.org/browse/TC)
+2. Find or create a new ticket in the Titanium Community (TC) Jira project. Community members have the ability to create new tickets here, unlike the TIMOB project. If you want to add a feature or fix a bug that has not yet been logged in either Jira project, you can do so at the following link: [Titanium Community (TC) Jira project](https://jira-archive.titaniumsdk.com/TC)
 
 3. File a new GitHub issue on the main repository ([appcelerator/titanium\_mobile](https://github.com/tidev/titanium_mobile)) by filling out the template with the feature, bugfix or improvement you want to contribute. Our team links GitHub issues with Jira, so it can be tracked by the internal engineering team
 
@@ -128,7 +128,7 @@ This is where you will make your changes to the Titanium SDK. There's a few thin
 
     * Submit your pull request for one platform, then submit a "parity" Jira ticket for the unsupported platform.
 
-For example, let's assume you submitted a new feature on Android that has a corresponding feature on iOS, but you did not implement it on iOS. What you would do it submit the Android-only pull request, then create a [Titanium Community](http://jira.appcelerator.org/browse/TC) Jira ticket indicating that your pull request is not implemented in iOS. That way our platform engineers, as well as other community members, will have an opportunity to resolve the parity issue.
+For example, let's assume you submitted a new feature on Android that has a corresponding feature on iOS, but you did not implement it on iOS. What you would do it submit the Android-only pull request, then create a [Titanium Community](https://jira-archive.titaniumsdk.com/TC) Jira ticket indicating that your pull request is not implemented in iOS. That way our platform engineers, as well as other community members, will have an opportunity to resolve the parity issue.
 
 It takes the burden of implementing on multiple platforms out of your hands, but it is in turn likely that your pull request will take longer to accept as the parity issues are resolved.
 
