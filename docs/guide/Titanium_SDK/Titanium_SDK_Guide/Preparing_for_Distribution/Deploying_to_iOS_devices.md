@@ -217,7 +217,7 @@ ti build -p ios -T device  -C <DEVICE_UDID> [-V "<DEVELOPER_CERTIFICATE_NAME>"  
 If you omit any of the optional parameters, the CLI will prompt you for the information and provide you with available options. You can also retrieve the information from Xcode's Devices and Simulators window or using the following CLI command:
 
 ```bash
-ti ti info -t ios
+ti info -t ios
 ```
 
 ### Installing apps to remote devices

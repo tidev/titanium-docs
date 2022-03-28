@@ -7,7 +7,7 @@ weight: '30'
 
 Titainum provides a command-line interface to check and configure your environment setup, create and build applications, and much more. The Titanium CLI is distributed as apart of the Titanium CLI. Please refer to [Titanium CLI Getting Started](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/Appcelerator_CLI_Getting_Started/) for details on installing the Titanium CLI.
 
-Run `ti ti --help` to see all available target options or see the [Titanium Command-Line Interface Reference](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/).
+Run `ti --help` to see all available target options or see the [Titanium Command-Line Interface Reference](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/).
 
 ## Development environment
 
@@ -15,7 +15,7 @@ Before using the Titanium CLI to create and build Titanium projects, you need to
 
 ### Check your development environment
 
-To check if you current development environment is setup correctly to build projects, run the `ti ti setup check` command. This command will report what tools are configured to work with the CLI.
+To check if you current development environment is setup correctly to build projects, run the `ti setup check` command. This command will report what tools are configured to work with the CLI.
 
 **Output Examples:**
 
@@ -38,7 +38,7 @@ Android Environment
 
 ### Check the development environment against the Titanium SDK
 
-The `ti ti info` command retrieves detailed information about your platform environment, such as Android SDKs installed, and iOS certificates and provisioning profiles. Use this command to check if your currently selected Titanium SDK supports your development environment.
+The `ti info` command retrieves detailed information about your platform environment, such as Android SDKs installed, and iOS certificates and provisioning profiles. Use this command to check if your currently selected Titanium SDK supports your development environment.
 
 **Output Examples:**
 
@@ -64,15 +64,15 @@ iOS Issues
 
 ### Configuring your development environment
 
-By default, the Titanium CLI uses your environment variables to search for paths to executables and other development tools. If you installed these tools in custom locations or the CLI cannot find them, you will need to use the `ti ti config` command to tell the CLI where to find these tools. The example below sets some common Android configuration options. For a detailed list of configurable options, see [Titanium CLI Options](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/Titanium_CLI_Options/).
+By default, the Titanium CLI uses your environment variables to search for paths to executables and other development tools. If you installed these tools in custom locations or the CLI cannot find them, you will need to use the `ti config` command to tell the CLI where to find these tools. The example below sets some common Android configuration options. For a detailed list of configurable options, see [Titanium CLI Options](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/Titanium_CLI_Options/).
 
 ```bash
 ## Set the location of the Android SDK
-ti ti config android.sdkPath ~/opt/android_sdk
+ti config android.sdkPath ~/opt/android_sdk
 ## Set the location of the Android NDK
-ti ti config android.ndkPath ~/opt/android_ndk
+ti config android.ndkPath ~/opt/android_ndk
 ## Enable support for Genymotion virtual device
-ti ti config genymotion.enabled true
+ti config genymotion.enabled true
 ```
 
 ## Building applications
@@ -106,10 +106,10 @@ The CLI checks several settings to see which SDK version to use to build your ap
 2. `--sdk` command-line option with the `titanium build` command.
 
 3. `app.sdk` setting specified with the `titanium config` command.
-    To check the version, run `titanium config` and to change the version, run `ti ti config app.sdk <sdk_version>`.
+    To check the version, run `titanium config` and to change the version, run `ti config app.sdk <sdk_version>`.
 
 4. SDK select version.
-    To check or change this version, run `ti ti sdk select`.
+    To check or change this version, run `ti sdk select`.
 :::
 
 #### Android emulator
@@ -128,7 +128,7 @@ To launch a specific Android or Genymotion emulator, add the `-C <EMULATOR_NAME>
 ti build -p android -C "Google Nexus 7 - 4.4.2 - API 19 - 800x1280"
 ```
 
-To retrieve a list of Android or Genymotion emulators, run the `ti ti info -p android` command.
+To retrieve a list of Android or Genymotion emulators, run the `ti info -p android` command.
 
 #### Android device
 
@@ -167,7 +167,7 @@ ti build -p ios -T device -C itunes -V "Loretta Martin (GE7BAC5)" -P "11111111-2
 ti build -p ios -T device -C "iOS Device" -V "Loretta Martin (GE7BAC5)" -P "11111111-2222-3333-4444-555555555555"
 ```
 
-If you omit the `-V` and `-P` options, the CLI will prompt you with options. You can also retrieve the information from Xcode's Devices window (or Organizer window for Xcode 5.x and older) or with the `ti ti info -p ios` command.
+If you omit the `-V` and `-P` options, the CLI will prompt you with options. You can also retrieve the information from Xcode's Devices window (or Organizer window for Xcode 5.x and older) or with the `ti info -p ios` command.
 
 #### Windows Mobile Emulator
 
@@ -266,8 +266,8 @@ ti build -p windows -T dist-phonestore
 If you run into issues building your application, you may need to clean your build folder. Run the `ti clean` command or to clean for a specific platform, add the `-p <PLATFORM>` option.
 
 ```bash
-ti ti clean [-p <PLATFORM>]
+ti clean [-p <PLATFORM>]
 ## Examples
-ti ti clean
-ti ti clean -p ios
+ti clean
+ti clean -p ios
 ```

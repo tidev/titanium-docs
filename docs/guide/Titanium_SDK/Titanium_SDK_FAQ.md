@@ -80,7 +80,7 @@ An example of updated `tiapp.xml` file might look something like this:
 
 To verify your buildtools version, go to your Android SDK location: `/users/<user>/Library/Android/sdk/build-tools/ <version_number>`
 
-You can change the build tools version using this command: `ti ti config android.buildTools.selectedVersion ##.##.##`
+You can change the build tools version using this command: `ti config android.buildTools.selectedVersion ##.##.##`
 
 ## How do you check if a module supports 64bit or not?
 

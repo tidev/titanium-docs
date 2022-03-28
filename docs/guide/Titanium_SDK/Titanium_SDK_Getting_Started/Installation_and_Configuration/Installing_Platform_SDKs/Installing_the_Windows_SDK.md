@@ -97,7 +97,7 @@ The minimum requirements (builds tools and SDKs, not including Windows Mobile Em
 
 ## Troubleshooting
 
-* Appcelerator Studio does not show any emulators or connected devices/`ti ti info -t windows` does not display any information
+* Appcelerator Studio does not show any emulators or connected devices/`ti info -t windows` does not display any information
 
     * The tooling within the Visual Studio installation used by Titanium to detect information can sometimes get corrupted, this may happen if Appcelerator Studio was left open while Visual Studio was updating or installing. To fix this, first try restarting your development machine. If that does not work you can run a repair of Visual Studio by opening the installer and choosing the **Repair** option.
 

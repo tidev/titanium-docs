@@ -33,11 +33,11 @@ To install a Titanium SDK using the `appc` cli, follow these steps:
 
 * Be sure to log in to the CLI if you are not already logged in (`ti login`)
 
-* Run `ti ti sdk install -b master`
+* Run `ti sdk install -b master`
 
 * The command above will install the latest CI build from `master` branch. You may substitute branch names seen at [http://builds.appcelerator.com](http://builds.appcelerator.com) to grab bugfix/maintenance CI builds. These are typically of the naming scheme `\d+_\d+_X,`i.e.`7_0_X`
 
-* You can view additional command line options by executing:`ti ti sdk install -h`
+* You can view additional command line options by executing:`ti sdk install -h`
 
 ### Studio install
 

@@ -21,7 +21,7 @@ In order to use Titanium and Angular together you will need a recent nightly bui
 
 ```bash
 // appc-cli
-ti ti sdk install -b 9_2_X -d
+ti sdk install -b 9_2_X -d
 
 // ti-cli
 ti sdk install -b 9_2_X -d

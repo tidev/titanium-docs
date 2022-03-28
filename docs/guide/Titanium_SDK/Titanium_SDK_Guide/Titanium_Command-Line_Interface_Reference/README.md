@@ -199,7 +199,7 @@ Removes the build directories for an application or module project.
 titanium clean [ --platform <platform> ] [--project-dir <value>] [--sdk <value>] [--log-level <level>]
 
 # Titanium CLI
-ti ti clean [ --platform <platform> ] [--project-dir <value>] [--sdk <value>] [--log-level <level>]
+ti clean [ --platform <platform> ] [--project-dir <value>] [--sdk <value>] [--log-level <level>]
 ```
 
 ::: warning ⚠️ Warning
@@ -226,7 +226,7 @@ Gets and sets configuration options. If no key is specified, then all key/values
 titanium config [--remove] [--output <value>] [<key>] [<value>]
 
 # Titanium CLI
-ti ti config [--remove] [--output <value>] [<key>] [<value>]
+ti config [--remove] [--output <value>] [<key>] [<value>]
 ```
 
 #### Config Options
@@ -276,10 +276,10 @@ titanium --help
 titanium <command> --help
 
 # Titanium CLI
-ti ti help
-ti ti help <command>
-ti ti --help
-ti ti <command> --help
+ti help
+ti help <command>
+ti --help
+ti <command> --help
 ```
 
 ### Info
@@ -291,7 +291,7 @@ Displays development environment information.
 titanium info [--output <value>] [--types <value>]
 
 # Titanium CLI
-ti ti info [--output <value>] [--types <value>]
+ti info [--output <value>] [--types <value>]
 ```
 
 #### Info options
@@ -310,7 +310,7 @@ Manages installed Titanium modules.
 titanium module [<subcommand>]
 
 # Titanium CLI
-ti ti module [<subcommand>]
+ti module [<subcommand>]
 ```
 
 #### Module list
@@ -323,8 +323,8 @@ titanium module [--output <value>] [--project-dir <value>]
 titanium module list [--output <value>] [--project-dir <value>]
 
 # Titanium CLI
-ti ti module [--output <value>] [--project-dir <value>]
-ti ti module list [--output <value>] [--project-dir <value>]
+ti module [--output <value>] [--project-dir <value>]
+ti module list [--output <value>] [--project-dir <value>]
 ```
 
 ##### Module list options
@@ -343,7 +343,7 @@ Manages installed Titanium plugins.
 titanium plugin [<subcommand>]
 
 # Titanium CLI
-ti ti plugin [<subcommand>]
+ti plugin [<subcommand>]
 ```
 
 #### Plugin list
@@ -356,8 +356,8 @@ titanium plugin [--output <value>] [--project-dir <value>]
 titanium plugin list [--output <value>] [--project-dir <value>]
 
 # Titanium CLI
-ti ti plugin [--output <value>] [--project-dir <value>]
-ti ti plugin list [--output <value>] [--project-dir <value>]
+ti plugin [--output <value>] [--project-dir <value>]
+ti plugin list [--output <value>] [--project-dir <value>]
 ```
 
 ##### Plugin list options
@@ -378,7 +378,7 @@ It also allows you to set the deployment-targets using a comma-separated list of
 titanium project [--output <value>] [--project-dir <value>] [--template <value>] [--sdk <value>] [--log-level <level>] [<key>] [<value>]
 
 # Titanium CLI
-ti ti project [--output <value>] [--project-dir <value>] [--template <value>] [--sdk <value>] [--log-level <level>] [<key>] [<value>]
+ti project [--output <value>] [--project-dir <value>] [--template <value>] [--sdk <value>] [--log-level <level>] [<key>] [<value>]
 ```
 
 #### Project options
@@ -397,7 +397,7 @@ Manages installed Titanium SDKs.
 titanium sdk [<subcommand>]
 
 # Titanium CLI
-ti ti sdk [<subcommand>]
+ti sdk [<subcommand>]
 ```
 
 #### SDK install
@@ -411,7 +411,7 @@ titanium sdk install [<version>] [--default] [--force] [--branch <branch name>]
 
 # Titanium CLI
 # Can install any GA Titanium SDK release or UNSTABLE continuous integration build
-ti ti sdk install [<version>] [--default] [--force] [--branch <branch name>]
+ti sdk install [<version>] [--default] [--force] [--branch <branch name>]
 ```
 
 `<version>` may be either a specific version number, such as `3.1.3.GA` or a URL to a continuous integration build, such as `http://builds.appcelerator.com.s3.amazonaws.com/mobile/3_1_X/mobilesdk-3.1.3.v20130904134612-osx.zip`.
@@ -423,7 +423,7 @@ To override this behavior, set the `sdk.defaultInstallLocation` key to a path wh
 titanium config sdk.defaultInstallLocation /path/to/intall/sdks
 
 # Titanium CLI
-ti ti config sdk.defaultInstallLocation /path/to/intall/sdks
+ti config sdk.defaultInstallLocation /path/to/intall/sdks
 ```
 
 ##### SDK install options
@@ -445,8 +445,8 @@ titanium sdk [--branches] [--releases] [--output <value>]
 titanium sdk list [--branches] [--releases] [--output <value>]
 
 # Titanium CLI
-ti ti sdk [--branches] [--releases] [--output <value>]
-ti ti sdk list [--branches] [--releases] [--output <value>]
+ti sdk [--branches] [--releases] [--output <value>]
+ti sdk list [--branches] [--releases] [--output <value>]
 ```
 
 ##### SDK list options
@@ -466,7 +466,7 @@ Used to select which installed Titanium SDK is the active SDK. This is not the S
 titanium sdk select [<version>]
 
 # Titanium CLI
-ti ti sdk select [<version>]
+ti sdk select [<version>]
 ```
 
 #### SDK uninstall
@@ -476,7 +476,7 @@ ti ti sdk select [<version>]
 titanium sdk uninstall [<version>] [--force]
 
 # Titanium CLI
-ti ti sdk uninstall [<version>] [--force]
+ti sdk uninstall [<version>] [--force]
 ```
 
 Uninstalls a specific Titanium SDK version.
@@ -496,7 +496,7 @@ Finds the latest version of the Titanium SDK.
 titanium sdk update [--default] [--force] [--install] [--branch <branch name>]
 
 # Titanium CLI
-ti ti sdk update [--default] [--force] [--install] [--branch <branch name>]
+ti sdk update [--default] [--force] [--install] [--branch <branch name>]
 ```
 
 ##### SDK update options
@@ -518,8 +518,8 @@ titanium setup
 titanium setup <section>
 
 # Titanium CLI
-ti ti setup
-ti ti setup <section>
+ti setup
+ti setup <section>
 ```
 
 The "section" can be one of: **quick**, **check**, **user**, **app**, **network**, **cli**, **sdk**, **ios**, **android**, and **paths**.

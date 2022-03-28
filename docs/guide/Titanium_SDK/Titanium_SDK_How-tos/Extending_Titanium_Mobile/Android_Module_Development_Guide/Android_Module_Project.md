@@ -45,7 +45,7 @@ The CLI creates a module project that contains multiple platforms. Each platform
 This was deprecated since 5.0.0.
 :::
 
-The `build.properties` file contains build variables used by the Ant CLI. Using the build.properties is deprecated in favor of the unified build-command `ti ti build -p android --build-only.`
+The `build.properties` file contains build variables used by the Ant CLI. Using the build.properties is deprecated in favor of the unified build-command `ti build -p android --build-only.`
 
 | Variable | Description | Example |
 | --- | --- | --- |

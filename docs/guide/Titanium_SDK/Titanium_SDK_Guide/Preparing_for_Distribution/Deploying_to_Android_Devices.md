@@ -70,7 +70,7 @@ ti build -p android -T device --device-id "<DEVICE_ID>"
 You may omit the `--device-id` parameter if you only have one device connected. To retrieve a list of connected devices, run one of the following commands:
 
 ```bash
-ti ti info -t android
+ti info -t android
 ## or
 adb devices -l
 ```
