@@ -17,7 +17,7 @@ At a high-level, Titanium is the combination of:
 
 * [Titanium SDK](#titanium-sdk)
 
-* [Titanium CLI](#appcelerator-cli)
+* [Titanium CLI](#titanium-cli)
 
 * [Hyperloop](#hyperloop)
 
