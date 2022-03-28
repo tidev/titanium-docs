@@ -35,7 +35,7 @@ This initial beta mostly focuses on enabling the target and necessary build chan
 
 * Appcelerator Studio and our editor plugins currently do not expose macOS as a build target, currently the only way to build is to using the CLI via `ti build -p ios -T macos`
 
-We will iterate on the macOS support in the coming releases and when we feel that it's stable enough we will remove it from beta. But we encourage you to give it a spin, and report any issues you might find to us on our [JIRA](http://jira.appcelerator.org/).
+We will iterate on the macOS support in the coming releases and when we feel that it's stable enough we will remove it from beta. But we encourage you to give it a spin, and report any issues you might find to us on our [GitHub Issues](https://github.com/tidev/titanium_mobile/issues).
 
 ### Rebuilding iOS modules
 
