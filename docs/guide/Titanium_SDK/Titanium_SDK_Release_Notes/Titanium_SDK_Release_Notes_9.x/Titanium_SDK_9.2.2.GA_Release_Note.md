@@ -19,7 +19,7 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 * Hans Knöchel
 
-    * [TIMOB-28181](https://jira-archive.titaniumsdk.com/TIMOB-28181) - fix 'dateTimeColor' for iOS 14+ ([88005a3](https://github.com/appcelerator/titanium_mobile/commit/88005a3ae86b2f1904b528eaa3e16eb7e4fdaa3c))
+    * [TIMOB-28181](https://jira-archive.titaniumsdk.com/TIMOB-28181) - fix 'dateTimeColor' for iOS 14+ ([88005a3](https://github.com/tidev/titanium_mobile/commit/88005a3ae86b2f1904b528eaa3e16eb7e4fdaa3c))
 
     * [TIMOB-28203](https://jira-archive.titaniumsdk.com/TIMOB-28203) \- Remove deprecated frameworks (AddressBook, AddressBookUI, OpenGLES)
 
@@ -27,33 +27,33 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ### Multiple platforms
 
-* [TIMOB-28210](https://jira-archive.titaniumsdk.com/TIMOB-28210) - silence aca load failure ([f9e00fd](https://github.com/appcelerator/titanium_mobile/commit/f9e00fdfb58779adafaf2a3042029010ab9f39ff))
+* [TIMOB-28210](https://jira-archive.titaniumsdk.com/TIMOB-28210) - silence aca load failure ([f9e00fd](https://github.com/tidev/titanium_mobile/commit/f9e00fdfb58779adafaf2a3042029010ab9f39ff))
 
-* [TIMOB-28200](https://jira-archive.titaniumsdk.com/TIMOB-28200) - declare missing nodejs namespace for zone.js ([35f59c4](https://github.com/appcelerator/titanium_mobile/commit/35f59c433108c201a4a633d34d25af45a1fd4248))
+* [TIMOB-28200](https://jira-archive.titaniumsdk.com/TIMOB-28200) - declare missing nodejs namespace for zone.js ([35f59c4](https://github.com/tidev/titanium_mobile/commit/35f59c433108c201a4a633d34d25af45a1fd4248))
 
-* [TIMOB-28079](https://jira-archive.titaniumsdk.com/TIMOB-28079) - always load aca module first on startup ([f911623](https://github.com/appcelerator/titanium_mobile/commit/f911623670c39028c039891c1217be1a675319a7))
+* [TIMOB-28079](https://jira-archive.titaniumsdk.com/TIMOB-28079) - always load aca module first on startup ([f911623](https://github.com/tidev/titanium_mobile/commit/f911623670c39028c039891c1217be1a675319a7))
 
-* [TIMOB-28185](https://jira-archive.titaniumsdk.com/TIMOB-28185) - generate missing macOS asset catalog icons ([b242902](https://github.com/appcelerator/titanium_mobile/commit/b242902a9009f77a1ec227bd5c609a945ef6cc00))
+* [TIMOB-28185](https://jira-archive.titaniumsdk.com/TIMOB-28185) - generate missing macOS asset catalog icons ([b242902](https://github.com/tidev/titanium_mobile/commit/b242902a9009f77a1ec227bd5c609a945ef6cc00))
 
-* [TIMOB-28200](https://jira-archive.titaniumsdk.com/TIMOB-28200) - update dependencies of angular template ([701bcec](https://github.com/appcelerator/titanium_mobile/commit/701bcec93f73a1de843ae4518659e2b30cdef933))
+* [TIMOB-28200](https://jira-archive.titaniumsdk.com/TIMOB-28200) - update dependencies of angular template ([701bcec](https://github.com/tidev/titanium_mobile/commit/701bcec93f73a1de843ae4518659e2b30cdef933))
 
 * [TIMOB-28174](https://jira-archive.titaniumsdk.com/TIMOB-28174) \- Analytics: Exception can occur when constructing payload
 
 ### Android platform
 
-* [TIMOB-28193](https://jira-archive.titaniumsdk.com/TIMOB-28193) - openPhotoGallery() crash selecting multiple files ([29b4116](https://github.com/appcelerator/titanium_mobile/commit/29b41167184ce7a7f9b6bfc102e203a9d0cf000b))
+* [TIMOB-28193](https://jira-archive.titaniumsdk.com/TIMOB-28193) - openPhotoGallery() crash selecting multiple files ([29b4116](https://github.com/tidev/titanium_mobile/commit/29b41167184ce7a7f9b6bfc102e203a9d0cf000b))
 
 ### iOS platform
 
-* [TIMOB-28202](https://jira-archive.titaniumsdk.com/TIMOB-28202) - fix MediaModule compile error ([b8d2cd1](https://github.com/appcelerator/titanium_mobile/commit/b8d2cd1d414abb27f0a29c913e476f7d2f028029))
+* [TIMOB-28202](https://jira-archive.titaniumsdk.com/TIMOB-28202) - fix MediaModule compile error ([b8d2cd1](https://github.com/tidev/titanium_mobile/commit/b8d2cd1d414abb27f0a29c913e476f7d2f028029))
 
-* [TIMOB-28207](https://jira-archive.titaniumsdk.com/TIMOB-28207) - handle spaces in xcode path ([f8c8172](https://github.com/appcelerator/titanium_mobile/commit/f8c8172f372948aed3397bc1d7ca31b5cf0b49e0))
+* [TIMOB-28207](https://jira-archive.titaniumsdk.com/TIMOB-28207) - handle spaces in xcode path ([f8c8172](https://github.com/tidev/titanium_mobile/commit/f8c8172f372948aed3397bc1d7ca31b5cf0b49e0))
 
-* make Ti.UI.PickerColumn.rowCount NSNumber\*, not NSInteger ([026fe12](https://github.com/appcelerator/titanium_mobile/commit/026fe120fb6829059fadbb6447964cfb81af76f1))
+* make Ti.UI.PickerColumn.rowCount NSNumber\*, not NSInteger ([026fe12](https://github.com/tidev/titanium_mobile/commit/026fe120fb6829059fadbb6447964cfb81af76f1))
 
-* make Ti.UI.TableViewSection.rowCount NSNumber\*, not NSInteger ([c25a9dd](https://github.com/appcelerator/titanium_mobile/commit/c25a9dd951dbf277dfeb73889e1300edbcc7cd05))
+* make Ti.UI.TableViewSection.rowCount NSNumber\*, not NSInteger ([c25a9dd](https://github.com/tidev/titanium_mobile/commit/c25a9dd951dbf277dfeb73889e1300edbcc7cd05))
 
-* [TIMOB-13903](https://jira-archive.titaniumsdk.com/TIMOB-13903) - tableview "sectionCount" property crash ([3b0d8a4](https://github.com/appcelerator/titanium_mobile/commit/3b0d8a4f27bbfe01cfc042e14e83781f30f92c35))
+* [TIMOB-13903](https://jira-archive.titaniumsdk.com/TIMOB-13903) - tableview "sectionCount" property crash ([3b0d8a4](https://github.com/tidev/titanium_mobile/commit/3b0d8a4f27bbfe01cfc042e14e83781f30f92c35))
 
 ## SDK Module Versions
 

@@ -19,35 +19,35 @@ With the release of Titanium SDK 9.0.0, we no longer support Node.js 8.X. Node 1
 
 * Michael Gangolf
 
-    * [TIMOB-28333](https://jira-archive.titaniumsdk.com/TIMOB-28333) - rgba(int,int,int) parity with iOS ([925f6f2](https://github.com/appcelerator/titanium_mobile/commit/925f6f26ab2eabbff43eaffef8622f4e305d6360))
+    * [TIMOB-28333](https://jira-archive.titaniumsdk.com/TIMOB-28333) - rgba(int,int,int) parity with iOS ([925f6f2](https://github.com/tidev/titanium_mobile/commit/925f6f26ab2eabbff43eaffef8622f4e305d6360))
 
 ## Bug Fixes
 
 ### Android platform
 
-* [TIMOB-28337](https://jira-archive.titaniumsdk.com/TIMOB-28337) - ListView properties missing in "longpress" event in Alloy as of 9.3.0 ([0935358](https://github.com/appcelerator/titanium_mobile/commit/093535877cadf38e48efa840c7902bfa7a12f902))
+* [TIMOB-28337](https://jira-archive.titaniumsdk.com/TIMOB-28337) - ListView properties missing in "longpress" event in Alloy as of 9.3.0 ([0935358](https://github.com/tidev/titanium_mobile/commit/093535877cadf38e48efa840c7902bfa7a12f902))
 
-* [TIMOB-28330](https://jira-archive.titaniumsdk.com/TIMOB-28330) - Application crashes when scrolling a listview with zero items in the first section ([a92bea2](https://github.com/appcelerator/titanium_mobile/commit/a92bea2353c31001b27313f366c255403a719f57))
+* [TIMOB-28330](https://jira-archive.titaniumsdk.com/TIMOB-28330) - Application crashes when scrolling a listview with zero items in the first section ([a92bea2](https://github.com/tidev/titanium_mobile/commit/a92bea2353c31001b27313f366c255403a719f57))
 
-* [TIMOB-28341](https://jira-archive.titaniumsdk.com/TIMOB-28341) - webview url sends repeated sections of encrypted url ([f5f8f67](https://github.com/appcelerator/titanium_mobile/commit/f5f8f6786715b7877dd29189a14f5893fd2ea256))
+* [TIMOB-28341](https://jira-archive.titaniumsdk.com/TIMOB-28341) - webview url sends repeated sections of encrypted url ([f5f8f67](https://github.com/tidev/titanium_mobile/commit/f5f8f6786715b7877dd29189a14f5893fd2ea256))
 
-* [TIMOB-28333](https://jira-archive.titaniumsdk.com/TIMOB-28333) - rgba(int,int,int) parity with iOS ([925f6f2](https://github.com/appcelerator/titanium_mobile/commit/925f6f26ab2eabbff43eaffef8622f4e305d6360))
+* [TIMOB-28333](https://jira-archive.titaniumsdk.com/TIMOB-28333) - rgba(int,int,int) parity with iOS ([925f6f2](https://github.com/tidev/titanium_mobile/commit/925f6f26ab2eabbff43eaffef8622f4e305d6360))
 
 ### iOS platform
 
-* [TIMOB-28325](https://jira-archive.titaniumsdk.com/TIMOB-28325) - Calculate proper row width for UITableViewStyleInsetGrouped ([a34e964](https://github.com/appcelerator/titanium_mobile/commit/a34e9643c6a9c9686e76e3893ce501a3f9073413))
+* [TIMOB-28325](https://jira-archive.titaniumsdk.com/TIMOB-28325) - Calculate proper row width for UITableViewStyleInsetGrouped ([a34e964](https://github.com/tidev/titanium_mobile/commit/a34e9643c6a9c9686e76e3893ce501a3f9073413))
 
-* [TIMOB-28297](https://jira-archive.titaniumsdk.com/TIMOB-28297) - Swift files doesn't recognize macros defined in defines.h ([d135466](https://github.com/appcelerator/titanium_mobile/commit/d1354664a768a122caa7c7e06bbe8b2eab27e5f8))
+* [TIMOB-28297](https://jira-archive.titaniumsdk.com/TIMOB-28297) - Swift files doesn't recognize macros defined in defines.h ([d135466](https://github.com/tidev/titanium_mobile/commit/d1354664a768a122caa7c7e06bbe8b2eab27e5f8))
 
-* [TIMOB-28304](https://jira-archive.titaniumsdk.com/TIMOB-28304) - Swift enabling in Objc module should build ([1d1f174](https://github.com/appcelerator/titanium_mobile/commit/1d1f174cfd0f73ed267e0659b76d9da67edcebfa))
+* [TIMOB-28304](https://jira-archive.titaniumsdk.com/TIMOB-28304) - Swift enabling in Objc module should build ([1d1f174](https://github.com/tidev/titanium_mobile/commit/1d1f174cfd0f73ed267e0659b76d9da67edcebfa))
 
-* [TIMOB-28282](https://jira-archive.titaniumsdk.com/TIMOB-28282) - Use supportedInterfaceOrientations of UINavigationController.topViewController instead of UINavigationController ([1f1127a](https://github.com/appcelerator/titanium_mobile/commit/1f1127abc35288a296e9b68c206a622a4cbcf8bd))
+* [TIMOB-28282](https://jira-archive.titaniumsdk.com/TIMOB-28282) - Use supportedInterfaceOrientations of UINavigationController.topViewController instead of UINavigationController ([1f1127a](https://github.com/tidev/titanium_mobile/commit/1f1127abc35288a296e9b68c206a622a4cbcf8bd))
 
-* Expose Ti.Media.AudioPlayer.externalPlaybackActive as boolean properly ([2712dc6](https://github.com/appcelerator/titanium_mobile/commit/2712dc6be533b9752b9b62dccc7e022596a03558))
+* Expose Ti.Media.AudioPlayer.externalPlaybackActive as boolean properly ([2712dc6](https://github.com/tidev/titanium_mobile/commit/2712dc6be533b9752b9b62dccc7e022596a03558))
 
 ### Multiple platforms
 
-* declare i18n function before its usage ([e4bc8a9](https://github.com/appcelerator/titanium_mobile/commit/e4bc8a9265f6e6ba2cb801612c65dbe49a953b05))
+* declare i18n function before its usage ([e4bc8a9](https://github.com/tidev/titanium_mobile/commit/e4bc8a9265f6e6ba2cb801612c65dbe49a953b05))
 
 ## SDK Module Versions
 

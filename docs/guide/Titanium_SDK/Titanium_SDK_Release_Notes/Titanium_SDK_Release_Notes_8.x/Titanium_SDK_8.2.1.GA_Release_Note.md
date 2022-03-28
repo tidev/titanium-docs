@@ -20,41 +20,41 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 ## New features
 
-* [MOD-2545](https://jira-archive.titaniumsdk.com/MOD-2545) - ti.map: update to 3.3.0-ios, 4.5.0-android module releases ([e1156a0](https://github.com/appcelerator/titanium_mobile/commit/e1156a09c06a902826c03a5b3ffc2ef31e3c0811))
+* [MOD-2545](https://jira-archive.titaniumsdk.com/MOD-2545) - ti.map: update to 3.3.0-ios, 4.5.0-android module releases ([e1156a0](https://github.com/tidev/titanium_mobile/commit/e1156a09c06a902826c03a5b3ffc2ef31e3c0811))
 
 ## Community credits
 
 * teunklijn
 
-    * [TIMOB-27165](https://jira-archive.titaniumsdk.com/TIMOB-27165) - localnotificationaction event contains notification id instead of the action id ([3a42ee4](https://github.com/appcelerator/titanium_mobile/commit/3a42ee478fd387db28e23c761527720d23c3ffea))
+    * [TIMOB-27165](https://jira-archive.titaniumsdk.com/TIMOB-27165) - localnotificationaction event contains notification id instead of the action id ([3a42ee4](https://github.com/tidev/titanium_mobile/commit/3a42ee478fd387db28e23c761527720d23c3ffea))
 
 ## Fixed issues
 
 ### Android platform
 
-* [TIMOB-27431](https://jira-archive.titaniumsdk.com/TIMOB-27431), [TIMOB-27434](https://jira-archive.titaniumsdk.com/TIMOB-27434) - Re-layout of deeply nested views can cause performance issues as of 7.5.0 ([38dc352](https://github.com/appcelerator/titanium_mobile/commit/38dc3523699fe3e1e81162aa564658365fd23126))
+* [TIMOB-27431](https://jira-archive.titaniumsdk.com/TIMOB-27431), [TIMOB-27434](https://jira-archive.titaniumsdk.com/TIMOB-27434) - Re-layout of deeply nested views can cause performance issues as of 7.5.0 ([38dc352](https://github.com/tidev/titanium_mobile/commit/38dc3523699fe3e1e81162aa564658365fd23126))
 
 * [TIMOB-27398](https://jira-archive.titaniumsdk.com/TIMOB-27398) - Random assets missing after compiling
 
 ### iOS platform
 
-* [TIMOB-27403](https://jira-archive.titaniumsdk.com/TIMOB-27403) - Semantic colors file lookup does not work correctly in classic applications ([df39a91](https://github.com/appcelerator/titanium_mobile/commit/df39a91fd4586f9e3dbcb12a70e607944b1128df))
+* [TIMOB-27403](https://jira-archive.titaniumsdk.com/TIMOB-27403) - Semantic colors file lookup does not work correctly in classic applications ([df39a91](https://github.com/tidev/titanium_mobile/commit/df39a91fd4586f9e3dbcb12a70e607944b1128df))
 
-* [TIMOB-27435](https://jira-archive.titaniumsdk.com/TIMOB-27435) - Building using Xcode 10.3 and 8\_2\_X Throws a Compile Error ([ca3f3e3](https://github.com/appcelerator/titanium_mobile/commit/ca3f3e3d32dc5e64f9da9357da39029c5151ef41))
+* [TIMOB-27435](https://jira-archive.titaniumsdk.com/TIMOB-27435) - Building using Xcode 10.3 and 8\_2\_X Throws a Compile Error ([ca3f3e3](https://github.com/tidev/titanium_mobile/commit/ca3f3e3d32dc5e64f9da9357da39029c5151ef41))
 
-* [TIMOB-27354](https://jira-archive.titaniumsdk.com/TIMOB-27354) - Ti.App.getArguments().url undefined when resuming ([44074a8](https://github.com/appcelerator/titanium_mobile/commit/44074a80683cb91ca3e7433fd066ad4f6a0f8f69))
+* [TIMOB-27354](https://jira-archive.titaniumsdk.com/TIMOB-27354) - Ti.App.getArguments().url undefined when resuming ([44074a8](https://github.com/tidev/titanium_mobile/commit/44074a80683cb91ca3e7433fd066ad4f6a0f8f69))
 
-* [TIMOB-27413](https://jira-archive.titaniumsdk.com/TIMOB-27413) - Window hideShadow and shadowImage property doesn't works on iOS 13 ([c6a4ba7](https://github.com/appcelerator/titanium_mobile/commit/c6a4ba78c83aea52877c77becc583ad4e47ba7de))
+* [TIMOB-27413](https://jira-archive.titaniumsdk.com/TIMOB-27413) - Window hideShadow and shadowImage property doesn't works on iOS 13 ([c6a4ba7](https://github.com/tidev/titanium_mobile/commit/c6a4ba78c83aea52877c77becc583ad4e47ba7de))
 
-* [TIMOB-27165](https://jira-archive.titaniumsdk.com/TIMOB-27165) - The localnotificationaction event always contains the notification identifier instead of the action identifier ([3a42ee4](https://github.com/appcelerator/titanium_mobile/commit/3a42ee478fd387db28e23c761527720d23c3ffea))
+* [TIMOB-27165](https://jira-archive.titaniumsdk.com/TIMOB-27165) - The localnotificationaction event always contains the notification identifier instead of the action identifier ([3a42ee4](https://github.com/tidev/titanium_mobile/commit/3a42ee478fd387db28e23c761527720d23c3ffea))
 
-* [TIMOB-27267](https://jira-archive.titaniumsdk.com/TIMOB-27267) - Image tintColor is not always applied if image is remote ([1a47522](https://github.com/appcelerator/titanium_mobile/commit/1a4752270427cf0be5a40ecde564e21b2bdd18d2))
+* [TIMOB-27267](https://jira-archive.titaniumsdk.com/TIMOB-27267) - Image tintColor is not always applied if image is remote ([1a47522](https://github.com/tidev/titanium_mobile/commit/1a4752270427cf0be5a40ecde564e21b2bdd18d2))
 
-* [TIMOB-27419](https://jira-archive.titaniumsdk.com/TIMOB-27419) - Ti.Contacts.getAllPeople() fails on iOS 13: support new property to remove note ([8f1b2a6](https://github.com/appcelerator/titanium_mobile/commit/8f1b2a6385b4839ae99b38897426c3a12ef76db9))
+* [TIMOB-27419](https://jira-archive.titaniumsdk.com/TIMOB-27419) - Ti.Contacts.getAllPeople() fails on iOS 13: support new property to remove note ([8f1b2a6](https://github.com/tidev/titanium_mobile/commit/8f1b2a6385b4839ae99b38897426c3a12ef76db9))
 
-* [MOD-2542](https://jira-archive.titaniumsdk.com/MOD-2542) - update ti.applesignin module to 1.1.1 ([51ea381](https://github.com/appcelerator/titanium_mobile/commit/51ea3817cef54b24b1e8cae1d0118195e4cb406d))
+* [MOD-2542](https://jira-archive.titaniumsdk.com/MOD-2542) - update ti.applesignin module to 1.1.1 ([51ea381](https://github.com/tidev/titanium_mobile/commit/51ea3817cef54b24b1e8cae1d0118195e4cb406d))
 
-* [TIMOB-27383](https://jira-archive.titaniumsdk.com/TIMOB-27383) - Volume event is not firing on SDK 8.1.1.GA ([6d4e417](https://github.com/appcelerator/titanium_mobile/commit/6d4e41741329d73b9bcd145b82924843b2a4b48d))
+* [TIMOB-27383](https://jira-archive.titaniumsdk.com/TIMOB-27383) - Volume event is not firing on SDK 8.1.1.GA ([6d4e417](https://github.com/tidev/titanium_mobile/commit/6d4e41741329d73b9bcd145b82924843b2a4b48d))
 
 * [TIMOB-20487](https://jira-archive.titaniumsdk.com/TIMOB-20487), [TIMOB-26963](https://jira-archive.titaniumsdk.com/TIMOB-26963) - Require'ing a JSON file appends file path to resulting JSON string
 
@@ -70,4 +70,4 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 * [TIMOB-27446](https://jira-archive.titaniumsdk.com/TIMOB-27446) - When blurring SearchBar with ListView overlay doesn't behave well on iOS 13
 
-* Native Modules cannot compile if count method defined on type: fix TiBase header to order macros properly, re-use macros ([94d29f2](https://github.com/appcelerator/titanium_mobile/commit/94d29f21e87053e90f54102db8d92b5ef2ae170e))
+* Native Modules cannot compile if count method defined on type: fix TiBase header to order macros properly, re-use macros ([94d29f2](https://github.com/tidev/titanium_mobile/commit/94d29f21e87053e90f54102db8d92b5ef2ae170e))

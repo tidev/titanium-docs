@@ -25,33 +25,33 @@ With the release of Titanium SDK 9.0.0, Windows platform will no longer be suppo
 
 ### Android platform
 
-* [TIMOB-27573](https://jira-archive.titaniumsdk.com/TIMOB-27573) - Hiding/Showing progress indicator back-to-back puts it in a bad state as of 8.1.1 ([4e4b509](https://github.com/appcelerator/titanium_mobile/commit/4e4b5094a2d3bc2cabdf46798543fb4b291fa5ed))
+* [TIMOB-27573](https://jira-archive.titaniumsdk.com/TIMOB-27573) - Hiding/Showing progress indicator back-to-back puts it in a bad state as of 8.1.1 ([4e4b509](https://github.com/tidev/titanium_mobile/commit/4e4b5094a2d3bc2cabdf46798543fb4b291fa5ed))
 
 * [TIMOB-27776](https://jira-archive.titaniumsdk.com/TIMOB-27776) - NDK version 21 outputs "Bad file descriptor"
 
-* [TIMOB-27795](https://jira-archive.titaniumsdk.com/TIMOB-27795) - WebView crashes when given local HTML URL with parameters as of 8.1.0 ([5038295](https://github.com/appcelerator/titanium_mobile/commit/50382954eacaf5f7a30f2915a3cd1f7f549cef55))
+* [TIMOB-27795](https://jira-archive.titaniumsdk.com/TIMOB-27795) - WebView crashes when given local HTML URL with parameters as of 8.1.0 ([5038295](https://github.com/tidev/titanium_mobile/commit/50382954eacaf5f7a30f2915a3cd1f7f549cef55))
 
-* [TIMOB-27830](https://jira-archive.titaniumsdk.com/TIMOB-27830) - TabGroup.titleColor has no effect ([#11741](https://github.com/appcelerator/titanium_mobile/pull/11741))
+* [TIMOB-27830](https://jira-archive.titaniumsdk.com/TIMOB-27830) - TabGroup.titleColor has no effect ([#11741](https://github.com/tidev/titanium_mobile/pull/11741))
 
-* [TIMOB-27831](https://jira-archive.titaniumsdk.com/TIMOB-27831) - Implement TabGroup.tintColor ([#11741](https://github.com/appcelerator/titanium_mobile/pull/11741))
+* [TIMOB-27831](https://jira-archive.titaniumsdk.com/TIMOB-27831) - Implement TabGroup.tintColor ([#11741](https://github.com/tidev/titanium_mobile/pull/11741))
 
-* [TIMOB-27904](https://jira-archive.titaniumsdk.com/TIMOB-27904) - Incremental build duplicates "bootstrap.json" entries as of 8.1.0 ([5ab9a5a](https://github.com/appcelerator/titanium_mobile/commit/5ab9a5a54f88922fc233c221ccafb1389d7e3854))
+* [TIMOB-27904](https://jira-archive.titaniumsdk.com/TIMOB-27904) - Incremental build duplicates "bootstrap.json" entries as of 8.1.0 ([5ab9a5a](https://github.com/tidev/titanium_mobile/commit/5ab9a5a54f88922fc233c221ccafb1389d7e3854))
 
-* [TIMOB-27911](https://jira-archive.titaniumsdk.com/TIMOB-27911) - ActiveTab not highlighted ([#11741](https://github.com/appcelerator/titanium_mobile/pull/11741))
+* [TIMOB-27911](https://jira-archive.titaniumsdk.com/TIMOB-27911) - ActiveTab not highlighted ([#11741](https://github.com/tidev/titanium_mobile/pull/11741))
 
-* [TIMOB-27912](https://jira-archive.titaniumsdk.com/TIMOB-27912) - chrome devtools URL is no longer valid ([edcb376](https://github.com/appcelerator/titanium_mobile/commit/edcb37672b058678819b3a3e6efdf03205e770f0))
+* [TIMOB-27912](https://jira-archive.titaniumsdk.com/TIMOB-27912) - chrome devtools URL is no longer valid ([edcb376](https://github.com/tidev/titanium_mobile/commit/edcb37672b058678819b3a3e6efdf03205e770f0))
 
 * [TIMOB-27939](https://jira-archive.titaniumsdk.com/TIMOB-27939) - Module builds should auto-download NDK r21c by default if needed
 
-* allow Tab barColor to be set ([98718ac](https://github.com/appcelerator/titanium_mobile/commit/98718acd44f71c074e6dbd83ee9d27a4ef6ac95f))
+* allow Tab barColor to be set ([98718ac](https://github.com/tidev/titanium_mobile/commit/98718acd44f71c074e6dbd83ee9d27a4ef6ac95f))
 
 ### iOS platform
 
-* [TIMOB-27847](https://jira-archive.titaniumsdk.com/TIMOB-27847) - Implement Tab tintColor and activeTintColor ([#11741](https://github.com/appcelerator/titanium_mobile/pull/11741))
+* [TIMOB-27847](https://jira-archive.titaniumsdk.com/TIMOB-27847) - Implement Tab tintColor and activeTintColor ([#11741](https://github.com/tidev/titanium_mobile/pull/11741))
 
-* [TIMOB-27898](https://jira-archive.titaniumsdk.com/TIMOB-27898) - Race condition in setTimeout/clearTimeout (regression) ([bbba4cd](https://github.com/appcelerator/titanium_mobile/commit/bbba4cd46aa0a4d5b3ca94c939db176efe27652c))
+* [TIMOB-27898](https://jira-archive.titaniumsdk.com/TIMOB-27898) - Race condition in setTimeout/clearTimeout (regression) ([bbba4cd](https://github.com/tidev/titanium_mobile/commit/bbba4cd46aa0a4d5b3ca94c939db176efe27652c))
 
-* [TIMOB-27903](https://jira-archive.titaniumsdk.com/TIMOB-27903) - APSHTTPRequest dealloc logged when using http calls ([14c98df](https://github.com/appcelerator/titanium_mobile/commit/14c98dfb1b316d33aa9daeb1cbacdcde348dd4a8))
+* [TIMOB-27903](https://jira-archive.titaniumsdk.com/TIMOB-27903) - APSHTTPRequest dealloc logged when using http calls ([14c98df](https://github.com/tidev/titanium_mobile/commit/14c98dfb1b316d33aa9daeb1cbacdcde348dd4a8))
 
 ## SDK Module Versions
 
