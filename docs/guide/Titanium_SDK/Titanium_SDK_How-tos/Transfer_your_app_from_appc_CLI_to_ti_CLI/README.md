@@ -1,4 +1,4 @@
-# Transfer your app from Titanium CLI to Titanium CLI
+# Transfer your app from Appcelerator CLI to Titanium CLI
 
 ## Introduction
 
