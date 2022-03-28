@@ -13,7 +13,7 @@ The migration of this document is currently still a work in progress. For the or
 :::
 
 :::tip
-To see an example of this spec in use, check out the documentation for [Titanium](https://github.com/appcelerator/titanium_mobile/blob/master/apidoc/Titanium).
+To see an example of this spec in use, check out the documentation for [Titanium](https://github.com/tidev/titanium_mobile/blob/master/apidoc/Titanium).
 :::
 
 ## Overview

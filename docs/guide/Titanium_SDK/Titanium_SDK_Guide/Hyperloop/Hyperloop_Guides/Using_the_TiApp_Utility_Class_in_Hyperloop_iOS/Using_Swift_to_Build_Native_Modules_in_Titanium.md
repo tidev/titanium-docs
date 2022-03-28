@@ -11,7 +11,7 @@ This document describes features available in Titanium SDK 8.0.0+.
 
 As a developer of native cross-platform apps, you may run into situations where you want to use a native API that is not exposed in Titanium. Luckily, there are two options available to integrate these functionalities into your app seamlessly:
 
-* **Hyperloop**: Allows you to extend your existing JavaScript-based app with native code (iOS, Android & Windows) that is also available through JavaScript by generating native code from it. Learn more [here](https://github.com/appcelerator/hyperloop-examples)!
+* **Hyperloop**: Allows you to extend your existing JavaScript-based app with native code (iOS, Android & Windows) that is also available through JavaScript by generating native code from it. Learn more [here](https://github.com/tidev/hyperloop-examples)!
 
 * **Native Modules**: Allows you to write a native library (Obj-C for iOS, Java for Android & C++ for Windows) that can be packaged as a module dependency to your project.
 
@@ -28,7 +28,7 @@ When it comes to iOS, Titanium always relied on Objective-C based native modules
 To get started with Swift modules in Titanium, simply create a new module project from the CLI:
 
 ```bash
-appc new -p ios -t timodule
+ti create -p ios -t timodule
 ```
 
 It will prompt you to select a name, a module-identifier, project location and finally, the code-base. In Titanium 8+, you can select between Objective-C and Swift based modules. We are not planning to deprecate Objective-C anytime soon and leave it up the developer to select the best fit. Both module code-bases can be used together in one project without issues. And that's it! The generated module contains a `<ModuleID>Module.swift` and a `<ModuleID>ExampleProxy.swift` that are the 1:1 pardons of their Objective-C siblings. All required Titanium libraries are already included and you are ready to go.

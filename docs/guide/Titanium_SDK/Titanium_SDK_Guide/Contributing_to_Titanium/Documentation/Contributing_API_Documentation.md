@@ -17,7 +17,7 @@ As with code contributions, you must electronically sign the [Contributors Licen
 
 ## Editing API Documentation
 
-The API documentation is stored in the `apidoc` folder inside the [titanium\_mobile](https://github.com/appcelerator/titanium_mobile) repository.
+The API documentation is stored in the `apidoc` folder inside the [titanium\_mobile](https://github.com/tidev/titanium_mobile) repository.
 
 The documentation is written in the Titanium Doc format, TDoc, which is documented in the [TDoc Specification](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Platform_Development/Specs/TDoc_Specification/).
 

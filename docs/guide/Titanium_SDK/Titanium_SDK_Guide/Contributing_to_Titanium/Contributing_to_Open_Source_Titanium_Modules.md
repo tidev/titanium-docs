@@ -23,7 +23,7 @@ If you are having an issue with an open source module, please create a ticket fo
 
 ## Submitting Contributions
 
-The process for contributing to open source modules is the same as contributing code to Titanium Mobile, but instead of the titanium\_mobile repo you will be working with the [titanium\_modules](https://github.com/appcelerator/titanium_modules) repo. Please refer to the [Pull Request Guide](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Platform_Development/Pull_Request_Guide/) for guidance.
+The process for contributing to open source modules is the same as contributing code to Titanium Mobile, but instead of the titanium\_mobile repo you will be working with the [titanium\_modules](https://github.com/tidev/titanium_modules) repo. Please refer to the [Pull Request Guide](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Platform_Development/Pull_Request_Guide/) for guidance.
 
 ### Versioning
 
@@ -50,5 +50,5 @@ When submitting a fix:
 * Add a comment to the associated ticket with the pull request URL.
 
     ```
-    PR: https://github.com/appcelerator/titanium_modules/pull/0
+    PR: https://github.com/tidev/titanium_modules/pull/0
     ```

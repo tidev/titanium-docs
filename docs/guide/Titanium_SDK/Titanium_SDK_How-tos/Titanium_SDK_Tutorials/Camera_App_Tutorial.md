@@ -11,7 +11,7 @@ This tutorial will walk you through a basic app that allows the user to access t
 
 ## Project setup
 
-Start with creating an empty Alloy project by executing this command: `appc new`
+Start with creating an empty Alloy project by executing this command: `ti create`
 
 ## Permissions
 

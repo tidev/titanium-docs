@@ -31,4 +31,4 @@ As of this release, Alloy 1.10.x will not be supported six months from 1.12.0's 
 
 * [ALOY-1595](https://jira.appcelerator.org/browse/ALOY-1595): alloy compile broken on node 9.3.0
 
-* [PR-878](https://github.com/appcelerator/alloy/pull/878): Fix links in README
+* [PR-878](https://github.com/tidev/alloy/pull/878): Fix links in README

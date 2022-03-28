@@ -223,7 +223,7 @@ var attr = Ti.UI.createAttributedString({
     attributes: [
         {
             type: Titanium.UI.ATTRIBUTE_LINK,
-            value: "https://github.com/appcelerator/hyperloop",
+            value: "https://github.com/tidev/hyperloop",
             range: [text.indexOf('hyperloop'), ('hyperloop').length]
         }
     ]

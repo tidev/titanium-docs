@@ -133,7 +133,7 @@ With 1.8, the location of the Settings.bundle was changed. Platform-specific res
 
 If you're running SDK 1.8+
 
-1. Download a recent copy of the [KitchenSink app](https://github.com/appcelerator/KitchenSink)
+1. Download a recent copy of the [KitchenSink app](https://github.com/tidev/kitchensink-v2)
 
 2. Copy **Settings.bundle** from **platform/iphone** folder to your project's **Resources/platform/iphone** directory (you might need to create those directories).
 
@@ -145,7 +145,7 @@ If you're running SDK 1.8+
 
 If you're running SDK <1.8
 
-1. Download a copy of the [KitchenSink app](https://github.com/appcelerator/KitchenSink)
+1. Download a copy of the [KitchenSink app](https://github.com/tidev/kitchensink-v2)
 
 2. Copy **Settings.bundle** from **modules/iphone** folder to your project's **Resources/modules/iphone** directory (you might need to create those directories).
 
@@ -177,7 +177,7 @@ To complete this activity, you will need an Intel-based Mac with the iOS develop
 
 1. Create a new Titanium Mobile project named AppSettings that targets the iPhone and iPad.
 
-2. If you have not done so already, download a copy of the KitchenSink project from [https://github.com/appcelerator/KitchenSink](https://github.com/appcelerator/KitchenSink). Copy the modules folder to your project's directory.
+2. If you have not done so already, download a copy of the KitchenSink project from [https://github.com/tidev/kitchensink-v2](https://github.com/tidev/kitchensink-v2). Copy the modules folder to your project's directory.
 
 3. In Studio, expand modules/iphone/Settings.bundle and double-click Root.plist
 

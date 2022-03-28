@@ -45,13 +45,13 @@ This is because `generateViewId` is defined as a static method.
 
 ## Instantiation
 
-Please refer to our [hyperloop-examples app](https://github.com/appcelerator/hyperloop-examples/tree/master/app) in those code-level examples. For example, to use a `View`, the activity needs to be set:
+Please refer to our [hyperloop-examples app](https://github.com/tidev/hyperloop-examples/tree/master/app) in those code-level examples. For example, to use a `View`, the activity needs to be set:
 
 ```javascript
 var activity = new Activity(Ti.Android.currentActivity);
 ```
 
-See [animateview.js (Github)](https://github.com/appcelerator/hyperloop-examples/blob/master/app/controllers/android/animateview.js#L10) for an working sample.
+See [animateview.js (Github)](https://github.com/tidev/hyperloop-examples/blob/master/app/controllers/android/animateview.js#L10) for an working sample.
 
 ## Methods and fields
 
@@ -162,7 +162,7 @@ var view = inflater.inflate(resId, null);
 // Add "view" your Titanium view here ...
 ```
 
-Learn more about a native XML layouts in our [Native Layout Example](https://github.com/appcelerator/hyperloop-examples/blob/master/app/controllers/android/nativelayout.js) as part of the [Hyperloop Examples](https://github.com/appcelerator/hyperloop-examples) app.
+Learn more about a native XML layouts in our [Native Layout Example](https://github.com/tidev/hyperloop-examples/blob/master/app/controllers/android/nativelayout.js) as part of the [Hyperloop Examples](https://github.com/tidev/hyperloop-examples) app.
 
 ## Using 3rd party libraries
 
@@ -174,7 +174,7 @@ As of Titanium 9.0.0, you can no longer use Google's deprecated Support librarie
 
 As of Titanium 9.0.0, Hyperloop can reference libraries via gradle by adding a `build.gradle` file to the `platform/android` (Classic) or `app/platform/android` (Alloy) folder of your app. This is the preferred way of adding library dependencies.
 
-An example can be found here: [hyperloop-examples - /app/platform/android/build.gradle](https://github.com/appcelerator/hyperloop-examples/blob/master/app/platform/android/build.gradle)
+An example can be found here: [hyperloop-examples - /app/platform/android/build.gradle](https://github.com/tidev/hyperloop-examples/blob/master/app/platform/android/build.gradle)
 
 The below is an example `build.gradle` file which provides access to the Google "Material Components" library.
 
@@ -192,4 +192,4 @@ Place the **JAR** and **AAR** files into the `platform/android` (Classic) or `ap
 
 ### Third-party Examples
 
-Make sure to check out more Android third-party libraries (like Localytics, SSDP, Shimmer) in our [Hyperloop Sample App](https://github.com/appcelerator/hyperloop-examples/tree/master/app/controllers/android/libraries).
+Make sure to check out more Android third-party libraries (like Localytics, SSDP, Shimmer) in our [Hyperloop Sample App](https://github.com/tidev/hyperloop-examples/tree/master/app/controllers/android/libraries).

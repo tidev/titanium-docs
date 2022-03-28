@@ -23,7 +23,7 @@ Using weback in Titanium enables a lot of great improvements, including:
 
 * Web UI to view build results and analyze your app bundle assets.
 
-All webpack builds in Titanium are managed via `@appcd/plugin-webpack`, a plugin for the [Appcelerator Daemon](https://github.com/appcelerator/appc-daemon) (or appcd for short), which starts them on demand and also makes sure to stop them after a certain amount of inactivity. This ensures fast build times while you are working on your project and automatically saves system resources when you stop and don't need the webpack build anymore.
+All webpack builds in Titanium are managed via `@appcd/plugin-webpack`, a plugin for the [Appcelerator Daemon](https://github.com/tidev/appc-daemon) (or appcd for short), which starts them on demand and also makes sure to stop them after a certain amount of inactivity. This ensures fast build times while you are working on your project and automatically saves system resources when you stop and don't need the webpack build anymore.
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ npm i -g @appcd/plugin-webpack
 Appcd will automatically detect the new plugin and start it on demand. Now that all the necessary tooling for webpack is installed you can create your first Titanium project with webpack support enabled.
 
 ::: tip 💡 Want to migrate an existing project?
-Already have an existing Titanium project and want to opt-in to using webpack? No problem, just follow our [migration guide](https://github.com/appcelerator/appcd-plugin-webpack/blob/develop/migration.md#webpack-migration-guide).
+Already have an existing Titanium project and want to opt-in to using webpack? No problem, just follow our [migration guide](https://github.com/tidev/appcd-plugin-webpack/blob/develop/migration.md#webpack-migration-guide).
 :::
 
 ## Getting Started
@@ -57,7 +57,7 @@ There is a new template called `webpack-default` available in SDK 9.1.0+ which c
 
 ```bash
 # appc-cli
-appc new --template webpack-default
+ti create --template webpack-default
 
 # ti-cli
 ti create --template webpack-default
@@ -71,7 +71,7 @@ If you use the Alloy CLI to turn a new or existing Titanium classic project into
 
 ## Working with Webpack
 
-When working with webpack in your Titanium project a few things are handled differently compared to a standard Titanium project. This section will go through the important changes and explain how things work with webpack. For more in-depth details visit the [code migration](https://github.com/appcelerator/appcd-plugin-webpack/blob/develop/migration.md#code-migration) section in our migration guide for existing projects.
+When working with webpack in your Titanium project a few things are handled differently compared to a standard Titanium project. This section will go through the important changes and explain how things work with webpack. For more in-depth details visit the [code migration](https://github.com/tidev/appcd-plugin-webpack/blob/develop/migration.md#code-migration) section in our migration guide for existing projects.
 
 ### Module Resolution
 
@@ -130,7 +130,7 @@ The webpack build pipeline comes with a small web ui that lets you view general 
 
 ### Global Settings
 
-You can change the global configuration settings for the webpack plugin in `~/.appcelerator/appcd/config.json` . The timeout for build tasks and options for the web ui server can be changed via these settings. Have a look at the default [`config.js`](https://github.com/appcelerator/appcd-plugin-webpack/blob/develop/config/config.js) file for detailed descriptions.
+You can change the global configuration settings for the webpack plugin in `~/.appcelerator/appcd/config.json` . The timeout for build tasks and options for the web ui server can be changed via these settings. Have a look at the default [`config.js`](https://github.com/tidev/appcd-plugin-webpack/blob/develop/config/config.js) file for detailed descriptions.
 
 **config.json**
 
@@ -220,7 +220,7 @@ module.exports = (api, options) => {
 
 #### Delete plugin
 
-Delete a named plugin from the configuration. Refer to the bundled [configuration files](https://github.com/appcelerator/appcd-plugin-webpack/blob/develop/src/config) as well as the readme and code of the `@titanium-sdk/webpack-plugin-*` packages to see what named plugins are configured.
+Delete a named plugin from the configuration. Refer to the bundled [configuration files](https://github.com/tidev/appcd-plugin-webpack/blob/develop/src/config) as well as the readme and code of the `@titanium-sdk/webpack-plugin-*` packages to see what named plugins are configured.
 
 ```javascript
 module.exports = (api, options) => {
@@ -234,15 +234,15 @@ module.exports = (api, options) => {
 
 We maintain a couple of official plugins which provide the core configuration for Titanium apps.
 
-* [@titanium-sdk/webpack-plugin-alloy](https://github.com/appcelerator/webpack-plugin-alloy)
+* [@titanium-sdk/webpack-plugin-alloy](https://github.com/tidev/webpack-plugin-alloy)
 
-* [@titanium-sdk/webpack-plugin-classic](https://github.com/appcelerator/webpack-plugin-classic)
+* [@titanium-sdk/webpack-plugin-classic](https://github.com/tidev/webpack-plugin-classic)
 
-* [@titanium-sdk/webpack-plugin-angular](https://github.com/appcelerator/webpack-plugin-angular)
+* [@titanium-sdk/webpack-plugin-angular](https://github.com/tidev/webpack-plugin-angular)
 
-* [@titanium-sdk/webpack-plugin-babel](https://github.com/appcelerator/webpack-plugin-babel)
+* [@titanium-sdk/webpack-plugin-babel](https://github.com/tidev/webpack-plugin-babel)
 
-* [@titanium-sdk/webpack-plugin-typescript](https://github.com/appcelerator/webpack-plugin-typescript)
+* [@titanium-sdk/webpack-plugin-typescript](https://github.com/tidev/webpack-plugin-typescript)
 
 ## FAQ
 

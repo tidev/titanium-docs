@@ -5,7 +5,7 @@ weight: '30'
 
 # Pull Request Guide
 
-So you want to make a contribution to the **Titanium SDK**? Got a bug you want to fix, or a feature you want to add? This is the guide that will help you do so. It'll walk you through all the necessary steps for creating a successful pull request against the [titanium\_mobile github repository](https://github.com/appcelerator/titanium_mobile).
+So you want to make a contribution to the **Titanium SDK**? Got a bug you want to fix, or a feature you want to add? This is the guide that will help you do so. It'll walk you through all the necessary steps for creating a successful pull request against the [titanium\_mobile github repository](https://github.com/tidev/titanium_mobile).
 
 Aside from functioning in an educational capacity, this guide also serves to make the process of integrating your pull requests a more uniform task for our platform engineers. Observing the steps in this guide for each pull request will:
 
@@ -57,7 +57,7 @@ All pull requests that get integrated into the Titanium SDK have an associated J
 
 2. Find or create a new ticket in the Titanium Community (TC) Jira project. Community members have the ability to create new tickets here, unlike the TIMOB project. If you want to add a feature or fix a bug that has not yet been logged in either Jira project, you can do so at the following link: [Titanium Community (TC) Jira project](http://jira.appcelerator.org/browse/TC)
 
-3. File a new GitHub issue on the main repository ([appcelerator/titanium\_mobile](https://github.com/appcelerator/titanium_mobile)) by filling out the template with the feature, bugfix or improvement you want to contribute. Our team links GitHub issues with Jira, so it can be tracked by the internal engineering team
+3. File a new GitHub issue on the main repository ([appcelerator/titanium\_mobile](https://github.com/tidev/titanium_mobile)) by filling out the template with the feature, bugfix or improvement you want to contribute. Our team links GitHub issues with Jira, so it can be tracked by the internal engineering team
 
 Once you have created/found the Jira ticket or GitHub issue that you would like to address with your pull request, remember it. The ticket number will be used to identify your development branch in a later step. In addition, code for testing your pull request should be included in the Jira ticket.
 
@@ -69,7 +69,7 @@ To be able to submit changes to the Titanium Mobile SDK, you first need your own
 
 1. Log in to your GitHub account.
 
-2. Go to the [appcelerator/titanium\_mobile](https://github.com/appcelerator/titanium_mobile) project on GitHub.
+2. Go to the [appcelerator/titanium\_mobile](https://github.com/tidev/titanium_mobile) project on GitHub.
 
 3. Click the "Fork" button at the top of the screen.
 
@@ -231,11 +231,11 @@ To raise a Github pull request, follow these steps:
 
     Add a message using the form on the following page, and click the "Create Pull Request" button to submit it. Some guidelines:
 
-    1. Put the JIRA ticket first, in brackets, e.g.: [\[TIMOB-26010\] Android: Add a missing null check in getResponseHeaders](https://github.com/appcelerator/titanium_mobile/pull/10025)
+    1. Put the JIRA ticket first, in brackets, e.g.: [\[TIMOB-26010\] Android: Add a missing null check in getResponseHeaders](https://github.com/tidev/titanium_mobile/pull/10025)
 
-    2. If you have multiple JIRA tickets, list them. You should only have 1 ticket per PR, e.g.: [\[TIMOB-10350\] \[TIMOB-9558\] Anvil test case for xml test suite](https://github.com/appcelerator/titanium_mobile/pull/5039)
+    2. If you have multiple JIRA tickets, list them. You should only have 1 ticket per PR, e.g.: [\[TIMOB-10350\] \[TIMOB-9558\] Anvil test case for xml test suite](https://github.com/tidev/titanium_mobile/pull/5039)
 
-    3. If you are doing a back port, put the branch name after the JIRA number in parenthesis. Use the ACTUAL name of the branch, e.g.: [\[TIMOB-25936\] (7\_1\_X) iOS: Fix appendSection & appendRow on main-thread](https://github.com/appcelerator/titanium_mobile/pull/9987)
+    3. If you are doing a back port, put the branch name after the JIRA number in parenthesis. Use the ACTUAL name of the branch, e.g.: [\[TIMOB-25936\] (7\_1\_X) iOS: Fix appendSection & appendRow on main-thread](https://github.com/tidev/titanium_mobile/pull/9987)
 
     4. Use the title of the JIRA ticket (or a close approximation) for titling the PR.
 

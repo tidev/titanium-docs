@@ -1,15 +1,15 @@
 # titanium-docs
 
-> Website with Guides and API docs for the [Titanium Mobile SDK](https://github.com/appcelerator/titanium_mobile) (Powered by [VuePress](https://vuepress.vuejs.org/)).
+> Website with Guides and API docs for the [Titanium Mobile SDK](https://github.com/tidev/titanium_mobile) (Powered by [VuePress](https://vuepress.vuejs.org/)).
 
 ## Getting started
 
-These docs aim to be a hybrid solution of Markdown bases guides and dynamically generated docs for API references using the existing [apidoc](https://github.com/appcelerator/titanium_mobile/tree/master/apidoc) from Titanium.
+These docs aim to be a hybrid solution of Markdown bases guides and dynamically generated docs for API references using the existing [apidoc](https://github.com/tidev/titanium_mobile/tree/master/apidoc) from Titanium.
 
 ### Installation
 
 ```bash
-git clone https://github.com/appcelerator/titanium-docs.git
+git clone https://github.com/tidev/titanium-docs.git
 cd titanium-docs
 npm i
 ```
@@ -100,7 +100,7 @@ module.exports = {
 
 ### Adding API docs
 
-In theory the `api.json` contains all required information to automatically generate markdown files. However, some APIs contain very detailed description and various examples which are just better to maintain directly in markdown files here than in their `.yaml` counterpart in Titanium's [apidoc](https://github.com/appcelerator/titanium_mobile/tree/master/apidoc). All other information regarding the API for a type in Titanium is then taken from the `api.json`. This creates a clear seperation of extensive documentation and simple api reference.
+In theory the `api.json` contains all required information to automatically generate markdown files. However, some APIs contain very detailed description and various examples which are just better to maintain directly in markdown files here than in their `.yaml` counterpart in Titanium's [apidoc](https://github.com/tidev/titanium_mobile/tree/master/apidoc). All other information regarding the API for a type in Titanium is then taken from the `api.json`. This creates a clear seperation of extensive documentation and simple api reference.
 
 To automatically migrate a type over to these docs you can run the migration script.
 
@@ -133,7 +133,7 @@ Then to release:
 ## Contributions
 
 Open source contributions are greatly appreciated! If you have a bugfix, improvement or new feature, first make sure you have signed the [TiDev CLA](https://github.com/tidev/organization-docs/blob/main/AUTHORIZED_CONTRIBUTORS.md), then create
-[an issue](https://github.com/appcelerator/titanium-docs/issues/new) first and submit a [pull request](https://github.com/appcelerator/titanium-docs/pulls/new) against master.
+[an issue](https://github.com/tidev/titanium-docs/issues/new) first and submit a [pull request](https://github.com/tidev/titanium-docs/pulls/new) against master.
 
 ## License
 
