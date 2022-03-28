@@ -29,7 +29,7 @@ If you discover a corrupt package, simply download each previous day's release u
 
 ### Titanium CLI install
 
-To install a Titanium SDK using the `appc` cli, follow these steps:
+To install a Titanium SDK using the `ti` cli, follow these steps:
 
 * Be sure to log in to the CLI if you are not already logged in (`ti login`)
 
