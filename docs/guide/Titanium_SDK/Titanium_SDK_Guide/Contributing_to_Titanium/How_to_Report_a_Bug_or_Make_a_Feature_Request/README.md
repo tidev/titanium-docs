@@ -98,7 +98,7 @@ A good read on this is Eric Lippert's [How to debug small programs](http://ericl
 
 Assuming you have consulted the community via the Q&A, and you have your [test case](#CreatingaTestCase) to hand, you are ready to create a ticket:
 
-* open the GitHub Issues [Titanium Community](https://github.com/tidev/titanium_mobile/issues) page. See the [#Projects Overview](#ProjectsOverview) section for more information about the projects.
+* open the Titanium [GitHub Issues](https://github.com/tidev/titanium_mobile/issues) page. See the [#Projects Overview](#ProjectsOverview) section for more information about the projects.
 
 * select from the list of ticket types in the top right-hand corner, although usually only **Bug**, **Improvement** or **New Feature** will be applicable
 
