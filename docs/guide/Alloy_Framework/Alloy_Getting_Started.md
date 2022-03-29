@@ -39,14 +39,14 @@ To create a new Alloy project, use the Titanium CLI to create a new Alloy projec
 ti create
 ```
 
+You will be prompted to enter an application name and application ID.
+
 After successful creation you can initiate Alloy
 
 ```bash
 cd YOUR_PROJECT_NAME
 alloy new
 ```
-
-You will be prompted to enter an application name and application ID.
 
 A new skeleton Alloy project will be generated in the directory named after the application name.
 

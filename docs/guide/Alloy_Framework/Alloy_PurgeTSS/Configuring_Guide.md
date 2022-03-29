@@ -30,7 +30,7 @@ module.exports = {
 };
 ```
 
-## Generating your custom `tailwind.tss` file
+## Generating your custom tailwind.tss file
 To generate your custom `./purgetss/tailwind.tss` file use the following command:
 
 ```bash
@@ -90,7 +90,7 @@ module.exports = {
 };
 ```
 
-## `config.js` section structure
+## config.js section structure
 
 ### Theme Section
 The `theme` section in `config.js`, is where you define your project's color palette, type scale, font stacks, border radius values, and more.
@@ -409,8 +409,8 @@ You'll notice that using a key of `default` in the theme configuration created t
 
 This is a common convention in `PurgeTSS` supported by many (although not all) of the properties.
 
-## The "apply" directive
-Starting with **`v2.3.5`**, you can `apply` a set of classes to create more complex classes, or when you find a repetitive pattern in your code and you’d like to extract it to a new class component.
+## The apply directive
+You can `apply` a set of classes to create more complex classes, or when you find a repetitive pattern in your code and you’d like to extract it to a new class component.
 
 - Set any id, class or Ti Element
 - Use any of the default classes
@@ -470,7 +470,7 @@ theme: {
 ```
 
 ### Use arbitrary values
-Starting with **`v2.5.16`**, you can use [arbitrary values](#arbitrary-values) to define your custom classes.
+You can use [arbitrary values](#arbitrary-values) to define your custom classes.
 
 
 ```javascript
@@ -496,7 +496,7 @@ theme: {
 // ...
 ```
 
-### Use any newly defined classes in `config.js`
+### Use any newly defined classes in config.js
 ```javascript
 // ...
 theme: {
@@ -1175,7 +1175,7 @@ There are times when you just want a custom class that your are going to use onc
 
 Or you need a very specific value that is not part of the default values in `tailwind.tss` file.
 
-**With the release of [v2.3.0](/guide/Alloy_Framework/Alloy_PurgeTSS/whats-new/v2.3.0.md) you can generate classes with arbitrary values directly in you `xml` files using any of the following attributes:**
+You can generate classes with arbitrary values directly in you `xml` files using any of the following attributes:
 
 - w - `width`
 - h - `height`

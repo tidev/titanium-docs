@@ -27,21 +27,21 @@ It will add a `hook` in `alloy.jmk` to auto-run `purgetss` everytime you compile
 ### 2. "purgetss" folder
 It will create a `purgetss` folder at the root of your project with the following files and folder:
 
-#### "config.js" file
+#### config.js file
 Where you can customize or create new classes with you own spacing, colors, and margin values and more. See [Customization and Configuration Guide](/guide/Alloy_Framework/Alloy_PurgeTSS/configuring-guide.md) for more details.
 
-#### "tailwind.tss" file
+#### tailwind.tss file
 Ir contains all Tailwind-like utility classes, including all your custom classes defined in `config.js`.
 
-#### "definitions.css" file
-Is a special `css` file that includes ALL the classes from `fonts.tss` and `tailwind.tss` files ( including the official icon fonts libraries ) to be used with [“Intellisencse for CSS class names in HTML”](/guide/Alloy_Framework/Alloy_PurgeTSS/whats-new/v5.2.1.md#new-definitionscss-file) VS Code extension.
+#### definitions.css file
+Is a special `css` file that includes ALL the classes from `fonts.tss` and `tailwind.tss` files ( including the official icon fonts libraries ) to be used with [“Intellisencse for CSS class names in HTML”](/guide/Alloy_Framework/Alloy_PurgeTSS/Whats_New/v5.2.1.md#new-definitionscss-file) VS Code extension.
 
-#### "fonts" folder
-Where you can add any Icon, Serif, Sans-Serif, Cursive, Fantasy or Monospace icons to be used in your app. See [build-fonts command](/guide/Alloy_Framework/Alloy_PurgeTSS/whats-new/v5.1.0.md#instructions-to-recreate-any-of-the-deleted-libraries) for a step-by-step instructions.
+#### fonts folder
+Where you can add any Icon, Serif, Sans-Serif, Cursive, Fantasy or Monospace icons to be used in your app. See [build-fonts command](/guide/Alloy_Framework/Alloy_PurgeTSS/Whats_New/v5.1.0.md#instructions-to-recreate-any-of-the-deleted-libraries) for a step-by-step instructions.
 
 ## Available options
 These are the different options ( or subcommands ) that you can pass to `purgetss`.
-### `build`
+### build
 If you need to re-generate `tailwind.tss` and `definitions.css` files run:
 
 ```bash
@@ -49,7 +49,7 @@ alloy purgetss build
 ```
 Note that `purgetss` checks for any changes made to `config.js` and regenerates them for you.
 
-### `fonts`
+### fonts
 It will copy the **official icon fonts files** for **PurgeTSS** in `app/assets/fonts` including the corresponding CommondJS files in `app/lib`:
 
 ```bash
@@ -69,7 +69,7 @@ MaterialIconsTwoTone-Regular.otf
 ```
 Please check all available classes for [fontawesome.tss, framework7icons.tss and materialdesign.tss](https://github.com/macCesar/purgeTSS#list-of-available-classes)
 
-### `build-fonts`
+### build-fonts
 To create your custom `fonts.tss` file with all the unicode characters ( for icon fonts ) and style rules from the fonts located in `purgetss/fonts`.
 
 ```bash
@@ -129,7 +129,15 @@ const icons = {
 }
 ```
 
-### alloy purgetss module
+You can use the `--modules` flag to generate a CommonJS module called `purgetss-fonts.js` in `./app/lib/`.
+
+To avoid any conflicts with other icon libraries that you may use, **PurgeTSS will keep each icon prefix**.
+
+```bash
+alloy purgetss build-fonts --modules
+```
+
+### module
 To install the `purgetss.ui.js` module in your `lib` folder.
 
 ```bash
@@ -137,4 +145,6 @@ alloy purgetss module
 ```
 
 **PurgeTSS module contains:**
-- **Animation**: Apply a 2D Matrix animation or transformation to any element or to an array of elements. **Please check out the new `Animation` module [here](/guide/Alloy_Framework/Alloy_PurgeTSS/whats-new/v2.5.0.md#animation-module).**
+- **Animation**: Apply a 2D Matrix animation or transformation to any element or to an array of elements. **Please check out the new `Animation` module [here](/guide/Alloy_Framework/Alloy_PurgeTSS/Whats_New/v2.5.0.md#animation-module).**
+
+This document was adapted from [César Estrada (macCesar)](https://github.com/macCesar/): [PurgeTSS](https://github.com/macCesar/purgeTSS)
