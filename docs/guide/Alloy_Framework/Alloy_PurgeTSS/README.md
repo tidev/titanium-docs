@@ -10,7 +10,7 @@ This guide provides basic instructions on using PurgeTSS for your project. Purge
 alloy purgetss
 ```
 
-## Key features of PurgeTSS
+## Key features of PurgeTSS 
 - Provides more than 10600 [Tailwind-like utility classes](https://tailwindcss.com/) ready to use in your projects.
 - Creates a clean `app.tss` file with only the classes used in your project by parsing all your XML files. **Your original classes will be backed up in `_app.tss`**
 - You can customize any of the default classes through a simple configuration file, or you can create new *just-in-time* classes with arbitrary values within the `Views`.
@@ -24,22 +24,22 @@ When you run `alloy purgetss` for the first time in your project it will do the 
 ### 1. Auto-Run Hook
 It will add a `hook` in `alloy.jmk` to auto-run `purgetss` everytime you compile your app. **Very useful when using `liveview`.**
 
-### 2. `purgetss` folder
+### 2. "purgetss" folder
 It will create a `purgetss` folder at the root of your project with the following files and folder:
 
-#### `config.js` file
+#### "config.js" file
 Where you can customize or create new classes with you own spacing, colors, and margin values and more. See [Customization and Configuration Guide](/guide/Alloy_Framework/Alloy_PurgeTSS/configuring-guide.md) for more details.
 
-#### `tailwind.tss` file
+#### "tailwind.tss" file
 Ir contains all Tailwind-like utility classes, including all your custom classes defined in `config.js`.
 
-#### `definitions.css` file
+#### "definitions.css" file
 Is a special `css` file that includes ALL the classes from `fonts.tss` and `tailwind.tss` files ( including the official icon fonts libraries ) to be used with [“Intellisencse for CSS class names in HTML”](/guide/Alloy_Framework/Alloy_PurgeTSS/whats-new/v5.2.1.md#new-definitionscss-file) VS Code extension.
 
-#### `fonts` folder
+#### "fonts" folder
 Where you can add any Icon, Serif, Sans-Serif, Cursive, Fantasy or Monospace icons to be used in your app. See [build-fonts command](/guide/Alloy_Framework/Alloy_PurgeTSS/whats-new/v5.1.0.md#instructions-to-recreate-any-of-the-deleted-libraries) for a step-by-step instructions.
 
-## Availble options
+## Available options
 These are the different options ( or subcommands ) that you can pass to `purgetss`.
 ### `build`
 If you need to re-generate `tailwind.tss` and `definitions.css` files run:

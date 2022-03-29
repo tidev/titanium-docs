@@ -114,11 +114,49 @@
                     "Alloy_PurgeTSS/Configuring_Guide",
                     "Configuring Guide" 
                 ],
+                [
+                    "Alloy_PurgeTSS/Grid_System",
+                    "Grid System" 
+                ],
+                [
+                    "Alloy_PurgeTSS/Custom_Fonts_File",
+                    "Custom Fonts File" 
+                ],
+                [
+                    "Alloy_PurgeTSS/Animation_Module",
+                    "Animation Module" 
+                ],
+                [
+                    "Alloy_PurgeTSS/Glossary",
+                    "Glossary" 
+                ],
+                [
+                    "Alloy_PurgeTSS/Tailwind_Classes",
+                    "Tailwind Classes" 
+                ],
                 {
                     "title": "What's New",
                     "path": "/guide/Alloy_Framework/Alloy_PurgeTSS/Whats_New/",
                     "children": [
-                        
+                            "Alloy_PurgeTSS/Whats_New/v5.3.1",
+                            "Alloy_PurgeTSS/Whats_New/v5.2.1",
+                            "Alloy_PurgeTSS/Whats_New/v5.1.0",
+                            "Alloy_PurgeTSS/Whats_New/v4.1.2",
+                            "Alloy_PurgeTSS/Whats_New/v3.2.0",
+                            "Alloy_PurgeTSS/Whats_New/v3.1.7",
+                            "Alloy_PurgeTSS/Whats_New/v3.1.5",
+                            "Alloy_PurgeTSS/Whats_New/v3.1.2",
+                            "Alloy_PurgeTSS/Whats_New/v3.1.1",
+                            "Alloy_PurgeTSS/Whats_New/v3.1.0",
+                            "Alloy_PurgeTSS/Whats_New/v3.0.5",
+                            "Alloy_PurgeTSS/Whats_New/v3.0.4",
+                            "Alloy_PurgeTSS/Whats_New/v3.0.3",
+                            "Alloy_PurgeTSS/Whats_New/v3.0.0",
+                            "Alloy_PurgeTSS/Whats_New/v2.6.0",
+                            "Alloy_PurgeTSS/Whats_New/v2.5.8",
+                            "Alloy_PurgeTSS/Whats_New/v2.5.5",
+                            "Alloy_PurgeTSS/Whats_New/v2.5.3",
+                            "Alloy_PurgeTSS/Whats_New/v2.5.0"
                     ]
                 }
             ]
