@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide provides basic instructions on using PurgeTSS for your project. PurgeTSS is an Alloy addon with predefined classes to use in the XML views. It can used by  all Titanium developers, who want to create beautiful designed mobile apps easily.
+This guide provides basic instructions on using PurgeTSS for your project. PurgeTSS is an Alloy addon with predefined classes to use in the XML views. It can be used by  all Titanium developers, who want to create beautiful designed mobile apps easily.
 
 ## Command-line interface usage
 
