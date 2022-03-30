@@ -24,7 +24,7 @@ When you run `alloy purgetss` for the first time in your project it will do the 
 ### 1. Auto-Run Hook
 It will add a `hook` in `alloy.jmk` to auto-run `purgetss` everytime you compile your app. **Very useful when using `liveview`.**
 
-### 2. "purgetss" folder
+### 2. purgetss folder
 It will create a `purgetss` folder at the root of your project with the following files and folder:
 
 #### config.js file
