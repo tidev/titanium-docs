@@ -7,11 +7,12 @@ on:
     - actions_tests
   pull_request:
 
-runs:
-  using: composite
-  steps:
-    - name: Use Node.js 12.x
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ inputs.node-version }}
-        cache: 'npm'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ inputs.node-version }}
+          cache: 'npm'
