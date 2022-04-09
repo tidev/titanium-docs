@@ -49,7 +49,7 @@ Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3
 
 The Titanium SDK requires Oracle's JDK and Node.js.
 
-If you are using Studio for Mac OS X and Windows, Studio prompts you to install the required software.
+If you are using Studio for macOS and Windows, Studio prompts you to install the required software.
 
 #### Java Development Kit
 
@@ -72,15 +72,15 @@ See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Pre
 
 #### Node.js
 
-To run all Appcelerator components, you must have Node.js 10.13.0 or later.
+To run all Appcelerator components, you must have Node.js 12 or later.
 
-On Mac OS X and Windows, if you have selected to install Titanium updates, Studio prompts you to install Node.js. On Linux, you need to manually install Node.js.
+On macOS and Windows, if you have selected to install Titanium updates, Studio prompts you to install Node.js. On Linux, you need to manually install Node.js.
 
 ![download_05](/images/guide/download/attachments/29004836/download_05.png)
 
 | Operating System | Min Node Version | Max Node Version | Download Location |
 | --- | --- | --- | --- |
-| macOS / Windows / Linux | 10.13.0 | 16.X | [Official Website](https://nodejs.org/en/download/releases/) |
+| macOS / Windows / Linux | 12.X | 16.X | [Official Website](https://nodejs.org/en/download/releases/) |
 
 See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node/) for detailed instructions.
 
