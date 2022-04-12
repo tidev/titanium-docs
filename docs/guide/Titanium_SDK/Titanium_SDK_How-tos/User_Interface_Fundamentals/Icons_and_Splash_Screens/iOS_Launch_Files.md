@@ -5,14 +5,6 @@ weight: '10'
 
 # iOS Launch Files
 
-## What this guide is about
-
-This guide walks you through using Launch Files instead of traditional Launch Images for iOS. It was originally published as [blog post](http://www.appcelerator.com/blog/2016/02/titanium-5-2-0-launch-files-ipad-pro-slide-over-and-split-view/) and is illustrated by the [Titanium 5.2.0 Sample App](https://github.com/appcelerator-developer-relations/appc-sample-ti520) .
-
-* **Minimum Titanium SDK version:** 5.2.0
-
-* **Minimum iOS SDK version:** 8.0
-
 ## What are Launch Files?
 
 Until now, you used to create a bunch of `Default*.png` Launch Images. In iOS 8 Apple introduced [Launch Files](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/LaunchImages.html). These are the same XIB files or Storyboards that you’d normally build you UI with in Xcode. This means you can use any iOS UI component and only need one file to support all devices. When you app first runs, iOS takes a snapshot image of the launch file to use as launch image. A great way to slim down your IPA!
@@ -41,7 +33,7 @@ Both need to be enabled in the `<ios>` section of your [tiapp.xml](https://githu
 
 The templates for new Titanium projects have this property enabled by default.
 
-### Option A: Use the builtin Storyboard
+### Option A: Use the built-in Storyboard
 
 The builtin Storyboard features a centered image on a solid background color. The sample uses the builtin storyboard with a [custom image](https://github.com/appcelerator-developer-relations/appc-sample-ti520/tree/master/app/assets/iphone) on an [Appcelerator red Background Color](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/tiapp.xml#L31):
 
@@ -104,6 +96,11 @@ Now drag the "Split View Controller" element to the center, remove the old "View
 ![InitialVC](./InitialVC.png)
 
 Thats it! Save the storyboard, clean the build directory and cache (see chapter below) and run your app. If you want to include images, make sure to check the "**Use images**" paragraph above to handle image hashes.
+
+## Handle dark mode in storyboard
+
+You can add dark mode support to custom storyboards (see `Option B: Use a custom Storyboard` above) by using semantic colors inside the storyboard.
+Titanium will automatically pick up the correct colors based on the system setting afterwards.
 
 ## Dealing with Launch File cache
 
