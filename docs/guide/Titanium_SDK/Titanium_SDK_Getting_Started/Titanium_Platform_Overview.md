@@ -25,13 +25,7 @@ At a high-level, Titanium is the combination of:
 
 * [Titanium APIs](#titanium-apis)
 
-* [Axway Appcelerator Studio](#axway-appcelerator-studio)
-
 * [Modules](#undefined)
-
-* [Axway Appcelerator Dashboard](#AppceleratorDashboard)
-
-* [Axway API Builder](#axway-api-builder)
 
 ### Titanium SDK
 
@@ -53,21 +47,9 @@ The [Appcelerator CLI](/guide/Appcelerator_CLI/) is a set of command-line tools 
 
 The [Titanium API](#!/api) is a JavaScript-based API that gives you access to hundreds of native UI and non-visual components within your application. These APIs are split into various namespaces such as Titanium.UI (for User Interface) or Titanium.Network (for networking). This set of tutorials will take you through dozens of the most important APIs in the ecosystem.
 
-### Axway Appcelerator Studio
-
-[Appcelerator Studio](/guide/Axway_Appcelerator_Studio/) is Appcelerator's free [IDE](http://en.wikipedia.org/wiki/Integrated_development_environment) (integrated development environment). You can use Studio to write, test, and debug your mobile applications. Studio also has integrated templates and sample applications to make it even easier to get started creating your own apps. In addition, Studio will help you manage Titanium SDK updates and module usage.
-
 ### Modules
 
 Titanium is built as a series of modules that extend a few core functions of the API. If you check out our [API docs](#!/api), you'll find a list of the base modules included with Titanium. Yes, all those APIs are in fact modules that extend the core. Additionally, Appcelerator publishes a sampling of free add-on modules that extend this base on our [Github repository](https://github.com/appcelerator/titanium_modules). Subscribers have access to our [Titanium Modules](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Titanium_Development/Titanium_Modules/) (sometimes called TiPlus or Ti+) modules. Developers are free to extend Titanium themselves by writing their own [iOS](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/iOS_Module_Development_Guide/) and [Android](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/Android_Module_Development_Guide/) modules. Mobile Web even supports modules, though they must be "pure JavaScript" modules rather than being written in Objective-C or Java.
-
-### Axway Appcelerator Dashboard
-
-[AMPLIFY Dashboard](/guide/AMPLIFY_Dashboard/) is an integrated user interface to manage all aspects of your Axway Appcelerator Services development. The dashboard enables users to create, deliver, analyze and manage your mobile apps which could be native cross-platform Titanium applications, as well as iOS, Android, Windows and Node.js applications.
-
-### Axway API Builder
-
-[API Builder](/guide/Axway_API_Builder/API_Builder/) provides various backend services, including analytics, that are included in our list of Titanium components. Titanium analytics provide basic usage-level statistics, including how often your app is used and on which platforms. You can even log custom analytics events so that you can track the use of specific features, like button clicks, data access, or any other type of user interaction. These services are provided transparently to the developer via the core API.
 
 ## Titanium at 10,000 feet
 
@@ -88,13 +70,3 @@ In the same way, Titanium also lets you create Android apps that feel like Andro
 ## References and Further Reading
 
 Throughout the remainder of this book, we'll work under the assumption that you've installed Titanium and its required components. If you need further information or help installing Titanium, please visit our [Titanium SDK Getting Started](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/) wiki page.
-
-## Start using Titanium Platform
-
-To start using the Titanium Platform, you need an account to log in to the Appcelerator Dashboard and Appcelerator Studio.
-
-* If you want to try the Appcelerator Platform for free, [sign up for an Appcelerator Platform account](http://www.appcelerator.com/signup/).
-
-* If you are part of an Appcelerator Organization, your organization's Appcelerator Platform administrator sends an invitation to you to log in to the Appcelerator Dashboard and create an account.
-
-* If you are an administrator, see [Managing Organizations](/guide/AMPLIFY_Dashboard/AMPLIFY_Dashboard_Guide/Managing_Organizations/) for more information about adding users to your organization's Appcelerator Platform and provisioning them either Dashboard access.
