@@ -7,7 +7,7 @@ weight: '10'
 
 ## Introduction
 
-This page lists information on how to use Hyperloop with new and existing projects. Hyperloop works as a native module and is pre-packaged with the SDK 7.0.0 and later.
+This page lists information on how to use Hyperloop with new and existing projects. Hyperloop works as a native module and is pre-packaged with the SDK.
 
 Each Titanium project that wants to use Hyperloop requires the Hyperloop service to be enabled. By default, Hyperloop is disabled and you can enable it for your projects via the CLI or within Studio.
 
@@ -29,24 +29,6 @@ If you’d like to use Hyperloop in a new or existing Titanium project, add the 
 <modules>
   <module>hyperloop</module>
 </modules>
-```
-
-### On SDKs older than 7.0.0
-
-You need to change some additional values in your `tiapp.xml` file to get Hyperloop working. Note that these changes are unnecessary in SDK 7.0.0 as the defaults will work.
-
-For iOS, you’ll need to ensure that the `<use-jscore-framework>` flag is enabled (This is enabled by default in Titanium SDK 7.0.0 and later, only will only be disabled if explicitly set to false here):
-
-```xml
-<ios>
-  <use-jscore-framework>true</use-jscore-framework>
-</ios>
-```
-
-_A_lso ensure to have the "run-on-main-thread" property set in the top-level of your tiapp.xml (It is enabled by default in Titanium SDK 7.0.0 and later, only will only be disabled if explicitly set to false here):
-
-```xml
-<property name="run-on-main-thread" type="bool">true</property>
 ```
 
 ## Enabling via CLI
