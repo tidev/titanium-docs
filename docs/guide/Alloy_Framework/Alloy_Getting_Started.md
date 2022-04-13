@@ -13,7 +13,7 @@ This guide provides basic instructions on creating a quick Alloy project. Alloy 
 
 To create and manage Alloy applications, you need the Alloy command-line interface. You can install the Titanium CLI like this:
 
-1. Download and install Node.js 16 from [http://nodejs.org/#download](http://nodejs.org/#download), which includes the npm package manager needed to install the Titanium CLI.
+1. Download and install Node.js from [http://nodejs.org/#download](http://nodejs.org/#download), which includes the npm package manager needed to install the Titanium CLI.
 
 2. From a terminal, run the following command to install the CLI:
 

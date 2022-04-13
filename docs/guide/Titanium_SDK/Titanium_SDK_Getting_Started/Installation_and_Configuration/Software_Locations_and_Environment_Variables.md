@@ -47,7 +47,7 @@ Paths to these tools and project files should not contain spaces or special char
 | Oracle JDK (Binaries) | PATH | `%PROGRAMFILES%\Java\jdk<version>\bin` | Location of Java executables, `java` and `javac` (default installation path by Studio) |
 | Oracle JDK (Home) | JAVA\_HOME | `%PROGRAMFILES%\Java\jdk<version>` | Location of the JDK (default installation path by Studio) |
 | python | PATH | `C:\Python27` | Location of python executable |
-| Titanium SDK Home | N/A | `%PROGRAMDATA%\Titanium` | Location of Mobile and Desktop SDKs (containing `mobilesdk`, `modules`, `runtime`& `sdk` directories) |
+| Titanium SDK Home | N/A | `%PROGRAMDATA%\Titanium` | Location of Mobile and Desktop SDKs (containing `mobilesdk`, `modules`, `runtime` & `sdk` directories) |
 
 Be aware of the following environment variables that exist by default on Windows 7 systems, which can be used when configuring the environment variables above:
 

@@ -78,7 +78,7 @@ Being in the habit of writing test cases as part of your troubleshooting process
 
 As a simple example, you observe in your app that the `layout:'vertical'` property of the [Titanium.UI.Window](http://developer.appcelerator.com/apidoc/mobile/latest/Titanium.UI.Window-object) object does not work as expected for its child views. In the process of producing a test case, you remove all the properties from both the window and its sub-views except for those that are absolutely necessary. With less code, it is often easier to notice a mistake and, in this case, you realize that the child view's top property had been inadvertently set, which caused the views to be positioned absolutely rather than relatively.
 
-Syntax errors can be the cause of unusual behavior too. Therefore, there is no point escalating an issue to the community or JIRA until you have ensured it validates properly. Of course, our VSCode or Atom package can help you correct these types of problems, with its built-in Javascript validator. Otherwise. you could use an online tool such as [JSLint](http://www.jslint.com).
+Syntax errors can cause unusual behavior. Use the Titanium VS Code extension to help correct these type of problems. We also recommend using a static analyzer such as eslint to detect issues.
 
 In summary, to create a test case:
 
