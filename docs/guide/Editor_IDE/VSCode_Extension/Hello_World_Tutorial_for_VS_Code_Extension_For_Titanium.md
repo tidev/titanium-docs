@@ -9,15 +9,15 @@ This document provides the necessary information to build the "Hello World" app 
 
 ## Requirements
 
-This tutorial assumes that the user has some basic familiarity with VS Code, has an Appcelerator [account](https://www.appcelerator.com/pricing/), and has the necessary [emulators](/guide/Titanium_SDK/Titanium_SDK_How-tos/Visual_Studio_Code_Extension_for_Titanium/Setting_Up_Emulators_and_Simulators_For_Titanium/#installing-android-studio,-android-sdk,-and-android-virtual-device) and/or [simulators](/guide/Titanium_SDK/Titanium_SDK_How-tos/Visual_Studio_Code_Extension_for_Titanium/Setting_Up_Emulators_and_Simulators_For_Titanium/#install-ios-simulator) set up on your machine.
+This tutorial assumes that the user has some basic familiarity with VS Code, has an Appcelerator [account](https://www.appcelerator.com/pricing/), and has the necessary [emulators](/guide/Editor_IDE/VSCode_Extension/Setting_Up_Emulators_and_Simulators_For_Titanium/#installing-android-studio,-android-sdk,-and-android-virtual-device) and/or [simulators](/guide/Editor_IDE/VSCode_Extension/Setting_Up_Emulators_and_Simulators_For_Titanium/#install-ios-simulator) set up on your machine.
 
 ### Android emulators
 
-After completing [emulators](/guide/Titanium_SDK/Titanium_SDK_How-tos/Visual_Studio_Code_Extension_for_Titanium/Setting_Up_Emulators_and_Simulators_For_Titanium/#installing-android-studio,-android-sdk,-and-android-virtual-device) guide, you'll need to go back into **VC Code**, click on the **Titanium Explorer** icon ![Titanium_icon](./Titanium_icon.png) and click the **Refresh Devices** icon ![Refresh](./Refresh.png) . You should now see the installed emulators for Android.
+After completing [emulators](/guide/Editor_IDE/VSCode_Extension/Setting_Up_Emulators_and_Simulators_For_Titanium/#installing-android-studio,-android-sdk,-and-android-virtual-device) guide, you'll need to go back into **VC Code**, click on the **Titanium Explorer** icon ![Titanium_icon](./Titanium_icon.png) and click the **Refresh Devices** icon ![Refresh](./Refresh.png) . You should now see the installed emulators for Android.
 
 ### iOS simulators
 
-After completing [simulators](/guide/Titanium_SDK/Titanium_SDK_How-tos/Visual_Studio_Code_Extension_for_Titanium/Setting_Up_Emulators_and_Simulators_For_Titanium/#install-ios-simulator) guide, go back to **VS Code** and click on the **Titanium Explorer** icon ![Titanium_icon](./Titanium_icon.png) and click the **Refresh Devices** icon ![Refresh](./Refresh.png) . You should now see the installed iOS simulators.
+After completing [simulators](/guide/Editor_IDE/VSCode_Extension/Setting_Up_Emulators_and_Simulators_For_Titanium/#install-ios-simulator) guide, go back to **VS Code** and click on the **Titanium Explorer** icon ![Titanium_icon](./Titanium_icon.png) and click the **Refresh Devices** icon ![Refresh](./Refresh.png) . You should now see the installed iOS simulators.
 
 ## Set up the project
 

@@ -7,7 +7,7 @@ weight: '60'
 
 ## Overview
 
-With the release of [SDK 7.0.0](#undefined), Axway Appcelerator introduces the Titanium package for **[Atom](https://atom.io/)**. The initial release includes the following features:
+With the release of SDK 7.0.0, Axway Appcelerator introduces the [Titanium package](https://github.com/tidev/atom-appcelerator-titanium) for **[Atom](https://atom.io/)**. The initial release includes the following features:
 
 * Toolbar with quick access to build commands and code signing assistance
 
@@ -21,13 +21,14 @@ With the release of [SDK 7.0.0](#undefined), Axway Appcelerator introduces the T
 
 * Utilize the Atom Command Palette to initiate commands
 
-::: warning ⚠️ Warning
-Atom 1.21 or later is required.
-:::
 
 ## Installation
 
 Installing the Atom Package for Axway Appcelerator can be accomplished via the editor itself or by using the apm CLI command.
+
+## Release notes
+
+You can find the release notes at https://github.com/tidev/atom-appcelerator-titanium/releases
 
 ### Via Atom Editor
 
@@ -70,7 +71,7 @@ Some functionality provided by the Appcelerator Titanium package, such as jump-t
 
 ### Snippets
 
-With [1.1.0](/guide/Titanium_SDK/Titanium_SDK_Guide/Atom_Package/Atom_Package_Release_Notes/Atom_Package_1.1.0_Release_Note/) of the package, we introduced snippets.
+With 1.1.0 of the package, we introduced snippets.
 
 Code snippets for common Alloy and Titanium APIs are provided for use in Alloy controllers and modules. A description of the snippet and link to documentation are provided where appropriate. Type the prefix and the autocomplete overlay will be displayed with matching snippets.
 
@@ -104,7 +105,7 @@ Code snippets for common Alloy and Titanium APIs are provided for use in Alloy c
 
 ### Shortcuts
 
-As of [1.1.0](/guide/Titanium_SDK/Titanium_SDK_Guide/Atom_Package/Atom_Package_Release_Notes/Atom_Package_1.1.0_Release_Note/), we introduced shortcuts:
+As of 1.1.0, we introduced shortcuts:
 
 | Keymap | Operation |
 | --- | --- |
