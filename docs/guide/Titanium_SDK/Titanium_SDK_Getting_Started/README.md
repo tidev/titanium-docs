@@ -22,7 +22,7 @@ Your system environment must meet the following requirements to run Studio:
 * **Node.js:** Required for the Titanium command-line tools like the CLI, Alloy and AMPLIFY Runtime Services
 
 ::: tip 💡 Hint
-For Windows, you can use either 32-bit or 64-bit versions of Java JDK. Please refer to [Java Support](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/Studio_Java_Support/) for more information.
+For Windows, you can use either 32-bit or 64-bit versions of Java JDK. Please refer to [Java Support](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/Studio_Java_Support.html) for more information.
 :::
 
 For more details, please refer to [Prerequisites](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/) document.

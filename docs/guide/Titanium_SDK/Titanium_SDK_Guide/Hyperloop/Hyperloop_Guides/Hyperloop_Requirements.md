@@ -13,7 +13,7 @@ You’ll need to have the following installed on your machine as the recommended
 
 * Titanium CLI: 7.0.0+
 
-You can install [Titanium CLI](https://platform.axway.com/#/product/cli) to get the latest version of all these components.
+You can install [Titanium CLI](https://https://github.com/tidev/titanium) to get the latest version of all these components.
 
 ### Optional Dependencies
 
