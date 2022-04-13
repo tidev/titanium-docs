@@ -7,14 +7,12 @@ weight: '10'
 
 ## Disk space
 
-We recommend the following as a guideline for estimating how much disk space is necessary to build applications using Axway Appcelerator Studio:
+We recommend the following as a guideline for estimating how much disk space is necessary to build applications:
 
 | Application | Recommended disk space | Comments |
 | --- | --- | --- |
 | Xcode | 15 - 20GB | Xcode includes the latest iOS and related simulator(s). |
 | Android Studio | 10 - 15GB | You may need to select with SDK(s), NDK(s), and emulators to use. |
-| Axway Appcelerator Studio | ~250MB |  |
-| Genymotion | ~1GB | Genymotion is optional |
 | Mobile app (workspace) | 50MB - 3GB | Disk usage depends on many factors. |
 
 ## Node

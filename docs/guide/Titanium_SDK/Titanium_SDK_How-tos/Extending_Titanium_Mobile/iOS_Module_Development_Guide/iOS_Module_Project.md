@@ -13,8 +13,6 @@ This guide covers how to manage your module project as well as how to add third-
 
 In order to develop iOS modules, you need to have your environment setup to build iOS applications with the Titanium SDK.
 
-* To setup Titanium, see [Setting up Studio](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Setting_up_Studio/).
-
 * To setup your environment for iOS, see [Installing the iOS SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK/).
 
 ## Project structure

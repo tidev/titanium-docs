@@ -136,7 +136,7 @@ For now, compiling and testing your modified SDK is a very basic process.
 
 3. Run `node scons.js cleanbuild` to do a clean build for iOS and Android that also packages and installs the SDK. If you only want to build for one platform, add either "ios" or "android" to the command
 
-4. Run your test app in Appcelerator Studio / CLI against your newly installed SDK.
+4. Run your test app with the CLI against your newly installed SDK.
 
 See [Building the Titanium SDK From Source](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Platform_Development/Building_the_Titanium_SDK_From_Source/) for detailed instructions for building the SDK.
 

@@ -11,7 +11,7 @@ The Titanium SDK helps you to build native cross-platform mobile application usi
 
 **[Titanium SDK Getting Started](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/)**
 
-Get up to speed by setting up Axway Appcelerator Studio and building your first application.
+Get started and build your first application.
 
 **[Welcome To Titanium](/guide/Titanium_SDK/Titanium_SDK_Guide/Welcome_To_Titanium/)**
 

@@ -41,7 +41,7 @@ When creating a new project, the CLI will check if you are entitled to use Hyper
 
 ### Creating new Hyperloop-enabled project
 
-With Appcelerator Studio open and logged in, follow these steps to create a new Hyperloop-enabled project:
+Follow these steps to create a new Hyperloop-enabled project:
 
 1. Open **New Mobile App** **Project** wizard.
 

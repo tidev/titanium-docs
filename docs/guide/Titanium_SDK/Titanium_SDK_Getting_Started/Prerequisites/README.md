@@ -15,7 +15,6 @@ The minimum memory requirement for Studio and the Titanium SDK is as follows:
 
 | Product | Host Operating System | Storage |
 | --- | --- | --- |
-| Appcelerator Studio | All | 1 GB (contiguous) |
 | Latest Android SDK | macOS | 1.5 GB (contiguous) |
 | Latest Android SDK | Windows | 1 GB (contiguous) |
 

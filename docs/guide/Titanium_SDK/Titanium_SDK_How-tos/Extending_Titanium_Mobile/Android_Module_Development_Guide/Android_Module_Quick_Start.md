@@ -430,14 +430,6 @@ When the application starts running, you see should a red square in the middle o
 
 * For more examples of using the module API, see the [ti.moddevguide Github project](https://github.com/appcelerator-modules/ti.moddevguide/tree/master/android).
 
-## AIDL support
+## Android Studio
 
-As of 5.2.0, building Android modules now supports AIDL files. To use AIDL files in your app, apply the following steps:
-
-1. Using Studio, you can generate the AIDL .java file. The AIDL file is only used to generate the Java interface code. Once that file is available, it isn't required anymore. See Android Developer's page called Preparing Your In-app Billing Application for more details.
-
-2. Copy over the AIDL file into the correct namespace package folder into the src directory of the Appcelerator Studio module.
-
-See [IInAppBillingService.java](https://github.com/appcelerator-modules/ti.inappbilling/blob/stable/android/src/com/android/vending/billing/IInAppBillingService.java) for reference information.
-
-Note: Prior to Studio 5.2.0, you will need to use either Eclipse or Android Studio to generate the AIDL file.
+You can use Android Studio to write your code. Build the module once and open the `build` folder in Android Studio.

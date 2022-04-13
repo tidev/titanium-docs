@@ -196,50 +196,6 @@ To install Android SDK on Windows:
 6. Once the requested components have been installed, click **Finish** button.
 
 
-In Appc Studio, confirm that your Android SDK(s) have been installed:
-
-1. Launch **Axway Appcelerator Studio**.
-
-2. **Login** using your credentials (if you haven't already).
-
-3. Go to **Axway Appcelerator Studio** > **Preferences** in the menu bar.
-
-4. In the Preferences window, go to **Studio** > **Platforms** > **Android**.
-
-5. Click the **Install SDKs...** button in the **General** section.
-
-6. Select the **Android SDK(s)** you wish to use.
-
-7. Click the **Install** button.
-
-8. Click the **Accept** button for the **Review License** window.
-
-9. In the **Progress** tab, you should see the status of the Android SDK(s) being downloaded and installed.
-
-10. Review the installed SDKs in the General section of the Preferences window. You should now see the newly installed Android SDK(s).
-
-Even though Appc Studio not display newly installed Android SDK(s), they are installed and available for use. You can confirm this by creating a new AVD (Android Virtual Device) and see the options to use the newly installed Android SDK(s).
-
-There are two ways to create an AVD to use in Appc Studio: Create the AVD in Appc Studio or create it in Android Studio. Appc Studio should pick up the new AVD automatically if you created a new one via Android Studio.
-
-To create an AVD via Appc Studio:
-
-1. Open **Appc Studio**.
-
-2. In the menu, go to **Axway Appcelerator Studio** > **Preferences**.
-
-3. In the Preferences window, go to **Studio** > **Platforms** > **Android**.
-
-4. In the Android Preferences section, click on the **Create AVDs...** button.
-
-5. Give the AVD a name in the **AVD Name** field using a-z A-Z 0-9 .\_- characters only (no spaces or other special characters).
-
-6. Select the desired device in the **Device** field.
-
-7. Select the **Android SDK** from the **System Image** field.
-
-8. After making your selections, click **OK** button to build the AVD.
-
 To create an AVD via Android Studio:
 
 1. Open **Android Studio**.
@@ -264,21 +220,6 @@ In the Android SDK Manager, under the SDK Platforms tab, you can find "Intel x86
 
 Extra software may be required to take advantage of the x86 emulator – see [Configuring Virtual Machine Acceleration](http://developer.android.com/tools/devices/emulator.html#accel-vm) in the Android Tools documentation.
 
-## Configuring Appcelerator Studio
-
-To use the Android SDK with Appcelerator Studio, the path to the SDK must be set in the **Preferences** dialog.
-
-1. Open the Preferences dialog:
-
-    1. On macOS, from the menu bar, select **Appcelerator Studio** > **Preferences**.
-
-    2. On Windows, from the menu bar, select **Window > Preferences**.
-
-2. In the **Preferences** dialog, navigate to **Studio > Platforms > Android SDK**.
-
-3. Set your Android SDK path. Enter the path to your Android SDK in the **Android SDK Home** textbox or click the **Configure** button to navigate to the SDK directory.
-
-4. Select your default Android SDK. Select a **Google APIs** item from the **Default Android SDK** drop-down menu.
 
 ## Configuring the CLI
 

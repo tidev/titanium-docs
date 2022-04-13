@@ -169,11 +169,10 @@ sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer/
 
 If you are using Studio, you need to restart Studio for your changes to take effect.
 
-## Configure Studio and the CLI
+## Configure the CLI
 
 Both Studio and the CLI use the `xcode-select` command to obtain the location of the Xcode tool to use when building your iOS applications. Neither tool requires any additional configuration.
 
-You can select a default iOS simulator type to launch after building your application. Open the **Preferences** dialog by selecting **Axway Appcelerator Studio** \> **Preference** from the menu bar, then navigate to **Studio > Platforms > iOS** and select a simulator type from the **Default Display** drop-down menu.
 
 ## Note for Mavericks (and later)
 
