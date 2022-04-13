@@ -88,7 +88,7 @@ From the menu bar, select **Help** \> **Check for Axway Appcelerator Updates** t
 
 ## First Titanium app
 
-To create your first Titanium app, please review [Hello Titanium App Tutorial](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Hello_Titanium_App_Tutorial/).
+To create your first Titanium app, please review [Hello Titanium App Tutorial](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Hello_Titanium_App_Tutorial.html).
 
 ## Troubleshooting
 
