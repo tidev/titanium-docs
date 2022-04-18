@@ -7,7 +7,7 @@ weight: '10'
 
 ## Overview
 
-This guide walks through the steps of installing and configuring Studio and third-party SDKs and tools required to develop native mobile applications with Studio. If you prefer to use your own editor or IDE, you can integrate the Titanium command-line tools into your environment (see [Setting up the Titanium CLI](#undefined) for instructions).
+This guide walks through the steps of installing and configuring Studio and third-party SDKs and tools required to develop native mobile applications with Studio. If you prefer to use your own editor or IDE, you can integrate the Titanium command-line tools into your environment (see [Setting up the Titanium CLI](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/) for instructions).
 
 ## Prerequisites
 
@@ -88,7 +88,7 @@ From the menu bar, select **Help** \> **Check for Axway Appcelerator Updates** t
 
 ## First Titanium app
 
-To create your first Titanium app, please review [Hello Titanium App Tutorial](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Hello_Titanium_App_Tutorial/).
+To create your first Titanium app, please review [Hello Titanium App Tutorial](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Hello_Titanium_App_Tutorial.html).
 
 ## Troubleshooting
 
