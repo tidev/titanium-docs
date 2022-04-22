@@ -52,6 +52,15 @@ module.exports = {
                 link: 'https://tidev.slack.com'
               },
               {
+                text: 'GitHub Discussions',
+                link: 'https://github.com/tidev/titanium_mobile/discussions'
+              }
+            ]
+          },
+          {
+            text: 'Contribute',
+            items: [
+              {
                 text: 'Contribution Guide',
                 link: '/contribute.md'
               },
