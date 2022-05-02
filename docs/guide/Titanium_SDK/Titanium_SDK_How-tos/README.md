@@ -39,7 +39,7 @@ This chapter has several sections dedicated to how-to instructions for Titanium 
 
 * [Titanium SDK Tutorials](/guide/Titanium_SDK/Titanium_SDK_How-tos/Titanium_SDK_Tutorials/)
 
-* [Visual Studio Code Extension for Titanium](/guide/Titanium_SDK/Titanium_SDK_How-tos/Visual_Studio_Code_Extension_for_Titanium/)
+* [Visual Studio Code Extension for Titanium](/guide/Editor_IDE/VSCode_Extension/)
 
 * [WKWebView](/guide/Titanium_SDK/Titanium_SDK_How-tos/WKWebView/)
 

@@ -17,8 +17,6 @@ This document provides links to various guides on setting up and using Titanium 
 
 * [Titanium and Angular](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_and_Angular/)
 
-* [Atom Package](/guide/Titanium_SDK/Titanium_SDK_Guide/Atom_Package/)
-
 * [Preparing for Distribution](/guide/Titanium_SDK/Titanium_SDK_Guide/Preparing_for_Distribution/)
 
 * [Contributing to Titanium](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/)
@@ -28,3 +26,9 @@ This document provides links to various guides on setting up and using Titanium 
 * [Titanium SDK Open Source Attribution Notice](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_SDK_Open_Source_Attribution_Notice/)
 
 * [Titanium Command-Line Interface Reference](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/)
+
+## Editor extensions / packages
+
+* [Atom Package](/guide/Editor_IDE/Atom_Package/)
+
+* [Visual Studio Code extension](/guide/Editor_IDE/VSCode_Extension/)
