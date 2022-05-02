@@ -9,7 +9,7 @@ The Alloy Command-Line Interface (CLI) is a command-line tool for managing and b
 
 ## Command-Line Interface Installation
 
-The Alloy command-line interface and plugin will be automatically installed by Appcelerator Studio or the Titanium CLI.
+The Alloy command-line interface and plugin will be automatically installed when you install the `alloy` package.
 
 If there were installation problems or if you wish to install the Alloy CLI independent of the other tools, refer to the manual installation instructions below.
 

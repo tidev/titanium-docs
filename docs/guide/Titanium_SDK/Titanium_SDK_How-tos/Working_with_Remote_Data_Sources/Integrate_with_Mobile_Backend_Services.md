@@ -43,8 +43,6 @@ You might want to add a fifth step to this list: Manage the data your app collec
 
 Using MBS API to store and retrieve data for your app is easy.
 
-* When creating a new application in Appcelerator Studio, make sure the **Enable Appcelerator Services** checkbox is enabled.
-
 * For a previously created project, open your `tiapp.xml` file, then click the **Enable Services** button under the _Appcelerator Service_ section.
 
 #### Step 2. Configure your Titanium project

@@ -95,11 +95,6 @@ The minimum requirements (builds tools and SDKs, not including Windows Mobile Em
 
 7. Once the install has finished, open Visual Studio to verify that the install worked.
 
-## Troubleshooting
-
-* Appcelerator Studio does not show any emulators or connected devices/`ti info -t windows` does not display any information
-
-    * The tooling within the Visual Studio installation used by Titanium to detect information can sometimes get corrupted, this may happen if Appcelerator Studio was left open while Visual Studio was updating or installing. To fix this, first try restarting your development machine. If that does not work you can run a repair of Visual Studio by opening the installer and choosing the **Repair** option.
 
 ## Further Information
 
