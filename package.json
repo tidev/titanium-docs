@@ -20,7 +20,7 @@
     "express": "^4.17.3"
   },
   "devDependencies": {
-    "@fortawesome/free-solid-svg-icons": "^6.0.0",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@silvanite/vuepress-plugin-tailwind": "^1.3.0",
     "@titanium-sdk/vuepress-plugin-fontawesome": "^4.8.3",
     "@vuepress/plugin-back-to-top": "^1.9.7",
