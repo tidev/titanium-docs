@@ -9,9 +9,6 @@ on:
 jobs:
   regen:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: titanium-docs
 
     steps:
       # third-party action that cancels previous runs
