@@ -9,6 +9,9 @@ on:
 jobs:
   regen:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: titanium-docs
 
     steps:
       # third-party action that cancels previous runs
@@ -151,3 +154,5 @@ jobs:
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          repository: titanium-docs
