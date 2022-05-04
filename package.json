@@ -8,9 +8,8 @@
     "clean:api": "rm -rf docs/api; rm -f docs/.vuepress/api.json",
     "clean:guide": "rm -rf docs/guide; rm -rf docs/.vuepress/public/images/guide; rm -f docs/.vuepress/guide.json",
     "docs:dev": "vuepress dev docs --temp .temp",
-    "docs:build": "NODE_OPTIONS=\"--max-old-space-size=6144\" vuepress build docs",
+    "docs:build": "node ./scripts/generate-guides && NODE_ENV=production NODE_OPTIONS=\"--max-old-space-size=6144\" vuepress build docs",
     "docs:version": "vuepress version docs",
-    "docs:generate-guides": "node ./scripts/generate-guides",
     "docs:metadata": "vuepress metadata docs ../titanium_mobile/apidoc",
     "docs:migrate": "node ./scripts/migrate ../titanium_mobile/apidoc",
     "test": "echo \"Error: no test specified\" && exit 1"
