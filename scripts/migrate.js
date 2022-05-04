@@ -62,7 +62,7 @@ async function generateMarkdown(targetVersion) {
   }
   await Promise.all(typeGenerations);
   
-  console.log(`Created the initial markdown files for ${createdTypes.length} actual types and ${createdPseudoTypes.length} pseudo types.`);
+  console.log(`Created the initial markdown files for ${createdTypes.length} actual types and ${createdPseudoTypes.length} pseudo types.`);
   console.log(`Update the sidebar config if required.`);
   createdTypes.sort((a, b) => a.localeCompare(b));
   console.log(JSON.stringify(createdTypes.map(typeName => typeName.toLowerCase().replace(/\./g, '/')), null, 2));

@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK
-weight: '40'
+weight: '10'
 ---
 
 # Titanium SDK
@@ -25,7 +25,7 @@ Preview more examples of using the Titanium SDK.
 
 Learn how to code and organization your project. Also take a look at [Alloy Framework](/guide/Alloy_Framework/).
 
-**[User Interface](#undefined)**
+**[User Interface](/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Fundamentals/)**
 
 Learn the basics of creating a user interface for your application. These topics cover creating a basic UI, event handling and a high-level overview of platform-specific UIs.
 

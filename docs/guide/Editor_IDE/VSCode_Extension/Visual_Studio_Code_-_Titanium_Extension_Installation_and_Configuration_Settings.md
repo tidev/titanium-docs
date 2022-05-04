@@ -1,7 +1,6 @@
 ---
-title: >-
-  Visual Studio Code - Titanium Extension Installation and Configuration
-  Settings
+title: Visual Studio Code - Titanium Extension Installation and Configuration Settings
+sidebar_title: Titanium Extension Installation and Configuration Settings
 weight: '20'
 ---
 

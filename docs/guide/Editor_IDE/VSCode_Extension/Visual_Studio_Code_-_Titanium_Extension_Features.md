@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Code - Titanium Extension Features
+sidebar_title: Titanium Extension Features
 weight: '10'
 ---
 

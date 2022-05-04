@@ -1,5 +1,5 @@
 ---
-title: Titanium SDK Guide
+title: Editor Support
 weight: '40'
 ---
 
