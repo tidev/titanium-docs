@@ -215,10 +215,6 @@
                                 [
                                     "Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK",
                                     "Installing the iOS SDK"
-                                ],
-                                [
-                                    "Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Windows_SDK",
-                                    "Installing the Windows SDK"
                                 ]
                             ]
                         },
@@ -469,15 +465,7 @@
                                     "App Thinning"
                                 ]
                             ]
-                        },
-                        [
-                            "Titanium_SDK_Guide/Preparing_for_Distribution/Deploying_to_Windows_Devices",
-                            "Deploying to Windows Devices"
-                        ],
-                        [
-                            "Titanium_SDK_Guide/Preparing_for_Distribution/Distributing_Windows_Applications",
-                            "Distributing Windows Applications"
-                        ]
+                        }
                     ]
                 },
                 {
@@ -637,10 +625,6 @@
                         [
                             "Titanium_SDK_How-tos/Cross-Platform_Mobile_Development_In_Titanium/iOS_Platform_Overview",
                             "iOS Platform Overview"
-                        ],
-                        [
-                            "Titanium_SDK_How-tos/Cross-Platform_Mobile_Development_In_Titanium/Windows_Platform_Overview",
-                            "Windows Platform Overview"
                         ],
                         [
                             "Titanium_SDK_How-tos/Cross-Platform_Mobile_Development_In_Titanium/Coding_Strategies",
@@ -863,10 +847,6 @@
                     "path": "/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/",
                     "children": [
                         [
-                            "Titanium_SDK_How-tos/Extending_Titanium_Mobile/Windows_Runtime_Direct_API_Access",
-                            "Windows Runtime Direct API Access"
-                        ],
-                        [
                             "Titanium_SDK_How-tos/Extending_Titanium_Mobile/Titanium_Module_Concepts",
                             "Titanium Module Concepts"
                         ],
@@ -1029,16 +1009,6 @@
                                 [
                                     "Titanium_SDK_How-tos/User_Interface_Deep_Dives/iOS_UI_Components_and_Conventions/iOS_3D_Touch",
                                     "iOS 3D Touch"
-                                ]
-                            ]
-                        },
-                        {
-                            "title": "Windows UI Components and Conventions",
-                            "path": "/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Windows_UI_Components_and_Conventions/",
-                            "children": [
-                                [
-                                    "Titanium_SDK_How-tos/User_Interface_Deep_Dives/Windows_UI_Components_and_Conventions/Windows_Asset_Qualifiers",
-                                    "Windows Asset Qualifiers"
                                 ]
                             ]
                         }

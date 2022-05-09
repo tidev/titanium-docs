@@ -44,8 +44,6 @@ Create style rules for the `#spicyrice` and `#burnstowndam` elements that assign
 
 * iOS expects `fontFamily` to be the font's PostScript name (see [Finding a font's PostScript name](#finding-a-font's-postscript-name)). This name is embedded in the font file and does not change if you rename the file.
 
-* Windows expects `fontFamily` to be font name or \[FontFilePath\]#\[FontName\].
-
 For example, in the following code the file name of the Burnstown Dam font is "burnstown\_dam.otf". For an Android application you therefore assign the value **burnstown\_dam** to `fontFamily`:
 
 ```

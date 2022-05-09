@@ -15,7 +15,6 @@ Alloy uses the `config.json` file, located in the project's `app` directory, to 
 | env:production | Contains key-value pairs present for targets built for production, running after a package installation. |
 | os:android | Contains key-value pairs present for targets built for Android. |
 | os:ios | Contains key-value pairs present for targets built for iOS. |
-| os:windows | Contains key-value pairs present for targets built for Windows Phone. Note: Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA. |
 | dependencies | Contains key-value pairs for widget dependencies, where the key is the widget name and the value is the version number of the widget. |
 | autoStyle | Enables the autostyle feature for the entire Alloy project. See [Dynamic Styles: Autostyle](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Dynamic_Styles/#autostyle) for more information. |
 | backbone | Select the Backbone.js library to use for Alloy Model and Collection objects. Set to either `0.9.2` (default for backwards compatibility), `1.1.2`. or `1.3.3`. |

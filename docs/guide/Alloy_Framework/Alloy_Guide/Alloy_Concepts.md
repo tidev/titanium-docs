@@ -60,7 +60,7 @@ The `alloy.jmk` file is not automatically generated when creating a new project.
 
 ### Platform-specific resources
 
-Controllers, views and styles can have platform-specific resources. Just add a folder named `android`, `ios`, `mobileweb` or `windows` under the component folder and add your platform-specific files for Android, iOS, Mobile Web or Windows Phone into the folder, respectively. Note: Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
+Controllers, views and styles can have platform-specific resources. Just add a folder named `android` or `ios` under the component folder and add your platform-specific files for Android or iOS into the folder, respectively.
 
 For example, an iOS-specific view and an Android-specific controller would be look like this:
 

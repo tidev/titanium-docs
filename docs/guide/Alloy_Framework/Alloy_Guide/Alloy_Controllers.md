@@ -119,9 +119,6 @@ The following are the constants defined by Alloy for use in the controller code:
 
 * `OS_IOS` : true if the current compiler target is iOS
 
-* `OS_MOBILEWEB` : true if the current compiler target is Mobile Web
-
-* `OS_WINDOWS` (**since Titanium CLI 4.0.0/Alloy 1.6.0**): true if the current compiler target is Windows Phone. Note: Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
 
 * `ENV_DEV` : true if the current compiler target is built for development (running in the simulator or emulator)
 

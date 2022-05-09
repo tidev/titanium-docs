@@ -27,10 +27,6 @@ You'll take a look at what goes into an Android app, including user interface sp
 
 As with the prior Android section, you'll explore the qualities and characteristics that embody iOS apps.
 
-**[Windows Platform Overview](/guide/Titanium_SDK/Titanium_SDK_How-tos/Cross-Platform_Mobile_Development_In_Titanium/Windows_Platform_Overview/)**
-
-As with the prior Android and iOS sections, you'll explore the qualities and characteristics that embody Windows Phone and Store apps. Note: Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
-
 **[Coding Strategies](/guide/Titanium_SDK/Titanium_SDK_How-tos/Cross-Platform_Mobile_Development_In_Titanium/Coding_Strategies/)**
 
 In this section, you'll take a brief look at the Titanium JavaScript environment, as well as the coding techniques you can use to create manageable and organized code.

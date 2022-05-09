@@ -7,7 +7,7 @@ weight: '50'
 
 ## Objective
 
-In this section, you will learn how to monitor for and solve memory leaks in your apps. The processes for monitoring memory usage varies by platform. You'll learn separately how to perform this feat on iOS, Android and Windows.
+In this section, you will learn how to monitor for and solve memory leaks in your apps. The processes for monitoring memory usage varies by platform. You'll learn separately how to perform this feat on iOS and Android.
 
 ## Contents
 
@@ -35,7 +35,7 @@ The upside of this is that if you see a crash or device log referencing jetsam, 
 
 * Android: 24-32MB heap, optional "large heap" of 128MB ([Application properties](/guide/Titanium_SDK/Titanium_SDK_Guide/Appendices/tiapp.xml_and_timodule.xml_Reference/#application-properties) for how to enable this)
 
-Compared to the memory space available to the desktop, these are severely restricted amounts. Furthermore, iOS, Android and Windows can force-reclaim memory or force-quit an app when the system needs more free memory. You'll want to limit your memory use and free allocations when you can. Let's see how JavaScript frees memory and then how you can release memory in your Titanium app.
+Compared to the memory space available to the desktop, these are severely restricted amounts. Furthermore, iOS and Android can force-reclaim memory or force-quit an app when the system needs more free memory. You'll want to limit your memory use and free allocations when you can. Let's see how JavaScript frees memory and then how you can release memory in your Titanium app.
 
 ### JavaScript garbage collection
 
@@ -207,38 +207,13 @@ These steps don't tell you exactly what is causing the leak in your app. Unlike 
 
 ![ddms](./ddms.png)
 
-### Monitoring allocations on Windows
-
-Microsoft Visual Studio has "Diagnostic Tools" for monitoring memory usage.
-
-1. Open Visual Studio.
-
-2. Select **Debug** \> **Performance Profiler...** from Visual Studio menu.
-
-3. Select **Choose Target** drop down list and choose target to profile. For instance choose **Installed App...** for monitoring installed Windows Store app. This tool also supports analyzing target against simulators and remote machine. Please refer to [Remote Debugging](http://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(vs.debug.remote.overview)&rd=true) for more information.
-
-    ![win1](./win1.png)
-4. Choose **Memory Usage** from **Available Tools** section, to investigate application memory to find issues such as memory leaks.
-
-    ![win3](./win3.png)
-5. Start monitoring by clicking **Start**
-
-6. When you want to take memory snapshot of the application, push **Take snapshot** button.
-
-    ![takesnap2](./takesnap2.png)
-7. Then Visual Studio shows native heap and allocation details when you take snapshot and Visual Studio finishes diagnostics session.
-
-    ![takesnapdetail](./takesnapdetail.png)
-
-For more information about Profiling Tools please refer to [Running Profiling Tools With or Without the Debugger](https://msdn.microsoft.com/en-us/library/mt695328.aspx).
-
 ### Hands-on practice
 
 #### Goal
 
 You'll examine an app that has a memory leak deliberately included. You'll apply various fixed and check your work until you have eliminated the leak.
 
-(This lab is written to work on iOS / macOS. See the notes at the end of the lab for Android and Windows information.)
+(This lab is written to work on iOS / macOS. See the notes at the end of the lab for Android information.)
 
 #### Steps
 

@@ -169,36 +169,6 @@ ti build -p ios -T device -C "iOS Device" -V "Loretta Martin (GE7BAC5)" -P "1111
 
 If you omit the `-V` and `-P` options, the CLI will prompt you with options. You can also retrieve the information from Xcode's Devices window (or Organizer window for Xcode 5.x and older) or with the `ti info -p ios` command.
 
-#### Windows Mobile Emulator
-
-To build for Windows Mobile Emulator, run `ti build -p windows`. Because no other options were specified, the CLI launches the application on the default Windows Mobile Emulator.
-
-To use a specific emulator, add the `-C <EMULATOR_ID>` option.
-
-```bash
-ti build -p windows
-## or
-ti build -p windows -T wp-emulator
-
-ti build -p windows -C 10-0-1
-```
-
-#### Windows Mobile device
-
-Due to the Windows SDK tooling, Titanium only supports installing to a single connected device at a time. Therefore, you do not need to specify a device using the `-C` option.
-
-```bash
-ti build -p windows -T wp-device
-```
-
-#### Windows local machine
-
-To build a Titanium app for your Windows desktop, you will need to build for your local machine.
-
-```bash
-ti build -p windows -T ws-local
-```
-
 ### Package an application
 
 #### Google Play APK
@@ -248,18 +218,6 @@ ti build -p ios -T dist-appstore -R "Pseudo, Inc." -P "AAAAAAAA-0000-9999-8888-7
 The CLI installs the package to Xcode's Organizer and launches Organizer for you to start the submission process.
 
 If you omit any of the optional parameters, the CLI will prompt you with options.
-
-#### Windows Store
-
-Titanium apps can be published for the Windows Store or the Windows Mobile Store. Please refer to the build help (`ti build --help`) for detail of how to specify your Windows Publisher GUID and distribution certificates.
-
-```bash
-## publish as a desktop app
-ti build -p windows -T dist-winstore
-
-## publish as a mobile app
-ti build -p windows -T dist-phonestore
-```
 
 ### Clean your build folder
 

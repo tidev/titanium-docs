@@ -73,7 +73,7 @@ alloy generate <component> [--widgetname <widget_name>] [--outputPath <output_pa
 | `widget <name>` | Creates a basic widget with the specified `name`. |
 | `--widgetname <name>` | Creates a component for the specified widget. Can only be used to create controllers, views or styles. |
 | `-o, --outputPath <outputPath>` | Output path for generated code. Point to the 'app' directory. |
-| `--platform <platform>` | Create a platform-specific view or controller component, where `<platform>` is either `android`, `ios` or `windows`. |
+| `--platform <platform>` | Create a platform-specific view or controller component, where `<platform>` is either `android` or `ios`. |
 | `-f, --force` | Forces the command to execute. |
 | `-n, --no-colors` | Disables color output. |
 

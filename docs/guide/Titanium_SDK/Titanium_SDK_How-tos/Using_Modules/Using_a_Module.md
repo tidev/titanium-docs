@@ -82,7 +82,7 @@ To manually add a module to your project's tiapp.xml file, modify the `<modules/
 
 ```xml
 <!-- $MODULE_VERSION should be the same as "version" in the module manifest and directory number -->
-<!-- $MODULE_PLATFORM should be the same as "platform" in the module manifest and directory number. One of "ios", "android" or "windows" -->
+<!-- $MODULE_PLATFORM should be the same as "platform" in the module manifest and directory number. One of "ios" or "android" -->
 
 <modules>
   <module version="$MODULE_VERSION" platform="$MODULE_PLATFORM">$MODULE_ID</module>

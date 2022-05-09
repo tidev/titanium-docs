@@ -121,48 +121,6 @@ On iOS, you can retrieve density-specific images from a remote URL as well. You 
 Starting with Release 5.1.0, PNG and JPEG images following this naming convention will be added to an Asset Catalog to support App Thinning. When a user installs the application to their device, only the relevant images will be included. Note that you will not be able to access images added to the Asset Catalog from the filesystem, that is, you cannot use the `Ti.Filesystem` APIs or equivalent to access the files with a URL or path.
 :::
 
-#### Windows Platform
-
-For the Windows Platform, add the scale qualifier to the filename. Place the qualifier in between the filename and extension, for example, `foo.scale-100.png`.
-
-Use the qualifiers below to support devices with different DPIs or screen resolutions. The scaling is based on the logical density factor returned by the device. The Windows Phone DPI column is an approximate value.
-
-| Qualifier | Logical Density Factor | Windows Phone DPI | Windows Store Resolution | Notes |
-| --- | --- | --- | --- | --- |
-| scale-100 | 1.0 | Up to ~96 | At least 1024x768 |  |
-| scale-140 | 1.4 | Up to ~134 (WVGA emulator) | At least 1440x1080 |  |
-| scale-180 | 1.8 | Up to ~172 (720p emulator) | At least 1920x1440 |  |
-| scale-240 | 2.4 | Up to ~230 (WXGA and 1080p emulators) | N/A | Windows Phone OS 8.1 only |
-
-**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
-**Admin Info: The error is: license VERSION\_MISMATCH**
-
-For more details, see [Windows Asset Qualifiers](/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Windows_UI_Components_and_Conventions/Windows_Asset_Qualifiers/).
-
-::: danger ❗️ Warning
-Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
-:::
-
-In order to grant access to pictures library for Windows Phone, you need to provide appropriate Capabilities in your `tiapp.xml.` Windows Phone users are prompted to grant or deny permission when your application attempt to use it.
-
-##### Grant access to pictures library
-
-```xml
-<ti:app>
-  ...
-  <windows>
-    ...
-    <Capabilities>
-        <Capability Name="picturesLibrary" />
-    </Capabilities>
-    ...
-  </windows>
-  ...
-</ti:app>
-```
-
-For more information about audio configuration in `tiapp.xml`, see [Windows-specific](/guide/Titanium_SDK/Titanium_SDK_Guide/Appendices/tiapp.xml_and_timodule.xml_Reference/#windows-specific) section in [tiapp.xml and timodule.xml Reference](/guide/Titanium_SDK/Titanium_SDK_Guide/Appendices/tiapp.xml_and_timodule.xml_Reference/).
-
 ### References
 
 * API Docs - [ImageView object](http://developer.appcelerator.com/apidoc/mobile/latest/Titanium.UI.ImageView-object)

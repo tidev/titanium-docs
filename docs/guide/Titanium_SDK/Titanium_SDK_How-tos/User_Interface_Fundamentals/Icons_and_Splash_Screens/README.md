@@ -341,60 +341,9 @@ The following table lists the current file attributes created and used for a def
 | Square-ish, portrait, LDPI | Splash screen | 240 x 320 | 120 | default.png |
 | Square-ish, portrait, MDPI | Splash screen | 320 x 480 | 160 | default.png |
 
-## Windows graphic asset requirements and options
-
-::: danger ❗️ Warning
-As of Titanium 9.0.0, building Windows apps is no longer supported.
-:::
-::: danger ❗️ Warning
-Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
-:::
-
-All Windows graphic assets must be in PNG format and may contain an alpha channel. Place all assets in the `app/assets/windows` folder for Alloy projects or `Resources/windows` folder for classic Titanium projects.
-
-If you omit any logo files and have a file called `DefaultIcon.png` in the root folder of the project that is at least 180 x 180 (1024 x 1024 is recommended), the Titanium SDK will generate any missing logo files from the file.
-
-Windows provides different qualifiers to select which assets to use. The qualifiers can be used to support devices with different screen sizes, contrast themes, layout directions, languages, regions, and so on.
-
-For information about using qualifiers, see [Windows Asset Qualifiers](/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Windows_UI_Components_and_Conventions/Windows_Asset_Qualifiers/).
-
-### Windows Phone
-
-| Type | Dimension (pixels) | Filename | Notes |
-| --- | --- | --- | --- |
-| Start screen large tile | 150 x 150 | Square150x150Logo.png |  |
-| Start screen small tile | 71 x 71 | Square71x71Logo.png |  |
-| Tile used by Windows Phone OS | 44 x 44 | Square44x44Logo.png | For example, used in the search results and all apps list |
-| Splash screen | 480 x 800 | SplashScreen480x800.png | Microsoft recommends including the 240% scale image, which will be 1152 x 1920 and called `SplashScreen480x800.scale-240.png`. |
-
-### Windows Store
-
-| Type | Dimension (pixels) | Filename | Notes |
-| --- | --- | --- | --- |
-| Start screen tile | 150 x 150 | Logo.png |  |
-| Tile used by Windows OS | 30 x 30 | SmallLogo.png | For example, used in the search results, all apps list, desktop launch icon, etc. |
-| Store logo | 50 x 50 | StoreLogo.png | Used by the Windows Store |
-| Splash screen | 620 x 300 | SplashScreen.png |  |
-
-### Windows app submissions
-
-The following table describes the image assets you may upload with your application. Only the screenshots are required for application submission.
-
-| Type | Dimensions (pixels) | File Type | File Size | Notes |
-| --- | --- | --- | --- | --- |
-| Desktop screenshot | * 1366 x 768 or larger<br />    <br />* 768 x 1366 or larger | PNG | < 2MB | May submit up to 9 |
-| Mobile screenshot | * 768 x 1280<br />    <br />* 720 x 1280<br />    <br />* 480 x 800<br />    <br />* 1280 x 768<br />    <br />* 1280 x 720<br />    <br />* 800 x 480 | PNG | < 2 MB | May submit up to 8 |
-| App tile icon | 300 x 300 | PNG |  | For Windows Phone and earlier |
-| Promotional artwork | * 358 x 173 (wide icon)<br />    <br />* 358 x 358 (square icon)<br />    <br />* 1000 x 800 (background image)<br />    <br />* 414 x 180<br />    <br />* 414 x 468<br />    <br />* 558 x 558<br />    <br />* 558 x 756<br />    <br />* 846 x 468<br />    <br />* 2400 x 1200 (recommended) |  |  | Used to showcase your application in the store.<br /><br />May submit only one image per file size.<br /><br />It is highly recommended to submit a 2400 x 1200 image, which the Microsoft team will resize and crop for promotional layouts. |
-
-**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
-**Admin Info: The error is: license VERSION\_MISMATCH**
-
-For more information about app submission, see [Distributing Windows Applications](/guide/Titanium_SDK/Titanium_SDK_Guide/Preparing_for_Distribution/Distributing_Windows_Applications/).
-
 ## Localized splash screens
 
-The Android, iOS and Windows platforms support using localized splash screen images, that is, displaying a different splash screen based on the user's language or locale.
+The Android and iOS platforms support using localized splash screen images, that is, displaying a different splash screen based on the user's language or locale.
 
 ### Android
 
@@ -459,14 +408,6 @@ For example, suppose you have the following filesystem:
         * `Default-Portrait-2436h@3x.png`
 
 In this example, each iOS device has a unique splash screen image for English and Spanish. Add more languages like "es" for Spain for "de" for Germany.
-
-### Windows
-
-For the Windows platform, you can either place the image in a subfolder using the [ISO 639-1](http://en.wikipedia.org/wiki/ISO_639-1) standard and optionally with the country's [ISO 3166-1](https://en.wikipedia.org/?title=ISO_3166-1) Alpha-2 code, or add the `lang-` qualifier with the code in the filename.
-
-For example, to specify an English splash screen, you can either call the file `Resources/windows/SplashScreen.lang-en.png` or place the file in the `Resources/windows/en/` folder.
-
-For details, see [Windows Asset Qualifiers: Language](/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Windows_UI_Components_and_Conventions/Windows_Asset_Qualifiers/#language).
 
 ## Density-specific Android icons
 

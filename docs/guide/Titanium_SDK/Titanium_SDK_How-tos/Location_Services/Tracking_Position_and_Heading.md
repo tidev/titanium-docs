@@ -7,7 +7,7 @@ weight: '10'
 
 ## Objective
 
-In this chapter, you'll learn how to use Titanium's Geolocation API to retrieve GPS positioning and heading information from mobile devices. You'll learn iOS, Android, and Windows Phone specifics that will help you best balance accuracy with battery consumption. And you'll learn how to manage Geolocation listeners with respect to your application's lifecycle.
+In this chapter, you'll learn how to use Titanium's Geolocation API to retrieve GPS positioning and heading information from mobile devices. You'll learn iOS and Android specifics that will help you best balance accuracy with battery consumption. And you'll learn how to manage Geolocation listeners with respect to your application's lifecycle.
 
 ## Contents
 
@@ -60,31 +60,6 @@ In general, testing geolocation code should be done on a device so that you accu
 
 Starting at [TiSDK 7.1.0.GA](#!/guide/Titanium_SDK_7.1.0.GA_Release_Note) there is support for [FusedLocationProvider](https://developers.google.com/location-context/fused-location-provider/). To enable this, the only thing you need to do is include the [Ti.PlayServices](#!/api/Modules.PlayServices) module in your app. This will enable battery efficient geolocation API's in your app.
 
-#### Windows development considerations
-
-::: danger ❗️ Warning
-Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
-:::
-
-In order to enable location service for Windows Phone, you need to provide appropriate `location` Capability in your `tiapp.xml`. Windows Phone users are prompted to grant or deny permission when your application attempt to use geolocation information. In any cases Windows Phone user should enable location service on their device preliminarily (`Settings -> location` on Windows Phone, `Settings -> Privacy -> Location` on Windows 10 Mobile).
-
-```xml
-<ti:app>
-  ...
-  <windows>
-    ...
-    <manifest>
-      <Capabilities>
-        <DeviceCapability Name="location" />
-      </Capabilities>
-    </manifest>
-    ...
-  </windows>
-  ...
-</ti:app>
-```
-
-For more information about geolocation configuration in `tiapp.xml,` see [Windows-specific section](/guide/Titanium_SDK/Titanium_SDK_Guide/Appendices/tiapp.xml_and_timodule.xml_Reference/#tiapp.xmlandtimodule.xmlReference-Windows-specific) in [tiapp.xml and timodule.xml Reference](/guide/Titanium_SDK/Titanium_SDK_Guide/Appendices/tiapp.xml_and_timodule.xml_Reference/).
 
 ### Using location services in your app
 

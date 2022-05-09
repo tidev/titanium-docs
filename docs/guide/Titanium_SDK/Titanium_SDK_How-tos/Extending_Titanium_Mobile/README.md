@@ -9,7 +9,6 @@ Our basic guides to extending Titanium Mobile with additional native functionali
 
 ## Chapters
 
-* [Windows Runtime Direct API Access](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/Windows_Runtime_Direct_API_Access/)
 
 * [Titanium Module Concepts](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/Titanium_Module_Concepts/)
 

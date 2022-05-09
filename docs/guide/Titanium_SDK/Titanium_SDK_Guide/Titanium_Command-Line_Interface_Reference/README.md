@@ -114,11 +114,11 @@ ti build --platform <platform> [--build-only] [--force] [--project-dir <value>] 
 
 | Option | Description |
 | --- | --- |
-| `-b, --build-only` | Only perform the build; when specified, does not install or run the app.  <br />  <br />When building a Windows project using `ti build -p windows -T wp-device --wp-sdk ## --build-only`, you can now use SDK values (e.g. 10.0.10240.0, 10.0.10586.0, etc.). |
+| `-b, --build-only` | Only perform the build; when specified, does not install or run the app.  <br />  <br /> |
 | `-f, --force` | Force a clean rebuild. |
 | `--skip-js-minify` | Bypasses JavaScript minification. Simulator builds are never minified. Only supported for Android and iOS. |
 | `--log-level <level>` | Minimum logging level. Supported options are **trace**, **debug**, **info**, **warn**, and **error**. |
-| `-p, --platforms <platform>` | Target build platform: Supported values are **android**, **ios**, and **windows**. (**iphone** and **ipad** are currently accepted as synonyms for **ios**.) |
+| `-p, --platforms <platform>` | Target build platform: Supported values are **android** and **ios**. (**iphone** and **ipad** are currently accepted as synonyms for **ios**.) |
 | `-d, --project-dir <directory>` | Directory containing the project, otherwise the current working directory is assumed. |
 | `-s, --sdk <version>` | Titanium SDK version to build with. If not specified, uses the configured default SDK. |
 
@@ -164,32 +164,6 @@ ti build --platform <platform> [--build-only] [--force] [--project-dir <value>] 
 | `-W, --watch-device-id <udid>` | Watch simulator UDID to launch when building an app with a watch app; only used when target is **simulator** . |
 | `-Y, --sim-type <type>` | iOS Simulator type: **iphone** or **ipad**; only used when target is **simulator**. |
 
-#### Windows build options
-
-::: danger ❗️ Warning
-As of Titanium 9.0.0, building Windows apps is no longer supported.
-:::
-::: danger ❗️ Warning
-Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
-:::
-
-| Options | Description |
-| --- | --- |
-| `-C, --device-id <value>` | UDID of the Windows Phone 8 device or emulator to build for. Only used when the target is **wp-emulator** or **wp-device**.<br /><br />Note: An app can only be installed to a single device at a time. |
-| `-D, --deploy-type <type>` | Type of deployment (**test**, **development** or **production**). Only used when the target is **wp-emulator**, **wp-device** or **ws-local**. |
-| `-G, --wp-publisher-guid <GUID>` | Windows Phone Publisher ID. Only used when the target is **wp-emulator**, **wp-device** or **dist-**phonestore**** . |
-| `-I, --win-publisher-id <ID>` | Windows Publisher ID. Required to build the application. |
-| `--wp-product-guid <GUID>` | **Deprecated as of 6.1.0**. Windows 8 product ID, used for upgrading Win 8 apps to Win 8.1. Deprecated and will be removed in future version, use --win-product-guid instead. |
-| `-H, --win-product-guid <GUID>` | **Since Release 6.1.0**. Windows 10 product ID, used for upgrading Windows 8.1 apps to Windows 10. |
-| `-O, --output-dir <dir>` | Output directory. Only used when target is **dist-phonestore** or **dist-winstore**. |
-| `--ws-cert <file>` | **Deprecated as of Release 6.1.0**. Location of the Windows Store certificate file. Only used when target is **ws-local** or **dist-winstore**. Deprecated and will be removed in future version, use --win-cert instead. |
-| `-R, --win-cert <file>` | **Since Release 6.1.0**. Location of the Windows Store certificate file. Only used when target is **ws-local** or **dist-winstore**. |
-| `--wp-sdk <version>` | **Deprecated as of Release 6.1.0**. Windows Phone SDK version. Deprecated and will be removed in future version, use --win-sdk instead. |
-| `-S, --win-sdk <version>` | **Since Release 6.1.0**. Windows SDK version. When you run CLI on Windows 10, you can specify **10.0** to indicate building for Windows 10 _Universal Windows Platform_ (_UWP_) app. You can target more specific SDK version, such as **`10.0.15063.0`** . |
-| `-V, --vs-target <version>` | Visual Studio target to build for.<br /><br />* **12.0** to use Visual Studio 2013<br />    <br />* **14.0** to use Visual Studio 2015<br />    <br />* **Visual Studio Community 2017** to use Visual Studio Community 2017<br />    <br />* **Visual Studio Professional 2017** to use Visual Studio Professional 2017<br />    <br />* **Visual Studio Enterprise 2017** to use Visual Studio Enterprise 2017 |
-| `-T, --target <value>` | Target to build for:<br /><br />* **wp-emulator** to run a Windows Phone app on the emulator<br />    <br />* **wp-device** to run a Window Phone app on a device connected to your host machine<br />    <br />* **dist-**phonestore**** to pakcage a Windows Phone app<br />    <br />* **ws-local** to run a Windows Store app on your local machine<br />    <br />* **dist-winstore** to package a Windows Store app |
-| \--`skipInstallDependencies` | **Since Release 6.1.0.** Skip installing dependency packages. If you had trouble with app deployment on device, try this option. |
-
 ### Clean
 
 Removes the build directories for an application or module project.
@@ -213,7 +187,7 @@ As of Titanium SDK 7.3.0 release, you need to keep historical version of your mo
 | Option | Description |
 | --- | --- |
 | `--log-level <level>` | Minimum logging level. Supported options are **trace**, **debug**, **info**, **warn**, and **error**. |
-| `-p, --platforms <platform>` | A single platform to clean: **android**, **ios**, and **windows**. |
+| `-p, --platforms <platform>` | A single platform to clean: **android** and **ios**|
 | `-d, --project-dir <directory>` | Directory containing the project, otherwise the current working directory is assumed. |
 | `-s, --sdk <version>` | Titanium SDK version to build with. If not specified, uses the configured default SDK. |
 
@@ -259,7 +233,7 @@ ti create [ --type <type> ] [ --platform <platforms> ] [--project-dir <value>] [
 | `--template <value>` | Project template to use--either a name of a template to use or files to copy over to the newly created project. The file to be copied over can either be placed in a directory, ZIP file or ZIP file with a remote URL. |
 | `-d, --workspace-dir <value>` | Directory to place the project in. Defaults to the workspace directory set in the `titanium` configuration, if any. |
 | `-n, --name <value>` | Name of the project. Used as the default human-readable name for the project. |
-| `-p, --platforms <platform>` | Comma-separated list of platforms: supported values are **android**, **ios**, and **windows**. (**iphone** and **ipad** are currently accepted as synonyms for **ios**.) |
+| `-p, --platforms <platform>` | Comma-separated list of platforms: supported values are **android** and **ios**. (**iphone** and **ipad** are currently accepted as synonyms for **ios**.) |
 | `-s, --sdk <version>` | Titanium SDK version to build with. If not specified, uses the configured default SDK. This can be changed later in the tiapp.xml. |
 | `-t, --type <value>` | Type of project to create (defaul:<br /><br />* **app** (default)<br />    <br />* **applewatch**<br />    <br />* **module** (or **timodule** if using the Titanium CLI) |
 | `-u --url <value>` | Your company/personal URL. |

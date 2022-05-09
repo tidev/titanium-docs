@@ -23,7 +23,7 @@ Prior to Release 2.1.1, the KitchenSink did not represent _best practices_ and t
 
 ## Kitchen Sink 2.0
 
-Kitchen Sink 2.0 is a refactored Alloy-based version of the KitchenSink demo-app. This project gives an overview of native components available in Titanium. The components are grouped into multiple groups and can be logged in the "Logs" tab. It also includes full support for iOS, Android & Windows.
+Kitchen Sink 2.0 is a refactored Alloy-based version of the KitchenSink demo-app. This project gives an overview of native components available in Titanium. The components are grouped into multiple groups and can be logged in the "Logs" tab. It also includes full support for iOS & Android.
 
 ![kitchensink-overview](./kitchensink-overview.png)
 
