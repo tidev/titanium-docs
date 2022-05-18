@@ -131,7 +131,7 @@ ti build --platform <platform> [--build-only] [--force] [--project-dir <value>] 
 | `-D, --deploy-type <type>` | Controls several settings such as optimization, encryption, and analytics. Type can be **development**, **test**, or **production**.<br /><br />When --target is "emulator", the deploy type defaults to **development**, but can be set to **test**.<br /><br />When --target is "device", the deploy type defaults to **test**, but can be set to **development**.<br /><br />When --target is "dist-playstore", the deploy type is **production** and cannot be overwritten.<br /><br />Note that **test** will minify and encrypt your JavaScript source code. Any JavaScript syntax errors, even files you are not using, will result in a build failure. |
 | `-K, --keystore <path>` | Location of the keystore file. |
 | `--key-password <keypass>` | Password of the keystore private key. Defaults to value specified with --store-password. |
-| `--liveview` | Starts a [LiveView](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Titanium_Development/LiveView/) session to let you quickly preview changes to your application's UI. **Requires Appcelerator Studio.** |
+| `--liveview` | Starts a [LiveView](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Titanium_Development/LiveView/) session to let you quickly preview changes to your application's UI.  |
 | `-L, --alias <alias>` | Alias for the keystore. |
 | `--no-launch` | Disables launching the app after installing. |
 | `-O, --output-dir <dir>` | Output directory (used when `target` is **dist-playstore**). |

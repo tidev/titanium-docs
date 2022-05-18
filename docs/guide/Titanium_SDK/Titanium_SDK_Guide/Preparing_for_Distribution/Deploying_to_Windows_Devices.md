@@ -14,7 +14,7 @@ Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3
 
 ## Introduction
 
-Use Appcelerator Studio or CLI to deploy your Titanium projects as Windows Phone applications, which can be deployed to Windows Phone devices. To deploy to a Windows tablet, you need to package a Windows Store app with Studio or the CLI, configure the tablet to sideload a package, and install the public certificate and package.
+Use the CLI to deploy your Titanium projects as Windows Phone applications, which can be deployed to Windows Phone devices. To deploy to a Windows tablet, you need to package a Windows Store app with Studio or the CLI, configure the tablet to sideload a package, and install the public certificate and package.
 
 ## Windows Phone
 

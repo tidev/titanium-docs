@@ -1,0 +1,158 @@
+---
+name: 'Regen API Docs'
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [ regen-api-docs ]
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: titanium-docs
+
+    steps:
+      # third-party action that cancels previous runs
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.4.0
+        with:
+          access_token: ${{ github.token }}
+
+      - name: Checkout titanium-docs
+        uses: actions/checkout@v3
+        with:
+          path: titanium-docs
+
+      - name: Checkout titanium_mobile
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: titanium_mobile
+          repository: tidev/titanium_mobile
+
+      - name: Checkout ti.map
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: ti.map
+          repository: tidev/ti.map
+
+      - name: Checkout ti.facebook
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: ti.facebook
+          repository: tidev/ti.facebook
+
+      - name: Checkout ti.coremotion
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: ti.coremotion
+          repository: tidev/ti.coremotion
+
+      - name: Checkout ti.crypto
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: ti.crypto
+          repository: tidev/ti.crypto
+
+      - name: Checkout ti.urlsession
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: ti.urlsession
+          repository: tidev/ti.urlsession
+
+      - name: Checkout titanium-identity
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: titanium-identity
+          repository: tidev/titanium-identity
+
+      - name: Checkout ti.playservices
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: ti.playservices
+          repository: tidev/ti.playservices
+
+      - name: Checkout ti.geofence
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: ti.geofence
+          repository: tidev/ti.geofence
+
+      - name: Checkout appcelerator.ble
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: appcelerator.ble
+          repository: tidev/appcelerator.ble
+
+      - name: Checkout appcelerator.bluetooth
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: appcelerator.bluetooth
+          repository: tidev/appcelerator.bluetooth
+
+      - name: Checkout appcelerator.https
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: appcelerator.https
+          repository: tidev/appcelerator.https
+
+      - name: Checkout appcelerator.encrypteddatabase
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: appcelerator.encrypteddatabase
+          repository: tidev/appcelerator.encrypteddatabase
+
+      - name: Checkout titanium-web-dialog
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: titanium-web-dialog
+          repository: tidev/titanium-web-dialog
+
+      - name: Checkout ti.barcode
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: ti.barcode
+          repository: tidev/ti.barcode
+
+      - name: Checkout titanium-apple-sign-in
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          path: titanium-apple-sign-in
+          repository: tidev/titanium-apple-sign-in
+
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+        if: steps.node-cache.outputs.cache-hit != 'true'
+
+      - name: Generate metadata
+        run: npm run docs:metadata -- ../ti.map/apidoc ../ti.facebook/apidoc ../ti.coremotion/apidoc ../ti.crypto/apidoc ../ti.urlsession/apidoc ../titanium-identity/apidoc ../ti.playservices/apidoc ../ti.geofence/apidoc ../appcelerator.ble/apidoc ../appcelerator.bluetooth/apidoc ../appcelerator.https/apidoc ../appcelerator.encrypteddatabse/apidoc ../titanium-web-dialog/apidoc ../ti.barcode/apidoc ../titanium-apple-sign-in/apidoc
+      
+      - name: Migrate docs
+        run: npm run docs:migrate  -- ../ti.map/apidoc ../ti.facebook/apidoc ../ti.coremotion/apidoc ../ti.crypto/apidoc ../ti.urlsession/apidoc ../titanium-identity/apidoc ../ti.playservices/apidoc ../ti.geofence/apidoc ../appcelerator.ble/apidoc ../appcelerator.bluetooth/apidoc ../appcelerator.https/apidoc ../appcelerator.encrypteddatabse/apidoc ../titanium-web-dialog/apidoc ../ti.barcode/apidoc ../titanium-apple-sign-in/apidoc
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          repository: titanium-docs

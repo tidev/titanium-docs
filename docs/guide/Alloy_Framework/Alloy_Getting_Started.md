@@ -11,7 +11,7 @@ This guide provides basic instructions on creating a quick Alloy project. Alloy 
 
 ## Command-line interface installation
 
-To create and manage Alloy applications, you need the Alloy command-line interface. If you already installed Appcelerator Studio or the Titanium CLI, the Alloy CLI will be automatically installed for you. If you need to install Appcelerator Studio, see the [Titanium SDK Getting Started](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/) or if you need to manually install the Titanium CLI:
+To create and manage Alloy applications, you need the Alloy command-line interface. You can install the Titanium CLI like this:
 
 1. Download and install Node.js from [http://nodejs.org/#download](http://nodejs.org/#download), which includes the npm package manager needed to install the Titanium CLI.
 

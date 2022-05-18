@@ -1,3 +1,8 @@
+---
+title: Transfer your app from Appcelerator CLI to Titanium CLI
+weight: '10'
+---
+
 # Transfer your app from Appcelerator CLI to Titanium CLI
 
 ## Introduction

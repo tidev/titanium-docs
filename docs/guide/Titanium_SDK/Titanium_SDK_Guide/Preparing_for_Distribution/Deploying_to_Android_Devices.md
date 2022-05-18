@@ -51,15 +51,7 @@ Connect the Android device to your computer using an USB cord. Note that some US
 
 For 4.2 devices, an "Allow USB debugging?" dialog will appear once connected via USB. Click the **OK** button.
 
-Deploy the application using Axway Appcelerator Studio
-
-Once you have configured your device and connected it to your computer's USB port, you are ready to deploy your app to it.
-
-![launch_emulator](./launch_emulator.png)
-
-In Studio, first select the project in the **Project Explorer** view, then in the global tool bar, select **Run** from the **Launch Mode** drop-down list and an Android device from the **Target** drop-down list under the **Android Application Installer** category. If the **Launch Automatically** option is enabled under the **Target** drop-down list, the application will be automatically launched after the device is selected. If not, you need to click the **Run** button to start the build process. Your app will be built, installed to your device and automatically launched.
-
-Deploying the application using the CLI
+#### Deploying the application using the CLI
 
 To launch the application using the Titanium CLI, run the following command:
 

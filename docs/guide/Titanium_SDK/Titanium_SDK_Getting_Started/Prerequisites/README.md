@@ -11,20 +11,16 @@ This document lists the minimum requirements necessary to run a Titanium environ
 
 ### Memory
 
-The minimum memory requirement for Studio and the Titanium SDK is as follows:
+The minimum memory requirement for the Titanium SDK is as follows:
 
 | Product | Host Operating System | Storage |
 | --- | --- | --- |
-| Appcelerator Studio | All | 1 GB (contiguous) |
 | Latest Android SDK | macOS | 1.5 GB (contiguous) |
 | Latest Android SDK | Windows | 1 GB (contiguous) |
 
 ::: warning ⚠️ Warning
 Minimum system memory requirements is 8GB of RAM. 16GB is highly recommended.
 :::
-
-**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
-**Admin Info: The error is: license VERSION\_MISMATCH**
 
 ### Operating System
 
@@ -42,20 +38,13 @@ As of Titanium 9.0.0, building Windows apps is no longer supported.
 Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
 :::
 
-**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
-**Admin Info: The error is: license VERSION\_MISMATCH**
-
 ### Required Software
 
 The Titanium SDK requires Oracle's JDK and Node.js.
 
-If you are using Studio for macOS and Windows, Studio prompts you to install the required software.
-
 #### Java Development Kit
 
 The Java Development Kit (JDK) is required to build Titanium apps and modules for Android.
-
-(Studio also requires the JDK. It's recommended that you use the 64-bit version of JDK 8 with Studio 5.1 or higher.)
 
 | Titanium SDK version | Min JDK version | Max JDK version |
 | --- | --- | --- |
@@ -73,8 +62,6 @@ See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Pre
 #### Node.js
 
 To run all Appcelerator components, you must have Node.js 12 or later.
-
-On macOS and Windows, if you have selected to install Titanium updates, Studio prompts you to install Node.js. On Linux, you need to manually install Node.js.
 
 ![download_05](/images/guide/download/attachments/29004836/download_05.png)
 

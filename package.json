@@ -8,7 +8,7 @@
     "clean:api": "rm -rf docs/api; rm -f docs/.vuepress/api.json",
     "clean:guide": "rm -rf docs/guide; rm -rf docs/.vuepress/public/images/guide; rm -f docs/.vuepress/guide.json",
     "docs:dev": "vuepress dev docs --temp .temp",
-    "docs:build": "NODE_OPTIONS=\"--max-old-space-size=6144\" vuepress build docs",
+    "docs:build": "node ./scripts/generate-guides && NODE_ENV=production NODE_OPTIONS=\"--max-old-space-size=6144\" vuepress build docs",
     "docs:version": "vuepress version docs",
     "docs:metadata": "vuepress metadata docs ../titanium_mobile/apidoc",
     "docs:migrate": "node ./scripts/migrate ../titanium_mobile/apidoc",
@@ -17,7 +17,7 @@
   "author": "TiDev",
   "license": "Apache-2.0",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.18.1"
   },
   "devDependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -25,9 +25,13 @@
     "@titanium-sdk/vuepress-plugin-fontawesome": "^4.8.3",
     "@vuepress/plugin-back-to-top": "^1.9.7",
     "@vuepress/plugin-google-analytics": "^1.9.7",
+    "front-matter": "^4.0.2",
+    "fs-extra": "^10.1.0",
+    "glob": "^8.0.1",
+    "semver": "^7.3.7",
     "titanium-docgen": "^4.10.3",
     "vue": "^2.6.14",
-    "vue-router": "^3.5.2",
+    "vue-router": "^3.5.3",
     "vuepress": "^1.9.7",
     "vuepress-plugin-apidocs": "^4.10.3",
     "vuepress-plugin-versioning": "^4.10.2",

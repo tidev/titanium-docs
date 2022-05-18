@@ -9,13 +9,11 @@ weight: '10'
 
 You’ll need to have the following installed on your machine as the recommended requirements to use Hyperloop 5.0.0+:
 
-* Appcelerator Studio: 5.0.0+
-
 * Titanium SDK: 9.0.0+
 
 * Titanium CLI: 7.0.0+
 
-You can install [Appcelerator Studio](https://platform.axway.com/#/product/studio) and [Titanium CLI](https://platform.axway.com/#/product/cli) to get the latest version of all these components.
+You can install [Titanium CLI](https://https://github.com/tidev/titanium) to get the latest version of all these components.
 
 ### Optional Dependencies
 
@@ -29,24 +27,9 @@ Note: If you plan on using CocoaPods as a third-party dependencies manager, you 
 
 ## Installation
 
-### Appcelerator Studio
-
-To download and install Appcelerator Studio:
-
-1. Log in to [https://platform.axway.com/](https://platform.axway.com/).
-
-2. Expand the Appcelerator menu ![appc_menu](/images/guide/download/thumbnails/30083017/appc_menu.png) and click on the [App Builder](https://platform.axway.com/#/product/studio) link.
-
-3. Click on the installer for your OS. Wait a moment while the installer downloads.
-
-4. Launch the downloaded installer and follow the steps to install. If the installer asks to install a specific version of Java, allow it. See [Titanium Compatibility Matrix#JavaDevelopmentKit](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/#java-development-kit) for details on which versions we support.
-
-**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
-**Admin Info: The error is: license VERSION\_MISMATCH**
-
 ### Titanium SDK
 
-Titanium SDK is included in the installation of Appcelerator Studio.
+Titanium SDK can be installed with `ti sdk install latest`.
 
 ### Titanium CLI
 
@@ -54,4 +37,4 @@ Refer to [Setting up the Titanium CLI](/guide/Titanium_SDK/Titanium_SDK_Guide/Ti
 
 ### Alloy Framework
 
-The Alloy command-line interface and plugin will be automatically installed by Appcelerator Studio or the Titanium CLI.
+The Alloy command-line interface and plugin will be automatically installed by the Titanium CLI.

@@ -9,7 +9,8 @@ const sidebar = Object.assign({}, guideSidebar, apiSidebar);
 
 const docSections = [
   { text: 'Titanium SDK', link: '/guide/Titanium_SDK/' },
-  { text: 'Alloy', link: '/guide/Alloy_Framework/' }
+  { text: 'Alloy', link: '/guide/Alloy_Framework/' },
+  { text: 'Editor / IDE', link: '/guide/Editor_IDE/' }
 ];
 
 module.exports = {
@@ -51,6 +52,15 @@ module.exports = {
                 text: 'Slack',
                 link: 'https://tidev.slack.com'
               },
+              {
+                text: 'GitHub Discussions',
+                link: 'https://github.com/tidev/titanium_mobile/discussions'
+              }
+            ]
+          },
+          {
+            text: 'Contribute',
+            items: [
               {
                 text: 'Contribution Guide',
                 link: '/contribute.md'

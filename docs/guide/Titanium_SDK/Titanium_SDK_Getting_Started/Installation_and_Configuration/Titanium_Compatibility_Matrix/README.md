@@ -31,7 +31,6 @@ Be aware that any components notated as _Pre-release_ are not officially support
 
 | Product | Host Operating System | Storage |
 | --- | --- | --- |
-| Appcelerator Studio | All | 1 GB (contiguous) |
 | Latest Android SDK | macOS | 1.5 GB (contiguous) |
 | Latest Android SDK | Windows | 1 GB (contiguous) |
 
@@ -80,14 +79,12 @@ See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Pre
 
 #### Disk space
 
-We recommend the following as a guideline for estimating how much disk space is necessary to build applications using Axway Appcelerator Studio:
+We recommend the following as a guideline for estimating how much disk space is necessary to build applications:
 
 | Application | Recommended disk space | Comments |
 | --- | --- | --- |
 | Xcode | 15 - 20GB | Xcode includes the latest iOS and related simulator(s). |
 | Android Studio | 10 - 15GB | You may need to select with SDK(s), NDK(s), and emulators to use. |
-| Axway Appcelerator Studio | ~250MB |  |
-| Genymotion | ~1GB | Genymotion is optional |
 | Mobile app (workspace) | 50MB - 3GB | Disk usage depends on many factors. |
 
 #### Node
@@ -181,14 +178,6 @@ On Mac OS X and Windows, if you have selected to install Titanium updates, Studi
 | macOS / Windows / Linux | 10.13.0 | 12.X | [Official Website](https://nodejs.org/en/download/releases/) |
 
 See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node/) for details.
-
-## Appcelerator Studio
-
-Appcelerator Studio is a Java application, which requires Oracle's Java Runtime Environment (JRE) installed. As JRE is a component of Oracle's Java Development Kit (JDK) and JDK is a prerequisite for development with other SDKs, JDK needs to be installed on all systems working with Titanium. Refer to the [Java Development Kit](#java-development-kit) section of this document.
-
-Use the latest stable version of Studio.
-
-See [Titanium SDK Getting Started](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/) for setup guide for further instructions.
 
 ## Mobile development
 
