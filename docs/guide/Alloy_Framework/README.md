@@ -17,7 +17,7 @@ Review the [Alloy Release Notes](https://github.com/tidev/alloy/blob/master/CHAN
 
 * [Alloy How-tos](/guide/Alloy_Framework/Alloy_How-tos/)
 
-* [Alloy PurgeTSS](/guide/Alloy_Framework/Alloy_PurgeTSS/)
+* [Alloy PurgeTSS](/guide/Alloy_Framework/Alloy_Guide/Alloy_PurgeTSS/)
 
 * [Alloy Framework Release Notes](/guide/Alloy_Framework/Alloy_Framework_Release_Notes/)
 
