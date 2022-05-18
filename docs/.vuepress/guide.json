@@ -71,6 +71,10 @@
                 [
                     "Alloy_Guide/Alloy_Tasks_with_the_CLI",
                     "Tasks with the CLI"
+                ],
+                [
+                    "Alloy_Guide/Alloy_PurgeTSS",
+                    "PurgeTSS"
                 ]
             ]
         },

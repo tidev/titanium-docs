@@ -17,4 +17,6 @@ This document contains links for Alloy guide documents.
 
 * [Alloy Widgets](/guide/Alloy_Framework/Alloy_Guide/Alloy_Widgets/)
 
-* [Alloy Tasks](/guide/Alloy_Framework/Alloy_Guide/Alloy_Tasks/)
+* [Alloy Tasks](/guide/Alloy_Framework/Alloy_Guide/Alloy_Tasks_with_the_CLI/)
+
+* [Alloy PurgeTSS](/guide/Alloy_Framework/Alloy_Guide/Alloy_PurgeTSS/)
