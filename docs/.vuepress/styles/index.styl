@@ -60,3 +60,36 @@ body
       background-color $secondary-ltr !important
       a
         color $accentColor !important
+
+@media (prefers-color-scheme: dark) {
+  html, body, header, .navbar .links, .dropdown-wrapper .nav-dropdown, .sidebar,
+  .content-sidebar-wrapper {
+    background-color: #25272a !important;
+  }
+
+  h1, h2, h3, h4, strong, .navbar .site-name, .dropdown-wrapper .dropdown-title, .nav-links a,
+  body, .sidebar-heading, a.sidebar-link, a.content-sidebar-link {
+    color: #eee !important;
+  }
+
+  .content code {
+    background-color: #444  !important;
+    color: #eee !important;
+  }
+
+  .navbar, .sidebar, .content-sidebar, .content-sidebar-links {
+    border-color: #444 !important;
+  }
+
+
+  .docs-card {
+    background-color: #000 !important;
+    header {
+      background: transparent !important;
+    }
+  }
+
+  .custom-block.warning, div[class*="language-"], div[class*="language-"] code {
+    background-color: #000 !important;
+  }
+}
