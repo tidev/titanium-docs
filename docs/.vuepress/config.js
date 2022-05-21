@@ -117,7 +117,7 @@ module.exports = {
                 link: 'https://github.com/sponsors/tidev/'
               },
               {
-                text: 'Donate',
+                text: 'Liberapay Donations',
                 link: 'https://en.liberapay.com/tidev'
               }
             ]
