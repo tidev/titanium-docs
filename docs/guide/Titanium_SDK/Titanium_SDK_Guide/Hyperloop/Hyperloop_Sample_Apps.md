@@ -13,7 +13,7 @@ Cross-platform example app
 
 Our cross-platform example app can be found in this Github repo: [https://github.com/tidev/hyperloop-examples](https://github.com/tidev/hyperloop-examples)
 
-* A large sample app that demonstrates native APIs for all three platforms (iOS, Android & Windows), including CocoaPods and Android `.aar` packages
+* A large sample app that demonstrates native APIs for all platforms (iOS & Android), including CocoaPods and Android `.aar` packages
 
 * Examples for the UICollectionView, Beacons, Android Bottom Navigation View, native Android XML layouts, iOS storyboards, XIB's, and so on.
 

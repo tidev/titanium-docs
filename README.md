@@ -30,12 +30,11 @@ There are currently a few manual steps required to build the docs which we aim t
 
 > ✅ For convenience the repo currently contains a pre-generate `api.json` so you can skip this if you just want to play with the new docs.
 
-The following steps assume you have checked out this repo parallel to Titanium (including the Windows runtime) so that your folder structure looks like this:
+The following steps assume you have checked out this repo parallel to Titanium so that your folder structure looks like this:
 
 ```
 ./
 ├── titanium_mobile/
-├── titanium_mobile_window
 └── titanium-docs/
 ```
 

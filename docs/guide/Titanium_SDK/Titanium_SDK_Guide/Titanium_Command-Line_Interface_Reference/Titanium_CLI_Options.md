@@ -522,34 +522,3 @@ User's locale, for example, "en\_US".
 #### user.name
 
 User's name.
-
-### Windows
-
-::: danger ❗️ Warning
-As of Titanium 9.0.0, building Windows apps is no longer supported.
-:::
-::: danger ❗️ Warning
-Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
-:::
-
-These settings configure the CLI for Windows Phone and Windows Store development.
-
-#### windows.publisherId
-
-Windows Publisher ID. Required for building and packaging Windows applications. Used to generate the `appmanifest.xml` file and signing certificates.
-
-#### windows.phone.publisherGuid
-
-Windows Phone Publisher ID. Used to deploy your Windows Phone application to an emulator or device.
-
-#### windows.phone.productId
-
-Windows Phone 8 Product ID. Used to upgrade Window 8 apps to Windows 8.1.
-
-#### windows.visualstudio.selectedVersion
-
-Selected version of Microsoft Visual Studio, such as "`Visual Studio Community 2017`". Used to specify preferred Visual Studio to build an app.
-
-#### windows.sdk.selectedVersion
-
-Selected version of Windows SDK, such as "`10.0.16299.0`". Used to specify preferred Windows SDK version to build an app.

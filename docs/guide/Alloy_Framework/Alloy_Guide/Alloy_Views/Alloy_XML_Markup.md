@@ -524,7 +524,7 @@ Additionally, use the alias `Ti` for `Titanium`.
 
 Add the `platform`, `formFactor` and `if` attributes to apply XML elements based on conditionals.
 
-* To specify a platform-specific element, use the `platform` attribute and assign it a platform, such as, `android`, `ios`, `mobileweb`, or`windows`.
+* To specify a platform-specific element, use the `platform` attribute and assign it a platform, such as, `android` or `ios`.
     Comma separate the values to logically OR the values together, for example, `platform='ios,android'` indicates both Android and iOS.
     Prepend the value with an exclamation point (`!`) to negate the value, for example, `platform='!ios'` indicates all platforms except iOS.
 

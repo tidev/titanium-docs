@@ -45,8 +45,4 @@ In this section, you'll examine some of the user interface and user experience c
 
 This section examines some of the user interface and user experience components that are specific to iOS.
 
-**[Windows UI Components and Conventions](/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Windows_UI_Components_and_Conventions/)**
-
-This section examines some of the user interface and user experience components that are specific to Windows.
-
 Get started: [ListViews >](/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/ListViews/)

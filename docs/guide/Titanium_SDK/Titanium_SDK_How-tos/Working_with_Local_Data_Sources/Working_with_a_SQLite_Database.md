@@ -7,7 +7,7 @@ weight: '30'
 
 ## Introduction
 
-Android, iOS and Windows support [SQLite3](https://sqlite.org), the SQL-based relational database management system (RDMS), for local data storage. There are a few things to note when you first work with SQLite, that may influence the way you develop with it:
+Android and iOS support [SQLite3](https://sqlite.org), the SQL-based relational database management system (RDMS), for local data storage. There are a few things to note when you first work with SQLite, that may influence the way you develop with it:
 
 * SQLite stores data in a simple text file. There is no granular security or user privileges for data therefore anyone with filesystem access to it may read its contents.
 

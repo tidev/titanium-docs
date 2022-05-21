@@ -17,6 +17,6 @@ Debugging is a critical step in any programming project. Debugging a mobile appl
 
 * [Debugging in Studio](/guide/Titanium_SDK/Titanium_SDK_How-tos/Debugging_and_Profiling/Debugging_in_Studio/) — In this section, you will learn how to debug your mobile applications using the tools provided by Studio. You'll learn how to use the Debug perspective, how to set breakpoints, run a project in debug mode, and how to step into, over, and return from functions.
 
-* [Managing Memory and Finding Leaks](/guide/Titanium_SDK/Titanium_SDK_How-tos/Debugging_and_Profiling/Managing_Memory_and_Finding_Leaks/) — In this section, you will learn how to monitor for and solve memory leaks in your apps. The processes for monitoring memory usage varies by platform. You'll learn separately how to perform this feat on iOS, Android and Windows.
+* [Managing Memory and Finding Leaks](/guide/Titanium_SDK/Titanium_SDK_How-tos/Debugging_and_Profiling/Managing_Memory_and_Finding_Leaks/) — In this section, you will learn how to monitor for and solve memory leaks in your apps. The processes for monitoring memory usage varies by platform. You'll learn separately how to perform this feat on iOS and Android.
 
 * [Build Test and Deploy a Titanium Cross-Platform App with Fastlane](/guide/Titanium_SDK/Titanium_SDK_How-tos/Debugging_and_Profiling/Build_Test_and_Deploy_a_Titanium_Cross-Platform_App_with_Fastlane/) — This document will demonstrate one way to configure your environment to manage several build, test, and deployment tasks when developing apps with Titanium using Appium and Fastlane.

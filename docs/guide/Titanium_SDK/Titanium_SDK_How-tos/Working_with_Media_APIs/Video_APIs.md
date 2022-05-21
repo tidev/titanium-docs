@@ -97,48 +97,6 @@ In this activity, you will write a simple app to stream a movie from a remote UR
 Rotate the iPhone simulator by pressing Command and either the left or right arrow key. Rotate the Android emulator by pressing Control+F12.
 :::
 
-### Windows development considerations
-
-::: danger ❗️ Warning
-Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
-:::
-
-In order to enable camera and audio recording for Windows Phone, you need to provide appropriate Capabilities in your `tiapp.xml.` Windows Phone users are prompted to grant or deny permission when your application attempt to use it.
-
-#### Grant access to video stream and audio stream
-
-```xml
-<ti:app>
-  ...
-  <windows>
-    ...
-    <Capabilities>
-        <DeviceCapability Name="microphone" />
-        <DeviceCapability Name="webcam" />
-    </Capabilities>
-    ...
-  </windows>
-  ...
-</ti:app>
-```
-
-#### Grant access to music library
-
-```xml
-<ti:app>
-  ...
-  <windows>
-    ...
-    <Capabilities>
-        <Capability Name="musicLibrary" />
-    </Capabilities>
-    ...
-  </windows>
-  ...
-</ti:app>
-```
-
-For more information about audio configuration in `tiapp.xml`, see [Windows-specific section](#%21/guide/tiapp.xml_and_timodule.xml_Reference-section-29004921_tiapp.xmlandtimodule.xmlReference-Windows-specificsection) in [tiapp.xml and timodule.xml Reference](#%21/guide/tiapp.xml_and_timodule.xml_Reference).
 
 ### References and further reading
 
@@ -149,8 +107,6 @@ For more information about audio configuration in `tiapp.xml`, see [Windows-spec
 * [iOS Developer Docs: Supported video formats](http://developer.apple.com/library/ios/#documentation/Miscellaneous/Conceptual/iPhoneOSTechOverview/MediaLayer/MediaLayer.html)
 
 * [Android Developer Docs: Supported media formats](http://developer.android.com/guide/appendix/media-formats.html)
-
-* [Windows 10 Mobile: Audio, video, and camera](https://msdn.microsoft.com/windows/uwp/audio-video-camera/index)
 
 ## Summary
 

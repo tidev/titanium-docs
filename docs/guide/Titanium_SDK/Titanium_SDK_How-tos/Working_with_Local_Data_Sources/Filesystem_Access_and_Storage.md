@@ -43,15 +43,13 @@ Before we get into the mechanics of accessing the file system, let's talk about 
 
 * **Ti.Filesystem.externalCacheDirectory**: A read-write directory where your application can cache data on external storage (SD card), if such a location exists. Check first with `Ti.Filesystem.isExternalStoragePresent()` (which returns a Boolean). Only available on Android.
 
-* **Ti.Filesystem.externalStorageDirectory**: A read-write directory on the external storage device (SD card) accessible by your app, if such a location exists. Check first with `Ti.Filesystem.isExternalStoragePresent()` (which returns a Boolean). Available only for the Android and Windows platforms.
+* **Ti.Filesystem.externalStorageDirectory**: A read-write directory on the external storage device (SD card) accessible by your app, if such a location exists. Check first with `Ti.Filesystem.isExternalStoragePresent()` (which returns a Boolean). Available only for the Android platform.
 
 * **Ti.Filesystem.applicationCacheDirectory**: A read-write directory where your application can cache data. The contents of this directory persist after your application fully closes but at the discretion of the operating system.
 
     * For the Android platform, the cache quota will change over time dependent on the app usage, and system wide storage, the data will be persisted until disk space is required.
 
     * For the iOS platform, there is no size limit but the data only remains there until iOS cleans the directory if it requires the disk space.
-
-    * For the Windows platform, there is not size limit, and the data stored here will be ignored when a users backs up their storage to the cloud.
 
 ::: warning ⚠️ Warning
 The `Ti.Filesystem.resourcesDirectory` is read-only on a device, but is read/write in the simulator/emulator.
@@ -139,7 +137,7 @@ if (f.exists() === false) {
 f.write('writing to the file would be enough to create it');
 ```
 
-On Android and Windows there is a specific copy method, it can be used like the below
+On Android there is a specific copy method, it can be used like the below
 
 ```javascript
 var oldfile = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,'old.txt');

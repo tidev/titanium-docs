@@ -101,7 +101,6 @@ Code snippets for common Alloy and Titanium APIs are provided for use in Alloy c
 | `alwid` | Alloy create widget function |
 | `ifios` | iOS conditional statement |
 | `idand` | Android conditional statement |
-| `Irwin` | Windows conditional statement |
 
 ### Shortcuts
 

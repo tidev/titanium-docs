@@ -356,68 +356,6 @@ The photo gallery on the simulator/emulator is of course empty to start. If you'
 
 4. Tap Save Image (or your device's equivalent button) to save the image to the gallery.
 
-### Windows development considerations
-
-::: danger ❗️ Warning
-Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
-:::
-
-In order to enable camera and audio recording for Windows Phone, you need to provide appropriate Capabilities in your `tiapp.xml.` Windows Phone users are prompted to grant or deny permission when your application attempt to use it.
-
-#### Grant access to video stream and audio stream
-
-```xml
-<ti:app>
-  ...
-  <windows>
-    ...
-    <Capabilities>
-        <DeviceCapability Name="microphone" />
-        <DeviceCapability Name="webcam" />
-    </Capabilities>
-    ...
-  </windows>
-  ...
-</ti:app>
-```
-
-#### Grant access to pictures library
-
-```xml
-<ti:app>
-  ...
-  <windows>
-    ...
-    <Capabilities>
-        <Capability Name="picturesLibrary" />
-    </Capabilities>
-    ...
-  </windows>
-  ...
-</ti:app>
-```
-
-For more information about audio configuration in `tiapp.xml`, see [Windows-specific](/guide/Titanium_SDK/Titanium_SDK_Guide/Appendices/tiapp.xml_and_timodule.xml_Reference/#windows-specific) section in [tiapp.xml and timodule.xml Reference](/guide/Titanium_SDK/Titanium_SDK_Guide/Appendices/tiapp.xml_and_timodule.xml_Reference/).
-
-#### Displaying builtin camera for Windows
-
-##### For Windows 10 Mobile
-
-As of Titanium 5.4.0, you can launch "default camera UI" that is builtin to the platform when you use `Ti.Media.showCamera(options)` without specifying `overlay` property. This Windows builtin camera UI provides same look & feel that [Microsoft Windows Camera](https://www.microsoft.com/en-us/store/apps/windows-camera/9wzdncrfjbbg) app provides. Note that this builtin camera UI is supported as of Windows 10 apps including Mobile.
-
-```javascript
-var imageView = Ti.UI.createImageView();
-Ti.Media.showCamera({
-    mediaTypes: [Ti.Media.MEDIA_TYPE_PHOTO],
-    success: function (e) {
-        imageView.image = e.media;
-    },
-    error: function (e) {
-        Ti.API.error(JSON.stringify(e));
-    }
-});
-```
-
 ## Hands-on practice
 
 ### Goal

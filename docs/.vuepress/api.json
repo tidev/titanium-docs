@@ -118,15 +118,7 @@
 							["titanium/app/ios/usernotificationcenter", "UserNotificationCenter"]
 						]
 					},
-					["titanium/app/properties", "Properties"],
-					{
-						"title": "Windows",
-						"path": "/api/titanium/app/windows",
-						"children": [
-							["titanium/app/windows/backgroundservice", "BackgroundService"],
-							["titanium/app/windows/backgroundservicetask", "BackgroundServiceTask"]
-						]
-					}
+					["titanium/app/properties", "Properties"]
 				]
 			},
 			["titanium/blob", "Blob"],
@@ -342,20 +334,7 @@
 					["titanium/ui/toolbar", "Toolbar"],
 					["titanium/ui/view", "View"],
 					["titanium/ui/webview", "WebView"],
-					["titanium/ui/window", "Window"],
-					{
-						"title": "Windows",
-						"path": "/api/titanium/ui/windows",
-						"children": [
-							["titanium/ui/windows/appbarbutton", "AppBarButton"],
-							["titanium/ui/windows/appbarseparator", "AppBarSeparator"],
-							["titanium/ui/windows/appbartogglebutton", "AppBarToggleButton"],
-							["titanium/ui/windows/commandbar", "CommandBar"],
-							["titanium/ui/windows/listviewscrollposition", "ListViewScrollPosition"],
-							["titanium/ui/windows/style", "Style"],
-							["titanium/ui/windows/systemicon", "SystemIcon"]
-						]
-					}
+					["titanium/ui/window", "Window"]
 				]
 			},
 			["titanium/utils", "Utils"],

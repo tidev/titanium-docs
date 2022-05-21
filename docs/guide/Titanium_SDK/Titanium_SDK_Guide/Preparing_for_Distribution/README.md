@@ -24,15 +24,3 @@ In this section, you will learn about Google Play program requirements and the s
 **[Distributing iOS apps](/guide/Titanium_SDK/Titanium_SDK_Guide/Preparing_for_Distribution/Distributing_iOS_apps/)**
 
 In this section, you will learn about Apples's App Store program requirements and the steps you must take to publish an app to the App Store.
-
-**[Deploying and Distributing Mobile Web Apps](#undefined)**
-
-In this section, you will learn how to deploy a Mobile Web app for testing or distribution.
-
-**[Deploying to Windows Devices](/guide/Titanium_SDK/Titanium_SDK_Guide/Preparing_for_Distribution/Deploying_to_Windows_Devices/)**
-
-In this section, you'll learn the steps necessary to deploy an app to a Windows device for testing.
-
-**[Distributing Windows Applications](/guide/Titanium_SDK/Titanium_SDK_Guide/Preparing_for_Distribution/Distributing_Windows_Applications/)**
-
-In this section, you will learn about the steps you must take to publish an app to the Windows Store and Windows Phone Store. Note: Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.

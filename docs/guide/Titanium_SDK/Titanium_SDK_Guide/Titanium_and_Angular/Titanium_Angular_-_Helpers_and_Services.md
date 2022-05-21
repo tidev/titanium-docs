@@ -141,4 +141,4 @@ class SomeComponent implements OnInit {
 }
 ```
 
-Valid platform names are `android`, `ios`, and `windows`.
+Valid platform names are `android` and `ios`.

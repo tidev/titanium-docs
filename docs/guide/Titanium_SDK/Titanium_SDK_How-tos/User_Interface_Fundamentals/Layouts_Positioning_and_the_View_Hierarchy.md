@@ -53,8 +53,6 @@ Supported units are:
 
         * iOS: actual pixels = dip \* (screen density) / 163 (effectively 1dip=1px on standard, 1dip=2px on retina)
 
-        * Windows: actual pixels = dip \* (screen density) / 96
-
 * Relative measurements
 
     * **%**: Percentage of the size of the parent.
@@ -84,8 +82,6 @@ You can specify the default unit type to use with untyped values. In the tiapp.x
 ```
 
 Where `value` can be set to `px`, `mm`, `cm`, `in`, `dp`, `dip`, or `system`. The "system" value corresponds to the platform-dependent system unit as described above. If you do not specify this property in the tiapp.xml, then the units default to "system".
-
-As of SDK 8.0.0, `dp` starts supported for default unit on Windows. Since Windows default unit has been `px` in previous versions this means this may cause breaking change. You might want to update your `tiapp.xml` to use `px` for default unit explicitly like `<property name="ti.ui.defaultunit" type="string">px</property>` to keep consistency between previous SDK versions.
 
 ### The coordinates grid
 
