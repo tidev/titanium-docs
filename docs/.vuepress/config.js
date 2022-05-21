@@ -113,7 +113,11 @@ module.exports = {
                 link: 'https://twitter.com/tidevio'
               },
               {
-                text: 'Donate',
+                text: 'GitHub Sponsors',
+                link: 'https://github.com/sponsors/tidev/'
+              },
+              {
+                text: 'Liberapay Donations',
                 link: 'https://en.liberapay.com/tidev'
               }
             ]
