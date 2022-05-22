@@ -8,7 +8,7 @@
       <div class="md:col-span-7 lg:col-span-5 flex flex-col justify-center sm:text-center md:text-left landing-header-text">
         <h1>Write in JavaScript.<br>Run native everywhere.</h1>
         <p class="text-xl pb-4">
-          Axway's Titanium lets you develop cross-platform native mobile applications and build great mobile experiences using JavaScript.
+          TiDev's Titanium lets you develop cross-platform native mobile applications and build great mobile experiences using JavaScript.
         </p>
         <div class="w-full flex items-start justify-center md:justify-start">
           <a href="./guide/Titanium_SDK/Titanium_SDK_Getting_Started" class="btn btn-red btn-pill btn-lg">Get Started</a>
