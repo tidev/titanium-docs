@@ -5,7 +5,7 @@ weight: '10'
 
 # Titanium SDK
 
-The Titanium SDK helps you to build native cross-platform mobile application using JavaScript and the Titanium API, which abstracts the native APIs of the mobile platforms. Titanium empowers you to create immersive, full-featured applications, featuring over 80% code reuse across mobile apps. Axway licenses Titanium under the Apache 2 license and is free for both personal and commercial use.
+The Titanium SDK helps you to build native cross-platform mobile application using JavaScript and the Titanium API, which abstracts the native APIs of the mobile platforms. Titanium empowers you to create immersive, full-featured applications, featuring over 80% code reuse across mobile apps. TiDev licenses Titanium under the OSI approved Apache Public License (Version 2) and is free for both personal and commercial use.
 
 ## Chapters
 
