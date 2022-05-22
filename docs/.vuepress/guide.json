@@ -1135,6 +1135,16 @@
             "path": "/guide/Titanium_SDK/Titanium_SDK_Release_Notes/",
             "children": [
                 {
+                    "title": "Release Notes 11.x",
+                    "path": "/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_11.x/",
+                    "children": [
+                        [
+                            "Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_11.x/Titanium_SDK_11.0.0.RC_Release_Note",
+                            "11.0.0.RC Release Note"
+                        ]
+                    ]
+                },
+                {
                     "title": "Release Notes 10.x",
                     "path": "/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_10.x/",
                     "children": [
