@@ -1,9 +1,9 @@
 ---
-title: Titanium SDK Release Notes
-weight: '40'
+title: Titanium SDK 11.0.0.RC Release Note
+weight: '80'
 ---
 
-# Titanium SDK Release Notes
+# Titanium SDK 11.0.0.RC Release Note
 
 ## Titanium SDK 11.0.0.RC - 23 May 2022
 
