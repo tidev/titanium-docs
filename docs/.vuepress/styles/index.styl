@@ -61,35 +61,110 @@ body
       a
         color $accentColor !important
 
+/* dark/light mode variables */
+:root, :root.light {
+  --bg-border: #efefef;
+  --color-white: #fff;
+  --bg-color: #fff;
+  --bg-color2: #fff;
+  --bg-color3: #fff;
+  --bg-code: #eef3f4;
+  --bg-code-inline: #eef3f4;
+  --text-color: #001e26;
+  --text-color-code: #eef3f4;
+  --text-color-code-inline: #006580;
+  --bg-language: #22272b;
+  --bg-warning: #fff5e7;
+  --bg-tip: #ecf7f3;
+  --link-color: #d22630;
+}
+
 @media (prefers-color-scheme: dark) {
-  html, body, header, .navbar .links, .dropdown-wrapper .nav-dropdown, .sidebar,
-  .content-sidebar-wrapper {
-    background-color: #25272a !important;
-  }
+  --bg-color: #25272a;
+  --color-white: #fff;
+  --text-color: #eee;
+  --bg-border: #444;
+  --text-color-code: #eee;
+  --text-color-code-inline: #eee;
+  --bg-color2: #000;
+  --bg-color3: #444;
+  --bg-code: #000;
+  --bg-code-inline: #444;
+  --bg-language: #000;
+  --bg-warning: #000;
+  --bg-tip: #000;
+  --link-color: #f54b49;
+}
 
-  h1, h2, h3, h4, strong, .navbar .site-name, .dropdown-wrapper .dropdown-title, .nav-links a,
-  body, .sidebar-heading, a.sidebar-link, a.content-sidebar-link {
-    color: #eee !important;
-  }
+:root.dark {
+--bg-color: #25272a;
+--color-white: #fff;
+--bg-border: #444;
+--text-color: #eee;
+--text-color-code: #eee;
+--text-color-code-inline: #eee;
+--bg-color2: #000;
+--bg-color3: #444;
+--bg-code: #000;
+--bg-code-inline: #444;
+--bg-language: #000;
+--bg-warning: #000;
+--bg-tip: #000;
+--link-color: #f54b49;
+}
 
-  .content code {
-    background-color: #444  !important;
-    color: #eee !important;
-  }
+html, body, header, .navbar .links, .dropdown-wrapper .nav-dropdown, .sidebar,
+.content-sidebar-wrapper, .suggestions {
+  background-color: var(--bg-color) !important;
+}
 
-  .navbar, .sidebar, .content-sidebar, .content-sidebar-links {
-    border-color: #444 !important;
-  }
+h1, h2, h3, h4, strong, .navbar .site-name, .dropdown-wrapper .dropdown-title, .nav-links a,
+body, .sidebar-heading, a.sidebar-link, a.content-sidebar-link, .suggestions a span {
+  color: var(--text-color) !important;
+}
+
+.suggestions .suggestion.focused, .suggestions .suggestion.focus {
+  background-color: var(--bg-color3) !important;
+}
+
+.content code {
+  background-color: var(--bg-code-inline)  !important;
+  color: var(--text-color-code-inline) !important;
+}
+
+.content code a {
+  color: var(--text-color) !important;
+}
+
+.navbar, .sidebar, .content-sidebar, .content-sidebar-links {
+  border-color: var(--bg-border) !important;
+}
 
 
-  .docs-card {
-    background-color: #000 !important;
-    header {
-      background: transparent !important;
-    }
+.docs-card {
+  background-color: var(--bg-color2) !important;
+  header {
+    background: transparent !important;
   }
+}
 
-  .custom-block.warning, div[class*="language-"], div[class*="language-"] code {
-    background-color: #000 !important;
-  }
+.custom-block.warning {
+  background-color: var(--bg-tip) !important;
+}
+
+.custom-block.tip {
+  background-color: var(--bg-tip) !important;
+}
+
+div[class*="language-"], div[class*="language-"] code {
+  background-color: var(--bg-language) !important;
+  color: var(--text-color-code) !important;
+}
+
+a {
+  color: var(--link-color) !important;
+}
+
+.home .hero .action-button {
+  color: var(--color-white) !important;
 }
