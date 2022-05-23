@@ -41,6 +41,13 @@ ti create
 
 You will be prompted to enter an application name and application ID.
 
+After successful creation you can initiate Alloy
+
+```bash
+cd YOUR_PROJECT_NAME
+alloy new
+```
+
 A new skeleton Alloy project will be generated in the directory named after the application name.
 
 ## Simple example
@@ -113,10 +120,6 @@ Create a folder called `app/assets/images` and copy the [`apple_logo.jpg` file](
 ### Compile and run
 
 The Alloy CLI converts the view, style and controller in to a Titanium project, which can be built and ran by Studio or the Titanium CLI.
-
-#### Using Studio
-
-In the **Project Explorer** view, select your project, then from the global tool bar, select **Run** from the **Launch Mode** drop-down and select the device to launch the application on in the **Target** drop-down. Alloy will generate the Titanium files from the Alloy project files, which will then be compiled by Studio and launched on the device simulator.
 
 #### Using the CLI
 
