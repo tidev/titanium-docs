@@ -56,9 +56,7 @@ Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3
 
 ## Java Development Kit
 
-The Java Development Kit (JDK) is required to build Titanium apps and modules for Android.
-
-(Studio also requires the JDK. It's recommended that you use the 64-bit version of JDK 8 with Studio 5.1 or higher.)
+The Java Development Kit (JDK) is required to build Titanium apps and modules for Android. You can use [OpenJDK](https://openjdk.java.net/) or [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
 | Titanium SDK version | Min JDK version | Max JDK version |
 | --- | --- | --- |
@@ -69,113 +67,18 @@ The Java Development Kit (JDK) is required to build Titanium apps and modules fo
 | 7.5.0 - 8.3.1 | 8 | 14 |
 | 7.0.0 - 7.4.2 | 8 | 10 |
 
-![download_05](/images/guide/download/attachments/29004836/download_05.png) [Download Location](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/) for detailed instructions.
 
-## Studio
-
-### Studio Node, CLI, and Titanium SDK supported versions
-
-#### Disk space
-
-We recommend the following as a guideline for estimating how much disk space is necessary to build applications:
-
-| Application | Recommended disk space | Comments |
-| --- | --- | --- |
-| Xcode | 15 - 20GB | Xcode includes the latest iOS and related simulator(s). |
-| Android Studio | 10 - 15GB | You may need to select with SDK(s), NDK(s), and emulators to use. |
-| Mobile app (workspace) | 50MB - 3GB | Disk usage depends on many factors. |
-
-#### Node
-
-##### Versions of Node.js supported
-
-| Studio | Version |
-| --- | --- |
-| 5.1.3 - latest | 8.16.0 - 10.x |
-| 5.0.0 - 5.1.2 | 8.x |
-
-::: warning ⚠️ Warning
-If you use any version of Node.js beyond 8.9.x, Studio will hang at launch time.
-:::
-
-##### Not supported
-
-| Studio | Version |
-| --- | --- |
-| 4.9.1 | 4.6 through but not including 6.x |
-| 4.3.0 - 4.9.0 | 4.6 through but not including 6.x |
-| 4.0.0, 4.1.0, and 4.2.0 | Versions prior to 6.0 |
-
-#### CLI
-
-##### Supported versions of CLI
-
-| Studio | Version |
-| --- | --- |
-| 5.0.0 and latest | 6.2.0+ |
-
-##### Unsupported versions of CLI
-
-| Studio | Version |
-| --- | --- |
-| 4.9.1 | 6.0.0+ |
-| 4.3.0 - 4.9.0 | 5.0.0+ |
-| 4.0.0, 4.1.0, and 4.2.0 | 4.x |
-
-#### Titanium SDK
-
-##### Supported versions of SDK
-
-| Studio | Version |
-| --- | --- |
-| 5.0.0 and latest | 6.2.0+ |
-
-##### Unsupported versions of SDK
-
-| Studio | Version |
-| --- | --- |
-| 4.9.1 | 6.0.0+ |
-| 4.3.0 - 4.9.0 | 5.0.0+ |
-| 4.0.0, 4.1.0, and 4.2.0 | 4.x |
-
-### Java support
-
-### Studio 5.0.0 and earlier installers
-
-| Studio 5.0.0 and earlier | Java Version | Status |
-| --- | --- | --- |
-| Windows installer (32-bit) | Java 8 (32-bit) | Functional |
-| Windows installer (32-bit) | Java 8 (64-bit) | Not compatible |
-| MacOS installer (64-bit) | Java 8 (64-bit) | Functional |
-
-### Studio 5.1.0+ installers
-
-| Studio 5.1.0 installer | Java Version | Status |
-| --- | --- | --- |
-| Windows installer (32-bit) | Java 8 (32-bit) | Functional |
-| Windows installer (32-bit) | Java 8 (64-bit) | Not compatible |
-| Windows installer (32-bit) | Java 9 (32-bit) | 32-bit Java 9 is not available |
-| Windows installer (32-bit) | Java 9 (64-bit) | Incompatible (32-bit installer requires 32-bit Java) |
-| Windows installer (64-bit) | Java 8 (64-bit) | Functional |
-| Windows installer (64-bit) | Java 8 (32-bit) | Incompatible (64-bit installer requires 64-bit Java) |
-| Windows installer (64-bit) | Java 9 (64-bit) | Functional |
-| Windows installer (64-bit) | Java 9 (32-bit) | 32-bit Java 9 is not available |
-| MacOS installer (64-bit) | Java 8 (64-bit) | Functional |
-| MacOS installer (64-bit) | Java 9 (64-bit) | Functional |
-
 ## Node.js
 
-To run all Appcelerator components, you must have Node.js 10.13.0 or later.
+To run all Titanium components, you must have Node.js 14 or later.
 
-On Mac OS X and Windows, if you have selected to install Titanium updates, Studio prompts you to install Node.js. On Linux, you need to manually install Node.js.
-
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
+On Windows you will need to enable `dev mode` in the Windows settings in order to use Node correctly.
 
 | Operating System | Min Node Version | Max Node Version | Download Location |
 | --- | --- | --- | --- |
-| macOS / Windows / Linux | 10.13.0 | 12.X | [Official Website](https://nodejs.org/en/download/releases/) |
+| macOS / Windows / Linux | 14.x | 16.X | [Official Website](https://nodejs.org/en/download/releases/) |
 
 See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node/) for details.
 
@@ -198,8 +101,6 @@ Titanium requires the Android SDK Tools to be installed in order to allow you to
 ::: warning ⚠️ Warning
 Remember that Oracle JDK is a prerequisite for Android development and should be installed first. You need at least JDK 8 installed. See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/) for instructions.
 :::
-
-![download_02](/images/guide/download/attachments/29004851/download_02.png)
 
 The _Android SDK Manager_ installer may be obtained from the [Android Studio and SDK tools](https://developer.android.com/studio) site.
 
@@ -247,6 +148,9 @@ Each Titanium SDK supports building against a specific range of Android versions
 
 ##### Unsupported versions
 
+<details>
+<summary>show</summary>
+
 | Titanium SDK Version | Min Target Android Version  <br />(android:targetSdkVersion) | Max Target Android Version  <br />(android:targetSdkVersion) | Min Supported Android Version  <br />(android:minSdkVersion) |
 | --- | --- | --- | --- |
 | 6.2.0 - 6.3.0 | 7.1.x (API 25) | 6.0.x (API 23) | 4.1.x (API 16) |
@@ -265,6 +169,8 @@ Each Titanium SDK supports building against a specific range of Android versions
 | 1.8.x | 2.2 (API 8) | 3.x.x (API 11) | 2.2 (API 8) |
 | 1.7.x | 2.1 (API 7) | 3.x.x (API 11) | 2.1 (API 7) |
 
+</details>
+
 ::: warning ⚠️ Notes
 \* If you are building an Android module, you need to have Android SDK 6.0.x (API 23) installed if using Release 6.0.0 and greater.
 
@@ -277,6 +183,7 @@ Android SDK packages can be installed using the **Android SDK Manager** tool. Se
 
 The default Android SDK can be configured using Studio's _Preferences_, and then selected per-project using the _Run Configurations_.
 
+
 #### Android Native Add-on Module Development on macOS
 
 The Xcode command line tools are required to develop native Android add-on modules on macOS.
@@ -288,8 +195,6 @@ See [Installing the iOS SDK: Installing Command Line Tools](/guide/Titanium_SDK/
 See [Installing the iOS SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK/) for detailed instructions.
 
 Titanium requires Xcode to be installed in order for you to develop iOS applications.
-
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
 
 There are two ways to obtain Xcode, the application that installs and manages iOS SDKs:
 
@@ -320,6 +225,9 @@ Each Titanium SDK supports a specific range of Xcode versions, shown in the tabl
 
 ##### Unsupported versions of Xcode
 
+<details>
+<summary>show</summary>
+
 | Titanium SDK Version | Min Xcode Version | Max Xcode Version | Notes |
 | --- | --- | --- | --- |
 | 7.5.0 - 7.5.2 | 8.0.0 | 10.x |  |
@@ -332,11 +240,14 @@ Each Titanium SDK supports a specific range of Xcode versions, shown in the tabl
 | 4.0.0 - 4.1.x | 6.0.x | 6.4.x |  |
 | 3.4.0 - 3.5.x | 6.0.x | 6.0.x |  |
 
+
 Deploying for iOS 11.x requires Xcode 9.x, and macOS 10.12.4 and later.
 
 Deploying for iOS 12.x requires Xcode 10.x, and macOS 10.13.6 and later.
 
 As per apple guidelines, Starting April 2020 all apps submitted to App Store must be built with iOS 13 SDK or later, included in Xcode 11 or later.
+
+</details>
 
 #### iOS SDK / Target iOS platform
 
@@ -354,6 +265,9 @@ Each Titanium SDK supports a specific range of iOS base SDKs and deployment targ
 | 8.0.0 - 8.1.1 | 10.0.0 | 12.x | 9.0 | 12.x |
 
 ##### Unsupported versions of iOS SDK / Target iOS platform
+
+<details>
+<summary>show</summary>
 
 | Titanium SDK version | Minimum SDK version | Maximum SDK version | Minimum target iOS version | Maximum target iOS version |
 | --- | --- | --- | --- | --- |
@@ -375,6 +289,8 @@ Each Titanium SDK supports a specific range of iOS base SDKs and deployment targ
 | 1.8.x | 4.0.x | 5.0.x | 4.0.x | 5.0.x |
 | 1.7.1+ | 3.1.2 | 5.0.x | 3.1.2 | 5.0.x |
 
+</details>
+
 ### Windows
 
 ::: danger ❗️ Warning
@@ -391,10 +307,15 @@ As of Titanium 9.0.0, building Windows apps is no longer supported.
 
 ##### Unsupported versions of VS
 
+<details>
+<summary>show</summary>
+
 | Titanium SDK Version | Min Visual Studio Version | Max Visual Studio Version |
 | --- | --- | --- |
 | 6.2.0 - 6.3.0 | Visual Studio 2013 | Visual Studio 2017 |
 | 5.1.0 - 6.2.0 | Visual Studio 2013 | Visual Studio 2015 |
+
+</details>
 
 #### Supported Platforms
 
@@ -406,9 +327,14 @@ As of Titanium 9.0.0, building Windows apps is no longer supported.
 
 ##### Unsupported platform versions
 
+<details>
+<summary>show</summary>
+
 | Titanium SDK Version | Supported Mobile Platforms | Supported Desktop Platforms |
 | --- | --- | --- |
 | 5.1.0 - 6.3.0 | Windows 10 Mobile, Windows Phone | Windows 10, Windows 8.1 |
+
+</details>
 
 ### Unified CLI compatibility matrix
 
@@ -423,6 +349,8 @@ The following table lists the various CLI component versions:
 | 8.1.1 | 1.15.2 | N/A | 2.1.8 | 5.2.4 | 3.2.0 |
 
 ##### Unsupported versions of CLI includes
+<details>
+<summary>show</summary>
 
 | Unified CLI | Alloy | API Builder | Cloud CLI | Titanium CLI | Appc Daemon |
 | --- | --- | --- | --- | --- | --- |
@@ -460,7 +388,7 @@ The following table lists the various CLI component versions:
 | 5.2.1 | 1.8.2 | 1.7.29 | 1.2.0 | 5.0.6 | N/A |
 | 5.2.0 | 1.7.33 | 1.7.27 | 1.1.0 | 5.0.6 | N/A |
 | 5.1.0 | 1.7.32 | 1.3.22 | 1.0.32 | 5.0.6 | N/A |
-
+</details>
 #### Appc NPM
 
 ##### Supported version of Appc NPM
@@ -529,7 +457,6 @@ The following tools are required for native add-on module development or buildin
 
 Obtain the version that pertains to your particular Operating System from the link provided:
 
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
 
 | Operating System | Package Name | Package Version | Download Location | Notes |
 | --- | --- | --- | --- | --- |
@@ -539,17 +466,6 @@ Obtain the version that pertains to your particular Operating System from the li
 
 See [Installing Git](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Git/) for detailed instructions.
 
-### Python
-
-Error rendering macro 'excerpt-include' : User 'doc-robot' does not have permission to view the page 'DA:Installing Python'.
-
-See [Installing Python](#undefined) for detailed instructions.
-
-### Required Python packages
-
-Error rendering macro 'excerpt-include' : User 'doc-robot' does not have permission to view the page 'DA:Installing Required Python Packages'.
-
-See [Installing Required Python Packages](#undefined) for detailed instructions.
 
 ### gperf
 
@@ -561,7 +477,6 @@ gperf is not required for building, running, or distributing applications using 
 
 Obtain the latest stable version of gperf.
 
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
 
 | Operating System | Package Version | Download Location |
 | --- | --- | --- |
