@@ -29,15 +29,6 @@ The [URL session module (`com.appcelerator.urlSession`)](#!/api/Modules.URLSessi
 
 Before using this module, you need to add it to your project. This module is part of the Titanium SDK since Release 3.2.0 and does not need to be downloaded to obtain it. To add this module to your project:
 
-**Using Studio**
-
-1. Double-click the `tiapp.xml` file to open it in the **Overview** tab.
-
-2. In the **Modules** section, click the **Add** button (green plus sign) to open the **Mobile Modules** dialog.
-
-3. Locate and select **com.appcelerator.urlSession**.
-
-4. Click **OK**.
 
 **Using a text editor**
 

@@ -123,7 +123,7 @@ After applying this, if you change your device language to Japanese, you will th
 
 ## What are the system requirements?
 
-Your system environment must meet the following requirements to run Studio:
+Your system environment must meet the following requirements:
 
 * **Operating System:** A recent version of Windows or Mac OS X
 

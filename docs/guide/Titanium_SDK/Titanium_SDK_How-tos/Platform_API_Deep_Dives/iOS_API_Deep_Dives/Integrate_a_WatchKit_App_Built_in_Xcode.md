@@ -25,18 +25,6 @@ A WatchKit app contains a specialized app extension that runs on either the Appl
 
 ## Create an Apple Watch Application
 
-**Using Studio**
-
-To create an Apple Watch application:
-
-1. Open the project's `tiapp.xml` file in the Overview tab.
-
-2. Under the _Apple watchOS 2 App_ section, click **Create New...**
-
-3. A dialog will prompt you for the name of the application. Enter a name for the watch application, then click **OK**.
-
-Studio will generate a new Xcode WatchKit project in the Titaniuim project's `extensions` folder and updates the `ios extensions` element in the `tiapp.xml` file. Open the Xcode project's `<NAME>.xcodeproj` to start developing the watch application.
-
 **Using the CLI**
 
 To create an Apple Watch application, run the following command from the Titanium project that will include the watch application:
@@ -129,16 +117,6 @@ Before deploying a watchOS application to a device or creating a package for dis
 For directions on creating a provisioning profile, see [Deploying to iOS devices](/guide/Titanium_SDK/Titanium_SDK_Guide/Preparing_for_Distribution/Deploying_to_iOS_devices/) or [Distributing iOS apps](/guide/Titanium_SDK/Titanium_SDK_Guide/Preparing_for_Distribution/Distributing_iOS_apps/).
 
 After you create your provisioning profiles and add them to Xcode, you need to add the UUID of the provisioning profiles to the `tiapp.xml` file.
-
-**Using Studio:**
-
-1. Open the tiapp.xml file in the Overview tab.
-
-2. Under the _Apple watchOS 2 App_ section, click **Configure Provisioning Profiles...**
-
-3. In the _Configure Targets_ step, verify both the Watch App and WatchApp Extension are checked, then click **Next**.
-
-4. For each distribution target, select in drop-down the provisioning profile you want to use for the WatchApp and WatchApp extension.
 
 **Using a Text Editor:**
 

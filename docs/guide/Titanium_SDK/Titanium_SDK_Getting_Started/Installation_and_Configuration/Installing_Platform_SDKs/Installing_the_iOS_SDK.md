@@ -167,11 +167,9 @@ For example:
 sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer/
 ```
 
-If you are using Studio, you need to restart Studio for your changes to take effect.
-
 ## Configure the CLI
 
-Both Studio and the CLI use the `xcode-select` command to obtain the location of the Xcode tool to use when building your iOS applications. Neither tool requires any additional configuration.
+The CLI use the `xcode-select` command to obtain the location of the Xcode tool to use when building your iOS applications. Neither tool requires any additional configuration.
 
 
 ## Note for Mavericks (and later)
