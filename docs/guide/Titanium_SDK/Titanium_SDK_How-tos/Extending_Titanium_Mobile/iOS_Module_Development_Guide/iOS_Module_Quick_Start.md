@@ -17,7 +17,7 @@ To develop an iOS-based Module, you'll need all of the software required to buil
 
 * Supported versions of Xcode and the iOS SDK, as described in [Installing the iOS SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK/)
 
-* Studio or the Appcelerator Command-Line Interface (CLI) for creating modules, and building and running test applications
+* Command-Line Interface (CLI) for creating modules, and building and running test applications
 
 ComExampleTestModuleIn addition, Python, Python setuptools and the Python markdown (or markdown2) module are both required by the module build scripts. For Mac OS X, Python and the Python setuptools should already be installed. For the markdown module, see [Installing Required Python Packages](#undefined).
 
@@ -36,20 +36,6 @@ ti create -n test --id com.example.test
 ### when prompted for the project type, select "Titanium Module"
 ```
 :::
-
-In Studio:
-
-1. From the menu, select **File** > **New** > **Mobile Module Project** to open the **New Mobile Module Project** dialog.
-
-2. In the **Project name** field, enter **test**.
-
-3. In the **Module Id** field, enter **com.example.test**.
-
-4. In **Deployment Targets**, select **iOS**.
-
-5. Click **Next**, then click **Finish**.
-
-Studio sets up a new folder called `test` that contains your module project.
 
 ## Validate the SDK version
 
@@ -74,19 +60,6 @@ unzip -o com.example.test-iphone-1.0.0.zip -d ~/Library/Application\ Support/Tit
 ```
 :::
 
-In Studio:
-
-1. Select your module folder in the **Project Explorer** view.
-
-2. Verify **Package** and **iOS Module** are displayed in **Launch Mode** and **Launch Target**, respectively.
-
-3. Click the Package icon to open the **Package iOS Module** dialog.
-
-4. In **Output Location**, choose the **Titanium SDK** to install the module in the Titanium SDK home path to be accessed by any Titanium application.
-
-5. Click **Finish**.
-
-Studio builds and installs the module to the Titanium SDK home path.
 
 ## Test the module
 
@@ -104,23 +77,6 @@ cd Hello/
 ```
 :::
 
-In Studio:
-
-1. From the menu, select **File** > **New** > **Mobile App Project** to open the **New Mobile App Project** dialog.
-
-2. On the **Project Template** page, select **Default Alloy Project** as the template type, then click **Next**.
-
-3. On the **Project Location** page, enter the following information:
-
-    * In the **Project Name** field, enter **Hello**.
-
-    * In the **App ID** field, enter **com.example.hello**.
-
-    * In **Deployment Targets**, select **iPhone** and **iPad**.
-
-4. Click **Finish** to create the project.
-
-Studio sets up a new folder called `Hello` that contains the test application you will be using to test the module.
 
 ### Add the module as a dependency to the project
 
@@ -138,15 +94,6 @@ Open the `tiapp.xml` and update the `<modules/>` element to include the module a
 ```
 :::
 
-In Studio:
-
-1. Open the `tiapp.xml` file located in the root directory of the project.
-
-2. Under the **Modules** section, click the **Add** button.
-
-3. Select **com.example.test**.
-
-4. Click **OK**.
 
 ### Load the module and make module API calls
 
@@ -223,15 +170,6 @@ open test/ios/test.xcodeproj
 ```
 :::
 
-In Studio:
-
-1. Right-click the `test.xcodeproj` folder and select **Show In** > **Terminal**.
-
-2. In the Terminal, run the following command:
-
-    ```
-    open .
-    ```
 
 Your module project is now open in Xcode. Expand the `Classes` folder and take a look at the default files created by the Titanium SDK:
 

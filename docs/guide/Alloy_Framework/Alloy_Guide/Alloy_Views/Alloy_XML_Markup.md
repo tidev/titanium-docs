@@ -7,7 +7,7 @@ weight: '20'
 
 ## Introduction
 
-In Alloy, the XML markup abstracts the Titanium SDK UI components, so you do not need to code the creation and setup of these components using JavaScript and the Titanium SDK API. All view files must be placed in the `app/views` folder of your project with the `.xml` file extension. During code compilation, Alloy looks for these markup files in this specific location to transform them into Titanium code, which can be executed by Studio and the CLI.
+In Alloy, the XML markup abstracts the Titanium SDK UI components, so you do not need to code the creation and setup of these components using JavaScript and the Titanium SDK API. All view files must be placed in the `app/views` folder of your project with the `.xml` file extension. During code compilation, Alloy looks for these markup files in this specific location to transform them into Titanium code, which can be executed by the CLI.
 
 The following code is an example of a view file:
 

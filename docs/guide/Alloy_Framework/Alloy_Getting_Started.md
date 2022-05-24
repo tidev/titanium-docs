@@ -119,7 +119,7 @@ Create a folder called `app/assets/images` and copy the [`apple_logo.jpg` file](
 
 ### Compile and run
 
-The Alloy CLI converts the view, style and controller in to a Titanium project, which can be built and ran by Studio or the Titanium CLI.
+The Alloy CLI converts the view, style and controller in to a Titanium project, which can be built and ran by the Titanium CLI.
 
 #### Using the CLI
 

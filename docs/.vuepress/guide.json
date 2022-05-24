@@ -258,20 +258,10 @@
                             "Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables",
                             "Software Locations and Environment Variables"
                         ],
-                        {
-                            "title": "Titanium Compatibility Matrix",
-                            "path": "/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/",
-                            "children": [
-                                [
-                                    "Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/Studio_Compatibility_Matrix",
-                                    "Studio Compatibility Matrix"
-                                ],
-                                [
-                                    "Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/Studio_Java_Support",
-                                    "Studio Java Support"
-                                ]
-                            ]
-                        },
+                        [
+                            "Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/",
+                            "Titanium Compatibility Matrix"
+                        ],
                         [
                             "Titanium_SDK_Getting_Started/Installation_and_Configuration/Node.js_Support",
                             "Node.js Support"
@@ -663,10 +653,6 @@
                         [
                             "Titanium_SDK_How-tos/Debugging_and_Profiling/Native_iOS_Debugging_and_Testing_Tools",
                             "Native iOS Debugging and Testing Tools"
-                        ],
-                        [
-                            "Titanium_SDK_How-tos/Debugging_and_Profiling/Debugging_in_Studio",
-                            "Debugging in Studio"
                         ],
                         [
                             "Titanium_SDK_How-tos/Debugging_and_Profiling/Managing_Memory_and_Finding_Leaks",

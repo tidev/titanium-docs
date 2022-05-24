@@ -31,8 +31,4 @@ The documents in this section should help with specific installation and configu
 
 * [Titanium Compatibility Matrix](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/)
 
-    * [Studio Compatibility Matrix](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/Studio_Compatibility_Matrix/)
-
-    * [Studio Java Support](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/Studio_Java_Support/)
-
 * [Node.js Support](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Node.js_Support/)

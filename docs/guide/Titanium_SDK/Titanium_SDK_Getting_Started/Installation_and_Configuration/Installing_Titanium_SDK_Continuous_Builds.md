@@ -39,23 +39,7 @@ To install a Titanium SDK using the `ti` cli, follow these steps:
 
 * You can view additional command line options by executing:`ti sdk install -h`
 
-### Studio install
-
-To install a Titanium SDK using Studio, follow these steps:
-
-* Using a browser, navigate the [http://builds.appcelerator.com](http://builds.appcelerator.com) website and choose the desired branch/release. Right click an SDK archive download link and copy its URL. Be sure to choose the correct zip for your host OS.
-
-* From Studio, select the menu item, **Help** \> **Install Appcelerator SDK...**
-
-* The **Install** dialog appears. Select **Install From URL**
-
-* Paste the link into textbox, then click **Finish**
-
 ### Manual install
-
-::: warning ⚠️ Warning
-We strongly recommend that you use Studio or the CLI to manage SDKs. Please see the previous section.
-:::
 
 To manually install a Titanium SDK, follow these steps:
 
