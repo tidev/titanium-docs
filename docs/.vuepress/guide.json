@@ -258,10 +258,10 @@
                             "Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables",
                             "Software Locations and Environment Variables"
                         ],
-                        {
-                            "title": "Titanium Compatibility Matrix",
-                            "path": "/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/"
-                        },
+                        [
+                            "Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/",
+                            "Titanium Compatibility Matrix"
+                        ],
                         [
                             "Titanium_SDK_Getting_Started/Installation_and_Configuration/Node.js_Support",
                             "Node.js Support"
