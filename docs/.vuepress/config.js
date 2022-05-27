@@ -91,10 +91,10 @@ module.exports = {
           {
             text: 'News',
             items: [
-              // {
-              //   text: 'Blog',
-              //   link: 'https://appcelerator.com/blog'
-              // },
+              {
+                text: 'Blog',
+                link: 'https://tidev.io/blog'
+              },
               {
                 text: 'Titanium SDK Twitter',
                 link: 'https://twitter.com/titaniumsdk'
