@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "clean:api": "rm -rf docs/api",
+    "clean:api": "rm -rf docs/api; git checkout -- docs/api/README.md",
     "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "node ./scripts/generate-guides && NODE_ENV=production NODE_OPTIONS=\"--max-old-space-size=6144\" vuepress build docs",
     "docs:version": "vuepress version docs",
