@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/ti.crypto/edit/master/apidoc/Cryptor.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Cryptor.yml
 ---
 # Modules.Crypto.Cryptor
 

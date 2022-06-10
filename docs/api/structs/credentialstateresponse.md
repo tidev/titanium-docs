@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/titanium-apple-sign-in/edit/master/apidoc/Applesignin.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Applesignin.yml
 ---
 # CredentialStateResponse
 

@@ -30,7 +30,7 @@ easily visualized as an Alloy view:
 ```
 
 For more instructions and examples of using `ListView`, refer to the
-[ListViews guide](https://docs.appcelerator.com/platform/latest/#!/guide/ListViews).
+[ListViews guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/ListViews/).
 
 ### Creating a List
 
@@ -222,8 +222,8 @@ var vegDataSet = [
     {properties: { title: 'Carrots'}},
     {properties: { title: 'Potatoes'}},
 ];
-sections.push(vegSection);
 var vegSection = Ti.UI.createListSection({ headerTitle: 'Vegetables', items: vegDataSet});
+sections.push(vegSection);
 
 listView.sections = sections;
 win.add(listView);

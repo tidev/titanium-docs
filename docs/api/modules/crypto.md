@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/ti.crypto/edit/master/apidoc/CryptoModule.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/CryptoModule.yml
 ---
 # Modules.Crypto
 
@@ -7,14 +7,12 @@ editUrl: https://github.com/appcelerator-modules/ti.crypto/edit/master/apidoc/Cr
 
 ## Overview
 
-<p class="note">This feature requires a Pro or Enterprise subscription!</p>
-
 This module provides access to various encryption and decryption algorithms, and string encodings.
 
 ## Getting Started
 
-View the [Using Titanium Modules](http://docs.appcelerator.com/platform/latest/#!/guide/Using_Titanium_Modules) document for instructions on getting
-started with using this module in your application.
+View the [Using Titanium Modules](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Using_Modules/) document for instructions on getting
+started with using this module in your application. You can download the module from https://github.com/tidev/ti.crypto/releases
 
 ## Accessing the crypto Module
 

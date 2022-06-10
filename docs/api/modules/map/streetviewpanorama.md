@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/ti.map/edit/master/apidoc/StreetViewPanorama.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/StreetViewPanorama.yml
 ---
 # Modules.Map.StreetViewPanorama
 

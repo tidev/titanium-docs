@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/titanium-identity/edit/master/apidoc/Identity.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Identity.yml
 ---
 # Modules.Identity
 
@@ -67,7 +67,6 @@ if (TiIdentity.biometryType === TiIdentity.BIOMETRY_TYPE_FACE_ID) { // Face ID
     authPhrase = 'Touch ID';
 }
 ```
-    
 ## Face ID Requirements (iOS only)
 
 For Face ID to work properly, you need to add a **`<key>`** item to the

@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/ti.map/edit/master/apidoc/Annotation.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Annotation.yml
 ---
 # Modules.Map.Annotation
 

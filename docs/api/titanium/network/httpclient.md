@@ -107,7 +107,7 @@ TLS 1.1 and TLS 1.0. By default, TLS 1.2 is attempted first.
 On Android, use the <Titanium.Network.HTTPClient.tlsVersion> property to set the version of the TLS protocol
 if you know the version the server is running.  If you do not know, do not set this property.
 
-On iOS, add the `NSExceptionMinimumTLSVersion` key in the `<plist>` section of `tiapp.xml` to set a minimum TLS version. 
+On iOS, add the `NSExceptionMinimumTLSVersion` key in the `<plist>` section of `tiapp.xml` to set a minimum TLS version.
 See following example:
 
 ```
@@ -115,14 +115,14 @@ See following example:
 <dict>
   <key>NSExceptionDomains</key>
   <dict>
-    <key>www.appcelerator.com</key>
+    <key>www.titaniumsdk.com</key>
     <dict>
       <key>NSExceptionMinimumTLSVersion</key>
       <string>TLSv1.3</string>
     </dict>
   </dict>
 </dict>
-```  
+```
 Titanium will not fallback with a lower TLS version if the `tlsVersion` property in android or `NSExceptionMinimumTLSVersion` in iOS, is set.
 Setting the TLS version saves time from re-attempting connections with lower TLS versions and
 provides added security by denying attempts to use lower TLS versions.
@@ -162,7 +162,7 @@ Example:
         <key>NSLocalNetworkUsageDescription</key>
         <string>
             Specify the reason for accessing the local network.
-            This appears in the alert dialog when asking the user 
+            This appears in the alert dialog when asking the user
             for permission to access local network.
         </string>
       </dict>
@@ -179,7 +179,7 @@ Example:
 The following code excerpt does a simple GET request and logs the response text.
 
 ``` js
-var url = "http://www.appcelerator.com";
+var url = "http://www.titaniumsdk.com";
 var client = Ti.Network.createHTTPClient({
     // function called when the response data is available
     onload : function(e) {

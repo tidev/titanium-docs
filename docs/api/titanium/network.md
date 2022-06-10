@@ -53,16 +53,6 @@ that you want to manage your whitelisted URL's yourself.
 </ti:app>
 ```
 
-Note that Titanium will inject code into the plist file to whitelist `appcelerator.com` subdomains,
-which is needed to communicate with the Appcelerator Anayltics server. To disable the whitelist,
-set the `ios.whitelist.appcelerator.com` tiapp application property to false.
-
-``` xml
-<ti:app>
-    <property name="ios.whitelist.appcelerator.com" type="bool">false</property>
-</ti:app>
-```
-
 Listed below are other guidelines from Apple.
 
 **Avoid hard-coded IPv4 address literals**

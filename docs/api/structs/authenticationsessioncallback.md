@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/titanium-web-dialog/edit/master/apidoc/AuthenticationSession.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/AuthenticationSession.yml
 ---
 # AuthenticationSessionCallback
 

@@ -30,7 +30,7 @@ when creating the window.
 ### Pass Context Between Windows
 
 To pass data between windows, use a
-[CommonJS module](https://docs.appcelerator.com/platform/latest/#!/guide/CommonJS_Modules_in_Titanium)
+[CommonJS module](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_Guide/Best_Practices_and_Recommendations/CommonJS_Modules_in_Titanium.html)
 to save information from one window then retrieve it in another.  In the example below, the foo
 module exposes two methods to store and retrieve an object.  The first window of the project
 loads the foo module and uses the set method to store some data before opening the second window.

@@ -37,6 +37,6 @@ Android. (Note that you must have redistribution rights on the fonts you ship.)
 In Alloy applications, custom fonts must be placed in a "fonts" folder in the platform-specific assets folder (<strong>app/assets/android/fonts</strong>, for example).
 In classic Titanium applications, custom fonts must be placed in the **Resources/fonts** directory.
 
-For an example of using custom fonts, see [Custom Fonts](https://docs.appcelerator.com/platform/latest/#!/guide/Custom_Fonts).
+For an example of using custom fonts, see [Custom Fonts](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Custom_Fonts.html).
 
 <ApiDocs/>

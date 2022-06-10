@@ -59,7 +59,7 @@ items from being displayed on Android.
 ### Dialog with 3 Options
 
 ``` js
-Ti.UI.setBackgroundColor('white');
+Ti.UI.backgroundColor = 'white';
 var win = Ti.UI.createWindow({
   title: 'Click window to test',
   backgroundColor: 'white'

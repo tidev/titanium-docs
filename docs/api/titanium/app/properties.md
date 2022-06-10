@@ -16,7 +16,7 @@ Use the `name` attribute to define your property name and place the value inline
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
-<ti:app xmlns:ti="http://ti.appcelerator.org">
+<ti:app xmlns:ti="http://ti.tidev.io">
     <property name="foo" type="string">42</property>
 </ti:app>
 ```

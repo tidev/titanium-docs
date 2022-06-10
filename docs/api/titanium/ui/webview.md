@@ -39,6 +39,22 @@ To interact with remote content, wait until the content is loaded, then use the
 [evalJS](Titanium.UI.WebView.evalJS) method to execute a JavaScript expression
 inside the web view and retrieve the value of an expression.
 
+You can inject the local `Ti.App.fireEvent` bindings yourself by adding a script element using
+evalJS.
+
+```js
+webview.evalJS(
+  'javascript=(function addBinding(){' +
+    'var s=document.createElement("script");' +
+    's.setAttribute("type","text/javascript");' +
+    's.innerHTML="' + require('/binding.js') + '";'
+    +
+    'document.getElementsByTagName("body")[0].appendChild(s);' +
+  '})()'
+);
+```
+The `binding.min.js` is available in the [repository](https://github.com/tidev/titanium_mobile/tree/master/android/modules/ui/assets/Resources/ti.internal/webview).
+
 ### Local JavaScript Files
 
 During the build process for creating a package, all JavaScript files, that is, any file with a
@@ -137,7 +153,7 @@ cookie stores using the methods <Titanium.Network.addHTTPCookie>, <Titanium.Netw
 **WKWebView**
 
 With Titanium SDK 8.0.0, we now use WKWebView to implement Ti.UI.WebView (as Apple has deprecated UIWebView).
-WKWebView has few restriction specially with local file accessing. For supporting custom-fonts with WKWebView 
+WKWebView has few restriction specially with local file accessing. For supporting custom-fonts with WKWebView
 a little modification is required in the HTML files:
 
 ``` html
@@ -162,15 +178,15 @@ To have a WKWebView scale the page the same way as UIWebView, add the following 
 
 ### Ti.UI.SIZE and WebViews
 
-With Titanium 8.0.0+, <Titanium.UI.SIZE> does not work for WebViews. We recommend to give a **fixed height** 
-to <Titanium.UI.WebView> (as noted in [TIDOC-3355](https://jira.appcelerator.org/browse/TIDOC-3355)).
+With Titanium 8.0.0+, <Titanium.UI.SIZE> does not work for WebViews. We recommend to give a **fixed height**
+to <Titanium.UI.WebView> (as noted in [TIDOC-3355](https://jira-archive.titaniumsdk.com/TIDOC-3355)).
 
-As a workaround you can try to get the `document.body.scrollHeight` inside <Titanium.UI.WebView.load> event 
+As a workaround you can try to get the `document.body.scrollHeight` inside <Titanium.UI.WebView.load> event
 of webview and set the height to webview. See following example.
 
 ``` js
 var win = Ti.UI.createWindow({
-  backgroundColor: 'white';
+  backgroundColor: 'white'
 });
 
 var verticalView = Ti.UI.createView({layout: 'vertical', width: "100%", height: "100%"});
@@ -199,12 +215,12 @@ webview.addEventListener('load', function(e) {
   Ti.API.info('webview height: ' + result);
   webview.height = result;
 });
-``` 
+```
 
 ### For More Information
 
 See [Integrating Web
-Content](https://docs.appcelerator.com/platform/latest/#!/guide/Integrating_Web_Content)
+Content](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Integrating_Web_Content/)
 in the Titanium Mobile Guides for more information on using web views, including use
 cases, more code examples, and best practices for web view content.
 

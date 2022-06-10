@@ -100,4 +100,35 @@ tabGroup = Ti.UI.createTabGroup({
 tabGroup.open();
 ```
 
+### Example with different colors
+
+Create a TabGroup with different active and inactive colors.
+
+``` js
+function createTab(title, icon) {
+  const window = Ti.UI.createWindow({ title: title });
+  window.add(Ti.UI.createLabel({ text: title + " View" }));
+    const tab = Ti.UI.createTab({
+    title: title,
+    icon: icon,
+    window: window,
+  });
+  return tab;
+}
+
+const tabGroup = Ti.UI.createTabGroup({
+  tabs: [
+    createTab("Tab 1", "/assets/images/tab1.png"),
+    createTab("Tab 2", "/assets/images/tab2.png"),
+    createTab("Tab 3", "/assets/images/tab1.png")
+  ],
+  activeTintColor: "red",
+  activeTitleColor: "red",
+  tintColor: "purple",
+  titleColor: "purple",
+  tabsBackgroundColor: "#F7F7F7",
+});
+tabGroup.open();
+```
+
 <ApiDocs/>

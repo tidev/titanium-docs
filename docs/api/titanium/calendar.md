@@ -12,7 +12,7 @@ Modifying or deleting existing events and creating recurring events are only sup
 
 Currently, on Android, calendar permissions must be explicitly configured in `tiapp.xml` in order to access the
 calendar. See "Common Requirements" in
-[tiapp.xml and timodule.xml Reference](https://docs.appcelerator.com/platform/latest/#!/guide/tiapp.xml_and_timodule.xml_Reference).
+[tiapp.xml and timodule.xml Reference](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_Guide/Appendices/tiapp.xml_and_timodule.xml_Reference.html).
 
 ## Examples
 
@@ -82,7 +82,7 @@ event.createReminder(reminderDetails);
 Create a picker to allow an existing calendar to be selected and, when a button is clicked,
 generate details of all events in that calendar for the current year.
 
-``` js        
+``` js
 var calendars = [];
 var selectedCalendarName;
 var selectedid;

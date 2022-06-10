@@ -37,7 +37,7 @@ then invoke the `Titanium.Android.Service` APIs on the `Service` object.
 
 Further Reading:
 
-  * [Android Services guide](https://docs.appcelerator.com/platform/latest/#!/guide/Android_Services)
+  * [Android Services guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Platform_API_Deep_Dives/Android_API_Deep_Dives/Android_Services.html)
   * [Android Developer: Service](https://developer.android.com/reference/android/app/Service.html)
 
 ### Background Location Service Example

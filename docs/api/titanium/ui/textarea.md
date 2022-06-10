@@ -15,7 +15,7 @@ Use the <Titanium.UI.createTextArea> method or **&lt;TextArea&gt;** Alloy elemen
 
 ### `click` event in iOS
 
-In iOS 11+, `click` event in text area is not fired due to changes from apple. 
+In iOS 11+, `click` event in text area is not fired due to changes from apple.
 Use `touchstart` event instead of `click` event.
 
 ## Examples

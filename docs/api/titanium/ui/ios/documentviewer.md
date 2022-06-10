@@ -92,7 +92,7 @@ function fileInApplicationDataDirectory(fileName) {
 }
 ```
 
-Read more about the issue in [TIMOB-25680](https://jira.appcelerator.org/browse/TIMOB-25680).
+Read more about the issue in [TIMOB-25680](https://jira-archive.titaniumsdk.com/TIMOB-25680).
 
 ## Examples
 

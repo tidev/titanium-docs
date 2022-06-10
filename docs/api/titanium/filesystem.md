@@ -8,7 +8,7 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 ## Overview
 
 For examples of using the Filesystem APIs, refer to the
-[Filesystem Access and Storage guide](https://docs.appcelerator.com/platform/latest/#!/guide/Filesystem_Access_and_Storage)
+[Filesystem Access and Storage guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Working_with_Local_Data_Sources/Filesystem_Access_and_Storage.html)
 as well as the other Filesystem submodule API documentation.
 
 ## Examples

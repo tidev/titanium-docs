@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/appcelerator.bluetooth/edit/master/apidoc/BluetoothDevice.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/BluetoothDevice.yml
 ---
 # Modules.Bluetooth.BluetoothDevice
 

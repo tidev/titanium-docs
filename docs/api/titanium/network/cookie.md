@@ -104,7 +104,7 @@ function LoadCookiesWindow() {
     window: win
   });
   var webview = Ti.UI.createWebView({
-    url: 'http://appcelerator.com',
+    url: 'http://titaniumsdk.com',
     bottom: 50
   });
   win.add(close);

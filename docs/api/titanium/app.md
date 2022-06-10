@@ -141,7 +141,7 @@ can't be garbage collected until the event listener is removed.
 This can lead to memory leaks if application-level event listeners are added and not
 removed.
 
-See also: [Event Handling](https://docs.appcelerator.com/platform/latest/#!/guide/Event_Handling)
+See also: [Event Handling](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Fundamentals/Event_Handling.html)
 in the Titanium Mobile Guides.
 
 ### System Level Accessibility Events

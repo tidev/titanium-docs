@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/appcelerator.ble/edit/master/apidoc/L2CAPchannel.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/L2CAPchannel.yml
 ---
 # Modules.BLE.L2CAPChannel
 

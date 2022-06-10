@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/appcelerator.ble/edit/master/apidoc/Central.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Central.yml
 ---
 # Modules.BLE.Central
 

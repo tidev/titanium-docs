@@ -24,7 +24,7 @@ To send a local notification, the application needs to:
      notification.
 
 For instructions on sending local interactive notifications, see the
-[iOS Local Notifications guide](https://docs.appcelerator.com/platform/latest/#!/guide/iOS_Local_Notifications).
+[iOS Local Notifications guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Notification_Services/iOS_Local_Notifications.html).
 
 ### Local Interactive Notifications
 
@@ -43,7 +43,7 @@ To create an interactive notification, the application needs to:
   4. Monitor the [localnotificationaction](Titanium.App.iOS.localnotificationaction) event.
 
 For instructions on sending local interactive notifications, see the
-[iOS Local Notifications guide](https://docs.appcelerator.com/platform/latest/#!/guide/iOS_Local_Notifications).
+[iOS Local Notifications guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Notification_Services/iOS_Local_Notifications.html).
 
 ### Background Downloads
 
@@ -51,7 +51,7 @@ In iOS 7, Apple introduced new background execution modes which allow the applic
 content in the background. These background modes are supported in Titanium SDK 3.2.0 and later.
 
 For more information on getting started, refer to the
-[iOS Background Services guide](https://docs.appcelerator.com/platform/latest/#!/guide/iOS_Background_Services).
+[iOS Background Services guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Platform_API_Deep_Dives/iOS_API_Deep_Dives/iOS_Background_Services.html).
 
 ### Handoff User Activities
 

@@ -20,7 +20,7 @@ Note that setting the [Window.navBarHidden](Titanium.UI.Window.navBarHidden) pro
 to true disables the Action Bar since it is part of the navigation title bar.
 
 For more examples on using the Action Bar, refer to the
-[Android Action Bar guide](https://docs.appcelerator.com/platform/latest/#!/guide/Android_Action_Bar).
+[Android Action Bar guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Android_UI_Components_and_Conventions/Android_Action_Bar.html).
 
 ### Application Notes for Alloy
 

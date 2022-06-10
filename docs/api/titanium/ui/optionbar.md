@@ -26,12 +26,19 @@ Creates an option bar of text buttons.
 ``` js
 const win = Ti.UI.createWindow();
 const optionBar = Ti.UI.createOptionBar({
-  labels: [ 'Option 1', 'Option 2', Option 3 ]
+  labels: [ 'Option 1', 'Option 2', 'Option 3' ]
 });
+const btn = Ti.UI.createButton({
+  title:"reset", bottom: 10
+})
 optionBar.addEventListener('click', (e) => {
   Ti.API.info(`Option ${e.index} was selected.`);
 });
-win.add(optionBar);
+btn.addEventListener('click', (e) => {
+  optionBar.index = -1;
+});
+win.add([optionBar,btn]);
+
 win.open();
 ```
 

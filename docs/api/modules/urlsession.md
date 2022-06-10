@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/ti.urlsession/edit/master/apidoc/urlsession.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/urlsession.yml
 ---
 # Modules.URLSession
 

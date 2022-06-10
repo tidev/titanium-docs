@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/ti.map/edit/master/apidoc/View.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/View.yml
 ---
 # CameraAnimationParams
 

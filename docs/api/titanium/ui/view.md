@@ -104,7 +104,7 @@ specified in typographical points.
 
 For more details see:
 
-* [UI Composite Layout Spec](https://docs.appcelerator.com/platform/latest/#!/guide/UI_Composite_Layout_Behavior_Spec)
+* [UI Composite Layout Spec](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Platform_Development/Specs/UI_Composite_Layout_Behavior_Spec.html)
 
 ### Size and Position
 

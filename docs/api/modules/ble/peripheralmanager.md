@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/appcelerator.ble/edit/master/apidoc/PeripheralManager.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/PeripheralManager.yml
 ---
 # Modules.BLE.PeripheralManager
 

@@ -22,7 +22,7 @@ reload them from the `Contacts` module before modifying them.
 
 See the examples for a sample use of the `reload` event.
 
-If 'ABAddressBookErrorDomain error 0' occurs, it implies that you are not allowed to add or edit 
+If 'ABAddressBookErrorDomain error 0' occurs, it implies that you are not allowed to add or edit
 certain fields. Check your default account in the iOS settings under contacts. If it's not 'iCloud',
 most likely it will not support fields such as alternateBirthday or socialProfile.
 
@@ -54,8 +54,8 @@ Output to the console all properties of all people.
 
 ``` js
 var singleValue = [
-  'recordId', 'firstName', 'middleName', 'lastName', 'fullName', 'prefix', 'suffix', 
-  'nickname', 'firstPhonetic', 'middlePhonetic', 'lastPhonetic', 'organization', 
+  'recordId', 'firstName', 'middleName', 'lastName', 'fullName', 'prefix', 'suffix',
+  'nickname', 'firstPhonetic', 'middlePhonetic', 'lastPhonetic', 'organization',
   'jobTitle', 'department', 'note', 'birthday', 'created', 'modified', 'kind'
 ];
 var multiValue = [
@@ -77,7 +77,7 @@ for (var i=0, ilen=people.length; i<ilen; i++){
 
 ### Add New System Address Book Records
 
-Create two new records in the system address book. Note that the <Titanium.Contacts.Person> 
+Create two new records in the system address book. Note that the <Titanium.Contacts.Person>
 object is queried in the same way that it is created (as shown in the previous example.)
 
 ``` js
@@ -141,7 +141,7 @@ Ti.Contacts.createPerson({
   },
   url:{
     homepage: ['www.google.com'],
-    work: ['www.appcelerator.com', 'www.example.com']
+    work: ['www.titaniumsdk.com', 'www.example.com']
   }
 });
 Ti.API.info('Contact saved');

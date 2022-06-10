@@ -15,7 +15,7 @@ on the intent's settings.
 To receive an intent, an application needs to declare an Intent Filter. An intent filter
 indicates to the Android OS that your application can handle certain data types or URIs.
 For details on using Intent Filters, see the
-[Android Intent Filters guide](https://docs.appcelerator.com/platform/latest/#!/guide/Android_Intent_Filters).
+[Android Intent Filters guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Platform_API_Deep_Dives/Android_API_Deep_Dives/Android_Intent_Filters.html).
 
 Intents can be used to start an activity, start a service or start a broadcast.
 
@@ -106,7 +106,7 @@ components.
 
 ### Further Reading
 
-  * [Android Intents guide](https://docs.appcelerator.com/platform/latest/#!/guide/Android_Intents)
+  * [Android Intents guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Platform_API_Deep_Dives/Android_API_Deep_Dives/Android_Intent_Filters.html)
   * [Android Developer: Intent](https://developer.android.com/reference/android/content/Intent.html)
 
 ## Examples
@@ -154,7 +154,7 @@ This example requires that an intent filter be set up in the project's `tiapp.xm
 After copying the default root activity of your application from the `AndroidManifest.xml`
 file to the Android manifest section of the `tiapp.xml` file, add an intent filter.
 For detailed instructions, refer to the
-[Android Intent Filters guide](https://docs.appcelerator.com/platform/latest/#!/guide/Android_Intent_Filters).
+[Android Intent Filters guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Platform_API_Deep_Dives/Android_API_Deep_Dives/Android_Intent_Filters.html).
 
 You can trigger this intent filter by long pressing on an image in the Android gallery
 and selecting "share".

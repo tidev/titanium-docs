@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/ti.facebook/edit/master/apidoc/Facebook.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Facebook.yml
 ---
 # Modules.Facebook
 
@@ -285,40 +285,6 @@ fb.presentShareDialog({
 
 For details on the Share dialog, see the
 [official Facebook Share Dialogs documentation](https://developers.facebook.com/docs/sharing/reference/share-dialog).
-
-### Game Requests Dialog
-
-To send a game request to a user, call the
-[presentSendRequestDialog()](Modules.Facebook.presentSendRequestDialog) method and pass the
-method a dictionary with the `message` property set the message you want to send the invited user.
-Optional: You can set the `title` property with a title string. You can also set the `data` property
-with a dictionary of custom parameters. If you want to preselect users to send invite to, you can set
-the `to` property with string of values that are facebook ids seperated by comma.
-
-To monitor if the request succeeded or not, listen to the <Modules.Facebook.requestDialogCompleted> event.
-
-``` javascript
-fb.addEventListener('requestDialogCompleted', function (e) {
-    if (e.success) {
-        Ti.API.info('request succeeded.');
-    } else {
-        Ti.API.warn('Failed to share.');
-    }
-});
-
-fb.presentSendRequestDialog({
-    message: 'Go to https://appcelerator.com/',
-    title: 'Invitation to Appcelerator',
-    recipients: ['123456789', '987654321'],
-    data: {
-        badge_of_awesomeness: '1',
-        social_karma: '5'
-    }
-});
-```
-
-For details on game request dialogs see the
-[official Facebook Request Dialogs documentation](https://developers.facebook.com/docs/games/services/gamerequests).
 
 ### Messenger Button
 

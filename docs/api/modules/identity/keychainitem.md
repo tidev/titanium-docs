@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator-modules/titanium-identity/edit/master/apidoc/KeychainItem.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/KeychainItem.yml
 ---
 # Modules.Identity.KeychainItem
 

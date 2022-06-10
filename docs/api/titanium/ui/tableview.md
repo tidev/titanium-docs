@@ -16,7 +16,7 @@ objects that are, in turn, containers for [TableViewRow](Titanium.UI.TableViewRo
 
 Use the <Titanium.UI.createTableView> method or **`<TableView>`** Alloy element to create a `TableView`.
 
-Also see the [TableViews guide](https://docs.appcelerator.com/platform/latest/#!/guide/TableViews).
+Also see the [TableViews guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/TableViews.html).
 
 ### Creating Tables
 
@@ -66,7 +66,7 @@ There are known issues with the `sections` property and associated methods added
 Release 3.0:
 
 *   On iOS, the first two arguments to the `updateSection` method are reversed.
-    ([TIMOB-12625](https://jira.appcelerator.org/browse/TIMOB-12625)). This issue has been
+    ([TIMOB-12625](https://jira-archive.titaniumsdk.com/TIMOB-12625)). This issue has been
     addressed in Release 3.3.0 of the Titanium SDK
 
 ### Row Editing and Moving Modes
@@ -193,50 +193,50 @@ var tableData = [];
 
 for (var i=1; i<=20; i++){
   var row = Ti.UI.createTableViewRow({
-    className:'forumEvent', // used to improve table performance
-    selectedBackgroundColor:'white',
-    rowIndex:i, // custom property, useful for determining the row during events
-    height:110
+    className: 'forumEvent', // used to improve table performance
+    backgroundSelectedColor: 'white',
+    rowIndex: i, // custom property, useful for determining the row during events
+    height: 110
   });
 
   var imageAvatar = Ti.UI.createImageView({
     image: IMG_BASE + 'custom_tableview/user.png',
-    left:10, top:5,
-    width:50, height:50
+    left: 10, top: 5,
+    width: 50, height: 50
   });
   row.add(imageAvatar);
 
   var labelUserName = Ti.UI.createLabel({
-    color:'#576996',
-    font:{fontFamily:'Arial', fontSize:defaultFontSize+6, fontWeight:'bold'},
-    text:'Fred Smith ' + i,
-    left:70, top: 6,
-    width:200, height: 30
+    color: '#576996',
+    font: {fontFamily:'Arial', fontSize: defaultFontSize+6, fontWeight: 'bold'},
+    text: 'Fred Smith ' + i,
+    left: 70, top: 6,
+    width: 200, height: 30
   });
   row.add(labelUserName);
 
   var labelDetails = Ti.UI.createLabel({
-    color:'#222',
-    font:{fontFamily:'Arial', fontSize:defaultFontSize+2, fontWeight:'normal'},
-    text:'Replied to post with id ' + randomInt(1000) + '.',
-    left:70, top:44,
-    width:360
+    color: '#222',
+    font: {fontFamily:'Arial', fontSize: defaultFontSize+2, fontWeight: 'normal'},
+    text: 'Replied to post with id ' + randomInt(1000) + '.',
+    left: 70, top: 44,
+    width: 360
   });
   row.add(labelDetails);
 
   var imageCalendar = Ti.UI.createImageView({
-    image:IMG_BASE + 'custom_tableview/eventsButton.png',
-    left:70, bottom: 2,
-    width:32, height: 32
+    image: IMG_BASE + 'custom_tableview/eventsButton.png',
+    left: 70, bottom: 2,
+    width: 32, height: 32
   });
   row.add(imageCalendar);
 
   var labelDate = Ti.UI.createLabel({
-    color:'#999',
-    font:{fontFamily:'Arial', fontSize:defaultFontSize, fontWeight:'normal'},
-    text:'on ' + randomInt(30) + ' Nov 2012',
-    left:105, bottom:10,
-    width:200, height:20
+    color: '#999',
+    font: {fontFamily:'Arial', fontSize: defaultFontSize, fontWeight: 'normal'},
+    text: 'on ' + randomInt(30) + ' Nov 2012',
+    left: 105, bottom: 10,
+    width: 200, height: 20
   });
   row.add(labelDate);
 
@@ -244,8 +244,8 @@ for (var i=1; i<=20; i++){
 }
 
 var tableView = Ti.UI.createTableView({
-  backgroundColor:'white',
-  data:tableData
+  backgroundColor: 'white',
+  data: tableData
 });
 
 win.add(tableView);
