@@ -3,6 +3,8 @@ name: 'Deploy'
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [ deploy ]
   push:
     branches:
       - main
