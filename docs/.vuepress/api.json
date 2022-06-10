@@ -399,36 +399,6 @@
 				]
 			},
 			{
-				"title": "Cloud",
-				"path": "/api/modules/cloud",
-				"children": [
-					["modules/cloud/acls", "ACLs"],
-					["modules/cloud/chats", "Chats"],
-					["modules/cloud/checkins", "Checkins"],
-					["modules/cloud/clients", "Clients"],
-					["modules/cloud/emails", "Emails"],
-					["modules/cloud/events", "Events"],
-					["modules/cloud/files", "Files"],
-					["modules/cloud/friends", "Friends"],
-					["modules/cloud/geofences", "Geofences"],
-					["modules/cloud/keyvalues", "KeyValues"],
-					["modules/cloud/likes", "Likes"],
-					["modules/cloud/messages", "Messages"],
-					["modules/cloud/objects", "Objects"],
-					["modules/cloud/photocollections", "PhotoCollections"],
-					["modules/cloud/photos", "Photos"],
-					["modules/cloud/places", "Places"],
-					["modules/cloud/posts", "Posts"],
-					["modules/cloud/pushnotifications", "PushNotifications"],
-					["modules/cloud/pushschedules", "PushSchedules"],
-					["modules/cloud/reviews", "Reviews"],
-					["modules/cloud/socialintegrations", "SocialIntegrations"],
-					["modules/cloud/statuses", "Statuses"],
-					["modules/cloud/users", "Users"]
-				]
-			},
-			["modules/aca", "Crash Reporting"],
-			{
 				"title": "Crypto",
 				"path": "/api/modules/crypto",
 				"children": [["modules/crypto/cryptor", "Cryptor"]]
@@ -449,16 +419,6 @@
 				"title": "Identity",
 				"path": "/api/modules/identity",
 				"children": [["modules/identity/keychainitem", "KeychainItem"]]
-			},
-			{
-				"title": "MLDAP",
-				"path": "/api/modules/ldap",
-				"children": [
-					["modules/ldap/connection", "Connection"],
-					["modules/ldap/entry", "Entry"],
-					["modules/ldap/searchrequest", "Search Request"],
-					["modules/ldap/searchresult", "Search Result"]
-				]
 			},
 			{
 				"title": "Map",
@@ -527,8 +487,7 @@
 			{
 				"title": "Android",
 				"children": [
-					["modules/playservices", "Google Play Services"],
-					["modules/cloudpush", "Push Notifications"]
+					["modules/playservices", "Google Play Services"]
 				]
 			},
 			{
