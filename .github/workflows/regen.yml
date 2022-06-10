@@ -156,6 +156,14 @@ jobs:
         run: npm run docs:migrate  -- ../ti.map/apidoc ../ti.facebook/apidoc ../ti.coremotion/apidoc ../ti.crypto/apidoc ../ti.urlsession/apidoc ../titanium-identity/apidoc ../ti.playservices/apidoc ../ti.geofence/apidoc ../appcelerator.ble/apidoc ../appcelerator.bluetooth/apidoc ../appcelerator.https/apidoc ../appcelerator.encrypteddatabse/apidoc ../titanium-web-dialog/apidoc ../ti.barcode/apidoc ../titanium-apple-sign-in/apidoc
 
       - name: Commit changes
+        id: committed
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           repository: titanium-docs
+      
+      - name: Repository Dispatch
+        if: steps.committed.outputs.changes_detected == 'true'
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          event-type: deploy
+          token: ${{ secrets.REGEN_BUILDS_DOCS_GITHUB_TOKEN }}
