@@ -37,6 +37,7 @@ module.exports = {
     },
     // Top navigation bar
     nav: [
+      { text: 'Downloads', link: 'https://downloads.titaniumsdk.com' },
       {
         text: 'Guide',
         items: docSections
