@@ -180,9 +180,6 @@ Titanium SDK 11.0.0 is a major release of the SDK, under new leadership of TiDev
 
 * textarea contentHeight fix with new return property textareaHeight in "change" event ([94820d1](https://github.com/tidev/titanium_mobile/commit/94820d1952d5e301b6ea2741576b3046b5b382b5))
 
-## BREAKING CHANGES
-
-
 ## SDK Module Versions
 
 | Module      | Android version | iOS Version |
