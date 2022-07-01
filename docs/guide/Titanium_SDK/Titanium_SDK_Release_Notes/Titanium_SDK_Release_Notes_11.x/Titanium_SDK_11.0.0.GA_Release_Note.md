@@ -1,9 +1,9 @@
 ---
-title: Titanium SDK Release Notes
-weight: '40'
+title: Titanium SDK 11.0.0.GA - 01 July 2022
+weight: '20' 
 ---
 
-# Titanium SDK Release Notes
+# Titanium SDK 11.0.0.GA Release Note
 
 ## Titanium SDK 11.0.0.GA - 01 July 2022
 
@@ -179,9 +179,6 @@ Titanium SDK 11.0.0 is a major release of the SDK, under new leadership of TiDev
 ### iOS platform
 
 * textarea contentHeight fix with new return property textareaHeight in "change" event ([94820d1](https://github.com/tidev/titanium_mobile/commit/94820d1952d5e301b6ea2741576b3046b5b382b5))
-
-## BREAKING CHANGES
-
 
 ## SDK Module Versions
 
