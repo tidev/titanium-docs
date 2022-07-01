@@ -5,7 +5,7 @@ weight: '20'
 
 # Titanium SDK 11.0.0.GA Release Note
 
-## Titanium SDK 11.0.0.GA - 23 May 2022
+## Titanium SDK 11.0.0.GA - 01 July 2022
 
 ## About this release
 
