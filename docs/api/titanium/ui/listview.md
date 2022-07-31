@@ -194,6 +194,9 @@ Editing a ListView through user initiated actions is supported through the follo
 
     - [editing](Titanium.UI.ListView.editing) - Determines if the List View is in a state where items can
       be deleted or reordered.
+      
+    - [requiresEditingToMove](Titanium.UI.ListView.requiresEditingToMove) - Determines if the ListView
+      should be able to drag-and-drop without explicitely enabling editing support (like drag bars).
 
     - [pruneSectionsOnEdit](Titanium.UI.ListView.pruneSectionsOnEdit) - When this property is set to true and the
       user action results in a section having no other items, the section is deleted from the List View. Please note
