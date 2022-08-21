@@ -61,13 +61,13 @@ See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Pre
 
 #### Node.js
 
-To run all Appcelerator components, you must have Node.js 12 or later.
+To run all Titanium components, you must have Node.js 14 or later.
 
 ![download_05](/images/guide/download/attachments/29004836/download_05.png)
 
 | Operating System | Min Node Version | Max Node Version | Download Location |
 | --- | --- | --- | --- |
-| macOS / Windows / Linux | 12.X | 16.X | [Official Website](https://nodejs.org/en/download/releases/) |
+| macOS / Windows / Linux | 14.X | 16.X | [Official Website](https://nodejs.org/en/download/releases/) |
 
 See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node/) for detailed instructions.
 

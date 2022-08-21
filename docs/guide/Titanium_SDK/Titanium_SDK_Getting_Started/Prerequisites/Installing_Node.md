@@ -17,7 +17,7 @@ On Mac OS X and Windows, if you have selected to install Titanium updates, Studi
 
 | Operating System | Min Node Version | Max Node Version | Download Location |
 | --- | --- | --- | --- |
-| macOS / Windows / Linux | 10.13.0 | 12.X | [Official Website](https://nodejs.org/en/download/releases/) |
+| macOS / Windows / Linux | 14.X | 16.X | [Official Website](https://nodejs.org/en/download/releases/) |
 
 ## Installation
 

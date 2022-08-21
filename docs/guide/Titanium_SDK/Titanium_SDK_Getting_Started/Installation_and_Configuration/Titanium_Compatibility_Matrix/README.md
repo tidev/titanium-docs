@@ -15,28 +15,11 @@ Some information about legacy Titanium SDK versions is included here solely for 
 
 * 10.0.0 - latest
 
-* 9.0.0 - 9.3.x
-
-* 8.0.0 - 8.3.x
-
-* 7.0.x - 7.4.x
-
 ### Pre-release versions
 
 Be aware that any components notated as _Pre-release_ are not officially supported. This includes Beta, Developer Preview, and Release Candidate versions, as well as any development SDKs released via the [Continuous Builds](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_SDK_Continuous_Builds/) download site.
 
 ## Minimum system requirements
-
-### Memory
-
-| Product | Host Operating System | Storage |
-| --- | --- | --- |
-| Latest Android SDK | macOS | 1.5 GB (contiguous) |
-| Latest Android SDK | Windows | 1 GB (contiguous) |
-
-::: warning ⚠️ Warning
-Minimum system memory requirements is 8GB of RAM. 16GB is highly recommended.
-:::
 
 ### Operating system
 
@@ -51,9 +34,6 @@ Titanium is supported on the following Operating Systems:
 ::: danger ❗️ Warning
 As of Titanium 9.0.0, building Windows apps is no longer supported.
 :::
-::: danger ❗️ Warning
-Support for Windows 8.1 and Windows Phone SDKs has been deprecated as of SDK 6.3.0.GA and has be removed in SDK 7.0.0.GA.
-:::
 
 ## Java Development Kit
 
@@ -63,10 +43,24 @@ The Java Development Kit (JDK) is required to build Titanium apps and modules fo
 | --- | --- | --- |
 | 10.1.0 - latest | 11 | 16 |
 | 9.0.2 - 10.0.2 | 8 | 15 |
+
+
+<details>
+<summary><b>Unsupported version</b></summary>
+
+| Titanium SDK version | Min JDK version | Max JDK version |
+| --- | --- | --- |
 | 9.0.1 | 8 | 13 |
 | 9.0.0 | 8 | 12 |
 | 7.5.0 - 8.3.1 | 8 | 14 |
 | 7.0.0 - 7.4.2 | 8 | 10 |
+| 8.0.0 - 8.2.0 | 10.13.0 | 12.x |
+| 7.1.0 - 7.1.2 | 8.x | 10.x |
+| 6.2.2 - 7.0.12 | 6.x | 8.15.x |
+| 6.0.0 - 6.2.1 | 4.2.0 | 4.6.2 |
+| 5.1.0 - 5.4.0 | 0.10.x | 4.2.x |
+
+</details>
 
 
 See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/) for detailed instructions.
@@ -83,20 +77,23 @@ On Windows you will need to enable `dev mode` in the Windows settings in order t
 | --- | --- | --- |
 | 10.0.1 - latest | 14.x | 16.x |
 | 9.0.0 - 10.0.0 | 12.13.0 | 15.x |
-| 8.0.0 - 8.2.0 | 10.13.0 | 12.x |
-| 7.1.0 - 7.1.2 | 8.x | 10.x |
-| 6.2.2 - 7.0.12 | 6.x | 8.15.x |
+
+_Info: with Titanium CLI 6.0.0 the support for Node 12 was dropped_
+
+See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node/) for details.
 
 <details>
 <summary><b>Unsupported version of node.js</b></summary>
 
 | Unified CLI Version | Min Node Version | Max Node Version |
 | --- | --- | --- |
+| 8.0.0 - 8.2.0 | 10.13.0 | 12.x |
+| 7.1.0 - 7.1.2 | 8.x | 10.x |
+| 6.2.2 - 7.0.12 | 6.x | 8.15.x |
 | 6.0.0 - 6.2.1 | 4.2.0 | 4.6.2 |
 | 5.1.0 - 5.4.0 | 0.10.x | 4.2.x |
-</details>
 
-See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node/) for details.
+</details>
 
 ## Mobile development
 
@@ -106,7 +103,6 @@ Titanium can provide a development environment for third-party mobile platforms 
 | --- | --- | --- | --- |
 | Android Development | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png)  <br /> | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png)  <br /> |  |
 | iOS Development | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png)  <br /> | ![error](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/error.png)  <br /> | Due to Apple's license agreement, iOS applications may only be developed on Apple hardware. |
-| Windows Development | ![error](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/error.png)  <br /> | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png)  <br /> | Windows applications may only be developed on hardware running Microsoft Windows.<br /><br />Currently, Windows development is only supported using the Titanium CLI 3.3.0 and later, Titanium SDK 3.3.0 and later, and Visual Studio 2012/2013 Pro edition or higher. |
 
 ### Android
 
@@ -122,19 +118,16 @@ The _Android SDK Manager_ installer may be obtained from the [Android Studio and
 
 #### Required Android Packages
 
-As of Titanium 9.0.0, the build system will automatically download the Android SDK platforms and tools needed.
+As of <b>Titanium 9.0.0</b>, the build system will automatically download the Android SDK platforms and tools needed.
 
-For Titanium 8.x.x, you need to installed the following packages via the Android SDK Manager yourself:
+For <b>Titanium 8.x.x</b>, you need to installed the following packages via the Android SDK Manager yourself:
 
 | Package | Minimum Version |
 | --- | --- |
 | Android SDK Tools | Rev 28 |
 | Android SDK Build-tools | Rev 23 |
-| Android SDK Platform (API Level) | API Level 29 for Titanium 8.3.x<br /><br />API Level 28 for Titanium version older than 8.3.0 |
+| Android SDK Platform (API Level) | API Level 29 for Titanium 8.3.x<br />API Level 28 for Titanium version older than 8.3.0 |
 
-::: warning ⚠️ Warning
-Titanium SDK 7.0.0+ requires Android SDK Tools v25 or newer as a minimum requirement.
-:::
 ::: warning ⚠️ Warning
 Take caution before upgrading these packages, as changes to the way they work has broken the Titanium toolchain a number of times in the past. Although these problems are often beyond our control, we always do our utmost to fix them as soon as we are made aware of them.
 
@@ -153,10 +146,6 @@ Each Titanium SDK supports building against a specific range of Android versions
 | 10.0.0 - 10.0.2 | 6.0.x (API 23) | 11.0.x (API 30) | 5.0.x (API 21) |
 | 9.3.0 - 9.3.2 | 6.0.x (API 23) | 11.0.x (API 30) | 4.4.x (API 19) |
 | 8.3.0 - 9.2.2 | 6.0.x (API 23) | 10.0.x (API 29) | 4.4.x (API 19) |
-| 8.0.0 - 8.2.2 | 6.0.x (API 23) | 9.0.x (API 28) | 4.4.x (API 19) |
-| 7.5.0 - 7.5.1 | 6.0.x (API 23) | 9.0.x (API 28) | 4.1.x (API 16) |
-| 7.3.0 - 7.4.1 | 6.0.x (API 23) | 8.1.x (API 27) | 4.1.x (API 16) |
-| 7.0.0 - 7.2.0 | 6.0.x (API 23) | 7.0.x (API 25) | 4.1.x (API 16) |
 
 ::: warning ⚠️ Notes
 \* As of 10.1.0, Titanium requires JDK 11 or higher to build Android projects.
@@ -167,6 +156,10 @@ Each Titanium SDK supports building against a specific range of Android versions
 
 | Titanium SDK Version | Min Target Android Version  <br />(android:targetSdkVersion) | Max Target Android Version  <br />(android:targetSdkVersion) | Min Supported Android Version  <br />(android:minSdkVersion) |
 | --- | --- | --- | --- |
+| 8.0.0 - 8.2.2 | 6.0.x (API 23) | 9.0.x (API 28) | 4.4.x (API 19) |
+| 7.5.0 - 7.5.1 | 6.0.x (API 23) | 9.0.x (API 28) | 4.1.x (API 16) |
+| 7.3.0 - 7.4.1 | 6.0.x (API 23) | 8.1.x (API 27) | 4.1.x (API 16) |
+| 7.0.0 - 7.2.0 | 6.0.x (API 23) | 7.0.x (API 25) | 4.1.x (API 16) |
 | 6.2.0 - 6.3.0 | 7.1.x (API 25) | 6.0.x (API 23) | 4.1.x (API 16) |
 | 6.0.0 - 6.1.x | 6.0.x (API 23) | 6.0.x (API 23) | 4.1.x (API 16) |
 | 5.1.0 - 5.5.x | 6.0.x (API 23) | 6.0.x (API 23) | 4.0.x (API 14) |
@@ -186,9 +179,7 @@ Each Titanium SDK supports building against a specific range of Android versions
 </details>
 
 ::: warning ⚠️ Notes
-\* If you are building an Android module, you need to have Android SDK 6.0.x (API 23) installed if using Release 6.0.0 and greater.
-
-\*\* The Titanium SDK does not support the [Android 4.4W SDK](http://developer.android.com/wear/index.html) (API 20), also known as the Android Wear SDK.
+The Titanium SDK does not support the [Android 4.4W SDK](http://developer.android.com/wear/index.html) (API 20), also known as the Android Wear SDK.
 :::
 
 Most mobile device manufacturers have been licensed to use Google's enhanced API, which provides support for Maps and other functionality. If this is the case for your target devices, you will need to install the relevant Google packages, listed as _Google APIs by Google Inc., Android API x..._ by the **Android SDK Manager** tool. In Studio, choose the SDKs with the naming format "Google APIs x.x" to use the enhanced APIs, or those without the "Google APIs" prefix otherwise.
@@ -232,10 +223,7 @@ Each Titanium SDK supports a specific range of Xcode versions, shown in the tabl
 | 10.0.0 - 10.0.2 | 11.0.0 | 12.x | Dropped iOS 11 support |
 | 9.3.0 - 9.3.2 | 11.0.0 | 12.x |  |
 | 9.2.0 - 9.2.2 | 11.0.0 | 12.x | Full support for iOS 14 and beta support for macOS via Mac Catalyst |
-| 9.0.0 - 9.1.0 | 9.0.0 | 11.x | Dropped iOS 9 support |
-| 8.3.0 - 8.3.1 | 8.0.0 | 11.x |  |
-| 8.2.0 - 8.2.1 | 8.0.0 | 11.x | Full support for iOS 13 |
-| 8.0.0 - 8.1.1 | 8.0.0 | 10.x |  |
+
 
 
 <details>
@@ -243,6 +231,10 @@ Each Titanium SDK supports a specific range of Xcode versions, shown in the tabl
 
 | Titanium SDK Version | Min Xcode Version | Max Xcode Version | Notes |
 | --- | --- | --- | --- |
+| 9.0.0 - 9.1.0 | 9.0.0 | 11.x | Dropped iOS 9 support |
+| 8.3.0 - 8.3.1 | 8.0.0 | 11.x |  |
+| 8.2.0 - 8.2.1 | 8.0.0 | 11.x | Full support for iOS 13 |
+| 8.0.0 - 8.1.1 | 8.0.0 | 10.x |  |
 | 7.5.0 - 7.5.2 | 8.0.0 | 10.x |  |
 | 7.4.0 - 7.4.2 | 8.0.x | 10.x | Full support for iOS 12 |
 | 7.0.0 - 7.3.1 | 6.0.x | 9.0.x |  |
@@ -274,15 +266,15 @@ Each Titanium SDK supports a specific range of iOS base SDKs and deployment targ
 | 10.1.0 - latest | 13.0.0 | 15.x | 12.0 | 15.x |
 | 10.0.0 - 10.0.2 | 13.0.0 | 14.x | 12.0 | 14.x |
 | 9.2.0 - 9.3.x | 13.0.0 | 14.x | 10.0 | 14.x |
-| 9.0.0 - 9.1.2 | 11.0.0 | 13.x | 10.0 | 13.x |
-| 8.2.0 - 8.3.1 | 10.0.0 | 13.x | 9.0 | 13.x |
-| 8.0.0 - 8.1.1 | 10.0.0 | 12.x | 9.0 | 12.x |
 
 <details>
 <summary><b>Unsupported versions of iOS SDK / Target iOS platform</b></summary>
 
 | Titanium SDK version | Minimum SDK version | Maximum SDK version | Minimum target iOS version | Maximum target iOS version |
 | --- | --- | --- | --- | --- |
+| 9.0.0 - 9.1.2 | 11.0.0 | 13.x | 10.0 | 13.x |
+| 8.2.0 - 8.3.1 | 10.0.0 | 13.x | 9.0 | 13.x |
+| 8.0.0 - 8.1.1 | 10.0.0 | 12.x | 9.0 | 12.x |
 | 7.4.0 - 7.5.x | 8.0.0 | 12.x | 8.0 | 12.x |
 | 7.0.0 - 7.3.x | 8.0.0 | 11.x | 8.0 | 12.x |
 | 6.2.0 - 6.3.x | 8.0.x | 11.x | 8.0 | 12.x |
@@ -300,49 +292,6 @@ Each Titanium SDK supports a specific range of iOS base SDKs and deployment targ
 | 2.0.x | 4.0.x | 5.1.x | 4.0.x | 5.1.x |
 | 1.8.x | 4.0.x | 5.0.x | 4.0.x | 5.0.x |
 | 1.7.1+ | 3.1.2 | 5.0.x | 3.1.2 | 5.0.x |
-
-</details>
-
-### Windows
-
-::: danger ❗️ Warning
-As of Titanium 9.0.0, building Windows apps is no longer supported.
-:::
-
-#### Visual Studio
-
-##### <b>Supported versions of VS</b>
-
-| Titanium SDK Version | Min Visual Studio Version | Max Visual Studio Version |
-| --- | --- | --- |
-| 7.0.0 - 8.3.x | Visual Studio 2015 | Visual Studio 2017 |
-
-<details>
-<summary><b>Unsupported versions of VS</b></summary>
-
-| Titanium SDK Version | Min Visual Studio Version | Max Visual Studio Version |
-| --- | --- | --- |
-| 6.2.0 - 6.3.0 | Visual Studio 2013 | Visual Studio 2017 |
-| 5.1.0 - 6.2.0 | Visual Studio 2013 | Visual Studio 2015 |
-
-</details>
-
-<br/>
-
-#### Supported Platforms
-
-##### <b>Supported platform versions</b>
-
-| Titanium SDK Version | Supported Mobile Platforms | Supported Desktop Platforms |
-| --- | --- | --- |
-| 7.0.0 - 8.3.x | Windows 10 Mobile | Windows 10 |
-
-<details>
-<summary><b>Unsupported platform versions</b></summary>
-
-| Titanium SDK Version | Supported Mobile Platforms | Supported Desktop Platforms |
-| --- | --- | --- |
-| 5.1.0 - 6.3.0 | Windows 10 Mobile, Windows Phone | Windows 10, Windows 8.1 |
 
 </details>
 
@@ -410,22 +359,6 @@ Refer to the [Android requirements and instructions below](#android) for install
 ## Other useful software
 
 The following tools are required for native add-on module development or building the Titanium SDK from source. These tools are not required for mobile application development with the Titanium SDK.
-
-### Git
-
-[Git](http://en.wikipedia.org/wiki/Git_%28software%29) is the optional, but **highly recommended**, way of obtaining and staying up-to-date with the latest mobile projects located in our [Github repository](https://github.com/appcelerator).
-
-Obtain the version that pertains to your particular Operating System from the link provided:
-
-
-| Operating System | Package Name | Package Version | Download Location | Notes |
-| --- | --- | --- | --- | --- |
-| OS X | git | Latest | [Official Website](http://git-scm.com/download) |  |
-| Windows | msysgit | Latest | [Official Website](http://git-scm.com/download) | On Studio 3.2.0 and later, portablegit is installed by default if no other Git client is installed. |
-| Ubuntu | git | Latest | Default Repositories |  |
-
-See [Installing Git](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Git/) for detailed instructions.
-
 
 ### gperf
 

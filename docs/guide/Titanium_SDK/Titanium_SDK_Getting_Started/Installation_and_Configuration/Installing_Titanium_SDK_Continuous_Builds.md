@@ -10,34 +10,18 @@ weight: '40'
 To take advantage of bleeding edge functionality and the most recent bug fixes to the Titanium SDKs, without waiting for an official release, you can manually download and install a **Continuous Integration Build** (also known as _CI Build_ or _Continuous Build_). Continuous Builds are packages compiled and published automatically when [Titanium's open source repository](https://github.com/tidev/titanium_mobile) has received a new code commit.
 
 ::: danger ❗️ Warning
-Be aware that only **major** releases of any of our software are officially supported and therefore, by the same token, we cannot accept Jira tickets or investigate problems that result from using a Continuous Build. That said, you may find discussions and workarounds for them in our [Jira bug-tracking system](http://jira.appcelerator.org).
+Be aware that only **major** releases of any of our software are officially supported and therefore, by the same token, we cannot accept Jira tickets or investigate problems that result from using a Continuous Build. That said, you may find discussions and workarounds for them in our [Github issues](https://github.com/tidev/titanium_mobile/issues).
 :::
 
 ## Obtaining the build
 
-You can download the latest continuous builds from [http://builds.appcelerator.com](http://builds.appcelerator.com).
-
-Use the drop-down menu at the top of the page to select between the existing development branches. The _master_ branch is the branch currently in active development, and will ultimately become a major release. You can determine the version number associated with this branch by hovering over one of the download links and inspecting the name of the file.
-
-::: tip 💡 Hint
-It's important to compare the SHA1 hash of the downloaded SDK archive with the one displayed on the download page, **before you attempt to install it**. Do not install the package if the SHA1 hashes don't match – this may indicate a corrupted package.
-
-If you discover a corrupt package, simply download each previous day's release until you find one that is valid. There is no need to report it to us.
-:::
+You can download the latest continuous builds from [https://downloads.titaniumsdk.com/builds](https://downloads.titaniumsdk.com/builds).
 
 ## Installing the build
 
 ### Titanium CLI install
 
-To install a Titanium SDK using the `ti` cli, follow these steps:
-
-* Be sure to log in to the CLI if you are not already logged in (`ti login`)
-
-* Run `ti sdk install -b master`
-
-* The command above will install the latest CI build from `master` branch. You may substitute branch names seen at [http://builds.appcelerator.com](http://builds.appcelerator.com) to grab bugfix/maintenance CI builds. These are typically of the naming scheme `\d+_\d+_X,`i.e.`7_0_X`
-
-* You can view additional command line options by executing:`ti sdk install -h`
+To install a Titanium SDK using the `ti` cli, follow these steps presented on the page. The command will look like this `ti sdk install --branch master 11.1.0.v20220818220138`.
 
 ### Manual install
 
