@@ -9,7 +9,7 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Blue
 
 The module is used for connecting your application via bluetooth.
 
-<p class="note">Note: This feature requires a Pro or Enterprise subscription. More infos <a href="https://www.appcelerator.com/pricing/" target="_blank">here</a>!</p>
+You can download the module at [appcelerator.bluetooth](https://github.com/tidev/appcelerator.bluetooth/releases)
 
 ### Getting Started
 - Add the module as a dependency to your application by adding a **`<module>`** item to the

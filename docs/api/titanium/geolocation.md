@@ -117,7 +117,7 @@ On Android, two different location service modes are supported: *simple*, and *m
     to `true`. In manual mode, the `accuracy` property is not used, and all
     configuration is done through the <Titanium.Geolocation.Android> module.
 
-As of Titanium SDK 7.1.0 and later, including the [`ti.playservices`](https://github.com/appcelerator-modules/ti.playservices) module will allow Google Play Services 
+As of Titanium SDK 7.1.0 and later, including the [`ti.playservices`](https://github.com/appcelerator-modules/ti.playservices) module will allow Google Play Services
 to be used by default to obtain location information. This means the provider passed into [createLocationProvider](Titanium.Geolocation.Android.createLocationProvider)
 will be ignored, as Google Play Services will select the best provider based on current device conditions.
 If Google Play Services is not available it will fallback to previous behaviour of using Android location APIs.

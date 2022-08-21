@@ -7,7 +7,7 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Http
 
 ## Overview
 
-<p class="note">Note: This feature requires a Pro or Enterprise subscription. More infos <a href="https://www.appcelerator.com/pricing/" target="_blank">here</a>!</p>
+You can download the module at [appcelerator.https](https://github.com/tidev/appcelerator.https/releases)
 
 Use the HTTPS module to create a Security Manager for `Titanium.Network.HTTPClient`
 that authenticates a set of HTTPS servers by pinning an HTTPS server's URL to its
