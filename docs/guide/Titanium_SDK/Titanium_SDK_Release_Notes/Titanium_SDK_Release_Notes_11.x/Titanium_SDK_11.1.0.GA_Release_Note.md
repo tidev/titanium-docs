@@ -1,11 +1,11 @@
 ---
-title: Titanium SDK 11.1.0.GA - 7 September 2022
+title: Titanium SDK 11.1.0.GA - 8 September 2022
 weight: '20'
 ---
 
 # Titanium SDK 11.1.0.GA Release Note
 
-## Titanium SDK 11.1.0.GA - 7 September 2022
+## Titanium SDK 11.1.0.GA - 8 September 2022
 
 ## About this release
 
