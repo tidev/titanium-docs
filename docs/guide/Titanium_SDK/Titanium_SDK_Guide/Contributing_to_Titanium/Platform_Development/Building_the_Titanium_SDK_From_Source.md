@@ -13,13 +13,13 @@ You must have the following software installed to be able to compile the Titaniu
 
 The following software is required for building Titanium applications, and you probably already have it installed:
 
-* [Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/)
+* [JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/)
 
-* [iOS SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK/) (8.0+, only on macOS systems)
+* [iOS SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK/)
 
-* [Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK/) (4.1+)
+* [Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK/)
 
-* [Node.js](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node/) (8.x LTS+)
+* [Node.js](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node/)
 
 The following additional software is required for building the Titanium SDK:
 
@@ -119,10 +119,10 @@ In the root of your `titanium_mobile` repo, run the following commands:
 ```bash
 npm install
 
-node scons.js cleanbuild
+npm run cleanbuild
 ```
 
-By default, the above will build the SDK for all platforms. You can specify platforms to limit the generation of unmentioned platforms, e.g. `node scons.js cleanbuild ios`.
+By default, the above will build the SDK for all platforms. You can specify platforms to limit the generation of unmentioned platforms, e.g. `npm run cleanbuild ios`.
 
 When updating to a new version of the SDK, it is usually necessary to rerun `npm install` to update the local Node dependencies.
 
@@ -132,18 +132,6 @@ Once you've built the SDK successfully, the built SDK is in `titanium_mobile_dir
 `titanium_mobile` is the root of your local repo, `<version>` is the current version of the SDK master branch, and `<os>` is the OS you built for,
 such as `windows` or `osx`. By using the above Node commands, the SDK will automatically installed for you. To manually install a packaged SDK,
 select one of the following options:
-
-### To Install the SDK Using Studio
-
-Note that if you install an SDK using Studio, it will appear in Studio with the default version number. If you want to rename your custom SDK, see [To Install the SDK Manually](#to-install-the-sdk-manually).
-
-1. Click **Help** > **Install Titanium SDK...**.
-
-2. Select **Install from URL**.
-
-3. Click **Browse**. Browse your `<titanium_mobile_dir>/dist` folder and select the zip file.
-
-4. Click **Finish**.
 
 ### To Install the SDK Manually
 
