@@ -8,8 +8,8 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 ## Overview
 
 This module provides a set of methods for interacting with
-[IOStream](Titanium.IOStream) objects, including asynchronous versions of the 
-`read` and `write` methods offered by all stream objects. These 
+[IOStream](Titanium.IOStream) objects, including asynchronous versions of the
+`read` and `write` methods offered by all stream objects. These
 methods should be used in any place where reading from or writing
 to a stream might block.
 
@@ -32,7 +32,7 @@ var pumpCallback = function(arg) {
     if(arg.bytesProcessed == -1) {
         Ti.API.info("At end of stream.");
     } else {
-        Ti.API.info(String.format("Received %.0f bytes. Total: %.0f bytes.", 
+        Ti.API.info(String.format("Received %.0f bytes. Total: %.0f bytes.",
                     arg.bytesProcessed, arg.totalBytesProcessed));
         // do something useful with the data in arg.buffer
     }

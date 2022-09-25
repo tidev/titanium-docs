@@ -58,7 +58,7 @@ When the **Don't keep activities** option is enabled, the lifecycle of the activ
 from the normal case. Whenever the user leaves an activity, such as backgrounding the app using the
 HOME button, this activity is destroyed by Android, which calls `onDestroy`.  In the normal case, `onStop`
 would be called and the activity would not be destroyed.  Later, when the user goes back to that activity, this
-activity will be recreated, which calls `onCreate`.  In the normal case, since the activity is not destroyed, 
+activity will be recreated, which calls `onCreate`.  In the normal case, since the activity is not destroyed,
 `onRestart` would be called instead.  Therefore, some events, such as the open and close events on the Window
 or TabGroup, will be fired differently from the normal case, and the root window of the app must set
 [exitOnClose](Titanium.UI.Window.exitOnClose) to true; otherwise, the app will be unable to back out, that is,
@@ -85,7 +85,7 @@ resumed, started and stopped, respectively.
 You can only set Activity properties from a TabGroup object after the tab group opens.
 
 Prior to Release 3.2.0, you can create either a "lightweight" or "heavyweight" window, as
-described on the <Titanium.UI.Window> reference page. A *heavyweight* window creates a 
+described on the <Titanium.UI.Window> reference page. A *heavyweight* window creates a
 new `Activity`. A *lightweight* window runs inside the same activity as the code that
 created it.  If you try to reference the activity of lightweight window, it returns undefined.
 
@@ -96,11 +96,11 @@ created it.  If you try to reference the activity of lightweight window, it retu
 The following example shows how to start an activity and retrieve a result code
 and optional data intent when the activity ends.
 
-``` js        
+``` js
 activity.startActivityForResult(intent, function(e) {
     // The request code used to start this Activity
     var requestCode = e.requestCode;
-    // The result code returned from the activity 
+    // The result code returned from the activity
     // (https://developer.android.com/reference/android/app/Activity.html#StartingActivities)
     var resultCode = e.resultCode;
     // A Titanium.Android.Intent filled with data returned from the Activity
