@@ -19,7 +19,7 @@ The `tiapp.xml` file and its close cousin the `timodule.xml` file are XML config
     <icon>appicon.png</icon>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
-    <analytics>true</analytics>
+    <analytics>false</analytics>
     <guid>GUID</guid>
   <ios>
         <plist>
@@ -86,15 +86,6 @@ In iOS, this ID must match the Bundle ID when generating an Explicit App ID in t
 On Android, if you change the name to a value that starts with a digit, you need to prefix the name in the activity with an undersore (`_`) if you include activities in the Android section of the `tiapp.xml` file. For example, if you change the name to `2Foo` the activity name will be `_2Foo`.
 :::
 
-### analytics
-
-Whether or not to automatically collect analytics for this application. Enabled by default. See [Analytics Architecture](/guide/AMPLIFY_Appcelerator_Services/AMPLIFY_Appcelerator_Services_Guide/AMPLIFY_Appcelerator_Analytics/Analytics_Architecture/).
-
-**Example: Enable Ti.Analytics**
-
-```xml
-<analytics>true</analytics>
-```
 
 ### copyright
 
@@ -201,10 +192,10 @@ Only supported on Android. Will remove the top status bar if set `true`. Default
 
 Specifies the SDK to build against or use for CLI commands.
 
-**Example: Use Titanium SDK 8.0.0 GA**
+**Example: Use Titanium SDK 11.1.0 GA**
 
 ```xml
-<sdk-version>8.0.0.GA</sdk-version>
+<sdk-version>11.1.0.GA</sdk-version>
 ```
 
 ### url
@@ -974,21 +965,6 @@ Prior to release 2.1, iOS-specific settings were contained in an `<iphone>`eleme
 * `<requires>`: A list of features this app requires. **Deprecated** in Release 2.1, use [UIRequiredDeviceCapabilities](#uirequireddevicecapabilities)instead.
 
     * `<feature>`: A feature that this app requires, valid values are: `telephony`, `wifi`, `sms`, `still-camera`, `auto-focus-camera`, `front-facing-camera`, `camera-flash`, `video-camera`, `accelerometer`, `gyroscope`, `location-services`, `gps`, `magnetometer`, `gamekit`, `microphone`, `opengles-1`, `opengles-2`, `armv6`, `armv7`, `peer-peer`
-
-## Cloud
-
-Mobile Backend Services uses the following [Application properties](#app_properties) to configure a Titanium project to use Mobile Backend Services. If a deployment-specific setting is provided (production or development) then that value will be used for the current deployment environment. To specify a deployment-specific settings add the suffix `-development` or `-production` to the property name, for example, `acs-api-key-development` and `acs-api-key-productions` are the deployment-specific settings for `acs-api-key`.
-
-| Property Name | Type | Default Value | Description |
-| --- | --- | --- | --- |
-| acs-api-key | string | N/A | Arrow API key. Generated when enabling the project for Cloud services. |
-| acs-base-url | string | https://api.cloud.appcelerator.com | Arrow API URL. DO NOT SET OR MODIFY UNLESS INSTRUCTED TO. |
-| acs-grouped-notification-message | string | N/A | Specifies the message to display for grouped notifications, for example, "You have $number$ unread messages." The `$number$` variable represents the number of unread messages. This property is also supported in the `strings.xml` file under the `i18n` folder for internationalized versions. |
-| acs-push-api-url | string | https://api.cloud.appcelerator.com/ | Mobile Backend Services dispatcher URL for Android GCM or FCM push notifications. [Firebase Cloud Messaging](http://firebase.google.com/docs/cloud-messaging/) (FCM) is the new version of GCM. DO NOT SET OR MODIFY UNLESS INSTRUCTED TO. |
-| acs-authbase-url | string | https://secure-identity.cloud.appcelerator.com | **OAuth authentication is no longer supported in the ti.cloud module.  <br />  <br />**Arrow Authentication URL. |
-| acs-oauth-key | string | N/A | **OAuth authentication is no longer supported **in the ti.cloud module**.  <br />  <br />**ACS OAuth key. Generated when enabling the project for Cloud services. |
-| acs-oauth-secret | string | N/A | **OAuth authentication is no longer supported **in the ti.cloud module**.  <br />  <br />**ACS OAuth secret. Generated when enabling the project for Cloud services. |
-| acs-push-type | string | gcm | **Deprecated since Release 3.2.0. The ti.cloudpush module now only supports GCM or FCM. [Firebase Cloud Messaging](http://firebase.google.com/docs/cloud-messaging/) (FCM) is the new version of GCM.  <br />**<br /><br />Selects the push notification type for Android devices, either `gcm` or `mqtt.` |
 
 ## Google Play Services
 

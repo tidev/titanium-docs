@@ -7,9 +7,7 @@ weight: '10'
 
 ## Compatibility and download
 
-The Java Development Kit (JDK) is required to build Titanium apps and modules for Android.
-
-(Studio also requires the JDK. It's recommended that you use the 64-bit version of JDK 8 with Studio 5.1 or higher.)
+The Java Development Kit (JDK) is required to build Titanium apps and modules for Android. You can use OpenJDK or Oracle JDK.
 
 | Titanium SDK version | Min JDK version | Max JDK version |
 | --- | --- | --- |
@@ -17,10 +15,6 @@ The Java Development Kit (JDK) is required to build Titanium apps and modules fo
 | 9.0.2 - 10.0.2 | 8 | 15 |
 | 9.0.1 | 8 | 13 |
 | 9.0.0 | 8 | 12 |
-| 7.5.0 - 8.3.1 | 8 | 14 |
-| 7.0.0 - 7.4.2 | 8 | 10 |
-
-![download_05](/images/guide/download/attachments/29004836/download_05.png) [Download Location](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ## Installation
 
@@ -60,24 +54,18 @@ Refer to the [Windows Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getti
 
 ### Ubuntu
 
-Note that the typical file system location of this software can be found in the [Ubuntu Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables/#ubuntu-software-locations) section of these guides.
-
 See the [Software Locations and Environment Variables](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables/) guide if you need help with setting your system `PATH` or other system variables.
 
-To install the Oracle JDK, enable the archive repositories and install the package using the apt-get command:
+To install the OpenJDK use the following apt-get command:
 
 ```bash
-sudo add-apt-repository "deb http://archive.canonical.com/ lucid partner"
-sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu hardy main multiverse"
 sudo apt-get update
-sudo apt-get install oracle-java8-installer
+sudo apt-get install openjdk-11-jdk
 ```
 
 If installing the 64-bit JDK, run `sudo apt-get install ia32-libs`.
 
-If you have more than one Java installation, run `sudo update-alternatives --config java` then select `java-8-oracle` as default.
-
-Alternatively, you can download and launch the installation package from Oracle.
+If you have more than one Java installation, run `sudo update-alternatives --config java` and select the correct version.
 
 ## Testing the installation
 
