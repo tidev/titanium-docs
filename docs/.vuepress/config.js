@@ -147,7 +147,7 @@ module.exports = {
     '@titanium-sdk/fontawesome',
     require('./plugins/guides-content-sidebar'), // Show right-hand sidebar for in-page headers in guides
     require('./plugins/purgecss'),
-    process.env.NODE_ENV === 'production' && ['@vuepress/plugin-google-analytics', { ga: 'G-455PF3Q982' }]
+    // process.env.NODE_ENV === 'production' && ['@vuepress/plugin-google-analytics', { ga: 'G-455PF3Q982' }]
   ],
   chainWebpack(config) {
     config.resolve.alias.set('@components', path.resolve(__dirname, 'local-components'));

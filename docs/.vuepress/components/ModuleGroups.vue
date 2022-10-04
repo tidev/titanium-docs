@@ -37,7 +37,7 @@
         icon="wifi"
         link="./titanium/network.html"
       >
-        Root namespace for network related code, such as an <router-link to="./titanium/network/httpclient.html">HTTP client</router-link>.
+        Root namespace for network related code, such as an HTTP client.
       </module-card>
       <module-card
         title="Filesystem"
@@ -68,7 +68,7 @@
         icon="photo-video"
         link="./titanium/media.html"
       >
-        Access the device's media-related functionality, such as the device's <router-link to="./titanium/media.html#showcamera">camera</router-link>  or photo <router-link to="./titanium/media.html#openphotogallery">gallery</router-link>.
+        Access the device's media-related functionality, such as the device's camera or photo gallery.
       </module-card>
       <module-card
         title="Audio Player"
@@ -82,7 +82,7 @@
         icon="music"
         link="./titanium/media/musicplayer.html"
       >
-        Lets you manage and playback a queue of <router-link to="./titanium/media/item.html">media objects</router-link>.
+        Lets you manage and playback a queue of media objects.
       </module-card>
       <module-card
         title="Video Player"
@@ -178,14 +178,7 @@
         icon="align-justify"
         link="./titanium/api.html"
       >
-        A Titanium-specific logger. For developers used to the Web or Node.JS, you're probably looking for <router-link to="./global/console.html">console</router-link> instead.
-      </module-card>
-      <module-card
-        title="Analytics"
-        icon="search"
-        link="./titanium/analytics.html"
-      >
-        Built in APIs for recording app-specific analytics, to record useful data/events from your app in the Platform Dashboard backend.
+        A Titanium-specific logger.
       </module-card>
     </module-group>
   </section>
