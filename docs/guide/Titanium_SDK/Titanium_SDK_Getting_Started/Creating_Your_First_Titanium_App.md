@@ -387,7 +387,7 @@ On iOS, the application is stuck here. Instructions on adding an iOS navigation 
 
 If you test the app on an Android device with a high-resolution display, you’ll notice that the default height of each table row is a bit small to comfortably read or select with a finger. For instance, the screenshot below was taken with a Pixel 2 emulator.
 
-To fix this we will apply a [platform-specific style](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Alloy_Styles_and_Themes#platform-specific-styles) to the `<TableViewRow>` element. During the build process, platform-specific styles are applied only to builds on the target platform. The following is an example of a platform-specific style that makes all Labels blue in iOS builds.
+To fix this we will apply a [platform-specific style](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Alloy_Styles_and_Themes.html#platform-specific-styles) to the `<TableViewRow>` element. During the build process, platform-specific styles are applied only to builds on the target platform. The following is an example of a platform-specific style that makes all Labels blue in iOS builds.
 
 ![platform_specific_changes-android](./platform_specific_changes-android.png)
 

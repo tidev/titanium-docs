@@ -190,7 +190,7 @@ The default Android SDK can be configured using Studio's _Preferences_, and then
 
 The Xcode command line tools are required to develop native Android add-on modules on macOS.
 
-See [Installing the iOS SDK: Installing Command Line Tools](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK#install-the-command-line-tools-and-previous-simulators) for detailed instructions.
+See [Installing the iOS SDK: Installing Command Line Tools](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK.html#install-the-command-line-tools-and-previous-simulators) for detailed instructions.
 
 ### iOS
 

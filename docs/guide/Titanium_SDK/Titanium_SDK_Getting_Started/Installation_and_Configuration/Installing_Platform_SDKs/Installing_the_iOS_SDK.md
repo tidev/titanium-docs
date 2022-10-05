@@ -105,7 +105,7 @@ Each Titanium SDK supports a specific range of iOS base SDKs and deployment targ
 
 ## Installation (iOS-only)
 
-Note that the typical file system location of this software can be found in the [mac OS Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables#macos-software-locations) section of these guides.
+Note that the typical file system location of this software can be found in the [mac OS Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables.html#macos-software-locations) section of these guides.
 
 ### Install Xcode
 
