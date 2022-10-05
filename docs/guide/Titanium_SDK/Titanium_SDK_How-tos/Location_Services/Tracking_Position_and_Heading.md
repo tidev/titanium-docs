@@ -33,7 +33,7 @@ You'll also learn best practices and caveats to consider when using location ser
 
 iOS users are prompted to grant or deny permission when your application attempts to use geolocation information.
 
-Starting with iOS 8, to use location services, add either the`NSLocationWhenInUseUsageDescription`or `NSLocationAlwaysUsageDescription`key to the iOS plist section of the project's `tiapp.xml` file. To localize the message, see [Internationalization: Localize Property List Keys](/guide/Titanium_SDK/Titanium_SDK_How-tos/Cross-Platform_Mobile_Development_In_Titanium/Internationalization/#LocalizePropertyListKeys).
+Starting with iOS 8, to use location services, add either the`NSLocationWhenInUseUsageDescription`or `NSLocationAlwaysUsageDescription`key to the iOS plist section of the project's `tiapp.xml` file. To localize the message, see [Internationalization: Localize Property List Keys](/guide/Titanium_SDK/Titanium_SDK_How-tos/Cross-Platform_Mobile_Development_In_Titanium/Internationalization.html#LocalizePropertyListKeys).
 
 Starting with iOS 11, to request Always permission you must replace the `NSLocationAlwaysUsageDescription`with`NSLocationAlwaysAndWhenInUseUsageDescription`. This is because your users now have the ability to still choose "When in use" when the app is requesting the "Always" permission. In the flow of your app you need to take this into consideration.
 
@@ -59,7 +59,6 @@ Starting with iOS 11, to request Always permission you must replace the `NSLocat
 In general, testing geolocation code should be done on a device so that you accurately and realistically test your app in an environment close to a real-world usage scenario. However, Emulators created using Android Studio 3 support GPS out the box too.
 
 Starting at [TiSDK 7.1.0.GA](#!/guide/Titanium_SDK_7.1.0.GA_Release_Note) there is support for [FusedLocationProvider](https://developers.google.com/location-context/fused-location-provider/). To enable this, the only thing you need to do is include the [Ti.PlayServices](#!/api/Modules.PlayServices) module in your app. This will enable battery efficient geolocation API's in your app.
-
 
 ### Using location services in your app
 
@@ -136,15 +135,15 @@ Based on the accuracy you choose, iOS uses its own logic to select location prov
 
 * **accuracy** - The target accuracy of all location data received. The following `Ti.Geolocation`constants represent the valid values for this property:
 
-    * `ACCURACY_BEST` - Location data will be of the highest possible accuracy of which the device is capable
+  * `ACCURACY_BEST` - Location data will be of the highest possible accuracy of which the device is capable
 
-    * `ACCURACY_HUNDRED_METERS` - Location data will be accurate within 100 meters
+  * `ACCURACY_HUNDRED_METERS` - Location data will be accurate within 100 meters
 
-    * `ACCURACY_KILOMETER` - Location data will be accurate within 1 kilometer
+  * `ACCURACY_KILOMETER` - Location data will be accurate within 1 kilometer
 
-    * `ACCURACY_NEAREST_TEN_METERS` - Location data will be accurate within 10 meters
+  * `ACCURACY_NEAREST_TEN_METERS` - Location data will be accurate within 10 meters
 
-    * `ACCURACY_THREE_KILOMETERS_` - Location data will be accurate within 3 kilometers
+  * `ACCURACY_THREE_KILOMETERS_` - Location data will be accurate within 3 kilometers
 
 * **distanceFilter** - The minimum change of position (in meters) before a `location` event is fired. The default is 0, meaning that location events are continuously generated.
 
@@ -152,9 +151,9 @@ Based on the accuracy you choose, iOS uses its own logic to select location prov
 
 * **preferredProvider** - Allows you to specify the preferred method for receiving a location. The following `Ti.Geolocation`constants represent your possible choices:
 
-    * `PROVIDER_NETWORK` - Give the network based location provider preference
+  * `PROVIDER_NETWORK` - Give the network based location provider preference
 
-    * `PROVIDER_GPS` - Give the GPS location preference
+  * `PROVIDER_GPS` - Give the GPS location preference
 
 Using the event-driven location example at the beginning of this chapter, let's modify it to use some of the above properties.
 

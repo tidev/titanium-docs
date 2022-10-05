@@ -10,7 +10,7 @@ This document will guide you on how to use Titanium and Angular together.
 ::: warning ⚠️ Techical Preview
 Titanium and Angular is currently only available as a Technical Preview and is under ongoing development. Expect things to be broken or APIs to change. Titanium Angular is not yet ready for production use!
 
-If you run into problems read the [Titanium Angular - FAQ](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_and_Angular/Titanium_Angular_-_FAQ/) or check out [Titanium Angular - Limitations and Workarounds](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_and_Angular/Titanium_Angular_-_Limitations_and_Workarounds/) for more details about what features are already implemented and what is to come.
+If you run into problems read the [Titanium Angular - FAQ](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_and_Angular/Titanium_Angular_-_FAQ.html) or check out [Titanium Angular - Limitations and Workarounds](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_and_Angular/Titanium_Angular_-_Limitations_and_Workarounds.html) for more details about what features are already implemented and what is to come.
 :::
 
 ## Prerequisites
@@ -43,9 +43,9 @@ After appcd is installed you need to add the webpack plugin by running the follo
 npm i -g @appcd/plugin-webpack
 ```
 
-Now that all the necessary tooling for Titanium Angular is installed you can create your first Titanium Angular project. Head over to the [Getting Started](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_and_Angular/Titanium_Angular_Getting_Started_Guide/) guide to learn how to create a new Titanium Angular project and get to know the basic Titanium Angular project structure.
+Now that all the necessary tooling for Titanium Angular is installed you can create your first Titanium Angular project. Head over to the [Getting Started](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_and_Angular/Titanium_Angular_Getting_Started_Guide.html) guide to learn how to create a new Titanium Angular project and get to know the basic Titanium Angular project structure.
 
-You can also visit the [webpack Guide](/guide/Titanium_SDK/Titanium_SDK_How-tos/Webpack_Guide/) if you want to know more about the webpack build that powers Titanium Angular.
+You can also visit the [webpack Guide](/guide/Titanium_SDK/Titanium_SDK_How-tos/Webpack_Guide.html) if you want to know more about the webpack build that powers Titanium Angular.
 
 ## Open Source
 

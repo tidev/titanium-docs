@@ -13,7 +13,7 @@ Each Titanium project that wants to use Hyperloop requires the Hyperloop service
 
 ### Requirements
 
-Refer to [Hyperloop Requirements](/guide/Titanium_SDK/Titanium_SDK_Guide/Hyperloop/Hyperloop_Guides/Hyperloop_Requirements/) for instructions on what and how to install the necessary requirements for Hyperloop.
+Refer to [Hyperloop Requirements](/guide/Titanium_SDK/Titanium_SDK_Guide/Hyperloop/Hyperloop_Guides/Hyperloop_Requirements.html) for instructions on what and how to install the necessary requirements for Hyperloop.
 
 **Please note:**
 

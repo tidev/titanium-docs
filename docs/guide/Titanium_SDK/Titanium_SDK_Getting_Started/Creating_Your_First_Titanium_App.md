@@ -111,7 +111,7 @@ Now that our application has some data, let’s display it in a table.
 
 ## Add a TableView
 
-In Alloy, collection data can be [synchronized](/guide/Alloy_Framework/Alloy_Guide/Alloy_Models/Alloy_Data_Binding/) to a view object, or a single model can be bound to a view component. At runtime, Alloy monitors your application's collections for changes and updates any synchronized view objects with the new data. Specifically, the Backbone add, change, destroy, fetch, remove, and reset events are monitored for changes. In this case, each time we call the `add()` method on the myBooks collection the view is synchronized with the new data.
+In Alloy, collection data can be [synchronized](/guide/Alloy_Framework/Alloy_Guide/Alloy_Models/Alloy_Data_Binding.html) to a view object, or a single model can be bound to a view component. At runtime, Alloy monitors your application's collections for changes and updates any synchronized view objects with the new data. Specifically, the Backbone add, change, destroy, fetch, remove, and reset events are monitored for changes. In this case, each time we call the `add()` method on the myBooks collection the view is synchronized with the new data.
 
 1. Open **views/index.xml**.
 
@@ -387,7 +387,7 @@ On iOS, the application is stuck here. Instructions on adding an iOS navigation 
 
 If you test the app on an Android device with a high-resolution display, you’ll notice that the default height of each table row is a bit small to comfortably read or select with a finger. For instance, the screenshot below was taken with a Pixel 2 emulator.
 
-To fix this we will apply a [platform-specific style](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Alloy_Styles_and_Themes/#Platform-SpecificStyles) to the `<TableViewRow>` element. During the build process, platform-specific styles are applied only to builds on the target platform. The following is an example of a platform-specific style that makes all Labels blue in iOS builds.
+To fix this we will apply a [platform-specific style](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Alloy_Styles_and_Themes#platform-specific-styles) to the `<TableViewRow>` element. During the build process, platform-specific styles are applied only to builds on the target platform. The following is an example of a platform-specific style that makes all Labels blue in iOS builds.
 
 ![platform_specific_changes-android](./platform_specific_changes-android.png)
 
@@ -420,7 +420,7 @@ In this case we’ll increase the font size used by each `<TableViewRow>` elemen
 
 Unlike Android, iOS devices do not provide a physical back button for navigation. The [`NavigationWindow`](#!/api/Titanium.UI.iOS.NavigationWindow) is an UI control that provides an easy way to display and navigate hierarchical content. (In native iOS terms, the control is an implementation of the iOS [navigation controller interface](https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/NavigationControllers.html).) On Android, you get this type of navigation for "free". The `NavigationWindow` will wrap the original `<Window>` element and provide a title bar above the `<TableView>` control, solving this layout issue.
 
-To do this we'll take advantage of an Alloy feature called [platform-specific resources](/guide/Alloy_Framework/Alloy_Guide/Alloy_Concepts/#platform-specific-resources) that lets you define platform-specific view, controller, and style files. At build time, only those resources specific to the target platform are included. There are two parts to this:
+To do this we'll take advantage of an Alloy feature called [platform-specific resources](/guide/Alloy_Framework/Alloy_Guide/Alloy_Concepts#platform-specific-resources) that lets you define platform-specific view, controller, and style files. At build time, only those resources specific to the target platform are included. There are two parts to this:
 
 * Creating a new iOS-specific entry point (a new version of `index`.xml) that includes the `NavigationWindow` element
 
@@ -452,7 +452,7 @@ To do this we'll take advantage of an Alloy feature called [platform-specific re
 
 5. Save your changes.
 
-The `NavigationWindow` control has a different API than `Window`, so our code now needs to account for those differences. We could create a platform specific controller folder for iOS (`controllers/ios/index`.js), but the code differences are small enough that we’ll use [platform-conditional code](/guide/Alloy_Framework/Alloy_Guide/Alloy_Controllers/#conditional-code) to include the proper code for each platform.
+The `NavigationWindow` control has a different API than `Window`, so our code now needs to account for those differences. We could create a platform specific controller folder for iOS (`controllers/ios/index`.js), but the code differences are small enough that we’ll use [platform-conditional code](/guide/Alloy_Framework/Alloy_Guide/Alloy_Controllers.html#conditional-code) to include the proper code for each platform.
 
 **To update the controller code for platform differences:**
 

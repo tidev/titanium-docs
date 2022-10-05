@@ -19,18 +19,18 @@ While it's highly encouraged to use native UI components whenever possible, ther
 
 * Integrating web-based tools
 
-But be cautious when using `WebViews`. They are the heaviest of native UI components. They take time to render and can affect the performance of your apps if used too often. This will be discussed in more detail in [WebView Use Cases](/guide/Titanium_SDK/Titanium_SDK_How-tos/Integrating_Web_Content/WebView_Use_Cases/).
+But be cautious when using `WebViews`. They are the heaviest of native UI components. They take time to render and can affect the performance of your apps if used too often. This will be discussed in more detail in [WebView Use Cases](/guide/Titanium_SDK/Titanium_SDK_How-tos/Integrating_Web_Content/WebView_Use_Cases.html).
 
 ## WebView documents
 
-**[The WebView Component](/guide/Titanium_SDK/Titanium_SDK_How-tos/Integrating_Web_Content/The_WebView_Component/)**
+**[The WebView Component](/guide/Titanium_SDK/Titanium_SDK_How-tos/Integrating_Web_Content/The_WebView_Component.html)**
 
 In this document, you'll learn how to use the `Ti.UI.WebView` component to display and interact with web content in your apps. You'll see how to use both static and dynamic local web content, as well as existing web pages, RSS feeds, and other remote web content. You'll also find some resources for optimizing web content to work well with `WebViews` (and mobile browsers).
 
-**[Communication Between WebViews and Titanium](/guide/Titanium_SDK/Titanium_SDK_How-tos/Integrating_Web_Content/Communication_Between_WebViews_and_Titanium/)**
+**[Communication Between WebViews and Titanium](/guide/Titanium_SDK/Titanium_SDK_How-tos/Integrating_Web_Content/Communication_Between_WebViews_and_Titanium.html)**
 
 Here you'll learn how to use Titanium application level events to bidirectionally communicate between Javascript code in `WebViews` and native Titanium code. This gives you the ability to have web content interact with the native Titanium environment and vice versa.
 
-**[WebView Use Cases](/guide/Titanium_SDK/Titanium_SDK_How-tos/Integrating_Web_Content/WebView_Use_Cases/)**
+**[WebView Use Cases](/guide/Titanium_SDK/Titanium_SDK_How-tos/Integrating_Web_Content/WebView_Use_Cases.html)**
 
 Finally, you'll explore some common use cases of the `Ti.UI.WebView` in Titanium apps. You will also further explore why caution must be taken to not overuse these components, particularly when the same result could be achieved with native components.

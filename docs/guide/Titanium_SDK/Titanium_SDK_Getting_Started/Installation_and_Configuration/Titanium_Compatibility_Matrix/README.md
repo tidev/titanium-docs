@@ -17,7 +17,7 @@ Some information about legacy Titanium SDK versions is included here solely for 
 
 ### Pre-release versions
 
-Be aware that any components notated as _Pre-release_ are not officially supported. This includes Beta, Developer Preview, and Release Candidate versions, as well as any development SDKs released via the [Continuous Builds](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_SDK_Continuous_Builds/) download site.
+Be aware that any components notated as _Pre-release_ are not officially supported. This includes Beta, Developer Preview, and Release Candidate versions, as well as any development SDKs released via the [Continuous Builds](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_SDK_Continuous_Builds.html) download site.
 
 ## Minimum system requirements
 
@@ -44,7 +44,6 @@ The Java Development Kit (JDK) is required to build Titanium apps and modules fo
 | 10.1.0 - latest | 11 | 16 |
 | 9.0.2 - 10.0.2 | 8 | 15 |
 
-
 <details>
 <summary><b>Unsupported version</b></summary>
 
@@ -62,8 +61,7 @@ The Java Development Kit (JDK) is required to build Titanium apps and modules fo
 
 </details>
 
-
-See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/) for detailed instructions.
+See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK.html) for detailed instructions.
 
 ## Node.js
 
@@ -80,7 +78,7 @@ On Windows you will need to enable `dev mode` in the Windows settings in order t
 
 _Info: with Titanium CLI 6.0.0 the support for Node 12 was dropped_
 
-See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node/) for details.
+See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node.html) for details.
 
 <details>
 <summary><b>Unsupported version of node.js</b></summary>
@@ -106,21 +104,21 @@ Titanium can provide a development environment for third-party mobile platforms 
 
 ### Android
 
-See [Installing the Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK/) for detailed instructions.
+See [Installing the Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK.html) for detailed instructions.
 
 Titanium requires the Android SDK Tools to be installed in order to allow you to develop Android applications.
 
 ::: warning ⚠️ Warning
-Remember that Oracle JDK is a prerequisite for Android development and should be installed first. You need at least JDK 8 installed. See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/) for instructions.
+Remember that Oracle JDK is a prerequisite for Android development and should be installed first. You need at least JDK 8 installed. See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK.html) for instructions.
 :::
 
 The _Android SDK Manager_ installer may be obtained from the [Android Studio and SDK tools](https://developer.android.com/studio) site.
 
 #### Required Android Packages
 
-As of <b>Titanium 9.0.0</b>, the build system will automatically download the Android SDK platforms and tools needed.
+As of **Titanium 9.0.0**, the build system will automatically download the Android SDK platforms and tools needed.
 
-For <b>Titanium 8.x.x</b>, you need to installed the following packages via the Android SDK Manager yourself:
+For **Titanium 8.x.x**, you need to installed the following packages via the Android SDK Manager yourself:
 
 | Package | Minimum Version |
 | --- | --- |
@@ -184,20 +182,19 @@ The Titanium SDK does not support the [Android 4.4W SDK](http://developer.androi
 
 Most mobile device manufacturers have been licensed to use Google's enhanced API, which provides support for Maps and other functionality. If this is the case for your target devices, you will need to install the relevant Google packages, listed as _Google APIs by Google Inc., Android API x..._ by the **Android SDK Manager** tool. In Studio, choose the SDKs with the naming format "Google APIs x.x" to use the enhanced APIs, or those without the "Google APIs" prefix otherwise.
 
-Android SDK packages can be installed using the **Android SDK Manager** tool. See [Installing the Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK/) for detailed instructions.
+Android SDK packages can be installed using the **Android SDK Manager** tool. See [Installing the Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK.html) for detailed instructions.
 
 The default Android SDK can be configured using Studio's _Preferences_, and then selected per-project using the _Run Configurations_.
-
 
 #### Android Native Add-on Module Development on macOS
 
 The Xcode command line tools are required to develop native Android add-on modules on macOS.
 
-See [Installing the iOS SDK: Installing Command Line Tools](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK/#InstallingCommandLineToolsandPreviousSimulators) for detailed instructions.
+See [Installing the iOS SDK: Installing Command Line Tools](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK#install-the-command-line-tools-and-previous-simulators) for detailed instructions.
 
 ### iOS
 
-See [Installing the iOS SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK/) for detailed instructions.
+See [Installing the iOS SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK.html) for detailed instructions.
 
 Titanium requires Xcode to be installed in order for you to develop iOS applications.
 
@@ -224,8 +221,6 @@ Each Titanium SDK supports a specific range of Xcode versions, shown in the tabl
 | 9.3.0 - 9.3.2 | 11.0.0 | 12.x |  |
 | 9.2.0 - 9.2.2 | 11.0.0 | 12.x | Full support for iOS 14 and beta support for macOS via Mac Catalyst |
 
-
-
 <details>
 <summary><b>Unsupported versions of Xcode</b></summary>
 
@@ -244,7 +239,6 @@ Each Titanium SDK supports a specific range of Xcode versions, shown in the tabl
 | 5.0.0 - 5.4.0 | 6.0.x | 7.0.x |  |
 | 4.0.0 - 4.1.x | 6.0.x | 6.4.x |  |
 | 3.4.0 - 3.5.x | 6.0.x | 6.0.x |  |
-
 
 Deploying for iOS 11.x requires Xcode 9.x, and macOS 10.12.4 and later.
 
@@ -307,7 +301,6 @@ The following table lists the various CLI component versions:
 | --- | --- | --- | --- | --- | --- |
 | 8.1.1 | 1.15.2 | N/A | 2.1.8 | 5.2.4 | 3.2.0 |
 
-
 <details>
 <summary><b>Unsupported versions of CLI includes</b></summary>
 
@@ -351,7 +344,6 @@ The following table lists the various CLI component versions:
 </details>
 <br/>
 
-
 #### Android emulator
 
 Refer to the [Android requirements and instructions below](#android) for installing the Android SDK, which contains the Android emulator.
@@ -370,10 +362,9 @@ gperf is not required for building, running, or distributing applications using 
 
 Obtain the latest stable version of gperf.
 
-
 | Operating System | Package Version | Download Location |
 | --- | --- | --- |
 | OS X | Latest Stable | Included with the Xcode developer tools. |
 | Windows | Latest Stable | [gnuwin32.sourceforge.net](http://gnuwin32.sourceforge.net/packages/gperf.htm) |
 
-See [Installing gperf](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_gperf/) for detailed instructions.
+See [Installing gperf](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_gperf.html) for detailed instructions.

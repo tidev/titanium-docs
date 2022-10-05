@@ -27,20 +27,20 @@ In this chapter, you'll and learn the basics of writing cross-platform mobile ap
 
 ## Sections in this chapter
 
-**[What is Titanium Mobile?](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Titanium_Platform_Overview/)**
+**[What is Titanium Mobile?](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Titanium_Platform_Overview.html)**
 
 In this section, you'll get your first look at Titanium's features and architecture.
 
-**[Hello World](/guide/Titanium_SDK/Titanium_SDK_Guide/Welcome_To_Titanium/Hello_World/)**
+**[Hello World](/guide/Titanium_SDK/Titanium_SDK_Guide/Welcome_To_Titanium/Hello_World.html)**
 
 Next, you'll examine the Titanium version of a "Hello, World!" project. You'll learn how to create and manage a project and its file structure.
 
-**[Appcelerator Resources](/guide/Titanium_SDK/Titanium_SDK_Guide/Welcome_To_Titanium/Titanium_Resources/)**
+**[Appcelerator Resources](/guide/Titanium_SDK/Titanium_SDK_Guide/Welcome_To_Titanium/Titanium_Resources.html)**
 
 Here you will see the resources available to you as a Titanium developer. This section includes documentation, example code, and Appcelerator's various sources of developer support.
 
-**[JavaScript Development Primer](/guide/Titanium_SDK/Titanium_SDK_Guide/Welcome_To_Titanium/JavaScript_Development_Primer/)**
+**[JavaScript Development Primer](/guide/Titanium_SDK/Titanium_SDK_Guide/Welcome_To_Titanium/JavaScript_Development_Primer.html)**
 
 In the last section of this chapter, you'll briefly explore programming in JavaScript, as well as the learning resources available to you.
 
-So let's get started: [What is Titanium Mobile? >](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Titanium_Platform_Overview/)
+So let's get started: [What is Titanium Mobile? >](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Titanium_Platform_Overview.html)

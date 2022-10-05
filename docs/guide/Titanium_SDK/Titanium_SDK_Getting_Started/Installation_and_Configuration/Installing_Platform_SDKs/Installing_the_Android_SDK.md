@@ -99,13 +99,13 @@ The default Android SDK can be configured using Studio's _Preferences_, and then
 
 The Xcode command line tools are required to develop native Android add-on modules on macOS.
 
-See [Installing the iOS SDK: Installing Command Line Tools](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK/#InstallingCommandLineToolsandPreviousSimulators) for detailed instructions.
+See [Installing the iOS SDK: Installing Command Line Tools](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK/#install-the-command-line-tools-and-previous-simulators) for detailed instructions.
 
 ## Installation
 
 ### macOS
 
-Note that the typical filesystem location of this software can be found in the [macOS Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables/) section of these guides.
+Note that the typical filesystem location of this software can be found in the [macOS Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables) section of these guides.
 
 #### Installing Android SDK Tools on macOS
 
@@ -117,7 +117,7 @@ Note that the typical filesystem location of this software can be found in the [
 
 ### Windows
 
-Note that the typical filesystem location of this software can be found in the [Windows Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables/) section of these guides.
+Note that the typical filesystem location of this software can be found in the [Windows Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables) section of these guides.
 
 #### Installing Android SDK Tools on Windows
 
@@ -143,7 +143,7 @@ Note that the typical filesystem location of this software can be found in the [
 
 11. Click the **Finish** button once Android Studio has finished downloading components.
 
-Refer to the [Windows Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables/) section, and add the path of the **Android SDK Tools** directory to your system's `PATH`.
+Refer to the [Windows Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables) section, and add the path of the **Android SDK Tools** directory to your system's `PATH`.
 
 Then proceed to the [Installing Android Packages with Android SDK Manager](#installing-android-packages-with-android-sdk-manager) section.
 
@@ -195,7 +195,6 @@ To install Android SDK on Windows:
 
 6. Once the requested components have been installed, click **Finish** button.
 
-
 To create an AVD via Android Studio:
 
 1. Open **Android Studio**.
@@ -219,7 +218,6 @@ Refer to the [Titanium Compatibility Matrix](/guide/Titanium_SDK/Titanium_SDK_Ge
 In the Android SDK Manager, under the SDK Platforms tab, you can find "Intel x86 Atom" and "Intel x86 Atom\_64" system images. These are 32-bit and 64-bit emulator images of that platform's API Level and will run faster in the emulator compared to the ARM emulator images.
 
 Extra software may be required to take advantage of the x86 emulator – see [Configuring Virtual Machine Acceleration](http://developer.android.com/tools/devices/emulator.html#accel-vm) in the Android Tools documentation.
-
 
 ## Configuring the CLI
 
