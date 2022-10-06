@@ -117,7 +117,7 @@ Note that the typical filesystem location of this software can be found in the [
 
 ### Windows
 
-Note that the typical filesystem location of this software can be found in the [Windows Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables) section of these guides.
+Note that the typical filesystem location of this software can be found in the [Windows Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables.html) section of these guides.
 
 #### Installing Android SDK Tools on Windows
 
@@ -143,7 +143,7 @@ Note that the typical filesystem location of this software can be found in the [
 
 11. Click the **Finish** button once Android Studio has finished downloading components.
 
-Refer to the [Windows Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables) section, and add the path of the **Android SDK Tools** directory to your system's `PATH`.
+Refer to the [Windows Software Locations](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Software_Locations_and_Environment_Variables.html) section, and add the path of the **Android SDK Tools** directory to your system's `PATH`.
 
 Then proceed to the [Installing Android Packages with Android SDK Manager](#installing-android-packages-with-android-sdk-manager) section.
 

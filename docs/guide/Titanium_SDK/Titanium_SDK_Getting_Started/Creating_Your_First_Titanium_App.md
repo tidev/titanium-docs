@@ -420,7 +420,7 @@ In this case we’ll increase the font size used by each `<TableViewRow>` elemen
 
 Unlike Android, iOS devices do not provide a physical back button for navigation. The [`NavigationWindow`](#!/api/Titanium.UI.iOS.NavigationWindow) is an UI control that provides an easy way to display and navigate hierarchical content. (In native iOS terms, the control is an implementation of the iOS [navigation controller interface](https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/ViewControllerCatalog/Chapters/NavigationControllers.html).) On Android, you get this type of navigation for "free". The `NavigationWindow` will wrap the original `<Window>` element and provide a title bar above the `<TableView>` control, solving this layout issue.
 
-To do this we'll take advantage of an Alloy feature called [platform-specific resources](/guide/Alloy_Framework/Alloy_Guide/Alloy_Concepts#platform-specific-resources) that lets you define platform-specific view, controller, and style files. At build time, only those resources specific to the target platform are included. There are two parts to this:
+To do this we'll take advantage of an Alloy feature called [platform-specific resources](/guide/Alloy_Framework/Alloy_Guide/Alloy_Concepts.html#platform-specific-resources) that lets you define platform-specific view, controller, and style files. At build time, only those resources specific to the target platform are included. There are two parts to this:
 
 * Creating a new iOS-specific entry point (a new version of `index`.xml) that includes the `NavigationWindow` element
 
