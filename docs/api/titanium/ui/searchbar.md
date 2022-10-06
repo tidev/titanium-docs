@@ -7,9 +7,9 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-| Android | iOS | Windows |
-| ------- | --- | ------- |
-| ![Android](./searchbar_android.png) | ![iOS](./searchbar_ios.png) | ![Windows](./searchbar_windows.png) |
+| Android | iOS |
+| ------- | --- |
+| ![Android](./searchbar_android.png) | ![iOS](./searchbar_ios.png) |
 
 Search bars are most commonly used for filtering the rows in a [TableView](Titanium.UI.TableView) and
 [ListView](Titanium.UI.ListView). You can add a search bar to a table view via its

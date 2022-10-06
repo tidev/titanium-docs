@@ -7,9 +7,9 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-| Android | iOS | Windows |
-| ------- | --- | ------- |
-| ![Android](./activityindicator_android.png) | ![iOS](./activityindicator_ios.png) | ![Windows](./activityindicator_wp.png) |
+| Android | iOS |
+| ------- | --- |
+| ![Android](./activityindicator_android.png) | ![iOS](./activityindicator_ios.png) |
 
 An activity indicator can be used to show the progress of an operation in the UI to let the
 user know that some action is taking place. An activity indicator consists of a spinning

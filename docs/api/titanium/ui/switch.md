@@ -7,9 +7,9 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-| Android | iOS | Windows |
-| ------- | --- | ------- |
-| ![Android](./switch_android.png) | ![iOS](./switch_ios.png) | ![Windows](./switch_wp.png) |
+| Android | iOS |
+| ------- | --- |
+| ![Android](./switch_android.png) | ![iOS](./switch_ios.png) |
 
 The appearance of a `Switch` control varies by platform:
 

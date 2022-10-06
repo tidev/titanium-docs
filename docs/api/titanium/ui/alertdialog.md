@@ -7,9 +7,9 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-| Android | iOS | Windows |
-| ------- | --- | ------- |
-| ![Android](./alertdialog_android.png) | ![iOS](./alertdialog_ios.png) | ![Windows](./alertdialog_wp.png) |
+| Android | iOS |
+| ------- | --- |
+| ![Android](./alertdialog_android.png) | ![iOS](./alertdialog_ios.png) |
 
 An alert dialog is created using <Titanium.UI.createAlertDialog> or **`<AlertDialog>`** Alloy element.
 

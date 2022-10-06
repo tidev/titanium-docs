@@ -7,9 +7,9 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-| Android | iOS | Windows |
-| ------- | --- | ------- |
-| ![Android](./emaildialog_android.png) | ![iOS](./emaildialog_ios.png) | ![Windows](./emaildialog_wp.png) |
+| Android | iOS |
+| ------- | --- |
+| ![Android](./emaildialog_android.png) | ![iOS](./emaildialog_ios.png) |
 
 The Email Dialog is created with the <Titanium.UI.createEmailDialog> method. The user needs to
 register an e-mail account on the device in order to open the dialog.  The dialog will not

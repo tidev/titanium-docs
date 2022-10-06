@@ -7,9 +7,9 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-| Android | iOS | Windows |
-| ------- | --- | ------- |
-| ![Android](./textfield_android.png) | ![iOS](./textfield_ios.png) | ![Windows](./textfield_wp.png) |
+| Android | iOS |
+| ------- | --- |
+| ![Android](./textfield_android.png) | ![iOS](./textfield_ios.png) |
 
 Use the <Titanium.UI.createTextField> method or **`<TextField>`** Alloy element to create a text field.
 

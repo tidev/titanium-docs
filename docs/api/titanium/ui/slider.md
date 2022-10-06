@@ -7,9 +7,9 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-| Android | iOS | Windows |
-| ------- | --- | ------- |
-| ![Android](./slider_android.png) | ![iOS](./slider_ios.png) | ![Windows](./slider_wp.png) |
+| Android | iOS |
+| ------- | --- |
+| ![Android](./slider_android.png) | ![iOS](./slider_ios.png) |
 
 A slider lets the user select from a range of values by dragging the slider thumb.
 

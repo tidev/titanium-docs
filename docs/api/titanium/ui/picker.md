@@ -7,9 +7,9 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-| Android | iOS | Windows |
-| ------- | --- | ------- |
-| ![Android](./picker_android.png) | ![iOS](./picker_ios.png) | ![Windows](./picker_wp.gif) |
+| Android | iOS |
+| ------- | --- |
+| ![Android](./picker_android.png) | ![iOS](./picker_ios.png) |
 
 Use the <Titanium.UI.createPicker> method or Alloy **`<Picker>`** element to create a picker control.
 

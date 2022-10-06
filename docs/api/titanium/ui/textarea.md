@@ -7,9 +7,9 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-| Android | iOS | Windows |
-| ------- | --- | ------- |
-| ![Android](./textarea_android.png) | ![iOS](./textarea_ios.png) | ![Windows](./textarea_wp.png) |
+| Android | iOS |
+| ------- | --- |
+| ![Android](./textarea_android.png) | ![iOS](./textarea_ios.png) |
 
 Use the <Titanium.UI.createTextArea> method or **&lt;TextArea&gt;** Alloy element to create a text area.
 

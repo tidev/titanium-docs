@@ -7,9 +7,9 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-| Android | iOS | Windows |
-| ------- | --- | ------- |
-| ![Android](./tableview_android.png) | ![iOS](./tableview_ios.png) | ![Windows](./tableview_wp.png) |
+| Android | iOS |
+| ------- | --- |
+| ![Android](./tableview_android.png) | ![iOS](./tableview_ios.png) |
 
 A `TableView` object is a container for [TableViewSection](Titanium.UI.TableViewSection)
 objects that are, in turn, containers for [TableViewRow](Titanium.UI.TableViewRow) objects.

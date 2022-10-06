@@ -7,9 +7,9 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-| Android | iOS | Windows |
-| ------- | --- | ------- |
-| ![Android](./button_android.png) | ![iOS](./button_ios.png) | ![Windows](./button_wp.png) |
+| Android | iOS |
+| ------- | --- |
+| ![Android](./button_android.png) | ![iOS](./button_ios.png) |
 
 A button displays its  selected state while it is being pressed. The focused state is
 only used on Android devices that have navigation keys or a keyboard, to indicate

@@ -7,9 +7,9 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-| Android | iOS | Windows |
-| ------- | --- | ------- |
-| ![Android](./listview_android.png) | ![iOS](./listview_ios.png) | ![Windows](./listview_wp.png) |
+| Android | iOS |
+| ------- | --- |
+| ![Android](./listview_android.png) | ![iOS](./listview_ios.png) |
 
 Use the <Titanium.UI.createListView> method or **`<ListView>`** Alloy element to create a `ListView`.
 
@@ -194,7 +194,7 @@ Editing a ListView through user initiated actions is supported through the follo
 
     - [editing](Titanium.UI.ListView.editing) - Determines if the List View is in a state where items can
       be deleted or reordered.
-      
+
     - [requiresEditingToMove](Titanium.UI.ListView.requiresEditingToMove) - Determines if the ListView
       should be able to drag-and-drop without explicitely enabling editing support (like drag bars).
 
