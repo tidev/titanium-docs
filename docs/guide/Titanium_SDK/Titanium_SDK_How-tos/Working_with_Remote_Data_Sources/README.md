@@ -29,8 +29,4 @@ SOAP services are popular with corporate portals and services, but SOAP presents
 
 In this section, you'll explore how you can upload and download files in your Titanium apps.
 
-**[Integrate with Mobile Backend Services](/guide/Titanium_SDK/Titanium_SDK_How-tos/Working_with_Remote_Data_Sources/Integrate_with_Mobile_Backend_Services/)**
-
-Finally, in this section learn how to integrate with ArrowDB (formerly Appcelerator Cloud Services) and use this powerful API set in your mobile apps.
-
 So let's get started: [HTTPClient and Request Lifecycle >](/guide/Titanium_SDK/Titanium_SDK_How-tos/Working_with_Remote_Data_Sources/HTTPClient_and_the_Request_Lifecycle/)

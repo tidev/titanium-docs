@@ -432,46 +432,6 @@ Ti.App.iOS.addEventListener('silentpush', function(e) {
 });
 ```
 
-### Subscribing to push notifications
-
-In order to receive the silent remote notification, the device needs to be subscribed to push notifications. Use the [Ti.Network.registerForPushNotifications method](#!/api/Titanium.Network-method-registerForPushNotifications) to register for push notifications and setup callbacks when the application first starts, then use either the Cloud module's `PushNotifications.subscribeToken` or `PushNotifications.subscribe` method to subscribe to a push channel.
-
-The `subscribe` method requires the user to be logged in to Arrow to subscribe and receive push notifications, while `subscribeToken` only relies on the device token.
-
-```javascript
-// Require in the Cloud module
-var Cloud = require('ti.cloud');
-
-// Register for push notification
-Ti.Network.registerForPushNotifications({
-    // Only need to listen to alerts
-    types: [Ti.Network.NOTIFICATION_TYPE_ALERT],
-    success: deviceTokenSuccess,
-    error: deviceTokenError
-});
-
-function deviceTokenSuccess(e) {
-
-    // Subscribes the device to the 'silent_push' channel to listen for silent push alerts
-    // The channel name is arbitrary and can be anything you wish
-    Cloud.PushNotifications.subscribeToken({
-        device_token: e.deviceToken,
-        channel: 'silent_push',
-        type: 'ios'
-    }, function (e) {
-        if (e.success) {
-            Ti.API.info('Subscribed');
-        } else {
-            Ti.API.info('Error:\n' + ((e.error && e.message) || JSON.stringify(e)));
-        }
-    });
-}
-
-function deviceTokenError(e) {
-    Ti.API.info('Failed to register for push notifications: ' + e.error);
-}
-```
-
 ### Sending a silent push notification
 
 To send a silent push notification to the application to trigger the download, use the Appcelerator Dashboard to send the following payload to the push channel and subscribed devices:
@@ -500,9 +460,8 @@ This example requires that push notifications are setup for the project. For dir
 // Send the following push notification to this example:
 // {"alert":"","content-available":1,"download_url":"https://raw.github.com/appcelerator-developer-relations/KitchenSink/master/Resources/images/dog@2x~iphone.jpg"}
 
-// Require in the urlSession and Cloud modules
+// Require in the urlSession
 var urlSession = require('com.appcelerator.urlSession');
-var Cloud = require('ti.cloud');
 var session;
 
 // App UI
@@ -595,17 +554,6 @@ Ti.Network.registerForPushNotifications({
 function deviceTokenSuccess(e) {
     // Subscribes the device to the 'silent_push' channel to listen for silent push alerts
     // The channel name is arbitrary and can be anything you wish
-    Cloud.PushNotifications.subscribeToken({
-        device_token: e.deviceToken,
-        channel: 'silent_push',
-        type: 'ios'
-    }, function (e) {
-        if (e.success) {
-            Ti.API.info('Subscribed');
-        } else {
-            Ti.API.info('Error:\n' + ((e.error && e.message) || JSON.stringify(e)));
-        }
-    });
 }
 
 function deviceTokenError(e) {
