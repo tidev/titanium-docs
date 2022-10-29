@@ -37,7 +37,7 @@
         icon="wifi"
         link="./titanium/network.html"
       >
-        Root namespace for network related code, such as an <a href="/api/titanium/network/httpclient.html">HTTP client</a>.
+        Root namespace for network related code, such as an HTTP client.
       </module-card>
       <module-card
         title="Filesystem"
