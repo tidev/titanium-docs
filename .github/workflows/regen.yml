@@ -135,14 +135,7 @@ jobs:
         with:
           fetch-depth: 0
           path: titanium-apple-sign-in
-          repository: tidev/appcelerator.encrypteddatabase
-
-      - name: Checkout appcelerator.encrypteddatabase
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          path: appcelerator.encrypteddatabase
-          repository: tidev/appcelerator.encrypteddatabase
+          repository: tidev/titanium-apple-sign-in
 
       - name: Checkout ti.nfc
         uses: actions/checkout@v3
