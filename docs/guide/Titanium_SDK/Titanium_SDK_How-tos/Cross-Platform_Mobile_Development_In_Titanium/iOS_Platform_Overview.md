@@ -38,7 +38,7 @@ iOS devices are famous for their one-button design. Other than a power button, v
 
 ### Apple's Human Interface Guidelines
 
-In Apple's words, the [Human Interface Guidelines](http://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/Introduction/Introduction.html) will help you build "a superlative user interface and user experience for your iOS app." Some of the key design principles from that guide are summarized in the following image: ![hig_principles](./hig_principles.png)
+In Apple's words, the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/guidelines/overview/) will help you build "a superlative user interface and user experience for your iOS app." Some of the key design principles from that guide are summarized in the following image: ![hig_principles](./hig_principles.png)
 
 ### Cocoa Touch
 
