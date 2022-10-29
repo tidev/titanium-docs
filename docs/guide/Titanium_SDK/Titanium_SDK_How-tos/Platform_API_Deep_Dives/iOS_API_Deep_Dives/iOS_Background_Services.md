@@ -432,6 +432,29 @@ Ti.App.iOS.addEventListener('silentpush', function(e) {
 });
 ```
 
+### Subscribing to push notifications
+
+In order to receive the silent remote notification, the device needs to be subscribed to push notifications. Use the [Ti.Network.registerForPushNotifications method](#!/api/Titanium.Network-method-registerForPushNotifications) to register for push notifications and setup callbacks when the application first starts.
+
+```javascript
+// Register for push notification
+Ti.Network.registerForPushNotifications({
+    // Only need to listen to alerts
+    types: [Ti.Network.NOTIFICATION_TYPE_ALERT],
+    success: deviceTokenSuccess,
+    error: deviceTokenError
+});
+
+function deviceTokenSuccess(e) {
+    var deviceToken = e.deviceToken;
+    // send this token to your push provider e.g. Firebase or Pubhub
+}
+
+function deviceTokenError(e) {
+    Ti.API.info('Failed to register for push notifications: ' + e.error);
+}
+```
+
 ### Sending a silent push notification
 
 To send a silent push notification to the application to trigger the download, use the Appcelerator Dashboard to send the following payload to the push channel and subscribed devices:
