@@ -7,8 +7,12 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-You use a `RefreshControl` with a <Titanium.UI.TableView>, <Titanium.UI.ListView> or <Titanium.UI.ScrollView> object. 
-It provides an alternate method to implement **pull to refresh** functionality provided by 
+| Android | iOS |
+| ------- | --- |
+| ![Android](./refreshcontrol_android.png) |  |
+
+You use a `RefreshControl` with a <Titanium.UI.TableView>, <Titanium.UI.ListView> or <Titanium.UI.ScrollView> object.
+It provides an alternate method to implement **pull to refresh** functionality provided by
 <Titanium.UI.TableView.headerPullView> and <Titanium.UI.ListView.pullView> properties.
 
 Use the <Titanium.UI.createRefreshControl> method to create a RefreshControl.
@@ -54,6 +58,32 @@ control.addEventListener('refreshstart', () => {
 });
 win.add(listView);
 win.open();
+```
+
+### Alloy example
+
+TableView with a RefreshControl
+
+``` xml
+<Alloy>
+    <Window>
+        <TableView id="table">
+          <RefreshControl id="refresh" onRefreshstart="refreshstart"/>
+            <TableViewSection id="sectionFruit" headerTitle="Fruit">
+                <TableViewRow title="Apple"/>
+                <TableViewRow title="Bananas"/>
+            </TableViewSection>
+        </TableView>
+    </Window>
+</Alloy>
+```
+
+``` js
+function refreshstart(e){
+  $.refresh.endRefreshing();
+}
+
+$.index.open();
 ```
 
 <ApiDocs/>

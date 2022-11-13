@@ -7,11 +7,15 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
+| Android |
+| ------- |
+| ![Android](./searchview_android.png) |
+
 `SearchView` provides a user interface to enter a search query and submit a request to a search provider.
 
 Search views are most commonly used for filtering the rows in a [TableView](Titanium.UI.TableView).
-Similar to [SearchBar](Titanium.UI.SearchBar), you can add a search view to a table view by setting the table view's 
-[search](Titanium.UI.TableView.search) property. A search view can be used without a `TableView`. 
+Similar to [SearchBar](Titanium.UI.SearchBar), you can add a search view to a table view by setting the table view's
+[search](Titanium.UI.TableView.search) property. A search view can be used without a `TableView`.
 
 You can also use a `SearchView` object as the <Titanium.UI.ListView.searchView>
 property of a [ListView](Titanium.UI.ListView) object.
@@ -35,7 +39,6 @@ If not, it defaults to use the search bar.
 
 ``` js
 var win = Ti.UI.createWindow({
-    backgroundColor: 'blue',
     fullscreen: false
 });
 

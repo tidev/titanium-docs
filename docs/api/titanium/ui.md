@@ -173,6 +173,9 @@ For example given an image `logo.png` with `@2x` and `@3x` variants, the followi
 
 And you would reference the image as before using `logo-dark.png`
 
+Android:
+You can use the native `app/assets/android/images/res-night` folder (extend them with e.g. `res-night-xxhdpi` if needed) for dark-mode images.
+
 ## Examples
 
 ### Color Demo

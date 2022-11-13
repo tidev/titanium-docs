@@ -7,6 +7,10 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
+| Android |
+| ------- |
+| ![Android](./cardview_android.png) |
+
 Use a CardView to layout content that:
 
   * Comprises multiple data types
@@ -23,6 +27,18 @@ For design guidelines, see
 CardView does not support <Titanium.UI.View.backgroundImage>, <Titanium.UI.View.borderColor>, or <Titanium.UI.View.backgroundGradient>.
 
 ## Examples
+
+### Simple Alloy example
+
+``` xml
+<Alloy>
+    <Window >
+        <CardView height="100" width="200">
+          <Label text="CardView example"/>
+        </CardView>
+    </Window>
+</Alloy>
+```
 
 ### CardView used in a ScrollView
 

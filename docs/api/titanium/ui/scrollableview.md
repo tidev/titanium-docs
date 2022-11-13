@@ -7,6 +7,10 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
+| Android | iOS |
+| ------- | --- |
+| ![Android](./scrollableview_android.png) |  |
+
 Use the <Titanium.UI.createScrollableView> method or **`<ScrollableView>`** Alloy element to create
 a scrollable view.
 

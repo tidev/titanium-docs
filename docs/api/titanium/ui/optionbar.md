@@ -7,6 +7,10 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
+| Android | iOS |
+| ------- | --- |
+| ![Android](./optionbar_android.png) |  |
+
 This is a view which shows a list of options where only 1 option is selectable by the user.
 
 On iOS, this displays a

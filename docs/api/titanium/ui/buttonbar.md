@@ -7,13 +7,17 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
+| Android | iOS |
+| ------- | --- |
+| ![Android](./buttonbar_android.png) |  |
+
 The button bar is a set of buttons joined into a single control.
 On iOS, you can set up the buttons with either a title or image, but not both.
 On Android, you can set up the buttons with a title, image, or both.
 
 Use the <Titanium.UI.createButtonBar> method or **`<ButtonBar>`** Alloy element to create a button bar.
 
-The [TabbedBar](Titanium.UI.iOS.TabbedBar) control is a button bar where the 
+The [TabbedBar](Titanium.UI.iOS.TabbedBar) control is a button bar where the
 last selected button mantains a pressed or selected state. The following discussion
 applies to both button bar and tabbed bar.
 

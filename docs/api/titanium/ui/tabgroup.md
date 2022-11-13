@@ -7,6 +7,10 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
+| Android | iOS |
+| ------- | --- |
+| ![Android](./tabgroup_android.png) |  |
+
 A tab group can contain one or more [Tab](Titanium.UI.Tab) objects, each of which has an
 associated tab control that is used to bring it into focus.
 
