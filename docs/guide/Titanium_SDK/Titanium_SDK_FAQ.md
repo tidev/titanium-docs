@@ -7,6 +7,56 @@ weight: '50'
 
 This document provides answers and links to commonly asked questions about Titanium SDK.
 
+## How to install Titanium Mobile
+
+You will need node/npm and then you can run `sudo npm i -g titanium alloy` to have all CLI tools. For more details check [Titanium_SDK_Getting_Started](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/) or the [from zero to app - install guide](https://fromzerotoapp.com/how-to-install-appcelerator-titanium/).
+
+## Where can I find more Titanium tutorials or modules?
+
+Besides this documentation you can look at [from zero to app](https://fromzerotoapp.com/). There you find basic tutorials about installation, your first app, UI tutorials, optimizing apps and much more. It also has a list of common modules you can use in your apps.
+
+## No iOS simulator are visible or it will say "Unable to find an iOS Simulator"
+
+Go to XCode and make sure `preferences->locations->Command Line Tools` is set to the correct XCode path.
+
+## VSCode won't update the CLI
+
+Run `sudo npm i -g titanium alloy` in a terminal and restart VSCode. Then it should use the latest CLI tools.
+
+## I can't compile my old app with the current SDK because of `This application cannot be built with the Titanium open source SDK because it is an Appcelerator Platform registered application`
+
+Check [Transfer your app from appc CLI to ti CLI](/guide/Titanium_SDK/Titanium_SDK_How-tos/Transfer_your_app_from_appc_CLI_to_ti_CLI/) and change the GUID inside tiapp.xml.
+
+## My Android app is not using my splashscreen image but shows the icon when starting on Android 12+
+
+That is the way Android 12+ will start an app. For more details check [the Andorid guides](https://developer.android.com/develop/ui/views/launch/splash-screen). Make sure you use [Adaptive icons](https://fromzerotoapp.com/android-adaptive-icons/). If you want to change the background color use this in your theme:
+
+tiapp.xml (adjust the name!):
+```xml
+<application >
+	<activity android:name="com.myapp.MyAppActivity" android:theme="@style/Theme.Custom.Splash" />
+</application>
+```
+
+theme:
+```xml
+<style name="Theme.Custom.Splash" parent="@style/Theme.MaterialComponents.NoActionBar">
+  <item name="android:windowBackground">@drawable/background_cropped</item>
+  <item name="android:windowSplashScreenBackground">@color/orange</item>
+</style>
+```
+drawable/background_cropped.xml:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:drawable="@color/orange"/>
+	<item>
+		<bitmap android:src="@drawable/background" android:gravity="center"/>
+	</item>
+</layer-list>
+```
+(drawable/background.png is the logo)
+
 ## Can I use Swift code to develop apps for Android in Hyperloop?
 
 Short answer is no. You cannot use Swift code to develop Android apps. Classes in Hyperloop map to the underlying classes defined in Objective-C for iOS and in Java for Android.
