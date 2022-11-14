@@ -5,6 +5,8 @@ weight: '50'
 
 # Titanium SDK FAQ
 
+<div class="faq">
+
 This document provides answers and links to commonly asked questions about Titanium SDK.
 
 ## How to install Titanium Mobile
@@ -15,7 +17,7 @@ You will need node/npm and then you can run `sudo npm i -g titanium alloy` to ha
 
 Besides this documentation you can look at [from zero to app](https://fromzerotoapp.com/). There you find basic tutorials about installation, your first app, UI tutorials, optimizing apps and much more. It also has a list of common modules you can use in your apps.
 
-## No iOS simulator are visible or it will say "Unable to find an iOS Simulator"
+## No iOS simulator is visible or it will say "Unable to find an iOS Simulator"
 
 Go to XCode and make sure `preferences->locations->Command Line Tools` is set to the correct XCode path.
 
@@ -23,7 +25,7 @@ Go to XCode and make sure `preferences->locations->Command Line Tools` is set to
 
 Run `sudo npm i -g titanium alloy` in a terminal and restart VSCode. Then it should use the latest CLI tools.
 
-## I can't compile my old app with the current SDK because of `This application cannot be built with the Titanium open source SDK because it is an Appcelerator Platform registered application`
+## I can't compile my old app with the current SDK because of "This application cannot be built with the Titanium open source SDK because it is an Appcelerator Platform registered application"
 
 Check [Transfer your app from appc CLI to ti CLI](/guide/Titanium_SDK/Titanium_SDK_How-tos/Transfer_your_app_from_appc_CLI_to_ti_CLI/) and change the GUID inside tiapp.xml.
 
@@ -202,3 +204,5 @@ Hyperloop gives you direct access to the native APIs. Titanium SDK already cover
 ## How do I enable Hyperloop?
 
 See [Enabling Hyperloop](/guide/Titanium_SDK/Titanium_SDK_Guide/Hyperloop/Enabling_Hyperloop/) for details.
+
+</div>
