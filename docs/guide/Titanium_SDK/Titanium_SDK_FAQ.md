@@ -134,6 +134,22 @@ To verify your buildtools version, go to your Android SDK location: `/users/<use
 
 You can change the build tools version using this command: `ti config android.buildTools.selectedVersion ##.##.##`
 
+## Building Android modules using a M1 Mac - solving NDK issues
+
+Go to `.../android-sdk/ndk/21.4.7075529` and edit `ndk-build`. Change
+```
+#!/bin/sh
+DIR="$(cd "$(dirname "$0")" && pwd)"
+$DIR/build/ndk-build "$@"
+```
+to
+```
+#!/bin/sh
+DIR="$(cd "$(dirname "$0")" && pwd)"
+arch -x86_64 /bin/bash $DIR/build/ndk-build "$@"
+```
+(source: https://stackoverflow.com/a/69555276/5193915)
+
 ## How do you check if a module supports 64bit or not?
 
 1. Build your module.
