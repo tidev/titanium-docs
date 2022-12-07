@@ -50,7 +50,7 @@ The first step is to create a new Mobile App Project and select a starting templ
 
 ## Running the application
 
-To run the application you select a target simulator, emulator, or device, and click **Run**. The targets available for you to test with depends on which native SDKs you previously installed. For this example, it's assumed you've installed XCode and are targeting an iOS simulator. If you are targeting Android, select an appropriate simulator, emulator or device from the **Target** menu.
+To run the application you select a target simulator, emulator, or device, and click **Run**. The targets available for you to test with depends on which native SDKs you previously installed. For this example, it's assumed you've installed Xcode and are targeting an iOS simulator. If you are targeting Android, select an appropriate simulator, emulator or device from the **Target** menu.
 
 1. Select the project in Project Explorer.
 

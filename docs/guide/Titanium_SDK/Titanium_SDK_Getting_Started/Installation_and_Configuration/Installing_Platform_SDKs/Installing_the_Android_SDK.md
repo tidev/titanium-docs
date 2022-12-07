@@ -14,16 +14,20 @@ This guide describes where to obtain and how to install the Google Android SDK a
 Titanium requires the Android SDK Tools to be installed in order to allow you to develop Android applications.
 
 ::: warning ⚠️ Warning
-Remember that Oracle JDK is a prerequisite for Android development and should be installed first. You need at least JDK 8 installed. See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/) for instructions.
+Remember that JDK (Oracle or OpenJDK) is a prerequisite for Android development and should be installed first. You need at least JDK 11 installed. See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/) for instructions.
 :::
 
-![download_02](/images/guide/download/attachments/29004851/download_02.png)
 
-The _Android SDK Manager_ installer may be obtained from the [Android Studio and SDK tools](https://developer.android.com/studio) site.
+Use "Android Studio" from the [Android Studio and SDK tools](https://developer.android.com/studio) to install the SDK and tools.
 
 ### Required Android Packages
 
-As of Titanium 9.0.0, the build system will automatically download the Android SDK platforms and tools needed.
+As of Titanium 9.0.0, the build system will automatically download the Android SDK platforms and tools needed. Make sure to install `Android SDK Tools (Obsolete)` (uncheck "Hide Obsolete Packages" in the SDK Tools page), `Android SDK Platform-tools` and `Android SDK Build-tools`.
+
+![android_platform_tools.png](android_platform_tools.png)
+
+<details>
+<summary><b>Details for Titanium 8.x.x and later</b></summary>
 
 For Titanium 8.x.x, you need to installed the following packages via the Android SDK Manager yourself:
 
@@ -33,10 +37,9 @@ For Titanium 8.x.x, you need to installed the following packages via the Android
 | Android SDK Build-tools | Rev 23 |
 | Android SDK Platform (API Level) | API Level 29 for Titanium 8.3.x<br /><br />API Level 28 for Titanium version older than 8.3.0 |
 
-::: warning ⚠️ Warning
-Titanium SDK 7.0.0+ requires Android SDK Tools v25 or newer as a minimum requirement.
-:::
-::: warning ⚠️ Warning
+</details>
+
+
 Take caution before upgrading these packages, as changes to the way they work has broken the Titanium toolchain a number of times in the past. Although these problems are often beyond our control, we always do our utmost to fix them as soon as we are made aware of them.
 
 With this in mind, it's important to only upgrade these packages _between_ major projects, so that you have time to fix any problems that may result. Always consult the Android Tools [Release Notes](http://developer.android.com/sdk/tools-notes.html) and [Known Issues](http://tools.android.com/knownissues) first, and refer to our [Installation Troubleshooting](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installation_Troubleshooting/) guide to check whether there are any further actions that need to be taken to make the Titanium and the Android SDK compatible.
@@ -53,20 +56,24 @@ Each Titanium SDK supports building against a specific range of Android versions
 | 10.1.0 - latest\* | 6.0.x (API 23) | 12.0.x (API 31) | 5.0.x (API 21) |
 | 10.0.0 - 10.0.2 | 6.0.x (API 23) | 11.0.x (API 30) | 5.0.x (API 21) |
 | 9.3.0 - 9.3.2 | 6.0.x (API 23) | 11.0.x (API 30) | 4.4.x (API 19) |
-| 8.3.0 - 9.2.2 | 6.0.x (API 23) | 10.0.x (API 29) | 4.4.x (API 19) |
-| 8.0.0 - 8.2.2 | 6.0.x (API 23) | 9.0.x (API 28) | 4.4.x (API 19) |
-| 7.5.0 - 7.5.1 | 6.0.x (API 23) | 9.0.x (API 28) | 4.1.x (API 16) |
-| 7.3.0 - 7.4.1 | 6.0.x (API 23) | 8.1.x (API 27) | 4.1.x (API 16) |
-| 7.0.0 - 7.2.0 | 6.0.x (API 23) | 7.0.x (API 25) | 4.1.x (API 16) |
 
 ::: warning ⚠️ Notes
 \* As of 10.1.0, Titanium requires JDK 11 or higher to build Android projects.
 :::
 
-#### Unsupported versions
+
+
+<details>
+<summary><b>Unsupported versions</b></summary>
+
 
 | Titanium SDK Version | Min Target Android Version  <br />(android:targetSdkVersion) | Max Target Android Version  <br />(android:targetSdkVersion) | Min Supported Android Version  <br />(android:minSdkVersion) |
 | --- | --- | --- | --- |
+| 8.3.0 - 9.2.2 | 6.0.x (API 23) | 10.0.x (API 29) | 4.4.x (API 19) |
+| 8.0.0 - 8.2.2 | 6.0.x (API 23) | 9.0.x (API 28) | 4.4.x (API 19) |
+| 7.5.0 - 7.5.1 | 6.0.x (API 23) | 9.0.x (API 28) | 4.1.x (API 16) |
+| 7.3.0 - 7.4.1 | 6.0.x (API 23) | 8.1.x (API 27) | 4.1.x (API 16) |
+| 7.0.0 - 7.2.0 | 6.0.x (API 23) | 7.0.x (API 25) | 4.1.x (API 16) |
 | 6.2.0 - 6.3.0 | 7.1.x (API 25) | 6.0.x (API 23) | 4.1.x (API 16) |
 | 6.0.0 - 6.1.x | 6.0.x (API 23) | 6.0.x (API 23) | 4.1.x (API 16) |
 | 5.1.0 - 5.5.x | 6.0.x (API 23) | 6.0.x (API 23) | 4.0.x (API 14) |
@@ -88,6 +95,9 @@ Each Titanium SDK supports building against a specific range of Android versions
 
 \*\* The Titanium SDK does not support the [Android 4.4W SDK](http://developer.android.com/wear/index.html) (API 20), also known as the Android Wear SDK.
 :::
+
+</details>
+
 
 Most mobile device manufacturers have been licensed to use Google's enhanced API, which provides support for Maps and other functionality. If this is the case for your target devices, you will need to install the relevant Google packages, listed as _Google APIs by Google Inc., Android API x..._ by the **Android SDK Manager** tool. In Studio, choose the SDKs with the naming format "Google APIs x.x" to use the enhanced APIs, or those without the "Google APIs" prefix otherwise.
 

@@ -65,7 +65,7 @@ With the release of Titanium SDK 9.0.0, Windows platform will no longer be suppo
 
 * [TIMOB-27822](https://jira-archive.titaniumsdk.com/TIMOB-27822) - Ti.UI.iPad.Popover including arrow in content view on iOS 13 ([9b349fb](https://github.com/tidev/titanium_mobile/commit/9b349fbe312774a5f25d6f11aac85db36d41bf15))
 
-* [TIMOB-27824](https://jira-archive.titaniumsdk.com/TIMOB-27824) - Hyperloop: iOS - build fails after updating XCode to 11.4 ([14f7bb5](https://github.com/tidev/titanium_mobile/commit/14f7bb5b666534342aa5c8afefab53e61d7b5729))
+* [TIMOB-27824](https://jira-archive.titaniumsdk.com/TIMOB-27824) - Hyperloop: iOS - build fails after updating Xcode to 11.4 ([14f7bb5](https://github.com/tidev/titanium_mobile/commit/14f7bb5b666534342aa5c8afefab53e61d7b5729))
 
 * [TIMOB-27827](https://jira-archive.titaniumsdk.com/TIMOB-27827) - Error reporting is broken after updating to Xcode 11.4 / iOS 13.4 ([3e06680](https://github.com/tidev/titanium_mobile/commit/3e0668000ef1baac5dff3570cf2a36c61ee91d8e))
 
