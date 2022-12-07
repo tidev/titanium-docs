@@ -228,13 +228,6 @@ To send an interactive push notification, send a payload with the category field
 }
 ```
 
-To send the payload, you can use either the:
-
-* Appcelerator Dashboard: [Sending and Scheduling Push Notifications](#undefined)
-
-* Titanium Cloud Module (ti.cloud) APIs: [Cloud.PushNotifications.notify()](#!/api/Modules.Cloud.PushNotifications-method-notify) or [Cloud.PushNotifications.notifyTokens()](#!/api/Modules.Cloud.PushNotifications-method-notifyTokens)
-
-* Arrow REST APIs: [PushNotification.notify](/arrowdb/latest/#!/api/PushNotifications-method-notify) or [PushNotification.notify\_tokens](/arrowdb/latest/#!/api/PushNotifications-method-notify_token)
 
 ## Example
 

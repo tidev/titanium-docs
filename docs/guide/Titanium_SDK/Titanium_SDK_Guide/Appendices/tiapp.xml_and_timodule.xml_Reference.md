@@ -141,12 +141,15 @@ This element includes subelements of modules to include with the project.
 
     Define the `deploy-type` attribute if you want to use the module in specific environments. To specify one or more environment, comma-separate the environment types. You may specify the following environments: `development`, `test` or `production`.
 
-**Example: Include the ti.cloud module**
+**Example: Include the ti.map module**
 
 ```xml
 <modules>
-    <module platform="commonjs">ti.cloud</module>
-    <module platform="android" deploy-type="development,test">junit</module>
+    <module>ti.map</module>
+    <!--
+    <module platform="android">ti.map</module>
+    <module platform="ios">ti.map</module>
+  -->
 </modules>
 ```
 

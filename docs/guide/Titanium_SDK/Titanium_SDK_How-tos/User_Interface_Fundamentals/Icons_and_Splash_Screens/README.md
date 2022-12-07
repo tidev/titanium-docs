@@ -31,6 +31,40 @@ You can change but not remove the splash screen that is shown as your app loads.
 
 #### Android splash screen considerations
 
+##### Android 12+
+
+Beginning with Android 12 you will see the icon as a splash screen. For more details check [the Android guides](https://developer.android.com/develop/ui/views/launch/splash-screen). Make sure you use [Adaptive icons](https://developer.android.com/develop/ui/views/launch/icon_design_adaptive). A useful tutorial can be found at [from zero to app](https://fromzerotoapp.com/android-adaptive-icons/).
+
+If you want to change the background color use this in your theme:
+
+tiapp.xml (adjust the name to match our app activity in this form: `xx.xx.<AppName>Activity`:
+```xml
+<application >
+	<activity android:name="com.myapp.MyAppActivity" android:theme="@style/Theme.Custom.Splash" />
+</application>
+```
+
+theme:
+```xml
+<style name="Theme.Custom.Splash" parent="@style/Theme.MaterialComponents.NoActionBar">
+  <item name="android:windowBackground">@drawable/background_cropped</item>
+  <item name="android:windowSplashScreenBackground">@color/orange</item>
+</style>
+```
+drawable/background_cropped.xml:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:drawable="@color/orange"/>
+	<item>
+		<bitmap android:src="@drawable/background" android:gravity="center"/>
+	</item>
+</layer-list>
+```
+(drawable/background.png is the logo).
+
+##### Android <12
+
 For Android, you can either use the `default.png` file or create a [nine-patch image](https://developer.android.com/studio/write/draw9patch).
 
 Since Android devices are available in different screen sizes and densities, Google recommends using a nine-patch image as the recommended graphics format to support different devices. A nine-patch image is a PNG with regions specified as stretchable or not stretchable. For example, if you have an image with a logo centered against a solid background, you can create a nine-patch image with the area around the logo as stretchable. If the image needs to be stretched for a larger device, the solid background color will be stretched, leaving the logo untouched.
