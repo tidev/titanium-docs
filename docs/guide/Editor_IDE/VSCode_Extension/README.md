@@ -13,4 +13,4 @@ The Titanium extension is an Appcelerator Titanium build tools and editor additi
 
 ## Prerequisites
 
-To use this extension, you'll need Titanium CLI and Titanium SDK set up prior to installation. Following the information in [Titanium CLI Getting Started](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/Appcelerator_CLI_Getting_Started/) will install Titanium CLI and Titanium SDK.
+To use this extension, you'll need Titanium CLI and Titanium SDK set up prior to installation. Following the information in [Titanium CLI Getting Started](/guide/Titanium_SDK/Titanium_SDK_Guide/Titanium_Command-Line_Interface_Reference/) will install Titanium CLI and Titanium SDK.

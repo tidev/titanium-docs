@@ -13,34 +13,20 @@ The first step is to create a new Mobile App Project and select a starting templ
 
 **To create a new project:**
 
-1. In Studio, either:
+1. Using the CLI you can run
 
-    1. Press **⌘+N** (Mac) or **Ctrl+N** (Windows) to open the project wizard dialog.
+    1. `ti create` and continue with the menu
+    ![ti create](./ti_create.png)
+    2. After that you go into the folder and run `alloy new` to create an Alloy project.
 
-    2. Or from the menu bar, select **File** > **New** > **Mobile App Project**.
 
-2. Select **Mobile App Project** as the wizard type and click **Next**.
+2. If you use VSCode you can click on the `Create App` button
+    ![ti create](./ti_create_vscode.png)
 
-    ![Studio-Select-a-wizard](./Studio-Select-a-wizard.png)
-3. On the **Project Template** page, select **Default Alloy Project** as the template type. Click **Next**.
 
-    ![Studio-Project-Template](./Studio-Project-Template.png)
-4. On the **Project Location** page, enter the following information:
+3. In the **Explorer** view, open **index.xml** located in the **app/views** folder.
 
-    * In the **Project Name** field, enter **Hello**.
-
-    * In the **App ID** field, enter **com.example.hello**. This format is called reverse domain notation. You must use your own domain before publishing your application to market, but for testing purposes a temporary domain is fine.
-
-    * Select one or more **Deployment Targets**. By default, Studio selects all available targets platforms that you have installed.
-
-    * Disable enable Axway Appcelerator Platform Services (defaults to enabled) as we won't use this service for this app.
-
-        ![Studio-Project-Location](./Studio-Project-Location.png)
-5. Click **Finish** to create the project. By default, the application's configuration file called `tiapp.xml` opens up in the TiApp Editor. You can close that file.
-
-6. In the **Project Explorer** view, open **index.xml** located in the **app/views** folder.
-
-    ![Studio-Hello-Titanium](./Studio-Hello-Titanium.png)
+    ![ti create](./ti_create_vscode2.png)
 
     When developing an app in Alloy, you create your UI declaratively using XML elements that, during compilations, are mapped to standard Titanium SDK objects. For instance, the default Alloy template includes a `<Label>` element that corresponds to a [Label](#!/api/Titanium.UI.Label) object.
 
@@ -52,14 +38,17 @@ The first step is to create a new Mobile App Project and select a starting templ
 
 To run the application you select a target simulator, emulator, or device, and click **Run**. The targets available for you to test with depends on which native SDKs you previously installed. For this example, it's assumed you've installed Xcode and are targeting an iOS simulator. If you are targeting Android, select an appropriate simulator, emulator or device from the **Target** menu.
 
-1. Select the project in Project Explorer.
 
-2. Make sure **Run** is selected in the **Launch Mode** drop-down.
+1. From the **Build** menu, select an iOS or Android simulator.
+    ![ti create](./ti_create_vscode3.png)
 
-3. From the **Target** drop-down, select an iOS simulator.
-    ![select_sim](./select_sim.png)
+2. You can also use the CLI and run `ti build -p ios` or `ti build -p android`.
 
-4. Click **Run**. Your application will compile and launch in the iOS Simulator. Click the **Hello, Titanium** label text. An alert dialog appears.
+3. Click **Play** button. Your application will compile and launch in the iOS Simulator. Click the **Hello, Titanium** label text. An alert dialog appears.
     ![sim_output_loaded](./sim_output_loaded.png) ![sim_output_alert](./sim_output_alert.png)
 
-If you run into problems running your application, see [Studio Troubleshooting](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Studio_Troubleshooting/).
+## Next steps
+
+As a next step have a look at [Creating_Your_First_Titanium_App](./Creating_Your_First_Titanium_App/), other examples, tutorials or the [API documentation](./api/) to extend your project.
+
+You can find tutorials more basic tutorials at [from zero to app](https://fromzerotoapp.com) and a whole demo app where you can see all UI elements in the [Kitchensink repo](https://github.com/tidev/kitchensink-v2).

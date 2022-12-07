@@ -184,9 +184,9 @@ At this point we’re now ready to test our app. For comparison, we’ll run the
 
 **To launch the app in the iPhone simulator**:
 
-* From the Target menu in the top-right corner of Studio, select **iOS Simulator** > **iPhone**. By default, Studio is configured to automatically launch when you select a target platform. Wait for the app to complete launching in the simulator.
+* From the Build menu in VSCode, select **iOS Simulator** > **iPhone**. By default, Studio is configured to automatically launch when you select a target platform. Wait for the app to complete launching in the simulator.
 
-    ![simulators](./simulators.png)
+    ![simulators](./ti_create_vscode3.png)
 
 **To launch the app in an Android emulator**
 
