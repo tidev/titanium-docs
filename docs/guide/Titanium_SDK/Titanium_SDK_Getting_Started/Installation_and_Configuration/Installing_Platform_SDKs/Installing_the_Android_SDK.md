@@ -27,7 +27,7 @@ As of Titanium 9.0.0, the build system will automatically download the Android S
 ![android_platform_tools.png](android_platform_tools.png)
 
 <details>
-<summary><b>For Titanium 8.x.x</b></summary>
+<summary><b>Details for Titanium 8.x.x and later</b></summary>
 
 For Titanium 8.x.x, you need to installed the following packages via the Android SDK Manager yourself:
 
@@ -36,11 +36,6 @@ For Titanium 8.x.x, you need to installed the following packages via the Android
 | Android SDK Tools | Rev 28 |
 | Android SDK Build-tools | Rev 23 |
 | Android SDK Platform (API Level) | API Level 29 for Titanium 8.3.x<br /><br />API Level 28 for Titanium version older than 8.3.0 |
-
-::: warning ⚠️ Warning
-Titanium SDK 7.0.0+ requires Android SDK Tools v25 or newer as a minimum requirement.
-:::
-::: warning ⚠️ Warning
 
 </details>
 

@@ -19,7 +19,7 @@ Besides this documentation you can look at [from zero to app](https://fromzeroto
 
 ## No iOS simulator is visible or it will say "Unable to find an iOS Simulator"
 
-Go to XCode and make sure `preferences->locations->Command Line Tools` is set to the correct XCode path.
+Go to Xcode and make sure `preferences->locations->Command Line Tools` is set to the correct Xcode path.
 
 ## VSCode won't update the CLI
 
@@ -29,9 +29,9 @@ Run `sudo npm i -g titanium alloy` in a terminal and restart VSCode. Then it sho
 
 Check [Transfer your app from appc CLI to ti CLI](/guide/Titanium_SDK/Titanium_SDK_How-tos/Transfer_your_app_from_appc_CLI_to_ti_CLI/) and change the GUID inside tiapp.xml.
 
-## My Android app is not using my splashscreen image but shows the icon when starting on Android 12+
+## My Android app is not using my splash screen image but shows the icon when starting on Android 12+
 
-That is the way Android 12+ will start an app. For more details check [the Andorid guides](https://developer.android.com/develop/ui/views/launch/splash-screen). Make sure you use [Adaptive icons](https://fromzerotoapp.com/android-adaptive-icons/). If you want to change the background color use this in your theme:
+That is the way Android 12+ will start an app. For more details check [the Andriid guides](https://developer.android.com/develop/ui/views/launch/splash-screen). Make sure you use [Adaptive icons](https://fromzerotoapp.com/android-adaptive-icons/). If you want to change the background color use this in your theme:
 
 tiapp.xml (adjust the name!):
 ```xml
@@ -136,7 +136,7 @@ You can change the build tools version using this command: `ti config android.bu
 
 ## Building Android modules using a M1 Mac - solving NDK issues
 
-Go to `.../android-sdk/ndk/21.4.7075529` and edit `ndk-build`. Change
+Go to `.../android-sdk/ndk/<your-version>` (e.g. `21.4.7075529`) and edit `ndk-build`. Change
 ```
 #!/bin/sh
 DIR="$(cd "$(dirname "$0")" && pwd)"

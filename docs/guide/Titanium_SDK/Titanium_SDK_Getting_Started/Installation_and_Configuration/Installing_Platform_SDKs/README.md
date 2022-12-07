@@ -5,7 +5,7 @@ weight: '20'
 
 # Installing Platform SDKs
 
-To develop native mobile applications with Titanium you need to have the SDKs installed for your target platform. For instance, to develop Android applications you need the Android SDK and toolchain installed, and XCode to develop iOS applications. You can either use Studio's Platform Configuration tool to automate the installation process or install these SDKs manually.
+To develop native mobile applications with Titanium you need to have the SDKs installed for your target platform. For instance, to develop Android applications you need the Android SDK and toolchain installed, and Xcode to develop iOS applications. You can either use Studio's Platform Configuration tool to automate the installation process or install these SDKs manually.
 
 ## Studio Platform Configuration Tool
 
@@ -15,7 +15,7 @@ When the **Platform Configuration** dialog opens, this dialog indicates which pl
 
 In the dialog, select the SDKs you want to install and optionally click **Settings** to specify a few basic settings for each (described in more detail the below sections). Click **Configure** to start the installation process.
 
-Studio begins downloading and installing each SDK you selected, according to the settings you specified. In the case of iOS, Studio launches the App Store application installed on your Mac to the XCode download page.
+Studio begins downloading and installing each SDK you selected, according to the settings you specified. In the case of iOS, Studio launches the App Store application installed on your Mac to the Xcode download page.
 
 ### Android settings
 

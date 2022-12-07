@@ -33,11 +33,11 @@ You can change but not remove the splash screen that is shown as your app loads.
 
 ##### Android 12+
 
-Beginning with Android 12 you will see the icon as a Splashscreen. For more details check [the Andorid guides](https://developer.android.com/develop/ui/views/launch/splash-screen). Make sure you use [Adaptive icons](https://fromzerotoapp.com/android-adaptive-icons/).
+Beginning with Android 12 you will see the icon as a splash screen. For more details check [the Android guides](https://developer.android.com/develop/ui/views/launch/splash-screen). Make sure you use [Adaptive icons](https://developer.android.com/develop/ui/views/launch/icon_design_adaptive). A useful tutorial can be found at [from zero to app](https://fromzerotoapp.com/android-adaptive-icons/).
 
 If you want to change the background color use this in your theme:
 
-tiapp.xml (adjust the name!):
+tiapp.xml (adjust the name to match our app activity in this form: `xx.xx.<AppName>Activity`:
 ```xml
 <application >
 	<activity android:name="com.myapp.MyAppActivity" android:theme="@style/Theme.Custom.Splash" />
