@@ -9,7 +9,7 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 | Android |
 | ------- |
-| ![Android](./progressIndicator_android.png) |
+| ![Android](./progressindicator_android.png) |
 
 A progress indicator can be used to show the progress of an operation in the UI to let the
 user know that some action is taking place. It is used to indicate an ongoing activity of
