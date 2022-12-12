@@ -17,7 +17,7 @@ The behavior for "Horizontal" and "Vertical" layouts will be specified in anothe
 
 ## Backwards Compatibility and Deprecation
 
-In Titanium Mobile 2.0, the value of any layout parameter on a View will always maintain that value, making it "static". The properties `size`, and `rect`, will now serve as the "dynamic" APIs that provide position and size. We will also maintain backwards compatibility with the current "immediate mode" layout scheme, but this behavior will be marked as **DEPRECATED**. Moving forward, we will drop support for this method in favor of the the `startLayout` / `finishLayout`, and `updateLayout` semantics.
+In Titanium SDK 2.0, the value of any layout parameter on a View will always maintain that value, making it "static". The properties `size`, and `rect`, will now serve as the "dynamic" APIs that provide position and size. We will also maintain backwards compatibility with the current "immediate mode" layout scheme, but this behavior will be marked as **DEPRECATED**. Moving forward, we will drop support for this method in favor of the the `startLayout` / `finishLayout`, and `updateLayout` semantics.
 
 ## Definitions
 

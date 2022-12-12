@@ -92,7 +92,7 @@ To perform the steps in this activity, you will need two sound files. You can us
 
 #### Steps
 
-1. Create a new Titanium Mobile app. You can keep the starting code for this app; you'll modify what's there.
+1. Create a new Titanium SDK app. You can keep the starting code for this app; you'll modify what's there.
 
 2. Remove `label1` (it's definition, and the `win1.add()` statement). In its place, add a button with these characteristics:
 

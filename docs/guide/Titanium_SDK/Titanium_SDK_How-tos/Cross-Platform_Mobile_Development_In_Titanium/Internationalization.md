@@ -519,7 +519,7 @@ In this activity, you will create an internationalized app that outputs language
 
 ### Steps
 
-1. Create a new Titanium Mobile project named "Language Test" with an app ID of your choice.
+1. Create a new Titanium SDK project named "Language Test" with an app ID of your choice.
 
 2. Using your computer's file management tools, create an `i18n` directory at the `/app` directory of your project. In that directory, create two directories: `en` and `es`.
 

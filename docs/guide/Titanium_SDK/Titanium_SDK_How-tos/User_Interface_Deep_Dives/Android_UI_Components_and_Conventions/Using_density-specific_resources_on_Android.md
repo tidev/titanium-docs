@@ -100,7 +100,7 @@ To make dips the default unit for UI components in an Android application, it re
 
 ### Code Examples
 
-In Titanium Mobile, typically we specify fontSize or `height/width/top/bottom/left/right` values as integer values. On iPhone, these values correspond to the 320x480 point system used to lay out UI components (even though the densities of iPhone handsets can be different). On Android in 1.7, raw integer values (unless the tiapp.xml configuration is changed) correspond to real pixels on the screen. Consider the following simple app.js:
+In Titanium SDK, typically we specify fontSize or `height/width/top/bottom/left/right` values as integer values. On iPhone, these values correspond to the 320x480 point system used to lay out UI components (even though the densities of iPhone handsets can be different). On Android in 1.7, raw integer values (unless the tiapp.xml configuration is changed) correspond to real pixels on the screen. Consider the following simple app.js:
 
 ```javascript
 var win = Ti.UI.createWindow({

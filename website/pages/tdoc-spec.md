@@ -18,11 +18,11 @@ To see an example of this spec in use, check out the documentation for [Titanium
 
 ## Overview
 
-Titanium Mobile needs a richer documentation specification, particularly to capture more metadata and make it available both to our SDK users who browse the online documentation and to other software such as code assist in various IDEs or for TypeScript typings.
+Titanium SDK needs a richer documentation specification, particularly to capture more metadata and make it available both to our SDK users who browse the online documentation and to other software such as code assist in various IDEs or for TypeScript typings.
 
 This document descripes our SDK documentation specification based on YAML, which offers a well-structured yet still readable format.
 
-Though the primary driver is to be a Titanium Mobile SDK documentation format, the goal here is also to have a specification that can be applied to Titanium modules that are external to the Mobile SDK, including those created by third-party developers.
+Though the primary driver is to be a Titanium SDK documentation format, the goal here is also to have a specification that can be applied to Titanium modules that are external to the Mobile SDK, including those created by third-party developers.
 
 ## Goals
 
@@ -57,7 +57,7 @@ Since Titanium is running in a JavaScript runtime you can generally use all type
 
 #### `Titanium.XX`
 
-This is shorthand to signify the types that are defined within the documentation. In fact, they don't have to be the `Titanium.XX` namespace; any fully-qualified name defined within the set of documentation being parsed can be used as a type name. But since this specification will first be used for Titanium Mobile, `Titanium.XX` is used here as the example.
+This is shorthand to signify the types that are defined within the documentation. In fact, they don't have to be the `Titanium.XX` namespace; any fully-qualified name defined within the set of documentation being parsed can be used as a type name. But since this specification will first be used for Titanium SDK, `Titanium.XX` is used here as the example.
 
 #### `Dictionary<[type]>`
 

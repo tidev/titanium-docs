@@ -90,7 +90,7 @@ In this activity, you will write the beginnings of an RSS reader. It will downlo
 
 #### Steps
 
-1. Create a new Titanium Mobile project.
+1. Create a new Titanium SDK project.
 
 2. Replace the contents of app.js with code that defines a single window with a white background. To that window, add a TableView.
 

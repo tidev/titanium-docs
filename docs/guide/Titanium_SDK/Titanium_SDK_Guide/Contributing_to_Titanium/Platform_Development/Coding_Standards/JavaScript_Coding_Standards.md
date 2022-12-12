@@ -13,7 +13,7 @@ weight: '30'
 
 Any violation to these standards is allowed if it enhances readability.
 
-This guide serves as the coding standard for all Appcelerator JavaScript code including the Mobile Web platform, Titanium Mobile project templates, KitchenSink, and all other sample code.
+This guide serves as the coding standard for all Appcelerator JavaScript code including the Mobile Web platform, Titanium SDK project templates, KitchenSink, and all other sample code.
 
 1. All variables, functions, methods, class names, and comments SHOULD be written in English.
 

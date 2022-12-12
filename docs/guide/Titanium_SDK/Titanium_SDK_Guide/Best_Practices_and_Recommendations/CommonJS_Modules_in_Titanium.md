@@ -7,7 +7,7 @@ weight: '20'
 
 ## Synopsis
 
-Titanium Mobile is moving toward the adoption of the CommonJS module specification as the way in which end users of the platform structure their JavaScript code. While CommonJS Modules are a "standard" [specification](http://wiki.commonjs.org/wiki/Modules/1.1), there are differences in implementation across multiple technology stacks.
+Titanium SDK is moving toward the adoption of the CommonJS module specification as the way in which end users of the platform structure their JavaScript code. While CommonJS Modules are a "standard" [specification](http://wiki.commonjs.org/wiki/Modules/1.1), there are differences in implementation across multiple technology stacks.
 
 ::: tip 💡 Hint
 Since Titanium SDK 7.1.0, you can also use ES6+ classes to export your modules instead, e.g. by using `export default class MyClass` and `import` statements. It will be transpiled down to ES5, so all native platforms can benefit from it today, without restricting certain functionalities to higher platform levels.
@@ -15,7 +15,7 @@ Since Titanium SDK 7.1.0, you can also use ES6+ classes to export your modules i
 
 ### Definitions
 
-* **Module** - Any CommonJS-compliant module which will be consumed in a Titanium Mobile application. This can be a JavaScript file included with an application, or a native extension to Titanium which exposes a JavaScript API.
+* **Module** - Any CommonJS-compliant module which will be consumed in a Titanium SDK application. This can be a JavaScript file included with an application, or a native extension to Titanium which exposes a JavaScript API.
 
 * **Resources** - The Resources directory of a Titanium application, where the user's source code lives before any processing by our build system. **Note**: For Alloy, CommonJS modules are placed in `app/lib`
 
@@ -35,7 +35,7 @@ In order to use a module within Titanium, you must use the `require` function, w
 var myModule = require('MyModule');
 ```
 
-The string passed to `require` must be resolvable to either a native/compiled module that Titanium Mobile has access to, or a JavaScript module provided in the Resources directory of the Titanium Mobile application. The `require` function returns an JavaScript object, with properties, functions, and other data assigned to it which form the public interface to the module. If the module we loaded into the application above exposed a function `sayHello`, which would print a name and a welcome message to the console, it would be accessed in this way:
+The string passed to `require` must be resolvable to either a native/compiled module that Titanium SDK has access to, or a JavaScript module provided in the Resources directory of the Titanium SDK application. The `require` function returns an JavaScript object, with properties, functions, and other data assigned to it which form the public interface to the module. If the module we loaded into the application above exposed a function `sayHello`, which would print a name and a welcome message to the console, it would be accessed in this way:
 
 ```javascript
 var myModule = require('MyModule');
@@ -45,7 +45,7 @@ myModule.sayHello('Kevin');
 
 ### Native/Compiled versus JavaScript modules
 
-When a module is required, Titanium must first determine whether or not to load a native/compiled module or a JavaScript module shipped within the Resources directory of a Titanium Mobile application. Titanium will prefer to load a native module first. The deployment and processing of native modules is beyond the scope of this specification, but at the time of this writing, native modules can be deployed globally on a developer machine, or inside a **modules** directory in the top-level Titanium Mobile project directory.
+When a module is required, Titanium must first determine whether or not to load a native/compiled module or a JavaScript module shipped within the Resources directory of a Titanium SDK application. Titanium will prefer to load a native module first. The deployment and processing of native modules is beyond the scope of this specification, but at the time of this writing, native modules can be deployed globally on a developer machine, or inside a **modules** directory in the top-level Titanium SDK project directory.
 
 #### Native/Compiled modules
 
@@ -57,7 +57,7 @@ Native/compiled modules are identified by a single string, specified within the 
 </modules>
 ```
 
-and the following code within a Titanium Mobile application:
+and the following code within a Titanium SDK application:
 
 ```javascript
 var paypal = require('ti.paypal');
@@ -67,7 +67,7 @@ Titanium will load the `ti.paypal` native module, and will NOT attempt to look f
 
 #### JavaScript modules
 
-Modules may also be loaded as JavaScript files from the Resources directory of the application. In Titanium Mobile, a JavaScript module is associated with a single JavaScript file. When the module is loaded, the JavaScript file will be evaluated and the public interface of the module will be populated.
+Modules may also be loaded as JavaScript files from the Resources directory of the application. In Titanium SDK, a JavaScript module is associated with a single JavaScript file. When the module is loaded, the JavaScript file will be evaluated and the public interface of the module will be populated.
 
 ### JavaScript module path resolution
 

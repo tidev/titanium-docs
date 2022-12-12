@@ -181,7 +181,7 @@ In this activity, you will download a large image file, uploading a progress bar
 
 #### Steps
 
-1. Create a new Titanium Mobile project. You can keep the two-tab code or replace it.
+1. Create a new Titanium SDK project. You can keep the two-tab code or replace it.
 
 2. To the window, add a progress indicator centered in the window, 10 pixels from the top, with a width of 200 and height of 50. Set the minimum value to 0, max to 1, and current value to 0. Show the indicator.
 

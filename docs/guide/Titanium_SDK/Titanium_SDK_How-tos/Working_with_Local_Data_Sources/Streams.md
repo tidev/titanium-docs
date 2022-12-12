@@ -7,7 +7,7 @@ weight: '60'
 
 ## Overview
 
-A stream is a data type used to serially read and write bytes. The term "Stream", used generically, refers to a data type which implements a particular interface consisting of the methods that you would expect from a stream-like object, namely `read()`, `write()`, `close()`, `isWritable()`, and `isReadable()`. The Titanium Mobile SDK, starting with version 1.7.0, defines four types which implement this interface:
+A stream is a data type used to serially read and write bytes. The term "Stream", used generically, refers to a data type which implements a particular interface consisting of the methods that you would expect from a stream-like object, namely `read()`, `write()`, `close()`, `isWritable()`, and `isReadable()`. The Titanium SDK, starting with version 1.7.0, defines four types which implement this interface:
 
 * `Titanium.Stream.BufferStream`, an in-memory stream implementation.
 

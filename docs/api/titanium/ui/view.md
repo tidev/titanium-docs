@@ -146,7 +146,7 @@ a layout cycle.
 
 ### Accessibility
 
-Four accessibility-related view properties are available in Titanium Mobile for iOS
+Four accessibility-related view properties are available in Titanium SDK for iOS
 and Android:
 
 * <Titanium.UI.View.accessibilityLabel>
@@ -192,7 +192,7 @@ For best results on ImageView set up the `backgroundLeftCap` and `backgroundTopC
 
 ### iOS Clipping Behavior
 
-Four view related properties are available in Titanium Mobile for iOS.
+Four view related properties are available in Titanium SDK for iOS.
 
 * <Titanium.UI.View.viewShadowRadius>
 * <Titanium.UI.View.viewShadowColor>
@@ -212,7 +212,7 @@ When set to <Titanium.UI.iOS.CLIP_MODE_DEFAULT> or when this property is not set
 * If the view has one or more `children` clipping is enabled.
 * If none of the conditions are met, clipping is disabled.
 
-In earlier versions of Titanium Mobile, views had clipping enabled by default.
+In earlier versions of Titanium SDK, views had clipping enabled by default.
 
 ### iOS Animation on shadow associated with view
 

@@ -25,7 +25,7 @@ This chapter has several sections dedicated to how-to instructions for Titanium 
 
 * [Working with Media APIs](/guide/Titanium_SDK/Titanium_SDK_How-tos/Working_with_Media_APIs/)
 
-* [Extending Titanium Mobile](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/)
+* [Extending Titanium SDK](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/)
 
 * [Working with Remote Data Sources](/guide/Titanium_SDK/Titanium_SDK_How-tos/Working_with_Remote_Data_Sources/)
 

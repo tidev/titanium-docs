@@ -77,7 +77,7 @@ View guidelines we developed to help code and organize your applications.
 
 Learn about how to package your application and guidelines for submitting your app to app stores and marketplaces.
 
-**[Extending Titanium Mobile](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/)**
+**[Extending Titanium SDK](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/)**
 
 Can't find a feature Titanium exposed? Create your own native module to access features Titanium has not implemented yet.
 

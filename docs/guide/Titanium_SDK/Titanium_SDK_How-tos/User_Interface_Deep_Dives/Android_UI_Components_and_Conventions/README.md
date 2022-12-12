@@ -187,7 +187,7 @@ In this activity, you will manage the hardware Back button so that the first tim
 
 ### Steps
 
-1. Create a new Titanium Mobile project.
+1. Create a new Titanium SDK project.
 
 2. Delete the contents of app.js and create a new one to these specifications:
 

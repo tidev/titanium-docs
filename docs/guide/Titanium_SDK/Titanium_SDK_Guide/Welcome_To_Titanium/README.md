@@ -27,7 +27,7 @@ In this chapter, you'll and learn the basics of writing cross-platform mobile ap
 
 ## Sections in this chapter
 
-**[What is Titanium Mobile?](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Titanium_Platform_Overview.html)**
+**[What is Titanium SDK?](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Titanium_Platform_Overview.html)**
 
 In this section, you'll get your first look at Titanium's features and architecture.
 
@@ -43,4 +43,4 @@ Here you will see the resources available to you as a Titanium developer. This s
 
 In the last section of this chapter, you'll briefly explore programming in JavaScript, as well as the learning resources available to you.
 
-So let's get started: [What is Titanium Mobile? >](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Titanium_Platform_Overview.html)
+So let's get started: [What is Titanium SDK? >](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Titanium_Platform_Overview.html)

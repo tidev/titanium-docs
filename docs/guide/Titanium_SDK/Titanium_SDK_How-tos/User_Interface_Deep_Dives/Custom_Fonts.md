@@ -5,7 +5,7 @@ weight: '70'
 
 # Custom Fonts
 
-Custom fonts are a quick and easy way to personalize or brand your application. Titanium Mobile supports TrueType and OpenType fonts on both iOS and Android. There are some differences between how fonts are referenced on iOS and Android that need to be considered.
+Custom fonts are a quick and easy way to personalize or brand your application. Titanium SDK supports TrueType and OpenType fonts on both iOS and Android. There are some differences between how fonts are referenced on iOS and Android that need to be considered.
 
 ![screenshot](./screenshot.png)
 
@@ -13,7 +13,7 @@ For an example of using custom fonts, download the [Custom\_Fonts](./attachments
 
 ## Finding fonts
 
-You will need TTF or OTF font files to ship with your Titanium Mobile project. Depending on your application's license and distribution model, you might need to pay for such use, or you might be able to use an open source font. Below are links to a couple of sources of fonts:
+You will need TTF or OTF font files to ship with your Titanium SDK project. Depending on your application's license and distribution model, you might need to pay for such use, or you might be able to use an open source font. Below are links to a couple of sources of fonts:
 
 * [Google WebFonts](http://www.google.com/webfonts) - Free fonts, mostly open source but some licenses for use in commercial projects
 

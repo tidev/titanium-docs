@@ -269,4 +269,4 @@ In this section, you learned how memory is managed by JavaScript and Titanium. Y
 
 * Video: Your Apps are Leaking, by Rick Blalock at [Codestrong 2011](http://vimeopro.com/appcelerator/codestrong-2011/video/29804284)
 
-* Titanium Mobile [Best Practices and Recommendations](/guide/Titanium_SDK/Titanium_SDK_Guide/Best_Practices_and_Recommendations/)
+* Titanium SDK [Best Practices and Recommendations](/guide/Titanium_SDK/Titanium_SDK_Guide/Best_Practices_and_Recommendations/)
