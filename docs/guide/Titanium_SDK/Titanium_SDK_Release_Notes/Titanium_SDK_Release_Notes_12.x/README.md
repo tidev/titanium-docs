@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK Release Notes 12.x
-weight: '9'
+weight: '8'
 ---
 
 # Titanium SDK Release Notes 12.x
