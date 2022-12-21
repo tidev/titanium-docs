@@ -75,7 +75,7 @@ Execution failed for task ':app:checkDebugDuplicateClasses'.
 ```
 configurations {
 	all {
-			exclude group: 'com.google.guava', module: 'listenablefuture'
+		exclude group: 'com.google.guava', module: 'listenablefuture'
 	}
 }
 ```
