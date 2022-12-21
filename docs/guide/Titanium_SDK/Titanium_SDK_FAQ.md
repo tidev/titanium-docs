@@ -59,6 +59,41 @@ drawable/background_cropped.xml:
 ```
 (drawable/background.png is the logo)
 
+## Common gradle error messages and fixes
+
+Depending on your Android modules you might see some error messages by gradle that can be fixed using some entries in `app/platform/android/build.gradle` (or `/platform/android/build.gradle` in a classic project).
+
+---
+**Error:**
+```
+Execution failed for task ':app:checkDebugDuplicateClasses'.
+ > A failure occurred while executing com.android.build.gradle.internal.tasks.CheckDuplicatesRunnable
+ > Duplicate class com.google.common.util.concurrent.ListenableFuture found in modules jetified-guava-12.0 (guava-12.0.jar) and jetified-listenablefuture-1.0 (com.google.guava:listenablefuture:1.0)
+```
+
+**Solution:**
+```
+configurations {
+	all {
+		exclude group: 'com.google.guava', module: 'listenablefuture'
+	}
+}
+```
+---
+**Error:**
+```
+ > Duplicate class androidx.lifecycle.ViewModelLazy found in modules jetified-lifecycle-viewmodel-ktx-2.3.1-runtime (androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1) and lifecycle-viewmodel-2.4.0-runtime (androidx.lifecycle:lifecycle-viewmodel:2.4.0)
+```
+
+**Solution:**
+```
+configurations {
+	all {
+		exclude group: 'androidx.lifecycle', module: 'lifecycle-viewmodel-ktx'
+	}
+}
+```
+
 ## Can I use Swift code to develop apps for Android in Hyperloop?
 
 Short answer is no. You cannot use Swift code to develop Android apps. Classes in Hyperloop map to the underlying classes defined in Objective-C for iOS and in Java for Android.
