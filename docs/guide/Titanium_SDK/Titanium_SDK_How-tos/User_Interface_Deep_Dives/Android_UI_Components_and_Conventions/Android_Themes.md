@@ -61,8 +61,8 @@ As of Titanium 12.0.0 you can use Material 3 dynamic color themes. Titanium prov
 | Theme Name | SDK Version | Description |
 | --- | --- | --- |
 | Theme.Titanium.Material3.DayNight | 12.0.0 | Material 3 default day/night theme with dynamic colors. |
-| Theme.Titanium.Material3.DayNight.NoTitleBar | 12.0.0 | Material 3 default day/night theme with dynamic colors and no actionbar. |
-| Theme.Titanium.Material3.DayNight.Fullscreen | 12.0.0 | Material 3 default day/night theme with dynamic colors and no actionbar and no status bar.|
+| Theme.Titanium.Material3.DayNight.NoTitleBar | 12.0.0 | Material 3 default day/night theme with dynamic colors and no action bar. |
+| Theme.Titanium.Material3.DayNight.Fullscreen | 12.0.0 | Material 3 default day/night theme with dynamic colors and no action bar and no status bar.|
 
 You can also use custom themes with a Material 3 parent like this:
 ```xml
