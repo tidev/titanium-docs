@@ -54,6 +54,21 @@ As of Titanium 10.0.0, all of the below are material based themes which support 
 | Theme.AppDerived.Translucent.NoTitleBar | 10.0.0 | Derives from `<application/>` assigned theme, applies a transparent background, excludes action bar, and keeps the status bar.<br /><br />Can only be applied to activities and not the application. |
 | Theme.AppDerived.Translucent.Fullscreen | 10.0.0 | Derives from `<application/>` assigned theme, applies a transparent background, excludes action bar, and excludes status bar.<br /><br />Can only be applied to activities and not the application. |
 
+## Titanium material 3 themes
+
+As of Titanium 12.0.0 you can use Material 3 dynamic color themes. Titanium provides some default themes:
+
+| Theme Name | SDK Version | Description |
+| --- | --- | --- |
+| Theme.Titanium.Material3.DayNight | 12.0.0 | Material 3 default day/night theme with dynamic colors. |
+| Theme.Titanium.Material3.DayNight.NoTitleBar | 12.0.0 | Material 3 default day/night theme with dynamic colors and no action bar. |
+| Theme.Titanium.Material3.DayNight.Fullscreen | 12.0.0 | Material 3 default day/night theme with dynamic colors and no action bar and no status bar.|
+
+You can also use custom themes with a Material 3 parent like this:
+```xml
+<style name="AppTheme" parent="Theme.Material3.DynamicColors.DayNight" />
+```
+
 ## Titanium deprecated themes
 
 The below Titanium defined themes have been deprecated as of 10.0.0. The below should only be used by older Titanium versions.
