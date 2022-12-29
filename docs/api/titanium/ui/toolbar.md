@@ -68,7 +68,7 @@ win.open();
 
 ### Toolbar (iOS) with extended background
 
-The following code excerpt creates a simple toolbar, placed at the top of the window which extends its background under the status bar. 
+The following code excerpt creates a simple toolbar, placed at the top of the window which extends its background under the status bar.
 
 ``` js
 var win = Ti.UI.createWindow({
