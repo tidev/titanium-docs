@@ -17,7 +17,7 @@ Aside from functioning in an educational capacity, this guide also serves to mak
 
 ## Prerequisites
 
-* Familiarity with the open source [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html), the license that governs the Titanium Mobile SDK.
+* Familiarity with the open source [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html), the license that governs the Titanium SDK.
 
 * A working knowledge of [Git and Github](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Platform_Development/Git_and_Github/)
 
@@ -59,7 +59,7 @@ For comprehensive instructions on everything associated with submitting Jira tic
 
 ### 3\. Fork the Titanium SDK Repository on GitHub.
 
-To be able to submit changes to the Titanium Mobile SDK, you first need your own forked copy of the `titanium_mobile` project available on GitHub. You'll need a GitHub account of your own to be able to do so. To create your own fork of titanium\_mobile, you simple need to:
+To be able to submit changes to the Titanium SDK, you first need your own forked copy of the `titanium_mobile` project available on GitHub. You'll need a GitHub account of your own to be able to do so. To create your own fork of titanium\_mobile, you simple need to:
 
 1. Log in to your GitHub account.
 
@@ -114,7 +114,7 @@ This is where you will make your changes to the Titanium SDK. There's a few thin
 
 * Follow the Titanium coding standards: [Coding Standards](/guide/Titanium_SDK/Titanium_SDK_Guide/Contributing_to_Titanium/Platform_Development/Coding_Standards/).
 
-* Functionality added in a pull request must work on all supported versions of our platform. For example, any pull request submitted for both Android and iOS must support Android 2.2+ and iOS 4.0+ as of Titanium Mobile 1.8.
+* Functionality added in a pull request must work on all supported versions of our platform. For example, any pull request submitted for both Android and iOS must support Android 2.2+ and iOS 4.0+ as of Titanium SDK 1.8.
 
 * Parity between platforms must be preserved when adding functionality, where possible. To achieve this, you have 2 options
 

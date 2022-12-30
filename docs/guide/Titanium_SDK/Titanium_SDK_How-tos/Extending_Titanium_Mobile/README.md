@@ -1,11 +1,11 @@
 ---
-title: Extending Titanium Mobile
+title: Extending Titanium SDK
 weight: '90'
 ---
 
-# Extending Titanium Mobile
+# Extending Titanium SDK
 
-Our basic guides to extending Titanium Mobile with additional native functionality, broken down by platform.
+Our basic guides to extending Titanium SDK with additional native functionality, broken down by platform.
 
 ## Chapters
 

@@ -13,11 +13,11 @@ To see an example of this spec in use, check out the documentation for `Titanium
 
 ## Overview
 
-Titanium Mobile needs a richer documentation specification, particularly to capture more metadata and make it available both to our SDK users who browse the online documentation and to other software such as Studio's content assist feature.
+Titanium SDK needs a richer documentation specification, particularly to capture more metadata and make it available both to our SDK users who browse the online documentation and to other software such as Studio's content assist feature.
 
 This document introduces a new SDK documentation specification based on YAML, which offers a well-structured yet still readable format.
 
-Though the primary driver was a new Titanium **Mobile** SDK documentation format, the goal here is also to create a specification that can be applied to Titanium Desktop as well, in addition to Titanium modules that are external to the Mobile SDK and Desktop SDK code bases, including those created by third-party developers.
+Though the primary driver was a new Titanium SDK documentation format, the goal here is also to create a specification that can be applied to Titanium Desktop as well, in addition to Titanium modules that are external to the Mobile SDK and Desktop SDK code bases, including those created by third-party developers.
 
 ## Goals
 
@@ -55,7 +55,7 @@ The documentation shall be based on YAML. "Free-form text" property values in th
 
 The choice of YAML could prove controversial, as YAML has its lovers and haters. Therefore we include this separate justification section just for YAML.
 
-Many other projects don't need to make this choice of a separate "documentation language" because they can rely on their documentation being generated automatically via their code comments (Javadoc, etc.) The Titanium Mobile SDK has no single canonical code base because there are separate implementations for each platform. Therefore code comments cannot be relied upon for documentation.
+Many other projects don't need to make this choice of a separate "documentation language" because they can rely on their documentation being generated automatically via their code comments (Javadoc, etc.) The Titanium SDK has no single canonical code base because there are separate implementations for each platform. Therefore code comments cannot be relied upon for documentation.
 
 ##### Alternatives
 
@@ -101,7 +101,7 @@ There is precedent within the Titanium family for YAML: the Titanium Desktop SDK
 | Type | Notes |
 | --- | --- |
 | Object | Please don't misuse. We wish to emphasize the use of strong types. |
-| Titanium.XX.XX | This is shorthand to signify the types that are defined within the documentation. In fact, they don't have to be the `Titanium.XX` namespace; any fully-qualified name defined within the set of documentation being parsed can be used as a type name. But since this specification will first be used for Titanium Mobile, `Titanium.XX` is used here as the example. |
+| Titanium.XX.XX | This is shorthand to signify the types that are defined within the documentation. In fact, they don't have to be the `Titanium.XX` namespace; any fully-qualified name defined within the set of documentation being parsed can be used as a type name. But since this specification will first be used for Titanium SDK, `Titanium.XX` is used here as the example. |
 | Dictionary<\[type\]> | A special type+syntax indicating a dictionary – i.e., an object literal – whose members can be the properties of the specified \[type\]. Example: `Dictionary<Titanium.UI.Window>`. You might use this if you provide your own documentation for a proxy-creation method such as `Titanium.UI.createWindow` rather than rely on the auto-generated documentation for proxy-creation methods. In that case, you would use `Dictionary<Titanium.UI.Window>` for the type of the single parameter that `createWindow` takes. |
 | Callback<\[type\]> | A special type+syntax indicating a function used as a callback, whose single callback argument (the info passed to the callback) is of type \[type\], where \[type\] can be a type that you define elsewhere. We'll see examples of this in the special section on [callbacks](#documenting-callbacks). The angle bracket notation is optional: `Callback` by itself signifies simply a function that gets called, with no precise information concerning what is passed to it, if anything. |
 
@@ -795,7 +795,7 @@ To provide "strongly typed documentation" for these object literals and shared i
 
 ###### Pseudo-Types Useful to Just One Titanium Type
 
-Some of these _pseudo-types_ might be useful only to one Titanium type being documented. An example of this is the object that gets passed to `Titanium.Media.openPhotoGallery`: there is no other part of the Titanium Mobile SDK which cares about that object. In such cases, you should document the pseudo-type in the same file in which you are documenting the main type.
+Some of these _pseudo-types_ might be useful only to one Titanium type being documented. An example of this is the object that gets passed to `Titanium.Media.openPhotoGallery`: there is no other part of the Titanium SDK which cares about that object. In such cases, you should document the pseudo-type in the same file in which you are documenting the main type.
 
 With YAML, you can document multiple types in a single documentation file simply by starting a new "document". You'll recall from [#A Type Documentation is a YAML Document](#a-type-documentation-is-a-yaml-document) that a new document begins with three dashes (---) alone on a line. So if you wish to write documentation for a pseudo-type that is only used in one place, you can simply start a new YAML document at the bottom of the file.
 

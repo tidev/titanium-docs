@@ -234,7 +234,7 @@ To add a JAR as a dependency in Studio:
 With Titanium 6.1.1 - 8.3.1, you can also copy AAR (Android Archive) library files to the module's `lib` directory. However, this is not supported as of Titanium 9.0.0, which requires you to reference these AAR libraries via a `build.gradle` file instead.
 
 ::: tip ✅ Where do i get .aar files?
-Most third-party libraries can be downloaded from either GitHub or from one of the popular repositories like [jCenter](https://bintray.com/bintray/jcenter) or [Maven Central](http://maven%20central/). Copies of the Android Support Libraries can be found inside your Android SDK directory under `<andriod-sdk>/extras/android/m2repository/com/android`
+Most third-party libraries can be downloaded from either GitHub or from one of the popular repositories like [jCenter](https://bintray.com/bintray/jcenter) or [Maven Central](http://maven%20central/). Copies of the Android Support Libraries can be found inside your Android SDK directory under `<android-sdk>/extras/android/m2repository/com/android`
 :::
 
 ### Adding Android Libraries to Studio

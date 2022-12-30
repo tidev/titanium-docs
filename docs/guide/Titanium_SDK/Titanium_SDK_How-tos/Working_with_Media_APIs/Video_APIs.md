@@ -71,7 +71,7 @@ In this activity, you will write a simple app to stream a movie from a remote UR
 
 #### Steps
 
-1. Create a new Titanium Mobile app. Delete all of the code from the app.js file.
+1. Create a new Titanium SDK app. Delete all of the code from the app.js file.
 
 2. Define a window with a black background. Optionally, set the orientation of the window to landscape.
 

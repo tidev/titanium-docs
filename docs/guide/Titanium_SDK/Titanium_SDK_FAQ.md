@@ -9,7 +9,7 @@ weight: '50'
 
 This document provides answers and links to commonly asked questions about Titanium SDK.
 
-## How to install Titanium Mobile
+## How to install Titanium SDK
 
 You will need node/npm and then you can run `sudo npm i -g titanium alloy` to have all CLI tools. For more details check [Titanium_SDK_Getting_Started](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/) or the [from zero to app - install guide](https://fromzerotoapp.com/how-to-install-appcelerator-titanium/).
 
@@ -31,7 +31,7 @@ Check [Transfer your app from appc CLI to ti CLI](/guide/Titanium_SDK/Titanium_S
 
 ## My Android app is not using my splash screen image but shows the icon when starting on Android 12+
 
-That is the way Android 12+ will start an app. For more details check [the Andriid guides](https://developer.android.com/develop/ui/views/launch/splash-screen). Make sure you use [Adaptive icons](https://fromzerotoapp.com/android-adaptive-icons/). If you want to change the background color use this in your theme:
+That is the way Android 12+ will start an app. For more details check [the Android guides](https://developer.android.com/develop/ui/views/launch/splash-screen). Make sure you use [Adaptive icons](https://fromzerotoapp.com/android-adaptive-icons/). If you want to change the background color use this in your theme:
 
 tiapp.xml (adjust the name!):
 ```xml

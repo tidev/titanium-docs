@@ -1,6 +1,6 @@
 # titanium-docs
 
-> Website with Guides and API docs for the [Titanium Mobile SDK](https://github.com/tidev/titanium_mobile) (Powered by [VuePress](https://vuepress.vuejs.org/)).
+> Website with Guides and API docs for the [Titanium SDK](https://github.com/tidev/titanium_mobile) (Powered by [VuePress](https://vuepress.vuejs.org/)).
 
 ## Getting started
 

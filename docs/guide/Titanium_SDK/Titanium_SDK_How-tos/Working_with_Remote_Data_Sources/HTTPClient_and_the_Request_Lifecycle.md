@@ -173,7 +173,7 @@ To perform the steps in this activity, you will need to reference the HTTPClient
 
 #### Steps
 
-1. Create a new Titanium Mobile project.
+1. Create a new Titanium SDK project.
 
 2. In app.js, declare an HTTPClient object with a name of your choosing. It will `GET` the image at [http://developer.appcelerator.com/assets/img/DEV\_appteam\_photo.png](http://developer.appcelerator.com/assets/img/DEV_appteam_photo.png)
 

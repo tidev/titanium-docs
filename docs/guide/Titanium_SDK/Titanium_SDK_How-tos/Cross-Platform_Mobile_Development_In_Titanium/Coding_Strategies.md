@@ -89,7 +89,7 @@ By DRY, we mean "don't repeat yourself." The less you repeat code, the easier it
 
 If you've ever created web pages, you know that JavaScript variables on one page have no access to the JavaScript variables on another. You have to take special steps – setting and getting POST or GET parameters, using cookies, or some similar measure – to get data from one page to another. Each page has its own global variable, which is cut off from that of any other page. We say each page runs in its own "execution context."
 
-By default, a Titanium Mobile application has a single execution context in which it runs. Your application's app.js file bootstraps your application and serves as the root context. Your application can have multiple execution contexts (but as we'll show, you generally don't want it to). New execution contexts are typically created by opening a new window that points to an external URL in its `url` property:
+By default, a Titanium SDK application has a single execution context in which it runs. Your application's app.js file bootstraps your application and serves as the root context. Your application can have multiple execution contexts (but as we'll show, you generally don't want it to). New execution contexts are typically created by opening a new window that points to an external URL in its `url` property:
 
 **app.js**
 
@@ -101,7 +101,7 @@ Ti.UI.createWindow({
 
 When the window is opened, the script window.js is immediately run in a new execution context. If the preceding code were run in app.js, any variables or function declarations made in app.js would be unavailable within window.js. Try it:
 
-1. Create a new Titanium Mobile project.
+1. Create a new Titanium SDK project.
 
 2. In app.js, cut the following text and paste it into a new file named win1.js:
 
@@ -204,7 +204,7 @@ As is often the case in software development, the answer is "that depends". Most
 
 * You include your libraries/dependencies only once, since there's only one context — With multiple contexts, each file would need to include your libraries/dependencies, increasing memory usage.
 
-* In most of the projects done by Appcelerator's own Professional Services team on Titanium Mobile, a single execution context with multiple included external files is used. However, there are instances where having multiple execution contexts is useful. For example, in our Kitchen Sink application, it is advantageous to have a 'clean slate' for every API usage example, so we don't have to worry about polluting the global scope and can keep the examples easy.
+* In most of the projects done by Appcelerator's own Professional Services team on Titanium SDK, a single execution context with multiple included external files is used. However, there are instances where having multiple execution contexts is useful. For example, in our Kitchen Sink application, it is advantageous to have a 'clean slate' for every API usage example, so we don't have to worry about polluting the global scope and can keep the examples easy.
 
 ### Creating High Quality JavaScript Based Apps
 
@@ -265,11 +265,11 @@ A good example of an app that uses this namespaced pattern is [Tweetanium Mobile
 
 #### CommonJS modules
 
-Titanium Mobile is moving toward the adoption of the [CommonJS](http://www.commonjs.org/) module specification as the way in which developers should structure their JavaScript code. While CommonJS Modules are a "standard" [specification](http://wiki.commonjs.org/wiki/Modules/1.1), there are differences in implementation across multiple technology stacks. The aim of this specification is to delineate what is and is not supported by the Titanium Mobile implementation of this spec, starting in 1.8 and moving forward.
+Titanium SDK is moving toward the adoption of the [CommonJS](http://www.commonjs.org/) module specification as the way in which developers should structure their JavaScript code. While CommonJS Modules are a "standard" [specification](http://wiki.commonjs.org/wiki/Modules/1.1), there are differences in implementation across multiple technology stacks. The aim of this specification is to delineate what is and is not supported by the Titanium SDK implementation of this spec, starting in 1.8 and moving forward.
 
 ##### Definitions
 
-* **Module** - Any CommonJS-compliant module which will be consumed in a Titanium Mobile application. This can be a JavaScript file included with an application, or a native extension to Titanium which exposes a JavaScript API.
+* **Module** - Any CommonJS-compliant module which will be consumed in a Titanium SDK application. This can be a JavaScript file included with an application, or a native extension to Titanium which exposes a JavaScript API.
 
 * **Resources** - The Resources directory of a Titanium application, where the user's source code lives before any processing by our build system.
 
@@ -397,7 +397,7 @@ In this activity, you will create a project in which you first implement the sel
 
 * Finished code for [Part A](http://assets.appcelerator.com.s3.amazonaws.com/app_u/ebook/2.3_codingpatterns_A.zip) and [Part B](http://assets.appcelerator.com.s3.amazonaws.com/app_u/ebook/2.3_codingpatterns_B.zip)
 
-* [CommonJS Modules in Titanium](/guide/Titanium_SDK/Titanium_SDK_Guide/Best_Practices_and_Recommendations/CommonJS_Modules_in_Titanium/) (Titanium Mobile best practices guide)
+* [CommonJS Modules in Titanium](/guide/Titanium_SDK/Titanium_SDK_Guide/Best_Practices_and_Recommendations/CommonJS_Modules_in_Titanium/) (Titanium SDK best practices guide)
 
 * [Functional JavaScript](http://www.hunlock.com/blogs/Functional_Javascript)
 

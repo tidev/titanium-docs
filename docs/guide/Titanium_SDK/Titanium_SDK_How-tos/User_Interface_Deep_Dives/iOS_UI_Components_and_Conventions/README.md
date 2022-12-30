@@ -175,7 +175,7 @@ To complete this activity, you will need an Intel-based Mac with the iOS develop
 
 #### Steps
 
-1. Create a new Titanium Mobile project named AppSettings that targets the iPhone and iPad.
+1. Create a new Titanium SDK project named AppSettings that targets the iPhone and iPad.
 
 2. If you have not done so already, download a copy of the KitchenSink project from [https://github.com/tidev/kitchensink-v2](https://github.com/tidev/kitchensink-v2). Copy the modules folder to your project's directory.
 

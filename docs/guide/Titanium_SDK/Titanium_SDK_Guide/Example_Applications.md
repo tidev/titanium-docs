@@ -13,7 +13,7 @@ These applications can all be imported directly from the **Samples** view in Stu
 
 ## Kitchen Sink
 
-This expansive sample application showcases the majority of Titanium Mobile's APIs. Starting in Titanium Release 2.1.1, the Kitchen Sink has been completely refactored to use a more modern application structure. This version of the Kitchen Sink sample does not yet support the Nook or Kindle Fire (or other Android devices that lack support for Google APIs such as location services). For these devices, there is a legacy version of the Kitchen Sink.
+This expansive sample application showcases the majority of Titanium SDK's APIs. Starting in Titanium Release 2.1.1, the Kitchen Sink has been completely refactored to use a more modern application structure. This version of the Kitchen Sink sample does not yet support the Nook or Kindle Fire (or other Android devices that lack support for Google APIs such as location services). For these devices, there is a legacy version of the Kitchen Sink.
 
 ::: warning ⚠️ Warning
 Prior to Release 2.1.1, the KitchenSink did not represent _best practices_ and therefore its structure should **not** be used for real-world applications.
@@ -59,7 +59,7 @@ PlexusRx is an Appcelerator Titanium app for iOS which demonstrates the use of i
 
 ## RSS Reader
 
-RSS Reader is a Titanium Mobile sample app that lets you browse RSS feeds. With it you can pull live RSS feeds from the internet, browse a list of headlines with thumbnail images, then select and read articles.
+RSS Reader is a Titanium SDK sample app that lets you browse RSS feeds. With it you can pull live RSS feeds from the internet, browse a list of headlines with thumbnail images, then select and read articles.
 
 The RSS Reader app demonstrates:
 
@@ -147,7 +147,7 @@ The Todo List app demonstrates:
 
 ## Geocoder
 
-This is a Titanium Mobile sample app that uses native maps to plot locations. With it you can forward geocode addresses and add them as annotations to the map.
+This is a Titanium SDK sample app that uses native maps to plot locations. With it you can forward geocode addresses and add them as annotations to the map.
 
 The Geocoder app demonstrates:
 

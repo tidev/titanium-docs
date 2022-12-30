@@ -109,7 +109,7 @@ In this activity, you will write an app that prompts the user to select temperat
 
 #### Steps
 
-1. Create a new Titanium Mobile project named `localdata` with an app ID of `com.appcelerator.localdata`
+1. Create a new Titanium SDK project named `localdata` with an app ID of `com.appcelerator.localdata`
 
 2. In app.js, follow our recommended coding best-practices to create a two-tabbed application with tabs titled Current Conditions and Units. You can omit the tab icons.
 

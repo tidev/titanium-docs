@@ -7,7 +7,7 @@ weight: '20'
 
 ## Overview
 
-This is a guide to setup the Android development environment to develop for Titanium Mobile.
+This is a guide to setup the Android development environment to develop for Titanium SDK.
 
 ## Getting started
 

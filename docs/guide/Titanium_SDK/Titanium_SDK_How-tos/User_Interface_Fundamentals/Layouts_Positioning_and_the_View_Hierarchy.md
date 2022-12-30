@@ -265,7 +265,7 @@ To perform the steps in this activity, you will need the gridlines module from [
 
 #### Steps
 
-1. Create a new Titanium Mobile project.
+1. Create a new Titanium SDK project.
 
 2. Create a gridlines.js file containing the code shown at the Gist linked to above.
 
