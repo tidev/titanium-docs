@@ -65,6 +65,23 @@ Depending on your Android modules you might see some error messages by gradle th
 
 ---
 **Error:**
+
+minCompileSdk or caching gradle errors:
+
+```
+The minCompileSdk (33) specified in a
+dependency's AAR metadata (META-INF/com/android/build/gradle/aar-metadata.properties)
+is greater than this module's compileSdkVersion (android-31).
+Dependency: androidx.appcompat:appcompat-resources:1.6.0-rc01.
+AAR metadata file: /Users/user/.gradle/caches/transforms-3/cc921cf5d8489db332aed279efa4279c/transformed/jetified-appcompat-resources-1.6.0-rc01/META-INF/com/android/build/gradle/aar-metadata.properties.
+```
+
+**Solution:**
+
+Check if you have outdated modules and remove your `/Users/user/.gradle/` folder. All gradle files will be redownloaded at the first build (will take some time!).
+
+---
+**Error:**
 ```
 Execution failed for task ':app:checkDebugDuplicateClasses'.
  > A failure occurred while executing com.android.build.gradle.internal.tasks.CheckDuplicatesRunnable
