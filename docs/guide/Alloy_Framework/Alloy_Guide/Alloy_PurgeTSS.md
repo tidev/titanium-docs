@@ -11,7 +11,7 @@ weight: '70'
 
 ## Overview
 
-This guide provides basic instructions on using PurgeTSS for your project. PurgeTSS is an Alloy addon with predefined classes to use in the XML views. It can be used by  all Titanium developers, who want to create beautiful designed mobile apps easily.
+**PurgeTSS** is an Alloy addon that helps Titanium developers create visually appealing mobile apps more easily, with features including highly customizable utility classes, icon fonts support, a basic Animation module, a simple grid system, and a shades command for creating custom colors.
 
 ## Command-line interface usage
 
@@ -22,14 +22,14 @@ alloy purgetss
 ---
 
 ## Key features of PurgeTSS
-
-- Provides almost 11,000 **[Tailwind-like utility classes](https://tailwindcss.com/)** ready to use in your projects.
-- It creates a clean **`app.tss`** file with only the classes used in your project by parsing all your XML files.
-- You can customize any of the default classes through a simple configuration file, or you can create _just-in-time_ classes with **arbitrary values** within the `Views`.
-- You can easily use **Font Awesome**, **Material Design** and **Framework7-Icons** fonts in `Buttons` and `Labels`.
-- You can create a **`fonts.tss`** file with all the class definitions and fontFamily selectors from any Icon, Serif, Sans-Serif, Cursive, Fantasy or Monospace font families.
-- Includes an **Animation module** to apply basic 2D Matrix animations or transformations to any element or to an `Array` of elements.
-- Includes a simple two-dimensional **Grid System** to align and distribute elements in your views.
+- Provides more than 19,000 **[Tailwind-like](https://tailwindcss.com/)** utility classes ready to use in your projects.
+- Creates a clean **app.tss** file with only the classes used in your project by parsing all your XML files.
+- You can customize any of the default classes via a simple configuration file, or create **just-in-time** classes with **arbitrary values** within your Views.
+- You can easily use icon fonts from **Font Awesome**, **Material Icons**, **Material Symbols**, and **Framework7-Icons** on Buttons and Labels.
+- Generates a **fonts.tss** file with all class definitions and `fontFamily` selectors for any icon, serif, sans-serif, italic, fancy, or monospace font.
+- Use the `shades` command to generate custom color shades from the given hex color to use in your projects. No need for a separate online too.
+- Includes an **Animation module** to apply basic 2D Matrix animations or transform any element or array of elements.
+- Includes a simple two-dimensional **Grid System** to align and distribute elements in your Views.
 
 ### Visit the official documentation site at [purgetss.com](https://purgetss.com) to learn more about PurgeTSS
 
@@ -44,7 +44,7 @@ alloy purgetss
     - [opacity modifier](https://purgetss.com/docs/customization/the-opacity-modifier)
     - [Arbitrary values in XMLs](https://purgetss.com/docs/customization/arbitrary-values)
     - [Platform and Device modifiers](https://purgetss.com/docs/customization/platform-and-device-modifiers)
-    - [Missing Icon libraries](https://purgetss.com/docs/customization/missing-icon-libraries)
+    - [Icon Fonts Libraries](https://purgetss.com/docs/customization/icon-fonts-libraries)
 - Animation module
     - [Introduction](https://purgetss.com/docs/animation-module/introduction)
     - [Available utilities](https://purgetss.com/docs/animation-module/available-utilities)
