@@ -27,7 +27,7 @@ alloy purgetss
 - You can customize any of the default classes via a simple configuration file, or create **just-in-time** classes with **arbitrary values** within your Views.
 - You can easily use icon fonts from **Font Awesome**, **Material Icons**, **Material Symbols**, and **Framework7-Icons** on Buttons and Labels.
 - Generates a **fonts.tss** file with all class definitions and `fontFamily` selectors for any icon, serif, sans-serif, italic, fancy, or monospace font.
-- Use the `shades` command to generate custom color shades from the given hex color to use in your projects. No need for a separate online too.
+- Use the `shades` command to generate custom color shades from the given hex color to use in your projects. No need for a separate online tool.
 - Includes an **Animation module** to apply basic 2D Matrix animations or transform to any element or array of elements.
 - Includes a simple two-dimensional **Grid System** to align and distribute elements in your Views.
 
