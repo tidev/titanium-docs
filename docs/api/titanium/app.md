@@ -142,7 +142,7 @@ This can lead to memory leaks if application-level event listeners are added and
 removed.
 
 See also: [Event Handling](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Fundamentals/Event_Handling.html)
-in the Titanium SDK Guides.
+in the Titanium Mobile Guides.
 
 ### System Level Accessibility Events
 
@@ -160,7 +160,7 @@ your application to fire, and one of them is for your application to listen for.
 The following accessibility events can be fired by your application to alert the accessibility
 system of a particular condition or to ask it to perform an action.
 
-These events are fired using <Titanium.App.fireSystemEvent>, which is available in Titanium SDK 3.0.0.
+These events are fired using <Titanium.App.fireSystemEvent>, which is available in Titanium Mobile 3.0.0.
 
 * <Titanium.App.EVENT_ACCESSIBILITY_ANNOUNCEMENT>, available in iOS and Android, asks the device's
 accessibility system to make an announcement. The announcement itself is a string passed as the second

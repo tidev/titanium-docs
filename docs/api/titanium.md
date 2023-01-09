@@ -7,7 +7,7 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 ## Overview
 
-The Titanium module provides the Titanium SDK API, allowing developers to access native
+The Titanium module provides the Titanium Mobile API, allowing developers to access native
 features of each target environment. Currently, the Android and iOSenvironments are supported.
 
 ### Titanium Namespace
