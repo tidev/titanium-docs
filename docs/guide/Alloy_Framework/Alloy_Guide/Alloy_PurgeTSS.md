@@ -28,7 +28,7 @@ alloy purgetss
 - You can easily use icon fonts from **Font Awesome**, **Material Icons**, **Material Symbols**, and **Framework7-Icons** on Buttons and Labels.
 - Generates a **fonts.tss** file with all class definitions and `fontFamily` selectors for any icon, serif, sans-serif, italic, fancy, or monospace font.
 - Use the `shades` command to generate custom color shades from the given hex color to use in your projects. No need for a separate online too.
-- Includes an **Animation module** to apply basic 2D Matrix animations or transform any element or array of elements.
+- Includes an **Animation module** to apply basic 2D Matrix animations or transform to any element or array of elements.
 - Includes a simple two-dimensional **Grid System** to align and distribute elements in your Views.
 
 ### Visit the official documentation site at [purgetss.com](https://purgetss.com) to learn more about PurgeTSS
