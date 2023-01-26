@@ -73,13 +73,11 @@ Although the local database has the capability to store images in blob (binary) 
 
 * API docs:
 
-    * [Properties API](http://developer.appcelerator.com/apidoc/mobile/latest/Titanium.App.Properties-module)
+    * [Properties API](https://titaniumsdk.com/api/titanium/app/properties.html)
 
-    * [Database API](http://developer.appcelerator.com/apidoc/mobile/latest/Titanium.Database-module)
+    * [Database API](https://titaniumsdk.com/api/titanium/database.html)
 
-    * [Filesystem API](http://developer.appcelerator.com/apidoc/mobile/latest/Titanium.Filesystem-module)
-
-* [Persistence demo app](https://github.com/appcelerator-archive/sample-persistence)
+    * [Filesystem API](https://titaniumsdk.com/api/titanium/filesystem.html)
 
 * [http://sqlite.org](http://sqlite.org)
 

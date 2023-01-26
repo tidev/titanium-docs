@@ -16,7 +16,7 @@ Obtain the version that pertains to your particular Operating System from the li
 | Operating System | Package Name | Package Version | Download Location | Notes |
 | --- | --- | --- | --- | --- |
 | OS X | git | Latest | [Official Website](http://git-scm.com/download) |  |
-| Windows | msysgit | Latest | [Official Website](http://git-scm.com/download) | On Studio 3.2.0 and later, portablegit is installed by default if no other Git client is installed. |
+| Windows | msysgit | Latest | [Official Website](http://git-scm.com/download) |  |
 | Ubuntu | git | Latest | Default Repositories |  |
 
 ## Installation

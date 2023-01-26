@@ -96,7 +96,7 @@ Limiting orientation on Android can also be accomplished via the `tiapp.xml` fil
 
     3. Between those tags, add new `<manifest></manifest>` tags.
 
-4. Open `<PROJECT_NAME>/build/android/AndroidManifest.xml` in Studio (or a text editor of your choice).
+4. Open `<PROJECT_NAME>/build/android/AndroidManifest.xml` in a text editor of your choice.
 
 5. Copy the `<application>` node, which contains all of the `<activity>` nodes from that file, for example:
 

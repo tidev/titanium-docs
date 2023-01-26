@@ -5,7 +5,7 @@ weight: '60'
 
 # Hello Titanium App Tutorial
 
-Now that you've installed Studio and at least one of the native platform SDKs, you're ready to create and run an application on a device or simulator.
+Now that you've installed an IDE and at least one of the native platform SDKs, you're ready to create and run an application on a device or simulator.
 
 ## Create a project
 
@@ -18,7 +18,7 @@ The first step is to create a new Mobile App Project and select a starting templ
     1. `ti create` and continue with the menu
     ![ti create](./ti_create.png)
     2. After that you go into the folder and run `alloy new` to create an Alloy project.
-
+    3. starting with Titanium SDK 12 you can use `ti create --alloy`.
 
 2. If you use VSCode you can click on the `Create App` button
     ![ti create](./ti_create_vscode.png)
