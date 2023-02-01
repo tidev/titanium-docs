@@ -9,7 +9,7 @@ weight: '10'
 
 Local notifications alert the user that something is happening to your application while it is in the background. On Android, notifications appear in the notification drawer until the user clears them and on the lock screen for devices running Android 5.0 or greater. The application can also play a sound or vibrate to alert the user there is a new notification, customize the notification layout from the basic title, text and icon layout; and use the devices default alert settings or override them. Note that the user can filter or turn notifications on and off from **Settings**.
 
-<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/29004809/LockScreen.png" alt="images/download/attachments/29004809/LockScreen.png" class="confluence-embedded-image"></p><p>Lock Screen (Android 5.0 and greater)</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/29004809/NotificationCenter.png" alt="images/download/attachments/29004809/NotificationCenter.png" class="confluence-embedded-image"></p><p>Notification Drawer</p></td></tr></tbody></table>
+<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="LockScreen.png" alt="LockScreen.png" class="confluence-embedded-image"></p><p>Lock Screen (Android 5.0 and greater)</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="NotificationCenter.png" alt="NotificationCenter.png" class="confluence-embedded-image"></p><p>Notification Drawer</p></td></tr></tbody></table>
 
 ## Configure notification settings
 

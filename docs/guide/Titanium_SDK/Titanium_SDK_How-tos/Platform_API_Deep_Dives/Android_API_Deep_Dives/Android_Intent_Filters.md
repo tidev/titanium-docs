@@ -9,10 +9,8 @@ weight: '20'
 
 Android Intent Filters give applications the ability to receive implicit intents from other Android applications. An intent is a message object, usually containing data, sent by another application to start a new application to handle the data. Intents are sent to the Android OS, which directs the intent to the appropriate application to handle the data. If more than one application can handle the data, Android presents a dialog to the user to select an application to launch. An intent filter indicates to the Android OS that your application can handle certain data types or URIs. For example, if a user opens their browser and highlights some text, the user can share that text with other Android apps, such as an e-mail application, SMS application or a social networking application.
 
-<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>The user highlights the text and<br>clicks the <strong class=" ">Share</strong> button.</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>The <strong class=" ">Share</strong> dialog appears and<br>the user can select the application<br>to send the text to, such as...</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>...an e-mail application,</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>...an SMS application</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>...or a social networking<br>application like Google+.</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/43287298/HighlightText.png" alt="images/download/attachments/43287298/HighlightText.png" class="confluence-embedded-image"></p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/43287298/ShareDialog.png" alt="images/download/attachments/43287298/ShareDialog.png" class="confluence-embedded-image"></p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/43287298/EmailClient.png" alt="images/download/attachments/43287298/EmailClient.png" class="confluence-embedded-image"></p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/43287298/SmsClient.png" alt="images/download/attachments/43287298/SmsClient.png" class="confluence-embedded-image"></p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/43287298/GooglePlusShare.png" alt="images/download/attachments/43287298/GooglePlusShare.png" class="confluence-embedded-image"></p><p></p></td></tr></tbody></table>
+<img src="ShareDialog.png" alt="ShareDialog.png" class="confluence-embedded-image">
 
-**Please ask your Confluence administrator to update the license for the [MultiExcerpt Plugin for Confluence 4+](https://plugins.atlassian.com/plugins/biz.artemissoftware.confluence.multiexcerpt.MultiExcerptMacro) .**
-**Admin Info: The error is: license VERSION\_MISMATCH**
 
 ## Receive an implicit intent
 
@@ -319,13 +317,13 @@ Note that the activity already had an intent filter declared indicating that the
 
 You now have an app that is ready to receive Intents. Install it on either an Android device or emulator and make sure it runs. Close the application. Now you can test the Intent Filter by doing the following:
 
-<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Open your Android browser and go to a website.<br>Select some text, then click the <strong class=" ">Share</strong> button.</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>You should be greeted with an Intent list that<br>looks something like this.</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>Select your app in the list and you will then be directed<br>to your application containing the string you highlighted.</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/43287610/SelectText.png" alt="images/download/attachments/43287610/SelectText.png" class="confluence-embedded-image"></p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/43287610/ShareDialog.png" alt="images/download/attachments/43287610/ShareDialog.png" class="confluence-embedded-image"></p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/43287610/ApplicationWithText.png" alt="images/download/attachments/43287610/ApplicationWithText.png" class="confluence-embedded-image"></p></td></tr></tbody></table>
+<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p>Open your Android browser and go to a website.<br>Select some text, then click the <strong class=" ">Share</strong> button.</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>You should be greeted with an Intent list that<br>looks something like this.</p></td><td class="confluenceTd" rowspan="1" colspan="1"><p>Select your app in the list and you will then be directed<br>to your application containing the string you highlighted.</p></td></tr><tr><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="SelectText.png" alt="SelectText.png" class="confluence-embedded-image"></p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="ShareDialog.png" alt="ShareDialog.png" class="confluence-embedded-image"></p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="ApplicationWithText.png" alt="ApplicationWithText.png" class="confluence-embedded-image"></p></td></tr></tbody></table>
 
 ## URI intent filter example
 
-This example creates a very simple application that will make itself available to a very specific intent. The application will present itself in the intent list anytime we click on a link that is destined to [http://www.appcelerator.com](http://www.appcelerator.com).
+This example creates a very simple application that will make itself available to a very specific intent. The application will present itself in the intent list anytime we click on a link that is destined to [http://www.titaniumsdk.com](http://www.titaniumsdk.com).
 
-The code for the application simply displays a label to the user that tells them we know they just clicked on a link to www.appcelerator.com.
+The code for the application simply displays a label to the user that tells them we know they just clicked on a link to www.titaniumsdk.com.
 
 **Resources/app.js**
 
@@ -334,7 +332,7 @@ Ti.UI.backgroundColor = '#fff';
 
 var win = Ti.UI.createWindow();
 var label = Ti.UI.createLabel({
-  text:"I'll bet you just clicked on a link to http://www.appcelerator.com",
+  text:"I'll bet you just clicked on a link to http://www.titaniumsdk.com",
   color:'#000',
   font: {
     fontSize:32
@@ -356,7 +354,7 @@ Next, declare the intent filter in the `tiapp.xml`.
 
 2. Add an `<intent-filter>` element as a child of the `<activity>` element.
 
-3. Add a `<data>` element as a child of the `<intent-filter>` element, then assign `http` to the `android:scheme` attribute and `www.appcelerator.com` to the `android:host` attribute. This tells Android the activity can handle HTTP requests targeted at the host [www.appcelerator.com](http://www.appcelerator.com).
+3. Add a `<data>` element as a child of the `<intent-filter>` element, then assign `http` to the `android:scheme` attribute and `www.titaniumsdk.com` to the `android:host` attribute. This tells Android the activity can handle HTTP requests targeted at the host [www.titaniumsdk.com](http://www.titaniumsdk.com).
 
 4. Add a `<category>` element as a child of the `<intent-filter>` element. Assign `android.intent.category.DEFAULT` to the `android:name` attribute to tell Android that the activity wants to receive implicit Intents.
 
@@ -380,7 +378,7 @@ Note that the activity already had an intent filter declared indicating that the
                     <category android:name="android.intent.category.LAUNCHER" />
                 </intent-filter>
                 <intent-filter>
-                    <data android:scheme="http" android:host="www.appcelerator.com"/>
+                    <data android:scheme="http" android:host="www.titaniumsdk.com"/>
                     <category android:name="android.intent.category.DEFAULT" />
                     <category android:name="android.intent.category.BROWSABLE" />
                     <action android:name="android.intent.action.VIEW" />
@@ -398,18 +396,16 @@ You now have an app that is ready to receive Intents. Install it on either an An
 
 2. Search for "appcelerator" on google.com.
 
-3. Click the link for [http://www.appcelerator.com](http://www.appcelerator.com).
+3. Click the link for [http://www.titaniumsdk.com](http://www.titaniumsdk.com).
 
 You should be greeted with an Intent list that looks something like this:
 
 ![intent_test](./intent_test.png)
 
-Select your app in the list and you will then be directed to your application containing the "I'll bet you just clicked on a link to www.appcelerator.com" label.
+Select your app in the list and you will then be directed to your application containing the "I'll bet you just clicked on a link to www.titaniumsdk.com" label.
 
 ## Further reading
 
 * [Android Developers: Intents and Intent Filters](http://developer.android.com/guide/topics/intents/intents-filters.html)
 
 * [Android Developers: `<intent-filter>`](http://developer.android.com/guide/topics/manifest/intent-filter-element.html)
-
-* [Appcelerator Enterprise Mobility Blog: Android Intents](http://www.appcelerator.com/blog/2011/08/android-intents/)
