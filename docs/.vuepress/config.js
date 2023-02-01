@@ -59,6 +59,10 @@ module.exports = {
                 link: 'https://github.com/tidev/titanium_mobile/discussions'
               },
               {
+                text: 'Reddit',
+                link: 'https://www.reddit.com/r/TitaniumSDK/'
+              },
+              {
                 text: 'Tutorials: From zero to app',
                 link: 'https://fromzerotoapp.com'
               }
