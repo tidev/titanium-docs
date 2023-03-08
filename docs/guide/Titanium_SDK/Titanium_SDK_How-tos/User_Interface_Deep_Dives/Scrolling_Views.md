@@ -123,7 +123,7 @@ In this lab, you will create a scroll view containing a list of baseball players
 
 1. Download the starting point code, which includes the necessary graphics, from [http://assets.appcelerator.com.s3.amazonaws.com/app\_u/code/335.zip](http://assets.appcelerator.com.s3.amazonaws.com/app_u/code/335.zip).
 
-2. Download and extract the starting point code. Import the project into Studio.
+2. Download and extract the starting point code.
 
 3. In app.js, define three image view objects which initially display the images/harmon1.jpg, images/harmon2.jpg, and images/harmon3.jpg files. There's a placeholder comment in the file to help you locate the appropriate location.
 

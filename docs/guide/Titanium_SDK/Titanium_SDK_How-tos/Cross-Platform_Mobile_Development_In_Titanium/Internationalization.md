@@ -523,7 +523,7 @@ In this activity, you will create an internationalized app that outputs language
 
 2. Using your computer's file management tools, create an `i18n` directory at the `/app` directory of your project. In that directory, create two directories: `en` and `es`.
 
-3. Using Studio, within the `en` directory, create a `strings.xml`file following the format shown above. Add three key/value pairs:
+3. Within the `en` directory, create a `strings.xml`file following the format shown above. Add three key/value pairs:
 
     * language = Language
 

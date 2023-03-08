@@ -11,24 +11,13 @@ You can install a module so that it is available to a single project, or all pro
 
 ### Installing modules
 
-You can install a module for a single project, or that all Studio projects can use. Once you've installed the module, you then configure it for use in your project (see [Configuring your app to use a module](#configuring-your-app-to-use-a-module)).
+You can install a module for a single project. Once you've installed the module, you then configure it for use in your project (see [Configuring your app to use a module](#configuring-your-app-to-use-a-module)).
 
 **To install a module**:
 
-1. In Studio, select **Help** \> **Install Mobile Module**.
-
-2. In the Module dialog, enter the URL of the module's ZIP file, or click Browse and locate the ZIP file.
-
-    ![install_dialog](./install_dialog.png)
-3. For **Output Location** select one of the following:
-
-    * To install the module so it's available to all projects, select **Titanium SDK**. See [Module install locations](#undefined).
-
-    * To install the module so its available to a single project, select **Mobile App Project**, and then choose the desired project from the pop-up menu.
-
-    * To install the module to a folder location, select **Location** and then browse to the desired output folder.
-
-4. Click **OK**.
+1. copy the module ZIP in to your app root folder
+2. add the module into the `<modules>` section of your tiapp.xml file
+3. build your project. The ZIP will be extracted and added into the correct folders.
 
 #### Module install locations
 
@@ -63,7 +52,7 @@ You can update your application's tiapp.xml file visually, or manually in a text
 
 **To add a module to your project**:
 
-1. In Studio, open your project and double-click its tiapp.xml file.
+1. Open your project and double-click its tiapp.xml file.
 
 2. Click the **Overview** tab in the bottom-left of the Editor window.
 
@@ -93,7 +82,7 @@ To manually add a module to your project's tiapp.xml file, modify the `<modules/
 
 #### Selecting a module version
 
-A installed module may include one or more versions that your application can use, as well as versions for production, deployment and testing. By default, Studio selects the latest version of a module when you install it.
+A installed module may include one or more versions that your application can use, as well as versions for production, deployment and testing. By default the latest version of a module will be selected.
 
 **To select a specific module version**:
 

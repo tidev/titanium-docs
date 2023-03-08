@@ -371,7 +371,7 @@ In this activity, you will create a project in which you first implement the sel
 
 **Part A**
 
-1. In Studio, create a new project. Delete the default content of app.js.
+1. Create a new project. Delete the default content of app.js.
 
 2. Using the module/self-calling technique outlined above, write an app that:
 

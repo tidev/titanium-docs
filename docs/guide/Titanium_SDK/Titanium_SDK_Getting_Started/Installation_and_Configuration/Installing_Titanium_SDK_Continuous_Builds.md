@@ -38,11 +38,10 @@ To manually install a Titanium SDK, follow these steps:
 | Windows 7+ | Mobile | `%ProgramData%\Titanium\mobilesdk\win32` |
 | Windows XP | Mobile | `C:\Documents and Settings\All Users\Application Data\Titanium` |
 
-* Restart Studio, open the project's `tiapp.xml` file, and select the new SDK from the SDK Version drop-down menu
 
 ## SDK archive file structure
 
-Especially in corporate environments, it may be necessary to compile Titanium SDKs and make them available on a server. Be aware that Studio requires that the SDK file structure follows this convention:
+Especially in corporate environments, it may be necessary to compile Titanium SDKs and make them available on a server. The SDK file structure follows this convention:
 
 ```
 .zip root

@@ -173,7 +173,7 @@ You are now ready to create the provisioning profile file, which gathers togethe
 
 10. If you are the Team Agent creating this provisioning profile for a team member, email or distribute it to him or her.
 
-You have two options to install the provisioning profile file onto your development computer. You can drag the file and drop it on the Xcode icon, or you can install it from Studio by following the steps in the following section. Either way, installing the provisioning profile is a one-time operation (on each computer, until it expires).
+You have two options to install the provisioning profile file onto your development computer. You can drag the file and drop it on the Xcode icon, or you can install it from your IDE by following the steps in the following section. Either way, installing the provisioning profile is a one-time operation (on each computer, until it expires).
 
 ### Build your app, embedding the profile within the app's bundle
 

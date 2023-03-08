@@ -61,7 +61,7 @@ The gyroscope measures forces along the three spatial axes. If you hold the devi
 
 The Core Motion module is available as part of the Titanium SDK. To use core motion services in your application, add the module as a dependency to your application.
 
-1. Modify the modules section of your `tiapp.xml` file to include the `ti.coremotion` module or add the module with Studio's TiApp Editor (see [Using a Module](/guide/Titanium_SDK/Titanium_SDK_How-tos/Using_Modules/Using_a_Module/)):
+1. Modify the modules section of your `tiapp.xml` file to include the `ti.coremotion` module:
 
     ```xml
     <modules>
