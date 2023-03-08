@@ -217,7 +217,7 @@ You'll examine an app that has a memory leak deliberately included. You'll apply
 
 #### Steps
 
-1. Download or clone the AppLeak project from [Github](https://github.com/appcelerator-developer-relations/appc-sample-app-leak). Extract it and then import the project into IDE or your CLI workspace. Confirm that the tiapp.xml file has appropriate values for your environment then close that file.
+1. Download or clone the AppLeak project from [GitHub](https://github.com/appcelerator-developer-relations/appc-sample-app-leak). Extract it and then import the project into IDE or your CLI workspace. Confirm that the tiapp.xml file has appropriate values for your environment then close that file.
 
 2. Open `test1.js` in your Editor. This file contains the leak, which you will fix.
 
