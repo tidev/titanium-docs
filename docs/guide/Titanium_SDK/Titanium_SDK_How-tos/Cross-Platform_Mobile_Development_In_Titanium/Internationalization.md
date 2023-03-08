@@ -271,7 +271,7 @@ With these changes in place, you can now rebuild your app (probably best to give
 
 This is how your home screens might look on Android and iOS when Japanese is the selected language.
 
-<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/29004892/Screen_Shot_2012_02_17_at_8_52_33_PM.png" alt="images/download/attachments/29004892/Screen_Shot_2012_02_17_at_8_52_33_PM.png" class="confluence-embedded-image confluence-content-image-border"></p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="images/download/attachments/29004892/image.png" alt="images/download/attachments/29004892/image.png" class="confluence-embedded-image confluence-content-image-border"></p></td></tr></tbody></table>
+<table><tbody><tr><td><p><img src="Screen_Shot_2012_02_17_at_8_52_33_PM.png" alt="Screen_Shot_2012_02_17_at_8_52_33_PM.png"></p></td><td><p><img src="image.png" alt="image.png"></p></td></tr></tbody></table>
 
 And just in case my description was clear as mud, check out a Titanium project with these localizations set up first hand. Just go to the [AppNameLocalization project repository](https://github.com/appcelerator-developer-relations/AppNameLocalization) on Github. It contains the _very_ basic project discussed here. With all this, you should be well-equipped to distribute your apps in as many languages as you wish to support.
 
