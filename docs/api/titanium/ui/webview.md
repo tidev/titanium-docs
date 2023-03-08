@@ -221,7 +221,7 @@ webview.addEventListener('load', function(e) {
 
 See [Integrating Web
 Content](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Integrating_Web_Content/)
-in the Titanium SDK Guides for more information on using web views, including use
+in the Titanium Mobile Guides for more information on using web views, including use
 cases, more code examples, and best practices for web view content.
 
 ## Examples

@@ -9,7 +9,7 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 
 | Android | iOS |
 | ------- | --- |
-| ![Android](./label_android.png) |  |
+| ![Android](./label_andorid.png) |  |
 
 Use the <Titanium.UI.createLabel> method or **`<Label>`** Alloy element to create a label.
 
