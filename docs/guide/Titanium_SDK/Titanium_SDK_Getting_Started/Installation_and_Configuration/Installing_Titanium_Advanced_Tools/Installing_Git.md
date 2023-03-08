@@ -13,11 +13,11 @@ Obtain the version that pertains to your particular Operating System from the li
 
 ![download_05](/images/guide/download/attachments/29004836/download_05.png)
 
-| Operating System | Package Name | Package Version | Download Location | Notes |
-| --- | --- | --- | --- | --- |
-| OS X | git | Latest | [Official Website](http://git-scm.com/download) |  |
-| Windows | msysgit | Latest | [Official Website](http://git-scm.com/download) |  |
-| Ubuntu | git | Latest | Default Repositories |  |
+| Operating System | Package Name | Package Version | Download Location |
+| --- | --- | --- | --- |
+| OS X | git | Latest | [Official Website](http://git-scm.com/download) |
+| Windows | msysgit | Latest | [Official Website](http://git-scm.com/download) |
+| Ubuntu | git | Latest | Default Repositories |
 
 ## Installation
 
