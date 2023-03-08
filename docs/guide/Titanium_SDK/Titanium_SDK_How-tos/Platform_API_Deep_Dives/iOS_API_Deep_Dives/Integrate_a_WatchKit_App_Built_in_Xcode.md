@@ -171,7 +171,7 @@ The example below add the development provisioning profiles to the file.
 
 To run the project, just build and launch the project like you would any other Titanium project, but for the WatchKit app, add the `--launch-watch-app` or `--launch-watch-app-only` flags to launch the watch application with or without the iOS application, respectively.
 
-For Studio, use the run command from the launch options toolbar. If you want to run the watch application on a simulator, in the Target drop-down, select a 9.0 or greater simulator that has a paired watch target.
+Use the run command from the launch options toolbar. If you want to run the watch application on a simulator, in the Target drop-down, select a 9.0 or greater simulator that has a paired watch target.
 
 ![StudioWatchSimulator](./StudioWatchSimulator.png)
 

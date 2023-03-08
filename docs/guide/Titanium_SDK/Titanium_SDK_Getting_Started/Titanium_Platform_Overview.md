@@ -29,7 +29,7 @@ At a high-level, Titanium is the combination of:
 
 ### Titanium SDK
 
-The [Titanium SDK](/guide/Titanium_SDK/) tools comprise a set of Node.js-based utilities and supporting tools that work with the native SDK tool chains. The Titanium tools combine your JavaScript source code, a JavaScript interpreter, and your static assets into an application binary that will be installed to an emulator or mobile device. Fortunately for you, Studio will manage almost every aspect of this build chain, leaving you to focus on building your apps.
+The [Titanium SDK](/guide/Titanium_SDK/) tools comprise a set of Node.js-based utilities and supporting tools that work with the native SDK tool chains. The Titanium tools combine your JavaScript source code, a JavaScript interpreter, and your static assets into an application binary that will be installed to an emulator or mobile device.
 
 ### Titanium CLI
 
