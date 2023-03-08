@@ -220,7 +220,7 @@ win.activity.startActivity(intent);
 
 When the intent is sent, the OS should display a list of applications to launch if it has multiple applications that can receive text intents. If there are not many applications installed on the device or if the user selected a default application to handle text, the default application will be launched.
 
-<table class="confluenceTable"><thead class=" "></thead><tfoot class=" "></tfoot><tbody class=" "><tr><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="AppUI.png" alt="AppUI.png" class="confluence-embedded-image"></p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="ShareDialog2.png" alt="ShareDialog2.png" class="confluence-embedded-image"></p></td><td class="confluenceTd" rowspan="1" colspan="1"><p><img src="EmailClient2.png" alt="EmailClient2.png" class="confluence-embedded-image"></p></td></tr></tbody></table>
+<table><tbody><tr><td><p><img src="AppUI.png" alt="AppUI.png"></p></td><td><p><img src="ShareDialog2.png" alt="ShareDialog2.png"></p></td><td><p><img src="EmailClient2.png" alt="EmailClient2.png"></p></td></tr></tbody></table>
 
 ### Complete code
 
