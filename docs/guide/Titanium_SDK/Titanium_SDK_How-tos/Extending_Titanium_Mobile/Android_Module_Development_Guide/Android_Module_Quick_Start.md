@@ -7,7 +7,7 @@ weight: '10'
 
 ## Introduction
 
-This guide walks through the steps to create, build and test an Android module using Studio. The equivalent CLI instructions are given in the information boxes near the top of each section.
+This guide walks through the steps to create, build and test an Android module.
 
 ## Android module prerequisites
 
@@ -17,25 +17,15 @@ To develop an Android-based Module, you need to install the following tools and 
 
 * Android SDK API 26+
 
-* Studio or the Appcelerator Command-Line Interface (CLI) for creating modules, and building and running test applications
+* Titanium Command-Line Interface (CLI) for creating modules, and building and running test applications
 
-* [Android NDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_the_Android_NDK/) and add an ANDROID\_NDK environment variable pointing to the NDK directory. See [Installing the Android NDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_the_Android_NDK/).
+Note: You can use Android Studio to write your modules and use its coding features like code-completion. To do that you have to build your module once and then open the `build/` folder in Android Studio. Check [from zero to app - Create Android modules for Titanium](https://fromzerotoapp.com/create-android-modules-for-titanium/#link3) for another tutorial.
 
-* [gperf](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_gperf/) must be installed and in your system PATH. See [Installing gperf](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_gperf/).
-
-* Python, Python setuptools and the markdown module, and Python in your system PATH. See [Installing Python](#undefined) and [Installing Required Python Packages](#undefined).
-
-If you want to use Studio, install:
-
-* [Eclipse Java Development Tools plugin](https://eclipse.org/jdt/). See [Installing the Java Development Tools](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Installing_the_Java_Development_Tools/).
-
-* [Android Development Tools plugin](http://developer.android.com/tools/sdk/eclipse-adt.html). See [Installing the Android Development Tools](#undefined).
 
 ## Create a new module
 
 First, create a new module project.
 
-::: tip 💡 CLI Instructions
 From a terminal, change the current working directory to your workspace and run:
 
 ```bash
@@ -43,27 +33,12 @@ cd /PATH/TO/WORKSPACE
 ti create --n test --id com.example.test -p Android
 ## when prompted, select "Titanium Module"
 ```
-:::
 
-In Studio:
-
-1. From the menu, select **File** > **New** > **Mobile Module Project** to open the **New Mobile Module Project** dialog.
-
-2. In the **Project name** field, enter **test**.
-
-3. In the **Module Id** field, enter **com.example.test**.
-
-4. In **Deployment Targets**, select **Android**.
-
-5. Click **Next**, then click **Finish**.
-
-Studio sets up a new folder called `test` that contains your module project.
 
 ## Build and package the module
 
 Next, build the module and package it. This process produces a ZIP file in the `android` `/dist` directory containing a binary library with unprocessed module assets, example code and documentation.
 
-::: tip 💡 CLI Instructions
 From a terminal, go to the module's `android` directory and run `ti build -p android --build-only`:
 
 ```bash
@@ -71,34 +46,12 @@ cd test/android
 ti build -p android --build-only
 ```
 
-After the build completes, unzip the built module in the Titanium SDK home path:
-
-```
-unzip -o com.example.test-android-1.0.0.zip -d ~/Library/Application\ Support/Titanium/
-```
-:::
-
-In Studio:
-
-1. Select your module folder in the **Project Explorer** view.
-
-2. Verify **Package** and **Android Module** are displayed in **Launch Mode** and **Launch Target**, respectively.
-
-3. Click the Package icon to open the **Package Android Module** dialog.
-
-4. In **Output Location**, choose the **Titanium SDK** to install the module in the Titanium SDK home path to be accessed by any Titanium application.
-
-5. Click **Finish**.
-
-Studio builds and installs the module to the Titanium SDK home path.
-
 ## Test the module
 
 To test the module, create a test application and add the module as a dependency of the project. Then, load the module and make module API calls to the module reference.
 
 ### Create a test application
 
-::: tip 💡 CLI Instructions
 From a new terminal window, change the current working directory to your workspace and run the following commands:
 
 ```bash
@@ -106,31 +59,11 @@ cd /PATH/TO/WORKSPACE
 ti create -t app -p android -d . -n Hello -u http:// --id com.example.hello
 cd Hello/
 ```
-:::
-
-In Studio:
-
-1. From the menu, select **File** > **New** > **Mobile App Project** to open the **New Mobile App Project** dialog.
-
-2. On the **Project Template** page, select **Default Alloy Project** as the template type, then click **Next**.
-
-3. On the **Project Location** page, enter the following information:
-
-    * In the **Project Name** field, enter **Hello**.
-
-    * In the **App ID** field, enter **com.example.hello**.
-
-    * In **Deployment Targets**, select **Android**.
-
-4. Click **Finish** to create the project.
-
-Studio sets up a new folder called `Hello` that contains the test application you will be using to test the module.
 
 ### Add the module as a dependency to the project
 
 To load the module in the application, you need to add it as a dependency to the project.
 
-::: tip 💡 CLI Instructions
 Open the `tiapp.xml` and update the `<modules/>` element to include the module as a dependency to the project:
 
 ```xml
@@ -140,23 +73,10 @@ Open the `tiapp.xml` and update the `<modules/>` element to include the module a
     </modules>
 </ti:app>
 ```
-:::
-
-In Studio:
-
-1. Open the `tiapp.xml` file located in the root directory of the project.
-
-2. Under the **Modules** section, click the **Add** button.
-
-3. Select **com.example.test**.
-
-4. Click **OK**.
 
 ### Load the module and make module API calls
 
-::: warning ⚠️ Warning
 The module can be loaded by passing the module ID to the `require()`method, which returns a reference to the module that API calls can be made on.
-:::
 
 Open the `app/alloy.js` file and replace the code with the following, which invokes API calls to the module:
 
@@ -172,17 +92,11 @@ test.exampleProp = "This is a test value";
 
 ### Run the application
 
-::: tip 💡 CLI Instructions
 From a terminal that has the test app as its current working directory, run:
 
 ```bash
 ti build -p android
 ```
-:::
-
-In the Studio toolbar, select **Run** in **Launch Modes** and select an Android emulator in **Launch Targets**.
-
-Studio builds and launches the application on the selected Android simulator. Monitor the **Console** view for log output.
 
 The console lines seen below show us that the module is working as expected.
 

@@ -23,7 +23,7 @@ Provides in-depth information about the class components used to build modules. 
 
 **[Android Module Project](/guide/Titanium_SDK/Titanium_SDK_How-tos/Extending_Titanium_Mobile/Android_Module_Development_Guide/Android_Module_Project/)**
 
-Provides in-depth information about the structure of a module project as well as using Studio and the CLI to manage the projects. Also provides information about adding assets and third-party frameworks to the module.
+Provides in-depth information about the structure of a module project as well as using the CLI to manage the projects. Also provides information about adding assets and third-party frameworks to the module.
 
 **[Android Module API Reference](http://docs.appcelerator.com/module-apidoc/latest/android/index.html)**
 

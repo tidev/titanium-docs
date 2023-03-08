@@ -146,4 +146,4 @@ Some USB cords are only power cables and do not allow a data connection. Make su
 
 ## Summary
 
-In this chapter, you learned that deploying to an Android device is fairly simple. You configure the device to accept non-market apps. Then, you just need to get the APK file to the testing device. You can do that via Studio, `adb`, an ad-hoc distribution method like a web page, or via a framework like HockeyKit.
+In this chapter, you learned that deploying to an Android device is fairly simple. You configure the device to accept non-market apps. Then, you just need to get the APK file to the testing device. You can do that via `adb`, an ad-hoc distribution method like a web page, or via a framework like HockeyKit.

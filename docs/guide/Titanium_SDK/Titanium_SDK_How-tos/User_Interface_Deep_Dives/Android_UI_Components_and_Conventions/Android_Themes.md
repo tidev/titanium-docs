@@ -202,10 +202,6 @@ As you can see in the previous examples, an application-wide theme can be specif
 <activity android:name="org.appcelerator.titanium.TiTranslucentActivity" android:theme="@android:style/Theme.AppDerived.Translucent"/>
 ```
 
-::: warning ⚠️ Warning
-The `build` folder is hidden by default in Studio's **App Explorer** and **Project Explorer** views, but visible in the **Navigator** view.
-:::
-
 To override the theme for one of these activities, copy the activity definition into the `tiapp.xml` file, and place it inside the `<android><manifest>` element. The `<activity>` element must be nested inside an `<application>` element, as in the original `AndroidManifest.xml` file. The end result should look something like this:
 
 ```xml

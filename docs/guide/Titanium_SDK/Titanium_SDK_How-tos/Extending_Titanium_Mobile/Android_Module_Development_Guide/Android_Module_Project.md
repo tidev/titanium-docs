@@ -7,7 +7,7 @@ weight: '30'
 
 ## Introduction
 
-This guide covers how to manage your module project as well as how to add third-party frameworks and bundle assets with your module. You can use Studio, Eclipse or the Appc-CLI to build Android modules.
+This guide covers how to manage your module project as well as how to add third-party frameworks and bundle assets with your module. Use the CLI to compile your modules.
 
 ## Prerequisites
 
@@ -17,19 +17,9 @@ To develop an Android-based Module, you need to install the following tools and 
 
 * Android SDK API 26+
 
-* Studio or the Appcelerator Command-Line Interface (CLI) for creating modules, and building and running test applications
+* Titanium Command-Line Interface (CLI) for creating modules, and building and running test applications
 
-* [Android NDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_the_Android_NDK/) and add an ANDROID\_NDK environment variable pointing to the NDK directory. See [Installing the Android NDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_the_Android_NDK/).
-
-* [gperf](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_gperf/) must be installed and in your system PATH. See [Installing gperf](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_gperf/).
-
-* Python, Python setuptools and the markdown module, and Python in your system PATH. See [Installing Python](#undefined) and [Installing Required Python Packages](#undefined).
-
-If you want to use Studio, install:
-
-* [Eclipse Java Development Tools plugin](https://eclipse.org/jdt/). See [Installing the Java Development Tools](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Getting_Started/Installing_the_Java_Development_Tools/).
-
-* [Android Development Tools plugin](http://developer.android.com/tools/sdk/eclipse-adt.html). See [Installing the Android Development Tools](#undefined).
+Note: You can use Android Studio to write your modules and use its coding features like code-completion. To do that you have to build your module once and then open the `build/` folder in Android Studio. Check [from zero to app - Create Android modules for Titanium](https://fromzerotoapp.com/create-android-modules-for-titanium/#link3) for another tutorial.
 
 ## Project Structure
 
@@ -39,20 +29,6 @@ A number of files and directories work together to define our module and what it
 
 The CLI creates a module project that contains multiple platforms. Each platform contains its own folder with platform-specific resources and common folders for `assets`, `documentation`, `example`, and `Resources`.
 
-### Build properties file
-
-::: warning ⚠️ Warning
-This was deprecated since 5.0.0.
-:::
-
-The `build.properties` file contains build variables used by the Ant CLI. Using the build.properties is deprecated in favor of the unified build-command `ti build -p android --build-only.`
-
-| Variable | Description | Example |
-| --- | --- | --- |
-| titanium.platform | Path to the Titanium SDK `android` folder | `/Users/<USERNAME>/Library/Application Support/Titanium/mobilesdk/osx/<VERSION>/android` |
-| android.platform | Path to the Android SDK `platforms` folder | `/Users/<USERNAME>/opts/android-sdk/platforms/android-25` |
-| google.apis | Path to the Google APIs `add-ons` folder | `/Users/<USERNAME>/opts/android-sdk/add-ons/addon-google_apis-google-25` |
-| android.ndk | Path to the Android NDK (if needed) | `/Users/<USERNAME>/opts/android-ndk` |
 
 ### Manifest file
 
@@ -121,49 +97,8 @@ With the ZIP file, you can either:
 
 ### Clean the project
 
-Earlier, you could clean your module with `ant clean`. These days, using the Appc-CLI, the build will be cleaned automatically before a new build is made.
+The build will be cleaned automatically before a new build is made. You can use `ti clean` to do it manually.
 
-## Studio tasks
-
-### Create a new module project
-
-1. From the menu, select **File** > **New** > **Mobile Module Project** to open the **New Mobile Module Project** dialog.
-
-2. In the **Project name** field, enter a name for the module.
-
-3. In the **Module ID** field, enter a module ID for the module.
-
-4. In **Deployment Targets**, select **Android**.
-
-5. Click **Next.**
-
-6. In the **Module Manifest File** page, enter information about your module, such as the license information, version number, etc. You can also edit this information in the `manifest` file later.
-
-7. Click **Finish**.
-
-### Build and package the module
-
-You can either use Studio's launch toolbar or use Ant from the right-click context menu.
-
-#### Studio Toolbar
-
-1. Select your module folder in the **Project Explorer** view.
-
-2. Verify **Package** and **Android Module** are displayed in **Launch Mode** and **Launch Target**, respectively.
-
-3. Click the Package icon to open the **Package Android Module** dialog.
-
-4. In **Output Location**, select either
-
-    1. **Titanium SDK** to install the module in the Titanium SDK home path to be accessed by any Titanium application
-
-    2. **Mobile App Project** and choose an application to install the module locally that can be accessed by one that Titanium application
-
-    3. **Location** and enter a path to copy the ZIP file to for distribution
-
-5. Click **Finish**.
-
-In the **Console** view, you will see the build log output. After the build completes, the package (ZIP file) will be in the module's `android/dist` folder.
 
 ## Test the module
 
@@ -237,9 +172,6 @@ With Titanium 6.1.1 - 8.3.1, you can also copy AAR (Android Archive) library fil
 Most third-party libraries can be downloaded from either GitHub or from one of the popular repositories like [jCenter](https://bintray.com/bintray/jcenter) or [Maven Central](http://maven%20central/). Copies of the Android Support Libraries can be found inside your Android SDK directory under `<android-sdk>/extras/android/m2repository/com/android`
 :::
 
-### Adding Android Libraries to Studio
-
-To properly resolve any imports of your used Android Libraries in Studio, you need to add the JARs they are contained in to Studio's Java build path. Before you add any import statements to your code, build the project at least once. This is required to process the AAR files and extract the JAR files they contain. After that, add the required JARs to Studio just as described in the [Add a Third-Party JAR](#AddaThird-PartyJAR) section of this guide. The extracted JAR files can be found under `build/android/intermediates/exploded-aar`. There you'll find a directory for each AAR file. Inside each of those directories, add the `classes.jar` and any additional JAR files under the `lib` directory.
 
 ## Bundling files
 

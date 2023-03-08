@@ -25,19 +25,9 @@ You can **[download](https://github.com/appcelerator-developer-relations/FaveBoo
 
 ## Create a new project
 
-To start, you'll create a new Alloy project in Studio.
+To start, you'll create a new Alloy project.
 
-**To create a new Alloy project:**
-
-1. In Studio, select **File** > **New** \> **Mobile App Project**.
-
-2. Select the **Default Alloy Project** type and click Next.
-
-3. On the **Project Location** screen, enter **FaveBooks** for the Project name and **com._your- domain_.favebooks.** Replace _your-domain_ with your personal or organization's domain. Leave the other fields at their default values.
-
-4. Click **OK**.
-
-The new project opens in Studio.
+Run `ti create --alloy` and walk through the menu. If you use an older version of Titanium SDK you need it will create a normal/classic project first and then you have to go into the project folder and run `alloy new` to create an Alloy project.
 
 ## Create the data model
 
@@ -45,18 +35,12 @@ The heart of the FaveBooks app is the data containing the userâ€™s books, so weâ
 
 **To create the data model:**
 
-1. Right-click or Control-click on the top-level project folder and select **New** \> **Alloy Model**, or press Cmd+Shift+M (Mac) or Ctrl+Shift+M (Windows).
+Create a new model using the CLI:
+```
+alloy generate model books sql id:'INTEGER PRIMARY KEY AUTOINCREMENT' title:text author:text
+```
 
-2. In the New Model dialog, make the following entries:
-
-    * For **Model name**, enter **books**.
-
-    * Select **sql** from the **Adapter** menu.
-
-    * In the **Schema** table, add two fields named **title** and **author** and set their types to **text**.
-
-        ![new_model](./new_model.png)
-3. Click OK.
+to create a model with two text fields `title` and `author` and a `id` primay key.
 
 This creates a new file in the **app/models** directory called **books.js**. This file describes the data model you just created. The `config` section, in particular, defines the data columns, adapter type, and collection name.
 
