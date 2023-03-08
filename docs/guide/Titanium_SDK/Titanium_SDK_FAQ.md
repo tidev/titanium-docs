@@ -121,17 +121,17 @@ configurations {
 
 **Error:**
 ```
- More than one file was found with OS independent path 'META-INF/module_release.kotlin_module'.
- ```
+More than one file was found with OS independent path 'META-INF/module_release.kotlin_module'.
+```
 
- **Solution:**
- ```
- android {
-   packagingOptions {
-       exclude 'META-INF/*.kotlin_module'
-  }
- }
- ```
+**Solution:**
+```
+android {
+	packagingOptions {
+		exclude 'META-INF/*.kotlin_module'
+	}
+}
+```
 
 ## Can I use Swift code to develop apps for Android in Hyperloop?
 
