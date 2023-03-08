@@ -18,11 +18,10 @@ The first step is to create a new Mobile App Project and select a starting templ
     1. `ti create` and continue with the menu
     ![ti create](./ti_create.png)
     2. After that you go into the folder and run `alloy new` to create an Alloy project.
-    3. starting with Titanium SDK 12 you can use `ti create --alloy`.
+    3. Starting with Titanium SDK 12 you can use `ti create --alloy`.
 
 2. If you use VSCode you can click on the `Create App` button
     ![ti create](./ti_create_vscode.png)
-
 
 3. In the **Explorer** view, open **index.xml** located in the **app/views** folder.
 
@@ -37,7 +36,6 @@ The first step is to create a new Mobile App Project and select a starting templ
 ## Running the application
 
 To run the application you select a target simulator, emulator, or device, and click **Run**. The targets available for you to test with depends on which native SDKs you previously installed. For this example, it's assumed you've installed Xcode and are targeting an iOS simulator. If you are targeting Android, select an appropriate simulator, emulator or device from the **Target** menu.
-
 
 1. From the **Build** menu, select an iOS or Android simulator.
     ![ti create](./ti_create_vscode3.png)
