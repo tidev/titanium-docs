@@ -226,7 +226,7 @@ exports.createFoo = function (args) {
 
 You can also include a view from a native module using the `Module` XML element. To use the Module tag:
 
-1. Add the module to your project. For instructions on adding a module to your project, see [Using Titanium Modules](/guide/Axway_Appcelerator_Studio/Axway_Appcelerator_Studio_Guide/Titanium_Development/Titanium_Modules/Using_Titanium_Modules/).
+1. Add the module to your project.
 
 2. Add the `Module` tag in to an Alloy view as a child of a window or another parent object depending on the view object returned by the module.
 
@@ -236,7 +236,7 @@ You can also include a view from a native module using the `Module` XML element.
 
 5. If the method invoked uses a simple JavaScript object as its only parameter, you can optionally pass in the parameters either inline or with the TSS file.
 
-For example, to use the [Paint Module](https://github.com/appcelerator-archive/ti.paint/releases), first download and add the module to your project. The Paint Module creates a Titanium View, which can be drawn on, using the `createPaintView` method. To use this view in the index view-controller, you need to add it as a child of a window (or similar parent view object). In the code below, the Module tag is used to add the Paint Module to the window and passes properties inline that are specific to the module. You may also pass any `Titanium.UI.View` properties to the module since it extends a Titanium View.
+For example, to use the [Paint Module](https://github.com/tidev/ti.paint/releases), first download and add the module to your project. The Paint Module creates a Titanium View, which can be drawn on, using the `createPaintView` method. To use this view in the index view-controller, you need to add it as a child of a window (or similar parent view object). In the code below, the Module tag is used to add the Paint Module to the window and passes properties inline that are specific to the module. You may also pass any `Titanium.UI.View` properties to the module since it extends a Titanium View.
 
 **app/views/index.xml**
 

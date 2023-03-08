@@ -93,7 +93,7 @@ The copyright of this application.
 
 ### deployment-target
 
-This element contains subelements of deployment targets used by Studio to determine which target options should be shown in the deployment menus.
+This element contains subelements of deployment targets used by the IDE to determine which target options should be shown in the deployment menus.
 
 * `<target device="DEVICE">`: Specifies if the target device is supported by the project. Must be placed inside the `<deployment-targets>` element.
 
@@ -488,7 +488,7 @@ Do not set the `android:anyDensity` attribute to false. Google does not recommen
 #### Enabling the debugger by default
 
 To make the app `debuggable` by default, set the `<application>` attribute to `true` (it's false in our default manifest template).
-This setting is required to attach the Java debugger to a running application. It is **not** required for debugging the application's JavaScript in Studio, so setting `debuggable` to `true` may be primarily interesting to developers working on native Android modules or debugging issues in the Titanium native libraries.
+This setting is required to attach the Java debugger to a running application. Setting `debuggable` to `true` may be primarily interesting to developers working on native Android modules or debugging issues in the Titanium native libraries.
 
 ```xml
 <android xmlns:android="http://schemas.android.com/apk/res/android">

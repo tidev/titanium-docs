@@ -9,7 +9,7 @@ weight: '10'
 
 This page lists information on how to use Hyperloop with new and existing projects. Hyperloop works as a native module and is pre-packaged with the SDK.
 
-Each Titanium project that wants to use Hyperloop requires the Hyperloop service to be enabled. By default, Hyperloop is disabled and you can enable it for your projects via the CLI or within Studio.
+Each Titanium project that wants to use Hyperloop requires the Hyperloop service to be enabled. By default, Hyperloop is disabled and you can enable it for your projects via the CLI.
 
 ### Requirements
 
@@ -30,45 +30,6 @@ If you’d like to use Hyperloop in a new or existing Titanium project, add the 
   <module>hyperloop</module>
 </modules>
 ```
-
-## Enabling via CLI
-
-When creating a new project, the CLI will check if you are entitled to use Hyperloop. If you are, the CLI will prompt you with the following message: "Would you like to enable Hyperloop for this app (This may take a while...)". If you enable Hyperloop, it may take some time to retrieve the module and set up your project. Newer SDK versions ship the module and will not need to download it.
-
-**Note:** If you have any issue enabling Hyperloop from the CLI, or, you are not asked if you want to enable Hyperloop, ensure you are logged into the platform with the appropriate subscription, use the `ti login` command to confirm you are logged in.
-
-### Enabling via Studio
-
-### Creating new Hyperloop-enabled project
-
-Follow these steps to create a new Hyperloop-enabled project:
-
-1. Open **New Mobile App** **Project** wizard.
-
-    ![enable-hyperloop](./enable-hyperloop.png)
-2. In the **Enable AMPLIFY Appcelerator Platform Services** section, you will see Hyperloop listed along with Cloud and Analytics (if you are entitled to use it). **Check the Enable AMPLIFY Appcelerator Services** toggle.
-
-3. Click **Finish**.
-
-4. During the project creation, Studio will prompt you with a **confirmation to enable Hyperloop**. The prompt should say something like this: "Would you like to enable Hyperloop for this app (This may take a while...)". Click **Yes** to confirm. You may also see the same confirmation request for Appcelerator Test in which case you can click No and continue on.
-
-To confirm that Hyperloop was set up, you can open the `tiapp.xml` file in the Service section.
-
-![hyperloop-enabled](./hyperloop-enabled.png)
-
-After enabling Hyperloop, the following tags should have been added to the `tiapp.xml` file, you can validate them here:
-
-```xml
-<modules>
-  <module platform="android">hyperloop</module>
-  <module platform="iphone">hyperloop</module>
-  ...
-</modules>
-```
-
-### Enabling Hyperloop on non-Hyperloop projects
-
-If Hyperloop was disabled or not available when the project was created, you can enable Hyperloop from the `tiapp.xml` editor service section by clicking on **Enable Services** and selecting **Hyperloop**. Please note that this may also require the other changes mentioned above in **[Using Hyperloop on existing projects](#Usingonexistingprojects)**.
 
 ### Getting Started
 

@@ -44,6 +44,7 @@ module.exports = {
         items: docSections
       },
       { text: 'API Reference', link: '/api/' },
+      { text: 'Native Modules', link: 'https://modules.titaniumsdk.com/' },
       {
         text: 'Ecosystem',
         items: [

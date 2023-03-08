@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /images/titanium-logo.png
+heroImage: /images/icons/icon-titanium-red.svg
 heroText: Titanium SDK
 tagline: Write in JavaScript. Run native everywhere.
 actionText: Get Started →
