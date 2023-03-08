@@ -9,8 +9,7 @@ weight: '20'
 
 Android Intent Filters give applications the ability to receive implicit intents from other Android applications. An intent is a message object, usually containing data, sent by another application to start a new application to handle the data. Intents are sent to the Android OS, which directs the intent to the appropriate application to handle the data. If more than one application can handle the data, Android presents a dialog to the user to select an application to launch. An intent filter indicates to the Android OS that your application can handle certain data types or URIs. For example, if a user opens their browser and highlights some text, the user can share that text with other Android apps, such as an e-mail application, SMS application or a social networking application.
 
-<img src="ShareDialog.png" alt="ShareDialog.png" class="confluence-embedded-image">
-
+![ShareDialog][ShareDialog.png]
 
 ## Receive an implicit intent
 
