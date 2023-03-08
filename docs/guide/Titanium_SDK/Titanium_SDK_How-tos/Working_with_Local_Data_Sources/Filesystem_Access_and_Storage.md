@@ -37,7 +37,7 @@ Before we get into the mechanics of accessing the file system, let's talk about 
 
 * **Ti.Filesystem.applicationDataDirectory**: A read/write directory accessible by your app. Place your application-specific files in this directory. The contents of this directory persist until you remove the files or until the user uninstalls the application.
 
-* **Ti.Filesystem.resourcesDirectory**: A read-only directory where your application resources are located; this directory corresponds to the _project_/Resources directory in Studio. The contents of this directory persist until the user uninstalls the application.
+* **Ti.Filesystem.resourcesDirectory**: A read-only directory where your application resources are located; this directory corresponds to the _project_/Resources directory. The contents of this directory persist until the user uninstalls the application.
 
 * **Ti.Filesystem.tempDirectory**: A read-write directory where your application can place temporary files. The contents of this directory persist until your application fully closes, at which time the operating system could delete your files.
 

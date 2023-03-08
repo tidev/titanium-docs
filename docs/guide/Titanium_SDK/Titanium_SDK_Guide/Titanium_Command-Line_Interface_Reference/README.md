@@ -91,7 +91,7 @@ Builds and runs an application or module project.
 The CLI checks several settings to see which SDK version to use to build your application. The following is a list of locations in the order of precedence. If an SDK version is not defined in that location, the next location is checked.
 
 1. `tiapp.xml` file version specified with the `sdk-version` tag.
-    To change this version, manually edit the tiapp.xml file with a text editor or use Studio.
+    To change this version, manually edit the tiapp.xml file with a text editor.
 
 2. `--sdk` command-line option with the `titanium build` command.
 
