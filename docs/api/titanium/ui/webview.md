@@ -55,6 +55,8 @@ webview.evalJS(
 ```
 The `binding.min.js` is available in the [repository](https://github.com/tidev/titanium_mobile/tree/master/android/modules/ui/assets/Resources/ti.internal/webview).
 
+For iOS check the example in <Titanium.UI.WebView.addScriptMessageHandler>.
+
 ### Local JavaScript Files
 
 During the build process for creating a package, all JavaScript files, that is, any file with a
