@@ -51,7 +51,7 @@ Print tracing involves adding `Ti.API.info()` type statements to your app so tha
 
 Crash log evaluation includes looking at the build and runtime logs associated with the Titanium build scripts, native compilation steps, and runtime crash logging performed by the simulator/emulator or device. Error messages in those logs can help you track down the source of bugs.
 
-Interactive debugging involves using a dedicated debugging tool or feature of your IDE to set breakpoints, then evaluate the state and values of variables during the execution of your program. Studio supports interactive debugging, with which you can set breakpoints at specific locations in your code, or set exception breakpoints to pause your program when a specific exception is raised.
+Interactive debugging involves using a dedicated debugging tool or feature of your IDE to set breakpoints, then evaluate the state and values of variables during the execution of your program.
 
 ### Debugging vs. software testing
 

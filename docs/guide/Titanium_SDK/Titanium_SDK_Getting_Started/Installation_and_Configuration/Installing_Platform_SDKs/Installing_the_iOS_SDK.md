@@ -191,7 +191,7 @@ On Mavericks and later, to fix this issue:
 
 5. Click **Accessibility** from the left list.
 
-6. Enable either **Terminal** (if you are using the CLI) or **AppceleratorStudio** when using Studio.
+6. Enable either **Terminal** (if you are using the CLI).
 
 7. Close the **System Preferences**.
 

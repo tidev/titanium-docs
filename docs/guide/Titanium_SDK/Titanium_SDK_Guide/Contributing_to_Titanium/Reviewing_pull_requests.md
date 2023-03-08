@@ -58,4 +58,4 @@ tisdk=<path\_to\_sdk>
 // e.g.
 jake app:run dir=ALOY-1234 platform=android tiversion=3.2.2.GA
 
-The resulting app will be installed to your simulator/emulator under the name **Harness**. You can import the Harness app into Studio to build for other platforms, install to device, etc. The Harness app is wiped with each jake app:run command.
+The resulting app will be installed to your simulator/emulator under the name **Harness**. The Harness app is wiped with each jake app:run command.
