@@ -88,12 +88,12 @@ recordPause.addEventListener('click', function(e) {
 
 recordStop.addEventListener('click', function(e) {
   record = audioRecorder.stop();
-  Ti.API.info(record.getNativePath());
+  Ti.API.info(record.nativePath);
 });
 
 recordPlay.addEventListener('click', function(e) {
   audioPlayer = Ti.Media.createAudioPlayer({
-    url: record.getNativePath()
+    url: record.nativePath
   });
   audioPlayer.start();
 });
