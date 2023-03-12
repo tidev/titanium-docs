@@ -58,4 +58,23 @@ win.add(collapsingToolbar);
 win.open();
 ```
 
+### Alloy example
+
+``` js
+<Alloy>
+	<Window>
+
+		<CollapseToolbar platform="android">
+
+			<ContentView>
+				<View backgroundColor="red" height="Ti.UI.SIZE">
+					<Label>test</Label>
+				</View>
+			</ContentView>
+		</CollapseToolbar>
+
+	</Window>
+</Alloy>
+```
+
 <ApiDocs/>
