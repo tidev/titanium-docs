@@ -11,11 +11,11 @@ A list item is a combination of a <ListDataItem> and <ItemTemplate>.  The list d
 represents the actual data, while the item template represents the style elements of the item.
 
 You should not create `ListItem` objects with a JavaScript factory method, as you do other Titanium proxies.
-Instead, you should pass a <ListDataItem> array to the `setItems` method of a `ListSection`. The list data items 
+Instead, you should pass a <ListDataItem> array to the `setItems` method of a `ListSection`. The list data items
 contain the data you want to display in the list.
 
 Alloy applications can use **`<ListItem>`** elements to create `ListItem` objects. `<ListItem>` elements
-must be nested inside a **`<ListSection>`** element, which itself is nested in a `<ListView>` element, 
+must be nested inside a **`<ListSection>`** element, which itself is nested in a `<ListView>` element,
 as shown below:
 
 ``` xml
@@ -30,7 +30,7 @@ as shown below:
 ```
 
 By default, only the `title`, `image` and `accessoryType` keys of the list data item's
-`properties` dictionary are displayed if an item template is not defined.  See "Default List Items" 
+`properties` dictionary are displayed if an item template is not defined.  See "Default List Items"
 under "Examples" section for an example of using the default template.
 
 
@@ -106,7 +106,7 @@ To monitor events that bubble to the `ListItem` or to monitor events of the view
 bind them to the item by using the `events` dictionary of the item template or the child view
 templates respectively. Add the bindings as key-value pairs, where the key is the event name
 and the value is the callback (or array of callbacks for multiple bindings). See "List Items
-with an Item Template" under "Examples" section for an example of binding a `click` event to an 
+with an Item Template" under "Examples" section for an example of binding a `click` event to an
 item using an item template.
 
 ## Examples
@@ -128,7 +128,7 @@ var tasks = [
 
 var data = [];
 for (var i = 0; i < tasks.length; i++) {
-    data.push({ 
+    data.push({
         properties: {
             itemId: tasks[i].id,
             title: tasks[i].name,
@@ -159,7 +159,7 @@ win.open();
 
 ### Default List Items (Alloy version)
 
-Alloy version of previous example. For additional Alloy examples of using `ListView`, see <Titanium.UI.ListView>. 
+Alloy version of previous example. For additional Alloy examples of using `ListView`, see <Titanium.UI.ListView>.
 
 index.xml
 ``` xml
@@ -248,7 +248,7 @@ redTemplate.childTemplates[2].properties.color = 'red';
 redTemplate.events.click = toggleCheck;
 
 var listView = Ti.UI.createListView({
-    // Maps plainTemplate to 'uncheck' and redTemplate to 'check' 
+    // Maps plainTemplate to 'uncheck' and redTemplate to 'check'
     templates: { 'uncheck': plainTemplate, 'check': redTemplate },
     // Use 'uncheck', that is, the plainTemplate created earlier for all items
     // Can be overridden by the item's template property
@@ -297,7 +297,7 @@ function toggleCheck(e) {
         item.template = 'uncheck';
     }
     section.updateItemAt(e.itemIndex, item);
-} 
+}
 
 win.add(listView);
 win.open();
