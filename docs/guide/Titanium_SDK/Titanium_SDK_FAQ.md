@@ -24,7 +24,7 @@ Go to Xcode and make sure `preferences->locations->Command Line Tools` is set to
 
 ## iOS build error: "Unable to find any non-expired Ad Hoc or Enterprise Ad Hoc provisioning profiles that match the app id"
 
-Check your ~/.titanium/config.json  and ensure you haven’t set a default cert in the iOS section.
+Check your ~/.titanium/config.json and ensure you haven’t set a default cert in the iOS section.
 
 ## VSCode won't update the CLI
 
