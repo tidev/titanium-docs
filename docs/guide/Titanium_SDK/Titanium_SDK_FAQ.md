@@ -22,6 +22,10 @@ Besides this documentation you can look at [from zero to app](https://fromzeroto
 
 Go to Xcode and make sure `preferences->locations->Command Line Tools` is set to the correct Xcode path.
 
+## iOS build error: "Unable to find any non-expired Ad Hoc or Enterprise Ad Hoc provisioning profiles that match the app id"
+
+Check your ~/.titanium/config.json  and ensure you haven’t set a default cert in the iOS section.
+
 ## VSCode won't update the CLI
 
 Run `sudo npm i -g titanium alloy` in a terminal and restart VSCode. Then it should use the latest CLI tools.
