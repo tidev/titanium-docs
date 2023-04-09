@@ -9,16 +9,6 @@ weight: '30'
 
 The following example applications may be useful to browse for examples of API usage and approaches to structuring Titanium applications.
 
-## Kitchen Sink
-
-This expansive sample application showcases the majority of Titanium SDK's APIs. Starting in Titanium Release 2.1.1, the Kitchen Sink has been completely refactored to use a more modern application structure. This version of the Kitchen Sink sample does not yet support the Nook or Kindle Fire (or other Android devices that lack support for Google APIs such as location services). For these devices, there is a legacy version of the Kitchen Sink.
-
-::: warning ⚠️ Warning
-Prior to Release 2.1.1, the KitchenSink did not represent _best practices_ and therefore its structure should **not** be used for real-world applications.
-:::
-
-[Kitchen Sink on GitHub](http://github.com/appcelerator/KitchenSink)
-
 ## Kitchen Sink 2.0
 
 Kitchen Sink 2.0 is a refactored Alloy-based version of the KitchenSink demo-app. This project gives an overview of native components available in Titanium. The components are grouped into multiple groups and can be logged in the "Logs" tab. It also includes full support for iOS & Android.

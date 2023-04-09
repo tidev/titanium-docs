@@ -7,11 +7,7 @@ weight: '60'
 
 * [Summary](#summary)
 
-In this section, we'll examine the Appcelerator recommended best-practices for coding style, including naming conventions, code formatting, and commenting.
-
-::: warning ⚠️ Warning
-We'll also cover our recommendations for organizing the assets that comprise your project.
-:::
+In this section, we'll examine the Titanium SDK recommended best-practices for coding style, including naming conventions, code formatting, and commenting.
 
 ## Language rules
 
@@ -54,7 +50,7 @@ driveCarBlue, stopCarRed
 Both variables and functions (or properties and methods, respectively) start with a lowercase word so that they are easier to differentiate from major namespace objects or 'classes'.
 
 ::: warning ⚠️ Warning
-Appcelerator does not support the use of Hungarian Notation.
+Titanium SDK does not support the use of Hungarian Notation.
 :::
 
 #### Object and 'class' names

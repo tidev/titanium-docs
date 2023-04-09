@@ -11,31 +11,29 @@ Appcelerator strives to make the developer experience as effective and efficient
 
 ## Contents
 
-### Developer resources
+### Developer resources, Help and support
 
-* [Community Q & A](https://developer.appcelerator.com/help): Post a question and get help from the community.
+* [GitHub Discussions](https://github.com/tidev/titanium_mobile/discussions): Post a question and get help from the community.
 
-* [Developer Blog](http://www.appcelerator.com/blog): Find information about upcoming releases and other helpful articles.
+* [Slack](https://tidev.slack.com/): Titanium SDK Coummunity Slack. Help, jobs, announcements and much more.
 
-* [Appcelerator University](https://university.appcelerator.com/): Watch videos about using Appcelerator products.
+* [Module Search](https://modules.titaniumsdk.com/): Titanium SDK | Module Search
+
+* [From zero to app](https://fromzerotoapp.com/): Tutorials and modules
 
 ### Example code
 
 You'll find sample code, example projects, app components, and more at the following github repositories.
 
-* [Appcelerator github repository](https://github.com/appcelerator) – Titanium source code, free add-on modules, and the KitchenSinkCommunity Q
+* [Titanium SDK GitHub repository](https://github.com/tidev) – Titanium source code, free add-on modules and sample apps
 
-(Apologies for anyone we left off. This list is hardly exhaustive.)
+### Social media
 
-### Help and support
+* Twitter – Titanium SDK and staff on twitter include:
 
-* [Community Support](http://developer.appcelerator.com)
+    * [@tidevio](https://twitter.com/tidevio) is our foundation account
 
-* Twitter – Appcelerator and staff on twitter include:
-
-    * [@appcelerator](https://twitter.com/#!/appcelerator) is our corporate account
-
-    * [@appcdev](https://twitter.com/appcdev) is our developer account
+    * [@TitaniumSDK](https://twitter.com/TitaniumSDK) is our SDK account
 
 ## Summary
 

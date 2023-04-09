@@ -19,8 +19,6 @@ It's recommended to download the NDK via Android Studio. This will install it un
 
 Alternatively, you can install the Android NDK to your own custom location by downloading from the following website:
 
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
-
 [Download the Android NDK on developer.android.com](http://developer.android.com/sdk/ndk/index.html)
 
 ## Installation

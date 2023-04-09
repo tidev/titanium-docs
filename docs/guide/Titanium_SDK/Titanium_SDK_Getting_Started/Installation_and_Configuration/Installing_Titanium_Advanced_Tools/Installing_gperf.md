@@ -17,7 +17,6 @@ gperf is not required for building, running, or distributing applications using 
 
 Obtain the latest stable version of gperf.
 
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
 
 | Operating System | Package Version | Download Location |
 | --- | --- | --- |
