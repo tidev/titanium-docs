@@ -9,7 +9,7 @@ weight: '20'
 
 ## About this release
 
-Titanium SDK 12.1.0 is a minor release of the SDK, addressing high-priority issues from previous releases. Highlights of this release are:
+Titanium SDK 12.1.0 is a minor release of the SDK, adding new features and addressing high-priority issues from previous releases.
 
 - Support for Node.js 19
 - Enhanced support for Android 13
