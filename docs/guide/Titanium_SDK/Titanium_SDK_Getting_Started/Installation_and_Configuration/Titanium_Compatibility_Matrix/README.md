@@ -334,24 +334,3 @@ The following table lists the various CLI component versions:
 #### Android emulator
 
 Refer to the [Android requirements and instructions below](#android) for installing the Android SDK, which contains the Android emulator.
-
-## Other useful software
-
-The following tools are required for native add-on module development or building the Titanium SDK from source. These tools are not required for mobile application development with the Titanium SDK.
-
-### gperf
-
-The GNU gperf utility is used for generating hash functions. It is used when you build the Titanium SDK from source. It is not needed for Titanium app or module builds.
-
-The gperf tool is installed as part of the Xcode command-line tools, but you may need to install it on Windows.
-
-gperf is not required for building, running, or distributing applications using the Titanium SDK.
-
-Obtain the latest stable version of gperf.
-
-| Operating System | Package Version | Download Location |
-| --- | --- | --- |
-| OS X | Latest Stable | Included with the Xcode developer tools. |
-| Windows | Latest Stable | [gnuwin32.sourceforge.net](http://gnuwin32.sourceforge.net/packages/gperf.htm) |
-
-See [Installing gperf](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_gperf.html) for detailed instructions.

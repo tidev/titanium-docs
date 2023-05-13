@@ -11,7 +11,7 @@ Appcelerator strives to make the developer experience as effective and efficient
 
 ## Contents
 
-### Developer resources, Help and support
+### Developer Resources, Help and Support
 
 * [GitHub Discussions](https://github.com/tidev/titanium_mobile/discussions): Post a question and get help from the community.
 
