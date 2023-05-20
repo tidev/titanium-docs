@@ -110,7 +110,7 @@ git fetch upstream --prune
 
 ## Build the SDK
 
-The method written below is the old way. The repo has now been updated to do away with scons. Please refer to [https://github.com/tidev/titanium\_mobile/blob/master/README.md#building-locally](https://github.com/tidev/titanium_mobile/blob/master/README.md#building-locally) on how to build locally with Node.JS scrips.
+The method written below is the old way. The repo has now been updated to do away with scons. Please refer to [https://github.com/tidev/titanium\_mobile/blob/master/README.md#building-locally](https://github.com/tidev/titanium-sdk/blob/master/README.md#building-locally) on how to build locally with Node.JS scrips.
 
 In the root of your `titanium_mobile` repo, run the following commands:
 

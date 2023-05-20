@@ -210,7 +210,7 @@ try {
 
 The Titanium SDK uses clang-format to have a unified code-style in its source-code (clang-format for iOS and Android, ESLint for the CLI). You can do the same by following the following few steps:
 
-1. Copy the `.clang-format` file from [here](https://github.com/tidev/titanium_mobile/blob/master/android/.clang-format) to the "`android/`" directory of your module project, e.g. `<module-root>/ios/.clang-format`
+1. Copy the `.clang-format` file from [here](https://github.com/tidev/titanium-sdk/blob/master/android/.clang-format) to the "`android/`" directory of your module project, e.g. `<module-root>/ios/.clang-format`
 
 2. Install the [clang-format CLI](https://clang.llvm.org/docs/ClangFormat.html): `npm install -g clang-format`
 

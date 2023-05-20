@@ -57,7 +57,7 @@ module.exports = {
               },
               {
                 text: 'GitHub Discussions',
-                link: 'https://github.com/tidev/titanium_mobile/discussions'
+                link: 'https://github.com/tidev/titanium-sdk/discussions'
               },
               {
                 text: 'Reddit',

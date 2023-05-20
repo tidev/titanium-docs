@@ -84,4 +84,4 @@ As you may noticed, the difference between types in Swift and JavaScript is pret
 
 ## What's next?
 
-Well, you learned how to create native Swift-based modules. Once your module is ready, you can package it (`ti build -p ios --build-only`) and deploy it to GitHub or [Gitt.io](http://gitt.io). If you have further questions, make sure to visit our [TiSlack](http://tislack.org) community or reach out to us via [GitHub Issues](https://github.com/tidev/titanium_mobile/issues). Code strong!
+Well, you learned how to create native Swift-based modules. Once your module is ready, you can package it (`ti build -p ios --build-only`) and deploy it to GitHub or [Gitt.io](http://gitt.io). If you have further questions, make sure to visit our [TiSlack](http://tislack.org) community or reach out to us via [GitHub Issues](https://github.com/tidev/titanium-sdk/issues). Code strong!

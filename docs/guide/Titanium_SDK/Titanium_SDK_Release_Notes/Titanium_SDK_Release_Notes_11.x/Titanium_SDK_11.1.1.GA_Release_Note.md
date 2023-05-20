@@ -16,22 +16,22 @@ As of this GA release, the previous Titanium SDK patch release (11.1.0) is no lo
 ## Community Credits
 
 * Hans Knöchel
-  * fix touch issue on Apple Silicon simulators ([ca627bb](https://github.com/tidev/titanium_mobile/commit/ca627bb2defa69e42c101deff464abdc23cdcff4))
-  * fix deprecation warning crash ([34f963b](https://github.com/tidev/titanium_mobile/commit/34f963bee3838521666087e1a6612c5c1a562ca3))
+  * fix touch issue on Apple Silicon simulators ([ca627bb](https://github.com/tidev/titanium-sdk/commit/ca627bb2defa69e42c101deff464abdc23cdcff4))
+  * fix deprecation warning crash ([34f963b](https://github.com/tidev/titanium-sdk/commit/34f963bee3838521666087e1a6612c5c1a562ca3))
 
 * Michael Gangolf
-  * lower build gradle (11.1.X) ([7832604](https://github.com/tidev/titanium_mobile/commit/78326048f6e055464fddceeef6b51dd0dc946496))
+  * lower build gradle (11.1.X) ([7832604](https://github.com/tidev/titanium-sdk/commit/78326048f6e055464fddceeef6b51dd0dc946496))
 
 ## Bug Fixes
 
 ### iOS platform
 
-* fix touch issue on Apple Silicon simulators ([ca627bb](https://github.com/tidev/titanium_mobile/commit/ca627bb2defa69e42c101deff464abdc23cdcff4))
-* fix deprecation warning crash ([34f963b](https://github.com/tidev/titanium_mobile/commit/34f963bee3838521666087e1a6612c5c1a562ca3))
+* fix touch issue on Apple Silicon simulators ([ca627bb](https://github.com/tidev/titanium-sdk/commit/ca627bb2defa69e42c101deff464abdc23cdcff4))
+* fix deprecation warning crash ([34f963b](https://github.com/tidev/titanium-sdk/commit/34f963bee3838521666087e1a6612c5c1a562ca3))
 
 ### Android platform
 
-* lower build gradle (11.1.X) ([7832604](https://github.com/tidev/titanium_mobile/commit/78326048f6e055464fddceeef6b51dd0dc946496))
+* lower build gradle (11.1.X) ([7832604](https://github.com/tidev/titanium-sdk/commit/78326048f6e055464fddceeef6b51dd0dc946496))
 
 ## SDK Module Versions
 

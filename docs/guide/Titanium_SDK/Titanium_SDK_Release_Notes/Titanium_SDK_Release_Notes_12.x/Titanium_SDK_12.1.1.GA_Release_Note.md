@@ -16,7 +16,7 @@ addressing an issue from 12.1.0.GA where apps could not build with older version
 ### iOS platform
 
 * Hans Knöchel
-  * fix: restore support for Xcode < 14.3 ([a08e0ec](https://github.com/tidev/titanium_mobile/commit/a08e0ec95ab6803b1ffbc63fd498e265f6888c2a))
+  * fix: restore support for Xcode < 14.3 ([a08e0ec](https://github.com/tidev/titanium-sdk/commit/a08e0ec95ab6803b1ffbc63fd498e265f6888c2a))
 
 ## SDK Module Versions
 
