@@ -4,7 +4,7 @@
 
 ## Getting started
 
-These docs aim to be a hybrid solution of Markdown bases guides and dynamically generated docs for API references using the existing [apidoc](https://github.com/tidev/titanium_mobile/tree/master/apidoc) from Titanium.
+These docs aim to be a hybrid solution of Markdown bases guides and dynamically generated docs for API references using the existing [apidoc](https://github.com/tidev/titanium-sdk/tree/master/apidoc) from Titanium.
 
 ### Installation
 
@@ -99,7 +99,7 @@ module.exports = {
 
 ### Adding API docs
 
-In theory the `api.json` contains all required information to automatically generate markdown files. However, some APIs contain very detailed description and various examples which are just better to maintain directly in markdown files here than in their `.yaml` counterpart in Titanium's [apidoc](https://github.com/tidev/titanium_mobile/tree/master/apidoc). All other information regarding the API for a type in Titanium is then taken from the `api.json`. This creates a clear seperation of extensive documentation and simple api reference.
+In theory the `api.json` contains all required information to automatically generate markdown files. However, some APIs contain very detailed description and various examples which are just better to maintain directly in markdown files here than in their `.yaml` counterpart in Titanium's [apidoc](https://github.com/tidev/titanium-sdk/tree/master/apidoc). All other information regarding the API for a type in Titanium is then taken from the `api.json`. This creates a clear seperation of extensive documentation and simple api reference.
 
 To automatically migrate a type over to these docs you can run the migration script.
 

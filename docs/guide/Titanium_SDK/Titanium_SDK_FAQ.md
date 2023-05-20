@@ -8,7 +8,7 @@ weight: '50'
 <div class="faq">
 
 This document provides answers and links to commonly asked questions about Titanium SDK.
-If you can't find any help here head over to [TiSlack](https://tidev.slack.com/) or [GitHub Discussions](https://github.com/tidev/titanium_mobile/discussions) and ask a question there.
+If you can't find any help here head over to [TiSlack](https://tidev.slack.com/) or [GitHub Discussions](https://github.com/tidev/titanium-sdk/discussions) and ask a question there.
 
 ## How to install Titanium SDK
 

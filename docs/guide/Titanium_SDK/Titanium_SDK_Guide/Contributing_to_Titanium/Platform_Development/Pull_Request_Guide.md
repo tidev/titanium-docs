@@ -225,11 +225,11 @@ To raise a Github pull request, follow these steps:
 
     Add a message using the form on the following page, and click the "Create Pull Request" button to submit it. Some guidelines:
 
-    1. Put the JIRA ticket first, in brackets, e.g.: [\[TIMOB-26010\] Android: Add a missing null check in getResponseHeaders](https://github.com/tidev/titanium_mobile/pull/10025)
+    1. Put the JIRA ticket first, in brackets, e.g.: [\[TIMOB-26010\] Android: Add a missing null check in getResponseHeaders](https://github.com/tidev/titanium-sdk/pull/10025)
 
-    2. If you have multiple JIRA tickets, list them. You should only have 1 ticket per PR, e.g.: [\[TIMOB-10350\] \[TIMOB-9558\] Anvil test case for xml test suite](https://github.com/tidev/titanium_mobile/pull/5039)
+    2. If you have multiple JIRA tickets, list them. You should only have 1 ticket per PR, e.g.: [\[TIMOB-10350\] \[TIMOB-9558\] Anvil test case for xml test suite](https://github.com/tidev/titanium-sdk/pull/5039)
 
-    3. If you are doing a back port, put the branch name after the JIRA number in parenthesis. Use the ACTUAL name of the branch, e.g.: [\[TIMOB-25936\] (7\_1\_X) iOS: Fix appendSection & appendRow on main-thread](https://github.com/tidev/titanium_mobile/pull/9987)
+    3. If you are doing a back port, put the branch name after the JIRA number in parenthesis. Use the ACTUAL name of the branch, e.g.: [\[TIMOB-25936\] (7\_1\_X) iOS: Fix appendSection & appendRow on main-thread](https://github.com/tidev/titanium-sdk/pull/9987)
 
     4. Use the title of the JIRA ticket (or a close approximation) for titling the PR.
 
