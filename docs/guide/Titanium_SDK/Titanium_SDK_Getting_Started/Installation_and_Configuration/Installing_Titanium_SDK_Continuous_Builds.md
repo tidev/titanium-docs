@@ -9,10 +9,6 @@ weight: '40'
 
 To take advantage of bleeding edge functionality and the most recent bug fixes to the Titanium SDKs, without waiting for an official release, you can manually download and install a **Continuous Integration Build** (also known as _CI Build_ or _Continuous Build_). Continuous Builds are packages compiled and published automatically when [Titanium's open source repository](https://github.com/tidev/titanium_mobile) has received a new code commit.
 
-::: danger ❗️ Warning
-Be aware that only **major** releases of any of our software are officially supported and therefore, by the same token, we cannot accept Jira tickets or investigate problems that result from using a Continuous Build. That said, you may find discussions and workarounds for them in our [Github issues](https://github.com/tidev/titanium_mobile/issues).
-:::
-
 ## Obtaining the build
 
 You can download the latest continuous builds from [https://downloads.titaniumsdk.com/builds](https://downloads.titaniumsdk.com/builds).

@@ -39,12 +39,117 @@ Alloy uses Titanium SDK to abstracts the creation of UI components through the u
 
 For assets, such as images, any references to the `Resources` folder in the Titanium SDK documentation should be replaced with the `app/assets` folder to use it for Alloy. For example, the [Icons and Splash Screens](/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Fundamentals/Icons_and_Splash_Screens/) guide tells you to place files in either the `Resources/android` or `Resources/iphone` folder. For Alloy, the files should be placed in either the `app/assets/android` or `app/assets/iphone` folder.
 
-| Titanium SDK Component | Alloy Component |
-| --- | --- |
-| Titanium.UI.\* Objects  <br />Titanium.Android.Menu  <br />Titanium.Facebook.LoginButton  <br />Titanium.Map  <br />Titanium.Media.VideoPlayer<br /><br />```<br />Titanium.UI.createButton();<br />``` | * XML element. Remove the namespace. For some elements, you may need to assign the `ns` attribute. For more information, refer to [Alloy XML Markup: Namespace](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Alloy_XML_Markup/#namespace).<br />    <br />    ```xml<br />    <!-- Creates a button --><br />    <Button /><br />    ```<br />    <br />* TSS element. Remove the namespace. If the object belongs to another namespace besides `Titanium.UI` and is not implicitly assigned a namespace by Alloy, you cannot create a style based on the element name. Instead, create a style based on a selector (XML `class` attribute) or id (XML `id` attribute). For a list of objects that Alloy implicitly assigns a namespace, refer to [Alloy XML Markup: Namespace](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Alloy_XML_Markup/#namespace).<br />    <br />    ```<br />    // Does not create a button.  Used to style all Button objects in the associated view.<br />    "Button":{<br />        // Button attributes<br />    }<br />    ``` |
-| Titanium Object properties<br /><br />```<br />Titanium.UI.createButton({<br />    text: "Foobar",<br />    top: 0,<br />    width: Ti.UI.SIZE<br />});<br />``` | * XML attribute if the property can be expressed as a string, number or Titanium SDK constant. Some properties that take Titanium objects can be expressed inline using XML tags. For more information, refer to [Alloy XML Markup: Property Mapping](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Alloy_XML_Markup/#property-mapping).<br />    <br />    ```xml<br />    <Button title="Foobar" top="0" width="Ti.UI.SIZE"/><br />    ```<br />    <br />* TSS attribute if the property can be directly expressed as a string, number, Titanium SDK constant, dictionary or array. Indirectly, you can assign a method or value to the Alloy Globals or CFG namespace and reference it in the TSS file. For more information, refer to [Alloy Styles and Themes](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Alloy_Styles_and_Themes/).<br />    <br />    ```<br />    "Button":{<br />        title: "Foobar",<br />        top: 0,<br />        width: Ti.UI.SIZE<br />    }<br />    ``` |
-| Titanium Object methods<br /><br />```javascript<br />var button = Titanium.UI.createButton();<br />button.setTitle('Push Me!');<br />``` | Use in the controller code. You need to define the `id` attribute of the object in the XML markup, so the object can be referenced in the controller.<br /><br />```<br />// Need to give the object an ID, for example, <Button id="button" /><br />$.button.setTitle('Push Me!');<br />``` |
-| Titanium Object events<br /><br />```javascript<br />var button = Titanium.UI.createButton();<br />button.addEventListener('click', doClick);<br />``` | XML attribute to bind a callback in the associated controller. Capitalize the first character of the event name and append 'on' to the beginning of the name.<br /><br />```xml<br /><!-- doClick needs to be declared in the associated controller --><br /><Button onClick="doClick"/><br />``` |
+<table>
+<tr>
+<td>Titanium SDK Component</td>
+<td>Alloy Component</td>
+</tr>
+<tr>
+<td>
+Titanium.UI.* Objects  <br />
+Titanium.Android.Menu  <br />
+Titanium.Facebook.LoginButton  <br />
+Titanium.Map  <br />
+Titanium.Media.VideoPlayer<br /><br />
+
+```js
+Titanium.UI.createButton();
+```
+
+</td>
+<td>
+* XML element. Remove the namespace. For some elements, you may need to assign the `ns` attribute. For more information, refer to [Alloy XML Markup: Namespace](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Alloy_XML_Markup/#namespace).<br />
+<br />
+
+```xml
+<!-- Creates a button -->
+<Button />
+```
+
+<br />
+<br />
+* TSS element. Remove the namespace. If the object belongs to another namespace besides `Titanium.UI` and is not implicitly assigned a namespace by Alloy, you cannot create a style based on the element name. Instead, create a style based on a selector (XML `class` attribute) or id (XML `id` attribute). For a list of objects that Alloy implicitly assigns a namespace, refer to [Alloy XML Markup: Namespace](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Alloy_XML_Markup/#namespace).
+<br /><br />
+
+```
+// Does not create a button.  Used to style
+// all Button objects in the associated view.
+"Button":{
+  // Button attributes
+}
+```
+
+</td>
+</tr>
+<tr>
+<td>Titanium Object properties<br /><br />
+
+```js
+Titanium.UI.createButton({
+  text: "Foobar",
+  top: 0,
+  width: Ti.UI.SIZE
+});
+```
+
+</td>
+<td>* XML attribute if the property can be expressed as a string, number or Titanium SDK constant. Some properties that take Titanium objects can be expressed inline using XML tags. For more information, refer to [Alloy XML Markup: Property Mapping](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Alloy_XML_Markup/#property-mapping).<br />    <br />    
+
+```xml
+<Button title="Foobar" top="0" width="Ti.UI.SIZE"/>
+```
+
+<br />* TSS attribute if the property can be directly expressed as a string, number, Titanium SDK constant, dictionary or array. Indirectly, you can assign a method or value to the Alloy Globals or CFG namespace and reference it in the TSS file. For more information, refer to [Alloy Styles and Themes](/guide/Alloy_Framework/Alloy_Guide/Alloy_Views/Alloy_Styles_and_Themes/).
+
+```
+"Button":{
+  title: "Foobar",
+  top: 0,
+  width: Ti.UI.SIZE
+}
+```
+
+</td>
+</tr>
+<tr>
+<td>Titanium Object methods<br /><br />
+
+```javascript
+var button = Titanium.UI.createButton();
+button.setTitle('Push Me!');
+```
+
+</td>
+<td>Use in the controller code. You need to define the `id` attribute of the object in the XML markup, so the object can be referenced in the controller.
+
+```js
+// Need to give the object an ID, for example
+// <Button id="button" />
+$.button.setTitle('Push Me!');
+```
+
+</td>
+</tr>
+<tr>
+<td>Titanium Object events<br /><br />
+
+```javascript
+var button = Titanium.UI.createButton();
+button.addEventListener('click', doClick);
+```
+
+</td>
+<td>XML attribute to bind a callback in the associated controller. Capitalize the first character of the event name and append 'on' to the beginning of the name.<br /><br />
+
+```xml
+<!-- doClick needs to be declared
+in the associated controller -->
+<Button onClick="doClick"/>
+```
+
+</td>
+</tr>
+</table>
 
 ## Convention over configuration
 

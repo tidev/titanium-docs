@@ -31,10 +31,6 @@ Titanium is supported on the following Operating Systems:
 | Windows | Windows 7 and later(Android)  <br />Windows 8.1 and later (Windows Phone)  <br />Windows 10 and later (Windows 10 Mobile) |
 | Linux | tested on Fedora and (K)Ubuntu, other should work too |
 
-::: danger ❗️ Warning
-As of Titanium 9.0.0, building Windows apps is no longer supported.
-:::
-
 ## Java Development Kit
 
 The Java Development Kit (JDK) is required to build Titanium apps and modules for Android. You can use [OpenJDK](https://openjdk.java.net/) or [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html).
@@ -73,7 +69,8 @@ On Windows you will need to enable `dev mode` in the Windows settings in order t
 
 | Unified CLI Version | Min Node Version | Max Node Version |
 | --- | --- | --- |
-| 10.0.1 - latest | 14.x | 16.x |
+| 12.1.0 - latest | 16.x | 19.x |
+| 10.0.1 - 12.0.0 | 14.x | 16.x |
 | 9.0.0 - 10.0.0 | 12.13.0 | 15.x |
 
 _Info: with Titanium CLI 6.0.0 the support for Node 12 was dropped_
@@ -97,20 +94,16 @@ See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequis
 
 Titanium can provide a development environment for third-party mobile platforms where a Software Development Kit (SDK) has been made available by the platform vendor. With this in mind, development with the following combinations of Operating Systems and SDKs are possible:
 
-| Platform | macOS | Windows | Notes |
-| --- | --- | --- | --- |
-| Android Development | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png)  <br /> | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png)  <br /> |  |
-| iOS Development | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png)  <br /> | ![error](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/error.png)  <br /> | Due to Apple's license agreement, iOS applications may only be developed on Apple hardware. |
+| Platform | macOS | Windows | Linux | Notes |
+| --- | --- | --- | --- | --- |
+| Android Development | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png)  <br /> | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png)  <br /> | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png)|  |
+| iOS Development | ![check](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/check.png)  <br /> | ![error](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/error.png)  <br />| ![error](/images/guide/s/en_GB/5637/e1ef10868e8fe2f234a1a0b171b01cde1d9717c4.31/_/images/icons/emoticons/error.png) | Due to Apple's license agreement, iOS applications may only be developed on Apple hardware. |
 
 ### Android
 
 See [Installing the Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK.html) for detailed instructions.
 
 Titanium requires the Android SDK Tools to be installed in order to allow you to develop Android applications.
-
-::: warning ⚠️ Warning
-Remember that Oracle JDK is a prerequisite for Android development and should be installed first. You need at least JDK 8 installed. See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK.html) for instructions.
-:::
 
 The _Android SDK Manager_ installer may be obtained from the [Android Studio and SDK tools](https://developer.android.com/studio) site.
 
@@ -143,18 +136,14 @@ Each Titanium SDK supports building against a specific range of Android versions
 | 12.0.0 - latest\* | 6.0.x (API 23) | 13.0.x (API 33) | 5.0.x (API 21) |
 | 10.1.0 - 11.1.1 | 6.0.x (API 23) | 12.0.x (API 31) | 5.0.x (API 21) |
 | 10.0.0 - 10.0.2 | 6.0.x (API 23) | 11.0.x (API 30) | 5.0.x (API 21) |
-| 9.3.0 - 9.3.2 | 6.0.x (API 23) | 11.0.x (API 30) | 4.4.x (API 19) |
-| 8.3.0 - 9.2.2 | 6.0.x (API 23) | 10.0.x (API 29) | 4.4.x (API 19) |
-
-::: warning ⚠️ Notes
-\* As of 10.1.0, Titanium requires JDK 11 or higher to build Android projects.
-:::
 
 <details>
 <summary><b>Unsupported versions</b></summary>
 
 | Titanium SDK Version | Min Target Android Version  <br />(android:targetSdkVersion) | Max Target Android Version  <br />(android:targetSdkVersion) | Min Supported Android Version  <br />(android:minSdkVersion) |
 | --- | --- | --- | --- |
+| 9.3.0 - 9.3.2 | 6.0.x (API 23) | 11.0.x (API 30) | 4.4.x (API 19) |
+| 8.3.0 - 9.2.2 | 6.0.x (API 23) | 10.0.x (API 29) | 4.4.x (API 19) |
 | 8.0.0 - 8.2.2 | 6.0.x (API 23) | 9.0.x (API 28) | 4.4.x (API 19) |
 | 7.5.0 - 7.5.1 | 6.0.x (API 23) | 9.0.x (API 28) | 4.1.x (API 16) |
 | 7.3.0 - 7.4.1 | 6.0.x (API 23) | 8.1.x (API 27) | 4.1.x (API 16) |
@@ -177,9 +166,6 @@ Each Titanium SDK supports building against a specific range of Android versions
 
 </details>
 
-::: warning ⚠️ Notes
-The Titanium SDK does not support the [Android 4.4W SDK](http://developer.android.com/wear/index.html) (API 20), also known as the Android Wear SDK.
-:::
 
 Most mobile device manufacturers have been licensed to use Google's enhanced API, which provides support for Maps and other functionality. If this is the case for your target devices, you will need to install the relevant Google packages, listed as _Google APIs by Google Inc., Android API x..._ by the **Android SDK Manager** tool. In Studio, choose the SDKs with the naming format "Google APIs x.x" to use the enhanced APIs, or those without the "Google APIs" prefix otherwise.
 
@@ -220,13 +206,13 @@ Each Titanium SDK supports a specific range of Xcode versions, shown in the tabl
 | 10.1.0 - latest | 11.0.0 | 13.x | Full support for iOS 15 |
 | 10.0.0 - 10.0.2 | 11.0.0 | 12.x | Dropped iOS 11 support |
 | 9.3.0 - 9.3.2 | 11.0.0 | 12.x |  |
-| 9.2.0 - 9.2.2 | 11.0.0 | 12.x | Full support for iOS 14 and beta support for macOS via Mac Catalyst |
 
 <details>
 <summary><b>Unsupported versions of Xcode</b></summary>
 
 | Titanium SDK Version | Min Xcode Version | Max Xcode Version | Notes |
 | --- | --- | --- | --- |
+| 9.2.0 - 9.2.2 | 11.0.0 | 12.x | Full support for iOS 14 and beta support for macOS via Mac Catalyst |
 | 9.0.0 - 9.1.0 | 9.0.0 | 11.x | Dropped iOS 9 support |
 | 8.3.0 - 8.3.1 | 8.0.0 | 11.x |  |
 | 8.2.0 - 8.2.1 | 8.0.0 | 11.x | Full support for iOS 13 |
@@ -348,24 +334,3 @@ The following table lists the various CLI component versions:
 #### Android emulator
 
 Refer to the [Android requirements and instructions below](#android) for installing the Android SDK, which contains the Android emulator.
-
-## Other useful software
-
-The following tools are required for native add-on module development or building the Titanium SDK from source. These tools are not required for mobile application development with the Titanium SDK.
-
-### gperf
-
-The GNU gperf utility is used for generating hash functions. It is used when you build the Titanium SDK from source. It is not needed for Titanium app or module builds.
-
-The gperf tool is installed as part of the Xcode command-line tools, but you may need to install it on Windows.
-
-gperf is not required for building, running, or distributing applications using the Titanium SDK.
-
-Obtain the latest stable version of gperf.
-
-| Operating System | Package Version | Download Location |
-| --- | --- | --- |
-| OS X | Latest Stable | Included with the Xcode developer tools. |
-| Windows | Latest Stable | [gnuwin32.sourceforge.net](http://gnuwin32.sourceforge.net/packages/gperf.htm) |
-
-See [Installing gperf](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_gperf.html) for detailed instructions.
