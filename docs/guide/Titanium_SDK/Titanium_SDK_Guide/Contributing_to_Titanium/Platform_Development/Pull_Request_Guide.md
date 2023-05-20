@@ -83,7 +83,7 @@ git checkout master
 git checkout -b PROJECT-NUMBER   # PROJECT-NUMBER is from step 2. For example, TIMOB-1234 or TC-432
 ```
 
-It is assumed that if you are planning to develop against the `titanium_mobile` project, you already have `git` installed for your system. If you do not, please use our guide for getting set up: [Installing Git](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Git/)
+It is assumed that if you are planning to develop against the `titanium_mobile` project, you already have `git` installed for your system.
 
 In the commands above, we are performing 3 distinct `git` operations to prepare for developing against the titanium\_mobile project.
 

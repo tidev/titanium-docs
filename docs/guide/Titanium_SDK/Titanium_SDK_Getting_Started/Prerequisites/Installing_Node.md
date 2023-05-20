@@ -13,8 +13,6 @@ To run all Appcelerator components, you must have Node.js 10.13.0 or later.
 
 On Mac OS X and Windows, if you have selected to install Titanium updates, Studio prompts you to install Node.js. On Linux, you need to manually install Node.js.
 
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
-
 | Operating System | Min Node Version | Max Node Version | Download Location |
 | --- | --- | --- | --- |
 | macOS / Windows / Linux | 14.X | 16.X | [Official Website](https://nodejs.org/en/download/releases/) |

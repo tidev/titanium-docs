@@ -23,8 +23,6 @@ The following software is required for building Titanium applications, and you p
 
 The following additional software is required for building the Titanium SDK:
 
-* [Git](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_Git/)
-
 * [Android NDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Titanium_Advanced_Tools/Installing_the_Android_NDK/)
 
 * [Visual C++ 2010 Express](http://www.microsoft.com/visualstudio/eng/downloads#d-2010-express) (for Windows)
