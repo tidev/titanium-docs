@@ -133,6 +133,35 @@ android {
 }
 ```
 
+## Android: create a deobfuscation file to have more debug information for crashes and ANRs in the Play Store
+
+If you upload a normal apk/aab to the Play Store you will see a warning that there is a missing deobfuscation file. You can ignore that warning and still use your app without issues. But if you want to have more information about crashes and ANRs in the Play Store debug page you can put this into your `/app/platform/android/build.gradle` file:
+
+```
+android {
+    buildTypes {
+        release {
+            ndk {
+                debugSymbolLevel 'FULL'
+            }
+        }
+    }
+}
+```
+
+## Android: NDK error "non-system libraries in linker flags"
+
+If you see an error looking like this when you compile your Android module:
+```
+Error while executing process /User/user/Library/android-sdk-macosx/ndk/21.4.7075529/ndk-build with arguments ....
+[ERROR] [GRADLE]   Android NDK: WARNING:/..../android/build/module/src/main/jni/Android.mk:app.id: non-system libraries in linker flags: -lkroll-v8
+[ERROR] [GRADLE]   Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES
+[ERROR] [GRADLE]   Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the
+[ERROR] [GRADLE]   Android NDK:     current module
+[INFO]  [GRADLE] 21 actionable tasks: 21 executed
+```
+it is because of the NDK version. A workaround is to link the `/User/user/Library/android-sdk-macosx/ndk/21.4.7075529` folder to NDK18. Download NDK18 from https://github.com/android/ndk/wiki/Unsupported-Downloads and extract it. Then link the 21 folder to the new 18 folder. A last step is to remove `'--output-sync=none'` from your SDKs `.../12.2.0/android/templates/module/generated/build.gradle` file.
+
 ## Can I use Swift code to develop apps for Android in Hyperloop?
 
 Short answer is no. You cannot use Swift code to develop Android apps. Classes in Hyperloop map to the underlying classes defined in Objective-C for iOS and in Java for Android.
