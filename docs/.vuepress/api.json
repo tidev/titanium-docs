@@ -233,9 +233,12 @@
 						"path": "/api/titanium/ui/android",
 						"children": [
 							["titanium/ui/android/cardview", "CardView"],
+							["titanium/ui/android/collapsetoolbar", "CollapseToolbar"],
 							["titanium/ui/android/drawerlayout", "DrawerLayout"],
+							["titanium/ui/android/floatingactionbutton", "FloatingActionButton"],
 							["titanium/ui/android/progressindicator", "ProgressIndicator"],
-							["titanium/ui/android/searchview", "SearchView"]
+							["titanium/ui/android/searchview", "SearchView"],
+							["titanium/ui/android/snackbar", "Snackbar"]
 						]
 					},
 					["titanium/ui/animation", "Animation"],
