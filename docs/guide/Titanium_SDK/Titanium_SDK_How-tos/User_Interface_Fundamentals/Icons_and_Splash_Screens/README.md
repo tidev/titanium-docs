@@ -236,6 +236,26 @@ For more information, see [iOS Human Interface Guidelines: Icons and Image Sizes
 | iPhone Xs landscape | Splash screen | 2436 x 1125 | Default-Landscape-2426h@3x.png |
 | iPhone Xr portrait | Splash screen | 828 x 1792 | Default-Portrait-1792h@2x.png |
 | iPhone Xr landscape | Splash screen | 1792 x 828 | Default-Landscape-1792h@2x.png |
+| iPhone 11 portrait | Splash screen | 1792 x 828 | Default-Landscape-1792h@2x.png |
+| iPhone 11 landscape | Splash screen | 828 x 1792 | Default-Landscape-1792h@2x.png |
+| iPhone 11 Pro portrait | Splash screen | 1125 x 2436 | Default-Portrait-2436h@3x.png |
+| iPhone 11 Pro landscape | Splash screen | 2436 x 1125 | Default-Landscape-2436h@3x.png |
+| iPhone 11 Pro Max portrait | Splash screen | 1242 x 2688 | Default-Portrait-2688@3x.png |
+| iPhone 11 Pro Max landscape | Splash screen | 2688 x 1242 | Default-Landscape-2688@3x.png |
+| iPhone SE 2nd, 3rd Gen portrait | Splash screen | 750 x 1334 | Default-Portrait-1334@2x.png |
+| iPhone SE 2nd, 3rd Gen landscape | Splash screen | 1334 x 750 | Default-Landscape-1334@2x.png |
+| iPhone 12, 13 mini landscape | Splash screen | 1125 × 2436 | Default-Portrait-2436@3x.png |
+| iPhone 12, 13 mini portrait | Splash screen | 2436 x 1125 | Default-Landscape-2436@3x.png |
+| iPhone 12, 13, 14 landscape | Splash screen | 1170 × 2532 | Default-Landscape-2532@3x.png |
+| iPhone 12, 13, 14 portrait | Splash screen | 2532 × 1170 | Default-Portrait-2532@3x.png |
+| iPhone 12, 13 Pro landscape | Splash screen | 1170 × 2532 | Default-Landscape-2532@3x.png |
+| iPhone 12, 13 Pro portrait | Splash screen | 2532 x 1170 | Default-Portrait-2532@3x.png |
+| iPhone 12, 13 Pro Max, 14-Plus landscape | Splash screen | 2778 x 1284 | Default-Landscape-2778@3x.png |
+| iPhone 12, 13 Pro Max, 14-Plus portrait | Splash screen | 1284 × 2778 | Default-Portrait-2778@3x.png |
+| iPhone 14 Pro landscape | Splash screen | 2556 x 1179 | Default-Landscape-2556@3x.png |
+| iPhone 14 Pro portrait | Splash screen | 1179 × 2556 | Default-Portrait-2556@3x.png |
+| iPhone 14 Max landscape | Splash screen | 2796 x 1290 | Default-Landscape-2796@3x.png |
+| iPhone 14 Max portrait | Splash screen | 1290 × 2796 | Default-Portrait-2796@3x.png |
 | iPad non-retina landscape | Splash screen | 1024 x 768 | Default-Landscape.png |
 | iPad non-retina portrait | Splash screen | 768 x 1024 | Default-Portrait.png |
 | iPad retina landscape | Splash screen | 2048 x 1536 | Default-Landscape@2x.png |
