@@ -20,7 +20,7 @@ Besides this documentation you can look at [from zero to app](https://fromzeroto
 
 ## No iOS simulator is visible or it will say "Unable to find an iOS Simulator"
 
-Go to Xcode and make sure `preferences->locations->Command Line Tools` is set to the correct Xcode path.
+Go to Xcode and make sure `preferences->locations->Command Line Tools` is set to the correct Xcode path. Even if it is set you sometimes have to open and select it again in order accept a permissions request.
 
 ## iOS build error: "Unable to find any non-expired Ad Hoc or Enterprise Ad Hoc provisioning profiles that match the app id"
 

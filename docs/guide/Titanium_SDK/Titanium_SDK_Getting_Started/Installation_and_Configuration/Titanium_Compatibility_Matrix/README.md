@@ -101,7 +101,7 @@ Titanium can provide a development environment for third-party mobile platforms 
 
 ### Android
 
-See [Installing the Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK.html) for detailed instructions.
+See [Installing the Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK.html) for detailed instructions. Since Titanium SDK 12.0.0 we target and support Android 13 by default.
 
 Titanium requires the Android SDK Tools to be installed in order to allow you to develop Android applications.
 
@@ -135,13 +135,13 @@ Each Titanium SDK supports building against a specific range of Android versions
 | --- | --- | --- | --- |
 | 12.0.0 - latest\* | 6.0.x (API 23) | 13.0.x (API 33) | 5.0.x (API 21) |
 | 10.1.0 - 11.1.1 | 6.0.x (API 23) | 12.0.x (API 31) | 5.0.x (API 21) |
-| 10.0.0 - 10.0.2 | 6.0.x (API 23) | 11.0.x (API 30) | 5.0.x (API 21) |
 
 <details>
 <summary><b>Unsupported versions</b></summary>
 
 | Titanium SDK Version | Min Target Android Version  <br />(android:targetSdkVersion) | Max Target Android Version  <br />(android:targetSdkVersion) | Min Supported Android Version  <br />(android:minSdkVersion) |
 | --- | --- | --- | --- |
+| 10.0.0 - 10.0.2 | 6.0.x (API 23) | 11.0.x (API 30) | 5.0.x (API 21) |
 | 9.3.0 - 9.3.2 | 6.0.x (API 23) | 11.0.x (API 30) | 4.4.x (API 19) |
 | 8.3.0 - 9.2.2 | 6.0.x (API 23) | 10.0.x (API 29) | 4.4.x (API 19) |
 | 8.0.0 - 8.2.2 | 6.0.x (API 23) | 9.0.x (API 28) | 4.4.x (API 19) |
