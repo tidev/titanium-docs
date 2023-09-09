@@ -19,11 +19,11 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "6.4.2",
     "@silvanite/vuepress-plugin-tailwind": "^1.3.0",
     "@titanium-sdk/vuepress-plugin-fontawesome": "^4.8.3",
-    "@vuepress/plugin-back-to-top": "^1.9.9",
-    "@vuepress/plugin-google-analytics": "^1.9.9",
+    "@vuepress/plugin-back-to-top": "1.9.10",
+    "@vuepress/plugin-google-analytics": "1.9.10",
     "front-matter": "^4.0.2",
     "fs-extra": "^10.1.0",
     "glob": "^8.1.0",
@@ -31,11 +31,11 @@
     "titanium-docgen": "^4.10.3",
     "vue": "^2.7.14",
     "vue-router": "^3.6.5",
-    "vuepress": "^1.9.9",
+    "vuepress": "1.9.10",
     "vuepress-plugin-apidocs": "^4.11.2",
     "vuepress-plugin-versioning": "^4.10.2",
     "vuepress-theme-titanium": "^4.11.1",
-    "vuex": "^3.6.2",
+    "vuex": "3.6.2",
     "vuex-router-sync": "^5.0.0"
   }
 }
