@@ -47,13 +47,14 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Map.
     </ti:app>
     ```
 
--   Instantiate the module with the `require('ti.map')` method, then make subsequent API calls with
+-   Instantiate the module with the `import Map from 'ti.map'` API, then make subsequent API calls with
     the new map object.
 
     ``` javascript
-    var Map = require('ti.map');
-    var mapview = Map.createView({ 
-      mapType: Map.NORMAL_TYPE 
+    import Map from 'ti.map';
+
+    const mapView = Map.createView({
+      mapType: Map.NORMAL_TYPE
     });
     ```
 
@@ -104,12 +105,13 @@ For more instructions and examples of using the module, refer to the
     </ti:app>
     ```
 
--   Instantiate the module with the `require('ti.map')` method, then make subsequent API calls with
+-   Instantiate the module with the `import Map from 'ti.map'` API, then make subsequent API calls with
     the new map object.
 
     ``` javascript
-    var Map = require('ti.map');
-    var mapview = Map.createView({
+    import Map from 'ti.map';
+
+    const mapView = Map.createView({
       mapType: Map.NORMAL_TYPE
     });
     ```
@@ -132,10 +134,11 @@ can be useful, for example, if the annotations are dynamically generated
 and it is not practical to identify them by title.
 
 ``` javascript
-var Map = require('ti.map');
-var win = Titanium.UI.createWindow();
+import Map from 'ti.map';
 
-var mountainView = Map.createAnnotation({
+const window = Ti.UI.createWindow();
+
+const mountainView = Map.createAnnotation({
     latitude: 37.390749,
     longitude: -122.081651,
     title: 'Appcelerator Headquarters',
@@ -144,7 +147,7 @@ var mountainView = Map.createAnnotation({
     myid: 1 // Custom property to uniquely identify this annotation.
 });
 
-var mapview = Map.createView({
+const mapView = Map.createView({
     mapType: Map.NORMAL_TYPE,
     region: { 
         latitude: 33.74511,
@@ -158,7 +161,7 @@ var mapview = Map.createView({
     annotations: [ mountainView ]
 });
 
-var circle = Map.createCircle({
+const circle = Map.createCircle({
     center: {
         latitude: 33.74511,
         longitude: -84.38993
@@ -166,14 +169,15 @@ var circle = Map.createCircle({
     radius: 1000, // = 1.0 km
     fillColor: '#20FF0000'
 });
-mapview.addCircle(circle);
 
-win.add(mapview);
+mapView.addCircle(circle);
+window.add(mapView);
 
-mapview.addEventListener('click', function(event) {
+mapView.addEventListener('click', event => {
     Ti.API.info('Clicked ' + event.clicksource + ' on ' + event.latitude + ', ' + event.longitude);
 });
-win.open();
+
+windown.open();
 ```
 
 ### Alloy XML Markup
@@ -199,7 +203,7 @@ Alloy.Globals.Map = require('ti.map');
 ``` xml
 <Alloy>
     <Window>
-        <Module id="mapview" module="ti.map" onClick="report" method="createView">
+        <Module id="mapView" module="ti.map" onClick="report" method="createView">
             <Annotation id="appcHQ" myId="1337" />
         </Module>
     </Window>
@@ -209,7 +213,7 @@ Alloy.Globals.Map = require('ti.map');
 `app/styles/index.tss`:
 
 ``` javascript
-"#mapview": {
+"#mapView": {
     region: {
         latitude: 33.74511,
         longitude: -84.38993,
@@ -246,11 +250,12 @@ setting special cluster annotations using the `setClusterAnnotation` method on y
 view instance.
 
 ``` javascript
-var Map = require('ti.map');
-var win = Titanium.UI.createWindow();
-var annotations = [];
+import Map from 'ti.map';
 
-for (var i = 0; i < 10; i++) {
+const window = Ti.UI.createWindow();
+const annotations = [];
+
+for (let i = 0; i < 10; i++) {
     annotations.push(Map.createAnnotation({
         title: 'Appcelerator Inc.',
         subtitle: 'TiRocks!',
@@ -270,7 +275,7 @@ for (var i = 0; i < 10; i++) {
     }));
 }
 
-var mapview = Map.createView({
+const mapView = Map.createView({
     annotations: annotations,
     rotateEnabled: true,
     mapType: Map.MUTED_STANDARD_TYPE,
@@ -278,23 +283,48 @@ var mapview = Map.createView({
     userLocation: true
 });
 
-mapview.addEventListener('clusterstart', function(e) {
+mapView.addEventListener('clusterstart', event => {
     Ti.API.info('clustering started!');
 
-    var clusterAnnotation = Map.createAnnotation({
+    const clusterAnnotation = Map.createAnnotation({
         showAsMarker: true,
-        markerText: e.memberAnnotations.length.toString(),
+        markerText: event.memberAnnotations.length.toString(),
         title: 'Cluster Title',
         subtitle: 'Cluster Subtitle',
     });
 
-    mapview.setClusterAnnotation({
+    mapView.setClusterAnnotation({
         annotation: clusterAnnotation,
-        memberAnnotations: e.memberAnnotations
+        memberAnnotations: event.memberAnnotations
     });
 });
-win.add(mapview);
-win.open();
+window.add(mapView);
+window.open();
+```
+
+### Search Request (iOS only)
+
+The following example shows the MapKit based search request.
+The options in `search` (2nd parameter) are optional, but improve
+the accuracy of the results.
+
+```javascript
+import Map from 'ti.map';
+
+Map.addEventListener('didUpdateResults', event => {
+    console.warn('Found place:');
+    console.warn(event)
+});
+
+Map.search('Colosseum', {
+  region: {
+    latitude: 41.890560,
+    longitude: 12.494270,
+    latitudeDelta: 1,
+    longitudeDelta: 1,
+  },
+  resultTypes: [Map.SEARCH_RESULT_TYPE_POINT_OF_INTEREST, Map.SEARCH_RESULT_TYPE_ADDRESS]
+});
 ```
 
 <ApiDocs/>
