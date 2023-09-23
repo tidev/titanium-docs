@@ -45,7 +45,7 @@ Here is an example how to create static application shortcuts in the `tiapp.xml`
 ```
 
 Static shortcuts can be translated in the `i18n/<language>/app.xml` file. Dynamic shortcuts can be translated by using the
-methods described [in the Wiki](https://wiki.appcelerator.org/display/guides2/Internationalization).
+methods described in the Wiki.
 
 To use this feature make sure you have a 3D Touch compatible device running iOS 9 or later. To
 check for the feature, use the <Titanium.UI.iOS.forceTouchSupported> property.

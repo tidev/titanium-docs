@@ -92,6 +92,6 @@ Here is an example how to create static application shortcuts in the `tiapp.xml`
 </ti:app>
 ```
 Static shortcuts can be translated in the `i18n/<language>/app.xml` file. Dynamic shortcuts can be translated by using the
-methods described [in the Wiki](https://wiki.appcelerator.org/display/guides2/Internationalization).
+methods described in the Wiki.
 
 <ApiDocs/>
