@@ -17,8 +17,6 @@ This guide describes where to obtain and how to install the Xcode developer tool
 
 Titanium requires Xcode to be installed in order for you to develop iOS applications.
 
-![download_05](/images/guide/download/attachments/29004836/download_05.png)
-
 There are two ways to obtain Xcode, the application that installs and manages iOS SDKs:
 
 1. Launch the _App Store_ application, found in the `Applications` folder, and search for and install "Xcode" (includes the stable iOS and watchOS SDKs).
@@ -30,78 +28,8 @@ Both of the above options are free of charge, although may require credit card d
 ### Xcode
 
 To develop for iOS, Titanium requires Apple's Xcode suite of tools.
+For a list of supported version please refer to the [Titanium Compatibility Matrix](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/).
 
-Each Titanium SDK supports a specific range of Xcode versions, shown in the table below.
-
-#### Supported versions of Xcode
-
-| Titanium SDK Version | Min Xcode Version | Max Xcode Version | Notes |
-| --- | --- | --- | --- |
-| 10.1.0 - latest | 11.0.0 | 13.x | Full support for iOS 15 |
-| 10.0.0 - 10.0.2 | 11.0.0 | 12.x | Dropped iOS 11 support |
-| 9.3.0 - 9.3.2 | 11.0.0 | 12.x |  |
-| 9.2.0 - 9.2.2 | 11.0.0 | 12.x | Full support for iOS 14 and beta support for macOS via Mac Catalyst |
-| 9.0.0 - 9.1.0 | 9.0.0 | 11.x | Dropped iOS 9 support |
-| 8.3.0 - 8.3.1 | 8.0.0 | 11.x |  |
-| 8.2.0 - 8.2.1 | 8.0.0 | 11.x | Full support for iOS 13 |
-| 8.0.0 - 8.1.1 | 8.0.0 | 10.x |  |
-
-#### Unsupported versions of Xcode
-
-| Titanium SDK Version | Min Xcode Version | Max Xcode Version | Notes |
-| --- | --- | --- | --- |
-| 7.5.0 - 7.5.2 | 8.0.0 | 10.x |  |
-| 7.4.0 - 7.4.2 | 8.0.x | 10.x | Full support for iOS 12 |
-| 7.0.0 - 7.3.1 | 6.0.x | 9.0.x |  |
-| 6.3.0 | 6.0.x | 9.0.x |  |
-| 6.2.x | 6.0.x | 9.0.x | Full support for iOS 11 |
-| 5.5.x - 6.1.x | 6.0.x | 8.0.x |  |
-| 5.0.0 - 5.4.0 | 6.0.x | 7.0.x |  |
-| 4.0.0 - 4.1.x | 6.0.x | 6.4.x |  |
-| 3.4.0 - 3.5.x | 6.0.x | 6.0.x |  |
-
-Deploying for iOS 11.x requires Xcode 9.x, and macOS 10.12.4 and later.
-
-Deploying for iOS 12.x requires Xcode 10.x, and macOS 10.13.6 and later.
-
-As per apple guidelines, Starting April 2020 all apps submitted to App Store must be built with iOS 13 SDK or later, included in Xcode 11 or later.
-
-### iOS SDK / Target iOS platform
-
-Each Titanium SDK supports a specific range of iOS base SDKs and deployment targets. To build an application for a specific iOS target version, you must have the appropriate iOS SDK installed.
-
-#### Supported versions of iOS SDK / Target iOS platform
-
-| Titanium SDK version | Minimum iOS SDK version | Maximum iOS SDK version | Minimum target iOS version | Maximum target iOS version |
-| --- | --- | --- | --- | --- |
-| 10.1.0 - latest | 13.0.0 | 15.x | 12.0 | 15.x |
-| 10.0.0 - 10.0.2 | 13.0.0 | 14.x | 12.0 | 14.x |
-| 9.2.0 - 9.3.x | 13.0.0 | 14.x | 10.0 | 14.x |
-| 9.0.0 - 9.1.2 | 11.0.0 | 13.x | 10.0 | 13.x |
-| 8.2.0 - 8.3.1 | 10.0.0 | 13.x | 9.0 | 13.x |
-| 8.0.0 - 8.1.1 | 10.0.0 | 12.x | 9.0 | 12.x |
-
-#### Unsupported versions of iOS SDK / Target iOS platform
-
-| Titanium SDK version | Minimum SDK version | Maximum SDK version | Minimum target iOS version | Maximum target iOS version |
-| --- | --- | --- | --- | --- |
-| 7.4.0 - 7.5.x | 8.0.0 | 12.x | 8.0 | 12.x |
-| 7.0.0 - 7.3.x | 8.0.0 | 11.x | 8.0 | 12.x |
-| 6.2.0 - 6.3.x | 8.0.x | 11.x | 8.0 | 12.x |
-| 6.0.0 - 6.1.x | 8.0.x | 10.x | 8.0 | 12.x |
-| 5.5.x | 8.0.x | 10.x | 7.1.x | 9.3.x |
-| 5.0.0 - 5.4.x | 8.0.x | 9.3.x | 7.1.x | 9.3.x |
-| 4.0.0 - 4.1.x | 8.0.x | 8.4.x | 7.1.x | 8.4.x |
-| 3.4.0 - 3.5.x | 8.0.x | 8.0.x | 7.1.x | 8.0.x |
-| 3.2.2 - 3.3.0 | 7.0.x | 7.1.x | 6.1.x | 7.1.x |
-| 3.1.3 - 3.2.1 | 7.0.x | 7.0.x | 6.1.x | 7.0.x |
-| 3.1.1 - 3.1.2 | 5.0.x | 6.1.x | 5.0.x | 6.1.x |
-| 3.1.0 | 4.3.x | 6.1.x | 4.3.x | 6.1.x |
-| 2.1.3 - 3.0.x | 4.0.x | 6.1.x | 4.0.x | 6.1.x |
-| 2.1.0 - 2.1.2 | 4.0.x | 5.1.x | 4.0.x | 5.1.x |
-| 2.0.x | 4.0.x | 5.1.x | 4.0.x | 5.1.x |
-| 1.8.x | 4.0.x | 5.0.x | 4.0.x | 5.0.x |
-| 1.7.1+ | 3.1.2 | 5.0.x | 3.1.2 | 5.0.x |
 
 ## Installation (iOS-only)
 
