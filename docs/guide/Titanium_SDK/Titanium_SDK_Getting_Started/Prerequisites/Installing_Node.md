@@ -9,7 +9,7 @@ Node.js is required for several Appcelerator components, including the Titanium 
 
 ## Compatibility and download
 
-To run all Appcelerator components, you must have Node.js 10.13.0 or later.
+To run all Appcelerator components, you must have Node.js 14.x or later.
 
 On Mac OS X and Windows, if you have selected to install Titanium updates, Studio prompts you to install Node.js. On Linux, you need to manually install Node.js.
 

@@ -17,7 +17,7 @@ Your system environment must meet the following requirements:
 
 * **Memory:** 8 GB RAM minimum system memory (2 GB RAM available memory). 16 GB RAM recommended.
 
-* **Java Runtime:** Oracle JDK (no other brand of Java is suitable)
+* **Java Runtime:** Java JDK like Oracle JDK or OpenJDK
 
 * **Node.js:** Required for the Titanium command-line tools like the CLI or Alloy
 
@@ -37,7 +37,10 @@ Our recommendations for an IDE, are to use VSCode or Atom. There exists specific
 
 To develop native applications with Titanium you need the SDKs and tools for those native platforms installed on your system. For example, to develop Android applications you need the Android SDK and toolchain installed, and for iOS (only available in a MacOS system) you need the iOS SDK.
 
-For detailed instructions, see [Installing Platform SDKs](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/).
+For detailed instructions, see:
+* [Installing the Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK/)
+
+* [Installing the iOS SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK/)
 
 ## First Titanium app
 

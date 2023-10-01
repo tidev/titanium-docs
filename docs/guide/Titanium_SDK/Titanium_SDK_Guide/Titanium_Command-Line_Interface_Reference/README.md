@@ -39,10 +39,10 @@ For more information, see [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Get
     npm install titanium -g
     ```
 
-2. Download the latest UNSTABLE Titanium SDK continuous integration build.
+2. Download the latest Titanium SDK.
 
     ```
-    titanium sdk install --branch master --default
+    titanium sdk install --default
     ```
 
 3. Configure CLI (optional).
@@ -177,7 +177,7 @@ ti clean [ --platform <platform> ] [--project-dir <value>] [--sdk <value>] [--lo
 ```
 
 ::: warning ⚠️ Warning
-As of Titanium SDK 7.3.0 release, you need to keep historical version of your module in your `dist` folder in a safe place (e.g. source control). Running this updated command will wipe out anything in the `dist` folder.
+You need to keep historical version of your module in your `dist` folder in a safe place (e.g. source control). Running this updated command will wipe out anything in the `dist` folder.
 :::
 
 **Best practice**: don't use releases as a means of archiving. Releases should be published in a stable location such as Github, S3, etc. But, if you wish to keep old releases in the module, you should consider using a different folder to archive your content in the `dist` folder and commit that zip to your source control before cleaning.
@@ -380,15 +380,13 @@ Downloads the latest Titanium SDK or a specific version.
 
 ```bash
 # Titanium CLI
-# Can only install Titanium SDK 4.0.0.GA and older or UNSTABLE continuous integration builds
 titanium sdk install [<version>] [--default] [--force] [--branch <branch name>]
 
 # Titanium CLI
-# Can install any GA Titanium SDK release or UNSTABLE continuous integration build
 ti sdk install [<version>] [--default] [--force] [--branch <branch name>]
 ```
 
-`<version>` may be either a specific version number, such as `3.1.3.GA` or a URL to a continuous integration build, such as `http://builds.appcelerator.com.s3.amazonaws.com/mobile/3_1_X/mobilesdk-3.1.3.v20130904134612-osx.zip`.
+`<version>` may be either a specific version number, such as `12.2.0.GA`, a URL like `https://nightly.link/tidev/titanium-sdk/actions/runs/6285955863/mobilesdk-12.3.0.v20230923211249-linux.zip` or a ZIP file if you downloaded a build locally.
 
 To override this behavior, set the `sdk.defaultInstallLocation` key to a path where you want to install the SDKs, for example:
 

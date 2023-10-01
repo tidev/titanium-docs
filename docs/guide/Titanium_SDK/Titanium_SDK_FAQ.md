@@ -305,9 +305,9 @@ Your system environment must meet the following requirements:
 
 * **Memory:** 8 GB RAM minimum system memory (2 GB RAM available memory). 16 GB RAM recommended.
 
-* **Java Runtime:** Oracle JDK (no other brand of Java is suitable)
+* **Java Runtime:** Java JDK like Oracle JDK or OpenJDK
 
-* **Node.js:** Required for the Titanium command-line tools like the CLI, Alloy and AMPLIFY Runtime Services
+* **Node.js:** Required for the Titanium command-line tools like the CLI and Alloy
 
 ::: tip 💡 Hint
 For Windows, you can use either 32-bit or 64-bit versions of Java JDK. Please refer to [Studio Java Support](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/Studio_Java_Support/) for more information.
