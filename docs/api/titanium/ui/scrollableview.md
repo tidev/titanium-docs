@@ -61,6 +61,7 @@ Create two scroll views, each containing an image view, and assign them as pages
 scrollable view.
 
 ``` js
+var win = Ti.UI.createWindow();
 var img1 = Ti.UI.createImageView({
     image:'http://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/' +
     'Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/' +

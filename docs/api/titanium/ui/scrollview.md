@@ -41,7 +41,6 @@ Create a scroll view with content.
 
 ``` js
 var win = Ti.UI.createWindow({
-  backgroundColor: 'white',
   exitOnClose: true,
   fullscreen: false,
   title: 'ScrollView Demo'
@@ -72,9 +71,7 @@ rows. This approach can mitigate the native Android issue described in the "Text
 Tables with SOFT_INPUT_ADJUST_PAN" section of <Titanium.UI.TableView>.
 
 ``` js
-var win = Ti.UI.createWindow({
-  backgroundColor:'white'
-});
+var win = Ti.UI.createWindow();
 
 if (Ti.UI.Android){
   win.windowSoftInputMode = Ti.UI.Android.SOFT_INPUT_ADJUST_PAN;

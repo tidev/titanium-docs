@@ -225,6 +225,7 @@ If `borderRadius` property has multiple values, animation on shadow associated w
 Create a rounded view.
 
 ``` js
+const window = Ti.UI.createWindow();
 var view = Titanium.UI.createView({
     borderRadius:10,
     backgroundColor:'red',
@@ -232,6 +233,7 @@ var view = Titanium.UI.createView({
     height:50
 });
 window.add(view);
+window.open();
 ```
 
 ### Alloy XML Markup
@@ -240,7 +242,9 @@ Previous example as an Alloy view.
 
 ``` xml
 <Alloy>
+  <Window>
     <View id="view" borderRadius="10" backgroundColor="red" width="50" height="50" />
+  </Window>
 </Alloy>
 ```
 

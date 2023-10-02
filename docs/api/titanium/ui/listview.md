@@ -324,7 +324,7 @@ utilized along with the [pull](Titanium.UI.ListView.pull) and [pullend](Titanium
 create a refresh control.
 
 ``` js
-var win = Ti.UI.createWindow({backgroundColor: 'white'});
+var win = Ti.UI.createWindow();
 var listView = Ti.UI.createListView({height:'90%', top:0});
 var sections = [];
 
@@ -484,7 +484,7 @@ Alloy 1.2.0 and later.
 `app/views/index.xml`:
 ``` xml
 <Alloy>
-    <Window backgroundColor="white">
+    <Window>
         <ListView id="listView" defaultItemTemplate="template">
 
             <!-- The Templates tag sets the ListView's templates property -->

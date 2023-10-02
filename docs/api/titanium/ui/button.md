@@ -128,6 +128,7 @@ when the button is pressed.
 ### Simple Button Example
 
 ``` js
+var win = Ti.UI.createWindow();
 var button = Titanium.UI.createButton({
     title: 'Hello',
     top: 10,
@@ -138,6 +139,8 @@ button.addEventListener('click',function(e)
 {
     Titanium.API.info("You clicked the button");
 });
+win.add(button);
+win.open();
 ```
 
 ### Alloy XML Markup

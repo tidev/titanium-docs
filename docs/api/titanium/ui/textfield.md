@@ -25,9 +25,7 @@ Use `touchstart` event instead of `click` event.
 Create a simple text field with green text color.
 
 ``` js
-var win = Ti.UI.createWindow({
-  backgroundColor: 'white'
-});
+var win = Ti.UI.createWindow();
 
 var textField = Ti.UI.createTextField({
   backgroundColor: '#fafafa',
@@ -49,9 +47,7 @@ for more information.
 This code excerpt creates a text field with a toolbar:
 
 ``` js
-var win = Ti.UI.createWindow({
-    backgroundColor: 'white'
-});
+var win = Ti.UI.createWindow();
 
 var send = Ti.UI.createButton({
     title: 'Send',

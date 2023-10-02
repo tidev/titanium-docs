@@ -25,9 +25,7 @@ Use `touchstart` event instead of `click` event.
 This example creates a highly customized text area.
 
 ``` js
-var win = Ti.UI.createWindow({
-  backgroundColor: 'white'
-});
+var win = Ti.UI.createWindow();
 var textArea = Ti.UI.createTextArea({
   borderWidth: 2,
   borderColor: '#bbb',
@@ -91,7 +89,7 @@ Previous basic text area with customizations example as an Alloy view.
 
 ``` xml
 <Alloy>
-    <Window id="win" backgroundColor="white">
+    <Window id="win">
         <TextArea id="textArea"
             borderWidth="2" borderColor="#bbb" borderRadius="5"
             color="#888" textAlign="left" value="I am a textarea"

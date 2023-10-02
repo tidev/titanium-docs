@@ -54,9 +54,7 @@ If you pass no arguments, `createMatrix2D` returns an identity matrix.
 The following uses a 2D matrix to translate a label in the y direction.
 
 ``` js
-var win = Ti.UI.createWindow({
-  backgroundColor: 'white'
-});
+var win = Ti.UI.createWindow();
 
 var label = Ti.UI.createLabel({
   font: { fontSize: 50 },

@@ -60,15 +60,6 @@ the keyboard is likely to completely obscure the text field.
 To mitigate this, a `ScrollView` may be used instead of a table view, as demonstrated in the
 [ScrollView](Titanium.UI.ScrollView), "Scroll View as a Table View", example.
 
-### Known Issues
-
-There are known issues with the `sections` property and associated methods added in
-Release 3.0:
-
-*   On iOS, the first two arguments to the `updateSection` method are reversed.
-    ([TIMOB-12625](https://jira-archive.titaniumsdk.com/TIMOB-12625)). This issue has been
-    addressed in Release 3.3.0 of the Titanium SDK
-
 ### Row Editing and Moving Modes
 
 Table views have an `editing` and a `moving` mode that may be activated to using their
@@ -164,10 +155,6 @@ var sectionFish = Ti.UI.createTableViewSection({ headerTitle: 'Fish' });
 sectionFish.add(Ti.UI.createTableViewRow({ title: 'Cod' }));
 sectionFish.add(Ti.UI.createTableViewRow({ title: 'Haddock' }));
 
-// Prior to Release 3.0, you can only add and remove sections by setting the data property
-// table.data = [ sectionFish, sectionFruit, sectionVeg ];
-// Due to a known issue, TIMOB-12616, the section access methods and sections
-// property should not be used on iOS with Release 3.0.x.
 table.insertSectionBefore(0, sectionFish);
 ```
 
@@ -258,7 +245,7 @@ Previous table view sections example as an Alloy view.
 
 ``` xml
 <Alloy>
-    <Window id="win" backgroundColor="white">
+    <Window id="win">
         <TableView id="table">
             <TableViewSection id="sectionFruit" headerTitle="Fruit">
                 <TableViewRow title="Apple"/>

@@ -22,9 +22,7 @@ Move a label through a translation that repositions it from 100px to 200px from 
 the display.
 
 ``` js
-var win = Ti.UI.createWindow({
-  backgroundColor: 'white'
-});
+var win = Ti.UI.createWindow();
 
 var label = Ti.UI.createLabel({
   font: { fontSize : 50 },

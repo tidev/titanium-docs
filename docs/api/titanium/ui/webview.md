@@ -47,7 +47,7 @@ webview.evalJS(
   'javascript=(function addBinding(){' +
     'var s=document.createElement("script");' +
     's.setAttribute("type","text/javascript");' +
-    's.innerHTML="' + require('/binding.js') + '";'
+    's.innerHTML="' + /* insert content of binding.min.js */ + '";'
     +
     'document.getElementsByTagName("body")[0].appendChild(s);' +
   '})()'
@@ -187,9 +187,7 @@ As a workaround you can try to get the `document.body.scrollHeight` inside <Tita
 of webview and set the height to webview. See following example.
 
 ``` js
-var win = Ti.UI.createWindow({
-  backgroundColor: 'white'
-});
+var win = Ti.UI.createWindow();
 
 var verticalView = Ti.UI.createView({layout: 'vertical', width: "100%", height: "100%"});
 
