@@ -29,7 +29,7 @@ var win = Titanium.UI.createWindow({
 
 win.open();
 
-var text =  'Bacon ipsum dolor Appcelerator Titanium rocks! sit amet fatback leberkas salami sausage tongue strip steak.';
+var text =  'Bacon ipsum dolor Titanium SDK rocks! sit amet fatback leberkas salami sausage tongue strip steak.';
 
 var attr = Titanium.UI.createAttributedString({
     text: text,
@@ -89,7 +89,7 @@ var win = Titanium.UI.createWindow({
 
 win.open();
 
-var text =  'Bacon ipsum dolor Appcelerator Titanium rocks! sit amet fatback leberkas salami sausage tongue strip steak.';
+var text =  'Bacon ipsum dolor Titanium SDK rocks! sit amet fatback leberkas salami sausage tongue strip steak.';
 
 var attr = Titanium.UI.createAttributedString({
     text: text
