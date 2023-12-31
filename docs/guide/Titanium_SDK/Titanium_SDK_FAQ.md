@@ -27,6 +27,10 @@ If you are running the latest Xcode make sure you've selected the latest Titaniu
 
 Check your ~/.titanium/config.json and ensure you haven’t set a default developer certificate in the iOS section.
 
+## iOS build error: using iCloud folders
+
+Sometimes you'll see `Command CodeSign failed with a nonzero exit code` errors when you have your project in an iCloud folder. The solution is to copy it to a local, non iCloud folder and build it again.
+
 ## VSCode won't update the CLI
 
 Run `sudo npm i -g titanium alloy` in a terminal and restart VSCode. Then it should use the latest CLI tools.
