@@ -24,7 +24,7 @@
       </module-card>
       <module-card
         title="List View"
-        icon="th-list"
+        icon="table-list"
         link="./titanium/ui/listview.html"
       >
         A list view is used to present rows of information, such as an item list or menu.
@@ -41,14 +41,14 @@
       </module-card>
       <module-card
         title="Filesystem"
-        icon="file-alt"
+        icon="file-lines"
         link="./titanium/filesystem.html"
       >
         Root namespace for interacting with the filesystem.
       </module-card>
       <module-card
         title="Stream"
-        icon="stream"
+        icon="bars-staggered"
         link="./titanium/stream.html"
       >
         Utility methods for reading/writing to/from streams.
@@ -65,7 +65,7 @@
     <module-group title="Media">
       <module-card
         title="Media"
-        icon="photo-video"
+        icon="photo-film"
         link="./titanium/media.html"
       >
         Access the device's media-related functionality, such as the device's camera or photo gallery.
@@ -103,14 +103,14 @@
       </module-card>
       <module-card
         title="Geolocation"
-        icon="map-marker-alt"
+        icon="location-dot"
         link="./titanium/geolocation.html"
       >
         Requesting and accessing location coordinates and geocoding addresses.
       </module-card>
       <module-card
         title="Gesture"
-        icon="expand-alt"
+        icon="up-right-and-down-left-from-center"
         link="./titanium/gesture.html"
       >
         Query for device orientation and register for orientation changes or shake events.
@@ -134,7 +134,7 @@
       </module-card>
       <module-card
         title="ResultSet"
-        icon="poll-h"
+        icon="square-poll-horizontal"
         link="./titanium/database/resultset.html"
       >
         Result Sets from querying/manipulating a Database
@@ -151,21 +151,21 @@
       </module-card>
       <module-card
         title="App"
-        icon="mobile-alt"
+        icon="mobile-screen-button"
         link="./titanium/app.html"
       >
         Access app-specific data at runtime, such as name, id, or version and for sending or listening for system events.
       </module-card>
       <module-card
         title="Properties"
-        icon="hdd"
+        icon="hard-drive"
         link="./titanium/app/properties.html"
       >
         Store app related data that persists beyond app sessions and device power cycles.
       </module-card>
       <module-card
         title="Utils"
-        icon="cog"
+        icon="gear"
         link="./titanium/utils.html"
       >
         Utility for base64 encode/decode, as well as sha/md5 hashing

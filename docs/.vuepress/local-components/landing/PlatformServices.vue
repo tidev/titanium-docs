@@ -25,10 +25,10 @@ export default {
       { label: 'Push Notification', icon: 'bell' },
       { label: 'Users', icon: 'user-friends' },
       { label: 'Photos', icon: 'camera' },
-      { label: 'Files', icon: 'file-alt' },
+      { label: 'Files', icon: 'file-lines' },
       { label: 'Social', icon: 'share-alt' },
       { label: 'Emails', icon: 'at' },
-      { label: 'Places', icon: 'map-marker-alt' },
+      { label: 'Places', icon: 'location-dot' },
       { label: 'Status', icon: 'bell' },
       { label: 'Check-ins', icon: 'check-square' },
       { label: 'Posts', icon: 'pen' },
@@ -40,7 +40,7 @@ export default {
       { label: 'Photo Collections', icon: 'th-large' },
       { label: 'Friends', icon: 'users' },
       { label: 'NoSQL DB', icon: 'database' },
-      { label: 'Key Values', icon: 'th-list' },
+      { label: 'Key Values', icon: 'table-list' },
       { label: 'Messages', icon: 'envelope' },
     ]
   })
