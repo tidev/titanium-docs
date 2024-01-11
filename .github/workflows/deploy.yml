@@ -29,4 +29,4 @@ jobs:
         with:
           branch: 'main'
           git_remote_url: 'ssh://dokku@titaniumsdk.com:22/titaniumsdk.com'
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh_private_key: ${{ secrets.DO_SSH_PRIVATE_KEY }}
