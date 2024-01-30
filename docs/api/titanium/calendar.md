@@ -12,7 +12,7 @@ Modifying or deleting existing events and creating recurring events are only sup
 
 ### Android
 On Android, calendar permissions must be explicitly configured in `tiapp.xml` in order to access the
-calendar and you have to use [requestCalendarPermissions](Titanium.Calendar.requestcalendarpermissions)
+calendar and you have to use [requestCalendarPermissions](Titanium.Calendar.requestCalendarPermissions)
 to request runtime permissions.
 
 ``` xml
