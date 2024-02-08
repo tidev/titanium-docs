@@ -1,32 +1,53 @@
----
 name: 'Deploy'
 
 on:
-  workflow_dispatch:
-  repository_dispatch:
-    types: [ deploy ]
   push:
     branches:
       - main
+  repository_dispatch:
+    types: [ deploy ]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # third-party action that cancels previous runs
-      - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.11.0
-        with:
-          access_token: ${{ github.token }}
-
       - name: Cloning repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: tidev/titaniumsdk.com
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to private registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ secrets.TIDEV_REGISTRY_URL }}
+          username: ${{ secrets.TIDEV_REGISTRY_USERNAME }}
+          password: ${{ secrets.TIDEV_REGISTRY_PASSWORD }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: ${{ secrets.TIDEV_REGISTRY_URL }}/${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
 
       - name: Push to dokku
         uses: dokku/github-action@master
         with:
-          branch: 'main'
+          deploy_docker_image: ${{ secrets.TIDEV_REGISTRY_URL }}/${{ steps.meta.outputs.tags }}
+          git_push_flags: '--force'
           git_remote_url: 'ssh://dokku@titaniumsdk.com:22/titaniumsdk.com'
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh_private_key: ${{ secrets.DO_SSH_PRIVATE_KEY }}
