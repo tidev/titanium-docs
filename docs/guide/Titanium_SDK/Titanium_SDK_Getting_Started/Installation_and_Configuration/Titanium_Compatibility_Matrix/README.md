@@ -13,7 +13,7 @@ This document describes the system environments that are compatible with Titaniu
 
 Some information about legacy Titanium SDK versions is included here solely for reference. Thus, only the following releases are officially supported:
 
-* 10.0.0 - latest
+* 12.0.0 - latest
 
 ### Pre-release versions
 
@@ -37,14 +37,15 @@ The Java Development Kit (JDK) is required to build Titanium apps and modules fo
 
 | Titanium SDK version | Min JDK version | Max JDK version |
 | --- | --- | --- |
-| 10.1.0 - latest | 11 | 16 |
-| 9.0.2 - 10.0.2 | 8 | 15 |
+| 12.0.0 - latest | 11 | 17 |
 
 <details>
 <summary><b>Unsupported version</b></summary>
 
 | Titanium SDK version | Min JDK version | Max JDK version |
 | --- | --- | --- |
+| 10.1.0 - 11.1.1 | 11 | 16 |
+| 9.0.2 - 10.0.2 | 8 | 15 |
 | 9.0.1 | 8 | 13 |
 | 9.0.0 | 8 | 12 |
 | 7.5.0 - 8.3.1 | 8 | 14 |
@@ -69,11 +70,8 @@ On Windows you will need to enable `dev mode` in the Windows settings in order t
 
 | Unified CLI Version | Min Node Version | Max Node Version |
 | --- | --- | --- |
-| 12.1.0 - latest | 16.x | 19.x |
-| 10.0.1 - 12.0.0 | 14.x | 16.x |
-| 9.0.0 - 10.0.0 | 12.13.0 | 15.x |
+| 12.1.0 - latest | 16.x | 20.x |
 
-_Info: with Titanium CLI 6.0.0 the support for Node 12 was dropped_
 
 See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node.html) for details.
 
@@ -82,6 +80,8 @@ See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequis
 
 | Unified CLI Version | Min Node Version | Max Node Version |
 | --- | --- | --- |
+| 10.0.1 - 12.0.0 | 14.x | 16.x |
+| 9.0.0 - 10.0.0 | 12.13.0 | 15.x |
 | 8.0.0 - 8.2.0 | 10.13.0 | 12.x |
 | 7.1.0 - 7.1.2 | 8.x | 10.x |
 | 6.2.2 - 7.0.12 | 6.x | 8.15.x |
@@ -133,14 +133,14 @@ Each Titanium SDK supports building against a specific range of Android versions
 
 | Titanium SDK Version | Min Target Android Version  <br />(android:targetSdkVersion) | Max Target Android Version  <br />(android:targetSdkVersion) | Min Supported Android Version  <br />(android:minSdkVersion) |
 | --- | --- | --- | --- |
-| 12.0.0 - latest\* | 6.0.x (API 23) | 13.0.x (API 33) | 5.0.x (API 21) |
-| 10.1.0 - 11.1.1 | 6.0.x (API 23) | 12.0.x (API 31) | 5.0.x (API 21) |
+| 12.0.0 - latest | 6.0.x (API 23) | 13.0.x (API 33) | 5.0.x (API 21) |
 
 <details>
 <summary><b>Unsupported versions</b></summary>
 
 | Titanium SDK Version | Min Target Android Version  <br />(android:targetSdkVersion) | Max Target Android Version  <br />(android:targetSdkVersion) | Min Supported Android Version  <br />(android:minSdkVersion) |
 | --- | --- | --- | --- |
+| 10.1.0 - 11.1.1 | 6.0.x (API 23) | 12.0.x (API 31) | 5.0.x (API 21) |
 | 10.0.0 - 10.0.2 | 6.0.x (API 23) | 11.0.x (API 30) | 5.0.x (API 21) |
 | 9.3.0 - 9.3.2 | 6.0.x (API 23) | 11.0.x (API 30) | 4.4.x (API 19) |
 | 8.3.0 - 9.2.2 | 6.0.x (API 23) | 10.0.x (API 29) | 4.4.x (API 19) |
@@ -204,14 +204,14 @@ Each Titanium SDK supports a specific range of Xcode versions, shown in the tabl
 | Titanium SDK Version | Min Xcode Version | Max Xcode Version | Notes |
 | --- | --- | --- | --- |
 | 10.1.0 - latest | 11.0.0 | 13.x | Full support for iOS 15 |
-| 10.0.0 - 10.0.2 | 11.0.0 | 12.x | Dropped iOS 11 support |
-| 9.3.0 - 9.3.2 | 11.0.0 | 12.x |  |
 
 <details>
 <summary><b>Unsupported versions of Xcode</b></summary>
 
 | Titanium SDK Version | Min Xcode Version | Max Xcode Version | Notes |
 | --- | --- | --- | --- |
+| 10.0.0 - 10.0.2 | 11.0.0 | 12.x | Dropped iOS 11 support |
+| 9.3.0 - 9.3.2 | 11.0.0 | 12.x |  |
 | 9.2.0 - 9.2.2 | 11.0.0 | 12.x | Full support for iOS 14 and beta support for macOS via Mac Catalyst |
 | 9.0.0 - 9.1.0 | 9.0.0 | 11.x | Dropped iOS 9 support |
 | 8.3.0 - 8.3.1 | 8.0.0 | 11.x |  |
@@ -245,14 +245,14 @@ Each Titanium SDK supports a specific range of iOS base SDKs and deployment targ
 | Titanium SDK version | Minimum iOS SDK version | Maximum iOS SDK version | Minimum target iOS version | Maximum target iOS version |
 | --- | --- | --- | --- | --- |
 | 10.1.0 - latest | 13.0.0 | 15.x | 12.0 | 15.x |
-| 10.0.0 - 10.0.2 | 13.0.0 | 14.x | 12.0 | 14.x |
-| 9.2.0 - 9.3.x | 13.0.0 | 14.x | 10.0 | 14.x |
 
 <details>
 <summary><b>Unsupported versions of iOS SDK / Target iOS platform</b></summary>
 
 | Titanium SDK version | Minimum SDK version | Maximum SDK version | Minimum target iOS version | Maximum target iOS version |
 | --- | --- | --- | --- | --- |
+| 10.0.0 - 10.0.2 | 13.0.0 | 14.x | 12.0 | 14.x |
+| 9.2.0 - 9.3.x | 13.0.0 | 14.x | 10.0 | 14.x |
 | 9.0.0 - 9.1.2 | 11.0.0 | 13.x | 10.0 | 13.x |
 | 8.2.0 - 8.3.1 | 10.0.0 | 13.x | 9.0 | 13.x |
 | 8.0.0 - 8.1.1 | 10.0.0 | 12.x | 9.0 | 12.x |
