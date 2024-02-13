@@ -38,6 +38,7 @@ jobs:
           password: ${{ secrets.TIDEV_REGISTRY_PASSWORD }}
 
       - name: Build and push
+        id: build
         uses: docker/build-push-action@v5
         with:
           push: true
@@ -47,7 +48,7 @@ jobs:
       - name: Push to dokku
         uses: dokku/github-action@master
         with:
-          deploy_docker_image: ${{ secrets.TIDEV_REGISTRY_URL }}/${{ steps.meta.outputs.tags }}
+          deploy_docker_image: ${{ secrets.TIDEV_REGISTRY_URL }}/${{ steps.meta.outputs.tags }}@${{ steps.build.outputs.digest }}
           git_push_flags: '--force'
           git_remote_url: 'ssh://dokku@titaniumsdk.com:22/titaniumsdk.com'
           ssh_private_key: ${{ secrets.DO_SSH_PRIVATE_KEY }}
