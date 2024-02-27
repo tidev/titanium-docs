@@ -203,7 +203,8 @@ Each Titanium SDK supports a specific range of Xcode versions, shown in the tabl
 
 | Titanium SDK Version | Min Xcode Version | Max Xcode Version | Notes |
 | --- | --- | --- | --- |
-| 10.1.0 - latest | 11.0.0 | 13.x | Full support for iOS 15 |
+| 12.2.0 - latest | 12.0.0 | 15.x | Full support for iOS 17 |
+| 10.1.0 - 12.1.2 | 11.0.0 | 13.x | Full support for iOS 15 |
 
 <details>
 <summary><b>Unsupported versions of Xcode</b></summary>
