@@ -25,8 +25,28 @@ When using these APIs, you need to declare the reason(s) for using them inside a
 
 ### Existing Apps
 
-For existing apps, you can download the default [PrivacyInfo.xcprivacy here](./PrivacyInfo.xcprivacy) and place them into the following folder:
+For existing apps, you can use the default `PrivacyInfo.xcprivacy`
 
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+      <key>NSPrivacyAccessedAPITypes</key>
+      <array>
+          <dict>
+              <key>NSPrivacyAccessedAPITypeReasons</key>
+              <array>
+                  <string>AC6B.1</string>
+              </array>
+              <key>NSPrivacyAccessedAPIType</key>
+              <string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+          </dict>
+      </array>
+  </dict>
+</plist>
+```
+and place them into the following folder:
 - Alloy apps: app/assets/iphone/
 - Classic apps: Resources/iphone/
 
