@@ -107,6 +107,15 @@ This element contains subelements of deployment targets used by the IDE to deter
 </deployment-targets>
 ```
 
+### defaultLang
+
+By default the Android version will use `en` as a default language. If you want to use only one i18n strings.xml file and it is not `en` then you have to set `<defaultLang></defaultLang>` to that language.
+
+E.g. if you just use i18n/de/strings.xml you will set:
+```xml
+<defaultLang>de</defaultLang>
+```
+
 ### description
 
 The description of this application.
