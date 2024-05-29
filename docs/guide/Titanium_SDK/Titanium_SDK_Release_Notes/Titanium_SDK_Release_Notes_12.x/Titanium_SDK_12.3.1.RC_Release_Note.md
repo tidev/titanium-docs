@@ -9,7 +9,7 @@ weight: '19'
 
 ## About this release
 
-Titanium SDK 12.3.1 is a path release of the SDK, addressing high-priority issues from previous releases.
+Titanium SDK 12.3.1 is a patch release of the SDK, addressing high-priority issues from previous releases.
 
 We also also added support and documentation for the new Apple privacy manifest files that are required starting May 1, 2024. You can read more about it in [Adhere to the iOS 17+ Privacy Requirements](/guide/Titanium_SDK/Titanium_SDK_How-tos/Adhere_to_the_iOS17_Privacy_Requirements.html).
 
