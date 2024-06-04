@@ -41,7 +41,7 @@ At the time of this writing, these are some of the modules included in the TiPlu
 
 ### Open-source Appcelerator modules
 
-Appcelerator publishes a few modules on its GitHub account. Those modules are open source (check the individual licenses for full details) and are provided as-is without official support. You'll find these modules at [https://github.com/tidev/titanium\_modules](https://github.com/tidev/titanium_modules)
+Appcelerator publishes a few modules on its GitHub account. Those modules are open source (check the individual licenses for full details) and are provided as-is without official support. You'll find these modules at [https://github.com/tidev/](https://github.com/tidev/)
 
 ### Community-contributed modules
 
