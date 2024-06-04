@@ -123,7 +123,7 @@ Finally, you'll use the module's object, properties, and methods to enable its f
 
 The following section illustrates how you would use one of the modules included in the Titanium Plus set.
 
-For this example we will be downloading the [AdMob](https://github.com/appcelerator-modules/ti.admob) module for iOS available on GitHub. While the example covers an iOS use case, the same general steps apply to an Android module. The ZIP file containing the module distribution can be downloaded [here](https://github.com/tidev/ti.admob/releases).
+For this example we will be downloading the [AdMob](https://github.com/tidev/ti.admob) module for iOS available on GitHub. While the example covers an iOS use case, the same general steps apply to an Android module. The ZIP file containing the module distribution can be downloaded [here](https://github.com/tidev/ti.admob/releases).
 
 1. Install the module as described [above](#installing-modules).
 
