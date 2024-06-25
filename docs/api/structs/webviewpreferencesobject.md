@@ -12,11 +12,11 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Tita
 Creates a configuration object and use it as property of webview.
 
 ``` js
-var config = Ti.UI.iOS.createWebViewConfiguration({ 
+var config = Ti.UI.iOS.createWebViewConfiguration({
     allowsPictureInPictureMediaPlayback: true,
-    preferences: { 
+    preferences: {
         minimumFontSize : 20,
-    }, 
+    },
 });
 
 var webView = Ti.UI.createWebView({
