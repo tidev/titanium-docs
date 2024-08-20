@@ -58,6 +58,15 @@ Adds action items and sets several properties on a window's action bar in the XM
 </Alloy>
 ```
 
+
+`app/controllers/index.js`:
+```
+function doMenuClick() {}
+function openSettings() {}
+function doSearch() {}
+$.index.open();
+```
+
 `app/styles/index.tss`:
 ```
 "MenuItem": {
@@ -89,7 +98,7 @@ if (OS_ANDROID) {
     win.activity.onCreate = () => {
         const actionBar = win.activity.actionBar;
         if (actionBar) {
-            actionBar.backgroundImage = "/bg.png";
+            actionBar.backgroundImage = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, 'bg.png').nativePath;
             actionBar.title = "New Title";
             actionBar.onHomeIconItemSelected = () => {
                 Ti.API.info("Home icon clicked!");
