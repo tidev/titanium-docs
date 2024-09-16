@@ -1,5 +1,5 @@
 ---
-title: Titanium SDK 12.5.0.RC - 16 Sepember 2024
+title: Titanium SDK 12.5.0.GA - 16 Sepember 2024
 weight: '19'
 ---
 
