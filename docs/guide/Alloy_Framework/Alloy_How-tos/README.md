@@ -14,3 +14,5 @@ This chapter has several sections dedicated to how-to instructions for Alloy.
 * [Alloy Reference Guides](/guide/Alloy_Framework/Alloy_How-tos/Alloy_Reference_Guides/)
 
 * [Alloy Samples](/guide/Alloy_Framework/Alloy_How-tos/Alloy_Samples/)
+
+* [Axway Blogs](/guide/Alloy_Framework/Alloy_How-tos/Axway_Blogs/)
