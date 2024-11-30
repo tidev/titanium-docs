@@ -13,7 +13,7 @@ This document describes the system environments that are compatible with Titaniu
 
 Some information about legacy Titanium SDK versions is included here solely for reference. Thus, only the following releases are officially supported:
 
-* 12.0.0 - latest
+* 12.5.0 - latest
 
 ### Pre-release versions
 
@@ -62,7 +62,7 @@ See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Pre
 
 ## Node.js
 
-To run all Titanium components, you must have Node.js 14 or later.
+To run all Titanium components, you must have Node.js 18 or later.
 
 On Windows you will need to enable `dev mode` in the Windows settings in order to use Node correctly. [Official Website](https://nodejs.org/en/download/releases/)
 
@@ -70,7 +70,8 @@ On Windows you will need to enable `dev mode` in the Windows settings in order t
 
 | Unified CLI Version | Min Node Version | Max Node Version |
 | --- | --- | --- |
-| 12.1.0 - latest | 16.x | 20.x |
+| 12.5.0 - latest | 18.x | 20.x |
+| 12.1.0 - 12.5.0 | 16.x | 20.x |
 
 
 See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node.html) for details.
@@ -101,7 +102,7 @@ Titanium can provide a development environment for third-party mobile platforms 
 
 ### Android
 
-See [Installing the Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK.html) for detailed instructions. Since Titanium SDK 12.0.0 we target and support Android 13 by default.
+See [Installing the Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK.html) for detailed instructions. Since Titanium SDK 12.5.0 we target and support Android 14 by default.
 
 Titanium requires the Android SDK Tools to be installed in order to allow you to develop Android applications.
 
@@ -109,15 +110,7 @@ The _Android SDK Manager_ installer may be obtained from the [Android Studio and
 
 #### Required Android Packages
 
-As of **Titanium 9.0.0**, the build system will automatically download the Android SDK platforms and tools needed.
-
-For **Titanium 8.x.x**, you need to installed the following packages via the Android SDK Manager yourself:
-
-| Package | Minimum Version |
-| --- | --- |
-| Android SDK Tools | Rev 28 |
-| Android SDK Build-tools | Rev 23 |
-| Android SDK Platform (API Level) | API Level 29 for Titanium 8.3.x<br />API Level 28 for Titanium version older than 8.3.0 |
+As of **Titanium 9.0.0**, the build system will automatically download the Android SDK platforms and tools needed. For details look at the dependencies in the main Titanium SDK repository: https://github.com/tidev/titanium-sdk/blob/master/android/package.json#L19-L28
 
 ::: warning ⚠️ Warning
 Take caution before upgrading these packages, as changes to the way they work has broken the Titanium toolchain a number of times in the past. Although these problems are often beyond our control, we always do our utmost to fix them as soon as we are made aware of them.
@@ -133,7 +126,8 @@ Each Titanium SDK supports building against a specific range of Android versions
 
 | Titanium SDK Version | Min Target Android Version  <br />(android:targetSdkVersion) | Max Target Android Version  <br />(android:targetSdkVersion) | Min Supported Android Version  <br />(android:minSdkVersion) |
 | --- | --- | --- | --- |
-| 12.0.0 - latest | 6.0.x (API 23) | 13.0.x (API 33) | 5.0.x (API 21) |
+| 12.5.0 - latest | 14.0.x (API 34) | 14.0.x (API 34) | 5.0.x (API 21) |
+| 12.0.0 - 12.5.0 | 13.0.x (API 33) | 13.0.x (API 33) | 5.0.x (API 21) |
 
 <details>
 <summary><b>Unsupported versions</b></summary>
@@ -277,62 +271,3 @@ Each Titanium SDK supports a specific range of iOS base SDKs and deployment targ
 | 1.7.1+ | 3.1.2 | 5.0.x | 3.1.2 | 5.0.x |
 
 </details>
-
-### Unified CLI compatibility matrix
-
-#### Unified CLI Includes
-
-The following table lists the various CLI component versions:
-
-##### <b>Supported versions of CLI includes</b>
-
-| Unified CLI | Alloy | API Builder | Cloud CLI | Titanium CLI | Appc Daemon |
-| --- | --- | --- | --- | --- | --- |
-| 8.1.1 | 1.15.2 | N/A | 2.1.8 | 5.2.4 | 3.2.0 |
-
-<details>
-<summary><b>Unsupported versions of CLI includes</b></summary>
-
-| Unified CLI | Alloy | API Builder | Cloud CLI | Titanium CLI | Appc Daemon |
-| --- | --- | --- | --- | --- | --- |
-| 8.1.0 | 1.15.1 | N/A | 2.1.8 | 5.2.2 | 3.2.0 |
-| 8.0.0 | 1.14.5 | N/A | 2.1.3 | 5.2.2 | 3.1.0 |
-| 7.1.1 | 1.14.1 | 3.2.13 | 2.1.2 | 5.2.1 | 1.1.3 |
-| 7.1.0 | 1.14.0 | 3.2.13 | 2.1.0 | 5.2.1 | 1.1.3 |
-| 7.0.12 | 1.13.10 | 3.2.13 | 2.1.0 | 5.1.1 | 1.1.3 |
-| 7.0.11 | 1.13.9 | 3.2.12 | 2.1.0 | 5.1.1 | 1.1.3 |
-| 7.0.10 | 1.13.8 | 3.2.11 | 2.0.12 | 5.1.1 | 1.1.3 |
-| 7.0.9 | 1.13.4 | 3.2.7 | 2.0.12 | 5.1.1 | 1.1.3 |
-| 7.0.8 | 1.13.4 | 3.2.7 | 2.0.11 | 5.1.1 | 1.1.3 |
-| 7.0.7 | 1.13.2 | 3.2.5 | 2.0.10 | 5.1.1 | 1.1.3 |
-| 7.0.6 | 1.13.2 | 3.0.0 | 2.0.10 | 5.1.1 | 1.1.3 |
-| 7.0.5 | 1.12.0 | 3.0.0 | 2.0.10 | 5.1.1 | 1.1.3 |
-| 7.0.4 | 1.12.0 | 3.0.0 | 2.0.8 | 5.1.1 | 1.1.3 |
-| 7.0.3 | 1.12.0 | 3.0.0 | 2.0.8 | 5.1.0 | N/A |
-| 7.0.2 | 1.10.12 | 3.0.0 | 2.0.8 | 5.0.14 | N/A |
-| 7.0.1 | 1.10.10 | 3.0.0 | 2.0.8 | 5.0.14 | N/A |
-| 7.0.0 | 1.10.9 | 3.0.0-19 | 2.0.8 | 5.0.14 | N/A |
-| 6.3.0 | 1.10.5 | 2.0.2 | 2.0.7 | 5.0.14 | N/A |
-| 6.2.4 | 1.9.14 | 2.0.2 | 2.0.5 | 5.0.14 | N/A |
-| 6.2.3 | 1.9.13 | 2.0.2 | 2.0.5 | 5.0.14 | N/A |
-| 6.2.2 | 1.9.11 | 2.0.2 | 2.0.5 | 5.0.14 | N/A |
-| 6.2.1 | 1.9.11 | 2.0.0 | 2.0.4 | 5.0.13 | N/A |
-| 6.2.0 | 1.9.11 | 2.0.3 | 2.0.4 | 5.0.12 | N/A |
-| 6.1.0 | 1.9.5 | 1.10.1 | 1.2.2 | 5.0.11 | N/A |
-| 6.0.0 | 1.9.4 | 1.8.12 | 1.2.2 | 5.0.11 | N/A |
-| 5.5.1 | 1.9.2 | 1.8.6 | 1.2.1 | 5.0.9 | N/A |
-| 5.5.0 | 1.9.2 | 1.8.6 | 1.2.1 | 5.0.9 | N/A |
-| 5.4.0 | 1.9.1 | 1.8.2 | 1.2.1 | 5.0.9 | N/A |
-| 5.3.1 | 1.8.7 | 1.8.2 | 1.2.0 | 5.0.8 | N/A |
-| 5.3.0 | 1.8.7 | 1.7.31 | 1.2.0 | 5.0.8 | N/A |
-| 5.2.2 | 1.8.3 | 1.7.29 | 1.2.0 | 5.0.6 | N/A |
-| 5.2.1 | 1.8.2 | 1.7.29 | 1.2.0 | 5.0.6 | N/A |
-| 5.2.0 | 1.7.33 | 1.7.27 | 1.1.0 | 5.0.6 | N/A |
-| 5.1.0 | 1.7.32 | 1.3.22 | 1.0.32 | 5.0.6 | N/A |
-
-</details>
-<br/>
-
-#### Android emulator
-
-Refer to the [Android requirements and instructions below](#android) for installing the Android SDK, which contains the Android emulator.
