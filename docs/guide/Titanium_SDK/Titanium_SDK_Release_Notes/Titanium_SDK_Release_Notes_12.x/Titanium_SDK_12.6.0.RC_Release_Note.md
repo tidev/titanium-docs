@@ -1,11 +1,11 @@
 ---
-title: Titanium SDK 12.6.0.RC - 30 November 2024
+title: Titanium SDK 12.6.0.RC - 01 December 2024
 weight: '19'
 ---
 
 # Titanium SDK 12.6.0.RC Release Note
 
-## Titanium SDK 12.6.0.RC - 27 August 2024
+## Titanium SDK 12.6.0.RC - 01 December 2024
 
 ## About this release
 
