@@ -17,3 +17,4 @@ weight: '8'
 * [Titanium SDK 12.5.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_12.x/Titanium_SDK_12.5.0.GA_Release_Note/)
 * [Titanium SDK 12.5.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_12.x/Titanium_SDK_12.5.1.GA_Release_Note/)
 * [Titanium SDK 12.6.0.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_12.x/Titanium_SDK_12.6.0.GA_Release_Note/)
+* [Titanium SDK 12.6.1.GA Release Note](/guide/Titanium_SDK/Titanium_SDK_Release_Notes/Titanium_SDK_Release_Notes_12.x/Titanium_SDK_12.6.1.GA_Release_Note/)
