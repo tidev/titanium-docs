@@ -31,14 +31,7 @@ on iOS.
 one to be opened later, but the root of the application must be a heavyweight window to prevent
 it exiting. Tabs cannot be removed from the tab group once added, and tabs cannot be reordered.
 
-* If you use a BottomNavigation on Android with a Material 3 theme you'll have to create a file
-`/app/platform/android/res/values/dimens.xml` and add to fix the height of the menu:
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-  <dimen name="design_bottom_navigation_height">80dp</dimen>
-</resources>
-```
+* If you use a BottomNavigation on Android with a Material 3 theme you should set `experimental:true`.
 
 * On iOS, more than one tab group may exist, and may be opened and closed as required.
 Each tab can contain a stack of windows, and the user can switch between them by tapping the
@@ -142,6 +135,40 @@ const tabGroup = Ti.UI.createTabGroup({
   tabsBackgroundColor: "#F7F7F7",
 });
 tabGroup.open();
+```
+
+### BottomNavigation Material3 example
+
+Create a BottomNavigation TabGroup with a Material3 theme using the new layout.
+
+``` js
+const win1 = Ti.UI.createWindow();
+const win2 = Ti.UI.createWindow();
+const tab1 = Ti.UI.createTab({
+	window: win1,
+	title: 'Tab 1',
+	icon: '/images/appicon.png'
+});
+const tab2 = Ti.UI.createTab({
+	window: win2,
+	title: 'Tab 2',
+	icon: '/images/appicon.png'
+});
+
+win1.add(Ti.UI.createLabel({text: "Tab 1 - click to set badge"}));
+win2.add(Ti.UI.createLabel({text: "Tab 2"}));
+win1.addEventListener("click", function() {
+	tab1.badge = 20;
+});
+
+const bottomNav = Ti.UI.createTabGroup({
+	tabs: [tab1, tab2],
+	theme: "Theme.Titanium.Material3.DayNight",
+	experimental: true,
+	style: Ti.UI.Android.TABS_STYLE_BOTTOM_NAVIGATION
+});
+
+bottomNav.open();
 ```
 
 <ApiDocs/>
