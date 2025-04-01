@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK 12.6.2.GA - 03 February 2025
-weight: '19'
+weight: '32'
 ---
 
 # Titanium SDK 12.6.2.GA Release Note
@@ -29,7 +29,7 @@ As of this GA release, the previous Titanium SDK patch release (12.6.1) is no lo
 * Hans Knöchel
   * restore old scons dependencies to fix local Xcode build ([14d054a](https://github.com/tidev/titanium_mobile/commit/14d054a7b09ea128ffe2917b7853e7fbbda1d14d))
   * fix plist entry entry for non-existing fonts ([2cf5a8e](https://github.com/tidev/titanium_mobile/commit/2cf5a8e89cda4848111cbefae99c00036dca2069))
-  
+
 
 ## Bug Fixes
 

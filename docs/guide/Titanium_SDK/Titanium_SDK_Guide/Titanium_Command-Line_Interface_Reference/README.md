@@ -17,7 +17,7 @@ Getting started with the CLI only requires two steps:
 
 ### Install Node.js
 
-The CLI requires Node.js 4 or later. It is highly recommended you use a LTS (long term support) Node.js release. If you don't have Node installed, install it from:
+The CLI requires Node.js 18 or later. It is highly recommended you use a LTS (long term support) Node.js release. If you don't have Node installed, install it from:
 
 * [nodejs.org](http://nodejs.org)
 
