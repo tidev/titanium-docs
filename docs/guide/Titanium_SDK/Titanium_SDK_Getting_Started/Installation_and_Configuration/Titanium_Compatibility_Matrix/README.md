@@ -70,7 +70,8 @@ On Windows you will need to enable `dev mode` in the Windows settings in order t
 
 | Unified CLI Version | Min Node Version | Max Node Version |
 | --- | --- | --- |
-| 12.5.0 - latest | 18.x | 20.x |
+| 12.6.0 - latest | 18.x | 22.x |
+| 12.5.0 - 12.6.0 | 18.x | 20.x |
 | 12.1.0 - 12.5.0 | 16.x | 20.x |
 
 
