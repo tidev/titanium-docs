@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK 12.0.0.GA - 30 December 2022
-weight: '19'
+weight: '11'
 ---
 
 # Titanium SDK 12.0.0.GA Release Note
@@ -62,7 +62,7 @@ Titanium SDK 12.0.0 is a major release of the SDK, addressing high-priority issu
   * Android 13 updates ([fa604fa](https://github.com/tidev/titanium-sdk/commit/fa604fac971579225c156a51f749011a416b2c74))
   * optimize ListView continuousUpdate ([ca73559](https://github.com/tidev/titanium-sdk/commit/ca7355975f2f1e3724fd8359f69bc9c2fb9f464f))
   * tabbedbar color properties ([2453af6](https://github.com/tidev/titanium-sdk/commit/2453af6f27fc9a15520c4a2b3d8ca73ad58bb395))
-  * fix duplicate lifecycle issue ([6d2dd82](https://github.com/tidev/titanium-sdk/commit/6d2dd826debb512fa8fbc3b603b4ef05d50d03fe))
+  * fix duplicate lifecycle issue ([6d2dd82](https://github.com/tidev/titanium-sdk/commit/6d2dd826debb512fa8fbc3b603b4ef05d50d03fe)) 
 
 * Jan Vennemann
   * correct method name for isTranslatedBinaryOnAppleSilicon ([bb89d44](https://github.com/tidev/titanium-sdk/commit/bb89d449ce9d17da0cbbd2587bd3a3529b9e3ca7))
