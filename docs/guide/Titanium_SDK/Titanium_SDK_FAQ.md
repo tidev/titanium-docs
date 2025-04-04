@@ -14,6 +14,10 @@ If you can't find any help here head over to [TiSlack](https://tidev.slack.com/)
 
 You will need node/npm and then you can run `sudo npm i -g titanium alloy` to have all CLI tools. For more details check [Titanium_SDK_Getting_Started](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/) or the [from zero to app - install guide](https://fromzerotoapp.com/how-to-install-appcelerator-titanium/).
 
+## ARM Mac notes
+
+If you you install Titanium SDK on an ARM Mac you might see an error like `Error: spwan Unknown system error -86` when running Titanium commands. To fix this you have to install Rosetta with `softwareupdate --install-rosetta`.
+
 ## Where can I find more Titanium tutorials or modules?
 
 Besides this documentation you can look at [from zero to app](https://fromzerotoapp.com/). There you find basic tutorials about installation, your first app, UI tutorials, optimizing apps and much more. It also has a list of common modules you can use in your apps.
