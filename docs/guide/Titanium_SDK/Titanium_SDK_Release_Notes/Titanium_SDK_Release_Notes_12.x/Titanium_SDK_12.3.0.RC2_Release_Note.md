@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK 12.3.0.RC2 - 12 February 2024
-weight: '20'
+weight: '19'
 ---
 
 # Titanium SDK 12.3.0.RC2 Release Note

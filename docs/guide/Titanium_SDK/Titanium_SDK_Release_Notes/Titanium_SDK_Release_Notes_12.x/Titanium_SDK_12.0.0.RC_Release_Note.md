@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK 12.0.0.RC - 12 December 2022
-weight: '10'
+weight: '19'
 ---
 
 # Titanium SDK 12.0.0.RC Release Note

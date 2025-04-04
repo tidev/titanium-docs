@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK 12.6.3.GA - 06 March 2025
-weight: '33'
+weight: '19'
 ---
 
 # Titanium SDK 12.6.3.GA Release Note
