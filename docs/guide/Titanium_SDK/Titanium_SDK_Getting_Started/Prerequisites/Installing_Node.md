@@ -5,17 +5,14 @@ weight: '20'
 
 # Installing Node
 
-Node.js is required for several Appcelerator components, including the Titanium CLI, Alloy, and the API Builder. Node.js is also required to build the Titanium SDK.
+Node.js is required for several Titanium SDK components, including the Titanium CLI and Alloy. Node.js is also required to build the Titanium SDK.
 
 ## Compatibility and download
 
-To run all Appcelerator components, you must have Node.js 14.x or later.
+To run all Titanium components, you must have Node.js 18.x or later.
 
-On Mac OS X and Windows, if you have selected to install Titanium updates, Studio prompts you to install Node.js. On Linux, you need to manually install Node.js.
+Check [Titanium Compatibility Matrix](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/) which version of Node.js is required for each Titanium SDK version.
 
-| Operating System | Min Node Version | Max Node Version | Download Location |
-| --- | --- | --- | --- |
-| macOS / Windows / Linux | 14.X | 16.X | [Official Website](https://nodejs.org/en/download/releases/) |
 
 ## Installation
 
