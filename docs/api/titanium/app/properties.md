@@ -24,10 +24,10 @@ Use the `name` attribute to define your property name and place the value inline
 Then, you can retrieve the property during runtime with the following API call:
 
 ``` js
-var foo = Ti.App.Properties.getString('foo');
+const foo = Ti.App.Properties.getString('foo');
 ```
 
-As of Release 3.2.0, any application properties defined in the `tiapp.xml` file are stored in the
+Any application properties defined in the `tiapp.xml` file are stored in the
 device's secure storage, making them read-only.  Additionally, external access to these
 properties is now restricted.  Other iOS applications cannot access these properties and
 native Android modules must use the Titanium module API TiApplication.getAppProperties()
@@ -36,8 +36,8 @@ method to access these properties.
 If you need to change the values during runtime, initially create the property with these APIs
 rather than defining them in the `tiapp.xml` file.
 
-Prior to Release 3.2.0, application properties defined in the `tiapp.xml` file could be
-overwritten by these APIs and accessed externally by other applications and modules.
+**Important**: Using this API in the Apple ecosystem requires the `NSPrivacyAccessedAPICategoryUserDefaults`
+property set in the privacy manifest that was introduced in iOS 17. You can learn more about it [here](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api).
 
 ## Examples
 

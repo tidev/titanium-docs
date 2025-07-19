@@ -31,7 +31,7 @@ var channel = Ti.Android.NotificationManager.createNotificationChannel({
         icon: Ti.Android.R.drawable.ic_dialog_info,
         contentTitle: 'TITLE',
         contentText : 'This is a test',
-        channelId: channel.getId()
+        channelId: channel.id
     });
 
 Ti.Android.NotificationManager.notify(100, notification);
