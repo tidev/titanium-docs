@@ -162,6 +162,25 @@ android {
 }
 ```
 
+## Android: Keep all languages in AAB file
+
+When you create and upload an AAB file it will only install the language that the device has. If you use an app internal language switch the other languages are missing after the installation.
+To keep all language files you have to disable the language split in your build.gradle file.
+
+```
+plugins.withId('com.android.application') {
+    android {
+        bundle {
+            language {
+                enableSplit = false
+            }
+        }
+    }
+}
+```
+
+The `plugins.withId('com.android.application') {}` part is needed in case you use Hyperloop. Without hyperloop you can just add the inner `android {}` part to the build.gradle.
+
 ## Android: NDK error "non-system libraries in linker flags"
 
 If you see an error looking like this when you compile your Android module:
