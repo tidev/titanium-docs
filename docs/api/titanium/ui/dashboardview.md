@@ -43,7 +43,7 @@ var win = Ti.UI.createWindow({
 
 var button = Ti.UI.createButton({
     title: 'Edit',
-    style: Ti.UI.iOS.SystemButtonStyle.DONE,
+    style: Ti.UI.BUTTON_STYLE_OPTION_POSITIVE,
 });
 
 var toolbar = Ti.UI.iOS.createToolbar({
@@ -105,13 +105,13 @@ button.addEventListener('click', function(e) {
 
 dashboard.addEventListener('edit', function(e) {
   button.title = 'Done';
-  button.style = Ti.UI.iOS.SystemButtonStyle.DONE;
+  button.style = Ti.UI.BUTTON_STYLE_OPTION_POSITIVE;
   isEditable = true;
 });
 
 dashboard.addEventListener('commit', function(e) {
   button.title = 'Edit';
-  button.style = Ti.UI.iOS.SystemButtonStyle.PLAIN;
+  button.style = Ti.UI.BUTTON_STYLE_OPTION_NEUTRAL;
   isEditable = false;
 });
 
@@ -172,13 +172,13 @@ function changeMode(e) {
 
 function handleEdit(e) {
   $.button.title = 'Done';
-  $.button.style = Ti.UI.iOS.SystemButtonStyle.DONE;
+  $.button.style = Ti.UI.BUTTON_STYLE_OPTION_POSITIVE;
   isEditable = true;
 }
 
 function handleCommit(e) {
   $.button.title = 'Edit';
-  $.button.style = Ti.UI.iOS.SystemButtonStyle.PLAIN;
+  $.button.style = Ti.UI.BUTTON_STYLE_OPTION_NEUTRAL;
   isEditable = false;
 }
 

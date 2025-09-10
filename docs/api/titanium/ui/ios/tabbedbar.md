@@ -23,7 +23,7 @@ var bb1 = Titanium.UI.iOS.createTabbedBar({
   labels:['One', 'Two', 'Three'],
   backgroundColor:'#336699',
   top:50,
-  style:Titanium.UI.iOS.SystemButtonStyle.PLAIN,
+  style:Titanium.UI.BUTTON_STYLE_OPTION_NEUTRAL,
   height:25,
   width:200
 });

@@ -60,16 +60,6 @@ You can change button styles with a custom theme as follows:
 
 ### iOS Platform Notes
 
-iOS buttons have two special properties, `style` and `systemButton`.
-
-The `style` property specifies the type of button decoration, and can be set to one
-of the values described in <Titanium.UI.iOS.SystemButtonStyle>.
-
-To use a custom button style, such as a background gradient, you may need to explicitly set
-the button's `style` property to `PLAIN`, to prevent the button style from overriding any background color or gradient.
-
-Also note:
-
 * When assigning a custom image to the `backgroundImage` property, the image must be
 partially or wholly transparent for the background color or background gradient to be visible.
 * Similarly, for an assigned background gradient to show through, the `backgroundColor` may need to be
@@ -118,7 +108,7 @@ If you do not supply separate background images for the normal and selected stat
 iOS supplies a built-in effect for pressed buttons. For most iOS buttons, the effect
 dims the entire button (except for the text) while the button is being pressed.
 
-For toolbar buttons that use the [PLAIN](Titanium.UI.iOS.SystemButtonStyle.PLAIN) style
+For toolbar buttons that use the [PLAIN](Titanium.UI.BUTTON_STYLE_OPTION_NEUTRAL) style
 or use system icons such as [CAMERA](Titanium.UI.iOS.SystemButton.CAMERA), a glow effect is
 used. The glow effect shows as a white circular glow or highlight at the center of the button
 when the button is pressed.
