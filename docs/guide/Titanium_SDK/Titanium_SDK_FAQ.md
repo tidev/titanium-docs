@@ -161,6 +161,28 @@ android {
     }
 }
 ```
+Create a ZIP file containing all the folders (arm64-v8a, armeabi-v7a, x86, x86_64) in:
+`build/android/app/build/intermediates/merged_native_libs/release/mergeReleaseNativeLibs/out/lib/`
+and upload that ZIP to the play store. Make sure to remove all .DS_Store, __MACOSX files/folders (https://apple.stackexchange.com/a/239587).
+
+## Android: Keep all languages in AAB file
+
+When you create and upload an AAB file it will only install the language that the device has. If you use an app internal language switch the other languages are missing after the installation.
+To keep all language files you have to disable the language split in your build.gradle file.
+
+```
+plugins.withId('com.android.application') {
+    android {
+        bundle {
+            language {
+                enableSplit = false
+            }
+        }
+    }
+}
+```
+
+The `plugins.withId('com.android.application') {}` part is needed in case you use Hyperloop. Without hyperloop you can just add the inner `android {}` part to the build.gradle.
 
 ## Android: NDK error "non-system libraries in linker flags"
 
