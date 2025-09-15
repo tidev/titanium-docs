@@ -161,6 +161,9 @@ android {
     }
 }
 ```
+Create a ZIP file containing all the folders (arm64-v8a, armeabi-v7a, x86, x86_64) in:
+`build/android/app/build/intermediates/merged_native_libs/release/mergeReleaseNativeLibs/out/lib/`
+and upload that ZIP to the play store. Make sure to remove all .DS_Store, __MACOSX files/folders (https://apple.stackexchange.com/a/239587).
 
 ## Android: Keep all languages in AAB file
 
