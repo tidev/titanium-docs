@@ -15,4 +15,4 @@ This chapter has several sections dedicated to how-to instructions for Alloy.
 
 * [Alloy Samples](/guide/Alloy_Framework/Alloy_How-tos/Alloy_Samples/)
 
-* [Axway Blogs](/guide/Alloy_Framework/Alloy_How-tos/Axway_Blogs/)
+* [Titanium SDK Tutorials](/guide/Alloy_Framework/Alloy_How-tos/Titanium_SDK_Tutorials/)

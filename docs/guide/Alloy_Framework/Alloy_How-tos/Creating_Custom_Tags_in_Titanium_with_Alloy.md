@@ -253,7 +253,7 @@ exports.createCheckBox = function (args) {
 ```
 That's it! By updating my `view.xml` to the following:
 ```
-<CheckBox module="checkbox" id="termsAccepted" onCaptionClick="doShowTerms" underline="true" caption="I agree to the terms of use" />       
+<CheckBox module="checkbox" id="termsAccepted" onCaptionClick="doShowTerms" underline="true" caption="I agree to the terms of use" />
 ```
 I can show a cross-platform CheckBox on iOS and Android, the user can click the terms and conditions text and I can respond to that click, and when they click the box it will update the `checked` property.
 
@@ -271,5 +271,3 @@ Also worth mentioning you can invoke this control without using Alloy and in a n
 ```
 var checkbox = require("checkbox").createCheckBox(args);
 ```
-Have you created any custom tags or customised tags or created widgets for UI controls? Point us to some of your examples and you could feature in our “Featured Modules and Widgets” blog posts.
-* [Back to Axway Blogs](/guide/Alloy_Framework/Alloy_How-tos/Axway_Blogs/)
