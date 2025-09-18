@@ -261,6 +261,7 @@
 							["titanium/ui/ios/animator", "Animator"],
 							["titanium/ui/ios/applicationshortcuts", "ApplicationShortcuts"],
 							["titanium/ui/ios/blurview", "BlurView"],
+							["titanium/ui/ios/buttonconfiguration", "ButtonConfiguration"],
 							["titanium/ui/ios/collisionbehavior", "CollisionBehavior"],
 							["titanium/ui/ios/coverflowview", "CoverFlowView"],
 							["titanium/ui/ios/documentviewer", "DocumentViewer"],
