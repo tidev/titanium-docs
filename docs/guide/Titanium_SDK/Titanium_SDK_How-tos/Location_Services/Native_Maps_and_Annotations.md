@@ -256,7 +256,7 @@ As we can see, there's many `Annotation` properties available for styling and in
 
 * `image` - The URL to an image to be used in place of the default pin image
 
-* `leftButton` - A button that will appear on the left side of your annotation when clicked. This property must have a value equal to the URL of an image, or to a `Ti.UI.iPhone.SystemButtonStyle` constant.
+* `leftButton` - A button that will appear on the left side of your annotation when clicked. This property must have a value equal to the URL of an image, or to a `Ti.UI.iOS.SystemButton` constant.
 
 * `leftView` - A Titanium View object that will appear on the left side of your annotation when clicked. This property can be a single view like a `Ti.UI.Button` or `Ti.UI.Label`, or it can be a hierarchy of views.
 

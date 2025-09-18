@@ -287,7 +287,6 @@
 							["titanium/ui/ios/statusbar", "StatusBar"],
 							["titanium/ui/ios/stepper", "Stepper"],
 							["titanium/ui/ios/systembutton", "SystemButton"],
-							["titanium/ui/ios/systembuttonstyle", "SystemButtonStyle"],
 							["titanium/ui/ios/systemicon", "SystemIcon"],
 							["titanium/ui/ios/tabbedbar", "TabbedBar"],
 							["titanium/ui/ios/tableviewcellselectionstyle", "TableViewCellSelectionStyle"],

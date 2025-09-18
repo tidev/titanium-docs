@@ -135,8 +135,7 @@ For example, since iOS devices do not include a back button, the application can
 ```javascript
 if (OS_IOS) {
   var closeButton = Ti.UI.createButton({
-        title: 'Close',
-        style: Ti.UI.iPhone.SystemButtonStyle.PLAIN
+        title: 'Close'
     });
 
     closeButton.addEventListener('click', function(){
