@@ -11,9 +11,7 @@ This document describes the system environments that are compatible with Titaniu
 
 ### Supported SDK releases
 
-Some information about legacy Titanium SDK versions is included here solely for reference. Thus, only the following releases are officially supported:
-
-* 12.5.0 - latest
+Some information about legacy Titanium SDK versions is included here solely for reference. Thus, only the latest officially release is officially supported.
 
 ### Pre-release versions
 
@@ -37,7 +35,8 @@ The Java Development Kit (JDK) is required to build Titanium apps and modules fo
 
 | Titanium SDK version | Min JDK version | Max JDK version |
 | --- | --- | --- |
-| 12.0.0 - latest | 11 | 17 |
+| 12.8.0 - latest | 18 | 21 |
+| 12.0.0 - 12.7.0 | 11 | 17 |
 
 <details>
 <summary><b>Unsupported version</b></summary>
@@ -62,7 +61,7 @@ See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Pre
 
 ## Node.js
 
-To run all Titanium components, you must have Node.js 18 or later.
+To run all Titanium components, you must have Node.js 20 or 22.
 
 On Windows you will need to enable `dev mode` in the Windows settings in order to use Node correctly. [Official Website](https://nodejs.org/en/download/releases/)
 
@@ -70,9 +69,8 @@ On Windows you will need to enable `dev mode` in the Windows settings in order t
 
 | Unified CLI Version | Min Node Version | Max Node Version |
 | --- | --- | --- |
-| 12.6.0 - latest | 18.x | 22.x |
-| 12.5.0 - 12.6.0 | 18.x | 20.x |
-| 12.1.0 - 12.5.0 | 16.x | 20.x |
+| 13.0.0 - latest | 20.x | 22.x |
+| 12.6.0 - 12.8.0 | 18.x | 22.x |
 
 
 See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node.html) for details.
@@ -82,6 +80,8 @@ See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequis
 
 | Unified CLI Version | Min Node Version | Max Node Version |
 | --- | --- | --- |
+| 12.5.0 - 12.6.0 | 18.x | 20.x |
+| 12.1.0 - 12.5.0 | 16.x | 20.x |
 | 10.0.1 - 12.0.0 | 14.x | 16.x |
 | 9.0.0 - 10.0.0 | 12.13.0 | 15.x |
 | 8.0.0 - 8.2.0 | 10.13.0 | 12.x |

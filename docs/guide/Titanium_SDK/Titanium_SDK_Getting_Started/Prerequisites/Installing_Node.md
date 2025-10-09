@@ -5,43 +5,14 @@ weight: '20'
 
 # Installing Node
 
-Node.js is required for several Appcelerator components, including the Titanium CLI, Alloy, and the API Builder. Node.js is also required to build the Titanium SDK.
+Node.js is required for several Titanium SDK components, including the Titanium CLI and Alloy.
 
 ## Compatibility and download
 
-To run all Appcelerator components, you must have Node.js 14.x or later.
+Titanium supports and recommends the latest Node.js LTS release.
 
-On Mac OS X and Windows, if you have selected to install Titanium updates, Studio prompts you to install Node.js. On Linux, you need to manually install Node.js.
+Check [Titanium Compatibility Matrix](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/) which version of Node.js is required for each Titanium SDK version.
 
-| Operating System | Min Node Version | Max Node Version | Download Location |
-| --- | --- | --- | --- |
-| macOS / Windows / Linux | 14.X | 16.X | [Official Website](https://nodejs.org/en/download/releases/) |
-
-## Installation
-
-Before installing the CLI, you should decide where you want the Node Package Manager (`npm`) to install packages. By default `npm` installs into `/usr/local` on OS X and Linux, which requires that you run `npm` as root. This is not recommended. You can avoid having to run `npm` by doing one of the following:
-
-* Make the `/usr/local` directory writable by all:
-
-    ```bash
-    sudo chmod 777 /usr/local
-    ```
-
-* Set `npm` to install to your home directory, or another directory of your choosing by setting the `npm` prefix. For example, you can add the following to your `.bash_profile` or other initialization file:
-
-    ```
-    export NPM_CONFIG_PREFIX=$HOME
-    ```
-
-    Alternately, you can create a .npmrc file in your home directory with the following contents:
-
-    ```
-    prefix=/path/to/home
-    ```
-
-    Where _/path/to/home_ is the path to your home directory. Setting the `npm` prefix to your home directory causes the `npm` packages to be installed to `$HOME/lib/node_modules` and launch scripts are installed in `$HOME/bin`. `$HOME/bin` must be in your PATH.
-
-If you change your prefix after installing `npm` packages, you will have to reinstall packages. If you change the permissions on `/usr/local` after installing packages as root, you may need to change the ownership of the `npm` cache folder, as described in [Troubleshooting npm Problems](#TroubleshootingnpmProblems).
 
 ## Using NPM packages in Titanium
 

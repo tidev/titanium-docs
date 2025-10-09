@@ -15,22 +15,6 @@ Getting started with the CLI only requires two steps:
 
 2. Install and configure the CLI.
 
-### Install Node.js
-
-The CLI requires Node.js 18 or later. It is highly recommended you use a LTS (long term support) Node.js release. If you don't have Node installed, install it from:
-
-* [nodejs.org](http://nodejs.org)
-
-Before installing the CLI, you should decide where you want the Node Package Manager (`npm`) to install packages. By default `npm` installs into `/usr/local` on OS X, which requires that you run `npm` as root. This is not recommended. You can avoid having to run `npm` by doing one of the following:
-
-* Make the `/usr/local` directory writable by all: `sudo chmod 777 /usr/local`
-
-* Set `npm` to install to your home directory, or another directory of your choosing by setting the `npm` prefix. For example, you can add the following to your `.bash_profile` or other initialization file: `export NPM_CONFIG_PREFIX=$HOME`
-
-    * In this case, `npm` packages are installed to `$HOME/lib/node_modules` and launch scripts are installed in `$HOME/bin`. `$HOME/bin` must be in your PATH.
-
-For more information, see [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node/).
-
 ### Install and configure the CLI
 
 1. Install the `titanium` CLI.
