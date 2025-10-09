@@ -51,7 +51,7 @@ var win = Ti.UI.createWindow();
 
 var send = Ti.UI.createButton({
     title: 'Send',
-    style: Ti.UI.iOS.SystemButtonStyle.DONE,
+    style: Ti.UI.BUTTON_STYLE_OPTION_POSITIVE,
 });
 
 var camera = Ti.UI.createButton({

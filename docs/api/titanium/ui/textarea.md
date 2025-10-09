@@ -55,7 +55,7 @@ Example using a custom keyboard toolbar:
 
 ``` js
 var send = Ti.UI.createButton({
-    style : Ti.UI.iOS.SystemButtonStyle.DONE,
+    style : Ti.UI.BUTTON_STYLE_OPTION_POSITIVE,
     title : 'Send'
 });
 
