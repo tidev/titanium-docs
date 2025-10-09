@@ -5,7 +5,7 @@ weight: '20'
 
 # Installing Node
 
-Node.js is required for several Titanium SDK components, including the Titanium CLI and Alloy. Node.js is also required to build the Titanium SDK.
+Node.js is required for several Titanium SDK components, including the Titanium CLI and Alloy.
 
 ## Compatibility and download
 
