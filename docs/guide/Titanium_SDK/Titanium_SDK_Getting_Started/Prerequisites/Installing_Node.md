@@ -9,7 +9,7 @@ Node.js is required for several Titanium SDK components, including the Titanium 
 
 ## Compatibility and download
 
-To run all Titanium components, you must have Node.js 22.x or later.
+Titanium supports and recommends the latest Node.js LTS release.
 
 Check [Titanium Compatibility Matrix](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Titanium_Compatibility_Matrix/) which version of Node.js is required for each Titanium SDK version.
 
