@@ -10,7 +10,7 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Encr
 This module exposes the same API as Titanium.Database, but it encrypts all content (even the schema) using
 a password you specify.
 
-<p class="note">Note: This feature requires a Pro or Enterprise subscription. More info <a href="https://www.appcelerator.com/pricing/" target="_blank">here</a>!</p>
+You can download the module at [appcelerator.encrypteddatabase](https://github.com/tidev/appcelerator.encrypteddatabase/releases)
 
 ### Getting Started
 
