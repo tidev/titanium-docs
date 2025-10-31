@@ -1,6 +1,6 @@
 ---
 title: Titanium SDK 13.0.1.GA - 31 October 2025
-weight: '12'
+weight: '10'
 ---
 
 ## About this release
