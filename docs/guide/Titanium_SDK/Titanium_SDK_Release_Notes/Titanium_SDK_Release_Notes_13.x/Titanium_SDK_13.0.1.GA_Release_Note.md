@@ -1,3 +1,8 @@
+---
+title: Titanium SDK 13.0.1.GA - 31 October 2025
+weight: '12'
+---
+
 ## About this release
 
 Titanium SDK 13.0.1 is a patch release of the SDK, addressing high-priority issues from previous releases.
