@@ -108,8 +108,12 @@ module.exports = {
                 link: 'https://tidev.io/blog'
               },
               {
-                text: 'Titanium SDK Twitter',
-                link: 'https://twitter.com/titaniumsdk'
+                text: 'Bluesky - @titaniumsdk.com',
+                link: 'https://bsky.app/profile/titaniumsdk.com'
+              },
+              {
+                text: 'X - @TitaniumSDK',
+                link: 'https://x.com/TitaniumSDK'
               }
             ]
           },
@@ -121,8 +125,8 @@ module.exports = {
                 link: 'https://tidev.io'
               },
               {
-                text: 'TiDev Twitter',
-                link: 'https://twitter.com/tidevio'
+                text: 'X - @tidevio',
+                link: 'https://x.com/tidevio'
               },
               {
                 text: 'GitHub Sponsors',
