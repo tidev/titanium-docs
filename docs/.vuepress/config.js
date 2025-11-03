@@ -33,7 +33,8 @@ module.exports = {
       'Social': [
         // { text: 'Blog', link: 'https://appcelerator.com/blog' },
         { text: 'Slack', link: 'https://tidev.slack.com' },
-        { text: 'Twitter', link: 'https://twitter.com/titaniumsdk' }
+        { text: 'Bluesky', link: 'https://bsky.app/profile/titaniumsdk.com' },
+        { text: 'X', link: 'https://x.com/TitaniumSDK' }
       ]
     },
     // Top navigation bar
