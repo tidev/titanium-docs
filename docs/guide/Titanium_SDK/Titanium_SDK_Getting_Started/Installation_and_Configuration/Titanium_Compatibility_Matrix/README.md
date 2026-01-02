@@ -127,8 +127,10 @@ Each Titanium SDK supports building against a specific range of Android versions
 
 | Titanium SDK Version | Min Target Android Version  <br />(android:targetSdkVersion) | Max Target Android Version  <br />(android:targetSdkVersion) | Min Supported Android Version  <br />(android:minSdkVersion) |
 | --- | --- | --- | --- |
-| 12.5.0 - latest | 14.0.x (API 34) | 14.0.x (API 34) | 5.0.x (API 21) |
-| 12.0.0 - 12.5.0 | 13.0.x (API 33) | 13.0.x (API 33) | 5.0.x (API 21) |
+| 13.1.0+ | 15.x (API 35) | 15.x (API 35) | 6.x (API 23) |
+| 12.8.0 - 13.0.1 | 15.x (API 35) | 15.x (API 35) | 5.x (API 21) |
+| 12.5.0 - 12.8.0 | 14.x (API 34) | 14.x (API 34) | 5.x (API 21) |
+| 12.0.0 - 12.5.0 | 13.x (API 33) | 13.x (API 33) | 5.x (API 21) |
 
 <details>
 <summary><b>Unsupported versions</b></summary>
