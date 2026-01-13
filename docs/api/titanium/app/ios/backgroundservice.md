@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/iOS/BackgroundService.yml
+editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/App/iOS/BackgroundService.yml
 ---
 # Titanium.App.iOS.BackgroundService
 

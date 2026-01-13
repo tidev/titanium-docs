@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Global/String/String.yml
+editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Global/String/String.yml
 ---
 # Global.String
 

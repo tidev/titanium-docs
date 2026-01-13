@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/PickerRow.yml
+editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/PickerRow.yml
 ---
 # Titanium.UI.PickerRow
 

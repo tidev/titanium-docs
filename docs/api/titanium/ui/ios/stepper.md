@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/iOS/Stepper.yml
+editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/iOS/Stepper.yml
 ---
 # Titanium.UI.iOS.Stepper
 

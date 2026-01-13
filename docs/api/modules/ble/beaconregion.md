@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/BeaconRegion.yml
+editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/BeaconRegion.yml
 ---
 # Modules.BLE.BeaconRegion
 

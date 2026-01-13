@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/iOS/Toolbar.yml
+editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/iOS/Toolbar.yml
 ---
 # Titanium.UI.iOS.Toolbar
 

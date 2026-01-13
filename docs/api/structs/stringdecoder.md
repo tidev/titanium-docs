@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/NodeJS/string_decoder.yml
+editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/NodeJS/string_decoder.yml
 ---
 # StringDecoder
 

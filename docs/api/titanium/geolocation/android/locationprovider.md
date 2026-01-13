@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Geolocation/Android/LocationProvider.yml
+editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/Geolocation/Android/LocationProvider.yml
 ---
 # Titanium.Geolocation.Android.LocationProvider
 

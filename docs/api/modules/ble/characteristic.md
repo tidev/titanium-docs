@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Characteristic.yml
+editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Characteristic.yml
 ---
 # Modules.BLE.Characteristic
 
