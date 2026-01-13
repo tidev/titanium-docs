@@ -5,7 +5,7 @@ weight: '30'
 
 # Pull Request Guide
 
-So you want to make a contribution to the **Titanium SDK**? Got a bug you want to fix, or a feature you want to add? This is the guide that will help you do so. It'll walk you through all the necessary steps for creating a successful pull request against the [titanium\_mobile github repository](https://github.com/tidev/titanium_mobile).
+So you want to make a contribution to the **Titanium SDK**? Got a bug you want to fix, or a feature you want to add? This is the guide that will help you do so. It'll walk you through all the necessary steps for creating a successful pull request against the [titanium-sdk github repository](https://github.com/tidev/titanium_mobile).
 
 Aside from functioning in an educational capacity, this guide also serves to make the process of integrating your pull requests a more uniform task for our platform engineers. Observing the steps in this guide for each pull request will:
 
@@ -34,7 +34,7 @@ There are a number of GUI interfaces for git. This guide provides instructions f
 [#3. Fork the Titanium SDK Repository on Github.](#3.ForktheTitaniumSDKRepositoryonGithub.)
 [#4. Clone, setup remotes, and branch.](#4.-clone,-setup-remotes,-and-branch.)
 [#5. Make your changes to the development branch.](#5.-make-your-changes-to-the-development-branch.)
-[#6. Compile and test the modified titanium\_mobile project.](#6.-compile-and-test-the-modified-titanium_mobile-project.)
+[#6. Compile and test the modified titanium-sdk project.](#6.-compile-and-test-the-modified-titanium_mobile-project.)
 [#7. Add or modify the API docs (if necessary).](#7.AddormodifytheAPIdocs(ifnecessary).)
 [#8. Rebase your development branch with the master (optional).](#8.Rebaseyourdevelopmentbranchwiththemaster(optional).)
 [#9. Submit pull request in Github.](#9.SubmitpullrequestinGithub.)
@@ -59,11 +59,11 @@ For comprehensive instructions on everything associated with submitting Jira tic
 
 ### 3\. Fork the Titanium SDK Repository on GitHub.
 
-To be able to submit changes to the Titanium SDK, you first need your own forked copy of the `titanium_mobile` project available on GitHub. You'll need a GitHub account of your own to be able to do so. To create your own fork of titanium\_mobile, you simple need to:
+To be able to submit changes to the Titanium SDK, you first need your own forked copy of the `titanium_mobile` project available on GitHub. You'll need a GitHub account of your own to be able to do so. To create your own fork of titanium-sdk, you simple need to:
 
 1. Log in to your GitHub account.
 
-2. Go to the [appcelerator/titanium\_mobile](https://github.com/tidev/titanium_mobile) project on GitHub.
+2. Go to the [appcelerator/titanium-sdk](https://github.com/tidev/titanium_mobile) project on GitHub.
 
 3. Click the "Fork" button at the top of the screen.
 
@@ -85,7 +85,7 @@ git checkout -b PROJECT-NUMBER   # PROJECT-NUMBER is from step 2. For example, T
 
 It is assumed that if you are planning to develop against the `titanium_mobile` project, you already have `git` installed for your system.
 
-In the commands above, we are performing 3 distinct `git` operations to prepare for developing against the titanium\_mobile project.
+In the commands above, we are performing 3 distinct `git` operations to prepare for developing against the titanium-sdk project.
 
 * **`git clone`**
     Given a remote repository, `clone` will create a local copy of the recently forked repository that you can modify. As noted above, you need to replace **`YOUR_ACCOUNT`** with your Github account name
@@ -126,11 +126,11 @@ For example, let's assume you submitted a new feature on Android that has a corr
 
 It takes the burden of implementing on multiple platforms out of your hands, but it is in turn likely that your pull request will take longer to accept as the parity issues are resolved.
 
-### 6\. Compile and test the modified titanium\_mobile project.
+### 6\. Compile and test the modified titanium-sdk project.
 
 For now, compiling and testing your modified SDK is a very basic process.
 
-1. Go to titanium\_mobile/build
+1. Go to titanium-sdk/build
 
 2. Run `npm install` to update the required Node modules
 

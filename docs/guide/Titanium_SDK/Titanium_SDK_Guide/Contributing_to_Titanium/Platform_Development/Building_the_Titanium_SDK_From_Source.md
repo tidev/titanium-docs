@@ -61,13 +61,13 @@ However, if you have any interest in contributing to Titanium, you should create
 
 ### Checking Out a Pull Request Locally
 
-If you want to test a changes that is a pull request on Github, you can add and checkout remote PR branches to your local titanium\_mobile repo. Note that there are over 10000 PRs in the titanium\_mobile Github repo, and over 10000 remote PR branches will be linked to your local repo. They will not be downloaded until you explicitly clone them.
+If you want to test a changes that is a pull request on Github, you can add and checkout remote PR branches to your local titanium-sdk repo. Note that there are over 10000 PRs in the titanium-sdk Github repo, and over 10000 remote PR branches will be linked to your local repo. They will not be downloaded until you explicitly clone them.
 
 **To add the remote PR branches:**
 
-1. From the root level of your titanium\_mobile repo, open the `.git/config` file.
+1. From the root level of your titanium-sdk repo, open the `.git/config` file.
 
-2. Locate the appcelerator/titanum\_mobile repo contents in the file. Note that the remote repo name will be different depending on how you retrieved the appcelerator/titanum\_mobile remote repo. In the example below, it was name "upstream".
+2. Locate the tidev/titanium-sdk repo contents in the file. Note that the remote repo name will be different depending on how you retrieved the tidev/titanium-sdk remote repo. In the example below, it was name "upstream".
 
     ```
     [remote "upstream"]
@@ -110,7 +110,7 @@ git fetch upstream --prune
 
 ## Build the SDK
 
-The method written below is the old way. The repo has now been updated to do away with scons. Please refer to [https://github.com/tidev/titanium\_mobile/blob/master/README.md#building-locally](https://github.com/tidev/titanium-sdk/blob/main/README.md#building-locally) on how to build locally with Node.JS scrips.
+The method written below is the old way. The repo has now been updated to do away with scons. Please refer to [https://github.com/tidev/titanium-sdk/blob/master/README.md#building-locally](https://github.com/tidev/titanium-sdk/blob/main/README.md#building-locally) on how to build locally with Node.JS scrips.
 
 In the root of your `titanium_mobile` repo, run the following commands:
 

@@ -113,11 +113,11 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 * [TIMOB-27444](https://jira-archive.titaniumsdk.com/TIMOB-27444) - video player with border fails to render as of 8.3.0 ([364724b](https://github.com/tidev/titanium-sdk/commit/364724b0c994b15a4362b97ad2fb946f7fc77286))
 
-* [TIMOB-27610](https://jira-archive.titaniumsdk.com/TIMOB-27610) - Debugger does not hit breakpoint for an alloy app on a device ([https://github.com/tidev/titanium\_mobile/pull/11344](https://github.com/tidev/titanium-sdk/pull/11344))
+* [TIMOB-27610](https://jira-archive.titaniumsdk.com/TIMOB-27610) - Debugger does not hit breakpoint for an alloy app on a device ([https://github.com/tidev/titanium-sdk/pull/11344](https://github.com/tidev/titanium-sdk/pull/11344))
 
-* [TIMOB-27604](https://jira-archive.titaniumsdk.com/TIMOB-27604) - Build to android on windows fails with issue related to ti.cloak ([https://github.com/tidev/titanium\_mobile/pull/11341](https://github.com/tidev/titanium-sdk/pull/11341))
+* [TIMOB-27604](https://jira-archive.titaniumsdk.com/TIMOB-27604) - Build to android on windows fails with issue related to ti.cloak ([https://github.com/tidev/titanium-sdk/pull/11341](https://github.com/tidev/titanium-sdk/pull/11341))
 
-* [TIMOB-27602](https://jira-archive.titaniumsdk.com/TIMOB-27602) - Liveview crashes application and throws error before reloading ([https://github.com/tidev/titanium\_mobile/pull/11338](https://github.com/tidev/titanium-sdk/pull/11338))
+* [TIMOB-27602](https://jira-archive.titaniumsdk.com/TIMOB-27602) - Liveview crashes application and throws error before reloading ([https://github.com/tidev/titanium-sdk/pull/11338](https://github.com/tidev/titanium-sdk/pull/11338))
 
 * [TIMOB-27606](https://jira-archive.titaniumsdk.com/TIMOB-27606) - Remote encryption policy broken in latest 8.3.0 ([b2cd676](https://github.com/tidev/titanium-sdk/pull/11337/commits/b2cd67653155b8234a219c069b582ad0a3cdf5ae))
 
@@ -191,7 +191,7 @@ With the release of Titanium SDK 9.0.0, we will no longer support Node.js 8.X. N
 
 * [TIMOB-27385](https://jira-archive.titaniumsdk.com/TIMOB-27385) - wkwebview is stripping out = characters in cookies ([1bd852b](https://github.com/tidev/titanium-sdk/commit/1bd852b5f29963c3455da35106fd18a74fc64c80))
 
-* [TIMOB-27583](https://jira-archive.titaniumsdk.com/TIMOB-27583) - Crash with MobileIron wrapped app ([https://github.com/tidev/titanium\_mobile/pull/11356](https://github.com/tidev/titanium-sdk/pull/11356))
+* [TIMOB-27583](https://jira-archive.titaniumsdk.com/TIMOB-27583) - Crash with MobileIron wrapped app ([https://github.com/tidev/titanium-sdk/pull/11356](https://github.com/tidev/titanium-sdk/pull/11356))
 
 ## Features
 
