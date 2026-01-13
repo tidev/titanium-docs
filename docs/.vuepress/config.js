@@ -147,8 +147,9 @@ module.exports = {
 
     // Repo settings
     docsDir: 'docs',
-    repo: 'tidev/titanium_mobile',
+    repo: 'tidev/titanium-sdk',
     docsRepo: 'tidev/titanium-docs',
+    docsBranch: 'main',
     editLinks: true,
     editLinkText: 'Edit this page on GitHub'
   },
