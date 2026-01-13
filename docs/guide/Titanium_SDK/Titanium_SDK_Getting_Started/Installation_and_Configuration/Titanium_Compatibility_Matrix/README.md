@@ -111,7 +111,7 @@ The _Android SDK Manager_ installer may be obtained from the [Android Studio and
 
 #### Required Android Packages
 
-As of **Titanium 9.0.0**, the build system will automatically download the Android SDK platforms and tools needed. For details look at the dependencies in the main Titanium SDK repository: https://github.com/tidev/titanium-sdk/blob/master/android/package.json#L19-L28
+As of **Titanium 9.0.0**, the build system will automatically download the Android SDK platforms and tools needed. For details look at the dependencies in the main Titanium SDK repository: https://github.com/tidev/titanium-sdk/blob/main/android/package.json#L19-L28
 
 ::: warning ⚠️ Warning
 Take caution before upgrading these packages, as changes to the way they work has broken the Titanium toolchain a number of times in the past. Although these problems are often beyond our control, we always do our utmost to fix them as soon as we are made aware of them.
