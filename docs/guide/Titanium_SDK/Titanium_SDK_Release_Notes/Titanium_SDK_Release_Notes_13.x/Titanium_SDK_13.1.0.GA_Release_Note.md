@@ -25,7 +25,7 @@ Titanium SDK 13.1.0 is a minor release of the SDK, addressing high-priority issu
 * Michael Gangolf
   * update gradle to 8.14.3 ([3b23367](https://github.com/tidev/titanium_mobile/commit/3b23367a2fb6827190e0b71c13f0d7752a00ecc5))
   * kotlin version update ([8170e05](https://github.com/tidev/titanium_mobile/commit/8170e054fb8fecf4aaeb7d30f0c54f3b21d89548))
-  * update minSdk to API Level 23 ([089cabc](https://github.com/tidev/titanium_mobile/commit/089cabcf76089c2ba74aba8c4ffc42cac67e8970))
+  * update minSdk to API Level 24 ([089cabc](https://github.com/tidev/titanium_mobile/commit/089cabcf76089c2ba74aba8c4ffc42cac67e8970))
   * include LaunchLogos again ([93b8e61](https://github.com/tidev/titanium_mobile/commit/93b8e61413fbe34859c179e3fd84408ac3b5962a))
   * update workflow ([8200206](https://github.com/tidev/titanium_mobile/commit/82002069c3134258eee9edb5ca87033a7d5331e8))
   * fix BottomNavigation selection when using activeTab ([471e61d](https://github.com/tidev/titanium_mobile/commit/471e61de42c58c43644ef221be88abca8fb6cedd))
