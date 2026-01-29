@@ -61,15 +61,16 @@ See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Pre
 
 ## Node.js
 
-To run all Titanium components, you must have Node.js 20 or 22.
+[Node.js](https://nodejs.org/en/download/releases/) is required to install and run Titanium SDK.
 
-On Windows you will need to enable `dev mode` in the Windows settings in order to use Node correctly. [Official Website](https://nodejs.org/en/download/releases/)
+On Windows you will need to enable `dev mode` in the Windows settings in order to use Node correctly.
 
 ### Supported version of node.js
 
-| Unified CLI Version | Min Node Version | Max Node Version |
+| Titanium SDK Version | Min Node Version | Max Node Version |
 | --- | --- | --- |
-| 13.0.0 - latest | 20.x | 22.x |
+| 13.1.1 - latest | 20.x | 24.x |
+| 13.0.0 - 13.1.0 | 20.x | 22.x |
 | 12.6.0 - 12.8.0 | 18.x | 22.x |
 
 
@@ -78,7 +79,7 @@ See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequis
 <details>
 <summary><b>Unsupported version of node.js</b></summary>
 
-| Unified CLI Version | Min Node Version | Max Node Version |
+| Titanium SDK Version | Min Node Version | Max Node Version |
 | --- | --- | --- |
 | 12.5.0 - 12.6.0 | 18.x | 20.x |
 | 12.1.0 - 12.5.0 | 16.x | 20.x |
