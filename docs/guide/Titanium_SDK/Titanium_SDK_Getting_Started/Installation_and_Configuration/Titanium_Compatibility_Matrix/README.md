@@ -72,8 +72,6 @@ On Windows you will need to enable `dev mode` in the Windows settings in order t
 | 12.6.0 - 12.8.0 | 18.x | 22.x |
 
 
-See [Installing Node](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node.html) for details.
-
 <details>
 <summary><b>Unsupported version of node.js</b></summary>
 
