@@ -14,7 +14,7 @@ This guide describes where to obtain and how to install the Google Android SDK a
 Titanium requires the Android SDK Tools to be installed in order to allow you to develop Android applications.
 
 ::: warning ⚠️ Warning
-Remember that JDK (Oracle or OpenJDK) is a prerequisite for Android development and should be installed first. You need at least JDK 11 installed. See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/) for instructions.
+Remember that JDK (Oracle or OpenJDK) is a prerequisite for Android development and should be installed first.
 :::
 
 Use "Android Studio" from the [Android Studio and SDK tools](https://developer.android.com/studio) to install the SDK and tools.

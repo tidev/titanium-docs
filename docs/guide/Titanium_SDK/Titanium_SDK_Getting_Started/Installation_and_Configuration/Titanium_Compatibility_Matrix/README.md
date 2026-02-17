@@ -57,8 +57,6 @@ The Java Development Kit (JDK) is required to build Titanium apps and modules fo
 
 </details>
 
-See [Installing Oracle JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK.html) for detailed instructions.
-
 ## Node.js
 
 [Node.js](https://nodejs.org/en/download/releases/) is required to install and run Titanium SDK.

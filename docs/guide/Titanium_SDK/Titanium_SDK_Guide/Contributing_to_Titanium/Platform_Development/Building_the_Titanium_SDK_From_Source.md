@@ -13,13 +13,9 @@ You must have the following software installed to be able to compile the Titaniu
 
 The following software is required for building Titanium applications, and you probably already have it installed:
 
-* [JDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK/)
-
 * [iOS SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_iOS_SDK/)
 
 * [Android SDK](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Installation_and_Configuration/Installing_Platform_SDKs/Installing_the_Android_SDK/)
-
-* [Node.js](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node/)
 
 The following additional software is required for building the Titanium SDK:
 
