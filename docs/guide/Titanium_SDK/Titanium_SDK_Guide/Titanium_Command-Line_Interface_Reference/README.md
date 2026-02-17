@@ -37,7 +37,6 @@ Getting started with the CLI only requires two steps:
 
     The script prompts you to enter basic information, such as your name, default locale, default SDK version, and default workspace folder.
 
-If you encounter an error installing `titanium`, see [Issues installing NPM packages](/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/Installing_Node/#issues-installing-npm-packages).
 
 ## Titanium commands
 

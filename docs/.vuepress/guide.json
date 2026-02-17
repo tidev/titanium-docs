@@ -188,17 +188,7 @@
                 ],
                 {
                     "title": "Prerequisites",
-                    "path": "/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/",
-                    "children": [
-                        [
-                            "Titanium_SDK_Getting_Started/Prerequisites/Installing_Oracle_JDK",
-                            "Installing Oracle JDK"
-                        ],
-                        [
-                            "Titanium_SDK_Getting_Started/Prerequisites/Installing_Node",
-                            "Installing Node"
-                        ]
-                    ]
+                    "path": "/guide/Titanium_SDK/Titanium_SDK_Getting_Started/Prerequisites/"
                 },
                 [
                     "Titanium_SDK_Getting_Started/Titanium_SDK_Overview",
