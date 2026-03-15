@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/App/iOS/SearchableItem.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/iOS/SearchableItem.yml
 ---
 # Titanium.App.iOS.SearchableItem
 
@@ -43,7 +43,7 @@ var itemAttr = Ti.App.iOS.createSearchableItemAttributeSet({
 });
 
 var item = Ti.App.iOS.createSearchableItem({
-    uniqueIndentifier:"my-id",
+    uniqueIdentifier:"my-id",
     domainIdentifier:"com.mydomain",
     attributeSet:itemAttr
 });

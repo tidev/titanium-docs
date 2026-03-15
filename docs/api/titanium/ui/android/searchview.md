@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/Android/SearchView.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/Android/SearchView.yml
 ---
 # Titanium.UI.Android.SearchView
 

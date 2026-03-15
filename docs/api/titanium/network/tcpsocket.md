@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/Network/TCPSocket.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Network/TCPSocket.yml
 ---
 # Titanium.Network.TCPSocket
 

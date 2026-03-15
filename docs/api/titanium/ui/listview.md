@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/ListView.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/ListView.yml
 ---
 # Titanium.UI.ListView
 
@@ -168,7 +168,7 @@ Editing a ListView through user initiated actions is supported through the follo
     - [canEdit](Titanium.UI.ListItem.canEdit) - When this is set to true, it allows the item to be deleted
       from the ListView through a user initiated action. The item can only be deleted when the ListView is
       in editing mode. The ListView can enter 'editing' mode either by explicitly setting the [editing](Titanium.UI.ListView.editing)
-      property to true, or by swiping accross an item whose `canEdit` property is set to true. When the user
+      property to true, or by swiping across an item whose `canEdit` property is set to true. When the user
       deletes the item, a [delete](Titanium.UI.ListView.delete) event is fired.
 
     - [editActions](Titanium.UI.ListItem.editActions) - When [canEdit](Titanium.UI.ListItem.canEdit) is set to true, the default behavior
@@ -196,7 +196,7 @@ Editing a ListView through user initiated actions is supported through the follo
       be deleted or reordered.
 
     - [requiresEditingToMove](Titanium.UI.ListView.requiresEditingToMove) - Determines if the ListView
-      should be able to drag-and-drop without explicitely enabling editing support (like drag bars).
+      should be able to drag-and-drop without explicitly enabling editing support (like drag bars).
 
     - [pruneSectionsOnEdit](Titanium.UI.ListView.pruneSectionsOnEdit) - When this property is set to true and the
       user action results in a section having no other items, the section is deleted from the List View. Please note

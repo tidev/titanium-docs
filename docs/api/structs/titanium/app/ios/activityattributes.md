@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/App/iOS/ActivityAttributes.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/iOS/ActivityAttributes.yml
 ---
 # Titanium.App.iOS.ActivityAttributes
 
@@ -7,7 +7,7 @@ editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/App/iOS
 
 ## Overview
 
-To properly use these APIs, you need to habe your Widget Extension ready.
+To properly use these APIs, you need to have your Widget Extension ready.
 You can follow this [sample repository](https://github.com/hansemannn/titanium-widget-kit-sample-app) for an extended example.
 
 ## Examples

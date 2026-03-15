@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/View.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/View.yml
 ---
 # Titanium.UI.View
 
@@ -85,7 +85,7 @@ If no units are specified, a system-default unit is assumed. The system default 
 *    Pixels on Android.
 *    DIPs on iOS.
 
-On Android and iOS, the default unit can be overriden on a per-application level by setting the
+On Android and iOS, the default unit can be overridden on a per-application level by setting the
 `ti.ui.defaultunit` property in `tiapp.xml`. For example, to use DIPs as the
 default on all platforms, set `defaultunit` to `dip`:
 
@@ -96,7 +96,7 @@ default on all platforms, set `defaultunit` to `dip`:
 The value for `ti.ui.defaultunit` can be any of the unit specifiers defined above, or
 `system` to specify that the platform's default unit should be used.
 
-On IOS if you set the `ti.ui.defaultunit` property to anything other than `system` or `dip`, your
+On iOS if you set the `ti.ui.defaultunit` property to anything other than `system` or `dip`, your
 application should detect and handle Retina displays manually.
 
 Font sizes on iOS are treated differently than other sizes: font sizes are always
@@ -182,7 +182,7 @@ No error will occur on older devices if you set `accessibilityHidden`; the value
 ### iOS: backgroundLeftCap and backgroundTopCap properties
 
 The [backgroundLeftCap](Titanium.UI.View.backgroundLeftCap) and [backgroundTopCap](Titanium.UI.View.backgroundTopCap) properties are
-used to specify the portions of the [backgroundImage](Titanium.UI.View.backgroundImage) that must not be resized when the image is streched or shrunk.
+used to specify the portions of the [backgroundImage](Titanium.UI.View.backgroundImage) that must not be resized when the image is stretched or shrunk.
 
 Given an image of width `w` and height `h`, the stretchable portion on the image is defined as a rectangle with the `top-left` point set to
 `(backgroundLeftCap , backgroundTopCap)` and the `bottom-right` point set to `(w - backgroundLeftCap , h - backgroundTopCap)`. The portions not covered by

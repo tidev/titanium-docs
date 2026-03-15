@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/AttributedString.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/AttributedString.yml
 ---
 # Titanium.UI.AttributedString
 
@@ -44,7 +44,7 @@ var attr = Titanium.UI.createAttributedString({
         {
             type: Titanium.UI.ATTRIBUTE_BACKGROUND_COLOR,
             value: "red",
-            range: [text.indexOf('Appcelerator'), ('Appcelerator').length]
+            range: [text.indexOf('Titanium'), ('Titanium').length]
         },
         {
             type: Titanium.UI.ATTRIBUTE_BACKGROUND_COLOR,

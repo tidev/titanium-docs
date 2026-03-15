@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/App/iOS/iOS.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/iOS/iOS.yml
 ---
 # Titanium.App.iOS
 
@@ -55,7 +55,7 @@ For more information on getting started, refer to the
 
 ### Handoff User Activities
 
-Handoff allows you to create and transfer user activies from one device to another. For example, you can start editing
+Handoff allows you to create and transfer user activities from one device to another. For example, you can start editing
 a document on your phone, then transfer the activity to your iPad to continue editing the document.
 
 To make an activity shareable, use the <Titanium.App.iOS.UserActivity> API to create the activity.

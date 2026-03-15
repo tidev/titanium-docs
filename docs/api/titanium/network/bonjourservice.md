@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/Network/BonjourService.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Network/BonjourService.yml
 ---
 # Titanium.Network.BonjourService
 
@@ -117,7 +117,7 @@ bonjourSocket.listen();
 bonjourSocket.accept({ timeout: 10000 });
 
 // Publish the service
-localService.publish(bonjourSocket, fnction (err, bool) {
+localService.publish(bonjourSocket, function (err, bool) {
   // Now you can find the service on your network (including using a Ti.Network.BonjourBrowser)
 });
 ```

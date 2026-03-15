@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/WebView.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/WebView.yml
 ---
 # Titanium.UI.WebView
 
@@ -39,6 +39,8 @@ To interact with remote content, wait until the content is loaded, then use the
 [evalJS](Titanium.UI.WebView.evalJS) method to execute a JavaScript expression
 inside the web view and retrieve the value of an expression.
 
+To trigger a message from the remote web page, refer to <Titanium.UI.WebView.addScriptMessageHandler>.
+
 You can inject the local `Ti.App.fireEvent` bindings yourself by adding a script element using
 evalJS.
 
@@ -54,8 +56,6 @@ webview.evalJS(
 );
 ```
 The `binding.min.js` is available in the [repository](https://github.com/tidev/titanium-sdk/tree/main/android/modules/ui/assets/Resources/ti.internal/webview).
-
-For iOS check the example in <Titanium.UI.WebView.addScriptMessageHandler>.
 
 ### Local JavaScript Files
 
@@ -268,7 +268,7 @@ window.open();
 
 ### Usage of allowedURLSchemes and handleurl in iOS
 
-Create a web view and listen 'handleurl' event to open url from Titanium platform.
+Create a web view and listen 'handleurl' event to open URL from Titanium platform.
 
 ``` js
 var webview = Ti.UI.createWebView({

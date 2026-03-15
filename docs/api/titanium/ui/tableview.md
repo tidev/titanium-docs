@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/TableView.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/TableView.yml
 ---
 # Titanium.UI.TableView
 
@@ -25,7 +25,7 @@ There are few approaches to creating and using `TableView` object.
 The simplest approach is to pass dictionaries of `TableViewRow` properties, such as
 [backgroundColor](Titanium.UI.TableViewRow.backgroundColor),
 [color](Titanium.UI.TableViewRow.color), and [title](Titanium.UI.TableViewRow.title), to the
-[createTableView](Titanium.UI.createTableView) method, which causes the rows to be implictly
+[createTableView](Titanium.UI.createTableView) method, which causes the rows to be implicitly
 created, added to a single [TableViewSection](Titanium.UI.TableViewSection), and then added to
 the `TableView`. Refer to the "Simple Table View with Basic Rows" example.
 

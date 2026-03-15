@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/UI.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/UI.yml
 ---
 # Titanium.UI
 
@@ -61,7 +61,7 @@ longer using it.  You can safely call `open` on the window again to re-open it.
 Prior to the release of Titanium SDK `9.0.0.GA` any variable declared in `app.js` or `alloy.js`
 was added to a global scope. This however is no longer the case since `9.0.0.GA`. However
 it is still possible to add variables to a global scope by adding `global.` in front of any
-variabled declared in `app.js` or `alloy.js`. However you should be careful with adding variables
+variable declared in `app.js` or `alloy.js`. However you should be careful with adding variables
 to global context because anything added to the global context will not be garbage-collected.
 
 In Alloy the recommended way to add global context is `Alloy.Globals`.
@@ -106,7 +106,7 @@ Note that while the pound symbol, `#`, is not mandatory on iOS when using the he
 it is recommended to include it to provide compatibility with other platforms.
 
 iOS and Android also accept colors specified in the form, `rgb(R,G,B)` and `rgba(R,G,B,A)`, with the color
-channels inside the parethesis represented by integer numbers between `0` and `255` and the
+channels inside the parentheses represented by integer numbers between `0` and `255` and the
 alpha channel by a float number between `0` and `1.0` (transparent to opaque, respectively).
 For example, an opaque purple could be obtained using `'rgb(255,0,255)'` and a semi-opaque purple
 using `'rgba(255,0,255,0.3)'`. Note that although this format will work if the `rgb` or `rgba`

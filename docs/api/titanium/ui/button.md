@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/Button.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/Button.yml
 ---
 # Titanium.UI.Button
 
@@ -34,7 +34,7 @@ supported on iOS.
 The Material style introduced in Titanium SDK 10.0.0 will change the default look of the buttons.
 You can change button styles with a custom theme as follows:
 ``` xml
-<!-- Assign this custom theme to "tiapp.xml" file's android manifest application element. -->
+<!-- Assign this custom theme to "tiapp.xml" file's Android manifest application element. -->
 <style name="Theme.MyTheme" parent="Theme.Titanium.Light">
     <item name="textAppearanceButton">@style/TextAppearance.MyButton</item>
     <item name="android:buttonStyle">@style/Widget.MyButton</item>

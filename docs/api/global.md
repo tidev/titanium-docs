@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Global/Global.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Global/Global.yml
 ---
 # Global
 
@@ -16,7 +16,7 @@ global [String](Global.String) object.
 
 ### console
 
-Titanium provides [console](Global.Console) support familiar to many javascript developers
+Titanium provides [console](Global.Console) support familiar to many JavaScript developers
 for logging at the toplevel, in addition to the [Titanium](Titanium.API) logging facilities.
 
 ### Timers

@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/NodeJS/fs.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/NodeJS/fs.yml
 ---
 # fs
 
@@ -21,7 +21,7 @@ To use this module:
 const fs = require('fs');
 ```
 
-All file system operations have synchronous and asynchronouse callback forms.
+All file system operations have synchronous and asynchronous callback forms.
 
 **NOTE:** The Titanium shim for this module does not support the new Promises API yet, nor does it support some of the newer (and a subset of older) APIs.
 

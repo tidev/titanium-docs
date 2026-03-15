@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/Android/Notification.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Android/Notification.yml
 ---
 # Titanium.Android.Notification
 
@@ -77,7 +77,7 @@ var intent = Ti.Android.createIntent({
     action: Ti.Android.ACTION_MAIN,
     // Substitute the correct class name for your application
     className: 'com.appcelerator.notificationsample.NotificationsampleActivity',
-    // Substitue the correct package name for your application
+    // Substitute the correct package name for your application
     packageName: 'com.appcelerator.notificationsample'
 });
 intent.flags |= Ti.Android.FLAG_ACTIVITY_NEW_TASK;

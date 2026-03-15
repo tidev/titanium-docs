@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Camera.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Camera.yml
 ---
 # Modules.Map.Camera
 

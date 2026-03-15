@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/Geolocation/Geolocation.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Geolocation/Geolocation.yml
 ---
 # Titanium.Geolocation
 
@@ -98,7 +98,7 @@ in *any* case when targeting iOS 11 and later. Descriptive error-logs will be th
 
 On Android, two different location service modes are supported: *simple*, and *manual*.
 
-*   *Simple mode* provides a compromise mode that provides adaquate support for
+*   *Simple mode* provides a compromise mode that provides adequate support for
     undemanding location applications without requiring developers to
     write a lot of Android-specific code. To use simple mode:
 

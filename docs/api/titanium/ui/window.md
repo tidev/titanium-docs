@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/Window.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/Window.yml
 ---
 # Titanium.UI.Window
 
@@ -160,7 +160,7 @@ In addition to full-screen modal windows, iPad supports "Page sheet"
 and "Form sheet" style windows:
 
 * **Page sheet** style windows have a fixed width, equal to the width of the screen
-  in portait mode, and a height equal to the *current* height of the screen. This means
+  in portrait mode, and a height equal to the *current* height of the screen. This means
   that in portrait mode, the window covers the entire screen. In landscape mode,
   the window is centered on the screen horizontally.
 
@@ -274,7 +274,7 @@ Use the <Titanium.UI.iOS.createTransitionAnimation> method to specify an animati
 show the window, then set the newly created TransitionAnimation object to the window's
 <Titanium.UI.Window.transitionAnimation> property.
 
-In the example below, the windows are closed by rotating them upside down while simulatenously
+In the example below, the windows are closed by rotating them upside down while simultaneously
 making them transparent:
 
 `app/views/index.xml`:
@@ -467,7 +467,7 @@ will be moved from window to the other. As of Titanium 8.0.1, you don't have to 
 to use these transition animations, while in older version of Titanium that was required.
 
 See the official Android [Activity Transitions](https://developer.android.com/training/material/animations.html#Transitions)
-documentation for more information and supported transitons.
+documentation for more information and supported transitions.
 
 ### Android "root" Windows
 

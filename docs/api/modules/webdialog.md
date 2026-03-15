@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/WebDialog.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/WebDialog.yml
 ---
 # Modules.WebDialog
 
@@ -43,7 +43,7 @@ The `dialog` variable is a reference to the module. Make API calls using this re
 ``` javascript
 if (dialog.isSupported()) {
     dialog.open({
-        url: 'https://appcelerator.com'
+        url: 'https://titaniumsdk.com'
     });
 }
 ```

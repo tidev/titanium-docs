@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/Geolocation/Android/Android.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Geolocation/Android/Android.yml
 ---
 # Titanium.Geolocation.Android
 
@@ -34,7 +34,7 @@ an event listener is registered for the `location` event.  When you are not
 using location updates, you should remove any registered event listeners.
 
 In manual mode, the application is responsible for dynamically updating the settings
-to acheive its required accuracy while limiting battery usage. For example, an
+to achieve its required accuracy while limiting battery usage. For example, an
 application might do any of the following:
 
 *   If the application isn't getting updates frequently enough, it can adjust its

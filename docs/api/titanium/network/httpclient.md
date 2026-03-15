@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/Network/HTTPClient.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Network/HTTPClient.yml
 ---
 # Titanium.Network.HTTPClient
 
@@ -123,7 +123,7 @@ See following example:
   </dict>
 </dict>
 ```
-Titanium will not fallback with a lower TLS version if the `tlsVersion` property in android or `NSExceptionMinimumTLSVersion` in iOS, is set.
+Titanium will not fallback with a lower TLS version if the `tlsVersion` property in Android or `NSExceptionMinimumTLSVersion` in iOS, is set.
 Setting the TLS version saves time from re-attempting connections with lower TLS versions and
 provides added security by denying attempts to use lower TLS versions.
 

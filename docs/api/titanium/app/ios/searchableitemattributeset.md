@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/App/iOS/SearchableItemAttributeSet.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/iOS/SearchableItemAttributeSet.yml
 ---
 # Titanium.App.iOS.SearchableItemAttributeSet
 

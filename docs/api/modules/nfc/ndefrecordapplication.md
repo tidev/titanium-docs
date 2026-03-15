@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/NdefRecord.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/NdefRecord.yml
 ---
 # Modules.Nfc.NdefRecordApplication
 

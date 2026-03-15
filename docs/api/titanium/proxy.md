@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/Proxy.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Proxy.yml
 ---
 # Titanium.Proxy
 
@@ -9,8 +9,8 @@ editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/Proxy.y
 
 On platforms that use native code (Android and iOS), the `Proxy` type represents a
 JavaScript wrapper or _proxy_ around a native object. Setting or getting a property
-on a proxy object results in a method invokation on the native object. Likewise,
-calling a method on the proxy object results in a method invokation on the native
+on a proxy object results in a method invocation on the native object. Likewise,
+calling a method on the proxy object results in a method invocation on the native
 object.
 
 Some Titanium objects are _createable_: new instances of these objects can be created using

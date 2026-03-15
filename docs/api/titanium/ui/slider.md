@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/Slider.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/Slider.yml
 ---
 # Titanium.UI.Slider
 
@@ -17,7 +17,7 @@ Use the <Titanium.UI.createSlider> method or **`<Slider>`** Alloy element to cre
 
 ### Android Platform Implementation Notes
 
-On Android, the user can also maniuplate the slider using the arrow keys. For this
+On Android, the user can also manipulate the slider using the arrow keys. For this
 reason, placing other focusable UI elements to the left or right of
 the slider is not recommended.
 

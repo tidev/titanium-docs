@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/ButtonBar.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/ButtonBar.yml
 ---
 # Titanium.UI.ButtonBar
 
@@ -18,7 +18,7 @@ On Android, you can set up the buttons with a title, image, or both.
 Use the <Titanium.UI.createButtonBar> method or **`<ButtonBar>`** Alloy element to create a button bar.
 
 The [TabbedBar](Titanium.UI.iOS.TabbedBar) control is a button bar where the
-last selected button mantains a pressed or selected state. The following discussion
+last selected button maintains a pressed or selected state. The following discussion
 applies to both button bar and tabbed bar.
 
 ## Examples

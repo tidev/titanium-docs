@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/TagTechnology.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/TagTechnology.yml
 ---
 # Modules.Nfc.TagTechnologyMifareUltralight
 

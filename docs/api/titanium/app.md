@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/App/App.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/App.yml
 ---
 # Titanium.App
 
@@ -52,7 +52,7 @@ At this point, the app either returns to the active state and fires the `resumed
 or moves to the background state and fires the `paused` event.
 
 Alert-based interruptions result in temporary loss of control by your app and results in `pause`
-event being fired. Your app continues to run in the foreground, but it does not recieve
+event being fired. Your app continues to run in the foreground, but it does not receive
 touch events from the system. (It does continue to receive notifications and other types
 of events, such as accelerometer events.) When your app is moved back to the
 active state, the `resumed` event is fired.
@@ -135,7 +135,7 @@ application.
 
 When you add an event listener on a Titanium module (such as `Ti.App` or
 [Ti.Geolocation](Titanium.Geolocation)), the event listener function is referenced from
-the global context. This means the event listener function and any objecst it references
+the global context. This means the event listener function and any object it references
 can't be garbage collected until the event listener is removed.
 
 This can lead to memory leaks if application-level event listeners are added and not

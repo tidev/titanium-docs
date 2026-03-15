@@ -1,5 +1,5 @@
 ---
-editUrl: https://github.com/tidev/titanium-sdk/edit/main/apidoc/Titanium/UI/OptionDialog.yml
+editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/OptionDialog.yml
 ---
 # Titanium.UI.OptionDialog
 
@@ -117,7 +117,7 @@ function onSelectDialog(e) {
     if (e.button === false && e.index === 0) {
       alert('Confirm option selected! e.index = ' + e.index);
     }
-    if (e.button === false && eventeindex === 1) {
+    if (e.button === false && e.index === 1) {
       alert('Cancel option selected! e.index = ' + e.index);
     }
     if (e.button === true && e.index === 0) {
