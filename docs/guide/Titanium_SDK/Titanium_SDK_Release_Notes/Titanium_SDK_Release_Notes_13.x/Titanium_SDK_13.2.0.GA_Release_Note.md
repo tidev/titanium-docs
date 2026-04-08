@@ -5,7 +5,7 @@ weight: '10'
 
 ## About this release
 
-Titanium SDK 13.2.0 is a minor release of the SDK, focussing on quality-of-life improvements, e.g. iOS core changes, Node.js 24 support and several Android bug fixes!
+Titanium SDK 13.2.0 is a minor release of the SDK, focusing on quality-of-life improvements, e.g. iOS core changes, Node.js 24 support and several Android bug fixes!
 
 As of this GA release, the previous Titanium SDK patch release (13.1.1) is no longer supported.
 
