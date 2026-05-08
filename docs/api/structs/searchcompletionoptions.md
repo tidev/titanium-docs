@@ -7,6 +7,6 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Map.
 
 ## Overview
 
-The latitute and longitude describe the location, the delta values the distance to include.
+The latitude and longitude describe the location, the delta values the distance to include.
 
 <ApiDocs/>

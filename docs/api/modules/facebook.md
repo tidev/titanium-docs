@@ -304,11 +304,22 @@ win.add(messengerButton);
 
 For more information, see the [MessengerButton API reference](Modules.Facebook.MessengerButton).
 
-### Login Tracking (iOS only)
+### Login Tracking
 
-The Ti.Facecebook iOS version 10.0.0 and later supports the `loginTracking` property in the [LoginButton](Modules.Facebook.LoginButton.loginTracking)
-and as a top-level property [loginTracking](Modules.Facebook.loginTracking). You can choose between the two constants
-[LOGIN_TRACKING_ENABLED](Modules.Facebook.LOGIN_TRACKING_ENABLED) (default) and [LOGIN_TRACKING_LIMITED](Modules.Facebook.LOGIN_TRACKING_LIMITED).
+The top-level [loginTracking](Modules.Facebook.loginTracking) property and the
+[LOGIN_TRACKING_ENABLED](Modules.Facebook.LOGIN_TRACKING_ENABLED) /
+[LOGIN_TRACKING_LIMITED](Modules.Facebook.LOGIN_TRACKING_LIMITED) constants are
+supported on both iOS and Android. When set to `LOGIN_TRACKING_LIMITED`, calling
+[authorize](Modules.Facebook.authorize) (or `requestNewReadPermissions`) starts
+Facebook's OIDC-based Limited Login flow: the SDK returns an Authentication
+Token (a JWT) instead of a classic Graph access token. The JWT is delivered as
+`event.authenticationToken.tokenString` on the [login](Modules.Facebook.login)
+event — verify its signature server-side against Facebook's JWKS.
+
+The [LoginButton](Modules.Facebook.LoginButton) widget honors `loginTracking`
+on iOS only. The Android FB SDK's button does not expose Limited Login
+configuration, so on Android you must trigger Limited Login through
+`Modules.Facebook.authorize()` rather than via the button.
 
 For more information, see the [Login Tracking API reference](https://developers.facebook.com/docs/facebook-login/limited-login) and review the constants above.
 

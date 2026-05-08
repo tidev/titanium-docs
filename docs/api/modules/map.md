@@ -177,7 +177,7 @@ mapView.addEventListener('click', event => {
     Ti.API.info('Clicked ' + event.clicksource + ' on ' + event.latitude + ', ' + event.longitude);
 });
 
-windown.open();
+window.open();
 ```
 
 ### Alloy XML Markup

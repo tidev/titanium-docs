@@ -298461,7 +298461,7 @@
             },
             {
                 "name": "center",
-                "summary": "An object with longitude and latitude values. Can also be an array with longitude (index 0), latitude (index 1) touples.",
+                "summary": "An object with longitude and latitude values. Can also be an array with longitude (index 0), latitude (index 1) tuples.",
                 "platforms": [
                     {
                         "since": "4.1.0",
@@ -299072,7 +299072,7 @@
         "examples": [
             {
                 "description": "Basic Map Example",
-                "code": "This is a basic map example that places a custom annotation on the map, and\nlistens for click events on the annotation.\n\nIn this example, a custom property (`myid`) is added to the annotation object.\nWhile adding custom members to a Titanium object is not generally recommended,\nin this case it provides a mechanism for uniquely identifying an annotation. This\ncan be useful, for example, if the annotations are dynamically generated\nand it is not practical to identify them by title.\n\n``` javascript\nimport Map from 'ti.map';\n\nconst window = Ti.UI.createWindow();\n\nconst mountainView = Map.createAnnotation({\n    latitude: 37.390749,\n    longitude: -122.081651,\n    title: 'Appcelerator Headquarters',\n    subtitle: 'Mountain View, CA',\n    pincolor: Map.ANNOTATION_RED,\n    myid: 1 // Custom property to uniquely identify this annotation.\n});\n\nconst mapView = Map.createView({\n    mapType: Map.NORMAL_TYPE,\n    region: { \n        latitude: 33.74511,\n        longitude: -84.38993,\n        latitudeDelta: 0.01,\n        longitudeDelta: 0.01\n    },\n    animate: true,\n    regionFit: true,\n    userLocation: true,\n    annotations: [ mountainView ]\n});\n\nconst circle = Map.createCircle({\n    center: {\n        latitude: 33.74511,\n        longitude: -84.38993\n    },\n    radius: 1000, // = 1.0 km\n    fillColor: '#20FF0000'\n});\n\nmapView.addCircle(circle);\nwindow.add(mapView);\n\nmapView.addEventListener('click', event => {\n    Ti.API.info('Clicked ' + event.clicksource + ' on ' + event.latitude + ', ' + event.longitude);\n});\n\nwindown.open();\n```\n"
+                "code": "This is a basic map example that places a custom annotation on the map, and\nlistens for click events on the annotation.\n\nIn this example, a custom property (`myid`) is added to the annotation object.\nWhile adding custom members to a Titanium object is not generally recommended,\nin this case it provides a mechanism for uniquely identifying an annotation. This\ncan be useful, for example, if the annotations are dynamically generated\nand it is not practical to identify them by title.\n\n``` javascript\nimport Map from 'ti.map';\n\nconst window = Ti.UI.createWindow();\n\nconst mountainView = Map.createAnnotation({\n    latitude: 37.390749,\n    longitude: -122.081651,\n    title: 'Appcelerator Headquarters',\n    subtitle: 'Mountain View, CA',\n    pincolor: Map.ANNOTATION_RED,\n    myid: 1 // Custom property to uniquely identify this annotation.\n});\n\nconst mapView = Map.createView({\n    mapType: Map.NORMAL_TYPE,\n    region: { \n        latitude: 33.74511,\n        longitude: -84.38993,\n        latitudeDelta: 0.01,\n        longitudeDelta: 0.01\n    },\n    animate: true,\n    regionFit: true,\n    userLocation: true,\n    annotations: [ mountainView ]\n});\n\nconst circle = Map.createCircle({\n    center: {\n        latitude: 33.74511,\n        longitude: -84.38993\n    },\n    radius: 1000, // = 1.0 km\n    fillColor: '#20FF0000'\n});\n\nmapView.addCircle(circle);\nwindow.add(mapView);\n\nmapView.addEventListener('click', event => {\n    Ti.API.info('Clicked ' + event.clicksource + ' on ' + event.latitude + ', ' + event.longitude);\n});\n\nwindow.open();\n```\n"
             },
             {
                 "description": "Alloy XML Markup",
@@ -300690,7 +300690,7 @@
         ],
         "type": "pseudo",
         "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Map.yml",
-        "description": "The latitute and longitude describe the location, the delta values the distance to include.",
+        "description": "The latitude and longitude describe the location, the delta values the distance to include.",
         "properties": [
             {
                 "name": "region",
@@ -300989,7 +300989,7 @@
             },
             {
                 "name": "points",
-                "summary": "Array of map points making up the polygon. Can also be an array of longitude (index 0), latitude (index 1) touples.",
+                "summary": "Array of map points making up the polygon. Can also be an array of longitude (index 0), latitude (index 1) tuples.",
                 "platforms": [
                     {
                         "since": "4.1.0",
@@ -301424,7 +301424,7 @@
             },
             {
                 "name": "points",
-                "summary": "Array of map points making up the polyline. Can also be an array of longitude (index 0), latitude (index 1) touples. On Android platform you can use an encoded polyline as string.",
+                "summary": "Array of map points making up the polyline. Can also be an array of longitude (index 0), latitude (index 1) tuples. On Android platform you can use an encoded polyline as string.",
                 "platforms": [
                     {
                         "since": "4.1.0",
@@ -303927,7 +303927,7 @@
             {
                 "name": "click",
                 "summary": "Fired when the user selects or deselects an annotation, a polygon, a polyline or a circle.\n",
-                "description": "Note that the `click` event is not fired every time the user clicks on the map.\nIt is fired in two circumstances:\n\n- The user clicks on the annotation. This will select the annotation.\n- The user deselects an annotation either by clicking on the map or another annotation.\n- The user clicks on a polygon, a polyline or a circle.\n\nNote that only one annotation can be selected at any given time.\n\nThe `click` event includes a value, `clicksource`, which describes the part of the annotation\nthat was clicked. The `clicksource` can be one of `pin`, `infoWindow`, `leftButton` or `rightButton`\non iOS and `pin`, `title`, `subtitle`, `leftPane`, `rightPane`, `infoWindow` or `null` on Android.\nIf the user deselects an annotation by clicking on the pin, `clicksource` is `pin`.\nIf the user deselects the annotation by clicking elsewhere in the map view, `clicksource` is `map`.\n\nFor polygon, polyline or circle, The `click` event includes the following values.\n`clicksource` is a string describing the shape type. `map` is the map view instance.\n`latitude` and `longtitude` is the corresponding coordinates on the map where the user\nclicked in the shape.\n",
+                "description": "Note that the `click` event is not fired every time the user clicks on the map.\nIt is fired in two circumstances:\n\n- The user clicks on the annotation. This will select the annotation.\n- The user deselects an annotation either by clicking on the map or another annotation.\n- The user clicks on a polygon, a polyline or a circle.\n\nNote that only one annotation can be selected at any given time.\n\nThe `click` event includes a value, `clicksource`, which describes the part of the annotation\nthat was clicked. The `clicksource` can be one of `pin`, `infoWindow`, `leftButton` or `rightButton`\non iOS and `pin`, `title`, `subtitle`, `leftPane`, `rightPane`, `infoWindow` or `null` on Android.\nIf the user deselects an annotation by clicking on the pin, `clicksource` is `pin`.\nIf the user deselects the annotation by clicking elsewhere in the map view, `clicksource` is `map`.\n\nFor polygon, polyline or circle, The `click` event includes the following values.\n`clicksource` is a string describing the shape type. `map` is the map view instance.\n`latitude` and `longitude` is the corresponding coordinates on the map where the user\nclicked in the shape.\n",
                 "platforms": [
                     {
                         "since": "3.1.0",
@@ -304197,7 +304197,7 @@
             },
             {
                 "name": "clusterstart",
-                "summary": "Fired when a collision between annotations occures.",
+                "summary": "Fired when a collision between annotations occurs.",
                 "platforms": [
                     {
                         "since": "6.3.0",
@@ -308417,7 +308417,7 @@
             {
                 "name": "zoomEnabled",
                 "summary": "A Boolean value indicating whether the map can be zoomed by pinching or tapping.",
-                "description": "When this property is set to `true` the a map view can be zoomed by pinching inwards to zoom out\nand reverse to zoom in. Zooming in can also be accoplished by double-tapping the map view. Zooming\nout can also be accomplished by two-finger tapping the map view.\n",
+                "description": "When this property is set to `true` the a map view can be zoomed by pinching inwards to zoom out\nand reverse to zoom in. Zooming in can also be accomplished by double-tapping the map view. Zooming\nout can also be accomplished by two-finger tapping the map view.\n",
                 "platforms": [
                     {
                         "since": "8.0.0",
@@ -309013,7 +309013,7 @@
         "properties": [
             {
                 "name": "memberAnnotations",
-                "summary": "Array of Modules.Map.Annotation, which is recieved in event 'clusteringstarted' as\nmemberAnnotations.\n",
+                "summary": "Array of Modules.Map.Annotation, which is received in event 'clusteringstarted' as\nmemberAnnotations.\n",
                 "platforms": [
                     {
                         "since": "6.3.0",
@@ -309071,7 +309071,7 @@
         ],
         "type": "module",
         "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Facebook.yml",
-        "description": "The Facebook module is used for connecting your application with Facebook. \nThis module supports the following features:\n\n* Logging in to Facebook and authorizing your application with either the\n  [Login button](Modules.Facebook.LoginButton) or programatically.\n\n* Making requests through the Facebook Graph API using the\n  [requestWithGraphPath()](Modules.Facebook.requestWithGraphPath) method.\n\n## Getting Started\n\nTo use the Facebook module, you need a Facebook application. To create a Facebook App,\ngo to the Facebook Developer App: [developers.facebook.com/apps](https://developers.facebook.com/apps).\n\n- Edit the `modules` section of your tiapp.xml file to include this module:\n\n    ``` xml\n    <modules>\n        <!-- Add the appropriate line(s) to your modules section -->\n        <module platform=\"android\">facebook</module>\n        <module platform=\"iphone\">facebook</module>\n    </modules>\n    ```\n\n- Instantiate the module with the `require('facebook')` method, then make subsequent API calls\n  with the new Facebook object.\n\n    ``` javascript\n    var fb = require('facebook');\n    fb.permissions = [FACEBOOK_APP_PERMISSIONS]; // e.g. ['email']\n    fb.initialize();\n    fb.authorize();\n    ```\n\n### Additional iOS Setup Steps\n\nFor the iOS platform, in the `ios plist dict` section of your `tiapp.xml` file, add the following keys:\n\n  * `FacebookAppID` key with your Facebook App ID as the string value\n  * `FacebookDisplayName` key with your Facebook App name (the one from `developer.facebook.com`) as the string value\n  * `CFBundleURLTypes` key with a single-element array containing a dict as the value, where the dict contains:\n      * `CFBundleURLName` key with the application app ID (same value as the `id` in the `tiapp.xml` file) as the string value\n      * `CFBundleURLSchemes` key with a single-element array containing the Facebook App ID prefixed with `fb` as a string value\n\nFor example:\n\n``` xml\n<ti:app>\n    <ios>\n        <plist>\n            <dict>\n                <key>CFBundleURLTypes</key>\n                <array>\n                    <dict>\n                        <key>CFBundleURLName</key>\n                        <!-- Application ID same as the id value in the tiapp.xml file -->\n                        <string>APP_ID</string>\n                        <key>CFBundleURLSchemes</key>\n                        <array>\n                            <!-- Prefix the Facebook App ID with 'fb' -->\n                            <string>fbFACEBOOK_APP_ID</string>\n                        </array>\n                    </dict>\n                </array>\n                <key>FacebookAppID</key>\n                <!-- Facebook App ID -->\n                <string>FACEBOOK_APP_ID</string>\n                <key>FacebookDisplayName</key>\n                <!-- Facebook App Name from developer.facebook.com -->\n                <string>FACEBOOK_APP_NAME</string>\n            </dict>\n        </plist>\n    </ios>\n</ti:app>\n```\n\nTo enable the use of Facebook dialogs (e.g., Login, Share), you also need to include the following key and values in `tiapp.xml`\nto handle the switching in and out of your app:\n\n``` xml\n<key>LSApplicationQueriesSchemes</key>\n<array>\n    <string>fbapi</string>\n    <string>fb-messenger-api</string>\n    <string>fbauth2</string>\n    <string>fbshareextension</string>\n</array>\n```\n\nIf you choose to enable App Transport Security (ATS), you have to set the following keys and values in `tiapp.xml` `<ios>` section for facebook module:\n\n``` xml\n<key>NSAppTransportSecurity</key>\n<dict>\n    <key>NSExceptionDomains</key>\n        <dict>\n            <key>facebook.com</key>\n            <dict>\n                <key>NSIncludesSubdomains</key> \n                <true/>\n                <key>NSExceptionRequiresForwardSecrecy</key> \n                <false/>\n            </dict>\n            <key>fbcdn.net</key>\n            <dict>\n                <key>NSIncludesSubdomains</key> \n                <true/>\n                <key>NSExceptionRequiresForwardSecrecy</key>  \n                <false/>\n            </dict>\n            <key>akamaihd.net</key>\n            <dict>\n                <key>NSIncludesSubdomains</key> \n                <true/>\n                <key>NSExceptionRequiresForwardSecrecy</key> \n                <false/>\n            </dict>\n        </dict>\n</dict>\n```\n\n### Additional Android Setup Steps\n\nFor the Android platform, you need to:\n\n  * Add the Facebook Login activity to the Android manifest\n  * Add the Facebook App ID to the Android resources `string.xml` file\n  * Create a Facebook proxy and associate it with the current active activity\n\n**Modify the Android Manifest**\n\nAdd the Facebook Login activity to the `android manifest` section of your `tiapp.xml` file.\nYou may need to add the `manifest` and `application` elements.\n\n``` xml\n<ti:app>\n    <android xmlns:android=\"http://schemas.android.com/apk/res/android\">\n        <manifest>\n            <application>\n                <activity android:name=\"com.facebook.FacebookActivity\" \n                          android:theme=\"@android:style/Theme.Translucent.NoTitleBar\" \n                          android:label=\"YourAppName\" \n                          android:configChanges=\"keyboard|keyboardHidden|screenLayout|screenSize|orientation\" />\n                <meta-data android:name=\"com.facebook.sdk.ApplicationId\" android:value=\"@string/facebook_app_id\"/>\n\n                <provider android:name=\"com.facebook.FacebookContentProvider\"\n                          android:authorities=\"com.facebook.app.FacebookContentProvider<YOUR_APP_ID>\"\n                          android:exported=\"true\" />\n            </application>\n        </manifest>\n    </android>\n<ti:app>\n```\n\n**Add the Facebook App ID to Android Resources**\n\nAdd a string element to the `/platform/android/res/values/strings.xml` file with the `name`\nattribute set to `facebook_app_id` and the node text set to your Facebook App ID. Create the\nfile if it does not exist.\n\n``` xml\n<resources>\n    <string name=\"facebook_app_id\">FACEBOOK_APP_ID</string>\n</resources>\n```\n    \n**Generate the Key Hashes**\n\nFacebook requires you to add the Key Hash of the Android app in order for you to use the module. \nSteps to get the Key Hash as follows. Alternatively, if you do not have the correct Key Hash on \nthe Android App, the App will give an error message when you login with the Key Hash of the App \nwhich you can then copy.\n\nUse the following command to generate and receive the key-hashpath of your app. To do do, \nreplace `<sdk-version>` with your SDK-version and run:\n\n``` sh\nkeytool -exportcert -alias androiddebugkey -keystore ~/Library/Application\\ Support/Titanium/mobilesdk/osx/<sdk-version>/dev_keystore | openssl sha1 -binary | openssl base64\n```\n\nYou would also require, to fill up the Google Play Package Name which is the Application ID \nand the Class Name which is the Application ID followed by the Application Name concatenated \nwith the word Activity. Example, an App called Kitchensink with Application ID of \n\"com.appcelerator.kitchensink\" will have the Class Name as \"com.appcelerator.kitchensink.KitchensinkActivity\".\nAlternatively, you can check the Class Name in `<project>/build/android/AndroidManifest.xml` which is \ngenerated when you build the project. The launcher activity is the Class Name of the Application.\n\nFor more info, please see https://developers.facebook.com/docs/android/getting-started\n\n**Create a Facebook Proxy**\n\nUse the [createActivityWorker()](Modules.Facebook.createActivityWorker) method to create a\nFacebook proxy. Pass the method a dictionary with the `lifecycleContainer` property set to\nthe current active instance of a standalone Window (window not contained in a tab group) or TabGroup.\nCreate the proxy before calling the `open()` method on either the window or tab group.\n\nThe Facebook module needs to hook into the lifecycle events of the current active activity\nin order to synchronize its state between various activities in the application, for example,\nto update the label of the Login button when the user logs in or out of Facebook.\n\nAttach the proxy to the Window or TabGroup object, so it does not get garbage collected.\n\n``` javascript\nwin.fbProxy = fb.createActivityWorker({ lifecycleContainer: win });\n```\n\n## Module API Usage\n\n### Facebook Login and Authorization\n\nTo use Facebook, a user must logged into Facebook and explicitly authorize the application to\nperform certain actions, such as accessing profile information or posting status messages.\n\nCall [authorize](Modules.Facebook.authorize) to prompt the user to login and authorize\nthe application. Before calling this method, set the <Modules.Facebook.permissions> property\nif additional permissions are needed.\n\nWhich approach you take depends on your UI and how central Facebook is to your\napplication.\n\n### Manage Read and Write Permissions\n\nIn order to read or write content to a user's Facebook page, you need to request permission from\nthe user.  You can either request permissions when the user authorizes your application or\nrequest permissions on the fly.\n\nBefore the user logs in and authorizes the application, you can request permissions for the\napplication to use by either: Setting the <Modules.Facebook.permissions> property if you are using `authorize()` \nmethod to have the user login and authorize the application.\n\nFor a complete list of permissions, see the [official Facebook Permissions Reference](https://developers.facebook.com/docs/facebook-login/permissions/)\n\n**Refresh Application Permissions**\n\nSince the user can selectively turn application permissions on and off from their Facebook\npage, the application may need to refresh its granted permissions.\n\nTo refresh the application's permissions, call the\n[refreshPermissionsFromServer()](Modules.Facebook.refreshPermissionsFromServer) method, then\nlisten for the <Modules.Facebook.tokenUpdated> event to be notified when permissions are updated.\n\n``` javascript\nfb.addEventListener('tokenUpdated', function (e) {\n    Ti.API.info('Updated permissions: ' + JSON.stringify(fb.permissions));\n});\nfb.refreshPermissionsFromServer();\n```\n\n### Share Dialogs\n\nThe Share dialog prompts a person to publish an individual story or an Open Graph story\nto their timeline. This does not require the user to authorize your app or any extended permissions,\nso it is the easiest way to enable sharing.\n\nPass either method parameters you want to add to the post, such as a `link` or `hashtag`, or to\nshare the user's status, do not pass any parameters to the methods. Note: The `link` parameter is\n**required** by the Facebook SDK.\n\nTo monitor if the share request succeeded or not, listen to the <Modules.Facebook.shareCompleted>\nevent.\n\n``` javascript\nfb.addEventListener('shareCompleted', function (e) {\n    if (e.success) {\n        Ti.API.info('Share request succeeded.');\n    } else {\n        Ti.API.warn('Failed to share.');\n    }\n});\n\nfb.presentShareDialog({\n    link: 'https://appcelerator.com/',\n    hashtag: 'codestrong'\n});\n```\n\nFor details on the Share dialog, see the\n[official Facebook Share Dialogs documentation](https://developers.facebook.com/docs/sharing/reference/share-dialog).\n\n### Messenger Button\n\nThe Messenger button provides a quick mechanism for users to share content to the Facebook Messenger.\nA click on the button can share the content to multiple users.\n\nTo create a Messenger button, call the [createMessengerButton()](Modules.Facebook.createMessengerButton)\nmethod and pass the \"mode\" and \"style\" properties:\n\n``` javascript\nvar messengerButton = fb.createMessengerButton({\n    mode: fb.MESSENGER_BUTTON_MODE_RECTANGULAR\n    style: fb.MESSENGER_BUTTON_STYLE_BLUE\n});\nwin.add(messengerButton);\n```\n\nFor more information, see the [MessengerButton API reference](Modules.Facebook.MessengerButton).\n\n### Login Tracking (iOS only)\n\nThe Ti.Facecebook iOS version 10.0.0 and later supports the `loginTracking` property in the [LoginButton](Modules.Facebook.LoginButton.loginTracking)\nand as a top-level property [loginTracking](Modules.Facebook.loginTracking). You can choose between the two constants\n[LOGIN_TRACKING_ENABLED](Modules.Facebook.LOGIN_TRACKING_ENABLED) (default) and [LOGIN_TRACKING_LIMITED](Modules.Facebook.LOGIN_TRACKING_LIMITED).\n\nFor more information, see the [Login Tracking API reference](https://developers.facebook.com/docs/facebook-login/limited-login) and review the constants above.\n",
+        "description": "The Facebook module is used for connecting your application with Facebook. \nThis module supports the following features:\n\n* Logging in to Facebook and authorizing your application with either the\n  [Login button](Modules.Facebook.LoginButton) or programatically.\n\n* Making requests through the Facebook Graph API using the\n  [requestWithGraphPath()](Modules.Facebook.requestWithGraphPath) method.\n\n## Getting Started\n\nTo use the Facebook module, you need a Facebook application. To create a Facebook App,\ngo to the Facebook Developer App: [developers.facebook.com/apps](https://developers.facebook.com/apps).\n\n- Edit the `modules` section of your tiapp.xml file to include this module:\n\n    ``` xml\n    <modules>\n        <!-- Add the appropriate line(s) to your modules section -->\n        <module platform=\"android\">facebook</module>\n        <module platform=\"iphone\">facebook</module>\n    </modules>\n    ```\n\n- Instantiate the module with the `require('facebook')` method, then make subsequent API calls\n  with the new Facebook object.\n\n    ``` javascript\n    var fb = require('facebook');\n    fb.permissions = [FACEBOOK_APP_PERMISSIONS]; // e.g. ['email']\n    fb.initialize();\n    fb.authorize();\n    ```\n\n### Additional iOS Setup Steps\n\nFor the iOS platform, in the `ios plist dict` section of your `tiapp.xml` file, add the following keys:\n\n  * `FacebookAppID` key with your Facebook App ID as the string value\n  * `FacebookDisplayName` key with your Facebook App name (the one from `developer.facebook.com`) as the string value\n  * `CFBundleURLTypes` key with a single-element array containing a dict as the value, where the dict contains:\n      * `CFBundleURLName` key with the application app ID (same value as the `id` in the `tiapp.xml` file) as the string value\n      * `CFBundleURLSchemes` key with a single-element array containing the Facebook App ID prefixed with `fb` as a string value\n\nFor example:\n\n``` xml\n<ti:app>\n    <ios>\n        <plist>\n            <dict>\n                <key>CFBundleURLTypes</key>\n                <array>\n                    <dict>\n                        <key>CFBundleURLName</key>\n                        <!-- Application ID same as the id value in the tiapp.xml file -->\n                        <string>APP_ID</string>\n                        <key>CFBundleURLSchemes</key>\n                        <array>\n                            <!-- Prefix the Facebook App ID with 'fb' -->\n                            <string>fbFACEBOOK_APP_ID</string>\n                        </array>\n                    </dict>\n                </array>\n                <key>FacebookAppID</key>\n                <!-- Facebook App ID -->\n                <string>FACEBOOK_APP_ID</string>\n                <key>FacebookDisplayName</key>\n                <!-- Facebook App Name from developer.facebook.com -->\n                <string>FACEBOOK_APP_NAME</string>\n            </dict>\n        </plist>\n    </ios>\n</ti:app>\n```\n\nTo enable the use of Facebook dialogs (e.g., Login, Share), you also need to include the following key and values in `tiapp.xml`\nto handle the switching in and out of your app:\n\n``` xml\n<key>LSApplicationQueriesSchemes</key>\n<array>\n    <string>fbapi</string>\n    <string>fb-messenger-api</string>\n    <string>fbauth2</string>\n    <string>fbshareextension</string>\n</array>\n```\n\nIf you choose to enable App Transport Security (ATS), you have to set the following keys and values in `tiapp.xml` `<ios>` section for facebook module:\n\n``` xml\n<key>NSAppTransportSecurity</key>\n<dict>\n    <key>NSExceptionDomains</key>\n        <dict>\n            <key>facebook.com</key>\n            <dict>\n                <key>NSIncludesSubdomains</key> \n                <true/>\n                <key>NSExceptionRequiresForwardSecrecy</key> \n                <false/>\n            </dict>\n            <key>fbcdn.net</key>\n            <dict>\n                <key>NSIncludesSubdomains</key> \n                <true/>\n                <key>NSExceptionRequiresForwardSecrecy</key>  \n                <false/>\n            </dict>\n            <key>akamaihd.net</key>\n            <dict>\n                <key>NSIncludesSubdomains</key> \n                <true/>\n                <key>NSExceptionRequiresForwardSecrecy</key> \n                <false/>\n            </dict>\n        </dict>\n</dict>\n```\n\n### Additional Android Setup Steps\n\nFor the Android platform, you need to:\n\n  * Add the Facebook Login activity to the Android manifest\n  * Add the Facebook App ID to the Android resources `string.xml` file\n  * Create a Facebook proxy and associate it with the current active activity\n\n**Modify the Android Manifest**\n\nAdd the Facebook Login activity to the `android manifest` section of your `tiapp.xml` file.\nYou may need to add the `manifest` and `application` elements.\n\n``` xml\n<ti:app>\n    <android xmlns:android=\"http://schemas.android.com/apk/res/android\">\n        <manifest>\n            <application>\n                <activity android:name=\"com.facebook.FacebookActivity\" \n                          android:theme=\"@android:style/Theme.Translucent.NoTitleBar\" \n                          android:label=\"YourAppName\" \n                          android:configChanges=\"keyboard|keyboardHidden|screenLayout|screenSize|orientation\" />\n                <meta-data android:name=\"com.facebook.sdk.ApplicationId\" android:value=\"@string/facebook_app_id\"/>\n\n                <provider android:name=\"com.facebook.FacebookContentProvider\"\n                          android:authorities=\"com.facebook.app.FacebookContentProvider<YOUR_APP_ID>\"\n                          android:exported=\"true\" />\n            </application>\n        </manifest>\n    </android>\n<ti:app>\n```\n\n**Add the Facebook App ID to Android Resources**\n\nAdd a string element to the `/platform/android/res/values/strings.xml` file with the `name`\nattribute set to `facebook_app_id` and the node text set to your Facebook App ID. Create the\nfile if it does not exist.\n\n``` xml\n<resources>\n    <string name=\"facebook_app_id\">FACEBOOK_APP_ID</string>\n</resources>\n```\n    \n**Generate the Key Hashes**\n\nFacebook requires you to add the Key Hash of the Android app in order for you to use the module. \nSteps to get the Key Hash as follows. Alternatively, if you do not have the correct Key Hash on \nthe Android App, the App will give an error message when you login with the Key Hash of the App \nwhich you can then copy.\n\nUse the following command to generate and receive the key-hashpath of your app. To do do, \nreplace `<sdk-version>` with your SDK-version and run:\n\n``` sh\nkeytool -exportcert -alias androiddebugkey -keystore ~/Library/Application\\ Support/Titanium/mobilesdk/osx/<sdk-version>/dev_keystore | openssl sha1 -binary | openssl base64\n```\n\nYou would also require, to fill up the Google Play Package Name which is the Application ID \nand the Class Name which is the Application ID followed by the Application Name concatenated \nwith the word Activity. Example, an App called Kitchensink with Application ID of \n\"com.appcelerator.kitchensink\" will have the Class Name as \"com.appcelerator.kitchensink.KitchensinkActivity\".\nAlternatively, you can check the Class Name in `<project>/build/android/AndroidManifest.xml` which is \ngenerated when you build the project. The launcher activity is the Class Name of the Application.\n\nFor more info, please see https://developers.facebook.com/docs/android/getting-started\n\n**Create a Facebook Proxy**\n\nUse the [createActivityWorker()](Modules.Facebook.createActivityWorker) method to create a\nFacebook proxy. Pass the method a dictionary with the `lifecycleContainer` property set to\nthe current active instance of a standalone Window (window not contained in a tab group) or TabGroup.\nCreate the proxy before calling the `open()` method on either the window or tab group.\n\nThe Facebook module needs to hook into the lifecycle events of the current active activity\nin order to synchronize its state between various activities in the application, for example,\nto update the label of the Login button when the user logs in or out of Facebook.\n\nAttach the proxy to the Window or TabGroup object, so it does not get garbage collected.\n\n``` javascript\nwin.fbProxy = fb.createActivityWorker({ lifecycleContainer: win });\n```\n\n## Module API Usage\n\n### Facebook Login and Authorization\n\nTo use Facebook, a user must logged into Facebook and explicitly authorize the application to\nperform certain actions, such as accessing profile information or posting status messages.\n\nCall [authorize](Modules.Facebook.authorize) to prompt the user to login and authorize\nthe application. Before calling this method, set the <Modules.Facebook.permissions> property\nif additional permissions are needed.\n\nWhich approach you take depends on your UI and how central Facebook is to your\napplication.\n\n### Manage Read and Write Permissions\n\nIn order to read or write content to a user's Facebook page, you need to request permission from\nthe user.  You can either request permissions when the user authorizes your application or\nrequest permissions on the fly.\n\nBefore the user logs in and authorizes the application, you can request permissions for the\napplication to use by either: Setting the <Modules.Facebook.permissions> property if you are using `authorize()` \nmethod to have the user login and authorize the application.\n\nFor a complete list of permissions, see the [official Facebook Permissions Reference](https://developers.facebook.com/docs/facebook-login/permissions/)\n\n**Refresh Application Permissions**\n\nSince the user can selectively turn application permissions on and off from their Facebook\npage, the application may need to refresh its granted permissions.\n\nTo refresh the application's permissions, call the\n[refreshPermissionsFromServer()](Modules.Facebook.refreshPermissionsFromServer) method, then\nlisten for the <Modules.Facebook.tokenUpdated> event to be notified when permissions are updated.\n\n``` javascript\nfb.addEventListener('tokenUpdated', function (e) {\n    Ti.API.info('Updated permissions: ' + JSON.stringify(fb.permissions));\n});\nfb.refreshPermissionsFromServer();\n```\n\n### Share Dialogs\n\nThe Share dialog prompts a person to publish an individual story or an Open Graph story\nto their timeline. This does not require the user to authorize your app or any extended permissions,\nso it is the easiest way to enable sharing.\n\nPass either method parameters you want to add to the post, such as a `link` or `hashtag`, or to\nshare the user's status, do not pass any parameters to the methods. Note: The `link` parameter is\n**required** by the Facebook SDK.\n\nTo monitor if the share request succeeded or not, listen to the <Modules.Facebook.shareCompleted>\nevent.\n\n``` javascript\nfb.addEventListener('shareCompleted', function (e) {\n    if (e.success) {\n        Ti.API.info('Share request succeeded.');\n    } else {\n        Ti.API.warn('Failed to share.');\n    }\n});\n\nfb.presentShareDialog({\n    link: 'https://appcelerator.com/',\n    hashtag: 'codestrong'\n});\n```\n\nFor details on the Share dialog, see the\n[official Facebook Share Dialogs documentation](https://developers.facebook.com/docs/sharing/reference/share-dialog).\n\n### Messenger Button\n\nThe Messenger button provides a quick mechanism for users to share content to the Facebook Messenger.\nA click on the button can share the content to multiple users.\n\nTo create a Messenger button, call the [createMessengerButton()](Modules.Facebook.createMessengerButton)\nmethod and pass the \"mode\" and \"style\" properties:\n\n``` javascript\nvar messengerButton = fb.createMessengerButton({\n    mode: fb.MESSENGER_BUTTON_MODE_RECTANGULAR\n    style: fb.MESSENGER_BUTTON_STYLE_BLUE\n});\nwin.add(messengerButton);\n```\n\nFor more information, see the [MessengerButton API reference](Modules.Facebook.MessengerButton).\n\n### Login Tracking\n\nThe top-level [loginTracking](Modules.Facebook.loginTracking) property and the\n[LOGIN_TRACKING_ENABLED](Modules.Facebook.LOGIN_TRACKING_ENABLED) /\n[LOGIN_TRACKING_LIMITED](Modules.Facebook.LOGIN_TRACKING_LIMITED) constants are\nsupported on both iOS and Android. When set to `LOGIN_TRACKING_LIMITED`, calling\n[authorize](Modules.Facebook.authorize) (or `requestNewReadPermissions`) starts\nFacebook's OIDC-based Limited Login flow: the SDK returns an Authentication\nToken (a JWT) instead of a classic Graph access token. The JWT is delivered as\n`event.authenticationToken.tokenString` on the [login](Modules.Facebook.login)\nevent — verify its signature server-side against Facebook's JWKS.\n\nThe [LoginButton](Modules.Facebook.LoginButton) widget honors `loginTracking`\non iOS only. The Android FB SDK's button does not expose Limited Login\nconfiguration, so on Android you must trigger Limited Login through\n`Modules.Facebook.authorize()` rather than via the button.\n\nFor more information, see the [Login Tracking API reference](https://developers.facebook.com/docs/facebook-login/limited-login) and review the constants above.\n",
         "events": [
             {
                 "name": "login",
@@ -309118,8 +309118,13 @@
                     },
                     {
                         "name": "data",
-                        "summary": "Data returned by Facebook when we query for the UID (using graph path \"me\")\nafter a successful login. Data is in JSON format, and includes information\nsuch as user name, locale and gender.\n",
+                        "summary": "Data returned by Facebook when we query for the UID (using graph path \"me\")\nafter a successful login. Data is in JSON format, and includes information\nsuch as user name, locale and gender.\n\nFor Limited Login (`loginTracking == LOGIN_TRACKING_LIMITED`) no Graph\nrequest is made — instead this contains a JSON object built from the\nverified claims of the Authentication Token (id, name, firstName,\nmiddleName, lastName, email, picture).\n",
                         "type": "String"
+                    },
+                    {
+                        "name": "authenticationToken",
+                        "summary": "OIDC Authentication Token returned by the Facebook SDK when the login\nattempt was made with `loginTracking == LOGIN_TRACKING_LIMITED`.\n\nThe `tokenString` is a signed JWT — forward it to your backend and\nverify its signature against Facebook's JWKS (`https://www.facebook.com/.well-known/oauth/openid/jwks`)\nwith `aud` pinned to your Facebook App ID and `iss` pinned to\n`https://www.facebook.com`. Limited Login does **not** issue an Access\nToken, so the JWT and its claims are the only authoritative identity\nmaterial available to the server.\n\nUndefined when classic login (`LOGIN_TRACKING_ENABLED`) was used.\n",
+                        "type": "Dictionary<LimitedLoginAuthenticationToken>"
                     },
                     {
                         "name": "source",
@@ -310934,7 +310939,12 @@
             {
                 "name": "loginTracking",
                 "summary": "Gets or sets the desired tracking preference to use for login attempts.",
+                "description": "On Android, only the programmatic [authorize](Modules.Facebook.authorize)\nand [requestNewReadPermissions](Modules.Facebook.requestNewReadPermissions)\nentry points honor this — the [LoginButton](Modules.Facebook.LoginButton)\nwidget always uses classic login because the underlying Facebook Android\nSDK button does not expose Limited Login configuration.\n",
                 "platforms": [
+                    {
+                        "since": "10.0.0",
+                        "name": "android"
+                    },
                     {
                         "since": "10.0.0",
                         "name": "iphone"
@@ -310952,10 +310962,56 @@
                 ]
             },
             {
-                "name": "LOGIN_TRACKING_ENABLED",
-                "summary": "Use with [LoginButton.loginTracking](Modules.Facebook.LoginButton.loginTracking) or the top-level\n[loginTracking](Modules.Facebook.loginTracking) property to set the desired tracking preference.\n",
-                "description": "For more information on the differences between\n`LOGIN_TRACKING_ENABLED` and `LOGIN_TRACKING_LIMITED` see: https://developers.facebook.com/docs/facebook-login/ios/limited-login/\n",
+                "name": "nonce",
+                "summary": "Optional nonce used by Limited Login (`LOGIN_TRACKING_LIMITED`) to bind the\nissued Authentication Token to a server-side challenge.\n",
+                "description": "When set, the value is embedded as the `nonce` claim of the JWT the SDK\nreturns. Validate the same value on your backend to defeat replay. If\nomitted, the Facebook SDK mints a random UUID. Has no effect when\n`loginTracking == LOGIN_TRACKING_ENABLED`.\n",
                 "platforms": [
+                    {
+                        "since": "19.0.0",
+                        "name": "android"
+                    }
+                ],
+                "type": "String"
+            },
+            {
+                "name": "authenticationToken",
+                "summary": "Returns the raw Authentication Token (JWT) from the most recent Limited\nLogin, or an empty string if none is currently set.\n",
+                "description": "Equivalent to reading `FBSDKAuthenticationToken.currentAuthenticationToken.tokenString`\non iOS and `AuthenticationToken.getCurrentAuthenticationToken().getToken()`\non Android.\n",
+                "platforms": [
+                    {
+                        "since": "19.0.0",
+                        "name": "android"
+                    }
+                ],
+                "type": "String",
+                "permission": "read-only"
+            },
+            {
+                "name": "advertiserTrackingEnabled",
+                "summary": "Gets or sets the SDK's advertiser-tracking flag.",
+                "description": "Maps to `FBSDKSettings.sharedSettings.isAdvertiserTrackingEnabled`.\n\nStarting with the Facebook iOS SDK v18, a `LOGIN_TRACKING_ENABLED` (classic)\nlogin attempt is silently shimmed into the Limited Login flow whenever this\nflag is `false` (the SDK default until App Tracking Transparency has been\ngranted). Set this to `true` after a successful\n[ATTrackingManager.requestTrackingAuthorization](https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(completionhandler:))\nin your app to keep classic login behaviour and continue receiving an\nAccess Token rather than an Authentication Token.\n\nSee https://developers.facebook.com/docs/facebook-login/ios/limited-login/\nfor the difference between classic and Limited Login.\n",
+                "platforms": [
+                    {
+                        "since": "16.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "16.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Boolean",
+                "default": false
+            },
+            {
+                "name": "LOGIN_TRACKING_ENABLED",
+                "summary": "Use with [LoginButton.loginTracking](Modules.Facebook.LoginButton.loginTracking) (iOS)\nor the top-level [loginTracking](Modules.Facebook.loginTracking) property to set the\ndesired tracking preference.\n",
+                "description": "For more information on the differences between\n`LOGIN_TRACKING_ENABLED` and `LOGIN_TRACKING_LIMITED` see: https://developers.facebook.com/docs/facebook-login/limited-login/\n",
+                "platforms": [
+                    {
+                        "since": "10.0.0",
+                        "name": "android"
+                    },
                     {
                         "since": "10.0.0",
                         "name": "iphone"
@@ -310970,9 +311026,13 @@
             },
             {
                 "name": "LOGIN_TRACKING_LIMITED",
-                "summary": "Use with [LoginButton.loginTracking](Modules.Facebook.LoginButton.loginTracking) or the top-level\n[loginTracking](Modules.Facebook.loginTracking) property to set the desired tracking preference.\n",
-                "description": "For more information on the differences between\n`LOGIN_TRACKING_ENABLED` and `LOGIN_TRACKING_LIMITED` see: https://developers.facebook.com/docs/facebook-login/ios/limited-login/\n",
+                "summary": "Use with [LoginButton.loginTracking](Modules.Facebook.LoginButton.loginTracking) (iOS)\nor the top-level [loginTracking](Modules.Facebook.loginTracking) property to set the\ndesired tracking preference.\n",
+                "description": "For more information on the differences between\n`LOGIN_TRACKING_ENABLED` and `LOGIN_TRACKING_LIMITED` see: https://developers.facebook.com/docs/facebook-login/limited-login/\n",
                 "platforms": [
+                    {
+                        "since": "10.0.0",
+                        "name": "android"
+                    },
                     {
                         "since": "10.0.0",
                         "name": "iphone"
@@ -311024,6 +311084,87 @@
                 ],
                 "type": "String",
                 "permission": "read-only"
+            }
+        ]
+    },
+    "LimitedLoginAuthenticationToken": {
+        "name": "LimitedLoginAuthenticationToken",
+        "summary": "Shape of `event.authenticationToken` on the [login](Modules.Facebook.login) event\nwhen Limited Login (`LOGIN_TRACKING_LIMITED`) is used.\n",
+        "extends": "Object",
+        "platforms": [
+            {
+                "since": "19.0.0",
+                "name": "android"
+            },
+            {
+                "since": "19.0.0",
+                "name": "iphone"
+            },
+            {
+                "since": "19.0.0",
+                "name": "ipad"
+            }
+        ],
+        "type": "pseudo",
+        "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Facebook.yml",
+        "properties": [
+            {
+                "name": "tokenString",
+                "summary": "The signed JWT (header.payload.signature) issued by Facebook. Verify on your backend.",
+                "platforms": [
+                    {
+                        "since": "19.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "19.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "19.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "String"
+            },
+            {
+                "name": "nonce",
+                "summary": "The nonce echoed back by Facebook. Matches the [nonce](Modules.Facebook.nonce)\nyou supplied (Android) or the value the SDK generated, and is also present as\na claim inside the JWT.\n",
+                "platforms": [
+                    {
+                        "since": "19.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "19.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "19.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "String"
+            },
+            {
+                "name": "graphDomain",
+                "summary": "Optional graph domain hint returned by the iOS SDK (e.g. `gaming`).\n`undefined` on Android.\n",
+                "platforms": [
+                    {
+                        "since": "19.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "19.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "19.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "String",
+                "optional": true
             }
         ]
     },
@@ -315074,6 +315215,7 @@
             {
                 "name": "loginTracking",
                 "summary": "Gets or sets the desired tracking preference to use for login attempts.",
+                "description": "iOS only. The Facebook Android SDK's `LoginButton` does not support\nLimited Login configuration; on Android, trigger Limited Login by setting\n[Modules.Facebook.loginTracking](Modules.Facebook.loginTracking) and\ncalling [Modules.Facebook.authorize](Modules.Facebook.authorize) instead\nof using this widget.\n",
                 "platforms": [
                     {
                         "since": "10.0.0",
