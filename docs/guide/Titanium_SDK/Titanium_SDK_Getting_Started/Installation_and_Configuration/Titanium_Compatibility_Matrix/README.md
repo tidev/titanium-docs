@@ -35,14 +35,15 @@ The Java Development Kit (JDK) is required to build Titanium apps and modules fo
 
 | Titanium SDK version | Min JDK version | Max JDK version |
 | --- | --- | --- |
-| 12.8.0 - latest | 18 | 21 |
-| 12.0.0 - 12.7.0 | 11 | 17 |
+| 13.3.0 - latest | 18 | 25 |
+| 12.8.0 - 13.2.0 | 18 | 21 |
 
 <details>
 <summary><b>Unsupported version</b></summary>
 
 | Titanium SDK version | Min JDK version | Max JDK version |
 | --- | --- | --- |
+| 12.0.0 - 12.7.0 | 11 | 17 |
 | 10.1.0 - 11.1.1 | 11 | 16 |
 | 9.0.2 - 10.0.2 | 8 | 15 |
 | 9.0.1 | 8 | 13 |
