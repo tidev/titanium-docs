@@ -1,13 +1,93 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Network/Cookie.yml
+title: Titanium.Network.Cookie
+properties:
+  - name: comment
+    type: String
+    summary: The comment describing the purpose of this cookie
+  - name: domain
+    type: String
+    summary: The domain attribute of the cookie.
+  - name: expiryDate
+    type: String
+    summary: The expiration Date of the cookie.
+    description: >
+      <p>Date format is
+      &quot;<em>yyyy</em>-<em>MM</em>-<em>dd</em><strong>T</strong><em>HH</em><strong>:</strong><em>mm</em><strong>:</strong><em>ss</em><strong>.</strong><em>SSS</em><strong>+0000</strong>&quot;</p>
+
+      <p>This has been deprecated and removed since 5.0.0 in Android. Please use
+      the property <code>maxAge</code><br>
+
+      for Cookies in Android.</p>
+    platforms:
+      - iphone
+      - ipad
+      - macos
+    since:
+      iphone: 3.3.0
+      ipad: 3.3.0
+  - name: maxAge
+    type: Number
+    summary: Sets the Max-Age attribute of a Cookie, in delta-seconds.
+    platforms:
+      - android
+    since: 5.0.0
+  - name: httponly
+    type: Boolean
+    summary: The httponly attribute of the cookie.
+    description: >
+      <p>On iOS this property cannot be set. On Android, when this property is
+      set to <code>true</code>, the cookie will<br>
+
+      be used only when transmitting HTTP (or HTTPS) requests.</p>
+  - name: name
+    type: String
+    summary: The name of the cookie.
+  - name: originalUrl
+    type: String
+    summary: The original URL attribute of the cookie.
+    platforms:
+      - iphone
+      - ipad
+      - macos
+    since: 3.3.0
+  - name: path
+    type: String
+    summary: The path attribute of the cookie.
+    description: >
+      <p>In the system cookie store, the default value of the path is
+      &quot;/&quot;. In the HTTP client cookie store,<br>
+
+      the default value of the path is <code>null</code>.</p>
+  - name: secure
+    type: Boolean
+    summary: The secure attribute of the cookie.
+    description: |
+      <p>Indicates whether this cookie requires a secure connection.</p>
+  - name: value
+    type: String
+    summary: The value of the cookie.
+  - name: version
+    type: Number
+    summary: The version of the cookie specification to which this cookie conforms.
+methods:
+  - name: isValid
+    summary: Returns true if the cookie is valid.
+    description: >
+      <p>This method checks if the cookie is valid. For a cookie to be valid the
+      minimum<br>
+
+      properties required are <code>name</code>, <code>value</code>,
+      <code>path</code> and either <code>domain</code> or
+      <code>originalUrl</code> (iOS only)</p>
+    returns:
+      type: Boolean
 ---
+
 # Titanium.Network.Cookie
 
-<TypeHeader/>
+Cookie object used to manage the system cookie store and HTTP client cookie store.
 
-## Overview
-
-Use <Titanium.Network.createCookie> to create a new `Cookie` object.
+Use [Titanium.Network.createCookie](/api/titanium/network) to create a new `Cookie` object.
 The following is an example of how to setup and read a cookie on a web view:
 
 ``` js
@@ -442,4 +522,10 @@ navigationController.window = MainWindow();
 navigationController.open();
 ```
 
-<ApiDocs/>
+
+**Extends:** `Titanium.Proxy` · **Since:** 3.2.0, 3.3.0, 3.3.0 · **Platforms:** android, iphone, ipad, macos
+
+<ApiProperties />
+
+<ApiMethods />
+

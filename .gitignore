@@ -12,3 +12,11 @@ docs/.vuepress/dist
 
 #VSCode
 .vscode
+
+docs/api/
+docs/.vitepress/sidebar.mjs
+docs/.vitepress/dist/
+docs/.vitepress/.temp/
+docs/.vitepress/cache/
+docs/public/images/
+modules-cache/

@@ -1,13 +1,15 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/XML/Comment.yml
+title: Titanium.XML.Comment
 ---
+
 # Titanium.XML.Comment
 
-<TypeHeader/>
+Represents the contents of an XML comment.
 
-## Overview
 
 Implements the [DOM Level 2 API](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-1728279322) on
 Android and iOS with some non-standard extensions.
 
-<ApiDocs/>
+
+**Extends:** `Titanium.XML.CharacterData` · **Since:** 0.9, 0.9, 0.9, 9.2.0 · **Platforms:** android, iphone, ipad, macos
+

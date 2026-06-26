@@ -1,13 +1,16 @@
 ---
-editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/XML/CDATASection.yml
+title: Titanium.XML.CDATASection
 ---
+
 # Titanium.XML.CDATASection
 
-<TypeHeader/>
+Used to include blocks of literal text containing characters that would otherwise need
+to be escaped.
 
-## Overview
 
 Implements the [DOM Level 2 API](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-667469212) on
 Android and iOS with some non-standard extensions.
 
-<ApiDocs/>
+
+**Extends:** `Titanium.XML.Text` · **Since:** 0.9, 0.9, 0.9, 9.2.0 · **Platforms:** android, iphone, ipad, macos
+

@@ -1,41 +1,18 @@
 {
-  "name": "titanium-docs",
-  "version": "1.0.0",
-  "description": "",
+  "name": "titanium-sdk-docs",
+  "version": "0.0.0",
   "private": true,
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "clean:api": "rm -rf docs/api; git checkout -- docs/api/README.md",
-    "docs:dev": "vuepress dev docs --temp .temp",
-    "docs:build": "node ./scripts/generate-guides && NODE_ENV=production NODE_OPTIONS=\"--max-old-space-size=6144\" vuepress build docs",
-    "docs:version": "vuepress version docs",
-    "docs:metadata": "vuepress metadata docs ../titanium_mobile/apidoc",
-    "docs:migrate": "node ./scripts/migrate ../titanium_mobile/apidoc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "convert": "node scripts/convert.mjs",
+    "clean": "rm -rf docs/.vitepress/dist"
   },
-  "author": "TiDev",
-  "license": "Apache-2.0",
   "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "@fortawesome/free-solid-svg-icons": "6.5.1",
-    "@silvanite/vuepress-plugin-tailwind": "^1.3.0",
-    "@titanium-sdk/vuepress-plugin-fontawesome": "^5.0.0",
-    "@vuepress/plugin-back-to-top": "1.9.10",
-    "@vuepress/plugin-google-analytics": "1.9.10",
-    "front-matter": "^4.0.2",
-    "fs-extra": "11.2.0",
-    "glob": "10.3.10",
-    "semver": "7.5.4",
-    "titanium-docgen": "^5.0.0",
-    "vue": "2.7.16",
-    "vue-router": "^3.6.5",
-    "vuepress": "1.9.10",
-    "vuepress-plugin-apidocs": "^5.0.0",
-    "vuepress-plugin-versioning": "^5.0.0",
-    "vuepress-theme-titanium": "^5.0.0",
-    "vuex": "^3.6.2",
-    "vuex-router-sync": "^5.0.0"
+    "vitepress": "2.0.0-alpha.17",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^12.3.2"
   }
 }
