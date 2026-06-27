@@ -17,4 +17,7 @@ The Titanium SDK allows developers to build native mobile applications for Andro
 
 ## About the SDK
 
+- [FAQ](/faq) — FAQ
+- [Compatibility Matrix](/compatibility-matrix) — System requirements and supported software versions
+
 Titanium provides a comprehensive set of native UI components, platform services, and utility APIs that give you direct access to the underlying operating system capabilities while writing JavaScript.

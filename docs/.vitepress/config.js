@@ -20,6 +20,13 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'API Reference', link: '/api/titanium/' },
+      {
+        text: 'Guides',
+        items: [
+          { text: 'Compatibility Matrix', link: '/compatibility-matrix' },
+          { text: 'FAQ', link: '/faq' },
+        ]
+      },
       { text: 'Download', link: 'https://downloads.titaniumsdk.com/' },
       { text: 'Native Modules', link: 'https://modules.titaniumsdk.com/' },
       {
