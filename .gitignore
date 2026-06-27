@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
+pnpm-lock.yaml
+
+# VuePress dist and temp
+.temp
+docs/.vuepress/dist
+
+#VSCode
+.vscode
+
+docs/api/
+docs/.vitepress/sidebar.mjs
+docs/.vitepress/dist/
+docs/.vitepress/.temp/
+docs/.vitepress/cache/
+docs/public/images/
+modules-cache/
+titanium-sdk-cache/

@@ -1,0 +1,18 @@
+{
+  "name": "titanium-sdk-docs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "convert": "node scripts/convert.mjs",
+    "clean": "rm -rf docs/.vitepress/dist"
+  },
+  "dependencies": {
+    "vitepress": "2.0.0-alpha.17",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^12.3.2"
+  }
+}
