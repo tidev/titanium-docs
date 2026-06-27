@@ -20,4 +20,5 @@ docs/.vitepress/.temp/
 docs/.vitepress/cache/
 docs/public/images/
 modules-cache/
+alloy-cache/
 titanium-sdk-cache/

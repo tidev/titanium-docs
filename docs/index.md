@@ -12,6 +12,7 @@ The Titanium SDK allows developers to build native mobile applications for Andro
 ## Getting Started
 
 - [API Reference](/api/titanium/) — Browse the full Titanium API
+- [Alloy](/api/alloy/) — Alloy API documentation
 - [Modules](/api/modules/) — Third-party module API documentation
 
 ## About the SDK

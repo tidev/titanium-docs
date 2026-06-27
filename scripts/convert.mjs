@@ -14,6 +14,7 @@ const DOCS_DIR = join(ROOT, 'docs');
 const API_OUT = join(DOCS_DIR, 'api');
 const MODULES_CACHE = join(ROOT, 'modules-cache');
 const TI_SDK_CACHE = join(ROOT, 'titanium-sdk-cache');
+const ALLOY_CACHE = join(ROOT, 'alloy-cache');
 
 const MODULES = [
  { name: 'Map', repo: 'tidev/ti.map', apidoc: 'apidoc' },
@@ -31,8 +32,10 @@ const MODULES = [
  { name: 'WebDialog', repo: 'tidev/titanium-web-dialog', apidoc: 'apidoc' },
  { name: 'Barcode', repo: 'tidev/ti.barcode', apidoc: 'apidoc' },
  { name: 'AppleSignIn', repo: 'tidev/titanium-apple-sign-in', apidoc: 'apidoc' },
- { name: 'NFC', repo: 'tidev/ti.nfc', apidoc: 'apidoc' },
+  { name: 'NFC', repo: 'tidev/ti.nfc', apidoc: 'apidoc' },
 ];
+
+const ALLOY = { name: 'Alloy', repo: 'tidev/alloy', apidoc: 'docs' };
 
 const copied = new Set();
 
@@ -158,6 +161,84 @@ function fmtSince(s) {
 function fmtPlatforms(p) {
   if (!p) return '';
   return Array.isArray(p) ? p.join(', ') : p;
+}
+
+function stripHtml(html) {
+  if (!html) return '';
+  return html.replace(/<[^>]+>/g, '').trim();
+}
+
+function jscaToDoc(jscaType) {
+  let name = jscaType.name;
+  if (!name.includes('.') && name !== 'Alloy') {
+    name = 'Alloy.' + name;
+  }
+  const doc = { name };
+
+  function splitSummary(desc) {
+    const m = desc.match(/\.\s/);
+    const dot = m ? m.index : -1;
+    if (dot > 0) {
+      const head = desc.substring(0, dot + 1);
+      const tail = desc.substring(dot + 2).trim();
+      if (tail) return { summary: head, description: desc };
+    }
+    return { summary: desc };
+  }
+
+  const { summary, description } = splitSummary(stripHtml(jscaType.description || ''));
+  doc.summary = summary;
+  if (description) doc.description = description;
+
+  doc.properties = (jscaType.properties || [])
+    .filter(p => p.name)
+    .map(p => ({
+      name: p.name,
+      type: p.type || '',
+      summary: stripHtml(p.description || '')
+    }));
+  if (doc.properties.length === 0) delete doc.properties;
+
+  doc.methods = (jscaType.functions || [])
+    .filter(f => f.name && f.isMethod !== false)
+    .map(f => {
+      const m = { name: f.name };
+      const fDesc = stripHtml(f.description || '');
+      const { summary: fSum, description: fDescLong } = splitSummary(fDesc);
+      m.summary = fSum;
+      if (fDescLong) m.description = fDescLong;
+
+      const params = (f.parameters || []).map(p => {
+        const pe = { name: p.name, type: p.type || '' };
+        if (p.description) pe.summary = stripHtml(p.description);
+        if (p.usage === 'optional') pe.optional = true;
+        return pe;
+      });
+      if (params.length) m.parameters = params;
+
+      if (f.returns) {
+        m.returns = { type: f.returns.type || '' };
+        if (f.returns.description) {
+          const rDesc = stripHtml(f.returns.description);
+          if (rDesc) m.returns.summary = rDesc;
+        }
+      }
+      return m;
+    });
+  if (doc.methods.length === 0) delete doc.methods;
+
+  doc.events = (jscaType.events || [])
+    .filter(e => e.name)
+    .map(e => {
+      const entry = { name: e.name };
+      const { summary: eSum, description: eDesc } = splitSummary(stripHtml(e.description || ''));
+      entry.summary = eSum;
+      if (eDesc) entry.description = eDesc;
+      return entry;
+    });
+  if (doc.events.length === 0) delete doc.events;
+
+  return doc;
 }
 
 function docToMd(doc, ymlPath, nsOpts = {}) {
@@ -425,6 +506,36 @@ function run() {
     console.log(`\n📄 Generated modules index page`);
   }
 
+  // --- Alloy Framework ---
+  const alloyDir = join(ALLOY_CACHE, ALLOY.name.toLowerCase());
+  if (!existsSync(alloyDir)) {
+    console.log(`\n📦 Cloning ${ALLOY.repo}...`);
+    execSync(`git clone --depth 1 --single-branch https://github.com/${ALLOY.repo}.git "${alloyDir}"`, { stdio: 'inherit' });
+  }
+  const jscaPath = join(alloyDir, ALLOY.apidoc, 'api.jsca');
+  if (existsSync(jscaPath)) {
+    console.log(`\n📄 Processing Alloy API docs...`);
+    const jscaContent = readFileSync(jscaPath, 'utf-8');
+    const jsca = JSON.parse(jscaContent);
+    for (const jscaType of jsca.types || []) {
+      if (jscaType.isInternal) continue;
+      const doc = jscaToDoc(jscaType);
+      const result = docToMd(doc, jscaPath, { baseDir: join(alloyDir, ALLOY.apidoc), prefix: 'Alloy' });
+      if (doc.name === 'Alloy') {
+        result.outDir = join(API_OUT, 'alloy');
+        result.outFile = join(result.outDir, 'index.md');
+        result.path = '/alloy/index';
+      }
+      mkdirSync(result.outDir, { recursive: true });
+      writeFileSync(result.outFile, result.content, 'utf-8');
+      const fullPath = '/api' + result.path;
+      const displayName = result.shortName.includes('.') ? result.shortName.split('.').pop() : result.shortName;
+      items.push({ text: displayName, path: fullPath });
+      console.log(`  ✓ ${doc.name} → ${result.path}`);
+    }
+    console.log(`\n📄 Generated Alloy API docs`);
+  }
+
   const sidebar = sidebarTree(items);
   // Ensure Titanium is first, auto-expand with link to index
   const tiIdx = sidebar.findIndex(s => s.text === 'Titanium');
@@ -439,8 +550,14 @@ function run() {
 
   const modIdx = sidebar.findIndex(s => s.text === 'Modules');
   if (modIdx !== -1) {
-    sidebar[modIdx].collapsed = false;
+    sidebar[modIdx].collapsed = true;
     sidebar[modIdx].link = '/api/modules/';
+  }
+
+  const alloySidIdx = sidebar.findIndex(s => s.text === 'Alloy');
+  if (alloySidIdx !== -1) {
+    sidebar[alloySidIdx].collapsed = true;
+    sidebar[alloySidIdx].link = '/api/alloy/';
   }
 
   const sidContent = `// Auto-generated by convert.mjs — do not edit manually
