@@ -23,6 +23,7 @@ scripts/
 | `npm run convert` | Clone sources + generate all markdown + sidebar |
 | `npm run dev` | Dev server at http://localhost:5173 |
 | `npm run build` | Static build to `docs/.vitepress/dist` |
+| `BASE=/apidocs/ npm run build` | Build with a custom base path (e.g. when hosted in a subfolder) |
 | `npm run preview` | Preview production build |
 
 ### Doc sources
