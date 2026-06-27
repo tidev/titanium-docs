@@ -22,6 +22,70 @@ export default defineConfig({
       { text: 'API Reference', link: '/api/titanium/' },
       { text: 'Download', link: 'https://downloads.titaniumsdk.com/' },
       { text: 'Native Modules', link: 'https://modules.titaniumsdk.com/' },
+      {
+        text: 'Ecosystem',
+        items: [
+          {
+            text: 'Help',
+            items: [
+              {
+                text: 'Slack',
+                link: 'https://tidev.slack.com'
+              },
+              {
+                text: 'GitHub Discussions',
+                link: 'https://github.com/tidev/titanium-sdk/discussions'
+              },
+              {
+                text: 'Reddit',
+                link: 'https://www.reddit.com/r/TitaniumSDK/'
+              },
+              {
+                text: 'Tutorials: From zero to app',
+                link: 'https://fromzerotoapp.com'
+              }
+            ]
+          },
+          {
+            text: 'News',
+            items: [
+              {
+                text: 'Blog',
+                link: 'https://tidev.io/blog'
+              },
+              {
+                text: 'Bluesky - @titaniumsdk.com',
+                link: 'https://bsky.app/profile/titaniumsdk.com'
+              },
+              {
+                text: 'X - @TitaniumSDK',
+                link: 'https://x.com/TitaniumSDK'
+              }
+            ]
+          },
+          {
+            text: 'TiDev',
+            items: [
+              {
+                text: 'Foundation',
+                link: 'https://tidev.io'
+              },
+              {
+                text: 'X - @tidevio',
+                link: 'https://x.com/tidevio'
+              },
+              {
+                text: 'GitHub Sponsors',
+                link: 'https://github.com/sponsors/tidev/'
+              },
+              {
+                text: 'Liberapay Donations',
+                link: 'https://en.liberapay.com/tidev'
+              }
+            ]
+          }
+        ]
+      }
     ],
 
     sidebar: {
