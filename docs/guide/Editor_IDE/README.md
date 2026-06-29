@@ -12,3 +12,5 @@ You can use Atom or Visual Studio code to develop your Titanium apps. Both have 
 * [Atom Package](/guide/Editor_IDE/Atom_Package/)
 
 * [Visual Studio Code extension](/guide/Editor_IDE/VSCode_Extension/)
+
+* [JetBrains IDEs](https://github.com/devloopsnet/titanium-jetbrains)
