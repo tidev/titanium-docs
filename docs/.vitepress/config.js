@@ -101,6 +101,85 @@ export default defineConfig({
 
     search: {
       provider: 'local',
+      options: {
+        _render(src, env, md) {
+          return md.renderAsync(src, env).then((html) => {
+            const fm = env.frontmatter;
+            if (!fm) return html;
+            let extra = '';
+            const used = new Set();
+            const injectItem = (name, type) => {
+              let aid = name.toLowerCase().replace(/\s+/g, '-');
+              while (used.has(aid)) {
+                aid += '-' + type;
+              }
+              used.add(aid);
+              return aid;
+            };
+            if (fm.properties) {
+              extra += '\n<h2 id="properties">Properties <a href="#properties">#</a></h2>\n';
+              for (const p of fm.properties) {
+                const aid = injectItem(p.name, 'prop');
+                extra += `<h3 id="${aid}">${p.name} <a href="#${aid}">#</a></h3>\n`;
+                if (p.type) extra += `<p><strong>Type:</strong> <code>${p.type}</code></p>\n`;
+                if (p.summary) extra += `<p>${p.summary}</p>\n`;
+              }
+            }
+            if (fm.methods) {
+              extra += '\n<h2 id="methods">Methods <a href="#methods">#</a></h2>\n';
+              for (const m of fm.methods) {
+                const aid = injectItem(m.name, 'method');
+                extra += `<h3 id="${aid}">${m.name} <a href="#${aid}">#</a></h3>\n`;
+                if (m.summary) extra += `<p>${m.summary}</p>\n`;
+              }
+            }
+            if (fm.events) {
+              extra += '\n<h2 id="events">Events <a href="#events">#</a></h2>\n';
+              for (const e of fm.events) {
+                const aid = injectItem(e.name, 'event');
+                extra += `<h3 id="${aid}">${e.name} <a href="#${aid}">#</a></h3>\n`;
+                if (e.summary) extra += `<p>${e.summary}</p>\n`;
+              }
+            }
+            if (extra) {
+              return html + '\n' + extra + '\n';
+            }
+            return html;
+          });
+        },
+        miniSearch: {
+          _splitIntoSections(file, html) {
+            const headingRegex = /<h(\d*).*?>(.*?<a.*? href="#.*?".*?>.*?<\/a>)<\/h\1>/gi;
+            const headingContentRegex = /(.*)<a.*? href="#(.*?)".*?>.*?<\/a>/i;
+            const result = html.split(headingRegex);
+            result.shift();
+            const seen = new Set();
+            const sections = [];
+            let parentTitles = [];
+            for (let i = 0; i < result.length; i += 3) {
+              const level = parseInt(result[i]) - 1;
+              const heading = result[i + 1];
+              const headingResult = headingContentRegex.exec(heading);
+              const title = headingResult?.[1] ? headingResult[1].replace(/<[^>]*>/g, '').trim() : '';
+              const anchor = headingResult?.[2] ?? '';
+              const content = result[i + 2];
+              if (!title || !content) continue;
+              if (seen.has(anchor)) continue;
+              seen.add(anchor);
+              let titles = parentTitles.slice(0, level);
+              titles[level] = title;
+              titles = titles.filter(Boolean);
+              sections.push({ anchor, titles, text: content.replace(/<[^>]*>/g, '') });
+              if (level === 0) {
+                parentTitles = [title];
+              } else {
+                parentTitles[level] = title;
+              }
+            }
+            return sections;
+          }
+        }
+      }
     },
 
     socialLinks: [

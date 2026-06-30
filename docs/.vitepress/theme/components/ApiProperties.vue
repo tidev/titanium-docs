@@ -1,5 +1,5 @@
 <script setup>
-import { useData } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 
 const { frontmatter } = useData()
 const props = frontmatter.value.properties || []
@@ -11,7 +11,7 @@ function platLabel(plat, ver) {
   const icon = PLAT_ICONS[plat]
   const name = PLAT_NAMES[plat] || plat.charAt(0).toUpperCase() + plat.slice(1)
   if (icon) {
-    return `<div class="platform-item"><img src="/${icon}" alt="${name}" title="${name} ${ver}" class="plat-icon" width="17" height="17"/> ${ver}</div>`
+    return `<div class="platform-item"><img src="${withBase('/' + icon)}" alt="${name}" title="${name} ${ver}" class="plat-icon" width="17" height="17"/> ${ver}</div>`
   }
   return `${name}: ${ver}`
 }
