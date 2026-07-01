@@ -209142,6 +209142,18 @@
                     {
                         "since": "7.5.0",
                         "name": "android"
+                    },
+                    {
+                        "since": "13.3.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "13.3.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "13.3.0",
+                        "name": "macos"
                     }
                 ],
                 "type": "Number",
@@ -209175,11 +209187,23 @@
             {
                 "name": "maxLines",
                 "summary": "Maximum line count of text field input.",
-                "description": "Sets the maximum of lines that the field will be extended to when pressing `Return`.",
+                "description": "Sets the maximum number of lines that the field will extend to when pressing `Return`. Once the maximum is reached, the text area stops growing and scrolling is enabled. A value of `-1` means no limit.",
                 "platforms": [
                     {
                         "since": "7.5.0",
                         "name": "android"
+                    },
+                    {
+                        "since": "13.3.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "13.3.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "13.3.0",
+                        "name": "macos"
                     }
                 ],
                 "type": "Number",
@@ -209360,15 +209384,15 @@
                 "summary": "Determines whether this text area can be scrolled.",
                 "platforms": [
                     {
-                        "since": "0.8",
+                        "since": "13.3.0",
                         "name": "iphone"
                     },
                     {
-                        "since": "0.8",
+                        "since": "13.3.0",
                         "name": "ipad"
                     },
                     {
-                        "since": "9.2.0",
+                        "since": "13.3.0",
                         "name": "macos"
                     }
                 ],
@@ -209407,6 +209431,18 @@
                     {
                         "since": "0.8",
                         "name": "android"
+                    },
+                    {
+                        "since": "13.3.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "13.3.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "13.3.0",
+                        "name": "macos"
                     }
                 ],
                 "type": [
