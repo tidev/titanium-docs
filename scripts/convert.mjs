@@ -2,7 +2,7 @@ import { readdirSync, readFileSync, writeFileSync, existsSync, mkdirSync, copyFi
 import { join, dirname, basename, extname } from 'path';
 import { fileURLToPath } from 'url';
 import { execSync } from 'child_process';
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
 import MarkdownIt from 'markdown-it';
 
 const md = new MarkdownIt({ html: false, breaks: true });
@@ -241,6 +241,28 @@ function jscaToDoc(jscaType) {
   return doc;
 }
 
+function fixYamlContent(content) {
+  const lines = content.split('\n');
+  const result = [];
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const opens = (line.match(/\[/g) || []).length;
+    const closes = (line.match(/\]/g) || []).length;
+    if (opens > closes && i + 1 < lines.length) {
+      const next = lines[i + 1];
+      const leading = line.match(/^(\s*)/)[1].length;
+      const nextLeading = next.match(/^(\s*)/)[1].length;
+      if (nextLeading <= leading) {
+        result.push(line.replace(/\[.*$/, m => m + ' ' + next.trim()));
+        i++;
+        continue;
+      }
+    }
+    result.push(line);
+  }
+  return result.join('\n');
+}
+
 function docToMd(doc, ymlPath, nsOpts = {}) {
   let { name, summary, description, extends: ext, since, platforms, deprecated } = doc;
   if (!name.includes('.')) {
@@ -282,6 +304,7 @@ function docToMd(doc, ymlPath, nsOpts = {}) {
       entry.platforms = Array.isArray(p.platforms) ? p.platforms : [p.platforms];
     }
     if (p.since) entry.since = p.since;
+    if (p.extended) entry.extended = true;
     return entry;
   });
 
@@ -303,6 +326,7 @@ function docToMd(doc, ymlPath, nsOpts = {}) {
       entry.returns = { type: rt };
       if (m.returns.summary) entry.returns.summary = m.returns.summary;
     }
+    if (m.extended) entry.extended = true;
     return entry;
   });
 
@@ -316,6 +340,7 @@ function docToMd(doc, ymlPath, nsOpts = {}) {
       return pe;
     });
     if (eProps.length) entry.properties = eProps;
+    if (e.extended) entry.extended = true;
     return entry;
   });
 
@@ -398,6 +423,38 @@ function walkYml(dir, list = []) {
   return list;
 }
 
+/**
+ * Recursively merge inherited properties/methods/events from parent types.
+ * Modifies doc in-place, marking inherited items with `extended: true`.
+ */
+function resolveInheritance(doc, typeMap, visited = new Set()) {
+  const ext = doc.extends;
+  if (!ext) return;
+  if (visited.has(ext)) return;
+  visited.add(ext);
+
+  const parent = typeMap.get(ext);
+  if (!parent) return;
+
+  // Depth-first: resolve grandparent first
+  resolveInheritance(parent.doc, typeMap, visited);
+
+  const excludes = doc.excludes || {};
+
+  function mergeItems(childItems, parentItems, excludeList) {
+    const childNames = new Set((childItems || []).map(i => i.name));
+    const excludeNames = new Set(excludeList || []);
+    const inherited = (parentItems || [])
+      .filter(i => !childNames.has(i.name) && !excludeNames.has(i.name))
+      .map(i => ({ ...i, extended: true }));
+    return inherited.length ? [...(childItems || []), ...inherited] : childItems;
+  }
+
+  doc.properties = mergeItems(doc.properties, parent.doc.properties, excludes.properties);
+  doc.methods = mergeItems(doc.methods, parent.doc.methods, excludes.methods);
+  doc.events = mergeItems(doc.events, parent.doc.events, excludes.events);
+}
+
 function sidebarTree(items) {
   const tree = {};
   for (const it of items) {
@@ -424,6 +481,7 @@ function sidebarTree(items) {
       if (val._link) {
         const children = toSidebar(val);
         children.unshift({ text: val._link.text, link: val._link.link });
+        children.sort((a, b) => a.text.localeCompare(b.text));
         const label = key.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
         const displayLabel = label.replace(/\b(Ios|Ipad)\b/gi, match => match === 'Ios' ? 'iOS' : match === 'Ipad' ? 'iPad' : match);
         folders.push({ text: displayLabel, collapsed: true, items: children });
@@ -450,19 +508,31 @@ function run() {
   const files = walkYml(APIDOC_DIR);
   const items = [];
 
+  // Phase 1: Build type map from all YAML docs
+  const typeMap = new Map();
   for (const ymlPath of files) {
     const content = readFileSync(ymlPath, 'utf-8');
-    const docs = yaml.loadAll(content);
+    const docs = yaml.loadAll(fixYamlContent(content));
     for (const doc of docs) {
       if (!doc || !doc.name) continue;
-      const result = docToMd(doc, ymlPath, { baseDir: APIDOC_DIR });
-      mkdirSync(result.outDir, { recursive: true });
-      writeFileSync(result.outFile, result.content, 'utf-8');
-      const fullPath = '/api' + result.path;
-      const displayName = result.shortName.includes('.') ? result.shortName.split('.').pop() : result.shortName;
-      items.push({ text: displayName, path: fullPath });
-      console.log(`  ✓ ${doc.name} → ${result.path}`);
+      typeMap.set(doc.name, { doc, ymlPath });
     }
+  }
+
+  // Phase 2: Resolve inheritance for all types
+  for (const [, entry] of typeMap) {
+    resolveInheritance(entry.doc, typeMap);
+  }
+
+  // Phase 3: Convert to markdown
+  for (const [, entry] of typeMap) {
+    const result = docToMd(entry.doc, entry.ymlPath, { baseDir: APIDOC_DIR });
+    mkdirSync(result.outDir, { recursive: true });
+    writeFileSync(result.outFile, result.content, 'utf-8');
+    const fullPath = '/api' + result.path;
+    const displayName = result.shortName.includes('.') ? result.shortName.split('.').pop() : result.shortName;
+    items.push({ text: displayName, path: fullPath });
+    console.log(`  ✓ ${entry.doc.name} → ${result.path}`);
   }
 
   const modEntries = [];
@@ -480,9 +550,34 @@ function run() {
     }
     const prefix = 'Modules.' + mod.name;
     const modFiles = walkYml(apidocDir);
+
+    // Build module type map
+    const modMap = new Map();
     for (const ymlPath of modFiles) {
       const content = readFileSync(ymlPath, 'utf-8');
-      const docs = yaml.loadAll(content);
+      const docs = yaml.loadAll(fixYamlContent(content));
+      for (const doc of docs) {
+        if (!doc || !doc.name) continue;
+        // Canonicalize name (e.g., "MyType" → "Modules.BLE.MyType")
+        let name = doc.name;
+        if (!name.includes('.')) {
+          name = namespaceFromPath(ymlPath, apidocDir, prefix) + '.' + name;
+        }
+        const clean = { doc, ymlPath };
+        typeMap.set(name, clean);   // global map for cross-source extends
+        modMap.set(name, clean);    // this module's types
+      }
+    }
+
+    // Resolve inheritance (can look up Titanium types in global map too)
+    for (const [, entry] of modMap) {
+      resolveInheritance(entry.doc, typeMap);
+    }
+
+    // Convert to markdown
+    for (const ymlPath of modFiles) {
+      const content = readFileSync(ymlPath, 'utf-8');
+      const docs = yaml.loadAll(fixYamlContent(content));
       for (const doc of docs) {
         if (!doc || !doc.name) continue;
         const result = docToMd(doc, ymlPath, { baseDir: apidocDir, prefix });

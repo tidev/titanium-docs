@@ -2,7 +2,7 @@
 import { useData } from 'vitepress'
 
 const { frontmatter } = useData()
-const methods = frontmatter.value.methods || []
+const methods = [...(frontmatter.value.methods || [])].sort((a, b) => a.name.localeCompare(b.name))
 
 function slugify(text) {
   return text.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
@@ -17,6 +17,7 @@ function slugify(text) {
         {{ m.name }}
         <a class="header-anchor" :href="'#' + slugify(m.name)">#</a>
       </h3>
+      <span v-if="m.extended" class="extended-badge">extended</span>
       <p v-if="m.summary" v-html="m.summary"></p>
       <div v-if="m.description" class="description" v-html="m.description"></div>
       <div v-if="m.parameters && m.parameters.length">
@@ -67,5 +68,15 @@ th, td {
 th {
   background: var(--vp-c-bg-soft);
   font-weight: 600;
+}
+.extended-badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--vp-c-brand-1);
+  border: 1px solid var(--vp-c-brand-1);
+  border-radius: 3px;
+  padding: 0 0.35em;
+  margin-left: 0.5em;
+  vertical-align: middle;
 }
 </style>

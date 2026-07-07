@@ -11,7 +11,7 @@
     "clean": "rm -rf docs/.vitepress/dist"
   },
   "dependencies": {
-    "vitepress": "2.0.0-alpha.17",
+    "vitepress": "2.0.0-alpha.18",
     "js-yaml": "^5.2.0",
     "markdown-it": "^14.2.0"
   }

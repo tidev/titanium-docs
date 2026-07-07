@@ -118,7 +118,8 @@ export default defineConfig({
             };
             if (fm.properties) {
               extra += '\n<h2 id="properties">Properties <a href="#properties">#</a></h2>\n';
-              for (const p of fm.properties) {
+              const sortedProps = [...fm.properties].sort((a, b) => a.name.localeCompare(b.name));
+              for (const p of sortedProps) {
                 const aid = injectItem(p.name, 'prop');
                 extra += `<h3 id="${aid}">${p.name} <a href="#${aid}">#</a></h3>\n`;
                 if (p.type) extra += `<p><strong>Type:</strong> <code>${p.type}</code></p>\n`;
@@ -127,7 +128,8 @@ export default defineConfig({
             }
             if (fm.methods) {
               extra += '\n<h2 id="methods">Methods <a href="#methods">#</a></h2>\n';
-              for (const m of fm.methods) {
+              const sortedMethods = [...fm.methods].sort((a, b) => a.name.localeCompare(b.name));
+              for (const m of sortedMethods) {
                 const aid = injectItem(m.name, 'method');
                 extra += `<h3 id="${aid}">${m.name} <a href="#${aid}">#</a></h3>\n`;
                 if (m.summary) extra += `<p>${m.summary}</p>\n`;
@@ -135,7 +137,8 @@ export default defineConfig({
             }
             if (fm.events) {
               extra += '\n<h2 id="events">Events <a href="#events">#</a></h2>\n';
-              for (const e of fm.events) {
+              const sortedEvents = [...fm.events].sort((a, b) => a.name.localeCompare(b.name));
+              for (const e of sortedEvents) {
                 const aid = injectItem(e.name, 'event');
                 extra += `<h3 id="${aid}">${e.name} <a href="#${aid}">#</a></h3>\n`;
                 if (e.summary) extra += `<p>${e.summary}</p>\n`;
