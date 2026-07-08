@@ -45,7 +45,10 @@ function platformInfo(p) {
         {{ p.name }}<span v-if="p.deprecated"> (deprecated)</span>
         <a class="header-anchor" :href="'#' + p.name.toLowerCase().replace(/\s+/g, '-')">#</a>
       </h3>
+      <div class="badge-container">
       <span v-if="p.extended" class="extended-badge">extended</span>
+      <span v-if="p.availability === 'creation'" class="creation-badge">creation only</span>
+      </div>
       <aside v-if="platformInfo(p)" class="platforms" v-html="platformInfo(p)"></aside>
       </div>
       <p><strong>Type:</strong> <code>{{ p.type }}</code></p>
@@ -98,6 +101,19 @@ function platformInfo(p) {
   padding: 0 0.35em;
   margin-left: 0.5em;
   vertical-align: middle;
+}
+.creation-badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--vp-c-warning-1);
+  border: 1px solid var(--vp-c-warning-1);
+  border-radius: 3px;
+  padding: 0 0.35em;
+  margin-left: 0.5em;
+  vertical-align: middle;
+}
+.badge-container {
+  width: 100%;
 }
 :deep(.platform-item) + :deep(.platform-item) {
   margin-left: 0.35rem;

@@ -304,6 +304,7 @@ function docToMd(doc, ymlPath, nsOpts = {}) {
       entry.platforms = Array.isArray(p.platforms) ? p.platforms : [p.platforms];
     }
     if (p.since) entry.since = p.since;
+    if (p.availability) entry.availability = p.availability;
     if (p.extended) entry.extended = true;
     return entry;
   });
