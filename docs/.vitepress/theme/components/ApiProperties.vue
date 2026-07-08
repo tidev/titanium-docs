@@ -81,7 +81,8 @@ function platformInfo(p) {
   font-size: 0.85rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
+  flex-shrink: 0;
 }
 :deep(.plat-icon) {
   vertical-align: middle;

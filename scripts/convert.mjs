@@ -74,7 +74,7 @@ function docToPath(name, ymlPath) {
   return { dir: dirs.join('/'), file: slugify(last) + '.md' };
 }
 
-function linkify(text) {
+function linkify(text, knownTypes = new Set()) {
   if (!text) return text;
   return text.replace(/<([A-Za-z][\w.]*)>/g, (match, ref) => {
     const parts = ref.split('.');
@@ -89,11 +89,31 @@ function linkify(text) {
     const typeName = typeParts.join('.');
     if (!typeName || typeName.split('.').length < 2) return '<' + ref + '>';
     const rest = parts.slice(typeParts.length).join('.');
-    const slugParts = typeParts.map(p => slugify(p));
-    const dirPath = typeParts.slice(0, -1).map(p => p.toLowerCase()).join('/');
-    const outPath = '/api/' + (dirPath ? dirPath + '/' : '') + slugParts[slugParts.length - 1];
-    const text = rest ? typeName + '.' + rest : typeName;
-    return `[${text}](${outPath})`;
+
+    // Known type — link to its page
+    if (knownTypes.has(typeName)) {
+      const slugParts = typeParts.map(p => slugify(p));
+      const dirPath = typeParts.slice(0, -1).map(p => p.toLowerCase()).join('/');
+      const outPath = '/api/' + (dirPath ? dirPath + '/' : '') + slugParts[slugParts.length - 1];
+      const text = rest ? typeName + '.' + rest : typeName;
+      return `[${text}](${outPath})`;
+    }
+
+    // Not a known type — link to parent type page with anchor
+    if (typeParts.length >= 2) {
+      const parentTypeName = typeParts.slice(0, -1).join('.');
+      if (knownTypes.has(parentTypeName)) {
+        const lastPart = typeParts[typeParts.length - 1];
+        const parentSlugParts = typeParts.slice(0, -1).map(p => slugify(p));
+        const parentDirPath = typeParts.slice(0, -2).map(p => p.toLowerCase()).join('/');
+        const parentPath = '/api/' + (parentDirPath ? parentDirPath + '/' : '') + parentSlugParts[parentSlugParts.length - 1];
+        const anchor = slugify(lastPart);
+        return `[${ref}](${parentPath}/#${anchor})`;
+      }
+    }
+
+    // Unknown reference — don't link
+    return '<' + ref + '>';
   });
 }
 
@@ -263,7 +283,7 @@ function fixYamlContent(content) {
   return result.join('\n');
 }
 
-function docToMd(doc, ymlPath, nsOpts = {}) {
+function docToMd(doc, ymlPath, nsOpts = {}, knownTypes = new Set()) {
   let { name, summary, description, extends: ext, since, platforms, deprecated } = doc;
   if (!name.includes('.')) {
     const ns = namespaceFromPath(ymlPath, nsOpts.baseDir, nsOpts.prefix || 'Titanium');
@@ -276,9 +296,13 @@ function docToMd(doc, ymlPath, nsOpts = {}) {
   const outDir = join(API_OUT, pathInfo.dir);
   const outFile = join(outDir, pathInfo.file);
 
+  function linkifyKnown(text) {
+    return linkify(text, knownTypes);
+  }
+
   function renderText(text) {
     if (!text) return '';
-    return md.renderInline(linkify(text));
+    return md.renderInline(linkifyKnown(text));
   }
 
   function wrapCodeBlocks(html) {
@@ -290,7 +314,7 @@ function docToMd(doc, ymlPath, nsOpts = {}) {
 
   function renderBlock(text) {
     if (!text) return '';
-    return wrapCodeBlocks(md.render(copyImages(linkify(text), ymlDir)));
+    return wrapCodeBlocks(md.render(copyImages(linkifyKnown(text), ymlDir)));
   }
 
   const fmData = { title: name };
@@ -391,9 +415,9 @@ function docToMd(doc, ymlPath, nsOpts = {}) {
   if (deprecated) {
     body += `> **Deprecated** since ${deprecated.since}${deprecated.notes ? ': ' + deprecated.notes : ''}\n\n`;
   }
-  if (summary) body += linkify(summary) + '\n\n';
+  if (summary) body += linkifyKnown(summary) + '\n\n';
   if (description) {
-    body += copyImages(linkify(description), ymlDir) + '\n\n';
+    body += copyImages(linkifyKnown(description), ymlDir) + '\n\n';
   }
   const meta = [];
   if (ext) meta.push(`**Extends:** \`${ext}\``);
@@ -520,6 +544,8 @@ function run() {
     }
   }
 
+  const knownTypes = new Set(typeMap.keys());
+
   // Phase 2: Resolve inheritance for all types
   for (const [, entry] of typeMap) {
     resolveInheritance(entry.doc, typeMap);
@@ -527,7 +553,7 @@ function run() {
 
   // Phase 3: Convert to markdown
   for (const [, entry] of typeMap) {
-    const result = docToMd(entry.doc, entry.ymlPath, { baseDir: APIDOC_DIR });
+    const result = docToMd(entry.doc, entry.ymlPath, { baseDir: APIDOC_DIR }, knownTypes);
     mkdirSync(result.outDir, { recursive: true });
     writeFileSync(result.outFile, result.content, 'utf-8');
     const fullPath = '/api' + result.path;
@@ -575,13 +601,17 @@ function run() {
       resolveInheritance(entry.doc, typeMap);
     }
 
+    for (const name of modMap.keys()) {
+      knownTypes.add(name);
+    }
+
     // Convert to markdown
     for (const ymlPath of modFiles) {
       const content = readFileSync(ymlPath, 'utf-8');
       const docs = yaml.loadAll(fixYamlContent(content));
       for (const doc of docs) {
         if (!doc || !doc.name) continue;
-        const result = docToMd(doc, ymlPath, { baseDir: apidocDir, prefix });
+        const result = docToMd(doc, ymlPath, { baseDir: apidocDir, prefix }, knownTypes);
         mkdirSync(result.outDir, { recursive: true });
         writeFileSync(result.outFile, result.content, 'utf-8');
         const fullPath = '/api' + result.path;
@@ -613,10 +643,13 @@ function run() {
     console.log(`\n📄 Processing Alloy API docs...`);
     const jscaContent = readFileSync(jscaPath, 'utf-8');
     const jsca = JSON.parse(jscaContent);
-    for (const jscaType of jsca.types || []) {
-      if (jscaType.isInternal) continue;
+    const alloyTypes = (jsca.types || []).filter(t => !t.isInternal);
+    for (const jscaType of alloyTypes) {
+      knownTypes.add(jscaToDoc(jscaType).name);
+    }
+    for (const jscaType of alloyTypes) {
       const doc = jscaToDoc(jscaType);
-      const result = docToMd(doc, jscaPath, { baseDir: join(alloyDir, ALLOY.apidoc), prefix: 'Alloy' });
+      const result = docToMd(doc, jscaPath, { baseDir: join(alloyDir, ALLOY.apidoc), prefix: 'Alloy' }, knownTypes);
       if (doc.name === 'Alloy') {
         result.outDir = join(API_OUT, 'alloy');
         result.outFile = join(result.outDir, 'index.md');
