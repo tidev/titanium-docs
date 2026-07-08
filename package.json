@@ -8,6 +8,7 @@
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
     "convert": "node scripts/convert.mjs",
+    "releasenotes": "node scripts/releasenotes.mjs",
     "clean": "rm -rf docs/.vitepress/dist"
   },
   "dependencies": {

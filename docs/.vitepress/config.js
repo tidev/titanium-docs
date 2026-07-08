@@ -1,5 +1,13 @@
 import { defineConfig } from 'vitepress';
+import { existsSync, readFileSync } from 'fs';
+import { createRequire } from 'module';
 import sidebar from './sidebar.mjs';
+
+const __require = createRequire(import.meta.url);
+let releaseNotesSidebar = [];
+if (existsSync(new URL('./releasenotes-sidebar.mjs', import.meta.url))) {
+  releaseNotesSidebar = __require('./releasenotes-sidebar.mjs').default;
+}
 
 export default defineConfig({
   title: 'Titanium SDK',
@@ -25,6 +33,7 @@ export default defineConfig({
         items: [
           { text: 'Compatibility Matrix', link: '/compatibility-matrix' },
           { text: 'FAQ', link: '/faq' },
+          { text: 'Release Notes', link: '/guides/releasenotes/' },
         ]
       },
       { text: 'Download', link: 'https://downloads.titaniumsdk.com/' },
@@ -97,6 +106,7 @@ export default defineConfig({
 
     sidebar: {
       '/api/': sidebar,
+      '/guides/': releaseNotesSidebar,
     },
 
     search: {

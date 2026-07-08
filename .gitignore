@@ -19,6 +19,7 @@ docs/.vitepress/dist/
 docs/.vitepress/.temp/
 docs/.vitepress/cache/
 docs/public/images/
+docs/guides/releasenotes/
 modules-cache/
 alloy-cache/
 titanium-sdk-cache/

@@ -21,6 +21,7 @@ scripts/
 | Command | Description |
 |---------|-------------|
 | `npm run convert` | Clone sources + generate all markdown + sidebar |
+| `npm run releasenotes` | Fetch CHANGELOG.md from GitHub, parse, generate release notes pages + sidebar |
 | `npm run dev` | Dev server at http://localhost:5173 |
 | `npm run build` | Static build to `docs/.vitepress/dist` |
 | `BASE=/apidocs/ npm run build` | Build with a custom base path (e.g. when hosted in a subfolder) |

@@ -34,11 +34,12 @@ alloy-cache/                    # Cloned tidev/alloy
 ## How to build
 
 ```sh
-npm run convert    # Clone sources + generate all markdown + sidebar
-npm run build      # Vitepress static build (outputs to docs/.vitepress/dist)
-npm run dev        # Dev server at http://localhost:5173
-npm run preview    # Preview production build
-npm run clean      # rm -rf docs/.vitepress/dist
+npm run convert        # Clone sources + generate all markdown + sidebar
+npm run releasenotes   # Fetch CHANGELOG.md from GitHub, parse, generate release notes pages + sidebar
+npm run build          # Vitepress static build (outputs to docs/.vitepress/dist)
+npm run dev            # Dev server at http://localhost:5173
+npm run preview        # Preview production build
+npm run clean          # rm -rf docs/.vitepress/dist
 ```
 
 ## Source formats
