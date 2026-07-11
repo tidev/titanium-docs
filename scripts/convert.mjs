@@ -74,13 +74,51 @@ function docToPath(name, ymlPath) {
   return { dir: dirs.join('/'), file: slugify(last) + '.md' };
 }
 
+function resolveTypeRef(ref, knownTypes) {
+  const parts = ref.split('.');
+  const typeParts = [];
+  for (const p of parts) {
+    if (/[A-Z]/.test(p)) {
+      typeParts.push(p);
+    } else {
+      break;
+    }
+  }
+  const typeName = typeParts.join('.');
+  if (!typeName || typeName.split('.').length < 2) return null;
+  const rest = parts.slice(typeParts.length).join('.');
+
+  // Known type — link to its page
+  if (knownTypes.has(typeName)) {
+    const slugParts = typeParts.map(p => slugify(p));
+    const dirPath = typeParts.slice(0, -1).map(p => p.toLowerCase()).join('/');
+    return '/api/' + (dirPath ? dirPath + '/' : '') + slugParts[slugParts.length - 1];
+  }
+
+  // Not a known type — link to parent type page with anchor
+  if (typeParts.length >= 2) {
+    const parentTypeName = typeParts.slice(0, -1).join('.');
+    if (knownTypes.has(parentTypeName)) {
+      const lastPart = typeParts[typeParts.length - 1];
+      const parentSlugParts = typeParts.slice(0, -1).map(p => slugify(p));
+      const parentDirPath = typeParts.slice(0, -2).map(p => p.toLowerCase()).join('/');
+      const parentPath = '/api/' + (parentDirPath ? parentDirPath + '/' : '') + parentSlugParts[parentSlugParts.length - 1];
+      const anchor = slugify(lastPart);
+      return parentPath + '/#' + anchor;
+    }
+  }
+
+  return null;
+}
+
 function linkify(text, knownTypes = new Set()) {
   if (!text) return text;
-  return text.replace(/<([A-Za-z][\w.]*)>/g, (match, ref) => {
+  // Process <TypeReference> angle-bracket syntax
+  text = text.replace(/<([A-Za-z][\w.]*)>/g, (match, ref) => {
     const parts = ref.split('.');
     const typeParts = [];
     for (const p of parts) {
-      if (p[0] === p[0].toUpperCase() && p[0] !== p[0].toLowerCase()) {
+      if (/[A-Z]/.test(p)) {
         typeParts.push(p);
       } else {
         break;
@@ -115,6 +153,17 @@ function linkify(text, knownTypes = new Set()) {
     // Unknown reference — don't link
     return '<' + ref + '>';
   });
+
+  // Process markdown links [text](TypeReference) where URL is a type name
+  text = text.replace(/\[([^\]]+)\]\(([A-Za-z][\w.]*)\)/g, (match, linkText, ref) => {
+    const resolved = resolveTypeRef(ref, knownTypes);
+    if (resolved) {
+      return `[${linkText}](${resolved})`;
+    }
+    return match;
+  });
+
+  return text;
 }
 
 function copyImages(md, ymlDir) {
