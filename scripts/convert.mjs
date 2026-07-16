@@ -400,6 +400,11 @@ function docToMd(doc, ymlPath, nsOpts = {}, knownTypes = new Set()) {
       entry.returns = { type: rt };
       if (m.returns.summary) entry.returns.summary = m.returns.summary;
     }
+    if (m.platforms) {
+      entry.platforms = Array.isArray(m.platforms) ? m.platforms : [m.platforms];
+    }
+    if (m.since) entry.since = m.since;
+    if (m.availability) entry.availability = m.availability;
     if (m.extended) entry.extended = true;
     return entry;
   });
@@ -414,6 +419,11 @@ function docToMd(doc, ymlPath, nsOpts = {}, knownTypes = new Set()) {
       return pe;
     });
     if (eProps.length) entry.properties = eProps;
+    if (e.platforms) {
+      entry.platforms = Array.isArray(e.platforms) ? e.platforms : [e.platforms];
+    }
+    if (e.since) entry.since = e.since;
+    if (e.availability) entry.availability = e.availability;
     if (e.extended) entry.extended = true;
     return entry;
   });

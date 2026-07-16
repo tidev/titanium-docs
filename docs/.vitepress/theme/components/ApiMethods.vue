@@ -1,5 +1,6 @@
 <script setup>
 import { useData } from 'vitepress'
+import PlatformHeader from './PlatformHeader.vue'
 
 const { frontmatter } = useData()
 const methods = [...(frontmatter.value.methods || [])].sort((a, b) => a.name.localeCompare(b.name))
@@ -13,11 +14,12 @@ function slugify(text) {
   <div v-if="methods.length">
     <h2 id="methods">Methods <a class="header-anchor" href="#methods">#</a></h2>
     <div v-for="m in methods" :key="m.name" class="method">
-      <h3 :id="slugify(m.name)">
-        {{ m.name }}
-        <a class="header-anchor" :href="'#' + slugify(m.name)">#</a>
-      </h3>
-      <span v-if="m.extended" class="extended-badge">extended</span>
+      <PlatformHeader :item="m">
+        <h3 :id="slugify(m.name)">
+          {{ m.name }}
+          <a class="header-anchor" :href="'#' + slugify(m.name)">#</a>
+        </h3>
+      </PlatformHeader>
       <p v-if="m.summary" v-html="m.summary"></p>
       <div v-if="m.description" class="description" v-html="m.description"></div>
       <div v-if="m.parameters && m.parameters.length">
@@ -50,7 +52,12 @@ function slugify(text) {
 
 <style scoped>
 .method {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+.method h3 {
+  margin-top: 0;
 }
 .description {
   margin-top: 0.5rem;
@@ -68,15 +75,5 @@ th, td {
 th {
   background: var(--vp-c-bg-soft);
   font-weight: 600;
-}
-.extended-badge {
-  font-size: 0.7rem;
-  font-weight: 500;
-  color: var(--vp-c-brand-1);
-  border: 1px solid var(--vp-c-brand-1);
-  border-radius: 3px;
-  padding: 0 0.35em;
-  margin-left: 0.5em;
-  vertical-align: middle;
 }
 </style>

@@ -1,5 +1,6 @@
 <script setup>
 import { useData } from 'vitepress'
+import PlatformHeader from './PlatformHeader.vue'
 
 const { frontmatter } = useData()
 const events = [...(frontmatter.value.events || [])].sort((a, b) => a.name.localeCompare(b.name))
@@ -13,11 +14,12 @@ function slugify(text) {
   <div v-if="events.length">
     <h2 id="events">Events <a class="header-anchor" href="#events">#</a></h2>
     <div v-for="e in events" :key="e.name" class="event">
-      <h3 :id="slugify(e.name)">
-        {{ e.name }}
-        <a class="header-anchor" :href="'#' + slugify(e.name)">#</a>
-      </h3>
-      <span v-if="e.extended" class="extended-badge">extended</span>
+      <PlatformHeader :item="e">
+        <h3 :id="slugify(e.name)">
+          {{ e.name }}
+          <a class="header-anchor" :href="'#' + slugify(e.name)">#</a>
+        </h3>
+      </PlatformHeader>
       <p v-if="e.summary" v-html="e.summary"></p>
       <div v-if="e.description" class="description" v-html="e.description"></div>
       <div v-if="e.properties && e.properties.length">
@@ -69,15 +71,5 @@ th, td {
 th {
   background: var(--vp-c-bg-soft);
   font-weight: 600;
-}
-.extended-badge {
-  font-size: 0.7rem;
-  font-weight: 500;
-  color: var(--vp-c-brand-1);
-  border: 1px solid var(--vp-c-brand-1);
-  border-radius: 3px;
-  padding: 0 0.35em;
-  margin-left: 0.5em;
-  vertical-align: middle;
 }
 </style>

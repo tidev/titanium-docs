@@ -16,3 +16,22 @@
 .VPDoc.has-aside .content-container {
   max-width: none !important;
 }
+
+.aside-container {
+  scrollbar-width: initial !important;
+  scrollbar-color: initial !important;
+}
+
+.aside-container::-webkit-scrollbar {
+  display: block !important;
+  width: 4px;
+}
+
+.aside-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.aside-container::-webkit-scrollbar-thumb {
+  background-color: var(--vp-c-divider);
+  border-radius: 4px;
+}
