@@ -5,7 +5,7 @@ import { execSync } from 'child_process';
 import * as yaml from 'js-yaml';
 import MarkdownIt from 'markdown-it';
 
-const md = new MarkdownIt({ html: false, breaks: true });
+const md = new MarkdownIt({ html: false, breaks: false });
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -109,6 +109,44 @@ function resolveTypeRef(ref, knownTypes) {
   }
 
   return null;
+}
+
+function expandConstants(constants, typeMap) {
+  const refs = Array.isArray(constants) ? constants : [constants];
+  const names = [];
+  for (const raw of refs) {
+    const ref = String(raw).trim();
+    if (!ref) continue;
+    if (ref.endsWith('*')) {
+      const prefix = ref.slice(0, -1);
+      const dot = prefix.lastIndexOf('.');
+      if (dot === -1) continue;
+      const typeName = prefix.slice(0, dot);
+      const constPrefix = prefix.slice(dot + 1);
+      const entry = typeMap.get(typeName);
+      if (!entry) {
+        console.warn(`  ⚠ constants: type not found for ${ref}`);
+        continue;
+      }
+      const matches = (entry.doc.properties || [])
+        .filter(p => p.name && p.name.startsWith(constPrefix))
+        .map(p => typeName + '.' + p.name);
+      if (!matches.length) {
+        console.warn(`  ⚠ constants: no matches for ${ref}`);
+      }
+      names.push(...matches);
+    } else {
+      names.push(ref);
+    }
+  }
+  return names;
+}
+
+function constantsBlock(constants, typeMap) {
+  const names = expandConstants(constants, typeMap);
+  if (!names.length) return '';
+  return 'This API can be assigned the following constants:\n\n'
+    + names.map(n => `* <${n}>`).join('\n') + '\n';
 }
 
 function linkify(text, knownTypes = new Set()) {
@@ -332,7 +370,7 @@ function fixYamlContent(content) {
   return result.join('\n');
 }
 
-function docToMd(doc, ymlPath, nsOpts = {}, knownTypes = new Set()) {
+function docToMd(doc, ymlPath, nsOpts = {}, knownTypes = new Set(), typeMap = new Map()) {
   let { name, summary, description, extends: ext, since, platforms, deprecated } = doc;
   if (!name.includes('.')) {
     const ns = namespaceFromPath(ymlPath, nsOpts.baseDir, nsOpts.prefix || 'Titanium');
@@ -349,9 +387,13 @@ function docToMd(doc, ymlPath, nsOpts = {}, knownTypes = new Set()) {
     return linkify(text, knownTypes);
   }
 
+  function stripTrailingWS(text) {
+    return text.replace(/[ \t]+$/gm, '');
+  }
+
   function renderText(text) {
     if (!text) return '';
-    return md.renderInline(linkifyKnown(text));
+    return md.renderInline(linkifyKnown(stripTrailingWS(text)));
   }
 
   function wrapCodeBlocks(html) {
@@ -363,7 +405,7 @@ function docToMd(doc, ymlPath, nsOpts = {}, knownTypes = new Set()) {
 
   function renderBlock(text) {
     if (!text) return '';
-    return wrapCodeBlocks(md.render(copyImages(linkifyKnown(text), ymlDir)));
+    return wrapCodeBlocks(md.render(copyImages(linkifyKnown(stripTrailingWS(text)), ymlDir)));
   }
 
   const fmData = { title: name };
@@ -372,6 +414,10 @@ function docToMd(doc, ymlPath, nsOpts = {}, knownTypes = new Set()) {
     const entry = { name: p.name, type: fmtType(p.type) };
     if (p.summary) entry.summary = renderText(p.summary);
     if (p.description) entry.description = renderBlock(p.description);
+    if (p.constants) {
+      const block = constantsBlock(p.constants, typeMap);
+      if (block) entry.description = (entry.description || '') + renderBlock(block);
+    }
     if (p.deprecated) entry.deprecated = true;
     if (p.platforms) {
       entry.platforms = Array.isArray(p.platforms) ? p.platforms : [p.platforms];
@@ -612,7 +658,7 @@ function run() {
 
   // Phase 3: Convert to markdown
   for (const [, entry] of typeMap) {
-    const result = docToMd(entry.doc, entry.ymlPath, { baseDir: APIDOC_DIR }, knownTypes);
+    const result = docToMd(entry.doc, entry.ymlPath, { baseDir: APIDOC_DIR }, knownTypes, typeMap);
     mkdirSync(result.outDir, { recursive: true });
     writeFileSync(result.outFile, result.content, 'utf-8');
     const fullPath = '/api' + result.path;
@@ -670,7 +716,7 @@ function run() {
       const docs = yaml.loadAll(fixYamlContent(content));
       for (const doc of docs) {
         if (!doc || !doc.name) continue;
-        const result = docToMd(doc, ymlPath, { baseDir: apidocDir, prefix }, knownTypes);
+        const result = docToMd(doc, ymlPath, { baseDir: apidocDir, prefix }, knownTypes, typeMap);
         mkdirSync(result.outDir, { recursive: true });
         writeFileSync(result.outFile, result.content, 'utf-8');
         const fullPath = '/api' + result.path;
