@@ -869,6 +869,10 @@
                                     "iOS Module Project"
                                 ],
                                 [
+                                    "Titanium_SDK_How-tos/Extending_Titanium_Mobile/iOS_Module_Development_Guide/iOS_Module_Swift_Package_Manager",
+                                    "iOS Module Swift Package Manager Support"
+                                ],
+                                [
                                     "Titanium_SDK_How-tos/Extending_Titanium_Mobile/iOS_Module_Development_Guide/iOS_Module_64-bit_Support",
                                     "iOS Module 64-bit Support"
                                 ],
