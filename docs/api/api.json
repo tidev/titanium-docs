@@ -34069,7 +34069,7 @@
                     {
                         "name": "options",
                         "summary": "Dictionary containing the options for the dialog.",
-                        "type": "showParams"
+                        "type": "QuickSettingsServiceShowParams"
                     }
                 ],
                 "returns": {
@@ -34236,11 +34236,19 @@
         ],
         "subtype": "proxy"
     },
-    "showParams": {
-        "name": "showParams",
-        "summary": "Dictionary of options for the <Titanium.UI.OptionDialog.show> method.",
+    "QuickSettingsServiceShowParams": {
+        "name": "QuickSettingsServiceShowParams",
+        "summary": "Dictionary of options for the <Titanium.Android.QuickSettingsService.showDialog> method.",
         "extends": "Object",
         "platforms": [
+            {
+                "since": "0.8",
+                "name": "android"
+            },
+            {
+                "since": "0.8",
+                "name": "iphone"
+            },
             {
                 "since": "0.8",
                 "name": "ipad"
@@ -34251,12 +34259,20 @@
             }
         ],
         "type": "pseudo",
-        "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/OptionDialog.yml",
+        "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Android/QuickSettingsService.yml",
         "properties": [
             {
                 "name": "title",
                 "summary": "String to be used as title for the dialog.",
                 "platforms": [
+                    {
+                        "since": "0.8",
+                        "name": "android"
+                    },
+                    {
+                        "since": "0.8",
+                        "name": "iphone"
+                    },
                     {
                         "since": "0.8",
                         "name": "ipad"
@@ -34272,6 +34288,14 @@
                 "name": "message",
                 "summary": "String to be used as a message for the dialog.",
                 "platforms": [
+                    {
+                        "since": "0.8",
+                        "name": "android"
+                    },
+                    {
+                        "since": "0.8",
+                        "name": "iphone"
+                    },
                     {
                         "since": "0.8",
                         "name": "ipad"
@@ -34290,6 +34314,14 @@
                 "platforms": [
                     {
                         "since": "0.8",
+                        "name": "android"
+                    },
+                    {
+                        "since": "0.8",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "0.8",
                         "name": "ipad"
                     },
                     {
@@ -34306,6 +34338,14 @@
                 "platforms": [
                     {
                         "since": "0.8",
+                        "name": "android"
+                    },
+                    {
+                        "since": "0.8",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "0.8",
                         "name": "ipad"
                     },
                     {
@@ -34314,54 +34354,6 @@
                     }
                 ],
                 "type": "Array<String>"
-            },
-            {
-                "name": "animated",
-                "summary": "Determines whether to animate the dialog as it is shown.",
-                "platforms": [
-                    {
-                        "since": "0.8",
-                        "name": "ipad"
-                    },
-                    {
-                        "since": "9.2.0",
-                        "name": "macos"
-                    }
-                ],
-                "type": "Boolean",
-                "optional": true
-            },
-            {
-                "name": "view",
-                "summary": "View to which to attach the dialog.",
-                "platforms": [
-                    {
-                        "since": "0.8",
-                        "name": "ipad"
-                    },
-                    {
-                        "since": "9.2.0",
-                        "name": "macos"
-                    }
-                ],
-                "type": "Titanium.UI.View"
-            },
-            {
-                "name": "rect",
-                "summary": "Positions the arrow of the option dialog relative to the attached view's dimensions.",
-                "description": "Setting the x, y coordinates to (0, 0) places the dialog in the top-left corner of the\nview object.  Set both the `width` and `height` properties to 1.\n",
-                "platforms": [
-                    {
-                        "since": "0.8",
-                        "name": "ipad"
-                    },
-                    {
-                        "since": "9.2.0",
-                        "name": "macos"
-                    }
-                ],
-                "type": "Dimension",
-                "optional": true
             }
         ]
     },
@@ -96992,14 +96984,9 @@
                         "optional": true
                     }
                 ],
-                "returns": [
-                    {
-                        "type": "Titanium.Buffer"
-                    },
-                    {
-                        "type": "void"
-                    }
-                ]
+                "returns": {
+                    "type": "Titanium.Buffer"
+                }
             },
             {
                 "name": "write",
@@ -105717,47 +105704,7 @@
         "type": "object",
         "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/Android/CollapseToolbar.yml",
         "description": "| Android |\n| ------- |\n| ![Android](./collpasetoolbar_android.jpg) |\n\nCollapseToolbar acts as a top-level container for window content that allows to set a parallax image and title\nin the toolbar. The main content goes into `centerView` and will automatically be scrollable.\n",
-        "events": [
-            {
-                "name": "rotate",
-                "summary": "Fired when the device detects a two finger rotation.",
-                "description": "This event is fired when doing a two finger rotation and returning the angle.\nThe event occurs continuously until a finger is lifted again.\n",
-                "platforms": [
-                    {
-                        "since": "12.7.0",
-                        "name": "android"
-                    }
-                ],
-                "inherits": "Titanium.UI.View",
-                "properties": [
-                    {
-                        "name": "rotate",
-                        "summary": "Rotation in degrees.",
-                        "type": "Number"
-                    },
-                    {
-                        "name": "source",
-                        "summary": "Source object that fired the event.",
-                        "type": "Object"
-                    },
-                    {
-                        "name": "type",
-                        "summary": "Name of the event fired.",
-                        "type": "String"
-                    },
-                    {
-                        "name": "bubbles",
-                        "summary": "True if the event will try to bubble up if possible.",
-                        "type": "Boolean"
-                    },
-                    {
-                        "name": "cancelBubble",
-                        "summary": "Set to true to stop the event from bubbling.",
-                        "type": "Boolean"
-                    }
-                ]
-            }
-        ],
+        "events": [],
         "examples": [
             {
                 "description": "Simple setup",
@@ -105769,6 +105716,86 @@
             }
         ],
         "methods": [
+            {
+                "name": "addEventListener",
+                "summary": "Adds the specified callback as an event listener for the named event.",
+                "platforms": [
+                    {
+                        "since": "12.1.0",
+                        "name": "android"
+                    }
+                ],
+                "inherits": "Titanium.Proxy",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "summary": "Name of the event.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "callback",
+                        "summary": "Callback function to invoke when the event is fired.",
+                        "type": "Callback<Titanium.Event>"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "removeEventListener",
+                "summary": "Removes the specified callback as an event listener for the named event.",
+                "description": "Multiple listeners can be registered for the same event, so the\n`callback` parameter is used to determine which listener to remove.\n\nWhen adding a listener, you must save a reference to the callback function\nin order to remove the listener later:\n\n``` js\nvar listener = function() { Ti.API.info(\"Event listener called.\"); }\nwindow.addEventListener('click', listener);\n```\n\nTo remove the listener, pass in a reference to the callback function:\n\n``` js\nwindow.removeEventListener('click', listener);\n```\n",
+                "platforms": [
+                    {
+                        "since": "12.1.0",
+                        "name": "android"
+                    }
+                ],
+                "inherits": "Titanium.Proxy",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "summary": "Name of the event.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "callback",
+                        "summary": "Callback function to remove. Must be the same function passed to `addEventListener`.",
+                        "type": "Callback<Titanium.Event>"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "fireEvent",
+                "summary": "Fires a synthesized event to any registered listeners.",
+                "platforms": [
+                    {
+                        "since": "12.1.0",
+                        "name": "android"
+                    }
+                ],
+                "inherits": "Titanium.Proxy",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "summary": "Name of the event.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "event",
+                        "summary": "A dictionary of keys and values to add to the <Titanium.Event> object sent to the listeners.",
+                        "type": "Dictionary",
+                        "optional": true
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
             {
                 "name": "stopAnimation",
                 "summary": "Stops a running animation.",
@@ -121932,7 +121959,7 @@
         ],
         "type": "object",
         "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/Color.yml",
-        "description": "This type may be used on iOS for assignment to any property typically taking a String color value.\nA developer is not expected to typically interact with a <Titanium.UI.Color> object, as we generate them\nunder the hood when converting the passed in String representations. One major exception is use of the \n<Titanium.UI.fetchSemanticColor> method, which will return an instance to be passed to UI components.\nThis instance will automatically \"adapt\" the receiver to light/dark mode changes.\n\nThe only current instance you'd receive this type on Android is through the <Titanium.UI.Android.getColorResource> method.\nNote that Android does not currently support passing in instances of this type for UI components/properties!\nYou must convert to a hex string representation to pass this in to any color properties on Android.\n\nSee [UI Element Colors](https://developer.apple.com/documentation/uikit/uicolor/ui_element_colors?language=objc) and\n[Standard Colors](https://developer.apple.com/documentation/uikit/uicolor/standard_colors?language=objc) for lists of\nnamed colors to pass to <Titanium.UI.fetchSemanticColor> on iOS.\n\nSee [R.color](https://developer.android.com/reference/android/R.color) for a list of system color names to use to pass to\n<Titanium.UI.Android.getColorResource> on Android.\n",
+        "description": "This type may be used on iOS for assignment to any property typically taking a String color value.\nA developer is not expected to typically interact with a <Titanium.UI.Color> object, as we generate them\nunder the hood when converting the passed in String representations. One major exception is use of the \n<Titanium.UI.fetchSemanticColor> method, which will return an instance to be passed to UI components.\nThis instance will automatically \"adapt\" the receiver to light/dark mode changes.\n\nOn Android you can also receive an instance of this type through the <Titanium.UI.Android.getColorResource> method.\nNote that Titanium SDK before 10.2.0 on Android does not support passing in instances of this type for UI components/properties!\nYou must convert to a hex string representation to pass this in to any color properties on Android.\n\nSee [UI Element Colors](https://developer.apple.com/documentation/uikit/uicolor/ui_element_colors?language=objc) and\n[Standard Colors](https://developer.apple.com/documentation/uikit/uicolor/standard_colors?language=objc) for lists of\nnamed colors to pass to <Titanium.UI.fetchSemanticColor> on iOS.\n\nSee [R.color](https://developer.android.com/reference/android/R.color) for a list of system color names to use to pass to\n<Titanium.UI.Android.getColorResource> on Android.\n",
         "methods": [
             {
                 "name": "addEventListener",
@@ -140753,6 +140780,31 @@
                 ]
             },
             {
+                "name": "snapping",
+                "summary": "Determines whether items snap into place when scrolling stops.",
+                "description": "When set to `true`, the item closest to the centre of the view is aligned with that\ncentre once a scroll comes to rest, rather than the list stopping at an arbitrary\noffset. This is most useful when every item fills the visible area.\n\nOn Android this is backed by a\n[LinearSnapHelper](https://developer.android.com/reference/androidx/recyclerview/widget/LinearSnapHelper).\nOn iOS the equivalent behaviour is applied while the scroll decelerates. Snapping is\nskipped when the resting position falls on a header or footer rather than an item.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Boolean",
+                "default": false
+            },
+            {
                 "name": "style",
                 "summary": "Style of the list view.",
                 "description": "Style should always be set before setting the sections on list view.",
@@ -150615,6 +150667,7 @@
             {
                 "name": "statusBarColor",
                 "summary": "The color of the status bar (top bar) for this window.",
+                "description": "Starting with Android 16 (target SDK 36), the status bar is always transparent as part of\nedge-to-edge enforcement, and `statusBarColor` is ignored by the system. On Android 16+,\nthe status bar area will show the window's `backgroundColor` instead. Use `backgroundColor`\nto control the color behind the status bar on Android 16+.\n",
                 "platforms": [
                     {
                         "since": "12.5.0",
@@ -154228,7 +154281,7 @@
                     {
                         "name": "params",
                         "summary": "Argument containing parameters for this method. Only used on iPad.",
-                        "type": "showParams",
+                        "type": "OptionDialogShowParams",
                         "optional": true
                     }
                 ],
@@ -154944,6 +154997,73 @@
                     }
                 ],
                 "type": "Boolean"
+            }
+        ]
+    },
+    "OptionDialogShowParams": {
+        "name": "OptionDialogShowParams",
+        "summary": "Dictionary of options for the <Titanium.UI.OptionDialog.show> method.",
+        "extends": "Object",
+        "platforms": [
+            {
+                "since": "0.8",
+                "name": "ipad"
+            },
+            {
+                "since": "9.2.0",
+                "name": "macos"
+            }
+        ],
+        "type": "pseudo",
+        "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/OptionDialog.yml",
+        "properties": [
+            {
+                "name": "animated",
+                "summary": "Determines whether to animate the dialog as it is shown.",
+                "platforms": [
+                    {
+                        "since": "0.8",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "9.2.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Boolean",
+                "optional": true
+            },
+            {
+                "name": "view",
+                "summary": "View to which to attach the dialog.",
+                "platforms": [
+                    {
+                        "since": "0.8",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "9.2.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Titanium.UI.View"
+            },
+            {
+                "name": "rect",
+                "summary": "Positions the arrow of the option dialog relative to the attached view's dimensions.",
+                "description": "Setting the x, y coordinates to (0, 0) places the dialog in the top-left corner of the\nview object.  Set both the `width` and `height` properties to 1.\n",
+                "platforms": [
+                    {
+                        "since": "0.8",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "9.2.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Dimension",
+                "optional": true
             }
         ]
     },
@@ -168475,6 +168595,14 @@
                         "name": "macos"
                     }
                 ],
+                "parameters": [
+                    {
+                        "name": "options",
+                        "summary": "A simple object for specifying the animation properties when scrolling the view.\nWhen set to `{ animated: true }` it will scroll smoothly to the destination.\n\nNote that the default here is equivalent to passing in `{ animated: true }`.\n\nThis property is iOS-only and available since Titanium SDK 10.2.0!\n",
+                        "type": "AnimatedOptions",
+                        "optional": true
+                    }
+                ],
                 "returns": {
                     "type": "void"
                 }
@@ -168499,6 +168627,14 @@
                     {
                         "since": "9.2.0",
                         "name": "macos"
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "options",
+                        "summary": "A simple object for specifying the animation properties when scrolling the view.\nWhen set to `{ animated: true }` it will scroll smoothly to the destination.\n\nNote that the default here is equivalent to passing in `{ animated: true }`.\n\nThis property is iOS-only and available since Titanium SDK 10.2.0!\n",
+                        "type": "AnimatedOptions",
+                        "optional": true
                     }
                 ],
                 "returns": {
@@ -191216,28 +191352,16 @@
             },
             {
                 "name": "navBarHidden",
-                "summary": "Hides the navigation bar (`true`) or shows the navigation bar (`false`).",
-                "description": "#### iOS Platform Notes\n\nSince Titanium SDK 6.0.0, you can use this property to hide and show the property as well.\n\nUsing this property, the navigation bar will be hidden or shown animated by default. Please note that\nthis property will only take effect if the window is used inside a <Titanium.UI.NavigationWindow>\nand will be ignored otherwise. If you want to hide or show the navigation without an animation, use t\nhe methods <Titanium.UI.Window.showNavBar> and <Titanium.UI.Window.hideNavBar> with the second parameter\nto specify the animation:\n\n``` js\n// \"myWindow\" is a Ti.UI.Window inside a Ti.UI.NavigationWindow\nmyWindow.hideNavBar(true, {animated: false});\n```\n\n#### Android Platform Notes\n\nSince Release 3.3.0, due to changes to support the appcompat library, this property has no\neffect. By default, the action bar is always displayed.  To hide the action bar, see the\n[Android Action Bar guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Android_UI_Components_and_Conventions/Android_Action_Bar.html).\n",
+                "summary": "Hides the action bar (`true`) or shows the action bar (`false`).",
+                "description": "Must be set at creation time. The action bar is hidden before the tab group's activity\ndraws its first frame, unlike calling `hide()` on\n[ActionBar](Titanium.Android.ActionBar) from the tab group's `open` event, which can\ncause the action bar to flash briefly.\n",
                 "platforms": [
                     {
-                        "since": "0.9",
+                        "since": "14.0.0",
                         "name": "android"
-                    },
-                    {
-                        "since": "0.9",
-                        "name": "iphone"
-                    },
-                    {
-                        "since": "0.9",
-                        "name": "ipad"
-                    },
-                    {
-                        "since": "9.2.0",
-                        "name": "macos"
                     }
                 ],
-                "inherits": "Titanium.UI.Window",
                 "type": "Boolean",
+                "availability": "creation",
                 "default": false
             },
             {
@@ -191500,6 +191624,7 @@
             {
                 "name": "statusBarColor",
                 "summary": "The color of the status bar (top bar) for this window.",
+                "description": "Starting with Android 16 (target SDK 36), the status bar is always transparent as part of\nedge-to-edge enforcement, and `statusBarColor` is ignored by the system. On Android 16+,\nthe status bar area will show the TabGroup's `backgroundColor` instead. Use `backgroundColor`\nto control the color behind the status bar on Android 16+.\n",
                 "platforms": [
                     {
                         "since": "12.7.0",
@@ -192317,6 +192442,28 @@
                     {
                         "since": "13.1.0",
                         "name": "ipad"
+                    }
+                ],
+                "type": "Boolean",
+                "availability": "creation",
+                "default": false
+            },
+            {
+                "name": "lazyLoadingEnabled",
+                "summary": "Lazily opens each tab's root window only when that tab becomes active/selected.",
+                "description": "When set to `true`, iOS opens a tab's root <Titanium.UI.Window> only when that tab is shown.\nWhen set to `false`, iOS preserves the legacy behavior and opens all tabs root window during tab group initialization.\nDefaults to `false` for compatibility, but will default to `true` starting with SDK `14.0.0.GA`.\n",
+                "platforms": [
+                    {
+                        "since": "13.3.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "13.3.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "13.3.0",
+                        "name": "macos"
                     }
                 ],
                 "type": "Boolean",
@@ -200655,6 +200802,31 @@
                 ],
                 "type": "Boolean",
                 "default": true
+            },
+            {
+                "name": "snapping",
+                "summary": "Determines whether rows snap into place when scrolling stops.",
+                "description": "When set to `true`, the row closest to the centre of the view is aligned with that\ncentre once a scroll comes to rest, rather than the table stopping at an arbitrary\noffset. This is most useful when every row fills the visible area.\n\nOn Android this is backed by a\n[LinearSnapHelper](https://developer.android.com/reference/androidx/recyclerview/widget/LinearSnapHelper).\nOn iOS the equivalent behaviour is applied while the scroll decelerates. Snapping is\nskipped when the resting position falls on a header or footer rather than a row.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Boolean",
+                "default": false
             },
             {
                 "name": "style",
@@ -217313,6 +217485,23 @@
                 ],
                 "type": "Boolean",
                 "default": true
+            },
+            {
+                "name": "hideSharedBackground",
+                "summary": "If `true`, each toolbar item is rendered in its own separate visual container.",
+                "description": "On iOS 26 and later, UIToolbar uses the \"Liquid Glass\" design and automatically\ngroups adjacent items into shared glass backgrounds. Setting this property to `true`\nprevents this grouping, giving each item its own separate glass container.\n\nFor finer control, individual toolbar items (buttons, labels, etc.) can set the\n`hideSharedBackground` property to `true` to separate only those specific items, while\nleaving others grouped.\n\nThis property has no effect on iOS versions prior to 26.0.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Boolean",
+                "default": false
             },
             {
                 "name": "contentInsetEndWithActions",
@@ -236486,7 +236675,7 @@
             {
                 "name": "navBarHidden",
                 "summary": "Hides the navigation bar (`true`) or shows the navigation bar (`false`).",
-                "description": "#### iOS Platform Notes\n\nSince Titanium SDK 6.0.0, you can use this property to hide and show the property as well.\n\nUsing this property, the navigation bar will be hidden or shown animated by default. Please note that\nthis property will only take effect if the window is used inside a <Titanium.UI.NavigationWindow>\nand will be ignored otherwise. If you want to hide or show the navigation without an animation, use t\nhe methods <Titanium.UI.Window.showNavBar> and <Titanium.UI.Window.hideNavBar> with the second parameter\nto specify the animation:\n\n``` js\n// \"myWindow\" is a Ti.UI.Window inside a Ti.UI.NavigationWindow\nmyWindow.hideNavBar(true, {animated: false});\n```\n\n#### Android Platform Notes\n\nSince Release 3.3.0, due to changes to support the appcompat library, this property has no\neffect. By default, the action bar is always displayed.  To hide the action bar, see the\n[Android Action Bar guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Android_UI_Components_and_Conventions/Android_Action_Bar.html).\n",
+                "description": "#### iOS Platform Notes\n\nSince Titanium SDK 6.0.0, you can use this property to hide and show the property as well.\n\nUsing this property, the navigation bar will be hidden or shown animated by default. Please note that\nthis property will only take effect if the window is used inside a <Titanium.UI.NavigationWindow>\nand will be ignored otherwise. If you want to hide or show the navigation without an animation, use t\nhe methods <Titanium.UI.Window.showNavBar> and <Titanium.UI.Window.hideNavBar> with the second parameter\nto specify the animation:\n\n``` js\n// \"myWindow\" is a Ti.UI.Window inside a Ti.UI.NavigationWindow\nmyWindow.hideNavBar(true, {animated: false});\n```\n\n#### Android Platform Notes\n\nBetween Release 3.3.0 and Release 14.0.0, due to changes to support the appcompat library,\nthis property had no effect and the action bar was always displayed.\n\nSince Release 14.0.0, this property is supported again on Android. It must be set at\ncreation time and hides the action bar before the window's activity draws its first frame,\nunlike calling `hide()` on [ActionBar](Titanium.Android.ActionBar) from the window's `open`\nevent, which can cause the action bar to flash briefly. Alternatively, use a theme without\nan action bar as described in the\n[Android Action Bar guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Android_UI_Components_and_Conventions/Android_Action_Bar.html).\n",
                 "platforms": [
                     {
                         "since": "0.9",
@@ -236759,6 +236948,7 @@
             {
                 "name": "statusBarColor",
                 "summary": "The color of the status bar (top bar) for this window.",
+                "description": "Starting with Android 16 (target SDK 36), the status bar is always transparent as part of\nedge-to-edge enforcement, and `statusBarColor` is ignored by the system. On Android 16+,\nthe status bar area will show the window's `backgroundColor` instead. Use `backgroundColor`\nto control the color behind the status bar on Android 16+.\n",
                 "platforms": [
                     {
                         "since": "12.5.0",
@@ -259617,7 +259807,7 @@
             {
                 "name": "navBarHidden",
                 "summary": "Hides the navigation bar (`true`) or shows the navigation bar (`false`).",
-                "description": "#### iOS Platform Notes\n\nSince Titanium SDK 6.0.0, you can use this property to hide and show the property as well.\n\nUsing this property, the navigation bar will be hidden or shown animated by default. Please note that\nthis property will only take effect if the window is used inside a <Titanium.UI.NavigationWindow>\nand will be ignored otherwise. If you want to hide or show the navigation without an animation, use t\nhe methods <Titanium.UI.Window.showNavBar> and <Titanium.UI.Window.hideNavBar> with the second parameter\nto specify the animation:\n\n``` js\n// \"myWindow\" is a Ti.UI.Window inside a Ti.UI.NavigationWindow\nmyWindow.hideNavBar(true, {animated: false});\n```\n\n#### Android Platform Notes\n\nSince Release 3.3.0, due to changes to support the appcompat library, this property has no\neffect. By default, the action bar is always displayed.  To hide the action bar, see the\n[Android Action Bar guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Android_UI_Components_and_Conventions/Android_Action_Bar.html).\n",
+                "description": "#### iOS Platform Notes\n\nSince Titanium SDK 6.0.0, you can use this property to hide and show the property as well.\n\nUsing this property, the navigation bar will be hidden or shown animated by default. Please note that\nthis property will only take effect if the window is used inside a <Titanium.UI.NavigationWindow>\nand will be ignored otherwise. If you want to hide or show the navigation without an animation, use t\nhe methods <Titanium.UI.Window.showNavBar> and <Titanium.UI.Window.hideNavBar> with the second parameter\nto specify the animation:\n\n``` js\n// \"myWindow\" is a Ti.UI.Window inside a Ti.UI.NavigationWindow\nmyWindow.hideNavBar(true, {animated: false});\n```\n\n#### Android Platform Notes\n\nBetween Release 3.3.0 and Release 14.0.0, due to changes to support the appcompat library,\nthis property had no effect and the action bar was always displayed.\n\nSince Release 14.0.0, this property is supported again on Android. It must be set at\ncreation time and hides the action bar before the window's activity draws its first frame,\nunlike calling `hide()` on [ActionBar](Titanium.Android.ActionBar) from the window's `open`\nevent, which can cause the action bar to flash briefly. Alternatively, use a theme without\nan action bar as described in the\n[Android Action Bar guide](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/User_Interface_Deep_Dives/Android_UI_Components_and_Conventions/Android_Action_Bar.html).\n",
                 "platforms": [
                     {
                         "since": "3.6.0",

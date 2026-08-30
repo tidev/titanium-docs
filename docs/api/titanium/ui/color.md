@@ -13,8 +13,8 @@ under the hood when converting the passed in String representations. One major e
 <Titanium.UI.fetchSemanticColor> method, which will return an instance to be passed to UI components.
 This instance will automatically "adapt" the receiver to light/dark mode changes.
 
-The only current instance you'd receive this type on Android is through the <Titanium.UI.Android.getColorResource> method.
-Note that Android does not currently support passing in instances of this type for UI components/properties!
+On Android you can also receive an instance of this type through the <Titanium.UI.Android.getColorResource> method.
+Note that Titanium SDK before 10.2.0 on Android does not support passing in instances of this type for UI components/properties!
 You must convert to a hex string representation to pass this in to any color properties on Android.
 
 See [UI Element Colors](https://developer.apple.com/documentation/uikit/uicolor/ui_element_colors?language=objc) and
