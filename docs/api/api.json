@@ -200078,6 +200078,30 @@
                 "type": "Titanium.UI.RefreshControl"
             },
             {
+                "name": "searchText",
+                "summary": "The string to use as the search parameter.",
+                "description": "Provides a generic search API for the TableView without a search bar. Only rows whose\n[filterAttribute](Titanium.UI.TableView.filterAttribute) (the\n[title](Titanium.UI.TableViewRow.title) by default) contains the given text are shown.\nThe [filterCaseInsensitive](Titanium.UI.TableView.filterCaseInsensitive),\n[filterAnchored](Titanium.UI.TableView.filterAnchored) and\n[filterAlwaysInclude](Titanium.UI.TableViewRow.filterAlwaysInclude) properties are honored.\nSet it to an empty string or `null` to show all rows again.\n\nThis property can not be used when the [search](Titanium.UI.TableView.search) property is set.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "String"
+            },
+            {
                 "name": "hideSearchOnSelection",
                 "summary": "Determines whether the search field should hide on completion.",
                 "description": "Set to `false` to prevent the search field from being hidden when an item in the search\nresults is clicked.\n\nMany standard applications (such as Contacts) have a behavior equivalent to `false` for this\nvalue, but the default is `true` for legacy reasons.\n\nThe Android platform behaves as though this value were `false`.\n",
