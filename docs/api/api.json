@@ -297094,7 +297094,7 @@
         ],
         "type": "object",
         "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Annotation.yml",
-        "description": "The `Annotation` object gives you low-level control over annotations that can be added to\n[map view](Modules.Map.View). An annotation must have its `latitude` and `longitude`\nproperties set to appear on a map.\n\nUse the <Modules.Map.createAnnotation> method to create an annotation.  Starting with Alloy\n1.4.0, use the **`<Annotation>`** Alloy element to define one in XML markup.\n\nAn annotation can also have a title, a subtitle, and two inset buttons or views on the left\nand right side of the title. All of these items are optional.\n\nThe controls on the left and right side of the annotation can be specified in one of two\nways:\n\n* To display an image, set the [leftButton](Titanium.Map.Annotation.leftButton) or\n  [rightButton](Titanium.Map.Annotation.rightButton) property to an image URL. (On\n  iOS, you can also use a [SystemButton](Titanium.UI.iPhone.SystemButton) constant\n  to use one of the native system button icons.)\n\n* To add another type of view to the annotation, set the\n  [leftView](Titanium.Map.Annotation.leftView) or\n  [rightView](Titanium.Map.Annotation.rightView) property to a [View](Titanium.UI.View)\n  object.\n\nAn annotation has two states: selected and deselected. A deselected annotation\nis marked by a pin image. When the user selects the pin, the full annotation is\ndisplayed.\n\nYou can specify a custom image for the map pin by setting the\n[image](Modules.Map.Annotation.image) property.\n\nWhen the user clicks on an annotation, a `click` event is generated.\n\nOn iOS, You can add a click event listener to a specific annotation, or add a\nclick event listener to the map view to receive click events from all annotations\non the map.\n\nOn Android, you must add the click event listener to the map view; the annotation\nitself does not generate these events.\n",
+        "description": "The `Annotation` object gives you low-level control over annotations that can be added to\n[map view](Modules.Map.View). An annotation must have its `latitude` and `longitude`\nproperties set to appear on a map.\n\nUse the <Modules.Map.createAnnotation> method to create an annotation.  Starting with Alloy\n1.4.0, use the **`<Annotation>`** Alloy element to define one in XML markup.\n\nAn annotation can also have a title, a subtitle, and two inset buttons or views on the left\nand right side of the title. All of these items are optional.\n\nThe controls on the left and right side of the annotation can be specified in one of two\nways:\n\n* To display an image, set the [leftButton](Modules.Map.Annotation.leftButton) or\n  [rightButton](Modules.Map.Annotation.rightButton) property to an image URL. (On\n  iOS, you can also use a [SystemButton](Titanium.UI.iOS.SystemButton) constant\n  to use one of the native system button icons.)\n\n* To add another type of view to the annotation, set the\n  [leftView](Modules.Map.Annotation.leftView) or\n  [rightView](Modules.Map.Annotation.rightView) property to a [View](Titanium.UI.View)\n  object.\n\nAn annotation has two states: selected and deselected. A deselected annotation\nis marked by a pin image. When the user selects the pin, the full annotation is\ndisplayed.\n\nYou can specify a custom image for the map pin by setting the\n[image](Modules.Map.Annotation.image) property.\n\nWhen the user clicks on an annotation, a `click` event is generated.\n\nOn iOS, You can add a click event listener to a specific annotation, or add a\nclick event listener to the map view to receive click events from all annotations\non the map.\n\nOn Android, you must add the click event listener to the map view; the annotation\nitself does not generate these events.\n",
         "methods": [
             {
                 "name": "addEventListener",
@@ -299925,6 +299925,66 @@
                         "since": "3.1.0",
                         "name": "android"
                     },
+                    {
+                        "since": "3.2.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "3.2.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "9.2.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "ANNOTATION_DRAG_STATE_NONE",
+                "summary": "Used in the [pinchangedragstate](Modules.Map.View.pinchangedragstate) event\nto indicate that the annotation is not being dragged.\n",
+                "platforms": [
+                    {
+                        "since": "3.2.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "3.2.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "9.2.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "ANNOTATION_DRAG_STATE_DRAG",
+                "summary": "Used in the [pinchangedragstate](Modules.Map.View.pinchangedragstate) event\nto indicate that the user is dragging the annotation.\n",
+                "platforms": [
+                    {
+                        "since": "3.2.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "3.2.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "9.2.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "ANNOTATION_DRAG_STATE_CANCEL",
+                "summary": "Used in the [pinchangedragstate](Modules.Map.View.pinchangedragstate) event\nto indicate that the drag was cancelled.\n",
+                "platforms": [
                     {
                         "since": "3.2.0",
                         "name": "iphone"
@@ -304571,12 +304631,12 @@
                     },
                     {
                         "name": "newState",
-                        "summary": "New drag state for the annotation, one of\n[ANNOTATION_DRAG_STATE_NONE](Titanium.Map.ANNOTATION_DRAG_STATE_NONE),\n[ANNOTATION_DRAG_STATE_START](Titanium.Map.ANNOTATION_DRAG_STATE_START),\n[ANNOTATION_DRAG_STATE_DRAG](Titanium.Map.ANNOTATION_DRAG_STATE_DRAG),\n[ANNOTATION_DRAG_STATE_CANCEL](Titanium.Map.ANNOTATION_DRAG_STATE_CANCEL) or\n[ANNOTATION_DRAG_STATE_END](Titanium.Map.ANNOTATION_DRAG_STATE_END).\n",
+                        "summary": "New drag state for the annotation, one of\n[ANNOTATION_DRAG_STATE_NONE](Modules.Map.ANNOTATION_DRAG_STATE_NONE),\n[ANNOTATION_DRAG_STATE_START](Modules.Map.ANNOTATION_DRAG_STATE_START),\n[ANNOTATION_DRAG_STATE_DRAG](Modules.Map.ANNOTATION_DRAG_STATE_DRAG),\n[ANNOTATION_DRAG_STATE_CANCEL](Modules.Map.ANNOTATION_DRAG_STATE_CANCEL) or\n[ANNOTATION_DRAG_STATE_END](Modules.Map.ANNOTATION_DRAG_STATE_END).\n",
                         "type": "Number"
                     },
                     {
                         "name": "oldState",
-                        "summary": "Previous drag state for the annotation, one of\n[ANNOTATION_DRAG_STATE_NONE](Titanium.Map.ANNOTATION_DRAG_STATE_NONE),\n[ANNOTATION_DRAG_STATE_START](Titanium.Map.ANNOTATION_DRAG_STATE_START),\n[ANNOTATION_DRAG_STATE_DRAG](Titanium.Map.ANNOTATION_DRAG_STATE_DRAG),\n[ANNOTATION_DRAG_STATE_CANCEL](Titanium.Map.ANNOTATION_DRAG_STATE_CANCEL) or\n[ANNOTATION_DRAG_STATE_END](Titanium.Map.ANNOTATION_DRAG_STATE_END).\n",
+                        "summary": "Previous drag state for the annotation, one of\n[ANNOTATION_DRAG_STATE_NONE](Modules.Map.ANNOTATION_DRAG_STATE_NONE),\n[ANNOTATION_DRAG_STATE_START](Modules.Map.ANNOTATION_DRAG_STATE_START),\n[ANNOTATION_DRAG_STATE_DRAG](Modules.Map.ANNOTATION_DRAG_STATE_DRAG),\n[ANNOTATION_DRAG_STATE_CANCEL](Modules.Map.ANNOTATION_DRAG_STATE_CANCEL) or\n[ANNOTATION_DRAG_STATE_END](Modules.Map.ANNOTATION_DRAG_STATE_END).\n",
                         "type": "Number"
                     },
                     {
