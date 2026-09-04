@@ -140,8 +140,8 @@ to either [WEBVIEW_PLUGINS_ON](Titanium.UI.Android.WEBVIEW_PLUGINS_ON) or
 You must also call [pause](Titanium.UI.WebView.pause) when the current activity is
 paused, to prevent plugin content from continuing to run in the background. Call
 [resume](Titanium.UI.WebView.resume) when the current activity is resumed. You can
-do this by adding listeners for the [Activity.pause](Titanium.Android.Activity.pause)
-and [Activity.resume](Titanium.Android.Activity.resume) events.
+do this by adding listeners for the <Titanium.Android.Activity.onPause>
+and <Titanium.Android.Activity.onResume> events.
 
 **Accessing Cookies**
 

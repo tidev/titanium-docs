@@ -57,8 +57,8 @@ When `manualMode` is `true`, the following configuration settings in the
 <Titanium.Geolocation> module are ignored:
 
 *   [Geolocation.accuracy](Titanium.Geolocation.accuracy)
-*   [Geolocation.frequency](Titanium.Geolocation.frequency)
-*   [Geolocation.preferredProvider](Titanium.Geolocation.preferredProvider)
+*   `Geolocation.frequency`
+*   `Geolocation.preferredProvider`
 
 When `manualMode` is `false`, the `accuracy`, `frequency` and `preferredProvider`
 settings from <Titanium.Geolocation> are used to configure location updates.

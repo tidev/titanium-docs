@@ -1812,7 +1812,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -2869,7 +2869,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -3410,7 +3410,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -6241,7 +6241,7 @@
             {
                 "name": "style",
                 "summary": "Specifies the format style such as decimal, currency, or percentage.",
-                "description": "Can be set to one of the following:\n\n*    `'decimal'` Formats as a floating point value such as `'-1,234.5'`.\n*    `'currency'` Formats value as a currency such as `'$100'`.\n     You must also set the <Global.Intl.NumberFormat.NumberFormatOptions.currency> option\n     when using this style or else an exception will be thrown.\n*    `'percent'` Multiplies value by 100 and formats as a percentage.\n     For example, a value of `1.0` will be formatted as `'100%'`.\n\nNote that Android and iOS do not support the `'unit'` style defined in the ECMA standard.\n",
+                "description": "Can be set to one of the following:\n\n*    `'decimal'` Formats as a floating point value such as `'-1,234.5'`.\n*    `'currency'` Formats value as a currency such as `'$100'`.\n     You must also set the <NumberFormatOptions.currency> option\n     when using this style or else an exception will be thrown.\n*    `'percent'` Multiplies value by 100 and formats as a percentage.\n     For example, a value of `1.0` will be formatted as `'100%'`.\n\nNote that Android and iOS do not support the `'unit'` style defined in the ECMA standard.\n",
                 "platforms": [
                     {
                         "since": "9.1.0",
@@ -6287,7 +6287,7 @@
             {
                 "name": "currency",
                 "summary": "Set to the ISO 4217 currency code to use when formatting with the currency style.",
-                "description": "If the <Global.Intl.NumberFormat.NumberFormatOptions.style> option is set to `'currency'`,\nthen you must also set this `currency` option to an\n[ISO 4217](https://www.currency-iso.org/en/home/tables/table-a1.html) currency code\nsuch as `'USD'` for US dollars or `'EUR'` for euros.\n",
+                "description": "If the <NumberFormatOptions.style> option is set to `'currency'`,\nthen you must also set this `currency` option to an\n[ISO 4217](https://www.currency-iso.org/en/home/tables/table-a1.html) currency code\nsuch as `'USD'` for US dollars or `'EUR'` for euros.\n",
                 "platforms": [
                     {
                         "since": "9.1.0",
@@ -6311,7 +6311,7 @@
             {
                 "name": "currencyDisplay",
                 "summary": "Indicates how the currency symbol or name should be shown.",
-                "description": "This option is only applicable if <Global.Intl.NumberFormat.NumberFormatOptions.style>\nis set to `'currency'`.\n\nThis option can be set to one of the following:\n\n*    `'symbol'` Outputs the currency symbol such as `'$'` for US dollars.\n*    `'code'` Outputs the ISO 4217 currency code such as `'USD'` or `'EUR'`.\n*    `'name'` Outputs the full currency name such as `'US dollars'`.\n\nAndroid ignores this option and will always display a currency symbol.\n",
+                "description": "This option is only applicable if <NumberFormatOptions.style>\nis set to `'currency'`.\n\nThis option can be set to one of the following:\n\n*    `'symbol'` Outputs the currency symbol such as `'$'` for US dollars.\n*    `'code'` Outputs the ISO 4217 currency code such as `'USD'` or `'EUR'`.\n*    `'name'` Outputs the full currency name such as `'US dollars'`.\n\nAndroid ignores this option and will always display a currency symbol.\n",
                 "platforms": [
                     {
                         "since": "6.0.0",
@@ -16515,7 +16515,7 @@
     },
     "fs.Dirent": {
         "name": "fs.Dirent",
-        "summary": "A representation of a directory entry, which can be a file or a subdirectory within the directory, as returned by reading from an <fs.Dir>.\nThe directory entry is a combination of the file name and file type pairs.\n\n**NOTE:** Titanium does not currently implement this type.\n",
+        "summary": "A representation of a directory entry, which can be a file or a subdirectory within the directory, as returned by <fs.readdir>.\nThe directory entry is a combination of the file name and file type pairs.\n\n**NOTE:** Titanium does not currently implement this type.\n",
         "extends": "Object",
         "platforms": [],
         "type": "pseudo",
@@ -16910,7 +16910,7 @@
     },
     "fs.rm.options": {
         "name": "fs.rm.options",
-        "summary": "options for <fs.rm> and <fs.rmSync> methods",
+        "summary": "options for the <fs.rmSync> method",
         "extends": "Object",
         "platforms": [
             {
@@ -17037,7 +17037,7 @@
     },
     "fs.rmDir.options": {
         "name": "fs.rmDir.options",
-        "summary": "options for <fs.rmDir> and <fs.rmDirSync> methods",
+        "summary": "options for the <fs.rmdir> method",
         "extends": "Object",
         "platforms": [
             {
@@ -64459,7 +64459,7 @@
         ],
         "type": "module",
         "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/Geolocation/Android/Android.yml",
-        "description": "This module is used for manually configuring geolocation settings on Android. \n\nManual configuration is recommended for applications that have more demanding \ngeolocation needs (for example, driving directions). However, for basic geolocation\ninformation, *simple mode* geolocation may be sufficient. For information on simple \nmode, see <Titanium.Geolocation>.\n\nManual configuration involves managing *providers* and *rules*:\n\n*   *Location providers*, such as GPS, provide location updates.\n\n*   *Location rules* filter the results returned by location providers. \n\nConfiguring geolocation manually involves three steps:\n\n1.  Enabling manual mode.\n\n2.  Enabling location providers.\n\n3.  Adding location rules (optional).\n\nAs with the other modes, you register for location updates using the main\n<Titanium.Geolocation> module. Location updates are generated as long as \nan event listener is registered for the `location` event.  When you are not \nusing location updates, you should remove any registered event listeners.\n\nIn manual mode, the application is responsible for dynamically updating the settings\nto achieve its required accuracy while limiting battery usage. For example, an\napplication might do any of the following:\n\n*   If the application isn't getting updates frequently enough, it can adjust its\n    provider settings to provide more updates, or relax its location rules to allow\n    less accurate updates through. \n\n*   If the application isn't receiving accurate enough updates from one provider, it \n    can add another provider to try to improve results.\n\n*   If the application is getting sufficiently accurate results from the network \n    provider, it can disable the GPS provider to save power.\n\n#### Enabling Manual Configuration Mode\n\nTo enable manual configuration mode, set the [manualMode](Titanium.Geolocation.Android.manualMode) \nproperty to `true`. In manual configuration mode, the location providers and location\nrules set through this module control the generation of location updates.\n\nWhen `manualMode` is `true`, the following configuration settings in the\n<Titanium.Geolocation> module are ignored:\n\n*   [Geolocation.accuracy](Titanium.Geolocation.accuracy)\n*   [Geolocation.frequency](Titanium.Geolocation.frequency)\n*   [Geolocation.preferredProvider](Titanium.Geolocation.preferredProvider)\n\nWhen `manualMode` is `false`, the `accuracy`, `frequency` and `preferredProvider`\nsettings from <Titanium.Geolocation> are used to configure location updates.\nAny location providers and location rules set in <Titanium.Geolocation.Android> \nare retained, but they have no effect.\n\n#### Location Providers\n\nAndroid supports three kinds of location providers: GPS, network, and the \n\"passive\" location provider, which provides only cached information. \n\nEach location provider represents a different tradeoff between accuracy and\nbattery power. For most accurate results, you can use a combination of location\nproviders. Your application can also dynamically change providers to optimize\nbattery life (for example, if the network provider is providing good enough\nlocation updates, you can disable the GPS provider).\n\nLocation providers are represented by the\n[LocationProvider](Titanium.Geolocation.Android.LocationProvider) object. \nTo specify a location provider, create a new provider object, then register it\nwith [addLocationProvider](Titanium.Geolocation.Android.createLocationProvider):\n\n``` js\nvar gpsProvider = Ti.Geolocation.Android.createLocationProvider({\n    name: Ti.Geolocation.Android.PROVIDER_GPS,\n    minUpdateTime: 60, \n    minUpdateDistance: 100\n});\nTi.Geolocation.Android.addLocationProvider(gpsProvider);\n```\n\nAs shown above, when you create a location provider, you can specify two\nproperties to limit update frequency:\n\n*   `minUpdateTime`. Limits the frequency of location updates to no more \n    than one per `minUpdateTime` seconds.\n\n*   `minUpdateDistance`. Don't send location updates until the location changes\n    at least `minUpdateDistance` meters.\n\nOnly one provider of each type (GPS, network, passive) can be registered at a\ntime. Adding a new location provider with the same `name` value replaces any\nexisting provider with the same `name`.\n\nOnce a location provider is added, changes made to the location provider object itself\n(such as changing its `minUpdateTime` value) change the active configuration of the \nlocation system.\n\n#### Location Rules\n\n*Location Rules* filter the results returned by location providers. You use\nlocation rules to reduce the number of location update events, and ensure that \nthe events you do receive are as accurate and recent as your application requires.\n\nYou are not required to set any location rules. However, by reducing the number of \nlocation events that are passed from the native code\nto the JavaScript layer, location rules can improve both performance and battery\nlife.\n\nLocation rules are represented by the\n[LocationRule](Titanium.Geolocation.Android.LocationProvider) object. To\nspecify a location rule, create a new rule object, then register it with \n[addLocationRule](Titanium.Geolocation.Android.createLocationProvider):\n\n``` js\nvar gpsRule = Ti.Geolocation.Android.createLocationRule({\n    provider: Ti.Geolocation.PROVIDER_GPS,\n    // Updates should be accurate to 100m\n    accuracy: 100,\n    // Updates should be no older than 5m\n    maxAge: 300000\n    // But  no more frequent than once per 10 seconds\n    minAge: 10000\n});\nTi.Geolocation.Android.addLocationRule(gpsRule);\n```\n\nEach rule can specify any combination of the following criteria:\n\n*   `provider`. If specified, this rule only applies to updates generated\n    by the specified provider. If not specified, this rule applies to all updates.\n\n*   `accuracy`. Minimum accuracy required for a location update. Accuracy is\n    expressed as the maximum allowable error, in meters. Updates with reported\n    accuracy values greater than this are filtered out. \n\n*   `minAge`. Controls the frequency of location updates. Do not forward an update unless\n     at least `minAge` milliseconds have passed since the last good location\n     update.\n\n*   `maxAge`. Controls the freshness of location updates. Do not forward an update\n    unless it is newer than `maxAge` milliseconds.\n\nYou can specify as many location rules as you like. The order in which location rules\nare added is not significant. For a `location` event to be generated, the location\nupdate must pass all of the active rules.\n\nNote that some combinations of rules may make it very difficult to get location\nupdates. In particular, very low values for either `accuracy` or `maxAge` may prevent \nresults from getting through. \n",
+        "description": "This module is used for manually configuring geolocation settings on Android. \n\nManual configuration is recommended for applications that have more demanding \ngeolocation needs (for example, driving directions). However, for basic geolocation\ninformation, *simple mode* geolocation may be sufficient. For information on simple \nmode, see <Titanium.Geolocation>.\n\nManual configuration involves managing *providers* and *rules*:\n\n*   *Location providers*, such as GPS, provide location updates.\n\n*   *Location rules* filter the results returned by location providers. \n\nConfiguring geolocation manually involves three steps:\n\n1.  Enabling manual mode.\n\n2.  Enabling location providers.\n\n3.  Adding location rules (optional).\n\nAs with the other modes, you register for location updates using the main\n<Titanium.Geolocation> module. Location updates are generated as long as \nan event listener is registered for the `location` event.  When you are not \nusing location updates, you should remove any registered event listeners.\n\nIn manual mode, the application is responsible for dynamically updating the settings\nto achieve its required accuracy while limiting battery usage. For example, an\napplication might do any of the following:\n\n*   If the application isn't getting updates frequently enough, it can adjust its\n    provider settings to provide more updates, or relax its location rules to allow\n    less accurate updates through. \n\n*   If the application isn't receiving accurate enough updates from one provider, it \n    can add another provider to try to improve results.\n\n*   If the application is getting sufficiently accurate results from the network \n    provider, it can disable the GPS provider to save power.\n\n#### Enabling Manual Configuration Mode\n\nTo enable manual configuration mode, set the [manualMode](Titanium.Geolocation.Android.manualMode) \nproperty to `true`. In manual configuration mode, the location providers and location\nrules set through this module control the generation of location updates.\n\nWhen `manualMode` is `true`, the following configuration settings in the\n<Titanium.Geolocation> module are ignored:\n\n*   [Geolocation.accuracy](Titanium.Geolocation.accuracy)\n*   `Geolocation.frequency`\n*   `Geolocation.preferredProvider`\n\nWhen `manualMode` is `false`, the `accuracy`, `frequency` and `preferredProvider`\nsettings from <Titanium.Geolocation> are used to configure location updates.\nAny location providers and location rules set in <Titanium.Geolocation.Android> \nare retained, but they have no effect.\n\n#### Location Providers\n\nAndroid supports three kinds of location providers: GPS, network, and the \n\"passive\" location provider, which provides only cached information. \n\nEach location provider represents a different tradeoff between accuracy and\nbattery power. For most accurate results, you can use a combination of location\nproviders. Your application can also dynamically change providers to optimize\nbattery life (for example, if the network provider is providing good enough\nlocation updates, you can disable the GPS provider).\n\nLocation providers are represented by the\n[LocationProvider](Titanium.Geolocation.Android.LocationProvider) object. \nTo specify a location provider, create a new provider object, then register it\nwith [addLocationProvider](Titanium.Geolocation.Android.createLocationProvider):\n\n``` js\nvar gpsProvider = Ti.Geolocation.Android.createLocationProvider({\n    name: Ti.Geolocation.Android.PROVIDER_GPS,\n    minUpdateTime: 60, \n    minUpdateDistance: 100\n});\nTi.Geolocation.Android.addLocationProvider(gpsProvider);\n```\n\nAs shown above, when you create a location provider, you can specify two\nproperties to limit update frequency:\n\n*   `minUpdateTime`. Limits the frequency of location updates to no more \n    than one per `minUpdateTime` seconds.\n\n*   `minUpdateDistance`. Don't send location updates until the location changes\n    at least `minUpdateDistance` meters.\n\nOnly one provider of each type (GPS, network, passive) can be registered at a\ntime. Adding a new location provider with the same `name` value replaces any\nexisting provider with the same `name`.\n\nOnce a location provider is added, changes made to the location provider object itself\n(such as changing its `minUpdateTime` value) change the active configuration of the \nlocation system.\n\n#### Location Rules\n\n*Location Rules* filter the results returned by location providers. You use\nlocation rules to reduce the number of location update events, and ensure that \nthe events you do receive are as accurate and recent as your application requires.\n\nYou are not required to set any location rules. However, by reducing the number of \nlocation events that are passed from the native code\nto the JavaScript layer, location rules can improve both performance and battery\nlife.\n\nLocation rules are represented by the\n[LocationRule](Titanium.Geolocation.Android.LocationProvider) object. To\nspecify a location rule, create a new rule object, then register it with \n[addLocationRule](Titanium.Geolocation.Android.createLocationProvider):\n\n``` js\nvar gpsRule = Ti.Geolocation.Android.createLocationRule({\n    provider: Ti.Geolocation.PROVIDER_GPS,\n    // Updates should be accurate to 100m\n    accuracy: 100,\n    // Updates should be no older than 5m\n    maxAge: 300000\n    // But  no more frequent than once per 10 seconds\n    minAge: 10000\n});\nTi.Geolocation.Android.addLocationRule(gpsRule);\n```\n\nEach rule can specify any combination of the following criteria:\n\n*   `provider`. If specified, this rule only applies to updates generated\n    by the specified provider. If not specified, this rule applies to all updates.\n\n*   `accuracy`. Minimum accuracy required for a location update. Accuracy is\n    expressed as the maximum allowable error, in meters. Updates with reported\n    accuracy values greater than this are filtered out. \n\n*   `minAge`. Controls the frequency of location updates. Do not forward an update unless\n     at least `minAge` milliseconds have passed since the last good location\n     update.\n\n*   `maxAge`. Controls the freshness of location updates. Do not forward an update\n    unless it is newer than `maxAge` milliseconds.\n\nYou can specify as many location rules as you like. The order in which location rules\nare added is not significant. For a `location` event to be generated, the location\nupdate must pass all of the active rules.\n\nNote that some combinations of rules may make it very difficult to get location\nupdates. In particular, very low values for either `accuracy` or `maxAge` may prevent \nresults from getting through. \n",
         "methods": [
             {
                 "name": "addEventListener",
@@ -64738,7 +64738,7 @@
             {
                 "name": "manualMode",
                 "summary": "Set to `true` to enable manual configuration of location updates through this module.",
-                "description": "If `true`, location updates are controlled by the location providers and location rules \nconfigured in this module.\n\nIf `false`, location updates are configured using the  [accuracy](Titanium.Geolocation.accuracy),\n[frequency](Titanium.Geolocation.frequency) and [preferredProvider](Titanium.Geolocation.preferredProvider)\nproperties in the <Titanium.Geolocation> module.\n",
+                "description": "If `true`, location updates are controlled by the location providers and location rules \nconfigured in this module.\n\nIf `false`, location updates are configured using the  [accuracy](Titanium.Geolocation.accuracy),\n`frequency` and `preferredProvider`\nproperties in the <Titanium.Geolocation> module.\n",
                 "platforms": [
                     {
                         "since": "2.0.0",
@@ -71904,7 +71904,8 @@
                     "Titanium.Media.AUDIO_STATE_STARTING",
                     "Titanium.Media.AUDIO_STATE_STOPPED",
                     "Titanium.Media.AUDIO_STATE_STOPPING",
-                    "Titanium.Media.AUDIO_STATE_WAITING_FOR_DATA"
+                    "Titanium.Media.AUDIO_STATE_WAITING_FOR_DATA",
+                    "Titanium.Media.AUDIO_STATE_WAITING_FOR_QUEUE"
                 ]
             },
             {
@@ -75798,6 +75799,30 @@
             {
                 "name": "AUDIO_STATE_WAITING_FOR_DATA",
                 "summary": "Player is waiting for audio data from the network.",
+                "platforms": [
+                    {
+                        "since": "7.5.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "7.5.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "7.5.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "9.2.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "AUDIO_STATE_WAITING_FOR_QUEUE",
+                "summary": "Player is waiting for the audio queue to fill before starting.",
                 "platforms": [
                     {
                         "since": "7.5.0",
@@ -79737,7 +79762,7 @@
             {
                 "name": "success",
                 "summary": "Function to call when the photo gallery is closed after a successful selection.",
-                "description": "If <Titanium.Media.allowMultiple> is `true`, then Callback<CameraMediaMultipleItemsType> will be invoked.\nOtherwise Callback<CameraMediaItemType> will be invoked for single selection.\n",
+                "description": "If <PhotoGalleryOptionsType.allowMultiple> is `true`, then Callback<CameraMediaMultipleItemsType> will be invoked.\nOtherwise Callback<CameraMediaItemType> will be invoked for single selection.\n",
                 "platforms": [
                     {
                         "since": "0.8",
@@ -79979,7 +80004,7 @@
             {
                 "name": "selectionLimit",
                 "summary": "Specifies number of media item that can be selected.",
-                "description": "Setting this property to zero allows you to select maximum number of media supported by system.\nThis will work only when <Titanium.Media.allowMultiple> is `true`.\n",
+                "description": "Setting this property to zero allows you to select maximum number of media supported by system.\nThis will work only when <PhotoGalleryOptionsType.allowMultiple> is `true`.\n",
                 "platforms": [
                     {
                         "since": "9.2.0",
@@ -80016,7 +80041,7 @@
     },
     "CameraMediaMultipleItemsType": {
         "name": "CameraMediaMultipleItemsType",
-        "summary": "A media object from photo gallery when <Titanium.Media.allowMultiple> is `true`.",
+        "summary": "A media object from photo gallery when <PhotoGalleryOptionsType.allowMultiple> is `true`.",
         "extends": "SuccessResponse",
         "platforms": [
             {
@@ -84569,7 +84594,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -85838,7 +85863,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -86408,7 +86433,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -89768,7 +89793,7 @@
             {
                 "name": "domain",
                 "summary": "Sets the domain parameter for authentication credentials.",
-                "description": "Set this parameter when authentication against NTLM domains along with the [username](Titanium.Network.HTTPClient.username)\nand [password](Titanium.Network.HTTPClient.password) properties.\niOS supports NTLM authentication natively.\nAndroid can be extended using the [addAuthFactory](Titanium.Network.HTTPClient.addAuthFactory) method.\nMust be set before calling [open](Titanium.Network.HTTPClient.open).\n",
+                "description": "Set this parameter when authentication against NTLM domains along with the [username](Titanium.Network.HTTPClient.username)\nand [password](Titanium.Network.HTTPClient.password) properties.\niOS supports NTLM authentication natively.\nAndroid supports Basic authentication only.\nMust be set before calling [open](Titanium.Network.HTTPClient.open).\n",
                 "platforms": [
                     {
                         "since": "3.0.0",
@@ -93912,7 +93937,7 @@
             "since": "1.7.0",
             "removed": "9.0.0"
         },
-        "description": "Sockets are nontrivial; it is recommended that anyone using them be familiar with the basics of BSD sockets.  All sockets use TCP connections, and are asynchronous for read operations, so your program should be ready to receive 'read' events at any point.  Socket references cannot be transferred to socket objects, and vice-versa - socket references are an internal mechanism which is used only to determine which sockets to send data to and read data from.  For listening sockets, it is highly recommended that you use the <Titanium.Network.INADDR_ANY> constant as the host name.  If a window containing a socket is closed, the socket MUST be closed also unless you intend to continue to receive data, otherwise the socket will consume resources (and potentially cause conflicts with opening the window again, if a listener) until the program is restarted.  Be aware of the differences between the listen() and connect() functions; attempting to use one when you mean the other may result in errors, unpredictable behavior, or both.",
+        "description": "Sockets are nontrivial; it is recommended that anyone using them be familiar with the basics of BSD sockets.  All sockets use TCP connections, and are asynchronous for read operations, so your program should be ready to receive 'read' events at any point.  Socket references cannot be transferred to socket objects, and vice-versa - socket references are an internal mechanism which is used only to determine which sockets to send data to and read data from.  For listening sockets, it is highly recommended that you use the string `\"INADDR_ANY\"` as the host name.  If a window containing a socket is closed, the socket MUST be closed also unless you intend to continue to receive data, otherwise the socket will consume resources (and potentially cause conflicts with opening the window again, if a listener) until the program is restarted.  Be aware of the differences between the listen() and connect() functions; attempting to use one when you mean the other may result in errors, unpredictable behavior, or both.",
         "events": [
             {
                 "name": "read",
@@ -94305,7 +94330,7 @@
             },
             {
                 "name": "hostName",
-                "summary": "the host name to connect to.  Must be <Titanium.Network.INADDR_ANY> or an identifier for the local device in order to listen",
+                "summary": "the host name to connect to.  Must be `\"INADDR_ANY\"` or an identifier for the local device in order to listen",
                 "platforms": [
                     {
                         "since": "1.2.0",
@@ -98781,7 +98806,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -99136,7 +99161,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -99468,7 +99493,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -100334,7 +100359,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -100668,7 +100693,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -100943,7 +100968,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -101998,8 +102023,8 @@
             },
             {
                 "name": "getColorResource",
-                "summary": "Returns a <Ti.Color> instance for a color defined by the system or user resources (colors.xml)\n",
-                "description": "This method allows converting a known color resource id or short name to an actual color instance.\n\nThe resource id values can be accessed via <Titanium.Android.R.color> and <Titanium.App.Android.R.color> properties.\n\nSee the official Android Developer documentation for\nthe [R.color](https://developer.android.com/reference/android/R.color) constants.\n",
+                "summary": "Returns a <Titanium.UI.Color> instance for a color defined by the system or user resources (colors.xml)\n",
+                "description": "This method allows converting a known color resource id or short name to an actual color instance.\n\nThe resource id values can be accessed via <Titanium.Android.R.color> and `Titanium.App.Android.R.color` properties.\n\nSee the official Android Developer documentation for\nthe [R.color](https://developer.android.com/reference/android/R.color) constants.\n",
                 "platforms": [
                     {
                         "since": "9.1.0",
@@ -116391,7 +116416,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -117404,7 +117429,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -117973,7 +117998,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -119253,7 +119278,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -120234,7 +120259,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -120804,7 +120829,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -123739,7 +123764,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -124497,7 +124522,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -124843,7 +124868,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -125697,7 +125722,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -126128,7 +126153,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -126379,7 +126404,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -128350,7 +128375,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -129503,7 +129528,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -130076,7 +130101,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -132009,7 +132034,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -132990,7 +133015,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -133560,7 +133585,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -137713,7 +137738,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -139074,7 +139099,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -139643,7 +139668,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -142977,7 +143002,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -143958,7 +143983,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -144528,7 +144553,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -147751,7 +147776,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -149232,7 +149257,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "8.0.0",
@@ -149806,7 +149831,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "8.0.0",
@@ -151977,7 +152002,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "10.0.0",
@@ -152958,7 +152983,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "10.0.0",
@@ -153529,7 +153554,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "10.0.0",
@@ -154167,7 +154192,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -154469,7 +154494,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -154745,7 +154770,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -156687,7 +156712,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -157579,7 +157604,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -158099,7 +158124,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -160666,7 +160691,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -161765,7 +161790,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -162335,7 +162360,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -163925,7 +163950,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -164906,7 +164931,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -165479,7 +165504,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -168119,7 +168144,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -169397,7 +169422,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -169967,7 +169992,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -171547,7 +171572,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -172753,7 +172778,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -173323,7 +173348,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -175539,7 +175564,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -176695,7 +176720,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -177265,7 +177290,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -180449,7 +180474,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -181433,7 +181458,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -182006,7 +182031,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -184057,7 +184082,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -185038,7 +185063,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -185607,7 +185632,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -187269,7 +187294,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -187885,7 +187910,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -188224,7 +188249,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -189302,7 +189327,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -190244,7 +190269,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -190635,7 +190660,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -192853,7 +192878,7 @@
     },
     "disableTabOptions": {
         "name": "disableTabOptions",
-        "summary": "Dictionary of options for the <Titanium.UI.TabGroup.disableTabOptions> method.",
+        "summary": "Dictionary of options for the <Titanium.UI.TabGroup.disableTabNavigation> method.",
         "extends": "Object",
         "platforms": [
             {
@@ -193520,7 +193545,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -194501,7 +194526,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -195071,7 +195096,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -197311,7 +197336,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -198980,7 +199005,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -199549,7 +199574,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -201954,7 +201979,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -203058,7 +203083,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -203616,7 +203641,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -206802,7 +206827,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -207897,7 +207922,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -208467,7 +208492,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -211251,7 +211276,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -212346,7 +212371,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -212916,7 +212941,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -215650,7 +215675,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -216672,7 +216697,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -217200,7 +217225,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -224215,7 +224240,7 @@
             {
                 "name": "SELECTION_STYLE_NONE",
                 "summary": "Set the selection style to none.",
-                "description": "Use with the <Titanium.UI.ListView.selectionStyle> and\n<Titanium.UI.TableView.selectionStyle> properties.\n",
+                "description": "Use with the <Titanium.UI.ListItem.selectionStyle> and\n<Titanium.UI.TableViewRow.selectionStyle> properties.\n",
                 "platforms": [
                     {
                         "since": "10.1.0",
@@ -224240,7 +224265,7 @@
             {
                 "name": "SELECTION_STYLE_DEFAULT",
                 "summary": "Set the selection style to system default.",
-                "description": "Use with the <Titanium.UI.ListView.selectionStyle> and\n<Titanium.UI.TableView.selectionStyle> properties.\n",
+                "description": "Use with the <Titanium.UI.ListItem.selectionStyle> and\n<Titanium.UI.TableViewRow.selectionStyle> properties.\n",
                 "platforms": [
                     {
                         "since": "10.1.0",
@@ -226414,7 +226439,7 @@
         ],
         "type": "object",
         "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/WebView.yml",
-        "description": "Use the <Titanium.UI.createWebView> method or **`<WebView>`** Alloy element to create a web view.\n\nWeb views are more expensive to create than other native views because of the requirement to\nload the HTML browser into memory.\n\nThe web view content can be any valid web content such as HTML, PDF, SVG or other WebKit supported\ncontent types.\n\n#### JavaScript Context in WebViews--Local vs. Remote Content\n\nJavaScript in the web view executes in its own context.  The web view can interact with this\ncontent, but most of this functionality is limited to local content.\n\n**Local Scripts**\n\nWhen running local web content\n(that is, content that is included in the application's resources), scripts have\naccess to the Titanium namespace. In particular, when running local web content:\n\n- You can use <Titanium.App.addEventListener> and\n  <Titanium.App.fireEvent> to receive and send application-level events.\n\n- Events can be logged using the <Titanium.API> logging methods.\n\n**Remote Scripts**\n\nScripts downloaded from remote web servers cannot access the Titanium namespace.\n\nTo interact with remote content, wait until the content is loaded, then use the\n[evalJS](Titanium.UI.WebView.evalJS) method to execute a JavaScript expression\ninside the web view and retrieve the value of an expression.\n\nTo trigger a message from the remote web page, refer to <Titanium.UI.WebView.addScriptMessageHandler>.\n\nYou can inject the local `Ti.App.fireEvent` bindings yourself by adding a script element using\nevalJS.\n\n```js\nwebview.evalJS(\n  'javascript=(function addBinding(){' +\n    'var s=document.createElement(\"script\");' +\n    's.setAttribute(\"type\",\"text/javascript\");' +\n    's.innerHTML=\"' + /* insert content of binding.min.js */ + '\";'\n    +\n    'document.getElementsByTagName(\"body\")[0].appendChild(s);' +\n  '})()'\n);\n```\nThe `binding.min.js` is available in the [repository](https://github.com/tidev/titanium-sdk/tree/main/android/modules/ui/assets/Resources/ti.internal/webview).\n\n#### Local JavaScript Files\n\nDuring the build process for creating a package, all JavaScript files, that is, any file with a\n'.js' extension, are removed and their content is encrypted and obfuscated into one resource,\ncausing these files to not load properly in a WebView if they are loaded externally.\n\nFor JavaScript files referenced in static local HTML files, these JavaScript files are omitted\nfrom processing and left intact, which means they can be correctly loaded in the WebView.\n\nFor local JavaScript files not referenced in static local HTML files, for example, a\ndynamically-generated HTML file referencing a local JavaScript file,\nrename the file extension of the local JavaScript files to '.jslocal' instead of '.js'.\n\nThe build process for testing your application on the simulator, emulator or device does not\naffect the loading of local JavaScript files.\n\n#### iOS Platform Implementation Notes\n\nOn the iOS platform, the native web view handles scrolling and other related touch\nevents internally. If you add event listeners on the web view **or its parent views**\nfor any of the standard touch events (`touchstart`, `click`, and so on), these events\ndo not reach the native web view, and the user will not be able to scroll, zoom, click\non links, and so on. To prevent this default behavior, set\n[willHandleTouches](Titanium.UI.WebView.willHandleTouches) to `false`.\n\nIn other words, you can have either Titanium-style events against the\nweb view instance, or internal JavaScript events in the DOM, but not both.\n\n#### Android Platform Implementation Notes\n\n**Android 4.4 and Later Support**\n\nStarting with Android 4.4 (API Level 19), the WebView component is based off of Chromium,\nintroducing a number of changes to its rendering engine.  Web content may look or behave\ndifferently depending on the Android version.  The WebView does not\nhave full feature parity with Chrome for Android.\n\nBy default, the Chromium WebView uses hardware acceleration, which may cause content to\nfail to render. If the WebView fails to render the content, the web view will clear\nitself, displaying only the default background color. The following log messages will be\ndisplayed in the console:\n\n```\n[WARN] :   AwContents: nativeOnDraw failed; clearing to background color.\n[INFO] :   chromium: [INFO:async_pixel_transfer_manager_android.cc(56)]\n```\n\nTo workaround this issue, you can enable software rendering by setting the WebView's\n[borderRadius](Titanium.UI.WebView.borderRadius) property to a value greater than zero.\n\nIf you are developing local HTML content and size your elements using percentages, the WebView may\nnot calculate the sizes correctly when hardware acceleration is enabled, resulting in the same\nbehavior previously mentioned.\n\nTo workaround this issue, you can use the previously mentioned workaround to enable software\nrendering, use absolute size values or use the\n[onresize](https://developer.mozilla.org/en-US/docs/Web/API/Window.onresize) event to set the\nheights of the components.  For example, if you have a div element with an id set to `component`\nthat needs to use the entire web view, the following callback resizes the content to use the\nfull height of the web view:\n\n``` js\nwindow.onresize= function(){\n    document.getElementById(\"component\").style.height = window.innerHeight + 'px';\n};\n```\n\nFor more information, see the following topics:\n\n  * [Android Developers: Migrating to WebView in Android 4.4](https://developer.android.com/guide/webapps/migrating.html)\n  * [Google Chrome: WebView for Android](https://developer.chrome.com/multidevice/webview/overview)\n\n**Plugin Support**\n\nThe Android web view supports native plugins.\n\nTo use plugin content, you must set the [pluginState](Titanium.UI.WebView.pluginState) property\nto either [WEBVIEW_PLUGINS_ON](Titanium.UI.Android.WEBVIEW_PLUGINS_ON) or\n[WEBVIEW_PLUGINS_ON_DEMAND](Titanium.UI.Android.WEBVIEW_PLUGINS_ON_DEMAND).\n\nYou must also call [pause](Titanium.UI.WebView.pause) when the current activity is\npaused, to prevent plugin content from continuing to run in the background. Call\n[resume](Titanium.UI.WebView.resume) when the current activity is resumed. You can\ndo this by adding listeners for the [Activity.pause](Titanium.Android.Activity.pause)\nand [Activity.resume](Titanium.Android.Activity.resume) events.\n\n**Accessing Cookies**\n\nOn Android, the web view uses the system cookie store which does not share cookies with the\n<Titanium.Network.HTTPClient> cookie store. Developers can manage their cookies for both\ncookie stores using the methods <Titanium.Network.addHTTPCookie>, <Titanium.Network.addSystemCookie>,\n<Titanium.Network.getHTTPCookies>, <Titanium.Network.getHTTPCookiesForDomain>, <Titanium.Network.getSystemCookies>,\n<Titanium.Network.removeHTTPCookie>, <Titanium.Network.removeHTTPCookiesForDomain>, <Titanium.Network.removeAllHTTPCookies>,\n<Titanium.Network.removeSystemCookie>, <Titanium.Network.removeAllSystemCookies>.\n\n**WKWebView**\n\nWith Titanium SDK 8.0.0, we now use WKWebView to implement Ti.UI.WebView (as Apple has deprecated UIWebView).\nWKWebView has few restriction specially with local file accessing. For supporting custom-fonts with WKWebView\na little modification is required in the HTML files:\n\n``` html\n<style>\n  @font-face\n    {\n      font-family: 'Lato-Regular';\n      src: url('fonts/Lato-Regular.ttf');\n    }\n</style>\n```\n\nTo have a WKWebView scale the page the same way as UIWebView, add the following meta tag to the HTML header:\n\n``` html\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  </head>\n</html>\n```\n\n### Ti.UI.SIZE and WebViews\n\nWith Titanium 8.0.0+, <Titanium.UI.SIZE> does not work for WebViews. We recommend to give a **fixed height**\nto <Titanium.UI.WebView> (as noted in [TIDOC-3355](https://jira-archive.titaniumsdk.com/TIDOC-3355)).\n\nAs a workaround you can try to get the `document.body.scrollHeight` inside <Titanium.UI.WebView.load> event\nof webview and set the height to webview. See following example.\n\n``` js\nvar win = Ti.UI.createWindow();\n\nvar verticalView = Ti.UI.createView({layout: 'vertical', width: \"100%\", height: \"100%\"});\n\nverticalView.add(Ti.UI.createLabel({text: 'Label 1', top: 30, width: Ti.UI.SIZE, height: Ti.UI.SIZE}));\n\nvar htmla = \"<div style='font-family: Helvetica Neue; font-size:16px'><ul><li>Item 1</li><li>Item 2</li></ul></div>\";\nvar html = \"<!DOCTYPE html>\";\n\nhtml += \"<html><head><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'><style type='text/css'>html {-webkit-text-size-adjust: none;}</style><script type='text/javascript'>document.ontouchmove = function(event){event.preventDefault();}</script></head><body style='overflow: hidden'>\";\nhtml += htmla;\nhtml += \"</body></html>\";\n\nvar webview = Ti.UI.createWebView({left: '14dp', right: '14dp', top: '7dp', height: Ti.UI.SIZE, html: html, backgroundColor: \"yellow\"});\n\nverticalView.add(webview);\n\nverticalView.add(Ti.UI.createLabel({text: 'Label 2', top: 30, width: Ti.UI.SIZE, height: Ti.UI.SIZE}));\n\nwin.add(verticalView);\n\nwin.open();\n\nwebview.addEventListener('load', function(e) {\n  var result = webview.evalJSSync('document.body.scrollHeight');\n  Ti.API.info('webview height: ' + result);\n  webview.height = result;\n});\n```\n\n#### For More Information\n\nSee [Integrating Web\nContent](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Integrating_Web_Content/)\nin the Titanium Mobile Guides for more information on using web views, including use\ncases, more code examples, and best practices for web view content.\n",
+        "description": "Use the <Titanium.UI.createWebView> method or **`<WebView>`** Alloy element to create a web view.\n\nWeb views are more expensive to create than other native views because of the requirement to\nload the HTML browser into memory.\n\nThe web view content can be any valid web content such as HTML, PDF, SVG or other WebKit supported\ncontent types.\n\n#### JavaScript Context in WebViews--Local vs. Remote Content\n\nJavaScript in the web view executes in its own context.  The web view can interact with this\ncontent, but most of this functionality is limited to local content.\n\n**Local Scripts**\n\nWhen running local web content\n(that is, content that is included in the application's resources), scripts have\naccess to the Titanium namespace. In particular, when running local web content:\n\n- You can use <Titanium.App.addEventListener> and\n  <Titanium.App.fireEvent> to receive and send application-level events.\n\n- Events can be logged using the <Titanium.API> logging methods.\n\n**Remote Scripts**\n\nScripts downloaded from remote web servers cannot access the Titanium namespace.\n\nTo interact with remote content, wait until the content is loaded, then use the\n[evalJS](Titanium.UI.WebView.evalJS) method to execute a JavaScript expression\ninside the web view and retrieve the value of an expression.\n\nTo trigger a message from the remote web page, refer to <Titanium.UI.WebView.addScriptMessageHandler>.\n\nYou can inject the local `Ti.App.fireEvent` bindings yourself by adding a script element using\nevalJS.\n\n```js\nwebview.evalJS(\n  'javascript=(function addBinding(){' +\n    'var s=document.createElement(\"script\");' +\n    's.setAttribute(\"type\",\"text/javascript\");' +\n    's.innerHTML=\"' + /* insert content of binding.min.js */ + '\";'\n    +\n    'document.getElementsByTagName(\"body\")[0].appendChild(s);' +\n  '})()'\n);\n```\nThe `binding.min.js` is available in the [repository](https://github.com/tidev/titanium-sdk/tree/main/android/modules/ui/assets/Resources/ti.internal/webview).\n\n#### Local JavaScript Files\n\nDuring the build process for creating a package, all JavaScript files, that is, any file with a\n'.js' extension, are removed and their content is encrypted and obfuscated into one resource,\ncausing these files to not load properly in a WebView if they are loaded externally.\n\nFor JavaScript files referenced in static local HTML files, these JavaScript files are omitted\nfrom processing and left intact, which means they can be correctly loaded in the WebView.\n\nFor local JavaScript files not referenced in static local HTML files, for example, a\ndynamically-generated HTML file referencing a local JavaScript file,\nrename the file extension of the local JavaScript files to '.jslocal' instead of '.js'.\n\nThe build process for testing your application on the simulator, emulator or device does not\naffect the loading of local JavaScript files.\n\n#### iOS Platform Implementation Notes\n\nOn the iOS platform, the native web view handles scrolling and other related touch\nevents internally. If you add event listeners on the web view **or its parent views**\nfor any of the standard touch events (`touchstart`, `click`, and so on), these events\ndo not reach the native web view, and the user will not be able to scroll, zoom, click\non links, and so on. To prevent this default behavior, set\n[willHandleTouches](Titanium.UI.WebView.willHandleTouches) to `false`.\n\nIn other words, you can have either Titanium-style events against the\nweb view instance, or internal JavaScript events in the DOM, but not both.\n\n#### Android Platform Implementation Notes\n\n**Android 4.4 and Later Support**\n\nStarting with Android 4.4 (API Level 19), the WebView component is based off of Chromium,\nintroducing a number of changes to its rendering engine.  Web content may look or behave\ndifferently depending on the Android version.  The WebView does not\nhave full feature parity with Chrome for Android.\n\nBy default, the Chromium WebView uses hardware acceleration, which may cause content to\nfail to render. If the WebView fails to render the content, the web view will clear\nitself, displaying only the default background color. The following log messages will be\ndisplayed in the console:\n\n```\n[WARN] :   AwContents: nativeOnDraw failed; clearing to background color.\n[INFO] :   chromium: [INFO:async_pixel_transfer_manager_android.cc(56)]\n```\n\nTo workaround this issue, you can enable software rendering by setting the WebView's\n[borderRadius](Titanium.UI.WebView.borderRadius) property to a value greater than zero.\n\nIf you are developing local HTML content and size your elements using percentages, the WebView may\nnot calculate the sizes correctly when hardware acceleration is enabled, resulting in the same\nbehavior previously mentioned.\n\nTo workaround this issue, you can use the previously mentioned workaround to enable software\nrendering, use absolute size values or use the\n[onresize](https://developer.mozilla.org/en-US/docs/Web/API/Window.onresize) event to set the\nheights of the components.  For example, if you have a div element with an id set to `component`\nthat needs to use the entire web view, the following callback resizes the content to use the\nfull height of the web view:\n\n``` js\nwindow.onresize= function(){\n    document.getElementById(\"component\").style.height = window.innerHeight + 'px';\n};\n```\n\nFor more information, see the following topics:\n\n  * [Android Developers: Migrating to WebView in Android 4.4](https://developer.android.com/guide/webapps/migrating.html)\n  * [Google Chrome: WebView for Android](https://developer.chrome.com/multidevice/webview/overview)\n\n**Plugin Support**\n\nThe Android web view supports native plugins.\n\nTo use plugin content, you must set the [pluginState](Titanium.UI.WebView.pluginState) property\nto either [WEBVIEW_PLUGINS_ON](Titanium.UI.Android.WEBVIEW_PLUGINS_ON) or\n[WEBVIEW_PLUGINS_ON_DEMAND](Titanium.UI.Android.WEBVIEW_PLUGINS_ON_DEMAND).\n\nYou must also call [pause](Titanium.UI.WebView.pause) when the current activity is\npaused, to prevent plugin content from continuing to run in the background. Call\n[resume](Titanium.UI.WebView.resume) when the current activity is resumed. You can\ndo this by adding listeners for the <Titanium.Android.Activity.onPause>\nand <Titanium.Android.Activity.onResume> events.\n\n**Accessing Cookies**\n\nOn Android, the web view uses the system cookie store which does not share cookies with the\n<Titanium.Network.HTTPClient> cookie store. Developers can manage their cookies for both\ncookie stores using the methods <Titanium.Network.addHTTPCookie>, <Titanium.Network.addSystemCookie>,\n<Titanium.Network.getHTTPCookies>, <Titanium.Network.getHTTPCookiesForDomain>, <Titanium.Network.getSystemCookies>,\n<Titanium.Network.removeHTTPCookie>, <Titanium.Network.removeHTTPCookiesForDomain>, <Titanium.Network.removeAllHTTPCookies>,\n<Titanium.Network.removeSystemCookie>, <Titanium.Network.removeAllSystemCookies>.\n\n**WKWebView**\n\nWith Titanium SDK 8.0.0, we now use WKWebView to implement Ti.UI.WebView (as Apple has deprecated UIWebView).\nWKWebView has few restriction specially with local file accessing. For supporting custom-fonts with WKWebView\na little modification is required in the HTML files:\n\n``` html\n<style>\n  @font-face\n    {\n      font-family: 'Lato-Regular';\n      src: url('fonts/Lato-Regular.ttf');\n    }\n</style>\n```\n\nTo have a WKWebView scale the page the same way as UIWebView, add the following meta tag to the HTML header:\n\n``` html\n<html>\n  <head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  </head>\n</html>\n```\n\n### Ti.UI.SIZE and WebViews\n\nWith Titanium 8.0.0+, <Titanium.UI.SIZE> does not work for WebViews. We recommend to give a **fixed height**\nto <Titanium.UI.WebView> (as noted in [TIDOC-3355](https://jira-archive.titaniumsdk.com/TIDOC-3355)).\n\nAs a workaround you can try to get the `document.body.scrollHeight` inside <Titanium.UI.WebView.load> event\nof webview and set the height to webview. See following example.\n\n``` js\nvar win = Ti.UI.createWindow();\n\nvar verticalView = Ti.UI.createView({layout: 'vertical', width: \"100%\", height: \"100%\"});\n\nverticalView.add(Ti.UI.createLabel({text: 'Label 1', top: 30, width: Ti.UI.SIZE, height: Ti.UI.SIZE}));\n\nvar htmla = \"<div style='font-family: Helvetica Neue; font-size:16px'><ul><li>Item 1</li><li>Item 2</li></ul></div>\";\nvar html = \"<!DOCTYPE html>\";\n\nhtml += \"<html><head><meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'><style type='text/css'>html {-webkit-text-size-adjust: none;}</style><script type='text/javascript'>document.ontouchmove = function(event){event.preventDefault();}</script></head><body style='overflow: hidden'>\";\nhtml += htmla;\nhtml += \"</body></html>\";\n\nvar webview = Ti.UI.createWebView({left: '14dp', right: '14dp', top: '7dp', height: Ti.UI.SIZE, html: html, backgroundColor: \"yellow\"});\n\nverticalView.add(webview);\n\nverticalView.add(Ti.UI.createLabel({text: 'Label 2', top: 30, width: Ti.UI.SIZE, height: Ti.UI.SIZE}));\n\nwin.add(verticalView);\n\nwin.open();\n\nwebview.addEventListener('load', function(e) {\n  var result = webview.evalJSSync('document.body.scrollHeight');\n  Ti.API.info('webview height: ' + result);\n  webview.height = result;\n});\n```\n\n#### For More Information\n\nSee [Integrating Web\nContent](https://titaniumsdk.com/guide/Titanium_SDK/Titanium_SDK_How-tos/Integrating_Web_Content/)\nin the Titanium Mobile Guides for more information on using web views, including use\ncases, more code examples, and best practices for web view content.\n",
         "events": [
             {
                 "name": "click",
@@ -228289,7 +228314,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -229943,7 +229968,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -230513,7 +230538,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -233957,7 +233982,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -235351,7 +235376,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -235921,7 +235946,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -241483,7 +241508,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -242302,7 +242327,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -242648,7 +242673,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -244594,7 +244619,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -245350,7 +245375,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -245696,7 +245721,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -248655,7 +248680,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -249524,7 +249549,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -249870,7 +249895,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -251863,7 +251888,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -253004,7 +253029,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -253354,7 +253379,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -257668,7 +257693,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -258782,7 +258807,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -259132,7 +259157,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -261589,7 +261614,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -262305,7 +262330,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -262650,7 +262675,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -264795,7 +264820,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -265512,7 +265537,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -265858,7 +265883,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -268223,7 +268248,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -268826,7 +268851,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -269151,7 +269176,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -272107,7 +272132,7 @@
             {
                 "name": "ALERT_SEVERITY_DEFAULT",
                 "summary": "Indicates that the system should present the alert using the standard\nalert style.\n",
-                "description": "Use with <Titanium.UI.iOS.createAlertDialog> to specify\nthe alert dialog severity on macOS Catalyst.\n",
+                "description": "Use with <Titanium.UI.createAlertDialog> to specify\nthe alert dialog severity on macOS Catalyst.\n",
                 "platforms": [
                     {
                         "since": "12.0.0",
@@ -272128,7 +272153,7 @@
             {
                 "name": "ALERT_SEVERITY_CRITICAL",
                 "summary": "Indicates that the system should present the alert using the\ncritical, or caution, style.\n",
-                "description": "Use with <Titanium.UI.iOS.createAlertDialog> to specify\nthe alert dialog severity on macOS Catalyst.\n",
+                "description": "Use with <Titanium.UI.createAlertDialog> to specify\nthe alert dialog severity on macOS Catalyst.\n",
                 "platforms": [
                     {
                         "since": "12.0.0",
@@ -275184,7 +275209,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -275386,7 +275411,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -275451,7 +275476,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -305275,7 +305300,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -307417,7 +307442,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -307987,7 +308012,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -313746,7 +313771,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -314713,7 +314738,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -315227,7 +315252,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -344450,7 +344475,7 @@
             {
                 "name": "clearMotionEffects",
                 "summary": "Removes all previously added motion effects.",
-                "description": "Use this method together with <Titanium.UI.horizontalMotionEffect> and <Titanium.UI.verticalMotionEffect>.",
+                "description": "Use this method together with <Titanium.UI.View.horizontalMotionEffect> and <Titanium.UI.View.verticalMotionEffect>.",
                 "platforms": [
                     {
                         "since": "8.2.0",
@@ -345131,7 +345156,7 @@
             {
                 "name": "horizontalMotionEffect",
                 "summary": "Adds a horizontal parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
@@ -345421,7 +345446,7 @@
             {
                 "name": "verticalMotionEffect",
                 "summary": "Adds a vertical parallax effect to the view",
-                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.clearMotionEffects> method.\n",
+                "description": "Note that the parallax effect only happens by tilting the device so results can not be seen on Simulator.\nTo clear all motion effects, use the <Titanium.UI.View.clearMotionEffects> method.\n",
                 "platforms": [
                     {
                         "since": "7.3.0",
