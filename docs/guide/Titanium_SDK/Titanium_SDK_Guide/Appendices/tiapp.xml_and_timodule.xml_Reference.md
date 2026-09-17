@@ -91,6 +91,50 @@ On Android, if you change the name to a value that starts with a digit, you need
 
 The copyright of this application.
 
+This value is not visible on the app store pages. It can only be used inside your app via `Ti.App.copyright`.
+
+**Example**
+
+```xml
+<copyright>2026 by Bluth Company</copyright>
+```
+
+### description
+
+The description of this application.
+
+This value is not visible on the app store pages. It can only be used inside your app via `Ti.App.description`.
+
+**Example**
+
+```xml
+<description>Tap to rock out with this block.</description>
+```
+
+### publisher
+
+The publisher of this application.
+
+This value is not visible on the app store pages. It can only be used inside your app via `Ti.App.publisher`.
+
+**Example**
+
+```xml
+<publisher>Bluth Company</publisher>
+```
+
+### url
+
+The URL of this application.
+
+This value is not visible on the app store pages. It can only be used inside your app via `Ti.App.url`.
+
+**Example**
+
+```xml
+<url>http://www.bluthcompany.com/fakeblock</url>
+```
+
 ### deployment-target
 
 This element contains subelements of deployment targets used by the IDE to determine which target options should be shown in the deployment menus.
@@ -114,14 +158,6 @@ By default the Android version will use `en` as a default language. If you want 
 E.g. if you just use i18n/de/strings.xml you will set:
 ```xml
 <defaultLang>de</defaultLang>
-```
-
-### description
-
-The description of this application.
-
-```xml
-<description>Tap to rock out with this block.</description>
 ```
 
 ### fullscreen
@@ -186,16 +222,6 @@ This element includes subelements of plugins to include with the project.
 
 See [Application properties](#app_properties) below.
 
-### publisher
-
-The publisher of this application.
-
-**Example**
-
-```xml
-<publisher>Bluth Company</publisher>
-```
-
 ### statusbar-hidden
 
 Only supported on Android. Will remove the top status bar if set `true`. Default is false.
@@ -208,16 +234,6 @@ Specifies the SDK to build against or use for CLI commands.
 
 ```xml
 <sdk-version>11.1.0.GA</sdk-version>
-```
-
-### url
-
-The URL of this application.
-
-**Example**
-
-```xml
-<url>http://www.bluthcompany.com/fakeblock</url>
 ```
 
 ### version
@@ -306,42 +322,6 @@ Since launch modes cannot be used with Titanium Android, to offer similar behavi
 
 This will start any activity launched from an intent filter as a new task.
 
-### appc-security-jailbreak-detect
-
-The special property `appc-security-jailbreak-detect` can be used to increase the security of your application by preventing the mobile app from running on a Jailbroken (iOS) or rooted (Android) device.
-
-```xml
-<property name="appc-security-jailbreak-detect">true</property>
-```
-
-This feature is disabled by default. If you enable this feature, you will be required to set the property of `remote` for `appc-sourcecode-encryption-policy` in order for it to work. Note: there is no default behavior for `appc_sourcecode-encryption-policy`. You must explicitly set this value.
-
-Setting this property to **false** will allow your application to run on devices that have been jailbroken or rooted.
-
-### appc-security-debugger-detect
-
-The special property `appc-security-debugger-detect` can be used to increase the security of your application by preventing debugging applications from connecting to your mobile app.
-
-```xml
-<property name="appc-security-debugger-detect">true</property>
-```
-
-This feature is disabled by default. If you enable this feature, you will be required to set the property of `remote` for `appc-sourcecode-encryption-policy` in order for it to work. Note: there is no default behavior for `appc_sourcecode-encryption-policy`. You must explicitly set this value.
-
-Setting this property to **false** will allow debug applications to connect to your mobile app.
-
-### appc-sourcecode-encryption-policy
-
-The special property `appc-sourcecode-encryption-policy` determines the encryption policy for application assets. Values can be:
-
-* `embed`: Embeds the encryption key and initialization vector (IV) into the application binary. The key and IV are padded and obfuscated.
-
-* `remote`: Stores the encryption key remotely, which requires the device to have an internet connection to run the application (default behavior).
-
-```xml
-<property name="appc-sourcecode-encryption-policy">remote</property>
-```
-
 ## Android-specific section
 
 Under the top `<ti:app>` element, you may optionally have an `<android>` element that contains Android specific configuration. If the application requires any ad-hoc XML from AndroidManifest.xml, make sure to also add the android XML namespace, as shown in the example below. The official [Android Developers](http://developer.android.com/guide/topics/manifest/manifest-intro.html) website describes all the other elements that are supported, such as `<service>` , `<uses-permission>` and `<activity>` for instance, and these will be added using the same logic.
@@ -426,37 +406,8 @@ Android also supports a number of application properties for various internal se
 | ti.android.shake.factor | double | 1.3 | Shake factor used for the "shake" event in the [Titanium.Gesture module](http://developer.appcelerator.com/apidoc/mobile/latest/Titanium.Gesture-module) |
 | ti.android.shake.quiet.milliseconds | int | 500 | Number of "quiet" milliseconds before the "shake" event is fired |
 | ti.android.shake.active.milliseconds | int | 1000 | Number of "active" milliseconds before the "shake" event is fired |
-| ti.android.google.map.api.key.development | string | N/A | **Deprecated.** Google Maps v1 API Key for use in development. |
-| ti.android.google.map.api.key.production | string | N/A | **Deprecated.** Google Maps v1 API Key for use in production. |
 | ti.android.httpclient.maxbuffersize | int | 524288 | The maximum buffer size (in bytes) before an HTTP response is written to a temporary file instead of memory (default is 512KB) |
-| ti.android.compilejs | bool | N/A | Turns on or off JS compilation. By default, JS compilation is only on when distributing an application, but manually setting this to "true" will enable it for development as well. |
 | ti.android.debug | bool | false | Turn on detailed logging in the SDK |
-| ti.android.root.reappears.restart | bool | false | Restarts the application if the root task was destroyed by Android after a period of inactivity.<br /><br />**(As of Titanium 8.0.0, this property is no longer supported.)** |
-
-**Example: Disable Fastdev**
-
-```xml
-<property name="ti.android.fastdev">false</property>
-```
-
-### Properties to work around Android bugs 2373 and 5277
-
-::: warning ⚠️ Warning
-As of Titanium 8.0.0, this has been deprecated. The new behavior is a data intent will resume a backgrounded app will be resumed and the fire a "newintent" event. Also, the restart dialog box has been removed.
-:::
-
-See [TIMOB-4941](https://jira-archive.titaniumsdk.com/TIMOB-4941), [TIMOB-1559](https://jira-archive.titaniumsdk.com/TIMOB-1559) and [TIMOB-9285](https://jira-archive.titaniumsdk.com/TIMOB-9285) for information about the Titanium workaround to Google issues [2373](http://code.google.com/p/android/issues/detail?id=2373) and [5277](http://code.google.com/p/android/issues/detail?id=5277). TIMOB-9285 in particular has a useful [explanation](https://jira-archive.titaniumsdk.com/TIMOB-9285?focusedCommentId=210304&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-210304) of the issue and of `ti.android.bug2373.finishfalseroot`, the newest of the properties listed below.
-
-| Property Name | Type | Default Value | Description |
-| --- | --- | --- | --- |
-| ti.android.bug2373.finishfalseroot | bool | true | Setting to true will avoid showing any messages to the user and will force any subsequent, anomalous instantiations of the application's launch Activity to finish and disappear without disturbing the user. This is [explained in greater detail](https://jira-archive.titaniumsdk.com/TIMOB-9285?focusedCommentId=210304&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-210304) in JIRA issue TIMOB-9285. This property should be used by itself, without any of the other "bug2373" properties. It is the least intrusive of these properties and should give the best user experience. |
-| ti.android.bug2373.disableDetection | bool | false | setting to true will completely disable the workaround |
-| ti.android.bug2373.title | String | Restart Required | title of dialog |
-| ti.android.bug2373.message | String | An application restart is required | message used in dialog. if _skipAlert_ is true the message is shown in a Toast if message length is > 0 |
-| ti.android.bug2373.buttonText | String | Continue | button text on alert dialog |
-| ti.android.bug2373.restartDelay | int | 500 | number of milliseconds to wait before starting the new copy of the app with the correct Intent settings. |
-| ti.android.bug2373.finishDelay | int | 0 | number of milliseconds to wait before finishing (exiting) the current application. |
-| ti.android.bug2373.skipAlert | bool | false | if true, the dialog box will not be shown, but the workaround will still be applied if _disableDetection_ is false. |
 
 ### Common requirements
 
@@ -656,19 +607,6 @@ Specifies the minimum iOS version supported by this application. The default val
 <ios>
     <!-- Require iOS 9.0 or later -->
     <min-ios-ver>9.0</min-ios-ver>
-</ios>
-```
-
-### min-sdk-ver
-
-Specifies the minimum SDK (Xcode) version supported by this application. The default value when not specified is "8.0".
-
-**Example: Set Xcode 4.3 as the minimum SDK version**
-
-```xml
-<ios>
-    <!-- Require Xcode 9 or later -->
-    <min-sdk-ver>9.0</min-sdk-ver>
 </ios>
 ```
 
