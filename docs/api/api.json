@@ -65690,8 +65690,8 @@
             },
             {
                 "name": "getCurrentPosition",
-                "summary": "Retrieves the last known location from the device.",
-                "description": "On Android, the radios are not turned on to update the location, and a cached\nlocation is used.\n\nOn iOS the radios **may** be used if the location is too \"old\".\n",
+                "summary": "Retrieves the current location from the device.",
+                "description": "On Android, a cached location is returned immediately if it is less than 30 seconds old.\nOtherwise a single fresh fix is requested, through the Google Play Services fused location\nprovider when available or the platform location manager otherwise, using the priority\nselected by <Titanium.Geolocation.accuracy>. The request gives up after 30 seconds, in\nwhich case the callback receives an error and the Promise is rejected, so the call\nalways completes.\n\nOn iOS the radios **may** be used if the location is too \"old\".\n",
                 "platforms": [
                     {
                         "since": "0.8",
