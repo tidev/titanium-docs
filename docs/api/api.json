@@ -38919,6 +38919,590 @@
         ],
         "subtype": "proxy"
     },
+    "Titanium.App.iOS.SceneProxy": {
+        "name": "Titanium.App.iOS.SceneProxy",
+        "summary": "Proxy object representing a UIWindowScene in a multi-scene iOS application.",
+        "extends": "Titanium.Proxy",
+        "platforms": [
+            {
+                "since": "14.0.0",
+                "name": "iphone"
+            },
+            {
+                "since": "14.0.0",
+                "name": "ipad"
+            },
+            {
+                "since": "14.0.0",
+                "name": "macos"
+            }
+        ],
+        "type": "object",
+        "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/iOS/SceneProxy.yml",
+        "description": "A SceneProxy provides access to a single UIWindowScene instance and its properties.\nScene proxies are obtained via <Titanium.App.iOS.currentScene>, <Titanium.App.iOS.scenes>,\n<Titanium.App.iOS.focusedScene>, or the <Titanium.UI.Window.scene> property.\n\nMulti-scene support is available on iOS 13 and later. The Titanium SDK includes\na default `UIApplicationSceneManifest` in the generated `Info.plist` with\n`UIApplicationSupportsMultipleScenes` set to `true` and a single scene configuration\nnamed \"Default Configuration\" with delegate class `TiApp`.\n\nTo add additional scene configurations (e.g., for CarPlay or custom window scenes),\nadd them under the `<ios><plist><dict>` section in your `tiapp.xml`:\n\n    <ios>\n        <plist>\n            <dict>\n                <key>UIApplicationSceneManifest</key>\n                <dict>\n                    <key>UIApplicationSupportsMultipleScenes</key>\n                    <true/>\n                    <key>UISceneConfigurations</key>\n                    <dict>\n                        <key>UIWindowSceneSessionRoleApplication</key>\n                        <array>\n                            <dict>\n                                <key>UISceneConfigurationName</key>\n                                <string>Default Configuration</string>\n                                <key>UISceneDelegateClassName</key>\n                                <string>TiApp</string>\n                            </dict>\n                        </array>\n                    </dict>\n                </dict>\n            </dict>\n        </plist>\n    </ios>\n\nIn single-scene apps (iOS versions prior to 13.0 or apps without a scene manifest),\n`currentScene` returns `null` and `scenes` returns an empty array.\n\n### Example\n\n``` js\n// Get the current scene\nvar scene = Ti.App.iOS.currentScene;\nTi.API.info('Scene ID: ' + scene.sceneId);\nTi.API.info('Scene Name: ' + scene.sceneName);\nTi.API.info('Active: ' + scene.isActive);\nTi.API.info('Foreground: ' + scene.isForeground);\nTi.API.info('Primary: ' + scene.isPrimary);\nTi.API.info('Key (focused): ' + scene.isKey);\n\n// Get trait collection info\nvar traits = scene.traitCollection;\nTi.API.info('UI Style: ' + traits.userInterfaceStyle);\nTi.API.info('Horizontal Size Class: ' + traits.horizontalSizeClass);\nTi.API.info('Vertical Size Class: ' + traits.verticalSizeClass);\n```\n",
+        "events": [
+            {
+                "name": "focus",
+                "summary": "Fired when this scene becomes active and can receive user input.",
+                "description": "Fires when the scene transitions to the active state, meaning it is in the\nforeground and receiving user input events. This is the per-scene equivalent\nof the legacy [resumed](Titanium.App.iOS.resumed) event and mirrors\n[Titanium.UI.Window.focus](Titanium.UI.Window.focus) at the scene level.\n\nAdd a listener via `scene.addEventListener('focus', fn)`. The\nlistener fires only for this scene, not for other scenes in the app.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "sceneId",
+                        "summary": "The unique identifier of the scene.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "scene",
+                        "summary": "The scene proxy that became active.",
+                        "type": "Titanium.App.iOS.SceneProxy"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
+            },
+            {
+                "name": "blur",
+                "summary": "Fired when this scene is about to resign the active state.",
+                "description": "Fires when the scene is about to lose its active status, for example when a\nsystem overlay (like the notification center) covers the scene or when the\nuser switches to another scene. This is the per-scene equivalent of the\nlegacy [pause](Titanium.App.iOS.pause) event and mirrors\n[Titanium.UI.Window.blur](Titanium.UI.Window.blur) at the scene level.\n\nAdd a listener via `scene.addEventListener('blur', fn)`.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "sceneId",
+                        "summary": "The unique identifier of the scene.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "scene",
+                        "summary": "The scene proxy that is resigning active.",
+                        "type": "Titanium.App.iOS.SceneProxy"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
+            },
+            {
+                "name": "paused",
+                "summary": "Fired when this scene has entered the background.",
+                "description": "Fires when the scene is no longer visible on screen. This can happen when\nthe user switches to another app or when the scene is dismissed. This is\nthe per-scene equivalent of the legacy [paused](Titanium.App.iOS.paused)\nevent.\n\nAdd a listener via `scene.addEventListener('paused', fn)`.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "sceneId",
+                        "summary": "The unique identifier of the scene.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "scene",
+                        "summary": "The scene proxy that entered the background.",
+                        "type": "Titanium.App.iOS.SceneProxy"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
+            },
+            {
+                "name": "resumed",
+                "summary": "Fired when this scene is about to enter the foreground.",
+                "description": "Fires when the scene transitions from the background to the foreground,\nmeaning it becomes visible on screen but may not yet be active. This is\nthe per-scene equivalent of the legacy [resume](Titanium.App.iOS.resume)\nevent.\n\nAdd a listener via `scene.addEventListener('resumed', fn)`.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "sceneId",
+                        "summary": "The unique identifier of the scene.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "scene",
+                        "summary": "The scene proxy that is entering the foreground.",
+                        "type": "Titanium.App.iOS.SceneProxy"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
+            }
+        ],
+        "methods": [
+            {
+                "name": "addEventListener",
+                "summary": "Adds the specified callback as an event listener for the named event.",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.Proxy",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "summary": "Name of the event.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "callback",
+                        "summary": "Callback function to invoke when the event is fired.",
+                        "type": "Callback<Titanium.Event>"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "removeEventListener",
+                "summary": "Removes the specified callback as an event listener for the named event.",
+                "description": "Multiple listeners can be registered for the same event, so the\n`callback` parameter is used to determine which listener to remove.\n\nWhen adding a listener, you must save a reference to the callback function\nin order to remove the listener later:\n\n``` js\nvar listener = function() { Ti.API.info(\"Event listener called.\"); }\nwindow.addEventListener('click', listener);\n```\n\nTo remove the listener, pass in a reference to the callback function:\n\n``` js\nwindow.removeEventListener('click', listener);\n```\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.Proxy",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "summary": "Name of the event.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "callback",
+                        "summary": "Callback function to remove. Must be the same function passed to `addEventListener`.",
+                        "type": "Callback<Titanium.Event>"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "fireEvent",
+                "summary": "Fires a synthesized event to any registered listeners.",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.Proxy",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "summary": "Name of the event.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "event",
+                        "summary": "A dictionary of keys and values to add to the <Titanium.Event> object sent to the listeners.",
+                        "type": "Dictionary",
+                        "optional": true
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "applyProperties",
+                "summary": "Applies the properties to the proxy.",
+                "description": "Properties are supplied as a dictionary. Each key-value pair in the object is applied to the proxy such that\nmyproxy[key] = value.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.Proxy",
+                "parameters": [
+                    {
+                        "name": "props",
+                        "summary": "A dictionary of properties to apply.",
+                        "type": "Dictionary"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            }
+        ],
+        "properties": [
+            {
+                "name": "bubbleParent",
+                "summary": "Indicates if the proxy will bubble an event to its parent.",
+                "description": "Some proxies (most commonly views) have a relationship to other proxies, often\nestablished by the add() method. For example, for a button added to a window, a\nclick event on the button would bubble up to the window. Other common parents are\ntable sections to their rows, table views to their sections, and scrollable views\nto their views. Set this property to false to disable the bubbling to the proxy's parent.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.Proxy",
+                "type": "Boolean",
+                "default": true
+            },
+            {
+                "name": "apiName",
+                "summary": "The name of the API that this proxy corresponds to.",
+                "description": "The value of this property is the fully qualified name of the API. For example, [Button](Titanium.UI.Button)\nreturns `Ti.UI.Button`.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.Proxy",
+                "type": "String",
+                "permission": "read-only"
+            },
+            {
+                "name": "id",
+                "summary": "The unique identifier of the scene (alias for sceneId).",
+                "description": "Convenience accessor that returns the same value as <Titanium.App.iOS.SceneProxy.sceneId>.\nThis is the `persistentIdentifier` of the scene's `UISceneSession`.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "String",
+                "permission": "read-only"
+            },
+            {
+                "name": "sceneId",
+                "summary": "The unique identifier of the scene.",
+                "description": "The `persistentIdentifier` of the scene's `UISceneSession`.\nThis value uniquely identifies the scene across its lifetime.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "String",
+                "permission": "read-only"
+            },
+            {
+                "name": "sceneName",
+                "summary": "The configuration name of the scene.",
+                "description": "The name of the `UISceneConfiguration` used to create this scene.\nDefaults to \"Default Configuration\" if no custom name is set.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "String",
+                "permission": "read-only"
+            },
+            {
+                "name": "isActive",
+                "summary": "Whether the scene is currently active and receiving input.",
+                "description": "Returns `true` when the scene is in the foreground and receiving events.\nA scene becomes active when the [focus](Titanium.App.iOS.SceneProxy.focus)\nevent fires and inactive when the [blur](Titanium.App.iOS.SceneProxy.blur) fires.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Boolean",
+                "permission": "read-only"
+            },
+            {
+                "name": "isForeground",
+                "summary": "Whether the scene is in the foreground (visible but may not be active).",
+                "description": "Returns `true` when the scene is visible on screen, even if it is not\nthe active scene (for example, when a system overlay is shown on top of it).\nA scene enters the foreground when the [resumed](Titanium.App.iOS.SceneProxy.resumed)\nevent fires and enters the background when [paused](Titanium.App.iOS.SceneProxy.paused) fires.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Boolean",
+                "permission": "read-only"
+            },
+            {
+                "name": "isPrimary",
+                "summary": "Whether this scene is the primary (first) scene.",
+                "description": "Returns `true` for the scene that was launched first or is designated as\nthe primary scene in the scene configuration.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Boolean",
+                "permission": "read-only"
+            },
+            {
+                "name": "isKey",
+                "summary": "Whether this scene's window is the one the user is currently interacting with.",
+                "description": "Returns `true` when this scene's window was the last window to receive a touch event.\nThis is the most reliable way to determine which scene has input focus in\nmulti-scene mode (iPad Split View, Slide Over).\n\n**Important:** In iPad Split View, both scenes report `isKeyWindow` as `true`\nand `activationState` as `foregroundActive` simultaneously. The `isKey` property\nuses hit-test tracking instead, making it a reliable focus indicator.\n\nFor the same information at the module level, use\n<Titanium.App.iOS.focusedScene> which returns the focused scene proxy directly.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Boolean",
+                "permission": "read-only"
+            },
+            {
+                "name": "window",
+                "summary": "The root window proxy for this scene.",
+                "description": "Returns the <Titanium.UI.Window> proxy for the root view controller of this scene.\nReturns `null` if the scene does not have a window.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Titanium.UI.Window",
+                "permission": "read-only"
+            },
+            {
+                "name": "traitCollection",
+                "summary": "The trait collection for this scene.",
+                "description": "Returns a dictionary with the scene's `UITraitCollection` properties:\n\n* `userInterfaceStyle` (Number): The user interface style. One of 0 (Unspecified), 1 (Light), or 2 (Dark).\n* `horizontalSizeClass` (Number): The horizontal size class. One of 0 (Unspecified), 1 (Compact), or 2 (Regular).\n* `verticalSizeClass` (Number): The vertical size class. One of 0 (Unspecified), 1 (Compact), or 2 (Regular).\n* `displayScale` (Number): The display scale factor.\n* `layoutDirection` (Number): The layout direction. One of 0 (Left to Right), 1 (Right to Left).\n\nReturns `null` if the scene does not have a window or on iOS versions prior to 13.0.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Dictionary",
+                "permission": "read-only"
+            }
+        ],
+        "subtype": "proxy"
+    },
     "Titanium.App.iOS.SearchQuery": {
         "name": "Titanium.App.iOS.SearchQuery",
         "summary": "A search query object manages the criteria to apply when searching app content that you have previously \nindexed by using the Core Spotlight APIs.\n",
@@ -45966,6 +46550,95 @@
                         "name": "macos"
                     }
                 ]
+            },
+            {
+                "name": "scenewillconnect",
+                "summary": "Fired when a new scene is being connected to the app.",
+                "description": "This event fires when iOS creates a new scene for the application, for example\nwhen the user opens the app in a new window on iPadOS Split View.\n\nThe `scene` property provides a <Titanium.App.iOS.SceneProxy> with the scene's\nproperties. At this point, the scene is not yet active or in the foreground.\n\nPer-scene lifecycle events (becoming active, resigning active, entering\nbackground, entering foreground) fire on the SceneProxy itself — add listeners\nvia `scene.addEventListener('focus', ...)` rather than on Ti.App.iOS.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "sceneId",
+                        "summary": "The unique identifier of the scene.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "scene",
+                        "summary": "The scene proxy object for the new scene.",
+                        "type": "Titanium.App.iOS.SceneProxy"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
+            },
+            {
+                "name": "scenediddismiss",
+                "summary": "Fired when a scene is dismissed by the user or system.",
+                "description": "This event fires when a scene is removed, for example when the user closes\na scene in iPadOS Split View or the system reclaims scene resources.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "sceneId",
+                        "summary": "The unique identifier of the dismissed scene.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
             }
         ],
         "methods": [
@@ -46370,6 +47043,67 @@
                 ],
                 "returns": {
                     "type": "void"
+                }
+            },
+            {
+                "name": "requestScene",
+                "summary": "Request the system to open a new scene (window).",
+                "description": "Requests that the system activate a new scene session, creating a new\nwindow on iPadOS (Split View or Slide Over). The system will call\n`scene:willConnectToSession:` on a new TiApp instance, which boots\nthe app's JavaScript in the new scene context.\n\nOn iOS versions prior to 13.0, or when the app does not have a\n`UIApplicationSceneManifest` in its Info.plist, the returned Promise\nrejects with an Error.\n\nThe optional `configurationName` parameter specifies which scene\nconfiguration to use from the `UIApplicationSceneManifest`. If omitted,\nthe system uses the default configuration.\n\nReturns a Promise that resolves with an object containing a `scene`\nproperty (a [Titanium.App.iOS.SceneProxy](Titanium.App.iOS.SceneProxy))\nwhen the new scene has connected. The proxy can be used to attach\nper-scene lifecycle listeners such as `focus` and\n`blur`. The Promise rejects with an Error if the system\nrefuses the activation or if multi-scene support is unavailable.\n\nBecause iOS activates scenes asynchronously, the proxy is not\navailable as a synchronous return value. Use `then`/`catch` or\n`await` to receive the proxy.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "options",
+                        "summary": "Optional dictionary with scene configuration options.\n",
+                        "type": "Dictionary<RequestSceneOptions>",
+                        "optional": true
+                    }
+                ],
+                "returns": {
+                    "summary": "A Promise that resolves with `{ scene: Titanium.App.iOS.SceneProxy }`\nwhen the new scene connects, or rejects with an Error if activation\nfails or multi-scene support is unavailable.\n",
+                    "type": "Promise<RequestSceneResult>"
+                }
+            },
+            {
+                "name": "createSceneProxy",
+                "deprecated": null,
+                "summary": "Creates and returns an instance of <Titanium.App.iOS.SceneProxy>.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "parameters",
+                        "summary": "Properties to set on a new object, including any defined by <Titanium.App.iOS.SceneProxy> except those marked not-creation or read-only.\n",
+                        "type": "Dictionary<Titanium.App.iOS.SceneProxy>",
+                        "optional": true
+                    }
+                ],
+                "returns": {
+                    "type": "Titanium.App.iOS.SceneProxy"
                 }
             },
             {
@@ -47954,6 +48688,69 @@
                     "Titanium.App.iOS.USER_INTERFACE_STYLE_LIGHT",
                     "Titanium.App.iOS.USER_INTERFACE_STYLE_DARK"
                 ]
+            },
+            {
+                "name": "currentScene",
+                "summary": "The scene proxy for the current scene context.",
+                "description": "Returns a <Titanium.App.iOS.SceneProxy> object representing the current scene.\nIn multi-scene apps, each scene has its own JavaScript context and `currentScene`\nreturns the scene associated with the calling context.\n\nReturns `null` if scenes are not available (iOS versions prior to 13.0 or apps\nwithout a scene manifest).\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Titanium.App.iOS.SceneProxy",
+                "permission": "read-only"
+            },
+            {
+                "name": "scenes",
+                "summary": "An array of all active scene proxies.",
+                "description": "Returns an array of <Titanium.App.iOS.SceneProxy> objects representing all\ncurrently registered scenes. Each element provides access to the scene's\nproperties such as `isActive`, `isForeground`, and `sceneName`.\n\nReturns an empty array if scenes are not available (iOS versions prior to 13.0\nor apps without a scene manifest).\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Array<Titanium.App.iOS.SceneProxy>",
+                "permission": "read-only"
+            },
+            {
+                "name": "focusedScene",
+                "summary": "The scene proxy for the scene the user is currently interacting with.",
+                "description": "Returns a <Titanium.App.iOS.SceneProxy> object representing the scene that\nthe user last interacted with (tapped, scrolled, etc.). This is determined\nby tracking which window received the most recent touch event via hit testing.\n\nIn multi-scene mode (iPad Split View, Slide Over), both scenes may report\n`isActive` and `isForeground` as `true` simultaneously. The `focusedScene`\nproperty reliably identifies which scene has input focus, unlike\n<Titanium.App.iOS.SceneProxy.isKey> which uses the same tracking mechanism\nbut is accessed per-scene.\n\nReturns `null` if no scene has been interacted with yet (e.g., on app launch\nbefore any touch) or on iOS versions prior to 13.0.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Titanium.App.iOS.SceneProxy",
+                "permission": "read-only"
             }
         ]
     },
@@ -48530,6 +49327,75 @@
                     }
                 ],
                 "type": "Array<Titanium.App.iOS.UserNotificationCategory>"
+            }
+        ]
+    },
+    "RequestSceneOptions": {
+        "name": "RequestSceneOptions",
+        "summary": "Dictionary of options for <Titanium.App.iOS.requestScene>.\n",
+        "extends": "Object",
+        "platforms": [
+            {
+                "since": "14.0.0",
+                "name": "iphone"
+            },
+            {
+                "since": "14.0.0",
+                "name": "ipad"
+            }
+        ],
+        "type": "pseudo",
+        "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/iOS/iOS.yml",
+        "properties": [
+            {
+                "name": "configurationName",
+                "summary": "The name of the `UISceneConfiguration` to use. Must match a\nconfiguration name in the app's `UIApplicationSceneManifest`.\nIf omitted, the system uses the default configuration.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "String",
+                "optional": true
+            }
+        ]
+    },
+    "RequestSceneResult": {
+        "name": "RequestSceneResult",
+        "summary": "Resolution value of the Promise returned by <Titanium.App.iOS.requestScene>\nwhen the newly-requested scene has connected.\n",
+        "extends": "Object",
+        "platforms": [
+            {
+                "since": "14.0.0",
+                "name": "iphone"
+            },
+            {
+                "since": "14.0.0",
+                "name": "ipad"
+            }
+        ],
+        "type": "pseudo",
+        "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/iOS/iOS.yml",
+        "properties": [
+            {
+                "name": "scene",
+                "summary": "The scene proxy for the newly-connected scene.",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Titanium.App.iOS.SceneProxy"
             }
         ]
     },
@@ -101831,6 +102697,22 @@
                     }
                 ],
                 "type": "String"
+            },
+            {
+                "name": "window",
+                "summary": "The window to present the alert in, for scene-aware display.",
+                "description": "In multi-scene apps on iPadOS, alert dialogs are normally presented in the\nforeground (key) scene's window. Setting this property to a specific\n<Titanium.UI.Window> ensures the alert is presented in the same scene\nas that window, even if the window is not in the foreground.\n\nThis is essential for Split View scenarios where multiple scenes are\nvisible simultaneously and an alert should appear in the correct scene.\n\n``` js\nvar dialog = Ti.UI.createAlertDialog({\n    title: 'Scene Alert',\n    message: 'This alert appears in the correct scene.'\n});\ndialog.window = myWindow; // Present in this window's scene\ndialog.show();\n```\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Titanium.UI.Window"
             }
         ],
         "subtype": "view"
@@ -237763,6 +238645,23 @@
                 ],
                 "type": "Boolean",
                 "default": false
+            },
+            {
+                "name": "scene",
+                "summary": "The scene proxy associated with this window.",
+                "description": "Returns a <Titanium.App.iOS.SceneProxy> object representing the UIWindowScene\nthat this window belongs to. In multi-scene apps on iPadOS, each window is\nassociated with a specific scene. Use this property to access scene-specific\ninformation such as trait collections.\n\nReturns `null` if scenes are not available (iOS versions prior to 13.0 or\napps without a scene manifest).\n\n``` js\nvar win = Ti.UI.createWindow({ backgroundColor: '#fff' });\nwin.addEventListener('open', function() {\n    var scene = win.scene;\n    if (scene) {\n        Ti.API.info('Window belongs to scene: ' + scene.sceneId);\n    }\n});\n```\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Titanium.App.iOS.SceneProxy",
+                "permission": "read-only"
             },
             {
                 "name": "modalStyle",
