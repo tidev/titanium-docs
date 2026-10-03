@@ -41,10 +41,12 @@ inside the web view and retrieve the value of an expression.
 
 To trigger a message from the remote web page, refer to <Titanium.UI.WebView.addScriptMessageHandler>.
 
+<b>Android</b>:
 You can inject the local `Ti.App.fireEvent` bindings yourself by adding a script element using
-evalJS.
+[injectEventBindings](Titanium.UI.WebView.injectEventBindings) or manually with evalJS:
 
 ```js
+// manual version
 webview.evalJS(
   'javascript=(function addBinding(){' +
     'var s=document.createElement("script");' +
@@ -55,7 +57,12 @@ webview.evalJS(
   '})()'
 );
 ```
+
 The `binding.min.js` is available in the [repository](https://github.com/tidev/titanium-sdk/tree/main/android/modules/ui/assets/Resources/ti.internal/webview).
+
+<b>iOS</b>:
+For iOS have a look at the example in <Titanium.UI.WebView.addScriptMessageHandler> for custom handler names or if you run the manual evalJS version
+you have to register `webview.addScriptMessageHandler('_Ti_');` to listen to the default `Ti.App.fireEvents` from the WebView.
 
 ### Local JavaScript Files
 
