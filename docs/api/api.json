@@ -46530,6 +46530,53 @@
                 ]
             },
             {
+                "name": "hingechange",
+                "summary": "Fired when the hinge of a foldable device (iPhone Duo) changes its status or angle.",
+                "description": "The event is fired continuously while the user folds or unfolds the device. Use it for effects, such as\nadapting an animation to the fold, and not as an input for your layout. Lay out your content with the size of the window instead.\n\nAfter the first listener is added, the event is fired once with the current state of the hinge.\n\nHinge events are only reported on iPhone Duo with iOS 27.1 or later and if the app was built with\nthe iOS 27.1 SDK or later. The event is never fired on other devices.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "status",
+                        "summary": "The status of the hinge.",
+                        "type": "Number"
+                    },
+                    {
+                        "name": "angle",
+                        "summary": "The current angle of the hinge in degrees. `0` if the device is closed and `180` if the device is\nlaid out flat. `0` if the status is <Titanium.App.iOS.HINGE_STATUS_UNKNOWN>.\n",
+                        "type": "Number"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
+            },
+            {
                 "name": "screenshotcaptured",
                 "deprecated": {
                     "notes": "Use [Titanium.App.screenshotcaptured](Titanium.App.screenshotcaptured) instead.",
@@ -48750,6 +48797,74 @@
                     }
                 ],
                 "type": "Titanium.App.iOS.SceneProxy",
+                "permission": "read-only"
+            },
+            {
+                "name": "HINGE_STATUS_UNKNOWN",
+                "summary": "The status of the hinge is unknown.",
+                "description": "Reported if the hinge status can not be determined, for example if the app is not in a hierarchy that provides hinge updates.\n\nUse with the `status` of the <Titanium.App.iOS.hingechange> event.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "HINGE_STATUS_CLOSED",
+                "summary": "The hinge is closed.",
+                "description": "The device is folded shut.\n\nUse with the `status` of the <Titanium.App.iOS.hingechange> event.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "HINGE_STATUS_PARTIALLY_OPEN",
+                "summary": "The hinge is partially open.",
+                "description": "The device is partially folded. Content can use the fold for layout, for example by dividing it into two areas.\n\nUse with the `status` of the <Titanium.App.iOS.hingechange> event.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "HINGE_STATUS_FULLY_OPEN",
+                "summary": "The hinge is fully open.",
+                "description": "The hinge is open as far as the device allows.\n\nUse with the `status` of the <Titanium.App.iOS.hingechange> event.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Number",
                 "permission": "read-only"
             }
         ]
