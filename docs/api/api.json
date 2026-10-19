@@ -119233,6 +119233,28 @@
                 "type": "Titanium.UI.AttributedString"
             },
             {
+                "name": "axisBehavior",
+                "summary": "Whether the button prefers to be shown in a horizontal or a vertical bar.",
+                "description": "Only used if the button is used as a navigation bar button (<Titanium.UI.Window.leftNavButton>,\n<Titanium.UI.Window.rightNavButton>, <Titanium.UI.Window.leftNavButtons>, <Titanium.UI.Window.rightNavButtons>)\nor as a toolbar item. On iPhone Duo and apps built with the iOS 27.1 SDK or later, the system lays out\nthose bars vertically.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Number",
+                "default": "<Titanium.UI.iOS.BAR_BUTTON_AXIS_BEHAVIOR_AUTOMATIC>",
+                "constants": [
+                    "Titanium.UI.iOS.BAR_BUTTON_AXIS_BEHAVIOR_AUTOMATIC",
+                    "Titanium.UI.iOS.BAR_BUTTON_AXIS_BEHAVIOR_HORIZONTAL_ONLY",
+                    "Titanium.UI.iOS.BAR_BUTTON_AXIS_BEHAVIOR_VERTICAL_PREFERRED"
+                ]
+            },
+            {
                 "name": "color",
                 "summary": "Default button text color, as a color name or hex triplet.",
                 "description": "For information about color values, see the \"Colors\" section of <Titanium.UI>.\n",
@@ -119676,6 +119698,28 @@
                     "Titanium.UI.TEXT_VERTICAL_ALIGNMENT_BOTTOM",
                     "Titanium.UI.TEXT_VERTICAL_ALIGNMENT_CENTER",
                     "Titanium.UI.TEXT_VERTICAL_ALIGNMENT_TOP"
+                ]
+            },
+            {
+                "name": "visibilityPriority",
+                "summary": "Defines which buttons are moved into the overflow menu first when a bar runs out of space.",
+                "description": "Only used if the button is used as a navigation bar button (<Titanium.UI.Window.leftNavButton>,\n<Titanium.UI.Window.rightNavButton>, <Titanium.UI.Window.leftNavButtons>, <Titanium.UI.Window.rightNavButtons>)\nor as a toolbar item. Buttons with a lower priority collapse into the overflow menu before buttons with a higher priority.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Number",
+                "default": "<Titanium.UI.iOS.BAR_BUTTON_VISIBILITY_PRIORITY_STANDARD>",
+                "constants": [
+                    "Titanium.UI.iOS.BAR_BUTTON_VISIBILITY_PRIORITY_LOW",
+                    "Titanium.UI.iOS.BAR_BUTTON_VISIBILITY_PRIORITY_STANDARD",
+                    "Titanium.UI.iOS.BAR_BUTTON_VISIBILITY_PRIORITY_HIGH"
                 ]
             }
         ],
@@ -239138,6 +239182,49 @@
                 ]
             },
             {
+                "name": "verticalBarBehavior",
+                "summary": "Whether the system may lay out the bars of this window vertically.",
+                "description": "On iPhone Duo and apps built with the iOS 27.1 SDK or later, the system moves the navigation bar and\ntoolbar buttons into a vertical bar along the screen edge. Set this property to\n<Titanium.UI.iOS.VERTICAL_BAR_BEHAVIOR_DISABLED> to opt out and keep the standard horizontal top and bottom bars.\n\nOnly disable the vertical bar for screens that are better served by horizontal bars, such as a\nfull-screen video player or a non-scrolling layout like a calculator. Treat it as a stable choice and\navoid changing it frequently while the user navigates.\n\nWhen the window is shown inside a <Titanium.UI.NavigationWindow> or <Titanium.UI.TabGroup>, set this property\non the content window. The preference of the currently visible window is used.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Number",
+                "default": "<Titanium.UI.iOS.VERTICAL_BAR_BEHAVIOR_AUTOMATIC>",
+                "constants": [
+                    "Titanium.UI.iOS.VERTICAL_BAR_BEHAVIOR_AUTOMATIC",
+                    "Titanium.UI.iOS.VERTICAL_BAR_BEHAVIOR_DISABLED"
+                ]
+            },
+            {
+                "name": "verticalBarCompressionBehavior",
+                "summary": "Defines whether the bar items or the tab bar compress first when the vertical bar runs out of space.",
+                "description": "This property only has an effect if the window is shown with a vertical bar (iPhone Duo, iOS 27.1 SDK or later).\nIt is applied to the navigation item of the window, so the window needs to be inside a\n<Titanium.UI.NavigationWindow> or <Titanium.UI.TabGroup>.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Number",
+                "default": "<Titanium.UI.iOS.VERTICAL_BAR_COMPRESSION_BEHAVIOR_AUTOMATIC>",
+                "constants": [
+                    "Titanium.UI.iOS.VERTICAL_BAR_COMPRESSION_BEHAVIOR_AUTOMATIC",
+                    "Titanium.UI.iOS.VERTICAL_BAR_COMPRESSION_BEHAVIOR_PREFERS_BAR_ITEMS",
+                    "Titanium.UI.iOS.VERTICAL_BAR_COMPRESSION_BEHAVIOR_PREFERS_TAB_BAR"
+                ]
+            },
+            {
                 "name": "width",
                 "summary": "Window's width, in platform-specific units.",
                 "description": "On Windows Phone and Windows 10 Mobile, this property does not take any effect.\nOn Windows 10 Store App, resizing Window takes no effect in following cases\naccording to [Windows Runtime API document](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.viewmanagement.applicationview.tryresizeview).\n* The requested size is larger than the available work area.\n* The requested size is less than the view's minimum size.\n* The smallest allowed minimum size is 192 x 48 effective pixels.\n* The largest allowed minimum size is 500 x 500 effective pixels.\n* This method is called while in while the app is running in Tablet Mode.\n",
@@ -276370,6 +276457,237 @@
                     },
                     {
                         "since": "13.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "BAR_BUTTON_VISIBILITY_PRIORITY_LOW",
+                "summary": "The item is moved into the overflow menu first when the bar runs out of space.",
+                "description": "Use with <Titanium.UI.Button.visibilityPriority>.\nItems with a low priority are the first to collapse into the bar's overflow menu.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "BAR_BUTTON_VISIBILITY_PRIORITY_STANDARD",
+                "summary": "The default priority of a bar item.",
+                "description": "Use with <Titanium.UI.Button.visibilityPriority>.\nStandard priority items collapse after low priority items and before high priority items.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "BAR_BUTTON_VISIBILITY_PRIORITY_HIGH",
+                "summary": "The item stays visible as long as possible when the bar runs out of space.",
+                "description": "Use with <Titanium.UI.Button.visibilityPriority>.\nItems with a high priority are the last to collapse into the bar's overflow menu.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "BAR_BUTTON_AXIS_BEHAVIOR_AUTOMATIC",
+                "summary": "The system decides if the item is shown in a horizontal or vertical bar.",
+                "description": "Use with <Titanium.UI.Button.axisBehavior>.\nThis is the default behavior.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "BAR_BUTTON_AXIS_BEHAVIOR_HORIZONTAL_ONLY",
+                "summary": "The item is only shown in horizontal bars.",
+                "description": "Use with <Titanium.UI.Button.axisBehavior>.\nThe item stays in the top or bottom bar, even if the system lays out the other items in a vertical bar (iPhone Duo).\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "BAR_BUTTON_AXIS_BEHAVIOR_VERTICAL_PREFERRED",
+                "summary": "The item prefers to be shown in a vertical bar.",
+                "description": "Use with <Titanium.UI.Button.axisBehavior>.\nThe item is shown in the vertical bar whenever the system lays one out (iPhone Duo).\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "VERTICAL_BAR_BEHAVIOR_AUTOMATIC",
+                "summary": "The system decides if a vertical bar is used.",
+                "description": "Use with <Titanium.UI.Window.verticalBarBehavior>.\nThis is the default behavior.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "VERTICAL_BAR_BEHAVIOR_DISABLED",
+                "summary": "The vertical bar is disabled.",
+                "description": "Use with <Titanium.UI.Window.verticalBarBehavior>.\nBar items fall back to the horizontal top and bottom bars and the status bar returns to the horizontal axis.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "VERTICAL_BAR_COMPRESSION_BEHAVIOR_AUTOMATIC",
+                "summary": "The system decides if the bar items or the tab bar compress first.",
+                "description": "Use with <Titanium.UI.Window.verticalBarCompressionBehavior>.\nThis is the default behavior.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "VERTICAL_BAR_COMPRESSION_BEHAVIOR_PREFERS_BAR_ITEMS",
+                "summary": "The bar items compress before the tab bar does.",
+                "description": "Use with <Titanium.UI.Window.verticalBarCompressionBehavior>.\nUse this if the tab bar should stay fully visible while the bar items collapse into the overflow menu.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "VERTICAL_BAR_COMPRESSION_BEHAVIOR_PREFERS_TAB_BAR",
+                "summary": "The tab bar compresses before the bar items do.",
+                "description": "Use with <Titanium.UI.Window.verticalBarCompressionBehavior>.\nUse this if the bar items should stay fully visible while the tab bar collapses.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
                         "name": "macos"
                     }
                 ],
