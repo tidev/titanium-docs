@@ -148527,6 +148527,49 @@
                     }
                 ],
                 "inherits": "Titanium.UI.Window"
+            },
+            {
+                "name": "reservedregionschange",
+                "summary": "Fired when the reserved regions of the window change, e.g. when the device is folded.",
+                "description": "The event is evaluated after every layout pass of the window and only fires if the\nregions returned by [reservedRegions](Titanium.UI.Window.reservedRegions) differ from the previous ones.\nA window has no regions before it is laid out, so the event fires once after the window opened on a device\nthat has reserved regions.\nIt is only available on iPhone Duo with iOS 27.1 or later and if the app was built with the iOS 27.1 SDK\nor later.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "inherits": "Titanium.UI.Window",
+                "properties": [
+                    {
+                        "name": "regions",
+                        "summary": "The current reserved regions of the window, as returned by [reservedRegions](Titanium.UI.Window.reservedRegions).",
+                        "type": "Array<ReservedRegion>"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
             }
         ],
         "examples": [
@@ -151612,6 +151655,24 @@
                 ],
                 "inherits": "Titanium.UI.Window",
                 "type": "Array<Titanium.UI.View>"
+            },
+            {
+                "name": "reservedRegions",
+                "summary": "The regions of the window that are reserved by the system, e.g. by the fold or the inner camera of the iPhone Duo.",
+                "description": "Use this property if you extend your content outside of the safe area, for example using\n[extendSafeArea](Titanium.UI.Window.extendSafeArea), to place custom bars or controls without colliding\nwith system UI.\n\nThere are two kinds of regions:\n\n- `division`: The fold of the device. It divides the window into two areas and is only active while the\n  device is partially folded.\n- `occlusion`: The inner camera of the device. It is only active while the inner camera is in use.\n\nAll regions are returned, including the inactive ones. Check the `active` flag of each region. The\nrectangles are in the coordinate space of the window. The value is an empty array until the window is\nopened, on devices without reserved regions, on iOS versions before 27.1 and if the app was built with\nan SDK before iOS 27.1.\n\nUse the [reservedregionschange](Titanium.UI.Window.reservedregionschange) event to be notified when the regions change.\n\n``` js\nconst win = Ti.UI.createWindow({ extendSafeArea: true });\nwin.addEventListener('open', () => {\n    const fold = win.reservedRegions.find(region => region.kind === 'division' && region.active);\n    if (fold) {\n        console.log(`The fold is at x=${fold.rect.x}, width=${fold.rect.width}`);\n    }\n});\nwin.open();\n```\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "inherits": "Titanium.UI.Window",
+                "type": "Array<ReservedRegion>",
+                "permission": "read-only"
             },
             {
                 "name": "safeAreaPadding",
@@ -190107,6 +190168,49 @@
                         "name": "macos"
                     }
                 ]
+            },
+            {
+                "name": "reservedregionschange",
+                "summary": "Fired when the reserved regions of the window change, e.g. when the device is folded.",
+                "description": "The event is evaluated after every layout pass of the window and only fires if the\nregions returned by [reservedRegions](Titanium.UI.Window.reservedRegions) differ from the previous ones.\nA window has no regions before it is laid out, so the event fires once after the window opened on a device\nthat has reserved regions.\nIt is only available on iPhone Duo with iOS 27.1 or later and if the app was built with the iOS 27.1 SDK\nor later.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "inherits": "Titanium.UI.Window",
+                "properties": [
+                    {
+                        "name": "regions",
+                        "summary": "The current reserved regions of the window, as returned by [reservedRegions](Titanium.UI.Window.reservedRegions).",
+                        "type": "Array<ReservedRegion>"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
             }
         ],
         "examples": [
@@ -192549,6 +192653,24 @@
                 ],
                 "inherits": "Titanium.UI.Window",
                 "type": "Array<Titanium.UI.View>"
+            },
+            {
+                "name": "reservedRegions",
+                "summary": "The regions of the window that are reserved by the system, e.g. by the fold or the inner camera of the iPhone Duo.",
+                "description": "Use this property if you extend your content outside of the safe area, for example using\n[extendSafeArea](Titanium.UI.Window.extendSafeArea), to place custom bars or controls without colliding\nwith system UI.\n\nThere are two kinds of regions:\n\n- `division`: The fold of the device. It divides the window into two areas and is only active while the\n  device is partially folded.\n- `occlusion`: The inner camera of the device. It is only active while the inner camera is in use.\n\nAll regions are returned, including the inactive ones. Check the `active` flag of each region. The\nrectangles are in the coordinate space of the window. The value is an empty array until the window is\nopened, on devices without reserved regions, on iOS versions before 27.1 and if the app was built with\nan SDK before iOS 27.1.\n\nUse the [reservedregionschange](Titanium.UI.Window.reservedregionschange) event to be notified when the regions change.\n\n``` js\nconst win = Ti.UI.createWindow({ extendSafeArea: true });\nwin.addEventListener('open', () => {\n    const fold = win.reservedRegions.find(region => region.kind === 'division' && region.active);\n    if (fold) {\n        console.log(`The fold is at x=${fold.rect.x}, width=${fold.rect.width}`);\n    }\n});\nwin.open();\n```\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "inherits": "Titanium.UI.Window",
+                "type": "Array<ReservedRegion>",
+                "permission": "read-only"
             },
             {
                 "name": "safeAreaPadding",
@@ -234746,6 +234868,48 @@
                         "name": "macos"
                     }
                 ]
+            },
+            {
+                "name": "reservedregionschange",
+                "summary": "Fired when the reserved regions of the window change, e.g. when the device is folded.",
+                "description": "The event is evaluated after every layout pass of the window and only fires if the\nregions returned by [reservedRegions](Titanium.UI.Window.reservedRegions) differ from the previous ones.\nA window has no regions before it is laid out, so the event fires once after the window opened on a device\nthat has reserved regions.\nIt is only available on iPhone Duo with iOS 27.1 or later and if the app was built with the iOS 27.1 SDK\nor later.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "regions",
+                        "summary": "The current reserved regions of the window, as returned by [reservedRegions](Titanium.UI.Window.reservedRegions).",
+                        "type": "Array<ReservedRegion>"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
             }
         ],
         "examples": [
@@ -237915,6 +238079,23 @@
                 "type": "Array<Titanium.UI.View>"
             },
             {
+                "name": "reservedRegions",
+                "summary": "The regions of the window that are reserved by the system, e.g. by the fold or the inner camera of the iPhone Duo.",
+                "description": "Use this property if you extend your content outside of the safe area, for example using\n[extendSafeArea](Titanium.UI.Window.extendSafeArea), to place custom bars or controls without colliding\nwith system UI.\n\nThere are two kinds of regions:\n\n- `division`: The fold of the device. It divides the window into two areas and is only active while the\n  device is partially folded.\n- `occlusion`: The inner camera of the device. It is only active while the inner camera is in use.\n\nAll regions are returned, including the inactive ones. Check the `active` flag of each region. The\nrectangles are in the coordinate space of the window. The value is an empty array until the window is\nopened, on devices without reserved regions, on iOS versions before 27.1 and if the app was built with\nan SDK before iOS 27.1.\n\nUse the [reservedregionschange](Titanium.UI.Window.reservedregionschange) event to be notified when the regions change.\n\n``` js\nconst win = Ti.UI.createWindow({ extendSafeArea: true });\nwin.addEventListener('open', () => {\n    const fold = win.reservedRegions.find(region => region.kind === 'division' && region.active);\n    if (fold) {\n        console.log(`The fold is at x=${fold.rect.x}, width=${fold.rect.width}`);\n    }\n});\nwin.open();\n```\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "type": "Array<ReservedRegion>",
+                "permission": "read-only"
+            },
+            {
                 "name": "safeAreaPadding",
                 "summary": "The padding needed to safely display content without it being overlapped by the screen insets and notches.",
                 "description": "When setting [Window.extendSafeArea](Titanium.UI.Window.extendSafeArea) to `true`, the system's insets\nsuch as a translucent status bar, translucent navigation bar, and/or camera notches will be allowed to\noverlay on top of the window's content. In this case, it is the app developer's responsibility to\nprevent these insets from overlapping key content such as buttons. This property provides the amount of\nspace needed to be added to the left, top, right, and bottom edges of the window root view to do this.\n\nThis property won't return values greater than zero until the window has been opened. It is recommended\nthat you read this property via a <Titanium.UI.View.postlayout> event listener since the padding values can\nchange when when the app's orientation changes or when showing/hiding the action bar.\n\nIf the [Window.extendSafeArea](Titanium.UI.Window.extendSafeArea) property is set `false`, then the\nreturned padding will be all zeros since the root content will be positioned between all insets.\n\nBelow is an example on how to set up a safe-area view container using this property.\n\n``` js\n// Set up a window with a translucent top status bar and translucent nav bar.\n// This will only work on Android 4.4 and newer OS versions.\nvar win = Ti.UI.createWindow({\n    extendSafeArea: true,\n    theme: 'Theme.Titanium.NoTitleBar',\n    windowFlags: Ti.UI.Android.FLAG_TRANSLUCENT_NAVIGATION | Ti.UI.Android.FLAG_TRANSLUCENT_STATUS\n});\n\n// Set up a safe-area view to be laid out between the system insets.\n// You should use this as a container for child views.\nvar safeAreaView = Ti.UI.createView({\n    backgroundColor: 'green'\n});\nwin.add(safeAreaView);\nwin.addEventListener('postlayout', function() {\n    // Update the safe-area view's dimensions after every 'postlayout' event.\n    safeAreaView.applyProperties(win.safeAreaPadding);\n});\n\n// Open the window.\nwin.open();\n```\n",
@@ -239468,6 +239649,126 @@
                     }
                 ],
                 "type": "Size"
+            }
+        ]
+    },
+    "ReservedRegion": {
+        "name": "ReservedRegion",
+        "summary": "A region of a window that is reserved by the system.",
+        "extends": "Object",
+        "platforms": [
+            {
+                "since": "0.8",
+                "name": "android"
+            },
+            {
+                "since": "0.8",
+                "name": "iphone"
+            },
+            {
+                "since": "0.8",
+                "name": "ipad"
+            },
+            {
+                "since": "9.2.0",
+                "name": "macos"
+            }
+        ],
+        "type": "pseudo",
+        "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/Window.yml",
+        "description": "Used by [Window.reservedRegions](Titanium.UI.Window.reservedRegions).\n",
+        "properties": [
+            {
+                "name": "kind",
+                "summary": "The kind of the region. `division` is the fold of the device and `occlusion` is the inner camera.\n",
+                "platforms": [
+                    {
+                        "since": "0.8",
+                        "name": "android"
+                    },
+                    {
+                        "since": "0.8",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "0.8",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "9.2.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "String"
+            },
+            {
+                "name": "active",
+                "summary": "Whether the region currently applies. The `division` region is only active while the device is partially folded.",
+                "platforms": [
+                    {
+                        "since": "0.8",
+                        "name": "android"
+                    },
+                    {
+                        "since": "0.8",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "0.8",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "9.2.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Boolean"
+            },
+            {
+                "name": "rect",
+                "summary": "The rectangle of the region in the coordinate space of the window, including the margins.",
+                "platforms": [
+                    {
+                        "since": "0.8",
+                        "name": "android"
+                    },
+                    {
+                        "since": "0.8",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "0.8",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "9.2.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Dimension"
+            },
+            {
+                "name": "margins",
+                "summary": "The margins that are included in the `rect` around the reserved area, for interactive content.",
+                "platforms": [
+                    {
+                        "since": "0.8",
+                        "name": "android"
+                    },
+                    {
+                        "since": "0.8",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "0.8",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "9.2.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Padding"
             }
         ]
     },
@@ -252693,6 +252994,49 @@
                     }
                 ],
                 "inherits": "Titanium.UI.Window"
+            },
+            {
+                "name": "reservedregionschange",
+                "summary": "Fired when the reserved regions of the window change, e.g. when the device is folded.",
+                "description": "The event is evaluated after every layout pass of the window and only fires if the\nregions returned by [reservedRegions](Titanium.UI.Window.reservedRegions) differ from the previous ones.\nA window has no regions before it is laid out, so the event fires once after the window opened on a device\nthat has reserved regions.\nIt is only available on iPhone Duo with iOS 27.1 or later and if the app was built with the iOS 27.1 SDK\nor later.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "inherits": "Titanium.UI.Window",
+                "properties": [
+                    {
+                        "name": "regions",
+                        "summary": "The current reserved regions of the window, as returned by [reservedRegions](Titanium.UI.Window.reservedRegions).",
+                        "type": "Array<ReservedRegion>"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
             }
         ],
         "examples": [
@@ -255068,6 +255412,24 @@
                 ],
                 "inherits": "Titanium.UI.Window",
                 "type": "Array<Titanium.UI.View>"
+            },
+            {
+                "name": "reservedRegions",
+                "summary": "The regions of the window that are reserved by the system, e.g. by the fold or the inner camera of the iPhone Duo.",
+                "description": "Use this property if you extend your content outside of the safe area, for example using\n[extendSafeArea](Titanium.UI.Window.extendSafeArea), to place custom bars or controls without colliding\nwith system UI.\n\nThere are two kinds of regions:\n\n- `division`: The fold of the device. It divides the window into two areas and is only active while the\n  device is partially folded.\n- `occlusion`: The inner camera of the device. It is only active while the inner camera is in use.\n\nAll regions are returned, including the inactive ones. Check the `active` flag of each region. The\nrectangles are in the coordinate space of the window. The value is an empty array until the window is\nopened, on devices without reserved regions, on iOS versions before 27.1 and if the app was built with\nan SDK before iOS 27.1.\n\nUse the [reservedregionschange](Titanium.UI.Window.reservedregionschange) event to be notified when the regions change.\n\n``` js\nconst win = Ti.UI.createWindow({ extendSafeArea: true });\nwin.addEventListener('open', () => {\n    const fold = win.reservedRegions.find(region => region.kind === 'division' && region.active);\n    if (fold) {\n        console.log(`The fold is at x=${fold.rect.x}, width=${fold.rect.width}`);\n    }\n});\nwin.open();\n```\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "inherits": "Titanium.UI.Window",
+                "type": "Array<ReservedRegion>",
+                "permission": "read-only"
             },
             {
                 "name": "safeAreaPadding",
@@ -258498,6 +258860,49 @@
                     }
                 ],
                 "inherits": "Titanium.UI.Window"
+            },
+            {
+                "name": "reservedregionschange",
+                "summary": "Fired when the reserved regions of the window change, e.g. when the device is folded.",
+                "description": "The event is evaluated after every layout pass of the window and only fires if the\nregions returned by [reservedRegions](Titanium.UI.Window.reservedRegions) differ from the previous ones.\nA window has no regions before it is laid out, so the event fires once after the window opened on a device\nthat has reserved regions.\nIt is only available on iPhone Duo with iOS 27.1 or later and if the app was built with the iOS 27.1 SDK\nor later.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "inherits": "Titanium.UI.Window",
+                "properties": [
+                    {
+                        "name": "regions",
+                        "summary": "The current reserved regions of the window, as returned by [reservedRegions](Titanium.UI.Window.reservedRegions).",
+                        "type": "Array<ReservedRegion>"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
             }
         ],
         "examples": [
@@ -261045,6 +261450,24 @@
                 ],
                 "inherits": "Titanium.UI.Window",
                 "type": "Array<Titanium.UI.View>"
+            },
+            {
+                "name": "reservedRegions",
+                "summary": "The regions of the window that are reserved by the system, e.g. by the fold or the inner camera of the iPhone Duo.",
+                "description": "Use this property if you extend your content outside of the safe area, for example using\n[extendSafeArea](Titanium.UI.Window.extendSafeArea), to place custom bars or controls without colliding\nwith system UI.\n\nThere are two kinds of regions:\n\n- `division`: The fold of the device. It divides the window into two areas and is only active while the\n  device is partially folded.\n- `occlusion`: The inner camera of the device. It is only active while the inner camera is in use.\n\nAll regions are returned, including the inactive ones. Check the `active` flag of each region. The\nrectangles are in the coordinate space of the window. The value is an empty array until the window is\nopened, on devices without reserved regions, on iOS versions before 27.1 and if the app was built with\nan SDK before iOS 27.1.\n\nUse the [reservedregionschange](Titanium.UI.Window.reservedregionschange) event to be notified when the regions change.\n\n``` js\nconst win = Ti.UI.createWindow({ extendSafeArea: true });\nwin.addEventListener('open', () => {\n    const fold = win.reservedRegions.find(region => region.kind === 'division' && region.active);\n    if (fold) {\n        console.log(`The fold is at x=${fold.rect.x}, width=${fold.rect.width}`);\n    }\n});\nwin.open();\n```\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "inherits": "Titanium.UI.Window",
+                "type": "Array<ReservedRegion>",
+                "permission": "read-only"
             },
             {
                 "name": "safeAreaPadding",
