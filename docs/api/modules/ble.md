@@ -8,7 +8,6 @@ editUrl: https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Ble.
 ## Overview
 
 Using Bluetooth Low Energy module is used to interact with Bluetooth Low Energy (BLE) devices.
-
 You can download the module at [appcelerator.ble](https://github.com/tidev/appcelerator.ble/releases)
 
 - Note (IOS): Starting iOS 13, it's mandatory for developers to specify the Privacy Usage Description

@@ -329479,7 +329479,7 @@
         ],
         "type": "module",
         "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Ble.yml",
-        "description": "Using Bluetooth Low Energy module is used to interact with Bluetooth Low Energy (BLE) devices.\n\nYou can download the module at [appcelerator.ble](https://github.com/tidev/appcelerator.ble/releases)\n\n- Note (IOS): Starting iOS 13, it's mandatory for developers to specify the Privacy Usage Description\n  for Bluetooth by including NSBluetoothAlwaysUsageDescription in their tiapp.xml file. Otherwise\n  accessing any Core Bluetooth APIs would lead to a crash. For backward support for older iOS\n  versions, NSBluetoothPeripheralUsageDescription needs to be defined.\n\n- If your app needs to run in background to perform certain Bluetooth-related tasks, it must declare\n  that it supports a Core Bluetooth background execution mode in tiapp.xml using UIBackgroundModes key\n  ``` xml\n  <key>UIBackgroundModes</key>\n  <array>\n      <string>bluetooth-central</string>\n      <string>bluetooth-peripheral</string>\n  </array>\n  ```\n\nbluetooth-central : The app communicates with Bluetooth low energy peripherals using the Core Bluetooth framework.\nbluetooth-peripheral :The app shares data using the Core Bluetooth framework.\n\nThe Apple documentation states that applications are allowed to scan while backgrounded but the\nscan must specify the service types. wild card scan is not supported in the background.\n\nNote: A detailed information about how to use module in your application, can be found with artifacts at path modules/iphone (platform)/appcelerator.ble/x.y.z (version of module)/documentation/index.html\n",
+        "description": "Using Bluetooth Low Energy module is used to interact with Bluetooth Low Energy (BLE) devices.\nYou can download the module at [appcelerator.ble](https://github.com/tidev/appcelerator.ble/releases)\n\n- Note (IOS): Starting iOS 13, it's mandatory for developers to specify the Privacy Usage Description\n  for Bluetooth by including NSBluetoothAlwaysUsageDescription in their tiapp.xml file. Otherwise\n  accessing any Core Bluetooth APIs would lead to a crash. For backward support for older iOS\n  versions, NSBluetoothPeripheralUsageDescription needs to be defined.\n\n- If your app needs to run in background to perform certain Bluetooth-related tasks, it must declare\n  that it supports a Core Bluetooth background execution mode in tiapp.xml using UIBackgroundModes key\n  ``` xml\n  <key>UIBackgroundModes</key>\n  <array>\n      <string>bluetooth-central</string>\n      <string>bluetooth-peripheral</string>\n  </array>\n  ```\n\nbluetooth-central : The app communicates with Bluetooth low energy peripherals using the Core Bluetooth framework.\nbluetooth-peripheral :The app shares data using the Core Bluetooth framework.\n\nThe Apple documentation states that applications are allowed to scan while backgrounded but the\nscan must specify the service types. wild card scan is not supported in the background.\n\nNote: A detailed information about how to use module in your application, can be found with artifacts at path modules/iphone (platform)/appcelerator.ble/x.y.z (version of module)/documentation/index.html\n",
         "methods": [
             {
                 "name": "addEventListener",
@@ -329642,6 +329642,11 @@
                         "name": "restoreIdentifier",
                         "summary": "A string containing a unique identifier (UID) for the central manager to instantiate.",
                         "type": "String"
+                    },
+                    {
+                        "name": "scanMode",
+                        "summary": "Android only. defines the scan mode. Use one of the `SCAN_MODE_*` constants.",
+                        "type": "Number"
                     }
                 ],
                 "returns": {
@@ -330716,7 +330721,7 @@
             {
                 "name": "CONNECT_PERIPHERAL_OPTIONS_KEY_NOTIFY_ON_CONNECTION",
                 "summary": "A Boolean value that specifies whether the system should display an alert when connecting a peripheral in the background.",
-                "description": "options object key used in Modules.BLE.CentralManager.connectPeripheral.\nThe value for this key is an Boolean. This key is useful for apps that haven’t specified the bluetooth-central background mode and can’t display their own alert. \nIf more than one app requests a notification for a given peripheral, the one that was most recently in the foreground receives the alert. If the key isn’t specified,\nthe default value is false.    \n",
+                "description": "options object key used in Modules.BLE.CentralManager.connectPeripheral.\nThe value for this key is an Boolean. This key is useful for apps that haven’t specified the bluetooth-central background mode and can’t display their own alert.\nIf more than one app requests a notification for a given peripheral, the one that was most recently in the foreground receives the alert. If the key isn’t specified,\nthe default value is false.\n",
                 "platforms": [
                     {
                         "since": "1.0.0",
@@ -330733,7 +330738,7 @@
             {
                 "name": "CONNECT_PERIPHERAL_OPTIONS_KEY_NOTIFY_ON_DISCONNECTION",
                 "summary": "A Boolean value that specifies whether the system should display an alert when disconnecting a peripheral in the background.",
-                "description": "options object key used in Modules.BLE.CentralManager.connectPeripheral.\nThe value for this key is an Boolean. This key is useful for apps that haven’t specified the bluetooth-central background mode and can’t display their own alert. \nIf more than one app requests a notification for a given peripheral, the one that was most recently in the foreground receives the alert. If the key isn’t specified,\nthe default value is false.\n",
+                "description": "options object key used in Modules.BLE.CentralManager.connectPeripheral.\nThe value for this key is an Boolean. This key is useful for apps that haven’t specified the bluetooth-central background mode and can’t display their own alert.\nIf more than one app requests a notification for a given peripheral, the one that was most recently in the foreground receives the alert. If the key isn’t specified,\nthe default value is false.\n",
                 "platforms": [
                     {
                         "since": "1.0.0",
@@ -331708,6 +331713,54 @@
                     {
                         "since": "1.1.0",
                         "name": "ipad"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "SCAN_MODE_LOW_POWER",
+                "summary": "Perform Bluetooth LE scan in low power mode. This is the default scan mode as it consumes the least power. This mode is enforced if the scanning application is not in foreground.",
+                "platforms": [
+                    {
+                        "since": "2.1.0",
+                        "name": "android"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "SCAN_MODE_LOW_LATENCY",
+                "summary": "Scan using highest duty cycle. It's recommended to only use this mode when the application is running in the foreground.",
+                "platforms": [
+                    {
+                        "since": "2.1.0",
+                        "name": "android"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "SCAN_MODE_OPPORTUNISTIC",
+                "summary": "A special Bluetooth LE scan mode. Applications using this scan mode will passively listen for other scan results without starting BLE scans themselves.",
+                "platforms": [
+                    {
+                        "since": "2.1.0",
+                        "name": "android"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "SCAN_MODE_BALANCED",
+                "summary": "Perform Bluetooth LE scan in balanced power mode. Scan results are returned at a rate that provides a good trade-off between scan frequency and power consumption.",
+                "platforms": [
+                    {
+                        "since": "2.1.0",
+                        "name": "android"
                     }
                 ],
                 "type": "Number",
