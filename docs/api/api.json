@@ -261874,6 +261874,32 @@
                 "type": "Titanium.UI.Window"
             },
             {
+                "name": "arrangementStyle",
+                "summary": "Defines how the master and detail view are arranged on foldable devices (iPhone Duo).",
+                "description": "With one of the arrangement styles, the system places the master view and the detail view using\n`UIArrangementViewController` and adapts the layout to the shape of the screen and to the fold of the device.\nThe [showMasterInPortrait](Titanium.UI.iOS.SplitWindow.showMasterInPortrait), [masterIsOverlayed](Titanium.UI.iOS.SplitWindow.masterIsOverlayed),\n[portraitSplit](Titanium.UI.iOS.SplitWindow.portraitSplit), [landscapeSplit](Titanium.UI.iOS.SplitWindow.landscapeSplit) and\n[masterViewVisible](Titanium.UI.iOS.SplitWindow.masterViewVisible) properties are ignored while an arrangement style is used.\n\nThe arrangement styles require iOS 27.1 and an app that is built with the iOS 27.1 SDK or later. Otherwise, a warning\nis logged and the default layout is used. The property can be changed while the window is open.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "default": "<Titanium.UI.iOS.SPLIT_WINDOW_ARRANGEMENT_STYLE_DEFAULT>",
+                "constants": [
+                    "Titanium.UI.iOS.SPLIT_WINDOW_ARRANGEMENT_STYLE_DEFAULT",
+                    "Titanium.UI.iOS.SPLIT_WINDOW_ARRANGEMENT_STYLE_SPLIT",
+                    "Titanium.UI.iOS.SPLIT_WINDOW_ARRANGEMENT_STYLE_OVERLAY"
+                ]
+            },
+            {
                 "name": "showMasterInPortrait",
                 "summary": "Determines whether to show the master view in portrait orientation.",
                 "platforms": [
@@ -276373,6 +276399,69 @@
                     },
                     {
                         "since": "9.2.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "SPLIT_WINDOW_ARRANGEMENT_STYLE_DEFAULT",
+                "summary": "Lay out the master and detail view of a split window with the default layout of the split window.",
+                "description": "Use with <Titanium.UI.iOS.SplitWindow.arrangementStyle>. This is the default. The layout is controlled by\nthe properties of the split window, such as `showMasterInPortrait` and `portraitSplit`.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "SPLIT_WINDOW_ARRANGEMENT_STYLE_SPLIT",
+                "summary": "Divide the space between the master and detail view along the longer axis.",
+                "description": "Use with <Titanium.UI.iOS.SplitWindow.arrangementStyle>. The system divides the window between the master view\nand the detail view along its longer axis, so the views are on top of each other in portrait and next to each\nother in landscape. The layout properties of the split window are ignored.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "SPLIT_WINDOW_ARRANGEMENT_STYLE_OVERLAY",
+                "summary": "Stack the master and detail view and move them side by side once the device folds.",
+                "description": "Use with <Titanium.UI.iOS.SplitWindow.arrangementStyle>. The views are stacked on top of each other and the master\nview, which is on top, fills the window. When the device is folded, the system places both views side by side.\nThe layout properties of the split window are ignored.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
                         "name": "macos"
                     }
                 ],
