@@ -257880,7 +257880,7 @@
         ],
         "type": "object",
         "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/iOS/SplitWindow.yml",
-        "description": "The [masterView](Titanium.UI.iOS.SplitWindow.masterView) and [detailView](Titanium.UI.iOS.SplitWindow.detailView) \nproperties are required before the SplitWindow is opened.\n\nYou use this class to implement a master-detail interface, in which the left-side view presents\na list of items and the right-side presents details of the selected item. The `SplitWindow` is supported\nfor both iPhone and iPad idioms. Use the <Titanium.UI.iOS.createSplitWindow> method to create a `SplitWindow` object\n\nBy default, `SplitWindow` shows both master and detail views in landscape orientation. When the\ndevice switches into portrait orientation, the master is only shown if [showMasterInPortrait](Titanium.UI.iOS.SplitWindow.showMasterInPortrait)\nis set to true.\n\nThe property [masterIsOverlayed](Titanium.UI.iOS.SplitWindow.masterIsOverlayed) controls how the master is\ndisplayed in portrait mode. When `masterIsOverlayed` is set to true, the `detailView` occupies the full screen\nand and `masterView` is displayed overlayed on top to the left of the screen. When `masterIsOverlayed` is set\nto false, the available screen width is split between the `masterView` and `detailView`.\n\nThe width of the `masterView` can be controlled by the [portraitSplit](Titanium.UI.iOS.SplitWindow.portraitSplit) and\n[landscapeSplit](Titanium.UI.iOS.SplitWindow.landscapeSplit) properties. These values are capped in the range 0.25 to 0.5.\nAny values outside this range are ignored.\n\nTo add a navigation bar to either the master or detail view of the split window,\nuse a <Titanium.UI.NavigationWindow>.\n\nThe SplitWindow is a top-level window and cannot be contained within another window or view.\n",
+        "description": "The [masterView](Titanium.UI.iOS.SplitWindow.masterView) and [detailView](Titanium.UI.iOS.SplitWindow.detailView)\nproperties are required before the SplitWindow is opened.\n\nYou use this class to implement a master-detail interface, in which the left-side view presents\na list of items and the right-side presents details of the selected item. The `SplitWindow` is supported\nfor both iPhone and iPad idioms. Use the <Titanium.UI.iOS.createSplitWindow> method to create a `SplitWindow` object.\n\nThe `SplitWindow` is backed by the native `UISplitViewController` and uses its default behavior:\n\n* In a wide regular width, such as an iPad in landscape, the master view and the detail view are shown side by side.\n* In a narrower regular width, such as an iPad in portrait, the master view is hidden. The display mode button in the\n  navigation bar of the detail view and a swipe from the leading edge show it as an overlay.\n* In a compact width, such as an iPhone in portrait, the split window collapses to a single column and the system\n  navigates between the master view and the detail view.\n\nUse [displayMode](Titanium.UI.iOS.SplitWindow.displayMode) and [splitBehavior](Titanium.UI.iOS.SplitWindow.splitBehavior)\nto request a different arrangement, [showMasterView](Titanium.UI.iOS.SplitWindow.showMasterView) and\n[hideMasterView](Titanium.UI.iOS.SplitWindow.hideMasterView) to show or hide the master view, and\n[primaryColumnWidthFraction](Titanium.UI.iOS.SplitWindow.primaryColumnWidthFraction) to control its width.\n\nThe system embeds each view in a navigation controller, so the `title` and the navigation bar properties of a\n<Titanium.UI.Window> apply directly. Set `navBarHidden` to `true` on a window to hide its navigation bar. Use a\n<Titanium.UI.NavigationWindow> as `masterView` or `detailView` to push windows inside a pane.\n\nThe SplitWindow is a top-level window and cannot be contained within another window or view.\n",
         "events": [
             {
                 "name": "click",
@@ -258990,16 +258990,87 @@
                         "type": "Boolean"
                     }
                 ]
-            }
-        ],
-        "examples": [
-            {
-                "description": "Split Window",
-                "code": "This is an example of a Split Window.\n\n``` js\nvar detail = Ti.UI.createWindow({ backgroundColor: 'white' });\nvar label1 = Ti.UI.createLabel({ text: 'Detail View' });\ndetail.add(label1);\nvar detailNav = Ti.UI.createNavigationWindow({ window: detail });\n\nvar master = Ti.UI.createWindow({ backgroundColor: 'gray' });\nvar label2 = Ti.UI.createLabel({ text: 'Master View' });\nmaster.add(label2);\nvar masterNav = Ti.UI.createNavigationWindow({ window: master });\n\nvar splitWin = Ti.UI.iOS.createSplitWindow({\n    detailView: detailNav,\n    masterView: masterNav\n});\nsplitWin.open();\n```\n"
             },
             {
-                "description": "Alloy XML Markup",
-                "code": "Below is an Alloy version of the previous example. The first window is the `masterView` and the second window is the `detailView`. You can also use the `<Require>` element to add a `<Window>` or `<NavigationWindow>`.\n\n**views/index.xml:**\n``` xml\n<Alloy>\n  <SplitWindow backgroundColor=\"white\" showMasterInPortrait=\"true\">\n\n    <!-- First window is the masterView -->\n    <NavigationWindow>\n      <Window title=\"Master View\">\n        <ListView>\n          <ListSection headerTitle=\"Some items\">\n            <ListItem title=\"Item 1\" />\n            <ListItem title=\"Item 2\" />\n            <ListItem title=\"Item 3\" />\n          </ListSection>\n        </ListView>\n      </Window>\n    </NavigationWindow>\n\n    <!-- Second window is the detailView -->\n    <NavigationWindow>\n      <Window title=\"Detail View\">\n        <Label>I am the detail view.</Label>\n      </Window>\n    </NavigationWindow>\n  </SplitWindow>\n</Alloy>\n```\n\n**controllers/index.js:**\n``` js\n$.index.open();\n```\n"
+                "name": "displaymodechange",
+                "summary": "Fired before the split window changes its display mode, for example when the master view is shown or hidden.",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "displayMode",
+                        "summary": "The new display mode.",
+                        "type": "Number"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
+            },
+            {
+                "name": "collapse",
+                "summary": "Fired when the split window collapses to a single column, for example when the width becomes compact.",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ]
+            },
+            {
+                "name": "expand",
+                "summary": "Fired when the split window expands from a single column to two columns.",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ]
             }
         ],
         "methods": [
@@ -259730,7 +259801,55 @@
                 }
             },
             {
+                "name": "showMasterView",
+                "summary": "Shows the master view if the current display mode hides it.",
+                "description": "The system animates the change and picks the display mode that fits the available width, for example an\noverlay in a narrow width. Listen to the [displaymodechange](Titanium.UI.iOS.SplitWindow.displaymodechange)\nevent to react to the result.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "hideMasterView",
+                "summary": "Hides the master view if the current display mode shows it.",
+                "description": "The system animates the change. Listen to the [displaymodechange](Titanium.UI.iOS.SplitWindow.displaymodechange)\nevent to react to the result.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
                 "name": "setShowMasterInPortrait",
+                "deprecated": {
+                    "notes": "The layout is owned by the system. Use <Titanium.UI.iOS.SplitWindow.displayMode> instead.",
+                    "since": "14.0.0"
+                },
                 "summary": "Sets the value of the [showMasterInPortrait](Titanium.UI.iOS.SplitWindow.showMasterInPortrait) property.",
                 "platforms": [
                     {
@@ -259754,7 +259873,7 @@
                     },
                     {
                         "name": "options",
-                        "summary": "Determines whether the scrollable region reposition should be animated. On iOS, use the optional property `animated` to animate changes to masterView display mode in portrait orientation. For example\n\n``` js\nsetShowMasterInPortrait(true, { animated: true });\n```\n\nNote that the default here is equivalent to passing in `{ animated: false }`\n",
+                        "summary": "Ignored.",
                         "type": "AnimatedOptions",
                         "optional": true
                     }
@@ -259765,6 +259884,10 @@
             },
             {
                 "name": "setMasterIsOverlayed",
+                "deprecated": {
+                    "notes": "The layout is owned by the system. Use <Titanium.UI.iOS.SplitWindow.splitBehavior> instead.",
+                    "since": "14.0.0"
+                },
                 "summary": "Sets the value of the [masterIsOverlayed](Titanium.UI.iOS.SplitWindow.masterIsOverlayed) property.",
                 "platforms": [
                     {
@@ -259788,7 +259911,7 @@
                     },
                     {
                         "name": "options",
-                        "summary": "Determines whether the scrollable region reposition should be animated. On iOS, use the optional property `animated` to animate changes to masterView display mode in portrait orientation. For example\n\n``` js\nsetMasterIsOverlayed(true, { animated: true });\n```\n\nNote that the default here is equivalent to passing in `{ animated: false }`\n",
+                        "summary": "Ignored.",
                         "type": "AnimatedOptions",
                         "optional": true
                     }
@@ -261874,9 +261997,9 @@
                 "type": "Titanium.UI.Window"
             },
             {
-                "name": "arrangementStyle",
-                "summary": "Defines how the master and detail view are arranged on foldable devices (iPhone Duo).",
-                "description": "With one of the arrangement styles, the system places the master view and the detail view using\n`UIArrangementViewController` and adapts the layout to the shape of the screen and to the fold of the device.\nThe [showMasterInPortrait](Titanium.UI.iOS.SplitWindow.showMasterInPortrait), [masterIsOverlayed](Titanium.UI.iOS.SplitWindow.masterIsOverlayed),\n[portraitSplit](Titanium.UI.iOS.SplitWindow.portraitSplit), [landscapeSplit](Titanium.UI.iOS.SplitWindow.landscapeSplit) and\n[masterViewVisible](Titanium.UI.iOS.SplitWindow.masterViewVisible) properties are ignored while an arrangement style is used.\n\nThe arrangement styles require iOS 27.1 and an app that is built with the iOS 27.1 SDK or later. Otherwise, a warning\nis logged and the default layout is used. The property can be changed while the window is open.\n",
+                "name": "displayMode",
+                "summary": "The arrangement of the master view and the detail view.",
+                "description": "Set one of the `SPLIT_WINDOW_DISPLAY_MODE_*` constants to request a display mode. The system applies the mode when\nthe width allows it. Reading the property returns the display mode in use, which can differ from the requested\none, for example in a compact width where the split window is collapsed.\n",
                 "platforms": [
                     {
                         "since": "14.0.0",
@@ -261892,15 +262015,128 @@
                     }
                 ],
                 "type": "Number",
-                "default": "<Titanium.UI.iOS.SPLIT_WINDOW_ARRANGEMENT_STYLE_DEFAULT>",
+                "default": "<Titanium.UI.iOS.SPLIT_WINDOW_DISPLAY_MODE_AUTOMATIC>",
                 "constants": [
-                    "Titanium.UI.iOS.SPLIT_WINDOW_ARRANGEMENT_STYLE_DEFAULT",
-                    "Titanium.UI.iOS.SPLIT_WINDOW_ARRANGEMENT_STYLE_SPLIT",
-                    "Titanium.UI.iOS.SPLIT_WINDOW_ARRANGEMENT_STYLE_OVERLAY"
+                    "Titanium.UI.iOS.SPLIT_WINDOW_DISPLAY_MODE_AUTOMATIC",
+                    "Titanium.UI.iOS.SPLIT_WINDOW_DISPLAY_MODE_SECONDARY_ONLY",
+                    "Titanium.UI.iOS.SPLIT_WINDOW_DISPLAY_MODE_ONE_BESIDE_SECONDARY",
+                    "Titanium.UI.iOS.SPLIT_WINDOW_DISPLAY_MODE_ONE_OVER_SECONDARY"
                 ]
             },
             {
+                "name": "splitBehavior",
+                "summary": "How the master view and the detail view share the width when both are visible.",
+                "description": "Set one of the `SPLIT_WINDOW_SPLIT_BEHAVIOR_*` constants to request a split behavior. Reading the property returns\nthe split behavior in use, which can differ from the requested one.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "default": "<Titanium.UI.iOS.SPLIT_WINDOW_SPLIT_BEHAVIOR_AUTOMATIC>",
+                "constants": [
+                    "Titanium.UI.iOS.SPLIT_WINDOW_SPLIT_BEHAVIOR_AUTOMATIC",
+                    "Titanium.UI.iOS.SPLIT_WINDOW_SPLIT_BEHAVIOR_TILE",
+                    "Titanium.UI.iOS.SPLIT_WINDOW_SPLIT_BEHAVIOR_OVERLAY",
+                    "Titanium.UI.iOS.SPLIT_WINDOW_SPLIT_BEHAVIOR_DISPLACE"
+                ]
+            },
+            {
+                "name": "presentsWithGesture",
+                "summary": "Determines whether a swipe from the leading edge shows the hidden master view.",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Boolean",
+                "default": true
+            },
+            {
+                "name": "primaryColumnWidthFraction",
+                "summary": "The width of the master view as a fraction of the width of the split window.",
+                "description": "The resulting width is limited by [minimumPrimaryColumnWidth](Titanium.UI.iOS.SplitWindow.minimumPrimaryColumnWidth)\nand [maximumPrimaryColumnWidth](Titanium.UI.iOS.SplitWindow.maximumPrimaryColumnWidth).\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "default": "System default"
+            },
+            {
+                "name": "minimumPrimaryColumnWidth",
+                "summary": "The minimum width of the master view in points.",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "default": "System default"
+            },
+            {
+                "name": "maximumPrimaryColumnWidth",
+                "summary": "The maximum width of the master view in points.",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "default": "System default"
+            },
+            {
                 "name": "showMasterInPortrait",
+                "deprecated": {
+                    "notes": "The layout is owned by the system and this property has no effect. Use\n<Titanium.UI.iOS.SplitWindow.displayMode> with <Titanium.UI.iOS.SPLIT_WINDOW_DISPLAY_MODE_ONE_BESIDE_SECONDARY>\nto always show the master view.\n",
+                    "since": "14.0.0"
+                },
                 "summary": "Determines whether to show the master view in portrait orientation.",
                 "platforms": [
                     {
@@ -261921,8 +262157,11 @@
             },
             {
                 "name": "masterIsOverlayed",
+                "deprecated": {
+                    "notes": "The layout is owned by the system and this property has no effect. Use\n<Titanium.UI.iOS.SplitWindow.splitBehavior> with <Titanium.UI.iOS.SPLIT_WINDOW_SPLIT_BEHAVIOR_OVERLAY>.\n",
+                    "since": "14.0.0"
+                },
                 "summary": "Determines whether to show the master view is overlayed in portrait orientation.",
-                "description": "Note that you need to set `showMasterInPortrait` to `true` if you want to use\nthis property in portrait mode.\n",
                 "platforms": [
                     {
                         "since": "3.6.0",
@@ -261942,6 +262181,10 @@
             },
             {
                 "name": "masterViewVisible",
+                "deprecated": {
+                    "notes": "The layout is owned by the system and this property has no effect. Use\n<Titanium.UI.iOS.SplitWindow.showMasterView> and <Titanium.UI.iOS.SplitWindow.hideMasterView>.\n",
+                    "since": "14.0.0"
+                },
                 "summary": "Determines whether to show the master view or hide.",
                 "platforms": [
                     {
@@ -261962,8 +262205,11 @@
             },
             {
                 "name": "portraitSplit",
+                "deprecated": {
+                    "notes": "The layout is owned by the system and this property has no effect. Use\n<Titanium.UI.iOS.SplitWindow.primaryColumnWidthFraction>.\n",
+                    "since": "14.0.0"
+                },
                 "summary": "Determines the width of the `masterView` in portrait mode.",
-                "description": "These values are capped in the range 0.25 to 0.5. Any values outside this range are ignored.\n",
                 "platforms": [
                     {
                         "since": "3.6.0",
@@ -261983,8 +262229,11 @@
             },
             {
                 "name": "landscapeSplit",
+                "deprecated": {
+                    "notes": "The layout is owned by the system and this property has no effect. Use\n<Titanium.UI.iOS.SplitWindow.primaryColumnWidthFraction>.\n",
+                    "since": "14.0.0"
+                },
                 "summary": "Determines the width of the `masterView` in landscape mode.",
-                "description": "These values are capped in the range 0.25 to 0.5. Any values outside this range are ignored.\n",
                 "platforms": [
                     {
                         "since": "3.6.0",
@@ -276406,9 +276655,9 @@
                 "permission": "read-only"
             },
             {
-                "name": "SPLIT_WINDOW_ARRANGEMENT_STYLE_DEFAULT",
-                "summary": "Lay out the master and detail view of a split window with the default layout of the split window.",
-                "description": "Use with <Titanium.UI.iOS.SplitWindow.arrangementStyle>. This is the default. The layout is controlled by\nthe properties of the split window, such as `showMasterInPortrait` and `portraitSplit`.\n",
+                "name": "SPLIT_WINDOW_DISPLAY_MODE_AUTOMATIC",
+                "summary": "Let the system choose the display mode of a split window that fits the available width.",
+                "description": "Use with <Titanium.UI.iOS.SplitWindow.displayMode>. This is the default.\n",
                 "platforms": [
                     {
                         "since": "14.0.0",
@@ -276427,9 +276676,9 @@
                 "permission": "read-only"
             },
             {
-                "name": "SPLIT_WINDOW_ARRANGEMENT_STYLE_SPLIT",
-                "summary": "Divide the space between the master and detail view along the longer axis.",
-                "description": "Use with <Titanium.UI.iOS.SplitWindow.arrangementStyle>. The system divides the window between the master view\nand the detail view along its longer axis, so the views are on top of each other in portrait and next to each\nother in landscape. The layout properties of the split window are ignored.\n",
+                "name": "SPLIT_WINDOW_DISPLAY_MODE_SECONDARY_ONLY",
+                "summary": "Show only the detail view of a split window and hide the master view.",
+                "description": "Use with <Titanium.UI.iOS.SplitWindow.displayMode>.\n",
                 "platforms": [
                     {
                         "since": "14.0.0",
@@ -276448,9 +276697,114 @@
                 "permission": "read-only"
             },
             {
-                "name": "SPLIT_WINDOW_ARRANGEMENT_STYLE_OVERLAY",
-                "summary": "Stack the master and detail view and move them side by side once the device folds.",
-                "description": "Use with <Titanium.UI.iOS.SplitWindow.arrangementStyle>. The views are stacked on top of each other and the master\nview, which is on top, fills the window. When the device is folded, the system places both views side by side.\nThe layout properties of the split window are ignored.\n",
+                "name": "SPLIT_WINDOW_DISPLAY_MODE_ONE_BESIDE_SECONDARY",
+                "summary": "Show the master view of a split window next to the detail view.",
+                "description": "Use with <Titanium.UI.iOS.SplitWindow.displayMode>.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "SPLIT_WINDOW_DISPLAY_MODE_ONE_OVER_SECONDARY",
+                "summary": "Show the master view of a split window as an overlay on top of the detail view.",
+                "description": "Use with <Titanium.UI.iOS.SplitWindow.displayMode>.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "SPLIT_WINDOW_SPLIT_BEHAVIOR_AUTOMATIC",
+                "summary": "Let the system choose how the master view and the detail view of a split window share the width.",
+                "description": "Use with <Titanium.UI.iOS.SplitWindow.splitBehavior>. This is the default.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "SPLIT_WINDOW_SPLIT_BEHAVIOR_TILE",
+                "summary": "Show the master view and the detail view of a split window side by side without overlap.",
+                "description": "Use with <Titanium.UI.iOS.SplitWindow.splitBehavior>.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "SPLIT_WINDOW_SPLIT_BEHAVIOR_OVERLAY",
+                "summary": "Show the master view of a split window on top of the detail view, which keeps its full width.",
+                "description": "Use with <Titanium.UI.iOS.SplitWindow.splitBehavior>.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number",
+                "permission": "read-only"
+            },
+            {
+                "name": "SPLIT_WINDOW_SPLIT_BEHAVIOR_DISPLACE",
+                "summary": "Show the master view of a split window next to the detail view, which keeps its width and moves aside.",
+                "description": "Use with <Titanium.UI.iOS.SplitWindow.splitBehavior>.\n",
                 "platforms": [
                     {
                         "since": "14.0.0",
