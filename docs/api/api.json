@@ -200999,10 +200999,23 @@
             {
                 "name": "contentOffset",
                 "summary": "X and Y coordinates to which to reposition the top-left point of the content region.",
+                "description": "Reading this property returns the current scroll offset of the table view. The value uses the\nsame units as the `contentOffset` property of the [scroll](Titanium.UI.TableView.scroll) event.\n",
                 "platforms": [
                     {
                         "since": "12.4.0",
                         "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
                     }
                 ],
                 "type": "Point"
