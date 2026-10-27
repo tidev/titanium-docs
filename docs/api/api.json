@@ -114881,6 +114881,30 @@
                 "type": "Number"
             },
             {
+                "name": "rotation",
+                "summary": "Clockwise 2D rotation of the view in degrees at the end of the animation.",
+                "description": "Ignored if a [transform](Titanium.UI.Animation.transform) is also specified,\nsince the transform matrix rotates the view itself.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Number"
+            },
+            {
                 "name": "rotationY",
                 "summary": "Value of the `rotationY` property at the end of the animation.",
                 "platforms": [
@@ -131502,7 +131526,7 @@
             {
                 "name": "image",
                 "summary": "Image to display.",
-                "description": "Image to display, defined using a local filesystem path, a `File` object, a remote URL,\nor a `Blob` object containing image data.\n\nFor Android, if there is a redirect and change in protocol, it will not follow. For example,\nfrom http to https and vice versa. See [Java Bug Database](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4620571)\nfor more information.\n",
+                "description": "Image to display, defined using a local filesystem path, a `File` object, a remote URL,\nor a `Blob` object containing image data.\n\nFor Android, if there is a redirect and change in protocol, it will not follow. For example,\nfrom http to https and vice versa. See [Java Bug Database](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=4620571)\nfor more information.\n\nOn Android, if a drawable resource with the same base name exists (for example via\n`platform/android/res/drawable*` or an `images/res-*` folder), it always takes precedence\nover a plain image asset of that name. To support dark mode, provide both the default and\nthe `-night` qualified variant as drawable resources; a plain asset is not used as fallback.\n",
                 "platforms": [
                     {
                         "since": "0.9",
@@ -137465,6 +137489,76 @@
                         "name": "accessoryClicked",
                         "summary": "Returns `true` if the detail button is clicked else returns `false`.\n\nOnly returns `true` if the `accessoryType` property is set to\n<Titanium.UI.LIST_ACCESSORY_TYPE_DETAIL>.  All other accessories return `false` if\nclicked.\n",
                         "type": "Boolean"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
+            },
+            {
+                "name": "itemlongpress",
+                "summary": "Fired when a list row is pressed and held by the user.",
+                "description": "Do not rely on the `source` property to determine which item fired the event.  Use the\n`sectionIndex` and `itemIndex`, or the `itemId` to determine the list item that generated\nthe event, and use the `bindId` to check which child control was pressed.\n\nWhen a listener for this event exists, a long press does not fire the\n[itemclick](Titanium.UI.ListView.itemclick) event for the same touch.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "section",
+                        "summary": "List section if the item is contained in a list section.",
+                        "type": "Titanium.UI.ListSection"
+                    },
+                    {
+                        "name": "sectionIndex",
+                        "summary": "Section index.",
+                        "type": "Number"
+                    },
+                    {
+                        "name": "itemIndex",
+                        "summary": "Item index.",
+                        "type": "Number"
+                    },
+                    {
+                        "name": "itemId",
+                        "summary": "The item ID bound to the list item that generated the event.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bindId",
+                        "summary": "The bind ID of the control that was pressed, if one exists.",
+                        "type": "String"
                     },
                     {
                         "name": "source",
