@@ -210942,7 +210942,12 @@
             {
                 "name": "scrollable",
                 "summary": "Determines whether this text area can be scrolled.",
+                "description": "When set to `false`, touch gestures no longer scroll the content, but the text area still\nscrolls automatically to keep the cursor visible while typing.\n\nOn Android, drag gestures are consumed while scrolling is disabled, so extending a text\nselection by long-pressing and dragging is not available. Selection handles still work.\n",
                 "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
                     {
                         "since": "13.3.0",
                         "name": "iphone"
