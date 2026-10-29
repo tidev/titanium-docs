@@ -135357,6 +135357,36 @@
                 "type": "Number"
             },
             {
+                "name": "padding",
+                "summary": "Padding between the label's edges and its text.",
+                "description": "The padding is part of the label's size. When the label is auto-sized (`Ti.UI.SIZE`),\nthe label grows to fit the text plus the padding. When the label has a fixed size,\nthe text is laid out within the area that remains after the padding is applied.\n\nOn iOS, the `backgroundPaddingLeft`, `backgroundPaddingRight`, `backgroundPaddingTop`,\nand `backgroundPaddingBottom` properties only move the background image. Use `padding`\nto move the text.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "examples": [
+                    {
+                        "description": "Label with left and right padding",
+                        "code": "``` js\nconst label = Ti.UI.createLabel({\n  text: 'Padded label',\n  backgroundColor: 'yellow',\n  padding: { left: 16, right: 16 }\n});\n```\n"
+                    }
+                ],
+                "type": "Padding"
+            },
+            {
                 "name": "shadowColor",
                 "summary": "Shadow color of the [text](Titanium.UI.Label.text), as a color name or hex triplet.",
                 "description": "Use in conjunction with [shadowOffset](Titanium.UI.Label.shadowOffset) and [shadowRadius](Titanium.UI.Label.shadowRadius).\nFor information about color values, see the \"Colors\" section of <Titanium.UI>.\n",
