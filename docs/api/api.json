@@ -151701,6 +151701,7 @@
             {
                 "name": "leftNavButtons",
                 "summary": "An Array of views to show in the left nav bar area.",
+                "description": "On iOS 26 and later, the navigation bar uses the \"Liquid Glass\" design and automatically\ngroups adjacent items into a shared glass background. Set the `hideSharedBackground`\nproperty of an individual view to `true` to render that item in its own separate glass\ncontainer. This has no effect on iOS versions prior to 26.0.\n",
                 "platforms": [
                     {
                         "since": "8.0.0",
@@ -151846,6 +151847,7 @@
             {
                 "name": "rightNavButtons",
                 "summary": "An Array of views to show in the right nav bar area.",
+                "description": "On iOS 26 and later, the navigation bar uses the \"Liquid Glass\" design and automatically\ngroups adjacent items into a shared glass background. Set the `hideSharedBackground`\nproperty of an individual view to `true` to render that item in its own separate glass\ncontainer. This has no effect on iOS versions prior to 26.0.\n",
                 "platforms": [
                     {
                         "since": "8.0.0",
@@ -192640,6 +192642,7 @@
             {
                 "name": "leftNavButtons",
                 "summary": "An Array of views to show in the left nav bar area.",
+                "description": "On iOS 26 and later, the navigation bar uses the \"Liquid Glass\" design and automatically\ngroups adjacent items into a shared glass background. Set the `hideSharedBackground`\nproperty of an individual view to `true` to render that item in its own separate glass\ncontainer. This has no effect on iOS versions prior to 26.0.\n",
                 "platforms": [
                     {
                         "since": "3.3.0",
@@ -192844,6 +192847,7 @@
             {
                 "name": "rightNavButtons",
                 "summary": "An Array of views to show in the right nav bar area.",
+                "description": "On iOS 26 and later, the navigation bar uses the \"Liquid Glass\" design and automatically\ngroups adjacent items into a shared glass background. Set the `hideSharedBackground`\nproperty of an individual view to `true` to render that item in its own separate glass\ncontainer. This has no effect on iOS versions prior to 26.0.\n",
                 "platforms": [
                     {
                         "since": "3.3.0",
@@ -238079,6 +238083,7 @@
             {
                 "name": "leftNavButtons",
                 "summary": "An Array of views to show in the left nav bar area.",
+                "description": "On iOS 26 and later, the navigation bar uses the \"Liquid Glass\" design and automatically\ngroups adjacent items into a shared glass background. Set the `hideSharedBackground`\nproperty of an individual view to `true` to render that item in its own separate glass\ncontainer. This has no effect on iOS versions prior to 26.0.\n",
                 "platforms": [
                     {
                         "since": "3.3.0",
@@ -238287,6 +238292,7 @@
             {
                 "name": "rightNavButtons",
                 "summary": "An Array of views to show in the right nav bar area.",
+                "description": "On iOS 26 and later, the navigation bar uses the \"Liquid Glass\" design and automatically\ngroups adjacent items into a shared glass background. Set the `hideSharedBackground`\nproperty of an individual view to `true` to render that item in its own separate glass\ncontainer. This has no effect on iOS versions prior to 26.0.\n",
                 "platforms": [
                     {
                         "since": "3.3.0",
@@ -255544,6 +255550,7 @@
             {
                 "name": "leftNavButtons",
                 "summary": "An Array of views to show in the left nav bar area.",
+                "description": "On iOS 26 and later, the navigation bar uses the \"Liquid Glass\" design and automatically\ngroups adjacent items into a shared glass background. Set the `hideSharedBackground`\nproperty of an individual view to `true` to render that item in its own separate glass\ncontainer. This has no effect on iOS versions prior to 26.0.\n",
                 "platforms": [
                     {
                         "since": "3.3.0",
@@ -255664,6 +255671,7 @@
             {
                 "name": "rightNavButtons",
                 "summary": "An Array of views to show in the right nav bar area.",
+                "description": "On iOS 26 and later, the navigation bar uses the \"Liquid Glass\" design and automatically\ngroups adjacent items into a shared glass background. Set the `hideSharedBackground`\nproperty of an individual view to `true` to render that item in its own separate glass\ncontainer. This has no effect on iOS versions prior to 26.0.\n",
                 "platforms": [
                     {
                         "since": "3.3.0",
@@ -261637,6 +261645,7 @@
             {
                 "name": "leftNavButtons",
                 "summary": "An Array of views to show in the left nav bar area.",
+                "description": "On iOS 26 and later, the navigation bar uses the \"Liquid Glass\" design and automatically\ngroups adjacent items into a shared glass background. Set the `hideSharedBackground`\nproperty of an individual view to `true` to render that item in its own separate glass\ncontainer. This has no effect on iOS versions prior to 26.0.\n",
                 "platforms": [
                     {
                         "since": "3.6.0",
@@ -261825,6 +261834,7 @@
             {
                 "name": "rightNavButtons",
                 "summary": "An Array of views to show in the right nav bar area.",
+                "description": "On iOS 26 and later, the navigation bar uses the \"Liquid Glass\" design and automatically\ngroups adjacent items into a shared glass background. Set the `hideSharedBackground`\nproperty of an individual view to `true` to render that item in its own separate glass\ncontainer. This has no effect on iOS versions prior to 26.0.\n",
                 "platforms": [
                     {
                         "since": "3.6.0",
