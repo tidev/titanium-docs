@@ -115401,7 +115401,7 @@
             {
                 "name": "type",
                 "summary": "Attribute to apply to the text.",
-                "description": "On Android, only the following constants are supported\nTitanium.UI.ATTRIBUTE_FONT, Titanium.UI.ATTRIBUTE_FOREGROUND_COLOR,\nTitanium.UI.ATTRIBUTE_BACKGROUND_COLOR, Titanium.UI.ATTRIBUTE_STRIKETHROUGH_STYLE,\nTitanium.UI.ATTRIBUTE_UNDERLINES_STYLE, Titanium.UI.ATTRIBUTE_LINK, \nTitanium.UI.ATTRIBUTE_UNDERLINE_COLOR\n\nON iOS, Titanium.UI.ATTRIBUTE_LINK only supported on <Titanium.UI.TextArea>, with\neditable set to false and autoLink enabled.\n",
+                "description": "On Android, only the following constants are supported\nTitanium.UI.ATTRIBUTE_FONT, Titanium.UI.ATTRIBUTE_FOREGROUND_COLOR,\nTitanium.UI.ATTRIBUTE_BACKGROUND_COLOR, Titanium.UI.ATTRIBUTE_STRIKETHROUGH_STYLE,\nTitanium.UI.ATTRIBUTE_UNDERLINES_STYLE, Titanium.UI.ATTRIBUTE_LINK,\nTitanium.UI.ATTRIBUTE_UNDERLINE_COLOR\n\nON iOS, Titanium.UI.ATTRIBUTE_LINK only supported on <Titanium.UI.TextArea>, with\neditable set to false and autoLink enabled.\n",
                 "platforms": [
                     {
                         "since": "3.6.0",
@@ -115447,7 +115447,7 @@
             {
                 "name": "value",
                 "summary": "Attribute value.",
-                "description": "The `value` parameter depends on the `type` parameter. For example, to\nuse the foreground color on the text you would use <Titanium.UI.ATTRIBUTE_FOREGROUND_COLOR>\nfor the `type` and a color value for the `value`:\n``` js\n{\n    type: Titanium.UI.ATTRIBUTE_FOREGROUND_COLOR,\n    value: '#DDD',\n    range: [0, 100]\n}\n```\n\nOn iOS, if you use <Titanium.UI.ATTRIBUTE_UNDERLINES_STYLE> or <Titanium.UI.ATTRIBUTE_STRIKETHROUGH_STYLE>,\nyou must use one or more of these constants:\n\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_STYLE_NONE>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_STYLE_SINGLE>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_STYLE_THICK>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_STYLE_DOUBLE>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_PATTERN_SOLID>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_PATTERN_DOT>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_PATTERN_DASH>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_PATTERN_DASH_DOT>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_PATTERN_DASH_DOT_DOT>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_BY_WORD>\n\nThese can be combined:\n``` js\n{\n    type: Titanium.UI.ATTRIBUTE_UNDERLINES_STYLE,\n    value: Titanium.UI.ATTRIBUTE_UNDERLINE_STYLE_SINGLE | Titanium.UI.ATTRIBUTE_UNDERLINE_PATTERN_DASH,\n    range: [0, 100]\n}\n```\n\nOn iOS, if you use the <Titanium.UI.ATTRIBUTE_WRITING_DIRECTION>, you must use one or more of\nthese constants:\n\n  * <Titanium.UI.ATTRIBUTE_WRITING_DIRECTION_EMBEDDING>\n  * <Titanium.UI.ATTRIBUTE_WRITING_DIRECTION_OVERRIDE>\n  * <Titanium.UI.ATTRIBUTE_WRITING_DIRECTION_NATURAL>\n  * <Titanium.UI.ATTRIBUTE_WRITING_DIRECTION_LEFT_TO_RIGHT>\n  * <Titanium.UI.ATTRIBUTE_WRITING_DIRECTION_RIGHT_TO_LEFT>\n\nThese can also be combined the same way as the underline styles.\n\nOn iOS, if you use the <Titanium.UI.ATTRIBUTE_SHADOW>, the `value` must be a JavaScript object containing\nany of the `offset`, `blurRadius` or `color` properties:\n``` js\n{\n    offset: {\n        width: 10,\n        height: 10\n    },\n    blurRadius: 10,\n    color: 'red'\n}\n```\n\nOn iOS, if you use the <Titanium.UI.ATTRIBUTE_PARAGRAPH_STYLE>, the `value` must be ParagraphAttribute. \nE.g:\n``` js\n{\n    minimumLineHeight: 10.0,\n    tailIndent: 5,\n    lineBreakMode: Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_WORD_WRAPPING\n}\n```\n\nOn iOS, if you use the <Titanium.UI.ATTRIBUTE_TEXT_EFFECT>, you must use the <Titanium.UI.ATTRIBUTE_LETTERPRESS_STYLE> constant.\n\nOn iOS, if you use the <Titanium.UI.ATTRIBUTE_LINE_BREAK>, you must use one of\nthese constants:\n\n  * <Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_WORD_WRAPPING>\n  * <Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_CHAR_WRAPPING>\n  * <Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_CLIPPING>\n  * <Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_TRUNCATING_HEAD>\n  * <Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_TRUNCATING_TAIL>\n  * <Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_TRUNCATING_MIDDLE>\n\nThese can also be combined the same way as the underline styles.\n",
+                "description": "The `value` parameter depends on the `type` parameter. For example, to\nuse the foreground color on the text you would use <Titanium.UI.ATTRIBUTE_FOREGROUND_COLOR>\nfor the `type` and a color value for the `value`:\n``` js\n{\n    type: Titanium.UI.ATTRIBUTE_FOREGROUND_COLOR,\n    value: '#DDD',\n    range: [0, 100]\n}\n```\n\nOn iOS, if you use <Titanium.UI.ATTRIBUTE_UNDERLINES_STYLE> or <Titanium.UI.ATTRIBUTE_STRIKETHROUGH_STYLE>,\nyou must use one or more of these constants:\n\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_STYLE_NONE>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_STYLE_SINGLE>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_STYLE_THICK>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_STYLE_DOUBLE>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_PATTERN_SOLID>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_PATTERN_DOT>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_PATTERN_DASH>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_PATTERN_DASH_DOT>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_PATTERN_DASH_DOT_DOT>\n  * <Titanium.UI.ATTRIBUTE_UNDERLINE_BY_WORD>\n\nThese can be combined:\n``` js\n{\n    type: Titanium.UI.ATTRIBUTE_UNDERLINES_STYLE,\n    value: Titanium.UI.ATTRIBUTE_UNDERLINE_STYLE_SINGLE | Titanium.UI.ATTRIBUTE_UNDERLINE_PATTERN_DASH,\n    range: [0, 100]\n}\n```\n\nOn iOS, if you use the <Titanium.UI.ATTRIBUTE_WRITING_DIRECTION>, you must use one or more of\nthese constants:\n\n  * <Titanium.UI.ATTRIBUTE_WRITING_DIRECTION_EMBEDDING>\n  * <Titanium.UI.ATTRIBUTE_WRITING_DIRECTION_OVERRIDE>\n  * <Titanium.UI.ATTRIBUTE_WRITING_DIRECTION_NATURAL>\n  * <Titanium.UI.ATTRIBUTE_WRITING_DIRECTION_LEFT_TO_RIGHT>\n  * <Titanium.UI.ATTRIBUTE_WRITING_DIRECTION_RIGHT_TO_LEFT>\n\nThese can also be combined the same way as the underline styles.\n\nOn iOS, if you use the <Titanium.UI.ATTRIBUTE_SHADOW>, the `value` must be a JavaScript object containing\nany of the `offset`, `blurRadius` or `color` properties:\n``` js\n{\n    offset: {\n        width: 10,\n        height: 10\n    },\n    blurRadius: 10,\n    color: 'red'\n}\n```\n\nOn iOS, if you use the <Titanium.UI.ATTRIBUTE_PARAGRAPH_STYLE>, the `value` must be ParagraphAttribute.\nE.g:\n``` js\n{\n    minimumLineHeight: 10.0,\n    tailIndent: 5,\n    lineBreakMode: Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_WORD_WRAPPING\n}\n```\n\nOn iOS, if you use the <Titanium.UI.ATTRIBUTE_TEXT_EFFECT>, you must use the <Titanium.UI.ATTRIBUTE_LETTERPRESS_STYLE> constant.\n\nOn iOS, if you use the <Titanium.UI.ATTRIBUTE_LINE_BREAK>, you must use one of\nthese constants:\n\n  * <Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_WORD_WRAPPING>\n  * <Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_CHAR_WRAPPING>\n  * <Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_CLIPPING>\n  * <Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_TRUNCATING_HEAD>\n  * <Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_TRUNCATING_TAIL>\n  * <Titanium.UI.ATTRIBUTE_LINE_BREAK_BY_TRUNCATING_MIDDLE>\n\nThese can also be combined the same way as the underline styles.\n",
                 "platforms": [
                     {
                         "since": "3.6.0",
@@ -115511,6 +115511,18 @@
                 ],
                 "type": "Array<Number>",
                 "optional": false
+            },
+            {
+                "name": "underline",
+                "summary": "Enable or disable the `ATTRIBUTE_LINK` underline.",
+                "description": "Default value is `true`. If set to false and you use a `ATTRIBUTE_LINK` it won't underline the link.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "type": "Boolean"
             }
         ]
     },
@@ -115534,7 +115546,7 @@
         ],
         "type": "pseudo",
         "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/UI/Attribute.yml",
-        "description": "Attributes are added corresponding to value to create paragraph style, \nwhich when used with attributed string will give styled text. \n",
+        "description": "Attributes are added corresponding to value to create paragraph style,\nwhich when used with attributed string will give styled text.\n",
         "properties": [
             {
                 "name": "alignment",
@@ -115564,7 +115576,7 @@
             {
                 "name": "firstLineHeadIndent",
                 "summary": "The indentation of the first line of the receiver.",
-                "description": "This property contains the distance (in points) from the leading margin \nof a text container to the beginning of the first line of paragraph. \nThis value is always nonnegative float value or dimension string (e.g. '10px').\n",
+                "description": "This property contains the distance (in points) from the leading margin\nof a text container to the beginning of the first line of paragraph.\nThis value is always nonnegative float value or dimension string (e.g. '10px').\n",
                 "platforms": [
                     {
                         "since": "7.5.0",
@@ -115587,7 +115599,7 @@
             {
                 "name": "headIndent",
                 "summary": "The indentation of the lines of lines other than the first.",
-                "description": "This property contains the distance (in points) from the leading margin \nof a text container to the beginning of lines other than the first. \nThis value is always nonnegative float value or dimension string (e.g. '10px').\n",
+                "description": "This property contains the distance (in points) from the leading margin\nof a text container to the beginning of lines other than the first.\nThis value is always nonnegative float value or dimension string (e.g. '10px').\n",
                 "platforms": [
                     {
                         "since": "7.5.0",
@@ -115610,7 +115622,7 @@
             {
                 "name": "tailIndent",
                 "summary": "The trailing indentation of the receiver.",
-                "description": "If positive, this value is the distance (in points) from the leading margin \n(for example, the left margin in left-to-right text). If 0 or negative, \nit is the distance (in points) from the trailing margin. This is a float value or \ndimension string (e.g. '10px').\n",
+                "description": "If positive, this value is the distance (in points) from the leading margin\n(for example, the left margin in left-to-right text). If 0 or negative,\nit is the distance (in points) from the trailing margin. This is a float value or\ndimension string (e.g. '10px').\n",
                 "platforms": [
                     {
                         "since": "7.5.0",
@@ -115661,7 +115673,7 @@
             {
                 "name": "maximumLineHeight",
                 "summary": "The maximum line height of receiver.",
-                "description": "This property contains the maximum height in points that any line in the receiver will occupy, \nregardless of the font size or size of any attached graphic. This value is always nonnegative \nfloat value or dimension string (e.g. '10px'). The default value is 0. \nGlyphs and graphics exceeding this height will overlap neighboring lines; however, a maximum \nheight of 0 implies no line height limit. Although this limit applies to the line itself, \nline spacing adds extra space between adjacent lines.\n",
+                "description": "This property contains the maximum height in points that any line in the receiver will occupy,\nregardless of the font size or size of any attached graphic. This value is always nonnegative\nfloat value or dimension string (e.g. '10px'). The default value is 0.\nGlyphs and graphics exceeding this height will overlap neighboring lines; however, a maximum\nheight of 0 implies no line height limit. Although this limit applies to the line itself,\nline spacing adds extra space between adjacent lines.\n",
                 "platforms": [
                     {
                         "since": "7.5.0",
@@ -115684,7 +115696,7 @@
             {
                 "name": "minimumLineHeight",
                 "summary": "The minimum height of receiver.",
-                "description": "This property contains the minimum height in points that any line in the receiver will occupy, \nregardless of the font size or size of any attached graphic. This value must be nonnegative float value \nor dimension string (e.g. '10px').\nE.g. If you have set minimum height 30 and font size 10. It will make line height 30 which have \nsmaller text size and more vertical spacing between text. \n",
+                "description": "This property contains the minimum height in points that any line in the receiver will occupy,\nregardless of the font size or size of any attached graphic. This value must be nonnegative float value\nor dimension string (e.g. '10px').\nE.g. If you have set minimum height 30 and font size 10. It will make line height 30 which have\nsmaller text size and more vertical spacing between text.\n",
                 "platforms": [
                     {
                         "since": "7.5.0",
@@ -115707,7 +115719,7 @@
             {
                 "name": "lineSpacing",
                 "summary": "The distance in points between the bottom of one line fragment and the top of the next.",
-                "description": "This value is always nonnegative float value or dimension string (e.g. '10px'). This value is \nincluded in the line fragment heights in the layout manager.\n",
+                "description": "This value is always nonnegative float value or dimension string (e.g. '10px'). This value is\nincluded in the line fragment heights in the layout manager.\n",
                 "platforms": [
                     {
                         "since": "7.5.0",
@@ -115730,7 +115742,7 @@
             {
                 "name": "paragraphSpacingAfter",
                 "summary": "The space after the end of the paragraph.",
-                "description": "This property contains the space (measured in points) added at the end of the paragraph \nto separate it from the following paragraph. This value must be nonnegative float value or \ndimension string (e.g. '10px'). The space between paragraphs is determined by adding the paragraphSpacingAfter \nof previous paragraph and the paragraphSpacingBefore of current paragraph.\n",
+                "description": "This property contains the space (measured in points) added at the end of the paragraph\nto separate it from the following paragraph. This value must be nonnegative float value or\ndimension string (e.g. '10px'). The space between paragraphs is determined by adding the paragraphSpacingAfter\nof previous paragraph and the paragraphSpacingBefore of current paragraph.\n",
                 "platforms": [
                     {
                         "since": "7.5.0",
@@ -115753,7 +115765,7 @@
             {
                 "name": "paragraphSpacingBefore",
                 "summary": "The distance between the top of paragraph and the beginning of its text content.",
-                "description": "This property contains the space (measured in points) between the top of paragraph and \nthe beginning of its text content. This value can be float value or dimension string (e.g. '10px').\nThe default value of this property is 0.0.\n",
+                "description": "This property contains the space (measured in points) between the top of paragraph and\nthe beginning of its text content. This value can be float value or dimension string (e.g. '10px').\nThe default value of this property is 0.0.\n",
                 "platforms": [
                     {
                         "since": "7.5.0",
@@ -115776,7 +115788,7 @@
             {
                 "name": "lineHeightMultiple",
                 "summary": "The line height multiple.",
-                "description": "The natural line height of the receiver is multiplied by this factor (if positive) \nbefore being constrained by minimum and maximum line height. The default value of \nthis property is 0.0, which means nothing multiplied.\n",
+                "description": "The natural line height of the receiver is multiplied by this factor (if positive)\nbefore being constrained by minimum and maximum line height. The default value of\nthis property is 0.0, which means nothing multiplied.\n",
                 "platforms": [
                     {
                         "since": "7.5.0",
@@ -115796,7 +115808,7 @@
             {
                 "name": "hyphenationFactor",
                 "summary": "The threshold of paragraph for hyphenation.",
-                "description": "Valid values lie between 0.0 and 1.0 inclusive. The default value is 0.0. Hyphenation \nis attempted when the ratio of the text width (as broken without hyphenation) to the \nwidth of the line fragment is less than the hyphenation factor. When the hyphenation \nfactor of paragraph is 0.0, the hyphenation factor of layout manager is used instead. \nWhen both are 0.0, hyphenation is disabled. This property detects the user-selected \nlanguage by examining the first item in preferredLanguages.\n",
+                "description": "Valid values lie between 0.0 and 1.0 inclusive. The default value is 0.0. Hyphenation\nis attempted when the ratio of the text width (as broken without hyphenation) to the\nwidth of the line fragment is less than the hyphenation factor. When the hyphenation\nfactor of paragraph is 0.0, the hyphenation factor of layout manager is used instead.\nWhen both are 0.0, hyphenation is disabled. This property detects the user-selected\nlanguage by examining the first item in preferredLanguages.\n",
                 "platforms": [
                     {
                         "since": "7.5.0",
@@ -115815,8 +115827,8 @@
             },
             {
                 "name": "allowsDefaultTighteningForTruncation",
-                "summary": "A Boolean value indicating whether the system may tighten inter-character spacing \nbefore truncating text.\n",
-                "description": "When this property is set to true, the system tries to reduce the space between characters \nbefore truncating characters. The system performs this tightening in cases where the text \nwould not otherwise fit in the available space. The maximum amount of tightening performed \nby the system is dependent on the font, line width, and other factors. The default value of \nthis property is false.\n",
+                "summary": "A Boolean value indicating whether the system may tighten inter-character spacing\nbefore truncating text.\n",
+                "description": "When this property is set to true, the system tries to reduce the space between characters\nbefore truncating characters. The system performs this tightening in cases where the text\nwould not otherwise fit in the available space. The maximum amount of tightening performed\nby the system is dependent on the font, line width, and other factors. The default value of\nthis property is false.\n",
                 "platforms": [
                     {
                         "since": "7.5.0",
@@ -135116,6 +135128,21 @@
                     {
                         "since": "9.2.0",
                         "name": "macos"
+                    }
+                ],
+                "type": [
+                    "String",
+                    "Titanium.UI.Color"
+                ]
+            },
+            {
+                "name": "linkColor",
+                "summary": "Color of the link inside a label, as a color name or hex triplet.",
+                "description": "If you enable `autoLink` on Android or add an AttributedString link it will use this color.\nFor information about color values, see the \"Colors\" section of <Titanium.UI>.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
                     }
                 ],
                 "type": [
@@ -221548,7 +221575,7 @@
             {
                 "name": "ATTRIBUTE_LINK",
                 "summary": "Use with <Attribute.type> to create a link.\n",
-                "description": "Set <Attribute.value> to a URL.\n\nUse the Label's [link](Titanium.UI.Label.link) event to determine when the user triggers a\nlong press (not a click) event on the linked text.\n\nSee <Attribute> for more information.\n",
+                "description": "Set <Attribute.value> to a URL.\n\nUse the Label's [link](Titanium.UI.Label.link) event to determine when the user triggers a\nlong press (not a click) event on the linked text.\n\nUse the Label's `linkColor` to change the color (Android only) and you can use `underline: false`\nto remove the underline from the link.\n\nSee <Attribute> for more information.\n",
                 "platforms": [
                     {
                         "since": "3.6.0",
