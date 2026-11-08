@@ -2633,6 +2633,30 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -86792,6 +86816,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -100237,6 +100286,31 @@
                 "default": true
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "bottom",
                 "summary": "Bottom position of the view.",
                 "description": "Determines the absolute position of the view relative to its parent.\n\nCan be either a float value or a dimension string (for example `100` or `'50%'`.)\n",
@@ -101821,6 +101895,31 @@
                 "type": "Boolean",
                 "availability": "creation",
                 "default": true
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "elevation",
@@ -106232,6 +106331,19 @@
                 "type": "String"
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Corner radius for CardView.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -107058,6 +107170,19 @@
                 "type": "Boolean",
                 "availability": "creation",
                 "default": true
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "height",
@@ -109127,6 +109252,19 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -110375,6 +110513,19 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "bottom",
                 "summary": "View's bottom position, in platform-specific units.",
                 "description": "This position is relative to the view's parent. Exact interpretation depends on the parent\nview's [layout](Titanium.UI.View.layout) property. Can be either a float value or a\ndimension string (for example, '50%' or '10px').\n\nThis is an input property for specifying where the view should be positioned, and does not\nrepresent the view's calculated position.\n\nDefaults to `undefined`.\n",
@@ -111079,6 +111230,19 @@
                 "type": "Boolean",
                 "availability": "creation",
                 "default": true
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "elevation",
@@ -113031,6 +113195,19 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -114094,6 +114271,19 @@
                 "type": "Boolean",
                 "availability": "creation",
                 "default": true
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "elevation",
@@ -118435,6 +118625,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -121307,6 +121522,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -125628,6 +125868,27 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -127377,6 +127638,31 @@
                 "type": "Boolean",
                 "availability": "creation",
                 "default": true
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "elevation",
@@ -130576,6 +130862,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -134063,6 +134374,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -140264,6 +140600,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -145146,6 +145507,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -150439,6 +150825,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -154211,6 +154622,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -155896,6 +156332,31 @@
                 "type": "Boolean",
                 "availability": "creation",
                 "default": true
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "elevation",
@@ -158857,6 +159318,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -160664,6 +161150,31 @@
                 "type": "Boolean",
                 "availability": "creation",
                 "default": true
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "filterTouchesWhenObscured",
@@ -162991,6 +163502,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -166157,6 +166693,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -170625,6 +171186,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -174004,6 +174590,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -178061,6 +178672,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -182858,6 +183494,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -186431,6 +187092,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -189433,6 +190119,31 @@
                 "type": "String"
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "clipMode",
                 "summary": "View's clipping behavior.",
                 "description": "Setting this to <Titanium.UI.iOS.CLIP_MODE_ENABLED> enforces all child views to be clipped to this views bounds.\nSetting this to <Titanium.UI.iOS.CLIP_MODE_DISABLED> allows child views to be drawn outside the bounds of this view.\nWhen set to <Titanium.UI.iOS.CLIP_MODE_DEFAULT> or when this property is not set, clipping behavior is inferred.\nSee section on iOS Clipping Behavior in <Titanium.UI.View>.\n\nDefaults to `undefined`. Behaves as if set to <Titanium.UI.iOS.CLIP_MODE_DEFAULT>.\n",
@@ -191808,6 +192519,31 @@
                     "Titanium.UI.Color"
                 ],
                 "default": "Transparent"
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "center",
@@ -195955,6 +196691,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -200436,6 +201197,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -204500,6 +205286,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -209366,6 +210177,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -213820,6 +214656,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -218144,6 +219005,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -231430,6 +232316,31 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -236853,6 +237764,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -244086,6 +245022,27 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -247153,6 +248110,27 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -251308,6 +252286,27 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -254828,6 +255827,27 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -260794,6 +261814,27 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -264511,6 +265552,27 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -267716,6 +268778,27 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -271030,6 +272113,27 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -278108,6 +279212,23 @@
                 ],
                 "availability": "creation",
                 "default": "undefined (behaves as transparent)"
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "height",
@@ -306231,6 +307352,19 @@
                 ]
             },
             {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
+            },
+            {
                 "name": "borderRadius",
                 "summary": "Radius for the rounded corners of the view's border.",
                 "description": "Each corner is rounded using an arc of a circle.\nValues for each corner can be specified. For example, '20px 20px' will set both left and right corners to `20px`.\nSpecifying '20px 20px 20px 20px' will set top-left, top-right, bottom-right and bottom-left corners in that order.\n\nIf you have issues with dark artifacts on Android you can try to disable Hardware acceleration by setting a\n`backgroundColor` with a small amount of transparency: `backgroundColor:\"rgba(255,255,255,254)\"`.\n",
@@ -309918,6 +311052,31 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "macos"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -317242,6 +318401,27 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
@@ -347800,6 +348980,23 @@
                     "String",
                     "Titanium.UI.Color"
                 ]
+            },
+            {
+                "name": "borderDashPattern",
+                "summary": "Dash pattern of the view's border, as alternating dash and gap lengths.",
+                "description": "Lengths use the same unit as [borderWidth](Titanium.UI.View.borderWidth). For example, `[4, 2]` draws\ndashes of 4 units separated by gaps of 2 units, and `[2, 4]` together with a `borderWidth` of `2`\ndraws square dots. Set it to `null` or an empty array for a solid border.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "iphone"
+                    },
+                    {
+                        "since": "14.0.0",
+                        "name": "ipad"
+                    }
+                ],
+                "inherits": "Titanium.UI.View",
+                "type": "Array<Number>"
             },
             {
                 "name": "borderRadius",
