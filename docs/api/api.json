@@ -35767,7 +35767,7 @@
         ],
         "type": "module",
         "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/Android/Android.yml",
-        "description": "For more information, refer to the official documentation on the Android Developer website about \n[application resources](https://developer.android.com/guide/topics/resources/index.html).\n",
+        "description": "For more information, refer to the official documentation on the Android Developer website about\n[application resources](https://developer.android.com/guide/topics/resources/index.html).\n",
         "events": [
             {
                 "name": "shortcutitemclick",
@@ -35810,7 +35810,11 @@
         "examples": [
             {
                 "description": "Custom String Resource",
-                "code": "\nCustom Android resources may be placed in `platform/android` in the project root.  \nFor example, to utilize a custom localization file, create and populate \n`platform/android/res/values/mystrings.xml` with the following data.\n\n``` xml\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<resources>\n    <string name=\"mystring\">testing 1 2 3</string>\n</resources>\n```\n\nIn Javascript, this can be accessed as follows.\n\n``` js\nvar activity = Ti.Android.currentActivity;\nvar R = Ti.App.Android.R;\n\nvar mystring = activity.getString(R.string.mystring);\nTi.API.debug(\"mystring = \" + mystring);\n```\n"
+                "code": "\nCustom Android resources may be placed in `platform/android` in the project root.\nFor example, to utilize a custom localization file, create and populate\n`platform/android/res/values/mystrings.xml` with the following data.\n\n``` xml\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<resources>\n    <string name=\"mystring\">testing 1 2 3</string>\n</resources>\n```\n\nIn Javascript, this can be accessed as follows.\n\n``` js\nvar activity = Ti.Android.currentActivity;\nvar R = Ti.App.Android.R;\n\nvar mystring = activity.getString(R.string.mystring);\nTi.API.debug(\"mystring = \" + mystring);\n```\n"
+            },
+            {
+                "description": "Change Android icon at runtime",
+                "code": "\nAdd these `<activity-alias>` nodes into the tiapp.xml `<application>` block:\n\n``` xml\n<activity-alias android:enabled=\"true\" android:name=\".default\" android:targetActivity=\".TestActivity\" android:exported=\"true\">\n    <intent-filter>\n        <action android:name=\"android.intent.action.MAIN\"/>\n        <category android:name=\"android.intent.category.LAUNCHER\"/>\n    </intent-filter>\n</activity-alias>\n<activity-alias android:icon=\"@mipmap/ic_launcher\" android:name=\".red\" android:enabled=\"false\" android:targetActivity=\".TestActivity\" android:exported=\"true\">\n    <intent-filter>\n        <action android:name=\"android.intent.action.MAIN\"/>\n        <category android:name=\"android.intent.category.LAUNCHER\"/>\n    </intent-filter>\n</activity-alias>\n```\n\nChange the `android:targetActivity` to point at your main activity, `android:name` is used inside the JavaScript code\nto switch between the alias nodes and `android:icon` will be the new icon.\n\nIn Javascript, this can be accessed as follows.\n\n``` js\nconst win = Ti.UI.createWindow({layout: \"vertical\"});\n\nconst btn1 = Ti.UI.createButton({title: \"switch to red\"});\nconst btn2 = Ti.UI.createButton({title: \"switch to default\"});\n\nbtn1.addEventListener(\"click\", function() {\n  Ti.App.Android.changeIcon({\n    from: \"default\",\n    to: \"red\"\n  });\n});\nbtn2.addEventListener(\"click\", function() {\n  Ti.App.Android.changeIcon({\n    from: \"red\",\n    to: \"default\"\n  });\n});\n\nwin.add([btn1, btn2]);\nwin.open();\n```\n"
             }
         ],
         "methods": [
@@ -35917,6 +35921,27 @@
                 }
             },
             {
+                "name": "changeIcon",
+                "summary": "Changes the Android app icon at runtime.",
+                "description": "You have to add `<activity-alias>` nodes for every icon to the tiapp.xml and use `changeIcon()` to switch from one\nto another. Check the `Change Android icon at runtime` example for more details. The app has to keep track of\nthe current icon state in order to set the from/to parameters.\n\nOne alias must have an `<intent-filter>` with the `MAIN` action and the `LAUNCHER` category and must not\nset `android:enabled=\"false\"`. The build then removes the launcher entry of the main activity. If no\nalias fulfills this, the main activity keeps its launcher entry.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "options",
+                        "summary": "Dictionary with the `from` and `to` alias names.",
+                        "type": "ChangeIconOptions"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
                 "name": "clearUserCache",
                 "summary": "Clears app data and cache. This will close the app.",
                 "platforms": [
@@ -35990,7 +36015,7 @@
             },
             {
                 "name": "appVersionCode",
-                "summary": "The version number of the application. \n",
+                "summary": "The version number of the application.\n",
                 "platforms": [
                     {
                         "since": "3.3.0",
@@ -36002,7 +36027,7 @@
             },
             {
                 "name": "appVersionName",
-                "summary": "The version name of the application. \n",
+                "summary": "The version name of the application.\n",
                 "platforms": [
                     {
                         "since": "3.3.0",
@@ -36024,6 +36049,45 @@
                 ],
                 "type": "Titanium.Android.Intent",
                 "permission": "read-only"
+            }
+        ]
+    },
+    "ChangeIconOptions": {
+        "name": "ChangeIconOptions",
+        "summary": "Dictionary of options for the <Titanium.App.Android.changeIcon> method.",
+        "extends": "Object",
+        "platforms": [
+            {
+                "since": "14.0.0",
+                "name": "android"
+            }
+        ],
+        "type": "pseudo",
+        "editUrl": "https://github.com/appcelerator/titanium_mobile/edit/master/apidoc/Titanium/App/Android/Android.yml",
+        "properties": [
+            {
+                "name": "from",
+                "summary": "`android:name` (without leading dot) of the `<activity-alias>` of the current icon. The method disables this alias.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "type": "String",
+                "optional": false
+            },
+            {
+                "name": "to",
+                "summary": "`android:name` (without leading dot) of the `<activity-alias>` of the new icon. The method enables this alias.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "type": "String",
+                "optional": false
             }
         ]
     },
@@ -84972,6 +85036,43 @@
                         "name": "obscured",
                         "summary": "Returns `true` if the touch passed through an overlapping window belonging to another app.\n\nThis is a security feature to protect an app from \"tapjacking\", where a malicious app can use a\nsystem overlay to intercept touch events in your app or to trick the end-user to tap on UI\nin your app intended for the overlay.\n",
                         "type": "Boolean"
+                    },
+                    {
+                        "name": "source",
+                        "summary": "Source object that fired the event.",
+                        "type": "Object"
+                    },
+                    {
+                        "name": "type",
+                        "summary": "Name of the event fired.",
+                        "type": "String"
+                    },
+                    {
+                        "name": "bubbles",
+                        "summary": "True if the event will try to bubble up if possible.",
+                        "type": "Boolean"
+                    },
+                    {
+                        "name": "cancelBubble",
+                        "summary": "Set to true to stop the event from bubbling.",
+                        "type": "Boolean"
+                    }
+                ]
+            },
+            {
+                "name": "buffer",
+                "summary": "Fired when the video is loading/buffering.\n",
+                "platforms": [
+                    {
+                        "since": "14.0.0",
+                        "name": "android"
+                    }
+                ],
+                "properties": [
+                    {
+                        "name": "percentage",
+                        "summary": "Percentage of the video that is buffered/loaded.",
+                        "type": "Number"
                     },
                     {
                         "name": "source",
@@ -146427,7 +146528,7 @@
             {
                 "name": "rotate",
                 "summary": "Returns a matrix constructed by rotating this matrix.",
-                "description": "There are two distinct versions of this method, depending on whether one argument\nor two are specified.\n\n*   `rotate(angle)`. The standard `rotate` method.\n*   `rotate(fromAngle, toAngle)`. Android only. Used for specifying rotation\n    animations.\n\nIn both cases, a positive value specifies clockwise rotation and a negative value\nspecifies counter-clockwise rotation.\n\nDetails for each version are discussed below.\n\n#### rotate(angle)\n\nReturns a matrix constructed by rotating this matrix.\n\nNote that the resulting  matrix only expresses the final transformation, not the\ndirection of the rotation. For example, the matrix produced by `m1.rotate(-10)`\nis identical to the matrix produced by `m1.rotate(350)` and `m1.rotate(710)`.\n\nNote that if you specify a rotation matrix as the `transform` property of an\nanimation, the animation animates the view from its current rotation to the\nrotation represented by the matrix by its shortest path. So to rotate a view\nin a complete circle, the easiest method is to chain together three animations,\nrotating 120 degrees each time.\n\nFor the purposes of animation, it should be noted that the rotation angle is\nnormalized to the range -180 <= angle < 180. In other\nwords, an angle of 180 degrees is normalized to -180. This makes no difference\nexcept when determining which direction an animation rotates. 179 degrees rotates\nrotate clockwise, but 180 degrees is normalized to -180, so rotates counter-clockwise.\n\n#### rotate(angle, toAngle) -- Android Only\n\nThis is an Android-specific method used for creating rotation animations.\nReturns a `Matrix2D` object that represents a rotation from `angle` to `toAngle`.\n\nAngles are specified in degrees. Positive values represent clockwise rotation, and negative values\nrepresent counter-clockwise rotation. Values are not normalized, so for example an\nangle of 720 degrees represents two complete clockwise revolutions.\n\nThe resulting object cannot be expressed as an affine transform, but can be used with the\n<Titanium.UI.Animation.transform> property to specify a rotation animation.\n",
+                "description": "There are two distinct versions of this method, depending on whether one argument\nor two are specified.\n\n*   `rotate(angle)`. The standard `rotate` method.\n*   `rotate(fromAngle, toAngle)`. Used for specifying rotation animations.\n    Android and, as of Titanium SDK 14.0.0, iOS.\n\nIn both cases, a positive value specifies clockwise rotation and a negative value\nspecifies counter-clockwise rotation.\n\nDetails for each version are discussed below.\n\n#### rotate(angle)\n\nReturns a matrix constructed by rotating this matrix.\n\nNote that the resulting  matrix only expresses the final transformation, not the\ndirection of the rotation. For example, the matrix produced by `m1.rotate(-10)`\nis identical to the matrix produced by `m1.rotate(350)` and `m1.rotate(710)`.\n\nNote that if you specify a rotation matrix as the `transform` property of an\nanimation, the animation animates the view from its current rotation to the\nrotation represented by the matrix by its shortest path. So to rotate a view\nin a complete circle, use `rotate(fromAngle, toAngle)` instead, for example\n`rotate(0, 360)`.\n\nFor the purposes of animation, it should be noted that the rotation angle is\nnormalized to the range -180 <= angle < 180. In other\nwords, an angle of 180 degrees is normalized to -180. This makes no difference\nexcept when determining which direction an animation rotates. 179 degrees rotates\nrotate clockwise, but 180 degrees is normalized to -180, so rotates counter-clockwise.\n\n#### rotate(angle, toAngle)\n\nThis method is used for creating rotation animations. It is supported on Android and,\nas of Titanium SDK 14.0.0, on iOS.\nReturns a `Matrix2D` object that represents a rotation from `angle` to `toAngle`.\n\nAngles are specified in degrees. Positive values represent clockwise rotation, and negative values\nrepresent counter-clockwise rotation. Values are not normalized, so for example an\nangle of 720 degrees represents two complete clockwise revolutions.\n\nOn Android, the resulting object cannot be expressed as an affine transform. On iOS, the\nresulting matrix expresses the final (`toAngle`) transform and additionally carries the\nstarting angle. In both cases the object can be used with the\n<Titanium.UI.Animation.transform> property to specify a rotation animation that follows\nthe full angular path, for example `rotate(0, 360)` for a complete clockwise revolution.\n\nOn iOS, animations using this overload use <Titanium.UI.Animation.curve> for timing.\nSpring animation properties (`dampingRatio`, `springVelocity`, and `bounce`) are ignored.\n",
                 "platforms": [
                     {
                         "since": "8.0.0",
@@ -146449,12 +146550,12 @@
                 "parameters": [
                     {
                         "name": "angle",
-                        "summary": "Angle to rotate to, in degrees. On Android, if `toAngle` is specified, this specifies\nthe starting angle for a rotation animation.\n",
+                        "summary": "Angle to rotate to, in degrees. If `toAngle` is specified, this specifies\nthe starting angle for a rotation animation.\n",
                         "type": "Number"
                     },
                     {
                         "name": "toAngle",
-                        "summary": "Ending angle for a rotation animation, in degrees. Android only.",
+                        "summary": "Ending angle for a rotation animation, in degrees.\nSupported on iOS since Titanium SDK 14.0.0.\n",
                         "type": "Number",
                         "optional": true
                     }
@@ -194112,7 +194213,7 @@
             {
                 "name": "style",
                 "summary": "Property defining which style for the TabGroup to be used.",
-                "description": "Since 8.0.0 Titanium has introduce a new style to be used for the TabGroup component.\n\nFor backwards compatibility not taking advantage of this property results in using the default style\nwhich is similar to the ActionBar Tabs style but sticking to the Material design Guidelines.\n\n[TABS_STYLE_BOTTOM_DEFAULT](Titanium.UI.Android.TABS_STYLE_DEFAULT) is the style that was used in Titanium\nprior to 8.0.0.GA. It displays the TabGroup with a list of Tabs at the top of the screen.\n\n[TABS_STYLE_BOTTOM_NAVIGATION](Titanium.UI.Android.TABS_STYLE_BOTTOM_NAVIGATION) is a style that displays\nthe TabGroup with a list of Tabs in a controller at the bottom of the screen. The recommended usage of this\nstyle is for items count between three and five: (https://material.io/design/components/bottom-navigation.html#usage)\nIn Android it is limited to supporting a maximum number of five tabs.\nYou can use paddingLeft, paddingRight, paddingBottom to create a floating bottom navigation. If you want to change the\nradius or background color you'll need to create `/app/platform/android/res/drawable/titanium_rounded_corners.xml` and set it to\n```xml\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<shape xmlns:android=\"http://schemas.android.com/apk/res/android\">\n    <solid android:color=\"#FFFFFF\" />\n    <corners android:radius=\"7dp\" />\n</shape>\n```\n",
+                "description": "Since 8.0.0 Titanium has introduce a new style to be used for the TabGroup component.\n\nFor backwards compatibility not taking advantage of this property results in using the default style\nwhich is similar to the ActionBar Tabs style but sticking to the Material design Guidelines.\n\n[TABS_STYLE_BOTTOM_DEFAULT](Titanium.UI.Android.TABS_STYLE_DEFAULT) is the style that was used in Titanium\nprior to 8.0.0.GA. It displays the TabGroup with a list of Tabs at the top of the screen.\n\n[TABS_STYLE_BOTTOM_NAVIGATION](Titanium.UI.Android.TABS_STYLE_BOTTOM_NAVIGATION) is a style that displays\nthe TabGroup with a list of Tabs in a controller at the bottom of the screen. The recommended usage of this\nstyle is for items count between three and five: (https://material.io/design/components/bottom-navigation.html#usage)\nIn Android it is limited to supporting a maximum number of five tabs.\nYou can use paddingLeft, paddingRight, paddingBottom to create a floating bottom navigation.\n\nSince 14.0.0 the corner radius of a floating bottom navigation can be changed with <Titanium.UI.View.borderRadius>.\nIt must be set at creation, only accepts a single value and defaults to `17dp`. It has no effect unless one of the\npadding properties above is set, and is clamped to half of the tab bar's height, so a larger value produces a\npill shape. Use <Titanium.UI.TabGroup.tabsBackgroundColor> to change its background color.\n",
                 "platforms": [
                     {
                         "since": "8.0.0",
@@ -194364,7 +194465,7 @@
             {
                 "name": "tabBarVisible",
                 "summary": "Programmatically shows / hides the bottom tab group of the tab group.",
-                "description": "This method also updates iOS 18+ [Elevated Tab Bar on iPad](https://developer.apple.com/documentation/uikit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar).\nNotes: Animation effect is applied on iOS <= 17, but will be removed in SDK 13.0.0. \n",
+                "description": "This method also updates iOS 18+ [Elevated Tab Bar on iPad](https://developer.apple.com/documentation/uikit/elevating-your-ipad-app-with-a-tab-bar-and-sidebar).\nNotes: Animation effect is applied on iOS <= 17, but will be removed in SDK 13.0.0.\n",
                 "platforms": [
                     {
                         "since": "12.1.0",
